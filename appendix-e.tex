@@ -1,0 +1,431 @@
+\chapter{BESKRIVNINGSKOD FÖR SÄNDNINGSSLAG}
+
+Ett resultat av World Administrative Radio
+Conferece (WARC) som avhölls år 1979 var
+en ny beskrivningskod för radiosändningar.
+Före WARC 79 uttrycktes den nödvändiga bandbredden i termer av kHz. Till exempel användes då 0.1 för 1 00 Hz och 6000 för
+6 MHz.
+l dataåldern behövs ett elegantare system för taluppställningar. Det nya systemet
+går ut på att uttrycka den nödvändiga bandbredden med tre siffror och en bokstav.
+Bokstaven placeras på platsen för decimaltecknet och representerar enheten för bandbredd. Bokstäverna H (Hz), K (kHz), M (MHz)
+och G (GHz) används, medan varken Oeller
+K, M eller G får vara det första tecknet.
+Numeriska värden med mer än tre signifikanta siffror rundas av till tre.
+Detta benämningssystem är dock inte
+utan problem. Det tar mer hänsyn till metoden hur en signal alstras, snarare än hur en
+signal helt enkelt ser ut när den sänds.
+Följdaktligen skall direkt modulation av
+huvudbärvågen benämnas på ett sätt, medan
+modulation av en underbärvåg i en enkelt
+sidbandssändare med undertryckt bärvåg
+skall benämnas på ett annat sätt. Om man
+t. ex. nycklarett RTTY-modem med en direktskrivande fjärrskrivare och sedan bytertill en
+dator för att göra samma sak, så ändras
+benämningen av sändningsslaget
+Bandbredd
+Basbandetärdetfrekvensområde, som upptas av signaler innan de modulerar bärvågen. Signaler i basbandet ligger vanligen
+mycket lägre i frekvens än bärvågen. l den
+låga änden av basbandet kan frekvensen
+närma sig eller vara likström (O Hz). l den
+höga änden beror frekvensen på det värde
+då information finns liksom att det finns underbärvågor eller andra speciella signaler
+inom basbandet Det finns ett basband för
+alla typer av signaler, vare sig de är analoga
+eller digitala. Det skall också förstås, att
+termen basband är relaterad till den modulation som avses från fall till fall.
+Det kan finnas mer än ett basband i en
+komplett modulationsprocess. Till exempel,
+en nycklad ton som går till sändaren genom
+
+mikrofoningången är dess analoga basband
+medan nycklingspulserna till tongeneratorn
+är dess digitala basband.
+Sidband alstras alltid när en bärvåg moduleras. De är blandningsprodukter på båda
+sidor om bärvågen, som resultat av att signaler från basbandet modulerar bärvågen
+på något sätt. Det övre sidbandetkallas USB
+(av upper sideband, eng.) och det undre
+sidbandet LSB (av lower sideband, eng.).
+l system för amplitudmodulation är bredden på sidbanden i stort lika med den högsta
+frekvenskomposanten i basbandet Sidbanden är spegelbilder av varandra och innehåller exakt samma information. För att spara
+bandbredd räcker det alltså med att överföra
+ena sidbandet, varvid det andra sidbandet
+kan undertryckas, liksom även bärvågen.
+l andra modulationssystem än för amplitudmodulation däremot, kan bredden på sidbanden mycket överstiga den högsta frekvenskomposanten i basbandssignalen.
+Använd bandbredd är avståndet mellan
+översta och nedersta delen av ett spektrum,
+där medeleffekten är lägre än 0.5$\circ$/o (-23 dB)
+av den totala medeleffekten. l vissa fall kan
+en annan relativ effektnivå specificeras; t ex.
+i USA 0.25$\circ$/o (-26 dB) för reglering av digital
+kommunikation. För amatörer är det inte
+alltid lätt att bestämma den använda bandbredden. Den kan mätas med en spektrumanalysator, men ett sådant instrument är
+svårtillgänglig för de flesta amatörer. Den
+använda bandbredden kan även beräknas,
+men det kräver matematikkunskaper i informationsteori och behandlas inte här.
+Nödvändig bandbredd är den del av den
+använda bandbredden, som räcker för att
+säkra informationsöverföringen i den omfattning och kvalitet som krävs. Förenklade
+sätt att beräkna nödvändig bandbredd vid
+specifika modulationssystem finns i kapitel1.
+Tilldelat frekvensband är den nödvändiga bandbredden plus två gånger den absoluta frekvenstoleransen.
+Frekvenstolerans (uttryckt i del per 106 ,
+procent eller i Hz) är den maximalt tillåtna
+frekvensavvikelsen från den korrekta frekvensen.
+
+E-1
+
+(Exempel)
+
+6M25
+C3F MN
+---.-- ~~~
+
+m
+l
+
+l
+
+1\ )
+
+Bandbredd - - - - - - . . : .•
+
+Huvudbärvågens modulation
+N Ingen modulation
+Utsändning där huvudbärvågen är linjärt modulerad
+(även i fall med vinkelmodulerad underbärvåg)
+A Dubbla sidband
+H Enkelt sidband, full bärvåg
+R Enkelt sidband, reducerad bärvåg eller bärvåg av varierande nivå
+J Enkelt sidband, undertryckt bärvåg
+B Sinsemellan oavhängiga sidband
+c stympat sidband
+Utsändning där huvudbärvågen är vinkelmodulerad
+F Frekvensmodulation
+G Fasmodulation
+D Utsändning vars huvudbärvåg är amplitudoch vinkelmodulerad antingen samtidigt eller
+i viss förutbestämd följd.
+Utsändning av huvudbärvågen som tåg av pulser not.
+P Omodulerade pulser
+K Amplitudmodulerade pulser
+L Längdmodulerade pulser
+M Faslägesmodulerade pulser
+Q Vinkelmodulerad bärvåg under pulsens varaktighet
+V Kombination av ovanstående eller alstrat på
+annatsätt
+Övriga fall där utsändningens huvudbärvåg är modulerad, antingen samtidigt eller i förutbestämd följd på
+två eller flera av sätten amplitud-, vinkel- eller pulsmodulering
+W
+övriga fall
+
+x
+
+not. Utsändning där huvudbärvågen är direkt
+
+modulerad av en signal, vilken är kodad
+i kvantisarad form (t.ex. pulskodmodulation) skall hänföras till amplitudeller vinkelmodulation
+
+1
+
+Den modulerande signalens karaktär
+
+0 Ingen modulerande signal
+En enda kanal med
+1 kvantiserad eller digital information, utan användning av modulerande underbärvåg
+2 kvantiserad eller digital information, med användning av modulerande underbärvåg
+3 analog information
+Två eller flera kanaler med
+7 kvantiserad eller digital information
+8 analog information
+Sammansatta system av
+9 en eller flera kanaler med kvantiserad ellerdigital information samt
+en eller flera kanaler med analog
+information
+Övriga fall
+
+x
+
+l fråga om bassignalens karaktär skiljer
+man å ena sidan på kanaler för kvantiserad eller digital information, d.v.s. där signalen växlar språngvis mellan vissa givna tillstånd, och på kanaler för analog information, där signalen kan variera kontinuerligt inom givna gränser.
+Att fastställa arten av huvudbärvågens modulation kan kräva viss eftertanke. l många fall
+får den information som skall överföras, modulera en underbärvåg, som i sin tur påtrycks
+modulatorn för huvudbärvågen.
+
+M l' l
+
+f''rf
+d
+u t1p ex o aran e
+Närmare signalbeskrivning
+
+'
+
+Informationens form
+
+N Ingen överförd information
+A Telegrafi
+för hörselmottagning
+B Telegrafi
+för automatisk mottagning
+C Faksimil
+D Dataöverföring,
+fjärrmätning,
+fjärrstyrning
+E Telefoni,
+även ljudrundradio
+F Television, video
+W Kombination av
+ovanstående fall
+X Övriga fall
+
+m
+m
+
+00
+
+"<z
+Jl
+
+z
+
+G)
+
+:t>
+"'C
+"'C
+
+m
+c
+
+z
+
+x
+
+00
+
+"oc
+00
+
+)>:
+
+z
+
+c
+
+z
+z
+G)
+00
+00
+
+r
+
+)>
+
+G)
+
+Telegrafisignaler är kvantiserade (till/från,
+mark!space). Telefonisignaler har mestadels
+varit analoga, men är allt oftare kvantiserade
+(digitala). Faksimilsignaler är analoga eller
+kvantiserade, beroende på om gråtoner överförs eller ej.
+
+Obligatoriska kännetecken
+för sändningsslag enligt
+ITU radioreglemente (RR)
+
+~
+
+©
+
+-a
+
+-1
+
+(Exempel)
+
+-. l
+
+6M25
+C3F MN
+---.-.....
+Utsändningens bandbredd
+En fullständig kodbeteckning för en radioutsändning är uppbyggd av en niostäflig teckenföljd, t. ex.
+6M25 C3F MN. l teckenföljden är de första fyra
+tecknen (t.ex. 6M25) bandbreddsangivelsen.
+Bandbredden ska/f anges med tresiffror samt en
+bokstav som decimaltecken.
+Bokstaven anger även vilken enhet som bandbredden har, nämligen H för Hz, K för kHz, M för
+MHz och G för GHz.
+Det första tecknet får inte vara noll, K, M eller G.
+Decimaltecknen används på följande sätt:
+Bandbredd 0.001-999 Hz (decimaltecken H),
+bandbredd 1.00-999 kHz (decimaltecken K},
+bandbredd 1.00-999 MHz (decimaftecken M},
+bandbredd 1.00-999 GHz (decima!tecken G).
+Exempel:
+O. 002 Hz skrivs H002
+12.5 kHz skrivs 12K5,
+O. 1 Hz
+skrivs H 100 2.4kHz
+skrivs 2K40,
+25.3 Hz skrivs 25H3 6 kHz
+skrivs 6KOO,
+180. 7kHz
+skrivs 181K
+6.25 MHz
+skrivs
+6M25.
+
+m
+l
+
+w
+
+Det är särskift viktigt att komma ihåg bandbredden vid utsändningar nära bandgränsema. T. ex.
+kommer sidbandet (USB) i en telefonisignal med
+bärvågsfrekvensen 29.699, att tydligt överskrida
+den övre bandgränsen för 10-metersbandet. Bandgränserna får INTE överskridas och det gäller även
+sidbanden f
+A v Post- och telestyrelsens föreskrifter för amatörradio framgår de tillåtna bandbreddema. Därutöver gäller att bandbredden bör hållas så smal som
+möjligt med hänsyn till sändningsslaget
+
+Obligatorisk del
+
+Närmare beskrivning av signalen
+
+m
+
+m
+
+":c<
+00
+
+Arten av mulliplex
+
+Tvåtillståndskod med element av
+N Ingen multip/ex
+A Olika antal och/eller olika varaktigMultiplex med
+z
+het- morsetelegrafi
+C Koddelning
+B Samma antal och varaktighet, utan
+F Frekvensdelning
+C)
+felkorrigering - fjärrskrift
+T Tiddelning
+00
+C Samma antal och varaktighet, med
+W Kombination av F och T
+felkorrigering- fjärrskrift, AMTOR,
+X Andra arter av multip/ex
+paketradio m.m.
+Fyratillståndskod där
+D Varje tillstånd företräder ett tillstånd
+Se föregående sida om
+om ett antal bitar
+den obligatoriska delen
+00
+):>:
+Flertillståndskod där
+av kännetecknen!
+E Varje tillstånd företräder ett signalelement om ett antal bitar
+F Varje tillstånd eller kombination av
+tillstånd företräder ett tecken
+C)
+Ljud av rundradiokvalitet
+00
+00
+G Monatoniskt
+r
+H stereofoniskt eller kvadrafoniskt
+Ljud av kommersiell kvalitet
+J Alla fall utom K och L enligt nedan
+K Med användning av frekvensinversion eller banduppdelning
+L Medsärskilda frekvensmodulerade signaler för styrning av den demodulerade signalens nivå
+Video
+M Monokrom
+N Färg
+Kompletterande kännetecken
+Kombination av ovanstående fall
+
+z
+
+~
+
+©
+
+~
+
+o
+
+"oc
+z
+z
+z
+c
+
+>
+
+"
+
+w
+Övriga fall
+x
+
+för sändningsslag enligt
+ITU radioreglemente (RR)
+
+)'>
+'1J
+'1J
+
+m
+c
+
+z
+
+x
+
+BESKRIVNINGSKOD
+
+SÄNDNINGSSLAG
+
+Exempel på fullständigt beskrivna sändningsslag
+N0N
+1OOH A 1A AN
+
+Omodulerad bärvåg, ingen överförd information.
+Morsetelegrafi genom nyekling av bärvåg, 125-takt, bandbredd 100 Hz, s.k. CW.
+16KO F2A AN Morsetelegrafi, frekvensmodulation med nyekling av ton,
+t.ex. i repeater, s.k. tontelegrafi.
+254H F1 B BN Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK),
+utan felkorrigering, hastighet 50 Bd, frekvensskift i 70Hz,
+s.k. RTTY.
+254H J2B BN Fjärrskrift genom frekvensskiftnyckling av modulerande
+tonpar (AFSK), vid sändning av enkelt sidband med undertryckt bärvåg, bandbredden beroende av hastighet och
+frekvenser i tonparet
+Jfr 254H Fi B BN,
+304H Fi B CN Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK),
+med felkorrigering, hastighet 100 Bd, frekvensskift 170
+Hz, t.ex. AMTOR. Jfr 254 Fi B BN.
+6KOO A3E JN Telefoni, amplitudmodulation med dubblasidband och full
+bärvåg, bandbredd 6kHz, s.k. AM.
+2K70 J3E JN Telefoni, enkelt sidband och undertryckt bärvåg, bandbredd 2.7 kHz, s.k. SSB.
+16KO F3E JN
+Telefoni, frekvensmodulation, bandbredd 16 kHz, s.k.
+NBFM (smalbands-FM).
+2K12 F3C MN Faksimil med halvtoner (telefoto), kooperationsindex 264,
+avsökningshastighet 90 linjer/minut, frekvensmodulering
+med $\pm$ 400 Hz skift.
+6M25 C3F MN Television i svartvitt enligt det europeiska 625-linjerssystemet.
+3KOO F3F MN Smalbandstelevision enligt amatörradiostandard, s.k. ATV.
+
+Exempel på sändningsslag utan ITU beskrivningskod enligt ovan
+Telefoni, amplitudmodulation med dubbla sidband och
+reducerad bärvåg.
+En enda kanal med analog information.
+Sändningsslaget tillämpas i effektbesparande syfte bl.a.
+för rundradiosändningar på "AM", varvid traditionella
+rundradiomottagare fortfarande kan användas.
+
+E-4
