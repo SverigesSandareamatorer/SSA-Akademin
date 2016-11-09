@@ -4,4 +4,4 @@ all:
 	pdflatex koncept.tex
 
 clean:
-	-rm *.aux *.idx *.lof *.log *.lot *.pdf *.toc *~
+	-rm -f *.aux *.idx *.lof *.log *.lot *.pdf *.toc *~
