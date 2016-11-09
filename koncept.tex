@@ -2855,127 +2855,73 @@ F3E (FM) & deviationen    & hastigheten på & dubbla summan     & för stor devi
 För beräkning av effekten av en sinusformad signal använder man effektiwärdet
 av spänning och ström.
 
-uett-- umax
--{2
+$U_{eff} = \frac{U_{max}}{\sqrt{2}}$ och $I_{eff} = \frac{I_{max}}{\sqrt{2}}$
 
-och
+$P = U_{eff} \cdot I_{eff}$
 
-f
-
-ett
-
-=/max
-
-{2.
 Bild II 1-32 Effektförhållande
 
 \subsection{Effektändring uttryckt i dB}
-Måtten i det metriska systemet är alldagliga
-och ingen finner det märkligt att det t. ex. går
-tio decimeter på en meter. Däremot är begreppet decibel ovant för många.
-l detta avsnitt förklaras det mycket användbara begreppet decibel. Decibel (dB) är
-en tiondedel av grundenheten Bel (B).
-Räkning med decibel grundas på logaritmer, som är ett bekvämt sätt att uttrycka och
-behandla talvärden.
-Decibel är ett dimensionslöst uttryck
-för graden av dämpning alternativt förstärkning.
-Effektdämpning är följden av att vissa
-komponenter bromsar elektrisk ström. Den
-bromsande faktorn kan vara en resistans R,
-induktans L, kapacitans C eller sammansatta nätverk av R, L och C.
-Effektförstärkning innebär att en transistor, ett elektronrör eller annan s.k. aktiv
-komponent kan styra en större elektriskström
-och därmed större effekt än den själv styrs
-med. Vad som förorsakar effektförändringarna går vi inte in på i detta sammanhang,
-utan byggdelarna betraktas som "svarta lådor" med anslutningsklämmor.
-En byggdel med två ingångs- och två
-utgångsklämmor kallas för "fyrpol".
-Antag attden inmatade effekten P är 1 W.
-Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna effekten 1 W.
+Måtten i det metriska systemet är alldagliga och ingen finner det märkligt att
+det t. ex. går tio decimeter på en meter. Däremot är begreppet decibel ovant för
+många.
+
+I detta avsnitt förklaras det mycket användbara begreppet decibel. Decibel (dB)
+är en tiondedel av grundenheten Bel (B).
+
+Räkning med decibel grundas på logaritmer, som är ett bekvämt sätt att uttrycka
+och behandla talvärden.
+
+Decibel är ett dimensionslöst uttryck för graden av dämpning alternativt
+förstärkning.
+
+Effektdämpning är följden av att vissa komponenter bromsar elektrisk ström. Den
+bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
+sammansatta nätverk av R, L och C.
+
+Effektförstärkning innebär att en transistor, ett elektronrör eller annan s.k.
+aktiv komponent kan styra en större elektriskström och därmed större effekt än
+den själv styrs med. Vad som förorsakar effektförändringarna går vi inte in på i
+detta sammanhang, utan byggdelarna betraktas som "svarta lådor" med
+anslutningsklämmor.
+
+En byggdel med två ingångs- och två utgångsklämmor kallas för "fyrpol".
+
+Antag attden inmatade effekten P är 1 W. Om effekten inte ändras vid passagen
+genom fyrpolen, så är även den uttagna effekten 1 W.
 
 Effektförhållandet mellan in- och utgångarna är då
 
-~n
-Put
+$\frac{P_{in}}{P_{ut}} = \frac{1 watt}{1 watt} = 1 (kvoten = 1)$
 
-=
+Oförändrad effekt varken dämpas eller förstärks, varför både dämpningen och
+förstärkningen har talvärdet 0. Enheten på talvärdet är Bel, dämpningen eller
+förstärkningen är således 0 Bel. En tiondel därav är 0 decibel (0 dB).
 
-1
+Omräkning av kvoten av en effektändring till dB görs så, att 1O-logaritmen för
+kvoten söks och resultatet blir effektändringen uttryckt i Bel (B). Om
+resultatet uttrycks i dB, skall Bel-värdet multipliceras med 10.
 
-watt= 1 (kvoten= 1)
-
-1 watt
-
-Oförändrad effekt varken dämpas eller
-förstärks, varför både dämpningen och förstärkningen har talvärdet O. Enheten på talvärdet är Bel, dämpningen eller förstärkningen är således O Bel. En tiondel därav är
-O decibel (O dB).
-Omräkning av kvoten av en effektändring
-till dB görs så, att 1O-logaritmen för kvoten
-söks och resultatet blir effektändringen uttryckt i Bel (B). Om resultatet uttrycks i dB,
-skall Bel-värdet multipliceras med 1O.
 Logaritmer förklaras i Appendix B.
-För att förenkla beräkningen av dB-talet
-divideras det högre effekttalet med det lägre.
-Bokstaven a i följande formler betyder antingen förstärkning(+ a) ellerdämpning (-a)
-beroendet på vilket förtecken som sätts.
-a[ B] = log Phög
-~åg
 
-a[ dB] = 1Olog Phög
-~åg
+För att förenkla beräkningen av dB-talet divideras det högre effekttalet med det
+lägre. Bokstaven a i följande formler betyder antingen förstärkning (+ a) eller
+dämpning (-a) beroendet på vilket förtecken som sätts.
 
-Att addera eller subtrahera värden på en
-logaritmisk skala, motsvarar att multiplicera
-resp. dividera värden på en linjär skala.
-Huvudskalorna på en räknesticka är logaritmiska. (Räknestickan är ett enkelt, förut
-mycket använt hjälpmedel).
-Med hjälp av följande nomogram kan en
-effektändring, uttryckt som kvot (effekterna
-dividerade med varandra), omvandlas till
-decibel och omvänt.
 
-111 -53
+$a[B] = \log \frac{P_{hög}}{P_{låg}}$
 
-EL-LÄR
-1
+$a[dB] = 10\log \frac{P_{hög}}{P_{låg}}$
 
-l
+Att addera eller subtrahera värden på en logaritmisk skala, motsvarar att
+multiplicera resp. dividera värden på en linjär skala. Huvudskalorna på en
+räknesticka är logaritmiska. (Räknestickan är ett enkelt, förut mycket använt
+hjälpmedel).
 
-4
+Med hjälp av följande nomogram kan en effektändring, uttryckt som kvot
+(effekterna dividerade med varandra), omvandlas till decibel och omvänt.
 
-2
 
-8
-
-10 ggr
-
-9
-
-10 dB
-
-l
-l
-l
-l
-M-r-,.a.,....,....f-r.....f-.,.....,...,......~r--+-+---+.........J'~.r•
-......L..""~"'I..~...•.........~r-.....~........,.\&1'-.a.........•.~....'....................,,
-i ji
-
-o
-
-i 'l
-
-l
-
-i
-
-l
-
-l
-
-6
-
-3
 
 Följande avrundade värden kan utläsas:
 O dB = 1
