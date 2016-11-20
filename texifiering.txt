@@ -47,7 +47,7 @@ någorlunda vettig LaTeX.
 10) Alla formler latexas och kvarvarande "line-noise" tas bort.
 
 11) Formler med enhetsangivelser och liknande referenser i text skall också
-    latexas till formler. T.ex. $1\ Joule\ [J]$. Notera hur mellanslagen är
+    latexas till formler. T.ex. \(1\ Joule\ [J]\). Notera hur mellanslagen är
     slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
     mellan värde och dess prefix och enhet.
 
