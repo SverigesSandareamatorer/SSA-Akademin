@@ -66,3 +66,5 @@ någorlunda vettig LaTeX.
     tabeller kan ske, samt förstås gör det enkelt för alla läsare att se vilken
     bild/tabell som hör till texten.
 
+15) Understrukna ord väljer vi att använda fetstil på, dvs. markera med
+    \textbf{}
