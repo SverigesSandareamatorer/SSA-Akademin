@@ -68,3 +68,13 @@ någorlunda vettig LaTeX.
 
 15) Understrukna ord väljer vi att använda fetstil på, dvs. markera med
     \textbf{}
+
+16) Bilder inkluderas med
+
+\begin{figure}
+\begin{center}
+\includegraphics{}
+\caption{}
+\label{fig:}
+\end{center}
+\end{figure}
