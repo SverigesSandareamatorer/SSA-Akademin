@@ -2,16 +2,18 @@
 \textbf{HAREC a.\ref{HAREC.a.1.9}\label{myHAREC.a.1.9}}
 
 \subsection{Effekt i en sinusformad signal}
-För beräkning av effekten av en sinusformad signal använder man effektiwärdet
+\textbf{HAREC a.\ref{HAREC.a.1.9.1}\label{myHAREC.a.1.9.1}}
+
+För beräkning av effekten av en sinusformad signal använder man effektivvärdet
 av spänning och ström.
 
 \(U_{eff} = \frac{U_{max}}{\sqrt{2}}\) och \(I_{eff} = \frac{I_{max}}{\sqrt{2}}\)
 
 \(P = U_{eff} \cdot I_{eff}\)
 
-Bild II 1-32 Effektförhållande
-
 \subsection{Effektändring uttryckt i dB}
+\textbf{HAREC a.\ref{HAREC.a.1.9.2}\label{myHAREC.a.1.9.2}}
+
 Måtten i det metriska systemet är alldagliga och ingen finner det märkligt att
 det t. ex. går tio decimeter på en meter. Däremot är begreppet decibel ovant för
 många.
@@ -22,27 +24,37 @@ I detta avsnitt förklaras det mycket användbara begreppet decibel. Decibel (dB
 Räkning med decibel grundas på logaritmer, som är ett bekvämt sätt att uttrycka
 och behandla talvärden.
 
+\begin{quote}\emph{
 Decibel är ett dimensionslöst uttryck för graden av dämpning alternativt
 förstärkning.
+}\end{quote}
 
-Effektdämpning är följden av att vissa komponenter bromsar elektrisk ström. Den
+\emph{Effektdämpning} är följden av att vissa komponenter bromsar elektrisk ström. Den
 bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
 sammansatta nätverk av R, L och C.
 
-Effektförstärkning innebär att en transistor, ett elektronrör eller annan s.k.
+\emph{Effektförstärkning} innebär att en transistor, ett elektronrör eller annan s.k.
 aktiv komponent kan styra en större elektriskström och därmed större effekt än
 den själv styrs med. Vad som förorsakar effektförändringarna går vi inte in på i
 detta sammanhang, utan byggdelarna betraktas som "svarta lådor" med
 anslutningsklämmor.
 
-En byggdel med två ingångs- och två utgångsklämmor kallas för "fyrpol".
+En byggdel med två ingångs- och två utgångsklämmor kallas för ``fyrpol''.
+
+\begin{figure}[th]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_1-32}
+\caption{Effektförhållande}
+\label{fig:BildII1-32}
+\end{center}
+\end{figure}
 
 Antag att den inmatade effekten P är 1 W. Om effekten inte ändras vid passagen
 genom fyrpolen, så är även den uttagna effekten 1 W.
 
-Effektförhållandet mellan in- och utgångarna är då
+\emph{Effektförhållandet} mellan in- och utgångarna är då
 
-\(\frac{P_{in}}{P_{ut}} = \frac{1 watt}{1 watt} = 1 (kvoten = 1)\)
+\(\frac{P_{in}}{P_{ut}} = \frac{1\ watt}{1\ watt} = 1 (kvoten = 1)\)
 
 Oförändrad effekt varken dämpas eller förstärks, varför både dämpningen och
 förstärkningen har talvärdet 0. Enheten på talvärdet är Bel, dämpningen eller
@@ -67,477 +79,222 @@ multiplicera resp. dividera värden på en linjär skala. Huvudskalorna på en
 räknesticka är logaritmiska. (Räknestickan är ett enkelt, förut mycket använt
 hjälpmedel).
 
-Med hjälp av följande nomogram kan en effektändring, uttryckt som kvot
+Med hjälp av följande nomogram kan en \textbf{effektändring}, uttryckt som kvot
 (effekterna dividerade med varandra), omvandlas till decibel och omvänt.
 
-
 Följande avrundade värden kan utläsas:
-O dB = 1 1 dB = 1.25 2 dB = 1.6
-3 dB = 2 4 dB = 2.5 5 dB = 3.2
-6 dB = 4 7 dB = 5 8 dB= 6.3
-9 dB = 8 1O dB = 1O 11 dB = 12.5
 
-d. v. s. vid ökning fördubblas effekten för var 3:e dB och vid minskning
+\begin{tabular}{rlrlrl}
+0 dB & = 1 &  1 dB & =  1.25 & 2 dB = 1.6 \\
+3 dB & = 2 &  4 dB & =  2.5  & 5 dB = 3.2 \\
+6 dB & = 4 &  7 dB & =  5    & 8 dB = 6.3 \\
+9 dB & = 8 & 10 dB & = 10    & 11 dB = 12.5
+\end{tabular}
+
+\begin{quote}\emph{
+d.v.s. vid ökning fördubblas effekten för var 3:e dB och vid minskning
 halveras effekten för var 3:e dB.
+}\end{quote}
 
-Om kvoten är en eller flera 1O-potenser högre än 1O, så kan nomogrammet utökas
+Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
 
-Kvot av Analys
-PhögiPiåg
-1
-1 har O nollor
-1O
-1O har 1 nolla
-100
-100 har 2 nollor
-1 000
-1 000 har 3 nollor
-1O 000 1O 000 har 4 nollor
-
-Skriv
-
-dB
-
-o. 10 = o
-1·10=10
-
-2. 10
-
-= 20
-
-3. 10 = 30
-4. 10 = 40
+\begin{tabular}{rllr}
+Kvot av & Analys             & Skriv            & dB \\
+\(P_{hög}/P_{låg}\) &          &                  &    \\
+     1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 \\
+    10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 \\
+   100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 \\
+ 1 000 &  1 000 har 3 nollor & \(3 \cdot 10\) = & 30 \\
+10 000 & 10 000 har 4 nollor & \(4 \cdot 10\) = & 40
+\end{tabular}
 
 \subsection{Strömändring uttryckt i dB}
-Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i dB, men
-annorlunda än mellan effekter. En fyrpol
-med inbördes lika ingångs- och utgångsimpedans är förutsättningen för jämförelse.
-Enligt Joules lag är P= l
+Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i dB,
+men annorlunda än mellan effekter. En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för jämförelse.
 
-2
+Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\))
 
-•R
+således \(\frac{P_{h{\oe}g}}{P_{l{\aa}g}} = \frac{I_{hög}^2 \cdot R}{I_{l{\aa}g}^2 \cdot R}\)
 
-(P= U·~
+R kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
 En jämförelse uttryckt i dB kan endast göras
 under samma förutsättningar; här att impedanserna (resistanserna) är lika,
 
-111 -54
-
-a[ dB]= 1Olog 'h'og22
-flåg
-
-Eftersom log
-
-x2
-
-=
-
-2 ·log x, fås slutligen
-
-a[ dB] = 20 log /hög
-flåg
-
-\subsection{Spänningsändring uttryckt i dB}
-Förhållandet mellan spänningar kan uttryckas i dB på ett liknande sätt som med
-strömmar.
-
-~
-
-2
-
-Enligt Joules lag är P=
-
-(P=
-
-U·~
-
-Två effekter kan ställas i förhållande till varandra på följande sätt:
-
-~ög
-
--=
-~åg
-
-uhög2:R
-2
-ulåg
-
-:R
-
-R avkortas och efter omskrivning fås en
-
-formel som liknar den för strömmar
-
-~ög
-
-2
-uhög
-
-~åg
-
-ulåg
-
--=--2
-
-log Uhög
-qåg
-
-R kan avkortas om in- och utgångsimpedanserna (resistanserna) är lika.
-
-således
+således \(\frac{P_{hög}}{P_{låg}} = \frac{I_{hög}^2}{I_{låg}^2}\)
 
 Effektförhållandet eller kvadratvärdet på
 strömförhållandet kan uttryckas logaritmiskt
 i B eller dB
 
-a[ dB] = 20
+\(a[dB] = 10\log \frac{I_{hog}^2}{I_{log}^2}\)
 
-således
+Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen
 
-Effekt
+\(a[dB] = 20\log \frac{I_{hög}}{I_{låg}}\)
 
-~ög
+\subsection{Spänningsändring uttryckt i dB}
 
-lhög
+Förhållandet mellan spänningar kan uttryckas i dB på ett liknande sätt som med
+strömmar.
 
-~åg
+Enligt Joules lag är \(P = \frac{U^2}{R}\) (\(P = U \cdot I\))
 
-flåg
+Två effekter kan ställas i förhållande till varandra på följande sätt:
 
-2
+\(\frac{P_{hög}}{P_{låg}}=\frac{U_{hög}^2:R}{U_{låg}^2:R}\)
 
--=-2
+R avkortas och efter omskrivning fås en formel som liknar den för strömmar
 
-Med följande nomogram kan kvoten av en
-ström- eller spänningsändring omvandlas till
-decibel och tvärt om.
+\(\frac{P_{hög}}{P_{låg}} = \frac{U_{hög}^2}{U_{låg}^2}\)
+
+\(a[dB] = 20\log \frac{U_{hög}}{U_{låg}}\)
+
+Med följande nomogram kan kvoten av en ström- eller spänningsändring omvandlas
+till decibel och tvärt om.
 Följande avrundade värden kan utläsas:
-O dB = 1
-1 dB ~ 1.12 2 dB ~ 1.25
-3 dB ~ 1.4
-4 dB ~ 1.6
-5 dB ~ 1.8
-6 dB ~ 2
-7 dB ~ 2.24 8 dB ~ 2.5
-9 dB ~ 2.8
-1O dB ~ 3.2 11 dB ~ 3.6
-d. v. s. vid ökning fördubblas strömmen resp.
-spänningen för var 6:e dB och att vid minskning halveras strömmen resp. spänningen
-för var 6:e dB.
 
-L-LÄRA
-1
+\begin{tabular}{rlrlrl}
+0 dB & = 1   &  1 dB & = 1.12 &  2 dB = 1.25 \\
+3 dB & = 1.4 &  4 dB & = 1.6  &  5 dB = 1.8 \\
+6 dB & = 2   &  7 dB & = 2.24 &  8 dB = 2.5 \\
+9 dB & = 2.8 & 10 dB & = 3.2  & 11 dB = 3.6
+\end{tabular}
 
-1.2
+\begin{quote}\emph{
+d. v. s. vid ökning fördubblas strömmen resp. spänningen för var 6:e dB och att
+vid minskning halveras strömmen resp. spänningen för var 6:e dB.
+}\end{quote}
 
-1.1
-
-l
-
-l
-
-o
-
-i
-1
-
-2
-
-lijl l i l i
-
-l
-o2 4 6 8
-l
-
-1.3
-!
-
-l
-
-3
-l
-i
-
-l
-10
-
-l
-
-l
-2
-
-l
-
-l
-
-4
-l
-l
-12
-
-l
-
-J
-
-l
-3
-
-5
-l
-l
-14
-
-1.6
-
-1.5
-
-1.4
-l
-
-l
-
-i
-
-6
-l
-
-l
-
-l
-4
-
-7
-li
-
-l
-
-l
-16
-
-Om kvoten är en eller flera 1O-potenser
-högre än 1O, så kan nomogrammet utökas
+Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
-Skriv
-Kvot*
-Analys
-20
-1 har O nollor
-1
-1 . 20
-10
-1O har 1 nolla
-2. 20
-100
-100 har 2 nollor
-1 000
-1 000 har 3 nollor 3. 20
-10 000 1 O 000 har 4 nollor 4. 20
-*kvot av Uhö/U 1å9 resp. lhö/l,å9
 
-o.
 
-=
-
-dB
-
-o
-
-= 20
-
-= 40
-
-= 60
-= 80
+\begin{tabular}{rllr}
+Kvot av & Analys             & Skriv            & dB \\
+\(U_{hög}/U_{låg}\) &          &                  &    \\
+\(I_{hög}/I_{låg}\) &          &                  &    \\
+     1 & 1 har 0 nollor      & \(0 \cdot 20\) = &  0 \\
+    10 & 10 har 1 nolla      & \(1 \cdot 20\) = & 20 \\
+   100 & 100 har 2 nollor    & \(2 \cdot 20\) = & 40 \\
+ 1 000 &  1 000 har 3 nollor & \(3 \cdot 20\) = & 60 \\
+10 000 & 10 000 har 4 nollor & \(4 \cdot 20\) = & 80
+\end{tabular}
 
 Se Appendix C för beräkning med tabeller.
 
-\subsection{Ändring uttryckt i dB vid förstärkande eller
-dämpande anordningar kopplade i serie}
+\subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
+\textbf{HAREC a.\ref{HAREC.a.1.9.3}\label{myHAREC.a.1.9.3}}
 
 Ett räkneexempel på effektändringar:
 Fråga:
-Vi har en enkel sändaranläggning med
-ett drivsteg med en in effekt av 1O W. Drivsteget förstärker med 6 dB. Vidare har vi ett
-effektslutsteg som förstärker med 1O dB.
-Antennkabeln dämpar med 1 dB.
+Vi har en enkel sändaranläggning med ett drivsteg med en in effekt av 10 W.
+Drivsteget förstärker med 6 dB. Vidare har vi ett effektslutsteg som förstärker
+med 10 dB. Antennkabeln dämpar med 1 dB.
+
 Med vilken effekt matas själva antennen?
+
 Svar: (två sätt att lösa uppgiften)
-1) Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och kabeln
-dämpar 1/1.25 = 0.8 gånger. Antennen
-matas då med 10 · 4 · 10 · 0.8 = 320 W.
-2) Drivstegets 6 dB plus slutstegets 1O dB
-minus antennkabelns 1 dB = 15 dB.
-15 dB är 1O+ 5 dB d.v.s. 1O· 3.2 = 32 ggr.
-Antennen matas med 1OW· 32 = 320 W.
-
-1.8
-
-1.7
-
-l
-
-l
-
-l
-5
-
-8
-l
-l
-18
-
-2.0 g gr
-
-1.9
-l
-
-l
-
-l
-
-l
-
-6
-
-Spänning
-dB
-
-10 ggr
-
-9
-l
-i
-
-Spänning
-20
-
-dB
+\begin{enumerate}
+\item Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och
+kabeln dämpar \(1/1.25 = 0.8\) gånger. Antennen matas då med
+\(10 \cdot 4 \cdot 10 \cdot 0.8 = 320\ W\).
+\item Drivstegets 6 dB plus slutstegets 10 dB minus antennkabelns 1 dB = 15 dB.
+15 dB är \(10 + 5\ dB\) d.v.s. \(10 \cdot 3.2 = 32\ ggr\). Antennen matas med
+\(10\ W \cdot 32 = 320\ W\).
+\end{enumerate}
 
 \subsection{Impedansanpassning}
-Impedansanpassning är av stor betydelse
-inom kommunikationsstekniken. Normaltvill
-man nämligen överföra mesta möjliga effekt
-från energikällan (t. ex. sändaren) till förbrukaren (t.ex. antennen).
-Varje spänningskälla har en inre resistans Ri. Det innebär som först att källan inte
-kan avge oändligt stor ström. För att förenkla
-det hela antar vi nu att en sändare med den
-inre resistansen Ri ansluts direkt till en antenn med resistansen Ra.
-Målet med anpassningen är att finna det
-optimala förhållandet mellan sändarresistansen och antennresistansen för att kunna
-överföra maximal effekt. Vi har de två ytterlighetsfallen obelastad sändare respektive
-kortsluten sändare. Sändarens elektromotoriska kraft (EMK) betecknas som E [V]
-och sändarens utspänning som U [V].
-Fall1.
-En obelastad sändare avger ingen ström när
-ingen antenn eller en med oändligt stor resistans har anslutits.
+\textbf{HAREC a.\ref{HAREC.a.1.9.4}\label{myHAREC.a.1.9.4}}
+
+Impedansanpassning är av stor betydelse inom kommunikationsstekniken.
+Normalt vill man nämligen överföra mesta möjliga effekt från energikällan
+(t.ex. sändaren) till förbrukaren (t.ex. antennen).
+
+Varje spänningskälla har en inre resistans \(R_i\). Det innebär som först att
+källan inte kan avge oändligt stor ström. För att förenkla det hela antar vi nu
+att en sändare med den inre resistansen \(R_i\) ansluts direkt till en antenn
+med resistansen \(R_a\).
+
+Målet med anpassningen är att finna det optimala förhållandet mellan
+sändarresistansen och antennresistansen för att kunna överföra maximal effekt.
+Vi har de två ytterlighetsfallen obelastad sändare respektive kortsluten
+sändare. Sändarens elektromotoriska kraft (EMK) betecknas som \(E\ [V]\) och
+sändarens utspänning som \(U\ [V]\).
+
+Fall 1.
+En obelastad sändare avger ingen ström när ingen antenn eller en med oändligt
+stor resistans har anslutits.
 Alltså vid obelastad sändare:
 
-Ra =oo
+\(R_a = \infty\) \(I = 0\) \(U = E\)
 
-l= O U= E
-
-Fall2.
-När sändarutgången är kortsluten, d.v.s.
-belastningen (antennresistansen) är noll
-ohm, avger sändaren en ström som beror av
-EMK och inre resistans. Eftersom såndarutgången är kortsluten är utspänningen Unoll.
+Fall 2.
+När sändarutgången är kortsluten, d.v.s. belastningen (antennresistansen) är
+noll ohm, avger sändaren en ström som beror av EMK och inre resistans. Eftersom
+såndarutgången är kortsluten är utspänningen \(U\) noll.
 Alltså vid kortsluten sändare:
 
-Ra=O !=E
-Ri
+\(R_a = 0\) \(I = \frac{E}{R_i}\) \(U = O\)
 
-U=O
+I båda ytterlighetsfallen är den effekt som omsätts i \(R_a\) lika med noll.
+För att få ut någon effekt måste man alltså söka ett värde på \(R_a\) som
+ligger mellan ytterlighetsvärdena.
 
-111 -55
+Enligt formeln för spänningsdelare är utspänningen
 
-EL-LÄRA
-l båda ytterlighetsfallen är den effekt som
-omsätts i Ra lika med noll. För att få ut någon
-effekt måste man alltså söka ett värde på Ra
-som ligger mellan ytterlighetsvärdena.
-Enligt formeln för spänningsdelare är
-utspänningen
-
-U=E·
-
-Ra
-Ra+Ri
+\(U = E \cdot \frac{R_a}{R_a+R_i}\)
 
 Formeln för uteffektens effektivvärde är
 
-u2
-p=ut
-
-R
-
-a
+\(P_{ut} = \frac{U^2}{R_a}\)
 
 Efter insättning får man
-p = p ·Ra
 
-ut
+\(P_{ut} = \frac{E^2 \cdot R_a}{(R_a + R_i)^2}\)
 
-(Ra +Ri)2
+För att finna det optimala förhållandet mellan \(R_i\) och \(R_a\), d.v.s. när
+\(R_a\) tar upp maximal effekt, måste man differentiera formeln med \(d\ P_a/d\ R_a\), men vi hoppar över denna utflykt i matematiken.
 
-För att finna det optimala förhållandet
-mellan Ri och Ra, d.v.s. när Ra tar upp maximal effekt, måste man differentiera formeln
-med d Pa/dRa, men vi hoppar över denna
-utflykt i matematiken.
-l stället konstaterar vi helt enkelt att
-maximal effektöverföring sker när Ri= Ra.
+I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker när
+\(R_i = R_a\)}.
 
 \subsection{Förhållandet mellan in- och uteffekt uttryckt som \% verkningsgrad}
+\textbf{HAREC a.\ref{HAREC.a.1.9.5}\label{myHAREC.a.1.9.5}}
 
-Antag att en antennkabel har en effektförlust
-av 1 dB. Det innebär en effektdämpning av
-1.25 gånger, d.v.s. 0.8. Nu matar vi in 1O W
-i kabeln och får alltså ut 8 W. Hur stor
-verkningsgrad har kabeln uttryckt i o/o ?
+Antag att en antennkabel har en effektförlust av 1 dB. Det innebär en
+effektdämpning av 1.25 gånger, d.v.s. 0.8. Nu matar vi in 10 W i kabeln och får
+alltså ut 8 W. Hur stor verkningsgrad har kabeln uttryckt i \% ?
 Lösning:
 
-8
-
-1J = 1Q ·1 00 = 80o/o
+\(\eta = \frac{8}{10} \cdot 100 = 80\ \%\)
 
 \subsection{Toppvärdeseffekt P.E.P.}
+\textbf{HAREC a.\ref{HAREC.a.1.9.6}\label{myHAREC.a.1.9.6}}
 
-Uteffekten från en sändare kan mätas över
-en konstlast (dummy load). En konstlast är
-en res istor som kan omsätta sändarens hela
-effekt till värme. Med HF-mätprob och en
-detektordiod eller en HF-voltmeter kan man
-mäta effektivvärdet på spänningen över
-konstlasten och beräkna uteffekten med
+Uteffekten från en sändare kan mätas över en konstlast (dummy load). En
+konstlast är en resistor som kan omsätta sändarens hela effekt till värme. Med
+HF-mätprob och en detektordiod eller en HF-voltmeter kan man mäta
+effektivvärdet på spänningen över konstlasten och beräkna uteffekten med
 formeln
 
-u2
+\(P_{ut} = \frac{U^2}{R}\)
 
-p
-ut =RU = HF-spänningens effektiwärde
+U = HF-spänningens effektivvärde
 R = resistansen i konstlasten
 
-111-56
+På grund av utsignalens karaktär kan man inte mäta effektiwärdet av uteffekten
+från SSB-sändare. Med oscilloskop kan man emellertid mäta utspänningen på den
+största modulationstoppen.
 
-På grund av utsignalens karaktär kan
-man inte mäta effektiwärdet av uteffekten
-från SSB-sändare.
-Med oscilloskop kan man emellertid mäta
-utspänningen på den största modulationstoppen.
-Med detta toppvärde kan man beräkna
-spänningen över konstlasten.
-Uteffekten definierad som P.E.P. (Peak
-Envelope Power) är "den medeleffekt som
-matas in i en antennmatarledning under det
-högsta effektvärdet inom en frekvenscykel
-och mätt under normal drift".
+Med detta toppvärde kan man beräkna spänningen över konstlasten.
 
-f12
+Uteffekten definierad som P.E.P. (Peak Envelope Power) är ``den medeleffekt som
+matas in i en antennmatarledning under det högsta effektvärdet inom en
+frekvenscykel och mätt under normal drift''.
 
-P.E.P.=R
-där Oär momentanspänningen på den största
-modulationstoppen.
+\(P.E.P. = \frac{\hat{u}^2}{R}\)
 
-
+där \(\hat{u}\) är momentanspänningen på den största modulationstoppen.
+
