@@ -23,4 +23,4 @@ docker-build:
 	docker run -ti --rm -v $(shell pwd):/work -w /work ${DOCKER_IMAGE_NAME} make all
 
 clean:
-	-rm -f *.aux *.idx *.lof *.log *.lot *.pdf *.toc *~
+	-rm -f *.aux *.idx *.lof *.log *.lot *.pdf *.toc *~ *.out
