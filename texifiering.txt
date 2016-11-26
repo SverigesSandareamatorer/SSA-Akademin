@@ -51,7 +51,22 @@ någorlunda vettig LaTeX.
     slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
     mellan värde och dess prefix och enhet.
 
+    Anders kommentar: I matermatiska formler där enheter ingår bör man
+    omgärda enheter och storheter med \mathrm{} då det är bara
+    variabler som skall sättas kursivt egentligen. Om man vill undvika
+    radbrytning mellan mätetal och enhet så kan man använda sig av
+    tecknet ~ (tilde) i löpande text, exempelvis "...dipolantennen har
+    2,15~dB mer förstärkning än en tänkt isotrop antenn som strålar
+    lika i alla riktningar...". Slutligen 
+
 12) Tabeller latexas givetvis.
+
+    Anders kommentar: Tabeller som riskerar att sidbrytas men som man
+    inte vill göra en float av (för det blir meckigt om de hamnar före
+    eller efter det refererande stycket) kan man köra longtable
+    på. Slå upp det på webben eller i hundboken. Longtable kan
+    nämligen sidbrytas snyggt.
+    
 
 13) Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     \textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}
