@@ -1,6 +1,7 @@
 DOCKER_IMAGE_NAME=	ssa-koncept
 
 all:	koncept.pdf
+all:	matterep.pdf
 
 .PHONY:	*.pdf
 

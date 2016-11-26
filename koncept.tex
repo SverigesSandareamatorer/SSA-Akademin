@@ -1,45 +1,4 @@
-\documentclass[a4paper,twoside,twocolumn,openright]{book}
-
-% Prepare for abstract
-\usepackage{fancyhdr}
-\pagestyle{headings}
-\newenvironment{abstract}%
-{\cleardoublepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
-%{\cleardoublepage\null \vfill\begin{center}%
-%\bfseries \abstractname \end{center}}%
-     {\vfill\null}
-
-% Prepare for index
-\usepackage{makeidx}
-\makeindex
-
-% Prepare for svenska tecken
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[swedish]{babel}
-\addto\captionsswedish{\renewcommand{\figurename}{Bild}}
-\usepackage{amsmath}
-\usepackage{caption}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
-}
-
-% Make some unicode characters usable
-\DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}} % unicode 00B0 ° degree sign
-
-% Prepare for tables
-\usepackage{multirow}
-
-% Prepare for lists
-\usepackage{enumitem}
-
-% Prepare for graphics
-\usepackage{xspace,graphicx}
+\include{common}
 
 \begin{document}
 
