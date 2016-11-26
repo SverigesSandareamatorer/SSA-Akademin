@@ -3,12 +3,15 @@
 \section{Resistorn}
 \textbf{HAREC a.\ref{HAREC.a.2.1}\label{myHAREC.a.2.1}}
 
-Allmänt
+\subsection{Allmänt}
 
-Strömkretsar består av komponenter med
-olika egenskaper. Den vanligaste egenskapen, åtminstone i likströmskretsar, är resistansen. För att få avsedd funktion, så anpassar man resistansen i komponenterna.
-Exempel
-En krets med strömkälla, lampa, kopplingsledningar och smältsäkring. Kopplingsledningarna mellan komponenterna bör ha
+Strömkretsar består av komponenter med olika egenskaper.
+Den vanligaste egenskapen, åtminstone i likströmskretsar, är resistansen.
+För att få avsedd funktion, så anpassar man resistansen i komponenterna.
+
+\emph{Exempel}
+En krets med strömkälla, lampa, kopplingsledningar och smältsäkring.
+Kopplingsledningarna mellan komponenterna bör ha
 låg resistans och därför lågt spänningsfall
 (små förluster). Lampan skall däremot ha
 hög resistans och därmed höga förluster för
@@ -19,69 +22,56 @@ att den smälter när strömmen överstiger ett
 tillåtet värde.
 Som hjälpmedel för att fördela spänningar
 och strömmar i en krets, så används en
-komponenttyp kallad resistor. Dess utmärkande egenskap är resistans- även kallad
+komponenttyp kallad \emph{resistor}. Dess utmärkande egenskap är \emph{resistans} - även kallad
 ohmskt motstånd.
 
-Enheten Ohm
+\subsection{Enheten Ohm}
 
 (Se även kapitel 1)
-Resistansen mellan två punkter i en strömkrets är 1 n (uttalas "en åm"), när spänningen mellan punkterna gör att en ström av
-1 A (en ampere) flyter i kretsen.
-Inom elektroniken används höga resistansvärden och därför även följande multipler av enheten
-3
-(1 kn) == 106 Ohm
-1 kiloohm
-1 mego hm
-(1 Mn) == 10 Ohm
 
-Resistans i strömledare
+Resistansen mellan två punkter i en strömkrets är \(1 \Omega\) (uttalas "en åm"),
+när spänningen mellan punkterna gör att en ström av 1 A (en ampere) flyter i kretsen.
+
+Inom elektroniken används höga resistansvärden och därför även följande multipler av enheten
+\begin{tabular}{lll}
+  1 kiloohm & (\(1\ k\Omega\)) & = \(10^3\) Ohm \\
+  1 megaohm & (\(1\ M\Omega\)) & = \(10^6\) Ohm \\
+\end{tabular}
+
+\subsection{Resistans i strömledare}
 
 För att bestämma resistansen, t. ex. i en tråd,
 behöver man veta dess resistivitet, tvärsnittsyta, längd och temperatur.
 
-Resistivitet
+\emph{Resistivitet}
+
 Resistivitet är ett materials strömledningsegenskaper. Ett annat namn för resistivitet
-är specifik resistans. Symbolen för resistivitet
-är p (uttalas rå).
+är specifik resistans. Symbolen för resistivitet är \(\rho\) (uttalas rå).
 
-..
-. . . ..
-ohm ·mm 2
-Form e ln for res1St1v1tet ar p =- - - m
-Följande formel gäller för beräkning av
-resistansen i en strömledare med linjär ström/spänningskaraktär.
+Formeln for resistivitet är \(\rho = \frac{ohm \cdot mm^2}{m}\)
 
-R= p!
+Följande formel gäller för beräkning av resistansen i en strömledare med
+linjär ström/spänningskaraktär.
 
-A
+\(R = \rho \frac{I}{A} \)
 
-![meter] A [mm
-
-2
-
-]
-
-[p= n·A]
-m
+\(l\ [meter]\) \(A\ [mm^2]\) \([\rho = \frac{\Omega \cdot A}{m} \)
 
 Exempel
-l = 4 m koppartråd
-A== 2 mm 2
-p (koppar) == 0.017
 
-l
-A
+\(l = 4 m\) koppartråd
 
-R=p-
+\(A = 2 mm^2\)
 
-R=0.017i=o.034 n
-2
+\(\rho \text{ (koppar)} = 0.017\)
+
+\(R = \rho \frac{I}{A}\) \(R = 0.017 \frac{4}{2} = 0.034 \Omega\)
 
 Not. Förväxla inte A [tvärsnittsytan] i denna
 formel med beteckningen A t. ex. i Ohms lag då A
 betecknar strömstyrkan.
 
-Resistiva material
+\subsection{Resistiva material}
 
 Resistorer kan utföras med olika typer av
 resistiva material, vilket bestämmer användningsområdet.
@@ -99,15 +89,14 @@ resistorer av resistiva skikt på ett gemensamt isolerande underlag. Här beskri
 korthet
 resistortyper. Se f.ö. leverantörskataloger.
 
-Utförandeformer
+\subsection{Utförandeformer}
 
 Resistorer kan utföras med fast eller ställbart resistansvärde. Här följer först en översikt över resistorer med olika resistiva material och fast resistansvärde.
 
-112-1
+\subsection{Fasta resistorer med linjär karaktär}
 
-K MP NENTER
-Fasta resistorer med linjär karaktär
-Massaresistar
+\emph{Massaresistar}
+
 Det resistiva materialet består av kolmassa
 med bindemedel (kolkomposit). Massan är
 bakad till en stav eller ett rör. Anslutningsledningarna är inbakade i materialet.
@@ -115,86 +104,106 @@ Massaresistorer är lämpliga för lik- och
 växelströmskretsar med låga krav på temperaturberoende och egenbrus. Den homogena kroppen gör att egeninduktansen är
 låg. Å andra sidan uppstår vid höga frekvenser en skineffekt, d.v.s. strömkoncentration
 vid ytan, som medför viss resistansökning.
-Kolfilmsresistor
+
+\emph{Kolfilmsresistor}
+
 Det resistiva materialet består av ett kolskikt,
 som genom förångning överförts till ett keramiskt rör. Resistansen bestäms av tjockleken på skiktet samt av spiralformade spår i
 detta. Genom spiraliseringen tillförs en induktans, men som i någon mån uppvägs av
 egenkapacitansen.
-Metallfilmresistor
+
+
+\emph{Metallfilmresistor}
+
 l denna typ är kolfilmen ersatt av ett metallskikt. Eftersom egenkapacitansen är liten,
 så är typen lämpad för höga frekvenser.
-Tjockfilmsresistor
+
+\emph{Tjockfilmsresistor}
+
 Det resistiva materialet består en film av bl. a.
 metalloxid, som screentrycks på ett keramiskt underlag. Typen har god tålighet mot
 pulser och höga temperaturer, men har relativt högt egenbrus. Ytmonterade resistorer
 är oftast tillverkade av tjockfilm.
-Tunnfilmsresistor
+
+\emph{Tunnfilmsresistor}
+
 Det resistiva materialet består av en tunn
 metallfilm, som genom förångning överförts
 till ett underlag av glas eller keramik.
 Denna resistertyp har över lag god stabilitet och används ofta i apparater med hög
 precision. Egenskaperna vid höga frekvenser är dock inte så bra.
-Metalloxidresistor
+
+\emph{Metalloxidresistor}
+
 Denna resistertyp har ett spiralformat skikt
 av metalloxid. Temperatur- och spänningsberoendet är måttligt. Tåligheten mot pulser
 och höga temperaturer är stor. Typen kan i
 någon mån ersätta trådlindade resistorer.
 
-112-2
+\emph{Resistornät}
 
-Resistarnät
-Resisternät (integrerade resistorer) består
+Resistornät (integrerade resistorer) består
 av flera resistiva skikt på ett gemensamt
 isolerande underlag, d.v.s. liknande teknik
 som för tjock-och tunnfilmsresistorer.
-Trådlindad resistor
+
+\emph{Trådlindad resistor}
+
 Det resistiva materialet är en metalltråd,
 som är lindad på en stomme som tål hög
 temperatur; det kan var keramik, glas etc.
 Tåligheten mot pulser och höga temperaturer är stor.
 
-Fasta resistm·er med olinjär karaktär
+\subsection{Fasta resistorer med olinjär karaktär}
+
 Vanligast är att materialet i resistorer har
 linjär ström-/spänningskaraktär, men det
 finns även sådana med olinjär karaktär. l
 resistorer med olinjär karaktär är det ingående materialet av halvledartyp.
-Spänningsberoende resistor
-- Voltage Dependent Resistar (VOR)
+
+\emph{Spänningsberoende resistor - Voltage Dependent Resistar (VOR)}
+
 Linjära resistorer påverkas knappast av den
 pålagda spänningen. Resistorer av kiselkarbid har däremot en hög resistans vid låg
 spänning och omvänt en låg resistans vid
 hög spänning. VOR används t.ex. för begränsning av spänningstoppar.
-Ljusberoende resistor, fotoresistor
-- Light Dependent Resistar (LDR)
+
+\emph{Ljusberoende resistor, fotoresistor - Light Dependent Resistar (LDR)}
+
 Ledningsförmågan i halvledare påverkas inte
 bara av värme utan även av ljus. Halvledare
 av germanium och särskilt sammansatta
 halvledare av kadmiumoxid, blysulfid och
-indiumantimonid har särskilt stor ljuskänslighet. Kadmiumsulfid är känsligast för synligt ljus medan andra material är känsligast i
+indiumantimonid har särskilt stor ljuskänslighet. Kadmiumsulfid är känsligast
+för synligt ljus medan andra material är känsligast i
 det infraröda området.
-Magnetfältberoende resistor (fältplatta)
-Resistansen ökar med längden på strömledaren. Denna egenskap används i magnetfältberoende fältplattor. En sådan består
+
+\emph{Magnetfältberoende resistor (fältplatta)}
+
+Resistansen ökar med längden på strömledaren. Denna egenskap används i
+magnetfältberoende fältplattor. En sådan består
 av en keramisk bärarplatta med en yta av
 indiumantimon id. l ytan är ytterst smala parallella metallbanor inlagda på ett avstånd av
 någon J.lm. Normalt går strömmen kortaste
 vägen tvärs över banorna, men när ett magnetfält träffar vinkelrätt mot plattans yta, så
-
-K MP NENTER
 avlänkas elektronerna. De får då längre väg
 över till nästa metallbana och den totala
 resistansen ökar.
 
-Temperaturberoende resistor
+\emph{Temperaturberoende resistor}
 
 Se nedan om NTC och PTC i resistorer.
 
-Temperaturkoefficienten för resistorer
+\subsection{Temperaturkoefficienten för resistorer}
+
 Resistansen i ingående material påverkas
 av temperaturen, vaNid det skiljer mellan
 materialen.
+
 Amorft kol och de flesta halvledande
 materialleder bättre när de är varma- de har
 en negativ temperaturkoefficient (NTC). Sådana material finns t. ex. i dioder och transistorer.
+
 Däremot leder metaller och speciella
 halvledarmaterial bättre när de är kalla- de
 har en positiv temperaturkoefficient (PTC).
@@ -203,227 +212,150 @@ resistorer med positiv temperaturkoefficient
 (PTC). l vissa metallegeringar, som t.ex. i
 konstantan, kan resistansen till och med
 vara nästan konstant vid varierande temperatur.
+
 Alla material har en temperaturkoefficient,
 som anger hur mycket resistansen ändras
 per grad. Resistansen vid någon annan temperatur kan därför beräknas med följande
 formel, där man sätter in begynnelsetemperaturen [ o] (o c), temperaturändringen [ .1.0]
 och temperaturkoefficienten [a].
 
-Rvarm= Rkall\(\pm\) a· il ?J· Rkatt
+\(R_{varm} = R_{kall} \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}\)
+
 Resistansändringen är ledet
-AR= \(\pm\)a· .1.19- ·Rkatt
+
+\( \Delta R = \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}\)
+
 Temperaturkoefficienten kan vara positiv (NTC) eller negativ (NTC).
-l principscheman har PTC- respektive NTCresistorer symboler som på bilden.
+l principscheman har PTC- respektive NTC-resistorer symboler som på bilden.
+
 Bild nr 112-1
 
-Variabla resistorer
-En resister kan även utföras med variabelt
-resistansvärde. Då används endast den andel av det resistiva materialet, som finns
-mellan en resistors ena ände och ett uttag
+\subsection{Variabla resistorer}
+En resister kan även utföras med variabelt resistansvärde. Då används endast
+den andel av det resistiva materialet, som finns mellan en resistors ena ände och ett uttag
 någonstans mellan ändarna. En sådan anordning kallas för reostat. Om en variabel
-resister används som spänningsdelare, så
-kallas den för potentiometer.
+resister används som spänningsdelare, så kallas den för potentiometer.
 
-l en potentiometer används dels hela
-resistansen mellan ändpunkterna och dels
-andelen mellan uttaget och någon av
-ändpunkterna.
+I en potentiometer används dels hela resistansen mellan ändpunkterna och dels
+andelen mellan uttaget och någon av ändpunkterna.
 Uttagets mekaniska utförande beror oftast av hur bekvämt inställningen skall kunna
-ske. En potentiometer, där det resistiva
-materialet är lagt på en cirkulär bana och
-uttaget är fäst vid en axel i banans centrum,
-medger enkel inställning med mejsel, ratt
-etc. Ett enklare slags uttag är en släpkontakt
-eller ett spännband som kan flyttas utmed en
+ske. En potentiometer, där det resistiva materialet är lagt på en cirkulär bana och
+uttaget är fäst vid en axel i banans centrum, medger enkel inställning med mejsel, ratt
+etc. Ett enklare slags uttag är en släpkontakt eller ett spännband som kan flyttas utmed en
 stavformad resistor.
 
-Resistiva material i variabla resistorer
+\subsection{Resistiva material i variabla resistorer}
 
-Banan i en variabel resister består i princip
-av liknande resistiva material som i en fast
-resistor.
-Billigast och enklast är en bana av kol,
-som är tryck på ett enkelt underlag. Nackdelar är låg efekttålighet, dålig upplösning och
+Banan i en variabel resister består i princip av liknande resistiva material som i en fast
+resistor. Billigast och enklast är en bana av kol, som är tryck på ett enkelt underlag.
+Nackdelar är låg efekttålighet, dålig upplösning och
 linjäritet, högt brus och kort livslängd. Fördelen är lågt pris.
 Bättre än en kolbana är en bana av kolkomposit, d.v.s. kolpulver med bindemedel,
-som är tryckt på ett underlag. Nackdel är
-högre pris och låg effekttålighet, medan fördelarna är god upplösning, lågt brus och
-lång livslängd.
-Vill man ha god effekttålighet och temperaturstabilitet, utöver kolkompositens egenskaper, så erbjuder en bana av cermetsådana fördelar. En cermetbana består av en
-blandning av metaller och keramik, som
-trycks på ett underlag.
-Trådlindad bana har främst god tålighet
-mot hög effekt. Tålighet vid hög ström genom uttaget är en nannan fördel.
+som är tryckt på ett underlag. Nackdel är högre pris och låg effekttålighet, medan
+fördelarna är god upplösning, lågt brus och lång livslängd.
+Vill man ha god effekttålighet och temperaturstabilitet, utöver kolkompositens egenskaper,
+så erbjuder en bana av cermetsådana fördelar. En cermetbana består av en
+blandning av metaller och keramik, som trycks på ett underlag.
+Trådlindad bana har främst god tålighet mot hög effekt. Tålighet vid hög ström genom
+uttaget är en nannan fördel.
 
-Linjära och olinjära patentiometrar
+\subsection{Linjära och olinjära patentiometrar}
 
-En potentiometer har en kuNform, varvid
-avses resistansändringen som funktion av
-uttagets rörelseväg utmed resistansbanan.
-KuNformen kan utföras linjär, logaritmisk
-etc .. Olinjära kuNor består då oftast av en
-följd av linjära segment, som tillsammans
-någorlunda motsvarar den önskade olinjära
-formen. Ett exempel på det är när en kurvform
+En potentiometer har en kurvform, varvid avses resistansändringen som funktion av
+uttagets rörelseväg utmed resistansbanan. Kurvformen kan utföras linjär, logaritmisk
+etc. Olinjära kurvor består då oftast av en följd av linjära segment, som tillsammans
+någorlunda motsvarar den önskade olinjära formen. Ett exempel på det är när en kurvform
 anges som linjär/logaritmisk.
 
-112-3
-
-K MP N
-Effektutveckling i resistorer
-l resistorer utvecklas värme av den ström
-som flyter igenom. Värmeutvecklingen sker
-enligt Joule's lag, som återges i kapitel1.
-Hur mycket effekt i form av värme som
+\subsection{Effektutveckling i resistorer}
+I resistorer utvecklas värme av den ström som flyter igenom. Värmeutvecklingen sker
+enligt Joule's lag, som återges i kapitel 1. Hur mycket effekt i form av värme som
 strålas ut från resistorn beror på storleken på
 dess yta och egentemperatur samt på omgivningens temperatur. Det finns en övre
 gräns för hur stor värme det ingående materialet tål innan det förstörs och eventuellt
-fattar eld.
-En resistors effekttålighet framgår i vissa
-fall av påstämplade värden. l övriga fall är
-man hänvisad till kataloguppgifter eller en
-bedömning, som ev. kan grundas på höljets
-utseende och dimensioner.
-standardiserade komponentvärden
+fattar eld. En resistors effekttålighet framgår i vissa fall av påstämplade värden.
+I övriga fall är man hänvisad till kataloguppgifter eller en bedömning, som ev. kan
+grundas på höljets utseende och dimensioner.
+
+\subsection{Standardiserade komponentvärden}
+
 Resistorer tillverkas vanligen med standardiserade värden ur någon talserie.
-Märkning av resistorer
-Resistorer märkas med huvuddata enligt
-något system av siffror och bokstäver eller
-med en färgkod. Flera olika system tillämpas.
-(Se f.ö. leverantörskatalogerför information
-om komponentdata, märkning o.s.v.)
+Märkning av resistorer Resistorer märkas med huvuddata enligt
+något system av siffror och bokstäver eller med en färgkod. Flera olika system tillämpas.
+(Se f.ö. leverantörskataloger för information om komponentdata, märkning o.s.v.)
 
-2
+\section{Kondensatorn}
 
-1
-2
-3
-4
+\subsection{Allmänt}
 
-3
-
-4
-
-Allmän symbol
-ställbar resistor, potentiometer
-Trimbar resister (trimmer)
-Automatiskt ställbar resister
-
-Bild 112-1 Schemasymboler för resistorer
-
-112-4
-
-5
-
-5
-6
-7
-8
-
-6
-
-7
-
-Temperaturberoende resistor,
-Temperaturberoende resistor,
-Spänningsberoende resistor,
-Ljusberoende resistor,
-
-8
-
-NTC
-PTC
-VOR
-LDR
-
-K MP NENTER
-
-2.2 Kondensatorn
-Allmänt
-
-Följande formler gäller för kapacitansen i
-en enkel kondensator med två plattor. När
-en kondensator är uppbyggd av n stycken
-plattor, ökar kapacitansen med faktorn (n-1 ).
-Med vakuum som dielektrikum gäller
-
-Så snart det finns en elektrisk potentialskillnad .,..-en spänning - mellan två kroppar, så
-uppstår ett elektriskt kraftfält mellan dem.
-Ett sådant fält är lagrad elektrisk energi.
+Så snart det finns en elektrisk potentialskillnad - en spänning - mellan två kroppar, så
+uppstår ett elektriskt kraftfält mellan dem. Ett sådant fält är lagrad elektrisk energi.
 Kropparna måste då isoleras från varandra.
-Elektrisk energi lagras mellan olika delar
-av en strömkrets, även om de inte är direkt
-avsedda för det. Särskilt vid mycket höga
-frekvenser har detta stor betydelse för utformningen av en strömkrets. Vid låga frekvenser och likström däremot, har kretsens
-utformning mindre inverkan. Då behövs i
-stället särskilda anordningar för ta upp eller
-avge energi på önskade ställen i strömkretsen.
-En sådan anordning kallas kondensator.
+
+Elektrisk energi lagras mellan olika delar av en strömkrets, även om de inte är direkt
+avsedda för det. Särskilt vid mycket höga frekvenser har detta stor betydelse för
+utformningen av en strömkrets. Vid låga frekvenser och likström däremot, har kretsens
+utformning mindre inverkan. Då behövs i stället särskilda anordningar för ta upp eller
+avge energi på önskade ställen i strömkretsen. En sådan anordning kallas kondensator.
 Den består i princip av två band eller plattor
 med anslutningsledningar samt ett isolerande skikt- dielektricum- däremellan.
-Kapacitansen är näst efter resistansen
-den vanligaste egenskapen i en strömkrets.
+Kapacitansen är näst efter resistansen den vanligaste egenskapen i en strömkrets.
 
-Kapacitans är elektricitetsmängden per volt
-där måttenheten är Farad [F]. Eftersom denna
-enhet är mycket stor, används inom elektroniken oftast bråkdelar av den.
-1 mikrofarad (1 !-!F) = 1o-6 F
-1 nanofarad (1 n F) = 1 9 F
-1 pikofarad (1 p F) = 1o- 12 F
 
 \section{Kapacitans}
 \textbf{HAREC a.\ref{HAREC.a.2.2}\label{myHAREC.a.2.2}}
 
-Kondensatorn i likströmskretsen
+Förmågan att lagra elektrisk energi (elektrisk laddning) kallas kapacitans.
+Ordet kommer från latinets capax, som betyder rymlig, duglig.
 
-Förmågan att lagra elektrisk energi (elektrisk laddning) kallas kapacitans. Ordet kommer från latinets capax, som betyder rymlig,
-duglig.
 Kapacitansen betecknas i formler med
-bokstaven C
-•
-•
-•
-•
+bokstaven C.
 
 En kondensators kapacitans bestäms av
-ytan på kondensatorns plattor,
-avståndet mellan dessa ytor,
-den absolutadielektricitetskonstanten c0
-den relativa dielektricitetskonstanten
-som är den faktor kapacitansen ökar med
-när dielektrikum är annat än vakuum.
+\begin{itemize}
+  \item ytan på kondensatorns plattor,
+  \item avståndet mellan dessa ytor,
+  \item den absolutadielektricitetskonstanten c0
+  \item den relativa dielektricitetskonstanten som är den faktor kapacitansen ökar med när dielektrikum är annat än vakuum.
+\end{itemize}
 
-c,;
+\subsection{Kondensatorn i likströmskretsen}
 
-Kapacitans, dimension och dielektrikum
 
-Kapacitansen är proportionell med den yta,
-som kondensatorplattorna skuggar varandra, och är omvänt proportionell med plattavståndet.
+\subsection{Kapacitans, dimension och dielektrikum}
 
-1•
+Kapacitansen är proportionell med den yta, som kondensatorplattorna skuggar varandra,
+och är omvänt proportionell med plattavståndet.
 
-A
+Följande formler gäller för kapacitansen i en enkel kondensator med två plattor. När
+en kondensator är uppbyggd av n stycken plattor, ökar kapacitansen med faktorn (n-1 ).
 
-C=cod
+Med vakuum som dielektrikum gäller
+
+1. \(C = \varepsilon _0 \frac{A}{d}\)
 
 Med ett godtyckligt dielektrikum gäller
 
-2.
-C [Farad]
+2. \(C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\)
 
-d [mm]
+\(C\ [Farad]\) \(d\ [mm]\) \(E\ [\frac{F}{m}]\)
 
-E [F/m]
+\subsection{Enheten Farad}
+Kapacitans är elektricitetsmängden per volt
+där måttenheten är Farad [F]. Eftersom denna
+enhet är mycket stor, används inom elektroniken oftast bråkdelar av den.
 
-Enheten Farad
+\begin{tabular}{ll}
+1 mikrofarad & (1 !-!F) = 1o-6 F \\
+1 nanofarad & (1 n F) = 1 9 F \\
+1 pikofarad & (1 p F) = 1o- 12 F \\
+\end{tabular}
 
-o-
-
-En kondensator i en likströmskrets har alltid
-samma polaritet. Därvid förhåller sig kondensatorns polspänning till dess laddningsmängd.
-En ström flyter till kondensatorn och laddar upp den, när den anslutna spänningskällan har högre spänning än kondensatorn. Ju
-högre spänningen är, desto större är laddningen. Ju kortare uppladdningstiden är, desto högre effekt utvecklas under den tiden.
-När en uppladdad kondensator ansluts
+En kondensator i en likströmskrets har alltid samma polaritet. Därvid förhåller sig
+kondensatorns polspänning till dess laddningsmängd. En ström flyter till kondensatorn
+och laddar upp den, när den anslutna spänningskällan har högre spänning än kondensatorn.
+Ju högre spänningen är, desto större är laddningen. Ju kortare uppladdningstiden är,
+desto högre effekt utvecklas under den tiden. När en uppladdad kondensator ansluts
 till en krets med lägre spänning, så urladdas
 kondensatorn till kretsen. Ju kortare urladdningstiden är, desto högre effekt utvecklas
 under den tiden.
