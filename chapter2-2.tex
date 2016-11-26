@@ -32,9 +32,6 @@ En kondensators kapacitans bestäms av
   \item den relativa dielektricitetskonstanten som är den faktor kapacitansen ökar med när dielektrikum är annat än vakuum.
 \end{itemize}
 
-\subsection{Kondensatorn i likströmskretsen}
-
-
 \subsection{Kapacitans, dimension och dielektrikum}
 
 Kapacitansen är proportionell med den yta, som kondensatorplattorna skuggar varandra,
@@ -59,218 +56,191 @@ där måttenheten är Farad [F]. Eftersom denna
 enhet är mycket stor, används inom elektroniken oftast bråkdelar av den.
 
 \begin{tabular}{ll}
-1 mikrofarad & (1 !-!F) = 1o-6 F \\
-1 nanofarad & (1 n F) = 1 9 F \\
-1 pikofarad & (1 p F) = 1o- 12 F \\
+1 mikrofarad & \((1 µF) = 10^-6 F\) \\
+1 nanofarad & \((1 nF) = 10^-9 F\) \\
+1 pikofarad & \((1 pF) = 10^-12 F\) \\
 \end{tabular}
 
-En kondensator i en likströmskrets har alltid samma polaritet. Därvid förhåller sig
-kondensatorns polspänning till dess laddningsmängd. En ström flyter till kondensatorn
-och laddar upp den, när den anslutna spänningskällan har högre spänning än kondensatorn.
-Ju högre spänningen är, desto större är laddningen. Ju kortare uppladdningstiden är,
-desto högre effekt utvecklas under den tiden. När en uppladdad kondensator ansluts
-till en krets med lägre spänning, så urladdas
-kondensatorn till kretsen. Ju kortare urladdningstiden är, desto högre effekt utvecklas
-under den tiden.
+\subsection{Kondensatorn i likströmskretsen}
+
+En kondensator i en likströmskrets har alltid samma polaritet. Därvid förhåller
+sig kondensatorns polspänning till dess laddningsmängd.
+
+En ström flyter till kondensatorn och laddar upp den, när den anslutna
+spänningskällan har högre spänning än kondensatorn. Ju högre spänningen är,
+desto större är laddningen. Ju kortare uppladdningstiden är, desto högre effekt
+utvecklas under den tiden.
+
+När en uppladdad kondensator ansluts till en krets med lägre spänning, så
+urladdas kondensatorn till kretsen. Ju kortare urladdningstiden är, desto högre
+effekt utvecklas under den tiden.
+
 Laddningen i en kondensator kan innebära hög polspänning. Om kondensatorns
-kapacitet är stor, kan laddningsmängden bli
-betydande. Varning för elektriska stötar och
-brännskador!
+kapacitet är stor, kan laddningsmängden bli betydande. Varning för elektriska
+stötar och brännskador!
 
-112-5
+\subsection{Kondensatorn i växelströmskretsen}
 
-K
-Kondensatorn i växelströmskretsen
-l en likströmskrets förhåller sig kondensatorns polspänning till laddningsmängden. l
-en växelströmskrets växlar emelltid spänningen och polariteten ständigt och därmed
-kondensatorns laddning och polaritet.
+I en likströmskrets förhåller sig kondensatorns polspänning till
+laddningsmängden. I en växelströmskrets växlar emelltid spänningen och
+polariteten ständigt och därmed kondensatorns laddning och polaritet.
+
 Not: Vissa kondensatortyper kan inte användas i rena växelströmskretsar.
-Försök
-En glödlampa och en kondensator kopplas i
-serie med varandra och ansluts till en
+
+\emph{Försök}
+En glödlampa och en kondensator kopplas i serie med varandra och ansluts till en
 växelströmskrets. Med lämpligt valda värden på komponenterna kommer lampan att
 lysa upp.
-Detta visar att en kondensator inte hindrar elektronflödet i en växelström krets. Man
-brukar säga att kondensatorn "släpper igenom växelström", men i stället är det så att
-laddningar pendlar mellan kondensatorns
-plattor genom den strömkrets som kondensatorn är ansluten till.
-Använd för säkerhets skulllåg spänning,
-t.ex. den från en ringledningstransformator!
 
-Kapacitiv reaktans
-Strömstyrkan i en växelströmskrets beror
-bl.a. på hur stor kondensatorns kapacitans
-är, d.v.s. på dess kapacitiva reaklans Xc.
-Ordet reaktans kommer från latinets re
-(åter) agere (verka).
+Detta visar att en kondensator inte hindrar elektronflödet i en växelström
+krets. Man brukar säga att kondensatorn "släpper igenom växelström", men i
+stället är det så att laddningar pendlar mellan kondensatorns plattor genom den
+strömkrets som kondensatorn är ansluten till.
+
+Använd för säkerhets skulllåg spänning, t.ex. den från en
+ringledningstransformator!
+
+\subsection{Kapacitiv reaktans}
+Strömstyrkan i en växelströmskrets beror bl.a. på hur stor kondensatorns
+kapacitans är, d.v.s. på dess kapacitiva reaktans \(X_c\).
+
+Ordet reaktans kommer från latinets \emph{re} (åter) \emph{agere} (verka).
+
 Större kapacitans innebär större förmåga att ta upp elektrisk laddning och ger
-därmed en lägre reaktans. Resultatet blir ett
-kraftigare elektronflöde. En mindre kapacitans innebär ett svagare elektronflöde.
+därmed en lägre reaktans. Resultatet blir ett kraftigare elektronflöde.
+En mindre kapacitans innebär ett svagare elektronflöde.
 
-1
-2n:fC
+\(X_c = \frac{1}{2πfC}\) eller \(X_c = \frac{1}{\omega C}\)
 
-Xc=-- eller
+\begin{tabular}{llll}
+  &  \([\Omega]\) & \([Hz]\) & \([F]\)    \\
+  eller & \([M\Omega]\) & \([MHz]\) & \([µF]\)
+\end{tabular}
 
-1
-mC
-
-Xc=-
-
-[O]
-[Hz]
-[F]
-eller
-[MO]
-[MHz]
-[uF]
 (samma sortenheter i alla led)
-Exempel:
 
-f = 50 Hz
-1
-1
-xc -- 2 n:fC - 2 n 50 ·1 O·1
+\emph{Exempel:}
 
-1.
+1. \(C = 10 µF\) \(f = 50 Hz\) \(X_c = ?\)
 
-2.
+\(X_c = \frac{1}{2πfC} = \frac{1}{2π 50 \cdot 10 \cdot 10^-6} = 318.3 Ω\)
 
-112-6
+2. \(C = 10 µF\) \(f = 50 Hz\) \(X_c = ?\)
 
-C = 1O J.tF
+\(X_c = \frac{1}{2πfC} = \frac{1}{2π 5 \cdot 10^3 \cdot 10 \cdot 10^-6}
+= 3.183 Ω\)
 
-c = 1oJ.tF
-
-Xc = ?
-=318.3 Q
-
-XC = ?
-
-En kondensators reaktans är således
-omvänt proportionell med dess kapacitans
+En kondensators reaktans är således omvänt proportionell med dess kapacitans
 och frekvensen i kretsen.
+
 Jämför detta med en induktor där reaktansen är proportionell med frekvensen.
-När en ström flyter genom en res istor, så
-uppstår det värmeförluster. När ström flyter
-genom en ideal reaktans- en induktor eller
-en kondensator - uppstår däremot inga
-värmeförluster.
 
-Fasförskjutning i en kondensator
+När en ström flyter genom en resistor, så uppstår det värmeförluster. När ström
+flytergenom en ideal reaktans - en induktor eller en kondensator - uppstår
+däremot inga värmeförluster.
+
+\subsection{Fasförskjutning i en kondensator}
+
 Med fasförskjutning menas här den tidsmässiga förskjutningen mellan ström- och
-spänningsförloppen. l en kondensator når
-nämligen strömmen inte sitt toppvärde samtidigt som spänningen. l en ideal kondensator är spänningen fasförskjuten 90° efter
-strömmen.
-Förlustvinkel
-l praktiken är fasförskjutningen i en kondensator något mindre än 90° på grund av att
-laddning läcker igenom dielektrikum. Man
-talar om en förlustvinkeL Läckningen kan
-ses som en resister som är kopplad parallellt
-över kondensatorn.
-läckström m.m.
-Med det extremt tunna. dielektrikum har
-elektolytkondensatorn en mycket högre kapacitet än andra former, men har också
-några nackdelar, bl.a. att
-• den normalt endast kan användas med
-likspänning,
-• den har hög förlustfaktor p.g.a.läckström,
-• det utvecklas värme av läckströmmen,
-vilket skapar övertryck p.g.a. gasbildning.
-Utförandeformer
-Kondensatorer kan utföras med fast kapacitansvärde. Dielektrikum består då av ett
-skikt av glimmer, impregnerat papper o.s.v.
-Kondensatorer kan även utföras med variabelt kapacitansvärde. Dielektrikum består
-då oftast av luft, men kan även vara ett fast
-material.
+spänningsförloppen. I en kondensator når nämligen strömmen inte sitt toppvärde
+samtidigt som spänningen. l en ideal kondensator är spänningen fasförskjuten 90°
+efter strömmen.
 
-Fasta kondensatorer
-Kondensatorer har oftast namn efter utförande och materialet i dielektrikum
-Pappers- och plastkondensatorer
-'Plattorna" i dessa typer består av aluminiumremsor med anslutningstrådaL Däremellan finns en pappers- respektive plastremsa
-som dielektrikum. För att spara plats, så
-rullas det hela ihop och skyddas med en
-plastingjutning.
-Keramiska kondensatorer
-l keramiska kondensatorer består dielektrikum av något keramiskt material. På ömse
-sidor om detta sätts en metallbeläggning
-med anslutningstrådaL
-Glimmerkondensatorer
-l denna kondensatortyp består dielektrikum
-av tunna glimmerskivor
-Elektrolytkondensatorer
-Elektrolytkondensatorer har elektroder av
-aluminium eller tantal, därpluspolen (anoden)
-ges ett mycket tunt oxidskikt Detta är inte
-ledande och fungerarsom dielektrikum. Mellan oxidskiktet och minuspolen (katoden)
-läggs en elektrolyt med låg resistivitet.
-Elekrolytkondensatorer har särskilt högt
-kapacitansvärde. Till skillnad från andra kondensatortyper, så är elektolytkondensatorer
-polariserade. Utom i ett specialfall innebär
-det, att polariteten på den pålagda spänningen inte får kastas om. Flera olika slags
-elektrolytkondensatorer finns, såsom våta
+\subsection{Förlustvinkel}
+
+I praktiken är fasförskjutningen i en kondensator något mindre än 90° på grund
+av att laddning läcker igenom dielektrikum. Man talar om en förlustvinkeL
+Läckningen kan ses som en resister som är kopplad parallellt över kondensatorn.
+
+
+\subsection{Läckström m.m.}
+
+Med det extremt tunna. dielektrikum har elektolytkondensatorn en mycket högre
+kapacitet än andra former, men har också några nackdelar, bl.a. att
+\begin{itemize}
+  \item den normalt endast kan användas med likspänning,
+  \item den har hög förlustfaktor p.g.a.läckström,
+  \item det utvecklas värme av läckströmmen, vilket skapar övertryck p.g.a.
+    gasbildning.
+\end{itemize}
+
+
+\subsection{Utförandeformer}
+
+Kondensatorer kan utföras med fast kapacitansvärde. Dielektrikum består då av
+ett skikt av glimmer, impregnerat papper o.s.v.
+
+Kondensatorer kan även utföras med variabelt kapacitansvärde. Dielektrikum
+består då oftast av luft, men kan även vara ett fast material.
+
+\subsection{Fasta kondensatorer}
+
+Kondensatorer har oftast namn efter utförande och materialet i dielektrikum.
+
+\emph{Pappers- och plastkondensatorer}
+
+``Plattorna'' i dessa typer består av aluminiumremsor med anslutningstrådar.
+Däremellan finns en pappers- respektive plastremsa som dielektrikum. För att
+spara plats, så rullas det hela ihop och skyddas med en plastingjutning.
+
+\emph{Keramiska kondensatorer}
+
+I keramiska kondensatorer består dielektrikum av något keramiskt material. På
+ömse sidor om detta sätts en metallbeläggning med anslutningstrådar.
+
+\emph{Glimmerkondensatorer}
+
+I denna kondensatortyp består dielektrikum av tunna glimmerskivor.
+
+\emph{Elektrolytkondensatorer}
+
+Elektrolytkondensatorer har elektroder av aluminium eller tantal, där pluspolen
+(anoden) ges ett mycket tunt oxidskikt. Detta är inte ledande och fungerar som
+dielektrikum. Mellan oxidskiktet och minuspolen (katoden) läggs en elektrolyt
+med låg resistivitet.
+
+Elekrolytkondensatorer har särskilt högt kapacitansvärde. Till skillnad från
+andra kondensatortyper, så är elektolytkondensatorer polariserade. Utom i ett
+specialfall innebär det, att polariteten på den pålagda spänningen inte får
+kastas om. Flera olika slags elektrolytkondensatorer finns, såsom våta
 och torra aluminiumelektrolytkondensatorer, tantalelektrolytkondensatorer m. fl.
 
-Variabla kondensatorer
-Variabla kondensatorer har oftast sitt namn
-efter utförandeformen, såsom vridkondensator och trimbar kondensator (trimmer).
+\subsection{Variabla kondensatorer}
+Variabla kondensatorer har oftast sitt namn efter utförandeformen, såsom
+vridkondensator och trimbar kondensator (trimmer).
 
-Temperaturkoefficient
-På liknande sätt som med resistorer, så
-påverkas kapaciteten i kondensatorer av
-temperaturen. Att sambandet mellan kapacitet och temperatur är viktigt, förstås av att
-temperaturkoefficienten i den frekvensbestämmande kapacitansen i en oscillatorkrets
-är en av faktorerna för stabil frekvens.
-Temperaturkoefficienten a anger kapacitetsändringen pergrad temperaturändring.
-Kapacitetsändringen blir då
+\subsection{Temperaturkoefficient}
 
-AG= \(\pm\)ac ·Ck· AiJ
-varvid Ck är kapacitetsvärdet vid den lägre
-temperaturen (oftast 20°C) och ~t) är
-temperaturändringen i grader Kelvin.
-Kelvin [K] är den normerade måttenheten
-för absolut temperatur.
-En ändring med 1 K motsvarar en ändring med 1
-Är ac positivt betyder det att kapaciteten
-ökar med ökande temperatur.
-Är ac negativt betyder det att kapaciteten
-minskar med ökande temperatur.
-En kondensator som är märkt med N 100
-betyder a c = -1 00 ·i 6 l K
+På liknande sätt som med resistorer, så påverkas kapaciteten i kondensatorer av
+temperaturen. Att sambandet mellan kapacitet och temperatur är viktigt, förstås
+av atttemperaturkoefficienten i den frekvensbestämmande kapacitansen i en
+oscillatorkrets är en av faktorerna för stabil frekvens.
 
-oc.
+Temperaturkoefficienten a anger kapacitetsändringen per grad temperaturändring.
+Kapacitetsändringen blir då \\
+\(∆C = \pm \alpha _c \cdot C_k \cdot ∆\vartheta\) \\
+varvid \(C_k\) är kapacitetsvärdet vid den lägre temperaturen (oftast 20°C) och
+\(∆\vartheta\) är temperaturändringen i grader Kelvin.
+Kelvin [K] är den normerade måttenheten för absolut temperatur.
+En ändring med 1 K motsvarar en ändring med 1°C.
 
-o-
+Är \(\alpha _c\) positivt betyder det att kapaciteten ökar med ökande
+temperatur.
 
-standardiserade komponentvärden
-Kondensatorertillverkasvanligen med standardiserade värden ur någon talserie.
-Märkning av kondensatorer
+Är \(\alpha _c\) negativt betyder det att kapaciteten minskar med ökande
+temperatur.
+
+En kondensator som är märkt med N 100 betyder
+\(\alpha _c = -100 \cdot 10^-6 / K\)
+
+\subsection{Standardiserade komponentvärden}
+
+Kondensatorer tillverkas vanligen med standardiserade värden ur någon talserie.
+
+\subsection{Märkning av kondensatorer}
+
 Kondensatorer märkas med huvuddata enligt något system av siffror och bokstäver
-eller med en färgkod. Flera olika system
-tillämpas.
-(Se f.ö. leverantörskatalogerför information
-om komponentdata, märkning o.s.v.
+eller med en färgkod. Flera olika system tillämpas.
+(Se f.ö. leverantörskataloger för information om komponentdata, märkning o.s.v.)
 
-1
-2
-3
-4
-
-j
-
-T
-1
-
-2
-
-3
-
-4
-
-Allmän symbol
-Trimbar kondensator (trimmer)
-Vridkondensator
-Polariserad kondensator,
-elektrolytkondensator
-
-Bild fl 2-2 Schemasymboler för kondensatorer
+Bild II 2-2 Schemasymboler för kondensatorer
