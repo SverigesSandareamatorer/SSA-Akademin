@@ -1,0 +1,268 @@
+\section{Transistorn}
+\textbf{HAREC a.\ref{HAREC.a.2.6}\label{myHAREC.a.2.6}}
+
+Allmänt
+
+En transistor består av skikt av halvledarelement som sammanfogats. Vanligt är två Nskikt och ett mellanliggande P-skikt (NPNtransistor) eller två P-skikt och ett mellanliggande N-skikt (PNP-transistor). Skikten är
+försedda med anslutningar.
+
+B~
+
+...-----Kollektor
+(C)
+r
+
+n
+p
+
+~
+
++ + ~-------Bas (B)
+
++ +
+~
+
+n
+G
+
+l... Emitter (E)
+
+E
+
+NPN
+
+PNP
+
+FET
+
+Bild II 2-16 Schemasymboler
+
+n
+
+c
+
+n
+
+C
+
+Vanliga transistortyper
+N PN-transistorer (bipolära)
+PNP-transistorer (bipolära)
+FET-transistorer (fälteffekt-)
+
+NPN-transistorer
+
+Halvledarskikten kallas
+E emitter
+B bas
+C kollektor
+
+E BC
+
+Spärrzonerna
+Bild II 2-17 överst
+Mellan skikten B och E respektive mellan B
+och C bildas zoner, vars ledningsförmåga
+kan styras elektriskt över anslutningarna.
+Bild II 2-17 mitten
+Spänningskällan U8 E
+Mellan bas och e mitter finns en diodsträcka.
+När en positiv spänning läggs på basen och
+en negativ spänning på emittern, så polariseras diodsträckans spärrzon i passriktningen. Spärrzonen upplöses då och det flyter en
+s.k. basström 16 •
+
+p~B
++ +
+n
+
++
+
+E
+
+Bild II 2-17 Skikten i en bipolär transistor
+
+112-23
+
+K MP NENTER
+Bild II 2-17 nederst
+Spänningskällan UeE
+
+När en positiv spänning läggs på kollektorn
+och en negativ spänning läggs på emittern,
+så polariseras diodsträckan i spärriktningen.
+Spärrzonen förstärks då och det flyter ingen
+ström.
+Bild 112-18
+Inverkan av både U8 Eoch UeE
+
+Två spänningskällor U8 Eoch UcE ansluts till
+en emitterkopplad NPN-transistor.
+Ur den starkt dopade emitterzonen strömmar elektronerna in i den svagt dopade
+baszonen (spänning: U8 E). De flesta elektronerna blir emellertid inte kvar i basen. De
+stöter igenom det tunna basskiktet och når
+fram till kollektorskiktet med spänningen U E.
+Det flyter en kollektorström.
+c
+För strömmer l (emitterström), 18 (basström) och le (kollektorström) gäller:
+lE= Is+ le där 18 <<le
+
+(<<mycket mindre än)
+
+Kollektorströmmen le kan styras med basspänningen U8 E.
+En liten ändring i basspänningen ger stor
+förstärkande verkan i kollektorströmmen.
+
+n
+
+c
+
+p + + B
++ +
+
+n
+
+h
+FE
+
+hFE
+IIie
+
+!ll 8
+
+=IIie
+/:lf
+B
+
+strömförstärkningsfaktorn
+ändringen i kollektorströmmen
+ändringen i basströmmen
+
+PNP-transistorer
+Ersätter man de två N-skikten i en NPNtransistor med P-skikt och P-skiktet med ett
+N-skikt så erhåller man en PNP-transistor.
+Uppbyggnad, koppling och användning
+av en PNP-transistor motsvarar i övrigt den
+för en NPN-transistor. Spänningskällorna
+måste emellertid ha motsatt polaritet.
+
+R
+
+Is
+
+R
+
+UcE
+
+E
+..,..
+lE
+
+la<< lE
+
+lE
+
+=Is+ le
+
+Bild II 2-18 Emitterkopplad transistor
+
+112-24
+
+Förstärkningsfaktor
+Om strömmen i ingångskretsen för en transistor ändras, så kan strömmen i utgångskretsen ändras mer. Det blir då en förstärkning.
+Av sambandet le= f(/8 ) framgår strömförstärkningsfaktorn ~ eller hFE' som är kvoten av ändringen i utgångsströmmen och i
+ingångsströmmen i transistorns aktiva (linjära) område.
+Bild II 2-19
+För emitterkoppling gäller:
+
+UsE
+
+UcE
+
+l c (mA)
+
+100
+
+5
+
+10
+
+UcE ::0 V
+
+UcE = 5 V
+
+UsE {mV)
+
+Bild II 2-19 Karaktäristika för transistor BC 107
+
+112-25
+
+K
+Fälteffekttransistorer
+
+Allmänt
+Fälteffekttransistorer (förkortat FET) har
+mycket hög ingångsimpedans och styrströmmen blir därför mycket svag. Man säger
+därför att en FET är spänningsstyrd.
+Även NPN- och PNP-transistorer- kallade bipolära transistorer - styrs med spänning, men dessa typer har en relativt lågt
+ingångsimpedans och därför högre styrströ m.
+Man säger därför att de är strömstyrda.
+
+D+
+
+sBild II 2-20 Schemasymbol för en FET
+
+Bild 112-21 Skikten i en N-kanal FET
+
+Fälteffekttransistorn har tre anslutningar
+(elektroder)
+S source (katod)
+D drain (anod)
+G gate (grind, styre)
+Fälteffekttransistorns uppbyggnad
+Bild II 2-21
+Bilden visar ett N-ledande skikt (även kallat
+N-kanal) med elektroderna S och D anslutna
+till respektive ändar av skiktet. N-kanalen
+passerar mellan två P-ledande skikt förbundna med styrelektraden G.
+När en spärrspänning läggs mellan G
+och S, så breder spärrskikten ut sig och Nkanalen blir trängre. Läggs en negativ spänning på S och en positiv spänning på D, så
+kommer det att flyta en ström i N-kanalen.
+Strömmens styrka kan påverkas med spänningen på G.
+En liten spänningsändring llU medför
+stor ändring av strömmen lll i tf-kanalen.
+Detta innebär förstärkning. os
+
+Bild II 2-22
+l en MOS-FET är G-elektroden isolerad med
+ett kiseloxidskikt Funktionssättet är samma
+som för en FET. Drain-strömmen kan ökas
+eller minskas med hjälp av en positiv respektive negativ spänning på G.
+
+112-26
+
+Bild 112-22 Skikten i en N-kanal MOS-FET
+Resistansen mellan gate och source
+För att erhålla en förstärkning med en FETtransistor, sätter man in en resister R0 i
+drain-strömkretsen. Över resistorn uppstår
+då spänningsändringar i proportion med
+strömändringarna.
+För att fastställa vilaströmmen och därmed arbetspunkten för samma transistor
+sätter man in en resister R i source-strömkretsen. storleken på soufce-resistorn ger
+sig av önskad gate-förspänning -U 88 .
+ -UGs
+R s-
+
+lo
+
+K MP NENTER
+Sambandet drain-ström och spänning
+Bild 112-23
+För att beskriva en FET använder man sig
+av karaktäristiska kurvor. Vi har redan presenterat bipolära transistorers in- och utgångsegenskaper i kuNform. Eftersom ingångsströmmen (gateströmmen) i en FET
+är praktiskt taget noll, så är en sådan kuNa
+utan praktisk mening. l stället framställer
+man grafiskt sammanhanget mellan styrspänningen UGs och utgångsströmmen (drainströmmen 10 ). Eftersom det finns N-kanal
+FET och P-kanal FET så skiljer polariteten
+på UGs för dessa båda typer.
+
+Bild II 2-23 Karaktäristikför N-kanal FET
