@@ -2,6 +2,7 @@ DOCKER_IMAGE_NAME=	ssa-koncept
 
 all:	koncept.pdf
 all:	matterep.pdf
+all:	koncept-alpha.pdf
 
 .PHONY:	*.pdf
 
@@ -12,6 +13,10 @@ koncept.pdf:
 matterep.pdf:
 	-pdflatex matterep.tex
 	pdflatex matterep.tex
+
+koncept-alpha.pdf:
+	-pdflatex koncept-alpha.tex
+	pdflatex koncept-alpha.tex
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
