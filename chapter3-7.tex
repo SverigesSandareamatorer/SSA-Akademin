@@ -1,0 +1,564 @@
+\subsection{Kristalloscillatorer}
+Kvartskristaller i oscillatorkopplingar
+
+En Le-oscillators frekvensstabilitet begränsas av de ingående komponenternas egenskaper. När mycket bättre stabiltet än så
+krävs, speciellt inom stora temperaturområden, så är kvartskristallen en svängningskrets med bättre data. Kvartskristallens höga
+Q-värde ger också en renare signal.
+l en kristalloscillator (CO, Grystal Oscillator) är en kvartskristall det frekvensbestämmande elementet i stället för en LC-krets. l
+övrigt kan samma kopplingsprinciper som
+för en LC-VFO användas.
+Kristallen kan utföras så att den svänger
+antingen som en serie- eller parallellresonanskrets. Märk, att en kristall svänger på
+något olika frekvens beroende på om den fås
+att fungera som serie- eller parallellkrets.
+Den högre frekvensen är den som vanligen
+används.
+
+Bild II 3-75
+l parallellresonansalternativet kopplas
+kristallen parallellt över oscillatorns återkopplingsled. Den minsta dämpningen av
+den återkopplade signalen fås när signalens
+frekvens är lika kristallens resonansfrekvens.
+Kristallens reaktans är då som högst.
+Parallellt över kristallens inre induktans
+ligger dess inre seriekopplade kapacitanser
+C och Cw Yttre kapacitanser (en trimbar och
+två fasta kondensatorer i serie) är kopplade
+parallellt över den inre anslutningskapacitansen Cw
+Om den trimbara kapacitansen ändras,
+så påverkas kristallens resonansfrekvens.
+Man säger då att man "drar" kristallen inom
+ett litet frekvensområde. Kristallens och oscillatorns egenskaper avgör hur stort området kan vara. Om kristaller dras för mycket,
+så kan resonansfrekvensen bli ostabil.
+Den relativa frekvensändringen uppgår
+till högst 1o-4 = 0.01 °/o. Formel:
+
+t, f
+
+re a
+
+IV
+
+.. d .
+absolut ändring
+re vensan nng=
+~ k
+resonans1re vens
+
+~ k
+
+Övertonskristaller
+Bild II 3-76
+l serieresonansalternativet kopplas kristallen in i serie med oscillatorns återkopp!ingsled. Den minsta dämpningen av den
+återkopplade utgångssignalen fås, när signalens frekvens är lika som kristallens resonanfrekvens. Kristallens reaktans är då som
+lägst. S.k. övertonskristaller används för oscillatorfrekvenser över ca 20 MHz.
+
+Bild II 3-75 Golpittsoscillator med kristall
+i parallellresonansfallet
+
+Bild II 3-76 Golpittsoscillator med kristall
+i serieresonansfallet
+113-55
+
+KRETSAR
+
+PT
+
+Övertonskristallernas dimensioner är lika
+grundtonskristallernas, men snittas ut annorlunda och slipas för att svänga på önskad
+udda överton. En övertonskristall har övertonens frekvens instäm pi ad i höljet och kristallen förutsätts arbeta i oscillatorkopplingar
+som seriekrets. Genom att låta kristaller
+svänga på sin överton undviker man en svår
+tillverkningsprocedur, nämligen att slipa
+mycket tunna kristallskivor.
+En övertonsoscillator måste alltid innehålla en svängningskrets som är avstämd till
+den överton som anges på kristallen.
+Modellförsök: En instrumentsträng sätts i
+svängning på sin grundton genom en knäppning mitt på strängen. En knäppning på en
+punkt bort från mitten får strängen att svänga
+på en överton i stället.
+Superheterodyn-VFO
+Bild II 3-77
+En enkel LC-VFO är inte tillräckligt frekvensstabil i ett högt frekvensläge, t.ex. 144-146
+MHz. Man kan då använda en speciell koppling, som är en kombination av LC-VFO och
+CO, kallad super-VFO.
+l en super-VFO blandas en låg, variabel
+frekvens från en VFO med en hög frekvens
+från en CO. Ordet super kommer från
+superheterodyne = överlagring, blandning.
+En VFO arbetar stabilare på låg frekvens
+medan en CO fortfarande arbetar stabilt
+även på högre frekvenser, dock inte så högt
+som vi behöver här. l vårt exempel arbetar
+därför VFO i området 8-1 O MHz och CO på
+17 MHz. VFO-signalen blandas med en fast
+signalfrekvens, som är GO-signalen 17 MHz
+multiplicerat med 8, d.v.s. 136 MHz.
+
+VFO 8 -
+
+10 MHz
+
+co 17 MHz
+Bild II 3-77 Superheterodyn- VFO
+
+113-56
+
+Ett bandpassfilter filtrerar fram den önskade blandningsprodukten, som ligger i
+frekvensområdet 144-146 MHz. Resultatet
+blir en hög frekvens, som är både variabel
+och stabil.
+Fördelar:
+Frekvensstabiliteten hos en super-VFO
+är mycket bättre än hos en enkel VFO, som
+arbetardirekt i VHF-området. En super-VFO
+är dessutom mycket brusfattigare än en
+PLL-VFO, vilken beskrivs här nedan.
+Nackdelar:
+Vid frekvensblandning uppstår oönskade blandningsprodukter, vilka visserligen
+dämpas av bandpassfilter, men som det är
+omöjligt att undertryckta helt. Bl. a. alstras en
+svag spegelfrekvens, som vandrar från 128
+till 126 MHz, samtidigt som den önskade
+blandningsprodukten vandrar från i 44 till
+i 46 MHz. Risken för att spegelfrekvensen
+förstärks och sänds ut måste elimineras,
+vilket kan göras med effektiva bandpassfilter. Se vidare i avsnitt 3.8 om frekvensblandni ng.
+
+3. 7
+
+Oscillatorer med faslåsning - Pll
+
+En kristalloscillator (CO) arbetar med god
+frekvensstabilitet Frekvensen som är fast
+bestäms av styrkristallen.
+En LC-oscillator arbetar däremot inom
+ett frekvensområde (VFO), som bestäms av
+en LC-krets. Dennas frekvens är emellertid
+mindre stabil än den med styrkristalL
+l en PLL (Phase Locked Loop) kan god
+frekvenstabilitet och stort frekvensområde
+förenas. En PLL är en sluten krets för elektrisk styrning av en oscillator, så att dess
+frekvens är både stabil och variabel.
+
+Spänningsstyrd oscillator (VCO)
+Bild 113-78
+En VFO, vars frekvens kan styras med en
+likspänning, kallas VCO (Voltage Controlied
+Oscillator). l svängningskretsen i en VCO
+fyller en kapacitansdiod (varicap, variable
+capacitor) samma uppgift som den mekaniskt variabla kondensatorn i en VFO.
+Bild 113-79
+När en motriktad spänning läggs på dioden, så bildas ett spärrskikt i dioden, så att
+zonerna med fria laddningsbärare isoleras
+från varandra likt kondensatorplattor. Spärrskiktets tjocklek (c:a 1/1000 mm) beror av
+spänningen över dioden. Vid hög spänning
+är spärrskiktet tjockt, vilket motsvarar "stort
+plattavstånd" och liten kapacitans. Vid låg
+spänning är skiktet tunt, vilket motsvarar
+"litet plattavstånd" och stor kapacitans.
+Med en kapacitansdiod i svängningskretsen, i stället för en mekaniskt variabel kondensator, så behövs ytterligare två komponenter. D rossel n Dr hindrar högfrekvenssignalen att överlagras på styrkretsens likspänning. Då skulle bl.a. svängningskretsens godhetstal försämras (förlorad HF-energi innebär dämpning). Omvänt hindrar kondensatorn C att dioden och spärrspänningen kortsluts genom induktorn. Oscillatorfrekvensen ställs in med den variabla likspänningen U. Av en VFO har det blivit en VCO.
+
+Bild II 3-78 VFO och VCO jämförs
+Oscillator med PLL-styrning
+Bild II 3-80
+Människan jämför och reglerar förlopp utifrån givna fakta. Det kan liknas med PLLkretsens sätt att jämföra det inbördes fasläget mellan signalen från en VCO (är-värdet)
+och signalen från en CO (bör-värdet).
+
+......---:=::::;:::=! M .
+
+. . Jiijo MHZJ/
+Jamfora .
+,
+Låg spänning
+
+stor kapacitans
+
+Hög spänning
+liten kapacitans
+
+Varicap·
+diod
+
+Bild 113-79 Kapacitansdiod- Varicap
+
+ata
+
+:.~,:..c ~~go' O
+Bild II 3-BOa Analogi
+
+Människa-PLL
+
+113-57
+
+KRETSAR
+Som resultat av jämförelsen justeras styrspänningen så att är- och bör-frekvenserna
+hålls lika. En sådan reglerkrets består av
+digitala komponenter.
+Fasjämföraren levererar en cykliskt justerad styrspänning till kapacitansdioden i
+VCO. Eftersom denna spänning ändras
+språngvis, så avrundas förloppet så att frekvensändringarna blir mjuka. Avrundningen
+sker med ett RC-filter där kondensatorn antar ett medelvärde av den pulserande utgångsspänningen frånjämföraren. Om VGOfrekvensen är för låg, så levererar jämföraren en positiv spänning. styrspänningen på
+kapacitansdioden stiger då med en hastighet som bestäms av filtrets tidskonstant
+
+Kapacitansen i kapacitansdioden minskar med ökande spänning, eftersom spärrskiktet blir tjockare och frekvensen på VCO
+stiger.
+När signalen från VCO åter är lik referenssignalen från CO, till fasläge och frekvens, så ökar utgångsresistansen i fasjämföraren. Lågpassfiltrets kondensator behåller
+då sin laddning och styrspänningen till VCO
+ändras inte t.v. Skulle frekvensen på VCO
+vara för hög så blir jämförarens utgång
+lågohmig och filtrets kondensator urladdas
+med den hastighet som bestäms av tidskonstante n. Den sjunkande styrspänningen
+medför att kapacitansdiodens spärrskikt blir
+tunnare, kapacitansen tilltar och VCO-frekvensen sjunker tills en
+ny fas- och frekvenslikhet uppnåtts.
+
+~--------~--~----~
+
+rv Utfrekvens
+
+Lågpassfi !ter
+
+fvco < fco
+
+Referensfrekvens
+(bör-värde)
+
+fvco > fco
+
+vco~~
+
+co~~
+
+VCO-si gnat och GO-signal, formad som kantvågor att jämföras i fasläge
+Ua  
+
+----.~
+
+u
+VCO-frekvensen för låg
+
+VCO-frekvensen för hög
+
+Bild 113-BOb Oscillator med PLL-styrning
+
+113-58
+
+PLL-oscillator i kombination med frekvensblandning
+Bild II 3-81
+Signalen f 1 från en VCO
+alstrar en sändningsfrekvens i bandet 144146 MHz. Denna blandas med signalen f 2
+(136 MHz), som är en
+multiplicerad GO-frekvens. Blandningsprodukten f 1 - f2 filtreras
+fram, d.v.s. en signal i
+området 8-1 OMHz som
+påförs en fasjämförare.
+Utsignalen från en VFO,
+som är variabel inom
+samma frekvensområde 8-1 O MHz, påförs
+också fasjämföraren.
+Utsignalen från jämföraren är en likspänning, som beror av frekvensskillnaden mellan
+blandningsprodukt och
+VFO-signal. Jämförarens utsignal ändras
+uppåt eller nedåt, beroende på frekvensfelets
+riktning.
+
+KRETSAR
+V GO-frekvensen bestäms av en likspänningsnivå, som styrs av jämförarens utsignal. Vid varje frekvensändring i VCO, kommer systemet att sträva mot frekvensskillnaden noll i fasjämföraren vilket gör att sändningsfrekvensen hålls vid rätt värde.
+Fördelar med en PLL-oscillator: Den har
+samma frekvensstabilitet som en VFO eftersom denna även här arbetar på en låg frekvens. Till skillnad mot en super-VFO finns
+inga sidafrekvenser i PLL-oscillatorn, eftersom VCO alstrar nyttafrekvensen direkt.
+Nackdelar med en PLL-oscillator: Den har
+högre brusnivå än en super-VFO. Frekvensstabiliteten är sämre än den för en PLLoscillator med CO och programmerbar
+frekvensdelare.
+PLL med programmerbar frekvensdelare
+Bild II 3-82
+Med PLL blir frekvensen på utsignalen från
+en VCO låst till referensfrekvensen från en
+CO. l princip fås en VCO med samma frekvensstabilitet som en CO, men också lika
+svår att ändra frekvensen på. Med en frekvensdelare i fasregleringsslingan (PLL) kan
+emellertid utfrekvensen ändras, medan CO
+fortfarande avger samma referensfrekvens.
+En frekvensdelare är en digital krets, som
+
+räknar svängningar eller pulser upp till ett
+valt tal för att återställas till i och börja om
+igen. Vid varje återställning avges en utpuls.
+Vid en delning med två avges en utpuls för
+varannan inpuls. Vid delning med i 5 avges
+en utpuls för var i 5:e in puls o.s.v.
+Genom att välja delningstal i PLL kan
+arbetsfrekvensen i VCO ställas in stegvis,
+där varje steg är så stort som en referensfrekvens. signalfrekvensen från vco delas
+med det valda delningstalet och resultatet
+jämförs med referensfrekvensen från CO.
+Varje avvikelse från likhet med referensfrekvensen kommer att medförajustering av
+V GO-frekvensen.
+Om man t. ex. vill täcka 2-metersbandet i
+steg om 25 kHz, så väljer man den referensfrekvensen samt att delaren kan fås att dela
+sändarens utfrekvens med vilket som helst
+av talen 5760, 576i, 5762 o.s.v. upp till
+5840. Om t.ex. delningstalet 5820 valts, så
+kommer jämförarens styrspänning att styra
+V GO-frekvensen till i 45500 kHz. Delarens
+utfrekvens blir då i 45500/5820 = 25 kHz,
+vilket motsvarar referensfrekvensen. l detta
+exempel styrs alltså sändarens utfrekvens
+så att den alltid blir i steg om 25kHz.
+
+vco
+
+144 - 146 MHz
+.........
+144 - 146 MHz
+~~-------------------r--------------------Q
+
+f avstämningsspänning
+
+[Q
+
+8 - 10 MHz
+uppblandad VCO-frekvens
+
+8- 10 MHz
+referensfrekvens
+LP-filter
+
+fasjäm·
+förare
+
+d
+
+~
+VFO
+
+Bild 113-81 PLL-oscillator kombinerad med frekvensblandning
+
+113-59
+
+KR
+Men PLL-oscillatorn
+brusar
+förhållandevis
+144 MHz till 146 MHz
+starkt jämfört med en
+VCO G !--------.---------·-------<>
+VCO och speciellt jäm"""-'
+rv 144 till 146 MHz
+fört
+med en CO. VCO-----<>
+svängningskretsen har
+nämligen ett relativt lågt
+Programmerbar delare i med tumhjul
+n ( 5760 till 5840)
+f eller annat
+Avstämnings
+godhetstal eftersom en
+spänning
+kapacitansdiod belastar kretsen mer än en
+mekanisktvariabel kondensator.
+Med det lägre god25kHz
+hetstalet blir svängLågpass f i !ter
+Referensfrekvens
+ningskretsen ett mindre
+bra filter för dämpning
+Arbetsfrekvens Delningstal n Referensfrekvens
+av oscillatorbruset Kapacitansdioden tillför
+144 000 kHz
+: 5760
+= 25 kHz
+: 5761
+= 25 kHz
+144 025 kHz
+dessutom ett elektron145 500 kHz
+: 5820
+= 25 kHz
+brus. Därtill kommerdet
+146 000 kHz
+: 5840
+= 25 kHz
+s.k. fasbruset från frekvensdelaren och PLL
+VCO-frekvens
+Med svängningskretsens låga godhetsVCO-frekvens,
+tal är frekvensstabilite4-kantformad
+ten i en VCO inte så bra
+som den i en kristallosVCO-frekvens,
+j 2-delad
+cillator, utan faktiskt
+sämre än den i en VFO.
+Trots det är långtidsBild II 3-82 PLL med frekvensdelare
+stabiliteten god i en
+VCO, närden ingår i en
+PLL, eftersom att frekvensen hålls ständigt
+För- och nackdelar med PLL -oscillatorn
+efterjusterad. PLL kan däremot inte åstadPLL-oscillatorn har nästan samma frekvenskomma en lika bra korttidsstabilitet Ett fasstabilitet som en kristalloscillator och frekvensen är inställbar i steg. Till skillnad mot jämförelseförlopp omfattar ju redan tiden för
+en period av referensfrekvensen. Och det
+en VFO med mekaniskt inställbar frekvens,
+kommer att förflyta en multipel av denna
+så är den PLL-styrda VGO-oscillatorns frekvens elektroniskt inställbar. Detta underlät- kortaste tid innan styrspänningen kan återställa VCO-frekvensen igen. Detta beror på
+tar utformning och placering av reglage etc.
+att kondensatorn i regleringsslingans lågför frekvensinställning, frekvensminne och
+passfilter först måste laddas upp under ett
+automatisk frekvensavsökning.
+antal perioder innan reglering sker.
+Först när den PLL-styrda oscillatorn kom
+Dessa kortvariga frekvensavvikelser är
+till användning i handapparater och mobila
+en typ av frekvensmodulation som leder till
+apparater blev det möjligt med frekvenstäckning över ett helt band med bibehållet fasbrus från PLL-oscillatorn och som kan
+störa. Det är dock endast i extrema fall som
+krav på små dimensioner. Som jämförelse,
+skulle en inbyggnad av säg 80 till800 stycken fasbruset verkar störande eftersom det i
+kanalkristaller i en traditionell kristallstyrd
+moderna apparater reduceras till en accepapparat vara en mycket platskrävande, dyr- tabel nivå genom noggrann skärmning och
+filtrering.
+bar och opraktisk lösning.
+
+1\ J\ 1\ ~1\ ;
+
+r-uLflIlj
+LJL 
+
+113-60
+
+Faktorer som påverkar frekvensstabilitet
+
+Sändarens frekvens skall hållas så stabil
+som möjligt. En ostabil sändare är inte godtagbar och skapar svårigheter inte bara för
+de radiostationer som deltar i förbindelsen
+utan även för radiotrafiken på närliggande
+frekvenser.
+En frekvensstabil oscillator skall ha följande
+egenskaper:
+stabil mekanisk uppbyggnad
+Skakningar från underlaget t.ex. vid mobilt
+bruk, vibrationer från en transformatorkärna
+etc. kan försämra oscillatorns frekvensstabilitet
+Frekvensbestämmande komponenter såsom fasta och variabla kondensatorer, spolar etc skall vara stabilt monterade, trimkärnorna i spolarna fixerade o.s.v.
+Förbindningarna får inte tillåtas att böja
+sig eller vibrera. Apparatstommen måste
+vara tillräckligt styv för att inte ändra formen
+och därigenom medföra frekvensändringar
+vid hantering o.s.v.
+God elektrisk uppbyggnad och högt Q-värde
+
+i svängningskretsarna
+
+Alla elektriska förbindningar måste vara så
+korta som möjligt och löd- och kopplingsställen fullgoda. Induktorer och kondensatorer i
+svängningskretsarna måste vara förlustfattiga och högvärdiga i övrigt så att signalen
+blir så ren som möjligt från oönskade sidafrekvenser.
+Återkopplingen i oscillatorn skall vara så
+fast (kraftig) att självsvängningen är stabil.
+Men för att få en renast möjlig signal får
+kopplingen inte vara så fast, att svängningskretsarna blir alltför belastade och deras
+godhetstal för lågt.
+Avskärmande kapslingar
+Svängningskretsar skall skärmas från yttre
+kapacitanstillskott (t.ex.från en hand) Det
+görs med skiljeväggar och komponentkapslingar av metall. Skärmningarna förhindrar också oönskad koppling mellan oscillatorn och efterföljande förstärkare genom elektriska och magnetiska fält.
+
+stabila drivspänningar
+Ostabila drivspänningar medför frekvensändringar. l en oscillator med transistorförstärkare beror ostabiliteten på förändringar
+mellan skikten i en transistors diodsträcka.
+Skikten fungerar nämligen som "kondensatorplattor" och spärrskiktet där emellan som
+dielektrikum. Tjockleken av spärrskiktet och
+därmed "plattavståndet" står i förhållande till
+den spänning som läggs över transistorn.
+Den spänningsberoende kapacitansen i transistorn är ansluten till svängningskretsen via
+kopplingskondensatorn.
+Eftersom kapacitansen i transistorn är en
+del av svängningskretsen, så påverkar den
+resonansfrekvensen. Denna egenskap kan
+vara till besvär, men kan även användas för
+att på ett enkelt sätt ändra oscillatorns arbetsfrekvens.
+Se Kapacitansdiod och PLL-oscillatorn.
+Buffertsteg
+En oscillator i en radiosändare kan bestå av
+ett enda förstärkarsteg, som alstrar högfrekventa elektriska svängningar. Vanligen tas
+endast små effekter ut från en så enkel
+sändare, normalt mindre än en watt. Utan
+särskilda åtgärder, som t. ex. att använda en
+styrkristall, är nämligen frekvensen inte särskilt stabil och olämplig för kommunikationsändamål.
+Särskilt varierande belastning över oscillatorns utgång medför frekvensändring. Oscillatorn bör därför ges en så låg och stabil
+belastning som möjligt. Ett buffertsteg kopplas därför in efter oscillatorn. Det bör ha hög
+ingångsimpedans för att belasta oscillatorn
+så lite som möjligt. Det skall också kunna
+lämna tillräcklig driveffekt till efterföljande
+förstärkare och bör därför ha låg utgångs impedans. Det måste dessutom arbeta linjärt
+(se klass A-drift, bild 113-44) för att inte alstra
+övertoner och därmed förvränga oscillatorsignalen. Bild II 3-42 visar ett buffertsteg i
+kollektorkoppling, vilken har dessa egenskaper.
+
+113-61
+
+KRETSAR
+Temperaturkompensation och termostater
+Det alstras alltid förlustvärme i elektriska
+apparater och även i en oscillator. Vid uppvärmningen utvidgas spolar och kondensatorer i svängningskretsarna, vilket leder till
+frekvensändringar. Även spärrskiktskapacitansen i transistorerna är temperaturberoende. Det totala temperaturberoendet kan
+kompenseras genom ett antal åtgärder.
+Oscillatorn bör monteras så långt bort
+som möjligtfrån övriga värmealstrande komponenter. Den avskärmande kapslingen omkring oscillatorn skall vara så tjockväggig
+och värmeisolerande som möjligt. Inbyggnad i en termostatreglerad kapsling är ett
+ännu bättre alternativ.
+Komponenterna bör ha uppnått drifttemperaturför användningen. Oscillatorn bör
+därför värmas upp under åtminstone 15 minuter.
+
+Frekvensstabilitet och oscillatorbrus
+
+Frekvensstabiliteten i kristalloscillatorer är
+ca 100 gånger bättre än den är i LCoscillatorer. Likaså är utgångssignalen från
+kristalloscillatorer renare från s.k. fasbrus
+Gitter). Varje oscillator avger nämligen även
+oönskade signaler med frekvenser som ligger omkring utgångssignalens nominella
+frekvens.
+Oscillatorn är ju en förstärkare, vars utgångsspänning delvis återkopplas till ingången i medtas. Detta innebär att utgångssignalen förstärks lavinartat till ett maximum, omväxlande med att den dämpas lavinartat till
+ett minimum. Utan yttre påverkan befinner
+sig alltså förstärkaren i ett självsvängningstillstånd mellan två yttervärde n. l återkopplingsvägen placeras ett filter som frekvensbestämmande element, t.ex. en LC-krets
+eller en kvartskristall.
+Återkopplingen blir starkast på filtrets
+resonansfrekvens, vilket medför att oscillatorn svänger bäst där. Eftersom filtret oundvikligen har en viss bandbredd, så kommer
+även ett spektrum av andra frekvenser tätt
+omkring resonansfrekvensen att släppas
+igenom. De oönskade frekvenserna omkring
+den nominella kallas för brus.
+
+113-62
+
+l moderna konstruktioner används oftast
+PLL-oscillatorer. På grund av sin funktion
+pendlar deras frekvens alltid något. Hur
+mycket beror bl.a. på loop-filtret. Alltså är
+frekvensen egentligen ett mycket litet band
+av flera frekvenser varav en framträder mest.
+Försök:
+Volymkontrollen i en lågfrekvensförstärkare
+utan insignal vrids till maximum. Det kommer att höras ett brus i högtalaren, som
+huvudsakligen kommer från ingångsstegets
+transistorer. När en mikrofon ansluts måste
+volymkontrollen vridas ner och då hörs bruset
+mindre. Men bruset finns ändå där på en
+lägre nivå och överlagras på insignalen från
+mikrofonen.
+Även i en högfrekvensoscillator överlagras bruset på insignalen. Men ju högre godhetstalet är i svängningskretsen, t.ex. en
+kristall, desto smalare är filtrets bandbredd,
+desto kraftigare blir brusundertryckningen
+och desto merframhävs den önskade signalen. P.g.a. det större godhetstalet i svängningskretsen, och därmed den mindre bandbredden, så brusar alltså en kristalloscillator
+mindre än en LC-oscillator.
+En nackdel med kristalloscillatorn är att
+dess frekvens inte kan ändras inom ettstörre
+område. Önskas flera valbara frekvenser
+från en kristalloscillator måste flera kristaller
+användas tillsammans med något slags
+omkopplingsanordning (kanalväljare).
+Komponentmängden i en kristalloscillator
+är mindre än i en VFO, men i apparater för
+flera frekvenser uppvägs denna fördel av
+merkostnaden för flera kristaller och kanalväljaren.
+Kristalloscillatorn har många användningsområden, där en frekvensstabil och
+brusfattig signal önskas och där platsbrist,
+skakningar m.m. utesluter användning av en
+LC-VFO.
+
+ETSAR

@@ -1,0 +1,250 @@
+\section{Modulatorer}
+Allmänt
+
+När en signal (bärvågen) påverkas så att
+den överför informationen i en annan signal,
+sägs bärvågen bli modulerad. Detta förlopp
+kallas modulation. Vad som då händer behandlas främst i kapitel 1, avsnitt 1.8, med
+tillämpningar i kap. 5 och delvis i kap. 4 .
+En anordning för modulation kallas för
+modulator. En modulator kan ingå som en
+funktion i sändare, mottagare m.fl. system.
+Beroende på modulationsmetoden används
+olika kombinationer av delkretsar som tillsammans utgör modulatorn.
+l detta avsnitt ges exempel på några
+vanliga modulatorer för sändare.
+
+Amplitudmodulatorer
+
+Med en amplitudmodulator påverkas bärvågens amplitud proportionellt med den modulerande signalens amplitud.
+Vid sändningsslaget A 1A är amplituden
+på den modulerande signalen antingen maximal eller ingen. Då består modulatorn av en
+nycklingskrets, som påverkar t. ex. ett drivsteg i sändaren så att bärvågen släpps fram
+helt eller inte alls.
+Vid sändningsslaget A3E har den modulerande signalens amplitud ett analogt förlopp, t.ex. tal, med vilket bärvågens amplitud moduleras. Här beskrivs amplitudmodulation i en förstärkare med ett katodkopplat
+elektronrör. En emitterkopplad transistorförstärkare kan moduleras på ett liknande
+sätt. l båda fallen moduleras förstärkarens
+arbetsspänning (anodspänning resp. kollektorspänning) med den modulerande signalens. Det som då händer är att två signaler
+blandas på ett sätt som beskrivs i avsnitt 1 .8
+med tillämpning påA3E.I vila är då bärvågsamplituden halva den möjliga inom arbetskurvans linjära del. Vid modulation kommer
+bärvågens amplitud att variera mellan noll
+och den möjliga amplituden.
+Bild II 3-89
+Bilden visar ett sändars lutsteg med en triod.
+l serie med tilledningen för anodspänningen
+finns sekundärlindningen av en modulationstransformator för LF-signalen.
+
+Den LF-förstärkare som driver transformatorn måste för 100 °/o modulationsgrad
+kunna avge bärvågens halva effekt. Eftersom uteffekten från en fullt utmodulerad
+A3E-sändare är 150 °/o av den i vila, måste
+slutsteget dimensioneras därefter. Utöver
+den egna signalspänningen måste modulationstransformatorn även klara slutstegets
+arbetsspänn ing.
+Om som på bilden anodspänningen i ett
+förstärkarsteg amplitudmoduleras, kan förstårkarsteget arbeta olinjärt, t.ex i klass C.
+Varje följande förstärkarsteg måste däremot
+arbeta linjärt, t.ex. i klass A.
+På grund av den låga verkningsgraden
+och det stora bandbreddsbehovet, används
+i dagens amatörradiosändare knappast
+"äkta" amplitudmodulering, d.v.s. A3E.I stället används i läget "AM" nästan alltid H3E,
+d.v.s. enkelt sidband med full eller reducerad bärvåg (se nästa stycke). Trots det lägre
+effektbehovet p.g.a. endast ett sidband och
+ev. reducerad bärvågsamplitud kan av dimensioneringsskäl ändå inte de flesta H3Esändare avge sin fulla effekt kontinuerligt!
+Som redan sagts i avsnitt 1.8, är det onödigt
+sända ut två sidband, eftersom båda innehåller samma information. Det räcker med
+ett sidband. Bärvågen innehåller inte någon
+information. Den kan därför undertryckas
+redan i sändaren för att ersättas i mottagaren. Därmed uppstår sändningsslaget J3E.
+
+till
+slutsleg
+
+~--o+Ua
+
+la
+
+---1
+
+lllg reaklans
+för tonfrekvens
+
+Dr
+
+Bild II 3-89 A3E-modulator
+
+ua
+
+113-73
+
+KR
+
+I
+
+--l
+t
+
+DSB-Signal
+
+u
+
+~6ft,, ~ftn,Molftftn..
+
+Vllt! Wjj y VUllll" "t{lfl[V vIl"
+
+/
+
+•
+
+t
+
+Alstring av en DSB-signal (amplitudmodulering, dubbelt sidband med undertryckt bärvåg
+i en ringblandare (balanserad modulator)
+/
+
+/u~
+b''""'"d
+
+modulew
+
+~-----l
+
+~/ ~SBSSBkristallfilter
+
+Ul
+
+lfr
+
+'
+
+fT ·fLF
+
+:
+
+fT · fLF
+
+r---lL. 1
+
+f
+
+Framfiltrering av övre sidbandet
+
+Bild II 3-90 Alstring av J3E (SSB)
+
+113-74
+
+/
+
+DSBSi nal~Signa~
+
+t
+
+KRETSAR
+Vid sändningsslaget J3E (SSB) sänds
+således endast ett sidband. Det andra sidbandet och bärvågen undertrycks, vilket kan
+göras på flera sätt. Numera är den s.k.
+filtermetoden allra vanligast och den enda
+som behandlas här.
+Bild II 3-90
+Med filtermetoden blandas HF- och LFsignalerna i en balanserad blandare där de
+undertrycks medan blandningsprodukterna
+med deras summa- och skillnadsfrekvenser
+blir kvar, d.v.s. det övre och nedre sid bandet.
+För att undertrycka det ena sidbandet
+före sändningen, följs blandaren av ett bandpassfilter med bandbredd och frekvensläge
+för avsett sidband. Den signal som sänds ut
+innehåller på så sätt endast ett sidband
+(Single Side Band).
+Valet mellan USB och LSB kan göras på
+två sätt. Antingen genom att välja mellan ett
+separat passbandfilter för respektive sidband eller genom att använda ett enda filter
+och flytta H F-signalen från ena sidan till den
+andra av det filtret (se bild Il 1-28 i avsnitt
+1.8).
+En J3E-modulator enligt filtermetoden
+består således av en balanserad blandareofta en s.k. ringblandare (se bild Il 3-87 i
+avsnitt 3.8) samt ett bandpassfilter.
+För att SSB-signalen skall få avsedd sändarfrekvens kan ytterligare frekvensblandning behövas (se kapitel 5).
+
+Vinkelmodulation
+Vinkelmodulation är samlingsnamnet för frekvensmodulation (FM) och fasmodulation
+(PM).
+Frekvensmodulation
+Vid sändningsslaget F3E (även kallat FM)
+varierar bärvågens frekvens i takt med den
+modulerande signalens amplitud. Bärvågen
+kommer på så sätt att pendla omkring en
+nominell frekvens, d.v.s. vara frekvensmodulerad. Bärvågsamplituden ändras däremot
+inte vid frekvensmodulation.
+Likspänningsnivåer kan således överföras eftersom en frekvensawikelse (deviation) i bärvågen endast påverkas av den
+modulerande signalens amplitud.
+Vid F3E påverkas resonansfrekvensen i
+den svängningskrets i oscillatorn som bestämmer dess arbetsfrekvens. Det görs enklast genom att tillföra en kondensator med
+variabelt kapacitansvärde, en s.k. varicap
+(se avsnitt 2.5).
+Bild II 3-91
+Bilden visar en LC-svängningskrets där
+det ingår en varicapsom styrs av en likspänning med en överlagrad modulerande LFsignal. En likspänning tjänar som en ställbar
+förspänning till varicap. På så sätt kan man
+påverka arbetsfrekvensen. Med den överlagrade LF-signalen påverkas arbetsfrekvensen i takt med signalamplituden.
+
+till oscillatorn
+
+Alstring av FM:
+Oscillatorn moduleras
+
+Bild II 3-91 Alstring av F3E (FM)
+
+113-75
+
+Fasmodulation
+Vid sändningsslaget G3E (även kallat PM)
+varierar bärvågens fasläge i förhållande ,till
+
+en referens, som är en omodulerad bärvåg.
+Bärvågens amplitud ändras däremot inte.
+Fasändringen -deviationen -är direkt proportionell till hur snabbt fasläget ändras och
+till den totala fasändringen. Hastigheten på
+fasändringen är direkt proportionell till frekvensen på den modulerande signalen och till
+dess amplitud.
+Det betyder att deviationen vid fasmodulation ökar både med amplituden och frekvensen på den modulerande signalen. Ändringar i likspänningsnivåer kan därför överföras endast om en fasreferens används.
+Fasmodulation kan alstras t.ex. genom
+att påverka resonansfrekvensen i en svängningskrets någonstans efteroscillatorn, d.v.s.
+där oscillatorfrekvensen inte påverkas. Denna svängningskrets har i viloläge samma
+resonansfrekvens som oscillatorn. När kretsen bringas ur resonans genom modulation
+-samtidigt som kretsen påtrycks oscillatorsignalen -så uppstår i kretsen omväxlande
+en induktiv och kapacitiv reaktans - detta
+inom tiden förvarje halv period. Reaktansen
+skapar därvid den fasförskjutning som innebär fasmodulation. Se även avsnitt 3.1, bilderna Il 3-18 och -19
+Bild 113-92
+Liksom vid frekvensmodulation kan t. ex.
+en varicapanvändas för att med en modulerande signal påverka resonansfrekvensen i
+en krets.
+
+Från oscillatorn
+
+J-l
+
+~---
+
+Alstring av PM:
+Kretsens reaktans
+moduleras
+
+Bild 113-92
+
+113-76
+
+avG3E (PM)
+
+~~?~:' ----~
+fYYY"\r -J:
+
+ID~- l~ ö, , , ~,"'
+
+rrC>--:LJ stamnrngsspannrngen
+,.
+
+~ ~-J
+
+
