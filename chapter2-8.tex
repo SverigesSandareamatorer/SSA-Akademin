@@ -1,584 +1,175 @@
 \section{Digitala kretsar}
 
-Särskilt under det senaste decenniet har
-digital elektronik blivit vanlig i utrustningar
-för radio- och telekommunikation. Även inom
-amatörradio används nu denna teknik. Ämnet är mycket omfattande. Utvecklingen är
-att enkla digitala funktioner snabbt ersätts av
-komplexa datasystem. Här redogörs endast
-för några grundläggande digitala funktioner.
-Amatörradions kärna finns ännu i analogtekniken, där det under ett förlopp kan förekomma många olika storheter, t.ex. spänningar mellan noll och ett högsta värde.
-l digitaltekniken förekommer bara ett bestämt antal tillstånd. l det enklaste digitala
-systemet finns två tillstånd, t. ex. Ooch 1 eller
-Till och Från eller Hög och Låg eller Fel och
-Rätt o.s.v. Ett system med två tillstånd kallas
-binärt. En lampa som tänds eller släcks med
-en enkel strömställare är ett binärt system.
-Strömställaren kan ha olika utföranden. Det
-kan vara en mekanisk kontakt som är styrd
-för hand eller av en reläspol e. Det kan också
-vara en transistor eller annan anordning.
+Särskilt under det senaste decenniet har digital elektronik blivit vanlig i
+utrustningar för radio- och telekommunikation. Även inom amatörradio används nu
+denna teknik. Ämnet är mycket omfattande. Utvecklingen är att enkla digitala
+funktioner snabbt ersätts av komplexa datasystem. Här redogörs endast för några
+grundläggande digitala funktioner.
 
-Transistorn som strömställare
+Amatörradions kärna finns ännu i \emph{analogtekniken}, där det under ett
+förlopp kan förekomma många olika storheter, t.ex. spänningar mellan noll och
+ett högsta värde.
+
+I digitaltekniken förekommer bara ett bestämt antal tillstånd. I det enklaste
+digitala systemet finns två tillstånd, t.ex. 0 och 1 eller Till och Från eller
+Hög och Låg eller Fel och Rätt o.s.v. Ett system med två tillstånd kallas
+binärt. En lampa som tänds eller släcks med en enkel strömställare är ett binärt
+system. Strömställaren kan ha olika utföranden. Det kan vara en mekanisk kontakt
+som är styrd för hand eller av en reläspole. Det kan också vara en transistor
+eller annan anordning.
+
+\subsection{Transistorn som strömställare}
+
 Bild II 2-3S
 
-Bilden visar två transistorkopplingar. Den till
-vänster är en analog förstärkare för växelspänning. Om det på grund av en viss basspänning flyter en kollektorström av 1 mA
-och kollektorresistorn är S n, så blir spänningsfallet över den resistorn SV. Eftersom
-matningsspänningen är 12 V, så blir då
-spänningen 7V mellan kollektorn och minus.
+Bilden visar två transistorkopplingar. Den till vänster är en analog förstärkare
+för växelspänning. Om det på grund av en viss basspänning flyter en
+kollektorström av 1~mA och kollektorresistorn är 5~Ω, så blir spänningsfallet
+över den resistorn 5~V. Eftersom matningsspänningen är 12~V, så blir då
+spänningen 7~V mellan kollektorn och minus.
 
-Kopplingen till höger fungerar som en
-binär strömställare. Antag att insignalen intar ett avtvå spänningstillstånd, antingen OV
-(låg) eller SV (hög). När inspänningen är
-t. ex. SV, så flyter så mycket basström genom
-basresistorns 1O k.Q, att transistorn blir fullt
-utstyrd.
-Därmed är spänningen mellan kollektor
-och emitter, d.v.s. utspänningen, nära O V
-(0.1 till 0.2V beroende på transistortyp). Man
-säger då att utgången är låg (L) eller O(noll).
-Om däremot inspänningen ärO V, såspärras kollektorströmmen och utspänningen blir
-nära SV. Man säger då att utgången är hög
-(H) eller 1.
+Kopplingen till höger fungerar som en binär strömställare. Antag att insignalen
+intar ett avtvå spänningstillstånd, antingen O V (låg) eller SV (hög). När
+inspänningen är t.ex. 5~V, så flyter så mycket basström genom basresistorns
+1O~kΩ, att transistorn blir fullt utstyrd.
+
+Därmed är spänningen mellan kollektor och emitter, d.v.s. utspänningen, nära O~V
+(0.1 till 0.2~V beroende på transistortyp). Man säger då att utgången är låg (L)
+eller 0 (noll).
+
+Om däremot inspänningen är 0~V, sås pärras kollektorströmmen och utspänningen
+blir nära 5~V. Man säger då att utgången är hög (H) eller 1.
+
 För NPN-transistorn i bilden, gäller att
-• hög inspänning ger låg utspänning,
-• låg inspänning ger hög utspänning.
+\begin{itemize}
+\item hög inspänning ger låg utspänning,
+\item låg inspänning ger hög utspänning.
+\end{itemize}
 Denna logiska funktion kallas inverterande.
 
-NOT-gate eller inverterande grind
+\subsection{NOT-gate eller inverterande grind}
+
 Bild 112-36
 
-Logiska funktioner beskrivs med internationella symboler. En ring vid utgången betyder att utspänningens nivå är motsatt inspänningens. Sambandet mellan in- och utnivåerna beskrivs med en sanningstabe/1.
+Logiska funktioner beskrivs med internationella symboler. En ring vid utgången
+betyder att utspänningens nivå är motsatt inspänningens. Sambandet mellan in-
+och utnivåerna beskrivs med en \emph{sanningstabell}.
 
-m
-1
-
-o
-
-Bild 1/2-36 NOT-gate
-
-+12V
-
-r
-l
+Bild II 2-36 NOT-gate
 
 Bild II 2-35 Transistorn som analog förstärkare respektive digital strömställare
 
-112- 3S
+\subsection{Villkorskretsar - s.k. grindar}
 
-p
+Det finns olika sätt att bygga grindar. Idag är de flesta grindarna elektroniska
+lösningar. Därutöver finns elektromekaniska grindar i form av strömbrytare och
+reläkontakter.
 
-K
-
-Villkorskretsar- s. k. grindar
-
-Det finns olika sätt att bygga grindar. idag är
-de flesta grindarna elektroniska lösningar.
-Därutöver finns elektromekaniska grindar i
-form av strömbrytare och reläkontakter.
 Föregångarna till de elektroniska televäxlarna (AXE m.fl.) var stora system av
 mestadels elektromekaniska reläer.
-För att överskådligt förklara arbetssättet
-i de vanligaste grindarna, görs det enklast
-med reläsymboler. En reläkontakt kan då
-motsvara en transistor eller diod. Reläspolar
-kan motsvara logiska nivåer i insignaler.
-Elektriska kontakter kan vara normalt
-öppna och sluter vid påverkan (s.k. slutande
-kontakt). Alternativt kan de vara normalt
-slutna och öppnar vid påverkan (s.k. brytande kontakt). l kretsscheman visas kontaktlägena vid systemet i vila.
-Bild 112-37
-Av bilden framgår att samma villkor kan
-skapas med slutande alternativt brytande
-kontakter. Observera då placeringen av resistorn på kretsens utgångssida i respektive
-fall. När resistorn ligger närmast pluspolen
-kallas den pull-up. När den ligger närmast
-minuspolen kallas den pull-down. l båda
-fallen definierar resistorn den logiska nivån
 
-Bild
-Sanningstabellen i bilden säger, att när alla
-insignaler är 1 så är utsignalen också 1.
+För att överskådligt förklara arbetssättet i de vanligaste grindarna, görs det
+enklast med reläsymboler. En reläkontakt kan då motsvara en transistor eller
+diod. Reläspolar kan motsvara logiska nivåer i insignaler.
 
-ELLER-grind eller OR-gate
-Bild 112-38
+Elektriska kontakter kan vara normalt öppna och sluter vid påverkan (s.k.
+slutande kontakt). Alternativt kan de vara normalt slutna och öppnar vid
+påverkan (s.k. brytande kontakt). I kretsscheman visas kontaktlägena vid
+systemet i vila.
 
-Sanningstabellen säger, att när en ellerflera
-av insignalerna är 1 så är utsignalen också
-1. När alla insignaler är O, så är utsignalen O.
+Bild II 2-37
 
-OCH INTE-grind
-Bild 112-39
+Av bilden framgår att samma villkor kan skapas med slutande alternativt brytande
+kontakter. Observera då placeringen av resistorn på kretsens utgångssida i
+respektive fall. När resistorn ligger närmast pluspolen kallas den pull-up. När
+den ligger närmast minuspolen kallas den pull-down. I båda fallen definierar
+resistorn den logiska nivån.
 
-NANO-gate
+\subsection{OCH-grind eller AND-gate}
 
-Sanningstabellen säger, att när ingen eller
-någon insignal är 1, men inte alla, så är
-utsignalen 1 . När alla insignaler är 1, så är
-utsignalen O.
+Bild II 2-37
 
-INTE ELLER-grind eller NOR-gate
-Bild 112-40
+Sanningstabellen i bilden säger, att när alla insignaler är 1 så är utsignalen
+också 1.
 
-Sanningstabellen säger, att när någon eller
-alla insignaler är 1, så är utsignalen O. När
-alla insignaler är O, så är utsignalen 1.
+\subsection{ELLER-grind eller OR-gate}
 
-c
-c
+Bild II 2-38
 
-A
+Sanningstabellen säger, att när en eller flera av insignalerna är 1 så är
+utsignalen också 1. När alla insignaler är 0, så är utsignalen O.
 
-l
-l
-H
-H
+\subsection{OCH INTE-grind eller NAND-gate}
 
-B
+Bild II 2-39
 
-c
+Sanningstabellen säger, att när ingen eller någon insignal är 1, men inte alla,
+så är utsignalen 1 . När alla insignaler är 1, så är utsignalen O.
 
-A
+\subsection{INTE ELLER-grind eller NOR-gate}
 
-l
+Bild II 2-40
 
-l
-l
-l
-H
-
-o o o
-o 1 o
-1
-o o
-
-H
-
-l
-H
-
-1
-
-B
-
-1
-
-c
-
-1
+Sanningstabellen säger, att när någon eller alla insignaler är 1, så är
+utsignalen O. När alla insignaler är 0, så är utsignalen 1.
 
 Bild II 2-37 OCH-grind (AND-gate)
 
-112-36
+Bild II 2-38 ELLER-grind (OR-gate)
 
-A
-B
-
-c
-
-MP NENTER
-+
-
-ATBT-
-
-R
-
-c
-A
-
-B
-
-A
-
-B
-
-c
-
-L
-L
-H
-
-L
-
-H
-
-L
-H
-
-H
-
-H
-
-H
-H
-
-L
-
-c
-o o o
-o 1 1
-1 o 1
-A
-
-B
-
-1
-
-1
-
-1
-
-c
-
-~fic
-
-Bild 112-38 ELLER-grind (OR-gate)
-
-c
-A
-
-B
-
-c
-
-A
-
-B
-
-c
-
-L
-L
-H
-
-L
-
-H
-
-H
-
-H
-
-1
-1
-1
-
-H
-
-H
-
-L
-
-o o
-o 1
-1
-o
-
-L
-
-H
-
-1
-
-1
-
-o
-
-~fic
-A~
-B~c
-
-Bild 112-39 OCH INTE-grind (NAND-gate)
-
-112-37
-
-PT
-
-K MP
-
-A
-
-c
-B
-
-A
-
-c
-
-R
-
-B
-
-A
-
-B
-
-c
-
-A
-
-L
-L
-
-H
-
-L
-
-H
-
-L
-
-L
-L
-L
-
-o o 1
-o 1 o
-1 o o
-1
-1 o
-
-H
-H
-
-H
-
-B
-
-c
+Bild II 2-39 OCH INTE-grind (NAND-gate)
 
 Bild II 2-40 INTE ELLER-grind (NOR-gate)
 
-Inverterad ingång
-En ingång kan behöva ha en inverterad
-funktion i förhållande till de övriga (s.k. low
-active). Man kan då göra på följande sätt
-med en OCH-grind som exempel.
+\subsection{Inverterad ingång}
 
-A
-
-c
-
-A
-B
-
-c
-c
-
-A
-
-B
-
-L
-L
-
-H
-
-H
-
-L
-
-L
-L
-
-H
-H
-
-L
-
-H
-
-L
-
-c
-o o o
-o 1 1
-1 o o
-1 1 o
-
-A
-
-B
+En ingång kan behöva ha en inverterad funktion i förhållande till de övriga
+(s.k. low active). Man kan då göra på följande sätt med en OCH-grind som
+exempel.
 
 Bild II 2-41 Inverterad ingång
 
-112-38
+Bild II 2-42 Exklusiv ELLER-grind (EXOR-gate)
 
-A
-B
-A
-B
+Bild II 2-43 Exklusiv INTE ELLER-grind (EXNOR-gate)
 
-c
 
-R
+\subsection{Exklusiv ELLER-grind (EXOR-gate)}
 
-A
-
-B
-
-c
-
-c
-
-A
-
-L
-
-B
-
-L
-
-C
-
-A
-
-L
-
-o o o
-
-L
-
-H
-
-H
-
-H
-H
-
-L
-H
-
-H
-L
-
-o
-1
-1
-
-B
-
-1
-
-o
-1
-
-C
-
-1
-1
-
-o
-
-A
-
-B
-
-A
-
-B
-
-C
-
-L
-H
-
-H
-L
-
-L
-L
-
-H
-
-o o
-
-1
-
-H
-
-H
-
-H
-
-1
-1
-
-1
-
-L
-
-L
-
-A
-B
-
-Bild II 2-42 Exklusiv ELLER-grind
-
-C
-
-o
-
-o
-o o
-1
-
-1
-
-c
-
-(EXOR-gate)
-
-Bild II 2-43 Exklusiv INTE ELLER-grind
-(EXNOR-gate)
-
-Exklusiv ELLER-grind (EXOR-gate)
 Bild II 2-42
 
-Exklusiv INTE ELLER-grind (EXNOR·gate)
-Bild 112-43
+Sanningstabellen säger, att när alla insignaler antingen är 1 eller 0, så är
+utsignalen O. När en, men inte alla insignaler är i, så är utsignalen 1.
 
-Sanningstabellen säger, att när alla insignaler antingen är 1 eller O, så är utsignalen O.
-När en, men inte alla insignaler är i, så är
-utsignalen 1.
+\subsection{Exklusiv INTE ELLER-grind (EXNOR-gate)}
 
-Sanningstabellen säger, attnär alla insignaler
-antingen är 1 eller O, så är utsignalen 1. När
-en, men inte alla insignaler är 1, så är utsignalen O.
+Bild II 2-43
 
-112-39
+Sanningstabellen säger, att när alla insignaler antingen är 1 eller 0, så är
+utsignalen 1. När en, men inte alla insignaler är 1, så är utsignalen 0.
 
-K MP N
-Grindar med dioder och transistorer
-l stället för reläer i grindar använder man nu
+\subsection{Grindar med dioder och transistorer}
 
-ytterst sällan något annat än kombinationer
-av dioder, transistorer och resistorer.
+I stället för reläer i grindar använder man nu ytterst sällan något annat än
+kombinationer av dioder, transistorer och resistorer.
+
 Bild II 2-44
-Bilden visar en NANO-grind. Den egentliga
-grinden består av tre dioder och en resistor.
-Två av dioderna är ingångar och den tredje
-är utgång. Grinden styr en digitalt arbetande
-transistor liksom den i bild Il 2-35. Resultatet
-är en s.k. DTL-Iogik.
+
+Bilden visar en NAND-grind. Den egentliga grinden består av tre dioder och en
+resistor. Två av dioderna är ingångar och den tredje är utgång. Grinden styr en
+digitalt arbetande transistor liksom den i bild II 2-35. % TODO fixa referens
+Resultatet är en s.k. DTL-logik.
 
 Bild II 2-45
-Även denna bild visar en NAND-grind. Här
-består den egentliga grinden av en ingångstransistor med två emittrar, vilka motsvarar
-dioderna vid A och B i föregående bild.
-Kollektorn i denna transistor motsvarar ingångsdioden till transistorn i bild Il 2-44.
-De övriga tre transisitorerna i bild Il 2-45
-bildar en s.k. switch, som ger snabb övergång mellan väl definierade logiska nivåer.
-Resultatet är en s.k. TTL-Iogik
 
-A
+Även denna bild visar en NAND-grind. Här består den egentliga grinden av en
+ingångstransistor med två emittrar, vilka motsvarar dioderna vid A och B i
+föregående bild. Kollektorn i denna transistor motsvarar ingångsdioden till
+transistorn i bild Il 2-44. De övriga tre transisitorerna i bild II 2-45
+% TODO fixa referens
+bildar en s.k. switch, som ger snabb övergång mellan väl definierade logiska
+nivåer. Resultatet är en s.k. TTL-logik.
 
-B
+Bild 112-44 DTL-logik
 
-A
-B
-
-Bild 112-44 DTL-Iogik
-
-Bild 112-45 TTL-Iogik
+Bild 112-45 TTL-logik
