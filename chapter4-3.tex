@@ -1,0 +1,139 @@
+\section{Superheterodynmottagare}
+
+Superheterodynprincipen ger mycket större möjligheter, när önskemålet är en högselektiv mottagare för flera olika frekvenser.
+Skillnaden mellan en direktblandad mottagare och en "super" är, att blandningsprodukterna i direktblandaren blir till LF direkt, medan de i supern först bildar en
+mellanfrekvenssignal MF, vilken sedan
+dernoduleras och blir till LF- detekteras.
+l det följande kallas superheterodynmottagaren enbart SUPER. l supern blandas de mottagna signalerna med signalen
+från en VFO. Före blandningen har HFsignalerna passerat ett selektivt försteg, som
+dämpar spegelfrekvenser. För att inte störa
+mottagningen placeras VFO-frekvensen alltid utanför det frekvensband, där man vill ta
+emot signaler.
+Bild 114-13
+Alla mottagna signaler blandas med VFOsignalen. Mottagningsfrekvensen är vanligen skillnaden mellan en fast s.k. mellanfrekvens MF och VFO-frekvensen. Mellanfrekvensen är egentligen mittfrekvensen i
+ett fast passband skapat av ett antal filter.
+
+=455 kHz
+M F-filter
+
+DetektorIdemodulator
+
+j~sfilter
+
+fast avstämt bandpassfilter
+VFO
+
+fvro :: 4055 kHz
+
+demodulator
+
+LF-Iågpassfilter
+
+LF
+
+fMF = fvFo - fM (VFO-frekv. över mottagn.frekvensen)
+eller
+fMF = fM - fvFo (VFO-frekv. under mottagn.frekvensen)
+Hög selektivitet, enkel avstämning {jämfört med en rak mottagare)
+
+Bild II 4-13 Superheterodynmottagaren i princip
+
+114-9
+
+M TTA ARE
+\subsection{Dubbelsuperheterodynmottagare}
+Bild 114-14
+Det är svårt att bygga enkla mellanfrekvensfilter för höga frekvenser, med liten bandbredd och branta flanker. Det är fallet för en
+enkelsuper för kortvåg med en enda mellanfrekvens, t.ex. 9 MHz.
+En god närselektion på höga frekvenser
+är endast möjlig med relativt dyrbara kristallfilter. Däremot går det att få god närselektion
+med enklare medel på lägre frekvenser.
+En dubbelsuper, d.v.s. en super med
+dubbel frekvensomvandling, möjliggör god
+både när- och förselektion. l 1 :a blandaren
+blandas den mottagna signalen med signalen från en 1 :a oscillator (VFO) till en hög
+mellanfrekvens, t. ex. 9 eller 10.7 MHz.
+Därmed kan en god spegelfrekvensdämpning erhållas. Första M F-filtret kan göras enklare och utan den höga selektivitet
+som hade behövts i en enkelsuper. 1:a MF
+blir sedan blandad ytterligare en gång i 2:a
+blandaren till en 2:a MF, t.ex. 455kHz. För
+den andra blandningen används en fast
+oscillator. Filtret i 2:a MF kan lättare utföras
+med en hög selektivitet, p.g.a. den lägre
+frekvensen.
+Exempel:
+Trots att M F-filtret inte är en enkel
+svängningskrets, kan ett "Q-värde" beräknas. Vid en passbandbredd av 6kHz och en
+centerfrekvens av 455 kHz kan Q-värdet
+anses vara
+
+Bild II 4-13 visar en mottagare med mellanfrekvensen 455kHz, som är vanlig i äldre
+mottagare. MF-filtret kan i enklaste fall bestå av ömsesidigt magnetiskt kopplade LCsvängningskretsar. Bättre avstämningsskärpa fås med resonatorer av keramik eller
+kvarts eller de är elektromekaniska.
+Exempel:
+En sändning på frekvensen 3600 kHz
+skall tas emot. Vi ställer då in VFO-frekvensen till 4055 kHz, eftersom mellanfrekvensen är 4055 - 3600 = 455 kHz. Den
+mottagna signalen hamnar då mitt i MFfiltrets passband.
+Signaler på angränsande frekvenser tas
+också emot och alstrar blandningsprodukter.
+Med ett mellanfrekvensfilter med t. ex. 3kHz
+bandbredd (453.5-456.5 kHz), kan signalfrekvenser mellan 3598.5 och 3601.5 passera genom filtret. En signal med en närliggande frekvens t. ex. 3603kHz, och blandad
+med den inställda VFO-frekvensen 4055
+kHz, kommer att alstra en skillnadsfrekvens
+av 452 kHz. Denna signal ligger utanför
+filtrets passband och kommer att dämpas
+och når inte detektorn.
+VFO-signalen kan givetvis läggas under
+i stället för över mellanfrekvensen.
+Exempel: VFO-frekvensen 3145kHz kan
+också användas för mottagning av frekvensen 3600 kHz, om mellanfrekvensen är 455
+kHz (3600- 455 =3145kHz). Men för att
+undvika att eventuella övertoner från VFOsignalen blandas med mottagna signaler är
+det lämpligt att placera VFO-frekvensen över
+mottagningsfrekvensen.
+Efter M F-filtren följer bl.a. detektorer för
+olika sändningsslag samt LF-förstärkare.
+Jämför med Bild II 4-5 och Il 4-6
+
+Q= f,es
+
+b
+
+CJ
+
+Bild II 4-14 Dubbelsuperheteodynen i princip
+
+o
+
+6
+
+l ett MF-filter med centerfrekvensen 9
+MHz skulle det behövas ett nära 20 gånger
+högre Q-värde för samma bandbredd6kHz
+
+I
+
+114- 1
+
+= 455 =76
+
+ARE
+Q= ~es
+
+b
+
+= 9000 = 1500
+6
+
+Ett så högt Q-värde kan endast erhållas
+med kristallfilter.
+För högre mottagningsfrekvenser räcker
+det, på grund av filterproblematiken, oftast
+inte med en dubbel frekvensomvandling,
+Om man antar en dubbelsuper-mottagare
+för VHF-området 144-146 MHz enligt bilden, så skulle en i :a MF med frekvensen
+i 0.7 MHz inte vara tillräckligt hög. Vid en
+mottagningsfrekvens av 146 MHz är nämligen spegelfrekvensen i 46 + (2 • 1O. 7) =
+i 67.4 MHz, alltså endast i .15 gånger mottagningsfrekvensen. Det hade alltså varit
+lämpligt med en trippelsuper, d.v.s. en trefaldig frekvensomvandling, med en i :a MF
+i frekvensområdet 70 MHz.

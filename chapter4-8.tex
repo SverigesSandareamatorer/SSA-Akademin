@@ -1,0 +1,151 @@
+\section{Automatiskt förstärkningsreglering (AGC) i mottagare}
+
+För att mottagaren skall fungera bra för
+såväl mycket svaga som för mycket starka
+in-signaler behövs en förstärkningsreglering
+i signalvägen genom mottagaren. signalspänningen på mottagaringången kan vara
+från delar av en mikrovolt upp till över 100
+millivolt - ett spänningsförhållande på
+1:100000. Det motsvarar mer än nio senheter, vilket är ett mått på signalstyrkan
+(Appendix D).
+
+Vid mottagning av en stark signal är det
+inte tillräckligt med att bara minska LFförstärkningen. Förstärkarstegen i HF- och
+M F-delen blir ändå överstyrda av den starka
+insignalen och utsignalen förvrängs om inget ytterligare görs. Det är därför nödvändigt
+att minska förstärkningen även i HF- och
+MF-förstärkarstegen, ju mer desto starkare
+insignalen är. Som hjälpmedel finns oftast
+ett reglage för H F-förstärkningen (RF gain),
+och därutöver en automatisk förstärkningsreglering- AGC (Automatic Gain Contro l).
+
+AGC
+
+Automatic
+
+Gain
+
+Contro l
+
+Förstärkningsreglering i A3E - mottagare
+till de reglerade förstärkarstegen
+
+från sista
+
+R
+
+:n
+
+till MF-förstärkare
+
+fö'"''k"':sJ
+lJ
+
+u
+LF-signal
+
+överlagrad likspänning
+= reglerspänning
+
+Bild II 4-20 AGG vid AM-mottagning med superheterodynmottagare
+
+114-15
+
+M
+En mottagare med god reglering kan
+arbeta med signalstyrkor mellan mikrovolt
+och volt. Beroende hur den mottagna signalen är modulerad (sändningsslaget), sker
+AGC på olika sätt.
+Både vid AM och SSB finns informationen i sidbanden. HF- och M F-stegen måste
+därför arbeta i det linjära området och de får
+inte överstyras. Förstärkningen i mottagaren måste alltså regleras med hänsyn till
+detta.
+
+AGG vid AM (A3E)
+Bild II 4-20
+Den likspänning som uppstårvid dernoduleringen av MF-signalen i en AM-mottagare
+används till förstärkningsreglering - AGC.
+Den LF-spänning som är överlagrad på
+likspänningen undertrycks i ett RG-Iågpassfilter. Likspänningen över kondensatorn följer variationerna i den mottagna signalens
+styrka med en tidskonstant av ca 0.1 sekunder. Likspänningen blir alltså inte påverkad
+av de betydligt snabbare spänningsändringarna som kommer av moduleringen.
+En stark bärvågssignal alstrar en hög
+likspänning och en svag signal en låg likspänning, oberoende av moduleringen.
+Denna likspänning återförs till de framförliggande HF- och MF-förstärkarstegen, vilka
+är gjorda så att en hög reglerspänning sänker förstärkningen, medan en låg spänning
+tillåter en hög förstärkning.
+På så sätt kommer signalstyrkan efter de
+reglerade stegen att hållas konstant samtidigt som mottagarens ingång inte överstyrs.
+
+Den likspänning som filtrerats fram från
+detektorn kallas reglerspänning eller AGGspänning. Diodens polarisering är inte viktig
+för att få ut LF vid demoduleringen, men
+däremot för att få rätt polaritet på AGGspänningen. i de flesta mottagare används
+negativ AGG-spänning.
+
+AGG vid SSB (J3E)
+Bild II 4-21
+l de flesta utföranden lämnar produktdetektorn en växelspänning utan överlagrad likspänning. Reglerspänningen alstras därför
+genom likriktning av MF-spänningen med
+hjälp av en separat demoduleringsdiod eller
+genom likriktning av LF-växelspänningen.
+Vid SSB alstras det ju ingen MF-spänning undertalpauserna, eftersom ingen bärvåg tas emot då. Tidskonstanten på lågpassfiltret för reglerspänningen måste därför vara längre än vid AM, d.v.s. 0.5 till 2
+sekunder. En alltför snabb tillbakagång i
+reglerspänningen p.g.a. en för kort tidskonstant skulle leda till mer mottagningsbrus i
+tal pauserna. l moderna mottagare finns det
+ofta en omkopplare för olika tidskonstanter.
+Bild II 4-21
+AGG vid CW (A 1A)
+Metoden för att alstra AGG-spänning är
+samma vid CW och SSB.
+
+AGG vid FM (F3E)
+FM-mottagare brukar inte regleras av den
+anledningen att det vid FM inte finns någon
+information i signalamplituden, utan finns i
+stället i frekvensvariationerna i signalen.
+
+.............
+
+AGC
+'l> O,Ss
+
+Bild II 4-21 AGG vid SSB- och C W-mottagning med superheterodynmottagare
+
+114-16
+
+Helt avsiktligt läggs därför förstärkningen i
+mottagaren så, att en sinussignal blir en
+kantvåg p.g.a. överstyrning i förstärkarstegen. Ett eller flera sådana amplitudbegränsande steg, även kallat "limiter", placeras
+före demoduleringssteget. Störningar av
+amplitudvariationer kommer då att klippas
+bort och inte störa mottagningen.
+Störande signaler inom nyttabandbredden har dock ingen större inverkan så länge
+som den önskade signalens styrka är en
+halv s-enhet större än den störande signalens styrka. Likaså försvinner det störande
+bruset vid mottagning av en FM-sändare
+mycket snabbt över denna signal nivå. Amplitudmodulerade störningar, som t. ex. de från
+tändgnistor i förbränningsmotorer, har liten
+påverkan vid tillräckligt stark nyttasignaL
+
+\subsection{Signalstyrkemätare (S-meter)}
+
+AGG-spänningen i en mottag re för AM, CW
+och SSB kan även styra en S-meter, som
+ger besked om hur stark signalen in i mottagaren är. (Se Appendix D)
+
+\subsection{Brusspärr}
+
+l en FM-mottagare hörs bara brus när det
+inte kommer in en tillräckligt stark signal.
+Bruset är genomträngande eftersom FMmottagare arbetar med hög förstärkning. En
+brusspärr (eng. squelch) är en anordning
+som stoppar signalerna till LF-förstärkaren
+när signalerna ej uppnår en viss nivå. På så
+sätt slipper man att höra på bruset. l mottagare förflera sändningsslag och därför även
+AGC kan denna funktion styra brusspärren,
+men i en ren FM-mottagare arbetar MFförstärkarna utan AGC. l det fallet behövs
+någon annan anordning för att skilja mellan
+en modulerad signal och brus. Ofta finns ett
+reglage (squelch) för hur stark signal.en
+skall vara innan spärren öppnar.
