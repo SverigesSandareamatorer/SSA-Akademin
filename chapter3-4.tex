@@ -2,848 +2,547 @@
 
 \subsection{Allmänt}
 
-Bild Ii 3-40
+Bild II 3-40
 
-Elektronrör och transistorer är de aktiva komponenter som används i oräkneliga elektroniska kopplingar för alstring av signaler, för
-förstärkning och blandning av signaler, för
-multiplicering av signalfrekvenser etc.
-Transistorn presenteras i avsnitt 2.6 och
-elektronröret i avsnitt 2.7.
-Först förekom endast elektronrör. Dessa
-har emellertid på några få decennier nästan
-helt ersatts av transistorer. Elektronrör används dock fortfarande, särskilt i effektförstärkare för sändare. Det finns därför skäl att
-här behandla såväl elektronrör som transistorer.
+Elektronrör och transistorer är de aktiva komponenter som används i
+oräkneliga elektroniska kopplingar för alstring av signaler, för
+förstärkning och blandning av signaler, för multiplicering av
+signalfrekvenser etc.
 
-Förstärkning
-Med förstärkning avses här kvoten av amplituden i utgående och inkommande signal,
-varvid frekvensgången har inverkan.
-Frekvensgång
-Förstärkare arbetar endast inom ett visst
-frekvensområde, vilket kan skilja från fall till
-fall.
-Bandbredd
-Det frekvensområde där förstärkaren arbetar med fulla data kallas bandbredd. Bandgränserna uttrycks som en nedre och övre
-gränsfrekvens, där signalnivån avviker från
-ett givet värde, vanligen med högst 3 dB.
-För LF-förstärkare för amatörradiobruk
-är kravet på bandbredd litet; inom ett band
-av 300 Hz till 3 kHz uppnås godtagbar
-återgivningskvalitet för taL Bandbredden
-bestäms främst av kondensatorer i kretsen
-avsedda för överföring och avkoppling.
-HF-förstärkare används för signaler med
-hög frekvens, typiskt 100kHz och däröver.
-Det finns s.k. bredbandig a förstärkare för ett
-stort frekvensområde, men även avstämda
-förstärkare för smala frekvensband.
+Transistorn presenteras i avsnitt 2.6 och elektronröret i avsnitt 2.7.
+
+Först förekom endast elektronrör. Dessa har emellertid på några få
+decennier nästan helt ersatts av transistorer. Elektronrör används
+dock fortfarande, särskilt i effektförstärkare för sändare. Det finns
+därför skäl att här behandla såväl elektronrör som transistorer.
 
 \subsection{Huvudegenskaper hos förstärkare}
-LF- och HF-förstärkare
+\subsubsection{LF- och HF-förstärkare}
+
 Bild II 3-41
-Med LF-förstärkare menas förstärkare som
-arbetar med signaler i det lägre frekvensområdet, typiskt upp till c:a i 00 kHz. LF-förstärkare är mycket vanliga såväl i mottagare
-som sändare. Utöver de aktiva komponenterna (transistorer, elektronrör ) är kondensatorer och resistorer de viktigaste passiva.
 
-Med H F-förstärkare menas förstärkare som
-arbetar med signaler med högre frekvenser
-än dem i LF-området. Även HF-förstärkare
-är mycket vanliga såväl i mottagare som
-sändare. De används t.ex. i mottagarnas
-ingångs- och mellanfrekvenssteg, liksom i
-sändarnas oscillatorer, signalberedningssteg
-och slutsteg.
-Utöver de komponenter, som även finns
-i LF-förstärkare, används kombinationer av
-frekvensberoende komponenter såsom
-induktorer och kondensatorer.
+Med \emph{LF-förstärkare} menas förstärkare som arbetar med signaler i
+det lägre frekvensområdet, typiskt upp till c:a 100
+kHz. LF-förstärkare är mycket vanliga såväl i mottagare som
+sändare. Utöver de aktiva komponenterna (transistorer, elektronrör )
+är kondensatorer och resistorer de viktigaste passiva.
 
-Anod
+Med \emph{HF-förstärkare} menas förstärkare som arbetar med signaler
+med högre frekvenser än dem i LF-området. Även HF-förstärkare är
+mycket vanliga såväl i mottagare som sändare. De används t.ex. i
+mottagarnas ingångs- och mellanfrekvenssteg, liksom i sändarnas
+oscillatorer, signalberedningssteg och slutsteg.  Utöver de
+komponenter, som även finns i LF-förstärkare, används kombinationer av
+frekvensberoende komponenter såsom induktorer och kondensatorer.
 
-·~·
+\emph{Förstärkning}
+Med förstärkning avses här kvoten av amplituden i utgående och
+inkommande signal, varvid frekvensgången har inverkan.
 
-Galler
+\emph{Frekvensgång}
+Förstärkare arbetar endast inom ett visst frekvensområde, vilket kan
+skilja från fall till fall.
 
-.p
+\emph{Bandbredd}
 
-Katod
+Det frekvensområde där förstärkaren arbetar med fulla data kallas
+bandbredd. Bandgränserna uttrycks som en nedre och övre gränsfrekvens,
+där signalnivån avviker från ett givet värde, vanligen med högst 3 dB.
 
-n
+För LF-förstärkare för amatörradiobruk är kravet på bandbredd litet;
+inom ett band av 300 Hz till 3 kHz uppnås godtagbar
+återgivningskvalitet för tal. Bandbredden bestäms främst av
+kondensatorer i kretsen avsedda för överföring och avkoppling.
 
-Kollektor
-Bas
-Emitter
+HF-förstärkare används för signaler med hög frekvens, typiskt 100kHz
+och däröver.  Det finns s.k. bredbandig a förstärkare för ett stort
+frekvensområde, men även avstämda förstärkare för smala frekvensband.
 
-npn
 Bild II 3-40 Från elektronrör till transistor
-
-113-29
-
-KRETSAR
-
-o[]
-
-o[]
-Katod kopp l i ng
-
-Emitterkoppling
 
 Bild II 3-41 Principen för förstärkare med elektronrör respektive transistor
 
 \subsection{Grundkopplingar för förstärkarsteg}
-Bild 113-42
 
-l det föregående har redan visats att en av
-polerna i ingången respektive utgången i en
-förstärkare är gemensam. l ovanstående
-bild är rörförstärkarens katod den gemensamma polen -därav namnet katodkoppling.
-På liknande sätt är N PN-transistorns emitter
-gemensam -därav namnet emitterkoppling.
-På ett liknande sätt kan någon annan pol
-vara gemensam. Man får då i stället en
-baskoppling eller kollektorkoppling.
-Beroende av kopplingsätt fås olika egenskaper. På nästa sida visas tre olika grundkopplingar för ett elektronrör (triod) respektive en NPN-transistor.
-l praktiken känns en grundkoppling igen
-på vilken elektrod som är avkopplad till Opotential över en kondensator.
-
-Emitterkoppling används för LF och HF
-när hög förstärkning eftersträvas. Eftersom
-effektförstärkningen är produkten av
-spännings- och strömförstärkningen, så fås
-en effektförstärkning av mellan 200 till50000
-gånger. Nackdelen med denna koppling är
-den ibland låga ingångsimpedansen och
-den relativt låga gränsfrekvensen.
-Baskoppling använd som H F-förstärkare pågund av sin höga gränsfrekvens och
-goda isolation mellan in- och utgång.
-Kollektorkoppling används när hög ingångsimpedans och utgångsimpedans önskas. Denna koppling har emellertid ingen
-spänningsförstärkning, men kan användas
-för s.k. impedansomvandling.
-
-Grundkopplingarnas typiska egenskaper vid NPN-transistor
-Egenskap
-
-Emitterkoppling
-
-Baskoppling
-
-Z in
-
-medel
-
-1 KQ
-
-liten
-
-son
-
-stor
-
-100 kn
-
-Z ut
-
-medel
-
-10 kQ
-
-stor
-
-100 kQ
-
-liten
-
-50 kQ
-
-ström-
-
-stor
-
-100 ggr
-
-<1
-
-0.9 ggr
-
-stor
-
-100 ggr
-
-spänning-
-
-stor
-
-100 ggr
-
-stor
-
-100 ggr
-
-<1
-
-0.99 ggr
-
-effekt-
-
-mycket stor 10000 ggr
-
-stor
-
-100 ggr
-
-stor
-
-100 ggr
-
-motfas
-
-medfas
-
-oo
-
-medfas
-
-oo
-
-Kollektorkoppling
-
-Förstärkning
-
-Fasläge
-
-113-30
-
-180°
-
-ETSAR
-
-Ut
-In
-
-In
-
-Katodkoppling
-
-~
-
-In
-
-!
-
-l
-
-j
-
-Emitterkoppling
-
-l
-In
-
-Ut
-
-Ut
-
-Gallerkopp li ng
-
-j
-
-Ut
-
-In
-
-Ut
-
-Baskoppling
-
-~
-
-In
-
-!
-
-In,
-
-In
-
-Anod kopp! in g
-
-Kollektorkoppling
+Bild II 3-42
+
+I det föregående har redan visats att en av polerna i ingången
+respektive utgången i en förstärkare är gemensam. I ovanstående bild
+är rörförstärkarens katod den gemensamma polen - därav namnet
+katodkoppling.  På liknande sätt är NPN-transistorns emitter gemensam
+- därav namnet emitterkoppling.
+
+På ett liknande sätt kan någon annan pol vara gemensam. Man får då i
+stället en baskoppling eller kollektorkoppling.
+
+Beroende av kopplingsätt fås olika egenskaper. På nästa sida visas tre
+olika grundkopplingar för ett elektronrör (triod) respektive en
+NPN-transistor.
+
+I praktiken känns en grundkoppling igen på vilken elektrod som är
+avkopplad till 0-potential över en kondensator.
+
+\emph{Emitterkoppling} används för LF och HF när hög förstärkning
+eftersträvas. Eftersom effektförstärkningen är produkten av spännings-
+och strömförstärkningen, så fås en effektförstärkning av mellan 200
+till 50000 gånger. Nackdelen med denna koppling är den ibland låga
+ingångsimpedansen och den relativt låga gränsfrekvensen.
+
+\emph{Baskoppling} använd som HF-förstärkare på grund av sin höga
+gränsfrekvens och goda isolation mellan in- och utgång.
+
+\emph{Kollektorkoppling} används när hög ingångsimpedans och
+utgångsimpedans önskas. Denna koppling har emellertid ingen
+spänningsförstärkning, men kan användas för s.k. impedansomvandling.
+
+\begin{table*}[!h]
+\caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
+  \begin{tabular}{l|l|l|l}
+    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektorkoppling \\
+    \(Z_{in}\) & medel \quad 1 kΩ & liten \quad 50 Ω & stor \quad 100 kΩ \\
+    \(Z_{ut}\) & medel \quad 10 kΩ & stor \quad 100 kΩ & liten \quad 50 kΩ \\
+    Strömförstärkning & stor \quad 100 ggr & < 1 \quad 0.9 ggr & stor \quad 100 ggr \\
+    Spänningsförstärkning & stor \quad 100 ggr & stor \quad 100 ggr & < 1 \quad 0.99 ggr \\
+    Effektförstärkning & mycket stor \quad 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
+    Fasläge & motfas \quad 180° & medfas \quad 0° & medfas 0° \\
+  \end{tabular}
+\end{table*}
 
 Bild II 3-42 Grundkopplingar för elektronrör och NPN-transistor
 
-113-31
 
-KR
+%%
 
-EPT
 
 \subsection{Stabilisering av arbetspunkten}
 
-För att en förstärkare skall kunna arbeta på
-avsett sätt måste arbetspunkten, d.v.s.
-arbetsströmmens vilavärde ställas rätt.
-Det gör man genom att placera en förspänning över den styrande elektroden i
-elektronröret eller transistorn i fråga.
-l en katodkopplad rörsförstärkare innebär det att styrgallret skall ges en viss negativ spänning i förhållande till katoden. Det
-kan man göra t.ex. med en separat spänningskälla eller vanligare med en avkopplad
-res istor mellan katod och minuspolen (jord).
-l en emitterkopplad transistorförstärkare
-innebär det att basen skall ges en viss positiv
-spänning i förhållande till emittern. Det kan
-man göra t.ex. med en separat spänningskälla eller vanligare med en avkopplad resisto r mellan emittern ochminuspolen samt en
-resistiv spänningdelare mellan plus- och
-minuspolen.
+För att en förstärkare skall kunna arbeta på avsett sätt måste
+arbetspunkten, d.v.s.  arbetsströmmens vilavärde ställas rätt.
+
+Det gör man genom att placera en förspänning över den styrande
+elektroden i elektronröret eller transistorn i fråga.
+
+I en katodkopplad rörsförstärkare innebär det att styrgallret skall
+ges en viss negativ spänning i förhållande till katoden. Det kan man
+göra t.ex. med en separat spänningskälla eller vanligare med en
+avkopplad res istor mellan katod och minuspolen (jord).
+
+I en emitterkopplad transistorförstärkare innebär det att basen skall
+ges en viss positiv spänning i förhållande till emittern. Det kan man
+göra t.ex. med en separat spänningskälla eller vanligare med en
+avkopplad resisto r mellan emittern ochminuspolen samt en resistiv
+spänningdelare mellan plus- och minuspolen.
 
 \subsection{Klass A-, B- och C-förstärkare}
-Arbetspunkt
-Arbetspunkten för förstärkare väljs olika,
-beroende på önskat arbetssätt. En olämpligt
-vald arbetspunkt resulterar i förvrängning av
-utsignalens form i förhållande till insignalens
-form, s.k.distorsion. Distorsion uppstår även
-vid överstyrning, d.v.s. när insignalens amplitud är för stor för att kunna återges med
-oförändrad form, även om arbetspunkten är
-rätt vald.
-Med avseende på arbetspunktens läge
-klassas därför förstärkare på sätt som framgår av följande diagram för elektronrör. En
-emitterjordad NPN-transistor får anses mest
-motsvara elektronrörkopplingen här nedan.
-Anodströmmen la motsvaras då närmast av
-kollektorströmmen le och styrgallerspänningen U~ 1 av spänningen UsE· Den stora skillnaden år att styrgallerspänningen i dessa fall
-alltid är negativ medan bas/emitterspänningen är positiv. styrspänningens relativa läge
-(arbetspunkten) mellan olika arbetsklasser
-är emellertid lika.
 
-113-32
+\subsubsection{Arbetspunkt}
 
-KRETSAR
-Klass A
+\emph{Arbetspunkten} för förstärkare väljs olika, beroende på önskat
+arbetssätt. En olämpligt vald arbetspunkt resulterar i förvrängning av
+utsignalens form i förhållande till insignalens form,
+s.k. \emph{distorsion}. Distorsion uppstår även vid överstyrning,
+d.v.s. när insignalens amplitud är för stor för att kunna återges med
+oförändrad form, även om arbetspunkten är rätt vald.
+
+Med avseende på arbetspunktens läge klassas därför förstärkare på sätt
+som framgår av följande diagram för elektronrör. En emitterjordad
+NPN-transistor får anses mest motsvara elektronrörkopplingen här
+nedan.  Anodströmmen \(I_a\) motsvaras då närmast av kollektorströmmen
+\(I_C\) och styrgallerspänningen \(U_{gi}\) av spänningen
+\(U_{BE}\). Den stora skillnaden är att styrgallerspänningen i dessa
+fall alltid är negativ medan bas/emitterspänningen är
+positiv. Styrspänningens relativa läge (arbetspunkten) mellan olika
+arbetsklasser är emellertid lika.
+
+\subsubsection{Klass A}
+
 Bild II 3-44
-Klass A är ett arbetssätt i linjära LF- och HFförstärkarsteg, t.ex. i mottagare samt AMoch SSB-modulerade sändare. Vilavärdet
-på strömmen i huvudkretsen, den s.k. arbetspunkten, placeras i mitten på den rakaste delen av styrkaraktäristikan (1=0.5 lmax).
-Därmed fås låg distorsion. Verkningsgraden
-är upp till 50 °/o.
 
-ningskretsen. En resonanskrets med högt
-Q-värde behövs som utgångskrets varvid
-amplituddistorsion inte framstår som besvärande vid CW och FM. Med hjälp av en
-utgångskrets kan frekvensmultiplicering utföras med förstärkare i klass C.
-(På följande tre bilder är IR=anodviloström).
+Klass A är ett arbetssätt i linjära LF- och HF-förstärkarsteg, t.ex. i
+mottagare samt AM- och SSB-modulerade sändare. Vilovärdet på strömmen
+i huvudkretsen, den s.k. arbetspunkten, placeras i mitten på den
+rakaste delen av styrkaraktäristikan (\(I=0.5\cdot I_{max}\)).  Därmed
+fås låg distorsion. Verkningsgraden är upp till 50\%.
 
-Klass AB
-Klass AB är ett godtagbart linjärt arbetssätt
-för AM- resp. SSB-modulering, men med en
-lägre viloström. Arbetspunkten ligger mellan
-den för klass A och B. Ett linjärt arbetssätt
-enligt klass A är visserligen önskvärt vid
-SSB, men verkningsgraden är lägre. Klass
-AB är en kompromiss med bättre verkningsgrad utan en alltför stor distorsion.
-Klass B
+\subsubsection{Klass AB}
+
+Klass AB är ett godtagbart linjärt arbetssätt för AM-
+resp. SSB-modulering, men med en lägre viloström. Arbetspunkten ligger
+mellan den för klass A och B. Ett linjärt arbetssätt enligt klass A är
+visserligen önskvärt vid SSB, men verkningsgraden är lägre. Klass AB
+är en kompromiss med bättre verkningsgrad utan en alltför stor
+distorsion.
+
+\subsubsection{Klass B}
+
 Bild II 3-45
-Klass B är ett olinjärt arbetssätt med en låg
-vilaström i förhållande till !max• d.v.s. arbetspunkten ligger i nederkant av styrkaraktäristikans nedre krökta del. Verkningsgraden
-är upp till 67o/o. Trots det används klass 8 i
-linjäraLF-och H F-förstärkarsteg t. ex. i SSBsändare.
-Om klass B skulle tillämpas i ett slutsteg
-med endast ett rör eller en transistor skulle
-större delen av uteffekten förloras i splatter,
-d.v.s. som förvrängda signaler långt vid sidan om den egentliga nyttosignalen. Ett sätt
-att undvika det är att använda en avstämd
-utgångskrets med högt Q-värde. Linjär förstärkning kan också erhållas med två mottaktkopplade rör eller transistorer i klass B.
+
+Klass B är ett olinjärt arbetssätt med en låg vilaström i förhållande
+till \(I_{max}\) d.v.s. arbetspunkten ligger i nederkant av
+styrkaraktäristikans nedre krökta del. Verkningsgraden är upp till
+67\%. Trots det används klass B i linjära LF-och H F-förstärkarsteg
+t.ex. i SSB-sändare.
+
+Om klass B skulle tillämpas i ett slutsteg med endast ett rör eller en
+transistor skulle större delen av uteffekten förloras i splatter,
+d.v.s. som förvrängda signaler långt vid sidan om den egentliga
+nyttosignalen. Ett sätt att undvika det är att använda en avstämd
+utgångskrets med högt Q-värde. Linjär förstärkning kan också erhållas
+med två mottaktkopplade rör eller transistorer i klass B.
 Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
-Klass C
+
+\subsubsection{Klass C}
+
 Bild 113-46
-Klass C används i HF-förstärkarsteg i FM-,
-CW- och AM-sändare. Arbetssättet är kraftigt olinjärt. Vilaströmmen är noll, d.v.s. arbetspunkten ligger på den negativa delen av
-styrkaraktäristikan. Endast toppen av den
-ena halvvågen av insignalen återges och i
-starkt förvrängd form. Verkningsgraden är
-upp till80°/o. Övertonerna dämpas av sväng-
 
-~järt
-
-l
-
-Förvrängning
-(distorsion)
-
-genom fel arbetspunkt
+Klass C används i HF-förstärkarsteg i FM-, CW- och
+AM-sändare. Arbetssättet är kraftigt olinjärt. Vilaströmmen är noll,
+d.v.s. arbetspunkten ligger på den negativa delen av
+styrkaraktäristikan. Endast toppen av den ena halvvågen av insignalen
+återges och i starkt förvrängd form. Verkningsgraden är upp till
+80\%. Övertonerna dämpas av sväng- ningskretsen. En resonanskrets med
+högt Q-värde behövs som utgångskrets varvid amplituddistorsion inte
+framstår som besvärande vid CW och FM. Med hjälp av en utgångskrets
+kan frekvensmultiplicering utföras med förstärkare i klass C.  (På
+följande tre bilder är \(I_R\)=anodviloström).
 
 Bild If 3-44 Förstärkare i klass A
 
-113-33
-
-KRETSAR
-
 Bild II 3-45 Förstärkare i klass B
 
-\subsection{Frekvensmultiplicering}
-Bild 113-47
-
-Frekvensmultiplicering kan användas för att
-skapa en högre frekvens än den som avges
-av oscillatorn. Oscillatorn följs då av ett eller
-flera frekvensmultiplicerande förstärkarsteg
-som arbetar i klass C.
-l utgången av ett frekvensmultiplicerande steg måste finnas en svängningskrets,
-som är avstämd till önskad frekvens, d.v.s.
-överton av insignalen. Denna överton förstärks i efterföljande förstärkarsteg, vilket
-också kan vara frekvensmultiplicerande.
-Ju högre multiplikationsfaktorn är, desto
-högre förspänning krävs för att svängningskretsen i utgången skall svänga obehindrat.
-Med hög multipliceringsfaktor i ett enda steg
-dämpas signalen då så mycket att en hög
-förstärkning behövs i efterföljande steg. l
-praktiken anordnas därför en kedja av frekvensdubblande och frekvenstripplanda
-Den totala multipliceringsfaktorn är faktorerna för vartdera steget multiplicerat med varandra.
-Som exempel visar bilden blockschemat
-för en VHF-sändare med oscillatorkristaller i
-8 MHz-området. Som räkneövning kan andra kristallfrekvenser sättas in för beräkning
-av den slutliga sändningsfrekvensen. l frekvensmultiplicerande sändare kan även slutsteget arbeta i klass C, vilket är vanligt i
-sändare förtelegrafi eller FM-telefoni. För att
-då förhindra utsändning av alla de övertoner
-
-113-34
-
 Bild II 3-46 Förstärkare i klass C
-som alstras i förstärkarkedjan, så förses
-slutstegets utgång med en svängningskrets
-som är avstämd till sändningsfrekvensen.
-Övertonsdämpningen kan förbättras ytterligare med ettefterföljande lågpassfilter. Overtoner för 144 MHz är 288 MHz, 432 MHz
-o.s.v.
-Frekvensmultiplicering behöver nödvändigtvis inte göras med ett förstärkarsteg i
-klass C. En diod har nämligen olinjär karaktäristik och därmed alstras det övertoner i de
-strömmar som passerar genom den. En av
-dessa övertoner kan filtreras fram och förstärkas. T.ex. finns det frekvenstripplingssteg byggda kring en speciell typ av kapacitansdiod- varaktordiod. Vanliga frekvensområden för s.k. varaktortripplare är 144/
-432 MHz och 432/1296 MHz.
-Såväl signalen från en kristalloscillator
-som den från en VFO kan multipliceras till en
-högre frekvens.
-Förr täckte VFO i amatörradiosändarna
-oftast frekvensområdet 3.5-3.8 MHz. Med
-en så vald VFO-frekvens kunde alla upplåtnafrekvensband för amatörradio nås med
-frekvensmultiplicering. De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt relaterade av detta skäl.
+
+\subsection{Frekvensmultiplicering}
+
+Bild II 3-47
+
+Frekvensmultiplicering kan användas för att skapa en högre frekvens än
+den som avges av oscillatorn. Oscillatorn följs då av ett eller flera
+frekvensmultiplicerande förstärkarsteg som arbetar i klass C.
+
+I utgången av ett frekvensmultiplicerande steg måste finnas en
+svängningskrets, som är avstämd till önskad frekvens, d.v.s. överton
+av insignalen. Denna överton förstärks i efterföljande förstärkarsteg,
+vilket också kan vara frekvensmultiplicerande.
+
+Ju högre multiplikationsfaktorn är, desto högre förspänning krävs för
+att svängningskretsen i utgången skall svänga obehindrat.  Med hög
+multipliceringsfaktor i ett enda steg dämpas signalen då så mycket att
+en hög förstärkning behövs i efterföljande steg. I praktiken anordnas
+därför en kedja av frekvensdubblande och frekvenstripplanda Den totala
+multipliceringsfaktorn är faktorerna för vartdera steget multiplicerat
+med varandra.
+
+Som exempel visar bilden blockschemat för en VHF-sändare med
+oscillatorkristaller i 8 MHz-området. Som räkneövning kan andra
+kristallfrekvenser sättas in för beräkning av den slutliga
+sändningsfrekvensen. I frekvensmultiplicerande sändare kan även
+slutsteget arbeta i klass C, vilket är vanligt i sändare för telegrafi
+eller FM-telefoni. För att då förhindra utsändning av alla de
+övertoner som alstras i förstärkarkedjan, så förses slutstegets utgång
+med en svängningskrets som är avstämd till sändningsfrekvensen.
+Övertonsdämpningen kan förbättras ytterligare med ettefterföljande
+lågpassfilter. Overtoner för 144 MHz är 288 MHz, 432 MHz o.s.v.
+
+Frekvensmultiplicering behöver nödvändigtvis inte göras med ett
+förstärkarsteg i klass C. En diod har nämligen olinjär karaktäristik
+och därmed alstras det övertoner i de strömmar som passerar genom
+den. En av dessa övertoner kan filtreras fram och
+förstärkas. T.ex. finns det frekvenstripplingssteg byggda kring en
+speciell typ av kapacitansdiod - varaktordiod. Vanliga frekvensområden
+för s.k. varaktortripplare är 144/432 MHz och 432/1296 MHz.
+
+Såväl signalen från en kristalloscillator som den från en VFO kan
+multipliceras till en högre frekvens.
+
+Förr täckte VFO i amatörradiosändarna oftast frekvensområdet 3.5-3.8
+MHz. Med en så vald VFO-frekvens kunde alla upplåtnafrekvensband för
+amatörradio nås med frekvensmultiplicering. De ursprungliga
+amatörradiobanden i KV-området ligger fortfarande harmoniskt
+relaterade av detta skäl.
+
 Således
-2 • 3.5 = 7 MHz
-2 · 2 · 3.5 = 14 MHz
-2 • 3 · 3.5 = 21 MHz
-2 · 2 · 2 · 3.5 = 28 MHz
-
-KRETSAR
-
-PT
--~ 1%1
-
-T
-
-CD
-
-r·---{I>J---~--{g
-Olinjär förstärkare
-
-~····
-f
-
-\
-
-f"' " 24 HHz
-
-= 8 MHz
-
-!f
-
-8 MHz
-
-+övertoner
-
-~---·----
-
-·-·lliJ--..--------..·--· ---
-
-r
-
-------------o
-
-.,..............
-
-n = 3 · 3 · 2 = 18
-
-fs : : n. fa
-fs = 18 · fa
-
-[ii
-
-fq = 8, ... MHz
-
-l
-
-f :.: ..., ... MHz
-
-f = B, ... MHz
-
-= 24MHz
-
-24 MHz
-
-.
-f re kvenstnpp 1are
-
-[o
-
-DJtAAAMAft
-
-!Lfl[ .....
-
-f= ... , ... MHz
-
-f = .. , ... MHz
-
-f = ... , ... MHz
-
-Fyll i frekvensvärdena för styrkristallen och beräkna resterande frekvensvärde
-i multiplikatorkedjan
+\begin{align*}
+  &2 \cdot 3.5 = 7\ \text{MHz} \\
+  &2 \cdot 2 \cdot 3.5 = 14\ \text{MHz} \\
+  &2 \cdot 2 \cdot 2 \cdot 3.5 = 21\ \text{MHz} \\
+  &2 \cdot 2 \cdot 2 \cdot 2 \cdot 3.5 = 28\ \text{MHz} \\
+\end{align*}
 
 Bild 113-47 Frekvensmultipliceringskedja
-Vid frekvensmultiplicering flerfaldigas inte
-bara oscillatorfrekvensen utan även variationerna i den. Om t.ex. VFO-frekvensen i
-området 3.5 MHz ändras med 50 Hz, så
-ändras utfrekvensen i området 28 MHz med
-2 · 2 • 2 = 400 Hz. Alla frekvenser i signalen
-multipliceras på detta sätt. Amplitudmodulerad telefoni kan därför inte överföras genom
-en frekvensmultipliceringskedja utan att talet förvrängs.
 
-Se5.3
+Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen
+utan även variationerna i den. Om t.ex. VFO-frekvensen i området 3.5
+MHz ändras med 50 Hz, så ändras utfrekvensen i området 28 MHz med \(2
+\cdot 2 \cdot 2 \cdot 50 = 400\) Hz. Alla frekvenser i signalen
+multipliceras på detta sätt. Amplitudmodulerad telefoni kan därför
+inte överföras genom en frekvensmultipliceringskedja utan att talet
+förvrängs.
 
-113-35
-
-KRETSAR
 \subsection{Sändarslutsteg}
-Slutsteg med en transistor
-Bild 113-48
 
-Transistorslutsteg för HF byggs vanligen
-emitterkopplade p.g.a. den högre effektförstärkningen.
-Bilden visar ett sådant förstärkarsteg.
-Kollektorbelastningen består av en svängningskrets. För att anpassa transistorns kollektorimpedans till svängningskretsens impedans, har kollektorn anslutits till ett uttag på
-svängningskretsens spole.
-Orossel Dr och kondensator C fungerar
-som en HF-mässig avkoppling av strömförsörjningen.
-Uteffekten tas ut från svängningskretsen
-över en kopplingslindning med samma impedans som belastningen.
-För linjär återgivning krävs drift i klass A
-eller möjligen klass AB.
-Or* +U
+\subsubsection{Slutsteg med en transistor}
 
-Bild II 3-48 S!utsteg med en transistor
+Bild II 3-48
 
-slutsteg med två transistorer
-Bild 113-49
-Ett mottaktkopplat (e ng. pus h-pull) förstärkarsteg i klass B har god verkningsgrad
-samtidigt som det är nöjaktigt linjärt för SSB
-i amatörradio. l ett slutsteg med endast en
-transistor skulle denna behöva klara fyra
-gånger så stor förlusteffekt
-P.g.a. de låga impedansvärdena i transistoriserade förstärkarsteg används transformatorer, vilka inte är frekvensselektiva
-och därför inte dämpar övertoner. Med mottaktkopplingen alstras dock inte jämna övertoner. För övertonsdämpning används fast
-avstämda bandpassfilter, ofta ett per frekvensband, mellan drivsteg och slutsteg samt
-mellan slutsteg och antenn.
-För noggrann anpassning till antennen
-behövs en antennkopplare - s.k. matchbox
-- med ett n-, T- eller L-kopplat LC-filter.
-Att ett slutsteg är "bredbandsavstämt" är
-således en fråga om definitioner.
-Högeffekts/utsteg med en tetrod
+Transistorslutsteg för HF byggs vanligen emitterkopplade p.g.a. den
+högre effektförstärkningen.
+
+Bilden visar ett sådant förstärkarsteg.  Kollektorbelastningen består
+av en svängningskrets. För att anpassa transistorns kollektorimpedans
+till svängningskretsens impedans, har kollektorn anslutits till ett
+uttag på svängningskretsens spole.
+
+Drossel \(Dr\) och kondensator \(C\) fungerar som en HF-mässig
+avkoppling av strömförsörjningen. Uteffekten tas ut från
+svängningskretsen över en kopplingslindning med samma impedans som
+belastningen. För linjär återgivning krävs drift i klass A eller
+möjligen klass AB.
+
+Bild II 3-48 Slutsteg med en transistor
+
+\subsubsection{Slutsteg med två transistorer}
+
+Bild II 3-49
+
+Ett mottaktkopplat (eng. push-pull) förstärkarsteg i klass B har god
+verkningsgrad samtidigt som det är nöjaktigt linjärt för SSB i
+amatörradio. I ett slutsteg med endast en transistor skulle denna
+behöva klara fyra gånger så stor förlusteffekt
+
+P.g.a. de låga impedansvärdena i transistoriserade förstärkarsteg
+används transformatorer, vilka inte är frekvensselektiva och därför
+inte dämpar övertoner. Med mottaktkopplingen alstras dock inte jämna
+övertoner. För övertonsdämpning används fast avstämda bandpassfilter,
+ofta ett per frekvensband, mellan drivsteg och slutsteg samt mellan
+slutsteg och antenn.
+
+För noggrann anpassning till antennen behövs en antennkopplare -
+s.k. matchbox - med ett π-, T- eller L-kopplat LC-filter.
+
+Att ett slutsteg är ``bredbandsavstämt'' är således en fråga om
+definitioner.
+
+\subsubsection{Högeffekts/utsteg med en tetrod}
+
 Bild II 3-50
-Bilden visar ett effektslutsteg för HF med ett
-elektronrör, en s.k. tetrod, i katodkoppling.
-Det kan även vara en triod eller en pentod.
-Med LC-kretsen i styrgallerkretsen filtreras (selekteras) önskade signalfrekvens ut
-ur signalerna från föregående steg.
-Orossiarna Dr spärrar HF och kondensatorerna C1 , C2 och C3 kortsluter (avkopplar)
-HF till jord. Allt för att hindra HF att komma in
-i kraftaggregatet
 
-bredband
-U2
+Bilden visar ett effektslutsteg för HF med ett elektronrör, en
+s.k. tetrod, i katodkoppling.  Det kan även vara en triod eller en
+pentod.
 
-Bild 113-49
+Med LC-kretsen i styrgallerkretsen filtreras (selekteras) önskade
+signalfrekvens ut ur signalerna från föregående steg.
 
-113-36
+Drosslarna \(Dr\) spärrar HF och kondensatorerna \(C_1\), \(C_2\) och
+\(C_3\) kortsluter (avkopplar) HF till jord. Allt för att hindra HF
+att komma in i kraftaggregatet.
 
-omkopplingsbart för
-vart och ett av banden
+Bild II 3-49
 
-KRETSAR
-HF-förstärkare kan råka i oönskad självsvängning. Orsakerna kan vara många, bl. a.
-dålig avkoppling av matningsspänningar, induktiv och/eller kapacitiv återkoppling i kretsarna m.m.
-Återkopplingsvägar både före och efter
-röret kan bilda oavsiktliga svängningskretsar, som genererar självsvängning, ofta på
-mycket höga frekvenser t.ex. i VHF-området. Sådana s.k. parasitsvängningar kan
-stoppas/dämpas med UHF-drosslar (UHF
-Dr) omedelbart intill röranslutningarna.
+HF-förstärkare kan råka i oönskad självsvängning. Orsakerna kan vara
+många, bl.a.  dålig avkoppling av matningsspänningar, induktiv
+och/eller kapacitiv återkoppling i kretsarna m.m.
 
-En åtgärd mot självsvängning i elektronrör är en motkopplingsväg från anod till styrgaller över en trimningsbar s.k. neutraliseringskondensator CN.
-slutstegets utgångskrets kan utformas
-på olika sätt. Bilden visar ett numera vanligt
-sätt, det s.k. n-filtret (utläses pi-), som fungerar som
-• en svängningskrets som är avstämd till
-sändningsfrekvensen,
-• ett övertonsdämpande lågpassfilter,
-• anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
+Återkopplingsvägar både före och efter röret kan bilda oavsiktliga
+svängningskretsar, som genererar självsvängning, ofta på mycket höga
+frekvenser t.ex. i VHF-området. Sådana s.k. parasitsvängningar kan
+stoppas/dämpas med UHF-drosslar (UHF Dr) omedelbart intill
+röranslutningarna.
 
-UKV-drossel
-
-Cp
+En åtgärd mot självsvängning i elektronrör är en motkopplingsväg från
+anod till styrgaller över en trimningsbar
+s.k. neutraliseringskondensator CN. Slutstegets utgångskrets kan
+utformas på olika sätt. Bilden visar ett numera vanligt sätt, det
+s.k. n-filtret (utläses pi-), som fungerar som
+\begin{itemize}
+\item en svängningskrets som är avstämd till sändningsfrekvensen,
+\item ett övertonsdämpande lågpassfilter,
+\item anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
+\end{itemize}
 
 Bild II 3-50 Högeffekts/utsteg med en tetrod
-
-- Ug1
-
-I
-
-I I
-
 I
 Bild II 3-51 Högeffekts/utsteg med två trioder
 
-113-37
+\subsection{Högeffekts/utsteg med två gallerjordade trioder (elektronrör)}
 
-KRETSAR
-Högeffekts/utsteg med två gallerjordade trioder (elektronrör)
-Bild II 3-5i
-Gallerjordad koppling innebär att elektronrörets styrgaller ligger på HF-mässig nollpotential medan styrsignalen matas in på
-katoden. likspänningen mellan katod och
-styrgaller väljs så att rörets arbetspunkt blir
-den avsedda.
-Gallerjordad koppling passar särskilt för
-slutsteg med höga effekter, men fordrar en
-högre styreffekt än andra kopplingar. l gengäld "överförs" styreffekten till utgången via
-röret och ingår där i uteffekten. l gallerjordad
-koppling är kapacitansen låg mellan katod
-och anod, d.v.s.mellan in- och utgång. Därmed är risken för självsvängning betydligt
-mindre än i ett katodjordat steg.
-Uteffekten kan ökas genom att parallellkoppla två eller flera rör, som då skall ha så
-lika data som möjligt. Uteffekten står i direkt
+Bild II 3-51
+
+Gallerjordad koppling innebär att elektronrörets styrgaller ligger på
+HF-mässig nollpotential medan styrsignalen matas in på
+katoden. likspänningen mellan katod och styrgaller väljs så att rörets
+arbetspunkt blir den avsedda.
+
+Gallerjordad koppling passar särskilt för slutsteg med höga effekter,
+men fordrar en högre styreffekt än andra kopplingar. I gengäld
+``överförs'' styreffekten till utgången via röret och ingår där i
+uteffekten. I gallerjordad koppling är kapacitansen låg mellan katod
+och anod, d.v.s.mellan in- och utgång. Därmed är risken för
+självsvängning betydligt mindre än i ett katodjordat steg.
+
+Uteffekten kan ökas genom att parallellkoppla två eller flera rör, som
+då skall ha så lika data som möjligt. Uteffekten står i direkt
 proportion till antalet rör.
-Flera parallellkopplade rör medför emellertid ökade totala rörkapacitanser, ökade
-kapacifanser i kopplingsledningarna m.m.,
+
+Flera parallellkopplade rör medför emellertid ökade totala
+rörkapacitanser, ökade kapacifanser i kopplingsledningarna m.m.,
 vilket är till nackdel vid höga frekvenser.
-Ett enda slutrör för hela effekten är emellertid dyrare än flera små med tillsammans
-jämförbar effekt. Mottaktkoppling av två rör
-(eng. "push-pull") i st.f. parallellkoppling har
-en fördel i högre förstärkning, men nackdelar i mer komplicerad bandomkoppling av
-svängningskretsar m.m. l moderna rörutrustade slutsteg för amatörradio förekommer
-därför endast ett slutrör eller flera parallellkopplade. Utgångskretsen är i regel ett nfilter med manuell eller automatisk avstämning.
+
+Ett enda slutrör för hela effekten är emellertid dyrare än flera små
+med tillsammans jämförbar effekt. Mottaktkoppling av två rör
+(eng. ``push-pull'') i st.f. parallellkoppling har en fördel i högre
+förstärkning, men nackdelar i mer komplicerad bandomkoppling av
+svängningskretsar m.m. I moderna rörutrustade slutsteg för amatörradio
+förekommer därför endast ett slutrör eller flera
+parallellkopplade. Utgångskretsen är i regel ett nfilter med manuell
+eller automatisk avstämning.
 
 \subsection{Slutsteg med elektronrör jämfört med transistoriserade slutsteg}
 
-Ett slutsteg med transistorer är kompakt och
-skaktåligt och använder bara klenspänningar. Det är därför särskilt vällämpat för portabelt och mobilt bruk.
-Men transistorer är känsliga för överbelastning. Redan ytterst kortvarig överbelastning eller överspänning kan förstöra dem.
-Transistorer är också känsliga för termisk
-överbelastning. Särskilt vid höga effekter i
-trånga utrymmen är det nödvändigt med god
-kylning, eventuellt med fläkt.
+Ett slutsteg med transistorer är kompakt och skaktåligt och använder
+bara klenspänningar. Det är därför särskilt vällämpat för portabelt
+och mobilt bruk.
 
-113-38
+Men transistorer är känsliga för överbelastning. Redan ytterst
+kortvarig överbelastning eller överspänning kan förstöra dem.
+Transistorer är också känsliga för termisk överbelastning. Särskilt
+vid höga effekter i trånga utrymmen är det nödvändigt med god kylning,
+eventuellt med fläkt.
 
-Ett slutsteg med elektronrör är inte så
-skaksäkert, men är mycket okänsligare i
-övriga avseenden. En nackdel är att det
-behövs extra effekt för uppvärmning av rörens katoder samt höga anodspänningar,
-som är farliga vid ovarsamhet. P.g.a. behovet av flera olika spänningar är även strömförsörjningen för ett slutsteg med elektronrör
-mer komplicerad och omfångsrik.
+Ett slutsteg med elektronrör är inte så skaksäkert, men är mycket
+okänsligare i övriga avseenden. En nackdel är att det behövs extra
+effekt för uppvärmning av rörens katoder samt höga anodspänningar, som
+är farliga vid ovarsamhet. P.g.a. behovet av flera olika spänningar är
+även strömförsörjningen för ett slutsteg med elektronrör mer
+komplicerad och omfångsrik.
 
 \subsection{Bestämning av PEP-effekten}
-Bild 113-52
-Moduleringsspänningens topp-toppvärde
-Uss mäts lämpligen med ett oscilloscope.
-För korrekt belastning vid mätningen används en konstlast
-Med topp-toppvärdet känt kan man med
-följande formler beräkna
+
+Bild II 3-52
+
+Moduleringsspänningens topp-toppvärde \(U_{SS}\) mäts lämpligen med
+ett oscilloscope. För korrekt belastning vid mätningen används en
+konstlast.
+
+Med topp-toppvärdet känt kan man med följande formler beräkna
 toppvärdet (amplituden
 
-U - Uss
+\begin{align*}
+  \text{toppvärdet (amplituden)} \quad
+  U_S & = \frac{U_{SS}}{2}
+  \quad \text{och} \\
+  \text{effektivvärdet} \quad
+  U_{eff} & = \frac{U_S}{\sqrt{2}}
+\end{align*}
 
-effektiwärdet
+Effekten vid moduleringstopparna, s.k.  PEP (Peak Envelope Power), kan
+beräknas med följande formler
 
-Us
-Uett= {2.
-
-s- 2
-
-och
-
-Effekten vid moduleringstopparna, s.k.
-PEP (Peak Envelope Power), kan beräknas
-med följande formler
-
-ue~
-k.
-P,PEP =
-R respe t1ve
-P,
-PEP=
-
-Us~
-SR
-
-PA
-
-os c i lloscope
+\begin{align*}
+  P_{PEP} &= \frac{U_{eff}^2}{R} \quad \text{respektive} \\
+  P_{PEP} &= \frac{U_{SS}^2}{8R}
+\end{align*}
 
 Bild II 3-52 Bestämning av PEP-effekten
 
-KRETSAR
 \subsection{Linjäritetskontroll vid SSB}
 
 Bild II 3-53
-Linjäriteten i en SSB-sändare kan kontrolleras med ett oscilloscop. Sändaren moduleras då med två övertonsfria toner.
 
-slutsteget bör först belastas med konstlast
-upp till max tillåten effekt. Resultatet jämförs
-därefter med antennen som last.
+Linjäriteten i en SSB-sändare kan kontrolleras med ett
+oscilloscop. Sändaren moduleras då med två övertonsfria toner.
 
-SSB-TVATONSSl GNAL
-Oscillogram
+Slutsteget bör först belastas med konstlast upp till max tillåten
+effekt. Resultatet jämförs därefter med antennen som last.
 
-u
+\subsubsection{Linjäritetens betydelse i förstärkare}
 
-Spektrum
-
-Spektrumanalys
-
-(tid/spänn i ngsdiagra m l
-normal SSB-bandbredd
-
------t
-
-l.lL 
-
-f
-
-Idealisk linjär förstärkning (klass A- utan överstyrning)
-
-Nästan linjär förstärkning (klass AB- utan överstyrning)
-
-Olinjär förstärkning - för låg vilaström
-
-överstyrning (klippning)
-SSB-SIGNAL VID TAL ("aaah")
-
-Linjär förstärkning
-
-Överstyrning (klippning)
-
-Bild II 3-53 Unjäritetskontro/1 vid SSB
-113-39
-
-PT
-
-KRETSAR
-Linjäritetens betydelse i förstärkare
 Bild II 3-54
-Förstärkningen bör ske med god verkningsgrad och minsta möjliga förvrängning, så att
-det alstras ett minimum av oönskade frekvenser inom minsta möjliga bandbredd.
-Linjär förstärkning innebär att den är lika
-över hela det aktuella frekvensområdet Frekvensgången måste därför vara så rak som
-möjligt. Med tilltagande olinjäritettillkommer
-nämligen allt fler oönskade frekvenser.
-Det uppstår blandningsprodukter av högre ordning vid olinjär förstärkning. Genom
-förvrängning p.g.a. olinjär förstärkning uppstår ömsesidiga summa- och skillnadsfrekvenser av de modulerande frekvenserna.
 
-Varje sådan blandningsprodukt blandar
-sig additivt och subtraktivt med grundfrekvenserna till ytterligare blandningsprodukter
-av näst högre ordning.
+Förstärkningen bör ske med god verkningsgrad och minsta möjliga
+förvrängning, så att det alstras ett minimum av oönskade frekvenser
+inom minsta möjliga bandbredd.
+
+Linjär förstärkning innebär att den är lika över hela det aktuella
+frekvensområdet Frekvensgången måste därför vara så rak som
+möjligt. Med tilltagande olinjäritettillkommer nämligen allt fler
+oönskade frekvenser.
+
+Det uppstår blandningsprodukter av högre ordning vid olinjär
+förstärkning. Genom förvrängning p.g.a. olinjär förstärkning uppstår
+ömsesidiga summa- och skillnadsfrekvenser av de modulerande
+frekvenserna.
+
+Varje sådan blandningsprodukt blandar sig additivt och subtraktivt med
+grundfrekvenserna till ytterligare blandningsprodukter av näst högre
+ordning.
+
 Dessa är:
-0
-blandningsprodukter i LF-området och
-deras övertoner, vilka undertrycks i efterföljande HF-krets,
-e
-grundfrekvenserna och deras harmoniska
-övertoner, som alla ner till 1 :a harmoniska dämpas kraftigt av efterföljande
-H F-krets,
-0
-alla summa-och skillnadsfrekvenser av
-de förstnämnda frekvenserna.
+\begin{itemize}
+\item blandningsprodukter i LF-området och deras övertoner, vilka
+  undertrycks i efterföljande HF-krets,
 
-l ngångssignal
+\item grundfrekvenserna och deras harmoniska övertoner, som alla ner
+  till 1 :a harmoniska dämpas kraftigt av efterföljande H F-krets,
 
-l  l 
-Utgångssignal vid linjär förstärkning
-
-Utgångssignal vid olinjär förstärkning
-
-Olinjär karaktäristik
-
-Linjär karaktäristik
-
-la
-
-Ug
+\item alla summa-och skillnadsfrekvenser av de förstnämnda frekvenserna.
+\end{itemize}
 
 Bild II 3-54 Linjäritetens betydelse
 
-113-40
+I området för nyttofrekvenserna kallas dessa produkter för
+intermodulationsprodukter och ger talförvrängning.
 
-Ug
+Utanför nyttafrekvenserna uppfattas intermodulationsfrekvenserna som
+störningar och kallas splatter. På grund av det lilla
+frekvensavståndet till nyttasignalen kan den intermodulation, som
+alstrats i slutsteget inte filtreras bort i efterhand.
 
-KRETSAR
-l området för nyttafrekvenserna kallas
-dessa produkter för intermodulationsprodukter och ger talförvrängning.
-Utanför nyttafrekvenserna uppfattas
-intermodulationsfrekvenserna som störningar och kallas splatter. På grund av det
-lilla frekvensavståndet till nyttasignalen kan
-den intermodulation, som alstrats i slutsteget
-inte filtreras bort i efterhand.
-Vid linjär drift uppträder grundfrekvensernas övertoner och intermodulationsfrekvenser endast svagt inom och utom överföringsbandet och kommer knappast att uppfattas som inkräktande på annan radiotrafik.
-De svaga övertonerna kommer också att
-dämpas tillräckligt i n-filtret och eventuella
-ytterligare övertonsfilter.
+Vid linjär drift uppträder grundfrekvensernas övertoner och
+intermodulationsfrekvenser endast svagt inom och utom
+överföringsbandet och kommer knappast att uppfattas som inkräktande på
+annan radiotrafik.  De svaga övertonerna kommer också att dämpas
+tillräckligt i π-filtret och eventuella ytterligare övertonsfilter.
 
-tion till utstyrningsgraden. ALG-spänning
-återförs till drivsteget och reglerar dess uteffekt så att överstyrning av slutsteget inte
-sker. l transistoriserade slutsteg skapas ALGspänningen genom likriktning av slutstegets
-utspänning. l rörslutsteg börjar styrgallret
-dra ström, när styrgallerspänningen blir positiv i signaltopparna, vilket används för att
-styra ALG-spänningen. När ALG-regleringen
-sätter in, är överstyrningen således redan ett
-faktum. Överstyrning kan ske både på LFoch HF-nivå.
-En orsak till övermodulering är för stor
-amplitud på den modulerande signalen. Detta
-kan bl.a. avhjälpas med inställning av
-mikrofonförstärkaren och riktig mikrofonhantering.
 
 \subsection{Utstyrningskontroll av slutsteg}
 
-slutstegets linjära utstyrningsområde överskrids, om ingångssignalens amplitud blirför
-stor. Då ökar utgångssignalens amplitud inte
-mycket mer, men utgångssignalens toppar
-blir tillplattade (s.k. klippta). Det betyder att
-slutsteget är överstyrt.
-Vid överstyrning uppstår signalförvrängningar, som medför intermodulation, förvrängt tal, splatterstörningar och övertoner.
-Den extra effektökning som uppnås med
-överstyrning förbrukas i stort sett till signalförvrängning och kommer inte nyttasignalen
-till godo. Överstyrning skall därför undvikas.
-Drivstegets uteffekt får inte vara så stor
-att slutsteget blir överstyrt. Ett slutsteg med
-jordad katod blir fullt utstyrt redan vid en
-driveffekt av ett fåtal watt. Ar uteffekten från
-drivsteget större, än vad som behövs för full
-utstyrning av slutsteget, och driveffekten inte
-kan regleras ner, så måste en dämpsats
-kopplas in mellan drivsteg och slutsteg. En
-sådan dämpsats kan behöva ta upp en betydande effekt, från en vanligt förekommande
-amatöradiosändare upp till1 00 watt PEP.
-Ett slutsteg med jordat galler fordrar en
-större driveffekt, varvid risken för överstyrning i slutsteget är något mindre och de
+Slutstegets linjära utstyrningsområde överskrids, om ingångssignalens
+amplitud blirför stor. Då ökar utgångssignalens amplitud inte mycket
+mer, men utgångssignalens toppar blir tillplattade (s.k. klippta). Det
+betyder att slutsteget är överstyrt.
+
+Vid överstyrning uppstår signalförvrängningar, som medför
+intermodulation, förvrängt tal, splatterstörningar och övertoner.  Den
+extra effektökning som uppnås med överstyrning förbrukas i stort sett
+till signalförvrängning och kommer inte nyttasignalen till
+godo. Överstyrning skall därför undvikas.
+
+Drivstegets uteffekt får inte vara så stor att slutsteget blir
+överstyrt. Ett slutsteg med jordad katod blir fullt utstyrt redan vid
+en driveffekt av ett fåtal watt. Ar uteffekten från drivsteget större,
+än vad som behövs för full utstyrning av slutsteget, och driveffekten
+inte kan regleras ner, så måste en dämpsats kopplas in mellan drivsteg
+och slutsteg. En sådan dämpsats kan behöva ta upp en betydande effekt,
+från en vanligt förekommande amatöradiosändare upp till 100 watt PEP.
+
+Ett slutsteg med jordat galler fordrar en större driveffekt, varvid
+risken för överstyrning i slutsteget är något mindre och de
 förebyggande åtgärderna inte så omfattande.
-Linjära slutsteg innehåller oftast en funktion kallad ALG (Automatic Load Gontrol),
-som kontinuerligt känner av driveffektens
-inverkan på slutsteget När driveffekten blir
-för hög, alstras en kontrollspänning i propor113-41
 
-KRETSAR
+Linjära slutsteg innehåller oftast en funktion kallad ALC (Automatic
+Load Control), som kontinuerligt känner av driveffektens inverkan på
+slutsteget När driveffekten blir för hög, alstras en kontrollspänning
+i proportion till utstyrningsgraden. ALG-spänning återförs till
+drivsteget och reglerar dess uteffekt så att överstyrning av
+slutsteget inte sker. I transistoriserade slutsteg skapas
+ALC-spänningen genom likriktning av slutstegets utspänning. I
+rörslutsteg börjar styrgallret dra ström, när styrgallerspänningen
+blir positiv i signaltopparna, vilket används för att styra
+ALC-spänningen. När ALC-regleringen sätter in, är överstyrningen
+således redan ett faktum. Överstyrning kan ske både på LF- och HF-nivå.
 
-113-42
-
-KRETSA
+En orsak till övermodulering är för stor amplitud på den modulerande
+signalen. Detta kan bl.a. avhjälpas med inställning av
+mikrofonförstärkaren och riktig mikrofonhantering.
