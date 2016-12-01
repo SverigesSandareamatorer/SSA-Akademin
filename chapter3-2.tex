@@ -1,559 +1,281 @@
 \section{Frekvensfilter}
 
-Frekvensfilter används inom radiotekniken
-för många olika ändamål, t.ex. för att
-• eliminera störande signaler,
-• öka avstämningsskärpan (selektiviteten) i
-mottagare och sändare,
-• framhäva eller dämpa ett sidband i en AMsignal m.m.
-Beroende på den s.k. frekvensgången,
-så indelas filtren i flera "familjer", varav de
-vanliga presenteras här.
-Beroende på det tekniska utförandet finns
-dels s.k. passiva filter vilka använder extern
-energi för sin funktion, och dels aktiva filter
-vilka i princip är förstärkare som likaledes
-använder passiva kretsar. Här presenteras
-för enkelhetens skull passiva filter.
-Traditionella frekvensfilter är vad som
-kallas analoga. Men nu i dataåldern börjar
-även digitala filter vinna intåg. Sådana är
-dock för komplicerade för att behandlas här.
+%% sid II3-7/138
 
-Högpassfilter
+Frekvensfilter används inom radiotekniken för många olika ändamål, t.ex. för att
+\begin{itemize}
+\item eliminera störande signaler,
+\item  öka avstämningsskärpan (selektiviteten) i mottagare och sändare,
+\item framhäva eller dämpa ett sidband i en AM-signal m.m.
+\end{itemize}
+
+Beroende på den s.k. frekvensgången, så indelas filtren i flera ``familjer'',
+varav de vanliga presenteras här.
+
+Beroende på det tekniska utförandet finns dels s.k. passiva filter vilka
+använder extern energi för sin funktion, och dels aktiva filter vilka i princip
+är förstärkare som likaledes använder passiva kretsar. Här presenteras
+för enkelhetens skull passiva filter.
+
+Traditionella frekvensfilter är vad som kallas analoga. Men nu i dataåldern
+börjar även digitala filter vinna intåg. Sådana är dock för komplicerade för
+att behandlas här.
+
+\subsection{Högpassfilter}
+
 Bild II 3-22
 
-Ett högpassfilter släpper igenom signaler
-med höga frekvenser och dämpar dem med
+Ett högpassfilter släpper igenom signaler med höga frekvenser och dämpar dem med
 låga frekvenser.
+
 Exempel: En frekvensberoende spänningsdelare som LC-högpassfilter.
-.. Vid låga frekvenser är Xc stor och XL liten.
-Over XL uppstår då ett litet spänningsfall- en
-låg utgångsspänning ua. Resultatet blir att
+
+Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten. Över XL uppstår då ett
+litet spänningsfall - en låg utgångsspänning \(U_a\). Resultatet blir att
 låga frekvenser dämpas.
-Vig höga frekvenser är Xc liten och XL
-stor. Over XL uppstår då ett stort spänningsfall- en hög utgångsspänning ua. Resultatet
-blir att höga frekvenser släpps igenom.
-XL kan bytas ut mot en resister R, men då
-blir passbandkurvan inte så brant.
 
-Gränsfrekvens
-Gränsfrekvensen f9 beror av kapacitansen
-C, induktansen L samt resistansen R.
+Vig höga frekvenser är \(X_C\) liten och \(X_L\) stor. Över \(X_L\) uppstår då
+ett stort spänningsfall- en hög utgångsspänning \(U_a\). Resultatet blir att
+höga frekvenser släpps igenom.
 
-f
+\(X_L\) kan bytas ut mot en resister \(R\), men då blir passbandkurvan inte så
+brant.
+
+\emph{Gränsfrekvens}
+
+Gränsfrekvensen \(f_g\) beror av kapacitansen \(C\), induktansen \(L\) samt
+resistansen \(R\).
 
 LC-högpass:
+\begin{gather*}
+  f_g = \frac{1}{2π\sqrt{LC}} \\
+  f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
+\end{gather*}
 
-=
-
-g
-
-f9 [Hz]
-
-C [Farad]
-
-lågpassfilter
-
-Bild II 3-23
-Om induktor och kondensator respektive
-resister och kondensator i ett högpassfilter
-byter plats, så får man i stället ett LC-Iågpassfilter respektive ett RC-Iågpassfilter.
-Ett lågpassfilter släpper igenom signaler
-med låga frekvenser och dämpar dem med
-höga frekvenser.
-Exempel: En frekvensberoende spänningsdelare som LC-Iågpassfilter.
-.. Vid låga frekvenser är Xc stor och XL liten.
-Over XL uppstår då ett litet spänningsfall- en
-hög utgångsspänning ua. Resultatet blir att
-låga frekvenser släpps igenom.
-Vig höga frekvenser är Xc liten och XL
-stor. Over XL uppstår då ett stort spänningsfall -en låg utgångsspänning ua. Resultatet
-blir att höga frekvenser dämpas.
-
-Gränsfrekvens
-Samma formler används vid beräkning av
-gränsfrekvensen både i lågpass- och högpassfilter, således
-LC-Iågpass: ~
-
-f9 [Hz]
-
-L [H]
-
-RC-Iågpass: ~
-
-f9 [Hz]
-
-1
-
-= 2 rc{LC
-C [F]
-
-1
-
-= 2 rcRC
-
-C [F]
-
-R [Q]
-
-C [Farad]
-
-f =g
-
-f9 = ?
-
-1
-10 3
-~=
-=-=79.62 Hz
-2rc~ 4. 2rc ·1 o-B
-4n
-2) R= 1 kQ C= 1O n F f9 =?
-1
-10 5
-~=
-3
-9 = = 15.934
-2rc·1·10 ·10·102rc
-
-1
-2rc-fLC
-
-L [Henry]
-RC-högpass:
+RC-Högpass:
+\begin{gather*}
+  f_g = \frac{1}{2πRC}
+  f_g\ \text{[Hz]} \quad R\ \text{[Ω]} \quad C\ \text{[F]}
+\end{gather*}
 
 Räkneexempel:
-1) L = 4 H C = 1 J.lF
+\begin{enumerate}
+\item \(L = 4\ \text{H} \quad C = 1\ \text{µF} \quad f_g =\ ?\)
+  \[
+  f_g = \frac{1}{2π\sqrt{4\cdot 2 \cdot 10^{-6}}} = \frac{10^3}{2π}
+  = 79.62\ \text{Hz}
+  \]
+\item \(R = 1\ \text{kΩ} \quad C = 10\ \text{nF} \quad f_g =\ ?\)
+  \[
+    f_g = \frac{1}{2π \cdot 1 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
+    = \frac{10^5}{2π} = 15.934\ \text{Hz}
+  \]
+\end{enumerate}
 
-1
--
+\subsubsection{Lågpassfilter}
 
-2rcRC
-R [Ohm]
+Bild II 3-23
 
-113-17
+Om induktor och kondensator respektive resister och kondensator i ett
+högpassfilter byter plats, så får man i stället ett LC-lågpassfilter respektive
+ett RC-Iågpassfilter.
 
-KRETSAR
+Ett lågpassfilter släpper igenom signaler med låga frekvenser och dämpar dem med
+höga frekvenser.
 
-L
+Exempel: En frekvensberoende spänningsdelare som LC-Lågpassfilter.
 
-LC- HÖGPASS
+Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten. Över \(X_L\) uppstår då
+ett litet spänningsfall - en hög utgångsspänning \(U_a\). Resultatet blir att
+låga frekvenser släpps igenom.
 
-Ua
+Vig höga frekvenser är \(X_C\) liten och \(X_L\) stor. Över \(X_L\) uppstår då
+ett stort spänningsfall - en låg utgångsspänning \(U_a\). Resultatet blir att
+höga frekvenser dämpas.
 
-Ekvivalentschema
+\emph{Gränsfrekvens}
 
-Xc
-R
-RC -
+Samma formler används vid beräkning av gränsfrekvensen både i lågpass- och
+högpassfilter, således
 
-HÖGPASS
+LC-Lågpass:
+\begin{gather*}
+  f_g = \frac{1}{2π\sqrt{LC}} \\
+  f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
+\end{gather*}
 
-Ekvivalentschema
-
-Låga frekvenser dämpas
-
-L
-
-Höga frekvenser släpps igenom
+RC-Lågpass:
+\begin{gather*}
+  f_g = \frac{1}{2π\sqrt{RC}} \\
+  f_g\ \text{[Hz]} \quad R\ \text{[Ω]} \quad C\ \text{[F]}
+\end{gather*}
 
 Bild II 3-22 Högpassfilter
 
-113-18
-
-fg
-Passbandskurva
-
-f
-
-KRETSAR
-
-~©~CEPT
-
-L
-
-XL
-
-Te
-
-Ue
-
-Uu
-
-Ue
-Xc
-
-Ua
-
-o
-
-o
-LC- LAGPASS
-
-o
-
-o
-
-R
-CJ
-
-Ue
-
-Ekvivalentschema
-
-o
-
-le
-
-R
-
-Ua.
-
-I
-
-o
-
-Ue
-
-Ekvivalentschema
-
-RC- LAGPASS
-
-L
-
-o-------1 t ' r n r r •
-
-o
-
-IV Ile IV
-o
-
-Ua
-
-Xc
-o
-
------o
-
-Låga frekvenser släpps igenom
-
-100
-
-Ue
-
-70
-
-fg
-
-o,..I..(-o
-
-f
-
-Passbandskurva
-
-HöQa frekvenser dämoas
-
 Bild II 3-23 Lågpassfilter
 
-113- 19
-
-KRETSAR
-Bandpassfilter
+\subsection{Bandpassfilter}
 
 Bild 3-24
-Ett bandpassfilter släpper igenom signaler
-bara inom ett frekvensområde medan signaler inom andra frekvensområden dämpas.
-Bandpassfiltret består i enklaste fall av
-två svängningskretsar av LC-typ, vilka är
-avstämda till angränsande frekvenser. Kretsarna är kopplade induktivt, kapacitivt eller
-galvaniskt.
 
-Beroende på kopplingsgrad skiljer man
-mellan underkritisk koppling (lös koppling),
-kritisk koppling och överkritisk koppling (fast
-koppling).
-På bilden visas hur passbandet påverkas
-bl.a. av kopplingsgraden. Lös koppling liten bandbredd. Kritisk koppling - större
-bandbredd. Fast koppling- stor bandbredd.
+Ett bandpassfilter släpper igenom signaler bara inom ett frekvensområde medan
+signaler inom andra frekvensområden dämpas.
 
-KOPPLINGSSÄTT
+Bandpassfiltret består i enklaste fall av två svängningskretsar av LC-typ, vilka
+är avstämda till angränsande frekvenser. Kretsarna är kopplade induktivt,
+kapacitivt eller galvaniskt.
 
-Induktivt
+Beroende på kopplingsgrad skiljer man mellan underkritisk koppling (lös
+koppling), kritisk koppling och överkritisk koppling (fast koppling).
 
-Kapacitivt
-
-Galvaniskt
-
-fr
-Underkritisk koppling
+På bilden visas hur passbandet påverkas bl.a. av kopplingsgraden. Lös koppling
+liten bandbredd. Kritisk koppling - större bandbredd. Fast koppling - stor
+bandbredd.
 
 Bild II 3-24 Bandpassfilter
 
-113-20
+\subsection{Passfilter}
 
-Kritisk koppling
+Bild II 3-25
 
-f
+Passkretsen stäms av till en viss frekvens och erbjuder där en mycket låg
+impedans. Passkretsen kopplas i serie med signalvägen och låter signaler med
+frekvenser inom filtrets passband att passera.
 
-fr
-överkritisk koppfing
-
-f
-
-KRETSAR
-Passfilter
-
-Bild 113-25
-Passkretsen stäms av till en viss frekvens
-och erbjuder där en mycket låg impedans.
-Passkretsen kopplas i serie med signalvägen och låter signaler med frekvenser inom
-filtrets passband att passera.
-
-fr
 Bild II 3-25 Passfilter
 
-Bandspärrfilter
+\subsection{Bandspärrfilter}
 
 Bild II 3-26
-Om serie- och parallellkretsarna i ett bandpassfilter byter plats, så får man i stället ett
-bandspärrfilter. Ett sådant spärrar signaler
-inom ett visst frekvensområde, men släpper
-igenom signaler utom detta område.
 
-o
-
-uin
-
-I
-
-o
-
-I
-
-CJ
-
-I
-
-I
-
-uut
-o
-
-uut
-o
+Om serie- och parallellkretsarna i ett bandpassfilter byter plats, så får man
+i stället ett bandspärrfilter. Ett sådant spärrar signaler inom ett visst
+frekvensområde, men släpper igenom signaler utom detta område.
 
 Bild II 3-26 Bandspärrfilter
 
-Spärrfilter
+\subsection{Spärrfilter}
 
 Bild II 3-27
-Spärrkrets
-Spärrkretsen stäms av till en viss frekvens
-och erbjuder där en mycket hög impedans.
-Spärrkretsen kopplas i serie med signalvägen och spärrar en signal med samma
-frekvens som resonansfrekvensen.
 
-Bild 113-27
-sugkrets
-sugkretsen stäms av till en viss frekvens och
-erbjuder där en mycket låg impedans. sugkretsen kopplas parallellt med signalvägen
-och kortsluter (suger bort) en signal med
-samma frekvens som resonansfrekvensen.
+\emph{Spärrkrets}
+Spärrkretsen stäms av till en viss frekvens  och erbjuder där en mycket hög
+impedans. Spärrkretsen kopplas i serie med signalvägen och spärrar en signal
+med samma frekvens som resonansfrekvensen.
 
-113-21
-
-KRETSAR
-
-o
-
-o
-
-uin
-
-o
-
-uut
-
-uut
-
-·SPÄRRKRETS
-
-I
-
-o
-
-I
-
-uin
-o
-
-f
-
-o
-
-fr
-
-uut
-o
-
-SUGKRETS
+Bild II 3-27
+\emph{Sugkrets}
+Sugkretsen stäms av till en viss frekvens och erbjuder där en mycket låg
+impedans. Sugkretsen kopplas parallellt med signalvägen och kortsluter (suger
+bort) en signal med samma frekvens som resonansfrekvensen.
 
 Bild II 3-27 Spärrfilter (2 sorter)
 
-Kvartskristall
+\subsection{Kvartskristall}
+
 Bild II 3-28
 
-Bandfilter med kvartskristaller
+En kvartskristall, egentligen en slipad skiva av kvarts, kan fungera som en
+elektromekanisksvängningskropp (resonator), vars egenskaper liknar dem i en
+LC-krets.
 
-En kvartskristall, egentligen en slipad skiva
+Den låga inre resistansen gör att Q-värdet i en kvartskristall är bättre än
+10000. Som jämförelse är Q-värdet i en LC-krets oftast sämre än 1000.
 
-av kvarts, kan fungera som en elektromekanisksvängningskropp (resonator), vars egenskaper liknar dem i en LC-krets.
-
-Den låga inre resistansen gör att Q-värdet i en kvartskristall är bättre än 10000.
-Som jämförelse är Q-värdet i en LC-krets
-oftast sämre än 1000.
+\subsection{Bandfilter med kvartskristaller}
 
 Bild II 3-29
-Kvartskristaller kan kombineras till filter med
-önskad bandbredd. Även utföranden med
-keramiska resonatorer finns.
-Resonatorerna är avstämda till var sin
-bestämda frekvens och hela komplexet bidrar på så sätt till att bilda passband eller
-andra egenskaper på samma sätt som med
-sammankopplade LC-kretsar.
 
-j
-[:=J
-
-T
-Schemasymbol
-
-Ekvivalentschema
+Kvartskristaller kan kombineras till filter med önskad bandbredd. Även
+utföranden med keramiska resonatorer finns. Resonatorerna är avstämda till var
+sin bestämda frekvens och hela komplexet bidrar på så sätt till att bilda
+passband eller andra egenskaper på samma sätt som med sammankopplade LC-kretsar.
 
 Bild II 3-28 Kvartskristall
-113-22
 
 Bild II 3-29 Bandfilter med kvartskristalle
 
-KRETSAR
-Mekaniska filter
+\subsection{Mekaniska filter}
 
 Bild II 3-30
-Med en elektromekanisk givare kan man få
-en kropp (resonator) att svänga på sin resonansfrekvens. Med ännu en elektromagnetisk givare kan man känna av svängningarna och återvandla dem till elektriska signaler. Hela anordningen fungerar som en elektromekanisk resonator, vars egenskaper liknar dem i en LC-krets.
-Resonatorerna kan kombineras till filterkomplex med önskad bandbredd där resenatorerna är avstämda till var sin bestämda frekvens. Hela komplexet bidrar på så
-sätt till att bilda ett passband på samma sätt
-som med sammankopplade LC-kretsar.
-Beroende på tillämpningen finns olika frekvenslägen i intervallet 60-600 kHz.
+
+Med en elektromekanisk givare kan man få en kropp (resonator) att svänga på sin
+resonansfrekvens. Med ännu en elektromagnetisk givare kan man känna av
+svängningarna och återvandla dem till elektriska signaler. Hela anordningen
+fungerar som en elektromekanisk resonator, vars egenskaper liknar dem i en
+LC-krets.
+
+Resonatorerna kan kombineras till filterkomplex med önskad bandbredd där
+resenatorerna är avstämda till var sin bestämda frekvens. Hela komplexet bidrar
+på så sätt till att bilda ett passband på samma sätt som med sammankopplade
+LC-kretsar. Beroende på tillämpningen finns olika frekvenslägen i intervallet
+60-600 kHz.
+
 Mekaniska filter användes mest förr som
 mellanfrekvensfilter i högvärdiga radioutrustningar, men har numera till stor del ersatts
 av bandfilter med kvartskristaller där arbetsområdet kan ligga avsevärt högre i frekvens.
 
+\subsection{Kavitetsfilter}
+
 Bild II 3-31 Kavitetsfilter
-Inkommande och utgående signaler ansluts till filtrets mittledare över induktionskondensatorer eller direkt galvaniskt.
-kavitetsfilter kan kopplas ihop för att
-bilda bandfilter, frekvensdelare m.m ..
 
-Helixfilter
-
-Kavitetsfilter
 Bild II 3-31
 
-Svängningskretsars dimensioner minskar
-med ökande frekvens. Vid mycket hög frekvens kan induktorns varvtal i en LC-krets ha
-minskat till ett enda varv samtidigt som kapacitansen inom detta enda varv kan räcka
-för önskad resonansfrekvens.
-En sådan svängningskrets kan bl.a. ha
-formen av en ledare mitt inne i en elektriskt
-ledande kavitet. Ledarens längd tillsammans
-med kavitetens insida bildar induktorn. Mellan ledaren och kavitetens insida råder en
-kapacitans, som kan kompletteras/justeras
-med en extra kondensator.
+Svängningskretsars dimensioner minskar med ökande frekvens. Vid mycket hög
+frekvens kan induktorns varvtal i en LC-krets ha minskat till ett enda varv
+samtidigt som kapacitansen inom detta enda varv kan räcka för önskad
+resonansfrekvens.
 
-Givare
+En sådan svängningskrets kan bl.a. ha formen av en ledare mitt inne i en
+elektriskt ledande kavitet. Ledarens längd tillsammans med kavitetens insida
+bildar induktorn. Mellan ledaren och kavitetens insida råder en kapacitans,
+som kan kompletteras/justeras med en extra kondensator.
 
-När ett kompakt kavitetsfilter behövs, så kan
-man öka reaktansen i mittledaren både induktivt och kapacitivt genom att utforma den
-som en spiral (helix). Detta är dock på bekostnad av Q-värdet. Flera kavitetsfilter kan
-kopplas ihop för att bilda bandfilter, spärrfilter m.m ..
+Inkommande och utgående signaler ansluts till filtrets mittledare över
+induktionskondensatorer eller direkt galvaniskt. kavitetsfilter kan kopplas
+ihop för att bilda bandfilter, frekvensdelare m.m.
 
-Resonanskroppar
+\subsection{Helixfilter}
 
-Avkännare
+När ett kompakt kavitetsfilter behövs, så kan man öka reaktansen i mittledaren
+både induktivt och kapacitivt genom att utforma den som en spiral (helix).
+Detta är dock på bekostnad av Q-värdet. Flera kavitetsfilter kan kopplas ihop
+för att bilda bandfilter, spärrfilter m.m.
 
-]!~CJ··C) C)EJ]~
-Bild II 3-30 Mekaniskt filter
-
-113-23
-
-KRETSAR
-Pi-filter
+\subsection{Pi-filter}
 
 Bild II 3-32
-För att överföra H F-signaler med bästa verkningsgrad, så är det viktigt med god impedansanpassning mellan de olika funktionerna. Om anslutningsimpedansen är lika i båda
-~~nktionerna, så behövs inga extra åtgärder.
-Ar impedanserna däremot olika, så behövs
-korrigeringsnät (filter).
-Ofta är nätet Pi-format och består av
-induktanser och kapacitanser. Ett Pi-format
-nät kan sägas bestå av två L-formade nät
-ställda mot varandra, där den seriella delen
-är gemensam (på bilden en induktor).
 
-T-filter
+För att överföra HF-signaler med bästa verkningsgrad, så är det viktigt med god
+impedansanpassning mellan de olika funktionerna. Om anslutningsimpedansen är
+lika i båda funktionerna, så behövs inga extra åtgärder. Är impedanserna däremot
+olika, så behövs korrigeringsnät (filter).
+
+Ofta är nätet Pi-format och består av induktanser och kapacitanser. Ett
+Pi-format nät kan sägas bestå av två L-formade nät ställda mot varandra, där
+den seriella delen är gemensam (på bilden en induktor).
+
+\subsection{T-filter}
 
 Bild II 3-33
-Ett nät kan också vara T -format och bestå av
-induktanser och kapacitanser. Ett sådant
-nät kan sägas bestå av två L-formade nät
-ställda "rygg mot rygg". Då är den parallella
-delen gemensam. På bilden visas två alternativ.
-När den parallella delen är kapacitiv, blir
-huvudkaraktären ett lågpassfilter, men att
-impedansanpassning också är möjlig med
-en induktiv impedansdelning.
-När den parallell delen är induktiv blir
-huvudkaraktären ett högpassfilter, men att
-impedansanpassning också är möjlig med
-en kapacitiv impedansdelning.
+
+Ett nät kan också vara T-format och bestå av induktanser och kapacitanser. Ett
+sådant nät kan sägas bestå av två L-formade nät ställda ``rygg mot rygg''. Då är
+den parallella delen gemensam. På bilden visas två alternativ.
+
+När den parallella delen är kapacitiv, blir huvudkaraktären ett lågpassfilter,
+men att impedansanpassning också är möjlig med en induktiv impedansdelning.
+
+När den parallell delen är induktiv blir huvudkaraktären ett högpassfilter, men
+att impedansanpassning också är möjlig med en kapacitiv impedansdelning.
 
 Ett Pi- eller T-filter kan fungera som
-• svängningskrets,
-• impedanstransformator (anpassning),
-• balansera ut en reaktans o.s.v.
-
-o
-
-·O
-
-l
-
-el
-I
-
-w f •
+\begin{itemize}
+\item svängningskrets,
+\item impedanstransformator (anpassning),
+\item balansera ut en reaktans o.s.v.
+\end{itemize}
 
 Bild II 3-32 Pi-filter
-113-24
-
-L
-
-J t 'f , '
-
-le
-I
-
-o
-
-o
-
-(
-
-(
-
-o
-
-o
 
 Bild II 3-33 T-filter
