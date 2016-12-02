@@ -1,167 +1,118 @@
-Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt utan ett effektivt
-antennsystem. Det är en huvudförutsättning för framgångsrik radiokommunikation.
-Antennen omsätter elektrisk energi från
-sändaren till elektromagnetiska fält som strålas ut, d. v. s. radiovågor.
-Vid mottagning fångar antennen upp
-radiovågorna och omsätter dem till elektriska signaler som förs till mottagaren.
-Antennsystemet består av den egentliga
-antennen och transmissionsledningen mellan denna och sändaren respektive mottagaren. l antennsystemet ingår även impedansanpassningar, antennkopplare m. m.
-
 \section{Antenner - allmänt}
 
-Våghastighet
-l vakuum breder elektromagnetiska vågor
-ut sig med hastig heten c 0 , vilken mest kallas
-ljushastigheten.
-C0 :::< 300 ·1 Os [m/s]
+Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt
+utan ett effektivt antennsystem. Det är en huvudförutsättning för
+framgångsrik radiokommunikation.
 
-l andra media än vakuum har samma
-vågor utbredningshastigheten c
-Formeln är då
+Antennen omsätter elektrisk energi från sändaren till
+elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
 
-c=~
+Vid mottagning fångar antennen upp radiovågorna och omsätter dem till
+elektriska signaler som förs till mottagaren.
 
-[m/s]
-!lo. s,
-där !lo är relativa permeabilitetskonstanten
-och Er är relativa dielektricitetskonstanten för
-det medium som vågorna passerar igenom.
-För enkelhetens skull sätts här !lo och er till
-1 , alltså c 0 = c.
+Antennsystemet består av den egentliga antennen och
+transmissionsledningen mellan denna och sändaren respektive
+mottagaren. I antennsystemet ingår även impedansanpassningar,
+antennkopplare m.m.
+
+
+\subsubsection{Våghastighet}
+
+I vakuum breder elektromagnetiska vågor ut sig med hastigheten
+\(c_0\), vilken mest kallas ljushastigheten.
+
+\[c_0 \approx 300 \cdot 10^6 \text{ [m/s]}\]
+
+I andra media än vakuum har samma vågor utbredningshastigheten
+\(c\). Formeln är då
+
+\[c = \frac{c_0}{\sqrt{µ_o \cdot \varepsilon_r}}\]
+
+där \(µ_0\) är relativa permeabilitetskonstanten och \(\varepsilon_0\)
+är relativa dielektricitetskonstanten för det medium som vågorna
+passerar igenom.  För enkelhetens skull sätts här \(µ_0\) och
+\(\varepsilon_0\) till 1, alltså \(c_0 = c\).
+
 Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
-c= A. f
-c [m/s] f[Hz] A [m]
-och våglängden således A=
 
-!j
+\[ c = \lambda \cdot f \quad c\text{ [m/s] }f\text{ [Hz] }\lambda\text{ [m]}\]
 
-[m]
+och våglängden således
+
+\[ \lambda = \frac{c}{f} \quad \text{[m]} \]
 
 \subsection{Antennlängd}
 
-Elektriska längden
-Längden för en resonant, ideal antenn som
-är en våglängd lång kan beräknas med
-ovanstående formel. Vi kallar denna längd
-för den elektriska längden. Således le= A.
+\subsubsection{Elektriska längden}
 
-Elektriska längden (le) för en halwågsantenn (A/2) är hälften av den elektriska
-längden för en helvågsantenn (A):
+Längden för en resonant, ideal antenn som är en våglängd lång kan
+beräknas med ovanstående formel. Vi kallar denna längd för den
+\emph{elektriska} längden. Således \(l_e = \lambda\).
 
-l =~
+Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\))
+är hälften av den elektriska längden för en helvågsantenn
+(\(\lambda\)):
 
-[m]
-2f
-Mekaniska längden
-Man skiljer på antennens elektriska och
-mekaniska längd. Av flera orsaker blir den
-mekaniska antennlängden (lm) för samma
-frekvens kortare än den elektriska {1 6 ). Det
-beror bl. a. på våghastighet och ledningsförmåga i de material som ingår samt övriga
-elektriska egenskaper beroende på antennens mekaniska utförande, påverkan från
-jordplan och omgivning m. m.
-Ett förhållande mellan längd och tjocklek
-av 10000 ger t. ex. en c:a 2 °/o mekaniskt
-kortare antenn. Förhållandet 30 ger en c:a 5
-o/o kortare antenn. Det första värdet kan
-passa för en 2 mm tjock halvvågsantenn för
-7 MHz. Det andra värdet för en 3.5 mm tjock
-halvvågsantenn för 145 MHz. Diagram för
-den s.k. förkortningsfaktorn finns i de flesta
-ante n nhandböcker.
-l följande formel har den mekaniska längden (lm) för en fritt upphängd trådantenn
-valts 2 °/o kortare än den elektriska längden.
-e
+\[l_e = \frac{c}{2f} \quad \text{[m]}\]
 
-l
-m
+\subsubsection{Mekaniska längden}
 
-=~ .
-2f
+Man skiljer på antennens elektriska och mekaniska längd. Av flera
+orsaker blir den mekaniska antennlängden (\(l_m\)) för samma
+frekvens kortare än den elektriska (\(l_e\)). Det beror bl.a. på
+våghastighet och ledningsförmåga i de material som ingår samt övriga
+elektriska egenskaper beroende på antennens mekaniska utförande,
+påverkan från jordplan och omgivning m.m.
 
-O 98 = 147 . 1os
-.
-f
+Ett förhållande mellan längd och tjocklek av 10000 ger t.ex. en c:a
+2\% mekaniskt kortare antenn. Förhållandet 30 ger en c:a 5\% kortare
+antenn. Det första värdet kan passa för en 2 mm tjock halvvågsantenn
+för 7 MHz. Det andra värdet för en 3.5 mm tjock halvvågsantenn för 145
+MHz. Diagram för den s.k. förkortningsfaktorn finns i de flesta
+antennhandböcker.
 
-[m]
+I följande formel har den mekaniska längden (\(l_m\)) för en fritt upphängd
+trådantenn valts 2\% kortare än den elektriska längden.
+
+\[l_m = \frac{c}{2f} \cdot 0.98 = \frac{147\cdot 10^6}{f} \quad \text{[m]}\]
 
 Exempel: Beräkna den elektriska och mekaniska längden på en halvvågsantenn med
-resonansfrekvensen f= 7 MHz.
-c= A, . f
-c [m/s] f [H z] A [m]
+resonansfrekvensen \(f = 7\) MHz.
+
+\[
+c = \lambda \cdot f
+\quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
+\]
+
 Elektriska våglängden för 7 MHz är
 
-A =E= 300. i os
-f
-7 ·1 os
+\[
+\lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42.86
+\quad \text{[m]}
+\]
 
-= 300 = 42.86
+Antennen är en halvvågsantenn, således är elektriska längden
 
-[m]
+\[
+l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21.43 \quad \text{[m]}
+\]
 
-7
+och mekaniska längden
 
-Antennen är en halvvågsantenn, således är
-elektriska längden
+\[
+l_m = \frac{\lambda}{2f} \cdot 0.98 = \frac{42.86}{2}\cdot 0.98 = 21
+\quad \text{[m]}
+\]
 
-1 =~ =
-e
-2
+Bild II 6-1 Spänning och ström i en halvvågsantenn
 
-42 86
-·
-
-2
-
-= 21.43
-
-[m]
-
-och
-
-mekaniska längden
-
-l
-
-m
-
-= 3:
-2f
-
-. 0.98 =
-
-42 86
-· · 0.98 = 21
-
-2
-
-[m]
-
-116-1
-
-ANTENNSYSTE
-)..
-
-r--2-~~,
-
-~
-..........
-
-Ström- och spännings-''-... ...... .!)-fördelning
-
-Bild II 6-1 Spänning och ström i en
-halvvågsantenn
-
-l mpedansfördelning
-
-Bild II 6-2 Matningsimpedansen
-i en halwågsantenn
-
-116-2
+Bild II 6-2 Matningsimpedansen i en halvvågsantenn
 
 \subsection{Ström och spänning i en halvvågsantenn}
 
-När en halwågsantenn matas med HF-energi på grundfrekvensen, så uppstår en stående våg med ett typiskt utseende.
+%% TODO resten av den här filen
+
+När en halvvågsantenn matas med HF-energi på grundfrekvensen, så uppstår en stående våg med ett typiskt utseende.
 Bild II 6-1 visar att i vardera änden av
 antennen uppnår spänningen U ett maximum (en spänningsbuk), l mitten uppnår
 strömmen I ett maximum (en strömbuk).
@@ -189,8 +140,10 @@ strålningen alltmertill riktad längs med antennen.
 
 Impedansen Z för varje punkt på en antenn
 kan beräknas med Ohms lag Z = U/1.
+
 Bild II 6-2
-l mitten av en halwågsantenn på grundfrekvensen är impedansen Z låg eftersom
+
+I mitten av en halvvågsantenn på grundfrekvensen är impedansen Z låg eftersom
 spänningen är låg där och strömmen hög.
 Ute i ändarna är däremot impedansen hög
 eftersom spänningen där är hög och strömmen låg.
@@ -199,94 +152,14 @@ grundfrekvensen, när antennen mätt i våglängder befinner sig mycket högt ö
 omgivningen. l praktiken kan impedansen
 awika mycket från detta värde.
 
-ANTENNSYSTE
-
-3,5MHz {80m)
-
-2:5',
-
-..ooO!-o........
-, ......
--------......
-
--- ---~y?/ 7
-......
-
-7 MHz (40m)
-
-~
-
-o<lli-------.. . . .
-'
-
-/
-
-Grundfrekvens =
-1 :a harmoniska
-
-l::
-
-t
-
-.......
-
-/
-
-2:a harmoniska
-
-l::2·-'
-
-4:e harmoniska
-
-l= 4
-21MHz(15m)
-28 MHz (10m)
-
-6
-
-t
-
-6:e harmoniska
-
-l::6·t
-
-Ä"> /'75:'> ..,.-?S> /. .
-' . . SZ7 . .,szy ,\ Z./
-
-zs:>. . <.;.(:;;,. -
-
-8:e harmoniska
-
-(::8·f
-
-~---------------40m----------------~
-
--ström
-
-HORISONTALDIAGRAM FÖR EN
-HARMONISKA ÖVERTONER
-
-- - - ... spänning
-
-t-
-
-DIPOL VID MATNING MED
-
-Grundfrekvens
-
-3:e harmoniska
-
-2:a harmoniska
-
-Bild II 6-3 Halwågsdipol matad med harmoniska övertoner
+Bild II 6-3 Halvvågsdipol matad med harmoniska övertoner
 
 116-3
 
-ANTENNSYSTE
 Antenn och matningskabel måste vara
 impedansanpassade till varandra för att det
 inte skall skall uppstå vågreflexion i anslutningen.
-Märk, att halwågsantennen är i resonans inte bara på grundtonen utan även på
+Märk, att halvvågsantennen är i resonans inte bara på grundtonen utan även på
 jämna övertoner, 2:a, 4:e etc. harmoniska,
 varvid matningspunkten har hög impedans.
 Vid matning med en lågohmig koaxialkabel
@@ -337,7 +210,7 @@ När antennströmmen har högre frekvens
 resulterande reaktansen positiv (induktiv),
 d.v.s. XL är större än Xc.
 
-\subsection{Elektrisk "förlängning" och "förkortning"}
+\subsection{Elektrisk ``förlängning'' och ``förkortning''}
 
 Om sändarfrekvensen, awiker mycket från
 antennens resonansfrekvens, så kan
@@ -355,15 +228,6 @@ mycket och ofta, varför antennsystemet bör
 kunna stämmas av från marken/operatörsplatsen. Då kan en antennkopplare med
 nödvändiga reaktiva komponenter behövas.
 Se längre fram i kapitlet.
-
-NSYSTE
-dipol (l:::
-
-eller
-
-f)
-
-~~
 
 Dipol, elektriskt förlängd
 
@@ -424,7 +288,6 @@ Bild II 6-5 Vertikaldiagram för halvvågsantenn
 
 116-5
 
-ANTENNSYSTE
 Med effekten Pi från den isotropiska antennen som referens blir antennvinsten
 
 P.
@@ -433,7 +296,7 @@ G= 1O log t
 [dBi]
 ~
 En i praktiken definierbar referens är
-halwågsdipolen, vars huvudstrålning ärvinkelrätt ut från dipolen och runt omkring den.
+halvvågsdipolen, vars huvudstrålning ärvinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då Pd och antennvinsten
 
 P.
@@ -519,7 +382,7 @@ dBi
 Effektivt utstrålad effekt (ERP - effective
 radiated power) är den effekt som sändarantennen strålar ut i sin bästa strålningriktning. ERP beräknas som den effekt som
 tillförs själva antennen, multiplicerat med
-antennvinsten relativt en halwågsdipol. Förlusterna på vägen från sändaren ut till antennen är alltså borträknad före beräkningen
+antennvinsten relativt en halvvågsdipol. Förlusterna på vägen från sändaren ut till antennen är alltså borträknad före beräkningen
 av ERP.
 
 \subsection{Fram-/backförhållande (antennvinst)}
@@ -568,7 +431,6 @@ Bild II 6-8 F/B-förhållande i effekt
 Fram/backförhållandet kan också definieras som förhållandet mellan elektriska
 fältstyrkan uf i framriktningen och referensfältstyrkan ub i backriktningen
 
-ANTE N
 u
 ub
 
@@ -656,7 +518,7 @@ Bild 116-10
 Umax
 
 u
-Effekthalwärde
+Effekthalvvärde
 
 ,Öppningsvinkel
 
@@ -672,7 +534,7 @@ Effekthalwärde
 0,5
 J
 
-Spänningshalwärde
+Spänningshalvvärde
 
 l
 
@@ -688,4 +550,3 @@ Bild II 6-1 O Halvvärdesbredder
 
 116-7
 
-ANTE N
