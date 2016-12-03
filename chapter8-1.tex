@@ -1,0 +1,327 @@
+\emph{I forskning, utveckling och produktion är mätning en hörnpelare
+  i verksamheten. Även inom mättekniken sker en snabb utveckling och
+  digitaltekniken kommer alltmer till användning, men grunderna för
+  mätning är desamma. I detta kapitel behandlas de viktigaste
+  mättekniska begreppen som radioamatörer kan behöva känna till.}
+
+\section{Att mäta}
+
+\subsection{Mäta likspänning}
+
+Vid spänningsmätning bestämmer man potentialskillnaden - spänningen -
+mellan två punkter. Om det finns en spänning, så flyter en motsvarande
+(mät)ström genom instrumentetinstrumentet presenterar mätströmmen som
+spänning.
+
+Mätströmmen påverkar emellertid spänningsfördelningen i kretsen och då
+uppstår ett mätfel, vilket inte framgår av det visade mätvärdet. Med
+kännedom om kretsens och instrumentets data kan man dock beräkna
+mätfelet. En voltmeter skall ha hög inre resistans för att mätfelet
+skall bli litet.
+
+Endast vid mycket noggrann mätning kan man behöva räkna om det visade
+mätvärdet med hänsyn till voltmeterns inre resistans och
+förkopplingsresistansen - om en sådan används).
+
+\emph{På grund av den höga inre resistansen är en voltmeter endast
+  lämpad för spänningsmätning - INTE för direkt strömmätning!}
+
+\subsubsection{Utöka mätområdet för en voltmeter}
+
+Bild II 3-1
+
+Med hjälp av förkopplingsresistor i serie med voltmetern kan man mäta
+högre spänning än den som voltmetern är gjord för.  Spänningen
+fördelas då proportionellt mellan förkopplingsresistorns resistans och
+instrumentets inre resistans.
+
+När förkopplingsresistor används måste mätvärdet räknas om med en
+skalfaktor eller en skala med motsvarande gradering användas. En
+voltmeter med valbar förkopplingsresistor kan därför har flera
+skalor. I digitala voltmetrar anpassas "skalan" oftast automatiskt.
+
+\subsection{Mäta likström}
+
+Vid strömmätning bestämmer man strömstyrkan i en gren av en elektriskt
+strömkrets.  Amperemetern skall kopplas i serie med den aktuella
+strömgrenen.  Det visade mätvärdet motsvarar strömstyrkan.
+Amperemeterns inre resistans adderas emellertid till resistansen i
+strömgrenen och då uppstår ett mätfel.  En amperemeter skall ha låg
+inre resistans för att mätfelet skall bli litet.
+
+Endast vid mycket noggrann mätning kan man behöva räkna om det visade
+mätvärdet med hänsyn till amperemeterns inre resistans och resistansen
+i strömshunten-om en sådan används.
+
+\emph{På grund av den låga inre resistansen skall en amperemeter
+  ALDRIG användas för spänningsmätning. Då förstörs den!}
+
+\subsubsection{Utöka mätområdet för en amperemeter}
+
+Bild II 3-2
+
+Med en strömshunt (en resister parallellt) över amperemetern kan man
+mäta högre ström än den som amperemetern är gjord för.
+
+Shunten dimensioneras så att större delen av strömmen leds förbi
+amperemetern.  Kvar är den mätström som behövs för att amperemetern
+skall göra fullt utslag.
+
+Mätströmmen fördelar sig omvänt proportionellt till instrumentets och
+shuntens resistanser.
+
+När en strömshunt används måste mätvärdet räknas om med en skalfaktor
+eller en skala med motsvarande gradering användas. En amperemeter med
+valbar shuntresister kan därför har flera skalor. I digitala
+amperemetrar anpassas ``skalan'' oftast automatiskt.
+
+\subsection{Mäta växelspänning och växelström}
+
+Grunderna för mätning av växelspänning och växelström är samma som för
+likspänning och likström, men att bl.a. en instrumentlikriktare oftast
+behövs.
+
+Beroende på frekvensen i strömkretsen och vilket slags värde man vill
+mäta, används olika instrument.
+
+Olika typer av instrument ger olika möjligheter, men också
+begränsningar.
+
+\emph{Mjukjärnsinstrument} utan likriktare kan mäta växelströmmar ner
+till c:a 50 mA och upp till c:a 10 A. Frekvensen får dock inte vara
+högre än c:a 100 Hz.
+
+\emph{Vridspoleinstrument} används dels direkt för likströmsmätning
+och dels med likriktare även för växelströmsmätning.
+
+Vridspoleinstrument med likriktare används ofta för frekvenser upp
+till c:a 10 kHz och strömmar ner till 0.1 mA. Noggrannheten är sällan
+bättre än 1.5\% av fullt utslag.
+
+Beroende på funktionsprincipen kan det skilja på hur instrument mäter,
+vilket nödvändigtvis inte är detsamma som hur mätvärdet presenteras.
+
+Mjukjärnsinstrument mäter effektivvärdet av en växelström medan ett
+vridspoleinstrument med likriktare mäter likriktade medelvärdet. Som
+exempel kan skalan i ett instrument med likriktare även graderas för
+effektivvärdet för sinusformade förlopp.
+
+För mätning av växelström används vanligen instrument med likriktare,
+men för HF även instrument med termokors, vilka bygger på
+termogalvanisk spänning mellan metaller.
+
+\subsubsection{Frekvensens inverkan}
+
+Frekvensen på den mätta signalen inverkar mer eller mindre på
+mätresultatet. Till en del beror det på den instrumenttyp, som
+används. En faktor är instrumentets gränsfrekvens, d.v.s. hur högt i
+frekvens som instrumentet fortfarande är rimligt rättvisande. Detta
+kallas instrumentets bandbredd, vilken bör vara dokumenterad.
+
+\subsubsection{Vågformens inverkan}
+
+Även formen på den signal som mäts inverkar på mätresultatet och det
+är viktigt att veta för vilken vågform som instrumentet presenterar
+mätvärdet. Det vanligaste är att vågen förutsätts vara sinusformad,
+vilket ofta inte är fallet i praktiken. Det innebär att fel värde
+presenteras om vågformen är en annan än den förutsatta.
+
+\subsection{Mäta resistans}
+
+Mätning av resistans är enklast att göra på en fristående komponent,
+medan man vid mätning på en resister i en strömkrets också måste ta
+hänsyn till att andra komponenter i kretsen kan påverka mätresultatet.
+
+Resistans kan mätas på flera sätt. Det grundläggande är att mäta
+strömmen genom resistorn och spänningen över den och sedan beräkna
+resistansen med Ohms lag.
+
+Därutöver finns direktvisande instrument för resistansmätning -
+s.k. ohm-metrar. Sådana instrument innehållervanligen en egen
+strömkälla i form av ett batteri.
+
+% TODO Här borde vi främst beskriva den moderna DMM:en och hur man väljer en
+
+\subsection{Mäta effekt}
+
+Effektformler vid lik- och växelström (medel-, effektiv- och
+toppvärden)
+
+Vid likström:
+
+\begin{gather*}
+P = U \cdot I \quad \text{[W (watt)]} \\
+\text{d.v.s. Joules lag}
+\end{gather*}
+
+Vid sinusformad växelström:
+
+\begin{align*}
+  \text{medelvärde   } \quad P_{medel} &= \frac{0.8\cdot U_{eff}^2}{R} \\
+  \text{effektivvärde} \quad   P_{eff} &= \frac{U_{eff}^2}{R} \\
+  \text{toppvärde}     \quad   P_{PEP} &= \frac{U_{max}^2}{R} \\
+\end{align*}
+
+\subsection{Sändareffekt}
+
+En sändares effekt kan mätas på olika sätt.  Förr, då radioamatören
+hade små möjligheter att mäta uteffekt, så var det naturligt att
+föreskrifterna angav en mätmetod baserad på ineffekt, vilket var
+enkelt och rättvisande förtelegrafi m.fl. sändningsslag med bärvåg.
+Även för SSB fick effektmätning göras så, trots att resultatet var
+långt ifrån rättvisande.
+
+Numera är instrument som mäter \emph{uteffekt} mer tillgängliga för
+radioamatören - även toppvärdeskännande sådana för mätning av
+p.e.p. Mot den bakgrunden anges nu (1997) i föreskrifterna
+sändareffekten som uteffekt.  Därvid måste även p.e.p. avses, fastän
+det inte uttryckligen uttalas.
+
+För N-licensen föreskrivs fortfarande att uteffekten uttrycks i
+e.r.p. N-amatören kan dock endast i undantagsfall mäta e.r.p. utan den
+måste beräknas. Bakgrunden till detta unika myndighetsbeslut var att
+se som en anpassning till gällande regler för begränsning av
+radiostrålning.
+% TODO Ta bort texten om N-licensen
+
+Observera, att radioamatören måste beakta EMC-lagen. Se vidare kapitel
+9. % TODO referens
+
+\subsection{Metoder för mätning av sändareffekt}
+
+Tidigare har avhandlats effektberäkning i allmänhet. Här nedan
+kommenteras mätning av såndareffekt i synnerhet.
+
+Ett tillförlitligt sätt att mäta sändareffekt är att ansluta sändaren
+till en konstlast med samma resistans som sändarens utgångsimpedans
+och mäta spänningen över lasten med ett osci!loscop med tillräcklig
+bandbredd. Då kan man se och mäta HF-spänningens topp-toppvärde och
+samtidigt se signalens vågform.
+
+Med spänningen och konstlastens impedans (resistans) bekanta så kan
+uteffekten beräknas enligt formlerna på förra sidan
+
+Den största HF-amplitud som uppstår momentant vid modulering motsvarar
+PEPeffekten (PEP= Peak Enveiope Power).
+
+En mindre exakt metod att mäta HF-spänning är med voltmeter med
+likriktare.  Utifrån den uppmätta spänningen kan man beräkna effekten
+över en belastning. På grund av instrumentets tröghet visas emellertid
+bara ett ``utjämnat'' toppvärde, vilket inte är det faktiska värde som
+instrumentet ``känner''. Jämför med oscilloscopet som inte har denna
+visningströghet.
+
+Bild II 8-1
+
+Bilden visar en voltmeter med likriktare, som kopplats till en sändare
+över spänningsdelare. Två alternativa delare visas; den ena består av
+resistorer och den andra av kondensatorer.
+
+Den resistiva delaren är bättre i den meningen att den är
+frekvensoberoende och inte belastar sändaren kapacitivt. Dessutom
+dämpas övertoner som bildas vid likriktningen. I den kapacitiva
+delaren kan övertoner passera lättare.
+
+Denna mätmetod är noggrann bara när impedansen är lika i sändaren,
+kabeln till lasten och själva lasten. Lasten kan vara en konstlast, en
+antenn etc och skall ha ett känt värde för att effekten skall kunna
+beräknas.
+
+Ett sätt att skaffa underlag för beräkning av PEP-effekten är att mäta
+HF-strömmen med ett termokorsinstrument och spänningen med en
+toppvärdesvisande voltmeter.  Utifrån dessa värden beräknar man
+effekten. Denna metod är dock inte så vanlig.
+
+\subsection{Direktvisande effektmetrar}
+
+Bild II 8-6
+
+Många föredrar direktvisande effektmätare.  En HF-voltmeter kan
+givetvis graderas för att visa effekt i stället för spänning, men då
+med den viktiga förutsättningen att impedansen måste ha en fastställt
+värde.
+
+Om man avläser effekten genom en 75 Ω-kabel på ett instrument för 50
+Ω, så är det verkliga värdet ett annat än den avlästa.
+
+De effektmetrar som förekommer i SVF-instrument är egentligen
+voltmetrar, men med skalan graderad i effekt.
+
+Bild II 8-1 Mätning av sändareffekt
+
+\subsection{Mäta ståendevågförhållande - SVF}
+
+När t.ex. en antennledning ansluts till en antenn och deras impedanser
+inte är lika, så kommer en del av inmatade effekten i ledningen att
+reflekteras tillbaka från antennen.
+
+Det uppstår då en stående våg i ledningen. Förhållandet mellan inmatad
+och reflekterad effekt uttrycks som ett ståendevågförhållande SVF
+(eng. SWR).
+
+Med en SVF-meter som sätts in mellan effektkälla och ledning kan man
+mäta hur stor effekt som matas in i ledningen och hur stor effekt som
+vänder tillbaka från slutet av ledningen.
+
+SVF-värdet kan bestämmas på något av följande sätt:
+\begin{itemize}
+\item Man mäter framåt- respektive bakåtgående effekt var för sig med
+  en riktningskänslig effektmeter. Man beräknar därefter SVF eller
+  tar fram det ur ett diagram.
+\item Man använder ett instrument som beräknar eller visar SVF på
+  något sätt.
+\end{itemize}
+
+\subsection{Studera vågformen}
+
+Vågformen för snabba växelströmsförlopp studeras bäst med oscilloskop.
+
+\subsection{Mäta frekvens}
+
+Frekvensmätning gör man bäst med en s.k.  frekvensräknare, som är ett
+digitalt instrument.  Man kan också använda en
+s.k. absorbtionsvågmeter, som är mycket enkel och inte alls så exakt.
+Vid frekvensmätning ansluter man instrumentet till mätobjektet med en
+svag elektrisk eller magnetisk koppling.
+
+\subsection{Mäta resonansfrekvens}
+
+Mäta resonansfrekvensen för en passiv svängningskrets gör man enklast
+med en s.k. dip-meter. Även mer exakta metoder finns.
+
+% TODO Komplettera med VNA och spec
+
+\subsection{Mätfel}
+
+Mätinstrument indelas i noggrannhetsklasser efter största tillåtna
+felvisning. Klasserna är 0.1, 0.2, 0.5, 1.0, i .5, 2.5 och 5.0 varvid
+klassen anges på instrumentet. Som exempel får ett instrument i klass
+2.5 ha ett tillåtet mätfel av \(\pm\)2.5\% av fullt utslag.
+
+Mätresultatet bestäms av flera faktorer; dels av instrumentets
+s.k.mätonoggrannhet, dels av hur mätvärdet presenteras och slutligen
+av hur noga användaren läser av.
+
+Vid \emph{analog} visning presenteras mätvärdet med en visare mot en
+graderad skala med en viss upplösning. Visaren kan vara mekanisk eller
+optisk (ljusspalt). Vid snabba mätvärdesändringar är instrumentets
+mekaniska tröghet en faktor att ta hänsyn till.
+
+Vid \emph{digital} visning presenteras mätvärdet med siffror eller som
+längden på en pelare.  Det är förledande att se digital visning med
+siffror som mer exakt än analog, men det är inte alls säkert. Utöver
+instrumentets mätonoggrannhet, bestäms nämligen noggrannheten av hur
+många siffror som mätresultatet presenteras i.
+
+En oberäknelig källa till mätfel är elektromagnetiska fält från
+apparater i närheten.
+
+En ofta förbisedd felkälla är temperaturen i mätobjektet och/eller i
+instrumentet, det kan vara av inkopplingstiden m.m.
+
+\emph{Visningströgheten} är inget mätfel i sig men kan till nackdel
+vid snabba förlopp.  Trögheten förekommersåväl vid analog som digital
+visning. I det förra fallet är masströghet i instrumentets rörliga
+delar orsaken och i det andra fallet är orsaken klockfrekvensen för
+instrumentets mikroprocessor.
+
