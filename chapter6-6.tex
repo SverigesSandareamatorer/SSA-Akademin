@@ -281,597 +281,295 @@ benämningar, t.ex. matchbox, antennavstämningsenhet o.s.v. Bäst är att
 göra sådana impedansanpassningar i alla led, att antennkopplaren blir
 onödig.
 
-% TODO resten av kapitlet
-
 Bild II 6-26 Ståendevåg på ledning
 
-Pilarna visar HF-energins riktning
-Sändare
-Utgångson
-
-SVFmeter
-
-Koaxialkabel 50Q
-
-Antenn
-Koaxialkabel 50Q
-
-Ingång SOn
-
-SVF=1
-
-HF-energin från sändaren
-
-reflekteras delvis
-
-men sänd s återigen till antennen
-Sändare
-
-Antenn
-
-SVFmeter
-
-Utgång
--:t-SOn
-
-Ingång
--:t-SOn
-
-Sändaren är efterinställd,
-SVF
-utgången är inte längre 50 Q,
->1
-den inkommande reflekterade HFenergin sänds tillbaka till antennen
-. f ron san d aren
-HF-energrn
-o
-
-..
-
-Sändare,\
-
-9VIS7r
-
-re fl e kteras d l.
-
-SVFmeter
-
-Utgång SOQ
-
-Sändaren är inte efterinstätld,
-den reflekterade HF-energin
-stannar i sändarens slutsteg
-och värmer det ytterligare
-
-/
-
-Antenn
-Ingång
--:t-SOn
-
-SVF>1
-
-Antenn
-Ingång
-valfri
-
-SVF=1
-
-~
-
-SVF>1
-
-Lsönder den reflekterade energin
-från antennen tillbaka igen
-
-Bild II 6-27 SVF-problemet enkelt sett
-
-efter DJ3XV. cq-DL 5/1978
-
-116- 21
-
-ANTENNSYSTEM
 \subsection{Effektförluster}
 
-l varje matarledning uppstår förluster, dels
-av resistansen i ledarna och dels i isolationsmaterialet (dielektrikum) mellan ledarna samt i någon mån av fältutstrålning från
-dem. De mest påtagliga effektförlusterna i
-en ledning beror av förlusterna per längdenhet och därmed även av längden. Vidare
-beror förlusterna av ståendevågförhållandet på ledningen på grund av dålig impedansanpassning.
-Ett högt SVF-förhållande ger större ledningsförluster eftersom den reflekterade effekten då pendlar fler gånger på ledningen.
-Den reflekterade effekt som återvänder till
-ledningens inända är mindre när ledningen
-har stora förluster än om den inte hade det.
-Det innebär att det verkliga SVF-förhållandet i ledningens utände är större än vad som
-syns på ett instrument i inänden.
+I varje matarledning uppstår förluster, dels av resistansen i ledarna
+och dels i isolationsmaterialet (dielektrikum) mellan ledarna samt i
+någon mån av fältutstrålning från dem. De mest påtagliga
+effektförlusterna i en ledning beror av förlusterna per längdenhet och
+därmed även av längden. Vidare beror förlusterna av
+ståendevågförhållandet på ledningen på grund av dålig
+impedansanpassning.
+
+Ett högt SVF-förhållande ger större ledningsförluster eftersom den
+reflekterade effekten då pendlar fler gånger på ledningen.  Den
+reflekterade effekt som återvänder till ledningens inända är mindre
+när ledningen har stora förluster än om den inte hade det.  Det
+innebär att det verkliga SVF-förhållandet i ledningens utände är
+större än vad som syns på ett instrument i inänden.
 
 \subsection{Baluner - Balansering - Transformering}
 
 \subsubsection{Balansering}
 
-Man skiljer mellan symmetriska ledningar
-(bandkabel m.fl.) och osymmetriska (koaxialkabel), där dessutom den ena ledaren (skärmen) ofta är jordad.
-På samma sätt finns det symmetriska
-antenner (dipol, W3DZZ m .fl.) och osymmetriska (ground plane, Marconi m.fl.).
-Vill man ansluta en symmetrisk (mittmatad) antenn till en osymmetrisk ledning
-(koaxialkabel), så måste en strömbalansering göras i övergången. Om inte, så kommer matarledningen att stråla, vilket kan
-medföra störningar på radio och TV. Utan
-balansering kommer dessutom dipolens
-strålningsbild inte att vara symmetrisk.
-En balansering måste också göras i övergången mellan en bandkabel (symmetrisk)
-och sändaren när den har anslutning för
-koaxialkabel (osymmetrisk),
-Balansering av impedans och därmed
-ström sker med en anordning kallad BAL UN
-(av de engelska orden BALanced-UNbalanced).
-Bal uner kan utföras på flera sätt. Grundläggande har balunen lika in- och utgångsimpedans,
+Man skiljer mellan symmetriska ledningar (bandkabel m.fl.) och
+osymmetriska (koaxialkabel), där dessutom den ena ledaren (skärmen)
+ofta är jordad.
+
+På samma sätt finns det symmetriska antenner (dipol, W3DZZ m.fl.) och
+osymmetriska (ground plane, Marconi m.fl.).
+
+Vill man ansluta en symmetrisk (mittmatad) antenn till en osymmetrisk
+ledning (koaxialkabel), så måste en strömbalansering göras i
+övergången. Om inte, så kommer matarledningen att stråla, vilket kan
+medföra störningar på radio och TV. Utan balansering kommer dessutom
+dipolens strålningsbild inte att vara symmetrisk.
+
+En balansering måste också göras i övergången mellan en bandkabel
+(symmetrisk) och sändaren när den har anslutning för koaxialkabel
+(osymmetrisk), Balansering av impedans och därmed ström sker med en
+anordning kallad BAL UN (av de engelska orden BALanced-UNbalanced).
+
+Baluner kan utföras på flera sätt. Grundläggande har balunen lika in-
+och utgångsimpedans,
+
 Exempel:
-Ringkärnebalun 1 :1 för balansering.
+
+Ringkärnebalun 1:1 för balansering.
+
 Koaxialledare anordnad som balun 1:1.
 
-116-22
-
 \subsubsection{Transformering}
-l samband med balanseringen kan en
-impedanstransformering behövas och det
-finns baluner (transformatorer) som både
-balanserar och transformerar impedanser.
+
+I samband med balanseringen kan en impedanstransformering behövas och
+det finns baluner (transformatorer) som både balanserar och
+transformerar impedanser.
+
 Bild II 6-28
-Bilden visar en transformator med osymmetrisk ingång och symmetrisk utgång. Om
-båda lindningarnas varvtal är lika så sker
-ingen impedanstransformering. Om förhållandet mellan varvtalen är 1 :2 så blir förhållandet mellan impedanserna 1 :4. Se vidare
-i Kapitel1.
-Bilden visar också att matarledningens
-impedans Z transformeras om så att den blir
-lika antennens anslutningsimpedans Ra.
-Denna transformering kan ske induktivt eller kapacitivt.
+
+Bilden visar en transformator med osymmetrisk ingång och symmetrisk
+utgång. Om båda lindningarnas varvtal är lika så sker ingen
+impedanstransformering. Om förhållandet mellan varvtalen är 1:2 så
+blir förhållandet mellan impedanserna 1:4. Se vidare i Kapitel 1.
+% TODO referens
+
+Bilden visar också att matarledningens impedans \(Z\) transformeras om så
+att den blir lika antennens anslutningsimpedans \(R_a\).  Denna
+transformering kan ske induktivt eller kapacitivt.
+
 Exempel:
-Ringkärnebalun 1 :4.
-Koaxialledare anordnad som bal un 1:4.
+Ringkärnebalun 1:4.
 
-BALANSERING
+Koaxialledare anordnad som balun 1:4.
 
-TRANSFORMERING
-
-0118Ra
-gz
-~~: !Ra
-Qz
-
-i::
-
-!Ra
-
-Bild II 6-28 Balansering - Transtorrnerin
-
-ANTENNSYSTE
 \subsection{Ringkärnebalun}
 
 Bild II 6-29
-Ringkärnebalunen är en form av transformator. l den finns en ringkärna av hårt
-sammanpressat järnpulver av en legering,
-som tillsammans med lindningarnas utförande gör att frekvensbandbredden blir stor.
-"1 = varvtal, primär
-n2 = varvtal, sekundär
 
-l den mellersta figuren är den översta
-delen av matningskabeln en A./4 lång parallellsvängningskrets tillsammans med parallellt ansluten ledare (i detta fall en koaxialkabel som kortslutits i båda ändar). Den
-nedrersta högra figuren i bilden visar den
-kortslutna A./4-ledningen i tre varianter. l
-samtliga fall uppstår HF-mässigt en strömbalancerande effekt mellan dipolhalvorna.
-Dessutom hindras även antennströmmar från att komma ner på utsidan av matningskabelns skärm.
-
-Osymmetrisk
-
-ingång
+Ringkärnebalunen är en form av transformator. I den finns en ringkärna
+av hårt sammanpressat järnpulver av en legering, som tillsammans med
+lindningarnas utförande gör att frekvensbandbredden blir stor.
 
 Bild II 6-29 Ringkärnebalun
 
 \subsection{Koaxialledare som balun}
 
 Bild II 6-30
-Balansering kan även göras med ett ett
-koaxialkabelarrangemang, som i så fall är
-starkt frekvensberoende. Bilden visar tre
-utföranden, som alla arbetar enligt principen för en matarledning med en elektrisk
-längd av A./4 och kortsluten i ena änden.
-Den mekaniska längden är k· A/4, varvid
-k är hastighetsfaktorn för våghastigheten i
-kabeln. För de vanligaste koaxialkablarna
-RG58 och RG213 är k= ca 0.66.
-A./4-ledningen i den översta figuren fungerar som en parallellsvängningskrets med
-mycket hög impedans Z i den öppna övre
-änden.
 
------ --- - -·· . .
+Balansering kan även göras med ett ett koaxialkabelarrangemang, som i
+så fall är starkt frekvensberoende. Bilden visar tre utföranden, som
+alla arbetar enligt principen för en matarledning med en elektrisk
+längd av \(\lambda/4\) och kortsluten i ena änden.
 
-1·'
+Den mekaniska längden är \(k\cdot\lambda/4\), varvid k är
+hastighetsfaktorn för våghastigheten i kabeln. För de vanligaste
+koaxialkablarna RG-58 och RG-213 är \(k\) ca 0.66.
+\(\lambda/4\)-ledningen i den översta figuren fungerar som en
+parallellsvängningskrets med mycket hög impedans \(Z\) i den öppna
+övre änden.
 
-.A.
-i ·--
+I den mellersta figuren är den översta delen av matningskabeln en
+\(\lambda/4\) lång parallellsvängningskrets tillsammans med parallellt
+ansluten ledare (i detta fall en koaxialkabel som kortslutits i båda
+ändar). Den nedrersta högra figuren i bilden visar den kortslutna
+\(\lambda/4\)-ledningen i tre varianter. l samtliga fall uppstår
+HF-mässigt en strömbalanserande effekt mellan dipolhalvorna.
+
+Dessutom hindras även antennströmmar från att komma ner på utsidan av
+matningskabelns skärm
 
 Bild II 6-30 Koaxialledare som balun
-
-116-23
-
-ANTE N
-- anpassning
-
-)(
-
-Delta - anpassning
-
-Il
-/il,r
-
-!""------
-
-anpassning
-
-2Å
-
---------4
-
-l= le~
-
-l
-
-i
 
 Bild II 6-31 Sätt att ansluta en matningsledning
 
 \subsection{Sätt att ansluta en matningsledning}
 
 Bild II 6-31
-T-, delta- och gamma-anpassning
-Funtion: En mittmatad halvvågsdipol har
-i fria rymden en impedans av c:a 73 n.
-Flyttas matningspunkten bort från mitten, åt det ena eller andra hållet, så är
-impedansen högre än i mitten.
-Det finns alltid två symmetriskt liggande
-punkter på antennen där impedansen är
-precis lika stor.
-T-, delta- och gamma-anpassning är användbar när matarkabelns
-är högre än antennens mittpunktsimpedans. Matningsledningen kan anslutas till de punkter
-på antennen som har samma impedans
-som matarledningen. T-anpassning används för symmetriska matarledningar, gamma-anpassning för osymmetriska ledningar
-och delta-anpassning för båda ledningstyperna.
 
-A/4 -anpassningsledning - stub
-Uppbyggnad: Antennen ansluts till en ')J
-2 anpassningsledning och matarledningen
-i sin tur till anpassningsledningen.
-Funktion: Anpassningsledningen består
-av en öppen 'A/4-matarledning. Den har
-teoretiskt impedansen Z= Oi den ände som
-är ansluten till antennen och Z = = i den
-116-24
+\subsubsection{T-, delta- och gamma-anpassning}
 
--Anpassningsledning
+Funktion: En mittmatad halvvågsdipol har i fria rymden en impedans av
+c:a 73 Ω.
 
-andra. Utmed anpassningsledningen finns
-alltid en impedans som är lika matarledningens impedans.
+Flyttas matningspunkten bort från mitten, åt det ena eller andra
+hållet, så är impedansen högre än i mitten.
 
-,./2-fasningsledning
+Det finns alltid två symmetriskt liggande punkter på antennen där
+impedansen är precis lika stor.
+
+T-, delta- och gamma-anpassning är användbar när matarkabelns är högre
+än antennens mittpunktsimpedans. Matningsledningen kan anslutas till
+de punkter på antennen som har samma impedans som
+matarledningen. T-anpassning används för symmetriska matarledningar,
+gamma-anpassning för osymmetriska ledningar och delta-anpassning för
+båda ledningstyperna.
+
+\subsubsection{\(\lambda/4\)-anpassningsledning - stub}
+
+Uppbyggnad: Antennen ansluts till en \(\lambda/2\) anpassningsledning
+och matarledningen i sin tur till anpassningsledningen.
+
+Funktion: Anpassningsledningen består av en öppen
+\(\lambda/4\)-matarledning. Den har teoretiskt impedansen \(Z = 0\)
+den ände som är ansluten till antennen och \(Z = \infty\) den
+andra. Utmed anpassningsledningen finns alltid en impedans som är lika
+matarledningens impedans.
+
+\subsubsection{\(\lambda/2\)-fasningsledning}
+
 Bild II 6-32
-Funktion: När t.ex. en omvikt dipol med
-matningsimpedansen 240 n skall anslutas
-till en 50 n-kabel, behövs en impedanstransformering med förhållandet 4:1. En 'A/2
-lång fasningsledning kan användas fördetta
-ändamål. Fasningsledningen har dessutom
-en strömbalanserande verkan.
-Observera: Med en 'A/2-fasningsledning
-enligt bilden kan impedanstransformering
-endast göras i förhållandet 4:1.
 
-i- stinga
-Bild II 6-32 )./2-fasningsledning
+Funktion: När t.ex. en omvikt dipol med matningsimpedansen 240 Ω skall
+anslutas till en 50 Ω-kabel, behövs en impedanstransformering med
+förhållandet 4:1. En \(\lambda/2\) lång fasningsledning kan användas fördetta
+ändamål. Fasningsledningen har dessutom en strömbalanserande verkan.
 
-ANTENNSYSTEM
+Observera: Med en \(\lambda/2\)-fasningsledning enligt bilden kan
+impedanstransformering endast göras i förhållandet 4:1.
+
+Bild II 6-32 \(\lambda/2\)-fasningsledning
+
 \subsection{Transmissionsledningen}
 
-En transmissionsledning för radiofrekvent energi består av två elektriska ledare.
-Den enklaste formen av en sådan ledning är
-tvåparallella ledare. En annan form av transmissionsledning är koaxialkabeln, där den
-ena ledaren löper inuti den andra.
-Försök: Koppla en parallelledning till utgången på en VHF-sändare - t.ex. med
-induktiv koppling. Ge ledningen passande
-längd och mata ut högfrekvent energi på
-ledningen. Nu kan fördelningen mellan spänning och ström på olika punkter utmed ledningen undersökas. När det finns en spänning mellan de två ledarna i ledningen alstras det ett elektriskt fält mellan dem.
-Eftersom en glimlampa lyser när den
-omges av ett elektriskt fält kan den användas som en enkel spänningsindikator.
-När en elektriskt ledande krets - en induktionsslinga - omges av ett varierande
-magnetiskt fält alstras det en ström i slingan.
-Med en glödlampa inkopplad i slingan kan
-den användas som en enkel strömindikator.
-Öppen transmissionsledning
+En transmissionsledning för radiofrekvent energi består av två
+elektriska ledare.  Den enklaste formen av en sådan ledning är
+två parallella ledare. En annan form av transmissionsledning är
+koaxialkabeln, där den ena ledaren löper inuti den andra.
+
+Försök: Koppla en parallelledning till utgången på en VHF-sändare -
+t.ex. med induktiv koppling. Ge ledningen passande längd och mata ut
+högfrekvent energi på ledningen. Nu kan fördelningen mellan spänning
+och ström på olika punkter utmed ledningen undersökas. När det finns
+en spänning mellan de två ledarna i ledningen alstras det ett
+elektriskt fält mellan dem.
+
+Eftersom en glimlampa lyser när den omges av ett elektriskt fält kan
+den användas som en enkel spänningsindikator.  När en elektriskt
+ledande krets - en induktionsslinga - omges av ett varierande
+magnetiskt fält alstras det en ström i slingan.  Med en glödlampa
+inkopplad i slingan kan den användas som en enkel strömindikator.
+
+\subsubsection{Öppen transmissionsledning}
+
 Bild II 6-33
-Håll glimlampan nära intill ledningen.
-Glimlampan tänds med jämna mellanrum
-när den flyttas utmed ledningen.
-När i stället en induktionsslinga med glödlampa hålls nära intill ledningen, kommer
-glödlampan att lysa mitt emellan de ställen
-där glimlampan lyser. Där glimlampan tänder har det bildats spänningsmaximum och
-där glödlampan lyser har det bildats strömmaximum. Det har bildats en stående våg
-på ledningen.
-Bilden visar ström- och spänningsfördelningen för en öppen transmissionsledning med längden i = n · IJ4 med udda n =
-1' 3, 5, ......
+
+Håll glimlampan nära intill ledningen.  Glimlampan tänds med jämna
+mellanrum när den flyttas utmed ledningen.
+
+När i stället en induktionsslinga med glödlampa hålls nära intill
+ledningen, kommer glödlampan att lysa mitt emellan de ställen där
+glimlampan lyser. Där glimlampan tänder har det bildats
+spänningsmaximum och där glödlampan lyser har det bildats
+strömmaximum. Det har bildats en stående våg på ledningen.
+
+Bilden visar ström- och spänningsfördelningen för en öppen
+transmissionsledning med längden \(l = n\cdot\lambda/4\) med udda \(n
+= 1, 3, 5 \dots\).
+
 För bilden har valts n = 5.
-Utmed ledningen uppstår omväxlande
-elektriska och magnetiska fält allt efter som
-svängningen fortsätter. Med en serie om
-fyra figurer visas förloppet av en svängning,
-en period. skillnaderna i den elektriska fältstyrkan framställs som olika långa fältlinjer.
-Observera fältlinjernas riktning.
 
-Skillnaderna i den magnetiska fältstyrkan
-kan också utläsas ur bilderna i form av
-antalet symboler "
-resp " x ". Båda
-tecknen betecknar elektromagnetiskt fält, "
-i riktning ut ur papperet och " x " in i
-papperet. För tydlighetens skull skildras
-endast den elektromagnetiska fältstyrkan
-mellan ledarna och inte utanför ledarparet
-G
+Utmed ledningen uppstår omväxlande elektriska och magnetiska fält allt
+efter som svängningen fortsätter. Med en serie om fyra figurer visas
+förloppet av en svängning, en period. skillnaderna i den elektriska
+fältstyrkan framställs som olika långa fältlinjer.  Observera
+fältlinjernas riktning.
 
-G
+Skillnaderna i den magnetiska fältstyrkan kan också utläsas ur
+bilderna i form av antalet symboler ``•'' respektive
+``\(\times\)''. Båda tecknen betecknar elektromagnetiskt fält, ``•'' i
+riktning ut ur papperet och ``\(\times\)'' in i papperet. För
+tydlighetens skull skildras endast den elektromagnetiska fältstyrkan
+mellan ledarna och inte utanför ledarparet.
 
-"
+\subsubsection{Kortsluten transmissionsledning}
 
-"
 
-Kortsluten transmissionsledning
 Bild II 6-34
-På bilden visas såväl ström- och spänningsförhållandena som fältlinjeförloppen
-på en avstämd, kortsluten transmissionsledning med längden l = IJ4 med jämna n =
-2, 4, 6, 8, ... För bilden har valts n = 6.
+
+På bilden visas såväl ström- och spänningsförhållandena som
+fältlinjeförloppen på en avstämd, kortsluten transmissionsledning med
+längden \(l = \lambda/4\) med jämna \(n = 2, 4, 6, 8 \dots\). För
+bilden har valts \(n = 6\).
 
 \subsection{\(\lambda/4\)-ledning som svängningskrets}
 
 Bild II 6-35
-Bilden visar ström- och spänningsfördelningen för en öppen resp. en kortsluten
-transmissionsledning med längden l= IJ4.
-Den öppna A./4-ledningen har en strömbuk i ingångsänden. En sådan ledning måste
-således strömkopplas, d.v.s. den anslutande impedansen måste vara låg.
-Den kortslutna A./4-ledningen har en
-spänningsbuk i ingångsänden. En sådan
-ledning måste spänningskopplas, d.v.s. den
+
+Bilden visar ström- och spänningsfördelningen för en öppen resp. en
+kortsluten transmissionsledning med längden \(l = \lambda/4\).
+
+Den öppna \(\lambda/4\)-ledningen har en strömbuk i ingångsänden. En
+sådan ledning måste således strömkopplas, d.v.s. den anslutande
+impedansen måste vara låg.
+
+Den kortslutna \(\lambda/4\)-ledningen har en spänningsbuk i
+ingångsänden. En sådan ledning måste spänningskopplas, d.v.s. den
 anslutande impedansen måste vara hög.
-En öppen A/4-ledning kan ses som en
-seriekopplad LC-krets. När ledningen är i
-resonans flyter en hög ström i ingången,
+
+En öppen \(\lambda/4\)-ledning kan ses som en seriekopplad
+LC-krets. När ledningen är i resonans flyter en hög ström i ingången,
 medan spänningen där är låg.
-En kortsluten A./4-ledning kan ses som
-en parallellkopplad LC-krets. När ledningen
-är i resonans är spänningen hög över ingången, medan strömmen där är låg.
 
-116-25
+En kortsluten \(\lambda/4\)-ledning kan ses som en parallellkopplad
+LC-krets. När ledningen är i resonans är spänningen hög över ingången,
+medan strömmen där är låg.
 
-UPPBYGGNAD OCH INKOPPLING
-
-SPANNINGS- OCH STRÖMFÖRDELNING
-
-(l :::5· t A)
-
-+++
-Spänningsförlopp
-(visat med glimlampa)
-
--ffi-
-
-Strömförlopp
-(visat med glödlampa
-och slinqa
-
-c®=J
-FÖRLOPPEN FÖR DE ELEKTRISKA OCH MAGNETISKA FAL TEN
-
-t=
-
-o
-
-' Elektriska fältlinjer
-
-Magnetiska fältlinjer
-
-Elektriska fältlinjer
-
-Magnetiska fältlinjer
-
-Bild II 6-33 Förlopp i öppen :1/4 transmissionsledning
-
-116-26
-
-UPPBYGGNAD OCH INKOPPLING
-
-SPÄNNINGS- OCH STRÖMFÖRDELNING
-
-( ( ::::
-
-6.
-
-t A)
-Spänningsförlopp
-{visat med glimlampa)
-
-Strömförlopp
-(visat med glödlampa
-och slinga)
-
-c®=l
-
-FÖRLOPPEN FÖR DE ELEKTRISKA OCH MAGNETISKA FÄLTEN
-
-+++
-
-+++
-Elektriska fältlinjer
-
-Magnetiska fältlinjer
-
-Elektriska fältlinjer
-
-+++
-
-+++
-
-Magnetiska fältlinjer
-
-Bild II 6-34 Förlopp i kortsluten A/4 transmissionsledning
-
-116-27
-
-ANTENNSYSTEM
-STRÖM- OCH SPÄNNINGSFÖRDELNING
-
-iT
-
-a - öppen ledning
-
-R=O
-
-R::c:lO
-
-'::---:::;:::::::>
-1
-u--
-
-'X:;{
-
-u
-(l)
-
-+---+----- f
-
-fr
-
-(l)xx
-u
-
-b- kortsluten ledning
-
-+---1-----
-
-FRÄN SERIESVÄNGNINGSKRETS Tl LL ÖPPEN
-
-I:I
-T
-
-J
-
-N'
-
-t-
-
-LEDNING
-
-:::L,
-
-::::=::::>
-o
-
-lfY'!
-
-i
-
-FRÄN PARALlEllSVÄNGNINGSKRETS Till KORTSlUTEN
-
-1.
-
-+
-
-f·- LEDNING
-
-...,  .Ä,
-
-T
-
-Bild II 6-35 JJ4 transmissionsledning som svängningskrets
-
-116-28
-
-J
-
---...-.j
-
-f
-
-NSYSTEM
 \subsection{Antennkopplare}
 
 Bild II 6-36
 
-Bilden visar en antennkopplare för bandkabel av olika längder. storleken på kondensatorerna: C1 = C2 = 500 pF, C3 = 300pF
-Avstämning vid spänningskoppling
-c1 och c2 helt invridna eller kortslutna,
-C 3 avstäms för resonanstillstånd
-(parallellresonans).
-Avstämning vid strömkoppling
-helt utvriden,
-C 1 och C2 avstäms för resonanstillstånd
-(serieresonans), med maximal och likaström
-i båda ledarna.
-Matarledningen kan förlängas elektriskt
-med induktanser när den är för kort för att
-kunna avstämmas.
+Bilden visar en antennkopplare för bandkabel av olika
+längder. storleken på kondensatorerna: \(C_1 = C_2 = 500\text{ pF},
+C_3 = 300\text{ pF}\).
 
-c3
+\subsubsection{Avstämning vid spänningskoppling}
 
-Märk, att en antennkopplare mycket väl
-även kan utformas för koaxialkabelutgång.
+\(C_1\) och \(C_2\) helt invridna eller kortslutna, \(C_3\) avstäms
+för resonanstillstånd (parallellresonans).
 
-Antennkopplare för en
-parallell-ledning med längden
+\subsubsection{Avstämning vid strömkoppling}
 
-l : : n·
+\(C_3\) helt utvriden, \(C_1\) och \(C_2\) avstäms för
+resonanstillstånd (serieresonans), med maximal och likaström i båda
+ledarna.
 
-:A.
+Matarledningen kan förlängas elektriskt med induktanser när den är för
+kort för att kunna avstämmas.
 
-4
+Märk, att en antennkopplare mycket väl även kan utformas för
+koaxialkabelutgång.
 
 \subsection{För- och nackdelar med avstämd matarledning}
 
-När en matarledning är rätt avstämd
-transporterar den energi utan att stråla själv.
-När dipolen kopplas till en avstämd matarledning, kan den med hjälp av en antennkopplare arbeta på flera amatörradioband. Detta är en anledning till varför en
-avstämd matarledning gärna används för
-portabla installationer (t.ex. för field days).
-lnjusteringen mot sändaren blir enklare.
-Inom amatörradion används numera nästan uteslutande koaxialkabel som matarledning i st.f. bandkabeL Detta är av flera
-skäl:
-• En bandkabel måste hängas upp så fritt
-som möjligt och den får inte komma för nära
-murutsprång, takrännor o.s.v. Vidare måste
-den isoleras väl vid genomföringar i väggar.
-• De flesta såndaramatörer har inte plats
-med långa matarledningar (n· /../4 med n=
-1' 2, 3, ... ).
-• Vid tvära bockar på ledningen kan det upp
-stå oönskad utstrålning och därmed risk för
-störningar på radio och TV m. m.
+När en matarledning är rätt avstämd transporterar den energi utan att
+stråla själv.
 
-AAA.A.J
+När dipolen kopplas till en avstämd matarledning, kan den med hjälp av
+en antennkopplare arbeta på flera amatörradioband. Detta är en
+anledning till varför en avstämd matarledning gärna används för
+portabla installationer (t.ex. för field days).  Injusteringen mot
+sändaren blir enklare.
 
-Q
-,......,
-
-Antennkopplare för en
-parallell-ledning med längden
-
-l.
-
-* n ·-f:
-
-Bild II 6-36 Antennkopplare
-
-116-29
-
-ANTENNSYSTEM
-
-116-30
-
-~©~
-
-EPT
-
+Inom amatörradion används numera nästan uteslutande koaxialkabel som
+matarledning i st.f. bandkabel. Detta är av flera skäl:
+\begin{itemize}
+\item En bandkabel måste hängas upp så fritt som möjligt och den får
+  inte komma för nära murutsprång, takrännor o.s.v. Vidare måste den
+  isoleras väl vid genomföringar i väggar.
+\item De flesta sändaramatörer har inte plats med långa matarledningar
+  (\(n\cdot\lambda/4\) med \(n = 1, 2, 3 \dots\)).
+\item Vid tvära bockar på ledningen kan det upp stå oönskad
+  utstrålning och därmed risk för störningar på radio och TV m.m.
+\end{itemize}
