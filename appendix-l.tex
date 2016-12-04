@@ -21,8 +21,16 @@ sedan från kravet med del-kapitel inom paratens (\ref{myHAREC.a.1.4}).
 
 \section{Introduction}
 
+\makeatletter
 \renewcommand{\theenumii}{\arabic{enumii}}
 \renewcommand{\labelenumii}{\theenumi.\theenumii}
+\renewcommand{\p@enumii}{\theenumi.}
+
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\theenumi.\theenumii.\theenumiii}
+\renewcommand{\p@enumiii}{\theenumi.\theenumii.}
+\makeatother
+
 \begin{enumerate}[label=\alph*.]
 \item Where quantities are referred to, candidates should know the units in which these quantities are expressed, as well as the generally used multiples and sub-multiples of these units. (\ref{myHAREC.I.a})\label{HAREC.I.a}
 \item Candidates must be familiar with the compound of the symbols. (\ref{myHAREC.I.b})\label{HAREC.I.b}
@@ -42,9 +50,18 @@ sedan från kravet med del-kapitel inom paratens (\ref{myHAREC.a.1.4}).
 
 \section{Technical Content}
 
+\makeatletter
 \renewcommand{\labelenumi}{\theenumi.}
+
 \renewcommand{\theenumii}{\arabic{enumii}}
 \renewcommand{\labelenumii}{\theenumi.\theenumii}
+\renewcommand{\p@enumii}{\theenumi.}
+
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\theenumi.\theenumii.\theenumiii}
+\renewcommand{\p@enumiii}{\theenumi.\theenumii.}
+\makeatother
+
 \begin{enumerate}
 \item ELECTRICAL, ELECTRO-MAGNETIC AND RADIO THEORY
 \begin{enumerate}[noitemsep]
