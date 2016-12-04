@@ -1,886 +1,362 @@
-%
-%
-% Reserverad av Hans för omformattering - rör ej tills vidare!
-%
-%
 \chapter{OMRÄKNING MELLAN dB OCH KVOTEN AV TAL}
 
-Benämningen Bel kommer från namnet på
-amerikanen Alexander Graham Bell, som år
-1876 uppfann den första praktiskt användbara telefonen efter ideer från tysken Philipp
-ReiB.
-Inom teletekniken används begreppet
-decibel för att beskriva förlopp av effekt,
-ström och spänning. Begreppet förekommer
-även i andra sammanhang, t. ex. akustik där
-det istället är fråga om ljudtryck.
-Måtten i det metriska systemet är alldagliga och ingen finner det märkligt att det
-t.ex. gårtio decimeter på en meter. Däremot
-är begreppet decibel ovant för många.
-Räkning med decibel grundas på användning av logaritmer, som är ett bekvämt
-sätt att uttrycka och behandla talvärden.
-Detta har har i korthet förklarats i Kapitel1 .9.
-Här beskrivs ett omräkningsförfarande med
-hjälp av tabeller.
+Benämningen Bel kommer från namnet på amerikanen Alexander Graham
+Bell, som år 1876 uppfann den första praktiskt användbara telefonen
+efter ideer från tysken Philipp Reiß.
 
-Decibel är ett dimensionslöst uttryck för
-graden av dämpning alternativt förstärkning.
-Dämpning är följden av att vissa komponenter bromsar elektrisk ström.
-Förstärkning innebär att en aktiv komponent kan styra en större elektrisk ström och
-därmed större effekt än den själv styrs med.
+Inom teletekniken används begreppet decibel för att beskriva förlopp
+av effekt, ström och spänning.  Begreppet förekommer även i andra
+sammanhang, t.ex. akustik där det istället är fråga om ljudtryck.
 
-Bestämning av dB ur effektförhållandet
+Måtten i det metriska systemet är alldagliga och ingen finner det
+märkligt att det t.ex. gårtio decimeter på en meter. Däremot är
+begreppet decibel ovant för många.
 
-i) Dela upp effektförhållandet i faktor och
-i O-potens
-2) Bestäm dB-talet för 1O-potensen
-3) Bestäm dB-talet för faktorn med nomogram, tabell eller räknare
-4) Addera dB-talen till ett slutresultat
-Exempel: dB-talet för 300-faldig effektförstärkning
-i) 300 = 3·i00
-2) i 00 motsvarar 20 dB
-3) 3 motsvarar 4.8 dB
-4) 20 + 4.8 = +24.8 dB
+Räkning med decibel grundas på användning av logaritmer, som är ett
+bekvämt sätt att uttrycka och behandla talvärden.  Detta har har i
+korthet förklarats i Kapitel 1.9.  Här beskrivs ett
+omräkningsförfarande med hjälp av tabeller.
 
-l
+\emph{Decibel är ett dimensionslöst uttryck för graden av dämpning
+  alternativt förstärkning.}
 
-2
-i ji l l
+\emph{Dämpning är följden av att vissa komponenter bromsar elektrisk
+  ström.}
 
-o
+\emph{Förstärkning innebär att en aktiv komponent kan styra en större
+  elektrisk ström och därmed större effekt än den själv styrs med.}
 
-iJl
-3
+\subsection{Bestämning av dB ur effektförhållandet}
 
-i
+\begin{enumerate}
+\item Dela upp effektförhållandet i faktor och 10-potens
+\item Bestäm dB-talet för 1O-potensen
+\item Bestäm dB-talet för faktorn med nomogram, tabell eller räknare
+\item Addera dB-talen till ett slutresultat
+\end{enumerate}
 
-i
-
-l
-
-l
-
-4
-l
-
-l
-
-6
+Exempel: dB-talet för 300-faldig effekt\emph{förstärkning}
+\begin{enumerate}
+\item \(300 = 3 \cdot 100\)
+\item 100 motsvarar 20 dB
+\item 3 motsvarar 4.8 dB
+\item \(20 + 4.8 = +24.8\) dB
+\end{enumerate}
 
 Exempel: dB-talet för 70 000-faldig effektminskning
-i) 70 000 = 7 . i 000
-2) i O 000 motsvarar 40 dB
-3) 7 motsvarar 8.5 dB
-4) 40 + 8.5 =- 48.5 dB
+\begin{enumerate}
+\item 70 000 = 7 . i 000
+\item i O 000 motsvarar 40 dB
+\item 7 motsvarar 8.5 dB
+\item 40 + 8.5 =- 48.5 dB
+\end{enumerate}
 
-o
+Exempel: En Vagi-antenn omfördelar den utstrålade effekten så att den
+i bästa riktningen blir 56-faldigt bättre än från en
+referensantenn. Hur många dB motsvarar det?
 
-Exempel: En Vagi-antenn omfördelar den
-utstrålade effekten så att den i bästa riktningen blir 56-faldigt bättre än från en
-referensantenn. Hur många dB motsvarar
-det?
-56= 5.6. iO
-vilket motsvarar 7.5 + 1O= 17.5 dB
-Exempel: l en koaxialkabel förloras hälften
-av den inmatade effekten. Hur stor är
-dämpningen i dB?
-Effektförhållandet är faktor 2 (inverterat),
-d.v.s 3 dB dämpning=- 3 dB
+\[ 56 = 5.6 \cdot 10\]
 
-Bestämning av effektförhållandet ur dB
+vilket motsvarar
 
-i) Dela upp dB-talet i i-tal och i O-tal
-2) i-talet dB ger en faktor
-3) i O-talet dB ger antal nollor bakom faktorn
-(ställvärdet)
-4) Multiplicera faktorn med ställvärdet
-(antalet nollor).
-Exempel: Vilket effektförhållande motsvarar
-i3 dB?
-1) i 3 dB = i O dB + 3 dB
-2) 3 dB motsvarar faktor 2
-3) 1O dB ger 1 nolla
-4) 2·i O= 20, d v s 20-faldig förstärkning
-Exempel: Vilket effektförhållande motsvarar
--i15d8?
-1) ii5 dB = i 1O + 5 dB
-2) 5 dB motsvarar faktor 3.2
-3) 11 O dB ger ii nollor
-4) Efter decimaltecknet i faktor 3.2 följer ett
-ställvärde av 11 ,
-d.v. s. 320 000 000 000-faldig dämpning.
+\[ 7.5 dB + 10 dB = 17.5 dB\]
 
-8
-l
+Exempel: I en koaxialkabel förloras hälften av den inmatade
+effekten. Hur stor är dämpningen i dB?
 
-i
+Effektförhållandet är faktor 2 (inverterat), d.v.s 3~dB dämpning =
+-3~dB.
 
-l
+\subsection{Bestämning av effektförhållandet ur dB}
 
-l
+\begin{enumerate}
+\item Dela upp dB-talet i 1-tal och 10-tal
+\item 1-talet dB ger en faktor
+\item 10-talet dB ger antal nollor bakom faktorn (ställvärdet)
+\item Multiplicera faktorn med ställvärdet (antalet nollor).
+\end{enumerate}
 
-l
+Exempel: Vilket effektförhållande motsvarar 13 dB?
 
-l
+\begin{enumerate}
+\item 13 dB = 10 dB + 3 dB
+\item 3 dB motsvarar faktor 2
+\item 10 dB ger 1 nolla
+\item \(2 \cdot 10 = 20\), d v s 20-faldig förstärkning
+\end{enumerate}
 
-9
+Exempel: Vilket effektförhållande motsvarar -115d8?
+\begin{enumerate}
+\item 15 dB = 110 + 5 dB
+\item 5 dB motsvarar faktor 3.2
+\item 110 dB ger 11 nollor
+\item Efter decimaltecknet i faktor 3.2 följer ett ställvärde av 11 ,
+  d.v.s. 320 000 000 000-faldig dämpning.
+\end{enumerate}
 
-i
+Exempel: Om ineffekten till ett slutsteg är 100~W och det har en
+förstärkning av 10~dB.  Hur stor är uteffekten?
 
-l
-
-10 ggr
-
-l
-
-Effekt
-
-10 dB
-
-C-1
-
-APPENDIX
-Exempel: Om ineffekten till ett slutsteg är
-100 W och det har en förstärkning av 1odB.
-Hur stor är uteffekten?
-1O dB motsvarar en 1O-faldig förstärkning.
-Uteffekten från slutsteget blir således 10·1 00
-= 1000 w.
-
-Exempel: 300-faldig spänningsförstärkning
-1) 300 = 3 . 100
-2) 100 motsvarar 40 dB, d.v.s två (nollor)
-gånger 20 = 40
-3) 3 motsvarar 9.5 dB
-4) 40 dB+ 9.5 dB = 49.5 dB
+10 dB motsvarar en 10-faldig förstärkning.  Uteffekten från slutsteget
+blir således \(10 \cdot 100 = 1000\) W.
 
 Sambandet mellan effektförhållande och dB
 
-Bestämning av ström.. eller spännings..
-förhållandet ur dB
-1) Dela dB-värdet med 20 dB varvid erhålls
-en del och en rest
-2) Delen ger 1O-potensen, d.v.s antalet nollor bakom faktorn (ställvärdet)
-3) Gå in i nomogrammet och omvandla "resten" till en faktor
-4) Multiplicera faktorn med ställvärdet
+\begin{tabular}{l|llllllll}
+  dB & 0 & & 10 & 20 & 30 & 40 & 50 & 60 \\
+  \hline
+  0  & 1 & & 0  & 0  & 0  & 0  & 2  & 0 \\
+  1  & 1 & & 2  & 5  & 8  & 9  & 9  & 5 \\
+  2  & 1 & & 5  & 8  & 4  & 8  & 6  & 3 \\
+  3  & 1 & & 9  & 9  & 5  & 2  & 8  & 2 \\
+  4  & 2 & & 1  & 1  & 1  & 8  & 7  & 6 \\
+  5  & 3 & & 6  & 6  & 2  & 2  & 7  & 8 \\
+  6  & 3 & & 8  & 8  & 1  & 0  & 7  & 2 \\
+  7  & 5 &.& 1  & 1  & 1  & 8  & 7  & 2 \\
+  8  & 6 & & 0  & 0  & 9  & 5  & 7  & 3 \\
+  9  & 7 & & 4  & 1  & 3  & 2  & 8  & 2 \\
+\end{tabular}
+% TODO fixa så att bredden på alla kolumnerna blir konsekvent
 
-dB
+Kolumnen längst till vänster upptar 1-tal dB från 0 till 9 och den
+översta raden upptar 10-tal dB-tal från 0 till 60.
 
-o
+Med tabellen kan effektförhållanden bestämmas ur dB-tal från 0 till 69
+eller omvänt.  Det motsvarar effektförhållanden från 1:1 till 1:8
+millioner.
 
-o
-
-1
-1
-1
-1
-2
-
-1
-2
-3
-
-4
-
-5
-6
-7
-
-8
-9
-
-10
-
-o
-
-2
-5
-9
-5
-1
-9
-
-3
-3
-5 . o
-6
-3
-7
-9
-
-20
-
-o
-
-5
-8
-9
-1
-6
-8
-1
-
-o
-
-4
-
-30
-
-o
-
-8
-4
-5
-1
-2
-1
-1
-9
-3
-
-40
-
-o
-
-9
-8
-2
-8
-2
-
-o
-
-8
-
-5
-2
-
-50
-
-o
-
-2
-9
-6
-8
-7
-7
-7
-7
-8
-
-60
-
-o
-
-5
-3
-2
-6
-8
-2
-
-2
-3
-
-2
-
-Kolumnen längst till vänster upptar 1-tal dB
-från Otill 9 och den översta raden upptar 1Otal dB-tal från Otill 60.
-Med tabellen kan effektförhållanden bestämmas ur dB-tal från Otill 69 eller omvänt.
-Det motsvarar effektförhållanden från 1:1 till
-1:8 millioner.
 Var uppmärksam på decimaltecknets placering. Avkorta till önskat antal decimaler.
-Exempel: Vilket effektförhållande motsvarar
-+7dB?
-?ligger mellan Ooch 9. Sök därför OdB i den
-översta raden. Gå sedan rakt nedåt i kolumnen till raden för 7 dB. Vi kommer då till första
-siffran i kvoten för 7 dB. Decimaltecknet står
-till höger om denna ruta (mellan kolumnerna
-för O och 1O dB).
-l sifferfältet kan nu utläsas en effektförstärkning (kvot) av 5.011872.
-Bestämning av dB ur ström- eller
-spänningsförhållandet
-1) Dela upp ström- eller spänningsförhållandet i faktor och 1O-potens
-2) Bestäm dB-talet för 1O-potensen
-3) Bestäm dB-talet förfaktorn ur nomogrammet
-4) Addera dB-talen till ett slutresultat
 
-C-2
+Exempel: Vilket effektförhållande motsvarar +7dB?
+
+7 ligger mellan 0 och 9. Sök därför 0 dB i den översta raden. Gå sedan
+rakt nedåt i kolumnen till raden för 7 dB. Vi kommer då till första
+siffran i kvoten för 7 dB. Decimaltecknet står till höger om denna
+ruta (mellan kolumnerna för 0 och 10 dB).
+
+I sifferfältet kan nu utläsas en effektförstärkning (kvot) av
+5.011872.
+
+\subsection{Bestämning av dB ur ström- eller spänningsförhållandet}
+\begin{itemize}
+\item Dela upp ström- eller spänningsförhållandet i faktor och 1O-potens
+\item Bestäm dB-talet för 1O-potensen
+\item Bestäm dB-talet förfaktorn ur nomogrammet
+\item Addera dB-talen till ett slutresultat
+\end{itemize}
+
+Exempel: 300-faldig spänningsförstärkning
+\begin{itemize}
+\item \(300 = 3 \cdot 100\)
+\item 100 motsvarar 40 dB, d.v.s två (nollor) gånger 20 = 40
+\item 3 motsvarar 9.5 dB
+\item 40 dB + 9.5 dB = 49.5 dB
+\end{itemize}
+
+\subsection{Bestämning av ström- eller spänningsförhållandet ur dB}
+\begin{itemize}
+\item Dela dB-värdet med 20 dB varvid erhålls en del och en rest
+\item Delen ger 10-potensen, d.v.s antalet nollor bakom faktorn
+  (ställvärdet)
+\item Gå in i nomogrammet och omvandla ``resten'' till en faktor
+\item Multiplicera faktorn med ställvärdet
+\end{itemize}
 
 Exempel: Vilket spänningsförhållande motsvarar -115 dB?
-1) 115 dB/20 dB= 5 rest 15
-2) 5 (nollor) motsvarar 100 000
-3) 5 dB motsvarar 5.5
-4) 5.5 ·1 00 000 =550 000-faldig spänningsdämpning
-Tabeller för sambandet mellan ström- eller spänningsförhållande och dB
-Kolumnerna längst till vänster upptar dBtalen O- 9. l tabellernas översta rad är dBtalen listade i jämna 1O-tal dB från O - 120
-respektive i udda 1O-tal dB från 10-130.
+\begin{itemize}
+\item 115 dB/20 dB= 5 rest 15
+\item 5 (nollor) motsvarar 100 000
+\item 5 dB motsvarar 5.5
+\item \(5.5 \cdot 1 00 000\) = 550 000-faldig spänningsdämpning
+\end{itemize}
 
-Med tabellerna kan ström- och spänningsförhållanden bestämmas ur dB-tal från Otill
-139 dB och omvänt.
-Detta motsvarar förhållanden från 1:1 till
-1:8.9 millioner.
-dB
+\subsection{Tabeller för sambandet mellan ström- eller spänningsförhållande
+  och dB}
 
-Jämna 1O-tal dB från O till 120 dB
-O 20 40 60 80 100 120
+Kolumnerna längst till vänster upptar dB-talen 0-9. I tabellernas
+översta rad är dB-talen listade i jämna 10-tal dB från O-120
+respektive i udda 10-tal dB från 10-130.
 
-o
+Med tabellerna kan ström- och spänningsförhållanden bestämmas ur
+dB-tal från 0 till 139 dB och omvänt.
 
-o
+Detta motsvarar förhållanden från 1:1 till 1:8.9 millioner.
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
+Se tabell \ref{tab:db-jämna-0-120}.
 
-1
-1
-1
-1
-1
-1
-2
-2
-2
+\begin{table}[h]
+  \caption{Jämna 10-tal dB från 0 till 120 dB}
+  \label{tab:db-jämna-0-120}
+  \begin{tabular}{l|lllllll}
+    dB & 0 & 20 & 40 & 60 & 80 & 100 & 120 \\
+    \hline
+    0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+    1 & 1 & 1 & 2 & 2 & 0 & 1 & 8 \\
+    2 & 1 & 2 & 5 & 8 & 9 & 2 & 5 \\
+    3 & 1 & 4 & 1 & 2 & 5 & 3 & 8 \\
+    4 & 1 & 5 & 8 & 4 & 8 & 9 & 3 \\
+    5 & 1 & 7 & 7 & 8 & 2 & 7 & 9 \\
+    6 & 1 & 9 & 9 & 5 & 2 & 6 & 2 \\
+    7 & 2 & 2 & 3 & 8 & 7 & 2 & 1 \\
+    8 & 2 & 5 & 1 & 1 & 8 & 8 & 6 \\
+    9 & 2 & 8 & 1 & 8 & 3 & 8 & 3 \\
+  \end{tabular}
+\end{table}
 
-o o o o o o
 
-1
-2
-4
-5
-7
-9
-2
-5
-8
 
-2
-5
-1
-8
-7
-9
-3
-1
-1
-
-2
-8
-2
-4
-8
-5
-8
-1
-8
-
-o
-
-9
-5
-8
-2
-2
-7
-8
-3
-
-1
-2
-3
-9
-7
-6
-2
-8
-8
-
-8
-5
-8
-3
-9
-2
-
-1
-
-6
-3
-
-PPENDIX
-Udda 10-tal dB från 10 till 130 dB
-10 30 50 70 90 110 130
-
-o
-
-1
-5
-
-3
-3
-3
-
-1
-2
-3
-
-9
-
-4
-5
-5
-6
-7
-7
-8
-
-4
-5
-
-6
-
-7
-
-8
-9
-
-6
-4
-8
-6
-1
-2
-
-4
-
-o
-6
-
-o
-
-7
-4
-1
-
-9
-9
-
-7
-
-8
-4
-2
-6
-2
-
-3
-
-o
-
-7
-
-8
-8
-4
-5
-4
-2
-5
-
-3
-9
-9
-3
-2
-
-o
-
-3
-
-2
-1
-
-2
-8
-1
-6
-1
-
-Decibel över 1 m W vid 50 Q [dB(m)]
-Som nu beskrivits är uttrycket decibel ett
-logaritmiskt mått för hur två effekter förhåller
-sig till varandra. När de jämförda effekterna
-uppträder över lika stora impedanser, kan
-även förhållandet mellan två spänningar eller två strömmar uttryckas i decibel. l samtliga fall rör det sig om förhållandet mellan två
-storheter - aldrig absoluta storheter.
-
-3
-7
-1
-7
-5
-8
-
-3
-3
-8
-2
-
-o
-
-Exempel
-Ett drivsteg i en sändare drivs med 1 watt och
-avger 1Owatt. Effektförhållandet är 10:1 och
-effektförstärkningen är 1O gånger eller 1O
-dB. slutförstärkaren i samma sändare drivs
-med 1O watt från drivsteget och avger 100
-watt till antennen. Även i detta fall är effektförhållandet 10:1 och effektförstärkningen
-1O gånger eller 1O dB.
-slutförstärkaren hanterar en 1 gånger
-så hög effektnivå som drivsteget och ändå är
-förstärkningen 1OdB i båda fallen. Decibel är
-m.a.o. dimensionslöst
-Men om en av två jämförda effekterna
-alltid är densamma och väl definierad så
-medges nya möjligheter. Den effekt som
-skall kvantifieras kan nu ställas i förhållande
-till den kända referenseffekten. Med denna
-förutsättning kan även de absoluta effektnivåerna, t.ex. genom en sändare uttryckas
-i decibel. Detta tillgår på följande sätt.
-Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs med en impedans av 50 n. För god anpassning väljs
-då koaxialkablarna mellan apparaterna med
-en karaktäristisk impedans av 50 n.
-
-9
+\begin{table}[h]
+  \caption{Udda 10-tal dB från 10 till 130 dB}
+  \label{tab:db-udda-10-130}
+  \begin{tabular}{l|lllllll}
+    dB & 10 & 30 & 50 & 70 & 90 & 110 & 130 \\
+    \hline
+    0 & 3 & 1 & 6 & 2 & 2 & 7 & 8 \\
+    1 & 3 & 5 & 4 & 8 & 1 & 3 & 4 \\
+    2 & 2 & 9 & 8 & 1 & 0 & 7 & 2 \\
+    3 & 4 & 4 & 6 & 6 & 8 & 3 & 6 \\
+    4 & 5 & 0 & 1 & 1 & 8 & 7 & 2 \\
+    5 & 5 & 6 & 2 & 3 & 4 & 1 & 2 \\
+    6 & 6 & 3 & 0 & 9 & 5 & 7 & 3 \\
+    7 & 7 & 0 & 7 & 9 & 4 & 6 & 8 \\
+    8 & 7 & 9 & 4 & 3 & 2 & 8 & 2 \\
+    9 & 8 & 9 & 1 & 2 & 5 & 0 & 9 \\
+  \end{tabular}
+\end{table}
 
 Exempel:
-En förstärkare med lika in- och utgångsimpedans förstärker spänningen 350-falt.
-Hur många dB är det?
-Vi söker närmaste 3-ställiga tal i de två
-ovanstående tabellerna. l den nedersta tabellen finner vi talet 354 på andra raden.
-Över entalet 4 finner vi 50 dB i den översta
-raden. Till vänster om 354 finner vi 1 dB.
-Som ett närmevärde är alltså förstärkningen
-50+ 1 =51 dB.
 
-o
-
-Om kvoten i nedanstående nomogram är en
-eller flera 1O-potenser högre än 1O (ggr), så
-kan nomogrammet utökas enligt följande
-tabell.
-Kvot*
-
-Analys
-1 har O nollor
-1O har 1 nolla
-100 har 2 nollor
-1 000 har 3 nollor
-1O 000 har 4 nollor
-
-1
-
-10
-100
-1 000
-10 000
-
-1
-
-1.1
-
-l
-
-1.2
-
-l
-
-1.3
-
-Skriv
-
-dB
-
-1 . 20
-2. 20
-3. 20
-4. 20
-
-= 20
-= 40
-= 60
-= 80
-
-o. 20 = o
-
-1.4
-
-1.5
-
-1.6
-
-1.7
-
-1.8
-
-1.9
-
-2.0
-
-l
-
-ggr
-
-l
-l ....a...........~.........r.....,.l...~..-....\&.........\&................,1~"""'--"-........~......,..j.--l
-l
-!
-l
-l
-l
-.......!..........l......,..j.r-1
-
-l
-
-!
-
-....,...~,.,...........,.1....a...........~...........~.rl
-
-l
-
-i
-
-Spänning
-dB
-
-O
-2
-
-1
-
-l1PI 1 l 1 1
-l
-
-l
-
-0246
-
-8
-
-3
-l
-l
-
-l
-10
-
-l
-
-i
-
-4
-l
-
-5
-
-i
-
-l
-l
-
-12
-
-14
-
-7
-
-6
-l
-
-i
-
-l
-
-l
-16
-
-l
-
-li
-
-8
-
-l
-l
-
-18
-
-9
-i
-
-l
-
-10 g gr
-
-l
-
-20
-
-Spänning
-dB
-C-3
-
-APPENDIX
-
-C
-
-Det har utbildats en praxis, att referensvärdet vid jämförelse av signalnivåer i radiosystem skall vara en milliwatt (1m W) utvecklad i en belastning med impedansen 50 Q.
-
-Signalnivåer över belastningen 50 Q kan
-uttryckas i dB(m), där (m) står för milliwatt,
-varvid referenseffekten 1 mW är OdB( m) vid
-50 Q.
-Det spänningsfall som bildas över belastningen 50 Q vid effektnivån O dB( m) är
-
-U=-.JP·R=1·10-s·50~0.224 V
-Den ström som flyter genom belastningen
-50 Q vid effektnivån O dB(m) är
-
-l=
-
-(P =~ 1 . 10 -s =0.0045 mA
-
-~Fi
-
-5o
-
-Strömmen 4.5 mA genom belastningen 50 Q
-motsvarar således O dB( m).
-Varje annan effekt, spänningsfall och ström
-som uppstår vid en belastning av 50 Q kan
-jämföras med respektive referensvärden
-1 mW, 0.22 V och 4.5 mA.
-
-Sambandet mellan spänning över 50 Q
-och dB(m)
-dB(m) V
-
--40
--30
--20
-- 10
-
-o
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-
-0.00224
-0.00707
-0.0224
-0.0707
-0.224
-0.251
-0.282
-0.316
-0.354
-0.398
-0.446
-0.501
-0.562
-0.630
-0.707
-
-dB(m)
-
-V
-
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-
-0.793
-0.890
-0.999
-1.121
-1.257
-1.411
-i .583
-1.776
-1.993
-2.236
-
-dB(m) är ett absolut och logaritmiskt mått.
-
-dB(W) är ett annat absolut mått.
+En förstärkare med lika in- och utgångsimpedans förstärker spänningen
+350-falt.  Hur många dB är det?
+
+Vi söker närmaste 3-ställiga tal i de två ovanstående tabellerna. I
+den nedersta tabellen finner vi talet 354 på andra raden.  Över
+entalet 4 finner vi 50 dB i den översta raden. Till vänster om 354
+finner vi 1 dB.  Som ett närmevärde är alltså förstärkningen 50 + 1 =
+51~dB.
+
+Om kvoten i nedanstående nomogram är en eller flera 10-potenser högre
+än 10 (ggr), så kan nomogrammet utökas enligt följande tabell.
+
+\begin{tabular}{llll}
+  Kvot * & Analys              & Skriv           & dB \\
+  1      & 1 har 0 nollor      & \(0 \cdot 20\) = & 0  \\
+  10     & 10 har 1 nolla      & \(1 \cdot 20\) = & 20 \\
+  100    & 100 har 2 nollor    & \(2 \cdot 20\) = & 40 \\
+  1 000  & 1 000 har 3 nollor  & \(3 \cdot 20\) = & 60 \\
+  10 000 & 10 000 har 4 nollor & \(4 \cdot 20\) = & 80 \\
+\end{tabular}
+
+* kvot av \(U_{hög}/U_{låg}\) resp. \(I_{hög}/I_{låg}\).
+
+\subsection{Decibel över 1 m W vid 50 Ω [dB(m)]}
+Som nu beskrivits är uttrycket decibel ett logaritmiskt mått för hur
+två effekter förhåller sig till varandra. När de jämförda effekterna
+uppträder över lika stora impedanser, kan även förhållandet mellan två
+spänningar eller två strömmar uttryckas i decibel. I samtliga fall rör
+det sig om förhållandet mellan två storheter - \emph{aldrig absoluta
+  storheter}.
+
+Exempel: Ett drivsteg i en sändare drivs med 1 watt och avger 10
+watt. Effektförhållandet är 10:1 och effektförstärkningen är 10 gånger
+eller 10 dB. Slutförstärkaren i samma sändare drivs med 10 watt från
+drivsteget och avger 100 watt till antennen. Även i detta fall är
+effektförhållandet 10:1 och effektförstärkningen 10 gånger eller 10
+dB.
+
+Slutförstärkaren hanterar en 10 gånger så hög effektnivå som
+drivsteget och ändå är förstärkningen 10 dB i båda fallen. Decibel är
+m.a.o. dimensionslöst
+
+Men om en av två jämförda effekterna alltid är densamma och väl
+definierad så medges nya möjligheter. Den effekt som skall
+kvantifieras kan nu ställas i förhållande till den kända
+referenseffekten. Med denna förutsättning kan även de absoluta
+effektnivåerna, t.ex. genom en sändare uttryckas i decibel. Detta
+tillgår på följande sätt.
+
+Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
+med en impedans av 50 n. För god anpassning väljs då koaxialkablarna
+mellan apparaterna med en karaktäristisk impedans av 50 Ω.
+
+TODO HÄR SAKNAS SJÄLVA NOMOGRAMMET
+
+\emph{Det har utbildats en praxis, att referensvärdet vid jämförelse
+  av signalnivåer i radiosystem skall vara en milliwatt (1 mW)
+  utvecklad i en belastning med impedansen 50 Ω.}
+
+Signalnivåer över belastningen 50 Ω kan uttryckas i dB(m), där (m)
+står för milliwatt, varvid referenseffekten 1 mW är OdB( m) vid 50 Ω.
+
+Det spänningsfall som bildas över belastningen 50 Ω vid effektnivån 0
+dB( m) är
+
+\[U = \sqrt{P\cdot R} = 1\cdot 10^{-3} \cdot 50 \approx 0.224 \text{ V}\]
+
+Den ström som flyter genom belastningen 50 Ω vid effektnivån 0 dB(m)
+är
+
+\[
+I = \sqrt{P}{R} = \sqrt{1\cdot 10^{-3}}{50} = 00045 \text{ mA}
+\]
+% TODO tror det är en felräkning ovan, kontrollera!
+
+Strömmen 4.5 mA genom belastningen 50 Ω motsvarar således 0 dB(m).
+
+Varje annan effekt, spänningsfall och ström som uppstår vid en
+belastning av 50 Ω kan jämföras med respektive referensvärden 1 mW,
+0.22 V och 4.5 mA.
+
+\emph{dB(m) är ett absolut och logaritmiskt mått.}
 
 Effekt
 
-Effektnivåer över en belastning kan också
-uttryckas i dB(W), där (W) står för watt.
-Referenseffekten är då 1 W, d.v.s. OdB(W).
-Liksom med dB( m) anges impedansen i den
-belastning, som effekten utvecklas över.
-
-a [dB(m)]=10 log·
-
-r~nJ
-
-1 m
-
-a
-
-f'so =1
-
-[mW]·1010
+\begin{gather*}
+  a [dB(m)] = 10 \log\frac{P_{[50Ω]}}{1[mW_{50Ω}]} \\
+  P_{50} = 1 [mW] \cdot 10^{\frac{a}{10}}
+\end{gather*}
 
 Ström
-O dB(m) = 4.47 mAsa
 
-l
-4.47
+\begin{gather*}
+  0 dB(m) = 4.47 mA_{50} \\
+  a [dB(m)] = 20 \log\frac{I_{50}}{4.47}
+\end{gather*}
 
-a [dB( m)]= 20 log §Q
-
-Isa= 4.47 ·1 0 20
 Spänning
-O dB(m) = 0.223 Vso
 
-u.
+\begin{gather*}
+  0 dB(m) = 0.223 V_{50} \\
+  a [dB(m)] = 20 \log\frac{U_{50}}{0.223} \\
+  U_{50} = 0.223 \cdot 10^{\frac{a}{20}}
+\end{gather*}
 
-a[dB(m)] = 20 log o.d~
-Uso = 0.223 ·1 0 20
+\subsection{Sambandet mellan spänning över 50 Ω och dB(m)}
+\begin{tabular}{l|lp{1cm}l|l}
+  dB(m) & V & & dB(m) & V \\
+  \cline{1-2} \cline{4-5}
+  -40 & 0.00224 & & & \\
+  -30 & 0.00707 & & & \\
+  -20 & 0.0224  & & & \\
+  -10 & 0.0707  & & & \\
+  0   & 0.224   & & & \\
+  1   & 0.251   & & 11 & 0.793 \\
+  2   & 0.282   & & 12 & 0.890 \\
+  3   & 0.316   & & 13 & 0.999 \\
+  4   & 0.354   & & 14 & 1.121 \\
+  5   & 0.398   & & 15 & 1.257 \\
+  6   & 0.446   & & 16 & 1.411 \\
+  7   & 0.501   & & 17 & 1.583 \\
+  8   & 0.562   & & 18 & 1.776 \\
+  9   & 0.630   & & 19 & 1.993 \\
+  10  & 0.707   & & 20 & 2.236 \\
+\end{tabular}
 
-C-4
+\emph{dB(W) är ett annat absolut mått.}
 
-3
+Effektnivåer över en belastning kan också uttryckas i dB(W), där (W)
+står för watt.  Referenseffekten är då 1 W, d.v.s. OdB(W).  Liksom med
+dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
-sow
-
-J
-
-Exempelvis motsvarar 26 dB(W) 398 W
-(se tabellen för sambandet mellan effektförhållande och dB).
+Exempelvis motsvarar 26 dB(W) 398 W (se tabellen för sambandet mellan
+effektförhållande och dB).
