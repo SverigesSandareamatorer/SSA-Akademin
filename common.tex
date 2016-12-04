@@ -5,6 +5,8 @@
 \usepackage[swedish]{babel}
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 \usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{hyperref}
 \hypersetup{
@@ -14,6 +16,11 @@
     linkcolor=black,
     urlcolor=black
 }
+
+\clubpenalty=9990
+\widowpenalty=9999
+\brokenpenalty=4999
+
 
 % Make some unicode characters usable
 \DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}} % unicode 00B0 ° degree sign
@@ -31,3 +38,5 @@
 
 % Prepare for graphics
 \usepackage{xspace,graphicx}
+
+\raggedbottom
