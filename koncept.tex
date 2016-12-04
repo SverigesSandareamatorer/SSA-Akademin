@@ -3,10 +3,9 @@
 \include{common}
 
 % Prepare for abstract
-\usepackage{fancyhdr}
-\pagestyle{headings}
+\pagestyle{plain}
 \newenvironment{abstract}%
-{\cleardoublepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
+{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
 %{\cleardoublepage\null \vfill\begin{center}%
 %\bfseries \abstractname \end{center}}%
      {\vfill\null}
@@ -16,44 +15,68 @@
 \makeindex
 
 \begin{document}
+\pagestyle{empty}
 
-\frontmatter
-\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
-\author{Lennart Wiberg}
-\maketitle
+%\frontmatter
+\onecolumn
+\vspace{3cm}
+\begin{center}
+\Huge{\bfseries{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}} \\[2ex]
+\huge{Lennart Wiberg}	
+\end{center}
+\clearpage
 
 % Colophone
-Lennart Wiberg
+\setlength{\parindent}{0px}
+\setlength{\parskip}{1ex}
 
+\vspace{10em}
+
+\begin{center}
 KONCEPT FÖR RADIOAMATÖRCERTIFIKAT
+
+Lennart Wiberg
+\end{center}
+
 %Första upplagan
 %ISBN 91-86368-08-7
+
 Andra upplagan
 
-Att mångfaldiga innehållet i denna bok, helt eller delvis, utan medgivande av
-rättighetshavarna, är förbjudet enligt lagen (1960:729) om upphovsrätt till
-litterära och konstnärliga verk. Förbudet gäller varje form av mångfaldigande
-såsom tryckning, kopiering, överföring till annat medium etc.
+Att mångfaldiga innehållet i denna bok, helt eller delvis, utan medgivande av rättighetshavarna, är förbjudet enligt lagen (1960:729) om upphovsrätt till litterära och konstnärliga verk. Förbudet gäller varje form av mångfaldigande såsom tryckning, kopiering, överföring till annat medium etc.
 
-\begin{figure}[h]
+\begin{wrapfigure}{R}{4cm}
+\centering
 \includegraphics[width=4cm]{images/cc-by-nc-sa}
-\end{figure}
+\end{wrapfigure}
+
 Det här verket är licenserat under Creative Commons: Erkännande-IckeKommersiell-DelaLika 4.0 Internationell.
-
-
 
 Denna elektroniska faksimilutgåva är baserad på den första tryckta
 upplagan. Notera att information om certifikatsklasser, lagar och
 förordningar har ändrats sedan tryckningen.
+
 %Tryckt i Sverige / Printed in Sweden 1997
 %Smegraf, Smedjebacken
 
+\vfill
 
 Förlag
-Föreningen Sveriges Sändareamatörer
-Box 45, S-191 21 Sollentuna
-Telefon +46 8 585 702 73
-E-post hq@ssa.se
+
+\textit{Föreningen Sveriges Sändareamatörer}\\
+Box 45, S-191 21 Sollentuna\\
+Telefon +46 8 585 702 73\\
+E-post \href{mailto:hq@ssa.se}{hq@ssa.se}
+
+\cleardoublepage
+\pagestyle{fancy}
+\twocolumn
+
+
+%\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
+%\author{Lennart Wiberg}
+%\maketitle
+
 
 
 \tableofcontents
