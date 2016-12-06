@@ -86,10 +86,22 @@ någorlunda vettig LaTeX.
 
 16) Bilder inkluderas med
 
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
-\includegraphics{}
-\caption{}
-\label{fig:}
+\includegraphics[width=7cm]{images/bild_2_1-15}
+\caption{Våginterferens}
+\label{fig:BildII1-15}
 \end{center}
 \end{figure}
+
+Bild \ref{fig:BildII1-15}
+
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_1-15}
+\caption{Våginterferens}
+\label{fig:BildII1-15}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII1-15}
