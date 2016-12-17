@@ -811,6 +811,8 @@ $>>>>>$ TODO: Ersätt bilden med bilden från erratan.
 
 Bild II 3-16
 
+Bild II 3-16 Seriekopplad LC-krets
+
 En seriekopplad LC-krets ansluts till växelspänningen U från en signalgenerator
 med inställbar frekvens \(f\). Två fall studeras.
 
@@ -845,6 +847,8 @@ rakt neråt (vektorerna roterar motsols). Spänningen över reaktansen \(X_L\)
 
 Bild II 3-17
 
+Bild II 3-17 Thomsons svängningskrets
+
 Bilden visar en svängningskrets, som består av en kondensator och en induktor
 med förskjutbar järnkärna. En ändring av kärnans tvärsnitt ändrar den
 magnetiska ledningsförmågan och därmed induktansen.
@@ -876,8 +880,6 @@ Således \(X_L = X_C\), där
 
 Formeln gäller både för parallell- och seriekretsar.
 
-Bild II 3-16 Seriekopplad LC-krets
-
 Räkneexempel:
 
 \[L = 100\ nH \quad C = 10\ pF \quad f =\ ?\]
@@ -896,6 +898,9 @@ sig inbördes när en svängningskrets är i resonans. Som exempel används föl
 kretsdata: Induktans 200 J.lH, kapacitans 200 p F, förlustresistans 1O Ω.
 
 \subsubsection{Resonansfallet i en parallellkrets}
+\label{parallellresonans}
+\index{parallellresonans}
+\index{resonans!parallellkrets}
 
 Parallellkretsen består i sig själv av seriekopplade komponenter, varav
 \(X_L\) och \(X_C\) är reaktiva. Vid resonans är dessa lika stora och
@@ -915,7 +920,15 @@ I praktiken finns i kretsen också en resistans varför dessa extremvärden inte
 uppstår. Inne i en parallellkrets i resonans cirkulerar alltså en stark ström,
 som endast begränsas av kretsens resistans.
 
-Bild II 3-18
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-18}
+\caption{Resonansfallet i parallellkrets}
+\label{fig:BildII3-18}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-18}
 
 Bilden visar en parallellkrets där induktorn har resistansen \(r_L\) och
 kondensatorn antas vara förlustfri. Vidare förutsätts att kretsen är i resonans.
@@ -923,8 +936,6 @@ kondensatorn antas vara förlustfri. Vidare förutsätts att kretsen är i reson
 Vid resonans kan termen \(X_L - X_C = 0\) bytas mot \(r_L\) i formeln
 \[X = \frac{-X_L \cdot X_C}{X_L - X_C}\] förutsatt att \(r_L\) är försumbart
 jämfört med \(X_L\).
-
-Bild II 3-17 Thomsons svängningskrets
 
 Därtill är \(X_L = 2πfL\) och \(X_C = \frac{1}{2πfC}\) d.v.s.
 \(X_L \cdot X_C = \frac{L}{C}\) som sätts in.
@@ -935,11 +946,20 @@ Parallellkretsens impedans vid resonans kan då skrivas
 Z = \frac{X_L \cdot X_C}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
-Bild II 3-18 Resonansfallet i parallellkrets
-
 \subsubsection{Resonansfallet i en seriekrets}
+\label{serieresonans}
+\index{serieresonans}
+\index{resonans!seriekrets}
 
-Bild II 3-19
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-19}
+\caption{Resonansfallet i seriekrets}
+\label{fig:BildII3-19}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-19}
 
 När en seriekrets är i resonans, så är
 
@@ -971,8 +991,6 @@ vid resonans blir då \(\frac{5\ mV}{10\ Ω} = 0.5\ mA\).
 Av strömmen bildas reaktiva spänningar, d.v.s.
 \(0.5 mA \cdot 1000\ Ω = 500\ mV\) både över induktans och kapacitans (som tar
 ut varandra) och 5 mV över resistansen.
-
-Bild II 3-19 Resonansfallet i seriekrets
 
 \subsection{Q-faktorn i en parallellkrets}
 \textbf{HAREC a.\ref{HAREC.a.3.2.5}\label{myHAREC.a.3.2.5}}
