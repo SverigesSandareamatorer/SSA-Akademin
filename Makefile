@@ -48,8 +48,7 @@ koncept.idx:
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
-koncept.pdf: koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-pdflatex koncept.tex
+koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
 matterep.pdf: matte.tex matterep.tex
