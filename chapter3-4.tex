@@ -1,16 +1,29 @@
 \section{Förstärkare}
 \textbf{HAREC a.\ref{HAREC.a.3.4}\label{myHAREC.a.3.4}}
+\index{förstärkare}
+\index{amplifier}
+\index{blandning}
+\index{mixing}
 
 \subsection{Allmänt}
 
-Bild II 3-40
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-40}
+\caption{Från elektronrör till transistor}
+\label{fig:BildII3-40}
+\end{center}
+\end{figure*}
 
-Elektronrör och transistorer är de aktiva komponenter som används i
-oräkneliga elektroniska kopplingar för alstring av signaler, för
-förstärkning och blandning av signaler, för multiplicering av
-signalfrekvenser etc.
+Bild \ref{fig:BildII3-40}
 
-Transistorn presenteras i avsnitt 2.6 och elektronröret i avsnitt 2.7.
+Elektronrör och transistorer är de \emph{aktiva komponenter} (eng
+\emph{active components}) som används i oräkneliga elektroniska kopplingar för
+alstring av signaler, för \emph{förstärkning} (eng \emph{amplifier}) och
+\emph{blandning} (eng \emph{mixing}) av signaler, för multiplicering av
+signalfrekvenser etc. 
+
+Transistorn presenteras i avsnitt \ref{transistorn} och elektronröret i avsnitt \ref{elektronrör}.
 
 Först förekom endast elektronrör. Dessa har emellertid på några få
 decennier nästan helt ersatts av transistorer. Elektronrör används
@@ -21,14 +34,26 @@ därför skäl att här behandla såväl elektronrör som transistorer.
 \subsubsection{LF- och HF-förstärkare}
 \textbf{HAREC a.\ref{HAREC.a.3.4.1}, a.\ref{HAREC.a.3.4.2}, a.\ref{HAREC.a.3.4.3}\label{myHAREC.a.3.4.1}\label{myHAREC.a.3.4.2}\label{myHAREC.a.3.4.3}}
 
-Bild II 3-41
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-41}
+\caption{Principen för förstärkare med elektronrör respektive transistor}
+\label{fig:BildII3-41}
+\end{center}
+\end{figure*}
 
+Bild \ref{fig:BildII3-41}
+
+\index{LF-förstärkare}
+\index{förstärkare!LF}
 Med \emph{LF-förstärkare} menas förstärkare som arbetar med signaler i
 det lägre frekvensområdet, typiskt upp till c:a 100
 kHz. LF-förstärkare är mycket vanliga såväl i mottagare som
 sändare. Utöver de aktiva komponenterna (transistorer, elektronrör )
 är kondensatorer och resistorer de viktigaste passiva.
 
+\index{HF-förstärkare}
+\index{förstärkare!HF}
 Med \emph{HF-förstärkare} menas förstärkare som arbetar med signaler
 med högre frekvenser än dem i LF-området. Även HF-förstärkare är
 mycket vanliga såväl i mottagare som sändare. De används t.ex. i
@@ -37,37 +62,48 @@ oscillatorer, signalberedningssteg och slutsteg.  Utöver de
 komponenter, som även finns i LF-förstärkare, används kombinationer av
 frekvensberoende komponenter såsom induktorer och kondensatorer.
 
-\emph{Förstärkning}
-Med förstärkning avses här kvoten av amplituden i utgående och
+\paragraph{Förstärkning}
+\index{förstärkning}
+\index{förstärkare!förstärkning}
+\index{gain}
+Med \emph{förstärkning} (eng \emph{gain}) avses här kvoten av amplituden i utgående och
 inkommande signal, varvid frekvensgången har inverkan.
 
-\emph{Frekvensgång}
+\paragraph{Frekvensgång}
+\index{frekvensgång}
 Förstärkare arbetar endast inom ett visst frekvensområde, vilket kan
 skilja från fall till fall.
 
-\emph{Bandbredd}
-
+\paragraph{Bandbredd}
+\index{bandbredd}
+\index{förstärkare!bandbredd}
+\index{bandwidth}
 Det frekvensområde där förstärkaren arbetar med fulla data kallas
-bandbredd. Bandgränserna uttrycks som en nedre och övre gränsfrekvens,
-där signalnivån avviker från ett givet värde, vanligen med högst 3 dB.
+\emph{bandbredd} (eng \emph{bandwidth}). Bandgränserna uttrycks som en nedre
+och övre gränsfrekvens, där signalnivån avviker från ett givet värde, vanligen
+med högst 3 dB.
 
 För LF-förstärkare för amatörradiobruk är kravet på bandbredd litet;
 inom ett band av 300 Hz till 3 kHz uppnås godtagbar
 återgivningskvalitet för tal. Bandbredden bestäms främst av
 kondensatorer i kretsen avsedda för överföring och avkoppling.
 
-HF-förstärkare används för signaler med hög frekvens, typiskt 100kHz
-och däröver.  Det finns s.k. bredbandig a förstärkare för ett stort
+HF-förstärkare används för signaler med hög frekvens, typiskt 100 kHz
+och däröver.  Det finns s.k. bredbandiga förstärkare för ett stort
 frekvensområde, men även avstämda förstärkare för smala frekvensband.
-
-Bild II 3-40 Från elektronrör till transistor
-
-Bild II 3-41 Principen för förstärkare med elektronrör respektive transistor
 
 \subsection{Grundkopplingar för förstärkarsteg}
 \textbf{HAREC a.\ref{HAREC.a.2.6.4.1}, a.\ref{HAREC.a.2.6.4.2}, a.\ref{HAREC.a.2.6.4.3}, a.\ref{HAREC.a.2.6.4.4}\label{myHAREC.a.2.6.4.1}\label{myHAREC.a.2.6.4.2}\label{myHAREC.a.2.6.4.3}\label{myHAREC.a.2.6.4.4}}
 
-Bild II 3-42
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-42}
+\caption{Grundkopplingar för elektronrör och NPN-transistor}
+\label{fig:BildII3-42}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-42}
 
 I det föregående har redan visats att en av polerna i ingången
 respektive utgången i en förstärkare är gemensam. I ovanstående bild
@@ -85,15 +121,21 @@ NPN-transistor.
 I praktiken känns en grundkoppling igen på vilken elektrod som är
 avkopplad till 0-potential över en kondensator.
 
+\index{emitterkoppling}
+\index{förstärkare!emitterkoppling}
 \emph{Emitterkoppling} används för LF och HF när hög förstärkning
 eftersträvas. Eftersom effektförstärkningen är produkten av spännings-
 och strömförstärkningen, så fås en effektförstärkning av mellan 200
 till 50000 gånger. Nackdelen med denna koppling är den ibland låga
 ingångsimpedansen och den relativt låga gränsfrekvensen.
 
+\index{baskoppling}
+\index{förstärkare!baskoppling}
 \emph{Baskoppling} använd som HF-förstärkare på grund av sin höga
 gränsfrekvens och goda isolation mellan in- och utgång.
 
+\index{kollektorkoppling}
+\index{förstärkare!kollektorkoppling}
 \emph{Kollektorkoppling} används när hög ingångsimpedans och
 utgångsimpedans önskas. Denna koppling har emellertid ingen
 spänningsförstärkning, men kan användas för s.k. impedansomvandling.
@@ -110,8 +152,6 @@ spänningsförstärkning, men kan användas för s.k. impedansomvandling.
     Fasläge & motfas \quad 180° & medfas \quad 0° & medfas 0° \\
   \end{tabular}
 \end{table*}
-
-Bild II 3-42 Grundkopplingar för elektronrör och NPN-transistor
 
 
 %%
@@ -140,6 +180,8 @@ spänningdelare mellan plus- och minuspolen.
 \textbf{HAREC a.\ref{HAREC.a.3.4.4}\label{myHAREC.a.3.4.4}}
 
 \subsubsection{Arbetspunkt}
+\index{arbetspunkt}
+\index{distorsion}
 
 \emph{Arbetspunkten} för förstärkare väljs olika, beroende på önskat
 arbetssätt. En olämpligt vald arbetspunkt resulterar i förvrängning av
@@ -159,8 +201,17 @@ positiv. Styrspänningens relativa läge (arbetspunkten) mellan olika
 arbetsklasser är emellertid lika.
 
 \subsubsection{Klass A}
+\index{klass A}
 
-Bild II 3-44
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-44}
+\caption{Förstärkare i klass A}
+\label{fig:BildII3-44}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-44}
 
 Klass A är ett arbetssätt i linjära LF- och HF-förstärkarsteg, t.ex. i
 mottagare samt AM- och SSB-modulerade sändare. Vilovärdet på strömmen
@@ -169,6 +220,7 @@ rakaste delen av styrkaraktäristikan (\(I=0.5\cdot I_{max}\)).  Därmed
 fås låg distorsion. Verkningsgraden är upp till 50\%.
 
 \subsubsection{Klass AB}
+\index{klass AB}
 
 Klass AB är ett godtagbart linjärt arbetssätt för AM-
 resp. SSB-modulering, men med en lägre viloström. Arbetspunkten ligger
@@ -178,8 +230,17 @@ visserligen önskvärt vid SSB, men verkningsgraden är lägre. Klass AB
 distorsion.
 
 \subsubsection{Klass B}
+\index{klass B}
 
-Bild II 3-45
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-45}
+\caption{Förstärkare i klass B}
+\label{fig:BildII3-45}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-45}
 
 Klass B är ett olinjärt arbetssätt med en låg vilaström i förhållande
 till \(I_{max}\) d.v.s. arbetspunkten ligger i nederkant av
@@ -196,8 +257,17 @@ med två mottaktkopplade rör eller transistorer i klass B.
 Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
 
 \subsubsection{Klass C}
+\index{klass C}
 
-Bild 113-46
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-46}
+\caption{Förstärkare i klass C}
+\label{fig:BildII3-46}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-46}
 
 Klass C används i HF-förstärkarsteg i FM-, CW- och
 AM-sändare. Arbetssättet är kraftigt olinjärt. Vilaströmmen är noll,
@@ -210,19 +280,24 @@ framstår som besvärande vid CW och FM. Med hjälp av en utgångskrets
 kan frekvensmultiplicering utföras med förstärkare i klass C.  (På
 följande tre bilder är \(I_R\)=anodviloström).
 
-Bild If 3-44 Förstärkare i klass A
-
-Bild II 3-45 Förstärkare i klass B
-
-Bild II 3-46 Förstärkare i klass C
-
 \subsection{Frekvensmultiplicering}
+\index{frekvensmultiplicering}
+\index{frequency multiplication}
 
-Bild II 3-47
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-47}
+\caption{Frekvensmultipliceringskedja}
+\label{fig:BildII3-47}
+\end{center}
+\end{figure*}
 
-Frekvensmultiplicering kan användas för att skapa en högre frekvens än
-den som avges av oscillatorn. Oscillatorn följs då av ett eller flera
-frekvensmultiplicerande förstärkarsteg som arbetar i klass C.
+Bild \ref{fig:BildII3-47}
+
+\emph{Frekvensmultiplicering} (eng \emph{frequency multiplication}) kan
+användas för att skapa en högre frekvens än den som avges av oscillatorn.
+Oscillatorn följs då av ett eller flera frekvensmultiplicerande förstärkarsteg
+som arbetar i klass C.
 
 I utgången av ett frekvensmultiplicerande steg måste finnas en
 svängningskrets, som är avstämd till önskad frekvens, d.v.s. överton
@@ -273,8 +348,6 @@ Således
   &2 \cdot 2 \cdot 2 \cdot 2 \cdot 3.5 = 28\ \text{MHz} \\
 \end{align*}
 
-Bild 113-47 Frekvensmultipliceringskedja
-
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen
 utan även variationerna i den. Om t.ex. VFO-frekvensen i området 3.5
 MHz ändras med 50 Hz, så ändras utfrekvensen i området 28 MHz med \(2
@@ -284,10 +357,20 @@ inte överföras genom en frekvensmultipliceringskedja utan att talet
 förvrängs.
 
 \subsection{Sändarslutsteg}
+\index{slutsteg}
+\index{förstärkare!slutsteg}
 
 \subsubsection{Slutsteg med en transistor}
 
-Bild II 3-48
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-48}
+\caption{Slutsteg med en transistor}
+\label{fig:BildII3-48}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-48}
 
 Transistorslutsteg för HF byggs vanligen emitterkopplade p.g.a. den
 högre effektförstärkningen.
@@ -303,14 +386,23 @@ svängningskretsen över en kopplingslindning med samma impedans som
 belastningen. För linjär återgivning krävs drift i klass A eller
 möjligen klass AB.
 
-Bild II 3-48 Slutsteg med en transistor
-
 \subsubsection{Slutsteg med två transistorer}
+\index{mottaktskopplat slutsteg}
+\index{slutsteg!mottaktskopplat}
+\index{push-pull amplifier}
 
-Bild II 3-49
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-49}
+\caption{Mottaktskopplat slutsteg med transistorer}
+\label{fig:BildII3-49}
+\end{center}
+\end{figure*}
 
-Ett mottaktkopplat (eng. push-pull) förstärkarsteg i klass B har god
-verkningsgrad samtidigt som det är nöjaktigt linjärt för SSB i
+Bild \ref{fig:BildII3-49}
+
+Ett \emph{mottaktkopplat} (eng. \emph{push-pull amplifier}) förstärkarsteg i
+klass B har god verkningsgrad samtidigt som det är nöjaktigt linjärt för SSB i
 amatörradio. I ett slutsteg med endast en transistor skulle denna
 behöva klara fyra gånger så stor förlusteffekt
 
@@ -329,7 +421,15 @@ definitioner.
 
 \subsubsection{Högeffekts/utsteg med en tetrod}
 
-Bild II 3-50
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-50}
+\caption{Högeffekts/utsteg med en tetrod}
+\label{fig:BildII3-50}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-50}
 
 Bilden visar ett effektslutsteg för HF med ett elektronrör, en
 s.k. tetrod, i katodkoppling.  Det kan även vara en triod eller en
@@ -341,8 +441,6 @@ signalfrekvens ut ur signalerna från föregående steg.
 Drosslarna \(Dr\) spärrar HF och kondensatorerna \(C_1\), \(C_2\) och
 \(C_3\) kortsluter (avkopplar) HF till jord. Allt för att hindra HF
 att komma in i kraftaggregatet.
-
-Bild II 3-49
 
 HF-förstärkare kan råka i oönskad självsvängning. Orsakerna kan vara
 många, bl.a.  dålig avkoppling av matningsspänningar, induktiv
@@ -365,13 +463,17 @@ s.k. n-filtret (utläses pi-), som fungerar som
 \item anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
 \end{itemize}
 
-Bild II 3-50 Högeffekts/utsteg med en tetrod
-I
-Bild II 3-51 Högeffekts/utsteg med två trioder
-
 \subsection{Högeffekts/utsteg med två gallerjordade trioder (elektronrör)}
 
-Bild II 3-51
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-51}
+\caption{Högeffekts/utsteg med två trioder}
+\label{fig:BildII3-51}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-51}
 
 Gallerjordad koppling innebär att elektronrörets styrgaller ligger på
 HF-mässig nollpotential medan styrsignalen matas in på
@@ -422,8 +524,18 @@ effekt för uppvärmning av rörens katoder samt höga anodspänningar, som
 komplicerad och omfångsrik.
 
 \subsection{Bestämning av PEP-effekten}
+\index{PEP-effekt}
+\index{förstärkare!PEP-effekt}
 
-Bild II 3-52
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-52}
+\caption{Bestämning av PEP-effekten}
+\label{fig:BildII3-52}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-52}
 
 Moduleringsspänningens topp-toppvärde \(U_{SS}\) mäts lämpligen med
 ett oscilloscope. För korrekt belastning vid mätningen används en
@@ -448,11 +560,18 @@ beräknas med följande formler
   P_{PEP} &= \frac{U_{SS}^2}{8R}
 \end{align*}
 
-Bild II 3-52 Bestämning av PEP-effekten
-
 \subsection{Linjäritetskontroll vid SSB}
+\index{SSB!linjäritetskontroll}
 
-Bild II 3-53
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-53}
+\caption{Linjäritetskontroll vid SSB}
+\label{fig:BildII3-53}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-53}
 
 Linjäriteten i en SSB-sändare kan kontrolleras med ett
 oscilloscop. Sändaren moduleras då med två övertonsfria toner.
@@ -461,8 +580,17 @@ Slutsteget bör först belastas med konstlast upp till max tillåten
 effekt. Resultatet jämförs därefter med antennen som last.
 
 \subsubsection{Linjäritetens betydelse i förstärkare}
+\index{förstärkning!linjäritet}
 
-Bild II 3-54
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-54}
+\caption{Linjäritetens betydelse}
+\label{fig:BildII3-54}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-54}
 
 Förstärkningen bör ske med god verkningsgrad och minsta möjliga
 förvrängning, så att det alstras ett minimum av oönskade frekvenser
@@ -493,8 +621,6 @@ Dessa är:
 \item alla summa-och skillnadsfrekvenser av de förstnämnda frekvenserna.
 \end{itemize}
 
-Bild II 3-54 Linjäritetens betydelse
-
 I området för nyttofrekvenserna kallas dessa produkter för
 intermodulationsprodukter och ger talförvrängning.
 
@@ -511,6 +637,7 @@ tillräckligt i π-filtret och eventuella ytterligare övertonsfilter.
 
 
 \subsection{Utstyrningskontroll av slutsteg}
+\index{förstärkning!utstyrningskontroll}
 
 Slutstegets linjära utstyrningsområde överskrids, om ingångssignalens
 amplitud blirför stor. Då ökar utgångssignalens amplitud inte mycket
