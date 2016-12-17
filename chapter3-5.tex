@@ -1,5 +1,7 @@
 \section{Detektorer - Demodulatorer}
 \textbf{HAREC a.\ref{HAREC.a.3.5}\label{myHAREC.a.3.5}}
+\index{detektor}
+\index{demodulator}
 
 \subsection{Allmänt}
 
@@ -15,11 +17,24 @@ namn på demodulatorer, t.ex. detektor, diskriminator. Här beskrivs
 några av dem.
 
 \subsection{AM-detektorer}
+\index{detektor!AM}
+\index{AM!detektor}
 
 \subsubsection{Dioddetektorn AM (A3E)}
 \textbf{HAREC a.\ref{HAREC.a.3.5.2}\label{myHAREC.a.3.5.2}}
+\index{dioddetektor}
+\index{AM!dioddetektor}
+\index{A3E!dioddetektor}
 
-Bild II 3-55
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-55}
+\caption{Dioddetektorn}
+\label{fig:BildII3-55}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-55}
 
 Bilden visar en superheterodynmottagare där den sista MF-kretsen är
 induktivt kopplad till demoduleringsdioden. Den amplitudmodulerade
@@ -38,8 +53,19 @@ bara igenom LF-signalen, som förstärks.
 
 \subsubsection{Produktdetektorn SSB (J3E)}
 \textbf{HAREC a.\ref{HAREC.a.3.5.3}\label{myHAREC.a.3.5.3}}
+\index{SSB!produktdetektor}
+\index{J3E!produktdetektor}
+\index{produktdetektor}
 
-Bild 113-56
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-56}
+\caption{Produktdetektor för AM (A3E) och CW (A 1A)}
+\label{fig:BildII3-56}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-56}
 
 Det finns flera metoder att demodulera en SSB-signal, såsom
 fasningsmetoden, filtermetoden och den s.k. tredje
@@ -48,10 +74,6 @@ här.
 
 En SSB-signal med undertryckt bärvåg består av endast ett sidband. Det
 andra sidbandet och bärvågen undertrycks i sändaren.
-
-Bild II 3-55 Dioddetektorn
-
-Bild 113-56 Produktdetektor för AM (A3E) och CW (A 1A)
 
 Vid demoduleringen av SSB-signalen alstras i mottagaren en signal som
 ersättning för den bärvåg som undertrycktes i sändaren. Det
@@ -74,13 +96,19 @@ omvänt förlopp även kan användas vid DSB-modulering i en
 sändare. Bilden visar demoduleringen av en SSB-signal som innehåller
 tre LF-toner.
 
-\subsubsection{CW-/SSB-detektorer CW (A 1A)}
+\subsubsection{CW-/SSB-detektorer CW (A1A)}
+\index{CW!detektor}
+\index{SSB!detektor}
+\index{A1A!detektor}
+\index{detektor!CW}
+\index{detektor!SSB}
+\index{detektor!A1A}
 
-Även telegrafi-signaler, även kallat CW, blir demodulerade när M
-F-signalerna och BFOsignalen blandas i en produktdetektor.
+Även telegrafi-signaler, även kallat CW, blir demodulerade när
+MF-signalerna och BFO-signalen blandas i en produktdetektor.
 
 Till skillnad från SSB är det vid CW inte nödvändigt med en given
-skillnad mellan MFoch BFO-frekvenserna. Frekvensskillnaden påverkar
+skillnad mellan MF- och BFO-frekvenserna. Frekvensskillnaden påverkar
 bara överlagringstonens frekvens, men inte läsligheten av
 CW-budskapet.
 
@@ -96,8 +124,22 @@ HAREC a.\ref{HAREC.a.3.5.4}\label{myHAREC.a.3.5.4},
  a.\ref{HAREC.a.4.2.4}\label{myHAREC.a.4.2.4},
  a.\ref{HAREC.a.4.3.5}\label{myHAREC.a.4.3.5}
 }
+\index{FM-detektor}
+\index{FM!detektor}
+\index{detektor!FM}
+\index{PM-detektor}
+\index{PM!detektor}
+\index{detektor!PM}
 
-Bild II 3-57
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-57}
+\caption{Amplitudbegränsning vid FM-mottagning}
+\label{fig:BildII3-57}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-57}
 
 Vid vinkelmodulering överförs informationen enbart genom frekvens-
 eller fasvariationer i bärvågen. De amplitudvariationer som kan uppstå
@@ -107,7 +149,15 @@ diskriminatorn (se följande bild). Frekvensvariationerna i den
 FM-modulerade signalen omvandlas därefter av detektorn till
 LF-spänning som motsvarar det utsända talet.
 
-Bild II 3-58
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-58}
+\caption{Ideal arbetslinje för diskriminator}
+\label{fig:BildII3-58}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-58}
 
 Demoduleringen skall ske med mottagaren inställd mitt på avsedd
 sändarfrekvens.  Ett hjälpmedeI för det är en indikator, som vid rätt
@@ -118,8 +168,24 @@ indikator fanns i tidiga FM-mottagare. Nu används i stället en AFC
 omsändarfrekvensen är tillräckligt nära.
 
 \subsubsection{Slope-detektorn - Diskriminatorn FM (F3E)}
+\index{slope-detektorn}
+\index{detektor!slope-detektorn}
+\index{FM!slope-detektorn}
+\index{FM-diskriminator}
+\index{detektor!FM}
+\index{detektor!F3E}
+\index{FM!detektor}
+\index{F3E!detektor}
 
-Bild II 3-59
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-59}
+\caption{Slope-detektorn}
+\label{fig:BildII3-59}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-59}
 
 Två svängningskretsar är kopplade induktivt till den sista
 MF-kretsen. Resonansfrekvensen för dessa båda kretsar är något högre
@@ -139,15 +205,20 @@ Vid växelvisa frekvensändringar i MF, överoch undervilofrekvensen,
 blir resultatet en växelspänning ut från likriktarnas utgångsfilter,
 som är LF-signalen.
 
-Bild II 3-57 Amplitudbegränsning vid FM-mottagning
-
-Bild II 3-58 Ideal arbetslinje för diskriminator
-
-Bild II 3-59 Slope-detektorn
-
 \subsubsection{Foster-Seeley diskriminatorn}
+\index{Foster-Seely diskriminator}
+\index{detektor:Foster-Seely diskriminator}
+\index{FM:Foster-Seely diskriminator}
 
-Bild II 3-60
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-60}
+\caption{Foster-Seeley detektorn}
+\label{fig:BildII3-60}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-60}
 
 Denna tidiga demodulater har god linjäritet, om den föregås av en god
 amplitudbegränsare, men har tämligen dålig känslighet.
@@ -167,11 +238,20 @@ så ökar signalamplituden i den ena grenen och minskar i den
 andra. LF-signalens amplitud blir då proportionell med
 frekvensdeviationen.
 
-Bild II 3-60 Foster-Seeley detektorn
-
 \subsubsection{Räknardiskriminatorn}
+\index{räknardiskriminator}
+\index{FM!räknardiskriminator}
+\index{detektor!räknardiskriminator}
 
-Bild II 3-61
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-61}
+\caption{Räknardiskriminatorn}
+\label{fig:BildII3-61}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-61}
 
 En mono-flopvippa påverkas att slå över av fyrkantpulserna från de
 amplitudbegränsade FM-signalerna.
@@ -192,19 +272,26 @@ likspänning. Utan en mono-flopp med lika långa pulser hade medelvärdet
 varit konstant. Man kan säga att FM-signalen blivit omvandlad till en
 PLM-signal (pulslängdmodulerad signal).
 
-
 \subsubsection{PLL - demodulatorn}
+\index{PLL-demodulator}
+\index{PLL!demodulator}
+\index{FM!PLL-demodulator}
+\index{detektor!PLL-demodulator}
 
-Bild II 3-62
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-62}
+\caption{PLL-demodulatorn}
+\label{fig:BildII3-62}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-62}
 
 Den frekvensmodulerade MF-signalen och en VCO-signal matas in i en
 fasjämförare. VCO-frekvensen följer frekvensändringarna FM-signalen
 Avstämningsspänningen för VCO är en likspänning. Den modulerande
 LF-spänningen är överlagrad på denna likspänning.
-
-Bild II 3-61 Räknardiskriminatorn
-
-Bild II 3-62 PLL-demodulatorn
 
 LF-frekvenserna är för låga för att kunna reglera VCO-frekvensen, men
 via en kondensator kan de styra LF-förstärkaren.
