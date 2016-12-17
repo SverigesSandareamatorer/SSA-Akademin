@@ -44,10 +44,11 @@ KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
+koncept.idx:
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
-koncept.pdf: koncept.bbl koncept.tex $(KONCEPT_FILES)
+koncept.pdf: koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	-pdflatex koncept.tex
 	pdflatex koncept.tex
 
@@ -61,6 +62,9 @@ koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
 
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
+
+koncept.ind: koncept.idx
+	makeindex koncept
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
