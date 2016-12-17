@@ -1,5 +1,7 @@
 \section{Kraftförsörjning}
 \textbf{HAREC a.\ref{HAREC.a.3.3}\label{myHAREC.a.3.3}}
+\index{kraftförsörjning}
+\index{krafaggregat}
 
 Den elektriska energi, som behövs för elektronikutrustningar, hämtas
 från det allmänna elektricitetsnätet, ett batteri eller en
@@ -21,7 +23,7 @@ likriktare. Alternativt kan samma transformators sekundärsida vara
 försedd med flera lindningar för olika spänningar och strömkretsar.
 
 Det allmänna elnätet i Sverige levererar växelspänning med frekvensen
-50Hz. Nätspänningen för hushållsändamål är numera 400/230 v.
+50 Hz. Nätspänningen för hushållsändamål är numera 400/230 V.
 
 Tidigare importerade utrustningar i marknaden kan vara utförda för
 andra nätspännings- och skyddsjordningssystem än vad som nu tillämpas
@@ -29,31 +31,55 @@ i Sverige. Försiktighet med sådan utrustning rekommenderas.
 
 \subsection{Halv- och helvågslikriktning m.m.}
 \textbf{HAREC a.\ref{HAREC.a.3.3.1}\label{myHAREC.a.3.3.1}}
+\index{likriktning}
+\index{rectifier}
 
-Bild II 3-34
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-34}
+\caption{Halvledardioder}
+\label{fig:BildII3-34}
+\end{center}
+\end{figure}
 
-Likriktning av spänningar och strömmar i en krets görs med
-``elektroniska ventiler'', som släpper igenom ström endast i den
+Bild \ref{fig:BildII3-34}
+
+\emph{Likriktning} (eng \emph{rectificiation}) av spänningar och strömmar i en
+krets görs med ``elektroniska ventiler'', som släpper igenom ström endast i den
 s.k. passriktningen och stoppas i spärriktningen. En sådan strömventil
 kallas för diod och kan vara av typen vakuumrör eller halvledare. I
 moderna konstruktioner används uteslutande halvledardioder i
 likriktarkopplingar.
 
-Bild II 3-35
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-35}
+\caption{Halv- och helvågslikriktning}
+\label{fig:BildII3-35}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-35}
 
 \subsubsection{Halvvågslikriktning}
+\index{halvvågslikriktning}
+\index{likriktning!halvvågs}
 
-Vid halvvågslikriktning släpps endast varannan halwåg av en
-växelspänning igenom. I den strömkrets, som bildas av transformatorns
-sekundärlindning, dioden och belastningen, flyter därför ström endast
-under varannan halvperiod.
+Vid \emph{halvvågslikriktning} (eng \emph{half wave rectifier}) släpps endast
+varannan halwåg av en växelspänning igenom. I den strömkrets, som bildas av
+transformatorns sekundärlindning, dioden och belastningen, flyter därför ström
+endast under varannan halvperiod.
 
 \subsubsection{Helvågslikriktning}
+\index{helvågslikriktning}
+\index{likriktning!helvågs}
+\index{Graetz-brygga}
+
 I följande kopplingar med två respektive fyra dioder släpps varje
-halwåg av transformatorns växelspänning igenom så att alla halvvågor
+halvvåg av transformatorns växelspänning igenom så att alla halvvågor
 får samma polaritet. Ström flyter genom belastningen i samma riktning
-under varje halvperiod. Följande sätt att anordna helvågslikriktning
-är vanliga:
+under varje halvperiod. Följande sätt att anordna \emph{helvågslikriktning}
+(\emph{full wave rectifier}) är vanliga:
 \begin{itemize}
 \item Med två dioder och mittuttag på transformatorns
   sekundärlindning. Den ena dioden och ena lindningshalvan släpper
@@ -68,8 +94,18 @@ under varje halvperiod. Följande sätt att anordna helvågslikriktning
 
 \subsection{Glättningskretsar}
 \textbf{HAREC a.\ref{HAREC.a.3.3.2}\label{myHAREC.a.3.3.2}}
+\index{glättning}
+\index{kraftaggregat!glättning}
 
-Bild II 3-36
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-36}
+\caption{Glättning av likspänning}
+\label{fig:BildII3-36}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-36}
 
 Efter likriktningen har växelspänningen omvandlats till en pulserande
 likspänning som kan ``glättas''. Efter likriktarna ansluts då ett
@@ -83,10 +119,6 @@ inte är anslutet till strömförsörjningen och
 belastningen. Säkerhetsresistorn (eng. bleeder) skall vara av
 trådlindad typ och kunna tåla fyra gånger sin egen effektförbrukning.
 
-Bild II 3-34 Halvledardioder
-
-Bild II 3-36 Glättning av likspänning
-
 I obelastat tillstånd är spänningen över laddningskondensatorn
 \(\sqrt{2}\) än effektivvärdet på transformatorns
 sekundärspänning. När en transformator i tomgång har ett effektivvärde
@@ -94,6 +126,8 @@ av 230 V över sekundärlindningen, så blir spänningen över
 säkerhetsmotståndet \(230\cdot\sqrt{2} \approx 325\) V.
 
 \subsubsection{Spänningshöjande likriktarkopplingar}
+\index{kraftaggregat!spänningshöjning}
+\index{kraftaggregat!spänningsdubbling}
 
 Vid likriktning av växelspänningar enligt någon av ovanstående metoder
 behövs en sekundärspänning från transformatorn av minst samma storlek
@@ -101,7 +135,15 @@ som den önskade likspänningen. Önskas en högre likspänning, t.ex. den
 dubbla, men med samma sekundärspänning på transformatorn, så måste en
 speciell likriktarkoppling användas.
 
-Bild 113-37
+\begin{figure*}[h]
+\begin{center}
+\includegraphics[width=14cm]{images/bild_2_3-37}
+\caption{Likriktarkoppling med spänningsdubbling}
+\label{fig:BildII3-37}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII3-37}
 
 Bilden visar en spänningsfördubblande koppling. Under 1 :a halvvågen
 laddas kondensator \(C_1\) upp. Under 2:a halvvågen laddas kondensator
@@ -113,12 +155,20 @@ spänningsfördubbling erhållits. Det finns även kopplingar för
 flerdubbling av spänningar, vilket bl.a. används för att alstra
 accelerationsspänningen för TV-bildrör.
 
-Bild II 3-37 Likriktarkoppling med spänningsdubbling
-
 \subsection{Spänningsstabilisering}
 \textbf{HAREC a.\ref{HAREC.a.3.3.3}\label{myHAREC.a.3.3.3}}
+\index{spänningsstabilisering}
+\index{kraftaggregat!spänningsstabilisering}
 
-Bild II 3-38
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{images/bild_2_3-38}
+\caption{Spänningsstabilisering}
+\label{fig:BildII3-38}
+\end{center}
+\end{figure}
+
+Bild \ref{fig:BildII3-38}
 
 Utspänningen från ett kraftaggregat tillåts i många fall att endast
 variera mellan vissa värden, fastän inspänningen och strömuttaget
@@ -152,5 +202,3 @@ verkningsgrad. Switch-frekvensen är i storleksordningen 20 kHz eller
 högre. På grund av den högre frekvensen krävs mindre kondensatorer i
 switchade aggregat. Sådana kraftaggregat kan emellertid ge störningar,
 varför effektiv avstörning behövs.
-
-Bild II 3-38 Spänningsstabilisering
