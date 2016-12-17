@@ -65,6 +65,16 @@ koncept.bbl: koncept.aux koncept.bib
 koncept.ind: koncept.idx
 	makeindex koncept
 
+# Länkade bilder
+images.linked: koncept.tex $(KONCEPT_FILES)
+	grep images *.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images.linked
+
+images.avail:
+	ls images/*.pdf | sed -e s/\.pdf// | sort -u > images.avail
+
+images.unlinked: images.avail images.linked
+	diff images.avail images.linked | grep \< | sed -e s/\<\ // > images.unlinked
+
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
 # To build using Docker, run 'make docker-image' first which will take quite some time,
