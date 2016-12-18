@@ -915,13 +915,92 @@ QAM-modulationen anpassas utifrån mottagarens rapportering om störning.
 Denna dynamiska anpassning gör att kommunikationen kan upprätthållas även om
 kapaciteten tillåts variera.
 
-\subsection{Digital modation}
+\subsection{Digital modulation}
+\textbf{HAREC a.\ref{HAREC.a.1.8.9}\label{myHAREC.a.1.8.9}}
+\index{digital modulation}
+
+Digital modulation innebär också att signalerna som sänds har lite andra
+egenskaper än de analoga. Istället för varierande spänningsnivåer som för
+t.ex. tal så skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är
+därför lämpligt att diskutera några grundläggande begrepp kring digital
+modulation.
 
 \subsubsection{bit rate}
+\textbf{HAREC a.\ref{HAREC.a.1.8.9a}\label{myHAREC.a.1.8.9a}}
+\index{bit}
+\index{byte}
+\index{informationsmängd}
+\index{informationsöverföringskapacitet}
+\index{bit rate}
 
-\subsubsection{symbol rate - Baud rate}
+Informationen som vi skickar har vi kodat i bitar (eng \emph{bit (b)}),
+\emph{informationsmängden} vi har är därför ett visst antal bitar och takten på
+denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
+(eng \emph{bit rate}) i bitar per sekund.
+
+Ofta brukar vi referera till informationsmängden i mängden \emph{Byte (B)}
+som t.ex. att en fil är 2 kB eller en bild är 1,25 MB. Då en Byte innehåller
+8 bitar, så motsvarar det 16 kb respektie 10 Mb. I dagligt tal pratar vi då om
+storleken på en fil.
+
+Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
+om i termer av bit-rate som 10 Mb/s (ofta skrivet \emph{bps - bit per second}),
+dvs. man klarar av att överföra upp till 10 miljoner bitar per sekund.
+
+Det är ofta som man pratar om den råa överföringskapaciteten, medans den
+verkliga överföringskapaciteten för nytto-trafik är något lägre på grund av
+olika former av packningsformat och protokoll-behov, så kallad \emph{overhead}.
+Man skall därför vara noga med att skilja dessa åt.
+
+\subsubsection{symboltakt - Baud rate}
+\textbf{HAREC a.\ref{HAREC.a.1.8.9b}\label{myHAREC.a.1.8.9b}}
+\index{symbol}
+\index{symboltakt}
+\index{symbol rate}
+\index{Baud rate}
+\index{Emile Baudot}
+\index{enheter!Baud (Bd)}
+
+Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
+ihop-klumpade. Varje sådan ihop-klumpning kallas \emph{symbol}, och en symbol
+kan bära en eller flera bitar, ibland inte ens ett jämnt antal.
+
+Om man kan artikulera något i 2 olika \emph{nivåer} (av amplitud, fas, frekvens
+eller kombination), så kan man representera 1 bit. Om man kan artikulera något
+i 4 olika nivåer, så kan man representera 2 bitar. På samma sätt ger 8 nivåer
+support för 3 bitar. Varje representation kallar man en symbol, och varje
+symbol-tillfälle bär alltså 1, 2 eller 3 bitar information. Strikt räknat
+är det logaritmen med bas 2 (2-logaritm eller log2) av antalet nivåer som
+anger antalet bitar som en symbol kan bära. 3 nivåer brukar sägas kunna bära
+1,5 bitar, vilket är en slarvig approximation men visar principen.
+
+Den takt varmed symboler överförs, \emph{symbol-takten} (eng \emph{symbol rate})
+benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{Baud (Bd)}.
+Enheten Baud (förkortat Bd) anger antalet symboler per sekund. Genom att
+multiplicera antalet symboler per sekund med antalet bitar per symbol fås
+överföringskapaciteten bitar per sekund.
 
 \subsubsection{bandbredd}
+\textbf{HAREC a.\ref{HAREC.a.1.8.9c}\label{myHAREC.a.1.8.9c}}
+\index{bandbredd}
+\index{Nyqvist-teoremet}
+
+Genom att justera antalet bitar per symbol så kan man ändra antalet symboler
+per sekund utan att ändra överföringskapaciteten. En anledning till att man
+vill göra det är för att bandbredden som används av en överföring är ungefär
+proportionelig med symbol-takten, dvs. hur många Baud man överför i.
+Detta påverkar hur stor del av radio-spektrat man upptar, och därmed också hur
+nära en annan signal man kan ligga i spektrat utan att störa varandra, dvs.
+det påverkar frekvensplaneringen av bandet ifråga.
+
+Ofta används begreppen bandbredd synonymt med överföringskapaciteten, eftersom
+det finns en proportionell relation dem emellan, men bandbredden är inte den
+enda parametern som krävs, så i mer strikta sammanhang ska dessa begrepp
+hanteras som separata för att undvika missförstånd.
+
+Bandbredden för en digital ström är besläktad med Nyquist-teoremet, som säger
+att sample-raten måste vara minst dubbelt så hög som högsta frekvensen som
+överförs.
 
 \subsection{Bitfel - detektion och korrigering}
 
