@@ -854,6 +854,7 @@ kan informationen avkodas korrekt.
 
 \subsubsection{kvadratur-amplitud modulation - QAM}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8d}\label{myHAREC.a.1.8.8d}}
+\label{QAM}
 \index{kvadratur-amplitud modulation}
 \index{QAM}
 \index{QAM-16}
@@ -888,14 +889,14 @@ Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
      5 &    1 &    1 &  \(\sqrt{2}\) &    +45 & +1 &  +1 \\
      6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  -1 \\
      7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  -3 \\
-     8 &    1 &    0 & \(\sqrt{10}\) &   +342 & -1 &  +3 \\
-     9 &    1 &    1 &  \(\sqrt{2}\) &   +315 & -1 &  +1 \\
-    10 &    1 &    2 &  \(\sqrt{2}\) &   +225 & -1 &  -1 \\
-    11 &    1 &    3 & \(\sqrt{10}\) &   +198 & -1 &  -3 \\
-    12 &    0 &    0 & \(3\sqrt{2}\) &   +225 & -3 &  +3 \\
-    13 &    0 &    1 & \(\sqrt{10}\) &   +252 & -3 &  +1 \\
-    14 &    0 &    2 & \(\sqrt{10}\) &   +288 & -3 &  -1 \\
-    15 &    0 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
+     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & -1 &  +3 \\
+     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & -1 &  +1 \\
+    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & -1 &  -1 \\
+    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & -1 &  -3 \\
+    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & -3 &  +3 \\
+    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & -3 &  +1 \\
+    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & -3 &  -1 \\
+    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
 \end{tabular}
 \end{center}
 \caption{Exempel på QAM-16 i kvadratur-modulering}
@@ -1004,12 +1005,141 @@ att sample-raten måste vara minst dubbelt så hög som högsta frekvensen som
 
 \subsection{Bitfel - detektion och korrigering}
 
+Fram tills nu har vi diskuterat digital modulation utan att ta hänsyn till
+störningar och hur dessa störningar påverkar vårt överförda data. Precis som
+vår CW eller SSB kan vara störd av atmosfäriska störningar, andra sändare
+eller helt enkelt vara svaga signaler så att det interna bruset blir en
+begräsning, så kommer mottagningen av digitala signaler att bli störd.
+Vi skall titta på dessa grundläggande begrepp som bitfel, bitfelssannolikhet,
+felupptäkt samt korrigering med återsändning eller korrigeringskoder.
+
 \subsubsection{bitfel}
+\index{bitfel}
+\index{bit error}
+
+Utan att gå inpå varför, så varje gång vi får fel så kommer en eller flera
+bitar att bli fel, vi kallar varje sådant fel för att \emph{bitfel} (eng.
+\emph{bit error}). Störningar kan göra att vi tolkar en symbol fel, det kan
+resultera i att en eller flera bitar från den symbolen är fel.
+
+Om vi i t.ex. QAM-16 koden i kapitel \ref{QAM} får in +0.2 i I och +1.1 i Q
+så ser vi i tabell \ref{tab:QAM-16} att närmsta symbolen är symbol 5 med +1 i I
+och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
+Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
+det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
+avstånd är lägst och därmed rimligast. Det kan dock vara så att man egentligen
+sände symbol 9 med -1 i I och +1 i Q, och därmed fått för stor störning på I
+för att man skall tolka det som rätt symbol. Vi kommer då lägga ut 9 istället
+för 5, vilket innebär att två bitar har ändrats.
+
+Genom att granska tabell \ref{tab:QAM-16} vidare så ser man att värdena för
+I och Q för de olika symbolerna är gjord sådan att minsta avstånd är 2 mellan
+alla närliggande symboler, i respektive I och Q riktning. Det förenklar
+tolkning av symbolerna. Är dock störningen större än 1 i någon riktning så
+kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
+bit-fel.
 
 \subsubsection{bitfelssannolikhet}
+\index{bitfelssannolikhet}
+\index{bit error rate (BER)}
+\index{BER}
+\index{gaussiskt brus}
+\index{brus!gaussiskt}
+\index{gaussian noise}
+\index{effektiv-värde}
+\index{Root Mean Square (RMS)}
+\index{RMS}
+\index{Error Function (erf)}
+\index{erf}
+
+Om vi antar att vi inte har störning från några andra signaler, utan enbart har
+brus som störning, så kan vi estimera \emph{bitfelssannolikheten} (eng.
+\emph{bit error rate (BER)} ur hur starkt bruset är i förhållande till vårt
+steg. Eftersom bruset antas vara vitt brus, så har det egenskaperna av
+\emph{Gaussiskt brus} (eng. \emph{Gaussian noise}).
+
+Gaussiskt brus har en statistisk fördelning med hög sannolikhet nära
+medelvärdet, och avtar sedan med avståndet. Sannolikheten att man tolkar en
+signal som vara på ena eller andra sidan av en gräns, beror på hur långt bort
+från medelvärdet den gränsen, ofta benämnd kvantiserings-gränsen, är, i
+förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} är i
+amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
+\emph{error function (erf)}.
+
+När gränsen är 1 sigma, dvs. 1 gånger RMS-värdet för brus-amplituden, från
+medelvärdet så är 67 \% sannolikhet att värdet är i inom gränsvärdet, dvs. en
+bitfelssannolikhet på 33 \%.
+Ligger det inom 2 sigma, så har sannolikheten ökat till 97 \%, en
+bitfelssannolikhet på 3 \% och vid 3 sigma är den 99,7\% med en
+bitfelssannolikhet på ringa 0,3 \%, vilket ofta används för många
+ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
+För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, så
+behövs det 14 sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
+kvantiseringsgränsen. Den råa radio-kanalen uppvisar dock sällan så bra
+egenskaper, men det kan uppnås i kabel och fiber.
 
 \subsubsection{detektion}
+\textbf{HAREC a.\ref{HAREC.a.1.8.10a}\label{myHAREC.a.1.8.10a}}
+\index{bitfelsdetektion}
+\index{paritet}
+\index{CRC}
 
-\subsubsection{återsändning}
+Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
+än vad den råa kanalen medger är det lämpligt att identifiera när det har
+blivit bitfel. Detta kan utföras på många sätt, men ett sätt är att räkna fram
+checksummor som skickas med datat. Det kräver visserligen en del av
+informationsöverföringskapaciteten, men tjänsten det medger är att försäkra sig
+om att informationen är rimligt korrekt.
+
+En enkel form av checksumma är paritet, där bitarna i ett ord har summerats ihop
+binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
+kombinaton och sedan jämförs det med paritetsbiten, och om de överensstämmer så
+har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
+antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
+upptäckt. Det är med andra ord inte en särdeles stark checksumma. Paritet
+används t.ex. i seriekommunikation så som RS-232.
+
+Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
+typer av fel. För lite större meddelanden är det vanligt att summera bytes
+till en checksumma antingen additivt eller med XOR. För större meddelanden
+används en lite mer intrikat metod som heter Cyclic Redundancy Check (CRC)
+där man återmatar överskjutande del på checksumman till sig själv och får en
+starkare kod den vägen. CRC används t.ex. i Ethernet.
+
+\subsubsection{omsändning}
+\textbf{HAREC a.\ref{HAREC.a.1.8.10b}\label{myHAREC.a.1.8.10b}}
+\index{omsändning}
+\index{ARQ}
+\index{TCP}
+
+En enkel åtgärd för att hantera när man konstaterat att ett block data man
+tagit emot har fel, är att begrära omsändning. Genom att sändaren håller en
+buffert med meddelanden som den skickat, och mottagaren meddelar sändare om
+den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
+realiseras. Automatisk omsändningsbegäran (eng \emph{Automatic Repeat reQuest
+(ARQ)}) är en typ av protokoll som gör automatisk omsändingsbegäran om ett
+enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
+försvunnit. Ett sådant protokoll är TCP, som ingår i internet-sviten av TCP/IP
+protokoll.
 
 \subsubsection{korrigeringskod - FEC}
+\textbf{HAREC a.\ref{HAREC.a.1.8.10c}\label{myHAREC.a.1.8.10c}}
+\index{korrigeringskod}
+\index{felrättandekod}
+\index{FEC}
+\index{AMTOR}
+\index{Hamming-koder}
+\index{paritet}
+\index{Reed-Solomon (RS)}
+
+En annan form av korrigering är att helt enkelt skicka för mycket data redan
+från början, som mottagaren kan använda för att korrigera meddelandet utan att
+skicka någon begäran till sändaren. Detta är praktiskt antingen om det skulle
+ta för mycket tid eller om det helt enkelt inte finns någon kommunikation från
+mottagaren till sändaren, t.ex. för satellit-mottagare.
+
+En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
+sänder samma tecken två gånger. Liknande används i BlueTooth där meddelandet
+sänds tre gånger, varvid man kan göra majoritets-röstning.
+
+Andra system för FEC är Hamming-koder, paritets-paket, Reed-Solomon (RS) osv.
