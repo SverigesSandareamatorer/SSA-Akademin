@@ -17,6 +17,20 @@
     urlcolor=black
 }
 
+% % % % % % % % % % % 
+% Detta är nya environments för review. De bör vara relativt självförklarande hur de används.
+% I princip sätter man bara den del av texten som har en viss status mellan\begin{rev-granskat} och \end{rev-granskat} tex.
+% Undvik att nästla dem för det är ingen idé det fungerar inte.
+% De är testade med ett antal andra environemnt som tabular mm men kolla att det fungerar med de environments du använder.
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\newenvironment{rev-ogranskat}{\begin{pdfsidelinecomment}[color=black,linewidth=3px,caption=inline]{Ogranskat}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-omarbetas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Omarbetas}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-raderas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Raderas}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-redo}{\begin{pdfsidelinecomment}[color=yellow,linewidth=3px,caption=inline]{Redo att granska}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-granskat}{\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]{Granskat}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-nytt}{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]{Nytt}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
+
 \clubpenalty=9990
 \widowpenalty=9999
 \brokenpenalty=4999
