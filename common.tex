@@ -36,7 +36,10 @@
 {\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]%
 {Granskat #1}}%
 {\end{pdfsidelinecomment}}
-\newenvironment{rev-nytt}{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]{Nytt}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-nytt}[1][]%
+{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]%
+{Nytt #1}}%
+{\end{pdfsidelinecomment}}
 \newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
 \clubpenalty=9990
