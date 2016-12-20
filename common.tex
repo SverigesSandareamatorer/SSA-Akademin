@@ -32,7 +32,10 @@
 \newenvironment{rev-omarbetas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Omarbetas}}{\end{pdfsidelinecomment}}
 \newenvironment{rev-raderas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Raderas}}{\end{pdfsidelinecomment}}
 \newenvironment{rev-redo}{\begin{pdfsidelinecomment}[color=yellow,linewidth=3px,caption=inline]{Redo att granska}}{\end{pdfsidelinecomment}}
-\newenvironment{rev-granskat}{\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]{Granskat}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-granskat}[1][]%
+{\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]%
+{Granskat #1}}%
+{\end{pdfsidelinecomment}}
 \newenvironment{rev-nytt}{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]{Nytt}}{\end{pdfsidelinecomment}}
 \newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
