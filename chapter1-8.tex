@@ -745,11 +745,14 @@ F3E (FM) & deviationen    & hastigheten på & dubbla summan     & för stor devi
 \textbf{HAREC a.\ref{HAREC.a.1.8.8}\label{myHAREC.a.1.8.8}}
 \index{digital modulation}
 
+\begin{rev-nytt}[MAD]
 Utöver de klassiska analoga modulationsmetoder finns ett antal digitala
 modultationsformer. De är anpassade för transmission av binärt data. I viss mån
 kan CW ses som digital modulation där en 0 moduleras utan bärvåg och 1 moduleras
 med bärvåg. Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK,
 4-PSK och QAM som presenteras i följande delavsnitt.
+
+\end{rev-nytt}
 
 \subsubsection{frekvensskift modulation - FSK}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8a}\label{myHAREC.a.1.8.8a}}
@@ -763,6 +766,7 @@ med bärvåg. Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK,
 \index{C4FM}
 \index{JT65}
 \index{JT9}
+\begin{rev-nytt}[MAD]
 
 \emph{Frekvensskift modulation} (eng. \emph{Frequency Shift Keying (FSK)})
 skiljer sig från CW modulationen med att den ändrar frekvensen, dvs. är en
@@ -782,6 +786,8 @@ Man kan använda fler än 2 frekvenser, t.ex. används 4 frekvenser i Continuous
 Frekvensskift används även för att sända långsamma meddelanden där JT65
 andvänder 65 frekvenser den skiftar mellan, medans JT9 använder 9 frekvenser.
 
+\end{rev-nytt}
+
 \subsubsection{binär fasskift modulation - 2-PSK \& BPSK}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8b}\label{myHAREC.a.1.8.8b}}
 \index{binär fasskift modulation}
@@ -791,6 +797,7 @@ andvänder 65 frekvenser den skiftar mellan, medans JT9 använder 9 frekvenser.
 \index{BPSK}
 \index{fasskift modulation!BPSK}
 \index{Costas loop}
+\begin{rev-nytt}[MAD]
 
 Istället för att modulera frekvensen kan man modulera polariteten eller fasen.
 En sådan modulationsform är \emph{binär fasskift modulation} (eng
@@ -808,6 +815,8 @@ För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
 som \emph{Costas loop}, eftersom en normal PLL-loop klarar inte av tecken-
 ändringarna på signalen.
 
+\end{rev-nytt}
+
 \subsubsection{fyrnivå fasskiftmodulation - 4-PSK}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8c}\label{myHAREC.a.1.8.8c}}
 \index{4-PSK}
@@ -817,6 +826,7 @@ som \emph{Costas loop}, eftersom en normal PLL-loop klarar inte av tecken-
 \index{in phase}
 \index{quadrature}
 \index{I/Q modulation}
+\begin{rev-nytt}[MAD]
 
 Fasskiftmodulation kan även göras med flera nivåer, och 4 olika fas-lägen
 kan användas och kallas då för \emph{fyrnivå fasskiftmodulation} (eng
@@ -852,6 +862,8 @@ I likhet med 2-PSK/BPSK behöver man återvinna fasen och sedan kunna avgöra
 vad som är 0 grader, men givet att det görs i den övriga modulationen så
 kan informationen avkodas korrekt.
 
+\end{rev-nytt}
+
 \subsubsection{kvadratur-amplitud modulation - QAM}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8d}\label{myHAREC.a.1.8.8d}}
 \label{QAM}
@@ -862,6 +874,7 @@ kan informationen avkodas korrekt.
 \index{DVB-T}
 \index{DVB-T2}
 \index{WiFi}
+\begin{rev-nytt}[MAD]
 
 Medans fasskiftnings kan göras för fler fas-steg har man funnit att det är
 inte lika smidigt för högre upplösningar. Redan vid 8 steg behöver man ha
@@ -916,15 +929,20 @@ QAM-modulationen anpassas utifrån mottagarens rapportering om störning.
 Denna dynamiska anpassning gör att kommunikationen kan upprätthållas även om
 kapaciteten tillåts variera.
 
+\end{rev-nytt}
+
 \subsection{Digital modulation}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9}\label{myHAREC.a.1.8.9}}
 \index{digital modulation}
+\begin{rev-nytt}[MAD]
 
 Digital modulation innebär också att signalerna som sänds har lite andra
 egenskaper än de analoga. Istället för varierande spänningsnivåer som för
 t.ex. tal så skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är
 därför lämpligt att diskutera några grundläggande begrepp kring digital
 modulation.
+
+\end{rev-nytt}
 
 \subsubsection{bit rate}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9a}\label{myHAREC.a.1.8.9a}}
@@ -933,6 +951,7 @@ modulation.
 \index{informationsmängd}
 \index{informationsöverföringskapacitet}
 \index{bit rate}
+\begin{rev-nytt}[MAD]
 
 Informationen som vi skickar har vi kodat i bitar (eng \emph{bit (b)}),
 \emph{informationsmängden} vi har är därför ett visst antal bitar och takten på
@@ -953,6 +972,8 @@ verkliga överföringskapaciteten för nytto-trafik är något lägre på grund 
 olika former av packningsformat och protokoll-behov, så kallad \emph{overhead}.
 Man skall därför vara noga med att skilja dessa åt.
 
+\end{rev-nytt}
+
 \subsubsection{symboltakt - Baud rate}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9b}\label{myHAREC.a.1.8.9b}}
 \index{symbol}
@@ -961,6 +982,7 @@ Man skall därför vara noga med att skilja dessa åt.
 \index{Baud rate}
 \index{Emile Baudot}
 \index{enheter!Baud (Bd)}
+\begin{rev-nytt}[MAD]
 
 Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
 ihop-klumpade. Varje sådan ihop-klumpning kallas \emph{symbol}, och en symbol
@@ -981,10 +1003,13 @@ Enheten Baud (förkortat Bd) anger antalet symboler per sekund. Genom att
 multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 överföringskapaciteten bitar per sekund.
 
+\end{rev-nytt}
+
 \subsubsection{bandbredd}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9c}\label{myHAREC.a.1.8.9c}}
 \index{bandbredd}
 \index{Nyqvist-teoremet}
+\begin{rev-nytt}[MAD]
 
 Genom att justera antalet bitar per symbol så kan man ändra antalet symboler
 per sekund utan att ändra överföringskapaciteten. En anledning till att man
@@ -1003,7 +1028,10 @@ Bandbredden för en digital ström är besläktad med Nyquist-teoremet, som säg
 att sample-raten måste vara minst dubbelt så hög som högsta frekvensen som
 överförs.
 
+\end{rev-nytt}
+
 \subsection{Bitfel - detektion och korrigering}
+\begin{rev-nytt}[MAD]
 
 Fram tills nu har vi diskuterat digital modulation utan att ta hänsyn till
 störningar och hur dessa störningar påverkar vårt överförda data. Precis som
@@ -1013,9 +1041,12 @@ begräsning, så kommer mottagningen av digitala signaler att bli störd.
 Vi skall titta på dessa grundläggande begrepp som bitfel, bitfelssannolikhet,
 felupptäkt samt korrigering med återsändning eller korrigeringskoder.
 
+\end{rev-nytt}
+
 \subsubsection{bitfel}
 \index{bitfel}
 \index{bit error}
+\begin{rev-nytt}[MAD]
 
 Utan att gå inpå varför, så varje gång vi får fel så kommer en eller flera
 bitar att bli fel, vi kallar varje sådant fel för att \emph{bitfel} (eng.
@@ -1039,6 +1070,8 @@ tolkning av symbolerna. Är dock störningen större än 1 i någon riktning så
 kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
 bit-fel.
 
+\end{rev-nytt}
+
 \subsubsection{bitfelssannolikhet}
 \index{bitfelssannolikhet}
 \index{bit error rate (BER)}
@@ -1051,6 +1084,7 @@ bit-fel.
 \index{RMS}
 \index{Error Function (erf)}
 \index{erf}
+\begin{rev-nytt}[MAD]
 
 Om vi antar att vi inte har störning från några andra signaler, utan enbart har
 brus som störning, så kan vi estimera \emph{bitfelssannolikheten} (eng.
@@ -1078,11 +1112,14 @@ behövs det 14 sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
 kvantiseringsgränsen. Den råa radio-kanalen uppvisar dock sällan så bra
 egenskaper, men det kan uppnås i kabel och fiber.
 
+\end{rev-nytt}
+
 \subsubsection{detektion}
 \textbf{HAREC a.\ref{HAREC.a.1.8.10a}\label{myHAREC.a.1.8.10a}}
 \index{bitfelsdetektion}
 \index{paritet}
 \index{CRC}
+\begin{rev-nytt}[MAD]
 
 Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
 än vad den råa kanalen medger är det lämpligt att identifiera när det har
@@ -1106,11 +1143,14 @@ används en lite mer intrikat metod som heter Cyclic Redundancy Check (CRC)
 där man återmatar överskjutande del på checksumman till sig själv och får en
 starkare kod den vägen. CRC används t.ex. i Ethernet.
 
+\end{rev-nytt}
+
 \subsubsection{omsändning}
 \textbf{HAREC a.\ref{HAREC.a.1.8.10b}\label{myHAREC.a.1.8.10b}}
 \index{omsändning}
 \index{ARQ}
 \index{TCP}
+\begin{rev-nytt}[MAD]
 
 En enkel åtgärd för att hantera när man konstaterat att ett block data man
 tagit emot har fel, är att begrära omsändning. Genom att sändaren håller en
@@ -1122,6 +1162,8 @@ enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
 försvunnit. Ett sådant protokoll är TCP, som ingår i internet-sviten av TCP/IP
 protokoll.
 
+\end{rev-nytt}
+
 \subsubsection{korrigeringskod - FEC}
 \textbf{HAREC a.\ref{HAREC.a.1.8.10c}\label{myHAREC.a.1.8.10c}}
 \index{korrigeringskod}
@@ -1131,6 +1173,7 @@ protokoll.
 \index{Hamming-koder}
 \index{paritet}
 \index{Reed-Solomon (RS)}
+\begin{rev-nytt}[MAD]
 
 En annan form av korrigering är att helt enkelt skicka för mycket data redan
 från början, som mottagaren kan använda för att korrigera meddelandet utan att
@@ -1143,3 +1186,5 @@ sänder samma tecken två gånger. Liknande används i BlueTooth där meddelande
 sänds tre gånger, varvid man kan göra majoritets-röstning.
 
 Andra system för FEC är Hamming-koder, paritets-paket, Reed-Solomon (RS) osv.
+
+\end{rev-nytt}
