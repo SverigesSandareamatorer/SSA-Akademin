@@ -49,6 +49,7 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
+	-pdflatex matterep.tex
 	pdflatex koncept.tex
 
 matterep.pdf: matte.tex matterep.tex
@@ -86,4 +87,4 @@ docker-build:
 	docker run -ti --rm -v $(shell pwd):/work -w /work ${DOCKER_IMAGE_NAME} make all
 
 clean:
-	-rm -f *.aux *.idx *.lof *.log *.lot *.pdf *.toc *~ *.out
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out

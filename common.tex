@@ -3,12 +3,14 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
+%\usepackage[]{geometry}
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage{wrapfig}
 \usepackage{caption}
-\usepackage{marginnote}
+\usepackage{framed}
+\usepackage[fulladjust]{marginnote}
 \usepackage{color}
 \newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
 \usepackage{hyperref}
@@ -36,7 +38,10 @@
 {\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]%
 {Granskat #1}}%
 {\end{pdfsidelinecomment}}
-\newenvironment{rev-nytt}{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]{Nytt}}{\end{pdfsidelinecomment}}
+\newenvironment{rev-nytt}[1][]%
+{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]%
+{Nytt #1}}%
+{\end{pdfsidelinecomment}}
 \newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
 \clubpenalty=9990
