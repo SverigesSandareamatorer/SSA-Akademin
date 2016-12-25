@@ -7,13 +7,11 @@
 
 \subsection{Allmänt}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-40}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-40}
 \caption{Från elektronrör till transistor}
 \label{fig:BildII3-40}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-40}
 
@@ -34,13 +32,11 @@ därför skäl att här behandla såväl elektronrör som transistorer.
 \subsubsection{LF- och HF-förstärkare}
 \textbf{HAREC a.\ref{HAREC.a.3.4.1}, a.\ref{HAREC.a.3.4.2}, a.\ref{HAREC.a.3.4.3}\label{myHAREC.a.3.4.1}\label{myHAREC.a.3.4.2}\label{myHAREC.a.3.4.3}}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-41}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-41}
 \caption{Principen för förstärkare med elektronrör respektive transistor}
 \label{fig:BildII3-41}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-41}
 
@@ -95,13 +91,11 @@ frekvensområde, men även avstämda förstärkare för smala frekvensband.
 \subsection{Grundkopplingar för förstärkarsteg}
 \textbf{HAREC a.\ref{HAREC.a.2.6.4.1}, a.\ref{HAREC.a.2.6.4.2}, a.\ref{HAREC.a.2.6.4.3}, a.\ref{HAREC.a.2.6.4.4}\label{myHAREC.a.2.6.4.1}\label{myHAREC.a.2.6.4.2}\label{myHAREC.a.2.6.4.3}\label{myHAREC.a.2.6.4.4}}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-42}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-42}
 \caption{Grundkopplingar för elektronrör och NPN-transistor}
 \label{fig:BildII3-42}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-42}
 
@@ -142,13 +136,14 @@ spänningsförstärkning, men kan användas för s.k. impedansomvandling.
 
 \begin{table*}[!h]
 \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
-  \begin{tabular}{l|l|l|l}
-    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektorkoppling \\
+  \begin{tabular}{p{0.20\textwidth}|p{0.30\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}}
+    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
     \(Z_{in}\) & medel \quad 1 kΩ & liten \quad 50 Ω & stor \quad 100 kΩ \\
     \(Z_{ut}\) & medel \quad 10 kΩ & stor \quad 100 kΩ & liten \quad 50 kΩ \\
-    Strömförstärkning & stor \quad 100 ggr & < 1 \quad 0.9 ggr & stor \quad 100 ggr \\
-    Spänningsförstärkning & stor \quad 100 ggr & stor \quad 100 ggr & < 1 \quad 0.99 ggr \\
-    Effektförstärkning & mycket stor \quad 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
+    Förstärkning & & & \\
+    \quad Ström- & stor \quad 100 ggr & <1 \quad 0.9 ggr & stor \quad 100 ggr \\
+    \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0.99 ggr \\
+    \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
     Fasläge & motfas \quad 180° & medfas \quad 0° & medfas 0° \\
   \end{tabular}
 \end{table*}
@@ -183,6 +178,12 @@ spänningdelare mellan plus- och minuspolen.
 \index{arbetspunkt}
 \index{distorsion}
 
+\begin{wrapfigure}[37]{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-44}
+\caption{Förstärkare i klass A}
+\label{fig:BildII3-44}
+\end{wrapfigure}
+
 \emph{Arbetspunkten} för förstärkare väljs olika, beroende på önskat
 arbetssätt. En olämpligt vald arbetspunkt resulterar i förvrängning av
 utsignalens form i förhållande till insignalens form,
@@ -202,14 +203,6 @@ arbetsklasser är emellertid lika.
 
 \subsubsection{Klass A}
 \index{klass A}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-44}
-\caption{Förstärkare i klass A}
-\label{fig:BildII3-44}
-\end{center}
-\end{figure}
 
 Bild \ref{fig:BildII3-44}
 
@@ -232,13 +225,11 @@ distorsion.
 \subsubsection{Klass B}
 \index{klass B}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-45}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-45}
 \caption{Förstärkare i klass B}
 \label{fig:BildII3-45}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-45}
 
@@ -259,13 +250,11 @@ Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
 \subsubsection{Klass C}
 \index{klass C}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-46}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-46}
 \caption{Förstärkare i klass C}
 \label{fig:BildII3-46}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-46}
 
@@ -284,13 +273,11 @@ följande tre bilder är \(I_R\)=anodviloström).
 \index{frekvensmultiplicering}
 \index{frequency multiplication}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-47}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-47}
 \caption{Frekvensmultipliceringskedja}
 \label{fig:BildII3-47}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-47}
 
@@ -362,13 +349,11 @@ förvrängs.
 
 \subsubsection{Slutsteg med en transistor}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-48}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-48}
 \caption{Slutsteg med en transistor}
 \label{fig:BildII3-48}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-48}
 
@@ -391,13 +376,11 @@ möjligen klass AB.
 \index{slutsteg!mottaktskopplat}
 \index{push-pull amplifier}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-49}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-49}
 \caption{Mottaktskopplat slutsteg med transistorer}
 \label{fig:BildII3-49}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-49}
 
@@ -421,13 +404,11 @@ definitioner.
 
 \subsubsection{Högeffekts/utsteg med en tetrod}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-50}
-\caption{Högeffekts/utsteg med en tetrod}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-50}
+\caption{Högeffektslutsteg med en tetrod}
 \label{fig:BildII3-50}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-50}
 
@@ -465,13 +446,11 @@ s.k. n-filtret (utläses pi-), som fungerar som
 
 \subsection{Högeffekts/utsteg med två gallerjordade trioder (elektronrör)}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-51}
-\caption{Högeffekts/utsteg med två trioder}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-51}
+\caption{Högeffektslutsteg med två trioder}
 \label{fig:BildII3-51}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-51}
 
@@ -527,13 +506,11 @@ komplicerad och omfångsrik.
 \index{PEP-effekt}
 \index{förstärkare!PEP-effekt}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-52}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-52}
 \caption{Bestämning av PEP-effekten}
 \label{fig:BildII3-52}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-52}
 
@@ -563,13 +540,11 @@ beräknas med följande formler
 \subsection{Linjäritetskontroll vid SSB}
 \index{SSB!linjäritetskontroll}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-53}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-53}
 \caption{Linjäritetskontroll vid SSB}
 \label{fig:BildII3-53}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-53}
 
@@ -582,13 +557,11 @@ effekt. Resultatet jämförs därefter med antennen som last.
 \subsubsection{Linjäritetens betydelse i förstärkare}
 \index{förstärkning!linjäritet}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-54}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-54}
 \caption{Linjäritetens betydelse}
 \label{fig:BildII3-54}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-54}
 
