@@ -5,15 +5,18 @@
 \index{blandning}
 \index{mixing}
 
+$>>>>>$ TODO Det pratas allmänt mycket om rörförstärkare i det här avsnittet.
+Bör omarbetas så att vi nämner rörförstärkare i förbifarten och lägger fokus på
+transistorförstärkare. Vidare bör vi kanske nämna något om att moderna
+LDMOS-transistorer kan lämna en kilowatt.
+
 \subsection{Allmänt}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-40}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-40}
 \caption{Från elektronrör till transistor}
 \label{fig:BildII3-40}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-40}
 
@@ -25,22 +28,22 @@ signalfrekvenser etc.
 
 Transistorn presenteras i avsnitt \ref{transistorn} och elektronröret i avsnitt \ref{elektronrör}.
 
+\begin{rev-omarbetas}
 Först förekom endast elektronrör. Dessa har emellertid på några få
 decennier nästan helt ersatts av transistorer. Elektronrör används
 dock fortfarande, särskilt i effektförstärkare för sändare. Det finns
 därför skäl att här behandla såväl elektronrör som transistorer.
+\end{rev-omarbetas}
 
 \subsection{Huvudegenskaper hos förstärkare}
 \subsubsection{LF- och HF-förstärkare}
 \textbf{HAREC a.\ref{HAREC.a.3.4.1}, a.\ref{HAREC.a.3.4.2}, a.\ref{HAREC.a.3.4.3}\label{myHAREC.a.3.4.1}\label{myHAREC.a.3.4.2}\label{myHAREC.a.3.4.3}}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-41}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-41}
 \caption{Principen för förstärkare med elektronrör respektive transistor}
 \label{fig:BildII3-41}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-41}
 
@@ -95,16 +98,15 @@ frekvensområde, men även avstämda förstärkare för smala frekvensband.
 \subsection{Grundkopplingar för förstärkarsteg}
 \textbf{HAREC a.\ref{HAREC.a.2.6.4.1}, a.\ref{HAREC.a.2.6.4.2}, a.\ref{HAREC.a.2.6.4.3}, a.\ref{HAREC.a.2.6.4.4}\label{myHAREC.a.2.6.4.1}\label{myHAREC.a.2.6.4.2}\label{myHAREC.a.2.6.4.3}\label{myHAREC.a.2.6.4.4}}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-42}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-42}
 \caption{Grundkopplingar för elektronrör och NPN-transistor}
 \label{fig:BildII3-42}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-42}
 
+\begin{rev-omarbetas}
 I det föregående har redan visats att en av polerna i ingången
 respektive utgången i en förstärkare är gemensam. I ovanstående bild
 är rörförstärkarens katod den gemensamma polen - därav namnet
@@ -120,6 +122,7 @@ NPN-transistor.
 
 I praktiken känns en grundkoppling igen på vilken elektrod som är
 avkopplad till 0-potential över en kondensator.
+\end{rev-omarbetas}
 
 \index{emitterkoppling}
 \index{förstärkare!emitterkoppling}
@@ -142,13 +145,14 @@ spänningsförstärkning, men kan användas för s.k. impedansomvandling.
 
 \begin{table*}[!h]
 \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
-  \begin{tabular}{l|l|l|l}
-    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektorkoppling \\
+  \begin{tabular}{p{0.20\textwidth}|p{0.30\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}}
+    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
     \(Z_{in}\) & medel \quad 1 kΩ & liten \quad 50 Ω & stor \quad 100 kΩ \\
     \(Z_{ut}\) & medel \quad 10 kΩ & stor \quad 100 kΩ & liten \quad 50 kΩ \\
-    Strömförstärkning & stor \quad 100 ggr & < 1 \quad 0.9 ggr & stor \quad 100 ggr \\
-    Spänningsförstärkning & stor \quad 100 ggr & stor \quad 100 ggr & < 1 \quad 0.99 ggr \\
-    Effektförstärkning & mycket stor \quad 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
+    Förstärkning & & & \\
+    \quad Ström- & stor \quad 100 ggr & <1 \quad 0.9 ggr & stor \quad 100 ggr \\
+    \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0.99 ggr \\
+    \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
     Fasläge & motfas \quad 180° & medfas \quad 0° & medfas 0° \\
   \end{tabular}
 \end{table*}
@@ -183,6 +187,12 @@ spänningdelare mellan plus- och minuspolen.
 \index{arbetspunkt}
 \index{distorsion}
 
+\begin{wrapfigure}[37]{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-44}
+\caption{Förstärkare i klass A}
+\label{fig:BildII3-44}
+\end{wrapfigure}
+
 \emph{Arbetspunkten} för förstärkare väljs olika, beroende på önskat
 arbetssätt. En olämpligt vald arbetspunkt resulterar i förvrängning av
 utsignalens form i förhållande till insignalens form,
@@ -190,6 +200,7 @@ s.k. \emph{distorsion}. Distorsion uppstår även vid överstyrning,
 d.v.s. när insignalens amplitud är för stor för att kunna återges med
 oförändrad form, även om arbetspunkten är rätt vald.
 
+\begin{rev-omarbetas}
 Med avseende på arbetspunktens läge klassas därför förstärkare på sätt
 som framgår av följande diagram för elektronrör. En emitterjordad
 NPN-transistor får anses mest motsvara elektronrörkopplingen här
@@ -199,17 +210,10 @@ nedan.  Anodströmmen \(I_a\) motsvaras då närmast av kollektorströmmen
 fall alltid är negativ medan bas/emitterspänningen är
 positiv. Styrspänningens relativa läge (arbetspunkten) mellan olika
 arbetsklasser är emellertid lika.
+\end{rev-omarbetas}
 
 \subsubsection{Klass A}
 \index{klass A}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-44}
-\caption{Förstärkare i klass A}
-\label{fig:BildII3-44}
-\end{center}
-\end{figure}
 
 Bild \ref{fig:BildII3-44}
 
@@ -232,17 +236,15 @@ distorsion.
 \subsubsection{Klass B}
 \index{klass B}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-45}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-45}
 \caption{Förstärkare i klass B}
 \label{fig:BildII3-45}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-45}
 
-Klass B är ett olinjärt arbetssätt med en låg vilaström i förhållande
+Klass B är ett olinjärt arbetssätt med en låg viloström i förhållande
 till \(I_{max}\) d.v.s. arbetspunkten ligger i nederkant av
 styrkaraktäristikans nedre krökta del. Verkningsgraden är upp till
 67\%. Trots det används klass B i linjära LF-och H F-förstärkarsteg
@@ -259,18 +261,16 @@ Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
 \subsubsection{Klass C}
 \index{klass C}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-46}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-46}
 \caption{Förstärkare i klass C}
 \label{fig:BildII3-46}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-46}
 
 Klass C används i HF-förstärkarsteg i FM-, CW- och
-AM-sändare. Arbetssättet är kraftigt olinjärt. Vilaströmmen är noll,
+AM-sändare. Arbetssättet är kraftigt olinjärt. Viloströmmen är noll,
 d.v.s. arbetspunkten ligger på den negativa delen av
 styrkaraktäristikan. Endast toppen av den ena halvvågen av insignalen
 återges och i starkt förvrängd form. Verkningsgraden är upp till
@@ -284,13 +284,11 @@ följande tre bilder är \(I_R\)=anodviloström).
 \index{frekvensmultiplicering}
 \index{frequency multiplication}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-47}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-47}
 \caption{Frekvensmultipliceringskedja}
 \label{fig:BildII3-47}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-47}
 
@@ -321,7 +319,7 @@ eller FM-telefoni. För att då förhindra utsändning av alla de
 övertoner som alstras i förstärkarkedjan, så förses slutstegets utgång
 med en svängningskrets som är avstämd till sändningsfrekvensen.
 Övertonsdämpningen kan förbättras ytterligare med ettefterföljande
-lågpassfilter. Overtoner för 144 MHz är 288 MHz, 432 MHz o.s.v.
+lågpassfilter. Övertoner för 144 MHz är 288 MHz, 432 MHz o.s.v.
 
 Frekvensmultiplicering behöver nödvändigtvis inte göras med ett
 förstärkarsteg i klass C. En diod har nämligen olinjär karaktäristik
@@ -362,13 +360,11 @@ förvrängs.
 
 \subsubsection{Slutsteg med en transistor}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-48}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-48}
 \caption{Slutsteg med en transistor}
 \label{fig:BildII3-48}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-48}
 
@@ -391,13 +387,11 @@ möjligen klass AB.
 \index{slutsteg!mottaktskopplat}
 \index{push-pull amplifier}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-49}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-49}
 \caption{Mottaktskopplat slutsteg med transistorer}
 \label{fig:BildII3-49}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-49}
 
@@ -419,15 +413,14 @@ s.k. matchbox - med ett π-, T- eller L-kopplat LC-filter.
 Att ett slutsteg är ``bredbandsavstämt'' är således en fråga om
 definitioner.
 
-\subsubsection{Högeffekts/utsteg med en tetrod}
+\begin{rev-raderas}
+\subsubsection{Högeffektslutsteg med en tetrod}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-50}
-\caption{Högeffekts/utsteg med en tetrod}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-50}
+\caption{Högeffektslutsteg med en tetrod}
 \label{fig:BildII3-50}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-50}
 
@@ -462,16 +455,16 @@ s.k. n-filtret (utläses pi-), som fungerar som
 \item ett övertonsdämpande lågpassfilter,
 \item anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
 \end{itemize}
+\end{rev-raderas}
 
-\subsection{Högeffekts/utsteg med två gallerjordade trioder (elektronrör)}
+\begin{rev-raderas}
+\subsection{Högeffektslutsteg med två gallerjordade trioder (elektronrör)}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-51}
-\caption{Högeffekts/utsteg med två trioder}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-51}
+\caption{Högeffektslutsteg med två trioder}
 \label{fig:BildII3-51}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-51}
 
@@ -501,9 +494,11 @@ med tillsammans jämförbar effekt. Mottaktkoppling av två rör
 förstärkning, men nackdelar i mer komplicerad bandomkoppling av
 svängningskretsar m.m. I moderna rörutrustade slutsteg för amatörradio
 förekommer därför endast ett slutrör eller flera
-parallellkopplade. Utgångskretsen är i regel ett nfilter med manuell
+parallellkopplade. Utgångskretsen är i regel ett π-filter med manuell
 eller automatisk avstämning.
+\end{rev-raderas}
 
+\begin{rev-raderas}
 \subsection{Slutsteg med elektronrör jämfört med transistoriserade slutsteg}
 
 Ett slutsteg med transistorer är kompakt och skaktåligt och använder
@@ -522,23 +517,22 @@ effekt för uppvärmning av rörens katoder samt höga anodspänningar, som
 är farliga vid ovarsamhet. P.g.a. behovet av flera olika spänningar är
 även strömförsörjningen för ett slutsteg med elektronrör mer
 komplicerad och omfångsrik.
+\end{rev-raderas}
 
 \subsection{Bestämning av PEP-effekten}
 \index{PEP-effekt}
 \index{förstärkare!PEP-effekt}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-52}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-52}
 \caption{Bestämning av PEP-effekten}
 \label{fig:BildII3-52}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-52}
 
-Moduleringsspänningens topp-toppvärde \(U_{SS}\) mäts lämpligen med
-ett oscilloscope. För korrekt belastning vid mätningen används en
+Moduleringsspänningens topp-topp\-värde \(U_{SS}\) mäts lämpligen med
+ett oscilloskop. För korrekt belastning vid mätningen används en
 konstlast.
 
 Med topp-toppvärdet känt kan man med följande formler beräkna
@@ -563,18 +557,16 @@ beräknas med följande formler
 \subsection{Linjäritetskontroll vid SSB}
 \index{SSB!linjäritetskontroll}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-53}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-53}
 \caption{Linjäritetskontroll vid SSB}
 \label{fig:BildII3-53}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-53}
 
 Linjäriteten i en SSB-sändare kan kontrolleras med ett
-oscilloscop. Sändaren moduleras då med två övertonsfria toner.
+oscilloskop. Sändaren moduleras då med två övertonsfria toner.
 
 Slutsteget bör först belastas med konstlast upp till max tillåten
 effekt. Resultatet jämförs därefter med antennen som last.
@@ -582,13 +574,11 @@ effekt. Resultatet jämförs därefter med antennen som last.
 \subsubsection{Linjäritetens betydelse i förstärkare}
 \index{förstärkning!linjäritet}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-54}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-54}
 \caption{Linjäritetens betydelse}
 \label{fig:BildII3-54}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-54}
 
@@ -658,9 +648,11 @@ inte kan regleras ner, så måste en dämpsats kopplas in mellan drivsteg
 och slutsteg. En sådan dämpsats kan behöva ta upp en betydande effekt,
 från en vanligt förekommande amatöradiosändare upp till 100 watt PEP.
 
+\begin{rev-omarbetas}
 Ett slutsteg med jordat galler fordrar en större driveffekt, varvid
 risken för överstyrning i slutsteget är något mindre och de
 förebyggande åtgärderna inte så omfattande.
+\end{rev-omarbetas}
 
 Linjära slutsteg innehåller oftast en funktion kallad ALC (Automatic
 Load Control), som kontinuerligt känner av driveffektens inverkan på
@@ -668,11 +660,13 @@ slutsteget När driveffekten blir för hög, alstras en kontrollspänning
 i proportion till utstyrningsgraden. ALG-spänning återförs till
 drivsteget och reglerar dess uteffekt så att överstyrning av
 slutsteget inte sker. I transistoriserade slutsteg skapas
-ALC-spänningen genom likriktning av slutstegets utspänning. I
-rörslutsteg börjar styrgallret dra ström, när styrgallerspänningen
+ALC-spänningen genom likriktning av slutstegets utspänning.
+\begin{rev-raderas}
+I rörslutsteg börjar styrgallret dra ström, när styrgallerspänningen
 blir positiv i signaltopparna, vilket används för att styra
 ALC-spänningen. När ALC-regleringen sätter in, är överstyrningen
 således redan ett faktum. Överstyrning kan ske både på LF- och HF-nivå.
+\end{rev-raderas}
 
 En orsak till övermodulering är för stor amplitud på den modulerande
 signalen. Detta kan bl.a. avhjälpas med inställning av

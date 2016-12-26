@@ -15,6 +15,12 @@ speciellt inom stora temperaturområden, så är kvartskristallen en
 svängningskrets med bättre data. Kvartskristallens höga Q-värde ger
 också en renare signal.
 
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_3-75}
+  \caption{Colpittsoscillator med kristall i parallellresonansfallet}
+  \label{fig:BildII3-75}
+\end{wrapfigure}
+
 I en \emph{kristalloscillator} (eng. \emph{Crystal Oscillator (XO)}) är en kvartskristall
 det frekvensbestämmande elementet i stället för en LC-krets. I övrigt
 kan samma kopplingsprinciper som för en LC-VFO användas.
@@ -23,14 +29,6 @@ Kristallen kan utföras så att den svänger antingen som en serie- eller
 parallellresonanskrets. Märk, att en kristall svänger på något olika
 frekvens beroende på om den fås att fungera som serie- eller
 parallellkrets.  Den högre frekvensen är den som vanligen används.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-75}
-\caption{Colpittsoscillator med kristall i parallellresonansfallet}
-\label{fig:BildII3-75}
-\end{center}
-\end{figure}
 
 Bild \ref{fig:BildII3-75}
 
@@ -60,13 +58,11 @@ till högst \(10^{-4} = 0.01\%\). Formel:
 \index{övertonskristall}
 \index{kristal!övertonskristall}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-76}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/bild_2_3-76}
 \caption{Colpittsoscillator med kristall i serieresonansfallet}
 \label{fig:BildII3-76}
-\end{center}
-\end{figure}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-76}
 
@@ -96,13 +92,11 @@ från mitten får strängen att svänga på en överton i stället.
 \index{superheterodyn!VFO}
 \index{oscillator!syperheterodyn-VFO}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-77}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-77}
 \caption{Superheterodyn-VFO}
 \label{fig:BildII3-77}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-77}
 
@@ -162,14 +156,6 @@ variabel.
 \index{VFO}
 \index{oscillator!VFO}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-78}
-\caption{VFO och VCO jämförs}
-\label{fig:BildII3-78}
-\end{center}
-\end{figure}
-
 Bild \ref{fig:BildII3-78}
 
 En VFO, vars frekvens kan styras med en likspänning, kallas
@@ -178,13 +164,19 @@ En VFO, vars frekvens kan styras med en likspänning, kallas
 variable capacitor) samma uppgift som den mekaniskt variabla kondensatorn i en
 VFO.
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-79}
-\caption{Kapacitansdiod - Varicap}
-\label{fig:BildII3-79}
-\end{center}
-\end{figure}
+\begin{wrapfigure}[43]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_3-78}
+  \caption{VFO och VCO jämförs}
+  \label{fig:BildII3-78}
+
+  \includegraphics[width=0.5\textwidth]{images/bild_2_3-79}
+  \caption{Kapacitansdiod - Varicap}
+  \label{fig:BildII3-79}
+
+  \includegraphics[width=0.5\textwidth]{images/bild_2_3-80a}
+  \caption{Analogi Människa-PLL}
+  \label{fig:BildII3-80a}
+\end{wrapfigure}
 
 Bild \ref{fig:BildII3-79}
 
@@ -208,14 +200,6 @@ likspänningen \(U\). Av en VFO har det blivit en VCO.
 \subsubsection{Oscillator med PLL-styrning}
 \textbf{HAREC a.\ref{HAREC.a.3.7.1}\label{myHAREC.a.3.7.1}}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=7cm]{images/bild_2_3-80a}
-\caption{Analogi Människa-PLL}
-\label{fig:BildII3-80a}
-\end{center}
-\end{figure}
-
 Bild \ref{fig:BildII3-80a}
 
 Människan jämför och reglerar förlopp utifrån givna fakta. Det kan
@@ -225,6 +209,12 @@ signalen från en VCO (är-värdet) och signalen från en XO (bör-värdet).
 Som resultat av jämförelsen justeras styrspänningen så att är- och
 bör-frekvenserna hålls lika. En sådan reglerkrets består av digitala
 komponenter.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_3-80b}
+  \caption{Oscillator med PLL-styrning}
+  \label{fig:BildII3-80b}
+\end{figure}
 
 Fasjämföraren levererar en cykliskt justerad styrspänning till
 kapacitansdioden i VCO. Eftersom denna spänning ändras språngvis, så
@@ -248,25 +238,15 @@ n. Den sjunkande styrspänningen medför att kapacitansdiodens
 spärrskikt blir tunnare, kapacitansen tilltar och VCO-frekvensen
 sjunker tills en ny fas- och frekvenslikhet uppnåtts.
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-80b}
-\caption{Oscillator med PLL-styrning}
-\label{fig:BildII3-80b}
-\end{center}
-\end{figure*}
-
 Bild \ref{fig:BildII3-80b}
 
 \subsubsection{PLL-oscillator i kombination med frekvensblandning}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-81}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-81}
 \caption{PLL-oscillator kombinerad med frekvensblandning}
 \label{fig:BildII3-81}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-81}
 
@@ -300,13 +280,11 @@ med XO och programmerbar frekvensdelare.
 \textbf{HAREC a.\ref{HAREC.a.3.7.2}\label{myHAREC.a.3.7.2}}
 \index{PLL!programmerbar}
 
-\begin{figure*}[h]
-\begin{center}
-\includegraphics[width=14cm]{images/bild_2_3-82}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/bild_2_3-82}
 \caption{PLL med frekvensdelare}
 \label{fig:BildII3-82}
-\end{center}
-\end{figure*}
+\end{figure}
 
 Bild \ref{fig:BildII3-82}
 
