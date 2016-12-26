@@ -5,6 +5,11 @@
 \index{blandning}
 \index{mixing}
 
+$>>>>>$ TODO Det pratas allmänt mycket om rörförstärkare i det här avsnittet.
+Bör omarbetas så att vi nämner rörförstärkare i förbifarten och lägger fokus på
+transistorförstärkare. Vidare bör vi kanske nämna något om att moderna
+LDMOS-transistorer kan lämna en kilowatt.
+
 \subsection{Allmänt}
 
 \begin{figure}
@@ -23,10 +28,12 @@ signalfrekvenser etc.
 
 Transistorn presenteras i avsnitt \ref{transistorn} och elektronröret i avsnitt \ref{elektronrör}.
 
+\begin{rev-omarbetas}
 Först förekom endast elektronrör. Dessa har emellertid på några få
 decennier nästan helt ersatts av transistorer. Elektronrör används
 dock fortfarande, särskilt i effektförstärkare för sändare. Det finns
 därför skäl att här behandla såväl elektronrör som transistorer.
+\end{rev-omarbetas}
 
 \subsection{Huvudegenskaper hos förstärkare}
 \subsubsection{LF- och HF-förstärkare}
@@ -99,6 +106,7 @@ frekvensområde, men även avstämda förstärkare för smala frekvensband.
 
 Bild \ref{fig:BildII3-42}
 
+\begin{rev-omarbetas}
 I det föregående har redan visats att en av polerna i ingången
 respektive utgången i en förstärkare är gemensam. I ovanstående bild
 är rörförstärkarens katod den gemensamma polen - därav namnet
@@ -114,6 +122,7 @@ NPN-transistor.
 
 I praktiken känns en grundkoppling igen på vilken elektrod som är
 avkopplad till 0-potential över en kondensator.
+\end{rev-omarbetas}
 
 \index{emitterkoppling}
 \index{förstärkare!emitterkoppling}
@@ -191,6 +200,7 @@ s.k. \emph{distorsion}. Distorsion uppstår även vid överstyrning,
 d.v.s. när insignalens amplitud är för stor för att kunna återges med
 oförändrad form, även om arbetspunkten är rätt vald.
 
+\begin{rev-omarbetas}
 Med avseende på arbetspunktens läge klassas därför förstärkare på sätt
 som framgår av följande diagram för elektronrör. En emitterjordad
 NPN-transistor får anses mest motsvara elektronrörkopplingen här
@@ -200,6 +210,7 @@ nedan.  Anodströmmen \(I_a\) motsvaras då närmast av kollektorströmmen
 fall alltid är negativ medan bas/emitterspänningen är
 positiv. Styrspänningens relativa läge (arbetspunkten) mellan olika
 arbetsklasser är emellertid lika.
+\end{rev-omarbetas}
 
 \subsubsection{Klass A}
 \index{klass A}
@@ -402,7 +413,8 @@ s.k. matchbox - med ett π-, T- eller L-kopplat LC-filter.
 Att ett slutsteg är ``bredbandsavstämt'' är således en fråga om
 definitioner.
 
-\subsubsection{Högeffekts/utsteg med en tetrod}
+\begin{rev-raderas}
+\subsubsection{Högeffektslutsteg med en tetrod}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/bild_2_3-50}
@@ -443,8 +455,10 @@ s.k. n-filtret (utläses pi-), som fungerar som
 \item ett övertonsdämpande lågpassfilter,
 \item anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
 \end{itemize}
+\end{rev-raderas}
 
-\subsection{Högeffekts/utsteg med två gallerjordade trioder (elektronrör)}
+\begin{rev-raderas}
+\subsection{Högeffektslutsteg med två gallerjordade trioder (elektronrör)}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/bild_2_3-51}
@@ -480,9 +494,11 @@ med tillsammans jämförbar effekt. Mottaktkoppling av två rör
 förstärkning, men nackdelar i mer komplicerad bandomkoppling av
 svängningskretsar m.m. I moderna rörutrustade slutsteg för amatörradio
 förekommer därför endast ett slutrör eller flera
-parallellkopplade. Utgångskretsen är i regel ett nfilter med manuell
+parallellkopplade. Utgångskretsen är i regel ett π-filter med manuell
 eller automatisk avstämning.
+\end{rev-raderas}
 
+\begin{rev-raderas}
 \subsection{Slutsteg med elektronrör jämfört med transistoriserade slutsteg}
 
 Ett slutsteg med transistorer är kompakt och skaktåligt och använder
@@ -501,6 +517,7 @@ effekt för uppvärmning av rörens katoder samt höga anodspänningar, som
 är farliga vid ovarsamhet. P.g.a. behovet av flera olika spänningar är
 även strömförsörjningen för ett slutsteg med elektronrör mer
 komplicerad och omfångsrik.
+\end{rev-raderas}
 
 \subsection{Bestämning av PEP-effekten}
 \index{PEP-effekt}
@@ -631,9 +648,11 @@ inte kan regleras ner, så måste en dämpsats kopplas in mellan drivsteg
 och slutsteg. En sådan dämpsats kan behöva ta upp en betydande effekt,
 från en vanligt förekommande amatöradiosändare upp till 100 watt PEP.
 
+\begin{rev-omarbetas}
 Ett slutsteg med jordat galler fordrar en större driveffekt, varvid
 risken för överstyrning i slutsteget är något mindre och de
 förebyggande åtgärderna inte så omfattande.
+\end{rev-omarbetas}
 
 Linjära slutsteg innehåller oftast en funktion kallad ALC (Automatic
 Load Control), som kontinuerligt känner av driveffektens inverkan på
@@ -641,11 +660,13 @@ slutsteget När driveffekten blir för hög, alstras en kontrollspänning
 i proportion till utstyrningsgraden. ALG-spänning återförs till
 drivsteget och reglerar dess uteffekt så att överstyrning av
 slutsteget inte sker. I transistoriserade slutsteg skapas
-ALC-spänningen genom likriktning av slutstegets utspänning. I
-rörslutsteg börjar styrgallret dra ström, när styrgallerspänningen
+ALC-spänningen genom likriktning av slutstegets utspänning.
+\begin{rev-raderas}
+I rörslutsteg börjar styrgallret dra ström, när styrgallerspänningen
 blir positiv i signaltopparna, vilket används för att styra
 ALC-spänningen. När ALC-regleringen sätter in, är överstyrningen
 således redan ett faktum. Överstyrning kan ske både på LF- och HF-nivå.
+\end{rev-raderas}
 
 En orsak till övermodulering är för stor amplitud på den modulerande
 signalen. Detta kan bl.a. avhjälpas med inställning av
