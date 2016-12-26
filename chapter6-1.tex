@@ -18,6 +18,8 @@ antennkopplare m.m.
 
 \subsubsection{Våghastighet}
 
+\label{ljushastigheten}
+
 I vakuum breder elektromagnetiska vågor ut sig med hastigheten
 \(c_0\), vilken mest kallas ljushastigheten.
 
@@ -104,19 +106,22 @@ l_m = \frac{\lambda}{2f} \cdot 0.98 = \frac{42.86}{2}\cdot 0.98 = 21
 \quad \text{[m]}
 \]
 
-Bild II 6-1 Spänning och ström i en halvvågsantenn
-
-Bild II 6-2 Matningsimpedansen i en halvvågsantenn
 
 \subsection{Ström och spänning i en halvvågsantenn}
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.1}\label{myHAREC.a.6.2.1}
 }
 
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-01}
+  \caption{Spänning och ström i en halvvågsantenn}
+  \label{fig:bildII6-1}
+\end{wrapfigure}
+
 När en halvvågsantenn matas med HF-energi på grundfrekvensen, så
 uppstår en stående våg med ett typiskt utseende.
 
-Bild II 6-1 visar att i vardera änden av antennen uppnår spänningen
+Bild \ref{fig:bildII6-1} visar att i vardera änden av antennen uppnår spänningen
 \(U\) ett maximum (en spänningsbuk), i mitten uppnår strömmen \(I\)
 ett maximum (en strömbuk).  Antennen strålar mest där strömbuken
 finns.
@@ -125,7 +130,7 @@ Tag t.ex. en 40 meter lång metalltråd som antenn. Dess
 grundresonansfrekvens är ca 3.5 MHz, men den är även i resonans på de
 harmoniska övertonerna (7, 14, 21, 28 MHz o.s.v.).
 
-Bild II 6-3 visar ström- och spänningsfördelningen på antennen vid de
+Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid de
 respektive övertonerna.
 
 80 m (3.5 MHz): I matningpunkten står ett spänningsminimum (en
@@ -146,10 +151,22 @@ längs med antennen.
 HAREC a.\ref{HAREC.a.6.2.2}\label{myHAREC.a.6.2.2}
 }
 
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-02}
+  \caption{Matningsimpedansen i en halvvågsantenn}
+  \label{fig:bildII6-2}
+\end{wrapfigure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-03}
+  \caption{Bild II 6-3 Halvvågsdipol matad med harmoniska övertoner}
+  \label{fig:bildII6-3}
+\end{figure}
+
 Impedansen Z för varje punkt på en antenn kan beräknas med Ohms lag
 \(Z = \frac{U}{I}\).
 
-Bild II 6-2
+Bild \ref{fig:bildII6-2}
 
 I mitten av en halvvågsantenn på grundfrekvensen är impedansen \(Z\)
 låg eftersom spänningen är låg där och strömmen hög.  Ute i ändarna är
@@ -161,8 +178,6 @@ i våglängder befinner sig mycket högt över jordytan, d.v.s. utan
 nämnvärd påverkan från omgivningen. I praktiken kan impedansen avvika
 mycket från detta värde.
 
-Bild II 6-3 Halvvågsdipol matad med harmoniska övertoner
-
 Antenn och matningskabel måste vara impedansanpassade till varandra
 för att det inte skall skall uppstå vågreflexion i anslutningen.
 
@@ -171,14 +186,12 @@ Märk, att halvvågsantennen är i resonans inte bara på grundtonen utan
 matningspunkten har hög impedans.  Vid matning med en lågohmig
 koaxialkabel uppstår då en kraftig missanpassning i anslutningen
 mellan antenn och kabel, vilket måste åtgärdas på något sätt. Se
-avsnittet Transmissionsledningar i detta kapitel.
-
-$>>>>>$ TODO: referens
+avsnitt \label{transmissionsledningar} i detta kapitel.
 
 \subsubsection{Matningsimpedansen i några antenner}
-Med W3DZZ-antennen (se nedan) löses hjälpligt anpassningsproblemet med
+Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet med
 mittmatade partier på 2:a harmoniska övertonen, d.v.s. dubbla
-grundfrekvensen. På 80och 40 m-banden är antennens matningsimpedans
+grundfrekvensen. På 80- och 40 m-banden är antennens matningsimpedans
 c:a 60 Ω och på de högre banden ca 120 Ω. En kompromiss är att mata
 denna antenn med en 75 Ω-kabel för att inte få alltför stor
 missanpassning på något band.
@@ -191,7 +204,7 @@ en transformator med impedansomsättningen 4:1.
 \emph{Jordplanantennen (GP-antennen):} Matningsimpedansen är 30-60
 Ω. När jordplanets spröt inte riktas horisontellt, utan snett nedåt,
 erhålls en matningsimpedans av 50 Ω, vilket passar bra för en
-koaxialkabel med 50 .Q impedans.
+koaxialkabel med 50 Ω impedans.
 
 \emph{Yagi- och Quad-antenner:} En anpassningsanordning för anslutning
 av 50 - 60 Ω koaxialkabel ingår oftast i fabriksgjorda
@@ -202,10 +215,7 @@ riktantenner. En 50 - 60 Ω koaxialkabel kan då användas direkt.
 HAREC a.\ref{HAREC.a.6.2.3}\label{myHAREC.a.6.2.3}
 }
 
-Den elektriska svängningskretsen behandlas i kapitel 3. Där framställs
-
-$>>>>>$ TODO: referens
-
+Den elektriska svängningskretsen behandlas i avsnitt \ref{oscillatorer}. Där framställs
 svängningskretsens grundegenskaper resistans \(R\), induktans \(L\)
 och kapacitans \(C\) som koncentrerade till komponenter kallade
 resistor, induktor respektive kondensator.
@@ -235,13 +245,19 @@ så blir den resulterande reaktansen positiv (induktiv), d.v.s. \(X_L\)
 
 \subsection{Elektrisk ``förlängning'' och ``förkortning''}
 
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-04}
+  \caption{Elektrisk förlängning och förkorting av antenner}
+  \label{fig:bildII6-4}
+\end{wrapfigure}
+
 Om sändarfrekvensen, avviker mycket från antennens resonansfrekvens,
 så kan reaktansen i antennen behöva elimineras eller åtminstone
 minskas för en bättre impedansanpassning mellan antenn och
 matarledning. Den enklaste åtgärden är då att försöka ändra
 antennlängden.
 
-Bild II 6-4.
+Bild \ref{fig:bildII6-4}
 
 Om detta inte låter sig göras, så kan man i serie med en ``för kort''
 antenn sätta in en induktor - en s.k. elektrisk förlängning. Om i
@@ -252,8 +268,6 @@ I amatörradio ändras sändarfrekvensen mycket och ofta, varför
 antennsystemet bör kunna stämmas av från marken/operatörsplatsen. Då
 kan en antennkopplare med nödvändiga reaktiva komponenter behövas.  Se
 längre fram i kapitlet.
-
-Bild 6-4 Elektrisk förlängning och förkorting av antenner
 
 \subsection{Anpassning till sändarens impedans}
 
@@ -276,10 +290,16 @@ uppträder ingen stående våg på matarledningen och mesta möjliga effekt
 
 \subsection{Antennens strålningsdiagram}
 
-En antenns strålningsbild beskrivs bäst i tre dimensioner. Bild II 6-3
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-05}
+  \caption{Vertikaldiagram för halvvågsantenn}
+  \label{fig:bildII6-5}
+\end{figure}
+
+En antenns strålningsbild beskrivs bäst i tre dimensioner. Bild \ref{fig:bildII6-3}
 visar bl.a. ett horisontaldiagram för en halvvågsantenn.
 
-Bild II 6-5 visar strålningen i vertikalplanet som funktion av
+Bild \ref{fig:bildII6-5} visar strålningen i vertikalplanet som funktion av
 antennhöjden för samma antenn. Vertikaldiagrammet kan ha mycket olika
 utseende beroende på antennens utförande, dess elektriska höjd över
 mark och omgivningens elektriska egenskaper. För att överbrygga stora
@@ -297,7 +317,7 @@ på en utstrålad signal motsvaras av styrkan på mottagen signal.
 
 \subsection{Antennvinst}
 
-Med antennvinst G (eng. gain) menas förhållandet mellan effekten
+Med antennvinst \(G\) (eng. gain) menas förhållandet mellan effekten
 \(P_t\) i huvudstrålningsriktningen (framriktningen för en antenn med
 osymmetriskt utstrålad effekt) och effekten från en definierad
 referensantenn.
@@ -307,9 +327,7 @@ exakt samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk
   antenn}.  En isotropisk antenn är emellertid endast teoretisk
 definierbar.
 
-Bild II 6-5 Vertikaldiagram för halvvågsantenn
-
-Med effekten Pi från den isotropiska antennen som referens blir
+Med effekten \(P_i\) från den isotropiska antennen som referens blir
 antennvinsten
 
 \[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
@@ -318,11 +336,19 @@ En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning ärvinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennvinsten
 
-\[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd]}\]
+\[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
 
-Bild II 6-6
+Bild \ref{fig:bildII6-6}
 
-Bild II 6-6 Antennvinst dBd i effekt
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-06}
+  \caption{Bild II 6-6 Antennvinst dBd i effekt}
+  \label{fig:bildII6-6}
+
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-07}
+  \caption{Antennvinst dBd i spänning}
+  \label{fig:bildII6-7}
+\end{wrapfigure}
 
 Antennvinsten kan också definieras som förhållandet mellan den
 elektriska fältstyrkan uf i huvudstrålningsriktningen och
@@ -330,15 +356,11 @@ referensfältstyrkan (dipol).
 
 Jämfört med \(\lambda/2\)-dipol är antennvinsten
 
-\[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd]}\]
-
-Bild II 6-7 Antennvinst dBd i spänning
+\[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
 
 Man använder uttrycket dBi när antennvinsten anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.  Se
-Appendix C om decibelbegreppet.
-
-$>>>>>$ TODO: referens
+appendix \ref{decibel} om decibelbegreppet.
 
 Exempel på beräkning av antennvinst:
 
@@ -393,7 +415,11 @@ backriktningen \(P_b\).
 
 \[ F/B = 10 \log\frac{P_f}{P_b} \quad \text{[dB]} \]
 
-Bild II 6-8 F/B-förhållande i effekt
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-08}
+  \caption{Bild II 6-8 F/B-förhållande i effekt}
+  \label{fig:bildII6-8}
+\end{wrapfigure}
 
 Fram/backförhållandet kan också definieras som förhållandet mellan
 elektriska fältstyrkan \(U_f\) i framriktningen och
@@ -401,7 +427,11 @@ referensfältstyrkan \(U_b\) i backriktningen
 
 \[ F/B = 20 \log\frac{U_f}{U_b} \quad \text{[dB]} \]
 
-Bild II 6-9 F/B-förhållande i spänning
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-09}
+  \caption{F/B-förhållande i spänning}
+  \label{fig:bildII6-9}
+\end{wrapfigure}
 
 Exempel 1:
 
@@ -436,7 +466,7 @@ Ut förhåller sig på liknande sätt.
 Med effekthalvvärdesbredd menas den vinkel inom vilken nyttoeffekten
 är minst hälften så stor som i huvudriktningen.
 
-Bild II 6-10
+Bild \ref{fig:bildII6-10}
 
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
@@ -448,4 +478,8 @@ Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 (fältstyrkan) är minst hälften så stor som den största nyttospänningen
 \(U_f\). Spänningshalvvärdesbredden på en dipol är ungefär 90°.
 
-Bild II 6-10 Halvvärdesbredder
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-10}
+  \caption{Halvvärdesbredder}
+  \label{fig:bildII6-10}
+\end{figure}

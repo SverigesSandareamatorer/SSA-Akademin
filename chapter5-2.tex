@@ -1,5 +1,15 @@
 \section{Transceiver}
 
+\begin{wrapfigure}[26]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_5-09}
+  \caption{Separat sändare och mottagare}
+  \label{fig:bildII5-9}
+
+  \includegraphics[width=0.5\textwidth]{images/bild_2_5-10}
+  \caption{Transceiver med samma VFO}
+  \label{fig:bildII5-10}
+\end{wrapfigure}
+
 En transceiver - transmitter receiver - är både en sändare och
 mottagare med delvis gemensamma funktioner. Dessa kan t.ex.  vara
 oscillatorer, signalbehandlingskretsar, filter, strömförsörjning
@@ -14,21 +24,21 @@ mottagare ha bättre eller fler egenskaper än i en transceiver.
 
 \subsection{Jämförelse mellan stationskoncept}
 
-Bild II 5-9 visar i stort en station med skilda sändar- och
-mottagarfunktioner, men att antennen är gemensam.  Bild II 5-10 visar
+Bild \ref{fig:bildII5-9} visar i stort en station med skilda sändar- och
+mottagarfunktioner, men att antennen är gemensam.  Bild \ref{fig:bildII5-10} visar
 i stort en transceiver där VFO och antenn är gemensamma, men i övrigt
-med skilda funktioner.  Bild II 5-11 visar samma transceiver, men med
+med skilda funktioner.  Bild \ref{fig:bildII5-11} visar samma transceiver, men med
 ett mer detaljerat blockschema.
 
-Bild II 5-9 Separat sändare och mottagare
-
-Bild II 5-1 O Transceiver med samma VFO
-
-Bild II 5-11 Direktblandad transceiver med gemensam VFO
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-11}
+  \caption{Direktblandad transceiver med gemensam VFO}
+  \label{fig:bildII5-11}
+\end{figure}
 
 \subsection{CW-transceiver med direktblandare}
 
-Bild II 5-11
+Bild \ref{fig:bildII5-11}
 
 Bilden visar en enkel transceiver för telegrafi. Sändaren är en
 raksändare och mottagaren arbetar med direktblandning. För
@@ -50,7 +60,7 @@ mycket enkel.
 
 \subsection{Kristallstyrd FM-transceiver för VHF}
 
-Bild II 5-12
+Bild \ref{fig:bildII5-12}
 
 Bilden visar en kristallstyrd FM-sändare med frekvensomkopplare för
 kanalval inom 144 - 146 MHz-bandet.
@@ -72,7 +82,11 @@ Mottagaren är en dubbelsuper. Den mottagna signalen passerar genom ett
 förselektionsfilter och en H F-förstärkare för att i 1:a blandaren
 blandas med en lokal signal.
 
-Bild II 5-12 Kristallstyrd 6-kanals FM-transceiver för VHF
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-12}
+  \caption{Kristallstyrd 6-kanals FM-transceiver för VHF}
+  \label{fig:bildII5-12}
+\end{figure}
 
 %%
 
@@ -101,12 +115,18 @@ frekvenskanal, vilket av kostnadsskäl kan vara en nackdel.
 
 \subsection{PLL-styrd FM-transceiver för VHF}
 
-Bild II 5-13
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-13}
+  \caption{PLL-styrd FM-transceiver för VHF}
+  \label{fig:bildII5-13}
+\end{figure}
 
-Den PLL-styrda sändare som redan beskrivits i bild 115-7 har här
+Bild \ref{fig:bildII5-13}
+
+Den PLL-styrda sändare som redan beskrivits i bild \ref{fig:bildII5-7} har här
 kompletterats med en svingbegränsare och ett lågpassfilter i
 modulatorn. Liksom i den station med kanalkristalier, som beskrivits i
-bild Il 5-12, är mottagaren även i detta fall en dubbelsuper.
+bild \ref{fig:bildII5-12}, är mottagaren även i detta fall en dubbelsuper.
 
 VCO används även som lokaloscillator i mottagaren. Eftersom sändaren
 och mottagaren skall användas på samma frekvens (simplextrafik), måste
@@ -142,12 +162,14 @@ frekvensområde - s.k. scanning.
   \end{tabular}
 \end{table}
 
+$>>>>>$ TODO tabellen kan göras bredare
+
 VCO-frekvensen är lika vid sändning och mottagning medan delningstalet
 bestämmer arbetsfrekvensen.
 
 \subsection{Kortvågstransceiver för SSB och CW}
 
-Bild II 5-14
+Bild \ref{fig:bildII5-14}
 
 Vi har redan beskrivit en KV-sändare och KV-mottagare för SSB. I det
 koncept på en kortvågstransceiver, som visas här, ingår en super-VFO i
@@ -186,13 +208,21 @@ frekvensändring skulle endast bärvågsbruset höras.
 Även en RIT och en VOX (Voice Operated Xmitter, talstyrd
 sändnings-/mottagningsomkoppling) är inritade.
 
-Bild II 5-14 SSB-transceiver för kortvåg
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-14}
+  \caption{SSB-transceiver för kortvåg}
+  \label{fig:bildII5-14}
+\end{figure}
 
-Bild II 5-15 PLL-styrd SSB-transceiver för kortvåg
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-15}
+  \caption{PLL-styrd SSB-transceiver för kortvåg}
+  \label{fig:bildII5-15}
+\end{figure}
 
 \subsection{PLL-styrd kortvågstransceiver}
 
-Bild II 5-15 En modern transceiver i den högre prisklassen, i
+Bild \ref{fig:bildII5-15} En modern transceiver i den högre prisklassen, i
 s.k. ``all-mode''-utförande, erbjuder många funktionella
 möjligheter. Flera av dem kommer emellertid endast till användning i
 speciella situationer. Konceptet för en sådan transceiver beskrivs här

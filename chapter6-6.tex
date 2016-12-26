@@ -9,7 +9,13 @@ till mottagaren med så små förluster som möjligt.
 
 \subsubsection{Spännings- och strömkoppling}
 
-Bild II 6-21
+\begin{wrapfigure}[17]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-21}
+  \caption{Spänningskopplad \(\lambda/2\)-dipol}
+  \label{fig:bildII6-21}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII6-21}
 
 En \(\lambda/2\)-dipol kopplas till sändarutgången via en
 \(\lambda/4\) matarledning. För tydlighetens skull visas ledningen som
@@ -30,11 +36,13 @@ matarledningen vid sändarutgången hardet uppstått en strömnod och en
 spänningsbuk, vilket innebär att matarledningen skall spänningskopplas
 till sändaren.
 
-Bild II 6-21 Spänningskopplad \(\lambda/2\)-dipol
+\begin{wrapfigure}[19]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-22}
+  \caption{Strömkopplad \(\lambda/2\)-dipol}
+  \label{fig:bildII6-22}
+\end{wrapfigure}
 
-Bild II 6-22 Strömkopplad \(\lambda/2\)-dipol
-
-Bild II 6-22
+Bild \ref{fig:bildII6-22}
 
 Om matarledningen i stället är \(\lambda/2\) lång, så uppstår i
 stället en spänningsnod och en strömbuk i nedre änden av ledningen,
@@ -46,7 +54,13 @@ matarledningar med längderna \(n \cdot \lambda/4\) (med \(n\) = 1, 2,
 3 \dots). Med hjälp av teckningen kan man avgöra om ström- eller
 spänningskoppling måste användas.
 
-Bild II 6-23
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-23}
+  \caption{Samma \(\lambda/2\)-dipol på grundfrekvensen respektive 1:a övertonen}
+  \label{fig:bildII6-23}
+\end{figure}
+
+Bild \ref{fig:bildII6-23}
 
 En \(\lambda/2\)-dipol för 80 m-bandet ansluts till en avstämd
 matarledning med längden \(\lambda/2 = 40\) m.
@@ -56,9 +70,6 @@ m-banden måste en s.k. antennkopplare anslutas mellan sändaren och
 matarledningen. Kopplaren har alltid strömmatad ingång och
 valmöjlighet för ström- resp spänningsmatad utgång. Se om
 antennkopplare sist i detta kapitel.
-
-Bild II 6-23 Samma \(\lambda/2\)-dipol på grundfrekvensen respektive 1:a övertonen
-
 
 \subsection{Oavstämd matarledning}
 
@@ -84,7 +95,13 @@ Som matarledning upp till mikrovågsområdet är koaxialkabeln vanligast.
 HAREC a.\ref{HAREC.a.6.3.2}\label{myHAREC.a.6.3.2}
 }
 
-Bild II 6-24
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-24}
+  \caption{Koaxialkabel}
+  \label{fig:bildII6-24}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII6-24}
 
 Koaxialkabelns uppbyggnad framgår av bilden. I en koaxialkabel bildas
 ett radiellt elektriskt fält mellan mittledaren och insidan av
@@ -100,27 +117,29 @@ förhindrar dessutom HF-utstrålning och inkommande störningar. I
 motsats till den symmetriskt uppbyggda bandkabeln, tillhör
 koaxialkabeln de osymmetriska ledningarna.
 
-Vanliga karakteristiska impedanser koaxialkabel är 50 och 75 Ω.
-
-Bild II 6-24 Koaxialkabel
+Vanliga karakteristiska impedanser i koaxialkabel är 50 och 75 Ω.
 
 \subsection{Bandkabel}
 \textbf{
 HAREC a.\ref{HAREC.a.6.3.1}\label{myHAREC.a.6.3.1}
 }
 
-Bild II 6-25
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-25}
+  \caption{Bandkabel}
+  \label{fig:bildII6-25}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII6-25}
 
 Som framgår av bilden består bandkabeln av två parallella ledare med
 samma dimensioner. Kabelns isolering håller samtidigt ledaravståndet
-rätt. l ett kraftigare utförande övergår denna ledningstyp till att
+rätt. I ett kraftigare utförande övergår denna ledningstyp till att
 bestå av ett ledarpar med isolerade spridare på jämna avstånd. Den
 kommer att likna en stege det ursprungliga utförandet på en
 matarledning.
 
 Vanliga karakteristiska impedanser bandkabel är 75 och 300 Ω.
-
-Bild II 6-25 Bandkabel
 
 \subsection{Vågledare}
 \textbf{
@@ -254,7 +273,13 @@ Stående vågor uppträder inte bara i antennkablar utan även i fasta
 material (trådar o. dyl.), i luft (ljud), i ljus (t.ex. laser), i
 elektromagnetiska fält o.s.v.
 
-Bild II 6-26
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-26}
+  \caption{Ståendevåg på ledning}
+  \label{fig:bildII6-26}
+\end{figure}
+
+Bild \ref{fig:bildII6-26}
 
 Spänningen utmed kabeln varierar regelbundet mellan
 
@@ -271,22 +296,28 @@ Med ståendevågförhållandet SVF menas förhållandet mellan \(U_{max}\)
 och \(U_{min}\) eller mellan \(I_{max}\) och \(I_{min}\).
 
 \begin{align*}
-  SVF &= \frac{U_{max}}{U_{min}} = \frac{U_f + U_b}{U_f - U_b} \quad
+  \text{SVF} &= \frac{U_{max}}{U_{min}} = \frac{U_f + U_b}{U_f - U_b} \quad
   \text{eller} \\
-  SVF &= \frac{I_{max}}{I_{min}}
+  \text{SVF} &= \frac{I_{max}}{I_{min}}
 \end{align*}
 
 ståendevågförhållandet SVF kan även anges med hjälp av impedanserna i
 matarledningen (\(Z\)) och i antennens matningspunkt (\(Z_a\)).
 
 \begin{align*}
-  SVF &= \frac{Z}{Z_a} \quad \text{där } Z > Z_a \quad \text{eller} \\
-  SVF &= \frac{Z_a}{Z} \quad \text{där } Z > Z_a
+  \text{SVF} &= \frac{Z}{Z_a} \quad \text{där } Z > Z_a \quad \text{eller} \\
+  \text{SVF} &= \frac{Z_a}{Z} \quad \text{där } Z > Z_a
 \end{align*}
 
-Ståendevågmätning beskrivs i Kapitel 8.
+Ståendevågmätning beskrivs i avsnitt \ref{mäta ståendevåg}.
 
-Bild II 6-27
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-27}
+  \caption{SVF-problemet enkelt sett}
+  \label{fig:bildII6-27}
+\end{figure}
+
+Bild \ref{fig:bildII6-27}
 
 Bilden visar SVF-problemet enkelt sett och vad en SVF-meter visar
 beroende på var den kopplas in i kedjan sändare - ledning -
@@ -298,8 +329,6 @@ antennkopplaresättas in efter sändaren för att skydda den från
 benämningar, t.ex. matchbox, antennavstämningsenhet o.s.v. Bäst är att
 göra sådana impedansanpassningar i alla led, att antennkopplaren blir
 onödig.
-
-Bild II 6-26 Ståendevåg på ledning
 
 \subsection{Effektförluster}
 \textbf{
@@ -357,16 +386,22 @@ Koaxialledare anordnad som balun 1:1.
 
 \subsubsection{Transformering}
 
+\begin{wrapfigure}[23]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-28}
+  \caption{Balansering - transformering}
+  \label{fig:bildII6-28}
+\end{wrapfigure}
+
 I samband med balanseringen kan en impedanstransformering behövas och
 det finns baluner (transformatorer) som både balanserar och
 transformerar impedanser.
 
-Bild II 6-28
+Bild \ref{fig:bildII6-28}
 
 Bilden visar en transformator med osymmetrisk ingång och symmetrisk
 utgång. Om båda lindningarnas varvtal är lika så sker ingen
 impedanstransformering. Om förhållandet mellan varvtalen är 1:2 så
-blir förhållandet mellan impedanserna 1:4. Se vidare i Kapitel \ref{transformatorn}.
+blir förhållandet mellan impedanserna 1:4. Se vidare i avsnitt \ref{transformatorn}.
 
 Bilden visar också att matarledningens impedans \(Z\) transformeras om så
 att den blir lika antennens anslutningsimpedans \(R_a\).  Denna
@@ -379,17 +414,24 @@ Koaxialledare anordnad som balun 1:4.
 
 \subsection{Ringkärnebalun}
 
-Bild II 6-29
+Bild \ref{fig:bildII6-29}
 
 Ringkärnebalunen är en form av transformator. I den finns en ringkärna
 av hårt sammanpressat järnpulver av en legering, som tillsammans med
 lindningarnas utförande gör att frekvensbandbredden blir stor.
 
-Bild II 6-29 Ringkärnebalun
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-29}
+  \caption{Ringkärnebalun}
+  \label{fig:bildII6-29}
+\end{wrapfigure}
 
 \subsection{Koaxialledare som balun}
 
-Bild II 6-30
+Bild \ref{fig:bildII6-30}
+
+$>>>>>$ TODO Bild 6-30 är ett layout-mässigt specialfall i Wibergs bok,
+behöver en del arbete för att få till korrekt. Finns på sidan II6-23.
 
 Balansering kan även göras med ett ett koaxialkabelarrangemang, som i
 så fall är starkt frekvensberoende. Bilden visar tre utföranden, som
@@ -407,22 +449,32 @@ I den mellersta figuren är den översta delen av matningskabeln en
 \(\lambda/4\) lång parallellsvängningskrets tillsammans med parallellt
 ansluten ledare (i detta fall en koaxialkabel som kortslutits i båda
 ändar). Den nedrersta högra figuren i bilden visar den kortslutna
-\(\lambda/4\)-ledningen i tre varianter. l samtliga fall uppstår
+\(\lambda/4\)-ledningen i tre varianter. I samtliga fall uppstår
 HF-mässigt en strömbalanserande effekt mellan dipolhalvorna.
 
 Dessutom hindras även antennströmmar från att komma ner på utsidan av
 matningskabelns skärm
 
-Bild II 6-30 Koaxialledare som balun
+\begin{figure}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-30_1}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-30_2}
+  \includegraphics[width=\textwidth]{images/bild_2_6-30_3}
+  \caption{Koaxialledare som balun}
+  \label{fig:bildII6-30}
+\end{figure}
 
-Bild II 6-31 Sätt att ansluta en matningsledning
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-31}
+  \caption{Bild II 6-31 Sätt att ansluta en matningsledning}
+  \label{fig:bildII6-31}
+\end{figure}
 
 \subsection{Sätt att ansluta en matningsledning}
 \textbf{
 HAREC a.\ref{HAREC.a.6.3.9}\label{myHAREC.a.6.3.9}
 }
 
-Bild II 6-31
+Bild \ref{fig:bildII6-31}
 
 \subsubsection{T-, delta- och gamma-anpassning}
 
@@ -444,7 +496,7 @@ båda ledningstyperna.
 
 \subsubsection{\(\lambda/4\)-anpassningsledning - stub}
 
-Uppbyggnad: Antennen ansluts till en \(\lambda/2\) anpassningsledning
+Uppbyggnad: Antennen ansluts till en \(\lambda/4\) anpassningsledning
 och matarledningen i sin tur till anpassningsledningen.
 
 Funktion: Anpassningsledningen består av en öppen
@@ -455,7 +507,13 @@ matarledningens impedans.
 
 \subsubsection{\(\lambda/2\)-fasningsledning}
 
-Bild II 6-32
+\begin{wrapfigure}[13]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-32}
+  \caption{\(\lambda/2\)-fasningsledning}
+  \label{fig:bildII6-32}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII6-32}
 
 Funktion: När t.ex. en omvikt dipol med matningsimpedansen 240 Ω skall
 anslutas till en 50 Ω-kabel, behövs en impedanstransformering med
@@ -464,8 +522,6 @@ förhållandet 4:1. En \(\lambda/2\) lång fasningsledning kan användas fördet
 
 Observera: Med en \(\lambda/2\)-fasningsledning enligt bilden kan
 impedanstransformering endast göras i förhållandet 4:1.
-
-Bild II 6-32 \(\lambda/2\)-fasningsledning
 
 \subsection{Transmissionsledningen}
 
@@ -489,7 +545,13 @@ inkopplad i slingan kan den användas som en enkel strömindikator.
 
 \subsubsection{Öppen transmissionsledning}
 
-Bild II 6-33
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-33}
+  \caption{Förlopp i öppen \(\lambda/4\) transmissionsledning}
+  \label{fig:bildII6-33}
+\end{figure}
+
+Bild \ref{fig:bildII6-33}
 
 Håll glimlampan nära intill ledningen.  Glimlampan tänds med jämna
 mellanrum när den flyttas utmed ledningen.
@@ -522,7 +584,13 @@ mellan ledarna och inte utanför ledarparet.
 \subsubsection{Kortsluten transmissionsledning}
 
 
-Bild II 6-34
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-34}
+  \caption{Förlopp i kortsluten \(\lambda/4\) transmissionsledning}
+  \label{fig:bildII6-34}
+\end{figure}
+
+Bild \ref{fig:bildII6-34}
 
 På bilden visas såväl ström- och spänningsförhållandena som
 fältlinjeförloppen på en avstämd, kortsluten transmissionsledning med
@@ -531,7 +599,13 @@ bilden har valts \(n = 6\).
 
 \subsection{\(\lambda/4\)-ledning som svängningskrets}
 
-Bild II 6-35
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_6-35}
+  \caption{\(\lambda/4\) transmissionsledning som svängningskrets}
+  \label{fig:bildII6-35}
+\end{figure}
+
+Bild \ref{fig:bildII6-35}
 
 Bilden visar ström- och spänningsfördelningen för en öppen resp. en
 kortsluten transmissionsledning med längden \(l = \lambda/4\).
@@ -552,12 +626,18 @@ En kortsluten \(\lambda/4\)-ledning kan ses som en parallellkopplad
 LC-krets. När ledningen är i resonans är spänningen hög över ingången,
 medan strömmen där är låg.
 
+\clearpage % Fulhack för att undvika att bild 6-36 inte ska hamna tre sidor bort från subsection
+%
+\begin{wrapfigure}[35]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_6-36}
+  \caption{Antennkopplare}
+  \label{fig:bildII6-36}
+\end{wrapfigure}
+%
 \subsection{Antennkopplare}
-
-Bild II 6-36
-
-Bilden visar en antennkopplare för bandkabel av olika
-längder. storleken på kondensatorerna: \(C_1 = C_2 = 500\text{ pF},
+%
+Bild \ref{fig:bildII6-36} visar en antennkopplare för bandkabel av olika
+längder. Storleken på kondensatorerna: \(C_1 = C_2 = 500\text{ pF},
 C_3 = 300\text{ pF}\).
 
 \subsubsection{Avstämning vid spänningskoppling}
