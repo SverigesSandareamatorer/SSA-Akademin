@@ -19,7 +19,13 @@ utskilja den önskade signalen efter blandningsförloppen.
 \subsection{Spegelfrekvensproblemet vid mottagning}
 \textbf{HAREC a.\ref{HAREC.a.4.4.5}\label{myHAREC.a.4.4.5}}
 
-Bild II 4-22
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-22}
+  \caption{Enkelsuper med låg MF och ingen förselektion}
+  \label{fig:bildII4-22}
+\end{figure}
+
+Bild \ref{fig:bildII4-22}
 
 Exempel: En sändning på 3600kHz skall tas emot och VFO-frekvensen är
 4055 kHz. Mellanfrekvensfiltret undertrycker sändningar på så
@@ -41,11 +47,13 @@ blandningsprodukter med VFO-frekvensen, som har mellanfrekvensens
 värde. Mellanfrekvensfiltret kan därför inte undertrycka en främmande
 signal på spegelfrekvensen.
 
-Bild II 4-23
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-23}
+  \caption{Enkelsuper med låg MF och med förselektion}
+  \label{fig:bildII4-23}
+\end{figure}
 
-Bild II 4-22 Enkelsuper med låg MF och ingen förselektion
-
-Bild II 4-23 Enkelsuper med låg MF och med förselektion
+Bild \ref{fig:bildII4-23}
 
 Däremot kan en mottagaringång med förselektering undertrycka den. En
 selektiv krets före blandaren släpper igenom ett smalt frekvensband
@@ -54,15 +62,19 @@ p.g.a. den stora frekvensskillnaden. En förselektion har alltså
 tillförts som komplement till den närselektion som erhålls med
 mellanfrekvensfiltret.
 
-Bild II 4-24
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_4-24}
+  \caption{Enkelsuper med hög MF och med förselektion}
+  \label{fig:bildII4-24}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII4-24}
 
 Ju längre ifrån varandra nyttofrekvens och spegelfrekvens ligger,
 desto bättre är förselektionen. Med en mellanfrekvens av 455 kHz är
 alltså detta avstånd 910 kHz. I långvågs- och mellanvågsområdet är det
 tillräckligt för att man med enkla medel skall kunna skapa
 tillräckligt selektiva filter.
-
-Bild II 4-24 Enkelsuper med hög MF och med förselektion
 
 Exempel: Vid den högsta mottagningsfrekvensen på mellanvåg 1605 kHz är
 spegelfrekvensen 2515 kHz, som ligger 1.57 gånger högre i frekvens och
@@ -85,7 +97,13 @@ MHz är spegelfrekvensen 48 MHz, vilket är 1.6 gånger
 mottagningsfrekvensen. Detta möjliggör förselektionsfilter med
 tillräcklig dämpning av spegelfrekvensen.
 
-Bild II 4-25
+Bild \ref{fig:bildII4-25}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-25}
+  \caption{Samtidig för- och närselektion i superheterodynmottagare}
+  \label{fig:bildII4-25}
+\end{figure}
 
 Bilden visar hur när- och förselektion kompletterar varandra i ett
 frekvensspektrum.  Märk, att passbandbredden \(b\) i
@@ -100,7 +118,13 @@ lösningar blir då nödvändiga, t.ex. kavitetsfilter och helixfilter.
 
 \subsubsection{MF-bandbredd vid AM (A3E)}
 
-Bild II 4-26
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-26}
+  \caption{MF-bandbredd vid AM (A3E)}
+  \label{fig:bildII4-26}
+\end{figure}
+
+Bild \ref{fig:bildII4-26}
 
 En amplitudmodulerad signals frekvensspektrum består av bärvågen och
 två sidfrekvenser - eller sidband om sidfrekvenserna är många.
@@ -113,8 +137,6 @@ kHz.  Detta motsvarar en bandbredd av 9 kHz.  För enbart talöverföring
 är en bandbredd av 6 kHz tillräcklig, vilket motsvarar en
 LF-gränsfrekvens av 3 kHz.
 
-Bild II 4-25 Samtidig för- och närselektion i superheterodynmottagare
-
 Ett för smalt MF-filter skär bort de yttre delarna av
 sidbanden. LF-signalerna kommer då att förlora de höga tonerna
 (diskanten). Om däremot filtret är för brett, kommer närliggande
@@ -126,7 +148,13 @@ mindre störd mottagning.
 
 \subsubsection{MF-bandbredd vid SSB (J3E)}
 
-Bild II 4-27
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-27}
+  \caption{MF-Bandbredd och passbandtuning vid SSB (J3E)}
+  \label{fig:bildII4-27}
+\end{figure}
+
+Bild \ref{fig:bildII4-27}
 
 Mellanfrekvensfiltret för SSB-mottagning skall endast släppa igenom
 ett av de två sidbanden, vars bredd är skillnaden mellan högsta och
@@ -174,7 +202,7 @@ När närliggande sändare stör mottagningen ges följande möjligheter:
 
 \subsubsection{MF-bandbredd vid  CW (A1A)}
 
-Bild II 4-28
+Bild \ref{fig:bildII4-28}
 
 En CW-signal har som bekant inte bandbredden non Hz, utan det handlar
 i grunden om en amplitudmodulerad signal. Vid en nycklingshastighet av
@@ -186,7 +214,11 @@ vanlig bandbredd på ett SSB-filter är 2.7 kHz och då kommer även
 stationer på närliggande frekvenser att höras. Låt vara att de flesta
 av dessa stationer hörs med olika frekvens.
 
-Bild II 4-28 Olika MF-bandbreder vid CW (A1A)
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_4-28}
+  \caption{Olika MF-bandbreder vid CW (A1A)}
+  \label{fig:bildII4-28}
+\end{figure}
 
 Fler än 20 CW-stationer får plats inom en bandbredd motsvarande en
 SSB-kanal. Den mänskliga hjärnan, kan med någon övning koncentrera sig
@@ -276,6 +308,16 @@ mottagares LF-utgång måste nyttasignalen vara ett antal gånger
 starkare än bruset. Den lägre gränsen för att uppfatta tal i
 kortvågsmottagare är ett brusavstånd i storleksordningen 10 dB.
 
+\begin{wrapfigure}[19]{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_4-29}
+  \caption{S/N-värde}
+  \label{fig:bildII4-29}
+
+  \includegraphics[width=0.5\textwidth]{images/bild_2_4-30}
+  \caption{SINAD-värde}
+  \label{fig:bildII4-30}
+\end{wrapfigure}
+
 I en broschyr på en kortvågsmottagare kan man t. ex. läsa
 ``Sensitivity SSB, CW: less than 0.25 µV for 10 dB S/N ...''
 
@@ -285,15 +327,16 @@ signal/brus uttryckt i dB.  Det innebär att en signal kan läsas vid 25
 mottagaren spelar också distorsionen en roll.
 
 \begin{align*}
-  \text{Signalbrusförhållande} &= \frac{S + N + D}{N} \text{ dB} \\
+  \begin{array}[b]{l}
+    \text{Signalbrus-} \\
+    \text{förhållande}
+  \end{array} &= \frac{S + N + D}{N} \text{ dB} \\
   \text{där} \quad S &= \text{Signalnivå} \\
   N &= \text{Brusnivå} \\
   D &= \text{Distorsionsnivå} \\
 \end{align*}
 
-Bild II 4-29 S/N-värde
-
-l en broschyr på en VHF-mottagare kan man t.ex. läsa
+I en broschyr på en VHF-mottagare kan man t.ex. läsa
 ``Sensitivity FM: Less than 0.18 µV for 12 dB SINAD ...''.
 
 Termen SINAD betyder Signal, Noise and Distorsion. Vid denna
@@ -303,8 +346,6 @@ av den modulerande signalen.
 \[
 \text{SINAD} = \frac{S+N+D}{N+D}\text{ dB}
 \]
-
-Bild II 4-30 SINAD-värde
 
 \subsection{Intermodulation, korsmodulation}
 \textbf{HAREC a.\ref{HAREC.a.4.4.6}\label{myHAREC.a.4.4.6}}
