@@ -11,7 +11,7 @@ KONCEPT_CH1_FILES = chapter1-1.tex chapter1-2.tex chapter1-3.tex \
 	chapter1-8.tex chapter1-9.tex
 KONCEPT_CH2_FILES = chapter2-1.tex chapter2-2.tex chapter2-3.tex \
 	chapter2-4.tex chapter2-5.tex chapter2-6.tex chapter2-7.tex \
-	chapter2-8.tex chapter2-9.tex
+	chapter2-8.tex chapter2-9.tex chapter2-10.tex power1.pdf
 KONCEPT_CH3_FILES = chapter3-1.tex chapter3-2.tex chapter3-3.tex \
 	chapter3-4.tex chapter3-5.tex chapter3-6.tex chapter3-7.tex \
 	chapter3-8.tex chapter3-9.tex
@@ -76,6 +76,10 @@ images.avail:
 images.unlinked: images.avail images.linked
 	diff images.avail images.linked | grep \< | sed -e s/\<\ // > images.unlinked
 
+# Genererade bilder
+power1.pdf: power1.mac
+	maxima -b power1.mac
+
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
 # To build using Docker, run 'make docker-image' first which will take quite some time,
@@ -87,4 +91,4 @@ docker-build:
 	docker run -ti --rm -v $(shell pwd):/work -w /work ${DOCKER_IMAGE_NAME} make all
 
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out *.png
