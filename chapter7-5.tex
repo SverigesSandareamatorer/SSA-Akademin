@@ -1,199 +1,177 @@
-\section{Vågutbredning på VHF, UHF, SHF och EHF}
-
-\subsection{Allmänt}
-Frekvensområdet 30 - 300000 MHz delas upp
-i följande mindre avsnitt som kallas \\
-VHF (Very High Frequency, 30-300 MHz), \\
-UHF (Ultra High Frequency, 300-3000 MHz), \\
-SHF (Super High Frequency, 3-30 GHz) och \\
-EHF (Extra High Frequency, 30-300 GHz). \\
-
-På VHF och högre frekvenser (tidigare UKV) förekommer sällan någon
-vågutbredning via jonosfären annat än under tiden för maximal sol
-aktivitet. I stället utnyttjas den lägre delen av atmosfären och
-knappast högre än 4 - 5 km över jordytan. Denna del av atmosfären
-kallas för troposfär och vågutbredningen därför för troposfärisk
-vågutbredning.
-
-All vågutbredning i troposfären förutsätter i princip optisk
-sikt. Emellertid förekommer en viss vågavböjning utmed jordytan,
-varför den praktiska räckvidden utmed siktlinjen är något längre än
-till den optiska horisonten. Man talar om radiohorisont.
-
-\emph{Brytningsindex} i atmosfären är en viktig faktor för
-vågutbredning bortom frisiktsavståndet, speciellt vid frekvenser över
-100 MHz. Även den splittring av vågorna som uppstår när de träffar
-oregelbundenheter i atmosfären kan utnyttjas för kommunikation på
-avstånd som är flera gången frisiktsavståndet
-
-Vid högre frekvenser begränsas emellertid räckvidden av atmosfärens
-dämpande inverkan. Likaså förloras vågenergi i den topografi,
-vegetation och bebyggelse som ligger i siktlinjen mellan sändare och
-mottagare. I gynnsamma fall är det dock möjligt att överbrygga avstånd
-på upp till 1000 km genom troposfären. Sådana avstånd kallas för
-överräckvidd.
-
-\subsection{Troposfären - Troposcatter}
+\section{Vågutbredning på kortvåg}
 \textbf{
-HAREC a.\ref{HAREC.a.7.10}\label{myHAREC.a.7.10}
+HAREC a.\ref{HAREC.a.7.7}\label{myHAREC.a.7.7}
 }
 
-När en kalluftfront nära jordytan stöter samman med en varmluftfront
-uppstår turbulenser i luften med elektriska uppladdningar i
-gränsskiktet som följd.
+\subsection{Markvåg}
 
-Under sådana väderförhållanden kan radiovågor i VHF-området och
-däröver att brytas eller splittras upp när de träffar det laddade
-gränsskiktet- troposcatter. Då kan oväntade radiokontakter uppnås.
+Markvågen breder ut sig längs jordytan utan kontakt med atmosfären
+genom reflexion eller refraktion.
 
-\subsection{Temperaturinversion}
-\textbf{
-HAREC a.\ref{HAREC.a.7.12}\label{myHAREC.a.7.12}
-}
+Markvågen har vertikal polarisering och en vertikal vågfront när
+jordplanets ledningsförmåga är god. Vid sämre ledningsförmåga lutar
+vågfronten framåt.
 
-När ett varmt luftskikt lägger sig över ett kallare luftskikt uppstår
-en s.k. temperaturinversion.
+Markvågens räckvidd står i forhållande till den använda frekvensen,
+sändareffekten och jordplanets ledningsförmåga.
 
-Vågor på VHF och UHF bryts då mot gränsskiktet och böjs av mot
-jordytan. Om det finns två inversionsskikt samtidigt, så kan de bilda
-en slags vågledare, s.k. dukt (eng. duct = ledning). En räckvidd på
-600 - 1300 km kan uppnås. Denna typ av vågutbredning förekommer ofta
-vid högt atmosfärstryck under sommaren.
+Vid frekvenser under c:a 10 MHz är jordytan är en tämligen god
+ledare. Markvågsutbredning utnyttjas därför mest vid låga frekvenser,
+t.ex. för rundradio i lång- och mellanvågsbanden då räckvidden kan
+vara i storleksordningen 1000 km. På kortvåg är markvågsräckvidden i
+80 m-bandet c:a 100 km och i 10 m-bandet c:a 15 km.
 
-\subsection{Reflexion mot \(\mathrm{E_s}\) (sporadiskt E)}
-\textbf{
-HAREC a.\ref{HAREC.a.7.13}\label{myHAREC.a.7.13}
-}
+\subsection{Rymdvåg}
 
-Vid stark solinstrålning bildas, på de lägre breddgraderna, joniserade
-gasmoln på en höjd av c:a 120 km och med en oregelbunden fördelning.
+Under vissa förutsättningar reflekteras radiovågorna mot joniserade
+atmosfärsskikt och når åter jordytan på stort avstånd från
+utsändningspunkten. Rymdvågsutbredning utnyttjas mellan platser på
+jordytan med stort avstånd.
 
-Den kritiska frekvensen är hög för \(\mathrm{E_s}\)-skiktet och det
-kan även reflektera vågor på VHF och UHF så effektivt att avstånd av
-1000 - 4000 km kan överbryggas.
+För att bäst uppnå den önskade reflexionen måste man dels välja
+lämplig tidpunkt och frekvens och dels utforma antennen så att den har
+sin huvudriktning i en bestämd vinkel mot det reflekterande skiktet.
 
-\subsection{Aurora-reflexion}
-\textbf{
-HAREC a.\ref{HAREC.a.7.14}\label{myHAREC.a.7.14}
-}
-
-Soleruptioner - flares - utstrålar stora mängder ultraviolett ljus och
-kastar ut elektriskt laddade partiklar, som efter 1-2 dagar fångas upp
-av jordens magnetosfär och tränger ner i polarzonerna. När partiklarna
-kolliderar med atmosfären bildas det polarsken i form av lysande
-``draperier'' - Aurora (kallat norrsken på norra halvklotet) - samtidigt
-som atmosfären joniseras. Auroran är joniserade skikt i samma plan som
-jordens magnetfält och speciellt vågor med frekvenser över 30 MHz
-reflekteras emot dessa.
-
-VHF- och UHF-kommunikation kan ske med hjälp av aurorareflexion. De
-signaler som reflekteras av Aurora är kraftigt distorderade och har
-förlorat all ton. Den reflekterade signalen blir bred i frekvens,
-vilket emellertid gynnar kommunikation med telegrafi när signalerna är
-svaga. Oftast är endast telegrafiförbindelser i långsam takt möjliga.
-Vid starkare Aurora går också SSB att använda.
-
-\subsection{Reflexion mot meteorer - Meteorscatter}
-\textbf{
-HAREC a.\ref{HAREC.a.7.15}\label{myHAREC.a.7.15}
-}
-
-Radiovågor på VHF och UHF reflekteras mot joniserade spår efter det
-meteorgrus som faller in i jordatmosfären. Detta fenomen kan utnyttjas
-för radioförbindelser.
-
-Joniseringen sker när partiklarna passerar genom E-skiktet och brinner
-upp. Eftersom joniseringen har en varaktighet av endast 0.1 - 10
-sekunder måste \emph{MS-förbindelser} planeras och förberedas
-väl. Förbindelserna begränsas vanligen till utbyte av anropssignaler
-och signalrapporter med höghastighetstelegrafi med en hastighet av 300
-- 3000 tecken per minut. Under de större meteorskurarna kan kontakter
-uppnås utan överenskommelser på förhand (skeds), både på telegrafi
-(CW) och telefoni (SSB).
-
-\subsection{EME-förbindelser}
-\textbf{
-HAREC a.\ref{HAREC.a.7.16}\label{myHAREC.a.7.16}
-}
-
-Radioförbindelse från en punkt på jorden till en annan kan åstadkommas
-genom reflexion av VHF/UHF-signaler mot månen. EME-förbindelser
-(Earth-Moon-Earth) kallas även Moon Bounce. EME-förbindelser kräver
-antenner med mycket hög riktverkan, mycket hög sändareffekt och
-känsliga mottagare.
-
-\subsection{Markbaserade relästationer}
+Jonosfären är den del av atmosfären på c:a 50 till 350 km höjd, där
+instrålningen från solen skapar fria elektroner och joner i en sådan
+mängd att det bildas skikt med god elektrisk ledningsförmåga. Under
+vissa villkor reflekterar dessa skikt radiovågorna, men kan under
+andra villkor även absorbera dem.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_7-12}
-  \caption{Markbaserad repeater}
-  \label{fig:bildII7-12}
+  \includegraphics[width=\textwidth]{images/bild_2_7-11}
+  \caption{Vågutbredning på kortvåg}
+  \label{fig:bildII7-11}
 \end{figure}
 
-På VHF och högre frekvenser kan man, som tidigare beskrivits, endast
-uppnå radiokontakter hitom den s.k. radiohorisonten.
-$>>>>>$ TODO Beskriv undantagen från detta - Es, tropo, meteorscatter, m.m.
+När vågorna från jordytan reflekterats mot de joniserade skikten, kan
+de återträffa jordytan på ett avstånd av upp till 4000 km från
+utsändningspunkten, beroende på frekvens och polarisering. Därefter
+kan de åter reflekteras mot jordytan och upp i jonosfären
+o.s.v. (flerstegshopp). Under gynnsamma förhållanden når rymdvågen
+mycket långt genom växelvisa reflexioner mellan jordytan och
+jonosfären.
 
-För att överbrygga detta hinder används relästationer, se bild
-\ref{fig:bildII7-12}. Den slags
-relästation, som allmänt kallas repeater, tar emot det den hör på en
-viss fast frekvens och återutsänder detta på en viss annan fast
-frekvens. Se bandplan i appendix \ref{svenska bandplaner}.
+\subsection{Död zon (skip zone) och skip-avstånd}
 
-\subsection{Rymdsatellit-baserade relästationer}
+Rymdvågorna böjs tillbaka mot jorden när de träffar jonosfären i en
+vinkel som är flackare än den s.k. kritiska vinkeln. När vågorna
+träffar jonosfären med en brantare vinkel än den kritiska vinkeln sker
+det ingen avböjning utan vågorna passerar genom jonosfären och rakt ut
+i rymden. Beroende på den kritiska vinkeln för tillfället, kommer
+därför reflekterade rymdvågor inte att höras förrän på ett visst
+avstånd bort från sändaren. Detta avstånd kallas för skip-avstånd.
 
-Radiovågor med tillräckligt hög frekvens kan passera genom
-jonosfärskikten. Detta möjliggör radioförbindelser VHF/UHF/SHF mellan
-stationer på jorden med hjälp av relästationer i rymdsatelliter.
+Men sändarens markvåg har också ett visst täckningsområde och mellan
+detta och zonen där rymdvågen kan höras bildar en skymningszon - en
+\emph{skip zone} eller död zon.
 
-För amatörradiotrafik över rymdsatelliter används vanligen den slags
-relästation, som kallas \emph{transponder}. En sådan tar emot allt det
-den hör inom ett helt frekvensband och återutsänder detta i ett helt
-annat frekvensband. På så sätt kan trafik över satellit ske på ett
-jämförbart sätt som vid direktkontakt mellan jordbaserade stationer.
+\subsection{Grålinjeutbredning - grayline}
 
-Satellitbaserade linjärtranspondrar med amatörradioutrustning finns i
-OSCAR-satelliterna (OSCAR = Orbiting Satellite Carrying Amateur
-Radio). Dessa har konstruerats och byggts av amatörradiogrupper.
+Med gray line menas det smala bälte på jordytan där det för tillfället
+råder gryning eller skymning.
 
-OSCAR-satelliterna har många olika transpondrar i funktion, vilka var
-och en arbetar med olika kombinationer av sändningsslag (moder) och
-frekvensband. Detta kallas numera att de har olika konfiguration.
+Tidintervallet för gray line varierar med stationens latitud. Vid
+ekvatorn är det \(\pm\) 5 minuter och i Skandinavien \(\pm\) c:a
+\(1\frac{1}{2}\) timme omkring tidpunkten för solens uppgång
+respektive nedgång.
 
-En vanlig konfiguration av transponder är CONFIG-V/U (f.d. MOD-J) där
-upplänken är på VHF-bandet, t ex. 145.900-146.000 MHz och nerlänken på
-UHF-bandet t. ex.  435.800-435.900 MHz. Varje upplänk-frekvens
-motsvarar en bestämd nerlänk-frekvens, t. ex. upp 145.950 och ner
-435.850 MHz. Trafiken övertranspondern kan därför ske i full duplex.
+När åtminstone en av två stationer befinner sig inom gray line kan
+kortvågsförbindelse erhållas över ett mycket större avstånd än annars.
 
-Man kan då prata och lyssa samtidigt i båda riktningarna, vilket
-starkt förbättrar trafiken och gör samtalen roligare och
-intressantare.
+Kommunikation längs med gray line går bäst på låga frekvenser,
+t.ex. på 3.5 MHz amatörband, under det tidsintervall då D-skiktet just
+har börjat byggas upp (gryning) respektive nästan har brutits ned
+(skymning). Då är joniseringen av D-skiktet liten och en rymdvåg som
+träffar skiktet kommer då snarare att böjas av i D-skiktet än att helt
+dämpas. Vågutbredningen sker då både genom refraktion i D-skiktet och
+reflexion i E-skiktet.
 
-En s.k. linjär transponder kan inte bara överföra FM, utan även SSB,
-tontelegrafi och SSTV. Dessutom även RTTY och andra digitala
-trafiksätt.
+\subsection{Fädning eller signalbortfall}
+\textbf{
+HAREC a.\ref{HAREC.a.7.8}\label{myHAREC.a.7.8},
+ a.\ref{HAREC.a.7.9}\label{myHAREC.a.7.9}
+}
 
-Nästan alla amatörradioband med tillräckligt hög frekvens används i
-olika kombinationer som upp- och nerlänkar i de olika
-OSCAR-satelliterna.  AMSAT är den organisation, som fortlöpande
-informerar om amatörradiosatelliter.
-$>>>>>$ TODO: info om AMSAT-SM
+Fältstyrkan på de mottagna vågorna kan variera kraftigt från ett
+ögonblick till ett annat. Fenomenet kallas fädning (eng. fading,
+uttalas fejding).
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_7-13}
-  \caption{Transponder i rymdsatellit}
-  \label{fig:bildII7-13}
-\end{figure}
+Sådana interferensfenomen uppstår när vågorna samtidigt vandrat flera
+vägar fram till mottagarantennen, s.k. flervägsutbredning. När de
+träffar mottagarantennen kan de vara tidsförskjutna sinsemellan, med
+utsläckningseffekter som följd (interferensförluster).
 
-Amatörradion utvecklas mycket snabbt genom den satellitbaserade
-verksamheten och det kommer upp allt mer sofistikerade
-OSCAR-satelliter. Tendensen är att man efter hand går över till allt
-högre frekvensband och allt mera av digitala sändningsslag.
+Andra typer av fädning är när
+\begin{itemize}
+\item polariseringriktningen ändras p.g.a. oregelbundenheter i
+  jonosfären (polariseringsförluster),
+\item överföringsvägen dämpar vågorna tidsmässigt oregelbundet
+  (absorbtionsförluster),
+\item vågutbredningsriktningen ändras genom reflexioner mot hus,
+  bergväggar etc. (reflexionsförluster, vid t.ex. mobil radiotrafik).
+\end{itemize}
 
-Med hjälp av satellit kan förbindelseavståndet bli mycket stort även
-med enkel utrustning och små antenner. En fördel med kommunikation
-över rymdsatellit är också att den till största delen är oberoende av
-vågutbredningsvillkoren.
+\subsection{Om amatörradiobanden på kortvåg}
 
-Se bild \ref{fig:bildII7-13}.
+\subsubsection{1.8 MHz (160m):}
+
+Bandet kallas även ``top-band''. Räckvidden är normalt relativt liten,
+nattetid under vintern c:a 1200 km och i bästa fall några tusen km.
+Men under solfläcksminimum kan räckvidden vara mycket större nattetid.
+
+\subsubsection{3.5 MHz (80 m):}
+
+Under dagtid är räckvidden ca 500 km och under kvällstid 1000 - 1500
+km. Tidigt på morgonen under vintermånaderna, särskilt under
+solfläcksminimum, är räckvidden tillräcklig för interkontinentala
+förbindelser (DX = long distance). Under sommarmånaderna har bandet
+hög atmosfärisk brus nivå. Döda zoner förekommer normalt inte.
+
+\subsubsection{7 MHz (40 m):}
+
+Detta band har större räckvidd än 80 m-bandet. Under dagtid har det en
+räckvidd av 1000-2000 km. Under natten, särskilt under vintern, kan
+hela världen nås. Döda zoner är 100 km under dagen och 1000 km under
+natten.
+
+\subsubsection{14 MHz (20m):}
+
+20m-bandet är ett säkert DX-band för stora avstånd. Under kvällarna
+ökar räckvidden på ett rymdvågshopp upp till ca 4000 km.  Särskilt
+gynnsam vågutbredning erhålls vid kontakt genom en skymningszon, dvs
+där den ena parten har dag och den andra har natt. Döda zoner
+uppträder nästan alltid.
+
+\subsubsection{21 MHz (15 m):}
+
+Vågutbredningen i 15 m-bandet är bäst vid högt solfläckstal. Under
+solfläcksmaximum är bandet nästan ständigt öppet för DXförbindelser.
+
+Under solfläcksminimum är bandet i bästa fall öppet kortare perioder
+på dagtid under sommarmånaderna.
+
+Bandet är dött nattetid. Vid reflexioner via sporadiskt E-skikt kan
+avstånd av mer än 2000 km överbryggas.
+
+\subsubsection{28 MHz (10 m):}
+
+Bandet är lämpat för närkontakter upp till 50 km nattetid och för
+DX-kontakter dagtid, dock ej dagar då E-skiktet är kraftigt joniserat
+och skärmar av F-skiktet. Vågutbredningsvägen för DX är på den sida av
+jorden som har dagsljus. Döda zoner på upp till 4000 km kan
+uppstå. Förbindelser över stora avstånd är möjliga med låg effekt.
+
+Under solfläcksminimum är bandet inte användbart för DX-kontakter. Då
+är endast kortvariga förbindelser på avstånd upp till 2000 km möjliga
+genom reflexioner via sporadiska E-skikt (short skip).
+
+Bandet har i många fall VHF-karaktär och man kan ha kontakter via
+Aurora och andra liknande utbredningsformer såsom Aurora-E och dubbelt
+hopp på Auroraringen.
+
+\subsection{10, 18 och 24 MHz:}
+
+Vågutbredningsegenskaperna i dessa senast tillkomna amatörrradioband
+är ett mellanting av respektive närmast angränsande amatörradioband.
+$>>>>>$ TODO: beskriv 30m, 17m och 12m som egna band
