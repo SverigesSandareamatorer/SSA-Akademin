@@ -22,20 +22,30 @@ HAREC a.\ref{HAREC.a.5.1.1b}\label{myHAREC.a.5.1.1b},
  a.\ref{HAREC.a.5.2.1}\label{myHAREC.a.5.2.1}
 }
 
-Bild II 5-1
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_5-01}
+  \caption{Enstegs sändare}
+  \label{fig:bildII5-1}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII5-1}.
 
 Den raka sändaren är det enklaste sändarkonceptet. Då är oscillatorns
 frekvens samma som sändningsfrekvensen och ingen frekvensomvandling
 sker i signalvägen. Om en antenn kopplas till oscillatorn så blir den
 en enkel enstegs sändare.
 
-Bild II 5-1 Enstegs sändare
-
 I flerstegs raka sändare följs oscillatorn av ytterligare funktioner
 på samma frekvens som oscillatorn. Buffertsteg, drivsteg och slutsteg
 kan vara sådana funktioner.
 
-Bild II 5-2
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-02}
+  \caption{Flerstegs rak sändare}
+  \label{fig:bildII5-2}
+\end{figure}
+
+Bild \ref{fig:bildII5-2}.
 
 Bilden visar en rak sändare, som består av oscillator+ buffertsteg 1 +
 buffertsteg 2 + drivsteg + effektförstärkare.
@@ -71,11 +81,13 @@ t.ex. multiplicera oscillatorfrekvensen. I olinjära kretsar alstras
 Endast när kravet på frekvensstabilitet är lågt används den frekvens,
 som VFO eller CO arbetar på, även för nyttosignalen.
 
-Bild II 5-2 Flerstegs rak sändare
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-03}
+  \caption{Bild II 5-3 FM-sändare med frekvensmultiplicering}
+  \label{fig:bildII5-3}
+\end{figure}
 
-Bild II 5-3 FM-sändare med frekvensmultiplicering
-
-Bild II 5-3
+Bild \ref{fig:bildII5-3}.
 
 Oscillatorn svänger här på en låg frekvens, som multipliceras i
 olinjära förstärkarsteg till en hög sändningsfrekvens. Oftast
@@ -104,20 +116,24 @@ självsvängningar är mindre i en frekvensmultiplicerande än i en rak
 sändare, eftersom ino ch utgångsfrekvenserna i flera av stegen är
 olika.
 
-De frekvensmultiplicerande stegen i bild II 5-3 arbetar i klass C,
+De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
 d.v.s. olinjärt, vilket medför amplituddistorsion. Vid frekvens-och
 fasmodulering saknar emellertid detta betydelse, eftersom amplituden i
 det fallet inte är informationsbärande. Övertoner i nyttosignalen bör
 dock filtreras bort.
-
-Bild II 5-4 2-bands CW-sändare med frekvensblandning
 
 \subsection{Sändare med frekvensblandning - superheterodynsändare}
 \textbf{HAREC a.\ref{HAREC.a.5.1.1a}\label{myHAREC.a.5.1.1a}}
 
 \subsubsection{Telegrafisändare (CW) för kortvåg}
 
-Bild II 5-4
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-04}
+  \caption{2-bands CW-sändare med frekvensblandning}
+  \label{fig:bildII5-4}
+\end{figure}
+
+Bild \ref{fig:bildII5-4}.
 
 En VFO är mest stabil på låga frekvenser medan en CO har god
 stabilitet även på högre frekvenser. När signalerna från dessa
@@ -138,10 +154,16 @@ HAREC a.\ref{HAREC.a.5.2.2}\label{myHAREC.a.5.2.2},
  a.\ref{HAREC.a.5.3.10}\label{myHAREC.a.5.3.10}
 }
 
-Bild II 5-5
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-05}
+  \caption{2-bands SSB-sändare med frekvensblandning}
+  \label{fig:bildII5-5}
+\end{figure}
+
+Bild \ref{fig:bildII5-5}.
 
 Bilden visar en SSB-sändare för två kortvågsband och bygger på
-sändaren i Bild 5-4.  Filtermetoden är den mest använda för att bereda
+sändaren i bild \ref{fig:bildII5-4}.  Filtermetoden är den mest använda för att bereda
 en SSB-signal. Oscillatorsignalen amplitudmoduleras i en balanserad
 blandare. I en sådan undertrycks bärvågen medan de båda sidbanden
 släpps fram. Det ena sidbandet undertrycks med ett
@@ -156,14 +178,18 @@ slutsteg utförs för att arbeta i detta frekvensband, antingen utan
 särskild avstämning - s.k. bredbandigt utförande - eller genom
 avstämning på en viss frekvens, vilket ger renaste signalen.
 
-Bild II 5-6
+Bild \ref{fig:bildII5-6}.
 
-Bilden visar en SSB-sändare som liknar den i Bild II 5-5. Den stora
+Bilden visar en SSB-sändare som liknar den i bild \ref{fig:bildII5-5}. Den stora
 skillnaden är att signalfrekvensen kan flyttas till flera olika band
 med hjälp av ännu en frekvensblandning.  Därför används fler valbara
 bandpassfilter.
 
-Bild II 5-6 Flerbands SSB-sändare med frekvensblandning
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-06}
+  \caption{Bild II 5-6 Flerbands SSB-sändare med frekvensblandning}
+  \label{fig:bildII5-6}
+\end{figure}
 
 I en SSB-signal ligger all information i amplituden, till skillnad
 från en FM-signal där all information ligger i frekvensen. En
@@ -179,8 +205,8 @@ likspänning från en PLL - Phase Locked Loop vilket är en digitalt
 styrd krets.
 
 En PLL kan användas t.ex. i raka sändare och heterodynsändare. I det
-första fallet (Bild II 5-2) kan frekvensen i den enda ocillatorn
-styras av en PLL. I det andra fallet (Bild II 5-6) kan frekvensen i
+första fallet (bild \ref{fig:bildII5-2}) kan frekvensen i den enda ocillatorn
+styras av en PLL. I det andra fallet (bild \ref{fig:bildII5-6}) kan frekvensen i
 någon av oscillatorerna styras av en PLL.  En närmare beskrivning av
 PLL-styrning av dessa två sändarkoncept följer här.
 
@@ -189,7 +215,13 @@ PLL-styrning av dessa två sändarkoncept följer här.
 HAREC a.\ref{HAREC.a.5.2.3}\label{myHAREC.a.5.2.3}
 }
 
-Bild II 5-7
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-07}
+  \caption{PLL-styrd FM-sändare för FM}
+  \label{fig:bildII5-7}
+\end{figure}
+
+Bild \ref{fig:bildII5-7}.
 
 Bilden visar en PLL-styrd rak sändare med en VCO (spänningsstyrd
 oscillator) och ett PA (effektförstärkare).
@@ -242,11 +274,15 @@ Frekvensinställningen, d.v.s. programmeringen av delaren kan utföras
 på flera sätt. Exempel på inställningsorgan är tumhjuls-omkopplare,
 logikkretsar i kombination med en knappsats o.s.v.
 
-Bild II 5-8 PLL-styrd SSB-sändare för kortvåg
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_2_5-08}
+  \caption{Bild II 5-8 PLL-styrd SSB-sändare för kortvåg}
+  \label{fig:bildII5-8}
+\end{figure}
 
 \subsubsection{PLL-styrd sändare för kortvåg}
 
-Bild II 5-8
+Bild \ref{fig:bildII5-8}.
 
 Bilden visar ett avancerat koncept för en kortvågssändare.
 SSB-signalen alstras på frekvensen 9 MHz och blandas med 61 MHz i 1:a
@@ -273,8 +309,8 @@ d.v.s. 1:4.11, vilket är för mycket för en VCO.
 
 SSB-signalen efter 2:a blandaren är inte lämplig att använda i
 regleringsslingan i PLL. Anledningen är att bärvågen är undertryckt i
-denna signal och att därför HFfrekvenserna i det resterande sidbandet
-varierar i takt med de modulerande LFfrekvenserna.
+denna signal och att därför HF-frekvenserna i det resterande sidbandet
+varierar i takt med de modulerande LF-frekvenserna.
 
 I konceptet på bilden rekonstrueras bärvågen i en 1:a
 kontrollblandare, genom blandning av de två CO-frekvenserna 9 och 61
