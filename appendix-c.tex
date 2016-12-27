@@ -38,7 +38,7 @@ $>>>>>$ TODO: Förfarandet som beskrivs här för omvandling dB-spänning är ot
 \item Dela upp effektförhållandet i faktor och 10-potens
 \item Bestäm dB-talet för 10-potensen
 \item Bestäm dB-talet för faktorn med nomogram (se bild
-  \ref{nomogram-db-spänning}), tabell eller räknare
+  \ref{appendix-c-nomogram-db-effekt}), tabell eller räknare
 \item Addera dB-talen till ett slutresultat
 \end{enumerate}
 
@@ -58,7 +58,13 @@ Exempel: dB-talet för 70 000-faldig effektminskning
 \item 40 + 8.5 =- 48.5 dB
 \end{enumerate}
 
-Exempel: En Vagi-antenn omfördelar den utstrålade effekten så att den
+\begin{figure}
+  \fbox{\includegraphics[width=\textwidth]{images/nomogram_db_effekt}}
+  \caption{Nomogram för omvandling mellan effekt och decibel}
+  \label{appendix-c-nomogram-db-effekt}
+\end{figure}
+
+Exempel: En Yagi-antenn omfördelar den utstrålade effekten så att den
 i bästa riktningen blir 56-faldigt bättre än från en
 referensantenn. Hur många dB motsvarar det?
 
@@ -156,7 +162,7 @@ I sifferfältet kan nu utläsas en effektförstärkning (kvot) av
 \begin{itemize}
 \item Dela upp ström- eller spänningsförhållandet i faktor och 10-potens
 \item Bestäm dB-talet för 10-potensen
-\item Bestäm dB-talet förfaktorn ur nomogrammet (se bild \ref{nomogram-db-spänning})
+\item Bestäm dB-talet förfaktorn ur nomogrammet (se bild \ref{appendix-c-nomogram-db-spänning})
 \item Addera dB-talen till ett slutresultat
 \end{itemize}
 
@@ -259,7 +265,7 @@ entalet 4 finner vi 50 dB i den översta raden. Till vänster om 354
 finner vi 1 dB.  Som ett närmevärde är alltså förstärkningen 50 + 1 =
 51~dB.
 
-Om kvoten i nomogram i bild \ref{nomogram-db-soänning} är en eller flera 10-potenser högre
+Om kvoten i nomogram i bild \ref{appendix-c-nomogram-db-soänning} är en eller flera 10-potenser högre
 än 10 (ggr), så kan nomogrammet utökas enligt följande tabell.
 
 \begin{tabular}{llll}
@@ -274,9 +280,9 @@ Om kvoten i nomogram i bild \ref{nomogram-db-soänning} är en eller flera 10-po
 * kvot av \(U_{hög}/U_{låg}\) resp. \(I_{hög}/I_{låg}\).
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_appendix_c_nomogram}
+  \fbox{\includegraphics[width=\textwidth]{images/nomogram_db_spanning}}
   \caption{Nomogram för omvandling mellan spänning och decibel}
-  \label{nomogram-db-spänning}
+  \label{appendix-c-nomogram-db-spänning}
 \end{figure}
 
 \end{rev-raderas}
