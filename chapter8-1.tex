@@ -31,7 +31,7 @@ förkopplingsresistansen - om en sådan används).
 
 \subsubsection{Utöka mätområdet för en voltmeter}
 
-Bild II 3-1
+Bild \ref{fig:BildII3-01}
 
 Med hjälp av förkopplingsresistor i serie med voltmetern kan man mäta
 högre spänning än den som voltmetern är gjord för.  Spänningen
@@ -61,7 +61,7 @@ i strömshunten-om en sådan används.
 
 \subsubsection{Utöka mätområdet för en amperemeter}
 
-Bild II 3-2
+Bild \ref{fig:BildII3-02}
 
 Med en strömshunt (en resister parallellt) över amperemetern kan man
 mäta högre ström än den som amperemetern är gjord för.
@@ -219,7 +219,7 @@ Med spänningen och konstlastens impedans (resistans) bekanta så kan
 uteffekten beräknas enligt formlerna i kapitel \ref{mätaeffekt}.
 
 Den största HF-amplitud som uppstår momentant vid modulering motsvarar
-PEPeffekten (PEP= Peak Enveiope Power).
+PEP-effekten (PEP = Peak Envelope Power).
 
 En mindre exakt metod att mäta HF-spänning är med voltmeter med
 likriktare.  Utifrån den uppmätta spänningen kan man beräkna effekten
@@ -228,7 +228,13 @@ bara ett ``utjämnat'' toppvärde, vilket inte är det faktiska värde som
 instrumentet ``känner''. Jämför med oscilloskopet som inte har denna
 visningströghet.
 
-Bild II 8-1
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/bild_2_8-01}
+  \caption{Mätning av sändareffekt}
+  \label{fig:bildII8-1}
+\end{wrapfigure}
+
+Bild \ref{fig:bildII8-1}.
 
 Bilden visar en voltmeter med likriktare, som kopplats till en sändare
 över spänningsdelare. Två alternativa delare visas; den ena består av
@@ -251,8 +257,6 @@ effekten. Denna metod är dock inte så vanlig.
 
 \subsection{Direktvisande effektmetrar}
 
-Bild II 8-6
-
 Många föredrar direktvisande effektmätare.  En HF-voltmeter kan
 givetvis graderas för att visa effekt i stället för spänning, men då
 med den viktiga förutsättningen att impedansen måste ha en fastställt
@@ -263,8 +267,6 @@ Om man avläser effekten genom en 75 Ω-kabel på ett instrument för 50
 
 De effektmetrar som förekommer i SVF-instrument är egentligen
 voltmetrar, men med skalan graderad i effekt.
-
-Bild II 8-1 Mätning av sändareffekt
 
 \subsection{Mäta ståendevågförhållande - SVF}
 \textbf{
@@ -350,7 +352,7 @@ En ofta förbisedd felkälla är temperaturen i mätobjektet och/eller i
 instrumentet, det kan vara av inkopplingstiden m.m.
 
 \emph{Visningströgheten} är inget mätfel i sig men kan till nackdel
-vid snabba förlopp.  Trögheten förekommersåväl vid analog som digital
+vid snabba förlopp.  Trögheten förekommer såväl vid analog som digital
 visning. I det förra fallet är masströghet i instrumentets rörliga
 delar orsaken och i det andra fallet är orsaken klockfrekvensen för
 instrumentets mikroprocessor.
