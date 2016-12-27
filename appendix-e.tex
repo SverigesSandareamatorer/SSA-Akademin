@@ -1,78 +1,83 @@
 \chapter{BESKRIVNINGSKOD FÖR SÄNDNINGSSLAG}
 
-Ett resultat av World Administrative Radio
-Conferece (WARC) som avhölls år 1979 var
-en ny beskrivningskod för radiosändningar.
-Före WARC 79 uttrycktes den nödvändiga bandbredden i termer av kHz. Till exempel användes då 0.1 för 1 00 Hz och 6000 för
-6 MHz.
-l dataåldern behövs ett elegantare system för taluppställningar. Det nya systemet
-går ut på att uttrycka den nödvändiga bandbredden med tre siffror och en bokstav.
-Bokstaven placeras på platsen för decimaltecknet och representerar enheten för bandbredd. Bokstäverna H (Hz), K (kHz), M (MHz)
-och G (GHz) används, medan varken Oeller
-K, M eller G får vara det första tecknet.
-Numeriska värden med mer än tre signifikanta siffror rundas av till tre.
-Detta benämningssystem är dock inte
-utan problem. Det tar mer hänsyn till metoden hur en signal alstras, snarare än hur en
-signal helt enkelt ser ut när den sänds.
-Följdaktligen skall direkt modulation av
-huvudbärvågen benämnas på ett sätt, medan
-modulation av en underbärvåg i en enkelt
-sidbandssändare med undertryckt bärvåg
-skall benämnas på ett annat sätt. Om man
-t. ex. nycklarett RTTY-modem med en direktskrivande fjärrskrivare och sedan bytertill en
-dator för att göra samma sak, så ändras
-benämningen av sändningsslaget
-Bandbredd
-Basbandetärdetfrekvensområde, som upptas av signaler innan de modulerar bärvågen. Signaler i basbandet ligger vanligen
-mycket lägre i frekvens än bärvågen. l den
-låga änden av basbandet kan frekvensen
-närma sig eller vara likström (O Hz). l den
-höga änden beror frekvensen på det värde
-då information finns liksom att det finns underbärvågor eller andra speciella signaler
-inom basbandet Det finns ett basband för
-alla typer av signaler, vare sig de är analoga
-eller digitala. Det skall också förstås, att
-termen basband är relaterad till den modulation som avses från fall till fall.
-Det kan finnas mer än ett basband i en
-komplett modulationsprocess. Till exempel,
-en nycklad ton som går till sändaren genom
+Ett resultat av World Administrative Radio Conferece (WARC) som
+avhölls år 1979 var en ny beskrivningskod för radiosändningar.  Före
+WARC 79 uttrycktes den nödvändiga bandbredden i termer av kHz. Till
+exempel användes då 0.1 för 100 Hz och 6000 för 6 MHz.
 
-mikrofoningången är dess analoga basband
-medan nycklingspulserna till tongeneratorn
-är dess digitala basband.
-Sidband alstras alltid när en bärvåg moduleras. De är blandningsprodukter på båda
-sidor om bärvågen, som resultat av att signaler från basbandet modulerar bärvågen
-på något sätt. Det övre sidbandetkallas USB
-(av upper sideband, eng.) och det undre
-sidbandet LSB (av lower sideband, eng.).
-l system för amplitudmodulation är bredden på sidbanden i stort lika med den högsta
-frekvenskomposanten i basbandet Sidbanden är spegelbilder av varandra och innehåller exakt samma information. För att spara
-bandbredd räcker det alltså med att överföra
-ena sidbandet, varvid det andra sidbandet
-kan undertryckas, liksom även bärvågen.
-l andra modulationssystem än för amplitudmodulation däremot, kan bredden på sidbanden mycket överstiga den högsta frekvenskomposanten i basbandssignalen.
-Använd bandbredd är avståndet mellan
-översta och nedersta delen av ett spektrum,
-där medeleffekten är lägre än 0.5°/o (-23 dB)
-av den totala medeleffekten. l vissa fall kan
-en annan relativ effektnivå specificeras; t ex.
-i USA 0.25°/o (-26 dB) för reglering av digital
-kommunikation. För amatörer är det inte
-alltid lätt att bestämma den använda bandbredden. Den kan mätas med en spektrumanalysator, men ett sådant instrument är
-svårtillgänglig för de flesta amatörer. Den
-använda bandbredden kan även beräknas,
-men det kräver matematikkunskaper i informationsteori och behandlas inte här.
-Nödvändig bandbredd är den del av den
-använda bandbredden, som räcker för att
-säkra informationsöverföringen i den omfattning och kvalitet som krävs. Förenklade
-sätt att beräkna nödvändig bandbredd vid
-specifika modulationssystem finns i kapitel1.
-Tilldelat frekvensband är den nödvändiga bandbredden plus två gånger den absoluta frekvenstoleransen.
-Frekvenstolerans (uttryckt i del per 106 ,
-procent eller i Hz) är den maximalt tillåtna
-frekvensavvikelsen från den korrekta frekvensen.
+I dataåldern behövs ett elegantare system för taluppställningar. Det
+nya systemet går ut på att uttrycka den nödvändiga bandbredden med tre
+siffror och en bokstav.  Bokstaven placeras på platsen för
+decimaltecknet och representerar enheten för bandbredd. Bokstäverna H
+(Hz), K (kHz), M (MHz) och G (GHz) används, medan varken 0 eller K, M
+eller G får vara det första tecknet.  Numeriska värden med mer än tre
+signifikanta siffror rundas av till tre.
 
-E-1
+Detta benämningssystem är dock inte utan problem. Det tar mer hänsyn
+till metoden hur en signal alstras, snarare än hur en signal helt
+enkelt ser ut när den sänds.
+
+Följdaktligen skall direkt modulation av huvudbärvågen benämnas på ett
+sätt, medan modulation av en underbärvåg i en enkelt sidbandssändare
+med undertryckt bärvåg skall benämnas på ett annat sätt. Om man
+t. ex. nycklarett RTTY-modem med en direktskrivande fjärrskrivare och
+sedan bytertill en dator för att göra samma sak, så ändras benämningen
+av sändningsslaget
+
+\subsection{Bandbredd}
+
+\emph{Basbandet} är det frekvensområde, som upptas av signaler innan
+de modulerar bärvågen. Signaler i basbandet ligger vanligen mycket
+lägre i frekvens än bärvågen. I den låga änden av basbandet kan
+frekvensen närma sig eller vara likström (0 Hz). I den höga änden
+beror frekvensen på det värde då information finns liksom att det
+finns underbärvågor eller andra speciella signaler inom basbandet Det
+finns ett basband för alla typer av signaler, vare sig de är analoga
+eller digitala. Det skall också förstås, att termen basband är
+relaterad till den modulation som avses från fall till fall.
+
+Det kan finnas mer än ett basband i en komplett
+modulationsprocess. Till exempel, en nycklad ton som går till sändaren
+genom mikrofoningången är dess analoga basband medan nycklingspulserna
+till tongeneratorn är dess digitala basband.
+
+\emph{Sidband} alstras alltid när en bärvåg moduleras. De är
+blandningsprodukter på båda sidor om bärvågen, som resultat av att
+signaler från basbandet modulerar bärvågen på något sätt. Det övre
+sidbandet kallas USB (av eng. upper sideband) och det undre sidbandet
+LSB (av eng. lower sideband).
+
+I system för amplitudmodulation är bredden på sidbanden i stort lika
+med den högsta frekvenskomposanten i basbandet. Sidbanden är
+spegelbilder av varandra och innehåller exakt samma information. För
+att spara bandbredd räcker det alltså med att överföra ena sidbandet,
+varvid det andra sidbandet kan undertryckas, liksom även bärvågen.
+
+I andra modulationssystem än för amplitudmodulation däremot, kan
+bredden på sidbanden mycket överstiga den högsta frekvenskomposanten i
+basbandssignalen.
+
+\emph{Använd bandbredd} är avståndet mellan översta och nedersta delen
+av ett spektrum, där medeleffekten är lägre än 0.5\% (-23 dB) av den
+totala medeleffekten. I vissa fall kan en annan relativ effektnivå
+specificeras; t ex.  i USA 0.25\% (-26 dB) för reglering av digital
+kommunikation. För amatörer är det inte alltid lätt att bestämma den
+använda bandbredden. Den kan mätas med en spektrumanalysator, men ett
+sådant instrument är svårtillgänglig för de flesta amatörer. Den
+använda bandbredden kan även beräknas, men det kräver
+matematikkunskaper i informationsteori och behandlas inte här.
+
+\emph{Nödvändig bandbredd} är den del av den använda bandbredden, som
+räcker för att säkra informationsöverföringen i den omfattning och
+kvalitet som krävs. Förenklade sätt att beräkna nödvändig bandbredd
+vid specifika modulationssystem finns i kapitel1.
+
+\emph{Tilldelat frekvensband} är den nödvändiga bandbredden plus två
+gånger den absoluta frekvenstoleransen.
+
+\emph{Frekvenstolerans} (uttryckt i del per \(10^6\) , procent eller i
+Hz) är den maximalt tillåtna frekvensavvikelsen från den korrekta
+frekvensen.
 
 (Exempel)
 
@@ -146,7 +151,7 @@ x
 
 l fråga om bassignalens karaktär skiljer
 man å ena sidan på kanaler för kvantiserad eller digital information, d.v.s. där signalen växlar språngvis mellan vissa givna tillstånd, och på kanaler för analog information, där signalen kan variera kontinuerligt inom givna gränser.
-Att fastställa arten av huvudbärvågens modulation kan kräva viss eftertanke. l många fall
+Att fastställa arten av huvudbärvågens modulation kan kräva viss eftertanke. I många fall
 får den information som skall överföras, modulera en underbärvåg, som i sin tur påtrycks
 modulatorn för huvudbärvågen.
 
@@ -250,7 +255,7 @@ C3F MN
 ---.-.....
 Utsändningens bandbredd
 En fullständig kodbeteckning för en radioutsändning är uppbyggd av en niostäflig teckenföljd, t. ex.
-6M25 C3F MN. l teckenföljden är de första fyra
+6M25 C3F MN. I teckenföljden är de första fyra
 tecknen (t.ex. 6M25) bandbreddsangivelsen.
 Bandbredden ska/f anges med tresiffror samt en
 bokstav som decimaltecken.
