@@ -142,7 +142,7 @@ I sifferfältet kan nu utläsas en effektförstärkning (kvot) av
 \begin{itemize}
 \item Dela upp ström- eller spänningsförhållandet i faktor och 10-potens
 \item Bestäm dB-talet för 10-potensen
-\item Bestäm dB-talet förfaktorn ur nomogrammet
+\item Bestäm dB-talet förfaktorn ur nomogrammet (se bild \ref{nomogram-db-spänning})
 \item Addera dB-talen till ett slutresultat
 \end{itemize}
 
@@ -236,7 +236,7 @@ entalet 4 finner vi 50 dB i den översta raden. Till vänster om 354
 finner vi 1 dB.  Som ett närmevärde är alltså förstärkningen 50 + 1 =
 51~dB.
 
-Om kvoten i nedanstående nomogram är en eller flera 10-potenser högre
+Om kvoten i nomogram i bild \ref{nomogram-db-soänning} är en eller flera 10-potenser högre
 än 10 (ggr), så kan nomogrammet utökas enligt följande tabell.
 
 \begin{tabular}{llll}
@@ -250,7 +250,14 @@ Om kvoten i nedanstående nomogram är en eller flera 10-potenser högre
 
 * kvot av \(U_{hög}/U_{låg}\) resp. \(I_{hög}/I_{låg}\).
 
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/bild_appendix_c_nomogram}
+  \caption{Nomogram för omvandling mellan spänning och decibel}
+  \label{nomogram-db-spänning}
+\end{figure}
+
 \subsection{Decibel över 1 m W vid 50 Ω [dB(m)]}
+
 Som nu beskrivits är uttrycket decibel ett logaritmiskt mått för hur
 två effekter förhåller sig till varandra. När de jämförda effekterna
 uppträder över lika stora impedanser, kan även förhållandet mellan två
@@ -279,8 +286,6 @@ tillgår på följande sätt.
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
 med en impedans av 50 n. För god anpassning väljs då koaxialkablarna
 mellan apparaterna med en karaktäristisk impedans av 50 Ω.
-
-$>>>>>$ TODO: HÄR SAKNAS SJÄLVA NOMOGRAMMET
 
 \emph{Det har utbildats en praxis, att referensvärdet vid jämförelse
   av signalnivåer i radiosystem skall vara en milliwatt (1 mW)
