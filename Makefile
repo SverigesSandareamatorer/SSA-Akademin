@@ -66,6 +66,10 @@ koncept.bbl: koncept.aux koncept.bib
 koncept.ind: koncept.idx
 	makeindex koncept
 
+# TODOs
+TODOs:  koncept.tex $(KONCEPT_FILES)
+	grep -n TODO *.tex > TODOs
+
 # Länkade bilder
 images.linked: koncept.tex $(KONCEPT_FILES)
 	grep images *.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images.linked
