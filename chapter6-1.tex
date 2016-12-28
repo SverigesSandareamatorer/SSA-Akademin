@@ -1,4 +1,5 @@
 \section{Antenner - allmänt}
+\index{antenner}
 
 Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt
 utan ett effektivt antennsystem. Det är en huvudförutsättning för
@@ -17,8 +18,12 @@ antennkopplare m.m.
 
 
 \subsubsection{Våghastighet}
-
 \label{ljushastigheten}
+\index{våghastighet}
+\index{ljushastighet}
+\index{dielektricitetskonstant}
+\index{permabilitetetskonstant}
+\index{frekvens}
 
 I vakuum breder elektromagnetiska vågor ut sig med hastigheten
 \(c_0\), vilken mest kallas ljushastigheten.
@@ -46,6 +51,8 @@ och våglängden således
 \subsection{Antennlängd}
 
 \subsubsection{Elektriska längden}
+\index{elektrisk längd}
+\index{antenn!elektrisk längd}
 
 Längden för en resonant, ideal antenn som är en våglängd lång kan
 beräknas med ovanstående formel. Vi kallar denna längd för den
@@ -58,6 +65,12 @@ Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\))
 \[l_e = \frac{c}{2f} \quad \text{[m]}\]
 
 \subsubsection{Mekaniska längden}
+\index{mekanisk längd}
+\index{antenn!mekanisk längd}
+\index{förkortningsfaktor}
+\index{antenn!förkortningsfaktor}
+\index{resonansfrekvens}
+\index{antenn!resonansfrekvens}
 
 Man skiljer på antennens elektriska och mekaniska längd. Av flera
 orsaker blir den mekaniska antennlängden (\(l_m\)) för samma
@@ -111,6 +124,9 @@ l_m = \frac{\lambda}{2f} \cdot 0.98 = \frac{42.86}{2}\cdot 0.98 = 21
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.1}\label{myHAREC.a.6.2.1}
 }
+\index{halvvågsantenn}
+\index{antenn!halvvåg}
+\index{antenn!ström och spänning}
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/bild_2_6-01}
@@ -150,6 +166,11 @@ längs med antennen.
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.2}\label{myHAREC.a.6.2.2}
 }
+\index{impedans!antenn}
+\index{antenn!impedans}
+\index{halvvågsantenn}
+\index{antenn!halvvågs}
+\index{överton}
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/bild_2_6-02}
@@ -189,6 +210,20 @@ mellan antenn och kabel, vilket måste åtgärdas på något sätt. Se
 avsnitt \ref{transmissionsledningar} i detta kapitel.
 
 \subsubsection{Matningsimpedansen i några antenner}
+\index{W3DZZ-antenn}
+\index{antenn!W3DZZ}
+\index{omvikt dipol}
+\index{antenn!omvikt dipol}
+\index{folded dipol}
+\index{jordplanantenn}
+\index{antenn!jordplan}
+\index{GP-antenn}
+\index{antenn!GP}
+\index{Yagi-antenn}
+\index{antenn!Yagi}
+\index{Quad-antenn}
+\index{antenn!Quad}
+
 Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet med
 mittmatade partier på 2:a harmoniska övertonen, d.v.s. dubbla
 grundfrekvensen. På 80- och 40 m-banden är antennens matningsimpedans
@@ -214,6 +249,8 @@ riktantenner. En 50 - 60 Ω koaxialkabel kan då användas direkt.
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.3}\label{myHAREC.a.6.2.3}
 }
+\index{reaktans!antenn}
+\index{antenn!reaktans}
 
 Den elektriska svängningskretsen behandlas i avsnitt \ref{oscillatorer}. Där framställs
 svängningskretsens grundegenskaper resistans \(R\), induktans \(L\)
@@ -244,6 +281,10 @@ så blir den resulterande reaktansen positiv (induktiv), d.v.s. \(X_L\)
 är större än \(X_C\).
 
 \subsection{Elektrisk ``förlängning'' och ``förkortning''}
+\index{elektrisk förlängning}
+\index{antenn!elektrisk förlängning}
+\index{elektrisk förkortning}
+\index{antenn!elektrisk förkortning}
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/bild_2_6-04}
@@ -270,9 +311,21 @@ kan en antennkopplare med nödvändiga reaktiva komponenter behövas.  Se
 längre fram i kapitlet.
 
 \subsection{Anpassning till sändarens impedans}
+\textbf{
+HAREC a.\ref{HAREC.a.5.3.7}\label{myHAREC.a.5.3.7}
+}
+\index{avstämningsanordning}
+\index{match}
+\index{sändare!match}
+\index{impedansanpassning}
+\index{sändare!impedansanpassning}
+\index{π-filter}
+\index{sändare!π-filter}
+\index{ståendevåg}
 
 Ett sändarslutsteg med elektronrör är vanligen utrustat med en
-avstämningsanordning vid HF-utgången. Syftet är att kunna anpassa
+\emph{avstämningsanordning} (eng. \emph{matching network} och \emph{match})
+vid HF-utgången. Syftet är att kunna anpassa
 sändarens utgångsimpedans till impedansen i antennledningen. I moderna
 sändare består denna anordning mycket ofta av ett s.k. π-filter, vars
 utgångsimpedans kan variera mellan c:a 30-150 Ω.
@@ -289,6 +342,8 @@ uppträder ingen stående våg på matarledningen och mesta möjliga effekt
 överförs från sändaren till antennen.
 
 \subsection{Antennens strålningsdiagram}
+\index{strålningsdiagram}
+\index{antenn!strålningdiagram}
 
 \begin{figure}
   \includegraphics[width=\textwidth]{images/bild_2_6-05}
@@ -316,8 +371,21 @@ Samma diagram gäller både för en sändar- och mottagarantenn. styrkan
 på en utstrålad signal motsvaras av styrkan på mottagen signal.
 
 \subsection{Antennvinst}
+\index{antennvinst}
+\index{antenn!antennvinst}
+\index{isotropisk antenn}
+\index{antenn!isotropisk}
+\index{symbol!G antennvinst}
+\index{dBi isotropiskt gain}
+\index{antenn!dBi isotropiskt gain}
+\index{isotropiskt gain (dBi)}
+\index{antenn!isotropiskt gain (dBi)}
+\index{dBd dipol gain}
+\index{antenn!dBd dipol gain}
+\index{dipol gain (dBd)}
+\index{antenn!dipol gain (dBd)}
 
-Med antennvinst \(G\) (eng. gain) menas förhållandet mellan effekten
+Med \emph{antennvinst} \(G\) (eng. \emph{gain}) menas förhållandet mellan effekten
 \(P_t\) i huvudstrålningsriktningen (framriktningen för en antenn med
 osymmetriskt utstrålad effekt) och effekten från en definierad
 referensantenn.
@@ -395,6 +463,10 @@ Ungefärlig antennvinst för olika antenner med en isotropantenn som referens:
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
 }
+\index{effektivt utstrålad effekt (ERP)}
+\index{antenn!effektivt utstrålad effekt (ERP)}
+\index{ERP Effective Radiated Power}
+\index{antenn!ERP Effective Radiated Power}
 $>>>>>$ TODO: EIRP saknas och krävs av HAREC, lägg till.
 
 Effektivt utstrålad effekt (ERP - effective radiated power) är den
@@ -408,6 +480,8 @@ alltså borträknad före beräkningen av ERP.
 \textbf{
 HAREC a.\ref{HAREC.a.6.2.8}\label{myHAREC.a.6.2.8}
 }
+\index{fram/backförhållande}
+\index{antenn!fram/backförhållande}
 
 Med fram-/backförhållande (F/B) för en riktantenn menas förhållandet
 mellan den utstrålade effekten i framriktningen \(P_f\) och effekten i
@@ -456,6 +530,9 @@ Exempel 2:
 fram- och backriktning är lika stora, vilket inträffar för en dipol.
 
 \subsection{Halvvärdesbredd}
+\index{halvvärdesbredd}
+\index{antenn!halvvärdesbredd}
+
 Studera diagrammet för den horisontella strålningen från en
 riktantenn.
 
