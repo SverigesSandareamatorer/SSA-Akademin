@@ -40,7 +40,8 @@ isolation för det gemensamma 12 V kraftaggregatet.
 \emph{Jordning} (eng. \emph{bonding}) eller dagligt tal \emph{jord} (eng.
 \emph{ground}, \emph{earth}) är en kopplings-strategi för att få samma
 referens-potential i olika delar av en elektrisk koppling. Man bygger ett
-\emph{jordnät} (eng. \emph{bonding network}) för att koppla samman de olika
+\emph{jordnät} (eng. \emph{bonding network (BN)} \cite[3.2.1]{K27-1991} och
+\emph{earthing network}) \cite[3.1.3]{K27-1991} för att koppla samman de olika
 jordpunkterna.
 
 Den engelska termen \emph{bonding} och även \emph{bondning network} ger en
@@ -50,7 +51,8 @@ referens-spänning. Det är helt enkelt en galvanisk sammankoppling.
 
 Många gånger kallas den referens-potentialen för \emph{jord-potential} för att
 det är väldigt behändigt att använda jorden som referens, helt enkelt gräva ned
-en ledare i marken för att den vägen få tillgång till jordpotentialen.
+en ledare i marken, t.ex. jordspett (eng. \emph{earth electrode})
+\cite[3.1.2]{K27-1991}, för att den vägen få tillgång till jordpotentialen.
 
 Jorden och jordning är dock ofta missförstått, det finns en övertro på att man
 kan ta ned störningar med enbart jordning. Det förekommer också att man
@@ -73,6 +75,9 @@ med skyddsjorden i elcentralen, men sedan hanteras den som en separat ledare.
 Man får inte koppla ihop dem för att spara ledare!
 
 \subsection{Seriekoppling av jord}
+
+Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
+\cite[3]{ott1988} mellan ett antal strömförbrukare.
 
 Ponera att vi har tre ström-förbrukare som var och en bidrar med en ström
 \(I_1\), \(I_2\) och \(I_3\), och att dessa är seriekopplade till en
@@ -113,8 +118,9 @@ isolation mellan de olika jord-strömmarna och hur noll-potentialen upplevs.
 \index{nolla}
 
 Om vi istället ansluter våra tre laster med individuella ledare till jord
-kommer de olika strömmarna inte att samverka. Vi har därmed åstadkommit en
-isolation mellan strömmarna med avseende på jord-anslutningen.
+kommer de olika strömmarna inte att samverka, detta är en parallell koppling
+av jord \cite[3]{ott1988}. Vi har därmed åstadkommit en isolation mellan
+strömmarna med avseende på jord-anslutningen.
 
 Dock kommer kommer varje ström-källa uppleva en förskjutning i spänningen av
 sin jord som beror på dess egen ström och impedansen den har till jord. För att
@@ -181,8 +187,9 @@ uppstå när man kopplar ihop två apparater.
 En strategi för att skapa isolation från jord-vägen är att helt enkelt
 isolera signalerna och dess jord från den av kraftförsörjningen, detta kallas
 för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
-bonding network (IBN)}). Man börjar plötsligt prata om \emph{skyddsjord}
-skilt från \emph{signaljord} (eng. \emph{signal ground}).
+bonding network (IBN)}) \cite[3.2.4]{K27-1991}.
+Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
+(eng. \emph{signal ground}).
 
 För apparater med växelströmsmatning har man redan en transformator, som ju
 tillhandahåller en galvanisk isolation mellan primär-sidan (elkraft) och
@@ -245,7 +252,7 @@ valt en felaktig lösning.}
 \index{jordbrum}
 
 En annan strategi är \emph{sammankopplad jordning} (eng. \emph{mesh bonding}
-och \emph{mesh bonding network (mesh-BN)})
+och \emph{mesh bonding network (mesh-BN)}) \cite[3.2.3]{K27-1991}
 där man istället för att isolera satsar på att koppla samman jordarna, hårt.
 Varje signalkabel sitter ansluten mot chassijord och därmed skyddsjord och
 man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
