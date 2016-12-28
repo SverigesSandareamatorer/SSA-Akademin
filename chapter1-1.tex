@@ -234,7 +234,13 @@ genomflyts av en likström av \(1\ Ampere\ [A]\) under effektutvecklingen \(1\ W
 \subsection{Symboler}
 
 \begin{wrapfigure}[6]{R}{0.3\textwidth}
-  \fbox{\includegraphics[width=0.3\textwidth]{images/bild_2_1-batteri}}
+  \fbox{
+    \begin{circuitikz}
+      \draw
+      (4,1) to[battery1] (1,1)
+      ;
+    \end{circuitikz}
+  }
   \caption{Schemasymbol för batteri}
   \label{fig:bildII2-batteri}
 \end{wrapfigure}
