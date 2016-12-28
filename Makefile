@@ -49,7 +49,7 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-pdflatex matterep.tex
+	-pdflatex koncept.tex
 	pdflatex koncept.tex
 
 matterep.pdf: matte.tex matterep.tex
