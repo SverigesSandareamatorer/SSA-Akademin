@@ -14,17 +14,39 @@ omkring primärlindningen alstras då ett magnetiskt fält som växlar i takt me
 spänningen. Primärfältet passerar även genom övriga lindningar -
 sekundärlindningarna - och alstrar där spänningar och strömmar.
 
-Den s.k. kopplingsfaktorn mellan lindningarna varierarförolika frekvenser, sämre
+Den s.k. kopplingsfaktorn mellan lindningarna varierar för olika frekvenser, sämre
 vid låga frekvenser (hundratals Hz) och bättre vid höga frekvenser (tusentals
 Hz). Speciellt vid låga frekvenser behövs en bättre koppling för att avsedd
 effekt skall kunna överföras mellan lindningarna. Då kan ledningsförmågan i den
 magnetiska flödesvägen ökas med hjälp av en järnkärna.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/bild_2_2-05}
-\caption{Schemasymboler för transformatorer}
-\label{fig:BildII2-5}
-\end{wrapfigure}
+\begin{figure}
+  \begin{mdframed}
+    \begin{center}
+      \begin{circuitikz}
+        \draw
+        (1,1) node[transformer](T1) {}
+        (T1.base) node{1}
+        ;
+        \draw[european]
+        (4,1) node[transformer](T2) {}
+        (T2.base) node{2}
+        ;
+        \draw
+        (7,1) node[transformer core](T3) {}
+        (T3.base) node{3}
+        ;
+      \end{circuitikz}
+      \\
+      \begin{tabular}{ll}
+        1, 2 & Allmänna symboler \\
+        3 & Transformator med kärna
+      \end{tabular}
+    \end{center}
+    \caption{Schemasymboler för transformatorer}
+  \end{mdframed}
+  \label{fig:BildII2-5}
+\end{figure}
 
 Bild \ref{fig:BildII2-5}
 
