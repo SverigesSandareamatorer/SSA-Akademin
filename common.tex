@@ -50,7 +50,24 @@
 \brokenpenalty=4999
 
 \usepackage[europeanvoltages,europeancurrents,europeanresistors,cuteinductors,smartlabels]{circuitikz}
-\usepackage{mdframed}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\mdfdefinestyle{FactBox}{%
+    linecolor=blue,
+    outerlinewidth=2pt,
+    roundcorner=20pt,
+    innertopmargin=\baselineskip,
+    innerbottommargin=\baselineskip,
+    innerrightmargin=20pt,
+    innerleftmargin=20pt,
+    backgroundcolor=gray!50!white}
+\newcommand{\infobox}[1]{
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{mdframed}[style=FactBox]
+#1
+  \end{mdframed}
+\end{wrapfigure}
+}
 
 % Make some unicode characters usable
 \DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}} % unicode 00B0 ° degree sign
