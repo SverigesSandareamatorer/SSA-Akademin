@@ -12,7 +12,7 @@
 \end{wrapfigure}
 
 En transistor består av skikt av halvledarelement som sammanfogats. Vanligt är
-två Nskikt och ett mellanliggande P-skikt (NPNtransistor) eller två P-skikt och
+två N-skikt och ett mellanliggande P-skikt (NPNtransistor) eller två P-skikt och
 ett mellanliggande N-skikt (PNP-transistor). Skikten är försedda med
 anslutningar.
 
@@ -37,7 +37,7 @@ Halvledarskikten kallas
 \item C kollektor
 \end{itemize}
 
-Bild på transistor saknas (ej numrerad)
+\hilight{TODO: Bild på transistor saknas (ej numrerad)}
 
 \emph{Spärrzonerna}
 
@@ -193,20 +193,26 @@ En liten spänningsändring \(∆U_{GS}\) medför stor ändring av strömmen
 
 \begin{wrapfigure}{R}{0.5\textwidth}
 \includegraphics[width=0.5\textwidth]{images/bild_2_2-22}
-\caption{Skikten i en N-kanal MOS-FET}
+\caption{Skikten i en N-kanal MOSFET}
 \label{fig:BildII2-22}
 \end{wrapfigure}
 
 
 Bild \ref{fig:BildII2-22}
 
-I en MOS-FET är G-elektroden isolerad med ett kiseloxidskikt Funktionssättet är
-samma som för en FET. Drain-strömmen kan ökas eller minskas med hjälp av en
+\index{MOSFET}
+\index{transitor!MOSFET}
+
+I en Metal Oxide Semicoductor Field Effect Transistor (MOSFET) är
+G-elektroden isolerad med ett kiseloxidskikt, trots att namnet förespeglar
+ett metaloxidskikt. Funktionssättet är samma som för en FET.
+Drain-strömmen kan ökas eller minskas med hjälp av en
 positiv respektive negativ spänning på G.
+\url{https://en.wikipedia.org/wiki/MOSFET}
 
 \emph{Resistansen mellan gate och source}
 
-För att erhålla en förstärkning med en FETtransistor, sätter man in en resister
+För att erhålla en förstärkning med en FET, sätter man in en resister
 \(R_0\) i drain-strömkretsen. Över resistorn uppstår då spänningsändringar i
 proportion med strömändringarna.
 

@@ -28,8 +28,8 @@ en komponenttyp kallad \emph{resistor}. Dess utmärkande egenskap är
 (Se även kapitel \ref{ellära}.)
 
 Resistansen mellan två punkter i en strömkrets är 1~Ω (uttalas
-``en åm''), när spänningen mellan punkterna gör att en ström av 1~A (en ampere)
-flyter i kretsen.
+``en åm''), när spänningen 1~V mellan punkterna gör att en ström
+av 1~A (en ampere) flyter i kretsen.
 
 Inom elektroniken används höga resistansvärden och därför även följande
 multipler av enheten
@@ -51,7 +51,12 @@ Resistivitet är ett materials strömledningsegenskaper. Ett annat namn för
 resistivitet är specifik resistans. Symbolen för resistivitet är \(\rho\)
 (uttalas rå).
 
-Formeln for resistivitet är \(\rho = \frac{ohm \cdot mm^2}{m}\)
+Formeln for resistivitet är
+
+\(\rho = \frac{R A}{l} \left[\frac{ohm \cdot mm^2}{m}\right]\)
+
+där resistansen \(R\) på en längd \(l\) av en strömledare med en
+genomsnittsarea \(A\) (som oftast anges i kvadratmilimeter).
 
 Följande formel gäller för beräkning av resistansen i en strömledare med
 linjär ström/spänningskaraktär.
@@ -70,8 +75,7 @@ Exempel
 
 \(R = \rho \frac{I}{A}\) \(R = 0.017 \frac{4}{2} = 0.034\ \Omega\)
 
-Not. Förväxla inte A [tvärsnittsytan] i denna formel med beteckningen A t. ex.
-i Ohms lag då A betecknar strömstyrkan.
+\textbf{Not. Förväxla inte A [tvärsnittsytan] i denna formel med enheten Ampere.}
 
 \subsection{Resistiva material}
 
@@ -160,7 +164,7 @@ tunnfilmsresistorer.
 \index{resistor!trådlindad}
 
 Det resistiva materialet är en metalltråd, som är lindad på en stomme som tål
-hög temperatur; det kan var keramik, glas etc.
+hög temperatur; det kan vara keramik, glas etc.
 Tåligheten mot pulser och höga temperaturer är stor.
 
 \subsection{Fasta resistorer med olinjär karaktär}
@@ -172,15 +176,15 @@ Vanligast är att materialet i resistorer har linjär ström-/spänningskaraktä
 men det finns även sådana med olinjär karaktär. I resistorer med olinjär
 karaktär är det ingående materialet av halvledartyp.
 
-\subsubsection{Spänningsberoende resistor - Voltage Dependent Resistar (VOR)}
+\subsubsection{Spänningsberoende resistor - Voltage Dependent Resistar (VDR)}
 \index{spänningsberoende resistor}
 \index{resistor!spänningsberoende}
-\index{VOR}
-\index{resistor!VOR}
+\index{VDR}
+\index{resistor!VDR}
 
 Linjära resistorer påverkas knappast av den pålagda spänningen. Resistorer av
 kiselkarbid har däremot en hög resistans vid låg spänning och omvänt en låg
-resistans vid hög spänning. VOR används t.ex. för begränsning av
+resistans vid hög spänning. VDR används t.ex. för begränsning av
 spänningstoppar.
 
 \subsubsection{Ljusberoende resistor, fotoresistor - Light Dependent Resistar (LDR)}
@@ -297,7 +301,7 @@ Vill man ha god effekttålighet och temperaturstabilitet, utöver kolkompositens
 egenskaper, så erbjuder en bana av cermetsådana fördelar. En cermetbana består
 av en blandning av metaller och keramik, som trycks på ett underlag.
 Trådlindad bana har främst god tålighet mot hög effekt. Tålighet vid hög ström
-genom uttaget är en nannan fördel.
+genom uttaget är en annan fördel.
 
 \subsubsection{Linjära och olinjära patentiometrar}
 
