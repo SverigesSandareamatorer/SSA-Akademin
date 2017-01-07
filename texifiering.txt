@@ -109,8 +109,8 @@ Bild \ref{fig:BildII1-15}
 17) Kommentarer vi har som del av den editoriella bearbetningen lägger vi
 synligt i texten med följande format:
 
-$>>>>>$ TODO: Här ser det lite fel ut.
+\hilight{TODO: Här ser det lite fel ut.}
 
-Det är behändigt att kunna söka på TODO, och $>>>>>$ ger en halv-ful markör i
+Det är behändigt att kunna söka på TODO:, och \hilight{} ger en gul markör i
 texten så vi vet när vi läser att här är något vi skall åtgärda.
 
