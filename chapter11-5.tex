@@ -1,9 +1,24 @@
 \section{Anropssignaler}
 
+\subsection{Anropssignalernas syfte}
+
+Alla radiosändare skall vara identifierbara, så att man kan identifiera vem
+som sänder \cite[§19.1]{ITU-RR}. Detta görs genom att skicka en
+identifikationssignal.
+
+Alla sändningar med falsk eller misledande identifiering är förbjuden \cite[§19.2]{ITU-RR}!
+
+Alla amatör-radiosändningar skall vara identifierade \cite[§19.4, §19.5]{ITU-RR}.
+
+Identifiering sker normalt i tal eller Morse, men även andra former kan
+förekomma som är anpassad till modulationsmetoden som används.
+
+Som sekundärt syfte kan man använda signalen för att ropa upp en annan station.
+
 \subsection{Anropssignalernas sammansättning}
 
-Varje land har unika anropssignaler för all sin
-radiotrafik. Signalerna utformas enligt radioreglementet (RR) på sätt,
+Varje land har unika anropssignaler för all sin radiotrafik.
+Signalerna utformas enligt ITU RadioReglemente (RR) \cite[§19]{ITU-RR} på sätt,
 som beror på syftet med varje särskild radiostation. I RR finns
 definitioner för olika slags stationer, t. ex. stationer för fast
 radio, landmobila stationer, stationer i fartyg, i
@@ -17,72 +32,92 @@ HAREC b.\ref{HAREC.b.5.1}\label{myHAREC.b.5.1},
 
 En radiostation skall identifieras med den anropssignal, som
 tilldelats av det egna landets teleadministration (myndighet). I Sverige
-är det Post- och telestyrelsen (PTS).  Anropssignalen meddelas i det
-tillstånd för innehav och användning som utfärdats för
-tillståndshavaren ifråga. Signalen gäller så länge som tillståndet är
-giltigt.
+är det Post- och telestyrelsen (PTS) som har ansvaret och genom
+delegationsbeslut deligerar det till Svenska SändarAmatörer (SSA) för
+amatörradio-signaler.
+Anropssignalen meddelas i det tillstånd för innehav och användning som
+utfärdats för tillståndshavaren ifråga. Signalen gäller så länge som
+tillståndet är giltigt.
 
-Amatörradiosignaler är uppbyggda på följande sätt:
+Amatörradiosignaler är uppbyggda på följande sätt \cite[§19.68, §19.69]{ITU-RR}:
+
+Ett tecken (ett av B, F, G, I, K, M, N, R eller W) och en siffra, följt av en
+grupp av inte mer än 4 tecken, varav sista skall vara en bokstav.
+
+Två tecken och en siffra, följt av en grupp av inte mer än 4 tecken, varav
+sista skall vara en bokstav.
+
+Till bokstav räknas A-Z och till siffra räknas 0-9 \cite[§19.45]{ITU-RR}.
+Ett tecken är antingen en bokstav eller siffra.
+
+En kombinatorisk analys av de bägge reglerna ger:
 
 \begin{tabular}{l|l|l}
                 & Antal    &  \\
   Tecken-       & kombi-   &  \\
   kombinationer & nationer & Anmärkningar \\
   \hline
-  YOA - Y9Z &
-  260 &
-  Första tecknet ``y'' räcker ensamt
-  \\
-  YOAA - Y9ZZ &
-  6760 &
-  som nationell identitet om det är
-  \\
-  YOAAA - Y9ZZZ &
-  175760 &
-  B, F, G, I, K, M, N, R eller W.
-  \\
+  Y0A - Y9Z & 260 & \\
+  Y00A - Y99Z & 2600 & \\
+  Y0AA - Y9ZZ & 6760 & Första tecknet ``Y'' räcker ensamt \\
+  Y000A - Y999Z & 26000 & som nationell identitet om det är \\
+  Y00AA - Y99ZZ & 67600 & B, F, G, I, K, M, N, R eller W. \\
+  Y0A0A - Y9Z9Z & 67600 & \\
+  Y0AAA - Y9ZZZ & 175760 & \\
   \hline
-  XXOA - XX9Z &
-  260 &
-  Signaler som börjar med en siffra,
-  \\
-  XXOAA - XX9ZZ &
-  6760 &
-  när andra bokstaven är O eller I,
-  \\
-  XXOAAA - XX9ZZZ &
-  175760 &
-  är dock ej tillåtna för amatörradio.
-  \\
+  XX0A - XX9Z & 260 & \\
+  XX00A - XX99Z & 2600 & \\
+  XX0AA - XX9ZZ & 6760 & \\
+  XX000A - XX999Z & 26000 & ``XX'' är de två första tecknen \\
+  XX00AA - XX09ZZ & 67600 & i en tilldelad signalserie \\
+  XX0A0A - XX9Z9Z & 67600 & \\
+  XX0AAA - XX9ZZZ & 175760 & \\
 \end{tabular}
 
-(XX är de två första tecknen i en tilldelad signalserie)
-
 Sverige är tilldelat teckenkombinationer i serierna SAA - SMZ, 7SA - 7SZ och
-8SA - 8SZ.
+8SA - 8SZ \cite[Appendix 42]{ITU-RR}.
+
+Tillfälliga eventsignaler, för tillfällig användning, kan använda fler tecken
+(0-9 och A-Z) än vad som anges ovan \cite[§19.68A]{ITU-RR}.
 
 Anropssignalerna för svenska amatörradiostationer är uppbyggda på följande
 sätt, varvid med distrikt avses amatörradiodistrikt.
 
 Amatörradiotillstånd (CEPT-tillstånd) för
+
 \begin{tabular}{lll}
-radioamatörer & SM & + distriktssiffra + bokstäver,  \\
-amatörklubbar & SK & + distriktssiffra + bokstäver,  \\
-militära förband & SL & + distriktssiffra + bokstäver, \\
-amatörklubbar & SI & + distriktssiffra + bokstäver (specialtillstånd), \\
-amatörklubbar & SJ & + distriktssiffra + bokstäver (specialtillstånd), \\
-amatörklubbar & 7S & + distriktssiffra + bokstäver (specialtillstånd), \\
-amatörklubbar & 8S & + distriktssiffra + bokstäver (specialtillstånd), \\
+radioamatörer & SA & + distriktssiffra + bokstäver (SSA tilldelat) \\
+radioamatörer & SM & + distriktssiffra + bokstäver (PTS tilldelat) \\
+amatörklubbar & SK & + distriktssiffra + bokstäver \\
+militära förband & SL & + distriktssiffra + bokstäver \\
+amatörklubbar & SI & + distriktssiffra + bokstäver (specialtillstånd) \\
+amatörklubbar & SJ & + distriktssiffra + bokstäver (specialtillstånd) \\
+amatörklubbar & 7S & + distriktssiffra + bokstäver (specialtillstånd) \\
+amatörklubbar & 8S & + distriktssiffra + bokstäver (specialtillstånd) \\
 %\multicolumn{3}{l}{SSA-tillstånd inom SSAs utbildningsverksamhet} \\
 %& SH & + distriktssiffra + bokstäver (AAA- CZZ). \\
 \end{tabular}
 
-\hilight{TODO: tabellen blir för bred, fixa så att texten flödar runt istället}
+Signalserien SM är tilldelad av Televerket och sedemera PTS fram till 2004.
+Signalserien SA är tilldelad av SSA från 2004. Äldre signaler i SM-serien är
+tilldelad med två bokstäver, medan nyare SM och SA signaler är treställiga
+bokstäver.
+
+Utöver huvudsignalen finns även contest-signaler tilldelade med en tilldelad
+bokstav i de olika tillgängliga serierna.
+
+\textbf{Exempel:} SM0UTY är en radioamatör som fått sin tilldelning av PTS.
+
+\textbf{Exempel:} SA0MAD är en radioamatör som fått sin tilldelning av SSA.
+
+\textbf{Exempel:} SK0UX är en amatörklubb.
+
+\textbf{Exempel:} SM0W är en contest-signal.
 
 Sverige är indelat i amatörradiodistrikt med följande numrering och
 utsträckning:
 
-\begin{tabular}{rp{5cm}}
+\begin{tabular}{rp{10cm}}
 Distrikt & Utsträckning \\
 0 & Stockholms (AB) län \\
 1 & Gotlands (I) län \\
@@ -91,13 +126,18 @@ Distrikt & Utsträckning \\
 4 & Örebro (T), Värmlands (S) och Dalarnas (W) län \\
 5 & Östergötlands (E), Södermanlands (D), Västmanlands (U) och Uppsala (C) län\\
 6 & Hallands (N), Älvsborgs (P), Göteborgs och Bohus (O) län samt Skaraborgs (R) län \\
-7 & Malmöhus (M), Kristianstads (L),Blekinge (K), Kronobergs (G),Jönköpings (F) och Kalmar (H) län.\\
+7 & Malmöhus (M), Kristianstads (L), Blekinge (K), Kronobergs (G), Jönköpings (F) och Kalmar (H) län.\\
 \end{tabular}
 
 Distriktssiffran i signalen bestäms av det län som hemadressen är
 belägen inom. Vid sändning utanför hemadressen bör det framgå av
 tillägg till signalen.
 
+\textbf{Exempel:} SA0MAD är en radioamatör hemmahörande i Stockholms län.
+
+\textbf{Exempel:} SM7NTJ är en radioamatör hemmahörande i Jönköpings län.
+
+\textbf{Exempel:} SK7AX är en amatörklubb hemmahörande i Jönköping län.
 
 I Post- och telestyrelsens föreskrifter sägs dock inte vilken
 distriktssiffra som skall användas, när sändning sker från annan plats
@@ -114,27 +154,31 @@ tillämpas:
 
 \item Vid trafik från annan tillfällig plats bör anropssignalen
   åtföljas av snedstreck och siffran för det distrikt varifrån
-  sändningen görs.  Exempel: SMOXYZ/0, SMOXYZ/6 etc.
+  sändningen görs. \textbf{Exempel:} SM0XYZ/0, SM0XYZ/6 etc.
 
 \item Vid trafik från mobil station bör den ordinarie anropssignalen
-  även åtföljas av /M.  Exempel: SMOXYZ/6M.
+  även åtföljas av /M.  \textbf{Exempel:} SM0XYZ/6M.
 
 \item Vid trafik från mobil station inom hemorten kan dock den extra
-  distriktssiffran utelämnas.  Exempel: SMOXYZ/M.  e Vid trafik från
-  sjöfarkost bör den ordinarie anropssignalen åtföjas av /MM.
+  distriktssiffran utelämnas.  \textbf{Exempel:} SM0XYZ/M.
+
+\item Vid trafik från sjöfarkost bör den ordinarie anropssignalen
+ åtföjas av /MM.
 
 \item Vid trafik från luftfarkost bör den ordinarie anropssignalen
-  åtföljas av /AM.  e Vid trafik från svensk farkost på
-  internationellt territorium kan distriktssiffran 8 användas.
+  åtföljas av /AM.
+
+\item Vid trafik från svensk farkost på internationellt territorium
+ kan distriktssiffran 8 användas.
 
 \item Vid sändning från ett annat lands territorium gäller det landets
   bestämmelser.  Vid osäkerhet- Skaffa upplysningar från SSA:s
   reciprokfuntionär!
 
 \item Utländsk radioamatör på besök i Sverige skall använda sin
-  anropssignal från det egna landet, föregånget av SM*l där *
+  anropssignal från det egna landet, föregånget av SM*/ där *
   motsvaras av siffran för det svenska distrikt varifrån sändningen
-  görs.
+  görs. \textbf{Exempel:} SM5/LA8PV.
 \end{itemize}
 
 \section{Användning av anropssignaler}
@@ -161,9 +205,9 @@ amatörradion. Det behöver inte bli stelt för den skull!
 Allmänt anrop är ett sätt att kalla på någon
 --- vem som helst --- att kommunicera med.
 
-På telegrafi låter det så här: CQ CQ CQ de SMOXYZ K, d.v.s anropet
+På telegrafi låter det så här: CQ CQ CQ de SM0XYZ K, d.v.s anropet
 först och därefter den egna signalen.  På telefoni låter det så här:
-Allmänt anrop, allmänt anrop, allmänt anrop från SMOXYZ Kom. Glöm inte
+Allmänt anrop, allmänt anrop, allmänt anrop från SM0XYZ Kom. Glöm inte
 Kom i slutet!
 
 Riktat anrop gör man, när man vill tala med någon särskild station. Då
@@ -180,7 +224,7 @@ På telefoni låter det så här:
 
 Motstationen svarar förhoppningsvis på anropet, alltså
 
---- SMØXYZ från SMØAAO Kom.
+--- SMØXYZ från SMØÅÄÖ Kom.
 
 \subsection{Upprättad förbindelse}
 
@@ -200,7 +244,7 @@ vill tala med den stationen kan man sända KN (kom du och ingen annan
 När man så småningom avslutar kontakten tackar man för sig på och
 utbytter avskedhälsningar.  Då kan det låta så här:
 
---- Tack för en trevlig förbindelse och på återhörande. SMOÅÄÖ från
-SMOXYZ. Klart Slut.
+--- Tack för en trevlig förbindelse och på återhörande. SM0ÅÄÖ från
+SM0XYZ. Klart Slut.
 
 Träna med din instruktör på att klara olika slags trafiksituationer!
