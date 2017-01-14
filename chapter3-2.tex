@@ -49,7 +49,7 @@ Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten. Över XL uppstår då e
 litet spänningsfall - en låg utgångsspänning \(U_a\). Resultatet blir att
 låga frekvenser dämpas.
 
-Vig höga frekvenser är \(X_C\) liten och \(X_L\) stor. Över \(X_L\) uppstår då
+Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor. Över \(X_L\) uppstår då
 ett stort spänningsfall- en hög utgångsspänning \(U_a\). Resultatet blir att
 höga frekvenser släpps igenom.
 
@@ -77,13 +77,13 @@ Räkneexempel:
 \begin{enumerate}
 \item \(L = 4\ \text{H} \quad C = 1\ \text{µF} \quad f_g =\ ?\)
   \[
-  f_g = \frac{1}{2π\sqrt{4\cdot 2 \cdot 10^{-6}}} = \frac{10^3}{2π}
-  = 79.62\ \text{Hz}
+  f_g = \frac{1}{2π\sqrt{4 \cdot 10^{-6}}} = \frac{500}{2π}
+  = 79,6\ \text{Hz}
   \]
 \item \(R = 1\ \text{kΩ} \quad C = 10\ \text{nF} \quad f_g =\ ?\)
   \[
-    f_g = \frac{1}{2π \cdot 1 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
-    = \frac{10^5}{2π} = 15.934\ \text{Hz}
+    f_g = \frac{1}{2π \cdot 1 \cdot 10^3 \cdot 10 \cdot 10^{-9}}
+    = \frac{10^5}{2π} = 15,9\ \text{kHz}
   \]
 \end{enumerate}
 
@@ -132,7 +132,7 @@ LC-Lågpass:
 
 RC-Lågpass:
 \begin{gather*}
-  f_g = \frac{1}{2π\sqrt{RC}} \\
+  f_g = \frac{1}{2π{RC}} \\
   f_g\ \text{[Hz]} \quad R\ \text{[Ω]} \quad C\ \text{[F]}
 \end{gather*}
 
@@ -249,7 +249,7 @@ Bild \ref{fig:BildII3-28}
 
 En \emph{kvartskristall} (eng \emph{quartz crystal} eller \emph{crystal}),
 egentligen en slipad skiva av kvarts, kan fungera som en
-elektromekanisksvängningskropp (resonator), vars egenskaper liknar dem i en
+elektromekanisk svängningskropp (resonator), vars egenskaper liknar dem i en
 LC-krets.
 
 Den låga inre resistansen gör att Q-värdet i en kvartskristall är bättre än
@@ -335,7 +335,7 @@ bildar induktorn. Mellan ledaren och kavitetens insida råder en kapacitans,
 som kan kompletteras/justeras med en extra kondensator.
 
 Inkommande och utgående signaler ansluts till filtrets mittledare över
-induktionskondensatorer eller direkt galvaniskt. \emph{Kavitetsfilter} (eng
+induktionsslingor, kondensatorer eller direkt galvaniskt. \emph{Kavitetsfilter} (eng
 \emph{cavity filter}) kan kopplas ihop för att bilda bandfilter, frekvensdelare
 m.m.
 
