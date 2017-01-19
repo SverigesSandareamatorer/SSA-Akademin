@@ -12,7 +12,7 @@ Vårt mål är att
 
 
 ## Bidra till projektet
-Det finns många olika sätt att bidra till projektet även fast man inte vet hur man använder *Git* eller skriver *LaTeX*. Börja med att läsa igenom filen [`texifiering.txt`](blob/master/texifiering.txt) noggrant och följa alla instruktioner där för hur koden till boken är uppbyggd. Till exempel skrivs kommentarer i texten så här:
+Det finns många olika sätt att bidra till projektet även fast man inte vet hur man använder *Git* eller skriver *LaTeX*. Börja med att läsa igenom filen [`texifiering.txt`](texifiering.txt) noggrant och följa alla instruktioner där för hur koden till boken är uppbyggd. Till exempel skrivs kommentarer i texten så här:
 
 	Kommentarer vi har som del av den editoriella bearbetningen lägger vi
 	synligt i texten med följande format:
@@ -23,7 +23,7 @@ Det finns många olika sätt att bidra till projektet även fast man inte vet hu
 	texten så vi vet när vi läser att här är något vi skall åtgärda.
 
 **Q: Jag vet inte hur man redigerar kod**  
-A: Då kan du lämna en [*issue*](issues)  där du beskriver vart du har hittat ett problem och om du har någon föreslagen förändring så kommer din anmärkning att hanteras.
+A: Då kan du lämna en *issue* där du beskriver vart du har hittat ett problem och om du har någon föreslagen förändring så kommer din anmärkning att hanteras.
 
 Du kan lämna ärenden (*issues*) till projektet på projektets GitHub-sida under tabben märkt "Issues".
 
