@@ -67,6 +67,12 @@ koncept.bbl: koncept.aux koncept.bib
 koncept.ind: koncept.idx
 	makeindex koncept
 
+emf-handout.ind: emf-handout.idx
+	makeindex emf-handout
+
+emf-handout.pdf: emf-handout.ind emf-handout.tex emf.tex common.tex
+	pdflatex emf-handout.tex
+
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
