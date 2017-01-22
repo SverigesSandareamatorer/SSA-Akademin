@@ -357,8 +357,6 @@ ut på vilket avstånd man genererar en viss fältstyrka.
 
 \(d=\frac{\sqrt{30 \cdot P \cdot G \cdot k}}{E}\)
 
-\hilight{TODO: Lagt till följande stycke}
-
 Denna beräkning är enbart relevant för loben. Fältet under antennen
 beräknas inte, och därför är detta inte relevant för att estimera höjd
 på antenn-torn eller säkerhetsavstånd till antenn-torn. Använd mjukvara för
@@ -572,30 +570,25 @@ antenn som riktar signalen i den riktning man vill kommunicera. Det är
 oftast mycket dyrare och mer komplicerat att öka uteffekten för att nå
 samma resultat.
 
-\item Osymmetriska antenner kan ge mantelströmmar på matningsledningen.
-Det innebär att HF-ström flyter tillbaka på matarledningens utsida och
-kan ge höga fältstyrkor längs hela kabellängden. Bättre är det då att
-använda symmetriska antenner, exempelvis en mittmatad halvvågsdipol.
+\item Osymmetriska antenner kan ge mantelströmmar i matningsledningen.
+Det innebär att en common-mode HF-ström flyter från antennen tillbaka på
+matarledningens och kan ge höga fältstyrkor längs hela kabellängden.
+Bättre är det då att använda symmetriska antenner, exempelvis en
+mittmatad halvvågsdipol. En ström-balun (även common mode choke, RF-choke)
+där antennen ansluts till matarledningen undertrycker denna common mode
+ström och därmed kommer matningsledningen sluta att aggera radierande
+element, varvid fältstyrkorna sjunker signifikant.
 
-\hilight{TODO: Fel, det flyter inte en ström på matarledningens utsida!}
-
-\hilight{däremot har man en hög common-mode ström som gör att ledaren}
-
-\hilight{kommer att stråla ut effekt.}
+\item Vissa antenner, så som T-antenn, använder dock obalansen för att
+matningsledningen aggerar radierande element. I dessa fall skall den delen
+av matningsledningen som aggerar radierande element betraktas som sådant även
+i EMF-sammanhang och säkerhetsavstånd skall iaktas. Det är rekommenderat att
+använda common-mode choke för att isolera antennen från radio-stationen med
+avseende på common-mode ström.
 
 \item Även symmetriska antenner kan ha strömmar på utsidan av
 matarledningen. Dra därför matarledningen så långt bort från människor
 som möjligt.
-
-\hilight{TODO: Det brukar vara lämpligt att använda en strömbalun/RF-choke}
-
-\hilight{för att begränsa common-mode strömmen i antenn-kabeln, vilket vi}
-
-\hilight{bör säga här. Det är relevant för alla antenner annat än t.ex.}
-
-\hilight{T-antennen som medvetet använder antenn-kabeln som strålande element.}
-
-\hilight{Det är givetvis ett specialfall som skall hanteras tydligt EMF-mässigt.}
 
 \item Använd inte effektförstärkare eller antennavstämningsenhet utan
 hölje då fältstyrkorna runt utrustningen kan nå höga nivåer.

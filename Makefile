@@ -37,7 +37,7 @@ KONCEPT_APDX_FILES = appendix-a.tex appendix-b.tex appendix-c.tex \
 	appendix-h.tex appendix-i.tex appendix-j.tex appendix-l.tex
 KONCEPT_OTHER_FILES = common.tex errata.tex foreword.tex introduction.tex \
 	matte.tex morse.tex part3.tex preface.tex rest.tex koncept.bib \
-	koncept.tex
+	koncept.tex emf.tex
 KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH5_FILES) \
 	$(KONCEPT_CH6_FILES) $(KONCEPT_CH7_FILES) $(KONCEPT_CH8_FILES) \
