@@ -2,7 +2,7 @@
 \label{sändare}
 \index{sändare}
 
-För att översiktligt beskriva en komplicerad sändare eller transeeiver
+För att översiktligt beskriva en komplicerad sändare eller transceiver
 behövs ibland ett enklare framställningssätt än detaljrika
 principscheman. Då kan ett blockschema vara till stor hjälp.
 
@@ -98,7 +98,7 @@ olinjära förstärkarsteg till en hög sändningsfrekvens. Oftast
 multipliceras frekvensen två eller tre gånger i vart och ett av
 förstärkarstegen.
 
-Bilden visar ett blockschema för en FMsändare för 435 MHz (70
+Bilden visar ett blockschema för en FM sändare för 435 MHz (70
 cm-bandet). Oscillatorfrekvensen är 8.056 MHz. I fyra av de
 efterföljande förstärkarna multipliceras frekvensen 2, 3, 3 respektive
 3 gånger, alltså totalt 54 gånger. Sändningsfrekvensen blir då \(8.056
@@ -106,7 +106,7 @@ efterföljande förstärkarna multipliceras frekvensen 2, 3, 3 respektive
 
 Variationer i oscillatorfrekvensen blir också multiplicerade. I detta
 exempel blir sändningsfrekvensens deviation 54 gånger större än
-oscillatorfrekvensens deviation. En deviation av max3000Hz från den
+oscillatorfrekvensens deviation. En deviation av max 3000Hz från den
 nominella sändningsfrekvensen motsvaras av följande deviation från
 oscillatorfrekvensen,
 
@@ -117,7 +117,7 @@ frekvensmultiplikation. Jämfört med en rak sändare är komponentbehovet
 större, men i stället ger den låga oscillatorfrekvensen god
 frekvensstabilitet, vilket är en fördel. Risken för oönskade
 självsvängningar är mindre i en frekvensmultiplicerande än i en rak
-sändare, eftersom ino ch utgångsfrekvenserna i flera av stegen är
+sändare, eftersom in och utgångsfrekvenserna i flera av stegen är
 olika.
 
 De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
@@ -179,9 +179,9 @@ släpps fram. Det ena sidbandet undertrycks med ett
 bandpassfilter. Denna SSB-signal flyttas till avsett frekvensband
 genom ännu en frekvensblandning och ytterligare filtrering.
 
-I exemplet är CO-frekvensen 9 MHz. VFO har frekvensområdet 5.0 - 5.5
+I exemplet är CO-frekvensen 9 MHz. VFO har frekvensområdet 5,0 - 5,5
 MHz. Vid blandningen fås blandningsprodukter inom frekvensområdena
-14.0 - 14.5 och 4.0 - 3.5 MHz. Genom att välja bandpassfilter kan man
+14,0 - 14,5 och 4,0 - 3,5 MHz. Genom att välja bandpassfilter kan man
 sända i ett av dessa frekvensområden.  Efterföljande driv- och
 slutsteg utförs för att arbeta i detta frekvensband, antingen utan
 särskild avstämning - s.k. bredbandigt utförande - eller genom
@@ -242,29 +242,29 @@ VCO (ärvärdet) avläses och delas periodiskt med talet 10 och matas in
 i en programmerbar frekvensdelare. Eftersom frekvensområdet för VCO är
 144 - 146 MHz, kommer infrekvensen till den programmerbara delaren att
 ligga i området 14.4 - 14.6 MHz. Delningstalet i denna delare kan
-progammeras in i steg om 1 mellan talen 5760 och 5840.
+programmeras in i steg om 1 mellan talen 5760 och 5840.
 
 Med den första delarens divisor 10 och den andra delarens divisor
 inställd t.ex. på 5760, så avges ur delarkedjan en puls varje gång som
 VCO har genomfört 57600 svängningar. Vid en VCO-frekvens av 144 MHz
 (144000 kHz) motsvaras divisorn 57600 (= \(10 \cdot 5760\)) av en
-pulsfrekvens av 2.5 kHz ut från räknarkedjan. På samma sätt kommer en
+pulsfrekvens av 2,5 kHz ut från räknarkedjan. På samma sätt kommer en
 VCO-frekvens av 144025 kHz och divisorn 57610 (= \(10 \cdot 5761\))
-också att ge en pulsfrekvens av 2.5 kHz, likaså 146 MHz och divisorn
+också att ge en pulsfrekvens av 2,5 kHz, likaså 146 MHz och divisorn
 58400 o.s.v.
 
 VCO-frekvensen låses alltså i intervall om 25 kHz till närmaste
-delningstal, för att uppnå en pulsfrekvens av 2.5 kHz. Om
+delningstal, för att uppnå en pulsfrekvens av 2,5 kHz. Om
 VCO-frekvensen (är-värdet) avviker från det inställda delningstalet
 (bör-värdet), så kommer pulsfrekvensen att bli högre eller lägre än
-2.5 kHz.
+2,5 kHz.
 
 Pulsfrekvensen jämförs i en s.k. fasjämförare med en kristallstyrd
-referensfrekvens som efter en delning med 10 också är 2.5
+referensfrekvens som efter en delning med 10 också är 2,5
 kHz. Utspänningen från jämföraren är en likspänning, som intar ett
 medelvärde då infrekvenserna är lika, men ett högre eller lägre värde
 när de skiljer. Denna likspänning används för att kontinuerlig styra
-VCO-frekvensen tilllikhet med börvärdet. Regleringsförloppets
+VCO-frekvensen till likhet med börvärdet. Regleringsförloppets
 hastighet bestäms av tidskonstanten i ett lågpassfilter, det
 s.k. loop-filtret.
 
@@ -273,7 +273,7 @@ spänning går det också att frekvensmodulera oscillatorn.  Det görs så,
 att LF-signalen från modulatorn överlagras på styrspänningen genom
 additiv blandning (se kapitel \ref{blandare}) via en kondensator. De
 variationer i reglerspänningen som kommer av talet är snabbare än
-laopfiltrets tidskonstant Variationerna av talet hinner därför inte
+loopfiltrets tidskonstant Variationerna av talet hinner därför inte
 uppfattas som frekvensavvikelser och blir därför inte utreglerade.
 Drosseln efter loop-filtret förhindrar att moduleringssignalen
 kortsluts av filtrets kondensator.
@@ -299,21 +299,21 @@ blandaren.
 Summafrekvensen 70 MHz filtreras fram som mellanfrekvens. Den önskade
 sändningsfrekvensen fås genom att blanda 70 MHz MF med frekvensen från
 VCO och därefter filtrera fram skillnadsfrekvensen.  VCO i detta
-exempel täcker frekvensområdet 40 - 69.5 MHz. Således blir sändarens
-täckningsområde 1.5 - 30 MHz. För att filterfunktionen skall bli
+exempel täcker frekvensområdet 40 - 69,5 MHz. Således blir sändarens
+täckningsområde 1,5 - 30 MHz. För att filterfunktionen skall bli
 optimal, kan den delas upp på flera valbara filtersektioner, t.ex. ett
 per amatörband. Valet kan ske automatiskt och styrt av frekvensläget
 på VCO.
 
 Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
-så stor som 28.5 MHz eller 1:20. Frekvensändringen i VCO är 29.5 MHz,
+så stor som 28,5 MHz eller 1:20. Frekvensändringen i VCO är 29,5 MHz,
 men där är ändringsförhållandet mellan de extrema frekvenserna endast
-1:1.74, vilket kan täckas av en enda VCO. Vid en lägre 2:a MF-frekvens
+1:1,74, vilket kan täckas av en enda VCO. Vid en lägre 2:a MF-frekvens
 skulle det behövas flera omkopplingsbara VCO för att täcka hela
 frekvensområdet
 
-Exempel: Vid en MF på 9 MHz behöver VCO-funktionen täcka 9.5-39 MHz,
-d.v.s. 1:4.11, vilket är för mycket för en VCO.
+Exempel: Vid en MF på 9 MHz behöver VCO-funktionen täcka 9,5-39 MHz,
+d.v.s. 1:4,11, vilket är för mycket för en VCO.
 
 SSB-signalen efter 2:a blandaren är inte lämplig att använda i
 regleringsslingan i PLL. Anledningen är att bärvågen är undertryckt i

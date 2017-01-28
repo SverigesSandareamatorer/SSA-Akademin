@@ -80,12 +80,12 @@ av 3 kHz på bärvågen är svinget på oscillatorn bara 250 Hz.
 Efter mikrofonförstärkaren följer en amplitudbegränsare, som skall
 hålla deviationen inom ett givet maxvärde, oavsett signalstyrkan från
 mikrofonen. Därefter följer ett lågpassfilter, som dels dämpar de
-övertoner som uppstårvid amplitudbegränsningen och dels begränsar de
+övertoner som uppstår vid amplitudbegränsningen och dels begränsar de
 höga frekvenserna i den modulerade signalen. Båda åtgärderna begränsar
 bandbredden.
 
 Mottagaren är en dubbelsuper. Den mottagna signalen passerar genom ett
-förselektionsfilter och en H F-förstärkare för att i 1:a blandaren
+förselektionsfilter och en HF-förstärkare för att i 1:a blandaren
 blandas med en lokal signal.
 
 \begin{figure}
@@ -100,15 +100,15 @@ blandas med en lokal signal.
 En kristallstyrd lokaloscillator med efterföljande
 frekvensmultipliceringssteg alstrar denna signal.
 
-Lokaloscillatorkedjans utfrekvens läggs 10.7 MHz över eller under
+Lokaloscillatorkedjans utfrekvens läggs 10,7 MHz över eller under
 mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen
-blir då 10.7 MHz. Skilda oscillatorer används vid sändning
+blir då 10,7 MHz. Skilda oscillatorer används vid sändning
 resp. mottagning varför styrkristallerna för sändning resp.
 mottagning på en given kanal får olika frekvens. Vid omkoppling till
 en annan kanal väljs ett annat kristallpar, vilket lämpligen sker med
 samma omkopplare.
 
-Den relativt höga i :a mellanfrekvensen 10.7 MHz ger ett så stort
+Den relativt höga 1:a mellanfrekvensen 10,7 MHz ger ett så stort
 avstånd till spegelfrekvensen, att bandbredden i förselektionsfiltren
 är tillräckligt smal för att undertrycka spegelfrekvensen. Av samma
 skäl bör 1:a mellanfrekvensen i en UHF-mottagare väljas ytterligare
@@ -135,14 +135,14 @@ Bild \ref{fig:bildII5-13}
 
 Den PLL-styrda sändare som redan beskrivits i bild \ref{fig:bildII5-7} har här
 kompletterats med en svingbegränsare och ett lågpassfilter i
-modulatorn. Liksom i den station med kanalkristalier, som beskrivits i
+modulatorn. Liksom i den station med kanalkristaller, som beskrivits i
 bild \ref{fig:bildII5-12}, är mottagaren även i detta fall en dubbelsuper.
 
 VCO används även som lokaloscillator i mottagaren. Eftersom sändaren
 och mottagaren skall användas på samma frekvens (simplextrafik), måste
 i detta koncept VCO-frekvensen vara olika vid sändning och
 mottagning. Eftersom mottagarens mellanfrekvens MF är 10.7 MHz måste
-nämligen VCO ligga 10.7 MHz högre eller lägre vid mottagning än vid
+nämligen VCO ligga 10,7 MHz högre eller lägre vid mottagning än vid
 sändning. Vid sändning däremot, är VCO-frekvensen densamma som
 sändningsfrekvensen.
 
@@ -162,13 +162,13 @@ frekvensområde - s.k. scanning.
     \hline
     \multicolumn{2}{l|}{Simplexkanaler,} & & & \\
     \multicolumn{2}{l|}{exempel} & & & \\
-    144.000 & 5760 & 144.000 & 154.700 & 6188 \\
-    144.025 & 5761 & 144.025 & 154.725 & 6189 \\
+    144,000 & 5760 & 144,000 & 154,700 & 6188 \\
+    144,025 & 5761 & 144,025 & 154,725 & 6189 \\
     & & & & \\
     \multicolumn{2}{l|}{Repeaterkanaler,} & & & \\
     \multicolumn{2}{l|}{exempel} & & & \\
-    145.000 & 5800 & 145.600 & 156.300 & 6252 \\
-    145.025 & 5801 & 145.625 & 156.325 & 6253 \\
+    145,000 & 5800 & 145,600 & 156,300 & 6252 \\
+    145,025 & 5801 & 145,625 & 156,325 & 6253 \\
   \end{tabular}
 \end{table}
 
@@ -187,15 +187,15 @@ Bild \ref{fig:bildII5-14}
 
 Vi har redan beskrivit en KV-sändare och KV-mottagare för SSB. I det
 koncept på en kortvågstransceiver, som visas här, ingår en super-VFO i
-signalberedningen. VFO-signalen (5 - 5.5 MHz) blandas med signalen
+signalberedningen. VFO-signalen (5 - 5,5 MHz) blandas med signalen
 från en kristallstyrd CO, vars frekvens är valbar med en
 bandomkopplare. Samtidigt kopplas ett bandpassfilter in efter
-blandaren i super-VFO, som svarar till det aktuella frekvensband et.
+blandaren i super-VFO, som svarar till det aktuella frekvensbandet.
 
-För t.ex. 21 MHz-bandet är VFO-filtrets passband 12 - 12.5 MHz. När en
-VFO-signal 12 - 12.5 MHz blandas med en 9 MHz SSBmodulerad signal
-erhålls en frekvens i området 3 - 3.5 MHz och en frekvens i området
-21 - 21.5 MHz. Den önskade av dessa frekvenser filtreras fram med
+För t.ex. 21 MHz-bandet är VFO-filtrets passband 12 - 12,5 MHz. När en
+VFO-signal 12 - 12,5 MHz blandas med en 9 MHz SSB modulerad signal
+erhålls en frekvens i området 3 - 3,5 MHz och en frekvens i området
+21 - 21,5 MHz. Den önskade av dessa frekvenser filtreras fram med
 omkopplingsbara bandpassfilter, vilket sker med den bandkopplare som
 nämnts tidigare.
 
@@ -245,7 +245,7 @@ speciella situationer. Konceptet för en sådan transceiver beskrivs här
 i stort.  Huvudprincipen för signalbehandlingen kan beskrivas som en
 PLL-styrd dubbelsuper.  SSB-signalen bereds på 9 MHz-nivån och flyttas
 därefter upp till 70 MHz-nivån genom frekvensblandning och
-filtrering. De möjliga sändningsfrekvenserna mellan 0.5 och 30 MHz
+filtrering. De möjliga sändningsfrekvenserna mellan 0,5 och 30 MHz
 skapas genom att blanda den fasta SSB-signalen med en variabel
 frekvens från VCO. Den steglösa frekvenstäckningen som innefattar
 mellanvågs- och kortvågsområdet är emellertid endast avsedd för
@@ -257,7 +257,7 @@ Denna förenklade beskrivning omfattar inte kristalloscillatorerna för
 9 och 61 MHz i fasregleringskretsen och inte heller SSB-modulatorn,
 FM-modulatorn och anordningarna för CW-sändning.
 
-Mottagaren är en dubbelsuper med hög 1:a M F-frekvens. Mottagare för
+Mottagaren är en dubbelsuper med hög 1:a MF-frekvens. Mottagare för
 höga frekvenser kan till och med utföras som en trippelsuper. Samma
 bandpassfilter, blandare och kristallfilter används både vid sändning
 och mottagning.
@@ -276,7 +276,7 @@ sändningsslag och andra inställningar.
 \subsection{Sammanfattning}
 
 Till skillnad från den raka sändaren är den här beskrivna PLL-styrda
-tranceeivern mycket komplicerad. Den tekniska utvecklingen går
+transceivern mycket komplicerad. Den tekniska utvecklingen går
 fort. Nya, bättre och mer invecklade apparater utvecklas ständigt. Men
 det är inte alls nödvändigt att använda det senaste och mest
 avancerade inom apparattekniken för att utöva amatörradio. Det går
@@ -285,7 +285,7 @@ mycket bra att börja med enkla medel och med liten ekonomisk insats.
 Det finns ett stort utbud av begagnade apparater som i olika avseenden
 är konkurrenskraftiga med senare konstruktioner. Det ligger i
 amatörradions traditioner att ta tillvara tillgänglig utrustning och
-förbättradenna efter bästa förmåga.
+förbättra denna efter bästa förmåga.
 
 Ytterst beror resultatet och framgången mest på radiooperatörens
 skicklighet, val av frekvens, antenn och tillfälle.
