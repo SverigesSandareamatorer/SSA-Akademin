@@ -1,0 +1,253 @@
+%\documentclass[a4paper,twoside,twocolumn,openright]{book}
+\documentclass[a4paper,twoside,openright]{book}
+\include{common}
+\usepackage[swedish]{babel}
+
+% Prepare for abstract
+\pagestyle{plain}
+\newenvironment{abstract}%
+{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
+%{\cleardoublepage\null \vfill\begin{center}%
+%\bfseries \abstractname \end{center}}%
+     {\vfill\null}
+
+% Prepare for index
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+\AddToShipoutPicture*{\BackgroundPic}
+
+\pagestyle{empty}
+
+%\frontmatter
+
+% Typsatt förstasida
+% Här borde bilder mm in
+
+\onecolumn
+\vspace{3cm}
+\begin{center}
+\Huge{\bfseries{\color{white}KONCEPT FÖR RADIO\-AMATÖRCERTIFIKAT}} \\[2ex]
+\Huge{\bfseries{\color{white}Referensbok}} \\[2ex]
+\huge{\color{white}Lennart Wiberg} \\
+\Large{\color{white}Andra utgåvan}
+\end{center}
+
+\clearpage
+
+% Colophone
+
+%% Tryckortssidan, denna behöver uppdateras med ny information så småningom.
+
+
+
+\vspace{10em}
+
+\begin{center}
+\Large{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
+\Large{Referensbok}
+
+Lennart Wiberg\\[2\baselineskip]
+\end{center}
+
+%Första upplagan
+%ISBN 91-86368-08-7
+
+\noindent \textbf{Andra upplagan}
+\begin{rev-granskat}[UEI]
+\noindent
+\\ 
+\noindent Det här verket är licenserat under Creative Commons:\newline
+\noindent\hilight{Erkännande-IckeKommersiell-DelaLika} 4.0 Internationell.
+\\
+\\
+\noindent Denna elektroniska faksimilutgåva är baserad på den första tryckta
+upplagan. Notera att information om certifikatsklasser, lagar och förordningar
+har ändrats sedan tryckningen.
+\end{rev-granskat}
+
+\begin{wrapfigure}{R}{4cm}
+    \includegraphics[width=4cm]{images/cc-by-nc-sa}
+    \caption*{CC BY-NC-SA}
+\end{wrapfigure}
+
+%Tryckt i Sverige / Printed in Sweden 1997
+%Smegraf, Smedjebacken
+
+\vfill
+
+\noindent
+\textbf{Förlag}
+
+\noindent
+\textit{Föreningen Sveriges Sändareamatörer (SSA)}\\
+Box 45, S-191 21 Sollentuna\\
+Telefon +46-(0)8 585 702 73\\
+E-post \href{mailto:hq@ssa.se}{hq@ssa.se}\\[\baselineskip]
+
+\noindent
+Ansvarig utgivare:\\
+\hilight{Namne Namnsson}
+
+\cleardoublepage
+\pagestyle{fancy}
+
+%\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
+%\author{Lennart Wiberg}
+%\maketitle
+
+\tableofcontents
+
+\setlength{\parindent}{0px}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+\mainmatter
+
+%\include{errata}
+\include{preface}
+\include{foreword}
+\include{introduction}
+
+\part{RADIOTEKNIK}
+\chapter{El-lära}
+\label{ellära}
+\include{chapter1-1}
+\include{chapter1-2}
+\include{chapter1-3}
+\include{chapter1-4}
+\include{chapter1-5}
+\include{chapter1-6}
+\include{chapter1-7}
+\include{chapter1-8}
+\include{chapter1-9}
+\include{chapter1-10}
+
+\chapter{KOMPONENTER}
+\label{komponenter}
+\include{chapter2-1}
+\include{chapter2-2}
+\include{chapter2-3}
+\include{chapter2-4}
+\include{chapter2-5}
+\include{chapter2-6}
+\include{chapter2-7}
+\include{chapter2-8}
+\include{chapter2-9}
+\include{chapter2-10}
+
+\chapter{KRETSAR}
+\include{chapter3-1}
+\include{chapter3-2}
+\include{chapter3-3}
+\include{chapter3-4}
+\include{chapter3-5}
+\include{chapter3-6}
+\include{chapter3-7}
+\include{chapter3-8}
+\include{chapter3-9}
+
+\include{chapter14-1}
+
+%\chapter{MOTTAGARE}
+%\include{chapter4-1}
+%\include{chapter4-2}
+%\include{chapter4-3}
+%\include{chapter4-4}
+%\include{chapter4-5}
+%\include{chapter4-6}
+%\include{chapter4-7}
+%\include{chapter4-8}
+%\include{chapter4-9}
+
+%\chapter{SÄNDARE OCH TRANSCEIVER}
+%\include{chapter5-1}
+%\include{chapter5-2}
+
+\chapter{ANTENNSYSTEM}
+\include{chapter6-1}
+\include{chapter6-2}
+\include{chapter6-3}
+\include{chapter6-4}
+\include{chapter6-5}
+\include{chapter6-6}
+
+\chapter{VÅGUTBREDNING}
+\label{vågutbredning}
+\include{chapter7-1}
+\include{chapter7-2}
+\include{chapter7-3}
+\include{chapter7-4}
+\include{chapter7-5}
+\include{chapter7-6}
+
+\chapter{MÄTNING}
+\include{chapter8-1}
+\include{chapter8-2}
+
+%\chapter{EMC}
+%\include{chapter9-1}
+%\include{chapter9-2}
+%\include{chapter9-3}
+%\include{chapter9-4}
+
+%\include{emf}
+
+%\chapter{FARLIGA STRÖMMEN}
+%\include{chapter10-1}
+%\include{chapter10-2}
+%\include{chapter10-3}
+%\include{chapter10-4}
+
+%\include{part3}
+
+%\chapter{Nationella och internationella trafikbestämmelse och procedurer}
+%\include{chapter11-1}
+%\include{chapter11-2}
+%\include{chapter11-3}
+%\include{chapter11-4}
+%\include{chapter11-5}
+%\include{chapter11-6}
+
+%\chapter{Nationella och internationella bestämmelser för Amatör- och
+%  Amatörsatellittjänsterna}
+%\include{chapter12-1}
+%\include{chapter12-2}
+%\include{chapter12-3}
+
+%\chapter{REGLER OCH TRAFIKMETODER}
+%\include{chapter13-1}
+
+%\part{MORSESIGNALERING}
+%\chapter{MORSESIGNALERING}
+
+%\include{morse}
+
+\appendix
+\part{APPENDIX}
+
+\include{appendix-a}
+%\include{appendix-b}
+\include{appendix-c}
+\include{appendix-d}
+\include{appendix-e}
+\include{appendix-f}
+\include{appendix-g}
+\include{appendix-h}
+\include{appendix-i}
+\include{appendix-j}
+%\include{appendix-l}
+
+\listoffigures
+\listoftables
+
+\onecolumn
+\bibliography{koncept.bib}
+\bibliographystyle{plain}
+
+\backmatter
+
+\printindex
+\include{backpage}
+
+\end{document}

@@ -4,6 +4,7 @@ all:	koncept.pdf
 all:	matterep.pdf
 #all:	koncept-alpha.pdf
 all:	koncept-larobok.pdf
+all:	koncept-refbok.pdf
 
 .PHONY:	*.pdf
 
@@ -65,6 +66,10 @@ koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
 koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
 	-pdflatex koncept-larobok.tex
 	pdflatex koncept-larobok.tex
+
+koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
+	-pdflatex koncept-refbok.tex
+	pdflatex koncept-refbok.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
