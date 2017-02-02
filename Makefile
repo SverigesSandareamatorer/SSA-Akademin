@@ -3,6 +3,7 @@ DOCKER_IMAGE_NAME=	ssa-koncept
 all:	koncept.pdf
 all:	matterep.pdf
 #all:	koncept-alpha.pdf
+all:	koncept-larobok.pdf
 
 .PHONY:	*.pdf
 
@@ -60,6 +61,10 @@ matterep.pdf: matte.tex matterep.tex
 koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
 	-pdflatex koncept-alpha.tex
 	pdflatex koncept-alpha.tex
+
+koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
+	-pdflatex koncept-larobok.tex
+	pdflatex koncept-larobok.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
