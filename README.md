@@ -1,4 +1,6 @@
-# KonCEPT
+
+![KonCEPT för radioamatörcertifikat]
+
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart Wiberg och utgiven av [Sveriges SändareAmatörer](http://ssa.se) (SSA) i syfte att utbilda nya radioamatörer. Den första upplagan är skriven 1997 och behöver därför en uppdatering och tryckas i en ny upplaga. Detta är projektet för digitalisering och uppdatering av KonCEPT som kommer att leda till den andra upplagan av boken. 
 
 ## SSA Akademin
@@ -22,10 +24,12 @@ Det finns många olika sätt att bidra till projektet även fast man inte vet hu
 	Det är behändigt att kunna söka på TODO:, och \hilight{} ger en gul markör i
 	texten så vi vet när vi läser att här är något vi skall åtgärda.
 
-**Q: Jag vet inte hur man redigerar kod**  
-A: Då kan du lämna en *issue* där du beskriver vart du har hittat ett problem och om du har någon föreslagen förändring så kommer din anmärkning att hanteras.
+Om du hittar något så kan du lämna en *issue* där du beskriver vart du har hittat ett problem och om du har någon föreslagen förändring så kommer din anmärkning att hanteras.
 
-Du kan lämna ärenden (*issues*) till projektet på projektets GitHub-sida under tabben märkt "Issues".
+**Q: Jag vet inte hur man redigerar kod**  
+A: Det finns flera sätt att hjälpa till. Är du intresserad av att läsa boken och ge förslag på förbättringar så använd kontaktinformationen nedan och skicka ett mejl till oss så hjälper vi dig att komma igång.
 
 ## Kontakt
 {Fylla i kontaktuppgifter}
+
+[KonCEPT för radioamatörcertifikat]: koncept.png
