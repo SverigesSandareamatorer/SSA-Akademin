@@ -8,38 +8,54 @@ all:	koncept-refbok.pdf
 
 .PHONY:	*.pdf
 
-KONCEPT_CH1_FILES = chapter1-1.tex chapter1-2.tex chapter1-3.tex \
-	chapter1-4.tex chapter1-5.tex chapter1-6.tex chapter1-7.tex \
-	chapter1-8.tex chapter1-9.tex
-KONCEPT_CH2_FILES = chapter2-1.tex chapter2-2.tex chapter2-3.tex \
-	chapter2-4.tex chapter2-5.tex chapter2-6.tex chapter2-7.tex \
-	chapter2-8.tex chapter2-9.tex chapter2-10.tex images/power1.pdf
-KONCEPT_CH3_FILES = chapter3-1.tex chapter3-2.tex chapter3-3.tex \
-	chapter3-4.tex chapter3-5.tex chapter3-6.tex chapter3-7.tex \
-	chapter3-8.tex chapter3-9.tex
-KONCEPT_CH4_FILES = chapter4-1.tex chapter4-2.tex chapter4-3.tex \
-	chapter4-4.tex chapter4-5.tex chapter4-6.tex chapter4-7.tex \
-	chapter4-8.tex chapter4-9.tex
-KONCEPT_CH5_FILES = chapter5-1.tex chapter5-2.tex
-KONCEPT_CH6_FILES = chapter6-1.tex chapter6-2.tex chapter6-3.tex \
-	chapter6-4.tex chapter6-5.tex chapter6-6.tex
-KONCEPT_CH7_FILES = chapter7-1.tex chapter7-2.tex chapter7-3.tex \
-	chapter7-4.tex chapter7-5.tex
-KONCEPT_CH8_FILES = chapter8-1.tex chapter8-2.tex
-KONCEPT_CH9_FILES = chapter9-1.tex chapter9-2.tex chapter9-3.tex \
-	chapter9-4.tex
-KONCEPT_CH10_FILES = chapter10-1.tex chapter10-2.tex chapter10-3.tex \
-	chapter10-4.tex
-KONCEPT_CH11_FILES = chapter11-1.tex chapter11-2.tex chapter11-3.tex \
-	chapter11-4.tex chapter11-5.tex chapter11-6.tex
-KONCEPT_CH12_FILES = chapter12-1.tex chapter12-2.tex chapter12-3.tex
-KONCEPT_CH13_FILES = chapter13-1.tex
-KONCEPT_APDX_FILES = appendix-a.tex appendix-b.tex appendix-c.tex \
-	appendix-d.tex appendix-e.tex appendix-f.tex appendix-g.tex \
-	appendix-h.tex appendix-i.tex appendix-j.tex appendix-l.tex
+KONCEPT_CH1_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
+	koncept/chapter1-3.tex koncept/chapter1-4.tex \
+	koncept/chapter1-5.tex koncept/chapter1-6.tex \
+	koncept/chapter1-7.tex koncept/chapter1-8.tex \
+	koncept/chapter1-9.tex
+KONCEPT_CH2_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
+	koncept/chapter2-3.tex koncept/chapter2-4.tex \
+	koncept/chapter2-5.tex koncept/chapter2-6.tex \
+	koncept/chapter2-7.tex koncept/chapter2-8.tex \
+	koncept/chapter2-9.tex koncept/chapter2-10.tex \
+	images/power1.pdf
+KONCEPT_CH3_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
+	koncept/chapter3-3.tex koncept/chapter3-4.tex \
+	koncept/chapter3-5.tex koncept/chapter3-6.tex \
+	koncept/chapter3-7.tex koncept/chapter3-8.tex \
+	koncept/chapter3-9.tex
+KONCEPT_CH4_FILES = koncept/chapter4-1.tex koncept/chapter4-2.tex \
+	koncept/chapter4-3.tex koncept/chapter4-4.tex \
+	koncept/chapter4-5.tex koncept/chapter4-6.tex \
+	koncept/chapter4-7.tex koncept/chapter4-8.tex \
+	koncept/chapter4-9.tex
+KONCEPT_CH5_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex
+KONCEPT_CH6_FILES = koncept/chapter6-1.tex koncept/chapter6-2.tex \
+	koncept/chapter6-3.tex koncept/chapter6-4.tex \
+	koncept/chapter6-5.tex koncept/chapter6-6.tex
+KONCEPT_CH7_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
+	koncept/chapter7-3.tex koncept/chapter7-4.tex \
+	koncept/chapter7-5.tex
+KONCEPT_CH8_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex
+KONCEPT_CH9_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex \
+	koncept/chapter9-3.tex koncept/chapter9-4.tex
+KONCEPT_CH10_FILES = koncept/chapter10-1.tex koncept/chapter10-2.tex \
+	koncept/chapter10-3.tex koncept/chapter10-4.tex
+KONCEPT_CH11_FILES = koncept/chapter11-1.tex koncept/chapter11-2.tex \
+	koncept/chapter11-3.tex koncept/chapter11-4.tex \
+	koncept/chapter11-5.tex koncept/chapter11-6.tex
+KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
+	koncept/chapter12-3.tex
+KONCEPT_CH13_FILES = koncept/chapter13-1.tex
+KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-b.tex \
+	koncept/appendix-c.tex koncept/appendix-d.tex \
+	koncept/appendix-e.tex koncept/appendix-f.tex \
+	koncept/appendix-g.tex koncept/appendix-h.tex \
+	koncept/appendix-i.tex koncept/appendix-j.tex \
+	koncept/appendix-l.tex
 KONCEPT_OTHER_FILES = common.tex errata.tex foreword.tex introduction.tex \
-	matte.tex morse.tex part3.tex preface.tex rest.tex koncept.bib \
-	koncept.tex emf.tex
+	matte.tex koncept/morse.tex part3.tex preface.tex rest.tex koncept.bib \
+	koncept.tex koncept/emf.tex koncept/chapter14-1.tex
 KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH5_FILES) \
 	$(KONCEPT_CH6_FILES) $(KONCEPT_CH7_FILES) $(KONCEPT_CH8_FILES) \
@@ -80,7 +96,7 @@ koncept.ind: koncept.idx
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
-emf-handout.pdf: emf-handout.ind emf-handout.tex emf.tex common.tex
+emf-handout.pdf: emf-handout.ind emf-handout.tex koncept/emf.tex common.tex
 	pdflatex emf-handout.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
@@ -116,4 +132,4 @@ docker-build:
 	docker run -ti --rm -v $(shell pwd):/work -w /work ${DOCKER_IMAGE_NAME} make all
 
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out *.png
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out *.png *.ilg *.upa koncept/*.aux
