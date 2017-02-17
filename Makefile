@@ -104,7 +104,7 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 
 # TODOs
 TODOs:  koncept.tex $(KONCEPT_FILES)
-	grep -n TODO *.tex > TODOs
+	grep -n TODO *.tex koncept/*.tex > TODOs
 	wc -l TODOs
 
 # Länkade bilder
