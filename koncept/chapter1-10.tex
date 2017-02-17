@@ -13,7 +13,7 @@ att \emph{Software Defined Radio (SDR)} blivit en viktig del i allt fler
 radios och även användning av vanliga datorer.
 
 I grunden så bygger det på att man digitaliserar signalerna, processar det
-digitalt i t.ex. en processor eller programerbar logik (FPGA), och sedan
+digitalt i t.ex. en processor eller programmerbar logik (FPGA), och sedan
 omvandlar det till analoga signaler igen. När man gör detta i mjukvara i en
 processor kallar man det för SDR.
 
@@ -27,7 +27,7 @@ enklare jobbet.
 
 En GPS-mottagare är ett exempel på en sådan mottagare, där dedikerad hårdvara
 hanterar många miljoner samples per sekund, men processar dem till några värden
-per milisekund som sedan processas vidare i en processor.
+per millisekund som sedan processas vidare i en processor.
 
 För att kunna förstå detta behöver vi gå igenom grunderna i konvertering av
 signalerna mellan analogt och digitalt, och tillbaka.
@@ -70,7 +70,7 @@ representerar Samples.
 
 Medans sampling är den process som ger oss \emph{tids-diskreta} värden istället
 för tids-kontinuerliga värden så är värdena fortfarande inte representerade som
-tal, dvs. värdes-diskreta istället för värdes-kontinuerliga. För att åstakomma
+tal, dvs. värdes-diskreta istället för värdes-kontinuerliga. För att åstadkomma
 detta behöver man omvandla värdena till fasta värden, en process som kallas för
 \emph{kvantisering} (eng. \emph{quantize}).
 
@@ -83,7 +83,7 @@ Har man t.ex. ett kvantiserings-steg på 0,1 V så blir 0 till 0,1 V tolkat som
 \hilight{TODO: illustrera kvantisering och PCM}
 
 Denna sista del att omvandla de kvantiserade talen till värden kallas
-\emph{Pulse Code Modulation (PCM)}, men det ingår idagligt tal i kvantiserings-
+\emph{Pulse Code Modulation (PCM)}, men det ingår i dagligt tal i kvantiserings-
 processen idag som en naturlig representation. Denna omvandling kan göras
 olinjär, vilket nyttjats i telefoni-system för kompression, men man har börjat
 frångå det annat än av kompatibilitetsskäl.
@@ -143,7 +143,7 @@ i tids-planet, dvs. när vi jobbar med tid.
 
 Motsvarande process kan utföras i frekvens-planet, dvs. när vi har konverterat
 signalen som amplitud av frekvens istället för amplitud av tid. Har man då
-även konveterat filtrets egenskaper så gör man helt enkelt en multiplikation av
+även konverterat filtrets egenskaper så gör man helt enkelt en multiplikation av
 signal och filter för varje frekvens:
 
 \(Y(f) = X(f)H(f)\)
@@ -174,10 +174,10 @@ uppstår alltid när man går mellan tids-kontinuerlig och tids-diskret tid.
 \hilight{TODO: illustrera viknings-spektrum}
 
 Vid sampling så kan alltså högre frekvenser vika ned sig i spektrat. Detta är
-oftast oönskat, vardvid man har ett filter före ingången som undertrycker
+oftast oönskat, varvid man har ett filter före ingången som undertrycker
 oönskade signaler. För t.ex. tal-signaler använder man ett lågpass filter för
 att undertrycka de oönskade signalerna högre upp. Detta filter kan istället
-användas för ett visst frekvensband för att konvetera ned detta band i
+användas för ett visst frekvensband för att konvertera ned detta band i
 processen, något som är väldigt populärt i SDR sammanhang. I bägge dessa fall
 är filtret ett \emph{anti-vikningsfilter} (eng. \emph{anti-aliasing filter}).
 
@@ -209,7 +209,7 @@ För att hantera dessa delar använder man analog-till-digital konverterare
 (eng. \emph{Analog-Digital Conversion (ADC)}) samt digital-till-analog
 konverterare (eng. \emph{Digital-Analog Conversion (DAC)}). En ADC tar hand om
 sampling, kvantisering och PCM-kodning medans en DAC omvandlar PCM-koden till
-analog spänning. Ofta behöver man kompletera med analoga filter, men moderna
+analog spänning. Ofta behöver man komplettera med analoga filter, men moderna
 sigma-delta omvandlare har kraftigt reducerat kraven.
 
 ADC och DAC köper man idag som färdiga integrerade kretsar, inte sällan med

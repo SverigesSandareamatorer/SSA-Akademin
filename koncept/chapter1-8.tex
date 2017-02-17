@@ -30,7 +30,7 @@ fasmodulation. Därutöver finns system för pulsmodulation.
 
 Sätten att modulera kallas \emph{sändningsslag}. Gemensamt för sändningsslagen
 är att en givare - det kan vara en mikrofon, en telegrafnyckel, en
-fjärrskriftmaskin, en dator, en TV-kamera o.s.v. - alstrar en analog eller
+fjärrskriftsmaskin, en dator, en TV-kamera o.s.v. - alstrar en analog eller
 digital signal. Denna styr underbärvågen så att huvudbärvågen moduleras med den
 avsedda informationen och sänds ut.
 
@@ -212,7 +212,7 @@ Bilden visar frekvensspektrum av en signal vid amplitudmodulation med
 
 \subsubsection{Försök}
 
-Modulera en A3E-sändare med en 3 kHzsignal. Med en mottagare utrustad med ett
+Modulera en A3E-sändare med en 3 kHz signal. Med en mottagare utrustad med ett
 smalt filter för telegrafi, kan man urskilja och påvisa bärvågen och de båda
 sidbanden.
 
@@ -242,14 +242,14 @@ Dessa är
 AM-signalen består således inte bara av bärvågsfrekvensen \(f_{HF}\) utan även
 av övre och nedre sidofrekvenser, vilka är summan och skillnaden av
 bärvågsfrekvensen \(f_{HF}\) och den modulerande frekvensen \(f_{LF}\).
-Alltså \(f_{HF} + f_{LF}\) (övre sidfrekvens) och skillnadsfrekvensen
-\(f_{HF} - f_{LF}\) (undre sidfrekvens).
+Alltså \(f_{HF} + f_{LF}\) (övre sidofrekvens) och skillnadsfrekvensen
+\(f_{HF} - f_{LF}\) (undre sidofrekvens).
 
 Eftersom tal inte bara omfattar en enda frekvens utan ett helt frekvensspektrum
-(c:a 0.3 - 3 kHz), så uppstår inte bara två sidfrekvenser utan två sidband, det
+(c:a 0.3 - 3 kHz), så uppstår inte bara två sidofrekvenser utan två sidband, det
 lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper Side Band).
 
-LF-signalens frekvens bestämmer sidfrekvensens avstånd från bärvågen.
+LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
 Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
 dubbelt så stor som den högsta modulerande LF-frekvensen:
 
@@ -258,7 +258,7 @@ dubbelt så stor som den högsta modulerande LF-frekvensen:
 Om de modulerande LF-frekvenserna är mellan 0.3 och 3 kHz, så blir sändningens
 totala bandbredd 6 kHz.
 
-LF-signalernas amplitud påverkar sidbandens och sidfrekvensernas amplitud. Vid
+LF-signalernas amplitud påverkar sidbandens och sidofrekvensernas amplitud. Vid
 maximal modulation (100 \% modulationsgrad) varierar signalamplituden mellan
 noll och dubbla värdet av det för en omodulerad bärvåg.
 
@@ -282,7 +282,7 @@ Eftersom samma information finns i båda sidbanden och ingen finns i bärvågen,
 så sänds effekten i bärvågen och ett av sidbanden ut till ingen nytta. I
 talpauser sänds endast bärvågseffekten och till ingen nytta. Även
 frekvensutrymme slösas bort. Då en annan, alltför närliggande sändares bärvåg
-blandas med den egna, så alstras renstoner i mottagarna.
+blandas med den egna, så alstras interferenstoner i mottagarna.
 
 \subsection{Sändningsslaget A1A (även kallat CW)}
 \textbf{HAREC a.\ref{HAREC.a.1.8.1}, a.\ref{HAREC.a.1.8.6a}, a.\ref{HAREC.a.1.8.7a}\label{myHAREC.a.1.8.1}\label{myHAREC.a.1.8.6a}\label{myHAREC.a.1.8.7a}}
@@ -312,7 +312,7 @@ telegraferingshastigheten 60 tecken/minut alstrar bärvågspulserna en kantvåg
 med frekvensen 5 Hz. Som tidigare beskrivits, består en sådan kantvåg av summan
 av sinussignaler med frekvenserna 5 Hz, 15 Hz, 25 Hz, 35 Hz o.s.v.
 
-Det innebär att det uppstår sidfrekvenser över och under bärvågens frekvens och
+Det innebär att det uppstår sidofrekvenser över och under bärvågens frekvens och
 med ett avstånd till bärvågen av 5 Hz, 15 Hz, 25, 35Hz o.s.v ..
 Telegrafisändaren har alltså liksom vid A3E en bandbredd, som dels står i
 förhållande till nycklingshastigheten och dels till ``kantigheten'' på tecknen,
@@ -358,8 +358,8 @@ Med filtermetoden blandas HF- och LF-signalerna i en speciell blandare. Där
 undertrycks båda dessa signaler medan blandningsprodukterna med deras summa-
 och skillnadsfrekvenser blir kvar, d.v.s. det övre och nedre sidbandet.
 
-Utsignalen från blandaren benämns DSBsignal (Double Side Band). Till skillnad
-från i A3E-signalen saknas dock bärvågen i DSBsignalen. För att även
+Utsignalen från blandaren benämns DSB-signal (Double Side Band). Till skillnad
+från i A3E-signalen saknas dock bärvågen i DSB-signalen. För att även
 undertrycka det ena sidbandet före sändningen, så följs blandaren av ett
 bandpassfilter med bandbredd och frekvensläge för avsett sidband.
 
@@ -391,15 +391,15 @@ undertryckt.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/bild_2_1-29}
-\caption{Sidbandlägen vid SSB}
+\caption{Sidbandslägen vid SSB}
 \label{fig:BildII1-29}
 \end{figure}
 
 Bild \ref{fig:BildII1-29}.
 
-LF-signalens amplitud bestämmer amplituden på sidfrekvensen.
+LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
 
-LF-signalens frekvens bestämmer sidfrekvensens avstånd från bärvågsfrekvensen
+LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågsfrekvensen
 (bärvågen undertryckt).
 
 Bandbredden på den utsända signalen är skillnaden mellan högsta och lägsta
@@ -440,7 +440,7 @@ Amplitudändringar uppfattas däremot inte. De flesta störningar - särskilt
 pulserande sådana som från tändningssystem - kommer att därför att skiljas bort.
 
 För att effektivt utnyttja fördelarna med vinkelmodulation, antingen det är
-frekvenseller fasmodulation, behövs tillräckligt frekvensutrymme. Det innebär
+frekvens eller fasmodulation, behövs tillräckligt frekvensutrymme. Det innebär
 att främst högre frekvensband kommer i fråga.
 
 \subsection{Frekvensmodulation (även kallat FM)}
@@ -473,7 +473,7 @@ eller negativ. Vid en modulationsfrekvens av 300 Hz varierar bärvågsfrekvensen
 300 gånger per sekund, vid 3kHz - 3000 gånger per sekund.
 
 Likspänningsnivåer kan överföras med FM, eftersom en motsvarande
-frekvensavikelse kan framställas.
+frekvensavvikelse kan framställas.
 
 Bilden visar också vad som oftast sägs, att bärvågsamplituden inte ändras av
 modulationen. Detta är emellertid bara delvis sant, eftersom såväl
@@ -496,7 +496,7 @@ frekvensen, frekvensdeviationen och modulationsindex.
 
 Bild \ref{fig:BildII1-30} (nederst).
 
-Vi gör tankeexperimentet att en FM-sändare moduleras med en fyrkantvåg.
+Vi gör tankeexperimentet att en FM-sändare moduleras med en fyrkantsvåg.
 Frekvensen kommer då att hoppa växelvis mellan frekvenserna \(f\) och
 \(f + \Delta f\). Sättet kallas FSK (frekvensskiftnyckling) och används t.ex.
 vid sändning av radiofjärrskrift (RTTY, AMTOR, Paketradio etc.).
@@ -504,18 +504,18 @@ vid sändning av radiofjärrskrift (RTTY, AMTOR, Paketradio etc.).
 Vi föreställer oss två sändare, som sänder varannan gång, varav den ena sänder
 frekvensen \(f\) och den andra sänder \(f + \Delta f\). Båda sändarnas
 HF-signaler kommer då att bilda ett frekvensspektrum, som förutom \(f\) och
-\(f + \Delta f\) även innehåller sidfrekvenser.
+\(f + \Delta f\) även innehåller sidofrekvenser.
 
 Bredden på detta spektrum beror bl. a. på nycklingsfrekvensen. Eftersom en
-fyrkantvåg innehåller summan av dess grundfrekvens och övertoner, kommer alla
+fyrkantsvåg innehåller summan av dess grundfrekvens och övertoner, kommer alla
 dessa toner att modulera vardera sändaren. De högsta modulerande
-LF-frekvenserna alstrar sidfrekvenserna längst ut från vilofrekvensen.
+LF-frekvenserna alstrar sidofrekvenserna längst ut från vilofrekvensen.
 LF-signalens frekvensspektrum påverkar alltså HF-signalens bandbredd.
 
 Spektrum nederst i bilden är en förenklad framställning av
 frekvensskiftnyckling.
 
-Vid modulation med en sinussignal istället för med en fyrkantsignal, uppstår ett
+Vid modulation med en sinussignal istället för med en fyrkantssignal, uppstår ett
 frekvensspektrum som på överst i bilden.
 
 \paragraph{Frekvensdeviation och modulationsindex}
@@ -533,11 +533,11 @@ frekvensspektrum som på överst i bilden.
 Bild \ref{fig:BildII1-31}.
 
 Vid vinkelmodulation uppstår talrika sidofrekvenser, som beror av den
-modulerande frekvensen \(f_{LF}\). Amplitudfördelningen mellan sidfrekvenserna
+modulerande frekvensen \(f_{LF}\). Amplitudfördelningen mellan sidofrekvenserna
 står i förhållande till deviationen, varvid deras amplitud blir mindre desto
 längre bort från bärvågen de är.
 
-I praktiken anses en sidfrekvens försumbar när dess amplitud är mindre än 1 \%
+I praktiken anses en sidofrekvens försumbar när dess amplitud är mindre än 1 \%
 av amplituden för omodulerad bärvåg.
 
 För beräkning av bandbredden används begreppet modulationsindex m, vilket är
@@ -574,7 +574,7 @@ Där är \(\Delta f_{max} = 75 kHz\) och \(f_{LFmax} =15 kHz\), därmed är
 \(m = \frac{75}{15} = 5\) och \(b = 2 \cdot (75 + 15) = 180 kHz\).
 
 Som framgår av tabellen på nästa uppslag varierar bärvågens liksom
-sidfrekvensernas inbördes amplitud med modulationsindex. Detta skall jämföras
+sidofrekvensernas inbördes amplitud med modulationsindex. Detta skall jämföras
 med AM där bärvågens amplitud är konstant och endast sidbandens amplitud
 varierar.
 
@@ -652,7 +652,7 @@ varieras (devieras) i takt med den modulerande signalen (t.ex. tal). Det gör ma
 genom att variera resonansfrekvensen i den svängningskrets som styr
 oscillatorfrekvensen.
 
-\item Fasmodulation (PM) alstras vanligen genom att efter sändarescillatorn
+\item Fasmodulation (PM) alstras vanligen genom att efter sändaroscillatorn
 variera den modulerande signalens fasläge i förhållande till en omodulerad
 bärvåg - s.k. fasmodulering. Det gör man genom att variera resonansfrekvensen i
 en svängningskrets efter oscillatorn- d.v.s. utan att påverka
@@ -680,7 +680,7 @@ med 6 dB dämpning per oktav ökad frekvens.
 \index{PAM}
 \index{PPM}
 
-Pulsmodulation används mest i mikrovågområdet. Pulsmodulerade signaler sänds
+Pulsmodulation används mest i mikrovågsområdet. Pulsmodulerade signaler sänds
 vanligen som en serie korta pulser åtskilda av relativt långa pauser utan
 modulering.
 
@@ -706,10 +706,10 @@ omodulerade pulståg. Annan pulsmodulation har följande symboler
 Sändningsslag & Amplituden på & Tonhöjden på & Bandbredden b      & För stor amplitud \\
               & LF-signalen   & LF-signalen  & förhåller sig till & på LF-signalen \\
               & påverkar      & påverkar     &                    & medför \\ \hline
-A3E (AM) & amplituden i   & sidfrekvenser- & LF-signalens    & övermodulering \\
+A3E (AM) & amplituden i   & sidofrekvenser- & LF-signalens    & övermodulering \\
          & båda sidbanden & nas avstånd    & högsta frekvens & och för stor bandbredd \\
          &                & från bärvågen  & & \\
-J3E (SSB)& amplituden på  & sidfrekvenser- & skillnaden mellan & för stor bandbredd,\\
+J3E (SSB)& amplituden på  & sidofrekvenser- & skillnaden mellan & för stor bandbredd,\\
          & utsänt sidband & nas avstånd    & LF-signalens      & överstyrning av\\
          &                & från bärvågen  & högsta och lägsta & förstärkarsteg\\
          &                &                & frekvens          & \\
@@ -728,7 +728,7 @@ F3E (FM) & deviationen    & hastigheten på & dubbla summan     & för stor devi
 
 \begin{rev-nytt}[MAD]
 Utöver de klassiska analoga modulationsmetoder finns ett antal digitala
-modultationsformer. De är anpassade för transmission av binärt data. I viss mån
+modulationsformer. De är anpassade för transmission av binärt data. I viss mån
 kan CW ses som digital modulation där en 0 moduleras utan bärvåg och 1 moduleras
 med bärvåg. Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK,
 4-PSK och QAM som presenteras i följande delavsnitt.
@@ -765,7 +765,7 @@ Man kan använda fler än 2 frekvenser, t.ex. används 4 frekvenser i Continuous
 4 level FM (C4FM) i Phase 1 radios i Project 25 samt Fusion.
 
 Frekvensskift används även för att sända långsamma meddelanden där JT65
-andvänder 65 frekvenser den skiftar mellan, medans JT9 använder 9 frekvenser.
+använder 65 frekvenser den skiftar mellan, medans JT9 använder 9 frekvenser.
 
 \end{rev-nytt}
 
@@ -788,10 +788,10 @@ ofta med +1 representerande 0 och -1 representerande 1.
 
 En nackdel med BPSK är att blir polariteten förväxlad så kommer meddelandet
 att bli inverterat, dvs. 0 blir 1 och 1 blir 0. BPSK behöver därför också
-kompeleteras med annan digital modulation för att hantera polariteten, något
-som i allmänhet kan åstakommas enkelt.
+kompletteras med annan digital modulation för att hantera polariteten, något
+som i allmänhet kan åstadkommas enkelt.
 
-BPSK används t.ex. av navigations-sateliter som GPS, GLONASS och GALILEO.
+BPSK används t.ex. av navigations-satelliter som GPS, GLONASS och GALILEO.
 För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
 som \emph{Costas loop}, eftersom en normal PLL-loop klarar inte av tecken-
 ändringarna på signalen.
@@ -941,7 +941,7 @@ denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten
 
 Ofta brukar vi referera till informationsmängden i mängden \emph{Byte (B)}
 som t.ex. att en fil är 2 kB eller en bild är 1,25 MB. Då en Byte innehåller
-8 bitar, så motsvarar det 16 kb respektie 10 Mb. I dagligt tal pratar vi då om
+8 bitar, så motsvarar det 16 kb respektive 10 Mb. I dagligt tal pratar vi då om
 storleken på en fil.
 
 Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
@@ -995,7 +995,7 @@ multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 Genom att justera antalet bitar per symbol så kan man ändra antalet symboler
 per sekund utan att ändra överföringskapaciteten. En anledning till att man
 vill göra det är för att bandbredden som används av en överföring är ungefär
-proportionelig med symbol-takten, dvs. hur många Baud man överför i.
+proportionerlig med symbol-takten, dvs. hur många Baud man överför i.
 Detta påverkar hur stor del av radio-spektrat man upptar, och därmed också hur
 nära en annan signal man kan ligga i spektrat utan att störa varandra, dvs.
 det påverkar frekvensplaneringen av bandet ifråga.
@@ -1018,9 +1018,9 @@ Fram tills nu har vi diskuterat digital modulation utan att ta hänsyn till
 störningar och hur dessa störningar påverkar vårt överförda data. Precis som
 vår CW eller SSB kan vara störd av atmosfäriska störningar, andra sändare
 eller helt enkelt vara svaga signaler så att det interna bruset blir en
-begräsning, så kommer mottagningen av digitala signaler att bli störd.
+begränsning, så kommer mottagningen av digitala signaler att bli störd.
 Vi skall titta på dessa grundläggande begrepp som bitfel, bitfelssannolikhet,
-felupptäkt samt korrigering med återsändning eller korrigeringskoder.
+felupptäckt samt korrigering med återsändning eller korrigeringskoder.
 
 \end{rev-nytt}
 
@@ -1111,7 +1111,7 @@ om att informationen är rimligt korrekt.
 
 En enkel form av checksumma är paritet, där bitarna i ett ord har summerats ihop
 binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
-kombinaton och sedan jämförs det med paritetsbiten, och om de överensstämmer så
+kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
 upptäckt. Det är med andra ord inte en särdeles stark checksumma. Paritet
@@ -1134,7 +1134,7 @@ starkare kod den vägen. CRC används t.ex. i Ethernet.
 \begin{rev-nytt}[MAD]
 
 En enkel åtgärd för att hantera när man konstaterat att ett block data man
-tagit emot har fel, är att begrära omsändning. Genom att sändaren håller en
+tagit emot har fel, är att begära omsändning. Genom att sändaren håller en
 buffert med meddelanden som den skickat, och mottagaren meddelar sändare om
 den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
 realiseras. Automatisk omsändningsbegäran (eng \emph{Automatic Repeat reQuest
