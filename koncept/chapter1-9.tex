@@ -76,10 +76,10 @@ För att förenkla beräkningen av dB-talet divideras det högre effekttalet med
 lägre. Bokstaven a i följande formler betyder antingen förstärkning (+a) eller
 dämpning (-a) beroendet på vilket förtecken som sätts.
 
-\(a[B] = \log \dfrac{P_{hög}}{P_{låg}}\)
+\(a[B] = \log \dfrac{P_\text{hög}}{P_\text{låg}}\)
 
-\(a[dB] = 10\log \dfrac{P_{hög}}{P_{låg}}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+\(a[dB] = 10\log \dfrac{P_\text{hög}}{P_\text{låg}}\)
+
 Att addera eller subtrahera värden på en logaritmisk skala, motsvarar att
 multiplicera resp. dividera värden på en linjär skala. Huvudskalorna på en
 räknesticka är logaritmiska. (Räknestickan är ett enkelt, förut mycket använt
@@ -113,14 +113,14 @@ enligt följande tabell.
 
 \begin{tabular}{rllr}
 Kvot av & Analys             & Skriv            & dB \\
-\(P_{hög}/P_{låg}\) &          &                  &    \\
+\(P_\text{hög}/P_\text{låg}\) &          &                  &    \\
      1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 \\
     10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 \\
    100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 \\
  1 000 &  1 000 har 3 nollor & \(3 \cdot 10\) = & 30 \\
 10 000 & 10 000 har 4 nollor & \(4 \cdot 10\) = & 40
 \end{tabular}
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+
 \subsection{Strömändring uttryckt i dB}
 \index{ström!dB}
 \index{dB!ström}
@@ -130,25 +130,25 @@ men annorlunda än mellan effekter. En fyrpol med inbördes lika ingångs- och u
 
 Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\))
 
-således \(\frac{P_{h{\oe}g}}{P_{l{\aa}g}} = \frac{I_{hög}^2 \cdot R}{I_{l{\aa}g}^2 \cdot R}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+således \(\dfrac{P_\text{h{\oe}g}}{P_\text{l{\aa}g}} = \dfrac{I_\text{hög}^2 \cdot R}{I_\text{l{\aa}g}^2 \cdot R}\)
+
 R kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
 En jämförelse uttryckt i dB kan endast göras
 under samma förutsättningar; här att impedanserna (resistanserna) är lika,
 
-således \(\frac{P_{hög}}{P_{låg}} = \frac{I_{hög}^2}{I_{låg}^2}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+således \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
+
 Effektförhållandet eller kvadratvärdet på
 strömförhållandet kan uttryckas logaritmiskt
 i B eller dB
 
-\(a[dB] = 10\log \dfrac{I_{hog}^2}{I_{log}^2}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+\(a[dB] = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
+
 Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen
 
-\(a[dB] = 20\log \frac{I_{hög}}{I_{låg}}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+\(a[dB] = 20\log \dfrac{I_\text{hög}}{I_\text{låg}}\)
+
 \subsection{Spänningsändring uttryckt i dB}
 \index{spänning!dB}
 \index{dB!spänning}
@@ -160,14 +160,14 @@ Enligt Joules lag är \(P = \frac{U^2}{R}\) (\(P = U \cdot I\))
 
 Två effekter kan ställas i förhållande till varandra på följande sätt:
 
-\(\frac{P_{hög}}{P_{låg}}=\frac{U_{hög}^2:R}{U_{låg}^2:R}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+\(\dfrac{P_\text{hög}}{P_\text{låg}}=\dfrac{U_\text{hög}^2 \cdot R}{U_\text{låg}^2 \cdot R}\)
+
 R avkortas och efter omskrivning fås en formel som liknar den för strömmar
 
-\(\frac{P_{hög}}{P_{låg}} = \frac{U_{hög}^2}{U_{låg}^2}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
-\(a[dB] = 20\log \frac{U_{hög}}{U_{låg}}\)
-\hilight{TODO: NTJ ö och å i hög och låg försvinner.}
+\(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{U_\text{hög}^2}{U_\text{låg}^2}\)
+
+\(a[dB] = 20\log \dfrac{U_\text{hög}}{U_\text{låg}}\)
+
 Med nomogrammet i bild \ref{ellära-nomogram-db-spänning} kan kvoten av en ström- eller spänningsändring omvandlas
 till decibel och tvärt om.
 
@@ -196,8 +196,8 @@ enligt följande tabell.
 
 \begin{tabular}{rllr}
 Kvot av & Analys             & Skriv            & dB \\
-\(U_{hög}/U_{låg}\) &          &                  &    \\
-\(I_{hög}/I_{låg}\) &          &                  &    \\
+\(U_\text{hög}/U_\text{låg}\) &          &                  &    \\
+\(I_\text{hög}/I_\text{låg}\) &          &                  &    \\
      1 & 1 har 0 nollor      & \(0 \cdot 20\) = &  0 \\
     10 & 10 har 1 nolla      & \(1 \cdot 20\) = & 20 \\
    100 & 100 har 2 nollor    & \(2 \cdot 20\) = & 40 \\
