@@ -59,7 +59,7 @@ snabbare hastighetsändring. Utslagsriktningen växlar, när magneten förs in i
 respektive dras ut ur induktorn - det uppstår en växelström.
 
 En växelspänning uppstår över induktorn, även när den ingår i en strömkrets som
-sluts och bryts - alltså utan en magnetsom rör sig.
+sluts och bryts - alltså utan en magnet som rör sig.
 
 \emph{Försök 2}
 
@@ -166,7 +166,7 @@ En fullbordad pendling i en växelström kan ses som ett varv i en cirkel - 360�
 och en fullbordad pendling kallas en period.
 
 En period motsvarar omkretsen i en cirkel med radien r, där omkretsen är
-\(2 \cdot π \cdot r (π = 3.141593..)\). När strömmen växlar 1 gång/sekund har
+\(2 \cdot π \cdot r\). När strömmen växlar 1 gång/sekund har
 pendlingen en frekvens [f] av 1 Hertz [Hz]. Vid 50 växlingar/sekund har
 pendlingen en frekvens av 50 Hz o.s.v.
 
@@ -187,14 +187,12 @@ Sambandet är
 % Dessutom användes enheten mH vilket jag ändrade till µH eftersom det gör
 % resonemanget konsekvent med motsvarande för kondensatorn.
 % // Hans
+% Jag tog bort den undre delen i tabellen både här och vid kondensatorn då de
+% var felaktiga // NTJ
 
 \begin{tabular}{llll}
-  &  \([\Omega]\) & \([Hz]\) & \([H]\)    \\
-  eller & \([M\Omega]\) & \([MHz]\) & \([µH]\)
-\end{tabular}
-
-(samma sortenheter i alla led)
-
+ \([\Omega]\) & \([Hz]\) & \([H]\)
+ \end{tabular}
 
 \emph{Exempel:}
 % Samma resonemang här; jag gjorde stilen mer konsekvent med avsnittet om
@@ -206,7 +204,7 @@ Sambandet är
 
 2. \(L = 1\ H\) \(f = 5\ kHz\) \(X_L = ?\)
 
-\(X_L = 2πfL = 2π \cdot 5 \cdot 10^3 \cdot 1 = 31400\ Ω\)
+\(X_L = 2πfL = 2π \cdot 5 \cdot 10^3 \cdot 1 = 31\, 400\ Ω\)
 
 \subsection{Fasförskjutning mellan spänning och ström i en induktor}
 \textbf{HAREC a.\ref{HAREC.a.2.3.5}\label{myHAREC.a.2.3.5}}
@@ -231,7 +229,7 @@ för en komponent respektive den för en hel strömkrets.
 
 Q-faktorn för en induktor är kvoten av dess reaktans och serieresistans.
 
-\(Q_\text{komponent} = \frac{X_\text{komponent}}{R_\text{komponent}}\)
+\(Q_\text{komponent} = \dfrac{X_\text{komponent}}{R_\text{komponent}}\)
 
 Q-faktorn för en hel svängningskrets beror däremot på bredden på det
 frekvensband som en viss komponentkombination ger. Q-faktorn för en resonant
@@ -252,8 +250,8 @@ strömtätheten vid ytan. Fenomenet kallas yteffekt (på engelska
 
 Det djup i ledarmaterialet där laddningstätheten sjunkit till 37\% av
 värdet vid ytan kallas \emph{skin depth}. För koppar är detta djup c:a 70 mm vid
-100 Hz. Vid 1 MHz har djupet minskat till 0.07 mm och vid 100 MHz till
-0.0067 mm. På grund av yteffekten är alltså materialet i mitten av homogena
+100 Hz. Vid 1 MHz har djupet minskat till 0,07 mm och vid 100 MHz till
+0,0067 mm. På grund av yteffekten är alltså materialet i mitten av homogena
 ledare elektriskt mindre verksamt vid höga frekvenser. Resistansen blir alltså
 större för växelström än för likström, om ledaren är samma.
 

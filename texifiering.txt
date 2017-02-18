@@ -114,3 +114,7 @@ synligt i texten med följande format:
 Det är behändigt att kunna söka på TODO:, och \hilight{} ger en gul markör i
 texten så vi vet när vi läser att här är något vi skall åtgärda.
 
+18) Har lagt i \dfrac på formler med nedsänkta tecken då det blir tydligare
+att läsa. /NTJ
+
+19) har lagt in \, som tusentalsavskiljare/ NTJ
