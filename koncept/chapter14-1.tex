@@ -12,7 +12,7 @@ enklare att använda den på ett korrekt sätt.
 \index{galvanisk isolation}
 \index{isolation!galvanisk}
 
-\emph{Isolation} (eng. \emph{isolation}) är ett samlingsbegrep för att separera
+\emph{Isolation} (eng. \emph{isolation}) är ett samlingsbegrepp för att separera
 olika signaler. Den första enkla separationen är den hos en \emph{isolator},
 dvs. ett material som inte leder ström så bra. Det är den mest grundläggande
 formen av isolation, som förhindrar elektrisk ledning mellan ledningar.
@@ -25,7 +25,7 @@ Nu är isolation inte begränsat till enbart likström, utan även växelspänni
 kan behöva isoleras. Hur god isolationen är kan antas beror kraftigt på
 frekvensen, och de åtgärder man gör bör anpassas för hur god isolation man
 behöver eller vill ha för olika frekvenser. Man kan t.ex. vilja ha god
-isolation vid sändar och mottagarfrekvensen 14 MHz, men inte vill ha galvanisk
+isolation vid sändar- och mottagarfrekvensen 14 MHz, men inte vill ha galvanisk
 isolation för det gemensamma 12 V kraftaggregatet.
 
 \section{Jordning}
@@ -47,7 +47,7 @@ jordpunkterna.
 Den engelska termen \emph{bonding} och även \emph{bondning network} ger en
 indikation på vad det handlar om, nämligen en metod att knyta samman flera
 olika delar av en design eller installation för att ha en gemensam
-referens-spänning. Det är helt enkelt en galvanisk sammankoppling.
+referensspänning. Det är helt enkelt en galvanisk sammankoppling.
 
 Många gånger kallas den referens-potentialen för \emph{jord-potential} för att
 det är väldigt behändigt att använda jorden som referens, helt enkelt gräva ned
@@ -58,7 +58,7 @@ Jorden och jordning är dock ofta missförstått, det finns en övertro på att 
 kan ta ned störningar med enbart jordning. Det förekommer också att man
 upplever att man har problem där jorden upplevs skapa störningar, varvid en
 del felaktigt bryter jorden, och därmed \emph{skyddsjorden}, något man inte
-får gör av elsäkerhetsskäl.
+får göra av elsäkerhetsskäl.
 
 På samma sätt tror många att man kan göra sig av med en stor växelström i
 jorden. Detta kallas ibland lite skämtsamt för \emph{blomjordning}, för att
@@ -122,7 +122,7 @@ kommer de olika strömmarna inte att samverka, detta är en parallell koppling
 av jord \cite[3]{ott1988}. Vi har därmed åstadkommit en isolation mellan
 strömmarna med avseende på jord-anslutningen.
 
-Dock kommer kommer varje ström-källa uppleva en förskjutning i spänningen av
+Dock kommer varje ström-källa uppleva en förskjutning i spänningen av
 sin jord som beror på dess egen ström och impedansen den har till jord. För att
 minska denna effekt kan en minskad strömförbrukning förstås användas, eller
 oftare med en förbättrad jord.
@@ -132,8 +132,8 @@ Elkraftsystemens användning av både \emph{skyddsjord} och \emph{nolla} är
 just ett sådant system, där nollan är den som har strömmen och tillåts få
 åka runt i spänning, medans skyddsjorden i allmänhet enbart har små strömmar.
 Skyddsjordens funktion är också att kunna hantera stora strömmar vid skyddsfel,
-för att kunna bryta tillförseln. Skydds-jorden har egentligen det som
-sitt huvudsyfte, men ger ofta en bra jord-referens.
+för att kunna bryta tillförseln. Skyddsjorden har egentligen det som
+sitt huvudsyfte, men ger ofta en bra jordreferens.
 
 I apparater och även inne på kretskort kan man ha parallellkoppling. Det är även
 känt som \emph{stjärnjordning} (eng. \emph{star grounding}) eftersom
@@ -142,7 +142,7 @@ nyttigt att isolera jord för analoga signaler från digitala eller rent av
 reläer, PA mm. Man försöker sätta stjärnan direkt vid anslutningen till
 kraftaggregatet för att hålla dem så gemensamt som möjligt men med så lite
 serie-jordnings-effekt som möjligt. Samma teknik används ofta för själva
-kraft-distribusionen av samma skäl.
+kraft-distributionen av samma skäl.
 
 \subsection{Sammankoppling av apparater}
 \label{sammankopplingavapparater}
@@ -152,16 +152,16 @@ I ett system där man har gjort parallella jordar i matningen,
 men man nu vill koppla samman två apparater för att överföra en signal.
 En första naiv lösning är ju att helt enkelt bara dra en tråd från den ena
 apparaten över till den andra. Eftersom de har jord-anslutning så har de ju en
-gemensam jord-referens.
+gemensam jordreferens.
 
 Problemet är ju att för den första apparaten som har strömmen \(I_1\) att gå i
 anslutningsimpedansen \(Z_1\) till jorden så ger det en spänning
 \(U_1 = Z_1 I_1\) på den jordanslutningen. På samma sätt kommer den
 andra apparaten att uppleva jorden med en förskjutning av jordspänningen på
 \(U_2 = Z_2 I_2\). Om den tänka utspänningen är \(U_{ut}\) så kommer den
-egentligen utspänningen vara \(U_3 = U_{ut} + U_1\). Om vi för stunden antar att
+egentliga utspänningen vara \(U_3 = U_{ut} + U_1\). Om vi för stunden antar att
 det inte går någon anmärkningsvärd ström i ledaren över till den andra
-apparaten så kommer den uppleva det som en in-spänning \(U_{in}\) i förhållande
+apparaten så kommer den uppleva det som en inspänning \(U_{in}\) i förhållande
 till sin jordpotential \(U_2\) dvs. \(U_{in} = U_3 - U_2 = U_{ut} + U_1 - U_2\).
 
 Vi ser här att skillnaden i jord-potential kommer förskjuta den upplevda
@@ -184,7 +184,7 @@ uppstå när man kopplar ihop två apparater.
 \index{jordning!chassi}
 \index{ledningsbunden störning}
 
-En strategi för att skapa isolation från jord-vägen är att helt enkelt
+En strategi för att skapa isolation från jordvägen är att helt enkelt
 isolera signalerna och dess jord från den av kraftförsörjningen, detta kallas
 för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
 bonding network (IBN)}) \cite[3.2.4]{K27-1991}.
@@ -193,17 +193,17 @@ Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
 
 För apparater med växelströmsmatning har man redan en transformator, som ju
 tillhandahåller en galvanisk isolation mellan primär-sidan (elkraft) och
-sekundär-sidan (elektroniken). Genom att helt enkelt hålla signal-jorden
+sekundär-sidan (elektroniken). Genom att helt enkelt hålla signaljorden
 \emph{flytande} (eng. \emph{floating}), dvs. utan någon galvanisk koppling
-till skyddsjord, så kan man istället koppla samman signal-jord på två apparater
+till skyddsjord, så kan man istället koppla samman signaljord på två apparater
 med separata ledare.
 
 Om vi återgår till de bägge två apparaterna, så kan vi nu istället för att
 använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
-med en kabel parallel med signal-ledaren. Har vi en förhållandevis låg ström
+med en kabel parallell med signalledaren. Har vi en förhållandevis låg ström
 genom den impedans som kabeln har så kommer det fungera fint.
 
-Det här scenariot liknar det hos en normal hemma-stereo t.ex. och ändå kan det
+Det här scenariot liknar det hos en normal hemmastereo t.ex. och ändå kan det
 uppstå \emph{jordbrum} i denna koppling. Det finns flera skäl. Ett skäl är att
 transformatorer visserligen erbjuder en galvanisk isolation, men de är även
 kapacitiva spänningsdelare för den spänning som finns över primär-lindningen,
@@ -256,7 +256,7 @@ och \emph{mesh bonding network (mesh-BN)}) \cite[3.2.3]{K27-1991}
 där man istället för att isolera satsar på att koppla samman jordarna, hårt.
 Varje signalkabel sitter ansluten mot chassijord och därmed skyddsjord och
 man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
-jordanslutning som man ansluter till stativ-jord, jordskenor. Kablar läggs på
+jordanslutning som man ansluter till stativjord, jordskenor. Kablar läggs på
 kabelstegar som jordas. I detta system kommer varje extra kabel koppla samman
 jordarna hårdare, eftersom man parallell-kopplar många impedanser.
 
@@ -268,7 +268,7 @@ magnetfält är så starkt att det inducerar flera ampere av vanlig 50 Hz ström
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
 \ref{sammankopplingavapparater}) där vi fick en skillnad av spänning mellan
-jord-punkterna så kommer vi ha den även här, men nu ansluter vi ju en ledning
+jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en ledning
 mellan dessa punkter, och då kommer det gå en ström som försöker utjämna
 potentialen mellan de bägge jordanslutningarna, som då kommer närmare varandra.
 Det är impedansen på kabeln som kommer avgöra hur stor strömmen blir och hur
@@ -284,7 +284,7 @@ Med en större kabel mellan kommer spänningen sjunka och den vägen kommer
 Fördelen med sammankoppling av jordar är att det blir enklare (och billigare)
 att designa ur EMC-perspektiv, då man direkt kopplar jordströmmarna i chassit.
 Man har inte heller problem med att man skulle råka jorda eller att man skulle
-tappa den enda jord-vägen. Istället försöker man koppla ihop jordarna väl.
+tappa den enda jordvägen. Istället försöker man koppla ihop jordarna väl.
 
 Ett vanligt problem är om man låter jordströmmarna gå genom kretskort, vilket
 gör att man skapar lokala seriejordningsproblem. Man skall se till att
@@ -293,7 +293,7 @@ sättet få bästa möjliga isolation. Denna princip är också lämplig för at
 kunna hantera t.ex. ESD skador.
 
 En annan fördel är att man bygger en vana att jorda allt, och för varje
-kompleterande jordning gör man systemet starkare.
+kompletterande jordning gör man systemet starkare.
 
 \subsection{Balanserad signal}
 \index{balanserad signal}
@@ -314,7 +314,7 @@ inkommande spänningen i förhållande till referens-spänningen. Dock har vi ha
 problem att ha en bra gemensam sådan, och det är uppenbart att vi egentligen
 observerar skillnaden i spänning.
 
-Med balanserad signal tar vi steget fullt ut och separarar jord från signal
+Med balanserad signal tar vi steget fullt ut och separerar jord från signal
 och skickar en signal som vars summa är en fix spänning medans skillnaden är
 hela signalen. Det är som om signalen är neutral. Ofta är dock signalen av
 praktiska skäl förskjuten.
@@ -495,8 +495,8 @@ I_{DM} = & \frac{I_+ - I_-}{2}
 
 Precis som man har impedans på ingångar så har man det på ingångar i treledar-
 system. Det som är den normala impedansen för en transmissionsledare t.ex. är
-egentligen den diffrentiella impedansen, dvs. förhållande mellan den
-diffrentiella spänningen och diffrentiella strömmen. Den gemensamma impedansen
+egentligen den differentiella impedansen, dvs. förhållande mellan den
+differentiella spänningen och differentiella strömmen. Den gemensamma impedansen
 är på samma sätt förhållandet mellan gemensam spänning och gemensam ström
 
 \begin{eqnarray}
@@ -505,9 +505,9 @@ Z_{CM} = & \frac{U_{CM}}{I_{CM}}
 \end{eqnarray}
 
 Egentligen är det inte så konstigt, om man har en koax-kabel i ett 50 Ohm
-system så har sändare och mottagare idealt 50 Ohm som diffrentiell impedans.
+system så har sändare och mottagare idealt 50 Ohm som differentiell impedans.
 I ett system som har isolerad jordning så kan den gemensamma impedansen vara
-många megaOhm eller högre, eftersom den ju är isolerad.
+många MegaOhm eller högre, eftersom den ju är isolerad.
 
 \subsection{Obalans}
 \index{strömbalun}
@@ -516,19 +516,19 @@ Så här långt har huvudsakligen antagit att vi har balans, dvs. att
 transformatorer, induktorer mm är ideala och ger lika bra koppling till bägge
 sidor. Givetvis finns inte detta i verkligheten, och man har en obalans.
 Vid obalans får man signal som är gemensam att läcka över till den som är
-diffrentiell och omvänt att diffrentiell läcker över till den gemensamma.
+differentiell och omvänt att differentiell läcker över till den gemensamma.
 Det resulterar dels i minskad isolation och dels i minskad signal.
 I allmänhet är den minskade isolationen värre än förlusten av signal.
 
 I en transformator ligger lindningarna ofta så att den kapacitiva kopplingen
-från ena polen på en spole är starkare än från den från den andra polen.
+från ena polen på en spole är starkare än från den andra polen.
 Det ger därför en obalans i hur de kopplar kapacitivt.
 
 I en strömbalun kan den ena ledaren ha något lite längre varv runt kärnan än
 den andra. Det ger inte en perfekt 1:1 relation i kopplingen och därmed en
 obalans.
 
-I en transformator med mitt-tap kan mitt-tappen sitta lite förskjuten från
+I en transformator med mitt-tapp kan mitt-tappen sitta lite förskjuten från
 riktiga mitten, så att anslutningen av mitt-tappen till jord skapar en
 obalans.
 
