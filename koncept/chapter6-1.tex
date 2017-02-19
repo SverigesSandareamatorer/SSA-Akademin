@@ -42,7 +42,7 @@ passerar igenom.  För enkelhetens skull sätts här \(µ_0\) och
 
 Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
 
-\[ c = \lambda \cdot f \quad c\text{ [m/s] }f\text{ [Hz] }\lambda\text{ [m]}\]
+\[ c = \lambda \cdot f \quad c\text{ [m/s] }\quad f\text{ [Hz] } \quad \lambda\text{ [m]}\]
 
 och våglängden således
 
@@ -82,14 +82,14 @@ påverkan från jordplan och omgivning m.m.
 Ett förhållande mellan längd och tjocklek av 10000 ger t.ex. en c:a
 2\% mekaniskt kortare antenn. Förhållandet 30 ger en c:a 5\% kortare
 antenn. Det första värdet kan passa för en 2 mm tjock halvvågsantenn
-för 7 MHz. Det andra värdet för en 3.5 mm tjock halvvågsantenn för 145
+för 7 MHz. Det andra värdet för en 3,5 mm tjock halvvågsantenn för 145
 MHz. Diagram för den s.k. förkortningsfaktorn finns i de flesta
 antennhandböcker.
 
 I följande formel har den mekaniska längden (\(l_m\)) för en fritt upphängd
 trådantenn valts 2\% kortare än den elektriska längden.
 
-\[l_m = \frac{c}{2f} \cdot 0.98 = \frac{147\cdot 10^6}{f} \quad \text{[m]}\]
+\[l_m = \frac{c}{2f} \cdot 0,98 = \frac{147\cdot 10^6}{f} \quad \text{[m]}\]
 
 Exempel: Beräkna den elektriska och mekaniska längden på en halvvågsantenn med
 resonansfrekvensen \(f = 7\) MHz.
@@ -102,20 +102,20 @@ c = \lambda \cdot f
 Elektriska våglängden för 7 MHz är
 
 \[
-\lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42.86
+\lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
 \quad \text{[m]}
 \]
 
 Antennen är en halvvågsantenn, således är elektriska längden
 
 \[
-l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21.43 \quad \text{[m]}
+l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21,43 \quad \text{[m]}
 \]
 
 och mekaniska längden
 
 \[
-l_m = \frac{\lambda}{2f} \cdot 0.98 = \frac{42.86}{2}\cdot 0.98 = 21
+l_m = \frac{\lambda}{2f} \cdot 0,98 = \frac{42.86}{2}\cdot 0,98 = 21
 \quad \text{[m]}
 \]
 
@@ -143,7 +143,7 @@ ett maximum (en strömbuk).  Antennen strålar mest där strömbuken
 finns.
 
 Tag t.ex. en 40 meter lång metalltråd som antenn. Dess
-grundresonansfrekvens är ca 3.5 MHz, men den är även i resonans på de
+grundresonansfrekvens är ca 3,5 MHz, men den är även i resonans på de
 harmoniska övertonerna (7, 14, 21, 28 MHz o.s.v.).
 
 Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid de
@@ -303,7 +303,7 @@ Bild \ref{fig:bildII6-4}
 Om detta inte låter sig göras, så kan man i serie med en ``för kort''
 antenn sätta in en induktor - en s.k. elektrisk förlängning. Om i
 motsatt fall antennen är ``för lång'', så kan man sätta in en
-kondensatoren s.k. elektrisk förkortning.
+kondensator en s.k. elektrisk förkortning.
 
 I amatörradio ändras sändarfrekvensen mycket och ofta, varför
 antennsystemet bör kunna stämmas av från marken/operatörsplatsen. Då
@@ -401,7 +401,7 @@ antennvinsten
 \[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
 
 En i praktiken definierbar referens är halvvågsdipolen, vars
-huvudstrålning ärvinkelrätt ut från dipolen och runt omkring den.
+huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennvinsten
 
 \[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
@@ -447,15 +447,15 @@ Ungefärlig antennvinst för olika antenner med en isotropantenn som referens:
   & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
   \multicolumn{2}{l}{Isotrop} \\
   \hline
-  Isotrop antenn       & -2.1 & dBd & 0   & dBi \\
-  GP, \(\lambda/4\)    & -1.8 & dBd & 0.3 & dBi \\
-  Dipol, \(\lambda/2\) & 0    & dBd & 2.1 & dBi \\
-  GP, \(5/8\lambda\)   & 1.2  & dBd & 3.3 & dBi \\
+  Isotrop antenn       & -2,1 & dBd & 0   & dBi \\
+  GP, \(\lambda/4\)    & -1,8 & dBd & 0,3 & dBi \\
+  Dipol, \(\lambda/2\) & 0    & dBd & 2,1 & dBi \\
+  GP, \(5/8\lambda\)   & 1,2  & dBd & 3,3 & dBi \\
   & & & & \\
-  Dipol, \(1/1\lambda\) & 1.8 & dBd & 3.9  & dBi \\
-  2-elements yagi       & 5   & dBd & 7.1  & dBi \\
+  Dipol, \(1/1\lambda\) & 1,8 & dBd & 3,9  & dBi \\
+  2-elements yagi       & 5   & dBd & 7,1  & dBi \\
   2-elements quad       & 6   & dBd & 8    & dBi \\
-  3-elements yagi       & 8   & dBd & 10.1 & dBi \\
+  3-elements yagi       & 8   & dBd & 10,1 & dBi \\
 \end{tabular}
 
 
@@ -467,14 +467,23 @@ HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
 \index{antenn!effektivt utstrålad effekt (ERP)}
 \index{ERP Effective Radiated Power}
 \index{antenn!ERP Effective Radiated Power}
-\hilight{TODO: EIRP saknas och krävs av HAREC, lägg till.}
+\index{ekvivalent isotropiskt utstrålad effekt (EIRP)}
+\index{antenn!ekvivalent isotropiskt utstrålad effekt (EIRP)}
+\index{EIRP Equivalent Isotropically Radiated Power}
+\index{antenn!EIRP Equivalent Isotropically Radiated Power}
 
-Effektivt utstrålad effekt (ERP - effective radiated power) är den
+Effektivt utstrålad effekt (ERP) (eng. \emph{effective radiated power} är den
 effekt som sändarantennen strålar ut i sin bästa
 strålningriktning. ERP beräknas som den effekt som tillförs själva
 antennen, multiplicerat med antennvinsten relativt en
 halvvågsdipol. Förlusterna på vägen från sändaren ut till antennen är
 alltså borträknad före beräkningen av ERP.
+
+Ekvivalent isotropiskt utstrålad effekt (EIRP) (eng. \emph{Equivalent isotropically radiated power}.
+EIRP beräknas relativt en teoretisk antenn (\emph{isotropisk antenn}) som 
+strålar lika mycket i alla riktningar. Vid beräkningen används den effekt
+som tillförs själva antennen, multiplicerat med antennvinsten relativt en
+isotrop. Förlusterna på vägen från sändaren ut till antennen är liksom vid beräkningen av ERP borträknade vid beräkningen av EIRP.
 
 \subsection{Fram-/backförhållande (antennvinst)}
 \textbf{
@@ -522,7 +531,7 @@ Exempel 2:
 
 \begin{align*}
   U_f &= 15 \text{ µV} \quad U_b = 15\text{ µV} \quad F/B =\ ? \\
-  F/B &= 20 \log\frac{U_f}{U_b} = 20 \log{15}{15} \\
+  F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
 \end{align*}
 
@@ -548,7 +557,7 @@ Bild \ref{fig:bildII6-10}
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
   \sqrt{\frac{1}{2}}U_f \\
-  ( \approx 0.7 U_f \text{ motsvarande 3 dB })
+  ( \approx 0,7 U_f \text{ motsvarande 3 dB })
 \end{gather*}
 
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
