@@ -15,18 +15,16 @@ enklare att använda den på ett korrekt sätt.
 \emph{Isolation} (eng. \emph{isolation}) är ett samlingsbegrepp för att separera
 olika signaler. Den första enkla separationen är den hos en \emph{isolator},
 dvs. ett material som inte leder ström så bra. Det är den mest grundläggande
-formen av isolation, som förhindrar elektrisk ledning mellan ledningar.
+formen av isolation som förhindrar elektrisk ledning mellan ledningar.
 
 Man brukar prata om \emph{galvanisk isolation} (eng. \emph{galvanic isolation})
 för en isolation som inte kan leda likström. Transformatorer används ofta för
 att åstadkomma galvanisk isolation.
 
 Nu är isolation inte begränsat till enbart likström, utan även växelspänning
-kan behöva isoleras. Hur god isolationen är kan antas beror kraftigt på
-frekvensen, och de åtgärder man gör bör anpassas för hur god isolation man
-behöver eller vill ha för olika frekvenser. Man kan t.ex. vilja ha god
-isolation vid sändar- och mottagarfrekvensen 14 MHz, men inte vill ha galvanisk
-isolation för det gemensamma 12 V kraftaggregatet.
+kan behöva isoleras. Hur god isolationen är beror kraftigt på frekvensen, och
+de åtgärder man gör bör anpassas för hur god isolation man behöver eller vill
+ha för olika frekvenser. Man kan t.ex. vilja ha god isolation vid sändar- och mottagarfrekvensen 14 MHz, men vill inte ha galvanisk isolation för det gemensamma 12 V kraftaggregatet.
 
 \section{Jordning}
 \index{jordning}
@@ -98,14 +96,27 @@ spänningen blir därför \(U_1=Z_1 (I_1 + I_2 + I_3)\). På liknande sätt blir
 den andra spänningen den från de bägge strömmarna \(I_2\) och \(I_3\) samt
 spänningen \(U_1\) och därför blir \(U_2 = U_1 + Z_2 (I_2 + I_3)\).
 Slutligen blir den sista spänningen \(U_3 = U_2 + Z_3 I_3\). Med förenkling
-får vi \(U_1=Z_1 I_1 + Z_1 I_2 + Z_1 I_3\),
-\(U_2 = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2) I_3\) och
-\(U_3 = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2 + Z_3) I_3\). Vi ser då att
-störningen blir \(\Delta U_1 =  Z_1 I_2 + Z_1 I_3\),
-\(\Delta U_2 = Z_1 I_1 + (Z_1 + Z_2) I_3\) och
-\(\Delta U_3 = Z_1 I_1 + (Z_1 + Z_2) I_2\) respektive, vilket är ett tydligt
-exempel på hur strömmarna stör varandras spänningar och därmed har avsaknad
-av isolation.
+får vi
+
+\(
+\begin{array}{ll}
+U_1 & = Z_1 I_1 + Z_1 I_2 + Z_1 I_3 \\
+U_2 & = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2) I_3 \\
+U_3 & = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2 + Z_3) I_3
+\end{array}
+\)
+
+Vi ser då att störningen blir
+
+\(
+\begin{array}{ll}
+\Delta U_1 & =  Z_1 I_2 + Z_1 I_3 \\
+\Delta U_2 & = Z_1 I_1 + (Z_1 + Z_2) I_3 \\
+\Delta U_3 & = Z_1 I_1 + (Z_1 + Z_2) I_2
+\end{array}
+\)
+
+Vilket är ett tydligt exempel på hur strömmarna stör varandras spänningar och därmed har avsaknad av isolation.
 
 Fördelen med seriekopplad jord är förstås att man får flera korta anslutningar
 men däremot kommer summeringen av de olika strömmarna göra att man får dålig
@@ -203,7 +214,7 @@ använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
 med en kabel parallell med signalledaren. Har vi en förhållandevis låg ström
 genom den impedans som kabeln har så kommer det fungera fint.
 
-Det här scenariot liknar det hos en normal hemmastereo t.ex. och ändå kan det
+Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
 uppstå \emph{jordbrum} i denna koppling. Det finns flera skäl. Ett skäl är att
 transformatorer visserligen erbjuder en galvanisk isolation, men de är även
 kapacitiva spänningsdelare för den spänning som finns över primär-lindningen,
@@ -217,7 +228,7 @@ få för mycket störningar från den ström som kommer flyta mellan jordarna.
 Ett annat scenario som skapar jordbrum är när man i någon ände råkar hårt
 koppla samman signaljord och skyddsjord, typiskt att det blir oavsiktlig
 kontakt mot chassi, som skall vara skyddsjordad. Själva chassit brukar man
-prata om \emph{chassijordad}, men det är egentligen bara skyddsjord på de
+prata om som \emph{chassijordat}, men det är egentligen bara skyddsjord på de
 flesta system.
 
 För att isolationsjordning skall fungera måste alla kontakter vara isolerade
@@ -230,8 +241,7 @@ En annan nackdel med isolationsjordning är att den gör det svårare att design
 för god EMC-täthet. För \emph{ledningsbunden störning} (eng. \emph{conductive
 emission}) så vill man helst att kontaktens och kabelns skärm sitter i
 chassijorden med så låg impedans (induktans) som möjligt. Isolationsjordning
-kräver då att man kondensatorer som kopplar ihop ledarens jord med chassijord
-och helst runt om för lägsta induktans.
+kräver då att man monterar kondensatorer som kopplar ihop ledarens jord med chassijord och helst runt om för att få lägsta induktans.
 
 Isolationsjordning rekommenderas inte för större system, då det blir svårt
 att upprätthålla.
@@ -256,9 +266,8 @@ och \emph{mesh bonding network (mesh-BN)}) \cite[3.2.3]{K27-1991}
 där man istället för att isolera satsar på att koppla samman jordarna, hårt.
 Varje signalkabel sitter ansluten mot chassijord och därmed skyddsjord och
 man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
-jordanslutning som man ansluter till stativjord, jordskenor. Kablar läggs på
-kabelstegar som jordas. I detta system kommer varje extra kabel koppla samman
-jordarna hårdare, eftersom man parallell-kopplar många impedanser.
+jordanslutning som man ansluter till stativjord eller jordskenor. Kablar läggs
+på kabelstegar som jordas. I detta system kommer varje extra kabel att koppla samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
 
 I ett system som har sammankopplad jord kommer man ofrånkomligen att behöva
 hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller även
@@ -271,7 +280,7 @@ Om vi går tillbaka till sammankoppling av apparater (kapitel
 jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en ledning
 mellan dessa punkter, och då kommer det gå en ström som försöker utjämna
 potentialen mellan de bägge jordanslutningarna, som då kommer närmare varandra.
-Det är impedansen på kabeln som kommer avgöra hur stor strömmen blir och hur
+Det är impedansen på kabeln som kommer att avgöra hur stor strömmen blir och hur
 nära de kommer varandra. Denna ström kan bli ansenlig och har man då en kabel
 som har t.ex. tunn skärm så kommer kabeln helt enkelt bli varm. Det är därför
 lämpligt att lägga en jordkabel parallellt med signalkabeln, för att låta den
@@ -335,8 +344,7 @@ att helt enkelt bryta jordförbindelsen på ledaren. Dock, transformatorer har
 inte fulländad isolation men kan däremot ofta hantera ganska stora spänningar,
 vilket kan krävas i besvärliga sammanhang. För RF är dock transformatorer inte
 balanserade och ger dålig isolation. Förbättrad isolation hos transformatorer
-kan uppnås med ett eller två skärm-lager mellan lindningarna som kan anslutas
-till respektive sidas jord.
+kan uppnås med ett eller två skärmlager mellan lindningarna. Skärmlagren kan anslutas till respektive sidas jord.
 
 Aktiv elektronik för balansering har sällan galvanisk isolation, men däremot
 kan man upprätthålla hög impedans för den gemensamma spänningen, vilket kan
@@ -398,8 +406,8 @@ skapar en ström.
 
 Eftersom nyttosignalen är differentiell kan man ibland medvetet använda den
 gemensamma spänningen för att överföra matspänning till t.ex. en mikrofon.
-Denna form av matspänning kallas för \emph{fantommatning} (eng. \emph{phantom
-power}). Vanligt förekommande spänning är 48 V, och symboliseras med P48.
+Denna form av matningsspänning kallas för \emph{fantommatning} (eng. \emph{phantom
+power}). En vanligt förekommande spänning är 48 V, och symboliseras med P48.
 Det förekommer även på modern Ethernet-utrustning och kallas då för
 \emph{Power over Ethernet (PoE)}.
 
@@ -515,7 +523,7 @@ många MegaOhm eller högre, eftersom den ju är isolerad.
 Så här långt har huvudsakligen antagit att vi har balans, dvs. att
 transformatorer, induktorer mm är ideala och ger lika bra koppling till bägge
 sidor. Givetvis finns inte detta i verkligheten, och man har en obalans.
-Vid obalans får man signal som är gemensam att läcka över till den som är
+Vid obalans får man en signal som är gemensam att läcka över till den som är
 differentiell och omvänt att differentiell läcker över till den gemensamma.
 Det resulterar dels i minskad isolation och dels i minskad signal.
 I allmänhet är den minskade isolationen värre än förlusten av signal.
