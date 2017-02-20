@@ -121,6 +121,13 @@ images.unlinked: images.avail images.linked
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
 
+# Genererade presentationer
+ac1.pdf: lectures/ac1.tex
+	pdflatex lectures/ac1.tex
+
+ac2.pdf: lectures/ac2.tex
+	pdflatex lectures/ac2.tex
+
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
 # To build using Docker, run 'make docker-image' first which will take quite some time,
