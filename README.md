@@ -6,6 +6,7 @@
 > :warning: **Observera:** Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett underlag för arbetet med den.
 
 ## SSA Akademin
+
 Arbetet med denna bok är en del i en större satsning på att uppdatera gammalt material, digitalisera material men också bredda utbildningsmetoderna till mer än bara litteratur. Vi kallar projektet för SSA Akademin. Vi undersöker hur och på vilka sätt utbildningen under SSA kan moderniseras. Med modernisering syftas här utnyttjandet av både digital teknik och dess möjligheter samt metoder som tidigare ej använts inom SSA. Vi tar fram konkreta förslag på hur moderniseringen ska gå till väga och genom för dem.
 
 Vårt mål är att
@@ -14,7 +15,21 @@ Vårt mål är att
 - de som examineras ska göra bättre ifrån sig på provet
 - de som deltar i utbildningen ska känna att det är en bra utbildning
 
+## Ladda ner projektet
+
+### PDF
+
+Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte uppdaterad kontinuerligt så datumet visar hur pass ny den är.
+
+**Hämta hem utkast version 2017-02-19:** [koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)
+
+### Bygg själv
+Du kan ladda ner projektet och bygga den senaste versionen av PDF:en själv.
+
+#### Linux
+
 ## Bidra till projektet
+
 Det finns många olika sätt att bidra till projektet även fast man inte vet hur man använder *Git* eller skriver *LaTeX*. 
 
 **Q: Jag kan koda och vill bidra; vad gör jag?**  
