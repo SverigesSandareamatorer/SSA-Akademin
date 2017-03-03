@@ -128,6 +128,11 @@ ac1.pdf: lectures/ac1.tex
 ac2.pdf: lectures/ac2.tex
 	pdflatex lectures/ac2.tex
 
+# Web-generering
+web:	koncept.tex $(KONCEPT_FILES)
+	./buildSingleTex.pl koncept.tex | pandoc -f latex -t html -sNm --css=style.css --toc  > web/index.html 
+
+
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
 # To build using Docker, run 'make docker-image' first which will take quite some time,
