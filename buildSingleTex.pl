@@ -5,7 +5,7 @@ sub p_inc {
     if ( open (my $datei, "$DateiName.tex") ) {
       print "%%%---------- open: ", $DateiName, "\n";
       while (<$datei>) {
-        if ((/^\s*\\include{\s+(\S+)/i) or (/^\s*\\input{\s+(\S+)/i)) {
+        if ((/^\s*\\include\{\s+(\S+)/i) or (/^\s*\\input\{\s+(\S+)/i)) {
           my $include = $1;
           chomp($include);chop($include);
           print "%%%%%%%%% jump to ", $include, "\n";
@@ -20,7 +20,7 @@ sub p_inc {
 @zeilen = (<>);
 for $zeile (@zeilen) {
   next if $zeile =~ /^\s*(%)/;
-  if (($zeile =~ /^\s*\\include{\s*(\S+)/i) or ($zeile =~ /^\s*\\input{\s*(\S+)/i)) {      
+  if (($zeile =~ /^\s*\\include\{\s*(\S+)/i) or ($zeile =~ /^\s*\\input\{\s*(\S+)/i)) {      
     my $include = $1;
     chomp($include);
     chop($include);
