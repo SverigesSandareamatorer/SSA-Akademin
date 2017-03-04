@@ -1,34 +1,30 @@
 
 ![KonCEPT för radioamatörcertifikat]
 
-**KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart Wiberg och utgiven av [Sveriges SändareAmatörer](http://ssa.se) (SSA) i syfte att utbilda nya radioamatörer. Den första upplagan är skriven 1997 och behöver därför en uppdatering och tryckas i en ny upplaga. Detta är projektet för digitalisering och uppdatering av KonCEPT som kommer att leda till den andra upplagan av boken. 
+- [LADDA NER PROJEKTET](#ladda-ner-projektet)
+- [BIDRA TILL PROJEKTET](#bidra-till-projektet)
+- [OM SSA AKADEMIN](#om-ssa-akademin)
+- [KONTAKT](#kontakt)
+
+**KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart Wiberg och utgiven av [Sveriges SändareAmatörer](http://ssa.se) (SSA) i syfte att utbilda nya radioamatörer. Den första upplagan är skriven 1997 och behöver därför en uppdatering och tryckas i en ny upplaga. Detta projekt, SSA Akademin, är bland annat till för digitalisering och uppdatering av KonCEPT som kommer att leda till den andra upplagan av boken. 
 
 > :warning: **Observera:** Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett underlag för arbetet med den.
 
-## SSA Akademin
+# LADDA NER PROJEKTET
 
-Arbetet med denna bok är en del i en större satsning på att uppdatera gammalt material, digitalisera material men också bredda utbildningsmetoderna till mer än bara litteratur. Vi kallar projektet för SSA Akademin. Vi undersöker hur och på vilka sätt utbildningen under SSA kan moderniseras. Med modernisering syftas här utnyttjandet av både digital teknik och dess möjligheter samt metoder som tidigare ej använts inom SSA. Vi tar fram konkreta förslag på hur moderniseringen ska gå till väga och genom för dem.
-
-Vårt mål är att
-
-- fler ska vilja ta utbildningen för att bli radioamatör
-- de som examineras ska göra bättre ifrån sig på provet
-- de som deltar i utbildningen ska känna att det är en bra utbildning
-
-## Ladda ner projektet
-
-### PDF
+## PDF
 
 Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte uppdaterad kontinuerligt så datumet visar hur pass ny den är.
 
-**Hämta hem utkast version 2017-03-04:** [koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)
+**Hämta hem utkast version 2017-03-04:** **[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
 
-### Bygg själv
+## Bygg själv
 Du kan ladda ner projektet och bygga den senaste versionen av PDF:en själv.
 
-#### Linux
+### Linux
+	sudo apt install texlive
 
-## Bidra till projektet
+# BIDRA TILL PROJEKTET
 
 Det finns många olika sätt att bidra till projektet även fast man inte vet hur man använder *Git* eller skriver *LaTeX*. 
 
@@ -48,7 +44,17 @@ Om du hittar något så kan du lämna en *issue* där du beskriver vart du har h
 **Q: Jag vet inte hur man redigerar kod**  
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge förslag på förbättringar och om du vet hur man gör så kan du lämna en *issue* med en beskrivning av fel och om möjligt en föreslagen förändring. Annars kan du använda dig av kontaktinformationen nedan och skicka ett mejl till oss så hjälper vi dig att komma igång.
 
-## Kontakt
+# OM SSA AKADEMIN
+
+Arbetet med denna bok är en del i en större satsning på att uppdatera gammalt material, digitalisera material men också bredda utbildningsmetoderna till mer än bara litteratur. Vi kallar projektet för SSA Akademin. Vi undersöker hur och på vilka sätt utbildningen under SSA kan moderniseras. Med modernisering syftas här utnyttjandet av både digital teknik och dess möjligheter samt metoder som tidigare ej använts inom SSA. Vi tar fram konkreta förslag på hur moderniseringen ska gå till väga och genom för dem.
+
+Vårt mål är att
+
+- fler ska vilja ta utbildningen för att bli radioamatör
+- de som examineras ska göra bättre ifrån sig på provet
+- de som deltar i utbildningen ska känna att det är en bra utbildning
+
+# KONTAKT
 {Fylla i kontaktuppgifter}
 
 [KonCEPT för radioamatörcertifikat]: koncept.png
