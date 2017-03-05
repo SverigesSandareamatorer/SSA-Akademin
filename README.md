@@ -55,6 +55,11 @@ Vårt mål är att
 - de som deltar i utbildningen ska känna att det är en bra utbildning
 
 # KONTAKT
-{Fylla i kontaktuppgifter}
+
+- [**Jonas "SM5PHU" Hultin**](mailto:sm5phu@gmail.com)
+- [Magnus "SA0MAD" Danielsson](mailto:magnus@rubidium.se)
+- [Hans "SM0UTY" Insulander](mailto:hans.insulander@codium.se)
+- [Petter "SA2PKA" Karkea](mailto:petter@karkea.se)
+- [Peter "SA2BLV" Lundberg](mailto:pette.lundberg@gmail.com)
 
 [KonCEPT för radioamatörcertifikat]: koncept.png
