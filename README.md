@@ -26,7 +26,7 @@ Debian/Ubuntu:
 
 - `sudo apt-get update`
 - `sudo apt-get install make git texlive texlive-lang-european texlive-latex-extra texlive-pictures texlive-math-extra`
-- `git clone <klicka på knappen "Clone or Download" och hämta URL>
+- `git clone <klicka på knappen "Clone or Download" och hämta URL>`
 - `cd koncept/`
 - `make`
 
