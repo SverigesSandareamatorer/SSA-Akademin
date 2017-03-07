@@ -22,7 +22,11 @@ Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte uppdatera
 Du kan ladda ner projektet och bygga den senaste versionen av PDF:en själv.
 
 ### Linux
-	sudo apt install texlive
+Debian/Ubuntu:
+
+- `sudo apt-get update`
+- `sudo apt-get install make texlive texlive-lang-european texlive-latex-extra texlive-pictures texlive-math-extra`
+- `make`
 
 # BIDRA TILL PROJEKTET
 
