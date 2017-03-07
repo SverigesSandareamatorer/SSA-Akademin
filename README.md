@@ -25,7 +25,9 @@ Du kan ladda ner projektet och bygga den senaste versionen av PDF:en själv.
 Debian/Ubuntu:
 
 - `sudo apt-get update`
-- `sudo apt-get install make texlive texlive-lang-european texlive-latex-extra texlive-pictures texlive-math-extra`
+- `sudo apt-get install make git texlive texlive-lang-european texlive-latex-extra texlive-pictures texlive-math-extra`
+- `git clone <klicka på knappen "Clone or Download" och hämta URL>
+- `cd koncept/`
 - `make`
 
 # BIDRA TILL PROJEKTET
