@@ -60,7 +60,7 @@ BIDRA TILL PROJEKTET
 Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *Git* eller skriver *LaTeX*.
 
-**Q: Jag kan koda och vill bidra; vad gör jag?**
+**Q: Jag kan koda och vill bidra; vad gör jag?**  
 A: Börja med att läsa igenom filen [`texifiering.txt`](texifiering.txt)
 noggrant och följa alla instruktioner där för hur koden till boken
 är uppbyggd. Till exempel skrivs kommentarer i texten så här:
@@ -78,7 +78,7 @@ Om du hittar något så kan du lämna en *issue* där du beskriver vart
 du har hittat ett problem och om du har någon föreslagen förändring
 så kommer din anmärkning att hanteras.
 
-**Q: Jag vet inte hur man redigerar kod**
+**Q: Jag vet inte hur man redigerar kod**  
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
 förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
