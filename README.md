@@ -39,19 +39,23 @@ själv.
 
 Debian/Ubuntu:
 
-    # Installera program och beroenden
+Installera program och beroenden.
+
     sudo apt-get update
     sudo apt-get install make git texlive texlive-lang-european \
         texlive-latex-extra texlive-pictures texlive-math-extra
 
-    # Hämta Git-repot. Länk finns på projektets startsida under
-    # knappen "Clone or Download"
+Hämta Git-repot. Länk finns på projektets startsida under knappen
+"Clone or Download" på projektets GitHub-startsida.
+
     git clone <URL här>
 
-    # Gå in i den nedladdade projektmappen
+Gå in i den nedladdade projektmappen.
+
     cd koncept/
 
-    # Skapa PDF genom att skriva
+Generera PDF genom att skriva:
+
     make
 
 BIDRA TILL PROJEKTET

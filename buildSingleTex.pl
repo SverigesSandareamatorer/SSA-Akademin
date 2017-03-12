@@ -1,5 +1,5 @@
 #!/usr/bin/env perl    
-### change the
+# Source: http://tex.stackexchange.com/a/62247
 sub p_inc {
   $DateiName = shift;
     if ( open (my $datei, "$DateiName.tex") ) {
