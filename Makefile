@@ -129,7 +129,7 @@ ac2.pdf: lectures/ac2.tex
 	pdflatex lectures/ac2.tex
 
 # Web-generering
-web:	koncept.tex $(KONCEPT_FILES)
+webb:	koncept.tex $(KONCEPT_FILES)
 	./buildSingleTex.pl koncept.tex | pandoc -f latex -t html -sNm --css=style.css --toc | perl -ne 's/(?<=<img src=")(.*?)(?=")/..\/$$1.png/g; print;' > web/index.html
 
 
