@@ -130,7 +130,7 @@ ac2.pdf: lectures/ac2.tex
 
 # Web-generering
 webb:	koncept.tex $(KONCEPT_FILES)
-	./buildSingleTex.pl koncept.tex | pandoc -f latex -t html -sNm --css=style.css --toc | perl -ne 's/(?<=<img src=")(.*?)(?=")/..\/$$1.png/g; print;' > web/index.html
+	latexml koncept.tex | latexmlpost --dest=web/index.html
 
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
