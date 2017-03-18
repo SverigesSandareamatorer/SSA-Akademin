@@ -23,12 +23,12 @@ operativsystem. Just nu är den här guiden mest inriktad på
 [Linux/Debian-derivat](https://www.debian.org/misc/children-distros)
 men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 
--   [Kom igång](#kom-igng)
+-   [Kom igång](#kom-igång)
 -   [Git](#git)
 -   [Make](#make)
     -   [Byggberoenden](#byggberoenden)
 -   [Installera beroenden](#installera-beroenden)
-    -   [TeX/LaTeX](#tex-latex)
+    -   [TeX/LaTeX](#texlatex)
     -   [LaTeXML](#latexml)
     -   [Docker](#docker)
 
@@ -101,11 +101,11 @@ har installerat beroendet som det behöver.
 | Mål                   | Beroende...             |
 |-----------------------|-------------------------|
 | `clean`               | -                       |
-| `koncept.pdf`         | [TeX/LaTeX](#tex-latex) |
-| `koncept-refbok.pdf`  | [TeX/LaTeX](#tex-latex) |
-| `koncept-larobok.pdf` | [TeX/LaTeX](#tex-latex) |
-| `matterep.pdf`        | [TeX/LaTeX](#tex-latex) |
-| `emf-handout.pdf`     | [TeX/LaTeX](#tex-latex) |
+| `koncept.pdf`         | [TeX/LaTeX](#texlatex) |
+| `koncept-refbok.pdf`  | [TeX/LaTeX](#texlatex) |
+| `koncept-larobok.pdf` | [TeX/LaTeX](#texlatex) |
+| `matterep.pdf`        | [TeX/LaTeX](#texlatex) |
+| `emf-handout.pdf`     | [TeX/LaTeX](#texlatex) |
 | `webb`                | [LaTeXML](#latexml)     |
 | `docker-image`        | [Docker](#docker)       |
 | `docker-build`        | [Docker](#docker)       |
@@ -127,7 +127,7 @@ med hjälp av programvara generera texten för att få formatering.
 
 ### LaTeXML
 
-LaTeXML är ett verktyg för att konvertera TeX-dokument till
+[LaTeXML](http://dlmf.nist.gov/LaTeXML/) är ett verktyg för att konvertera TeX-dokument till
 XML-filer. Den kan sedan konvertera dessa XML-filer till bland annat
 HTML. Verktyget är bra till att skapa en version av ett skrivet dokument
 som är läsbart på webben.
