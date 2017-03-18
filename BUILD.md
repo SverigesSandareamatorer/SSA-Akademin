@@ -1,6 +1,6 @@
 ![KonCEPT för radioamatörcertifikat](koncept.png)
 
-Installera och bygg
+INSTALLERA OCH BYGG
 ===================
 
 Här förklaras vilka verktyg som behövs, hur man använder dom och
@@ -23,16 +23,18 @@ operativsystem. Just nu är den här guiden mest inriktad på
 [Linux/Debian-derivat](https://www.debian.org/misc/children-distros)
 men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 
--   [Kom igång](#kom-igång)
--   [Git](#git)
--   [Make](#make)
-    -   [Byggberoenden](#byggberoenden)
--   [Installera beroenden](#installera-beroenden)
-    -   [TeX/LaTeX](#texlatex)
-    -   [LaTeXML](#latexml)
-    -   [Docker](#docker)
 
-Kom igång
+-   [KOM IGÅNG](#kom-igång)
+-   [GIT](#git)
+-   [MAKE](#make)
+    -   [BYGGBEROENDEN](#byggberoenden)
+-   [INSTALLERA BEROENDEN](#installera-beroenden)
+    -   [TEX/LATEX](#texlatex)
+    -   [LATEXML](#latexml)
+    -   [DOCKER](#docker)
+
+
+KOM IGÅNG
 ---------
 
 Börja med att följa instruktionerna nedan för att installera verktygen
@@ -45,7 +47,7 @@ använda dig av versionshanteringssystemet Git och verktyget Make.
 
     sudo apt-get install git make
 
-Git
+GIT
 ---
 
 Git är ett versionshanteringsverktyg som håller reda på historiken av
@@ -59,7 +61,7 @@ sedan URL:en i argumentet nedan. För de som kör med kommandotolken:
     git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
     cd SSA-Akademin/
 
-Make
+MAKE
 ----
 
 [Make](https://www.gnu.org/software/make/) är ett program som används
@@ -92,7 +94,7 @@ tabellen med en beskrivning om vad dom gör.
 | `docker-image`        | Bygg en Docker *image*                    |
 | `docker-build`        | Kör Docker *image* i en *container*       |
 
-### Byggberoenden
+### BYGGBEROENDEN
 
 I den här tabellen listas Make "mål:en" tillsammans med de verktyg
 som de är beroende utav. För att köra ett Make mål, se till att du
@@ -110,10 +112,10 @@ har installerat beroendet som det behöver.
 | `docker-image`        | [Docker](#docker)       |
 | `docker-build`        | [Docker](#docker)       |
 
-Installera beroenden
+INSTALLERA BEROENDEN
 --------------------
 
-### TeX/LaTeX
+### TEX/LATEX
 
 TeX är ett typsättningssystem där ett dokument, en bok eller en artikel
 kan beskrivas i ren text (filer med filändelsen `.tex`) för att sedan
@@ -125,7 +127,7 @@ med hjälp av programvara generera texten för att få formatering.
     sudo apt-get install texlive texlive-lang-european \
         texlive-latex-extra texlive-pictures texlive-math-extra
 
-### LaTeXML
+### LATEXML
 
 [LaTeXML](http://dlmf.nist.gov/LaTeXML/) är ett verktyg för att konvertera TeX-dokument till
 XML-filer. Den kan sedan konvertera dessa XML-filer till bland annat
@@ -162,8 +164,8 @@ och kör följande:
     make test
 
 [Installera LaTeXML](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px3)
-(detta måste göras som *sudo*):
+(detta måste göras med *sudo*):
 
      sudo make install
 
-### Docker
+### DOCKER
