@@ -24,7 +24,7 @@ operativsystem. Just nu är den här guiden mest inriktad på
 men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 
 
--   [KOM IGÅNG](#kom-igång)
+-   [KOM IGÅNG](#kom-igÅng)
 -   [GIT](#git)
 -   [MAKE](#make)
     -   [BYGGBEROENDEN](#byggberoenden)
