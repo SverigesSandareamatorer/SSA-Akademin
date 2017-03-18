@@ -88,7 +88,7 @@ tabellen med en beskrivning om vad dom gör.
 | `koncept-larobok.pdf` | PDF av KonCEPT lärobok                    |
 | `matterep.pdf`        | PDF av Matterepetitionsboken              |
 | `emf-handout.pdf`     | PDF av Utbildningsmaterial EMF            |
-| `webb`                | Bygger en HTML fil av Koncept referensbok |
+| `webb`                | Bygger en HTML fil av KonCEPT referensbok |
 | `docker-image`        | Bygg en Docker *image*                    |
 | `docker-build`        | Kör Docker *image* i en *container*       |
 
@@ -135,7 +135,7 @@ som är läsbart på webben.
 För att få den senaste versionen av LaTeXML måste projektet laddas
 ner och beroenden måste hämtas.
 
-**Linux/Debian**
+**Linux/Debian**  
 Hämta LaTeXML:
 
      git clone https://github.com/brucemiller/LaTeXML.git
