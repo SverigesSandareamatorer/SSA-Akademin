@@ -1,6 +1,6 @@
 ![KonCEPT för radioamatörcertifikat](koncept.png)
 
--   [LADDA NER PROJEKTET](#ladda-ner-projektet)
+-   [LADDA NER OCH BYGG PROJEKTET](#ladda-ner-och-bygg-projektet)
 -   [BIDRA TILL PROJEKTET](#bidra-till-projektet)
 -   [OM SSA AKADEMIN](#om-ssa-akademin)
 -   [KONTAKT](#kontakt)
@@ -17,8 +17,14 @@ av KonCEPT som kommer att leda till den andra upplagan av boken.
 är ett arbetsmaterial och ska inte användas som en färdig produkt
 utan endast som ett underlag för arbetet med den.
 
-LADDA NER PROJEKTET
-===================
+LADDA NER OCH BYGG PROJEKTET
+============================
+
+Bygg projektet
+--------------
+
+Du kan ladda ner projektet och bygga den senaste versionen av PDF:en
+själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
 
 PDF
 ---
@@ -26,37 +32,9 @@ PDF
 Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte
 uppdaterad kontinuerligt så datumet visar hur pass ny den är.
 
-**Hämta hem utkast version 2017-03-04:**
+**Hämta hem utkast version 2017-03-18:**
 **[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
 
-Bygg själv
-----------
-
-Du kan ladda ner projektet och bygga den senaste versionen av PDF:en
-själv.
-
-### Linux
-
-Debian/Ubuntu:
-
-Installera program och beroenden.
-
-    sudo apt-get update
-    sudo apt-get install make git texlive texlive-lang-european \
-        texlive-latex-extra texlive-pictures texlive-math-extra
-
-Hämta Git-repot. Länk finns på projektets startsida under knappen
-"Clone or Download" på projektets GitHub-startsida.
-
-    git clone <URL här>
-
-Gå in i den nedladdade projektmappen.
-
-    cd koncept/
-
-Generera PDF genom att skriva:
-
-    make
 
 BIDRA TILL PROJEKTET
 ====================
