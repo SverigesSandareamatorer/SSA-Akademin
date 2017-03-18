@@ -79,18 +79,18 @@ har hittar du under [Byggberoenden](#byggberoenden).
 För att få en översikt över vilka mål som finns listas dom här i
 tabellen med en beskrivning om vad dom gör.
 
-| Mål                   | Bygger/Genererar...                 |
-|-----------------------|-------------------------------------|
-| `all`                 | alla mål                            |
-| `clean`               | Tar bort alla genererade filer      |
-| `koncept.pdf`         | PDF av KonCEPT referensbok          |
-| `koncept-refbok.pdf`  | PDF av KonCEPT referensbok          |
-| `koncept-larobok.pdf` | PDF av KonCEPT lärobok              |
-| `matterep.pdf`        | PDF av Matterepetitionsboken        |
-| `emf-handout.pdf`     | PDF av Utbildningsmaterial EMF      |
-| `webb`                |                                     |
-| `docker-image`        | Bygg en Docker *image*              |
-| `docker-build`        | Kör Docker *image* i en *container* |
+| Mål                   | Bygger/Genererar...                       |
+|-----------------------|-------------------------------------------|
+| `all`                 | alla mål                                  |
+| `clean`               | Tar bort alla genererade filer            |
+| `koncept.pdf`         | PDF av KonCEPT referensbok                |
+| `koncept-refbok.pdf`  | PDF av KonCEPT referensbok                |
+| `koncept-larobok.pdf` | PDF av KonCEPT lärobok                    |
+| `matterep.pdf`        | PDF av Matterepetitionsboken              |
+| `emf-handout.pdf`     | PDF av Utbildningsmaterial EMF            |
+| `webb`                | Bygger en HTML fil av Koncept referensbok |
+| `docker-image`        | Bygg en Docker *image*                    |
+| `docker-build`        | Kör Docker *image* i en *container*       |
 
 ### Byggberoenden
 
