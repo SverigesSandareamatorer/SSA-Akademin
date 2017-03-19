@@ -90,7 +90,7 @@ tabellen med en beskrivning om vad dom gör.
 | `koncept-larobok.pdf` | PDF av KonCEPT lärobok                    |
 | `matterep.pdf`        | PDF av Matterepetitionsboken              |
 | `emf-handout.pdf`     | PDF av Utbildningsmaterial EMF            |
-| `webb`                | Bygger en HTML fil av KonCEPT referensbok |
+| `koncept-refbok.webb` | Bygger en HTML fil av KonCEPT referensbok |
 | `docker-image`        | Bygg en Docker *image*                    |
 | `docker-build`        | Kör Docker *image* i en *container*       |
 
@@ -103,12 +103,12 @@ har installerat beroendet som det behöver.
 | Mål                   | Beroende...             |
 |-----------------------|-------------------------|
 | `clean`               | -                       |
-| `koncept.pdf`         | [TeX/LaTeX](#texlatex) |
-| `koncept-refbok.pdf`  | [TeX/LaTeX](#texlatex) |
-| `koncept-larobok.pdf` | [TeX/LaTeX](#texlatex) |
-| `matterep.pdf`        | [TeX/LaTeX](#texlatex) |
-| `emf-handout.pdf`     | [TeX/LaTeX](#texlatex) |
-| `webb`                | [LaTeXML](#latexml)     |
+| `koncept.pdf`         | [TeX/LaTeX](#texlatex)  |
+| `koncept-refbok.pdf`  | [TeX/LaTeX](#texlatex)  |
+| `koncept-larobok.pdf` | [TeX/LaTeX](#texlatex)  |
+| `matterep.pdf`        | [TeX/LaTeX](#texlatex)  |
+| `emf-handout.pdf`     | [TeX/LaTeX](#texlatex)  |
+| `koncept-refbok.webb` | [LaTeXML](#latexml)     |
 | `docker-image`        | [Docker](#docker)       |
 | `docker-build`        | [Docker](#docker)       |
 
@@ -119,7 +119,9 @@ INSTALLERA BEROENDEN
 
 TeX är ett typsättningssystem där ett dokument, en bok eller en artikel
 kan beskrivas i ren text (filer med filändelsen `.tex`) för att sedan
-med hjälp av programvara generera texten för att få formatering.
+med hjälp av programvara generera texten för att få formatering. För att
+generera PDF-filer av vår kod behövs TeX och vissa extra komponenter
+installeras.
 
 **Linux/Debian**
 
@@ -146,13 +148,13 @@ Hämta LaTeXML:
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
 
-     sudo apt-get install   \
-       libarchive-zip-perl libfile-which-perl libimage-size-perl  \
-       libio-string-perl libjson-xs-perl libtext-unidecode-perl \
-       libparse-recdescent-perl liburi-perl libuuid-tiny-perl
-       libwww-perl \
-       libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
-       texlive-latex-base imagemagick libimage-magick-perl perl
+    sudo apt-get install   \
+      libarchive-zip-perl libfile-which-perl libimage-size-perl  \
+      libio-string-perl libjson-xs-perl libtext-unidecode-perl \
+      libparse-recdescent-perl liburi-perl libuuid-tiny-perl
+      libwww-perl \
+      libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
+      texlive-latex-base imagemagick libimage-magick-perl perl
 
 
 Följ sedan
@@ -166,6 +168,6 @@ och kör följande:
 [Installera LaTeXML](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px3)
 (detta måste göras med *sudo*):
 
-     sudo make install
+    sudo make install
 
 ### DOCKER

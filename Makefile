@@ -129,8 +129,8 @@ ac2.pdf: lectures/ac2.tex
 	pdflatex lectures/ac2.tex
 
 # Web-generering
-webb:	koncept.tex $(KONCEPT_FILES)
-	latexml koncept.tex | latexmlpost --dest=web/index.html
+koncept-refbok.webb:	koncept.tex $(KONCEPT_FILES)
+	latexml koncept.tex | latexmlpost --dest=web/koncept-refbok.html
 
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
