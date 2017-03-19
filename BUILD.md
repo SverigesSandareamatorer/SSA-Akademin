@@ -27,7 +27,7 @@ men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 -   [KOM IGÅNG](#kom-igÅng)
 -   [GIT](#git)
 -   [MAKE](#make)
-    -   [BYGGBEROENDEN](#byggberoenden)
+    -   [MAKE-MÅL OCH BYGGBEROENDEN](#make-mÅl-och-byggberoenden)
 -   [INSTALLERA BEROENDEN](#installera-beroenden)
     -   [TEX/LATEX](#texlatex)
     -   [LATEXML](#latexml)
@@ -76,41 +76,27 @@ mål. Till exempel:
 Dessa Make "mål" kräver vissa verktyg för att kunna köras och dessa
 kallas för beroenden. Dessa beroenden måste installeras innan Make
 "mål:et" kan köras och instruktioner för vilka beroenden ett mål
-har hittar du under [Byggberoenden](#byggberoenden).
+har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
+
+### MAKE-MÅL OCH BYGGBEROENDEN
 
 För att få en översikt över vilka mål som finns listas dom här i
-tabellen med en beskrivning om vad dom gör.
-
-| Mål                   | Bygger/Genererar...                       |
-|-----------------------|-------------------------------------------|
-| `all`                 | alla mål                                  |
-| `clean`               | Tar bort alla genererade filer            |
-| `koncept.pdf`         | PDF av KonCEPT referensbok                |
-| `koncept-refbok.pdf`  | PDF av KonCEPT referensbok                |
-| `koncept-larobok.pdf` | PDF av KonCEPT lärobok                    |
-| `matterep.pdf`        | PDF av Matterepetitionsboken              |
-| `emf-handout.pdf`     | PDF av Utbildningsmaterial EMF            |
-| `koncept-refbok.webb` | Bygger en HTML fil av KonCEPT referensbok |
-| `docker-image`        | Bygg en Docker *image*                    |
-| `docker-build`        | Kör Docker *image* i en *container*       |
-
-### BYGGBEROENDEN
-
-I den här tabellen listas Make "mål:en" tillsammans med de verktyg
-som de är beroende utav. För att köra ett Make mål, se till att du
+tabellen med en beskrivning om vad dom gör och vilka verktyg som de är 
+beroende utav. För att köra ett Make mål, se till att du
 har installerat beroendet som det behöver.
 
-| Mål                   | Beroende...             |
-|-----------------------|-------------------------|
-| `clean`               | -                       |
-| `koncept.pdf`         | [TeX/LaTeX](#texlatex)  |
-| `koncept-refbok.pdf`  | [TeX/LaTeX](#texlatex)  |
-| `koncept-larobok.pdf` | [TeX/LaTeX](#texlatex)  |
-| `matterep.pdf`        | [TeX/LaTeX](#texlatex)  |
-| `emf-handout.pdf`     | [TeX/LaTeX](#texlatex)  |
-| `koncept-refbok.webb` | [LaTeXML](#latexml)     |
-| `docker-image`        | [Docker](#docker)       |
-| `docker-build`        | [Docker](#docker)       |
+| Mål                 | Bygger/Genererar...               | Beroende...          |
+|---------------------|-----------------------------------|----------------------|
+|`all`                |alla mål                           |alla beroenden nedan  |
+|`clean`              |Tar bort alla genererade filer     |-                     |
+|`koncept.pdf`        |PDF av KonCEPT (digitaliserad)     |[TeX/LaTeX](#texlatex)|
+|`koncept-refbok.pdf` |PDF av KonCEPT referensbok         |[TeX/LaTeX](#texlatex)|
+|`koncept-larobok.pdf`|PDF av KonCEPT lärobok             |[TeX/LaTeX](#texlatex)|
+|`matterep.pdf`       |PDF av Matterepetitionsboken       |[TeX/LaTeX](#texlatex)|
+|`emf-handout.pdf`    |PDF av Utbildningsmaterial EMF     |[TeX/LaTeX](#texlatex)|
+|`koncept.webb`       |Bygger en HTML fil av KonCEPT      |[LaTeXML](#latexml)   |
+|`docker-image`       |Bygg en Docker *image*             |[Docker](#docker)     |
+|`docker-build`       |Kör Docker *image* i en *container*|[Docker](#docker)     |
 
 INSTALLERA BEROENDEN
 --------------------
