@@ -24,7 +24,7 @@ likriktare. Alternativt kan samma transformators sekundärsida vara
 försedd med flera lindningar för olika spänningar och strömkretsar.
 
 Det allmänna elnätet i Sverige levererar växelspänning med frekvensen
-50 Hz. Nätspänningen för hushållsändamål är numera 400/230~V.
+50~Hz. Nätspänningen för hushållsändamål är numera 400/230~V.
 
 Tidigare importerade utrustningar i marknaden kan vara utförda för
 andra nätspännings- och skyddsjordningssystem än vad som nu tillämpas
@@ -118,7 +118,7 @@ I obelastat tillstånd är spänningen över laddningskondensatorn
 \(\sqrt{2}\) än effektivvärdet på transformatorns
 sekundärspänning. När en transformator i tomgång har ett effektivvärde
 av 230~V över sekundärlindningen, så blir spänningen över
-säkerhetsmotståndet \(230\cdot\sqrt{2} \approx 325\) V.
+säkerhetsmotståndet \(230\cdot\sqrt{2} \approx 325\)~V.
 
 \subsubsection{Spänningshöjande likriktarkopplingar}
 \index{kraftaggregat!spänningshöjning}
@@ -185,11 +185,52 @@ I vissa fall behövs i stället en reglerad utström från kraftaggregatet
 Även för detta ändamål används kopplingar med zenerdioder och
 transistorer.
 
+\subsection{Switchaggregat}
+\textbf{HAREC a.\ref{HAREC.a.3.3.4}\label{myHAREC.a.3.3.4}}
+\index{switchaggregat}
+\index{kraftaggregat!switchaggregat}
+
 Senare utvecklingsformer är s.k. switchade aggregat. I sådana regleras
 spänningen eller strömmen genom sönderhackning (switching). Genom att
 förändra förhållandet mellan till- och frånslagstiderna kan man skapa
-det önskade medelvärdet. Metoden ger hög
-verkningsgrad. Switch-frekvensen är i storleksordningen 20~kHz eller
-högre. På grund av den högre frekvensen krävs mindre kondensatorer i
+det önskade medelvärdet. Metoden ger hög verkningsgrad.
+Switch-frekvensen är i storleksordningen 20~kHz eller högre.
+På grund av den högre frekvensen krävs mindre kondensatorer i
 switchade aggregat. Sådana kraftaggregat kan emellertid ge störningar,
 varför effektiv avstörning behövs.
+
+Kraftaggregat som omvandlar från nätspänning till likspänning använder
+den primär-switchade principen. I ett primär-switchat aggregat likriktas
+nätspänningen innan den switchas på primärspolen i transformatorn.
+Eftersom frekvensen är relativt hög, behöver transformatorns kärna inte
+vara så stor, eftersom lägsta frekvensen inte riskerar mätta den på samma
+sätt som vid nätfrekvensen (50~Hz). På sekundärsidan likriktas sedan
+spänningen och glättning kan ske med relativt små kondensatorer på grund
+av den höga frekvensen. Genom att återmata spänningen till primärsidan, kan
+utspänningen regleras i primär-switchningen istället för att behöva
+stabilisera spänningen på sekundärsidan, vilket skulle leda till ytterligare
+förluster som därigenom kan undvikas. Ett primärswitchat aggregat skall ha
+nätfilter för att klara EMC-krav, något som även är till nytta att hålla
+störningar nere.
+
+En annan kategori av switchade aggregat är det som finns för
+likströmsomvandling, även känt som DCDC-omvandling. Dessa har inte alltid
+galvanisk isolation mellan in och utgång, men de kan vara värdefulla
+kompleteringar, genom den enkelhet de har. Det har även kommit ersättare till
+traditionellan linjära regulatorer som 7805 som switchar, men med lägre
+effektförlust. Problemet med dessa är att de kan producera störningar om man
+inte tar hänsyn till det. Detta är ett exempel på en enklare så kallad
+drop-omvandlare som kan sänka spänningen med switchning. Andra omvandlare kan
+höja spänningen eller byta polaritet på den. Dessa omvandlare har inte sällan
+frekvenser på 200~kHz till 2~MHz idag.
+
+Switchade kraftaggregat och spänningsstabiliseringar är nu en naturlig del
+av elektroniken, då effektförlusterna kan hållas mycket lägre än gamla
+linjära aggregat. Switchingen innebär dock att det kan läcka ut störningar
+både på ingång och utgång så väl som direkt från själva aggregatet i sig.
+En del tillåter manuel styrning av switch-frekvensen, varvid man kan flytta
+störningarna till frekvens man inte beror på. Störningarna kan vara både i
+differentiel och gemensam mod, och därför bör man vara uppmärksam på det när
+man försöker göra avstörning. Lyckligtvis är switch-frekvenserna relativt höga,
+vilket förenklar komponentval.
+
