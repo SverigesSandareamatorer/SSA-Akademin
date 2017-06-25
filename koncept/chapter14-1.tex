@@ -519,6 +519,7 @@ många MegaOhm eller högre, eftersom den ju är isolerad.
 
 \subsection{Obalans}
 \index{strömbalun}
+\index{obalans}
 
 Så här långt har huvudsakligen antagit att vi har balans, dvs. att
 transformatorer, induktorer mm är ideala och ger lika bra koppling till bägge
@@ -526,7 +527,8 @@ sidor. Givetvis finns inte detta i verkligheten, och man har en obalans.
 Vid obalans får man en signal som är gemensam att läcka över till den som är
 differentiell och omvänt att differentiell läcker över till den gemensamma.
 Det resulterar dels i minskad isolation och dels i minskad signal.
-I allmänhet är den minskade isolationen värre än förlusten av signal.
+I allmänhet är den minskade isolationen värre än förlusten av signal, som i
+allmänhet är försumbar.
 
 I en transformator ligger lindningarna ofta så att den kapacitiva kopplingen
 från ena polen på en spole är starkare än från den andra polen.
@@ -539,6 +541,11 @@ kopplingen mellan jordarna, som oftast är ett mindre problem. Med dessa metoder
 fås bättre isolation än vad en oskärmad transformator kan erbjuda, på grund av
 just obalans.
 
+Den kapacitiva kopplingen har väldigt hög impedans vid 50~Hz,  så man kan
+använda relativt höga motståndsvärden för att lasta ned den hårt. Fördelen är
+att man kan undvika direkt koppling, vilket kan skapa andra problem som när man
+vill ha relativ isolation galvaniskt.
+
 I en strömbalun kan den ena ledaren ha något lite längre varv runt kärnan än
 den andra. Det ger inte en perfekt 1:1 relation i kopplingen och därmed en
 obalans.
@@ -550,14 +557,17 @@ obalans.
 Dessa exempel på imperfektion ska man vara medveten om, så att man inte
 tillskriver en transformator eller strömbalun en perfekt isolation av
 egenskaperna. Snarare ska man förvänta sig att den inte är perfekt och
-anpassa design efter det.
+anpassa sin design efter det.
 
 Ett enkelt fall i ljud-sammanhang är 50~Hz 230~V men man vill hålla störningen
 mindre än säg 1~mV. Det kräver mer än 106~dB isolation mellan 230~V
 diffrentiellt på primärlindningen och 1~mV gemensamt på sekundärlindningen.
-Så god balans kan vara svår att finna. Principen återkommer oavsett spänning
-och frekvens, det är en inperfektion man behöver lära sig att förstå och
-hantera.
+Så god balans kan vara svår att finna i enskilda komponenter. Principen
+återkommer oavsett spänning och frekvens, det är en inperfektion man behöver
+lära sig att förstå och hantera.
+
+\subsection{Obalans i antennsystem}
+\index{obalans!antennsystem}
 
 Obalans kan även förekomma i antenn-system, där en obalanserad antenn omvandlar
 den utsända signalen, som är differentiell, till att delvis bli gemensam.
@@ -574,3 +584,29 @@ till antennen. Ström-balunen motverkar ju den gemensamma strömmen utan att
 nämnvärt påverka den differentiella, så det är ett fint exempel på en bra
 åtgärd.
 
+De allra flesta antenner har en annan impedans i matningspunkten än vad dess
+matarledning har. Detta kräver en impedansanpassning för optimal
+energiöverföring. En annan aspekt är att för en koaxial matning så överförs
+energin enkelsidigt (single-ended) dvs. det är mittledaren i förhållande till
+skärm/jord som överför energi. När vi ansluter denna ledare till en dipol-
+antenn vill vi se till att strömmen går balanserat ut i de bägge ledarna,
+så att mitt-punkten är nära noll, så att det inte går en ström med gemensam
+mod ut i matarledningen. Vi har alltså dels behovet att omvandla obalancerad
+signal till balancerad samt undertrycka gemensam signal i ledaren, och därtill
+impedanskonvertera den. Detta brukar man låta en balun (balanced-unbalanced)
+göra, vilket som namnet anger bara ger indikation på konverteringen, men den
+gör alltså flera saker. Eftersom ingen balun är perfekt designad så kommer
+den i sig själv ha en obalans, varvid den ändå kommer ge viss gemensam ström.
+För högre effekter kan därför en separat spärr komma att behövas.
+
+Utöver balun finns även unun (unbalanced-unbalanced) som gör
+impedanskonvertering enbart.
+
+Även om man har en bra balun riskerar man att få mantelströmmar, ty antennen
+kan vara av en obalancerad typ, t.ex. Off-Center-Feed (OCF)/Windom, eller
+för att den kopplar olika med miljön som träd och torn mm.
+
+Att undvika att det går gemensam ström, även kallad mantelström kan krävas av
+många olika anledningar, och det är viktigt dels för att få ut energin där den
+ska, dvs. radierat ut i luften på ett korrekt sätt, men även av säkerhetsskäl
+så att inte utrustning eller personskada uppstår.
