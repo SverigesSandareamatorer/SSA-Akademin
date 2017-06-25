@@ -99,6 +99,10 @@ emf-handout.ind: emf-handout.idx
 emf-handout.pdf: emf-handout.ind emf-handout.tex koncept/emf.tex common.tex
 	pdflatex emf-handout.tex
 
+iso-jordning.pdf: koncept.bbl iso-jordning.tex $(KONCEPT_FILES)
+	-pdflatex iso-jordning.tex
+	pdflatex iso-jordning.tex
+
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
