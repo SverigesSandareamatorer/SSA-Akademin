@@ -530,7 +530,14 @@ I allmänhet är den minskade isolationen värre än förlusten av signal.
 
 I en transformator ligger lindningarna ofta så att den kapacitiva kopplingen
 från ena polen på en spole är starkare än från den andra polen.
-Det ger därför en obalans i hur de kopplar kapacitivt.
+Det ger därför en obalans i hur de kopplar kapacitivt. Genom att lägga ett
+skärmlager mellan lindningarna kan den kapacitiva kopplingen jämnas ut, då de
+kopplar kapacitivt till skärmlagret istället, som kan lågresitivt hindra
+koppling. En ännu bättre lösning är att ha dubbla lager med isolation, för då
+kan de kopplas mot respektive sidas jord, och kvar blir bara den kapacitiva
+kopplingen mellan jordarna, som oftast är ett mindre problem. Med dessa metoder
+fås bättre isolation än vad en oskärmad transformator kan erbjuda, på grund av
+just obalans.
 
 I en strömbalun kan den ena ledaren ha något lite längre varv runt kärnan än
 den andra. Det ger inte en perfekt 1:1 relation i kopplingen och därmed en
@@ -544,3 +551,25 @@ Dessa exempel på imperfektion ska man vara medveten om, så att man inte
 tillskriver en transformator eller strömbalun en perfekt isolation av
 egenskaperna. Snarare ska man förvänta sig att den inte är perfekt och
 anpassa design efter det.
+
+Ett enkelt fall i ljud-sammanhang är 50~Hz 230~V men man vill hålla störningen
+mindre än säg 1~mV. Det kräver mer än 53~dB isolation mellan 230~V diffrentiellt
+på primärlindningen och 1~mV gemensamt på sekundärlindningen. Så god balans
+kan vara svår att finna. Principen återkommer oavsett spänning och frekvens,
+det är en inperfektion man behöver lära sig att förstå och hantera.
+
+Obalans kan även förekomma i antenn-system, där en obalanserad antenn omvandlar
+den utsända signalen, som är differentiell, till att delvis bli gemensam.
+Detta gör att som reflex från den obalanserade antennen går en ström i
+matningsledningen som gör att den strålar. Detta har traditionellt uttryckts
+som att strömmen vänder och går på utsidan av skärmen, men det som hänt är att
+den diffrentiella strömmen, som ju motverkar utstrålning plötsligt får en
+pålagd gemensam komponent som då kommer stråla. Man kan uppleva det om man
+berör ledningen så kan man känna denna som en ström, vilket man upplever går
+på utsidan. Kabeln har då blivit en strålande del av antennen. Det är också
+denna ström som behöver motverkas för att operatören inte skall skada sig.
+Detta görs med en ström-balun, lämpligtvis en kvartsvåg ned från anslutningen
+till antennen. Ström-balunen motverkar ju den gemensamma strömmen utan att
+nämnvärt påverka den differentiella, så det är ett fint exempel på en bra
+åtgärd.
+
