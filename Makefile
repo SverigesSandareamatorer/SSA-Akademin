@@ -99,6 +99,10 @@ emf-handout.ind: emf-handout.idx
 emf-handout.pdf: emf-handout.ind emf-handout.tex koncept/emf.tex common.tex
 	pdflatex emf-handout.tex
 
+iso-jordning.pdf: koncept.bbl iso-jordning.tex $(KONCEPT_FILES)
+	-pdflatex iso-jordning.tex
+	pdflatex iso-jordning.tex
+
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
@@ -129,8 +133,10 @@ ac2.pdf: lectures/ac2.tex
 	pdflatex lectures/ac2.tex
 
 # Web-generering
-koncept.webb:	koncept.tex $(KONCEPT_FILES)
-	latexml koncept.tex | latexmlpost --dest=web/koncept.html
+koncept.xml:	koncept.tex $(KONCEPT_FILES)
+	latexml koncept.tex > koncept.xml
+koncept.webb:	koncept.xml
+	latexmlpost --dest=web/koncept.html koncept.xml
 
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
