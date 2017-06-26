@@ -1,2 +1,0 @@
-./buildSingleTex.pl koncept.tex | sed 's/\\begin{rev-.*}//g' | sed 's/\\end{rev-.*}//g' | latexml - | latexmlpost --dest=web/koncept.html
-./buildSingleTex.pl koncept.tex | latexml - | latexmlpost --dest=web/koncept.html
