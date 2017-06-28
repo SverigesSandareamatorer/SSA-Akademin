@@ -111,7 +111,7 @@ installeras.
 
 **Linux/Debian**
 
-    sudo apt-get update
+    sudo apt-get update; 
     sudo apt-get install texlive texlive-lang-european \
         texlive-latex-extra texlive-pictures texlive-math-extra
 
@@ -134,14 +134,12 @@ Hämta LaTeXML:
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
 
-    sudo apt-get install   \
+    sudo apt-get install \
       libarchive-zip-perl libfile-which-perl libimage-size-perl  \
       libio-string-perl libjson-xs-perl libtext-unidecode-perl \
-      libparse-recdescent-perl liburi-perl libuuid-tiny-perl
-      libwww-perl \
-      libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl  \
+      libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
+      libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
       texlive-latex-base imagemagick libimage-magick-perl perl
-
 
 Följ sedan
 [bygginstruktioerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)

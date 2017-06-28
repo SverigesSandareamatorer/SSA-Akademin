@@ -32,7 +32,7 @@ PDF
 Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte
 uppdaterad kontinuerligt så datumet visar hur pass ny den är.
 
-**Hämta hem utkast version 2017-03-18:**
+**Hämta hem utkast version 2017-06-11:**
 **[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
 
 

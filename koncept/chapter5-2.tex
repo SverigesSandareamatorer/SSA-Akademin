@@ -11,7 +11,7 @@
   \label{fig:bildII5-10}
 \end{wrapfigure}
 
-En transceiver - transmitter receiver - är både en sändare och
+En transceiver --- transmitter receiver --- är både en sändare och
 mottagare med delvis gemensamma funktioner. Dessa kan t.ex.  vara
 oscillatorer, signalbehandlingskretsar, filter, strömförsörjning
 o.s.v., vilket innebär besparing av ingående komponenter, men också
@@ -50,7 +50,7 @@ raksändare och mottagaren arbetar med direktblandning. För
 mottagning. Om motstationen svarar exakt på sändningsfrekvensen,
 vilken ju är VFO-frekvensen, så erhålls svävningsnoll i
 mottagaren. För att få hörbara morsetecken är mottagaren utrustad med
-RIT, som ändrar VFO-frekvensen med ca 800 Hz vid mottagning.
+RIT, som ändrar VFO-frekvensen med ca 800~Hz vid mottagning.
 
 I konstruktionen finns en anordning kallad KOX (Key Operated
 Xmitter). Denna kopplar om transceivern till sändning när
@@ -69,13 +69,13 @@ mycket enkel.
 Bild \ref{fig:bildII5-12}
 
 Bilden visar en kristallstyrd FM-sändare med frekvensomkopplare för
-kanalval inom 144 - 146 MHz-bandet.
+kanalval inom 144--146~MHz-bandet.
 
-En kristallfrekvens av c:a 12 MHz multipliceras 12 gånger i en kedja
+En kristallfrekvens av ca 12~MHz multipliceras 12 gånger i en kedja
 av förstärkarsteg för att ge sändningsfrekvensen. Bilden visar
 räkneexempel för två frekvenskanaler. Det frekvenssving i oscillatorn,
-som alstras av modulatorn, multipliceras också med 12.  För ett sving
-av 3 kHz på bärvågen är svinget på oscillatorn bara 250 Hz.
+som alstras av modulatorn, multipliceras också med 12. För ett sving
+av 3~kHz på bärvågen är svinget på oscillatorn bara 250~Hz.
 
 Efter mikrofonförstärkaren följer en amplitudbegränsare, som ska
 hålla deviationen inom ett givet maxvärde, oavsett signalstyrkan från
@@ -100,20 +100,20 @@ blandas med en lokal signal.
 En kristallstyrd lokaloscillator med efterföljande
 frekvensmultipliceringssteg alstrar denna signal.
 
-Lokaloscillatorkedjans utfrekvens läggs 10,7 MHz över eller under
+Lokaloscillatorkedjans utfrekvens läggs 10,7~MHz över eller under
 mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen
-blir då 10,7 MHz. Skilda oscillatorer används vid sändning
+blir då 10,7~MHz. Skilda oscillatorer används vid sändning
 resp. mottagning varför styrkristallerna för sändning resp.
 mottagning på en given kanal får olika frekvens. Vid omkoppling till
 en annan kanal väljs ett annat kristallpar, vilket lämpligen sker med
 samma omkopplare.
 
-Den relativt höga 1:a mellanfrekvensen 10,7 MHz ger ett så stort
+Den relativt höga 1:a mellanfrekvensen 10,7~MHz ger ett så stort
 avstånd till spegelfrekvensen, att bandbredden i förselektionsfiltren
 är tillräckligt smal för att undertrycka spegelfrekvensen. Av samma
 skäl bör 1:a mellanfrekvensen i en UHF-mottagare väljas ytterligare
 tre gånger högre. Den relativt låga 2:a mellanfrekvensen medger en god
-närselektering redan med enkla bandfilter.  En eventuell
+närselektering redan med enkla bandfilter. En eventuell
 MF-förstärkare ger tillräcklig signalstyrka till FM-demodulatorn.
 
 För denna lösning behövs det två styrkristaller för varje
@@ -141,17 +141,17 @@ bild \ref{fig:bildII5-12}, är mottagaren även i detta fall en dubbelsuper.
 VCO används även som lokaloscillator i mottagaren. Eftersom sändaren
 och mottagaren ska användas på samma frekvens (simplextrafik), måste
 i detta koncept VCO-frekvensen vara olika vid sändning och
-mottagning. Eftersom mottagarens mellanfrekvens MF är 10,7 MHz måste
-nämligen VCO ligga 10,7 MHz högre eller lägre vid mottagning än vid
+mottagning. Eftersom mottagarens mellanfrekvens MF är 10,7~MHz måste
+nämligen VCO ligga 10,7~MHz högre eller lägre vid mottagning än vid
 sändning. Vid sändning däremot, är VCO-frekvensen densamma som
 sändningsfrekvensen.
 
 Den programmerbara frekvensdelaren i PLL-kretsen arbetar därför med
 olika delningstal vid sändning resp. mottagning. Inställningen av
 divisorn kan ske med kanalomkopplare, tumhjulssats, knappsats eller
-``VFO-ratt'' + digitalräknare o.s.v. PLL-styrningen ger dessutom
+''VFO-ratt'' + digitalräknare o.s.v. PLL-styrningen ger dessutom
 möjligheter, t.ex. att ordna en automatisk avsökning över ett önskat
-frekvensområde - s.k. scanning.
+frekvensområde --- s.k. scanning.
 
 \begin{table}[h]
   \begin{tabular}{ll|lll}
@@ -187,15 +187,15 @@ Bild \ref{fig:bildII5-14}
 
 Vi har redan beskrivit en KV-sändare och KV-mottagare för SSB. I det
 koncept på en kortvågstransceiver, som visas här, ingår en super-VFO i
-signalberedningen. VFO-signalen (5 - 5,5 MHz) blandas med signalen
+signalberedningen. VFO-signalen (5--5,5~MHz) blandas med signalen
 från en kristallstyrd CO, vars frekvens är valbar med en
 bandomkopplare. Samtidigt kopplas ett bandpassfilter in efter
 blandaren i super-VFO, som svarar till det aktuella frekvensbandet.
 
-För t.ex. 21 MHz-bandet är VFO-filtrets passband 12 - 12,5 MHz. När en
-VFO-signal 12 - 12,5 MHz blandas med en 9 MHz SSB modulerad signal
-erhålls en frekvens i området 3 - 3,5 MHz och en frekvens i området
-21 - 21,5 MHz. Den önskade av dessa frekvenser filtreras fram med
+För t.ex. 21~MHz-bandet är VFO-filtrets passband 12--12,5~MHz. När en
+VFO-signal 12--12,5~MHz blandas med en 9~MHz SSB modulerad signal
+erhålls en frekvens i området 3--3,5~MHz och en frekvens i området
+21--21,5~MHz. Den önskade av dessa frekvenser filtreras fram med
 omkopplingsbara bandpassfilter, vilket sker med den bandkopplare som
 nämnts tidigare.
 
@@ -203,7 +203,7 @@ I den enkla kortvågssändare som beskrivits tidigare är det
 tillräckligt med en enda sats av omkopplingsbara bandpassfilter. Det
 större antalet filter i den här beskrivna utrustningen behövs för att
 även kunna använda super-VFO som en del i mottagaren, vilken arbetar
-som enkelsuper. Eftersom en MF på 9 MHz används även i mottagaren
+som enkelsuper. Eftersom en MF på 9~MHz används även i mottagaren
 kommer mottagning och sändning att kunna ske på samma frekvens.
 
 Mottagaren beskrivs inte närmare. Med lämpliga omkopplingsanordningar
@@ -239,7 +239,7 @@ sändnings-/mottagningsomkoppling) är inritade.
 \index{transceiver!PLL}
 
 Bild \ref{fig:bildII5-15} En modern transceiver i den högre prisklassen, i
-s.k. ``all-mode''-utförande, erbjuder många funktionella
+s.k. ''all-mode''-utförande, erbjuder många funktionella
 möjligheter. Flera av dem kommer emellertid endast till användning i
 speciella situationer. Konceptet för en sådan transceiver beskrivs här
 i stort.  Huvudprincipen för signalbehandlingen kan beskrivas som en
@@ -254,7 +254,7 @@ tillkomma blockeringskretsar, som förhindrar sändning utanför tillåtna
 frekvensband.
 
 Denna förenklade beskrivning omfattar inte kristalloscillatorerna för
-9 och 61 MHz i fasregleringskretsen och inte heller SSB-modulatorn,
+9 och 61~MHz i fasregleringskretsen och inte heller SSB-modulatorn,
 FM-modulatorn och anordningarna för CW-sändning.
 
 Mottagaren är en dubbelsuper med hög 1:a MF-frekvens. Mottagare för
@@ -270,7 +270,7 @@ En extra VFO-funktion kan åstadkommas genom att frekvensdelaren
 programmeras med delningstal som hämtas från ett digitalt minne. Den
 extra VFO-funktionen kan sedan efterjusteras genom att ändra
 delningstalet med frekvensratten. Minnet blir ännu mer användbart, om
-det förutom frekvenser också kan lagra uppgifter t.ex.  om
+det förutom frekvenser också kan lagra uppgifter t.ex. om
 sändningsslag och andra inställningar.
 
 \subsection{Sammanfattning}
