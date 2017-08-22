@@ -71,9 +71,9 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	-pdflatex koncept.tex
 	pdflatex koncept.tex
 
-matterep.pdf: matte.tex matterep.tex
-	-pdflatex matterep.tex
-	pdflatex matterep.tex
+matterep.pdf: matte.tex handouts/matterep.tex
+	-pdflatex handouts/matterep.tex
+	pdflatex handouts/matterep.tex
 
 koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
 	-pdflatex koncept-alpha.tex
@@ -96,12 +96,12 @@ koncept.ind: koncept.idx
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
-emf-handout.pdf: emf-handout.ind emf-handout.tex koncept/emf.tex common.tex
-	pdflatex emf-handout.tex
+emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/emf.tex common.tex
+	pdflatex handouts/emf-handout.tex
 
-iso-jordning.pdf: koncept.bbl iso-jordning.tex $(KONCEPT_FILES)
-	-pdflatex iso-jordning.tex
-	pdflatex iso-jordning.tex
+iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
+	-pdflatex handouts/iso-jordning.tex
+	pdflatex handouts/iso-jordning.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
