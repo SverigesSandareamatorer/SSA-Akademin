@@ -31,8 +31,6 @@ men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 -   [INSTALLERA BEROENDEN](#installera-beroenden)
     -   [TEX/LATEX](#texlatex)
     -   [LATEXML](#latexml)
-    -   [DOCKER](#docker)
-
 
 KOM IGÅNG
 ---------
@@ -128,8 +126,8 @@ ner och beroenden måste hämtas.
 **Linux/Debian**  
 Hämta LaTeXML:
 
-     git clone https://github.com/brucemiller/LaTeXML.git
-     cd LaTeXML/
+    git clone https://github.com/brucemiller/LaTeXML.git
+    cd LaTeXML/
 
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
@@ -154,4 +152,3 @@ och kör följande:
 
     sudo make install
 
-### DOCKER
