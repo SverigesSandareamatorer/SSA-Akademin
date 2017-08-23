@@ -92,9 +92,9 @@ har installerat beroendet som det behöver.
 |`koncept-larobok.pdf`|PDF av KonCEPT lärobok             |[TeX/LaTeX](#texlatex)|
 |`matterep.pdf`       |PDF av Matterepetitionsboken       |[TeX/LaTeX](#texlatex)|
 |`emf-handout.pdf`    |PDF av Utbildningsmaterial EMF     |[TeX/LaTeX](#texlatex)|
-|`koncept.webb`       |Bygger en HTML fil av KonCEPT      |[LaTeXML](#latexml)   |
-|`docker-image`       |Bygg en Docker *image*             |[Docker](#docker)     |
-|`docker-build`       |Kör Docker *image* i en *container*|[Docker](#docker)     |
+|`koncept.webb`       |Bygger en webb-sida av KonCEPT     |[LaTeXML](#latexml)   |
+|`docker-image`       |Bygg en Docker *image*             |Docker                |
+|`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
 INSTALLERA BEROENDEN
 --------------------
