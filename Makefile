@@ -53,8 +53,10 @@ KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-b.tex \
 	koncept/appendix-g.tex koncept/appendix-h.tex \
 	koncept/appendix-i.tex koncept/appendix-j.tex \
 	koncept/appendix-l.tex
-KONCEPT_OTHER_FILES = common.tex errata.tex foreword.tex introduction.tex \
-	matte.tex koncept/morse.tex part3.tex preface.tex rest.tex koncept.bib \
+KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
+	koncept/foreword.tex koncept/introduction.tex \
+	koncept/matte.tex koncept/morse.tex koncept/part3.tex \
+	koncept/preface.tex koncept.bib \
 	koncept.tex koncept/emf.tex koncept/chapter14-1.tex
 KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH5_FILES) \
