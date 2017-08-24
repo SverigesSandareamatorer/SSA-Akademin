@@ -1,4 +1,4 @@
-Texifiering av OCRad text.
+# Texifiering av OCRad text.
 
 Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
 någorlunda vettig LaTeX.
