@@ -43,22 +43,8 @@ Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *Git* eller skriver *LaTeX*.
 
 **Q: Jag kan koda och vill bidra; vad gör jag?**  
-A: Börja med att läsa igenom filen [`texifiering.txt`](texifiering.txt)
-noggrant och följa alla instruktioner där för hur koden till boken
-är uppbyggd. Till exempel skrivs kommentarer i texten så här:
-
-    Kommentarer vi har som del av den editoriella bearbetningen lägger vi
-    synligt i texten med följande format:
-
-    \hilight{TODO: Här ser det lite fel ut.}
-
-    Det är behändigt att kunna söka på TODO:, och \hilight{} ger en
-    gul markör i texten så vi vet när vi läser att här är något vi skall
-    åtgärda.
-
-Om du hittar något så kan du lämna en *issue* där du beskriver vart
-du har hittat ett problem och om du har någon föreslagen förändring
-så kommer din anmärkning att hanteras.
+A: Läs igenom [`CONTRIBUTING.md`](CONTRIBUTING.md) och följ 
+instruktionerna.
 
 **Q: Jag vet inte hur man redigerar kod**  
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
