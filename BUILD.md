@@ -31,8 +31,6 @@ men paketnamnen bör heta likadant i andra distributioners pakethanterare.
 -   [INSTALLERA BEROENDEN](#installera-beroenden)
     -   [TEX/LATEX](#texlatex)
     -   [LATEXML](#latexml)
-    -   [DOCKER](#docker)
-
 
 KOM IGÅNG
 ---------
@@ -94,9 +92,9 @@ har installerat beroendet som det behöver.
 |`koncept-larobok.pdf`|PDF av KonCEPT lärobok             |[TeX/LaTeX](#texlatex)|
 |`matterep.pdf`       |PDF av Matterepetitionsboken       |[TeX/LaTeX](#texlatex)|
 |`emf-handout.pdf`    |PDF av Utbildningsmaterial EMF     |[TeX/LaTeX](#texlatex)|
-|`koncept.webb`       |Bygger en HTML fil av KonCEPT      |[LaTeXML](#latexml)   |
-|`docker-image`       |Bygg en Docker *image*             |[Docker](#docker)     |
-|`docker-build`       |Kör Docker *image* i en *container*|[Docker](#docker)     |
+|`koncept.webb`       |Bygger en webb-sida av KonCEPT     |[LaTeXML](#latexml)   |
+|`docker-image`       |Bygg en Docker *image*             |Docker                |
+|`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
 INSTALLERA BEROENDEN
 --------------------
@@ -128,8 +126,8 @@ ner och beroenden måste hämtas.
 **Linux/Debian**  
 Hämta LaTeXML:
 
-     git clone https://github.com/brucemiller/LaTeXML.git
-     cd LaTeXML/
+    git clone https://github.com/brucemiller/LaTeXML.git
+    cd LaTeXML/
 
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
@@ -154,4 +152,3 @@ och kör följande:
 
     sudo make install
 
-### DOCKER
