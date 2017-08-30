@@ -414,4 +414,37 @@ medelvärde.
 
 \subsection{Nätverksanalysator}
 
-\hilight{TODO: Beskriv nätverksanalysator och vad man kan göra med den}
+En nätverksanalysator (eng. network analyser) används för att mäta hur mycket
+signal som går igenom en koppling, t.ex. filter eller förstärkare, eller hur
+mycket signal som reflekteras tillbaka från t.ex. en antenn.
+Ibland kallas detta även för antenn-analysator.
+
+En nätverksanalysator som enbart kan mäta amplituder kallas ibland för
+skalär nätverksanalysator (eng. Scalar Network Analyzer - SNA).
+En spektrumanalysator med en så kallad tracking generator, som genererar en
+signal med samma frekvens som man analyserar, kan aggera SNA.
+
+En nätverksanalysator som mäter fasen både på utgående och inkommande signal
+kan även mäta fasförskjutningen, och då kan man representera fasen både som
+komplex storhet eller med polära koordinater, dvs. amplitud och fas.
+En sådan nätverksanalysator kallas för vektornätverksanalysator (eng.
+Vector Network Analyzer - VNA).
+
+Användningsmässigt liknar en nätverksanalysator en spektrum-analysator, men
+med flera väsentliga skillnader.
+För att få korrekt mätning av amlitud och fas läggs större vikt vid att göra
+kalibrering, något som görs för att kompensera varierande amplitud och fas
+för olika frekvenser.
+Vid kalibrering använder man ofta last (eng. load), kortslutning (eng. short)
+samt öppen port (eng. open) mätning av kalibreringsreferenser.
+För två-ports mätning använder man även en genomföring (eng. through) för att
+få port-till-port egenskaperna korrekt.
+Efter kalibrering av instrumentet så korrigeras mätningarna, och ibland kan
+skillnaderna vara drastiska.
+
+Nätverksanalysatorn har därtill ofta ett stort antal olika sätt att presentera
+mätresultaten så att man kan mäta enligt scatter-modellen, return loss (RL),
+VSWR, Schmitt-diagram och så vidare.
+Det gör att en nätverksanalysator kan vara ett kraftfullt verktyg som korrekt
+använt kan ge god insikt i hur en krets beter sig.
+
