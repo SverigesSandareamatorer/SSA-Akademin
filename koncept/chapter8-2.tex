@@ -362,8 +362,55 @@ man kan göra med det.}
 \hilight{TODO: Beskriv digitala och PC-baserade digitala oscilloskop}
 
 \subsection{Spektrumanalysator}
+\textbf{
+HAREC a.\ref{HAREC.a.8.2.1.7}\label{myHAREC.a.8.2.1.7}
+}
 
-\hilight{TODO: Beskriv spektrumanalysator och vad man kan göra med den}
+En spektrum-analysator visar amplituden för olika frekvenser över ett visst
+frekvensområde.
+Detta är som kontrast till oscilloskopet som visar amplitud för en signal
+över tiden.
+
+En spektrumanalysator kan styras för att svepa över olika frekvensområden.
+Oftast när man startar den så sveper den från lägsta till högsta frekvens.
+Det kan vara behändigt för att få en första översikt.
+För en specifik mätning ställer man in start och stop frekvens, eller
+alternativt en center-frekvens och ett span.
+
+För att kunna göra bättre avläsningar kan man sätta markörer, så att man kan
+avläsa frekvens och amplitud för den punkten.
+Ibland sätter man dubbla frekvensen för att avläsa skillnaden i amplitud,
+vilket kan vara relevant för filter eller avläsa den relativa styrkan på ett
+sidband.
+
+En spektrum-analysator består förenklat av en svep-bar oscillator,
+variabelt filter på mellan frekvensen, en detektor och ett ställbart
+filter från detektorn.
+
+Den variabla oscillatorn sveper så att det tänkta frekvensområdet täcks,
+ofta med ett bestämt antal punkter, t.ex. 801, där varje punkt är mätning på
+en specifik frekvens.
+Ibland kan man anpassa antalet punkter för att få mätningen gå snabbare,
+mot att man får en lägre upplösning.
+
+Filtret sätter bandbredden på mätningen, och det kan gå i 1-3 steg, t.ex.
+3 Hz, 10 Hz, 30 Hz, osv. till 3 MHz.
+För vissa specifika mätändamål, som t.ex. för EMC mätningar, behöver man ha
+filter av rätt bandbredd och dessa är extra optioner.
+
+Detektorn kan vara top-detektor eller RMS detektor, det kan finnas flera.
+För specifika mätändamål som t.ex. EMC mätningar behöver man specifik detektor.
+
+Efter detektorn finns ett filter, ofta benämnt med video-bandbredd, som
+medelvärdesbildar detektorns ampltitudestimat över tiden.
+Oftast regleras det automatiskt med bandbredden på filtret, eftersom smalare
+filter behöver proportioneligt längre tid för att ge ett bra resultat.
+Sveptiden beror därför på antalet punkter för frekvenser, bandbredd på filtret
+och video-bandbredden.
+Ibland kan man styra video-bandbredden manuellt för att få en längre tid, då
+det kan vara gynsamt för att få en tydligare bild, dvs. ta bort brus och
+störningar som enbart skapar variationer för att man inte observerar ett bra
+medelvärde.
 
 \subsection{Nätverksanalysator}
 
