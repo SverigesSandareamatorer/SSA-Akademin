@@ -34,3 +34,152 @@ Galaktiskt brus kommer från den delen av himlen som för stunden har mitten av
 Vintergatan, så det är riktningskänsligt.
 
 Termiskt brus är mottagarens interna brus, se \ref{termisktbrus}.
+
+\subsection{Länkbudget}
+\textbf{HAREC a.\ref{HAREC.a.7.20}\label{myHAREC.a.7.20}}
+\index{länkbudget}
+
+För att kunna estimera den upplevda signalkvaliten så gör man en så kallad
+länkbudget (eng. link budget).
+Länkbudgeten sammanställer hur signalstyrkan respektive brus varierar längs en
+länk med dess förstärkningar och dämpningar.
+I slutet av länkbudgeten kan sedan det upplevda signal-brus-förhållandet
+enkelt estimeras.
+En väl utförd länkbudget kan därför skapa god förståelse för länkens brister
+så att förbättringar kan göras.
+
+\subsubsection{Dominant störkälla}
+\textbf{HAREC a.\ref{HAREC.a.7.20.1}\label{myHAREC.a.7.20.1}}
+
+I en noggrann model så skall alla bruskällor från källa till mottagare
+listas, justeras för gain och sammanställas.
+I praktiken så har man en dominant störkälla, typiskt bruset på bandet
+(eng. band noise) eller mottagarens interna brus (eng. receiver noise),
+varvid de övriga bidragen har liten påverkan på den totala uträkningen.
+Det är därför praktiskt att fort estimera om det är brus på bandet eller
+mottagarens brus som dominerar, vartefter man enbart räknar med den
+dominerande bruskällan.
+
+Som tumregel kan man säga att för kortvåg är oftast bruset på bandet
+den dominerande bruskällan, emedans för högre band så kommer det interna
+bruset att dominera, och dämpningar i kablar bli allt mer märkbart.
+
+\subsubsection{Minimal signal-brus-förhållande}
+\textbf{HAREC a.\ref{HAREC.a.7.20.2}\label{myHAREC.a.7.20.2}}
+
+Det är också till stor hjälp att fort etablera det minimala
+signal-brus-förhållandet (eng. minimum signal to noise ratio)
+som man kan tolerera.
+Genom att jämföra länkbudgeten mot detta kan man fort avgöra om det är
+tillräckligt bra eller behöver ändras.
+
+Har man för lågt signal-brus-förhållande mot minimum, så behöver man öka
+förstärkningen eller oftast minska förlusterna i länkbudgeten.
+
+\subsubsection{Minimal mottagen signalstyrka}
+\textbf{HAREC a.\ref{HAREC.a.7.20.3}\label{myHAREC.a.7.20.3}}
+
+Om den dominanta störkällan är det interna bruset, så måste man öka
+signalstyrkan in till mottageren, det ger minimal mottagen signalstyrka
+(eng. minimum receiver signal power).
+
+\subsubsection{Brusfaktor}
+\index{brus}
+\index{brusfaktor}
+\index{brus!brusfaktor}
+\index{noise factor}
+\index{NF}
+\index{brus!noise factor}
+\index{brus!NF}
+\index{LNA}
+
+För högre frekvenser tenderar brus domineras av mottagarens interna brus,
+samtidigt som kabelförluster börjar bli märkbara.
+För sådana fall kan det vara lämpligt att installera en lågbrusig förstärkare
+(eng. low noise amplifier (LNA)) före mottagaren.
+Även den försärkaren har dock egenbrus som sedan förstärks.
+Brusfaktor (eng. noise factor (NF)) ger förhållandet mellan en förstärkares
+egenbrus i förhållande till det termiska bruset för ett motstånd på dess
+ingång. Brusfaktor redovisas oftast i dB, som varande dB över brusgolvet.
+
+En förstärkares egenbrus kommer givetvis förstärkas, och därför kommer bruset
+på utgången vara brusfaktorn plus förstärkningen, räknat i dB.
+Exempelvis kommer en försärkare med 4,5 dB i brusfaktor och 20 dB förstärkning
+ha brus på 24,5 dB över brusgolvet.
+En efterföljande förstärkare med 10 dB brusfaktor kommer inte signifikant
+bidra med brus, eftersom föregående steg har 14,5 dB högre brus än egenbruset.
+För detta fall är den första förstärkaren dominant.
+
+Eftersom kabeldämpning kan vara signifikant, så kommer signalen dämpas genom
+kabeln.
+Givet att vi har 15 dB dämpning i kabeln, en signal 40 dB över brusgolvet och
+en 20 dB förstärkare med brusfaktor 4,5 dB, var ska vi sätta förstärkaren?
+
+Om förstärkaren sitter efter kabeln så kommer signalen dämpas först i kabeln,
+bruset kommer läggas på och sedan kommer det förstärkas 20 dB.
+Det ger 40 dB minus 15 dB plus 20 dB för signalen, dvs. 45 dB.
+För bruset får vi 4,5 dB plus 20 dB dvs. 24,5 dB.
+För detta fallet får vi ett signal-brus-förhållande på 45 dB minus 24,5 dB,
+dvs. 20,5 dB, givet att det är internbruset som är dominerande.
+
+Om förstärkaren sitter före kabel så kommer signalen först förstärkas och
+sedan dämpas i kabeln.
+Det ger 40 dB plus 20 dB minus 15 dB för signalen, dvs. 45 dB.
+För bruset får vi 4,5 dB plus 20 dB minus 15 dB dvs. 9,5 dB.
+För detta fallet får vi ett signal-brus-förhållande på 45 dB minus 9,5 dB,
+dvs. 35,5 dB, givet att det är internbruset som är dominerande.
+
+Med detta exempel ser vi hur en länkbudget hjälper oss att få
+signal-brus-förhållandet att gå från 20,5 dB till 35,5 dB enbart genom att
+ändra placeringen av LNA i systemet.
+
+\subsubsection{Vägförlust}
+\textbf{HAREC a.\ref{HAREC.a.7.20.4}\label{myHAREC.a.7.20.4}}
+\index{vägförlust}
+\index{path loss}
+\index{Fresnelzon}
+\index{närfält}
+
+Den dämpning som signalen har i fri-rymds förlust, på grund av dess avtagande
+fältstyrka kallas även för vägförlust (eng. path loss).
+Ytterligare förluster kan förekomma på grund av vegetation, delvis täckt
+Fresnelzon, studsar mot jonosfär mm.
+
+Fri-rymds förlusten avtar med kvadraten på avståndet, dvs. 6 dB på dubblat
+avstånd och det är i allmänhet den dominerande effekten när man lämnat
+antennens närfält.
+
+\subsubsection{Antennförstärkning och kabelförluster}
+\textbf{HAREC a.\ref{HAREC.a.7.20.5}\label{myHAREC.a.7.20.5}}
+
+En antenns direktivitet ger antennen en antennförstärkning (eng. antenna gain)
+då den i en viss riktning har en förmåga att ha högre gain än en enkel dipol.
+
+Antennens förmåga att undertrycka andra signaler, t.ex. som mätt med
+fram-back-relationen, ger också en undertryckning av oönskade signaler och
+atmostfäriskt brus.
+Det kan därför vara värt att inte enbart mäta antennens förstärkning av
+önskad signal, utan även räkna på dess förmåga att ta in oönskat brus och
+störande signaler.
+
+Anslutna kablar kan ha signifikant påverkan på både sänd och mottagen
+signalstyrka då kabelförlusterna (eng. transmission line losses) kommer dämpa
+signaler.
+Kabelförluster beror på hur lång kabeln är, vilken kabel det är samt vid
+vilken frekvens man använder.
+Som regel har högre frekvenser högre dämpning.
+Både storleken på kabeln och val av dielektrum påverkar förlusten i kabeln.
+
+
+\subsubsection{Minsta sända signalstyrkan}
+\textbf{HAREC a.\ref{HAREC.a.7.20.6}\label{myHAREC.a.7.20.6}}
+
+En sändare har en varierande uteffekt, och eftersom man försöker åstakomma en
+uppskattning på sämsta signal-brus-förhållandet så är det inte maxeffekten
+eller ens medel effekten som blir den intressanta, utan den minsta sända
+signalstrykan (eng. minimum transmitter power).
+Genom att använda sig av den i beräkningen på sin länk-budget så försäkrar man
+sig om att länk-budgeten hanterar sämsta tänkbara fall, och för de fall som
+sändaren är starkare så får man alltså bättre signal än den lägsta man
+tolererar.
+På detta sätt bygger man sig marinaler i beräkningen.
