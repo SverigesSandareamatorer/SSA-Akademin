@@ -85,6 +85,7 @@ det ger den minimal mottagen signalstyrka (eng. minimum receiver signal power)
 som mottagaren kräver.
 
 \subsubsection{Brusfaktor}
+\label{brusfaktor}
 \index{brus}
 \index{brusfaktor}
 \index{brus!brusfaktor}
@@ -184,3 +185,20 @@ sig om att länk-budgeten hanterar sämsta tänkbara fall, och för de fall som
 sändaren är starkare så får man alltså bättre signal än den lägsta man
 tolererar.
 På detta sätt bygger man sig marginaler i beräkningen.
+
+\subsubsection{Sammanställning av länkbudget}
+
+En komplett länkbudget fås genom att räkna på signalstyrka respektive brusnvå
+för varje steg i kedjan, genom att gå igenom förstärkningar och förluster
+längs vägen.
+När man sedan har räknat fram mottagarens upplevda signalstyrka och brusnivå så
+kan man räkna fram signal-brus förhållandet, se exemplet i \ref{brusfaktor}.
+
+För att försäkra sig om att det fungerar brukar man räkna konservativt, dvs.
+man väljer de sämsta siffrorna, t.ex. minsta mottagan effekt och minsta sända
+effekt.
+
+En väl utförd länkbudget ger god förståelse över var den svaga länken är,
+och genom att experimentera med olika alternativa lösningar så kan man
+förstå var man skall börja göra åtgärder och var det är lönlöst eller har
+ringa påverkan.
