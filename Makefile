@@ -69,6 +69,7 @@ koncept.idx:
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 
+koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	-pdflatex koncept.tex
 	pdflatex koncept.tex
@@ -109,8 +110,9 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
 # TODOs
-TODOs:  koncept.tex $(KONCEPT_FILES)
+TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	grep -n TODO *.tex koncept/*.tex > TODOs
+	grep HAREC koncept.log >> TODOs
 	wc -l TODOs
 
 # Länkade bilder
