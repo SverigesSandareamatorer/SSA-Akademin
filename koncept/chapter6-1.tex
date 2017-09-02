@@ -373,6 +373,9 @@ Samma diagram gäller både för en sändar- och mottagarantenn. styrkan
 på en utstrålad signal motsvaras av styrkan på mottagen signal.
 
 \subsection{Antennvinst}
+\textbf{
+  HAREC a.\ref{HAREC.a.6.2.5}\label{myHAREC.a.6.2.5}
+}
 \index{antennvinst}
 \index{antenn!antennvinst}
 \index{isotropisk antenn}
@@ -387,10 +390,13 @@ på en utstrålad signal motsvaras av styrkan på mottagen signal.
 \index{dipol gain (dBd)}
 \index{antenn!dipol gain (dBd)}
 
-Med \emph{antennvinst} \(G\) (eng. \emph{gain}) menas förhållandet mellan effekten
-\(P_t\) i huvudstrålningsriktningen (framriktningen för en antenn med
-osymmetriskt utstrålad effekt) och effekten från en definierad
+Med \emph{antennvinst} \(G\) (eng. \emph{antenna gain}) menas förhållandet
+mellan effekten \(P_t\) i huvudstrålningsriktningen (framriktningen för en
+antenn med osymmetriskt utstrålad effekt) och effekten från en definierad
 referensantenn.
+
+Förmågan att ha högre antennvinst i en riktning i förhållande till andra
+riktningar kallas för direktivitet (eng. \emph{antenna directivity}).
 
 En referensantenn som tänks vara oändligt liten och som strålar med exakt
 samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk antenn}.
@@ -459,6 +465,12 @@ Ungefärlig antennvinst för olika antenner med en isotropantenn som referens:
   3-elements yagi       & 8   & dBd & 10,1 & dBi \\
 \end{tabular}
 
+Antennen har egna förluster, det gör att olika antenner kan ha olika
+effektivitet, därför finns måttet antenneffektivitet
+(eng. \emph{antenna efficiency}) \(\eta\) som beror på relationen mellan
+utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\)
+
+\[\eta = \frac{R_R}{R_R+R_L}\]
 
 \subsection{Effektivt utstrålad effekt}
 \textbf{
@@ -473,14 +485,14 @@ HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
 \index{EIRP Equivalent Isotropically Radiated Power}
 \index{antenn!EIRP Equivalent Isotropically Radiated Power}
 
-Effektivt utstrålad effekt (ERP) (eng. \emph{effective radiated power} är den
+Effektivt utstrålad effekt (ERP) (eng. \emph{effective radiated power}) är den
 effekt som sändarantennen strålar ut i sin bästa
 strålningriktning. ERP beräknas som den effekt som tillförs själva
 antennen, multiplicerat med antennvinsten relativt en
 halvvågsdipol. Förlusterna på vägen från sändaren ut till antennen är
 alltså borträknad före beräkningen av ERP.
 
-Ekvivalent isotropiskt utstrålad effekt (EIRP) (eng. \emph{Equivalent isotropically radiated power}.
+Ekvivalent isotropiskt utstrålad effekt (EIRP) (eng. \emph{Equivalent isotropically radiated power}).
 EIRP beräknas relativt en teoretisk antenn (\emph{isotropisk antenn}) som 
 strålar lika mycket i alla riktningar. Vid beräkningen används den effekt
 som tillförs själva antennen, multiplicerat med antennvinsten relativt en
