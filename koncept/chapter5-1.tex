@@ -352,3 +352,186 @@ styrkristaller. En sådan sändare kan relativt enkelt styras digitalt.
 En principiell nackdel med alla sändare med PLL-oscillator är
 fasbruset. En annan nackdel är den stora komponentmängden
 (se kapitel \ref{superheterojämförelse}).
+
+\section{Egenskaper i sändare}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4}\label{myHAREC.a.5.4}
+}
+
+Sändare har många olika egenskaper som man skall vara uppmärksam på, dels för
+att ha en effektiv sändare, dels för att få bra kvalite på sändning och dels
+för att inte störa grannkanaler eller på andra band.
+
+\subsection{Frekvensstabilitet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.1}\label{myHAREC.a.5.4.1}
+}
+
+Frekvensstabiliteten är en grundläggande egenskap, eftersom en sändare som
+inte är frekvensstabil nog kommer bli svår för en mottagare att följa och
+uppfatta. Dessutom riskerar man att störa grann-kanaler. Mindre avdrift i
+frekvens kan tolereras, men helst skall den uppfattas som helt stabil.
+
+I gamla tider så har resonatorerna varit LC-kretsar, och både mekanik och
+elektronik kunde driva betänkligt. Med modernare kristal-styrda sändare, där
+man använder PLL eller DDS synteser så kan frekvens-stabiliteten härledas
+till en enskild kristall-oscillator. Denna är typiskt en okompenserad kristall,
+med man brukar kunna välja en temperatur-kompenserad kristalloscillator -- TCXO
+eller en ungskompenserad kristalloscillator --OCXO. Det kan även förekomma att
+man kan låsa på en extern referensfrekvens, ofta 10~MHz.
+
+\subsection{RF-bandbredd}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.2}\label{myHAREC.a.5.4.2}
+}
+
+RF bandbredden är den bandbredd som den modulerade signalen har när den kommer
+ut ur sändaren. Det är viktigt att den är begränsad så att den håller sig inom
+de gränser som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
+T.ex. kan en sändare anpassad för FM 25 kHz kanaldelning modulera för starkt för
+NFM 12,5 kHz kanaldelning och helt enkelt störa grann-kanalerna.
+
+Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
+eftersom den förväntas kunna byta kanal. Istället så begränsar man bandbredden
+på mellanfrekvens direkt vid modulatorn, och innan frekvens-skiftningen upp
+till rätt frekvens. Detta kräver dock att efterföljande steg är linjära nog att
+inte skapa oönskade sidband i så kallat splatter eller tar upp spegelfrekvenser.
+
+\subsection{Sidband}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.3}\label{myHAREC.a.5.4.3}
+}
+
+När man sänder skapas sidband. För AM och SSB så skapas bägge, övre eller undre
+sidbandet av den modulerade signalen. För SSB undertrycks även bärvågen.
+För FM skapas bredare sidband som behöver filtreras.
+
+\subsection{Ljudbandbredd}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.4}\label{myHAREC.a.5.4.4}
+}
+
+Bandbredden på ljudsignalen in kan vara väldigt stor, och det är därför viktigt
+att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
+utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
+oftast 3~kHz för amatörradio. Bandbredden kan också behöva begränsas nedåt vid
+300~Hz för att inte råka störa subton-signaler t.ex. Denna nedre begränsning
+kan dock inbland behöva sättas ur spel för att kunna skicka subtons-signaler
+utifrån, men även för andra former av signaler.
+
+\subsection{Olinjaritet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.5}\label{myHAREC.a.5.4.5}
+}
+
+Olinjaritet i ett sändarsteg ger dels övertoner som behöver begräsas, ofta
+genom ett filter på utgången, men man försöker även begränsa hur olinjärt
+steget tillåts bli. För tal kommer olinjaritet även att påverka
+intermodulationen mellan flera olika frekvenser i tal, vilket dels skapar
+störningar inom bandet men även utanför och därmed breddar det. Detta kallas
+för splatter och är en oönskad egenskap. God linjaritet även vid höga effekter
+är därför eftersträvans värt. Ibland kan man ha så mycket olinjaritet att
+taltydligheten blir låg, det kan därför vara lämpligt att dra ned något på
+effekten så taltydligheten går upp, vilket då ger bättre signalrapport än
+när intermodulationen är för hög.
+
+\subsection{Utgångsimpedans}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.6}\label{myHAREC.a.5.4.6}
+}
+
+Utgångsimpedansen är förstärkarens drivegenskaper och de skall oftast vara
+anpassade till kabel. Oftast är det 50 Ohm, men för förstärkare som har
+inbyggd matchbox, automatisk eller ej, så kan förstärkarens utimpedans anpassas
+för att kunna driva en antennsystem med större avvikelser i impedans.
+En god matchning i impedans krävs för att få en bra energiöverföring av den
+tillförda energin utan att för mycket studsar tillbaka. Många sändare har
+skyddskretsar som drar ned uteffekten vid för stor reflekterad energi, för att
+kunna skydda slutsteget, och det gör att en impedansmatchfel ger ännu större
+reduktion i sänd effekt än vad själva impedansfelet i sig skulle motivera.
+
+\subsection{Uteffekt}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.7}\label{myHAREC.a.5.4.7}
+}
+
+Uteffekten är den effekt som sändaren är kapabel att sända, på ett visst band,
+vid god utgångsmatchning. Ofta är den mätt i p.e.p. för att matcha kraven från
+övervakande myndigheter. Det kan gå att få högre faktisk effekt ur en sändare,
+men då kommer den vara så pass olinjär att den inte förväntas klara krav på
+splatter.
+
+\subsection{Effektivitet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.8}\label{myHAREC.a.5.4.8}
+}
+
+Effektiviteten på en sändare eller slutsteg är den utsända effekten i
+förhållande till den tillförda effekten. Effektiviteten varierar med uteffekt
+och frekvens.
+
+\subsection{Frekvensdeviation}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.9}\label{myHAREC.a.5.4.9}
+}
+
+Frekvensdeviationen är den maximala avvikelsen från bärvågen som tillåts vid
+frekvensmodulation.
+
+\subsection{Modulationsindex}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.10}\label{myHAREC.a.5.4.10}
+}
+
+Modulationsindex, eller även modulationsdjuppet, anger hur djup modulation av
+bärvågen är. För hög modulations undertrycker bärvågen och kan göra det svårt
+för mottagaren att detektera. För låg modulation ger svaga sidband att förmedla
+tal, och för mycket av energin går till att sända enbart bärvåg.
+
+\subsection{CW klickar}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.11}\label{myHAREC.a.5.4.11}
+}
+
+Vid CW kan för snabb stig och falltid på bärvågen ge onödig bandbredd och
+uppfattas som klickar eller chirpar. Därför skall bandbredden begränsas så att
+den inte slår på och av bärvågen för fort, då detta är störande.
+
+\subsection{SSB övermodulation och splatter}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.12}\label{myHAREC.a.5.4.12}
+}
+
+Övermodulation vid SSB ger intermodulation och splatter, vilket ger dels en
+signal om är svår att läsa och dels en för bred signal.
+
+\subsection{RF spurioser}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.13}\label{myHAREC.a.5.4.13}
+}
+
+Utöver den förväntade bärvågen kan en sändare skicka ut frekvenser som vare
+sig tillhör bärvåg och dess sidband. Harmoniska undertoner samt helt andra
+orelaterade frekvenser skall vara undertryckta. Detta regleras i EMC
+standarden för radioutrustning, i det här fallet för amatörradio.
+
+\subsection{Chassistrålning}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.14}\label{myHAREC.a.5.4.14}
+}
+
+En sändare förväntas kunna leverera en stor effekt ut på antennutgången, men
+från själva inneslutningen, chassit, och övriga anslutningar skall sändaren
+inte sända bärvåg, sidband eller några andra signaler.
+
+\subsection{Fasbrus}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.15}\label{myHAREC.a.5.4.15}
+}
+
+Fasbrus är en egenskap hos alla oscillatorer, som ger en fasmodulation av
+bärvågen. Alla steg i en sändare bidrar med brus och ger den slutgiltiga
+fasbrus-egenskapen. En sändares fasbrus kan sträcka sig långt utanför den
+normala moduulerade bandbredden, och speciellt för repeatrar så kan sändarens
+fasbrus höja brusgolvet för mottagaren om inte korrekt trimmade duplexfilter
+används för att undertrycka sändarens fasbrus på mottagarens ingångsfrekvens.
