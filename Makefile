@@ -74,7 +74,7 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	-pdflatex koncept.tex
 	pdflatex koncept.tex
 
-matterep.pdf: matte.tex handouts/matterep.tex
+matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-pdflatex handouts/matterep.tex
 	pdflatex handouts/matterep.tex
 
