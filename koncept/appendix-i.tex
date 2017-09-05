@@ -18,21 +18,22 @@ Se IARU:s bandplaner i Appendix F.
 Frekvensplaner finns för repeatrar inom banden 51--52~MHz (6~m), 145--146~MHz
 (2~m), 432--438~MHz (70~cm), 1240--1300~MHz (10~cm) samt 28000--29700~kHz (10~m).
 
-\subsection{Nya kanalnumreringsmetoden}
-I och med införandet av i kHz kanalavstånd på 2 meters- och 70 cm-banden har
-ett nytt enkelt system införts.
+\section{Kanalnumreringsmetod}
+Vid införandet av 12,5 kHz kanalavstånd på 2~meters- och 70~cm-banden infördes
+ett nytt system.
 Man börjar med en bokstav som talar om vilket band det är:
 \begin{itemize}
-  \item F för 51~MHz, kanalavstånd 10~kHz,
-  \item V för 145~MHz, kanalavstånd 12,5~kHz, 
-  \item U för 430~kHz, kanalavstånd kHz.
+  \item F för 51~MHz, kanalavstånd 10~kHz;
+  \item V för 145~MHz, kanalavstånd 12,5~kHz;
+  \item U för 430~kHz, kanalavstånd 12,5~kHz.
 \end{itemize}
 Kanalnumret börjar med 00 på varje sådant band och ökar med ett (1) för varje
 kanal i bandet.
 På 51 och 145~MHz används tvåsiffrig numrering och på 430~MHz tresiffrig.
 För repeaterkanaler sätts ett R före bandbokstaven.
 
-\subsection{70-centimetersbandet (skift 1600~kHz)}
+\section{70-centimetersbandet}
+Repeaterskift 1600~kHz.
 \begin{tabular}{ l | l | l }
   Kanal & Din sändar- & Din mottagar- \\
         & frekvens [MHz] & frekvens [MHz] \\
@@ -55,32 +56,35 @@ För repeaterkanaler sätts ett R före bandbokstaven.
   RU398 & 433,3750 & 434,9750 \\
 \end{tabular}
 
-\subsection{2-metersbandet (repeaterskift 600~kHz)}
+\subsection{2-metersbandet}
+Repeaterskift 600~kHz.
 \begin{tabular}{ l | l | l }
-  Kanal & Din sändar- & Din mottagarnr \\
+  Kanal & Din sändar- & Din mottagar- \\
         & frekvens [MHz] & frekvens [MHz] \\
   \hline
   RV48 & 145,000 & 145,600 \\
-  RV49 & 145,0125 & 251 \\
-  RV50 & 145,025 & 1 \\
-  RV51 & 145,0375 & i \\
+  RV49 & 145,0125 & 145,6125 \\
+  RV50 & 145,025 & 145,625 \\
+  RV51 & 145,0375 & 145,6375 \\
   RV52 & 145,050 & 145,650 \\
-  RV53 & 145,0625 & 1 \\
-  RV54 & 145,075 & 1 \\
-  RV55 & 145,0875 & 1 \\
-  RV56 & 145,100 & i \\
-  RV57 & 145,1125 & 1 \\
-  RV58 & 145,125 & 1 \\
-  RV59 & 145,1375 & i \\
-  RV60 & 145,150 & 1 \\
-  RV61 & 145,1625 & 1 \\
-  RV62 & 145,175 & 1 \\
-  RV63 & 145,1875 & 1 \\
+  RV53 & 145,0625 & 145,6625 \\
+  RV54 & 145,075 & 145,675 \\
+  RV55 & 145,0875 & 145,6875 \\
+  RV56 & 145,100 & 145,700 \\
+  RV57 & 145,1125 & 145,7125 \\
+  RV58 & 145,125 & 145,725 \\
+  RV59 & 145,1375 & 145,7375 \\
+  RV60 & 145,150 & 145,750 \\
+  RV61 & 145,1625 & 145,7625 \\
+  RV62 & 145,175 & 145,775 \\
+  RV63 & 145,1875 & 145,7875 \\
 \end{tabular}
 
-\subsection{23-centimetersbandet (skift 6000~kHz)}
+\subsection{23-centimetersbandet}
+Repeaterskift 6000~kHz.
 \begin{tabular}{ l | l | l }
-  Kanal nr & Din sändarfrekvens [MHz] & Din mottagarfrekvens [MHz] \\
+  Kanal & Din sändar- & Din mottagar- \\
+        & frekvens [MHz] & frekvens [MHz] \\
   \hline
   RM0 & 1291,000 & 1297,000 \\
   RM1 & 1291,025 & 1297,025 \\
@@ -104,11 +108,11 @@ För repeaterkanaler sätts ett R före bandbokstaven.
   RM19 & 1291,475 & 1297,475 \\
 \end{tabular}
 
-\subsection{Repeaterband med speciella egenskaper}
-
-\subsection{6-metersbandet (skift 600~kHz)}
+\section{Repeaterband med speciella egenskaper}
+\subsection{6-metersbandet}
+Repeaterskift 600~kHz.
 \begin{tabular}{ l | l | l }
-  Kanal & Din sändar- & Din mottagar \\
+  Kanal & Din sändar- & Din mottagar- \\
         & frekvens [MHz] & frekvens [MHz] \\
   \hline
   RF81 & 51,210 & 51,810 \\
@@ -130,19 +134,16 @@ På grund av den relativt låga frekvensen uppnås ofta överräckvidder p.g.a.
 sporadisk vågutbredning via E-skiktet.
 Man kan då uppnå förbindelser utan hjälp av repeater.
 
-\subsection{10-metersbandet (skift 100~kHz)}
+\subsection{10-metersbandet}
+Repeaterskift 100~kHz.
 \begin{tabular}{ l | l | l }
-Kanalnr & Din sändar- & Din mottagar- \\
+  Kanal & Din sändar- & Din mottagar- \\
         & frekvens [kHz] & frekvens [kHz] \\
   \hline
-29560 \\
-29660 \\
-29570 \\
-29670 \\
-29580 \\
-29680 \\
-29590 \\
-29690 \\
+  - & 29560 & 29660 \\
+  - & 29570 & 29670 \\
+  - & 29580 & 29680 \\
+  - & 29590 & 29690 \\
 \end{tabular}
 På grund av den relativt låga frekvensen uppnås stora räckvidder genom
 jonosfärisk vågutbredning, särskilt under år med högt solfläckstal.
