@@ -178,3 +178,9 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+# Finished output
+koncept-larobok.pdf
+koncept-refbok.pdf
+koncept.pdf
+matterep.pdf
