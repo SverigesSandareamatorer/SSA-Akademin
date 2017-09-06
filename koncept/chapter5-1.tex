@@ -17,9 +17,10 @@ samma frekvens genom hela sändaren, superheterodynsändare där
 frekvensblandning används, frekvensmultiplicerande sändare etc.
 
 \subsection{Rak sändare}
-\textbf{
-HAREC a.\ref{HAREC.a.5.1.1b}\label{myHAREC.a.5.1.1b},
- a.\ref{HAREC.a.5.2.1}\label{myHAREC.a.5.2.1}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.1.1b}\label{myHAREC.a.5.1.1b},
+  a.\ref{HAREC.a.5.2.1}\label{myHAREC.a.5.2.1},
+  a.\ref{HAREC.a.5.3.3}\label{myHAREC.a.5.3.3}
 }
 \index{rak sändare}
 \index{sändare!rak}
@@ -70,7 +71,9 @@ metallkapslingar, s.k. skärmar, så minskas denna risk.
 HAREC a.\ref{HAREC.a.5.3.2}\label{myHAREC.a.5.3.2},
  a.\ref{HAREC.a.5.3.5}\label{myHAREC.a.5.3.5},
  a.\ref{HAREC.a.5.3.6}\label{myHAREC.a.5.3.6},
- a.\ref{HAREC.a.5.3.9}\label{myHAREC.a.5.3.9}
+ a.\ref{HAREC.a.5.3.8}\label{myHAREC.a.5.3.8},
+ a.\ref{HAREC.a.5.3.9}\label{myHAREC.a.5.3.9},
+ a.\ref{HAREC.a.5.3.11}\label{myHAREC.a.5.3.11}
 }
 \index{frekvensmultiplicering}
 \index{sändare!frekvensmultiplicering}
@@ -120,11 +123,16 @@ självsvängningar är mindre i en frekvensmultiplicerande än i en rak
 sändare, eftersom in och utgångsfrekvenserna i flera av stegen är
 olika.
 
+Genom att ersätta frekvensmodulatorn med en fasmodulator så kan samma
+sändare även användas för fasmodulerad signal.
+
 De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
 d.v.s. olinjärt, vilket medför amplituddistorsion. Vid frekvens-och
 fasmodulering saknar emellertid detta betydelse, eftersom amplituden i
-det fallet inte är informationsbärande. Övertoner i nyttosignalen bör
-dock filtreras bort.
+det fallet inte är informationsbärande.
+
+Övertoner i nyttosignalen bör dock filtreras bort, något som sker med ett
+filter på utgången, det så kallade utgångsfiltret (eng \emph{output filter}).
 
 \subsection{Sändare med frekvensblandning -- superheterodynsändare}
 \textbf{HAREC a.\ref{HAREC.a.5.1.1a}\label{myHAREC.a.5.1.1a}}
@@ -157,7 +165,8 @@ dessa frekvensområden.
 HAREC a.\ref{HAREC.a.5.2.2}\label{myHAREC.a.5.2.2},
  a.\ref{HAREC.a.5.3.1}\label{myHAREC.a.5.3.1},
  a.\ref{HAREC.a.5.3.4}\label{myHAREC.a.5.3.4},
- a.\ref{HAREC.a.5.3.10}\label{myHAREC.a.5.3.10}
+ a.\ref{HAREC.a.5.3.10}\label{myHAREC.a.5.3.10},
+ a.\ref{HAREC.a.5.3.12}\label{myHAREC.a.5.3.12}
 }
 \index{telefoni}
 \index{SSB}
@@ -172,11 +181,13 @@ HAREC a.\ref{HAREC.a.5.2.2}\label{myHAREC.a.5.2.2},
 Bild \ref{fig:bildII5-5}.
 
 Bilden visar en SSB-sändare för två kortvågsband och bygger på
-sändaren i bild \ref{fig:bildII5-4}.  Filtermetoden är den mest använda för att bereda
-en SSB-signal. Oscillatorsignalen amplitudmoduleras i en balanserad
-blandare. I en sådan undertrycks bärvågen medan de båda sidbanden
-släpps fram. Det ena sidbandet undertrycks med ett
-bandpassfilter. Denna SSB-signal flyttas till avsett frekvensband
+sändaren i bild \ref{fig:bildII5-4}.
+Filtermetoden är den mest använda för att bereda en SSB-signal.
+Oscillatorsignalen amplitudmoduleras i en balanserad blandare.
+I en sådan undertrycks bärvågen medan de båda sidbanden släpps fram.
+Det ena sidbandet undertrycks med ett bandpassfilter, ofta implementerat med
+ett kristallfilter för att få god undertryckning av oönskat sidband.
+Denna SSB-signal flyttas till avsett frekvensband
 genom ännu en frekvensblandning och ytterligare filtrering.
 
 I exemplet är CO-frekvensen 9~MHz. VFO har frekvensområdet 5,0--5,5~MHz.
