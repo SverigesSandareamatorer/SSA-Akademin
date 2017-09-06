@@ -2,6 +2,19 @@
 \textbf{HAREC a.\ref{HAREC.a.4.4}\label{myHAREC.a.4.4}}
 \index{mottagare!egenskaper}
 
+\subsection{Närliggande kanaler}
+\textbf{HAREC a.\ref{HAREC.a.4.4.1}\label{myHAREC.a.4.4.1}}
+
+Närliggande kanaler kan skapa störningar när de läcker in.
+Därför gäller det att mottagaren kan undertrycka dem, även när de är starkare
+än den valda kanalen, så att man får så god läsbarhet på den valda kanalen.
+Närliggande kanaler kan därför anses vara störkällor.
+Moderna mottagare medger att flytta både över och undre gräns för att
+undertrycka allt för närgående kanaler.
+Även begreppet roofing filter förekommer för filter som hjälper till att
+filtrera med branta flanker och god undertryckningsförmåga.
+Detta är en del av många att ha goda så kallade stor-signal-egenskaper.
+
 \subsection{Selektivitet}
 \textbf{HAREC a.\ref{HAREC.a.4.4.2}\label{myHAREC.a.4.4.2}}
 \index{selektivitet}
@@ -19,6 +32,17 @@ oscillatorfrekvenser i mottagaren.
 
 Det andra är selektiviteten i en superheterodynmottagares MF-steg som används
 för att utskilja den önskade signalen efter blandningsförloppen.
+
+\subsection{Frekvensstabilitet}
+\textbf{HAREC a.\ref{HAREC.a.4.4.4}\label{myHAREC.a.4.4.4}}
+
+Frekvensstabilitet är viktigt för mottagare är viktigt för att kunna
+hitta sändare på angiven frekvens fort, kunna stanna på den frekvensen utan
+att glida ifrån signalen och dessutom undvika att glida in i närliggande
+signaler som stör.
+Frekvensstabilitet tillgodoses i moderna mottagare med kristalloscillatorer,
+och man kan ofta köpa till temperaturkompenserad eller ungskompenserad
+kristalloscillator för att få en högre frekvensstabilitet i hela mottagaren.
 
 \subsection{Spegelfrekvensproblemet vid mottagning}
 \textbf{HAREC a.\ref{HAREC.a.4.4.5}\label{myHAREC.a.4.4.5}}
@@ -377,9 +401,13 @@ av den modulerande signalen.
 \]
 
 \subsection{Intermodulation, korsmodulation}
-\textbf{HAREC a.\ref{HAREC.a.4.4.6}\label{myHAREC.a.4.4.6}}
+\textbf{HAREC
+  a.\ref{HAREC.a.4.4.6}\label{myHAREC.a.4.4.6},
+  a.\ref{HAREC.a.4.4.7}\label{myHAREC.a.4.4.7}
+}
 \index{intermodulation}
 \index{korsmodulation}
+\index{blocking}
 
 Utöver att en bra modern mottagare bör ha tillräcklig
 frekvensstabilitet, känslighet och selektivitet bör den även ha goda
@@ -396,7 +424,14 @@ Korsmodulation och intermodulation är två begrepp som är förknippade
 med storsignalegenskaperna. Båda kan visserligen definieras och
 bestämmas entydigt, men de förväxlas ändå ofta.
 
+En för stark signal klipper dessutom i mixrar och detta gör att allt mindre
+signal kan detekteras varvid känsligheten sjunker och till slut kommer den
+tänkta signalen vara helt undertryckt, så kallad \emph{blocking}.
+
 \subsubsection{Korsmodulation}
+\textbf{HAREC
+  a.\ref{HAREC.a.4.4.8}\label{myHAREC.a.4.4.8}
+}
 \index{korsmodulation}
 \index{mottagare!korsmodulation}
 
@@ -410,6 +445,9 @@ starka, frekvensnära stationer.
 Det måste alltså alltid finnas en nyttosignal på den inställda
 frekvensen för att det ska uppstå korsmodulation. När nyttosignalen
 försvinner så försvinner även korsmodulationen.
+
+För dåligt fasbrus hos mottagaren kan vara en orsak till att starka
+grannkanaler mixas in och detekteras.
 
 \subsection{Intermodulation}
 \index{intermodulation}
