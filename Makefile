@@ -72,6 +72,7 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	-pdflatex koncept.tex
+	makeindex koncept.idx
 	pdflatex koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
