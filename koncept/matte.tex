@@ -1,6 +1,9 @@
 \section{Ekvationer}
-\textbf{HAREC I.\ref{HAREC.I.c.1}\label{myHAREC.I.c.1},
-  I.\ref{HAREC.I.c.2}\label{myHAREC.I.c.2}}
+\textbf{HAREC
+  I.\ref{HAREC.I.c.1}\label{myHAREC.I.c.1},
+  I.\ref{HAREC.I.c.2}\label{myHAREC.I.c.2},
+  I.\ref{HAREC.I.c.6}\label{myHAREC.I.c.6}
+}
 
 Ekvation är ett annat ord för likhet. Vid matematiska beräkningar ställs
 storheterna upp i en eller flera ekvationer.
@@ -28,15 +31,20 @@ Resultatet blir 15, antingen vi skriver \(3 \cdot 5\) eller \(5 \cdot
 
 Likaså är resultatet 8, antingen vi skriver \(3 + 5\) eller \(5 + 3\).  Däremot
 blir resultatet annorlunda när man skriver \(\frac{3}{15}\) i stället för
-\(\frac{15}{5}\)
+\(\frac{15}{5}\).
 
 Likaså blir resultatet annorlunda när man skriver \(15 - 5\) i stället för \(5 -
 15\). Vid division kan talen ställas upp som s.k. bråktal. De kan skrivas på
-något av sätten \(15:3\) eller \(15/3\) eller \(\frac{15}{5}\)
+något av sätten \(15:3\) eller \(15/3\) eller \(\frac{15}{5}\).
 
 Talet före kolon, före snedstrecket respektive över bråkstrecket kallas för
 täljare.  Talet efter kolon, efter snedstrecket respektive under bråkstrecket
 kallas för nämnare.
+
+En invers är när man kan skriva om \(\frac{1}{5}\) till \(0.2\), då är
+\(0.2\) inversen till \(5\) och omvänt är också \(5\) inversen till \(0.2\).
+Med en invers kan man därför skriva om \(\frac{15}{5}\) till
+\(15 \cdot \frac{1}{5}\), vilket kan skrivas som  \(15 \cdot 0.2\).
 
 \section{Formler}
 
@@ -558,5 +566,55 @@ x d.v.s. (\(10^x\)) &          & tal)                  \\ \hline
 10 000    & \(1 \cdot 10^4\)   & \(4,00\)                \\
 100 000   & \(1 \cdot 10^5\)   & \(5,00\)                \\
 1 000 000 & \(1 \cdot 10^6\)   & \(6,00\)                \\
+\end{tabular}
+
+\section{Binära tal}
+\textbf{HAREC I.\ref{HAREC.I.c.8}\label{myHAREC.I.c.8}}
+\index{binära tal}
+
+\emph{Binära tal} är tal som skrivs på talbas 2 istället för vår normala
+talbas 10. Det innebär att varje decimal till vänster har en vikt som är 2
+gånger större än föregående. Varje decimal kan bara vara 0 eller 1.
+
+Ett enkelt sätt att illustrera det är en kort tabell.
+
+\begin{tabular}{r|rrr|r}
+  binärt tal & \(2^2\) & \(2^1\) & \(2^0\) & decimalt tal \\ \hline
+  000 & 0 & 0 & 0 & 0 \\
+  001 & 0 & 0 & 1 & 1 \\
+  010 & 0 & 2 & 0 & 2 \\
+  011 & 0 & 2 & 1 & 3 \\
+  100 & 4 & 0 & 0 & 4 \\
+  101 & 4 & 0 & 1 & 5 \\
+  110 & 4 & 2 & 0 & 6 \\
+  111 & 4 & 2 & 1 & 7 \\
+\end{tabular}
+
+Ofta grupperar man de binära värdena i grupper om 3 eller 4 decimaler
+beroende på sammanhanget.
+
+För större värden är binärt ohanterbart långt.
+Därför konverterar man gärna grupperna av värden till siffror och bokstäver,
+där grupper om 3 skrivs på oktal form och grupper om 4 skrivs på hexadecimal
+form.
+
+\begin{tabular}{r|rrrr|r|r|r}
+  binärt tal & \(2^3\) & \(2^2\) & \(2^1\) & \(2^0\) & decimalt tal \\ \hline
+  0000 & 0 & 0 & 0 & 0 & 00 & 0 & 0 \\
+  0001 & 0 & 0 & 0 & 1 & 01 & 1 & 1 \\
+  0010 & 0 & 0 & 2 & 0 & 02 & 2 & 2 \\
+  0011 & 0 & 0 & 2 & 1 & 03 & 3 & 3 \\
+  0100 & 0 & 4 & 0 & 0 & 04 & 4 & 4 \\
+  0101 & 0 & 4 & 0 & 1 & 05 & 5 & 5 \\
+  0110 & 0 & 4 & 2 & 0 & 06 & 6 & 6 \\
+  0111 & 0 & 4 & 2 & 1 & 07 & 7 & 7 \\
+  1000 & 8 & 0 & 0 & 0 & 10 & 8 & 8 \\
+  1001 & 8 & 0 & 0 & 1 & 11 & 9 & 9 \\
+  1010 & 8 & 0 & 2 & 0 & 12 & A & 10 \\
+  1011 & 8 & 0 & 2 & 1 & 13 & B & 11 \\
+  1100 & 8 & 4 & 0 & 0 & 14 & C & 12 \\
+  1101 & 8 & 4 & 0 & 1 & 15 & D & 13 \\
+  1110 & 8 & 4 & 2 & 0 & 16 & E & 14 \\
+  1111 & 8 & 4 & 2 & 1 & 17 & F & 15 \\
 \end{tabular}
 
