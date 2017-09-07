@@ -110,3 +110,99 @@ senare tid inbegripes även digitalteknik. Mest av utrymmesskäl behandlas i den
 faktabok digitaltekniken mycket kortfattat, men ändå så mycket som nämns i
 CEPT-rekommendationen T/R 61-02. För djupare studium hänvisas till andra
 läromedel samt till leverantörskataloger.
+
+\section{Operationsförstärkare}
+\textbf{
+HAREC a.\ref{HAREC.a.2.8.3}\label{myHAREC.a.2.8.3}
+}
+\index{operationsförstärkare}
+\index{op-amp}
+
+\emph{Operationsförstärkare}, ofta kallad för \emph{op-amp} är en integrerad
+kretstyp som har hög förstärkning.
+Istället för att ha enbart en ingång så har den två, en positiv
+och en negativ, och operationsförstärkaren förstärker skillnaden mellan den
+positiva och negativa signalen. Förstärkningen i en modern operationsförstärkare
+kan vara i storleksordningen med en miljon.
+De två mest grundläggande kopplingarna man använder är komparator respektive
+negativt återkopplad förstärkare.
+
+\subsection{Komparator}
+
+I en \emph{komparator} används den höga förstärkningen för att få även små
+spänningsskillnader att ger stort utslag. Med referens-spänningen på den
+negativa ingången och insignalen på den positiva ingången så kommer utgången
+att vara så hög den kan vara när ingången har högre spänning än
+referensspänningen, och omvänt kommer den vara så låg den kan vara när ingången
+är lägre än referensspänningen.
+
+Det är enkelt att få utgången att ha omvänd egenskap, genom att växla signaler
+mellan positiv och negativ ingång på operationsförstärkaren.
+
+\subsection{Negativ återkoppling och förstärkare}
+
+En operationsförstärkare som har en negativ återkoppling, dvs. där signal från
+utgången matas tillbaka till den negativa ingången, får den egenskapen att den
+försöker driva utgången så att spänningarna för den positiva och negativa
+ingången blir densamma.
+Det finns en rik uppsättning kopplingar som bygger på denna jämnvikt, där
+operationsförstärkaren opererar i en linjär förstärkningsmod.
+
+Denna jämnvikt gör också att en snabb diagnosticering kan göras genom att mäta
+spänningen mellan ingångarna, är den i princip noll så fungerar kopplingen
+förmodligen, medans har den gått sönder på något sätt, t.ex. trasig op-amp
+eller trasig återkoppling så kommer spänningen vara synbart annorlunda och
+jämnvikten finns inte.
+
+\subsubsection{Bufferförstärkare}
+
+Den enklaste linjära kopplingen med en operationsförstärkare är en
+bufferförstärkare.
+I denna koppling är den negativa ingången direkt kopplad till utgången
+samt insignalen till den positiva ingången.
+Med denna koppling kommer op-ampen försöka få den negativa ingången och direkt
+därmed utgången att följa insignalen.
+Det gör att man i den ideala av världar har samma spänning ut som man har in,
+vilket även kallas för spänningsföljare.
+Fördelen är att lasten på utgången kan vara oerhört mycket högre, och
+om utgången skulle sjunka beroende på lasten försöker återkopplingen driva den
+till rätt spänning.
+
+Bufferförstärkaren gör då att den relativt höga ingångsimpedansen hos op-ampen,
+som kan vara från 100 kOhm upp till 1 TOhm, kan utan större påverkan på
+kretsen på ingången leverera samma spänning ut med mot en last på fåtal ohm,
+dvs. med mycket större strömstyrka.
+
+\subsubsection{Positiv förstärkning med op-amp}
+
+En enkel variant på bufferförstärkaren är att man kopplar in en spänningsdelare
+mellan utgången och den negativa ingången. Om spänningsdelaren är till 1/10
+så kommer alltså utgången behöva öka 10 gånger mer än den negativa ingången
+förändrar sig, och op-ampen kommer därför driva utgången 10 gånger den
+positiva ingången, för att lyckas hålla balansen. På detta sätt kan man sätta
+förstärkningen hos förstärkaren. Förstärkningen blir:
+
+\(G = \frac{R_1+R_2}{R_2}\)
+
+Genom att sätta en kondensator parallellt med motståndet som går mellan utgång
+och den negativa ingången kan man skapa en bandbreddsbegränsning för
+förstärkaren, för att för de högre frekvenserna kommer merparten av strömmen
+gå genom kondensatorn och den effektiva delningen kommer då vara lägre än för
+låga frekvenser, och förstärkaren kommer sänka sin förstärkning ned mot den
+för en buffer.
+Detta är också ett sätt att försäkra sig om att kretsen inte självsvänger vid
+höga frekvenser.
+
+\subsubsection{Negativ förstärkning med op-amp}
+
+Om man istället för positiv förstärkning vill ha negativ förstärkning så tar
+man och ansluter den positiva ingången till jord och spänningsdelaren på den
+negativa ingångens sida kopplar man loss från jord och ansluter signalen.
+Nu kommer op-ampen balansera den negativa ingången så att den är på samma
+potential som jord, detta kallas för virtuell jord. Strömmen kommer gå från
+ingången till utgången, men ingången kommer se lasten av ingångsmotståndet
+\(R_2\) och utgången kommer mata \(R_1\) mot jord. Förstärkningen kommer vara
+negativ och proportionell mot motståndens inbördes relation, dvs.:
+
+\(G = -\frac{R_1}{R_2}\)
+
