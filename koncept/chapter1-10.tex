@@ -6,8 +6,6 @@
 \index{SDR}
 \index{FPGA}
 
-\begin{rev-nytt}[MAD]
-
 \emph{Digital signal-processing} (eng. \emph{Digital Signal Processing (DSP)})
 har blivit allt viktigare i vardagen och så även inom amatörradion i och med
 att \emph{Software Defined Radio (SDR)} blivit en viktig del i allt fler
@@ -33,8 +31,6 @@ per millisekund som sedan processas vidare i en processor.
 För att kunna förstå detta behöver vi gå igenom grunderna i konvertering av
 signalerna mellan analogt och digitalt, och tillbaka.
 
-\end{rev-nytt}
-
 \subsection{Sampling och kvantisering}
 \textbf{HAREC a.\ref{HAREC.a.1.10.1}\label{myHAREC.a.1.10.1}}
 \index{sampling}
@@ -48,8 +44,6 @@ signalerna mellan analogt och digitalt, och tillbaka.
 \index{quantize}
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
-
-\begin{rev-nytt}[MAD]
 
 Analoga signaler är vad vi kallar för kontinuerliga i tid, de varierar spänning
 och ström som ett kontinuerligt variation av värdet, så snabbt att vi kan
@@ -89,14 +83,10 @@ processen idag som en naturlig representation. Denna omvandling kan göras
 olinjär, vilket nyttjats i telefoni-system för kompression, men man har börjat
 frångå det annat än av kompatibilitetsskäl.
 
-\end{rev-nytt}
-
 \subsection{Minsta samplingsfrekvensen}
 \textbf{HAREC a.\ref{HAREC.a.1.10.2}\label{myHAREC.a.1.10.2}}
 \index{Nyquist-frekvens}
 \index{Nyquist-Shannon samplings-teorem}
-
-\begin{rev-nytt}[MAD]
 
 \infobox{
 Denna frekvens kallas för Nykvist-frekvensen efter Harry Nyquist (1889-1976),
@@ -112,8 +102,6 @@ den när man alternerar mellan två värden, säg -1 +1 -1 +1 vilket ju ger
 hälften av samplingstakten \(f_S\), för perioden för sekvensen blir
 \(T = 2T_S\) och därmed \(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
 
-\end{rev-nytt}
-
 \subsection{Faltning}
 \textbf{HAREC a.\ref{HAREC.a.1.10.3}\label{myHAREC.a.1.10.3}}
 \index{faltning}
@@ -122,8 +110,6 @@ hälften av samplingstakten \(f_S\), för perioden för sekvensen blir
 \index{linjär tids-invariant filter}
 \index{linear time-invariant filter}
 \index{LTI}
-
-\begin{rev-nytt}[MAD]
 
 Filtrering i den digitala domänen, eller egentligen den tids-diskreta domänen,
 kan beskrivas som att filtrets impuls-respons appliceras på signalen, denna
@@ -153,16 +139,12 @@ Bägge representerar faltning, och är viktig för förståelsen av \emph{linjä
 tids-invarianta} filter (eng. \emph{linear time-invariant (LTI)}) filter,
 som är det vi i allmänhet fokuserar på.
 
-\end{rev-nytt}
-
 \subsection{Anti-vikningsfilter}
 \textbf{HAREC a.\ref{HAREC.a.1.10.4}\label{myHAREC.a.1.10.4}}
 \index{vikning}
 \index{aliasing}
 \index{anti-viknings-filter}
 \index{anti-aliasing filter}
-
-\begin{rev-nytt}[MAD]
 
 Medans bandbredden vi kan representera är begränsad av Nykvist-frekvensen så
 är däremot inte frekvensen det. Själva samplingen ger upphov till
@@ -197,14 +179,10 @@ det tänkta bandet. Ofta kombinerar man därför med en separat mixer för att
 flytta bandet på ett behändigt sätt, men det förekommer också att man väljer
 samplingstakten för att inte vika bandet.
 
-\end{rev-nytt}
-
 \subsection{ADC/DAC}
 \textbf{HAREC a.\ref{HAREC.a.1.10.5}\label{myHAREC.a.1.10.5}}
 \index{ADC}
 \index{DAC}
-
-\begin{rev-nytt}[MAD]
 
 För att hantera dessa delar använder man analog-till-digital konverterare
 (eng. \emph{Analog-Digital Conversion (ADC)}) samt digital-till-analog
@@ -218,4 +196,3 @@ flera kanaler och det finns även dem som har bägge integrerade i samma krets.
 Utvecklingen har gjort att man idag kan köpa 24-bitars 48~kS/s ADC och DAC med
 dynamiskt område bättre än 100~dB för väldigt låg kostnad.
 
-\end{rev-nytt}
