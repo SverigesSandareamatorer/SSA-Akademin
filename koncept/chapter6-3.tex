@@ -18,15 +18,29 @@ på samma sätt som en mittmatad. Vid längre antenner blir
 strålningskaraktären däremot en annan.
 
 Skillnaden mellan änd- och mittmatade halvvågsdipoler är att
-anslutningsimpedansen är mycket högre i ändarna än i mitten. För att
-mata antennen längst ut i ena änden behövs en transmissionsledning med
-hög impedans, varvid ledningens ena part ansluts till antennen och den
-andra parten lämnas fri. En sådan anordning kallas zeppantenn och
-användes först i luftskepp, s.k. zeppelinare.
+anslutningsimpedansen är mycket högre i ändarna än i mitten.
+För att mata antennen längst ut i ena änden behövs en anpassningskrets som
+transformerar koaxialkabelns låga impedans till antennelementets höga.
 
-\hilight{TODO:  Här borde vi ta upp att Zepp-antennen och J-pole är olika namn
-på samma sak, samt förklara att J-pole, trots vad ''folk på nätet skriver'',
-kräver balun och att den inte kan jordas.}
+En sådan anpassning, \emph{transformation}, kan göras med en \(\lambda/4\) lång
+dubbel transmissionsledning.
+Matningen sker i den ena ändan av ledningen och i den andra ändan ansluts
+ledningens ena part till antennen och den andra parten lämnas fri.
+
+En sådan antenn med \(\lambda/4\) transmissionsledning och \(\lambda/2\)
+antennelement kallas Zepp-antenn och användes först hängandes under ballonger
+och luftskepp, s.k. zeppelinare.
+
+\emph{J-antennen} (eng. \emph{J-pole}) \cite[J-antenne]{Rothammel2001} är
+elektriskt lika Zepp-antennen men den tillverkas oftast av metallrör eller
+för portabelt bruk av bandkabel och kallas då ofta för \emph{Slim-Jim}.
+
+Antennen kan byggas i flera olika varianter och de vanligaste behöver en balun
+vid matningspunkten för att undvika att matande koaxialkabel blir en del av
+antennen och därför försämrar antennens verkningsgrad och strålningsdiagram.
+
+Enstaka utföranden av J-antennen kan byggas så att antennelementet direkt kan
+jordas för att minska risken för skador på ansluten radioutrustning vid åska.
 
 \subsection{Omvikt dipol (folded dipole)}
 \textbf{
