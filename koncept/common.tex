@@ -89,6 +89,17 @@
 
 \raggedbottom
 
+% Prepare for version handling
+\usepackage{xstring}
+\usepackage{catchfile}
+\CatchFileDef{\HEAD}{.git/refs/heads/master}{}
+\newcommand{\gitrevision}{%
+  \StrLeft{\HEAD}{7}%
+}
+\CatchFileDef{\VERSION}{VERSION.txt}{}
+\newcommand{\revision}{%
+  \VERSION \gitrevision%
+}
 
 %% Frontpage bacground
 \usepackage{eso-pic}
