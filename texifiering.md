@@ -21,8 +21,16 @@ någorlunda vettig LaTeX.
     texten. I själva texten finns även en referens till vilken bild som skall
     vara	där, den behåller jag också tills vidare, sen skall de döljas.
 
-5.  Själva texten bryter jag om så den blir läsbar. Jag håller mig inom 80-tecken
-    bredd i min Emacs.
+5.  Själva texten bryter jag om så den blir läsbar. Jag håller mig inom
+    80-tecken bredd i min Emacs.
+
+    Text skall övervägande brytas så att nya meningar bryts om så de börjar
+    på ny rad, detta skall ses som ett obligatorium för ny text.
+    Ett undantag från denna huvudregel är när två korta meningar får plats på
+    samma rad.
+
+    Denna regel handlar om att förändringar och uppdateringar i meningar skall
+    ge rimligt läsbara diffar.
 
 6.  För att förenkla har jag markerat `\part{}` och `\chapter{}` så att det går att
     hitta delarna.
