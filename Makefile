@@ -167,5 +167,5 @@ docker-build:
 
 clean: SHELL=/bin/bash -O extglob -c
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept).png *.ilg *.upa koncept/*.aux koncept/*~
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs 
 
