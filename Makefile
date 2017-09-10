@@ -93,6 +93,14 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	-pdflatex koncept-refbok.tex
 	pdflatex koncept-refbok.tex
 
+koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
+	-pdflatex koncept-tryck.tex
+	pdflatex koncept-tryck.tex
+
+koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
+	-pdflatex koncept-online.tex
+	pdflatex koncept-online.tex
+
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
 
