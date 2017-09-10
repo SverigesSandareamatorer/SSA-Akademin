@@ -55,7 +55,7 @@ KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-b.tex \
 	koncept/appendix-l.tex
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
-	koncept/backpage.tex \
+	koncept/frontpage.tex koncept/backpage.tex \
 	koncept/matte.tex koncept/morse.tex koncept/part3.tex \
 	koncept/preface.tex koncept.bib \
 	koncept.tex koncept/emf.tex koncept/chapter14-1.tex
