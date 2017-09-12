@@ -2,10 +2,14 @@
 \label{sändare}
 \index{sändare}
 
-För att översiktligt beskriva en komplicerad sändare eller transceiver
-behövs ibland ett enklare framställningssätt än detaljrika
-principscheman.4
-Då kan ett blockschema vara till stor hjälp.
+\subsection{Blockschema}
+\index{blockschema}
+
+\emph{Blockschema} är sätt att göra en översiktlig principskiss över en
+apparats design, där de övergripande principerna för funktionen är illustrerade
+i en förenklad form där varje block representerar en grundläggande funktion.
+Denna förenkling gör att man kan snabb få en översikt utan att fastna i
+konstruktionsdetaljerna av enstaka block.
 
 Hela apparaten kan ses som ett antal funktionsblock. Hur de samverkar
 framgår i stort av blockschemat.
@@ -65,9 +69,10 @@ Raka sändare kan användas för CW, FM, PM och AM, men inte DSB och SSB.
 Fördelen med raka sändare är enkelheten.
 Nackdelen är att alla steg arbetar på samma frekvens, varvid risken för
 återverkan på ett föregående funktionssteg är större.
-Oönskad återkoppling kan då bli följden.
+Oönskad återkoppling kan då bli följden, som kan ge ostabila egenskaper hos
+sändaren.
 Genom att i första hand bygga in VFO och buffertstegen i metallkapslingar,
-s.k. skärmar, så minskas denna risk.
+s.k. skärmar, så minskas denna risk då högre isolation åstakomms.
 
 \subsection{Sändare med frekvensmultiplicering}
 \textbf{HAREC
@@ -111,7 +116,7 @@ Bilden visar ett blockschema för en FM sändare för 435~MHz (70~cm-bandet).
 Oscillatorfrekvensen är 8,056~MHz.
 I fyra av de efterföljande förstärkarna multipliceras frekvensen 2, 3, 3
 respektive 3~gånger, alltså totalt 54~gånger.
-Sändningsfrekvensen blir då \(8,056 \cdot 54 = 435\) MHz.
+Sändningsfrekvensen blir då \(8,056 \cdot 54 = 435\)~MHz.
 
 Variationer i oscillatorfrekvensen blir också multiplicerade.
 I detta exempel blir sändningsfrekvensens deviation 54~gånger större än
@@ -161,7 +166,7 @@ stabilitet även på högre frekvenser.
 När signalerna från dessa blandas, bildas blandningsprodukter som är
 skillnaden och summan av signalernas frekvenser.
 Bilden visar en telegrafisändare där detta fenomen används för sändning
-inom området 14,0--14,5 eller 3,5--4,0 beroende på passbandet i filtret
+inom området 14,0--14,5~MHz eller 3,5--4,0~MHz beroende på passbandet i filtret
 efter blandaren.
 
 Resultatet är en superheterodyn-VFO med både variabel och stabil
@@ -201,7 +206,7 @@ genom ännu en frekvensblandning och ytterligare filtrering.
 
 I exemplet är CO-frekvensen 9~MHz. VFO har frekvensområdet 5,0--5,5~MHz.
 Vid blandningen fås blandningsprodukter inom frekvensområdena
-14,0--14,5 och 4,0--3,5~MHz.
+14,0--14,5~MHz och 4,0--3,5~MHz.
 Genom att välja bandpassfilter kan man sända i ett av dessa frekvensområden.
 Efterföljande driv- och slutsteg utförs för att arbeta i detta frekvensband,
 antingen utan särskild avstämning -- s.k. bredbandigt utförande -- eller genom
@@ -425,8 +430,8 @@ ofta 10~MHz.
 modulerade signalen har när den kommer ut ur sändaren.
 Det är viktigt att den är begränsad så att den håller sig inom de gränser
 som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
-T.ex. kan en sändare anpassad för FM 25 kHz kanaldelning modulera för starkt för
-NFM 12,5 kHz kanaldelning och helt enkelt störa grann-kanalerna.
+T.ex. kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
+NFM 12,5~kHz kanaldelning och helt enkelt störa grann-kanalerna.
 
 Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
 eftersom den förväntas kunna byta kanal.
