@@ -1,16 +1,16 @@
 before_install:
   - sudo apt-get -qq update
-  - "sudo apt-get install --force-yes --no-install-recommends --quiet texlive-lang-european texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-pictures texlive-math-extra dvipng"
+  - "sudo apt-get install --force-yes --no-install-recommends -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra dvipng"
 
 script:
-  - pdflatex -output-directory out koncept.tex
+  - pdflatex koncept.tex
 
 deploy:
   provider: releases
   api_key:
     secure: [YOUR KEY]
   file:
-  - out/koncept.pdf
+  - koncept.pdf
   skip_cleanup: true
   on:
     tags: true
