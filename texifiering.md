@@ -122,10 +122,17 @@ någorlunda vettig LaTeX.
 
     	\hilight{TODO: Här ser det lite fel ut.}
 
-    Det är behändigt att kunna söka på TODO:, och `\hilight{}` ger en gul markör i
-    texten så vi vet när vi läser att här är något vi skall åtgärda.
+    Det är behändigt att kunna söka på TODO:, och `\hilight{}` ger en gul
+    markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
 
 18. Har lagt i `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa. /NTJ
 
 19. har lagt in \, som tusentalsavskiljare/ NTJ
+
+20. Bild-referenserna har i ursprungliga Koncept gjorts som en separat rad.
+    De skall i möjligaste mån integreras med själva texten. På samma sätt skall
+    även tabeller refereras från texten.
+
+
+
