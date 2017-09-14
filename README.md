@@ -5,7 +5,7 @@
 -   [OM SSA AKADEMIN](#om-ssa-akademin)
 -   [KONTAKT](#kontakt)
 
-![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)
+[![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/)
 
 **KonCEPT för Radioamatörcertifikat** är en bok
 ursprungligen skriven av Lennart Wiberg och utgiven av 
