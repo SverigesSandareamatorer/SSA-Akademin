@@ -69,37 +69,37 @@ KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 
 koncept.idx:
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	pdflatex koncept.tex
+	xelatex koncept.tex
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-pdflatex koncept.tex
+	-xelatex koncept.tex
 	makeindex koncept.idx
-	pdflatex koncept.tex
+	xelatex koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
-	-pdflatex handouts/matterep.tex
-	pdflatex handouts/matterep.tex
+	-xelatex handouts/matterep.tex
+	xelatex handouts/matterep.tex
 
 koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
-	-pdflatex koncept-alpha.tex
-	pdflatex koncept-alpha.tex
+	-xelatex koncept-alpha.tex
+	xelatex koncept-alpha.tex
 
 koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
-	-pdflatex koncept-larobok.tex
-	pdflatex koncept-larobok.tex
+	-xelatex koncept-larobok.tex
+	xelatex koncept-larobok.tex
 
 koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
-	-pdflatex koncept-refbok.tex
-	pdflatex koncept-refbok.tex
+	-xelatex koncept-refbok.tex
+	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
-	-pdflatex koncept-tryck.tex
-	pdflatex koncept-tryck.tex
+	-xelatex koncept-tryck.tex
+	xelatex koncept-tryck.tex
 
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
-	-pdflatex koncept-online.tex
-	pdflatex koncept-online.tex
+	-xelatex koncept-online.tex
+	xelatex koncept-online.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
@@ -111,11 +111,11 @@ emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/emf.tex common.tex
-	pdflatex handouts/emf-handout.tex
+	xelatex handouts/emf-handout.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
-	-pdflatex handouts/iso-jordning.tex
-	pdflatex handouts/iso-jordning.tex
+	-xelatex handouts/iso-jordning.tex
+	xelatex handouts/iso-jordning.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
@@ -143,10 +143,10 @@ images/power1.pdf: images/power1.mac
 
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
-	pdflatex lectures/ac1.tex
+	xelatex lectures/ac1.tex
 
 ac2.pdf: lectures/ac2.tex
-	pdflatex lectures/ac2.tex
+	xelatex lectures/ac2.tex
 
 # Web-generering
 koncept.xml:	koncept.tex $(KONCEPT_FILES)
