@@ -3,9 +3,7 @@ before_install:
   - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex dvipng"
 
 script:
-  - xelatex koncept.tex
-  - xelatex koncept.tex
-  - xelatex koncept.tex
+  - make koncept.pdf
 
 deploy:
   provider: releases
