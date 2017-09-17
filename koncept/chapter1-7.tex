@@ -138,11 +138,23 @@ tänka sig en grundton och dess övertoner med ingen energi emellan dem så är 
 istället ett kontinuerligt spektra med oändligt många toner. Detta spektra
 begränsas dock av bandbredden.
 
-\hilight{TODO: Illustrera resistor, brus en och in.}
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-36.pdf}
+  \caption{En resistor kan ses ha brus ekvivalenter som spänning eller ström}
+  \label{fig:BildII1-36}
+\end{wrapfigure}
 
-\hilight{TODO: Illustrera brus över tid.}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-34.pdf}
+\caption{Brus innebär en ostabilitet över tid}
+\label{fig:BildII1-34}
+\end{wrapfigure}
 
-\hilight{TODO: Illustrera brus över frekvens.}
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-35.pdf}
+\caption{Brus innehåller alla frekvenser, vitt brus har samma amplitud}
+\label{fig:BildII1-35}
+\end{wrapfigure}
 
 \index{vitt brus}
 \index{brus!vitt}
@@ -153,8 +165,16 @@ Man kallar detta spektra i dagligtal för \emph{termiskt brus}
 (eng. thermal noise), eftersom det beror på temperaturen hos motståndet, eller
 \emph{Johnsson noise}, efter J. B. Johnsson som 1928 fann att detta brus fanns
 i alla ledare \cite{ott1988}.
+Brus skapar en variation i spänning och ström, som illustreras i bild
+\ref{fig:BildII1-34}.
+
 I dagligt tal pratar man dock bara om \emph{vitt brus} (eng. white noise) eller
 \emph{brus}.
+Med vitt brus menas brus som inte ``färgats'', och det betyder i det här
+sammanhanget att det har samma amplitud för alla frekvenser, så som illustreras
+i bild \ref{fig:BildII1-35}.
+I praktiken är allt brus begränsat med bandbredden på kanalen, men man
+betraktar det som vitt inom kanalen om det är jämn inom bandet.
 
 Effekten \(P_n\) av detta brus beror på Boltzmans konstant
 \(k\ =\ 1,38 \cdot 10^{-23}\) J/K, den absoluta temperaturen \(T\) i
@@ -162,7 +182,9 @@ kelvin samt bandbredden \(B\) i Hertz och anges enligt formeln:
 
 \(P_n = k T B\)
 
-Den motsvarande spänningen \(e_n\) och strömmen \(i_n\) för resistansen \(R\) är
+Varje motstånd med den absoluta temperaturen T kan modeleras som att ha en
+ekvivalenta spänningen \(e_n\) och strömmen \(i_n\) för resistansen \(R\),
+så som illustreras i bild \ref{fig:BildII1-36} är
 
 \(e_n = \sqrt{4kTBR}\)
 
@@ -172,20 +194,22 @@ Den motsvarande spänningen \(e_n\) och strömmen \(i_n\) för resistansen \(R\)
 \index{brus!brusbandbredd}
 
 Medans vi initialt antagit att brusets bandbredd är för frekvenser
-från DC till övre gränsfrekvensen så är det inte nödvändigt. Formeln är även
-relevant för bruset på ett band, och bandbredden för det bandpass filter vi har
-för att enbart lyssna på detta band.
+från DC till övre gränsfrekvensen så är det inte nödvändigt.
+Formeln är även relevant för bruset på ett band, och bandbredden för det
+bandpass filter vi har för att enbart lyssna på detta band.
 
 Exempelvis behöver tal på SSB hantera 300~Hz till 3~kHz, dvs. 2,7~kHz
 bandbredd och därmed kommer även mottagarens bandbredd behöva vara så stort,
-och därmed även brusbandbredd på 2,7~kHz. Vi kommer då att ta emot brus för
-motsvarande bandbredd. Ett CW filter kan t.ex. vara 350~Hz och kommer därmed
-också ha ett motsvarande förhållande lägre brus-effekt.
+och därmed även brusbandbredd på 2,7~kHz.
+Vi kommer då att ta emot brus för motsvarande bandbredd.
+Ett CW filter kan t.ex. vara 350~Hz och kommer därmed också ha ett
+motsvarande förhållande lägre brus-effekt.
 
 Detta är dock en förenkling, eftersom filtret inte filtrerar med branta kanter
-och är helt plant. Filtrets egentliga brus-bandbredd beror på hur filtret
-filtrerar över alla frekvenser och summan av dessa. Beroende på vilken typ av
-filter så behövs därför en korrigeringsfaktor från den normala bandbredden
-till brus-bandbredden. För ett normalt 12~dB/oktav lågpass filter är
-korrigerings faktorn 1,22.
+och är helt plant.
+Filtrets egentliga brus-bandbredd beror på hur filtret filtrerar över
+alla frekvenser och summan av dessa.
+Beroende på vilken typ av filter så behövs därför en korrigeringsfaktor
+från den normala bandbredden till brus-bandbredden.
+För ett normalt 12~dB/oktav lågpass filter är korrigerings faktorn 1,22.
 
