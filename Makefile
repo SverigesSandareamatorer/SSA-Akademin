@@ -67,14 +67,16 @@ KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
-koncept.idx:
+koncept.idx: koncept.tex $(KONCEPT_FILES)
+	texfot xelatex koncept.tex
+
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	xelatex koncept.tex
+	texfot xelatex koncept.tex
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-xelatex koncept.tex
-	makeindex koncept.idx
+#	-texfot xelatex koncept.tex
+#	makeindex koncept.idx
 	xelatex koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
@@ -105,7 +107,7 @@ koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
 
 koncept.ind: koncept.idx
-	makeindex koncept
+	makeindex koncept.idx
 
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
