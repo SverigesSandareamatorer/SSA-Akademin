@@ -5,7 +5,7 @@
 
 \subsection{Mottagare med kristalldetektor}
 \index{kristalldetektor}
-\index{mottagare!kristal}
+\index{mottagare!kristall}
 
 \begin{figure}
   \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-01.pdf}
@@ -13,27 +13,26 @@
   \label{fig:bildII4-1}
 \end{figure}
 
-Bild \ref{fig:bildII4-1}
-
-Detektormottagaren består av ett mycket litet antal
-komponenter. Princip och arbetssätt framgår av bilden. Samma princip
-används även i mer komplicerade mottagare, mätinstrument
-etc. Antennkretsen består av antenn, jordtag och däremellan en
-induktor (kopplingsspole), som överför energin från antennen till en
-svängningskrets. Svängningskretsen används för att välja ut (selektera)
-en bärvåg med önskad frekvens. Bärvågen kan naturligtvis inte
-höras, men av kurvformen på bilden framgår att bärvågen är
-amplitudmodulerad med en LF-signal.
+Detektormottagaren består av ett mycket litet antal komponenter.
+Princip och arbetssätt framgår av bild \ref{fig:bildII4-1}.
+Samma princip används även i mer komplicerade mottagare, mätinstrument etc.
+Antennkretsen består av antenn, jordtag och däremellan en induktor
+(kopplingsspole), som överför energin från antennen till en svängningskrets.
+Svängningskretsen används för att välja ut (selektera)
+en bärvåg med önskad frekvens.
+Bärvågen kan naturligtvis inte höras, men av kurvformen på bilden framgår
+att bärvågen är amplitudmodulerad med en LF-signal.
 
 För att återvinna LF-signalen utför man en s.k. demodulering med hjälp
-av dioden. Dioden klipper bort antingen de positiva eller negativa
-halvvågorna i den mottagna signalen, beroende på hur dioden är
-vändpolariserad. Kondensatorn, som är kopplad parallellt över
-hörtelefonen, glättar de högfrekventa spänningstopparna till ett
-amplitudmedelvärde (jämför med entaktsblandare i Kapitel 3). Detta
-spänningsvärde varierar på ett sätt, som motsvarar den modulerande
-spänning i sändaren som kommer av tal, musik etc. Vi har nu
-demodulerat bärvågen, återställt LF-signalen och kan höra den i
+av dioden.
+Dioden klipper bort antingen de positiva eller negativa halvvågorna i den
+mottagna signalen, beroende på hur dioden är vändpolariserad.
+Kondensatorn, som är kopplad parallellt över hörtelefonen, glättar de
+högfrekventa spänningstopparna till ett amplitudmedelvärde (jämför med
+entaktsblandare i Kapitel \ref{detektorer}).
+Detta spänningsvärde varierar på ett sätt, som motsvarar den modulerande
+spänning i sändaren som kommer av tal, musik etc.
+Vi har nu demodulerat bärvågen, återställt LF-signalen och kan höra den i
 mottagaren.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
@@ -42,20 +41,19 @@ mottagaren.
   \label{fig:bildII4-2}
 \end{wrapfigure}
 
-Bild \ref{fig:bildII4-2}
-
 Signalspänningen över svängningskretsen är störst när dess
 resonansfrekvens och antennströmmens frekvens är lika.
 
-Överst i bilden ser man att mottagaren är inställd på samma frekvens
-som sändare 2.  Även sändare 3 hörs eftersom bandbredden i
-svängningskretsen är stor. Nederst i bilden är svängningskretsen
-inställd på sändare 3, men man hör också sändare 2 och 4.
+Överst i bild \ref{fig:bildII4-2} ser man att mottagaren är inställd på
+samma frekvens som sändare 2.
+Även sändare 3 hörs eftersom bandbredden i svängningskretsen är stor.
+Nederst i bilden är svängningskretsen inställd på sändare 3, men man hör
+också sändare 2 och 4.
 
 Bandbredden i svängningskretsen blir mindre ju mindre den belastas,
-d.v.s dämpas. I Bild \ref{fig:bildII4-1} består belastningen av antennen (via
-kopplingsspolen), hörtelefonen och avkopplingskondensatorn (via
-dioden).
+d.v.s dämpas.
+I Bild \ref{fig:bildII4-1} består belastningen av antennen (via
+kopplingsspolen), hörtelefonen och avkopplingskondensatorn (via dioden).
 
 Mindre belastning kan åstadkommas på två sätt; dels med ''lösare''
 koppling mellan antennkrets och svängningskrets och dels med bättre
@@ -75,30 +73,30 @@ Bild \ref{fig:bildII4-4}, vilket ska jämföras med Bild \ref{fig:bildII4-2}.
 
 \subsection{Detektormottagare med förstärkare}
 
-Bild \ref{fig:bildII4-3}
-
 Om man vill höra sändningarna över högtalare, behövs högre effekt än
-vad som kan fångas upp genom antennen. För ändamålet används en
-LF-förstärkare, som drivs av en annan energikälla, t.ex. ett
-batteri. LF-förstärkaren kan även minska belastningen på
-svängningskretsen.
+vad som kan fångas upp genom antennen.
+För ändamålet används en LF-förstärkare, som drivs av en annan energikälla,
+t.ex. ett batteri.
+LF-förstärkaren kan även minska belastningen på svängningskretsen.
 
-I bilden har ett LF-lågpassfilter satts in efter
-HF-avkopplingskondensatorn. Det dämpar LF-signaler med högre frekvens
-än vad som behövs för god mottagning.
+I bild \ref{fig:bildII4-3} har ett LF-lågpassfilter satts in efter
+HF-avkopplingskondensatorn.
+Det dämpar LF-signaler med högre frekvens än vad som behövs för god mottagning.
 
 \subsubsection{Mottagare med bättre HF-egenskaper}
 
 Bild \ref{fig:bildII4-5}
 
 Ett sätt att minska bandbredden i en detektormottagare är att koppla
-flera svängningskretsar med samma frekvens efter varandra. Den större
-dämpningen av fler kretsar kan kompenseras med en HF-förstärkare.
+flera svängningskretsar med samma frekvens efter varandra.
+Den större dämpningen av fler kretsar kan kompenseras med en HF-förstärkare.
 
 Sådana mottagare används för speciella ändamål, t.ex. för övervakning
-av en enda frekvens. Då är svängningskretsarna fast avstämda. Kanske
-utnyttjas till och med en kvartskristall som filter för den speciella
-frekvensen. Se Bild \ref{fig:bildII4-6} om hög selektion.
+av en enda frekvens.
+Då är svängningskretsarna fast avstämda.
+Kanske utnyttjas till och med en kvartskristall som filter för den speciella
+frekvensen.
+Se Bild \ref{fig:bildII4-6} om hög selektion.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-04.pdf}
@@ -116,21 +114,23 @@ frekvensen. Se Bild \ref{fig:bildII4-6} om hög selektion.
 
 \subsection{Detektormottagare och sändningsslag}
 
-I huvudsak fungerar detektormottagaren endast vid
-amplitudmodulering. Det innebär sändningsslagen A3E och A2A,
-d.v.s. amplitudmodulerad telefoni resp. tonmodulerad telegrafi, båda
-med full bärvåg.
+I huvudsak fungerar detektormottagaren endast vid amplitudmodulering.
+Det innebär sändningsslagen A3E och A2A, d.v.s. amplitudmodulerad telefoni
+resp. tonmodulerad telegrafi, båda med full bärvåg.
 
 Bild \ref{fig:bildII4-7}
 
 Däremot fungerar detektormottagaren inte vid A1A, d.v.s. telegrafi med
-endast bärvåg. En omodulerad bärvåg alstrar nämligen endast en
-likström i en detektormottagare. Vid nyckling hörs då endast
-knäppningar i hörtelefonen vid början och slutet av teckendelarna.
+endast bärvåg.
+En omodulerad bärvåg alstrar nämligen endast en likström i en
+detektormottagare.
+Vid nyckling hörs då endast knäppningar i hörtelefonen vid början och
+slutet av teckendelarna.
 
 Detektormottagaren fungerar inte heller vid J3E, d.v.s. SSB och övriga
-sändningsslag med undertryckt bärvåg. Ljud såsom tal förvrängs
-nämligen kraftigt i en J3E-signal eftersom bärvågskomponenten saknas.
+sändningsslag med undertryckt bärvåg.
+Ljud såsom tal förvrängs nämligen kraftigt i en J3E-signal eftersom
+bärvågskomponenten saknas.
 
 I båda ovannämnda fall kan talet återställas med tillsats av en bärvåg.
 Slutligen kan sändningsslag som innebär frekvens- och fasmodulering i
@@ -152,25 +152,25 @@ a.\ref{HAREC.a.4.3.7}\label{myHAREC.a.4.3.7}
   \label{fig:bildII4-8}
 \end{figure}
 
-För att demodulera A1A och J3E i en rak mottagare-
-detektormottagare måste den kompletteras med en oscillator som alstrar
-en intern bärvåg. Denna blandas med den mottagna signalen. Det uppstår
-då en svävningston -- beat frequency. Därav namnet Beat Frequency
-Oscillator -- BFO.
+För att demodulera A1A och J3E i en rak mottagare -- detektormottagare måste
+den kompletteras med en oscillator som alstrar en intern bärvåg.
+Denna blandas med den mottagna signalen.
+Det uppstår då en svävningston -- beat frequency.
+Därav namnet Beat Frequency Oscillator -- BFO.
 
-Förfarandet har givit mottagartypen sitt namn -- direktblandad
-mottagare.
+Förfarandet har givit mottagartypen sitt namn -- direktblandad mottagare.
 
 Bild \ref{fig:bildII4-8}
 
-Ett sätt att komplettera den raka mottagaren med BFO framgår av
-bilden. När BFO kopplas till och ställs in på en frekvens tillräckligt
+Ett sätt att komplettera den raka mottagaren med BFO framgår av bilden.
+När BFO kopplas till och ställs in på en frekvens tillräckligt
 nära mottagningsfrekvensen så uppstår en hörbar ton.
 
 Demodulatordioden tillförs alltså två HF-signaler, dels den från
-antennen och dels den från BFO. Dessa båda signaler blandas i dioden
-och skillnadsfrekvensen är den hörbara tonen. Övriga
-blandningsprodukter dämpas av ett lågpassfilter.
+antennen och dels den från BFO.
+Dessa båda signaler blandas i dioden och skillnadsfrekvensen är den hörbara
+tonen.
+Övriga blandningsprodukter dämpas av ett lågpassfilter.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-09.pdf}
@@ -201,8 +201,8 @@ Med BFO på frekvensen \(f_2\) = 1830~kHz hörs ingenting av signalen
 \(f_1\) = 1830~kHz från sändaren.
 Frekvensskillnaden är noll Hz.
 
-De flesta föredrar en ton med frekvensen ca 800~Hz för mottagning av
-telegrafi. BFO-frekvensen skulle i så fall ställas in på 1830,8 eller
+De flesta föredrar en ton med frekvensen ca 800~Hz för mottagning av telegrafi.
+BFO-frekvensen skulle i så fall ställas in på 1830,8 eller
 1829,2~kHz om \(f_1\) vore en telegrafisändning.
 
 \begin{figure}
