@@ -68,10 +68,10 @@ KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 koncept.idx: koncept.tex $(KONCEPT_FILES)
-	texfot xelatex koncept.tex
+	xelatex koncept.tex
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	texfot xelatex koncept.tex
+	xelatex koncept.tex
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
