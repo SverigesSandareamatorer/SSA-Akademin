@@ -6,8 +6,7 @@ script:
   - make koncept.pdf
 
 after_success:
-  - echo $TRAVIS_COMMIT
-  - "curl --ftp-create-dirs -T koncept.pdf -u $FTP_USER:$FTP_PASSWORD ftp://ssa.se/koncept/koncept.$TRAVIS_BUILD_NUMBER.$TRAVIS_COMMIT.pdf"
+  - "curl --ftp-create-dirs -T koncept.pdf -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/koncept/koncept.$TRAVIS_COMMIT.pdf"
 
 deploy:
   provider: releases
