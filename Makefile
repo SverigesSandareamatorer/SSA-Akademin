@@ -85,27 +85,27 @@ matterep.pdf: koncept/matte.tex handouts/matterep.tex
 
 koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
 	-xelatex koncept-alpha.tex
-    -xelatex koncept-alpha.tex
+	-xelatex koncept-alpha.tex
 	xelatex koncept-alpha.tex
 
 koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
 	-xelatex koncept-larobok.tex
-    -xelatex koncept-larobok.tex
+	-xelatex koncept-larobok.tex
 	xelatex koncept-larobok.tex
 
 koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	-xelatex koncept-refbok.tex
-    -xelatex koncept-refbok.tex
+	-xelatex koncept-refbok.tex
 	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
 	-xelatex koncept-tryck.tex
-    -xelatex koncept-tryck.tex
+	-xelatex koncept-tryck.tex
 	xelatex koncept-tryck.tex
 
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
 	-xelatex koncept-online.tex
-    -xelatex koncept-online.tex
+	-xelatex koncept-online.tex
 	xelatex koncept-online.tex
 
 koncept.bbl: koncept.aux koncept.bib
