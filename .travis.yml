@@ -12,7 +12,8 @@ deploy:
   provider: releases
   api_key:
     secure: [YOUR KEY]
-  file: koncept.pdf
+  file:
+    koncept.pdf
   skip_cleanup: true
   on:
     tags: true
