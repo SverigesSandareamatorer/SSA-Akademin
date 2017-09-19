@@ -5,12 +5,15 @@ before_install:
 script:
   - make koncept.pdf
 
+after_success:
+  - "curl --ftp-create-dirs --upload-file koncept.pdf --user $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/${FTP_FOLDER}koncept.$TRAVIS_COMMIT.pdf"
+
 deploy:
   provider: releases
   api_key:
     secure: [YOUR KEY]
   file:
-  - koncept.pdf
+    koncept.pdf
   skip_cleanup: true
   on:
     tags: true
