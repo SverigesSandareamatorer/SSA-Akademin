@@ -1,16 +1,19 @@
 before_install:
   - sudo apt-get -qq update
-  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex dvipng"
+  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex texlive-texfot dvipng"
 
 script:
-  - make koncept.pdf
+  - make koncept.$TRAVIS_BUILD_NUMBER.pdf
+
+after_success:
+  - "curl --ftp-create-dirs -T koncept.$TRAVIS_BUILD_NUMBER.pdf -u $FTP_USER:$FTP_PASSWORD ftp://ssa.se/koncept/koncept.$TRAVIS_BUILD_NUMBER.pdf"
 
 deploy:
   provider: releases
   api_key:
     secure: [YOUR KEY]
   file:
-  - koncept.pdf
+  - koncept.$TRAVIS_BUILD_NUMBER.pdf
   skip_cleanup: true
   on:
     tags: true
