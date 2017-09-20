@@ -75,8 +75,9 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-@xelatex koncept.tex
-	-@xelatex koncept.tex
+	more /usr/bin/texfot
+	-xelatex koncept.tex
+	-xelatex koncept.tex
 	makeindex koncept.idx
 	xelatex koncept.tex
 
