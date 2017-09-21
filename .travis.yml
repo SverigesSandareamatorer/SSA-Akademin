@@ -1,6 +1,6 @@
 before_install:
   - sudo apt-get -qq update
-  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex texlive-extra-utils"
+  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex dvipng"
 
 script:
   - make koncept.pdf
