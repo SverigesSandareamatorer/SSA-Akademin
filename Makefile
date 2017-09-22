@@ -69,10 +69,8 @@ KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- xelatex koncept.tex
-	- xelatex koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
-	- xelatex koncept.tex
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
@@ -83,7 +81,7 @@ koncept.ind: koncept.idx
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-#	-xelatex koncept.tex
+	-xelatex koncept.tex
 #	makeindex koncept.idx
 	xelatex koncept.tex
 
