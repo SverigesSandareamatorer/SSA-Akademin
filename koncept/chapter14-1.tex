@@ -227,11 +227,11 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
   to [R, l^=$Z_1$] (1,2)
   to [american voltage source, l^=$U_{ut}$] (1,5)
   to (3,5)
-  to [R, l^=$R_3$, v_=$U_3$] (3,2)
+  to [R, l_=$R_3$, v^=$U_3$] (3,2)
   (1,0) to (3,0)
   to [R, l^=$Z_2$] (3,2)
-  (1,3) to [short, i^=$I_1$] (1,2)
-  (3,3) to [short, i^=$I_2$] (3,2);
+  (0,2) to [short, i^=$I_1$] (1,2)
+  (4,2) to [short, i_=$I_2$] (3,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system}
@@ -309,6 +309,27 @@ kontakt mot chassi, som ska vara skyddsjordad.
 Själva chassit brukar man prata om som \emph{chassijordat}, men det är
 egentligen bara skyddsjord på de flesta system.
 
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw
+  (0,0) to node[ground]{}
+  (0,0) to (1,0)
+  to [R, l^=$Z_1$] (1,2)
+  to [american voltage source, l^=$U_{ut}$] (1,5)
+  to (3,5)
+  to [R, l^=$R_3$, v_=$U_3$] (3,2)
+  (1,0) to (3,0)
+  to [R, l^=$Z_2$] (3,2)
+  (1,3) to [short, i^=$I_1$] (1,2)
+  (3,3) to [short, i^=$I_2$] (3,2);
+  \draw (1,2) to [R, l^=$R_4$, v_=$U_4$] (3,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare}
+  \label{fig:kap4-4}
+\end{figure}
+
 För att isolationsjordning ska fungera måste alla kontakter vara isolerade
 från chassit.
 Även signaljord som inte får ha kontakt med chassi inuti apparaten.
@@ -351,6 +372,27 @@ man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
 jordanslutning som man ansluter till stativjord eller jordskenor. Kablar läggs
 på kabelstegar som jordas. I detta system kommer varje extra kabel att koppla
 samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
+
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw
+  (0,0) to node[ground]{}
+  (0,0) to (1,0)
+  to [R, l^=$Z_1$] (1,2)
+  to [american voltage source, l^=$U_{ut}$] (1,5)
+  to (3,5)
+  to [R, l^=$R_3$, v_=$U_3$] (3,2)
+  (1,0) to (3,0)
+  to [R, l^=$Z_2$] (3,2)
+  (1,3) to [short, i^=$I_1$] (1,2)
+  (3,3) to [short, i^=$I_2$] (3,2);
+  \draw (1,2) to [R, l^=$R_4$, v_=$U_4$] (3,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare}
+  \label{fig:kap4-5}
+\end{figure}
 
 I ett system som har sammankopplad jord kommer man ofrånkomligen att behöva
 hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller även
