@@ -85,20 +85,20 @@ Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 
 \begin{figure}
   \begin{center}
-\begin{circuitikz}[american voltages]
-  \draw
-  (0,0) to node[ground]
-  (0,0) to [] (1,0)
-  to [R, l^=$Z_1$] (3,0)
-  to [R, l^=$Z_2$] (5,0)
-  to [R, l^=$Z_3$] (7,0)
-  (3,1) to [short, i^=$I_1$] (3,0)
-  (5,1) to [short, i^=$I_2$] (5,0)
-  (7,1) to [short, i^=$I_3$] (7,0)
-  (2.75,-1) to [short, <-, i=$I_1+I_2+I_3$] (1.25,-1)
-  (4.75,-1) to [short, <-, i=$I_2+I_3$] (3.25,-1)
-  (6.75,-1) to [short, <-, i=$I_3$] (5.25,-1)
-\end{circuitikz}
+    \begin{circuitikz}[american voltages]
+      \draw (0,0) node[ground]{};
+      \draw (0,0) -- (1,0);
+      \draw (1,0)
+      to [R, l^=$Z_1$] (3,0)
+      to [R, l^=$Z_2$] (5,0)
+      to [R, l^=$Z_3$] (7,0);
+      \draw (3,1) to [short, i^=$I_1$] (3,0);
+      \draw (5,1) to [short, i^=$I_2$] (5,0);
+      \draw (7,1) to [short, i^=$I_3$] (7,0);
+      \draw (2.75,-1) to [short, <-, i=$I_1+I_2+I_3$] (1.25,-1);
+      \draw (4.75,-1) to [short, <-, i=$I_2+I_3$] (3.25,-1);
+      \draw (6.75,-1) to [short, <-, i=$I_3$] (5.25,-1);
+    \end{circuitikz}
   \end{center}
   \caption{Seriekopplat jordsystem}
   \label{fig:kap4-1}
@@ -168,7 +168,7 @@ jordanslutningen.
   \begin{center}
 \begin{circuitikz}[american voltages]
   \draw
-  (0,0) to node[ground]
+  (0,0) to node[ground]{}
   (0,0) to (1,0)
   to [R, l^=$Z_1$] (1,2)
   (1,0) to (3,0)
@@ -177,7 +177,7 @@ jordanslutningen.
   to [R, l^=$Z_3$] (5,2)
   (1,3) to [short, i^=$I_1$] (1,2)
   (3,3) to [short, i^=$I_2$] (3,2)
-  (5,3) to [short, i^=$I_3$] (5,2)
+  (5,3) to [short, i^=$I_3$] (5,2);
 \end{circuitikz}
   \end{center}
   \caption{Parallellkopplat jordsystem}
@@ -222,7 +222,7 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
   \begin{center}
 \begin{circuitikz}[american voltages]
   \draw
-  (0,0) to node[ground]
+  (0,0) to node[ground]{}
   (0,0) to (1,0)
   to [R, l^=$Z_1$] (1,2)
   to [american voltage source, l^=$U_{ut}$] (1,5)
@@ -231,7 +231,7 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
   (1,0) to (3,0)
   to [R, l^=$Z_2$] (3,2)
   (1,3) to [short, i^=$I_1$] (1,2)
-  (3,3) to [short, i^=$I_2$] (3,2)
+  (3,3) to [short, i^=$I_2$] (3,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system}
