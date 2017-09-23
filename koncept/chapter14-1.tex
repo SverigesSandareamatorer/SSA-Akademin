@@ -490,10 +490,10 @@ detta inte skillnaden i spänning mellan dem.
   \begin{center}
     \begin{circuitikz}[american voltages]
       % Ground reference
-      \draw (4,0) node[ground]{};
-      \draw (1,0) to (7,0);
+      \draw (4,1) node[ground]{};
+      \draw (1,1) to (7,1);
       % Source ground
-      \draw (1,0) to [R, l^=$Z_1$] (1,4);
+      \draw (1,1) to [R, l^=$Z_1$] (1,4);
       \draw (0,4) to [short, i^=$I_1$] (1,4) to (2,4);
       % Source diff
       \draw (2,6) to [american voltage source, l^=$U_{ut}$] (2,4)
@@ -507,7 +507,7 @@ detta inte skillnaden i spänning mellan dem.
       % Destination isolation
       \draw (5,4) to [R, l^=$Z_{iso2}$, v_=$U_5$] (7,4);
       % Destination ground
-      \draw (7,0) to [R, l^=$Z_2$] (7,4);
+      \draw (7,1) to [R, l^=$Z_2$] (7,4);
       \draw (8,4) to [short, i_=$I_2$] (7,4);
     \end{circuitikz}
   \end{center}
