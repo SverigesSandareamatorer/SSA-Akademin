@@ -409,17 +409,22 @@ eftersom man parallellkopplar många impedanser.
 
 \begin{figure}
   \begin{center}
-\begin{circuitikz}[american voltages]
-  \draw (2,0) node[ground]{};
-  \draw (1,0) to [R, l^=$Z_1$] (1,2)
-  to [american voltage source, l^=$U_{ut}$] (1,5)
-  to [R, l^=$Z_{signal}$] (3,5)
-  to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
-  (1,0) to (3,0)
-  to [R, l^=$Z_2$] (3,2);
-  \draw (0,2) to [short, i^=$I_1$] (1,2);
-  \draw (4,2) to [short, i^=$I_2$] (3,2);
-  \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (3,2);
+    \begin{circuitikz}[american voltages]
+      % Ground reference
+      \draw (2.5,0) node[ground]{};
+      \draw (1,0) to (4,0);
+      % Source ground
+      \draw (1,0) to [R, l^=$Z_1$] (1,2);
+      \draw (0,2) to [short, i^=$I_1$] (1,2);
+      % Source output
+      \draw (1,4) to [american voltage source, l^=$U_{ut}$] (1,2);
+      % Interconnection
+      \draw (1,4) to [R, l^=$Z_{signal}$] (4,4)
+      to [R, l^=$Z_{load}$, v_=$U_{in}$] (4,2);
+      \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (4,2);
+      % Destination ground
+      \draw (4,0) to [R, l^=$Z_2$] (4,2);
+      \draw (5,2) to [short, i_=$I_2$] (4,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system med utjämningsledare}
