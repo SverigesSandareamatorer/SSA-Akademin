@@ -213,22 +213,22 @@ Samma teknik används ofta för själva kraftdistributionen av samma skäl.
 
 I ett system där man har gjort parallella jordar i matningen,
 vill man nu koppla samman två apparater för att överföra en signal.
-En första naiv lösning är ju att helt enkelt bara dra en tråd från den ena
-apparaten över till den andra.
+En första naiv lösning är ju att helt enkelt bara dra en tråd \(Z_{signal}\)
+från den ena apparaten över till den andra.
 Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
 
 \begin{figure}
   \begin{center}
 \begin{circuitikz}[american voltages]
   \draw (2,0) node[ground]{};
-  \draw (1,0) to [R, l^=$Z_1$] (1,2);
+  \draw (1,2) to [R, l_=$Z_1$, v^=$U_1$] (1,0);
   \draw (1,5) to [american voltage source, l_=$U_{ut}$] (1,2);
-  \draw (1,5) to (3,5)
-  to [R, l_=$R_3$, v^=$U_3$] (3,2)
-  (1,0) to (3,0)
-  to [R, l^=$Z_2$] (3,2)
-  (0,2) to [short, i^=$I_1$] (1,2)
-  (4,2) to [short, i_=$I_2$] (3,2);
+  \draw (1,5) to [R, l^=$Z_{signal}$] (3,5)
+  to [R, l_=$Z_{load}$, v^=$U_{in}$] (3,2)
+  (1,0) to (3,0);
+  \draw (3,2) to [R, l_=$Z_2$, v^=$U_2$] (3,0);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (4,2) to [short, i_=$I_2$] (3,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system}
@@ -239,18 +239,25 @@ Problemet är ju att för den första apparaten som har strömmen \(I_1\) att g�
 anslutningsimpedansen \(Z_1\) till jorden så ger det en spänning
 \(U_1 = Z_1 I_1\) på den jordanslutningen.
 På samma sätt kommer den andra apparaten att uppleva jorden med en förskjutning
-av jordspänningen på \(U_2 = Z_2 I_2\). Om den tänka utspänningen är \(U_{ut}\)
-så kommer den egentliga utspänningen vara \(U_3 = U_{ut} + U_1\).
+av jordspänningen på \(U_2 = Z_2 I_2\).
+Om den tänka utspänningen är \(U_{ut}\) så kommer den egentliga utspänningen
+vara \(U_{ut} + U_1\) i förhållande till jord.
 Om vi för stunden antar att det inte går någon anmärkningsvärd ström i ledaren
 över till den andra apparaten så kommer den uppleva det som en inspänning
 \(U_{in}\) i förhållande till sin jordpotential \(U_2\) dvs.
-\(U_{in} = U_3 - U_2 = U_{ut} + U_1 - U_2\).
+\(U_{in} = U_{ut} + U_1 - U_2\).
 
 Vi ser här att skillnaden i jordpotential kommer förskjuta den upplevda
 inspänningen \(U_{in}\) från den avsedda spänningen \(U_{ut}\) med skillnaden i
 jordpotential, dvs. \(U_1 - U_2\) som i sin tur beror på anslutningarnas 
 impedans och strömmarna.
-Överföringen kan därför ha problem med sin isolation.
+Överföringen kan därför ha problem med sin isolation av \(I_1\) och \(I_2\)
+till \(U_{in}\).
+
+Om de bägge strömmarna inte har någon starkt frekvensinnehåll för det
+frekvensband som man observerar på mottagaren, så fungerar dock detta fint.
+Inte helt sällan råkar dock isolationen bli ett bekymmer antingen direkt eller
+genom att det stör funktionen indirekt.
 
 Ett försök att minska störningen är förstås att försöka minska \(Z_1\) och
 \(Z_2\) genom att göra motståndet mindre, t.ex. genom kortare kablar eller
@@ -283,28 +290,58 @@ för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
 Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
 (eng. \emph{signal ground}).
 
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw (3,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2)
+  to [american voltage source, l^=$U_{ut}$] (1,5)
+  to [R, l^=$Z_{signal}$] (3,5)
+  to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
+  (1,0) to (5,0)
+  to [R, l^=$Z_2$] (5,2);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (6,2) to [short, i^=$I_2$] (5,2);
+  \draw (1,2) to [R, l^=$Z_{GND}$] (3,2);
+  \draw (3,2) to [R, l^=$Z_{iso2}$, v_=$U_5$] (5,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare}
+  \label{fig:kap4-4}
+\end{figure}
+
 För apparater med växelströmsmatning har man redan en transformator, som ju
 tillhandahåller en galvanisk isolation mellan primärsidan (elkraft) och
 sekundärsidan (elektroniken).
 Genom att helt enkelt hålla signaljorden \emph{flytande} (eng.
 \emph{floating}), dvs. utan någon galvanisk koppling till skyddsjord, så kan
-man istället koppla samman signaljord på två apparater med separata ledare.
-I bild \ref{fig:kap4-4} är isolationen representerad av \(Z_5\) där spänningen
-\(U_5\) representerar spänningen mellan primär och sekundärsida.
+man istället koppla samman signaljord på två apparater med separata ledare
+ \(Z_{GND}\).
+I bild \ref{fig:kap4-4} är isolationen hos mottagande apparat representerad
+av \(Z_{iso2}\) där  spänningen \(U_5\) representerar spänningen mellan primär
+och sekundärsida.
+På liknande sätt kan isolationen på den sändande apparatens sida moduleras som
+ \(Z_{iso1}\), men för detta resonemang räcker \(Z_{iso2}\).
+
 Den galvaniska åtskillnaden gör att den kan vara megaohm till gigaohm för
-likström, men på grund av den kapacitiva kopplingen sjunker den i praktiken
-för högre frekvenser.
+likström, men på grund av den kapacitiva kopplingen mellan primär och sekundär
+sida i transformatorn sjunker den i praktiken för högre frekvenser.
+I praktiken kan transformatorn på grund av sin obalans driva spänningen \(U_5\)
+och därför så kan man behöva lasta dess kapacitiva källan med ett motstånd,
+varvid \(Z_{iso2}\) snarare kan vara i kiloohm.
 
 Om vi återgår till de bägge två apparaterna, så kan vi nu istället för att
 använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
-med en kabel \(Z_4\) parallell med signalledaren.
+med en kabel \(Z_{GND}\) parallell med signalledaren \(Z_{signal}\).
 Har vi en förhållandevis låg ström genom den impedans som kabeln har så
-kommer det fungera fint.
-Eftersom \(Z_4\) kan vara några fåtal ohm medans \(Z_5\) är storleksordningen
-megaohm så för låga frekvenser kommer kabeln koppla väl, men för högre
-frekvenser kan vi förvänta oss att induktansen i \(Z_5\) ökar samtidigt som
-kapacitansen i \(Z_4\) sjunker varvid för högre frekvenser kommer \(R_3\) vara
-mer kopplad lokalt.
+kommer det fungera fint och \(U_{ut}\) kommer representeras hyfsat bra som
+spänningen \(U_{in}\) över \(Z_{load}\).
+
+Eftersom \(Z_{GND}\) kan vara några fåtal ohm medans \(Z_{iso2}\) är
+storleksordningen megaohm så för låga frekvenser kommer kabeln koppla väl,
+men för högre frekvenser kan vi förvänta oss att induktansen i \(Z_{GND}\) ökar
+impedansen samtidigt som kapacitansen i \(Z_{iso2}\) gör att impedansen sjunker
+varvid för högre frekvenser kommer \(Z_{load}\) vara mer kopplad lokalt mot \(Z_{2}\) snarare än \(Z_{1}\).
 
 Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
 uppstå \emph{jordbrum} i denna koppling.
@@ -324,26 +361,6 @@ koppla samman signaljord och skyddsjord, typiskt att det blir oavsiktlig
 kontakt mot chassi, som ska vara skyddsjordad.
 Själva chassit brukar man prata om som \emph{chassijordat}, men det är
 egentligen bara skyddsjord på de flesta system.
-
-\begin{figure}
-  \begin{center}
-\begin{circuitikz}[american voltages]
-  \draw (3,0) node[ground]{};
-  \draw (1,0) to [R, l^=$Z_1$] (1,2)
-  to [american voltage source, l^=$U_{ut}$] (1,5)
-  to (3,5)
-  to [R, l^=$R_3$, v_=$U_3$] (3,2)
-  (1,0) to (5,0)
-  to [R, l^=$Z_2$] (5,2);
-  \draw (0,2) to [short, i^=$I_1$] (1,2);
-  \draw (6,2) to [short, i^=$I_2$] (5,2);
-  \draw (1,2) to [R, l^=$R_4$, v_=$U_4$] (3,2);
-  \draw (3,2) to [R, l^=$Z_5$, v_=$U_5$] (5,2);
-\end{circuitikz}
-  \end{center}
-  \caption{Sammankopplat system med utjämningsledare}
-  \label{fig:kap4-4}
-\end{figure}
 
 För att isolationsjordning ska fungera måste alla kontakter vara isolerade
 från chassit.
@@ -397,7 +414,7 @@ samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
   to [R, l^=$Z_1$] (1,2)
   to [american voltage source, l^=$U_{ut}$] (1,5)
   to (3,5)
-  to [R, l^=$R_3$, v_=$U_3$] (3,2)
+  to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
   (1,0) to (3,0)
   to [R, l^=$Z_2$] (3,2)
   (1,3) to [short, i^=$I_1$] (1,2)
