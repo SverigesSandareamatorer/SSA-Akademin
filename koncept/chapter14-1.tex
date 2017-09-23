@@ -603,70 +603,76 @@ alltså betrakta dem på detta alternativa och oberoende (ortogonala) sättet.
       \draw (3.5,1) node[ground]{};
       \draw (0,1) to (7,1);
       % Source ground
-      \draw (0,4) to [american voltage source, l^=$U_{cm}$] (0,1);
+      \draw (0,4) to [american voltage source, l^=$U_{g}$] (0,1);
       \draw (0,4) to (2,4);
       % Source diff
-      \draw (2,6) to [american voltage source, l^=$U_{dm}/2$] (2,4)
-      to [american voltage source, l^=$U_{dm}/2$] (2,2);
+      \draw (2,6) node[anchor=east] {$V_{ut+}$} to [american voltage source, l^=$U_{d}/2$] (2,4)
+      to [american voltage source, l^=$U_{d}/2$] (2,2) node[anchor=east] {$V_{ut-}$};
       % Wires and load
-      \draw (2,6) to [R, l^=$Z_{signal+}$] (5,6)
-      to [R, l^=$Z_{dm}/2$, v_=$U_{dm+}$] (5,4)
-      to [R, l^=$Z_{dm}/2$, v_=$U_{dm-}$] (5,2);
+      \draw (2,6) to [R, l^=$Z_{signal+}$] (5,6) node[anchor=west] {$V_{in+}$}
+      to [R, l^=$Z_{d}/2$, v_=$U_{d+}$] (5,4)
+      to [R, l^=$Z_{d}/2$, v_=$U_{d-}$] (5,2) node[anchor=west] {$V_{in-}$};
       \draw (2,2) to [R, l^=$Z_{signal-}$] (5,2);
       \draw (2,4) to [R, l^=$Z_{GND}$] (5,4);
       % Destination isolation
       \draw (5,4) to (7,4);
       % Destination ground
-      \draw (7,4) to [R, l^=$Z_{cm}$, v_=$U_{cm}$] (7,1);
+      \draw (7,4) to [R, l^=$Z_{g}$, v_=$U_{g}$] (7,1);
     \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system med utjämningsledare och diffrentiell signal}
   \label{fig:kap4-7}
 \end{figure}
 
-I bild \ref{fig:kap4-7}.
+I bild \ref{fig:kap4-7} har man den gemensamma spänningskällan \(U_g\), som
+från ersatt de förskjutna jordpunkterna i tidigare exempel.
+Den diffrentiella spänningen \(U_d\), dvs. den drivande spänningen mellan
+\(V_{ut+}\) och  \(V_{ut-}\) är fördelad på två spänningskällor som levererar
+halva spänningen var.
 
-Tänk om vi har två ledare med 10~V och 12~V på sig. De har en tydlig gemensam
-spänning och de har en liten skillnad. Den gemensamma spänningen är medeltalet
-och det som skiljer dem åt är då den differentiella spänningen. Om vi låter
-12~V gå till vår plus pol, dvs. \(V_+ = 12\ V\), och 10~V gå till vår minus pol,
-dvs. \(V_- = 10\ V\) så kan vi nu formulera medelvärdet som
+\(V_{ut+} = U_g + \frac{U_d}{2}\)
 
-\(V_g = \frac{V_+ + V_-}{2} = \frac{12+10}{2} = 11\ V\)
+\(V_{ut-} = U_g - \frac{U_d}{2}\)
 
-På samma sätt kan man nu formulera det differentiella värdet, avvikelsen från
-det gemensamma som
+Omvänt kan man formulera uttrycken för gemensam spänningsen \(U_g\) samt
+den diffrentiella spänningen \(U_d\) som \(V_{ut+}\) och \(V_{ut-}\):
 
-\(V_d = \frac{V_+ - V_-}{2} = \frac{12-10}{2} = 1\ V\)
+\(U_g = \frac{V_{ut+}+V_{ut-}}{2}\)
 
-Försöker vi vända på det och uttrycka de bägge spänningarna uttryckt i de nya
-begreppen så finner vi att det låter sig enkelt göras. Genom siffrorna och
-resonemang är det ju rimligt att \(V_+\) och \(V_-\) bägge har den gemensamma
-spänningen \(V_g\) men att man sedan adderar den med \(V_d\) för \(V_+\)
-respektive subtraherar för \(V_-\). Det ger följande formler:
+\(U_d = {V_{ut+}-V_{ut-}}\)
 
-\(V_+ = V_g + V_d\)
+På motsvarande sätt på ingången kan man skriva uttrycken för den gemensamma
+mottagna spänningen \(U_{g,in}\) och den mottagna diffrentella spänningen
+\(U_{d,in}\) baserat på inspänningarna \(V_{in+}\) och \(V_{in-}\), man får då
 
-\(V_- = V_g - V_d\)
+\(V_{g,in} = \frac{V_{in+} + V_{in-}}{2}\)
+
+\(V_{in+} = V_{in+}-V_{in-}\)
 
 Ett sätt att illustrera skillnaden är t.ex. med en transformator.
 En transformator med 1:1 lindning kopplas in mellan två balanserade signaler.
 Transformatorns primärlindning kommer att omvandla den differentiella spänningen
 \(V_d\) till en motsvarande spänning på utgången. Däremot kommer den gemensamma
-spänningen att inte överföras. Transformatorn blir då en isolator för den
-gemensamma spänningen precis som vi förväntar oss av en galvanisk isolation.
+spänningen att inte överföras.
+Transformatorn blir då en isolator för den gemensamma spänningen precis som vi
+förväntar oss av en galvanisk isolation.
 
 Isolationen för den gemensamma spänningen i en transformator är dock främst ett
 likströmsbeteende, så ju högre frekvens desto bättre koppling, dvs. sämre
-isolation. Detta beror på den kapacitiva kopplingen mellan lindningarna som
-skapar en ström.
+isolation.
+Detta beror på den kapacitiva kopplingen mellan lindningarna som skapar en
+ström, som sammankopplar sidorna och resulterar i att den gemensamma spänningen
+ändå går igenom transformatorn.
+För högre frekvenser är kopplingen väldigt god och transformatorn gör ingen
+nytta för att undertrycka den gemensamma spänningen.
 
 Eftersom nyttosignalen är differentiell kan man ibland medvetet använda den
 gemensamma spänningen för att överföra matningsspänning till t.ex. en mikrofon.
 Denna form av matningsspänning kallas för \emph{fantommatning}
 (eng. \emph{phantom power}). En vanligt förekommande spänning är 48~V, som då
-symboliseras med P48. Det förekommer även på modern Ethernet-utrustning och
-kallas då för \emph{Power over Ethernet (PoE)}.
+symboliseras med P48.
+Det förekommer även på modern Ethernet-utrustning och kallas då för
+\emph{Power over Ethernet (PoE)}.
 
 \subsection{Gemensam och differentiell ström}
 \label{comdiffi}
