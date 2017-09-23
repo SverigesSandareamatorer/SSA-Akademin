@@ -221,12 +221,10 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
 \begin{figure}
   \begin{center}
 \begin{circuitikz}[american voltages]
-  \draw
-  (0,0) to node[ground]{}
-  (0,0) to (1,0)
-  to [R, l^=$Z_1$] (1,2)
-  to [american voltage source, l^=$U_{ut}$] (1,5)
-  to (3,5)
+  \draw (2,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2);
+  \draw (1,5) to [american voltage source, l_=$U_{ut}$] (1,2);
+  \draw (1,5) to (3,5)
   to [R, l_=$R_3$, v^=$U_3$] (3,2)
   (1,0) to (3,0)
   to [R, l^=$Z_2$] (3,2)
@@ -255,8 +253,17 @@ jordpotential, dvs. \(U_1 - U_2\) som i sin tur beror på anslutningarnas
 impedans och strömmarna.
 Överföringen kan därför ha problem med sin isolation.
 
+Ett försök att minska störningen är förstås att försöka minska \(Z_1\) och
+\(Z_2\) genom att göra motståndet mindre, t.ex. genom kortare kablar eller
+grövre kablar.
+Detta fungerar givetvis, men enbart till en viss praktisk gräns.
+
 Det här illustrerar grunden i hur \emph{jordbrum} (eng. \emph{hum}) brukar
 uppstå när man kopplar ihop två apparater.
+Själva jordbrummet kommer från kraftaggregaten, och då dess strömmar delar
+krets med nyttosignalen så kommer \emph{överhörning} (eng. \emph{crosstalk})
+göra att brummet blir märkbart.
+Det finns givetvis många vägar för brum att störa en signal.
 
 \subsection{Isolerad jordning}
 \index{isolerad jordning}
