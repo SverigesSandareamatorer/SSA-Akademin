@@ -1,7 +1,8 @@
 
 Isolation och jordning är samlingsbegrepp för ett antal viktiga koncept för
-att reducera störningar, som även berör EMC och elsäkerhet. Detta är viktiga
-koncept både när man bygger en installation och när man designar utrustning.
+att reducera störningar, som även berör EMC och elsäkerhet.
+Detta är viktiga koncept både när man bygger en installation och när man
+designar utrustning.
 Det skapar också förståelse för hur utrustning är designad, vilket gör det
 enklare att använda den på ett korrekt sätt.
 
@@ -12,20 +13,21 @@ enklare att använda den på ett korrekt sätt.
 \index{isolation!galvanisk}
 
 \emph{Isolation} (eng. \emph{isolation}) är ett samlingsbegrepp för att separera
-olika signaler. Den första enkla separationen är den hos en \emph{isolator},
-dvs. ett material som inte leder ström så bra. Det är den mest grundläggande
-formen av isolation som förhindrar elektrisk ledning mellan ledningar.
+olika signaler.
+Den första enkla separationen är den hos en \emph{isolator}, dvs. ett material
+som inte leder ström så bra. Det är den mest grundläggande formen av isolation
+som förhindrar elektrisk ledning mellan ledningar.
 
 Man brukar prata om \emph{galvanisk isolation} (eng. \emph{galvanic isolation})
-för en isolation som inte kan leda likström. Transformatorer används ofta för
-att åstadkomma galvanisk isolation.
+för en isolation som inte kan leda likström.
+Transformatorer används ofta för att åstadkomma galvanisk isolation.
 
 Nu är isolation inte begränsat till enbart likström, utan även växelspänning
 kan behöva isoleras. Hur god isolationen är beror kraftigt på frekvensen, och
 de åtgärder man gör bör anpassas för hur god isolation man behöver eller vill
-ha för olika frekvenser. Man kan t.ex. vilja ha god isolation vid sändar- och
-mottagarfrekvensen 14~MHz, men vill inte ha galvanisk isolation för det
-gemensamma 12~V kraftaggregatet.
+ha för olika frekvenser.
+Man kan t.ex. vilja ha god isolation vid sändar- och mottagarfrekvensen 14~MHz,
+men vill inte ha galvanisk isolation för det gemensamma 12~V kraftaggregatet.
 
 \section{Jordning}
 \index{jordning}
@@ -38,15 +40,16 @@ gemensamma 12~V kraftaggregatet.
 
 \emph{Jordning} (eng. \emph{bonding}) eller dagligt tal \emph{jord} (eng.
 \emph{ground}, \emph{earth}) är en kopplingsstrategi för att få samma
-referenspotential i olika delar av en elektrisk koppling. Man bygger ett
-\emph{jordnät} (eng. \emph{bonding network (BN)} \cite[3.2.1]{K27-1991} och
-\emph{earthing network}) \cite[3.1.3]{K27-1991} för att koppla samman de olika
-jordpunkterna.
+referenspotential i olika delar av en elektrisk koppling.
+Man bygger ett \emph{jordnät} (eng. \emph{bonding network (BN)}
+\cite[3.2.1]{K27-1991} och \emph{earthing network}) \cite[3.1.3]{K27-1991}
+för att koppla samman de olika jordpunkterna.
 
 Den engelska termen \emph{bonding} och även \emph{bondning network} ger en
 indikation på vad det handlar om, nämligen en metod att knyta samman flera
 olika delar av en design eller installation för att få en gemensam
-referensspänning. Det är helt enkelt en galvanisk sammankoppling.
+referensspänning.
+Det är helt enkelt en galvanisk sammankoppling.
 
 Många gånger kallas den referenspotentialen för \emph{jordpotential} för att
 det är väldigt behändigt att använda jorden som referens, helt enkelt gräva ned
@@ -54,50 +57,75 @@ en ledare i marken, t.ex. jordspett (eng. \emph{earth electrode})
 \cite[3.1.2]{K27-1991}, för att den vägen få tillgång till jordpotentialen.
 
 Jorden och jordning är dock ofta missförstått, det finns en övertro på att man
-kan ta ned störningar med enbart jordning. Det förekommer också att man
-upplever att man har problem där jorden upplevs skapa störningar, varvid en
-del felaktigt bryter jorden, och därmed \emph{skyddsjorden}, något man inte
-får göra av elsäkerhetsskäl.
+kan ta ned störningar med enbart jordning.
+Det förekommer också att man upplever att man har problem där jorden upplevs
+skapa störningar, varvid en del felaktigt bryter jorden, och därmed
+\emph{skyddsjorden}, något man inte får göra av elsäkerhetsskäl.
 
 På samma sätt tror många att man kan göra sig av med en stor växelström i
-jorden. Detta kallas ibland lite skämtsamt för \emph{blomjordning}, för att
-man inte tagit hänsyn till jordledarens resistans och induktans, vilket gör
-att växelström inte tar sig så långt då ledaren motarbetar den, och då kan man
-lika gärna lägga sin jordanslutning ned i en blomkruka för där gör den lika
+jorden.
+Detta kallas ibland lite skämtsamt för \emph{blomjordning}, för att man inte
+tagit hänsyn till jordledarens resistans och induktans, vilket gör att
+växelström inte tar sig så långt då ledaren motarbetar den, och då kan man lika
+gärna lägga sin jordanslutning ned i en blomkruka för där gör den lika
 god nytta.
 
 Inom elkraft förekommer även termen \emph{nolla} (eng. \emph{neutral}), den
 kan lätt förväxlas med jorden, men ska hanteras separat från skyddsjord utom
 där elsäkerhetsföreskrifter föreskriver att de ska vara sammankopplade.
-Nollan är den ledare som är returledare för strömmen. Nollan är i TN-C system
-sammankopplad med skyddsjorden i elcentralen, men ut från elcentralen hanteras
-den som en separat ledare. Man får inte koppla ihop dem för att spara ledare!
+Nollan är den ledare som är returledare för strömmen.
+Nollan är i TN-C system sammankopplad med skyddsjorden i elcentralen, men ut
+från elcentralen hanteras den som en separat ledare.
+Man får inte koppla ihop dem för att spara ledare!
 
 \subsection{Seriekoppling av jord}
 
 Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 \cite[3]{ott1988} mellan ett antal strömförbrukare.
 
-Ponera att vi har tre strömförbrukare som var och en bidrar med en ström
-\(I_1\), \(I_2\) och \(I_3\), och att dessa är seriekopplade till en
-jordanslutning. Från jordanslutningen till strömbidraget \(I_1\) har vi
-impedansen \(Z_1\), och från den punkten har vi impedansen \(Z_2\) fram till
-strömbidragen \(I_2\) och slutligen impedansen \(Z_3\) fram till \(I_3\).
+\begin{figure}
+  \begin{center}
+    \begin{circuitikz}[american voltages]
+      \draw (0,0) node[ground]{};
+      \draw (0,0) -- (1,0);
+      \draw (1,0)
+      to [R, l^=$Z_1$] (3,0)
+      to [R, l^=$Z_2$] (5,0)
+      to [R, l^=$Z_3$] (7,0);
+      \draw (3,1) to [short, i^=$I_1$] (3,0);
+      \draw (5,1) to [short, i^=$I_2$] (5,0);
+      \draw (7,1) to [short, i^=$I_3$] (7,0);
+      \draw (2.75,-1) to [short, <-, i=$I_1+I_2+I_3$] (1.25,-1);
+      \draw (4.75,-1) to [short, <-, i=$I_2+I_3$] (3.25,-1);
+      \draw (6.75,-1) to [short, <-, i=$I_3$] (5.25,-1);
+    \end{circuitikz}
+  \end{center}
+  \caption{Seriekopplat jordsystem}
+  \label{fig:kap4-1}
+\end{figure}
+
+I bild \ref{fig:kap4-1} att vi har tre strömförbrukare som var och en
+bidrar med en ström \(I_1\), \(I_2\) och \(I_3\), och att dessa är
+seriekopplade till en jordanslutning.
+Från jordanslutningen till strömbidraget \(I_1\) har vi impedansen \(Z_1\),
+och från den punkten har vi impedansen \(Z_2\) fram till strömbidragen \(I_2\)
+och slutligen impedansen \(Z_3\) fram till \(I_3\).
 
 En naiv tolkning är att spänningen \(U_1\) för strömbidraget \(I_1\) blir
 \(U_1 = Z_1 I_1\), vidare \(U_2 = (Z_1 + Z_2) I_2\) och
 \(U_3 = (Z_1 + Z_2 + Z_3) I_3\) för det blir det ju om varje ström ansluts var
-och en för sig, dvs. normal seriekoppling av impedanserna. Denna analys är
-dock för enkel för att ta hänsyn till fallet när strömmarna ansluts samtidigt,
-eftersom strömmar och spänningar kommer samverka.
+och en för sig, dvs. normal seriekoppling av impedanserna.
+Denna analys är dock för enkel för att ta hänsyn till fallet när strömmarna
+ansluts samtidigt, eftersom strömmar och spänningar kommer samverka.
 
 Den totala strömmen genom första impedansen \(Z_1\) blir ju summan av de tre
-strömmarna, därför måste också spänningen höjas med det bidraget. Den första
-spänningen blir därför \(U_1=Z_1 (I_1 + I_2 + I_3)\). På liknande sätt beräknas
-den andra spänningen med de bägge strömmarna \(I_2\) och \(I_3\) plus
-spänningen \(U_1\) och därför blir \(U_2 = U_1 + Z_2 (I_2 + I_3)\).
-Slutligen blir den sista spänningen \(U_3 = U_2 + Z_3 I_3\). Med förenkling
-får vi
+strömmarna, därför måste också spänningen höjas med det bidraget.
+Den första spänningen blir därför \(U_1=Z_1 (I_1 + I_2 + I_3)\).
+På liknande sätt beräknas den andra spänningen med de bägge strömmarna \(I_2\)
+och \(I_3\) plus spänningen \(U_1\) och därför blir
+\(U_2 = U_1 + Z_2 (I_2 + I_3)\).
+Slutligen blir den sista spänningen \(U_3 = U_2 + Z_3 I_3\).
+Med förenkling får vi
 
 \(
 \begin{array}{ll}
@@ -132,30 +160,52 @@ isolation mellan de olika jordströmmarna och hur nollpotentialen upplevs.
 
 Om vi istället ansluter våra tre laster med individuella ledare till jord
 kommer de olika strömmarna inte att samverka, detta är en parallellkoppling
-av jord \cite[3]{ott1988}. Vi har därmed åstadkommit en isolation mellan
-strömmarna med avseende på jordanslutningen.
+av jord \cite[3]{ott1988}.
+Vi har därmed åstadkommit en isolation mellan strömmarna med avseende på
+jordanslutningen.
+
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw (3,0) node[ground]{};
+  \draw
+  (1,0) to [R, l^=$Z_1$] (1,2)
+  (1,0) to (3,0)
+  to [R, l^=$Z_2$] (3,2)
+  (3,0) to (5,0)
+  to [R, l^=$Z_3$] (5,2)
+  (1,3) to [short, i^=$I_1$] (1,2)
+  (3,3) to [short, i^=$I_2$] (3,2)
+  (5,3) to [short, i^=$I_3$] (5,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Parallellkopplat jordsystem}
+  \label{fig:kap4-2}
+\end{figure}
 
 Dock kommer varje strömkälla uppleva en förskjutning i spänningen av
-sin jord som beror på dess egen ström och impedansen den har till jord. För att
-minska denna effekt kan en minskad strömförbrukning förstås användas, eller
-oftare med en förbättrad jord.
+sin jord som beror på dess egen ström och impedansen den har till jord.
+För att minska denna effekt kan en minskad strömförbrukning förstås användas,
+eller oftare med en förbättrad jord.
 
 Givetvis kan även varje strömförbrukare ha två jordar, parallellt.
 Elkraftsystemens användning av både \emph{skyddsjord} och \emph{nolla} är
 just ett sådant system, där nollan är den som har strömmen och tillåts få
 åka runt i spänning, medans skyddsjorden i allmänhet enbart har små strömmar.
 Skyddsjordens funktion är också att kunna hantera stora strömmar vid fel,
-för att kunna bryta tillförseln. Skyddsjorden har egentligen det som
-sitt huvudsyfte, men ger ofta en bra jordreferens.
+för att kunna bryta tillförseln.
+Skyddsjorden har egentligen det som sitt huvudsyfte, men ger ofta en bra
+jordreferens.
 
-I apparater och även inne på kretskort kan man ha parallellkoppling. Det är även
-känt som \emph{stjärnjordning} (eng. \emph{star grounding}) eftersom
-kopplingsschemat ser ut att ha en stjärna från en gemensam punkt. Det kan vara
-nyttigt att isolera jord för analoga signaler från digitala eller rent av
-reläer, PA mm. Man försöker sätta stjärnan direkt vid anslutningen till
-kraftaggregatet för att hålla dem så gemensamt som möjligt men med så lite
-påverkan av seriejordning som möjligt. Samma teknik används ofta för själva
-kraftdistributionen av samma skäl.
+I apparater och även inne på kretskort kan man ha parallellkoppling.
+Det är även känt som \emph{stjärnjordning} (eng. \emph{star grounding}) eftersom
+kopplingsschemat ser ut att ha en stjärna från en gemensam punkt.
+Det kan vara nyttigt att isolera jord för analoga signaler från digitala eller
+rent av reläer, PA mm.
+Man försöker sätta stjärnan direkt vid anslutningen till kraftaggregatet för
+att hålla dem så gemensamt som möjligt men med så lite påverkan av
+seriejordning som möjligt.
+Samma teknik används ofta för själva kraftdistributionen av samma skäl.
 
 \subsection{Sammankoppling av apparater}
 \label{sammankopplingavapparater}
@@ -163,27 +213,63 @@ kraftdistributionen av samma skäl.
 
 I ett system där man har gjort parallella jordar i matningen,
 vill man nu koppla samman två apparater för att överföra en signal.
-En första naiv lösning är ju att helt enkelt bara dra en tråd från den ena
-apparaten över till den andra. Eftersom de har jordanslutning så har de ju en
-gemensam jordreferens.
+En första naiv lösning är ju att helt enkelt bara dra en tråd \(Z_{signal}\)
+från den ena apparaten över till den andra.
+Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
+
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw (2,0) node[ground]{};
+  \draw (1,2) to [R, l_=$Z_1$, v^=$U_1$] (1,0);
+  \draw (1,5) to [american voltage source, l_=$U_{ut}$] (1,2);
+  \draw (1,5) to [R, l^=$Z_{signal}$] (3,5)
+  to [R, l_=$Z_{load}$, v^=$U_{in}$] (3,2)
+  (1,0) to (3,0);
+  \draw (3,2) to [R, l_=$Z_2$, v^=$U_2$] (3,0);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (4,2) to [short, i_=$I_2$] (3,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system}
+  \label{fig:kap4-3}
+\end{figure}
 
 Problemet är ju att för den första apparaten som har strömmen \(I_1\) att gå i
 anslutningsimpedansen \(Z_1\) till jorden så ger det en spänning
-\(U_1 = Z_1 I_1\) på den jordanslutningen. På samma sätt kommer den
-andra apparaten att uppleva jorden med en förskjutning av jordspänningen på
-\(U_2 = Z_2 I_2\). Om den tänka utspänningen är \(U_{ut}\) så kommer den
-egentliga utspänningen vara \(U_3 = U_{ut} + U_1\). Om vi för stunden antar att
-det inte går någon anmärkningsvärd ström i ledaren över till den andra
-apparaten så kommer den uppleva det som en inspänning \(U_{in}\) i förhållande
-till sin jordpotential \(U_2\) dvs. \(U_{in} = U_3 - U_2 = U_{ut} + U_1 - U_2\).
+\(U_1 = Z_1 I_1\) på den jordanslutningen.
+På samma sätt kommer den andra apparaten att uppleva jorden med en förskjutning
+av jordspänningen på \(U_2 = Z_2 I_2\).
+Om den tänka utspänningen är \(U_{ut}\) så kommer den egentliga utspänningen
+vara \(U_{ut} + U_1\) i förhållande till jord.
+Om vi för stunden antar att det inte går någon anmärkningsvärd ström i ledaren
+över till den andra apparaten så kommer den uppleva det som en inspänning
+\(U_{in}\) i förhållande till sin jordpotential \(U_2\) dvs.
+\(U_{in} = U_{ut} + U_1 - U_2\).
 
 Vi ser här att skillnaden i jordpotential kommer förskjuta den upplevda
 inspänningen \(U_{in}\) från den avsedda spänningen \(U_{ut}\) med skillnaden i
 jordpotential, dvs. \(U_1 - U_2\) som i sin tur beror på anslutningarnas 
-impedans och strömmarna. Överföringen kan därför ha problem med sin isolation.
+impedans och strömmarna.
+Överföringen kan därför ha problem med sin isolation av \(I_1\) och \(I_2\)
+till \(U_{in}\).
+
+Om de bägge strömmarna inte har någon starkt frekvensinnehåll för det
+frekvensband som man observerar på mottagaren, så fungerar dock detta fint.
+Inte helt sällan råkar dock isolationen bli ett bekymmer antingen direkt eller
+genom att det stör funktionen indirekt.
+
+Ett försök att minska störningen är förstås att försöka minska \(Z_1\) och
+\(Z_2\) genom att göra motståndet mindre, t.ex. genom kortare kablar eller
+grövre kablar.
+Detta fungerar givetvis, men enbart till en viss praktisk gräns.
 
 Det här illustrerar grunden i hur \emph{jordbrum} (eng. \emph{hum}) brukar
 uppstå när man kopplar ihop två apparater.
+Själva jordbrummet kommer från kraftaggregaten, och då dess strömmar delar
+krets med nyttosignalen så kommer \emph{överhörning} (eng. \emph{crosstalk})
+göra att brummet blir märkbart.
+Det finns givetvis många vägar för brum att störa en signal.
 
 \subsection{Isolerad jordning}
 \index{isolerad jordning}
@@ -204,58 +290,104 @@ för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
 Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
 (eng. \emph{signal ground}).
 
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw (3,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2)
+  to [american voltage source, l^=$U_{ut}$] (1,5)
+  to [R, l^=$Z_{signal}$] (3,5)
+  to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
+  (1,0) to (5,0)
+  to [R, l^=$Z_2$] (5,2);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (6,2) to [short, i^=$I_2$] (5,2);
+  \draw (1,2) to [R, l^=$Z_{GND}$] (3,2);
+  \draw (3,2) to [R, l^=$Z_{iso2}$, v_=$U_5$] (5,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare}
+  \label{fig:kap4-4}
+\end{figure}
+
 För apparater med växelströmsmatning har man redan en transformator, som ju
 tillhandahåller en galvanisk isolation mellan primärsidan (elkraft) och
-sekundärsidan (elektroniken). Genom att helt enkelt hålla signaljorden
-\emph{flytande} (eng. \emph{floating}), dvs. utan någon galvanisk koppling
-till skyddsjord, så kan man istället koppla samman signaljord på två apparater
-med separata ledare.
+sekundärsidan (elektroniken).
+Genom att helt enkelt hålla signaljorden \emph{flytande} (eng.
+\emph{floating}), dvs. utan någon galvanisk koppling till skyddsjord, så kan
+man istället koppla samman signaljord på två apparater med separata ledare
+ \(Z_{GND}\).
+I bild \ref{fig:kap4-4} är isolationen hos mottagande apparat representerad
+av \(Z_{iso2}\) där  spänningen \(U_5\) representerar spänningen mellan primär
+och sekundärsida.
+På liknande sätt kan isolationen på den sändande apparatens sida moduleras som
+ \(Z_{iso1}\), men för detta resonemang räcker \(Z_{iso2}\).
+
+Den galvaniska åtskillnaden gör att den kan vara megaohm till gigaohm för
+likström, men på grund av den kapacitiva kopplingen mellan primär och sekundär
+sida i transformatorn sjunker den i praktiken för högre frekvenser.
+I praktiken kan transformatorn på grund av sin obalans driva spänningen \(U_5\)
+och därför så kan man behöva lasta dess kapacitiva källan med ett motstånd,
+varvid \(Z_{iso2}\) snarare kan vara i kiloohm.
 
 Om vi återgår till de bägge två apparaterna, så kan vi nu istället för att
 använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
-med en kabel parallell med signalledaren. Har vi en förhållandevis låg ström
-genom den impedans som kabeln har så kommer det fungera fint.
+med en kabel \(Z_{GND}\) parallell med signalledaren \(Z_{signal}\).
+Har vi en förhållandevis låg ström genom den impedans som kabeln har så
+kommer det fungera fint och \(U_{ut}\) kommer representeras hyfsat bra som
+spänningen \(U_{in}\) över \(Z_{load}\).
+
+Eftersom \(Z_{GND}\) kan vara några fåtal ohm medans \(Z_{iso2}\) är
+storleksordningen megaohm så för låga frekvenser kommer kabeln koppla väl,
+men för högre frekvenser kan vi förvänta oss att induktansen i \(Z_{GND}\) ökar
+impedansen samtidigt som kapacitansen i \(Z_{iso2}\) gör att impedansen sjunker
+varvid för högre frekvenser kommer \(Z_{load}\) vara mer kopplad lokalt mot \(Z_{2}\) snarare än \(Z_{1}\).
 
 Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
-uppstå \emph{jordbrum} i denna koppling. Det finns flera skäl. Ett skäl är att
-transformatorer visserligen erbjuder en galvanisk isolation, men de är även
-kapacitiva spänningsdelare för den spänning som finns över primärlindningen,
-med 230~VAC spänning så behövs bara lite läckage över för att man ska
-uppleva att isolationen brister. Det brukar vara rekommendabelt att helt
-enkelt lasta denna spänningsdelare med ett motstånd, så att signaljord och
-skyddsjord sitter ihop med ett någorlunda högt motstånd, ofta med en
-kondensator parallellt, för att se till att reducera det bidraget utan att
-få för mycket störningar från den ström som kommer flyta mellan jordarna.
+uppstå \emph{jordbrum} i denna koppling.
+Det finns flera skäl.
+Ett skäl är att transformatorer visserligen erbjuder en galvanisk isolation,
+men de är även kapacitiva spänningsdelare för den spänning som finns över
+primärlindningen, med 230~VAC spänning så behövs bara lite läckage över för att
+man ska uppleva att isolationen brister.
+Det brukar vara rekommendabelt att helt enkelt lasta denna spänningsdelare med
+ett motstånd, så att signaljord och skyddsjord sitter ihop med ett någorlunda
+högt motstånd, ofta med en kondensator parallellt, för att se till att reducera
+det bidraget utan att få för mycket störningar från den ström som kommer flyta
+mellan jordarna.
 
 Ett annat scenario som skapar jordbrum är när man i någon ände råkar hårt
 koppla samman signaljord och skyddsjord, typiskt att det blir oavsiktlig
-kontakt mot chassi, som ska vara skyddsjordad. Själva chassit brukar man
-prata om som \emph{chassijordat}, men det är egentligen bara skyddsjord på de
-flesta system.
+kontakt mot chassi, som ska vara skyddsjordad.
+Själva chassit brukar man prata om som \emph{chassijordat}, men det är
+egentligen bara skyddsjord på de flesta system.
 
 För att isolationsjordning ska fungera måste alla kontakter vara isolerade
-från chassit. Även signaljord som inte får ha kontakt med chassi inuti
-apparaten. Man behöver alltså försäkra sig om isolationsavstånd, vilket
-väldigt lätt kan missas av att man har en skruv som råkar skrapa sig igenom
-skyddslack t.ex.
+från chassit.
+Även signaljord som inte får ha kontakt med chassi inuti apparaten.
+Man behöver alltså försäkra sig om isolationsavstånd, vilket väldigt lätt kan
+missas av att man har en skruv som råkar skrapa sig igenom skyddslack t.ex.
 
 En annan nackdel med isolationsjordning är att den gör det svårare att designa
-för god EMC-täthet. För \emph{ledningsbunden störning} (eng. \emph{conductive
-	emission}) så vill man helst att kontaktens och kabelns skärm sitter i
-chassijorden med så låg impedans (induktans) som möjligt. Isolationsjordning
-kräver då att man monterar kondensatorer som kopplar ihop ledarens jord med
-chassijord och helst runt om för att få lägsta induktans.
+för god EMC-täthet.
+För \emph{ledningsbunden störning} (eng. \emph{conductive emission}) så vill
+man helst att kontaktens och kabelns skärm sitter i chassijorden med så låg
+impedans (induktans) som möjligt.
+Isolationsjordning kräver då att man monterar kondensatorer som kopplar ihop
+ledarens jord med chassijord och helst runt om för att få lägsta induktans.
 
 Isolationsjordning rekommenderas inte för större system, då den blir svår
 att upprätthålla.
 
 Det förekommer att man för att minska störningarna i ett isolationsjordat
 system väljer att koppla bort skyddsjorden, för att på det sättet ha mindre
-störningar. Detta är oftast inte tillåtet göra då man normalt inte bryter mot
+störningar.
+Detta är oftast inte tillåtet göra då man normalt inte bryter mot
 elsäkerhetsregler och anläggningen riskerar bli farlig, då personskyddet
-sätts ur spel. \textbf{Varje gång som skyddsjorden kopplas bort för att lösa ett
-	problem så har man skaffat sig ett större problem, vilket indikerar att man
-	valt en felaktig lösning.}
+sätts ur spel.
+\textbf{Varje gång som skyddsjorden kopplas bort för att lösa ett problem så
+  har man skaffat sig ett större problem, vilket indikerar att man valt en
+  felaktig lösning.}
 
 \subsection{Sammankopplad jordning}
 \index{sammankopplad jordning}
@@ -268,28 +400,53 @@ En annan strategi är \emph{sammankopplad jordning} (eng. \emph{mesh bonding}
 och \emph{mesh bonding network (mesh-BN)}) \cite[3.2.3]{K27-1991}
 där man istället för att isolera satsar på att koppla samman jordarna, hårt.
 Varje signalkabel sitter ansluten mot chassijord och därmed skyddsjord och
-man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
-jordanslutning som man ansluter till stativjord eller jordskenor. Kablar läggs
-på kabelstegar som jordas. I detta system kommer varje extra kabel att koppla
-samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
+man låter därmed jordarna sammankopplas.
+Varje apparat har en ordentlig jordanslutning som man ansluter till stativjord
+eller jordskenor.
+Kablar läggs på kabelstegar som jordas.
+I detta system kommer varje extra kabel att koppla samman jordarna hårdare,
+eftersom man parallellkopplar många impedanser.
+
+\begin{figure}
+  \begin{center}
+\begin{circuitikz}[american voltages]
+  \draw (2,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2)
+  to [american voltage source, l^=$U_{ut}$] (1,5)
+  to [R, l^=$Z_{signal}$] (3,5)
+  to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
+  (1,0) to (3,0)
+  to [R, l^=$Z_2$] (3,2);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (4,2) to [short, i^=$I_2$] (3,2);
+  \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (3,2);
+\end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare}
+  \label{fig:kap4-5}
+\end{figure}
 
 I ett system som har sammankopplad jord kommer man ofrånkomligen att behöva
 hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller även
-vagabonderande jordströmmar. Många gånger förklaras det som att man får en
-loop som agerar antenn för ett magnetfält. Det är dock sällan som ett
-magnetfält är så starkt att det inducerar flera ampere av vanlig 50~Hz ström.
+\emph{vagabonderande jordströmmar}.
+Många gånger förklaras det som att man får en loop som agerar antenn för ett
+magnetfält.
+Det är dock sällan som ett magnetfält är så starkt att det inducerar flera
+ampere av vanlig 50~Hz ström.
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
-\ref{sammankopplingavapparater}) där vi fick en skillnad av spänning mellan
-jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en ledning
-mellan dessa punkter, och då kommer det gå en ström som försöker utjämna
-potentialen mellan de bägge jordanslutningarna, som då kommer närmare varandra.
-Det är impedansen på kabeln som kommer att avgöra hur stor strömmen blir och hur
-nära de kommer varandra. Denna ström kan bli ansenlig och har man då en kabel
-som har t.ex. tunn skärm så kommer kabeln helt enkelt bli varm. Det är därför
-lämpligt att lägga en jordkabel parallellt med signalkabeln, för att låta den
-med sin större tvärsnittsarea ta merparten av strömmen och därmed undviker man
-värme och ström i signalkabeln.
+\ref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
+mellan jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en'
+ledning \(Z_{GND}\) mellan dessa punkter, och då kommer det gå en ström som
+försöker utjämna potentialen mellan de bägge jordanslutningarna, som då kommer
+närmare varandra.
+Det är impedansen \(Z_{GND}\) på kabeln som kommer att avgöra hur stor strömmen
+blir och hur nära de kommer varandra.
+Denna ström kan bli ansenlig och har man då en kabel som har t.ex. tunn skärm
+så kommer kabeln helt enkelt bli varm.
+Det är därför lämpligt att lägga en jordkabel parallellt med signalkabeln, för
+att låta den med sin större tvärsnittsarea ta merparten av strömmen och därmed
+undviker man värme och ström i signalkabeln.
 
 Med en större kabel mellan kommer spänningen sjunka och den vägen kommer
 \emph{jordbrummet} minska.
@@ -297,16 +454,20 @@ Med en större kabel mellan kommer spänningen sjunka och den vägen kommer
 Fördelen med sammankoppling av jordar är att det blir enklare (och billigare)
 att designa ur EMC-perspektiv, då man direkt kopplar jordströmmarna i chassit.
 Man har inte heller problem med att man skulle råka jorda eller att man skulle
-tappa den enda jordvägen. Istället försöker man koppla ihop jordarna väl.
+tappa den enda jordvägen.
+Istället försöker man koppla ihop jordarna väl.
 
 Ett vanligt problem är om man låter jordströmmarna gå genom kretskort, vilket
-gör att man skapar lokala problem med seriejordning. Man ska se till att
-jordströmmarna knyter hårt till chassit, men svagt genom kortet för att på det
-sättet få bästa möjliga isolation. Denna princip är också lämplig för att
-kunna hantera t.ex. ESD-skador.
+gör att man skapar lokala problem med seriejordning.
+Man ska se till att jordströmmarna knyter hårt till chassit, men svagt genom
+kortet för att på det sättet få bästa möjliga isolation.
+Denna princip är också lämplig för att kunna hantera t.ex. ESD-skador.
 
 En annan fördel är att man bygger en vana att jorda allt, och för varje
 kompletterande jordning gör man systemet starkare.
+
+En självklar fördel är att man dessutom inte bryter skyddsjord, och därmed inte
+sänker elsäkerheten på utrustningen och installationen.
 
 \subsection{Balanserad signal}
 \index{balanserad signal}
