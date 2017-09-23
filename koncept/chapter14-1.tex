@@ -596,6 +596,36 @@ betrakta spänning på de bägge ledarna, där man delar upp spänningen i det s
 är gemensamt för de bägge spänningarna och det som skiljer dem åt. Man kan
 alltså betrakta dem på detta alternativa och oberoende (ortogonala) sättet.
 
+\begin{figure}
+  \begin{center}
+    \begin{circuitikz}[american voltages]
+      % Ground reference
+      \draw (3.5,1) node[ground]{};
+      \draw (0,1) to (7,1);
+      % Source ground
+      \draw (0,4) to [american voltage source, l^=$U_{cm}$] (0,1);
+      \draw (0,4) to (2,4);
+      % Source diff
+      \draw (2,6) to [american voltage source, l^=$U_{dm}/2$] (2,4)
+      to [american voltage source, l^=$U_{dm}/2$] (2,2);
+      % Wires and load
+      \draw (2,6) to [R, l^=$Z_{signal+}$] (5,6)
+      to [R, l^=$Z_{dm}/2$, v_=$U_{dm+}$] (5,4)
+      to [R, l^=$Z_{dm}/2$, v_=$U_{dm-}$] (5,2);
+      \draw (2,2) to [R, l^=$Z_{signal-}$] (5,2);
+      \draw (2,4) to [R, l^=$Z_{GND}$] (5,4);
+      % Destination isolation
+      \draw (5,4) to (7,4);
+      % Destination ground
+      \draw (7,4) to [R, l^=$Z_{cm}$, v_=$U_{cm}$] (7,1);
+    \end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare och diffrentiell signal}
+  \label{fig:kap4-7}
+\end{figure}
+
+I bild \ref{fig:kap4-7}.
+
 Tänk om vi har två ledare med 10~V och 12~V på sig. De har en tydlig gemensam
 spänning och de har en liten skillnad. Den gemensamma spänningen är medeltalet
 och det som skiljer dem åt är då den differentiella spänningen. Om vi låter
