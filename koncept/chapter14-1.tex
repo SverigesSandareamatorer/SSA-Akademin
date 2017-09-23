@@ -219,17 +219,22 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
 
 \begin{figure}
   \begin{center}
-\begin{circuitikz}[american voltages]
-  \draw (2,0) node[ground]{};
-  \draw (1,2) to [R, l_=$Z_1$, v^=$U_1$] (1,0);
-  \draw (1,5) to [american voltage source, l_=$U_{ut}$] (1,2);
-  \draw (1,5) to [R, l^=$Z_{signal}$] (3,5)
-  to [R, l_=$Z_{load}$, v^=$U_{in}$] (3,2)
-  (1,0) to (3,0);
-  \draw (3,2) to [R, l_=$Z_2$, v^=$U_2$] (3,0);
-  \draw (0,2) to [short, i^=$I_1$] (1,2);
-  \draw (4,2) to [short, i_=$I_2$] (3,2);
-\end{circuitikz}
+    \begin{circuitikz}[american voltages]
+      % Ground reference
+      \draw (2,0) node[ground]{};
+      \draw (1,0) to (3,0);
+      % Source ground
+      \draw (1,2) to [R, l_=$Z_1$, v^=$U_1$] (1,0);
+      \draw (0,2) to [short, i^=$I_1$] (1,2);
+      % Source output
+      \draw (1,4) to [american voltage source, l_=$U_{ut}$] (1,2);
+      % Interconnect and load
+      \draw (1,4) to [R, l^=$Z_{signal}$] (3,4)
+      to [R, l_=$Z_{load}$, v^=$U_{in}$] (3,2);
+      % Destination ground
+      \draw (3,2) to [R, l_=$Z_2$, v^=$U_2$] (3,0);
+      \draw (4,2) to [short, i_=$I_2$] (3,2);
+    \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system}
   \label{fig:kap4-3}
