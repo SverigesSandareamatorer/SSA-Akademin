@@ -289,12 +289,22 @@ sekundärsidan (elektroniken).
 Genom att helt enkelt hålla signaljorden \emph{flytande} (eng.
 \emph{floating}), dvs. utan någon galvanisk koppling till skyddsjord, så kan
 man istället koppla samman signaljord på två apparater med separata ledare.
+I bild \ref{fig:kap4-4} är isolationen representerad av \(Z_5\) där spänningen
+\(U_5\) representerar spänningen mellan primär och sekundärsida.
+Den galvaniska åtskillnaden gör att den kan vara megaohm till gigaohm för
+likström, men på grund av den kapacitiva kopplingen sjunker den i praktiken
+för högre frekvenser.
 
 Om vi återgår till de bägge två apparaterna, så kan vi nu istället för att
 använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
-med en kabel parallell med signalledaren.
+med en kabel \(Z_4\) parallell med signalledaren.
 Har vi en förhållandevis låg ström genom den impedans som kabeln har så
 kommer det fungera fint.
+Eftersom \(Z_4\) kan vara några fåtal ohm medans \(Z_5\) är storleksordningen
+megaohm så för låga frekvenser kommer kabeln koppla väl, men för högre
+frekvenser kan vi förvänta oss att induktansen i \(Z_5\) ökar samtidigt som
+kapacitansen i \(Z_4\) sjunker varvid för högre frekvenser kommer \(R_3\) vara
+mer kopplad lokalt.
 
 Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
 uppstå \emph{jordbrum} i denna koppling.
@@ -318,18 +328,17 @@ egentligen bara skyddsjord på de flesta system.
 \begin{figure}
   \begin{center}
 \begin{circuitikz}[american voltages]
-  \draw
-  (0,0) to node[ground]{}
-  (0,0) to (1,0)
-  to [R, l^=$Z_1$] (1,2)
+  \draw (3,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2)
   to [american voltage source, l^=$U_{ut}$] (1,5)
   to (3,5)
   to [R, l^=$R_3$, v_=$U_3$] (3,2)
-  (1,0) to (3,0)
-  to [R, l^=$Z_2$] (3,2)
-  (1,3) to [short, i^=$I_1$] (1,2)
-  (3,3) to [short, i^=$I_2$] (3,2);
+  (1,0) to (5,0)
+  to [R, l^=$Z_2$] (5,2);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (6,2) to [short, i^=$I_2$] (5,2);
   \draw (1,2) to [R, l^=$R_4$, v_=$U_4$] (3,2);
+  \draw (3,2) to [R, l^=$Z_5$, v_=$U_5$] (5,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system med utjämningsledare}
