@@ -475,23 +475,53 @@ sänker elsäkerheten på utrustningen och installationen.
 \index{galvanisk isolation}
 
 För att ytterligare få isolation från jordbrum kan man använda en
-\emph{balanserad signal} (eng. \emph{balanced signal}). Grundprincipen är att
-man skickar samma signal två gånger, men med omvänt tecken, och sedan ta emot
-den och bara titta på skillnaden mellan dem. Skulle nu en störning introducera
-sig på dessa ledare gemensamt så påverkar detta inte skillnaden i spänning
-mellan dem.
+\emph{balanserad signal} (eng. \emph{balanced signal}).
+Grundprincipen är att man skickar samma signal två gånger, men med omvänt
+tecken, och sedan ta emot den och bara titta på skillnaden mellan dem.
+Skulle nu en störning introducera sig på dessa ledare gemensamt så påverkar
+detta inte skillnaden i spänning mellan dem.
 
-Redan tidigare har vi gjort liknande och försökt efterlikna
-egenskaperna, för redan när vi skickade en signal på en enkel ledare så skickar
-vi en spänning i förhållande till en referensspänning och vi tittar på den
-inkommande spänningen i förhållande till referensspänningen. Dock har vi haft
-problem att ha en bra gemensam sådan, och det är uppenbart att vi egentligen
-observerar skillnaden i spänning.
+\begin{figure}
+  \begin{center}
+    \begin{circuitikz}[american voltages]
+      % Ground reference
+      \draw (4,0) node[ground]{};
+      \draw (1,0) to (7,0);
+      % Source ground
+      \draw (1,0) to [R, l^=$Z_1$] (1,4);
+      \draw (0,4) to [short, i^=$I_1$] (1,4) to (2,4);
+      % Source diff
+      \draw (2,6) to [american voltage source, l^=$U_{ut}$] (2,4)
+      to [american voltage source, l^=$U_{ut}$] (2,2);
+      % Wires and load
+      \draw (2,6) to [R, l^=$Z_{signal+}$] (5,6)
+      to [R, l^=$Z_{load}/2$, v_=$U_{in+}$] (5,4)
+      to [R, l^=$Z_{load}/2$, v_=$U_{in-}$] (5,2);
+      \draw (2,2) to [R, l^=$Z_{signal-}$] (5,2);
+      \draw (2,4) to [R, l^=$Z_{GND}$] (5,4);
+      % Destination isolation
+      \draw (5,4) to [R, l^=$Z_{iso2}$, v_=$U_5$] (7,4);
+      % Destination ground
+      \draw (7,0) to [R, l^=$Z_2$] (7,4);
+      \draw (8,4) to [short, i^=$I_2$] (7,4);
+    \end{circuitikz}
+  \end{center}
+  \caption{Sammankopplat system med utjämningsledare och diffrentiell signal}
+  \label{fig:kap4-6}
+\end{figure}
+
+Redan tidigare har vi gjort liknande och försökt efterlikna egenskaperna, för
+redan när vi skickade en signal på en enkel ledare så skickar vi en spänning
+i förhållande till en referensspänning och vi tittar på den inkommande
+spänningen i förhållande till referensspänningen.
+Dock har vi haft problem att ha en bra gemensam sådan, och det är uppenbart
+att vi egentligen observerar skillnaden i spänning.
 
 Med balanserad signal tar vi steget fullt ut och separerar jord från signal
 och skickar en signal som vars summa är en fix spänning medans skillnaden är
-hela signalen. Det är som om signalen är neutral. Ofta är dock signalen av
-praktiska skäl förskjuten.
+hela signalen.
+Det är som om signalen är neutral.
+Ofta är dock signalen av praktiska skäl förskjuten.
 
 Den balanserade signalen har jord, \emph{pluspol} och \emph{minuspol}.
 \emph{Pluspolen} kallas även +, \emph{positiv polaritet}, \emph{het} (eng.
@@ -499,18 +529,29 @@ Den balanserade signalen har jord, \emph{pluspol} och \emph{minuspol}.
 \emph{minuspolen} kallas även -, \emph{negativ polaritet}, \emph{kall} (eng.
 \emph{minus pole}, \emph{negative polarity} och \emph{cold}).
 
-Transformatorer passar väl för att både generera och ta emot balanserade
+I bild \ref{fig:kap4-6} visas hur ut-spänningen \(U_{ut}\) är dubblerad och
+matar på var sin sida om jordpotentialen som  \(I_{1}\) och \(Z_{1}\) ger.
+De bägge utspänningarna är kopplade över var sin ledare \(Z_{singal+}\) och
+\(Z_{singal-}\) för att över var sin \(Z_{load}/2\) resultera i \(U_{in+}\)
+respektive \(U_{in-}\), som i sin tur sitter mot signaljorden på samma sätt
+som tidigare.
+Den egentliga in-spänningen är från \(U_{+}\) till \(U_{-}\) dvs.
+\(U_{in} = U_{+} - U_{-} = U_{in+}+U_{in-}\)
+
+Transformatorer passar väl för att både generera och ta emot b1alanserade
 signaler, då de har en \emph{galvanisk isolation} för \emph{gemensam spänning}
-men transformerar den \emph{differentiella spänningen}. Detta kan även göras med
-aktiv elektronik så som op-ampar men även färdiga kretsar finns.
+men transformerar den \emph{differentiella spänningen}.
+Detta kan även göras med aktiv elektronik så som op-ampar men även färdiga
+kretsar finns.
 
 Transformatorer har fördelen att man kan få den galvaniska skillnaden genom
-att helt enkelt bryta jordförbindelsen på ledaren. Dock, transformatorer har
-inte fulländad isolation men kan däremot ofta hantera ganska stora spänningar,
-vilket kan krävas i besvärliga sammanhang. För RF är dock transformatorer inte
-balanserade och ger dålig isolation. Förbättrad isolation hos transformatorer
-kan uppnås med ett eller två skärmlager mellan lindningarna. Skärmlagren kan
-anslutas till respektive sidas jord.
+att helt enkelt bryta jordförbindelsen på ledaren.
+Dock, transformatorer har inte fulländad isolation men kan däremot ofta hantera
+ganska stora spänningar, vilket kan krävas i besvärliga sammanhang.
+För RF är dock transformatorer inte balanserade och ger dålig isolation.
+Förbättrad isolation hos transformatorer kan uppnås med ett eller två
+skärmlager mellan lindningarna.
+Skärmlagren kan anslutas till respektive sidas jord.
 
 Aktiv elektronik för balansering har sällan galvanisk isolation, men däremot
 kan man upprätthålla hög impedans för den gemensamma spänningen, vilket kan
