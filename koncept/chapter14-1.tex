@@ -400,26 +400,26 @@ En annan strategi är \emph{sammankopplad jordning} (eng. \emph{mesh bonding}
 och \emph{mesh bonding network (mesh-BN)}) \cite[3.2.3]{K27-1991}
 där man istället för att isolera satsar på att koppla samman jordarna, hårt.
 Varje signalkabel sitter ansluten mot chassijord och därmed skyddsjord och
-man låter därmed jordarna sammankopplas. Varje apparat har en ordentlig
-jordanslutning som man ansluter till stativjord eller jordskenor. Kablar läggs
-på kabelstegar som jordas. I detta system kommer varje extra kabel att koppla
-samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
+man låter därmed jordarna sammankopplas.
+Varje apparat har en ordentlig jordanslutning som man ansluter till stativjord
+eller jordskenor.
+Kablar läggs på kabelstegar som jordas.
+I detta system kommer varje extra kabel att koppla samman jordarna hårdare,
+eftersom man parallellkopplar många impedanser.
 
 \begin{figure}
   \begin{center}
 \begin{circuitikz}[american voltages]
-  \draw
-  (0,0) to node[ground]{}
-  (0,0) to (1,0)
-  to [R, l^=$Z_1$] (1,2)
+  \draw (2,0) node[ground]{};
+  \draw (1,0) to [R, l^=$Z_1$] (1,2)
   to [american voltage source, l^=$U_{ut}$] (1,5)
-  to (3,5)
+  to [R, l^=$Z_{signal}$] (3,5)
   to [R, l^=$Z_{load}$, v_=$U_{in}$] (3,2)
   (1,0) to (3,0)
-  to [R, l^=$Z_2$] (3,2)
-  (1,3) to [short, i^=$I_1$] (1,2)
-  (3,3) to [short, i^=$I_2$] (3,2);
-  \draw (1,2) to [R, l^=$R_4$, v_=$U_4$] (3,2);
+  to [R, l^=$Z_2$] (3,2);
+  \draw (0,2) to [short, i^=$I_1$] (1,2);
+  \draw (4,2) to [short, i^=$I_2$] (3,2);
+  \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (3,2);
 \end{circuitikz}
   \end{center}
   \caption{Sammankopplat system med utjämningsledare}
@@ -428,21 +428,25 @@ samman jordarna hårdare, eftersom man parallellkopplar många impedanser.
 
 I ett system som har sammankopplad jord kommer man ofrånkomligen att behöva
 hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller även
-vagabonderande jordströmmar. Många gånger förklaras det som att man får en
-loop som agerar antenn för ett magnetfält. Det är dock sällan som ett
-magnetfält är så starkt att det inducerar flera ampere av vanlig 50~Hz ström.
+\emph{vagabonderande jordströmmar}.
+Många gånger förklaras det som att man får en loop som agerar antenn för ett
+magnetfält.
+Det är dock sällan som ett magnetfält är så starkt att det inducerar flera
+ampere av vanlig 50~Hz ström.
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
-\ref{sammankopplingavapparater}) där vi fick en skillnad av spänning mellan
-jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en ledning
-mellan dessa punkter, och då kommer det gå en ström som försöker utjämna
-potentialen mellan de bägge jordanslutningarna, som då kommer närmare varandra.
-Det är impedansen på kabeln som kommer att avgöra hur stor strömmen blir och hur
-nära de kommer varandra. Denna ström kan bli ansenlig och har man då en kabel
-som har t.ex. tunn skärm så kommer kabeln helt enkelt bli varm. Det är därför
-lämpligt att lägga en jordkabel parallellt med signalkabeln, för att låta den
-med sin större tvärsnittsarea ta merparten av strömmen och därmed undviker man
-värme och ström i signalkabeln.
+\ref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
+mellan jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en'
+ledning \(Z_{GND}\) mellan dessa punkter, och då kommer det gå en ström som
+försöker utjämna potentialen mellan de bägge jordanslutningarna, som då kommer
+närmare varandra.
+Det är impedansen \(Z_{GND}\) på kabeln som kommer att avgöra hur stor strömmen
+blir och hur nära de kommer varandra.
+Denna ström kan bli ansenlig och har man då en kabel som har t.ex. tunn skärm
+så kommer kabeln helt enkelt bli varm.
+Det är därför lämpligt att lägga en jordkabel parallellt med signalkabeln, för
+att låta den med sin större tvärsnittsarea ta merparten av strömmen och därmed
+undviker man värme och ström i signalkabeln.
 
 Med en större kabel mellan kommer spänningen sjunka och den vägen kommer
 \emph{jordbrummet} minska.
@@ -450,16 +454,20 @@ Med en större kabel mellan kommer spänningen sjunka och den vägen kommer
 Fördelen med sammankoppling av jordar är att det blir enklare (och billigare)
 att designa ur EMC-perspektiv, då man direkt kopplar jordströmmarna i chassit.
 Man har inte heller problem med att man skulle råka jorda eller att man skulle
-tappa den enda jordvägen. Istället försöker man koppla ihop jordarna väl.
+tappa den enda jordvägen.
+Istället försöker man koppla ihop jordarna väl.
 
 Ett vanligt problem är om man låter jordströmmarna gå genom kretskort, vilket
-gör att man skapar lokala problem med seriejordning. Man ska se till att
-jordströmmarna knyter hårt till chassit, men svagt genom kortet för att på det
-sättet få bästa möjliga isolation. Denna princip är också lämplig för att
-kunna hantera t.ex. ESD-skador.
+gör att man skapar lokala problem med seriejordning.
+Man ska se till att jordströmmarna knyter hårt till chassit, men svagt genom
+kortet för att på det sättet få bästa möjliga isolation.
+Denna princip är också lämplig för att kunna hantera t.ex. ESD-skador.
 
 En annan fördel är att man bygger en vana att jorda allt, och för varje
 kompletterande jordning gör man systemet starkare.
+
+En självklar fördel är att man dessutom inte bryter skyddsjord, och därmed inte
+sänker elsäkerheten på utrustningen och installationen.
 
 \subsection{Balanserad signal}
 \index{balanserad signal}
