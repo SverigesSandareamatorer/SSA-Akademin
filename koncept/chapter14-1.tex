@@ -86,18 +86,20 @@ Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 \begin{figure}
   \begin{center}
     \begin{circuitikz}[american voltages]
+      % Ground reference
       \draw (0,0) node[ground]{};
-      \draw (0,0) -- (1,0);
-      \draw (1,0)
-      to [R, l^=$Z_1$] (3,0)
-      to [R, l^=$Z_2$] (5,0)
-      to [R, l^=$Z_3$] (7,0);
-      \draw (3,1) to [short, i^=$I_1$] (3,0);
-      \draw (5,1) to [short, i^=$I_2$] (5,0);
-      \draw (7,1) to [short, i^=$I_3$] (7,0);
-      \draw (2.75,-1) to [short, <-, i=$I_1+I_2+I_3$] (1.25,-1);
-      \draw (4.75,-1) to [short, <-, i=$I_2+I_3$] (3.25,-1);
-      \draw (6.75,-1) to [short, <-, i=$I_3$] (5.25,-1);
+      % Source 1 ground
+      \draw (0,0) to [R, l^=$Z_1$] (2,0);
+      \draw (2,1) to [short, i^=$I_1$] (2,0);
+      \draw (1.75,-1) to [short, i=$I_1+I_2+I_3$] (0.25,-1);
+      % Source 2 ground
+      \draw (2,0) to [R, l^=$Z_2$] (4,0);
+      \draw (4,1) to [short, i^=$I_2$] (4,0);
+      \draw (3.75,-1) to [short, i=$I_2+I_3$] (2.25,-1);
+      % Source 3 ground
+      \draw (4,0) to [R, l^=$Z_3$] (6,0);
+      \draw (6,1) to [short, i^=$I_3$] (6,0);
+      \draw (5.75,-1) to [short, i=$I_3$] (4.25,-1);
     \end{circuitikz}
   \end{center}
   \caption{Seriekopplat jordsystem}
