@@ -64,8 +64,8 @@ det är väldigt behändigt att använda jorden som referens, helt enkelt gräva
 en ledare i marken, t.ex. jordspett (eng. \emph{earth electrode})
 \cite[kap 3.1.2]{K27-1991}, för att den vägen få tillgång till jordpotentialen.
 
-Jorden och jordning är dock ofta missförstått, det finns en övertro på att man
-kan ta ned störningar med enbart jordning.
+Begreppen jord och jordning är dock ofta missförstådda då det finns en övertro
+på att man kan ta ned störningar med enbart jordning.
 Det förekommer också att man upplever att man har problem där jorden upplevs
 skapa störningar, varvid en del felaktigt bryter jorden, och därmed
 \emph{skyddsjorden}, något man inte får göra av elsäkerhetsskäl.
@@ -73,17 +73,17 @@ skapa störningar, varvid en del felaktigt bryter jorden, och därmed
 På samma sätt tror många att man kan göra sig av med en stor växelström i
 jorden.
 Detta kallas ibland lite skämtsamt för \emph{blomjordning}, för att man inte
-tagit hänsyn till jordledarens resistans och induktans, vilket gör att
-växelström inte tar sig så långt då ledaren motarbetar den, och då kan man lika
-gärna lägga sin jordanslutning ned i en blomkruka för där gör den lika
-god nytta.
+tagit hänsyn till jordledarens resistans och induktans, vilket gör att en
+växelström inte kan ta sig så långt då ledaren motarbetar den.
+Man hade lika gärna kunnat lägga ned sin jordanslutning i en blomkruka för där
+gör den lika god nytta.
 
 Inom elkraft förekommer även termen \emph{nolla} (eng. \emph{neutral}), den
 kan lätt förväxlas med jorden, men ska hanteras separat från skyddsjord utom
 där elsäkerhetsföreskrifter föreskriver att de ska vara sammankopplade.
 Nollan är den ledare som är returledare för strömmen.
-Nollan är i TN-C system sammankopplad med skyddsjorden i elcentralen, men ut
-från elcentralen hanteras den som en separat ledare.
+I det vanligaste elsystemet \emph{TN-C}, är nollan sammankopplad med skyddsjorden
+i elcentralen, men ut från elcentralen hanteras den som en separat ledare.
 Man får inte koppla ihop dem för att spara ledare!
 Skyddsjorden skall ha väldigt lite ström på sig, och därmed även ha väldigt
 låg spänningsskillnad från jordpotentialen, men i praktiken kommer det ändå
@@ -93,8 +93,8 @@ finnas skillnader.
 
 Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 \cite[kap 3]{ott1988} mellan ett antal strömförbrukare.
-Detta förekommer t.ex. i en serie av elurtag matade från samma säkring
-eller flera elurtag i en skarvdosa.
+Detta förekommer t.ex. i en serie av eluttag matade från samma säkring
+eller flera eluttag i en skarvdosa.
 
 \begin{figure}
   \begin{center}
@@ -202,8 +202,8 @@ jordanslutningen.
 
 Dock kommer varje strömkälla uppleva en förskjutning i spänningen av
 sin jord som beror på dess egen ström och impedansen den har till jord.
-För att minska denna effekt kan en minskad strömförbrukning förstås användas,
-eller oftare med en förbättrad jord.
+För att minska denna effekt kan en minskad strömförbrukning användas
+eller oftare en förbättrad jordanslutning.
 
 Givetvis kan även varje strömförbrukare ha två jordar, parallellt.
 Elkraftsystemens användning av både \emph{skyddsjord} och \emph{nolla} är
@@ -258,8 +258,8 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
   \label{fig:kap4-3}
 \end{figure}
 
-Problemet är ju att för den första apparaten som har strömmen \(I_1\) att gå i
-anslutningsimpedansen \(Z_1\) till jorden så ger det en spänning
+Problemet är att när strömmen \(I_1\) till den första apparaten går igenom
+anslutningsimpedansen \(Z_1\) till jord så ger det en spänning
 \(U_1 = Z_1 I_1\) på den jordanslutningen.
 På samma sätt kommer den andra apparaten att uppleva jorden med en förskjutning
 av jordspänningen på \(U_2 = Z_2 I_2\).
@@ -289,7 +289,7 @@ Detta fungerar givetvis, men enbart till en viss praktisk gräns.
 
 Det här illustrerar grunden i hur \emph{jordbrum} (eng. \emph{hum}) brukar
 uppstå när man kopplar ihop två apparater.
-Själva jordbrummet kommer från kraftaggregaten, och då dess strömmar delar
+Själva jordbrummet kommer från kraftaggregaten och då deras strömmar delar
 krets med nyttosignalen så kommer \emph{överhörning} (eng. \emph{crosstalk})
 göra att brummet blir märkbart.
 Det finns givetvis många vägar för brum att störa en signal.
@@ -307,7 +307,7 @@ Det finns givetvis många vägar för brum att störa en signal.
 \index{ledningsbunden störning}
 
 En strategi för att skapa isolation från jordvägen är att helt enkelt
-isolera signalerna och dess jord från den av kraftförsörjningen, detta kallas
+isolera signalerna och deras jord från kraftförsörjningens jord, detta kallas
 för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
 	bonding network (IBN)}) \cite[kap 3.2.4]{K27-1991}.
 Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
@@ -339,7 +339,7 @@ Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
   \label{fig:kap4-4}
 \end{figure}
 
-För apparater med växelströmsmatning har man redan en transformator, som ju
+I apparater med växelströmsmatning har man redan en transformator som
 tillhandahåller en galvanisk isolation mellan primärsidan (elkraft) och
 sekundärsidan (elektroniken).
 Genom att helt enkelt hålla signaljorden \emph{flytande} (eng.
@@ -352,9 +352,9 @@ och sekundärsida.
 På liknande sätt kan isolationen på den sändande apparatens sida moduleras som
  \(Z_{iso1}\), men för detta resonemang räcker \(Z_{iso2}\).
 
-Den galvaniska åtskillnaden gör att den kan vara megaohm till gigaohm för
-likström, men på grund av den kapacitiva kopplingen mellan primär och sekundär
-sida i transformatorn sjunker den i praktiken för högre frekvenser.
+Den galvaniska åtskillnaden gör att isolationen för likström kan variera från
+megaohm till gigaohm, men på grund av den kapacitiva kopplingen mellan primär
+och sekundär sida i transformatorn sjunker isolationen med stigande frekvens.
 I praktiken kan transformatorn på grund av sin obalans driva spänningen \(U_5\)
 och därför så kan man behöva lasta dess kapacitiva källan med ett motstånd,
 varvid \(Z_{iso2}\) snarare kan vara i kiloohm.
@@ -363,14 +363,15 @@ Om vi återgår till de bägge två apparaterna, så kan vi nu istället för at
 använda oss av elnätets skyddsjord låta apparaternas signaljord vara kopplad
 med en kabel \(Z_{GND}\) parallell med signalledaren \(Z_{signal}\).
 Har vi en förhållandevis låg ström genom den impedans som kabeln har så
-kommer det fungera fint och \(U_{ut}\) kommer representeras hyfsat bra som
+kommer det fungera fint och \(U_{ut}\) kommer att representeras hyfsat bra som
 spänningen \(U_{in}\) över \(Z_{load}\).
 
-Eftersom \(Z_{GND}\) kan vara några fåtal ohm medans \(Z_{iso2}\) är
-storleksordningen megaohm så för låga frekvenser kommer kabeln koppla väl,
-men för högre frekvenser kan vi förvänta oss att induktansen i \(Z_{GND}\) ökar
-impedansen samtidigt som kapacitansen i \(Z_{iso2}\) gör att impedansen sjunker
-varvid för högre frekvenser kommer \(Z_{load}\) vara mer kopplad lokalt mot \(Z_{2}\) snarare än \(Z_{1}\).
+Eftersom \(Z_{GND}\) kan vara några fåtal ohm medans \(Z_{iso2}\) för låga
+frekvenser är i storleksordningen megaohm så kommer kabeln att koppla väl.
+För högre frekvenser kan vi förvänta oss att induktansen i kabeln ökar
+impedansen \(Z_{GND}\) samtidigt som kapacitansen gör att impedansen
+\(Z_{iso2}\)sjunker varvid för högre frekvenser kommer \(Z_{load}\) vara mer
+kopplad lokalt mot \(Z_{2}\) snarare än \(Z_{1}\).
 
 Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
 uppstå \emph{jordbrum} i denna koppling.
@@ -393,9 +394,9 @@ egentligen bara skyddsjord på de flesta system.
 
 För att isolationsjordning ska fungera måste alla kontakter vara isolerade
 från chassit.
-Även signaljord som inte får ha kontakt med chassi inuti apparaten.
-Man behöver alltså försäkra sig om isolationsavstånd, vilket väldigt lätt kan
-missas av att man har en skruv som råkar skrapa sig igenom skyddslack t.ex.
+Detta gäller även signaljord som inte får ha kontakt med chassi inuti apparaten.
+Man behöver alltså försäkra sig om bra isolationsavstånd, vilket väldigt lätt
+kan missas av att man har en skruv som råkar skrapa sig igenom skyddslack t.ex.
 
 En annan nackdel med isolationsjordning är att den gör det svårare att designa
 för god EMC-täthet.
@@ -646,13 +647,13 @@ alltså betrakta dem på detta alternativa och oberoende (ortogonala) sättet.
       \draw (7,4) to [R, l^=$Z_{g}$, v_=$U_{g}$] (7,1);
     \end{circuitikz}
   \end{center}
-  \caption{Sammankopplat system med utjämningsledare och diffrentiell signal}
+  \caption{Sammankopplat system med utjämningsledare och differentiell signal}
   \label{fig:kap4-7}
 \end{figure}
 
 I bild \ref{fig:kap4-7} har man den gemensamma spänningskällan \(U_g\), som
 från ersatt de förskjutna jordpunkterna i tidigare exempel.
-Den diffrentiella spänningen \(U_d\), dvs. den drivande spänningen mellan
+Den differentiella spänningen \(U_d\), dvs. den drivande spänningen mellan
 \(V_{ut+}\) och  \(V_{ut-}\) är fördelad på två spänningskällor som levererar
 halva spänningen var.
 
@@ -660,15 +661,15 @@ halva spänningen var.
 
 \(V_{ut-} = U_g - \frac{U_d}{2}\)
 
-Omvänt kan man formulera uttrycken för gemensam spänningsen \(U_g\) samt
-den diffrentiella spänningen \(U_d\) som \(V_{ut+}\) och \(V_{ut-}\):
+Omvänt kan man formulera uttrycken för gemensam spänningen \(U_g\) samt
+den differentiella spänningen \(U_d\) som \(V_{ut+}\) och \(V_{ut-}\):
 
 \(U_g = \frac{V_{ut+}+V_{ut-}}{2}\)
 
 \(U_d = {V_{ut+}-V_{ut-}}\)
 
 På motsvarande sätt på ingången kan man skriva uttrycken för den gemensamma
-mottagna spänningen \(U_{g,in}\) och den mottagna diffrentella spänningen
+mottagna spänningen \(U_{g,in}\) och den mottagna differentiella spänningen
 \(U_{d,in}\) baserat på inspänningarna \(V_{in+}\) och \(V_{in-}\), man får då
 
 \(V_{g,in} = \frac{V_{in+} + V_{in-}}{2}\)
@@ -679,7 +680,7 @@ Ett sätt att illustrera skillnaden är t.ex. med en transformator.
 En transformator med 1:1 lindning kopplas in mellan två balanserade signaler.
 Transformatorns primärlindning kommer att omvandla den differentiella spänningen
 \(V_d\) till en motsvarande spänning på utgången.
-Däremot kommer den gemensamma spänningen att inte överföras.
+Däremot kommer den gemensamma spänningen inte att överföras.
 Transformatorn blir då en isolator för den gemensamma spänningen precis som vi
 förväntar oss av en galvanisk isolation.
 
@@ -729,7 +730,7 @@ sidorna att ske varvid en gemensam ström kommer uppstå för högre frekvenser,
 dvs. för högre frekvenser kommer isolationen att bli sämre.
 
 Ett intressant specialfall är om vi sätter en ringkärna på vår kabel, lindar
-kabeln flera varv om den, eller bara lindar den runt luft.
+kabeln flera varv genom den, eller bara lindar den runt luft.
 Då kommer strömmen i den ena ledaren inducera en ström i den andra ledaren och
 vice versa.
 Denna koppling kan liknas vid att vrida en 1:1 transformator 90 grader fel.
@@ -771,7 +772,7 @@ Efter att ha studerat gemensam och differentiell spänning (kapitel
 kan vi sammanfattningsvis konstatera att den grundläggande metoden att omvandla
 de individuella spänningarna och strömmarna till \emph{gemensam överföring}
 (eng. \emph{common mode (CM)}) och \emph{differentiell överföring}
-(eng. \emph{diffrential mode (DM)}) är en kraftfull metod både för att
+(eng. \emph{differential mode (DM)}) är en kraftfull metod både för att
 förstå och avhjälpa problem och uppnå isolation.
 
 För spänning har vi ekvationerna
@@ -810,7 +811,7 @@ Z_{CM} = & \frac{U_{CM}}{I_{CM}}
 Egentligen är det inte så konstigt, om man har en koaxialkabel i ett 50~Ohm
 system så har sändare och mottagare idealt 50~Ohm som differentiell impedans.
 I ett system som har isolerad jordning så kan den gemensamma impedansen vara
-många MegaOhm eller högre, eftersom den ju är isolerad.
+många megaohm eller högre, eftersom den är isolerad.
 
 \subsection{Obalans}
 \index{strömbalun}
@@ -831,7 +832,7 @@ från ena polen på en spole är starkare än från den andra polen.
 Det ger därför en obalans i hur de kopplar kapacitivt.
 Genom att lägga ett skärmlager mellan lindningarna kan den kapacitiva
 kopplingen jämnas ut, då de kopplar kapacitivt till skärmlagret istället,
-som kan lågresitivt hindra koppling.
+som kan lågresistivt hindra koppling.
 En ännu bättre lösning är att ha dubbla lager med isolation, för då
 kan de kopplas mot respektive sidas jord, och kvar blir bara den kapacitiva
 kopplingen mellan jordarna, som oftast är ett mindre problem.
@@ -851,9 +852,9 @@ I en transformator med mitt-tapp kan mitt-tappen sitta lite förskjuten från
 riktiga mitten, så att anslutningen av mitt-tappen till jord skapar en
 obalans.
 
-Dessa exempel på imperfektion ska man vara medveten om, så att man inte
-tillskriver en transformator eller strömbalun en perfekt isolation av
-egenskaperna.
+Dessa exempel på brister i konstruktionen ska man vara medveten om, så att man
+inte tillskriver en transformator eller strömbalun att ha egenskaperna av en
+perfekt isolation.
 Snarare ska man förvänta sig att den inte är perfekt och anpassa sin design
 efter det.
 Många gånger kan en kombination av åtgärder ge fullgott resultat utan att vara
@@ -864,7 +865,7 @@ mindre än säg 1~mV.
 Det kräver mer än 106~dB isolation mellan 230~V differentiellt på
 primärlindningen och 1~mV gemensamt på sekundärlindningen.
 Så god balans kan vara svår att finna i enskilda komponenter.
-Principen återkommer oavsett spänning och frekvens, det är en imperfektion
+Principen återkommer oavsett spänning och frekvens, det är en brist
 man behöver lära sig att förstå och hantera.
 
 \subsection{Obalans i antennsystem}
@@ -889,7 +890,7 @@ Det är också denna ström som behöver motverkas för att operatören inte ska
 skada sig.
 Detta görs med en strömbalun, lämpligtvis en kvartsvåg ned från anslutningen
 till antennen.
-Strömbalunen motverkar ju den gemensamma strömmen utan att nämnvärt påverka
+Strömbalunen motverkar den gemensamma strömmen utan att nämnvärt påverka
 den differentiella, så det är ett fint exempel på en bra åtgärd.
 
 De allra flesta antenner har en annan impedans i matningspunkten än vad dess
