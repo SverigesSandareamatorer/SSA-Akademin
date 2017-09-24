@@ -1,9 +1,9 @@
 \section{Antenner -- allmänt}
 \index{antenner}
 
-Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt
-utan ett effektivt antennsystem. Det är en huvudförutsättning för
-framgångsrik radiokommunikation.
+Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt utan ett
+effektivt antennsystem.
+Det är en huvudförutsättning för framgångsrik radiokommunikation.
 
 Antennen omsätter elektrisk energi från sändaren till
 elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
@@ -11,11 +11,9 @@ elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
 Vid mottagning fångar antennen upp radiovågorna och omsätter dem till
 elektriska signaler som förs till mottagaren.
 
-Antennsystemet består av den egentliga antennen och
-transmissionsledningen mellan denna och sändaren respektive
-mottagaren. I antennsystemet ingår även impedansanpassningar,
-antennkopplare m.m.
-
+Antennsystemet består av den egentliga antennen och transmissionsledningen
+mellan denna och sändaren respektive mottagaren.
+I antennsystemet ingår även impedansanpassningar, antennkopplare m.m.
 
 \subsubsection{Våghastighet}
 \label{ljushastigheten}
@@ -25,20 +23,22 @@ antennkopplare m.m.
 \index{permabilitetetskonstant}
 \index{frekvens}
 
-I vakuum breder elektromagnetiska vågor ut sig med hastigheten
-\(c_0\), vilken mest kallas ljushastigheten.
+I vakuum breder elektromagnetiska vågor ut sig med hastigheten \(c_0\), vilken
+mest kallas ljushastigheten.
+Den är i SI systemet \cite{SIbrochure8} fastställd till
 
-\[c_0 \approx 300 \cdot 10^6 \text{ [m/s]}\]
+\[c_0 = 299 792 458 \approx 300 \cdot 10^6 \text{ [m/s]}\]
 
-I andra media än vakuum har samma vågor utbredningshastigheten
-\(c\). Formeln är då
+I andra media än vakuum har samma vågor utbredningshastigheten \(c\).
+Formeln är då
 
-\[c = \frac{c_0}{\sqrt{µ_o \cdot \varepsilon_r}}\]
+\[c = \frac{c_0}{\sqrt{\mu_r \cdot \varepsilon_r}}\]
 
-där \(µ_0\) är relativa permeabilitetskonstanten och \(\varepsilon_0\)
-är relativa dielektricitetskonstanten för det medium som vågorna
-passerar igenom.  För enkelhetens skull sätts här \(µ_0\) och
-\(\varepsilon_0\) till 1, alltså \(c_0 = c\).
+där \(\mu_r\) är relativa permeabilitetskonstanten och \(\varepsilon_r\)
+är relativa dielektricitetskonstanten för det medium som vågorna passerar
+igenom.
+För enkelhetens skull sätts här \(\mu_r\) och \(\varepsilon_r\) till 1,
+alltså \(c_0 = c\).
 
 Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
 
@@ -54,13 +54,13 @@ och våglängden således
 \index{elektrisk längd}
 \index{antenn!elektrisk längd}
 
-Längden för en resonant, ideal antenn som är en våglängd lång kan
-beräknas med ovanstående formel. Vi kallar denna längd för den
-\emph{elektriska} längden. Således \(l_e = \lambda\).
+Längden för en resonant, ideal antenn som är en våglängd lång kan beräknas med
+ovanstående formel.
+Vi kallar denna längd för den \emph{elektriska längden}.
+Således \(l_e = \lambda\).
 
-Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\))
-är hälften av den elektriska längden för en helvågsantenn
-(\(\lambda\)):
+Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\)) är hälften
+av den elektriska längden för en helvågsantenn (\(\lambda\)):
 
 \[l_e = \frac{c}{2f} \quad \text{[m]}\]
 
@@ -440,7 +440,7 @@ Se kapitel \ref{decibel} om decibelbegreppet.
 Exempel på beräkning av antennvinst:
 
 \begin{align*}
-  U_f &= 40\text{ µV} \quad U_d = 20\text{ µV} \quad G =\ ? \\
+  U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
 \end{align*}
@@ -532,7 +532,7 @@ referensfältstyrkan \(U_b\) i backriktningen
 Exempel 1:
 
 \begin{align*}
-  U_f &= 40 \text{ µV} \quad U_b = 4\text{ µV} \quad F/B =\ ? \\
+  U_f &= 40 \text{ \(\mu V\)} \quad U_b = 4\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log{40}{4} \\
   &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]} \\
 \end{align*}
@@ -543,7 +543,7 @@ Exempel 1:
 Exempel 2:
 
 \begin{align*}
-  U_f &= 15 \text{ µV} \quad U_b = 15\text{ µV} \quad F/B =\ ? \\
+  U_f &= 15 \text{ \(\mu V\)} \quad U_b = 15\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
 \end{align*}
