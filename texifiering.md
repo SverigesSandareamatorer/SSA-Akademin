@@ -134,5 +134,9 @@ någorlunda vettig LaTeX.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
 
+21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som UNICODE tecken
+    utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
+    u) i Math-environment. Det visar sig att UNICODE inte rendrerar rätt för
+    alla dessa.
 
-
+22. Tecknet för grader ° skall kodas som \degree.

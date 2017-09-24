@@ -811,8 +811,8 @@ kan användas och kallas då för \emph{fyrnivå fasskiftmodulation} (eng
 Istället för 180 graders fas-skift (0 och 180 grader) som 2-PSK/BPSK använder
 så använder man 360/4 dvs. 90 graders fas-skift mellan symbolerna.
 Ett effektivt sätt att avkoda det är att göra \emph{kvadratur-modulering}
-(eng \emph{quadrature modulation}) där man modulerar en signal till två
-komponenter, i fas (eng \emph{In Phase (I)}) och kvadratur (eng
+(eng. \emph{quadrature modulation}) där man modulerar en signal till två
+komponenter, i fas (eng. \emph{In Phase (I)}) och kvadratur (eng.
 \emph{Quadrature (Q)}), ofta kallat I/Q modulering.
 
 De fyra fas-lägena kan nu enkelt förklaras som amplituder i de olika fas-lägena
@@ -920,10 +920,10 @@ modulation.
 \index{informationsöverföringskapacitet}
 \index{bit rate}
 
-Informationen som vi skickar har vi kodat i bitar (eng \emph{bit (b)}),
+Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit (b)}),
 \emph{informationsmängden} vi har är därför ett visst antal bitar och takten på
 denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
-(eng \emph{bit rate}) i bitar per sekund.
+(eng. \emph{bit rate}) i bitar per sekund.
 
 Ofta brukar vi referera till informationsmängden i mängden \emph{byte (B)}
 som t.ex. att en fil är 2~kB eller en bild är 1,25~MB. Då en byte innehåller
@@ -961,7 +961,7 @@ symbol-tillfälle bär alltså 1, 2 eller 3 bitar information. Strikt räknat
 anger antalet bitar som en symbol kan bära. 3 nivåer brukar sägas kunna bära
 1,5 bitar, vilket är en slarvig approximation men visar principen.
 
-Den takt varmed symboler överförs, \emph{symbol-takten} (eng \emph{symbol rate})
+Den takt varmed symboler överförs, \emph{symbol-takten} (eng. \emph{symbol rate})
 benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{Baud (Bd)}.
 Enheten Baud (förkortat Bd) anger antalet symboler per sekund. Genom att
 multiplicera antalet symboler per sekund med antalet bitar per symbol fås
@@ -1102,7 +1102,7 @@ En enkel åtgärd för att hantera när man konstaterat att ett block data man
 tagit emot har fel, är att begära omsändning. Genom att sändaren håller en
 buffert med meddelanden som den skickat, och mottagaren meddelar sändare om
 den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
-realiseras. Automatisk omsändningsbegäran (eng \emph{Automatic Repeat reQuest
+realiseras. Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest
 (ARQ)}) är en typ av protokoll som gör automatisk omsändingsbegäran om ett
 enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
 försvunnit. Ett sådant protokoll är TCP, som ingår i internet-sviten av TCP/IP
@@ -1129,4 +1129,3 @@ sänder samma tecken två gånger. Liknande används i Bluetooth där meddelande
 sänds tre gånger, varvid man kan göra majoritets-röstning.
 
 Andra system för FEC är Hamming-koder, paritets-paket, Reed-Solomon (RS) osv.
-

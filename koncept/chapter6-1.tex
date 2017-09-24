@@ -1,9 +1,9 @@
 \section{Antenner -- allmänt}
 \index{antenner}
 
-Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt
-utan ett effektivt antennsystem. Det är en huvudförutsättning för
-framgångsrik radiokommunikation.
+Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt utan ett
+effektivt antennsystem.
+Det är en huvudförutsättning för framgångsrik radiokommunikation.
 
 Antennen omsätter elektrisk energi från sändaren till
 elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
@@ -11,11 +11,9 @@ elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
 Vid mottagning fångar antennen upp radiovågorna och omsätter dem till
 elektriska signaler som förs till mottagaren.
 
-Antennsystemet består av den egentliga antennen och
-transmissionsledningen mellan denna och sändaren respektive
-mottagaren. I antennsystemet ingår även impedansanpassningar,
-antennkopplare m.m.
-
+Antennsystemet består av den egentliga antennen och transmissionsledningen
+mellan denna och sändaren respektive mottagaren.
+I antennsystemet ingår även impedansanpassningar, antennkopplare m.m.
 
 \subsubsection{Våghastighet}
 \label{ljushastigheten}
@@ -25,20 +23,22 @@ antennkopplare m.m.
 \index{permabilitetetskonstant}
 \index{frekvens}
 
-I vakuum breder elektromagnetiska vågor ut sig med hastigheten
-\(c_0\), vilken mest kallas ljushastigheten.
+I vakuum breder elektromagnetiska vågor ut sig med hastigheten \(c_0\), vilken
+mest kallas ljushastigheten.
+Den är i SI systemet \cite{SIbrochure8} fastställd till
 
-\[c_0 \approx 300 \cdot 10^6 \text{ [m/s]}\]
+\[c_0 = 299 792 458 \approx 300 \cdot 10^6 \text{ [m/s]}\]
 
-I andra media än vakuum har samma vågor utbredningshastigheten
-\(c\). Formeln är då
+I andra media än vakuum har samma vågor utbredningshastigheten \(c\).
+Formeln är då
 
-\[c = \frac{c_0}{\sqrt{µ_o \cdot \varepsilon_r}}\]
+\[c = \frac{c_0}{\sqrt{\mu_r \cdot \varepsilon_r}}\]
 
-där \(µ_0\) är relativa permeabilitetskonstanten och \(\varepsilon_0\)
-är relativa dielektricitetskonstanten för det medium som vågorna
-passerar igenom.  För enkelhetens skull sätts här \(µ_0\) och
-\(\varepsilon_0\) till 1, alltså \(c_0 = c\).
+där \(\mu_r\) är relativa permeabilitetskonstanten och \(\varepsilon_r\)
+är relativa dielektricitetskonstanten för det medium som vågorna passerar
+igenom.
+För enkelhetens skull sätts här \(\mu_r\) och \(\varepsilon_r\) till 1,
+alltså \(c_0 = c\).
 
 Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
 
@@ -54,13 +54,13 @@ och våglängden således
 \index{elektrisk längd}
 \index{antenn!elektrisk längd}
 
-Längden för en resonant, ideal antenn som är en våglängd lång kan
-beräknas med ovanstående formel. Vi kallar denna längd för den
-\emph{elektriska} längden. Således \(l_e = \lambda\).
+Längden för en resonant, ideal antenn som är en våglängd lång kan beräknas med
+ovanstående formel.
+Vi kallar denna längd för den \emph{elektriska längden}.
+Således \(l_e = \lambda\).
 
-Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\))
-är hälften av den elektriska längden för en helvågsantenn
-(\(\lambda\)):
+Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\)) är hälften
+av den elektriska längden för en helvågsantenn (\(\lambda\)):
 
 \[l_e = \frac{c}{2f} \quad \text{[m]}\]
 
@@ -194,7 +194,7 @@ låg eftersom spänningen är låg där och strömmen hög. Ute i ändarna är
 däremot impedansen hög eftersom spänningen där är hög och strömmen
 låg.
 
-Impedansen i mittpunkten är 73~Ω på grundfrekvensen, när antennen mätt
+Impedansen i mittpunkten är 73~\(\Omega\) på grundfrekvensen, när antennen mätt
 i våglängder befinner sig mycket högt över jordytan, d.v.s. utan
 nämnvärd påverkan från omgivningen. I praktiken kan impedansen avvika
 mycket från detta värde.
@@ -229,23 +229,23 @@ avsnitt \ref{transmissionsledningar} i detta kapitel.
 Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet med
 mittmatade partier på 2:a harmoniska övertonen, d.v.s. dubbla
 grundfrekvensen. På 80- och 40~m-banden är antennens matningsimpedans
-ca 60~Ω och på de högre banden ca 120~Ω. En kompromiss är att mata
-denna antenn med en 75~Ω-kabel för att inte få alltför stor
+ca 60~\(\Omega\) och på de högre banden ca 120~\(\Omega\). En kompromiss är att mata
+denna antenn med en 75~\(\Omega\)-kabel för att inte få alltför stor
 missanpassning på något band.
 
 \emph{Den omvikta dipolen (folded dipole):}
-Matningsimpedansen är ca 240~Ω. En bandkabel med impedansen 300~Ω kan
-användas alternativt en koaxialkabel med impedansen 50 eller 75~Ω över
+Matningsimpedansen är ca 240~\(\Omega\). En bandkabel med impedansen 300~\(\Omega\) kan
+användas alternativt en koaxialkabel med impedansen 50 eller 75~\(\Omega\) över
 en transformator med impedansomsättningen 4:1.
 
-\emph{Jordplanantennen (GP-antennen):} Matningsimpedansen är 30--60~Ω.
+\emph{Jordplanantennen (GP-antennen):} Matningsimpedansen är 30--60~\(\Omega\).
 När jordplanets spröt inte riktas horisontellt, utan snett nedåt,
-erhålls en matningsimpedans av 50~Ω, vilket passar bra för en
-koaxialkabel med 50~Ω impedans.
+erhålls en matningsimpedans av 50~\(\Omega\), vilket passar bra för en
+koaxialkabel med 50~\(\Omega\) impedans.
 
 \emph{Yagi- och Quad-antenner:} En anpassningsanordning för anslutning
-av 50--60~Ω koaxialkabel ingår oftast i fabriksgjorda
-riktantenner. En 50--60~Ω koaxialkabel kan då användas direkt.
+av 50--60~\(\Omega\) koaxialkabel ingår oftast i fabriksgjorda
+riktantenner. En 50--60~\(\Omega\) koaxialkabel kan då användas direkt.
 
 \subsubsection{Reaktansen i en icke-resonant antenn}
 \textbf{
@@ -330,10 +330,10 @@ Ett sändarslutsteg med elektronrör är vanligen utrustat med en
 vid HF-utgången. Syftet är att kunna anpassa
 sändarens utgångsimpedans till impedansen i antennledningen. I moderna
 sändare består denna anordning mycket ofta av ett s.k. π-filter, vars
-utgångsimpedans kan variera mellan ca 30--150~Ω.
+utgångsimpedans kan variera mellan ca 30--150~\(\Omega\).
 
 Ett transistoriserat slutsteg är oftast utfört för en fast
-utgångsimpedans av 50~Ω och är alltså i behov av en
+utgångsimpedans av 50~\(\Omega\) och är alltså i behov av en
 avstämningsanordning, om inte antennsystemet inom vissa gränser håller
 samma impedans. Toleransgränsen för felanpassning brukar vara ett SVF
 av storleksordningen 2:1 innan sändarens skyddskretsar styr ner
@@ -440,7 +440,7 @@ Se kapitel \ref{decibel} om decibelbegreppet.
 Exempel på beräkning av antennvinst:
 
 \begin{align*}
-  U_f &= 40\text{ µV} \quad U_d = 20\text{ µV} \quad G =\ ? \\
+  U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
 \end{align*}
@@ -532,7 +532,7 @@ referensfältstyrkan \(U_b\) i backriktningen
 Exempel 1:
 
 \begin{align*}
-  U_f &= 40 \text{ µV} \quad U_b = 4\text{ µV} \quad F/B =\ ? \\
+  U_f &= 40 \text{ \(\mu V\)} \quad U_b = 4\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log{40}{4} \\
   &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]} \\
 \end{align*}
@@ -543,7 +543,7 @@ Exempel 1:
 Exempel 2:
 
 \begin{align*}
-  U_f &= 15 \text{ µV} \quad U_b = 15\text{ µV} \quad F/B =\ ? \\
+  U_f &= 15 \text{ \(\mu V\)} \quad U_b = 15\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
 \end{align*}
@@ -574,7 +574,7 @@ Bild \ref{fig:bildII6-10}
 
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 (fältstyrkan) är minst hälften så stor som den största nyttospänningen
-\(U_f\). Spänningshalvvärdesbredden på en dipol är ungefär 90°.
+\(U_f\). Spänningshalvvärdesbredden på en dipol är ungefär 90\degree.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_6-10.pdf}
@@ -587,7 +587,7 @@ Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 HAREC a.\ref{HAREC.a.6.2.6}\label{myHAREC.a.6.2.6}
 }
 
-\emph{Antennarea} (eng \emph{capture area}) är den area som parabolantenner
+\emph{Antennarea} (eng. \emph{capture area}) är den area som parabolantenner
 och horn har. Antenngainet (G) beror antennarean (\(A_{phy}\)), effektiviteten
 (\(e_a\)) och våglängden (\(\lambda\)) enligt
 

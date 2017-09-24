@@ -150,7 +150,7 @@ En speciell tillämpning av spänningsdelare är en s.k. brygga (Wheatstones
 brygga), som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
-potentiometer med en skala graderad t.ex. i Ω. Den andra spänningsdelaren består
+potentiometer med en skala graderad t.ex. i \(\Omega\). Den andra spänningsdelaren består
 av en resistor med känd resistans och en resistor med okänd resistans, d.v.s.
 mätobjektet.
 
@@ -200,11 +200,11 @@ enskilda kapacitanserna.
 
 Räkneexempel:
 \begin{enumerate}
-\item \(C_1 = 5\ µF \quad C_2 = 10\ µF \quad C =\ ?\)
+\item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
   \begin{align*}
     C &= C_1 + C_2 \\
     &= 5 + 10 \\
-    &= 15\ µF
+    &= 15\ \mu F
   \end{align*}
 \item \(C_1 = 1\ nF \quad C_2 = 5\ pF \quad C =\ ?\)
   \begin{align*}
@@ -258,13 +258,13 @@ För tre kapacitanser gäller:
 Räkneexempel:
 
 \begin{enumerate}
-  \item \(C_1 = 5\ µF \quad C_2 = 10\ µF \quad C =\ ?\)
+  \item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\
       C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\
-      &= \frac{5 \cdot 10}{5 + 10}\ µF \\
-      &= 3\frac{1}{3}\ µF \\
-      &\approx 3,33\ µF
+      &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\
+      &= 3\frac{1}{3}\ \mu F \\
+      &\approx 3,33\ \mu F
     \end{align*}
 \end{enumerate}
 
@@ -357,27 +357,29 @@ Formel:
 
 Räkneexempel:
 
-Två induktorer har en impedans av 20 resp. 10~µH och en ömsesidig induktans av
-2~µH. Induktorerna är kopplade och placerade så att deras magnetfält verkar med
+Två induktorer har en impedans av 20 resp. 10~\(\mu H\) och en ömsesidig
+induktans av 2~\(\mu H\).
+Induktorerna är kopplade och placerade så att deras magnetfält verkar med
 varandra.
 
-Vardera induktansen ökas därför med \(M = 2\ µH\).
+Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 
 \begin{align*}
   L &= L_1 + M + L_2 + M \\
-  &= 20 + 2 + 10 + 2\ µH \\
-  &= 34\ µH
+  &= 20 + 2 + 10 + 2\ \mu H \\
+  &= 34\ \mu H
 \end{align*}
 
 Räkneexempel:
-Två induktorer har en impedans av 20 resp 10~µH och en ömsesidig induktans av
-2~µH. Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
-varandra. Vardera induktansen minskas därför med \(M = 2\ µH\).
+Två induktorer har en impedans av 20 resp 10~\(\mu H\) och en ömsesidig
+induktans av 2~\(\mu H\).
+Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
+varandra. Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 
 \begin{align*}
   L &= L_1 - M + L_2 - M \\
-  & = 20 - 2 + 10 - 2\ µH \\
-  &= 28\ µH
+  & = 20 - 2 + 10 - 2\ \mu H \\
+  &= 28\ \mu H
 \end{align*}
 
 \emph{Magnetiskt kopplade induktorer i parallell}
@@ -422,7 +424,7 @@ som kallas tidskonstant:
 \begin{gather*}
   \tau = R \cdot C \\
   \tau\ [\text{tidskonstant i sek}] \\  
-  C\ [\text{F}] \quad R\ [Ω]
+  C\ [\text{F}] \quad R\ [\Omega]
 \end{gather*}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
@@ -472,13 +474,13 @@ Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
-\item \(C = 10\ µF \quad R = 1 kΩ \quad \tau =\ ?\)
+\item \(C = 10\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
     &= 10 \cdot 10^{-3} \quad \text{dvs var 1/100 sekund.}
   \end{align*}
-\item \(C = 1000\ µF \quad R = 1 kΩ \quad \tau =\ ?\)
+\item \(C = 1000\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10^3 \cdot 10^{-6} \\
@@ -523,7 +525,7 @@ som kallas tidskonstant
 
 \[
 L\ [\text{H}] \quad
-R\ [Ω] \quad
+R\ [\Omega] \quad
 s\ [\text{sek}] \quad
 \tau\ [\text{tidskonstant}]
 \]
@@ -597,7 +599,7 @@ när de kombineras och kopplas till en växelströmkälla.
 Bild \ref{fig:BildII3-11}
 
 Bilden visar amplituden av spänning och ström vid ett sinusformat förlopp samt
-den effekt som då utvecklas. Tidsaxeln är graderad 0--360° per period.
+den effekt som då utvecklas. Tidsaxeln är graderad 0--360\degree per period.
 
 \emph{Fall a:} Förloppen med en resistor R.
 
@@ -623,10 +625,10 @@ Strömmen fördröjs alltså i förhållande till spänningen. Eftersom kurvorna
 och nollvärden inträffar vid olika tidpunkter, så heter det att de är
 \emph{ur fas} eller \emph{fasförskjutna}.
 
-En växelström genom en ideal induktor är förskjuten 90° \emph{efter}
-spänningen. Strömmen når toppvärdet vid tidpunkten 90° av perioden, när
+En växelström genom en ideal induktor är förskjuten 90\degree \emph{efter}
+spänningen. Strömmen når toppvärdet vid tidpunkten 90\degree av perioden, när
 spänningen nått ner till noll. När spänningen minskar, så sjunker strömmen och
-tar med sig energin i magnetfältet. Först vid 180°, när spänningen har nått
+tar med sig energin i magnetfältet. Först vid 180\degree, när spänningen har nått
 maxvärdet åt andra hållet, ändrar också strömmen riktning och bygger upp ett
 nytt magnetfält med motsatt polaritet.
 
@@ -640,9 +642,9 @@ Sett över en hel period upphäver därför dessa effekter varandra. Följden bl
 att en ideal induktor, i motsats till en resistor, inte förbrukar någon aktiv
 effekt. Man säger att en reaktans, här en induktor, arbetar med reaktiv effekt.
 
-I praktiken har kretsen även en viss resistans. Därför sätts reaktansens 90°
-fasförskjutna ström samman med resistansens 0° fasförskjutna ström. Resultatet
-blir en ström, som är mindre än 90° ur fas, och det förbrukas då en viss aktiv
+I praktiken har kretsen även en viss resistans. Därför sätts reaktansens 90\degree
+fasförskjutna ström samman med resistansens 0\degree fasförskjutna ström. Resultatet
+blir en ström, som är mindre än 90\degree ur fas, och det förbrukas då en viss aktiv
 effekt i resistansen.
 
 
@@ -653,13 +655,13 @@ inkopplingen laddar strömmen upp kondensatorn, d.v.s. bygger upp ett elektriskt
 fält med en viss potential (spänning). Spänningen utvecklas långsammare än
 strömmen -- den blir \emph{fasförskjuten}.
 
-Strömmen till (och från) en ideal kondensator är fasförskjuten 90° före
+Strömmen till (och från) en ideal kondensator är fasförskjuten 90\degree före
 spänningen. När kondensatorn är kopplad till en växelströmskälla, når strömmen
-toppvärdet vid tidpunkten 90° eller 270° av perioden. Spänningen passerar då i
+toppvärdet vid tidpunkten 90\degree eller 270\degree av perioden. Spänningen passerar då i
 båda fallen värdet noll. När spänningen minskar, så sjunker strömmen och tar
 energi ur det elektriska fältet.
 
-Sedan strömmen passerat noll vid 180° eller 0°/360°, bygger den upp ett nytt
+Sedan strömmen passerat noll vid 180\degree eller 0\degree/360\degree, bygger den upp ett nytt
 elektriskt fält med motsatt polaritet.
 
 Liksom med en induktor överförs effekt från strömkällan till kondensatorn när
@@ -673,9 +675,9 @@ att en ideal kondensator, i motsats till en resistor, inte förbrukar någon
 aktiv effekt. Man säger då, att en reaktans, här en kondensator, arbetar med
 \emph{reaktiv} effekt.
 
-I praktiken har kretsen även en viss resistans. Därför sätts reaktansens 90°
-fasförskjutna spänning samman med resistansens 0° fasförskjutna ström.
-Resultatet blir en spänning, som är mindre än 90° ur fas, och det förbrukas då
+I praktiken har kretsen även en viss resistans. Därför sätts reaktansens 90\degree
+fasförskjutna spänning samman med resistansens 0\degree fasförskjutna ström.
+Resultatet blir en spänning, som är mindre än 90\degree ur fas, och det förbrukas då
 en viss aktiv effekt i resistansen. Som framgår av bilden blir variationerna i
 tiden de omvända med kondensator jämfört med induktor.
 
@@ -742,10 +744,10 @@ Vi tänker oss att vektorerna i systemet vrider sig moturs med hastigheten
 Eftersom vektorerna har samma frekvens, så är vektorernas lägen inbördes samma.
 Ögonblicksvärdet av respektive vektorer följer en sinuskurva.
 
-Spänningsvektorn i den ''induktiva reaktansen'' ligger 90° före strömmen och
+Spänningsvektorn i den ''induktiva reaktansen'' ligger 90\degree före strömmen och
 spänningen i resistansen. Spänningsvektorn i den ''kapacitiva reaktansen''
-ligger 90° efter strömmen och spänningen i resistansen. Vektorerna i dessa två
-reaktanser är således \(2 \cdot 90 = 180°\) åtskilda, d.v.s. motriktade.
+ligger 90\degree efter strömmen och spänningen i resistansen. Vektorerna i dessa två
+reaktanser är således \(2 \cdot 90 = 180\degree\) åtskilda, d.v.s. motriktade.
 Det kallas att de är i motfas.
 
 \begin{figure}
@@ -812,7 +814,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 }
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
-\(X\). I båda fallen är sorten Ohm [\(Ω\)].
+\(X\). I båda fallen är sorten Ohm [\(\Omega\)].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -879,8 +881,8 @@ I en parallellkopplad LC-krets är spänningen över induktans och kapacitans
 densamma. Spänningsvektorn \(U\) används därför som s.k. riktfas.
 
 Riktfasen ritas på bilden åt höger. Strömmen \(I_C\) genom kondensatorn är
-fasförskjuten 90° efter \(U\) och ritas rakt neråt (vektorerna roterar motsols).
-Strömmen \(I_L\) genom induktorn är fasförskjuten 90° före \(U\) och ritas rakt
+fasförskjuten 90\degree efter \(U\) och ritas rakt neråt (vektorerna roterar motsols).
+Strömmen \(I_L\) genom induktorn är fasförskjuten 90\degree före \(U\) och ritas rakt
 uppåt. Den resulterande reaktiva strömmen genom kretsen är skillnaden mellan
 strömmarna \(I_C\) och \(I_L\), vilka är motriktade varandra.
 
@@ -949,9 +951,9 @@ resistanser.
 Strömmen I är samma genom hela kretsen och strömvektorn I används därför som
 s.k. riktfas. Den ritas i bilden åt höger. Om serieresistansen R varit med, så
 skulle ett spänningsfall \(U_R\) varit inritad i samma riktning som I
-(i fas med I). Spänningen över reaktansen \(X_C\) ligger 90° efter I och ritad
+(i fas med I). Spänningen över reaktansen \(X_C\) ligger 90\degree efter I och ritad
 rakt neråt (vektorerna roterar motsols). Spänningen över reaktansen \(X_L\)
-(induktorn) ligger 90° före I och ritad rakt uppåt.
+(induktorn) ligger 90\degree före I och ritad rakt uppåt.
 
 \subsection{Thomsons svängningskrets}
 \textbf{HAREC a.\ref{HAREC.a.3.2.4}\label{myHAREC.a.3.2.4}}
@@ -1027,7 +1029,7 @@ Räkneexempel:
 
 En enkel framställning görs av hur impedans, reaktans och resistans förhåller
 sig inbördes när en svängningskrets är i resonans. Som exempel används följande
-kretsdata: Induktans 200~µH, kapacitans 200~pF, förlustresistans 10~Ω.
+kretsdata: Induktans 200~\(\mu H\), kapacitans 200~pF, förlustresistans 10~\(\Omega\).
 
 \subsubsection{Resonansfallet i en parallellkrets}
 \label{parallellresonans}
@@ -1105,7 +1107,7 @@ När en seriekrets är i resonans, så är
 & X_L - X_C = 0 \quad & \text{d.v.s.} \quad \omega L - \frac{1}{\omega C} = 0
 \end{align*}
 
-Med ovanstående kretsdata blir Z = 100~kΩ.
+Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
 
 Därav framgår, att impedansen i parallellkretsen är en funktion av det s.k.
 L/C-förhållandet samt av kretsens resistiva förluster.
@@ -1116,16 +1118,16 @@ Med ovanstående kretsdata blir resonansfrekvensen:
 f_0 = \frac{1}{2π\sqrt{LC}} \approx 796\ kHz
 \]
 
-Vid resonansfrekvensen blir reaktansen 1000~Ω både för induktansen och
+Vid resonansfrekvensen blir reaktansen 1000~\(\Omega\) både för induktansen och
 kapacitansen. Eftersom reaktansernas spänningsfall är motriktade tar de ut
 varandra. Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
 Antag att det alstras en spänning av 5~mV i antennkretsen. Strömmen genom den
-vid resonans blir då \(\frac{5\ mV}{10\ Ω} = 0,5\ mA\).
+vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
 
 Av strömmen bildas reaktiva spänningar, d.v.s.
-\(0,5 mA \cdot 1000\ Ω = 500\ mV\) både över induktans och kapacitans (som tar
+\(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans (som tar
 ut varandra) och 5~mV över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
