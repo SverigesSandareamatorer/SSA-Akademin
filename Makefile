@@ -1,10 +1,10 @@
 DOCKER_IMAGE_NAME=	ssa-koncept
 
-all:	koncept.pdf
-all:	matterep.pdf
+all:	koncept.pdf TODOs
+#all:	matterep.pdf
 #all:	koncept-alpha.pdf
-all:	koncept-larobok.pdf
-all:	koncept-refbok.pdf
+#all:	koncept-larobok.pdf
+#all:	koncept-refbok.pdf
 
 .PHONY:	*.pdf
 
@@ -133,6 +133,7 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	grep -n TODO *.tex koncept/*.tex > TODOs
 	grep HAREC koncept.log >> TODOs
 #	grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
+	grep Missing koncept.log >> TODOs
 	wc -l TODOs
 
 # Länkade bilder

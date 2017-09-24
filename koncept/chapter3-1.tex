@@ -150,7 +150,7 @@ En speciell tillämpning av spänningsdelare är en s.k. brygga (Wheatstones
 brygga), som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
-potentiometer med en skala graderad t.ex. i Ω. Den andra spänningsdelaren består
+potentiometer med en skala graderad t.ex. i \(\Omega\). Den andra spänningsdelaren består
 av en resistor med känd resistans och en resistor med okänd resistans, d.v.s.
 mätobjektet.
 
@@ -424,7 +424,7 @@ som kallas tidskonstant:
 \begin{gather*}
   \tau = R \cdot C \\
   \tau\ [\text{tidskonstant i sek}] \\  
-  C\ [\text{F}] \quad R\ [Ω]
+  C\ [\text{F}] \quad R\ [\Omega]
 \end{gather*}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
@@ -474,13 +474,13 @@ Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
-\item \(C = 10\ \mu F \quad R = 1 kΩ \quad \tau =\ ?\)
+\item \(C = 10\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
     &= 10 \cdot 10^{-3} \quad \text{dvs var 1/100 sekund.}
   \end{align*}
-\item \(C = 1000\ \mu F \quad R = 1 kΩ \quad \tau =\ ?\)
+\item \(C = 1000\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10^3 \cdot 10^{-6} \\
@@ -525,7 +525,7 @@ som kallas tidskonstant
 
 \[
 L\ [\text{H}] \quad
-R\ [Ω] \quad
+R\ [\Omega] \quad
 s\ [\text{sek}] \quad
 \tau\ [\text{tidskonstant}]
 \]
@@ -814,7 +814,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 }
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
-\(X\). I båda fallen är sorten Ohm [\(Ω\)].
+\(X\). I båda fallen är sorten Ohm [\(\Omega\)].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -1029,7 +1029,7 @@ Räkneexempel:
 
 En enkel framställning görs av hur impedans, reaktans och resistans förhåller
 sig inbördes när en svängningskrets är i resonans. Som exempel används följande
-kretsdata: Induktans 200~\(\mu H\), kapacitans 200~pF, förlustresistans 10~Ω.
+kretsdata: Induktans 200~\(\mu H\), kapacitans 200~pF, förlustresistans 10~\(\Omega\).
 
 \subsubsection{Resonansfallet i en parallellkrets}
 \label{parallellresonans}
@@ -1107,7 +1107,7 @@ När en seriekrets är i resonans, så är
 & X_L - X_C = 0 \quad & \text{d.v.s.} \quad \omega L - \frac{1}{\omega C} = 0
 \end{align*}
 
-Med ovanstående kretsdata blir Z = 100~kΩ.
+Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
 
 Därav framgår, att impedansen i parallellkretsen är en funktion av det s.k.
 L/C-förhållandet samt av kretsens resistiva förluster.
@@ -1118,16 +1118,16 @@ Med ovanstående kretsdata blir resonansfrekvensen:
 f_0 = \frac{1}{2π\sqrt{LC}} \approx 796\ kHz
 \]
 
-Vid resonansfrekvensen blir reaktansen 1000~Ω både för induktansen och
+Vid resonansfrekvensen blir reaktansen 1000~\(\Omega\) både för induktansen och
 kapacitansen. Eftersom reaktansernas spänningsfall är motriktade tar de ut
 varandra. Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
 Antag att det alstras en spänning av 5~mV i antennkretsen. Strömmen genom den
-vid resonans blir då \(\frac{5\ mV}{10\ Ω} = 0,5\ mA\).
+vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
 
 Av strömmen bildas reaktiva spänningar, d.v.s.
-\(0,5 mA \cdot 1000\ Ω = 500\ mV\) både över induktans och kapacitans (som tar
+\(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans (som tar
 ut varandra) och 5~mV över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
