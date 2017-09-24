@@ -138,4 +138,5 @@ någorlunda vettig LaTeX.
     utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
     u) i Math-environment. Det visar sig att UNICODE inte rendrerar rätt för
     alla dessa.
-    
+
+22. Tecknet för grader ° skall kodas som \degree.
