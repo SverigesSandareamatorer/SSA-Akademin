@@ -34,6 +34,11 @@ PDF
 Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte
 uppdaterad kontinuerligt så datumet visar hur pass ny den är.
 
+Notera att fokus för stunden ligger på innehåll och inte layout, så alla
+layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
+Det finns dock gott om innehåll att granska och komma med förbättringsförslag
+på.
+
 **Hämta hem utkast version 2017-09-24:**
 **[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
 
