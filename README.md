@@ -39,7 +39,7 @@ layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
 Det finns dock gott om innehåll att granska och komma med förbättringsförslag
 på.
 
-**Hämta hem utkast version 2017-09-24:**
+**Hämta hem utkast version 2017-09-25:**
 **[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
 
 
