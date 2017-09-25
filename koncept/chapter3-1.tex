@@ -409,7 +409,7 @@ Laddningsströmmen sjunker från \(I_{max}\) till 0~ampere.
 
 Spänningen över kondensatorn ökar exponentiellt uppladdningen.
 
-\[u_c = U_{max} \cdot ( 1 - e^{-\frac{t}{\tau}} )\]
+\[u_c = U_{max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
 
 \begin{tabular}{lp{0.35\textwidth}}
   \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
@@ -433,7 +433,7 @@ kondensatorn ökat från noll till 63~\% av maxvärdet. Efter tiden \(t = 5\tau\
 
 \emph{Strömmen} från kondensatorn minskar exponentiellt under uppladdningen.
 
-\[i_c = I_{max} \cdot e^{-\frac{t}{\tau}}\]
+\[i_c = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 \begin{tabular}{lp{0.4\textwidth}}
   \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
@@ -459,12 +459,12 @@ En kondensator C urladdas över resistor R.
 
 \emph{Spänningen} över kondensatorn minskar exponentiellt under urladdningen.
 
-\[u_c = U_{max} \cdot e^{-\frac{t}{\tau}}\]
+\[u_c = U_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 \emph{Strömmen} från kondensatorn minskar exponentiellt under urladdningen.
 Strömriktningen är motsatt den vid uppladdningen.
 
-\[i_c = - I_{max} \cdot e^{-\frac{t}{\tau}}\]
+\[i_c = - I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{max}\)
 respektive \(U_{max}\) återstår.
@@ -814,7 +814,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 }
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
-\(X\). I båda fallen är sorten Ohm [\(\Omega\)].
+\(X\). I båda fallen är enheten Ohm [\(\Omega\)].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -1082,6 +1082,11 @@ Parallellkretsens impedans vid resonans kan då skrivas
 Z = \frac{X_L \cdot X_C}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
+Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
+
+Därav framgår, att impedansen i parallellkretsen är en funktion av det s.k.
+L/C-förhållandet samt av kretsens resistiva förluster.
+
 \subsubsection{Resonansfallet i en seriekrets}
 \label{serieresonans}
 \index{serieresonans}
@@ -1106,11 +1111,6 @@ När en seriekrets är i resonans, så är
 & \text{eller} & \\
 & X_L - X_C = 0 \quad & \text{d.v.s.} \quad \omega L - \frac{1}{\omega C} = 0
 \end{align*}
-
-Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
-
-Därav framgår, att impedansen i parallellkretsen är en funktion av det s.k.
-L/C-förhållandet samt av kretsens resistiva förluster.
 
 Med ovanstående kretsdata blir resonansfrekvensen:
 
