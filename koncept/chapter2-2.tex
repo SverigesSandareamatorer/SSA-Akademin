@@ -24,20 +24,40 @@ strömkrets.
 \subsection{Kapacitans}
 \textbf{HAREC a.\ref{HAREC.a.2.2.1}\label{myHAREC.a.2.2.1}}
 \index{kapacitans}
+\index{dielektricitet}
+\index{symbol!C kapacitans}
+\index{symbol!\(\epsilon_0\) dielektricitetskonstanten}
+\index{symbol!\(\epsilon_r\) relativa dielektricitetskonstanten}
 
-Förmågan att lagra elektrisk energi (elektrisk laddning) kallas kapacitans.
+Förmågan att lagra elektrisk energi (elektrisk laddning) kallas
+\emph{kapacitans} (eng. \emph{capacitance}).
 Ordet kommer från latinets capax, som betyder rymlig, duglig.
 
 Kapacitansen betecknas i formler med bokstaven C.
 
-En kondensators kapacitans bestäms av
-\begin{itemize}
-  \item ytan på kondensatorns plattor,
-  \item avståndet mellan dessa ytor,
-  \item den absoluta dielektricitetskonstanten \(\epsilon_0\)
-  \item den relativa dielektricitetskonstanten \(\epsilon_r\) som är den faktor
-kapacitansen ökar med när dielektrikum är annat än vakuum.
-\end{itemize}
+En kondensators kapacitans bestäms av ytan på kondensatorns plattor,
+avståndet mellan dessa ytor, den absoluta dielektricitetskonstanten
+\(\epsilon_0\) och den relativa dielektricitetskonstanten \(\epsilon_r\) som är
+den faktor kapacitansen ökar med när dielektrikum är annat än vakuum.
+
+Det isolerande materialet mellan plattorna kallas för \emph{dielektrum}
+(eng. \emph{dielectrum}), och egenskaperna hos materialet påverkar
+kondensatorns kapacitans.
+Den egenskapen som materialet har kallas för \emph{dielektricitet}
+(eng. \emph{dielectric property}) och uttrycks så som dess
+\emph{dielektricitetskonstant} (eng. \emph{dielectric constant}).
+
+Eftersom dielektriciteten ökar relativt den hos vacuum så använder man
+dielektricitetskonstanten för vacuum \(\epsilon_0\) som en skalfaktor för att
+omvandla den \emph{relativa dielektricitetskonstanten} \(\epsilon_r\) till den
+\emph{absoluta dielektricitetskonstanten} \(\epsilon\).
+
+\(\epsilon = \epsilon_0\epsilon_r\)
+
+Den relativa dielektriska konstanten går att hitta i tabeller och varierar
+med material. Dielektricitetskonstanten för vacuum är definierad som
+
+\(\epsilon_0 = \dfrac{1}{c_0^2\mu_0} \approx 8,854187 \cdot 10^{-12}\)
 
 \subsection{Kapacitans, dimension och dielektrikum}
 \textbf{HAREC a.\ref{HAREC.a.2.2.3}\label{myHAREC.a.2.2.3}}
@@ -60,14 +80,14 @@ Med ett godtyckligt dielektrikum gäller
 
 2. \(C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\)
 
-\(C\ [Farad]\) \(d\ [mm]\) \(E\ [\dfrac{F}{m}]\)
+\(C\ [Farad]\) \(A\ [m^2]\) \(d\ [m]\) \(\varepsilon\ [\dfrac{F}{m}]\)
 
 \subsection{Enheten Farad}
 \textbf{HAREC a.\ref{HAREC.a.2.2.2}\label{myHAREC.a.2.2.2}}
 \index{Farad (F)}
 \index{enheter!Farad (F)}
 
-Kapacitans är elektricitetsmängden per volt där måttenheten är Farad [F].
+Kapacitans är elektricitetsmängden per volt där måttenheten är \emph{Farad} [F].
 Eftersom denna enhet är mycket stor, används inom elektroniken oftast bråkdelar
 av den.
 
@@ -78,9 +98,19 @@ av den.
 \end{tabular}
 
 \subsection{Kondensatorn i likströmskretsen}
+\index{laddningsmängd}
+\index{symbol!Q laddningsmängd}
 
-En kondensator i en likströmskrets har alltid samma polaritet. Därvid förhåller
-sig kondensatorns polspänning till dess laddningsmängd.
+En kondensator i en likströmskrets har alltid samma polaritet.
+Därvid förhåller sig kondensatorns polspänning \(U\) till dess
+\emph{laddningsmängd} \(Q\) och kapacitans \(C\) enligt sambandet
+
+\(U = C \cdot Q\)
+
+\(U\ [V]\) \(C\ [F]\) \(C\ [As]\)
+
+Laddningsmängd har enheten ampere gånger sekund och är alltså ett mått på hur
+många laddningar som har samlats.
 
 En ström flyter till kondensatorn och laddar upp den, när den anslutna
 spänningskällan har högre spänning än kondensatorn. Ju högre spänningen är,
@@ -101,9 +131,11 @@ I en likströmskrets förhåller sig kondensatorns polspänning till
 laddningsmängden. I en växelströmskrets växlar emellertid spänningen och
 polariteten ständigt och därmed kondensatorns laddning och polaritet.
 
-Not: Vissa kondensatortyper kan inte användas i rena växelströmskretsar.
+\textbf{Not: Vissa kondensatortyper kan inte användas i rena
+  växelströmskretsar.}
 
-\emph{Försök}
+\textbf{Försök}
+
 En glödlampa och en kondensator kopplas i serie med varandra och ansluts till en
 växelströmskrets. Med lämpligt valda värden på komponenterna kommer lampan att
 lysa upp.
@@ -133,8 +165,8 @@ En mindre kapacitans innebär ett svagare elektronflöde.
 \(X_C = \dfrac{1}{2\pi fC}\) eller \(X_C = \dfrac{1}{\omega C}\)
 
 \begin{tabular}{lll}
- \([\Omega]\) & \([Hz]\) & \([F]\) 
- \end{tabular}
+\(X_C\ [\Omega]\) & \(f\ [Hz]\) & \(C\ [F]\) 
+\end{tabular}
 
 \emph{Exempel:}
 
@@ -163,14 +195,14 @@ däremot inga värmeförluster.
 
 Med fasförskjutning menas här den tidsmässiga förskjutningen mellan ström- och
 spänningsförloppen. I en kondensator når nämligen strömmen inte sitt toppvärde
-samtidigt som spänningen. I en ideal kondensator är spänningen fasförskjuten 90\degree
-efter strömmen.
+samtidigt som spänningen. I en ideal kondensator är spänningen fasförskjuten
+90\degree~efter strömmen.
 
 \subsection{Förlustvinkel}
 \index{förlustvinkel}
 
-I praktiken är fasförskjutningen i en kondensator något mindre än 90\degree på grund
-av att laddning läcker igenom dielektrikum. Man talar om en förlustvinkel.
+I praktiken är fasförskjutningen i en kondensator något mindre än 90\degree~på
+grund av att laddning läcker igenom dielektrikum. Man talar om en förlustvinkel.
 Läckningen kan ses som en resistor som är kopplad parallellt över kondensatorn.
 
 \subsection{Läckström m.m.}
@@ -178,14 +210,10 @@ Läckningen kan ses som en resistor som är kopplad parallellt över kondensator
 \index{kondensator!läckström}
 
 Med sitt extremt tunna dielektrikum har elektolytkondensatorn en mycket högre
-kapacitet än andra former, men har också några nackdelar, bl.a. att
-\begin{itemize}
-  \item den normalt endast kan användas med likspänning,
-  \item den har hög förlustfaktor p.g.a.läckström,
-  \item det utvecklas värme av läckströmmen, vilket skapar övertryck p.g.a.
-    gasbildning.
-\end{itemize}
-
+kapacitet än andra former, men har också några nackdelar, bl.a. att den normalt
+endast kan användas med likspänning, den har hög förlustfaktor p.g.a. läckström,
+och det utvecklas värme av läckströmmen, vilket skapar övertryck p.g.a.
+gasbildning.
 
 \subsection{Utförandeformer}
 
@@ -215,8 +243,8 @@ spara plats, så rullas det hela ihop och skyddas med en plastingjutning.
 
 \emph{Keramiska kondensatorer}
 
-I keramiska kondensatorer består dielektrikum av något keramiskt material. På
-ömse sidor om detta sätts en metallbeläggning med anslutningstrådar.
+I keramiska kondensatorer består dielektrikum av något keramiskt material.
+På ömse sidor om detta sätts en metallbeläggning med anslutningstrådar.
 
 \emph{Glimmerkondensatorer}
 
@@ -246,7 +274,7 @@ temperaturen. Att sambandet mellan kapacitet och temperatur är viktigt, först�
 av att temperaturkoefficienten i den frekvensbestämmande kapacitansen i en
 oscillatorkrets är en av faktorerna för stabil frekvens.
 
-Temperaturkoefficienten a anger kapacitetsändringen per grad temperaturändring.
+Temperaturkoefficienten \(\alpha _c\) anger kapacitetsändringen per grad temperaturändring.
 Kapacitetsändringen blir då
 
 \[\Delta C = \pm \alpha _c \cdot C_k \cdot \Delta\vartheta\]

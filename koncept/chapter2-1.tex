@@ -9,27 +9,33 @@ Strömkretsar består av komponenter med olika egenskaper.
 Den vanligaste egenskapen, åtminstone i likströmskretsar, är resistansen.
 För att få avsedd funktion, så anpassar man resistansen i komponenterna.
 
-\emph{Exempel}
+\textbf{Exempel}
+
 En krets med strömkälla, lampa, kopplingsledningar och smältsäkring.
 Kopplingsledningarna mellan komponenterna bör ha låg resistans och därför lågt
-spänningsfall (små förluster). Lampan ska däremot ha hög resistans och därmed
-höga förluster för att kunna bli het och lysa. Smältsäkringen ska skydda
-ledningarna från för hög ström. Säkringen ges därför en resistans, som gör
-att den smälter när strömmen överstiger ett tillåtet värde.
+spänningsfall (små förluster).
+Lampan ska däremot ha hög resistans och därmed höga förluster för att kunna bli
+het och lysa.
+Smältsäkringen ska skydda ledningarna från för hög ström.
+Säkringen ges därför en resistans, som gör att den smälter när strömmen
+överstiger ett tillåtet värde.
+
 Som hjälpmedel för att fördela spänningar och strömmar i en krets, så används
-en komponenttyp kallad \emph{resistor}. Dess utmärkande egenskap är
-\emph{resistans} -- även kallad ohmskt motstånd.
+en komponenttyp kallad \emph{resistor}.
+Dess utmärkande egenskap är \emph{resistans} (eng. \emph{resistance}) --
+även kallad ohmskt motstånd.
 
 \subsection{Enheten Ohm}
 \textbf{HAREC a.\ref{HAREC.a.2.1.1}\label{myHAREC.a.2.1.1}}
 \index{Ohm (\(\Omega\))}
 \index{enheter!Ohm (\(\Omega\))}
+\index{symbol!R Ohm (\(\Omega\))}
 
 (Se även kapitel \ref{ellära}.)
 
-Resistansen mellan två punkter i en strömkrets är 1~\(\Omega\) (uttalas
-''en åm''), när spänningen 1~V mellan punkterna gör att en ström
-av 1~A (en ampere) flyter i kretsen.
+Resistansen mellan två punkter i en strömkrets är 1~Ohm som även skrives
+1~\(\Omega\) (uttalas ''en åm''), när spänningen 1~V mellan punkterna gör att
+en ström av 1~A (en ampere) flyter i kretsen.
 
 Inom elektroniken används höga resistansvärden och därför även följande
 multipler av enheten\\
@@ -41,15 +47,16 @@ multipler av enheten\\
 \subsection{Resistans i strömledare}
 \textbf{HAREC a.\ref{HAREC.a.2.1.2}\label{myHAREC.a.2.1.2}}
 \index{resistivitet}
+\index{specifik resistans}
+\index{symbol!\(\rho\) resitivitet}
 
 För att bestämma resistansen, t.ex. i en tråd,
 behöver man veta dess resistivitet, tvärsnittsyta, längd och temperatur.
 
-\emph{Resistivitet}
-
-Resistivitet är ett materials strömledningsegenskaper. Ett annat namn för
-resistivitet är specifik resistans. Symbolen för resistivitet är \(\rho\)
-(uttalas rå).
+\emph{Resistivitet} (eng. \emph{resitivity}) är ett materials
+strömledningsegenskaper.
+Ett annat namn för resistivitet är \emph{specifik resistans}.
+Symbolen för resistivitet är \(\rho\) (uttalas rå).
 
 Formeln for resistivitet är
 
@@ -58,14 +65,18 @@ Formeln for resistivitet är
 där resistansen \(R\) på en längd \(l\) av en strömledare med en
 genomsnittsarea \(A\) (som oftast anges i kvadratmillimeter).
 
+Resitiviteten för material finns ofta i tabeller, och i bilaga
+\ref{metallersresitivitet} finns ett antal vanliga metallers resitivitet
+angivna.
+
 Följande formel gäller för beräkning av resistansen i en strömledare med
 linjär ström/spänningskaraktär.
 
-\(R = \rho \dfrac{I}{A} \)
+\(R = \rho \dfrac{l}{A} \)
 
 \(l\ [meter]\) \(A\ [mm^2]\) \(\left[\rho = \frac{\Omega \cdot A}{m} \right]\)
 
-Exempel
+\textbf{Exempel}
 
 \(l = 4\ m\) koppartråd
 
@@ -75,7 +86,7 @@ Exempel
 
 \(
 \begin{array}{lll}
-R = \dfrac{\rho \cdot I}{A} & & R = \dfrac{0,017 \cdot 4}{2} = 0.034\ \Omega
+R = \dfrac{\rho \cdot l}{A} & & R = \dfrac{0,017 \cdot 4}{2} = 0.034\ \Omega
 \end{array}
 \)
 
@@ -109,7 +120,8 @@ resistansvärde.
 
 Det resistiva materialet består av kolmassa med bindemedel (kolkomposit).
 Massan är bakad till en stav eller ett rör. Anslutningsledningarna är inbakade
-i materialet. Massaresistorer är lämpliga för lik- och växelströmskretsar med
+i materialet.
+\emph{Massaresistorer} är lämpliga för lik- och växelströmskretsar med
 låga krav på temperaturberoende och egenbrus. Den homogena kroppen gör att
 egeninduktansen är låg. Å andra sidan uppstår vid höga frekvenser en
 skineffekt, dvs. strömkoncentration vid ytan, som medför viss resistansökning.
