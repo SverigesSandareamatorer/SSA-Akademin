@@ -1,12 +1,14 @@
 # Texifiering av OCRad text.
 
 Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
-någorlunda vettig LaTeX.
+någorlunda vettig LaTeX. Med tiden har detta utvecklats även till format-
+regler.
 
 1.  OCRningen feltolkar flera tecken, så den har tolkat I som l, vilket man ser
     framförallt i inledning av mening. m kan tolkas som rn osv. Därför behöver
     man hela tiden vara uppmärksam. I har även blivit 1 på en del ställen där
-    siffror förekommer.
+    siffror förekommer. Många av de grekiska tecknen blir fel, så man får
+    kontrollera med orginalet och justera.
 
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
     fel ordning. Man får vara uppmärksam på det och flytta runt text.
@@ -19,7 +21,7 @@ någorlunda vettig LaTeX.
 4.  För bilder har OCRen försökt tolka bilderna. När jag processar texten tar
     jag bort det line-noise det innebär och behåller bara bild-referensen och
     texten. I själva texten finns även en referens till vilken bild som skall
-    vara	där, den behåller jag också tills vidare, sen skall de döljas.
+    vara där, den behåller jag också tills vidare, sen skall de döljas.
 
 5.  Själva texten bryter jag om så den blir läsbar. Jag håller mig inom
     80-tecken bredd i min Emacs.
@@ -32,8 +34,10 @@ någorlunda vettig LaTeX.
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla har jag markerat `\part{}` och `\chapter{}` så att det går att
-    hitta delarna.
+6.  För att förenkla har jag markerat `\part{}` och `\chapter{}` så att det går
+    att hitta delarna.
+    Nu mer är \part{} borttaget då det ej fyller sitt syfte längre i nya
+    utgåvan.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
@@ -41,10 +45,15 @@ någorlunda vettig LaTeX.
 
 8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
     `\emph{}`.
+    Nyckelbegrepp skall i förekommande fall även skrivas i sin engeska form,
+    för att underlätta sökning på nätet och läsande av engelsk literatur.
+    Exempel:
+    \emph{strömtransformator} (eng. \emph{current transformer})
 
 9.  Viss text förekommer i kursiv stil och inskjuten, t.ex. för att ge viktiga
-    samband, de läggs inom `\begin{quote}\emph{ och }\end{quote}`. Ibland behöver
-    radmatning ske och då får man göra separata `\emph{}` som i det här exemplet:
+    samband, de läggs inom `\begin{quote}\emph{ och }\end{quote}`. Ibland
+    behöver radmatning ske och då får man göra separata `\emph{}` som i det här
+    exemplet:
     
     ```latex
     \begin{quote}
@@ -85,10 +94,12 @@ någorlunda vettig LaTeX.
     `\label{myHAREC.a.1.1.1}` gör att HAREC-sammanställningen kan visa var HAREC
     krav a.1.1.1 uppfylls.
 
-14. Tabeller och bilder skall ha `\caption{}` och skall ha `\label{}` samt refereras
-    till från texten. Det gör att automatisk sammanställning av bilder och
-    tabeller kan ske, samt förstås gör det enkelt för alla läsare att se vilken
-    bild/tabell som hör till texten.
+14. Tabeller och bilder skall ha `\caption{}` och skall ha `\label{}` samt
+    refereras till från texten. Det gör att automatisk sammanställning av
+    bilder och tabeller kan ske, samt förstås gör det enkelt för alla läsare
+    att se vilken bild/tabell som hör till texten.
+    Det hjälper även LaTeX att rendrera så att bilder och tabeller hamnar nära
+    där de används.
 
 15. Understrukna ord väljer vi att använda fetstil på, dvs. markera med
     `\textbf{}`
@@ -124,6 +135,12 @@ någorlunda vettig LaTeX.
 
     Det är behändigt att kunna söka på TODO:, och `\hilight{}` ger en gul
     markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
+    Alla TODOs skall åtgärdas innan release.
+
+    En sammanställning av alla TODOs görs med
+    make TODOs
+    som producerar filen TODOs, listar antalet. Den inkluderar flera andra
+    källor av saker som skall åtgärdas innan release.
 
 18. Har lagt i `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa. /NTJ
@@ -133,6 +150,8 @@ någorlunda vettig LaTeX.
 20. Bild-referenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
+    "I bild 3.16 illustreras..."
+    "... illustreras av bild 3.17"
 
 21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som UNICODE tecken
     utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
@@ -140,3 +159,60 @@ någorlunda vettig LaTeX.
     alla dessa.
 
 22. Tecknet för grader ° skall kodas som \degree.
+    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med ~
+    för annars kommer mellanslaget kernas bort.
+    För grader celsius behövs ett mellanslag innan C, dvs. \degree C
+
+23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
+    men även på de ställen där de används och det kan vara läsvärt för att
+    förstå dem och dess användning. En enkel användning är
+    \index{strömtransformator}
+
+    För vissa begrepp är det nyttigt att samla gemensamma grupper, det
+    gör man genom att ange
+    \index{transformator!ström-}
+    där transformator är gruppens namn, och efter utropstecknet kommer det
+    som skall stå i gruppen.
+
+    Symboler läggs i gruppen symboler, anger symbolen först och sedan de
+    representerar, men indexeras givetvis separat också:
+    \index{kapacitans}
+    \index{symbol!C kapacitans}
+
+    Enheter indexeras givetvis med sin förkortning inom parantes både separat
+    och i gruppen enheter:
+    \index{Farad (F)}
+    \index{enheter!Farad (F)}
+
+24. Referenser mellan olika delar görs genom att sätta en label och sedan
+    referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
+    hitta relevant kompelterande material direkt istället för att behöva söka
+    via index. I PDFen ger det klickbara länkar.
+
+    \label{kapacitans}
+    Förmågan att lagra elektrisk energi (elektrisk laddning) kallas
+    \emph{kapacitans} (eng. \emph{capacitance}).
+
+    ...
+
+    Reaktansen beror på kapacitans, se kapitel \ref{kapacitans}
+
+25. Referens till externa dokument, böcker mm skall göras och det uppmuntras.
+    De läggs till i filen koncept.bib i BiBTeX format, och en nyckeln-fras
+    används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
+    läggas med i referensen. Man refererar sedan med \cite{} för att peka på
+    hela dokumentet:
+
+    \cite{ITU-RR}
+
+    För att referera till ett visst kapitel anger man det inom hakparanteser:
+
+    \cite[1.56]{ITU-RR}
+
+26. I förekommande fall skall SI-enheter och definitioner användas och
+    refereras.
+
+27. Konstanter skall anges med full definition och approximativt värde.
+    Övrig användning kan gott använda approximation av adekvat precission.
+    T.ex. där ljusets hastighet används skall den i SI-systemet angivna
+    definitionen användas, men även approximationen av 3*10^8.
