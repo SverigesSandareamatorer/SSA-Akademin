@@ -1,12 +1,12 @@
 before_install:
   - sudo apt-get -qq update
-  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex"
+  - "sudo apt-get install -y -qq texlive texlive-lang-european texlive-latex-extra texlive-fonts-extra texlive-pictures texlive-math-extra texlive-xetex sshpass"
 
 script:
   - make koncept.pdf
 
 after_success:
-  - "curl --ftp-create-dirs --upload-file koncept.pdf --user $FTP_USER:$FTP_PASSWORD sftp://$FTP_SERVER/${FTP_FOLDER}koncept.${TRAVIS_COMMIT}.pdf"
+  - "sshpass -p '${FTP_PASSWORD}' scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:/${FTP_FOLDER}"
 
 deploy:
   provider: releases
