@@ -1,14 +1,16 @@
+language: generic
+
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y -qq \
-  	texlive \
-	texlive-lang-european \
-	texlive-latex-extra \
-	texlive-fonts-extra \
-	texlive-pictures \
-	texlive-math-extra \
-	texlive-xetex \
-	sshpass
+  - "sudo apt-get install -y -qq \
+    texlive \
+    texlive-lang-european \
+    texlive-latex-extra \
+    texlive-fonts-extra \
+    texlive-pictures \
+    texlive-math-extra \
+    texlive-xetex \
+    sshpass"
 
 script:
   - make koncept.pdf
