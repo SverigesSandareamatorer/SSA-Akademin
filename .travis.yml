@@ -16,7 +16,7 @@ script:
   - make koncept.pdf
 
 after_success:
-  - "sshpass -p '${FTP_PASSWORD}' scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:/${FTP_FOLDER}"
+  - "sshpass -p '${FTP_PASSWORD}' scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}"
 
 deploy:
   provider: releases
