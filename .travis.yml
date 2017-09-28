@@ -17,7 +17,7 @@ script:
 
 after_success:
   - sha256sum koncept.pdf
-  - sshpass -e scp -o StrictHostKeyChecking=no koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept.pdf
+  - sshpass -e scp -o StrictHostKeyChecking=no koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}
 
 deploy:
   provider: releases
