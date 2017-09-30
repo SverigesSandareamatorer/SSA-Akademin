@@ -145,14 +145,14 @@ En operationsförstärkare som har en negativ återkoppling, dvs. där signal fr
 utgången matas tillbaka till den negativa ingången, får den egenskapen att den
 försöker driva utgången så att spänningarna för den positiva och negativa
 ingången blir densamma.
-Det finns en rik uppsättning kopplingar som bygger på denna jämnvikt, där
+Det finns en rik uppsättning kopplingar som bygger på denna jämvikt, där
 operationsförstärkaren opererar i en linjär förstärkningsmod.
 
-Denna jämnvikt gör också att en snabb diagnosticering kan göras genom att mäta
+Denna jämvikt gör också att en snabb diagnosticering kan göras genom att mäta
 spänningen mellan ingångarna, är den i princip noll så fungerar kopplingen
 förmodligen, medans har den gått sönder på något sätt, t.ex. trasig op-amp
 eller trasig återkoppling så kommer spänningen vara synbart annorlunda och
-jämnvikten finns inte.
+jämvikten finns inte.
 
 \subsubsection{Bufferförstärkare}
 
@@ -168,12 +168,12 @@ Fördelen är att lasten på utgången kan vara oerhört mycket högre, och
 om utgången skulle sjunka beroende på lasten försöker återkopplingen driva den
 till rätt spänning.
 
-Bufferförstärkaren gör då att den relativt höga ingångsimpedansen hos op-ampen,
-som kan vara från 100 kOhm upp till 1 TOhm, kan utan större påverkan på
-kretsen på ingången leverera samma spänning ut med mot en last på fåtal ohm,
-dvs. med mycket större strömstyrka.
+Bufferförstärkaren gör att OP-ampen kan leverera samma spänning ut men mot en
+last på fåtal ohm, dvs. med mycket större strömstyrka.
+Den relativt höga ingångsimpedansen hos op-ampen, upp mot en Tohm, gör att detta
+kan ske utan större påverkan på ingångskretsen 
 
-\subsubsection{Positiv förstärkning med op-amp}
+\subsubsection{Positiv, icke-inverterande, förstärkning med op-amp}
 
 En enkel variant på bufferförstärkaren är att man kopplar in en spänningsdelare
 mellan utgången och den negativa ingången. Om spänningsdelaren är till 1/10
@@ -182,26 +182,26 @@ förändrar sig, och op-ampen kommer därför driva utgången 10 gånger den
 positiva ingången, för att lyckas hålla balansen. På detta sätt kan man sätta
 förstärkningen hos förstärkaren. Förstärkningen blir:
 
-\(G = \dfrac{R_1+R_2}{R_2}\)
+\(G = 1+ \dfrac{R_2}{R_1}\)
 
 Genom att sätta en kondensator parallellt med motståndet som går mellan utgång
 och den negativa ingången kan man skapa en bandbreddsbegränsning för
-förstärkaren, för att för de högre frekvenserna kommer merparten av strömmen
-gå genom kondensatorn och den effektiva delningen kommer då vara lägre än för
-låga frekvenser, och förstärkaren kommer sänka sin förstärkning ned mot den
-för en buffer.
+förstärkaren.
+För de högre frekvenserna kommer merparten av strömmen att gå genom kondensatorn och motkopplingen blir därför högre än för låga frekvenser.
+Förstärkningen för höga frekvenser sänks ned mot nivån för en bufferförstärkare.
+
 Detta är också ett sätt att försäkra sig om att kretsen inte självsvänger vid
 höga frekvenser.
 
-\subsubsection{Negativ förstärkning med op-amp}
+\subsubsection{Negativ, inverterande, förstärkning med op-amp}
 
 Om man istället för positiv förstärkning vill ha negativ förstärkning så tar
 man och ansluter den positiva ingången till jord och spänningsdelaren på den
-negativa ingångens sida kopplar man loss från jord och ansluter signalen.
-Nu kommer op-ampen balansera den negativa ingången så att den är på samma
+negativa ingångens sida kopplar man loss från jord och ansluter till insignalen.
+Nu kommer op-ampen att balansera den negativa ingången så att den är på samma
 potential som jord, detta kallas för virtuell jord. Strömmen kommer gå från
 ingången till utgången, men ingången kommer se lasten av ingångsmotståndet
-\(R_2\) och utgången kommer mata \(R_1\) mot jord. Förstärkningen kommer vara
+\(R_1\) och utgången kommer mata \(R_2\) mot jord. Förstärkningen kommer vara
 negativ och proportionell mot motståndens inbördes relation, dvs.:
 
-\(G = -\dfrac{R_1}{R_2}\)
+\(G = -\dfrac{R_2}{R_1}\)
