@@ -17,7 +17,7 @@ script:
 
 after_success:
   - sha256sum koncept.pdf
-  - sshpass -e scp -o StrictHostKeyChecking=no koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
+  - sshpass -e scp -o StrictHostKeyChecking=no koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
 
 deploy:
   provider: releases
