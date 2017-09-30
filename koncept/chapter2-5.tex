@@ -18,10 +18,8 @@ Numera består en diod oftast av någon halvledare. Därav namnet halvledardiod.
 \label{fig:BildII2-12}
 \end{figure}
 
-Bild \ref{fig:BildII2-12} överst
-
-En halvledardiod består av ett P-ledande och ett N-ledande materialskikt som
-fogats samman.
+Bild \ref{fig:BildII2-12} överst illustrerar en halvledardiod består av ett
+P-ledande och ett N-ledande materialskikt som fogats samman.
 
 Mellan de båda skikten utbildas ett tunt gränsskikt, som inte innehåller
 laddningsbärare. Detta skikt kan vara ledande eller icke ledande -- ett
@@ -30,27 +28,41 @@ spärrskikt -- beroende på polariseringen.
 \subsection{Halvledardiodens karaktär}
 \textbf{HAREC a.\ref{HAREC.a.2.5.1.2}\label{myHAREC.a.2.5.1.2}}
 
-\emph{Framström, temperatur, förlusteffekt, passriktning}
-
-Bild \ref{fig:BildII2-12} mitten
+\subsubsection{Diod i framriktningen}
+\index{framriktning}
+\index{framström}
+\index{framspänningsfallet}
 
 Förbinder man den positiva polen på en spänningskälla med P-skiktet i en diod
-och den negativa polen med N-skiktet så är dioden polariserad i passriktningen.
-Spärrskiktet upplöses då och ström flyter genom dioden. Elektronerna flyter till
-den positiva polen och hålen till den negativa polen.
+och den negativa polen med N-skiktet så är dioden polariserad i
+\emph{framriktningen}, detta illustreras i bild \ref{fig:BildII2-12} mitten.
+Spärrskiktet upplöses då och ström flyter genom dioden, dvs. \emph{framström}
+(eng. \emph{forward current}).
+Elektronerna flyter till den positiva polen och hålen till den negativa polen.
+Över anslutningarna ligger en spänning, \emph{framspänningsfallet}
+(eng. \emph{forward voltage}), som varierar med strömmen och temperaturen.
+Spänningsfallet och strömmen ger på normalt sett diodens \emph{förlusteffekt}.
+
+\subsubsection{Diod i backriktningen}
+\index{spärriktningen}
+\index{backriktningen}
+\index{zenereffekt}
 
 \emph{Backspänning, backström, läckström, spärriktning}
 
-Bild \ref{fig:BildII2-12} underst
-
 Förbinder man i stället den negativa polen på en spänningskälla med P-skiktet i
 en diod och den positiva polen med N-skiktet så är dioden polariserad i
-spärriktningen. Spärrskiktet blir då ännu kraftigare.
+\emph{spärriktningen} eller \emph{backriktningen}, så som illustreras i
+bild \ref{fig:BildII2-12} underst.
+Spärrskiktet blir då ännu kraftigare.
 
 Endast en obetydlig ström \(I_{SP}\) flyter genom dioden i den s.k.
-spärriktningen även vid ökande spänning \(U_{SP}\). Men över en viss spänning
-ökar strömmen snabbt -- den s.k. zenereffekten uppstår. Dioden kan då lätt
-förstöras av en alltför hög ström.
+spärriktningen även vid ökande spänning \(U_{SP}\).
+Men över en viss spänning ökar strömmen snabbt -- den s.k. zenereffekten
+uppstår.
+Dioden kan då lätt förstöras av en alltför hög ström.
+
+\subsubsection{Diodens ström-spänningsförhållande}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-13.pdf}
@@ -58,27 +70,28 @@ förstöras av en alltför hög ström.
 \label{fig:BildII2-13}
 \end{figure}
 
-Bild \ref{fig:BildII2-13}
+Bild \ref{fig:BildII2-13} visar en diods ström-spänningsförhållande.
 
 Strömmen \(I_D\) börjar att flyta när spänningen \(U_D\) har nått ett
-tröskelvärde (vid kiseldioder 0,6~V). När spänningen ökar ytterligare däröver,
-så ökar även strömmen.
-
-\begin{wrapfigure}[13]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-14.pdf}
-\caption{Schemasymboler för dioder}
-\label{fig:BildII2-14}
-\end{wrapfigure}
+tröskelvärde (vid kiseldioder 0,6~V).
+När spänningen ökar ytterligare däröver, så ökar även strömmen.
 
 Produkten av spänningsfallet över dioden och strömmen genom den kallas
 förlusteffekt. Denna värmer upp dioden. Vid för hög temperatur förstörs
 kristallstrukturen. En kiselkristall kan klara upp till 200~\degree C medan en
 germaniumkristall bara klarar 75~\degree C.
 
-Bild \ref{fig:BildII2-14}
-
 \subsection{Diodtillämpningar}
 \textbf{HAREC a.\ref{HAREC.a.2.5.1.1}\label{myHAREC.a.2.5.1.1}}
+
+Bild \ref{fig:BildII2-14} illustrerar flera olika schema-symboler för
+dioder.
+
+\begin{wrapfigure}[13]{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-14.pdf}
+\caption{Schemasymboler för dioder}
+\label{fig:BildII2-14}
+\end{wrapfigure}
 
 Likriktning är det vanligaste tillämpningen (se kapitel \ref{kraftaggregat}).
 Halvledardioder görs även för en rad andra ändamål och finns i en mängd
@@ -145,9 +158,8 @@ Dessa har blivit tillgängliga till lågt pris och populära för experiment.
 \label{fig:BildII2-15}
 \end{figure}
 
-Bild \ref{fig:BildII2-15}
-
-Bilden visar principen för hur de båda diodtyperna ingår i en strömkrets. Den
-stora skillnaden är att arbetsspänningen för en vakuumdiod är mångfalt högre än
-den för en halvledardiod samt att vakuumdiodens ena elektrod (katoden) behöver
-hettas upp för att avge elektroner.
+Bild \ref{fig:BildII2-15} visar principen för hur de båda diodtyperna ingår i
+en strömkrets.
+Den stora skillnaden är att arbetsspänningen för en vakuumdiod är mångfalt
+högre än den för en halvledardiod samt att vakuumdiodens ena elektrod (katoden)
+behöver hettas upp för att avge elektroner.
