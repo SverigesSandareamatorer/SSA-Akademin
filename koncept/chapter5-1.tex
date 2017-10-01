@@ -69,7 +69,7 @@ Nackdelen är att alla steg arbetar på samma frekvens, varvid risken för
 Oönskad återkoppling kan då bli följden, som kan ge ostabila egenskaper hos
 sändaren.
 Genom att i första hand bygga in VFO och buffertstegen i metallkapslingar,
-s.k. skärmar, så minskas denna risk då högre isolation åstakomms.
+s.k. skärmar, så minskas denna risk då högre isolation åstadkoms.
 
 \subsection{Sändare med frekvensmultiplicering}
 \textbf{HAREC
@@ -230,12 +230,12 @@ utsignal ska vara proportionell till insignalen i varje moment.
 
 PLL-styrning är inte ett sändarkoncept. Det är ett sätt att styra
 frekvensen i en oscillator och hålla den stabil med hjälp av en
-likspänning från en \emph{faslåstloop} (eng. \emph{Phase Locked Loop (PLL)})
+likspänning från en \emph{faslåst loop} (eng. \emph{Phase Locked Loop (PLL)})
 vilket är en digitalt styrd krets.
 
 En PLL kan användas t.ex. i raka sändare och heterodynsändare.
 I det första fallet (bild \ref{fig:bildII5-2}) kan frekvensen i den enda
-ocillatorn styras av en PLL.
+oscillatorn styras av en PLL.
 I det andra fallet (bild \ref{fig:bildII5-6}) kan frekvensen i
 någon av oscillatorerna styras av en PLL.
 En närmare beskrivning av PLL-styrning av dessa två sändarkoncept följer här.
@@ -292,8 +292,9 @@ Med samma spänning går det också att frekvensmodulera oscillatorn.
 Det görs så, att LF-signalen från modulatorn överlagras på styrspänningen genom
 additiv blandning (se kapitel \ref{blandare}) via en kondensator.
 De variationer i reglerspänningen som kommer av talet är snabbare än
-loopfiltrets tidskonstant Variationerna av talet hinner därför inte
-uppfattas som frekvensavvikelser och blir därför inte utreglerade.
+loopfiltrets tidskonstant.
+Variationerna av talet hinner därför inte uppfattas som frekvensavvikelser och
+blir därför inte utreglerade.
 Drosseln efter loop-filtret förhindrar att moduleringssignalen
 kortsluts av filtrets kondensator.
 
@@ -378,7 +379,7 @@ En annan nackdel är den stora komponentmängden
 }
 
 Sändare har många olika egenskaper som man ska vara uppmärksam på, dels för
-att ha en effektiv sändare, dels för att få bra kvalite på sändning och dels
+att ha en effektiv sändare, dels för att få bra kvalitet på sändning och dels
 för att inte störa grannkanaler eller på andra band.
 
 \subsection{Frekvensstabilitet}
@@ -390,17 +391,17 @@ för att inte störa grannkanaler eller på andra band.
 \emph{Frekvensstabiliteten} (eng. \emph{frequency stability}) är en
 grundläggande egenskap, eftersom en sändare som inte är frekvensstabil nog
 kommer bli svår för en mottagare att följa och uppfatta.
-Dessutom riskerar man att störa grann-kanaler.
+Dessutom riskerar man att störa grannkanaler.
 Mindre avdrift i frekvens kan tolereras, men helst ska den uppfattas som
 helt stabil.
 
-I gamla tider så har resonatorerna varit LC-kretsar, och både mekanik och
-elektronik kunde driva betänkligt.
-Med modernare kristal-styrda sändare, där man använder PLL eller DDS
-synteser så kan frekvens-stabiliteten härledas till en enskild
-kristall-oscillator.
+I gamla tider så var resonatorerna LC-kretsar, och både mekanik och elektronik
+kunde driva betänkligt.
+Med modernare kristallstyrda sändare, där man använder PLL eller DDS
+synteser så kan frekvensstabiliteten härledas till en enskild
+kristalloscillator.
 Denna är typiskt en okompenserad kristall, med man brukar kunna välja en
-temperatur-kompenserad kristalloscillator -- TCXO eller en ungskompenserad
+temperatur-kompenserad kristalloscillator -- TCXO eller en ugnskompenserad
 kristalloscillator -- OCXO.
 Det kan även förekomma att man kan låsa på en extern referensfrekvens,
 ofta 10~MHz.
@@ -461,9 +462,9 @@ att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
 utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
 oftast 3~kHz för amatörradio.
 Bandbredden kan också behöva begränsas nedåt vid 300~Hz för att inte råka
-störa subton-signaler t.ex.
-Denna nedre begränsning kan dock inbland behöva sättas ur spel för att
-kunna skicka subtons-signaler utifrån, men även för andra former av signaler.
+störa t.ex signalering med subtoner.
+Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
+kunna skicka ut subtonssignaler, men även för andra former av signaler.
 
 \subsection{Olinjaritet}
 \textbf{HAREC
@@ -474,14 +475,14 @@ kunna skicka subtons-signaler utifrån, men även för andra former av signaler.
 \index{splatter}
 
 \emph{Olinjaritet} (eng. \emph{nonlinearity}) i ett sändarsteg ger dels
-övertoner som behöver begräsas, ofta genom ett filter på utgången, men man
+övertoner som behöver begränsas, ofta genom ett filter på utgången, men man
 försöker även begränsa hur olinjärt steget tillåts bli.
-För tal kommer olinjaritet även att påverka intermodulationen mellan flera
+För tal kommer olinjäritet även att påverka intermodulationen mellan flera
 olika frekvenser i tal, vilket dels skapar störningar inom bandet men även
 utanför och därmed breddar det.
 Detta kallas för splatter och är en oönskad egenskap.
-God linjaritet även vid höga effekter är därför eftersträvans värt.
-Ibland kan man ha så mycket olinjaritet att taltydligheten blir låg, det
+God linjäritet även vid höga effekter är därför eftersträvansvärt.
+Ibland kan man ha så mycket olinjäritet att taltydligheten blir låg, det
 kan därför vara lämpligt att dra ned något på effekten så taltydligheten går
 upp, vilket då ger bättre signalrapport än när intermodulationen är för hög.
 
@@ -499,8 +500,8 @@ för att kunna driva en antennsystem med större avvikelser i impedans.
 En god matchning i impedans krävs för att få en bra energiöverföring av den
 tillförda energin utan att för mycket studsar tillbaka.
 Många sändare har skyddskretsar som drar ned uteffekten vid för stor
-reflekterad energi, för att kunna skydda slutsteget, och det gör att en
-impedansmatchfel ger ännu större reduktion i sänd effekt än vad själva
+reflekterad energi, för att skydda slutsteget, och det gör att ett
+impedansmatchfel ger ännu större reduktion i utsänd effekt än vad själva
 impedansfelet i sig skulle motivera.
 
 \subsection{Uteffekt}
@@ -542,7 +543,7 @@ tillåts vid frekvensmodulation.
 \index{modulationsdjup}
 
 \emph{Modulationsindex} (eng. \emph{modulation index}), eller även
-\emph{modulationsdjuppet}, anger hur djup modulation av bärvågen är.
+\emph{modulationsdjupet}, anger hur djup modulation av bärvågen är.
 För hög modulations undertrycker bärvågen och kan göra det svårt för
 mottagaren att detektera.
 För låg modulation ger svaga sidband att förmedla tal, och för mycket
@@ -554,8 +555,8 @@ av energin går till att sända enbart bärvåg.
 }
 
 Vid CW kan för snabb stig och falltid på bärvågen ge onödig bandbredd och
-uppfattas som klickar eller chirpar. Därför ska bandbredden begränsas så att
-den inte slår på och av bärvågen för fort, då detta är störande.
+uppfattas som klickar eller chirpar. Då detta är störande ska bandbredden
+begränsas genom att filtrera bärvågens till- och frånslag.
 
 \subsection{SSB övermodulation och splatter}
 \textbf{HAREC
@@ -596,8 +597,7 @@ inte sända bärvåg, sidband eller några andra signaler.
 
 \emph{Fasbrus} (eng. \emph{phase noise}) är en egenskap hos alla oscillatorer,
 som ger en fasmodulation av bärvågen.
-Alla steg i en sändare bidrar med brus och ger den slutgiltiga
-fasbrus-egenskapen.
+Alla steg i en sändare bidrar med brus och ger sammanlagt det totala fasbruset.
 En sändares fasbrus kan sträcka sig långt utanför den normala modulerade
 bandbredden, och speciellt för repeatrar så kan sändarens fasbrus höja
 brusgolvet för mottagaren om inte korrekt trimmade duplexfilter

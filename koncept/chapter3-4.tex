@@ -508,40 +508,73 @@ effekt för uppvärmning av rörens katoder samt höga anodspänningar, som
 även strömförsörjningen för ett slutsteg med elektronrör mer
 komplicerad och omfångsrik.
 
-\subsection{Bestämning av PEP-effekten}
+\subsection{Toppvärdeseffekt P.E.P.}
+\textbf{HAREC a.\ref{HAREC.a.1.9.6}\label{myHAREC.a.1.9.6}}
+\index{toppvärdeseffekt}
+\index{effekt!toppvärdes}
+\index{P.E.P.}
+\index{effekt!P.E.P.}
 \index{PEP-effekt}
 \index{förstärkare!PEP-effekt}
+\label{PEP-effekt}
+
+Uteffekten från en sändare kan mätas över en konstlast (dummy load).
+En konstlast är en resistor som kan omsätta sändarens hela effekt till värme.
+
+Med HF-mätprob och en detektordiod eller en HF-voltmeter kan man mäta
+effektivvärdet på spänningen över konstlasten och beräkna uteffekten med
+formeln
+
+\(P_{ut} = \dfrac{U^2}{R}\)
+
+U = HF-spänningens effektivvärde
+R = resistansen i konstlasten
+
+\textbf{Beräkning och mätning av PEP-effekt}
+Uteffekten definierad som P.E.P. (Peak Envelope Power) \cite[1.157]{ITU-RR}
+är ''den medeleffekt som matas in i en antennmatarledning under det högsta
+effektvärdet inom en frekvenscykel och mätt under normal drift''.
+
+\(P.E.P. = \left[\dfrac{\hat{u}}{\sqrt{2}}\right]^2\dfrac{1}{R} =  \dfrac{\hat{u}^2}{2R}\)
+
+där \(\hat{u}\) är momentanspänningen på den största modulationstoppen.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-52.pdf}
-\caption{Bestämning av PEP-effekten}
-\label{fig:BildII3-52}
+	\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-52.pdf}
+	\caption{Bestämning av PEP-effekten}
+	\label{fig:BildII3-52}
 \end{wrapfigure}
 
-Bild \ref{fig:BildII3-52}
+På grund av SSB~signalens karaktär kan man inte mäta effektivvärdet av
+uteffekten från en SSB-sändare.
 
-Moduleringsspänningens topp-topp\-värde \(U_{SS}\) mäts lämpligen med
-ett oscilloskop. För korrekt belastning vid mätningen används en
-konstlast.
+Bild \ref{fig:BildII3-52} visar hur modulationen för ett \emph{aaah} ser ut
+på ett oscilloskop.
+
+Moduleringsspänningens topp-topp\-värde \(\hat{u}_{t-t}\) mäts lämpligen med ett
+oscilloskop när slutsteget är kopplat till en konstlast.
 
 Med topp-toppvärdet känt kan man med följande formler beräkna
-toppvärdet (amplituden
+toppvärdet (amplituden)
 
-\begin{align*}
-  \text{toppvärdet (amplituden)} \quad
-  U_S & = \frac{U_{SS}}{2}
-  \quad \text{och} \\
-  \text{effektivvärdet} \quad
-  U_{eff} & = \frac{U_S}{\sqrt{2}}
-\end{align*}
+\(
+\begin{array}{lll}
+\text{toppvärdet (amplituden)} &  \quad \hat{u}= & \dfrac{\hat{u}_{t-t}}{2}\\
+& & \\
+\text{effektivvärdet} &\quad  U =& \dfrac{\hat{u}}{\sqrt{2}}
+\end{array}
+\)
 
 Effekten vid moduleringstopparna, s.k. PEP (Peak Envelope Power), kan
-beräknas med följande formler
+beräknas med följande formler.
 
-\begin{align*}
-  P_{PEP} &= \frac{U_{eff}^2}{2R} \quad \text{respektive} \\
-  P_{PEP} &= \frac{U_{SS}^2}{8R}
-\end{align*}
+\(
+\begin{array}{ll}
+P_{PEP} & = \dfrac{U^2}{R} \text{respektive} \\
+&\\
+P_{PEP} & = \dfrac{\hat{u}_{t-t}^2}{8R}
+\end{array}
+\)
 
 \subsection{Linjäritetskontroll vid SSB}
 \textbf{HAREC

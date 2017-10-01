@@ -24,11 +24,10 @@ HAREC a.\ref{HAREC.a.8.2.1.1}\label{myHAREC.a.8.2.1.1}
 
 Bild \ref{fig:bildII8-2}
 
-Flera mätfunktioner kan utföras med samma basinstrument. Genom
-omkoppling mellan olika tillsatser väljer man mätfunktion och
-mätområde. Instrumentskalan utformas så att olika slags mätvärden kan
-avläsas.  Kombinationer med elektroniska förstärkare och digital
-visning etc. är nu vanligt.
+Flera mätfunktioner kan utföras med samma basinstrument.
+Med en omkopplare väljer man mätfunktion och mätområde.
+Instrumentskalan utformas så att olika slags mätvärden kan avläsas.
+Kombinationer med elektroniska förstärkare och digital visning etc. är nu vanligt.
 
 \subsection{Vridspoleinstrument}
 
@@ -198,7 +197,7 @@ respektive backeffekt eller ett gemensamt.
 SVF-metern kan vara ständigt inkopplad t.ex. mellan sändare och
 antenn, men ska då kunna tåla effektutvecklingen. En SVF-meter kan
 alstra övertoner, vilka kan medföra störningar. Orsaken är
-olinjäriteten halvledardioderna i instrumentet.
+olinjäritet hos halvledardioderna i instrumentet.
 
 \subsection{Frekvensräknare}
 \textbf{
@@ -318,22 +317,24 @@ arrangera dem på ett bra sätt på skärmen.
 Ibland väljer man att klippa vågen för att man enbart vill se tiden för en
 kant tydligt.
 
-En viktig sak är att sätta en bra trigg-punkt, så att man får en tydlig bild.
-Ett vanligt misstag är att sätta triggpunkten på en plats på vågen där den är
-väldigt flack eller så att den kan trigga på flera olika ställen på vågformen,
-det gör att efterföljande bilder triggar och får suddiga eller dubbla bilder,
-då brukar man justera trigg-punkten så att man får en tydlig bild.
+En viktig sak för att få en tydlig bild på bildskärmen är att triggpunkten,
+den punkt där mätningen av signalen börjar, är vald så att man inte får dubbla
+eller otydliga bilder.
+Valet av triggpunkt sker ofta automatiskt men om signalen som ska mätas är
+väldigt flack eller har många nollgenomgångar kan triggpunkten bli felaktig.
+För att lösa problemet med suddiga eller dubbla bilder så brukar man manuellt
+justera triggpunkten så att man får en tydlig bild.
 
 Man justerar också tidbasen för att ha rätt skala på tidsaxeln, så man ser en
-eller ett fåtal cyckler, eller ibland över längre tid för att se variationer.
-Man kan också fördröja svepet för att kunna se en viss del efter trigg-punkten.
+eller ett fåtal cykler, eller ibland över längre tid för att se variationer.
+Man kan också fördröja svepet för att kunna se en viss del efter triggpunkten.
 
-Oscilloskop har nu mer ofta inbyggda mätfunktioner.
+Oscilloskop har nu mera ofta inbyggda funktioner för mätning.
 Det är behändigt att snabbt få en uppfattning om periodtider, frekvenser,
-amplituder mm. men dessvärre är mätprecissionen ofta kraftigt lidande, och
+amplituder mm. men dessvärre blir mätprecisionen ofta kraftigt lidande, och
 det ska inte övertolkas.
 T.ex. är frekvensmätningen inte bättre än hur bra placeringen av markörerna är,
-så det är sällan tillförlitligt bättre än 2 siffrors noggrannhet.
+så det är sällan tillförlitligheten är bättre än 2 siffrors noggrannhet.
 
 Rätt använt är oscilloskop dock ett fantastiskt mätinstrument.
 
@@ -342,7 +343,7 @@ Rätt använt är oscilloskop dock ett fantastiskt mätinstrument.
 HAREC a.\ref{HAREC.a.8.2.1.7}\label{myHAREC.a.8.2.1.7}
 }
 
-En spektrum-analysator visar amplituden för olika frekvenser över ett visst
+En spektrumanalysator visar amplituden för olika frekvenser över ett visst
 frekvensområde.
 Detta är som kontrast till oscilloskopet som visar amplitud för en signal
 över tiden.
@@ -350,8 +351,8 @@ Detta är som kontrast till oscilloskopet som visar amplitud för en signal
 En spektrumanalysator kan styras för att svepa över olika frekvensområden.
 Oftast när man startar den så sveper den från lägsta till högsta frekvens.
 Det kan vara behändigt för att få en första översikt.
-För en specifik mätning ställer man in start och stop frekvens, eller
-alternativt en center-frekvens och ett span.
+För en specifik mätning ställer man in start- och stoppfrekvens, eller
+alternativt en centerfrekvens och en bandbredd för mätområdet.
 
 För att kunna göra bättre avläsningar kan man sätta markörer, så att man kan
 avläsa frekvens och amplitud för den punkten.
@@ -359,7 +360,7 @@ Ibland sätter man dubbla frekvensen för att avläsa skillnaden i amplitud,
 vilket kan vara relevant för filter eller avläsa den relativa styrkan på ett
 sidband.
 
-En spektrum-analysator består förenklat av en svep-bar oscillator,
+En spektrumanalysator består förenklat av en variabel oscillator,
 variabelt filter på mellan frekvensen, en detektor och ett ställbart
 filter från detektorn.
 
@@ -374,16 +375,16 @@ Filtret sätter bandbredden på mätningen, och det kan gå i 1--3 steg, t.ex.
 För vissa specifika mätändamål, som t.ex. för EMC mätningar, behöver man ha
 filter av rätt bandbredd och dessa är extra optioner.
 
-Detektorn kan vara topp-detektor eller RMS detektor, det kan finnas flera.
+Detektorn, som det kan finnas flera av, kan vara topp- eller RMS-detektor, .
 För specifika mätändamål som t.ex. EMC mätningar behöver man specifik detektor.
 
-Efter detektorn finns ett filter, ofta benämnt med video-bandbredd, som
+Efter detektorn finns ett filter, ofta benämnt med videobandbredd, som
 medelvärdesbildar detektorns ampltitudestimat över tiden.
 Oftast regleras det automatiskt med bandbredden på filtret, eftersom smalare
 filter behöver proportionerligt längre tid för att ge ett bra resultat.
 Sveptiden beror därför på antalet punkter för frekvenser, bandbredd på filtret
-och video-bandbredden.
-Ibland kan man styra video-bandbredden manuellt för att få en längre tid, då
+och videobandbredden.
+Ibland kan man styra videobandbredden manuellt för att få en längre tid, då
 det kan vara gynnsamt för att få en tydligare bild, dvs. ta bort brus och
 störningar som enbart skapar variationer för att man inte observerar ett bra
 medelvärde.
@@ -411,8 +412,8 @@ med flera väsentliga skillnader.
 För att få korrekt mätning av amplitud och fas läggs större vikt vid att göra
 kalibrering, något som görs för att kompensera varierande amplitud och fas
 för olika frekvenser.
-Vid kalibrering använder man ofta last (eng. load), kortslutning (eng. short)
-samt öppen port (eng. open) mätning av kalibreringsreferenser.
+Vid kalibrering använder man ofta kalibreringsreferenserna last (eng. load),
+kortslutning (eng. short) samt öppen port (eng. open).
 För två-ports mätning använder man även en genomföring (eng. through) för att
 få port-till-port egenskaperna korrekt.
 Efter kalibrering av instrumentet så korrigeras mätningarna, och ibland kan

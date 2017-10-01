@@ -55,8 +55,8 @@ vara lägre än den faktiska spänningen utan mätinstrumentet.
 
 I gamla tider var den inre resistansen relativt låg, varvid påverkan blev
 större än med moderna instrument.
-Dock kan även moderna instrument påverka på krestas som har väldigt hög
-impedans.
+Dock kan även moderna instrument påverka mätresultatet i kretsar som har väldigt
+hög impedans.
 
 \subsection{Mäta likström}
 
@@ -168,8 +168,8 @@ En del kräver att man ställer in området för resistans, medans andra
 kan göra det automatiskt.
 
 Precisionsmätning av motstånd kan göras av mer avancerade instrument
-där man använder 4 punktersmätning.
-För 4 punktersmätning så är ström och spänninganslutningarna separerade
+där man använder 4 punktsmätning.
+För 4 punktsmätning så är ström och spänninganslutningarna separerade
 så att anslutningsledningarnas resistans inte ger spänning som inkluderas
 i den mätta resistansen.
 Istället så mäts spänningen så nära som möjligt på själva mätobjektet,
@@ -182,23 +182,27 @@ HAREC a.\ref{HAREC.a.8.1.4}\label{myHAREC.a.8.1.4}
 }
 \label{mätaeffekt}
 
-Effektformler vid lik- och växelström (medel-, effektiv- och
-toppvärden)
+Effektformler vid lik- och växelström (effektiv- och toppvärden).
 
 Vid likström:
 
-\begin{gather*}
-P = U \cdot I \quad \text{[W (watt)]} \\
-\text{d.v.s. Joules lag}
-\end{gather*}
+\(
+P = U \cdot I \quad \text{[W (watt)]} \quad \text{d.v.s. Joules lag} \\
+\)
 
-Vid sinusformad växelström:
+Vid sinusformad växelström och resistiva belastningar:
+För PEP-effekt se även avsnitt \ref{PEP-effekt}
 
-\begin{align*}
-  \text{medelvärde   } \quad P_{medel} &= \frac{0.8\cdot U_{eff}^2}{R} \\
-  \text{effektivvärde} \quad   P_{eff} &= \frac{U_{eff}^2}{R} \\
-  \text{toppvärde}     \quad   P_{PEP} &= \frac{U_{max}^2}{R} \\
-\end{align*}
+\(
+\begin{array}{ll}
+\text{effektivvärde} \quad P & = \dfrac{U^2}{R} \\
+&\\
+\text{toppvärde}     \quad P_{PEP} & = \dfrac{U_{max}^2}{R}
+\end{array}
+\)
+
+U = spänningens effektivvärde
+R = resistansen
 
 \subsection{Sändareffekt}
 

@@ -1,6 +1,8 @@
 \section{Integrerade Kretsar (IC)}
 
 \subsection{Allmänt om IC}
+\index{integrerad krets}
+\index{IC}
 
 Att integrera betyder att samla till en enhet, det kan vara komponenter,
 funktioner, verksamheter etc. Integration kan ske på olika nivåer och i många
@@ -12,7 +14,7 @@ kan framställas med små dimensioner. Många komponenter kan då samlas i samma
 hölje.
 
 Komponenter inom ett hölje, avsedda för en viss funktion kallas
-\emph{integrerad krets (eng. Integrated Circuit -- IC)}.
+\emph{integrerad krets} (eng. \emph{Integrated Circuit -- IC}).
 
 Komponenterna i en IC kan i sin tur vara del av komponenterna en hel strömkrets.
 Redan inom höljet kan komponenter kopplas samman för en viss funktion eller som
@@ -23,7 +25,8 @@ innehåll för en annan funktion.
 
 \subsection{Integrationsgrad}
 
-En integrerad krets är uppbyggd på en basplatta av halvledarmaterial -- ett chip.
+En integrerad krets är uppbyggd på en basplatta av halvledarmaterial --
+ett chip.
 På plattan framställs, med fototeknik eller etsning, kompletta eller nästan
 kompletta dioder, transistorer, resistorer och kondensatorer. Metoden, som
 kallas planarteknik, medger att många komponenter kan få plats på samma platta.
@@ -42,7 +45,7 @@ VLSI & Very Large Scale Integration innebär 100000 eller fler halvledare. \\
 \subsection{Olika slags integrerade kretsar}
 
 Det finns stora sortiment av både standardiserade och speciella IC, varav det
-finns två huvudtyper
+finns två huvudtyper:
 \begin{itemize}
   \item digitala integrerade kretsar
   \item analoga integrerade kretsar.
@@ -51,12 +54,15 @@ finns två huvudtyper
 \subsection{Digitala IC}
 
 Digitala IC arbetar som framgår av namnet med digitala signalnivåer. De enklaste
-typerna innehåller en eller flera digitala grindar (se avsnitt \ref{digitala kretsar}). Genom att
-koppla samman grindar kan man skapa kretsar för ett visst ändamål. I början av
-70-talet byggdes komplicerade system av grindar i SSI- och MSI-teknik. Ett
-sådant system är emellertid inte flexibelt eftersom eventuella ändringar måste
-göras ''hårdvarumässigt''. Det innebär att kopplingsledningar måste ändras om,
-kanske hela kretsar bytas ut o.s.v..
+typerna innehåller en eller flera digitala grindar (se avsnitt
+\ref{digitala kretsar}).
+Genom att koppla samman grindar kan man skapa kretsar för ett visst ändamål.
+I början av 70-talet byggdes komplicerade system av grindar i SSI- och
+MSI-teknik.
+Ett sådant system är emellertid inte flexibelt eftersom eventuella ändringar
+måste göras ''hårdvarumässigt''.
+Det innebär att kopplingsledningar måste ändras om, kanske hela kretsar bytas
+ut o.s.v..
 
 I dagens digitala system används IC i form av en mikroprocessor eller t.o.m.
 flera. En mikroprocessor är en avancerad LSI-krets, som kan programmeras
@@ -118,8 +124,8 @@ HAREC a.\ref{HAREC.a.2.8.3}\label{myHAREC.a.2.8.3}
 \index{operationsförstärkare}
 \index{op-amp}
 
-\emph{Operationsförstärkare}, ofta kallad för \emph{op-amp} är en integrerad
-kretstyp som har hög förstärkning.
+\emph{Operationsförstärkare} (eng. \emph{operational amplifier}), ofta kallad
+för \emph{op-amp} är en integrerad kretstyp som har hög förstärkning.
 Istället för att ha enbart en ingång så har den två, en positiv
 och en negativ, och operationsförstärkaren förstärker skillnaden mellan den
 positiva och negativa signalen. Förstärkningen i en modern operationsförstärkare
@@ -145,14 +151,14 @@ En operationsförstärkare som har en negativ återkoppling, dvs. där signal fr
 utgången matas tillbaka till den negativa ingången, får den egenskapen att den
 försöker driva utgången så att spänningarna för den positiva och negativa
 ingången blir densamma.
-Det finns en rik uppsättning kopplingar som bygger på denna jämnvikt, där
+Det finns en rik uppsättning kopplingar som bygger på denna jämvikt, där
 operationsförstärkaren opererar i en linjär förstärkningsmod.
 
-Denna jämnvikt gör också att en snabb diagnosticering kan göras genom att mäta
+Denna jämvikt gör också att en snabb diagnosticering kan göras genom att mäta
 spänningen mellan ingångarna, är den i princip noll så fungerar kopplingen
 förmodligen, medans har den gått sönder på något sätt, t.ex. trasig op-amp
 eller trasig återkoppling så kommer spänningen vara synbart annorlunda och
-jämnvikten finns inte.
+jämvikten finns inte.
 
 \subsubsection{Bufferförstärkare}
 
@@ -168,40 +174,63 @@ Fördelen är att lasten på utgången kan vara oerhört mycket högre, och
 om utgången skulle sjunka beroende på lasten försöker återkopplingen driva den
 till rätt spänning.
 
-Bufferförstärkaren gör då att den relativt höga ingångsimpedansen hos op-ampen,
-som kan vara från 100 kOhm upp till 1 TOhm, kan utan större påverkan på
-kretsen på ingången leverera samma spänning ut med mot en last på fåtal ohm,
-dvs. med mycket större strömstyrka.
+Bufferförstärkaren gör att OP-ampen kan leverera samma spänning ut men mot en
+last på fåtal ohm, dvs. med mycket större strömstyrka.
+Den relativt höga ingångsimpedansen hos op-ampen, upp mot en teraohm, gör att detta
+kan ske utan större påverkan på ingångskretsen 
 
-\subsubsection{Positiv förstärkning med op-amp}
+\subsubsection{Positiv, icke-inverterande, förstärkning med op-amp}
+\label{icke-inverterande förstärkning}
 
 En enkel variant på bufferförstärkaren är att man kopplar in en spänningsdelare
-mellan utgången och den negativa ingången. Om spänningsdelaren är till 1/10
-så kommer alltså utgången behöva öka 10 gånger mer än den negativa ingången
-förändrar sig, och op-ampen kommer därför driva utgången 10 gånger den
-positiva ingången, för att lyckas hålla balansen. På detta sätt kan man sätta
-förstärkningen hos förstärkaren. Förstärkningen blir:
+mellan utgången och den negativa ingången, så som illustreras i bild
+\ref{fig:BildII2-46}.
 
-\(G = \dfrac{R_1+R_2}{R_2}\)
+\begin{wrapfigure}{R}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-46.pdf}
+	\caption{Icke-inverterande förstärkare}
+	\label{fig:BildII2-46}
+\end{wrapfigure}
+
+Om spänningsdelaren är till 1/10 så kommer alltså utgången behöva öka 10 gånger
+mer än den negativa ingången förändrar sig, och op-ampen kommer därför driva
+utgången 10 gånger den positiva ingången, för att lyckas hålla balansen.
+På detta sätt kan man sätta förstärkningen hos förstärkaren.
+Förstärkningen blir:
+
+\(G = 1+ \dfrac{R_2}{R_1}\)
 
 Genom att sätta en kondensator parallellt med motståndet som går mellan utgång
 och den negativa ingången kan man skapa en bandbreddsbegränsning för
-förstärkaren, för att för de högre frekvenserna kommer merparten av strömmen
-gå genom kondensatorn och den effektiva delningen kommer då vara lägre än för
-låga frekvenser, och förstärkaren kommer sänka sin förstärkning ned mot den
-för en buffer.
+förstärkaren.
+För de högre frekvenserna kommer merparten av strömmen att gå genom
+kondensatorn och motkopplingen blir därför högre än för låga frekvenser.
+Förstärkningen för höga frekvenser sänks ned mot nivån för en bufferförstärkare.
+
 Detta är också ett sätt att försäkra sig om att kretsen inte självsvänger vid
 höga frekvenser.
 
-\subsubsection{Negativ förstärkning med op-amp}
+\subsubsection{Negativ, inverterande, förstärkning med op-amp}
+\label{inverterande förstärkning}
+\label{virtuell jord}
+\label{jordning!virtuell}
 
-Om man istället för positiv förstärkning vill ha negativ förstärkning så tar
-man och ansluter den positiva ingången till jord och spänningsdelaren på den
-negativa ingångens sida kopplar man loss från jord och ansluter signalen.
-Nu kommer op-ampen balansera den negativa ingången så att den är på samma
-potential som jord, detta kallas för virtuell jord. Strömmen kommer gå från
-ingången till utgången, men ingången kommer se lasten av ingångsmotståndet
-\(R_2\) och utgången kommer mata \(R_1\) mot jord. Förstärkningen kommer vara
-negativ och proportionell mot motståndens inbördes relation, dvs.:
+Om man som i bild \ref{fig:BildII2-47} istället för positiv förstärkning vill
+ha negativ förstärkning så tar man och ansluter den positiva ingången till jord
+och spänningsdelaren på den negativa ingångens sida kopplar man loss från jord
+och ansluter till insignalen.
 
-\(G = -\dfrac{R_1}{R_2}\)
+\begin{wrapfigure}{R}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-47.pdf}
+	\caption{Inverterande förstärkare}
+	\label{fig:BildII2-47}
+\end{wrapfigure}
+
+Nu kommer op-ampen att balansera den negativa ingången så att den är på samma
+potential som jord, detta kallas för \emph{virtuell jord}.
+Strömmen kommer gå från ingången till utgången, men ingången kommer se lasten
+av ingångsmotståndet \(R_1\) och utgången kommer mata \(R_2\) mot jord.
+Förstärkningen kommer vara negativ och proportionell mot motståndens inbördes
+relation, dvs.:
+
+\(G = -\dfrac{R_2}{R_1}\)
