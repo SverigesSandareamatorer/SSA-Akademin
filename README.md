@@ -1,4 +1,4 @@
-![KonCEPT för radioamatörcertifikat](koncept.png)
+![SSA-Akademin](ssa-akademin.png)
 
 -   [LADDA NER OCH BYGG PROJEKTET](#ladda-ner-och-bygg-projektet)
 -   [BIDRA TILL PROJEKTET](#bidra-till-projektet)
@@ -40,7 +40,7 @@ Det finns dock gott om innehåll att granska och komma med förbättringsförsla
 på.
 
 **Hämta hem den senaste versionen:**
-**[koncept.pdf](http://ssaakademin.fn42.se/koncept-pdf/)**
+**[koncept.pdf](http://ssaakademin.fn42.se/)**
 
 
 BIDRA TILL PROJEKTET
