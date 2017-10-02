@@ -3,6 +3,26 @@
   HAREC a.\ref{HAREC.a.8.2}\label{myHAREC.a.8.2}
 }
 
+\subsection{Att mäta är att veta}
+
+Mätinstrument används för att, under kontrollerade former, testa och bekräfta
+en funktion eller avsaknad av densamma, i en utrustning.
+
+Med mätinstrument vill man åstadkomma en så snarlik testmiljö som man kan
+förvänta sig, att utrustningen som man testar, skall kunna hantera i
+verkligheten.
+
+De mätinstrument vi kommer att nämna nedan, används bl.a. i en sluttester i de
+fabriker, som när, i vårt fall, radioutrustningen är ihopmonterad och skall
+testas, innan den levereras till kund.
+
+Att tillverkarna använder mätinstrument enligt ovan, är sålunda en
+förutsättning för att kunna veta att den utrustning man konstruerat uppfyller
+de krav som man specificerat.
+
+Dessa typer av instrument är också av intresse för sändarematören, då han / hon
+kan använda dessa för felsökning eller service.
+
 \subsection{Presentation av mätvärden}
 
 \begin{wrapfigure}[20]{R}{0.5\textwidth}
@@ -341,17 +361,65 @@ Rätt använt är oscilloskop dock ett fantastiskt mätinstrument.
 \textbf{
 HAREC a.\ref{HAREC.a.8.2.1.7}\label{myHAREC.a.8.2.1.7}
 }
+\label{spektrumanalysator}
 
 En spektrum-analysator visar amplituden för olika frekvenser över ett visst
 frekvensområde.
 Detta är som kontrast till oscilloskopet som visar amplitud för en signal
 över tiden.
 
-En spektrumanalysator kan styras för att svepa över olika frekvensområden.
-Oftast när man startar den så sveper den från lägsta till högsta frekvens.
-Det kan vara behändigt för att få en första översikt.
-För en specifik mätning ställer man in start och stop frekvens, eller
-alternativt en center-frekvens och ett span.
+Spektrumanalysatorn kan liknas vid en mottagare, men med en viktig skillnad:
+Där en mottagare har ett eller flera avstämda ingångssteg, som skall förhindra
+mottagaren att påverkas av signaler som ligger mer eller mindre nära den
+önskade signalen, har spektrumanalysatorn en vidöppen ingång.
+
+Spektrumanalysatorn är ett mätinstrument, och skall kunna presentera de
+signaler som matas in på dess ingång, utan att signalerna skall påverkas på
+något sätt.
+
+Detta ställer höga krav på spektrumanalysatorns konstruktion.
+Den måste kunna tåla starka signaler, utan att en mätning på en svag signal i
+närheten påverkas.
+
+Spektrumanalysatorerna finns också i två olika typer. 
+Den ena arbetar med svepteknik, och sveper över ett viss del av
+frekvensspektrumet.
+
+Den andra typen kallas för \emph{realtidsanalysatorer}, och är kapabla att ta
+ett helt frekvensområde, t.ex ett 10 MHz brett spektrum, och läsa in det
+digitalt, för ett givet ögonblick, för att användaren senare skall kunna
+analysera innehållet.
+
+Dessa utrustningar är mycket dyra och används huvudsakligen i forskningssyfte.
+
+Det vi fortsättningsvis beskriver i detta kapitel, är sålunda den svepande spektrumanalysatorn, vilket också är den vanligaste typen för service-tillämpningar.
+
+En modern spektrumanalysator av dyrare snitt erbjuder också en möjlighet att
+analysera den modulerade signalen. 
+Sålunda förekommer instrument på marknaden som är specialdesignade att
+analysera signaleringsinnehållet i olika system, t.ex Bluetooth, olika
+Wifi- och mobilsystem.
+Denna instrumentklass är dock inte avsedd för radioamatörer, utan för
+utveckling och produktion av bl.a. de system som nämndes ovan.
+
+Kraven på förmåga att hantera starka signaler i närheten av en svag men önskad
+signal, har  inneburit att kostnaden för detta viktiga instrument  under lång
+tid har varit mycket hög.
+Valet av komponenter och design är kritiskt. 
+Det är bara för några år sedan som det har kommit produkter på marknaden som nu
+kommit ner i kostnadsnivåer som inneburit att radioamatörer kan köpa dessa
+instrument,  i nyskick.
+ 
+Under många decennier har sändareamatörer varit hänvisade till surplusmarknaden
+för instrument som haft minst tio till tjugo år på nacken.
+
+För en specifik mätning över ett visst frekvensspektrum, kan man ställa in en
+s.k. start-frekvens, samt motsvarande stopp-frekvens för spektrumet ifråga.
+Analysatorn kommer då att svepa, från startfrekvensen, till stoppfrekvensen.
+Man kan också att välja en frekvens mitt i spektrumet, och därefter ett
+valfritt s.k. span.
+\emph{Span} betecknar det frekvens-spann som är önskvärd för att man skall
+kunna studera signalerna inom det aktuella spektrumet.
 
 För att kunna göra bättre avläsningar kan man sätta markörer, så att man kan
 avläsa frekvens och amplitud för den punkten.
@@ -360,7 +428,7 @@ vilket kan vara relevant för filter eller avläsa den relativa styrkan på ett
 sidband.
 
 En spektrum-analysator består förenklat av en svep-bar oscillator,
-variabelt filter på mellan frekvensen, en detektor och ett ställbart
+variabelt filter på mellanfrekvensen, en detektor och ett ställbart
 filter från detektorn.
 
 Den variabla oscillatorn sveper så att det tänkta frekvensområdet täcks,
@@ -374,8 +442,72 @@ Filtret sätter bandbredden på mätningen, och det kan gå i 1--3 steg, t.ex.
 För vissa specifika mätändamål, som t.ex. för EMC mätningar, behöver man ha
 filter av rätt bandbredd och dessa är extra optioner.
 
+Filtret, vars inställning brukar kallas för \emph{Resolution Bandwidth},
+fungerar som ett fönster, där fönstret släpper in de signaler som finns i det
+spektrum som man önskar studera. 
+
+Om analysatorn inte skulle ha något filter skulle den ta in alla signaler som
+finns inom dess specificerade frekvensområde.
+
+Ett brett filter släpper igenom ett större frekvensområde och är användbart för
+signaler med större bandbredd.
+Ett smalare filter är att föredra för signaler med smalare bandbredd.
+
+Ett brett filter innebär också att analysatorn kan svepa snabbare.
+Det är då lättare att kunna detektera signaler som är kortvariga.
+Ett smalare filter innebär att analysatorn måste svepa långsammare, men kan då
+istället hitta signaler som inte skulle ha synts med det bredare filtret.
+
+Detta filter har också en annan egenskap som är viktig -- ett brett filter
+släpper också igenom mer brus, vilket påverkar den lägsta brusnivån som
+analysatorn kan presentera.
+För att nå högre känslighet kan man välja smalare filter.
+Ju smalare filter, desto högre känslighet, men också ett långsammare svep över
+det aktuella frekvensområdet.
+
+Här kommer återigen kostnaden in som en parameter vid val av instrument.
+Ju känsligare instrument, med förmåga att undertrycka falska signaler, som
+kan uppstå i instrumentet p.g.a. frekvensblandningar, desto dyrare.
+
 Detektorn kan vara topp-detektor eller RMS detektor, det kan finnas flera.
 För specifika mätändamål som t.ex. EMC mätningar behöver man specifik detektor.
+Det är viktigt att välja rätt detektor när signalen skall presenteras.
+Valet av detektor kan påverka den presenterade nivån med flera dB.
+
+Det finns olika detektorer beroende på hur man vill ha signalen presenterad.
+Det finn toppvärdesindikerande (Auto-peak, max peak, min peak) detektorer som
+indikerar signalens toppvärden.
+Det finns medelvärdesbildande (\emph{Average}, \emph{Sample}) detektorer som, om
+instrumentet arbetar med digitalteknik, plockar ögonblickliga mätvärden
+slumpmässigt. 
+Det finns också speciella detektorer ( s.k. Quasi-Peak)  som används för att
+mäta enligt specifika  EMC-mätningar.
+
+En viktig detektor att komma ihåg är den s.k. RMS-detektorn. 
+Den utvecklades för att kunna mäta på digitalt modulerade signaler, ofta med
+varierande fas- och amplitudinformation.
+
+Denna detektor är att rekommendera för att mäta på digitalt modulerade signaler.
+Den finns oftast i lite modernare analysatorer. 
+
+En vanlig Average- eller Sample-detektor enligt ovan, förväntar sig att
+RF-signalens envelop i stort sett är återkommande konstant, vilket är fallet
+med analoga signaler som består av en bärvåg.
+
+En digitalt modulerad signal har en envelop som förändras hela tiden, oftast
+både till fas och amplitud.
+
+RMS-detektorn läser in -- samplar -- den digitalt modulerade signalen och tar
+konstant mätvärden ur den fasvarierande RF-signalen.
+Den följer RF-signalens förändrade envelop.
+
+Denna detektor är därför utmärkt att använda för att mäta på digitalt
+modulerade signaler. t.ex. Bluetooth eller Wifi-signaler, men även de digitala
+systrem vi har inom amaörradion, då dessa signaler innehåller förändringar i
+fas- och amplitud.  
+
+Den kan självklart också användas för att mäta på analoga signaler.
+Att den plockar ögonblicksmätvärden även på en analog signal gör alltså inget.
 
 Efter detektorn finns ett filter, ofta benämnt med video-bandbredd, som
 medelvärdesbildar detektorns ampltitudestimat över tiden.
@@ -387,18 +519,61 @@ Ibland kan man styra video-bandbredden manuellt för att få en längre tid, då
 det kan vara gynnsamt för att få en tydligare bild, dvs. ta bort brus och
 störningar som enbart skapar variationer för att man inte observerar ett bra
 medelvärde.
+Videobandbredden påverkar alltså inte själva mätresultatet, utan är enbart till
+för att användaren lättare skall kunna avläsa mätningen.
+
+\subsection{Signalgeneratorn}
+
+\emph{Signalgeneratorn} (eng. \emph{signal generator}) är ett instrument, som
+namnet antyder, genererar en signal, i detta fall en radiofrekvent signal.
+
+Detta instrument kan användas för att t.ex. testa mottagare, eller för att att
+generera en eller flera kontrollerade signaler för att t.ex. testa
+förstärkarsteg.
+
+Äldre signalgeneratorer var oftast uppbyggda runt en svängningskrets, och drev
+ofta i frekvens när de värmdes upp.
+De var sålunda inte stabila.
+Senare generatorer arbetade med frekvenssyntes, och var att föredra i detta
+sammanhang.
+
+Den kan också användas för att generera en testsignal, som man matar in på en
+mottagares ingång, för att sedan kunna följa signalen med en spektrumanalysator
+(se \ref{spektrumanalysator}).
+
+En bra signalgenerator skall ha förmågan att ge en så ren signal som möjligt,
+där övertoner och sidband av olika slag är så låga som möjligt.
+Ofta genererar generatorn ett egetbrus runt den inställda signalen.
+Detta brus avtar, ju längre bort man kommer fårn den instälda signalen.
+Detta brus skall förstås vara så lågt som möjligt.
+
+En annan önskvärd parameter är möjligheten at kunna reglera den radiofrekventa
+utnivån över ett stort område.
+Signalgeneratorer innehåller oftast någon form av mätfunktion för att kunna
+mäta nivån.
+
+En fördel är om signalgenratorn har en möjlighet att själv skapa modulation,
+t.ex AM eller FM-signaler.
+Det kan emellanåt finna en inbyggd lågfrekvensgenerator, där man kan ställa in
+önskad frekvens fär att t.ex. generera en ton.
+I detta sammanhang brukar det också finnas möjlighet att justera
+modulationsgraden för AM, eller deviationen för FM-signalen.
 
 \subsection{Nätverksanalysator}
+\label{nätverksanalysator}
+\label{network analyzer}
 
-En nätverksanalysator (eng. network analyser) används för att mäta hur mycket
-signal som går igenom en koppling, t.ex. filter eller förstärkare, eller hur
-mycket signal som reflekteras tillbaka från t.ex. en antenn.
+En \emph{nätverksanalysator} (eng. \emph{network analyser}) används för att
+mäta hur mycket signal som går igenom en koppling, t.ex. filter eller
+förstärkare, eller hur mycket signal som reflekteras tillbaka från t.ex. en
+antenn.
 Ibland kallas detta även för antenn-analysator.
 
 En nätverksanalysator som enbart kan mäta amplituder kallas ibland för
 skalär nätverksanalysator (eng. Scalar Network Analyzer -- SNA).
 En spektrumanalysator med en så kallad tracking generator, som genererar en
 signal med samma frekvens som man analyserar, kan agera SNA.
+En signalgenerator med svepfunktion kan också aggera SNA.
 
 En nätverksanalysator som mäter fasen både på utgående och inkommande signal
 kan även mäta fasförskjutningen, och då kan man representera fasen både som
@@ -420,6 +595,6 @@ skillnaderna vara drastiska.
 
 Nätverksanalysatorn har därtill ofta ett stort antal olika sätt att presentera
 mätresultaten så att man kan mäta enligt scatter-modellen, return loss (RL),
-VSWR, Schmitt-diagram och så vidare.
+VSWR, Smith-diagram och så vidare.
 Det gör att en nätverksanalysator kan vara ett kraftfullt verktyg som korrekt
 använt kan ge god insikt i hur en krets beter sig.
