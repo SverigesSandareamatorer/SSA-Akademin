@@ -73,14 +73,19 @@ Detta brukar bland annat öka taltydligheten.
 
 \subsection{Fouriertransform -- FFT}
 \textbf{HAREC a.\ref{HAREC.a.3.8.2}\label{myHAREC.a.3.8.2}}
+\index{Fouriertransform}
+\index{diskret fouriertransform} 
+\index{Discrete Fourier Transform (DFT)}
+\index{DFT}
+\index{Fast Fourier Transform (FFT)}
 
 En specifik form av processing som blivit tillgänglig är fouriertransform,
 dvs. förmågan att omvandla från signalstyrka över tid till signalstyrka över
 frekvens.
 Eftersom processingen sker i diskret tid, dvs. värden med en viss tid emellan,
 så som ofrånkomligt med samplade värden, så är det ett specialfall av
-fouriertransform, som därför heter diskret fouriertransform (eng.
-Discrete Fourier Transform (DFT)).
+fouriertransform, som därför heter \emph{diskret fouriertransform}  (eng.
+\emph{Discrete Fourier Transform (DFT)}).
 
 DFT kan göras på alla möjliga längder av sekvenser, men är beräkningstungt
 om man vill ha alla möjliga frekvenser.
@@ -92,7 +97,7 @@ på flera olika sätt kan slå samman beräkningarna och göra del-beräkningar 
 kan användas av flera andra steg, och på så sätt minska beräkningsbördan.
 Detta kan sedan göras hierarkiskt, så att en rekursiv form kan göras.
 Det finns flera metoder att göra detta på, men de sammanfattas med som en
-snabb DFT, dvs. Fast Fourier Transform (FFT), som även den är diskret.
+snabb DFT, dvs. \emph{Fast Fourier Transform (FFT)}, som även den är diskret.
 En nackdel med FFT är man ofta hamnar på jämna två-potenser i antalet samples,
 t.ex. 512, 1024, 2048, 4096 osv samples och frekvenser.
 Man har därmed offrat lite av DFTns generalitet.
@@ -113,14 +118,20 @@ vattenfall med sina vertikala streck.
 
 \subsection{Direct Digital Synthesis -- DDS}
 \textbf{HAREC a.\ref{HAREC.a.3.8.3}\label{myHAREC.a.3.8.3}}
+\index{Direct Digital Synthesis (DDS)}
+\index{DDS}
+\index{fasackumulator}
+\index{phase accumulator (PA)}
+\index{PA -- phase accumulator}
+\index{nykvist-frekvensen}
 
-En term som kommit starkt på senare år är Direct Digital Synthesis (DDS).
+En term som kommit starkt på senare år är \emph{Direct Digital Synthesis (DDS)}.
 Detta syftar på att man kan istället för som med en PLL indirekt styra en
 oscillator direkt syntetisera en vågform, och man kan göra det med väldigt
 hög upplösning och ändra den väldigt fort.
 Medans det kan göras på många sätt, så är den dominerande principen den att
-man gör en oscillator med en så kallad fasackumulator (eng. phase accumulator
-(PA)).
+man gör en oscillator med en så kallad \emph{fasackumulator} (eng. \emph{phase
+ accumulator (PA)}).
 En fasackumulator är inget annat än ett adderingssteg följt av en delay-steg.
 Det är ett extremfall av ett IIR filter, med enbart en pol, som integrerar,
 dvs. ackumulerande effekt.
@@ -130,8 +141,8 @@ Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
 Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
 varieras fort och fritt.
 Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.
-Högsta frekvensen blir nykvist-frekvensen, dvs. halva samplingsfrekvensen och
-lägsta blir den som minst signifikanta biten ger.
+Högsta frekvensen blir \emph{nykvist-frekvensen}, dvs. halva
+samplingsfrekvensen och lägsta blir den som minst signifikanta biten ger.
 
 Den utgående fasen ur själva fasackumulatorn vågformas sedan om till sinus,
 cosinus eller vad man nu önskar. Det går även att använda en uppslagstabell
