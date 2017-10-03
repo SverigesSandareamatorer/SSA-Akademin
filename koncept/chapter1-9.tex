@@ -22,11 +22,11 @@ av spänning och ström.
 \index{effekt!dB}
 
 Måtten i det metriska systemet är alldagliga och ingen finner det märkligt att
-det t.ex. går tio decimeter på en meter. Däremot är begreppet decibel ovant för
-många.
+det t.ex. går tio decimeter på en meter.
+Däremot är begreppet decibel ovant för många.
 
-I detta avsnitt förklaras det mycket användbara begreppet decibel. Decibel (dB)
-är en tiondedel av grundenheten Bel (B).
+I detta avsnitt förklaras det mycket användbara begreppet decibel.
+Decibel (dB) är en tiondedel av grundenheten Bel (B).
 
 Räkning med decibel grundas på logaritmer, som är ett bekvämt sätt att uttrycka
 och behandla talvärden.
@@ -36,15 +36,16 @@ Decibel är ett dimensionslöst uttryck för graden av dämpning alternativt
 förstärkning.
 }\end{quote}
 
-\emph{Effektdämpning} är följden av att vissa komponenter bromsar elektrisk ström. Den
-bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
+\emph{Effektdämpning} är följden av att vissa komponenter bromsar elektrisk
+ström.
+Den bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
 sammansatta nätverk av R, L och C.
 
-\emph{Effektförstärkning} innebär att en transistor, ett elektronrör eller annan s.k.
-aktiv komponent kan styra en större elektrisk ström och därmed större effekt än
-den själv styrs med. Vad som förorsakar effektförändringarna går vi inte in på i
-detta sammanhang, utan byggdelarna betraktas som ''svarta lådor'' med
-anslutningsklämmor.
+\emph{Effektförstärkning} innebär att en transistor, ett elektronrör eller
+annan s.k. aktiv komponent kan styra en större elektrisk ström och därmed
+större effekt än den själv styrs med.
+Vad som förorsakar effektförändringarna går vi inte in på i detta sammanhang,
+utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.
 
 En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 
@@ -56,16 +57,18 @@ En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 \end{center}
 \end{figure}
 
-Antag att den inmatade effekten P är 1~W. Om effekten inte ändras vid passagen
-genom fyrpolen, så är även den uttagna effekten 1~W.
+Antag att den inmatade effekten P är 1~W.
+Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna
+effekten 1~W.
 
 \emph{Effektförhållandet} mellan in- och utgångarna är då
 
 \(\dfrac{P_{in}}{P_{ut}} = \dfrac{1\ watt}{1\ watt} = 1 (kvoten = 1)\)
 
 Oförändrad effekt varken dämpas eller förstärks, varför både dämpningen och
-förstärkningen har talvärdet 0. Enheten på talvärdet är Bel, dämpningen eller
-förstärkningen är således 0~Bel. En tiondel därav är 0~decibel (0~dB).
+förstärkningen har talvärdet 0.
+Enheten på talvärdet är Bel, dämpningen eller förstärkningen är således 0~Bel.
+En tiondel därav är 0~decibel (0~dB).
 
 Omräkning av kvoten av en effektändring till dB görs så, att 10-logaritmen för
 kvoten söks och resultatet blir effektändringen uttryckt i Bel (B). Om
@@ -74,7 +77,8 @@ resultatet uttrycks i dB, ska Bel-värdet multipliceras med 10.
 Logaritmer förklaras i appendix \ref{logaritmer}.
 
 För att förenkla beräkningen av dB-talet divideras det högre effekttalet med det
-lägre. Bokstaven a i följande formler betyder antingen förstärkning (+a) eller
+lägre.
+Bokstaven a i följande formler betyder antingen förstärkning (+a) eller
 dämpning (-a) beroendet på vilket förtecken som sätts.
 
 \(a[B] = \log \dfrac{P_\text{hög}}{P_\text{låg}}\)
@@ -82,12 +86,13 @@ dämpning (-a) beroendet på vilket förtecken som sätts.
 \(a[dB] = 10\log \dfrac{P_\text{hög}}{P_\text{låg}}\)
 
 Att addera eller subtrahera värden på en logaritmisk skala, motsvarar att
-multiplicera resp. dividera värden på en linjär skala. Huvudskalorna på en
-räknesticka är logaritmiska. (Räknestickan är ett enkelt, förut mycket använt
-hjälpmedel).
+multiplicera resp. dividera värden på en linjär skala.
+Huvudskalorna på en räknesticka är logaritmiska.
+(Räknestickan är ett enkelt, förut mycket använt hjälpmedel).
 
-Med hjälp av nomogrammet i bild \ref{ellära-nomogram-db-effekt} kan en \textbf{effektändring}, uttryckt som kvot
-(effekterna dividerade med varandra), omvandlas till decibel och omvänt.
+Med hjälp av nomogrammet i bild \ref{ellära-nomogram-db-effekt} kan en
+\textbf{effektändring}, uttryckt som kvot (effekterna dividerade med varandra),
+omvandlas till decibel och omvänt.
 
 \begin{figure}
   \fbox{\includegraphics[width=\textwidth]{images/nomogram_db_effekt.png}}
@@ -127,7 +132,9 @@ Kvot av & Analys             & Skriv            & dB \\
 \index{dB!ström}
 
 Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i dB,
-men annorlunda än mellan effekter. En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för jämförelse.
+men annorlunda än mellan effekter.
+En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
+jämförelse.
 
 Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\))
 
@@ -135,14 +142,13 @@ således \(\dfrac{P_\text{h{\oe}g}}{P_\text{l{\aa}g}} = \dfrac{I_\text{hög}^2 \
 
 R kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
-En jämförelse uttryckt i dB kan endast göras
-under samma förutsättningar; här att impedanserna (resistanserna) är lika,
+En jämförelse uttryckt i dB kan endast göras under samma förutsättningar;
+här att impedanserna (resistanserna) är lika,
 
 således \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
 
-Effektförhållandet eller kvadratvärdet på
-strömförhållandet kan uttryckas logaritmiskt
-i B eller dB
+Effektförhållandet eller kvadratvärdet på strömförhållandet kan uttryckas
+logaritmiskt i B eller dB
 
 \(a[dB] = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
 
@@ -163,14 +169,14 @@ Två effekter kan ställas i förhållande till varandra på följande sätt:
 
 \(\dfrac{P_\text{hög}}{P_\text{låg}}=\dfrac{U_\text{hög}^2 \cdot R}{U_\text{låg}^2 \cdot R}\)
 
-R avkortas och efter omskrivning fås en formel som liknar den för strömmar
+\(R\) avkortas och efter omskrivning fås en formel som liknar den för strömmar
 
 \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{U_\text{hög}^2}{U_\text{låg}^2}\)
 
 \(a[dB] = 20\log \dfrac{U_\text{hög}}{U_\text{låg}}\)
 
-Med nomogrammet i bild \ref{ellära-nomogram-db-spänning} kan kvoten av en ström- eller spänningsändring omvandlas
-till decibel och tvärt om.
+Med nomogrammet i bild \ref{ellära-nomogram-db-spänning} kan kvoten av en
+ström- eller spänningsändring omvandlas till decibel och tvärt om.
 
 \begin{figure}
   \fbox{\includegraphics[width=\textwidth]{images/nomogram_db_spanning.png}}
@@ -225,15 +231,16 @@ förstärkning och negativa svar för dämpning.
 \section{Decibel över 1 mW vid 50 Ohm [dB(m)]}
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av 50~\(\Omega\). För god anpassning väljs då koaxialkablarna
-mellan apparaterna med en karaktäristisk impedans av 50~\(\Omega\).
+med en impedans av 50~\(\Omega\).
+För god anpassning väljs då koaxialkablarna mellan apparaterna med en
+karaktäristisk impedans av 50~\(\Omega\).
 
-\emph{Det har utbildats en praxis, att referensvärdet vid jämförelse
-	av signalnivåer i radiosystem ska vara en milliwatt (1~mW)
-	utvecklad i en belastning med impedansen 50~\(\Omega\).}
-
-Signalnivåer över belastningen 50~\(\Omega\) kan uttryckas i dB(m), där (m)
-står för milliwatt, varvid referenseffekten 1~mW är 0~dB(m) vid 50~\(\Omega\).
+Det har utbildats en praxis, att referensvärdet vid jämförelse av signalnivåer
+i radiosystem ska vara en milliwatt (1~mW) utvecklad i en belastning med
+impedansen 50~\(\Omega\).
+Signalnivåer över belastningen 50~\(\Omega\) kan uttryckas i dB(m) eller ofta
+dBm, där (m) står för milliwatt, varvid referenseffekten 1~mW är 0~dB(m) vid
+50~\(\Omega\).
 
 Det spänningsfall som bildas över belastningen 50~\(\Omega\) vid effektnivån
 0~dB( m) är
@@ -301,8 +308,8 @@ Spänning
 \emph{dB(W) är ett annat absolut mått.}
 
 Effektnivåer över en belastning kan också uttryckas i dB(W), där (W)
-står för watt. Referenseffekten är då 1~W, d.v.s. 0~dB(W). Liksom med
-dB(m) anges impedansen i den belastning, som effekten utvecklas över.
+står för watt. Referenseffekten är då 1~W, d.v.s. 0~dB(W).
+Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
 \subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
 \textbf{HAREC a.\ref{HAREC.a.1.9.3}\label{myHAREC.a.1.9.3}}
@@ -335,9 +342,9 @@ Normalt vill man nämligen överföra mesta möjliga effekt från energikällan
 (t.ex. sändaren) till förbrukaren (t.ex. antennen).
 
 Varje spänningskälla har en inre resistans \(R_i\). Det innebär som först att
-källan inte kan avge oändligt stor ström. För att förenkla det hela antar vi nu
-att en sändare med den inre resistansen \(R_i\) ansluts direkt till en antenn
-med resistansen \(R_a\).
+källan inte kan avge oändligt stor ström.
+För att förenkla det hela antar vi nu att en sändare med den inre resistansen
+\(R_i\) ansluts direkt till en antenn med resistansen \(R_a\).
 
 Målet med anpassningen är att finna det optimala förhållandet mellan
 sändarresistansen och antennresistansen för att kunna överföra maximal effekt.
@@ -358,8 +365,8 @@ R_a = \infty & & I = 0 & & U = E
 
 Fall 2.
 När sändarutgången är kortsluten, d.v.s. belastningen (antennresistansen) är
-noll ohm, avger sändaren en ström som beror av EMK och inre resistans. Eftersom
-sändarutgången är kortsluten är utspänningen \(U\) noll.
+noll ohm, avger sändaren en ström som beror av EMK och inre resistans.
+Eftersom sändarutgången är kortsluten är utspänningen \(U\) noll.
 Alltså vid kortsluten sändare:
 
 \(
@@ -394,9 +401,10 @@ I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker 
 \textbf{HAREC a.\ref{HAREC.a.1.9.5}\label{myHAREC.a.1.9.5}}
 \index{verkningsgrad}
 
-Antag att en antennkabel har en effektförlust av 1~dB. Det innebär en
-effektdämpning av 1,25 gånger, d.v.s. 0,8. Nu matar vi in 10~W i kabeln och får
-alltså ut 8~W. Hur stor verkningsgrad har kabeln uttryckt i procent?
+Antag att en antennkabel har en effektförlust av 1~dB.
+Det innebär en effektdämpning av 1,25 gånger, d.v.s. 0,8.
+Nu matar vi in 10~W i kabeln och får alltså ut 8~W.
+Hur stor verkningsgrad har kabeln uttryckt i procent?
 Lösning:
 
 \(\eta = \dfrac{8}{10} \cdot 100 = 80\ \%\)
