@@ -31,16 +31,13 @@ själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
 PDF
 ---
 
-Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte
-uppdaterad kontinuerligt så datumet visar hur pass ny den är.
+**Hämta det senaste bygget:**
+**[koncept.pdf](http://ssaakademin.fn42.se/)**
 
 Notera att fokus för stunden ligger på innehåll och inte layout, så alla
 layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
 Det finns dock gott om innehåll att granska och komma med förbättringsförslag
 på.
-
-**Hämta hem den senaste versionen:**
-**[koncept.pdf](http://ssaakademin.fn42.se/)**
 
 
 BIDRA TILL PROJEKTET
@@ -86,4 +83,3 @@ KONTAKT
 -   [Hans "SM0UTY" Insulander](mailto:hans.insulander@codium.se)
 -   [Petter "SA2PKA" Karkea](mailto:petter@karkea.se)
 -   [Peter "SA2BLV" Lundberg](mailto:pette.lundberg@gmail.com)
-
