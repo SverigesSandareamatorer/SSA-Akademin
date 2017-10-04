@@ -1132,6 +1132,17 @@ Andra system för FEC är Hamming-koder, paritets-paket, Reed-Solomon (RS) osv.
 
 \subsection{Digitala sändningsslag}
 
+Exempel på digitala modulationstekniker för kortvågstillämpningar inom
+amatörradio.
+
+De flesta digitala moder för kortvåg är smalbandiga och bandbredden kan i vissa
+fall endast vara några Hertz. 
+
+Signalbehandlingen sker i den dator som programmet körs på, och där datorns
+in- och utgång för dess ljudkort, är kopplat till amatöradioutrustningen.
+Oftast är programmets styrning av sändning och  mottagning också kopplad till
+lämplig serieport, t.ex via dess USB-anslutning.
+
 \subsubsection{RTTY}
 \index{RTTY}
 \index{FSK}
@@ -1187,7 +1198,6 @@ Det första programmet utvecklades specifikt för windowsbaserade datorer med
 ljudkort, av den engelska radioamatören Peter Martinez, G3PLX, och
 introducerades i amatörradiovärlden 1998.
 
-
 \paragraph{Teknik}
 
 Modulationen som används i PSK31, utvecklades från en idé av den polske
@@ -1200,3 +1210,106 @@ Ett bra designat PSK-baserat system kan ge bättre resultat än FSK, och kan
 arbeta med smalare bandbredd än FSK.
 Överföringshastigeten 31~Baud valdes för att passa en genomsnittlig
 skrivhastighet, hos den gemene amatören.
+
+\subsubsection{WSPR}
+\index{WSPR}
+
+\paragraph{Historia}
+
+WSPR släpptes i sin första version, 2008.
+Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
+open source-program, och utvecklas av ett litet team. 
+Joe Taylor, är utbildad i astronomi vid Harvard University, och arbetar nu vid
+Princeton University inom området astrofysik.
+Joe Taylor är också nobelpristagare i fysik, 1993.
+
+Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
+
+\paragraph{Teknik}
+
+WSPR står för Weak Signaling Propagation Reporter, och uttalas ''Whisper''. 
+WSPR är en mode som använder amatörradiostationen som en radiofyr, en s.k.
+beacon, då sändning och mottagning sker i tvåminuterspass, och efter varje
+sändningspass, rapporterar de stationer som mottagit signalen, in sitt resultat
+till en databas över internet.
+Den sändande stationen kan därefter studera resultatet.
+WSPR använder låga effekter.
+Det går att nå europeiska stationer med effekter under 100 mW, och andra
+kontinenter med effekter under några Watt, även med modesta antenner.
+
+\subsubsection{WSJT}
+\index{WSJT}
+\index{FSK441}
+\index{JT6M}
+\index{JT65}
+\index{JT9}
+\index{FT8}
+\index{FSK}
+\index{meteoriter}
+\index{troposcatter}
+\index{EME}
+\index{8FSK}
+
+WSJT, är som WSPR, ett program, som används inom amatörradiohobbyn för s.k.
+weak-signalling communication. 
+Även detta program är utvecklat av Joe taylor, K1JT.
+De flesta moder (se nedan) är s.k. smalbandiga moder, som ibland inte upptar
+större bandbredd än några Hertz.
+
+\paragraph{Historia}
+
+WSJT presenterades för amatörradiovärlden 2001, och har undergått ett flertal
+revisioner.
+Olika kommunikationsmoder har under åren lagts till och tagits bort.
+Sedan 2005 är programmet ett open sourceprogram, och även om K1JT fortvarande
+är ansvarig, utvecklas det nu av ett litet team.
+
+\paragraph{Teknik}
+
+WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
+varianter av i huvudsak FSK-modulering används.
+
+FSK441 används för att utvärdera överföringar via radiovågsreflekterande skikt
+av laddade joner, som uppkommer från de spår som meteoriter lämnar efter sig.
+
+JT6M introducerades 2002, och är avsett för kommunikation via bl.a.
+meteorreflektioner på bl.a. 6~m bandet.
+
+JT65, utvecklat och släppt 2003, används för kommunikation via tropsfären, s.k.
+troposcatter, en också för kommunikation via reflexer mot månen. s.k.
+EME-trafik.
+
+JT9 används för kortvågstrafik, och är snarlik JT65, men använder sig av en
+FSK-signal med nio toner.
+JT9 använder sig av mindre än 16~Hz bandbredd.
+
+FT8 utvecklades och släpptes 2017, och använder sig av en 8FSK-signal. 
+
+FT8 är att föredra vis s.k. multi hop via E-skikt, där signalerna utsätts för
+fädning, och där öppningarna mot andra stationer är korta, och man behöver
+slutföra kommunikationen inom en kort tid.
+
+\subsubsection{FreeDV}
+\index{FreeDV}
+
+FreeDV skiljer sig mot de moder som nämnts ovan, genom att denna mode är tänkt
+för digitalt tal på kortvåg.
+
+\paragraph{Historia}
+
+FreeDV skapades av en grupp av radioamatörer från olika länder, som arbetade
+med kodning, design, användargränssnitt, och testning.
+FreeDV släpptes 2015.
+
+\paragraph{Teknik}
+
+FreeDV är tänkt för att användas på kortvåg med SSB-modulerade radiostationer,
+men kan också användas med AM eller FM -modulering. 
+Fördelen skall vara att överföringen blir ner robust, samt att signaleringen är
+designad att motverka påverkan av fädning.
+
+FreeDV använder en något mer komplex modulering. 
+Man använder sig av ett flertal bärvågor, inom dess bandbredd på 1,25~kHz. 
+Bärvägorna ligger med 75~Hz mellanrum, och varje bärvåg moduleras med varianter
+av PSK-modulering.
+Bandbredden är hälften (1,25~kHz)  mot en normal SSB-bandbredd (2,4~kHz).
