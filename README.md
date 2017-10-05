@@ -32,7 +32,8 @@ PDF
 ---
 
 **Hämta det senaste bygget:**
-**[koncept.pdf](http://ssaakademin.fn42.se/)**
+**[koncept.pdf](http://ssaakademin.fn42.se/koncept-pdf/koncept.pdf)**
+([arkiv](http://ssaakademin.fn42.se/koncept-pdf/))
 
 Notera att fokus för stunden ligger på innehåll och inte layout, så alla
 layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
