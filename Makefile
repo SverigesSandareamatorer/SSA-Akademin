@@ -39,6 +39,7 @@ KONCEPT_CH7_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
 KONCEPT_CH8_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex
 KONCEPT_CH9_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex \
 	koncept/chapter9-3.tex koncept/chapter9-4.tex
+KONCEPT_CH11_FILES = koncept/chapter11-1.tex
 KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/chapter12-3.tex koncept/chapter12-4.tex
 KONCEPT_CH13_FILES = koncept/chapter13-1.tex koncept/chapter13-2.tex \
@@ -60,11 +61,12 @@ KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/matte.tex koncept/part3.tex \
 	koncept/preface.tex koncept.bib \
 	koncept/koncept-core.tex \
-	koncept.tex koncept/emf.tex koncept/chapter17-1.tex
+	koncept.tex koncept/chapter17-1.tex
 KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
 	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH5_FILES) \
 	$(KONCEPT_CH6_FILES) $(KONCEPT_CH7_FILES) $(KONCEPT_CH8_FILES) \
-	$(KONCEPT_CH9_FILES) $(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
+	$(KONCEPT_CH9_FILES) $(KONCEPT_CH11_FILES) \
+	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
 	$(KONCEPT_CH14_FILES) $(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
@@ -116,10 +118,13 @@ koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
 	-xelatex koncept-online.tex
 	xelatex koncept-online.tex
 
+emf-handout.idx:
+	xelatex handouts/emf-handout.tex
+
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
-emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/emf.tex common.tex
+emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
 	xelatex handouts/emf-handout.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
