@@ -8,22 +8,23 @@ all:	koncept.pdf TODOs
 
 .PHONY:	*.pdf
 
-KONCEPT_CH1_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
+KONCEPT_CH01_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-8.tex \
 	koncept/chapter1-9.tex
-KONCEPT_CH2_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
+KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex \
 	images/power1.pdf
-KONCEPT_CH3_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
+KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
+KONCEPT_CH04_FILES = koncept/chapter4-1.tex
 KONCEPT_CH05_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex \
 	koncept/chapter5-3.tex koncept/chapter5-4.tex \
 	koncept/chapter5-5.tex koncept/chapter5-6.tex \
@@ -62,13 +63,15 @@ KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/matte.tex koncept/part3.tex \
 	koncept/preface.tex koncept.bib \
 	koncept/koncept-core.tex \
-	koncept.tex koncept/chapter17-1.tex
-KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
-	$(KONCEPT_CH3_FILES) $(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
-	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) $(KONCEPT_CH09_FILES) \
-	$(KONCEPT_CH10_FILES) $(KONCEPT_CH11_FILES) \
-	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
-	$(KONCEPT_CH14_FILES) $(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
+	koncept.tex
+KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
+	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \
+	$(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
+	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) \
+	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \
+	$(KONCEPT_CH11_FILES) $(KONCEPT_CH12_FILES) \
+	$(KONCEPT_CH13_FILES) $(KONCEPT_CH14_FILES) \
+	$(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
