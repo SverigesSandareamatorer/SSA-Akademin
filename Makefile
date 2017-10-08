@@ -24,11 +24,11 @@ KONCEPT_CH3_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
-KONCEPT_CH4_FILES = koncept/chapter4-1.tex koncept/chapter4-2.tex \
-	koncept/chapter4-3.tex koncept/chapter4-4.tex \
-	koncept/chapter4-5.tex koncept/chapter4-6.tex \
-	koncept/chapter4-7.tex koncept/chapter4-8.tex \
-	koncept/chapter4-9.tex
+KONCEPT_CH05_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex \
+	koncept/chapter5-3.tex koncept/chapter5-4.tex \
+	koncept/chapter5-5.tex koncept/chapter5-6.tex \
+	koncept/chapter5-7.tex koncept/chapter5-8.tex \
+	koncept/chapter5-9.tex
 KONCEPT_CH06_FILES = koncept/chapter6-1.tex koncept/chapter6-2.tex
 KONCEPT_CH07_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
@@ -64,7 +64,7 @@ KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/koncept-core.tex \
 	koncept.tex koncept/chapter17-1.tex
 KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
-	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH06_FILES) \
+	$(KONCEPT_CH3_FILES) $(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
 	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) $(KONCEPT_CH09_FILES) \
 	$(KONCEPT_CH10_FILES) $(KONCEPT_CH11_FILES) \
 	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
