@@ -32,5 +32,5 @@ deploy:
 
 addons:
   ssh_known_hosts:
-  - ${FTP_SERVER}
-  - ${FTP_IP}
+  - ssaakademin.fn42.se
+  - 185.97.32.47
