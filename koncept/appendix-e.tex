@@ -8,42 +8,52 @@
 \index{tilldelat frekvensband}
 \index{frekvenstolerans}
 
-Radiosändningar beskrivs enligt ITU-RR Appendix 1 med standardiserade
-kombinationer av siffror och bokstäver som beskriver sändningens nödvändiga
-bandbredd och sändningsklass.
+Radiosändningar beskrivs enligt ITU-RR Appendix 1 \cite{ITU-RR} med
+standardiserade kombinationer av siffror och bokstäver som beskriver
+sändningens nödvändiga bandbredd och sändningsklass.
 
 Den fullständiga beskrivningen av en radiosändning inleds med fyra tecken
-som beskriver den nödvändiga bandbredden. Detta följs av tre tecken som
-beskriver sändningsklassen. Vid behov kan sändningsklassens tre tecken
-kompletteras med ytterligare två tecken som tydligare beskriver signalen.
+som beskriver den nödvändiga bandbredden.
+Detta följs av tre tecken som beskriver sändningsklassen.
+Vid behov kan sändningsklassens tre tecken kompletteras med ytterligare två
+tecken som tydligare beskriver signalen.
 
-Detta benämningssystem är dock inte utan problem. Det tar mer hänsyn till
-metoden hur en signal alstras, snarare än hur en signal helt enkelt ser ut när
-den sänds.
+Detta benämningssystem är dock inte utan problem.
+Det tar mer hänsyn till metoden hur en signal alstras, snarare än hur en signal
+helt enkelt ser ut när den sänds.
 
 Direkt modulation av huvudbärvågen benämns på ett sätt, medan modulation
 av en underbärvåg i en sändare för enkelt sidband med undertryckt bärvåg
-benämns på ett annat sätt. Om man t.ex. nycklar ett RTTY-modem med en
-direktskrivande fjärrskrivare och sedan byter till en dator för att göra samma
-sak, så ändras benämningen av sändningsslaget
+benämns på ett annat sätt.
+Om man t.ex. nycklar ett RTTY-modem med en direktskrivande fjärrskrivare och
+sedan byter till en dator för att göra samma sak, så ändras benämningen av
+sändningsslaget.
 
 \subsection{Bandbredd}
+\index{nödvändig bandbredd}
+\index{basband}
+\index{sidband}
+\index{LSB}
+\index{USB}
 
-Den nödvändiga bandbredden \emph{eng. necessary bandwidth} beskrivs med
-tre siffror och en bokstav. Bokstaven placeras på platsen för decimaltecknet
-och representerar enheten för bandbredd. Bokstäverna H (Hz), K (kHz), M (MHz)
-och G (GHz) används, medan varken 0 eller K, M eller G får vara det första
-tecknet. Numeriska värden med mer än tre signifikanta siffror avrundas.
+Den nödvändiga bandbredden (eng. \emph{necessary bandwidth}) beskrivs med
+tre siffror och en bokstav.
+Bokstaven placeras på platsen för decimaltecknet och representerar enheten för
+bandbredd.
+Bokstäverna H (Hz), K (kHz), M (MHz) och G (GHz) används, medan varken 0 eller
+K, M eller G får vara det första tecknet.
+Numeriska värden med mer än tre signifikanta siffror avrundas.
 
 Decimaltecknen används på följande sätt:\\
 \begin{tabular}{lll}
-	Bandbredd & 0,001--999 Hz & (decimaltecken H),\\
+	bandbredd & 0,001--999 Hz & (decimaltecken H),\\
 	bandbredd & 1,00--999 kHz & (decimaltecken K),\\
 	bandbredd & 1,00--999 MHz & (decimaltecken M),\\
 	bandbredd & 1,00--999 GHz & (decimaltecken G).\\
 \end{tabular}
 
-Exempel:\\
+\textbf{Exempel:}
+
 \begin{tabular}{lll}
 	0,002 Hz & skrivs & H002\\
 	12,5 kHz & skrivs & 12K5\\
@@ -56,51 +66,56 @@ Exempel:\\
 \end{tabular}
 
 Det är särskilt viktigt att komma ihåg bandbredden vid utsändningar nära
-bandgränserna. T.ex. kommer sidbandet (USB) i en telefonisignal med
-bärvågsfrekvensen 29,699, att tydligt överskrida den övre bandgränsen för
-10-metersbandet. Bandgränserna får INTE överskridas och det gäller även för
-sändningens sidband.
+bandgränserna.
+T.ex. kommer sidbandet (USB) i en telefonisignal med bärvågsfrekvensen 29,699,
+att tydligt överskrida den övre bandgränsen för 10-metersbandet.
+Bandgränserna får INTE överskridas och det gäller även för sändningens sidband.
 
 \emph{Basbandet} är det frekvensområde, som upptas av signaler innan de
-modulerar bärvågen. Signaler i basbandet ligger vanligen mycket lägre i
-frekvens än bärvågen. I den låga änden av basbandet kan frekvensen närma sig
-eller vara likström (0~Hz). I den höga änden beror frekvensen på det värde där
-information finns liksom att det finns underbärvågor eller andra speciella
-signaler inom basbandet. Det finns ett basband för alla typer av signaler, vare
-sig de är analoga eller digitala. Det ska också förstås, att termen basband är
-relaterad till den modulation som avses från fall till fall.
+modulerar bärvågen.
+Signaler i basbandet ligger vanligen mycket lägre i frekvens än bärvågen.
+I den låga änden av basbandet kan frekvensen närma sig eller vara likström
+(0~Hz).
+I den höga änden beror frekvensen på det värde där information finns liksom att
+det finns underbärvågor eller andra speciella signaler inom basbandet.
+Det finns ett basband för alla typer av signaler, vare sig de är analoga eller
+digitala.
+Det ska också förstås, att termen basband är relaterad till den modulation som
+avses från fall till fall.
 
-Det kan finnas mer än ett basband i en komplett modulationsprocess. Till
-exempel, en nycklad ton som går till sändaren genom mikrofoningången är dess
-analoga basband medan nycklingspulserna till tongeneratorn är dess digitala
+Det kan finnas mer än ett basband i en komplett modulationsprocess.
+Till exempel, en nycklad ton som går till sändaren genom mikrofoningången är
+dess analoga basband medan nycklingspulserna till tongeneratorn är dess digitala
 basband.
 
-\emph{Sidband} alstras alltid när en bärvåg moduleras. De är blandningsprodukter
-på båda sidor om bärvågen, som resultat av att signaler från basbandet modulerar
-bärvågen på något sätt. Det övre sidbandet kallas USB \emph{eng. upper sideband}
-och det undre sidbandet LSB \emph{eng. lower sideband}.
+\emph{Sidband} alstras alltid när en bärvåg moduleras.
+De är blandningsprodukter på båda sidor om bärvågen, som resultat av att
+signaler från basbandet modulerar bärvågen på något sätt.
+Det övre sidbandet kallas USB (eng. \emph{upper sideband (USB)}
+och det undre sidbandet LSB (eng. \emph{lower sideband (LSB)}.
 
 I system för amplitudmodulation är bredden på sidbanden i stort lika med den
-högsta frekvenskomposanten i basbandet. Sidbanden är spegelbilder av varandra
-och innehåller exakt samma information. För att spara bandbredd räcker det
-alltså med att överföra det ena sidbandet, varvid det andra sidbandet kan
-undertryckas, liksom även bärvågen.
+högsta frekvenskomposanten i basbandet.
+Sidbanden är spegelbilder av varandra och innehåller exakt samma information.
+För att spara bandbredd räcker det alltså med att överföra det ena sidbandet,
+varvid det andra sidbandet kan undertryckas, liksom även bärvågen.
 
 I andra modulationssystem än för amplitudmodulation kan däremot bredden på
 sidbanden mycket överstiga den högsta frekvenskomposanten i basbandssignalen.
 
-\emph{Använd bandbredd} \emph{eng. occupied bandwidth} är avståndet mellan
-(-23~dB) av den totala medeleffekten. För amatörer är det inte alltid lätt att
-översta och nedersta delen av ett spektrum, där medeleffekten är lägre än 0,5~\%
-bestämma den använda bandbredden. Den kan mätas med en spektrumanalysator, men
-ett sådant instrument är svårtillgänglig för de flesta amatörer. Den använda
-bandbredden kan även beräknas, men det kräver matematikkunskaper i
+\emph{Använd bandbredd} (eng. \emph{occupied bandwidth}) är avståndet mellan
+(-23~dB) av den totala medeleffekten.
+För amatörer är det inte alltid lätt att översta och nedersta delen av ett
+spektrum, där medeleffekten är lägre än 0,5~\% bestämma den använda bandbredden.
+Den kan mätas med en spektrumanalysator, men ett sådant instrument är
+svårtillgänglig för de flesta amatörer.
+Den använd bandbredden kan även beräknas, men det kräver matematikkunskaper i
 informationsteori och behandlas inte här.
 
 \emph{Nödvändig bandbredd} är den del av den använda bandbredden, som räcker
 för att säkra informationsöverföringen i den omfattning och kvalitet som krävs.
 Förenklade sätt att beräkna nödvändig bandbredd vid specifika modulationssystem
-finns i kapitel 1.
+finns i kapitel \ref{modulation}.
 
 \emph{Tilldelat frekvensband} är den nödvändiga bandbredden plus två gånger den
 absoluta frekvenstoleransen.
@@ -147,9 +162,9 @@ Sändningklass anges med tre tecken där:\\
 	Övriga fall & X\\
 \end{tabular}
 
-\emph{not. Utsändning där huvudbärvågen är direkt modulerad av en signal,
-	vilken är kodad i kvantiserad form (t.ex. pulskodmodulation) ska hänföras till
-	amplitud eller vinkelmodulation.}
+\textbf{Not: Utsändning där huvudbärvågen är direkt modulerad av en signal,
+  vilken är kodad i kvantiserad form (t.ex. pulskodmodulation) ska hänföras till
+  amplitud eller vinkelmodulation.}
 
 \subsubsection{Den modulerande signalens karaktär}
 \textbf{Andra tecknet} -- Den modulerande signalens karaktär\\
@@ -167,14 +182,15 @@ Sändningklass anges med tre tecken där:\\
 	Övriga fall & X\\
 \end{tabular}
 
-I fråga om bassignalens karaktär skiljer
-man å ena sidan på kanaler för kvantiserad eller digital information, d.v.s. där
-signalen växlar språngvis mellan vissa givna tillstånd, och på kanaler för
-analog information, där signalen kan variera kontinuerligt inom givna gränser.
+I fråga om bassignalens karaktär skiljer man å ena sidan på kanaler för
+kvantiserad eller digital information, d.v.s. där signalen växlar språngvis
+mellan vissa givna tillstånd, och på kanaler för analog information, där
+signalen kan variera kontinuerligt inom givna gränser.
 
 \emph{Att fastställa arten av huvudbärvågens modulation kan kräva viss
-	eftertanke. I många fall får den information som ska överföras, modulera en
-	underbärvåg, som i sin tur påtrycks modulatorn för huvudbärvågen.}
+  eftertanke.
+  I många fall får den information som ska överföras, modulera en underbärvåg,
+  som i sin tur påtrycks modulatorn för huvudbärvågen.}
 
 \subsubsection{Informationens form}
 \textbf{Tredje tecknet} -- Informationens form\\
@@ -190,16 +206,17 @@ analog information, där signalen kan variera kontinuerligt inom givna gränser.
 	Övriga fall & X\\
 \end{tabular}
 
-Telegrafisignaler är kvantiserade (till/från, mark!space).
+Telegrafisignaler är kvantiserade (till/från, mark/space).
 Telefonisignaler har mestadels varit analoga, men är allt oftare
-kvantiserade (digitala). Faksimilsignaler är analoga eller kvantiserade,
-beroende på om gråtoner överförs eller ej.
+kvantiserade (digitala).
+Faksimilsignaler är analoga eller kvantiserade, beroende på om gråtoner
+överförs eller ej.
 
 
 \subsection{Tilläggstecken}
 De två avslutande tecknen är tilläggstecken som ger en mer komplett
-beskrivning av signalen. Om ingen komplettering behövs ska tecknen ersättas med
-två streck ( - - )
+beskrivning av signalen.
+Om ingen komplettering behövs ska tecknen ersättas med två streck ( - - )
 
 \subsubsection{Närmare beskrivning av signalen}
 \textbf{Första tilläggstecknet}- Närmare beskrivning av signalen.\\
