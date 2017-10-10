@@ -4,21 +4,21 @@
 I kommunikationsradiomottagare brukar det nästan alltid finnas en
 anordning som mäter och visar styrkan av mottagna signaler.
 
-Eftersom spänningen från antennen in i mottagaren kan variera mycket, är det
-praktiskt att uttrycka styrkevärdena i en logaritmisk måttenhet, s.k. S-enhet.
+Eftersom spänningen från antennen in i mottagaren kan variera över ett stort
+område, är det praktiskt att uttrycka styrkevärdena med en logaritmisk
+måttenhet, s.k. S-enhet.
 
 Signalspänningen mäts över en impedans av 50~\(\Omega\).
 
 Eftersom S-enheten är logaritmisk, så motsvarar t.ex. signalstyrkan
 S8 halva signalspänningen, d.v.s. 25~\(\mu V\) eller -6~dB jämfört med S9.
-Om halveringen fortsätts, fås att S0 (noll) motsvarar en kvarvarande
-signalstyrka av 0,1~\(\mu V\).
+Om halveringen fortsätts, fås att S0 (noll) motsvarar en signalstyrka av 0,1~\(\mu V\).
 
 I en kortvågsmottagare alstras det ett internt brus med en nivå av
 åtminstone 0,1~\(\mu V\).
 Detta brus blandas med den inkommande signalen.
-En insignal med en styrka under under brusnivån kommer alltså inte att
-kunna höras, alltså S0.
+En insignal med en styrka under brusnivån (S0) kommer alltså inte att
+kunna höras.
 Vid högre signalstyrkor än S9 anges styrkan som S9 +ett antal dB.
 Det är då frågan om mycket starka signaler.
 
@@ -53,19 +53,19 @@ med en stigtid av 10~ms \(\pm\)0,2~ms och en falltid av 500~ms.
     S-Meter  & \multicolumn{3}{c}{Under 30 MHz} & \multicolumn{3}{c}{Över 30 MHz} \\
     värde    & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) \\
     \hline
-    S9+ 40 dB & -33  & 5,0 mV  & 74  & -53  & 500  & 54  \\
-    S9+ 30 dB & -43  & 1,6 mV  & 64  & -63  & 160  & 44  \\
-    S9+ 20 dB & -53  & 500 \(\mu V\)  & 54  & -73  & 50   & 34  \\
-    S9+ 10 dB & -63  & 160 \(\mu V\)  & 44  & -83  & 16   & 24  \\
-    S9        & -73  & 50 \(\mu V\)   & 34  & -93  & 5    & 14  \\
-    S8        & -79  & 25 \(\mu V\)   & 28  & -99  & 2,5  & 8   \\
-    S7        & -85  & 12,6 \(\mu V\) & 22  & -105 & 1,26 & +2  \\
-    S6        & -91  & 6,3 \(\mu V\)  & 16  & -111 & 0,63 & -4  \\
-    S5        & -97  & 3,2 \(\mu V\)  & 10  & -117 & 0,32 & -10 \\
-    S4        & -103 & 1,6 \(\mu V\)  & +4  & -123 & 0,16 & -16 \\
-    S3        & -109 & 0,8 \(\mu V\)  & -2  & -129 & 0,08 & -22 \\
-    S2        & -115 & 0,4 \(\mu V\)  & -8  & -135 & 0,04 & -28 \\
-    S1        & -121 & 0,21 \(\mu V\) & -14 & -141 & 0,02 & -34 \\
+    S9+ 40 dB & -33  & 5,0 mV  & 74  & -53  & 500 \(\mu V\) & 54  \\
+    S9+ 30 dB & -43  & 1,6 mV  & 64  & -63  & 160 \(\mu V\) & 44  \\
+    S9+ 20 dB & -53  & 500 \(\mu V\)  & 54  & -73  & 50 \(\mu V\) & 34  \\
+    S9+ 10 dB & -63  & 160 \(\mu V\)  & 44  & -83  & 16 \(\mu V\) & 24  \\
+    S9        & -73  & 50 \(\mu V\)   & 34  & -93  & 5 \(\mu V\) & 14  \\
+    S8        & -79  & 25 \(\mu V\)   & 28  & -99  & 2,5 \(\mu V\) & 8   \\
+    S7        & -85  & 12,6 \(\mu V\) & 22  & -105 & 1,26 \(\mu V\) & +2  \\
+    S6        & -91  & 6,3 \(\mu V\)  & 16  & -111 & 0,63 \(\mu V\) & -4  \\
+    S5        & -97  & 3,2 \(\mu V\)  & 10  & -117 & 0,32 \(\mu V\) & -10 \\
+    S4        & -103 & 1,6 \(\mu V\)  & +4  & -123 & 0,16 \(\mu V\) & -16 \\
+    S3        & -109 & 0,8 \(\mu V\)  & -2  & -129 & 0,08 \(\mu V\) & -22 \\
+    S2        & -115 & 0,4 \(\mu V\)  & -8  & -135 & 0,04 \(\mu V\) & -28 \\
+    S1        & -121 & 0,21 \(\mu V\) & -14 & -141 & 0,02 \(\mu V\) & -34 \\
   \end{tabular}
   \caption{S-enheter, rekommenderade normvärden inom IARU Region~1}
   \label{s-enhet tabell}
