@@ -19,7 +19,8 @@ after_success:
   - sha256sum koncept.pdf
   - sshpass -e scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
   - sshpass -e ssh ${FTP_USER}@${FTP_SERVER} ln -sf \~/${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf \~/${FTP_FOLDER}koncept-pdf/koncept.pdf
-
+  - make koncept.webb
+  - sshpass -e rsync -auvh --delete --checksum web/koncept.webb/ ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-web/latest
 deploy:
   provider: releases
   api_key:
