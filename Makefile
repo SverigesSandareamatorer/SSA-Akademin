@@ -174,7 +174,7 @@ koncept.xml:	koncept.tex $(KONCEPT_FILES)
 koncept.webb:	koncept.xml
 	mkdir -p web/koncept.webb
 	cp web/style.css web/koncept.webb/style.css
-	latexmlpost --dest=web/koncept.webb/koncept.html --split --splitat=section --navigationtoc=context --css=web/koncept.webb/style.css koncept.xml
+	latexmlpost --dest=web/koncept.webb/index.html --split --splitat=section --navigationtoc=context --css=web/koncept.webb/style.css koncept.xml
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
