@@ -18,9 +18,7 @@ before_install:
     libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
     texlive-latex-base imagemagick libimage-magick-perl perl"
   - git clone https://github.com/brucemiller/LaTeXML.git --depth=1
-  - cd LaTeXML
-  - perl Makefile.PL && make && sudo make install
-  - cd ..  
+  - (cd LaTeXML && perl Makefile.PL && make && sudo make install)
 
 script:
   - make koncept.pdf
