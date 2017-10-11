@@ -344,11 +344,30 @@ ståendevågförhållandet på ledningen på grund av dålig
 impedansanpassning.
 
 Ett högt SVF-förhållande ger större ledningsförluster eftersom den
-reflekterade effekten då pendlar fler gånger på ledningen.  Den
-reflekterade effekt som återvänder till ledningens inända är mindre
-när ledningen har stora förluster än om den inte hade det.  Det
-innebär att det verkliga SVF-förhållandet i ledningens utände är
-större än vad som syns på ett instrument i inänden.
+reflekterade effekten då pendlar fler gånger på ledningen.
+Den reflekterade effekt som återvänder till ledningens början är mindre när
+ledningen har stora förluster än om den inte hade det.
+Det medför att det verkliga SVF-förhållandet i ledningens slut är
+större än vad som syns på ett instrument i början.
+
+Förlusterna i en transmissionsledning stiger med ökad frekvens och anges av
+tillverkarna i datablad som dämpningen i dB per 100~m eller dB per 30~m ledning.
+
+I tabellen nedan visas kabeldämpningen, effektförlusten, i dB per 30~m för några
+vanliga typer av koaxialkablar.
+
+\begin{tabular}{|l|l|c|c|c|c|c|c|c|} \hline
+	\text{Kabeltyp} & \text{Impedans} & 30 & 50 & 100 & 145 & 150 & 440 & 450 \\
+	 & & \text{MHz} & \text{MHz} & \text{MHz} & \text{MHz} & \text{MHz} & \text{MHz} & \text{MHz}\\ \hline
+	\text{RG8X} & 50 \text{ohm} & 2,0 & 2,1 & 3,0 & 4,5 & 4,7 & 8,1 & 8,6 \\ \hline
+	\text{RG58A/U} & 50 \text{ohm} & 2,5 & 4,1 & 5,3 & 6,1 & 6,1 & 10,4 & 10,6 \\ \hline
+	\text{RG59} & 75 \text{ohm} & & 2,4 & 3,5 & & & 7,6 & \\ \hline
+	\text{RG174} & 50 \text{ohm} & 5,5 & 6,6 & 8,8 & 13,0 & & 25,0 & \\ \hline
+	\text{RG213} & 50 \text{ohm} &  & 1,5 & 2,1 & 2,8 & 2,8 & 5,1 & 5,1 \\ \hline
+	\text{RG214} & 50 \text{ohm} & 1,2 & 1,6 & 1,9 & 2,8 & 2,8 & 5,1 & 5,1 \\ \hline
+\end{tabular}
+\caption{Kabeldämpning per 30 m}
+\label{Kabeldämpning}
 
 \subsection{Baluner -- Balansering -- Transformering}
 \textbf{
