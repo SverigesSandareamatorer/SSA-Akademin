@@ -151,3 +151,57 @@ I det fallet behövs någon annan anordning för att skilja mellan en modulerad
 signal och brus.
 Ofta finns ett reglage (squelch) för hur stark signalen ska vara innan spärren
 öppnar.
+
+\subsection{Tonöppning}
+\index{tonöppning}
+\index{1750 Hz}
+
+Ett alternativ till bärvågsbaserad brusspärr är \emph{tonöppning} (eng.
+\emph{1750 Hz tone-burst}) som i allmänhet är att man lägger ut en 1750 Hz
+tonskur för att öppna en repeater.
+En del äldre amatörer har lärt sig att vissla rätt ton för att öpnna repeatern
+då de en gång i tiden inte hade handapparater med inbyggd 1750 Hz knapp.
+
+\subsection{Subton}
+\index{subton}
+\index{CTCSS}
+
+Ett problem med 1750 Hz tonöppning är när närliggande repeatrar med samma in
+och utfrekvens har sådana konventioner att bägge hör handapparatens öppningston,
+då kommer bägge repeatrarna riskera öppna och då störa varandras sändning.
+
+Ett alternativ är därför att använda \emph{subton} (eng. \emph{subtone}) som är
+en frekvens under 300 Hz, i allmänhet 60 till 250 Hz.
+Ett existerande subton-system är \emph{Continuous Tone Coded Squelch System
+  (CTCSS)} där sändaren lägger ut en kontinurlig subton.
+Mottagaren detekterar en vald subton, och enbart när den tonen har tillräcklig
+styrka så öppnar squelchen och håller den öppen så länge som det finns en
+subton.
+
+För repeatrar så används det för att även nyckla sändaren, så därför måste man
+välja den subton som repeaterns mottagare är inställd på för att öppna
+repeatern.
+Det förekommer också att repeatern i sin tur skickar ut subton, oftast den som
+används för att öppna den.
+Detta öppnar i sin tur handapparaterna för den valda repeatern.
+Detta kan också användas av handapparater för att hitta repeatrar och lära sig
+den subton som öppnar den.
+
+Skulle flera repeatrar höra samma källa så kan därför olika subton användas
+för att undvika öppning av fel repeater.
+SSAs repeateransvarig har tilldelat CTCSS subtoner för de olika regionerna,
+och inom varje region finns flera subtoner för att kunna separera inom
+regionen.
+
+\subsection{DTMF}
+\index{DTMF}
+
+Ett system för att skicka styrkommandon och även öppna repeatrar är
+\emph{Dual Tone Multi Frequency (DTMF)}, som bygger på principen att man
+skickar två samtidiga toner.
+De två tonerna väljs som en av fyra i två olika serier.
+Detta ger 4x4=16 kombinationer, varav 10 representerar siffrorna 0-9.
+DTMF kommer ursprungligen från telefonisystem, men fungerar även bra över
+vanliga radiokanaler.
+DTMF kan användas för att styra repeatrar, som att slå på och stänga av dem,
+samt styra andra egenskaper.
