@@ -203,7 +203,7 @@ En svag ton har liten amplitud och en stark ton har stor amplitud.
 \textbf{HAREC a.\ref{HAREC.a.1.8.2}, a.\ref{HAREC.a.1.8.6b}, a.\ref{HAREC.a.1.8.7b}\label{myHAREC.a.1.8.2}\label{myHAREC.a.1.8.6b}\label{myHAREC.a.1.8.7b}}
 \index{amplitudmodulation}
 \index{A3E}
-\index{AM}
+\index{AM|see {amplitudmodulation}}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-24.pdf}
@@ -469,7 +469,7 @@ Det innebär att främst högre frekvensband kommer i fråga.
   a.\ref{HAREC.a.1.8.6d}\label{myHAREC.a.1.8.6d}
 }
 \index{frekvensmodulation}
-\index{FM}
+\index{FM|see {frekvensmodulation}}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-30.pdf}
@@ -549,7 +549,7 @@ ett frekvensspektrum som på överst i bilden.
 \paragraph{Frekvensdeviation och modulationsindex}
 \textbf{HAREC a.\ref{HAREC.a.1.8.4}\label{myHAREC.a.1.8.4}}
 \index{frekvensdeviation}
-\index{modulationsindex (m)}
+\index{modulationsindex}
 \index{symbol!\(m\) modulationsindex}
 
 \begin{figure}
@@ -774,7 +774,6 @@ med bärvåg. Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK,
 \index{Frequency Shift Keying (FSK)}
 \index{FSK}
 \index{frekvensmodulation}
-\index{FM}
 \index{GFSK}
 \index{Gaussiskt filter}
 \index{C4FM}
@@ -977,7 +976,7 @@ Man ska därför vara noga med att skilja dessa åt.
 \index{symboltakt}
 \index{symbol rate}
 \index{Baud rate}
-\index{Emile Baudot}
+\index{Baudot, Emile}
 \index{enheter!Baud (Bd)}
 
 Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
@@ -1220,6 +1219,20 @@ Idag kör de flesta radioamatörer RTTY med en dator, och använder sig ofta av
 AFSK-tekniken med hjälp av programvaror, med samma uppkoppling som man använder
 för andra digitala moder.
 
+\subsubsection{APRS}
+\index{APRS}
+\index{AX.25}
+\index{TNC}
+
+\emph{Automatic Packet Reporting System (APRS)} är en teknik för att
+huvudsakligen över VHF och UHF förmedla GPS position, väderdata, enkla
+meddelanden och annat.
+Den bygger på en teknik som heter \emph{AX.25}, som är en amatörradio-specifik
+version av telekom-standarden X.25.
+AX.25 moduleras över 1200 baud Bell 202 AFSK teknik på vanlig talkanal.
+Ofta används en Terminal Node Controller (TNC) som interface mellan dator och
+radio.
+
 \subsubsection{PSK31}
 \index{PSK31}
 
@@ -1336,12 +1349,12 @@ FreeDV släpptes 2015.
 \paragraph{Teknik}
 
 FreeDV är tänkt för att användas på kortvåg med SSB-modulerade radiostationer,
-men kan också användas med AM eller FM -modulering. 
-Fördelen skall vara att överföringen blir ner robust, samt att signaleringen är
+men kan också användas med AM eller FM -modulering.
+Fördelen ska vara att överföringen blir ner robust, samt att signaleringen är
 designad att motverka påverkan av fädning.
 
-FreeDV använder en något mer komplex modulering. 
-Man använder sig av ett flertal bärvågor, inom dess bandbredd på 1,25~kHz. 
+FreeDV använder en något mer komplex modulering.
+Man använder sig av ett flertal bärvågor, inom dess bandbredd på 1,25~kHz.
 Bärvägorna ligger med 75~Hz mellanrum, och varje bärvåg moduleras med varianter
 av PSK-modulering.
-Bandbredden är hälften (1,25~kHz)  mot en normal SSB-bandbredd (2,4~kHz).
+Bandbredden är hälften (1,25~kHz) mot en normal SSB-bandbredd (2,4~kHz).
