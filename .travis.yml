@@ -1,6 +1,7 @@
 language: generic
 
 before_install:
+  - sudo add-apt-repository ppa:jonathonf/texlive-2016 -y
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
     texlive \
