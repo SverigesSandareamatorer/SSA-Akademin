@@ -26,7 +26,9 @@ LADDA NER OCH BYGG PROJEKTET
 Version
 -------
 
-Eftersom nytt material läggs till och fel rättas allt eftersom används en versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel på hur det kan se ut och en förklaring till vad allt betyder.
+Eftersom nytt material läggs till och fel rättas allt eftersom används en
+versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
+på hur det kan se ut och en förklaring till vad allt betyder.
 
 <!--
 koncept  .2.0.0  -RC.1  +b12345 .8c04343 .pdf
