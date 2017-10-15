@@ -53,7 +53,7 @@ fördröjningskedjan.
 Detta kallas för Infinite Impulse Response (IIR) filter, för att det i likhet
 med FIR-filter har en impulsrespons, men eftersom den återmatar så kan denna
 rent teoretiskt pågå i all oändligthet, dvs. engelskans infinite.
-I praktiken designas filter så att de inte pågår i evinerligt tid utan, så att
+I praktiken designas filter så att de inte pågår i evinnerlig tid utan, så att
 säga ringer ut.
 Själva arkitekturen är dock väldigt lämplig att använda för många ändamål.
 
@@ -74,9 +74,12 @@ Detta brukar bland annat öka taltydligheten.
 \subsection{Fouriertransform -- FFT}
 \textbf{HAREC a.\ref{HAREC.a.3.8.2}\label{myHAREC.a.3.8.2}}
 \index{Fouriertransform}
+\index{Fouriertransform!DFT}
+\index{Fouriertransform!FFT}
 \index{diskret fouriertransform} 
 \index{Discrete Fourier Transform (DFT)}
 \index{DFT}
+\index{FFT}
 \index{Fast Fourier Transform (FFT)}
 
 En specifik form av processing som blivit tillgänglig är fouriertransform,
@@ -90,7 +93,7 @@ fouriertransform, som därför heter \emph{diskret fouriertransform}  (eng.
 DFT kan göras på alla möjliga längder av sekvenser, men är beräkningstungt
 om man vill ha alla möjliga frekvenser.
 För att reducera beräkningsmängden kan man givetvis beräkna DFT bara för ett
-fåtal frekvenser, men när det inte är applicerbart behöver man aggera lite
+fåtal frekvenser, men när det inte är applicerbart behöver man agera lite
 smartare.
 Så som DFT är formulerat, så ger matematiken flera genvägar, som gör att man
 på flera olika sätt kan slå samman beräkningarna och göra del-beräkningar som
@@ -123,7 +126,7 @@ vattenfall med sina vertikala streck.
 \index{fasackumulator}
 \index{phase accumulator (PA)}
 \index{PA -- phase accumulator}
-\index{nykvist-frekvensen}
+\index{Nykvist-frekvensen}
 
 En term som kommit starkt på senare år är \emph{Direct Digital Synthesis (DDS)}.
 Detta syftar på att man kan istället för som med en PLL indirekt styra en
@@ -141,7 +144,7 @@ Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
 Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
 varieras fort och fritt.
 Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.
-Högsta frekvensen blir \emph{nykvist-frekvensen}, dvs. halva
+Högsta frekvensen blir \emph{Nykvist-frekvensen}, dvs. halva
 samplingsfrekvensen och lägsta blir den som minst signifikanta biten ger.
 
 Den utgående fasen ur själva fasackumulatorn vågformas sedan om till sinus,
