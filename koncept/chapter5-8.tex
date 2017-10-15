@@ -138,6 +138,8 @@ S-meter, som ger besked om hur stark signalen in i mottagaren är.
 \index{mottagare!brusspärr}
 \index{squelch}
 \index{mottagare!squelch}
+\index{repeater}
+\index{bärvågsstyrd}
 
 I en FM-mottagare hörs bara brus när det inte kommer in en tillräckligt stark
 signal.
@@ -151,6 +153,13 @@ I det fallet behövs någon annan anordning för att skilja mellan en modulerad
 signal och brus.
 Ofta finns ett reglage (squelch) för hur stark signalen ska vara innan spärren
 öppnar.
+
+För en \emph{repeater} används brusspärren även för att starta sändaren när den
+är \emph{bärvågsstyrd}, dvs. man låter signalstyrkan på den mottagna signalen
+slå på även sändaren om den inkomna signalen är tillräckligt stark.
+Nuförtiden anses bärvågsstyrd repeater inte lämplig, då den kan okynnesöppna av
+störningar, varvid störningen förstärks.
+Istället bör tonöppning eller subton användas.
 
 \subsection{Tonöppning}
 \index{tonöppning}
@@ -178,7 +187,7 @@ Mottagaren detekterar en vald subton, och enbart när den tonen har tillräcklig
 styrka så öppnar squelchen och håller den öppen så länge som det finns en
 subton.
 
-För repeatrar så används det för att även nyckla sändaren, så därför måste man
+För repeatrar så används det för att även starta sändaren, så därför måste man
 välja den subton som repeaterns mottagare är inställd på för att öppna
 repeatern.
 Det förekommer också att repeatern i sin tur skickar ut subton, oftast den som

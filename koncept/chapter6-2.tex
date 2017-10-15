@@ -38,6 +38,49 @@ blockschema.
   \label{fig:bildII5-11}
 \end{figure}
 
+\subsection{Simplex}
+\index{simplex}
+
+En station sägs sända \emph{simplex} när den enbart kan sända eller ta emot,
+dvs. när den inte samtidigt sänder och tar emot.
+Detta är det normala för kortvågs-stationer som sänder på samma frekvens.
+
+\subsection{Halv duplex}
+\index{halv duplex}
+\index{split}
+
+En station sägs sända \emph{halv duplex} (eng. \emph{half duplex}) när den
+enbart sänder eller tar emot, dvs. när den inte samtidigt sänder och tar emot.
+Om detta sker på samma frekvens, så kallas det även simplex, men när stationen
+opereras med split frekvens så räcker inte simplex-begreppet men halv duplex
+täcker det.
+
+\subsection{Duplex}
+\index{full duplex}
+\index{duplex}
+\index{duplexfilter}
+\index{utsläckning}
+\index{notch}
+
+En stations sägs sända \emph{duplex} eller \emph{full duplex} när den kan
+samtidigt sända och ta emot på två olika frekvenser.
+
+Duplex-operation kräver i allmänhet stor isolation mellan sändare och mottagare,
+något som ofta åstakomms med kavitets-filter kopplade mellan sändare och antenn
+och mottagare och antenn.
+Om gemensam antenn används, så kopplas dessa kavitetsfilter ihop till vad som
+kallas \emph{duplexfilter}.
+
+För en lyckad duplex-operation krävs i allmänhet mer än 100 dB isolation mellan
+sändare och mottagare.
+Mottagarens kavitetsfilter trimmas så att det får en djup \emph{utsläckning}
+(eng. \emph{notch}) vid sändarens frekvens, men med så lite förlust som möjligt
+på mottagarens frekvens.
+Sändarens kavitetsfilter trimmas så att det får en djup utsläckning/notch vid
+mottagarens frekvens, för att på så sätt minimera att sändarens fasbrus höjer
+brusgolvet för mottagaren, men med så liten förlust som möjligt på sändarens
+frekvens.
+
 \subsection{CW-transceiver med direktblandare}
 \index{CW}
 \index{transceiver!CW}
