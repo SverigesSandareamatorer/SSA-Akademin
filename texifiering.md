@@ -210,9 +210,24 @@ regler.
     \cite[1.56]{ITU-RR}
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
-    refereras.
+    refereras. SI-enheter refereras till med små bokstäver även om de bygger
+    på person-namn, t.ex. ohm. Följ SI-brochyrens stil.
 
 27. Konstanter skall anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precission.
     T.ex. där ljusets hastighet används skall den i SI-systemet angivna
     definitionen användas, men även approximationen av 3*10^8.
+
+28. Förkortningar skall anges som brukligt inom parantes efter sin uttydelse
+    där de definieras, vilket i möjligaste mån är första gången de används,
+    och framgent kan förkortningen användas.
+    I möjligaste mån är att ibland används förkortningar i förbigående innan
+    de har en naturlig kontext att definieras i, för de fallen skall förkortning
+    användas och definitionen där det är ett bra kontext.
+
+    Tankesträck mellan förkortning och uttydning skall INTE användas.
+
+    Exempel:
+    Vector Network Analyzer (VNA)
+
+29. Tankesträck, kodas med --, skall användas sparsamt.
