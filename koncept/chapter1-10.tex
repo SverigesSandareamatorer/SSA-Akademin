@@ -64,7 +64,17 @@ Det förekommer lite slarvigt att man benämner den för att vara 1~MHz, men det
 mer korrekta är att man har 1~MS/s dvs 1 miljon samples per sekund, där S
 representerar Samples.
 
-\hilight{TODO: illustrera sampling}
+Bild \ref{fig:BildII1-37} illustrerar hur en analog signal samplas och
+kvantiseras i en ADC, för att processas i en DSP, för att därefter konverteras
+till analog signal med DAC och filtreras.
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-37.pdf}
+\caption{Sampling med ADC, DSP och DAC för att återvinna analog signal}
+\label{fig:BildII1-37}
+\end{center}
+\end{figure*}
 
 Medans sampling är den process som ger oss \emph{tids-diskreta} värden istället
 för tids-kontinuerliga värden så är värdena fortfarande inte representerade som
@@ -77,8 +87,7 @@ trappstege av värden, varje steg kallas ibland för kvantiserings-steg och
 storleken på varje kvantiserings-steg avgör därmed hur hög upplösning man får.
 Har man t.ex. ett kvantiserings-steg på 0,1~V så blir 0 till 0,1~V tolkat som
 0, 0,1--0,2~V tolkat som 1 osv.
-
-\hilight{TODO: illustrera kvantisering och PCM}
+Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
 Denna sista del att omvandla de kvantiserade talen till värden kallas
 \emph{Pulse Code Modulation (PCM)}, men det ingår i dagligt tal i kvantiserings-
@@ -163,7 +172,35 @@ samplings-frekvensen, och spektrumet upprepar sig.
 Detta fenomen uppstår alltid när man går mellan tids-kontinuerlig och
 tids-diskret tid.
 
-\hilight{TODO: illustrera viknings-spektrum}
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-38.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
+\caption{Sampling av DC, 3,6~kHz, 12,4~kHz och 38~kHz med 40~kS/s samplingshastighet}
+\label{fig:BildII1-38}
+\end{center}
+\end{figure*}
+
+Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
+3,6~kHz, 12,4~kHz och 38~kHz, samplas med samplingshastigheten 40 kS/s.
+Fallet med DC är uppenbart enkelt, alla punkterna hamnar på samma spänning.
+En lågfrekvens sinus, som fallet är med 3,6~kHz här, får man punkter spridda
+över kurvan och de påminner om den ursprungliga sinusen, än mer om man knyter
+samman punkterna, vilket anti-aliasingfiltret i praktiken gör.
+En frekvens som är nära nykvistfrekvensen, så som 12,4~kHz in i 40~kS/s och
+dess 20~kHz nykvistfrekvens, så är sample-punkterna nästa helt alternerande
+mellan högsta och lägsta läge. Detta fall är det svårt att se den bakomliggande
+sinus-signalen för ett otränat öga, men kan fortfarande rekonstrueras med ett
+antialiasingfiltret.
+Ett ännu svårare fall är 38~kHz, där punkterna visar en sinus med 2~kHz, då
+frekvensen vikt sig ned run nykvistfrekvensen, och eftersom infrekvensen är
+18~kHz över nykvistfrekvensen hamnar den därför 18~kHz under nykvistfrekvensen,
+dvs. på 2~kHz i det här fallet. Denna vikning är det man försöker undvika med
+anti-aliasing-filtret, eftersom toner kan vika sig ned och bli störningar.
+Denna vikning sker både vid själva samplingen men även omvänt när man lägger ut
+en signal analogt igen. Därför krävs filtrering i bägge riktning.
 
 Vid sampling så kan alltså högre frekvenser vika ned sig i spektrat.
 Detta är oftast oönskat, varvid man har ett filter före ingången som
