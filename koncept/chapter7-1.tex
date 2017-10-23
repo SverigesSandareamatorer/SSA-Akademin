@@ -250,7 +250,7 @@ matningsimpedans av 50~\(\Omega\), vilket passar bra för en koaxialkabel med
 \index{Yagi-Uda}
 \index{antenn!yagi}
 \index{antenn!Yagi-Uda}
-\index{quad-antenn}
+\index{quadantenn}
 \index{antenn!Quad}
 
 En anpassningsanordning för anslutning av 50~\(\Omega\) koaxialkabel ingår
@@ -393,24 +393,26 @@ på en utstrålad signal motsvaras av styrkan på mottagen signal.
 }
 \index{antennvinst}
 \index{antenn!antennvinst}
+\index{antennförstärkning}
+\index{antenn!antennförstärkning}
 \index{isotropisk antenn}
 \index{antenn!isotropisk}
-\index{symbol!\(G\) antennvinst}
+\index{symbol!\(G_{ant}\) antennförstärkning}
 \index{dBi isotropiskt gain}
 \index{antenn!dBi isotropiskt gain}
-\index{isotropiskt gain (dBi)}
-\index{antenn!isotropiskt gain (dBi)}
+\index{isotropisk förstärkning (dBi)}
+\index{antenn!isotropiskt förstärkning (dBi)}
 \index{dBd dipol gain}
 \index{antenn!dBd dipol gain}
 \index{dipol gain (dBd)}
 \index{antenn!dipol gain (dBd)}
 
-Med \emph{antennvinst} \(G\) (eng. \emph{antenna gain}) menas förhållandet
-mellan effekten \(P_t\) i huvudstrålningsriktningen (framriktningen för en
-antenn med osymmetriskt utstrålad effekt) och effekten från en definierad
-referensantenn.
+Med \emph{antennvinst} eller \emph{antennförstärkning} \(G_{ant}\) (eng.
+\emph{antenna gain}) menas förhållandet mellan effekten \(P_t\) i
+huvudstrålningsriktningen (framriktningen för en antenn med osymmetriskt
+utstrålad effekt) och effekten från en definierad referensantenn.
 
-Förmågan att ha högre antennvinst i en riktning i förhållande till andra
+Förmågan att ha högre antennförstärkning i en riktning i förhållande till andra
 riktningar kallas för direktivitet (eng. \emph{antenna directivity}).
 
 En referensantenn som tänks vara oändligt liten och som strålar med exakt
@@ -418,40 +420,40 @@ samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk antenn}.
 En isotropisk antenn är emellertid endast teoretisk definierbar.
 
 Med effekten \(P_i\) från den isotropiska antennen som referens blir
-antennvinsten
+antennförstärkningen
 
 \[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
 
 En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
-Referenseffekten är då \(P_d\) och antennvinsten
+Referenseffekten är då \(P_d\) och antennförstärkningen
 
 \[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
 
-Bild \ref{fig:bildII6-6}
+Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-06.pdf}
-  \caption{Antennvinst dBd i effekt}
+  \caption{Antennförstärkning dBd i effekt}
   \label{fig:bildII6-6}
 
   \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-07.pdf}
-  \caption{Antennvinst dBd i spänning}
+  \caption{Antennförstärkning dBd i spänning}
   \label{fig:bildII6-7}
 \end{wrapfigure}
 
-Antennvinsten kan också definieras som förhållandet mellan den elektriska
+Antennförstärkning kan också definieras som förhållandet mellan den elektriska
 fältstyrkan uf i huvudstrålningsriktningen och referensfältstyrkan (dipol).
 
-Jämfört med \(\lambda/2\)-dipol är antennvinsten
+Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
 
 \[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
 
-Man använder uttrycket dBi när antennvinsten anges i förhållande till
+Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
 Se kapitel \ref{decibel} om decibelbegreppet.
 
-\textbf{Exempel på beräkning av antennvinst:}
+\textbf{Exempel på beräkning av antennförstärkning:}
 
 \begin{align*}
   U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
@@ -459,11 +461,12 @@ Se kapitel \ref{decibel} om decibelbegreppet.
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
 \end{align*}
 
-6~dB antennvinst motsvarar en fördubblad fältstyrka [V/m], d.v.s. 1~S-enhets
-ökning vid den mottagande stationen, liksom att 6~dB antennvinst motsvarar
-en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
+6~dB antennförstärkning motsvarar en fördubblad fältstyrka [V/m], d.v.s.
+1~S-enhets ökning vid den mottagande stationen, liksom att 6~dB
+antennförstärkning motsvarar en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
 
-Ungefärlig antennvinst för olika antenner med en isotrop antenn som referens:
+Ungefärlig antennförstärkning för olika antenner med en isotrop antenn som
+referens:
 
 \begin{tabular}{l|ll|ll}
   & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
@@ -481,7 +484,7 @@ Ungefärlig antennvinst för olika antenner med en isotrop antenn som referens:
 \end{tabular}
 
 Antenner har förluster, det gör att olika antenner kan ha olika
-effektivitet, därför finns måttet antenneffektivitet
+effektivitet, därför finns måttet \emph{antenneffektivitet}
 (eng. \emph{antenna efficiency}) \(\eta\) som beror på relationen mellan
 utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\)
 
@@ -498,12 +501,16 @@ HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
 }
 \index{effektivt utstrålad effekt (ERP)}
 \index{antenn!effektivt utstrålad effekt (ERP)}
-\index{ERP Effective Radiated Power}
-\index{antenn!ERP Effective Radiated Power}
+\index{Effective Radiated Power (ERP)}
+\index{antenn!Effective Radiated Power (ERP)}
+\index{ERP}
+\index{antenn!ERP}
 \index{ekvivalent isotropiskt utstrålad effekt (EIRP)}
 \index{antenn!ekvivalent isotropiskt utstrålad effekt (EIRP)}
-\index{EIRP Equivalent Isotropically Radiated Power}
-\index{antenn!EIRP Equivalent Isotropically Radiated Power}
+\index{Equivalent Isotropically Radiated Power (EIRP)}
+\index{antenn!Equivalent Isotropically Radiated Power (EIRP)}
+\index{EIRP}
+\index{antenn!EIRP}
 
 Effektivt utstrålad effekt (ERP) (eng. \emph{effective radiated power}) är den
 effekt som sändarantennen strålar ut i sin bästa strålningriktning.
