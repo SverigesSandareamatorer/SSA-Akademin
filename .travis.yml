@@ -32,5 +32,5 @@ deploy:
 
 addons:
   ssh_known_hosts:
-  - ssaakademin.fn42.se
-  - 185.97.32.47
+  - akademin.ssa.se
+  - 89.221.240.114
