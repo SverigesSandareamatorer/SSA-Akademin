@@ -1,6 +1,7 @@
 language: generic
 
 before_install:
+  - echo "TRAVIS_EVENT_TYPE: $TRAVIS_EVENT_TYPE"
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
     texlive \
