@@ -447,20 +447,36 @@ denna.
 
 \(1\ \mathrm{volt\ [U]}\ \cdot\ 1\ \mathrm{ampere\ [I]}\ =\ 1\ \mathrm{watt\ [P]}\)
 
-Effektformeln \(P = U \cdot I\) kan skrivas om på flera sätt.
-Den gäller i första hand för likström men även för växelström om belastningen är
-resistiv och ström och spänning inte är fasförskjutna.
+Effektformeln \(P = U \cdot I\) gäller i första hand för likström men även för
+växelström om belastningen är resistiv och ström och spänning inte är
+fasförskjutna.
+Formeln kan för att underlätta beräkningar skrivas om på flera sätt.
+
+Vi börjar med att lösa ut \(I \quad \text{ur Ohms lag} \quad U = R \cdot I\) 
+
+\(
+I = \dfrac{U}{R}\\
+\)
+
+Vi sätter sedan in uttrycket för \(I\) i effektformeln
 
 \(
 \begin{array}{lllll}
-U = R \cdot I & & I = \dfrac{U}{R} & & R = \dfrac{U}{I}\\ \\
-P = U \cdot I & & P = \dfrac{U \cdot U }{R} & & P = \dfrac{U^2}{R}\\ \\
-P = R \cdot I \cdot I & & P = R \cdot I^2 & & U = \sqrt{P \cdot R}
+P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}\\
+\end{array}
+\)
+
+På motsvarande sätt kan vi ersätta \(U \quad\text{med}\quad R \cdot I\)
+
+\(
+\begin{array}{lllll}
+P=U \cdot I & \Rightarrow & P = R \cdot I \cdot I  & \Rightarrow & P = R \cdot I^2\\
 \end{array}
 \)
 
 Med hjälp av dessa formler kan effekten beräknas ur resistans- och strömvärdena
 respektive ur resistans- och spänningsvärdena.
+För övriga formler se formelsnurran bild \ref{fig:BildII1-4}
 
 \subsection{Elektrisk arbete -- Enheten joule}
 \textbf{FÖRDJUPNING}
