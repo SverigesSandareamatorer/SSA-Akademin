@@ -71,7 +71,7 @@ Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *Git* eller skriver *LaTeX*.
 
 **Q: Jag kan koda och vill bidra; vad gör jag?**  
-A: Läs igenom [`CONTRIBUTING.md`](CONTRIBUTING.md) och följ 
+A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ 
 instruktionerna.
 
 **Q: Jag vet inte hur man redigerar kod**  
