@@ -1,5 +1,16 @@
 DOCKER_IMAGE_NAME=	ssa-koncept
 
+help:
+	@echo 'Makefile för SSA-Akademin                                             '
+	@echo '                                                                      '
+	@echo 'Användning:                                                           '
+	@echo '   make all                    kör alla make mål                      '
+	@echo '   make koncept.pdf            bygg koncept.pdf                       '
+	@echo '   make koncept.webb           bygg webbversionen av koncept          '
+	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make clean                  rensa alla byggfiler                   '
+	@echo '   make help                   visa den här informationen             '
+
 all:	koncept.pdf TODOs
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
