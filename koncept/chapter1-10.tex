@@ -76,7 +76,7 @@ till analog signal med DAC och filtreras.
 \end{center}
 \end{figure*}
 
-Medans sampling är den process som ger oss \emph{tids-diskreta} värden istället
+Medan sampling är den process som ger oss \emph{tids-diskreta} värden istället
 för tids-kontinuerliga värden så är värdena fortfarande inte representerade som
 tal, dvs. värdes-diskreta istället för värdes-kontinuerliga.
 För att åstadkomma detta behöver man omvandla värdena till fasta värden, en
@@ -110,7 +110,7 @@ samplingsteorem} (eng. \emph{Nyquist-Shannon sampling theorem}).
 Vår nya begreppsvärld har några inneboende begränsningar, en av dem är minsta
 samplingsfrekvensen.
 Den lägsta frekvensen vi kan hantera i vårt samplade material är fasta värden
-(eller DC som man oftast säger) medans den högsta är den när man alternerar
+(eller DC som man oftast säger) medan den högsta är den när man alternerar
 mellan två värden, säg -1 +1 -1 +1 vilket ju ger hälften av samplingstakten
 \(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och därmed
 \(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
@@ -162,7 +162,7 @@ som är det vi i allmänhet fokuserar på.
 \index{antivikningsfilter}
 \index{anti-aliasing filter}
 
-Medans bandbredden vi kan representera är begränsad av Nykvist-frekvensen så
+Medan bandbredden vi kan representera är begränsad av Nykvist-frekvensen så
 är däremot inte frekvensen det.
 Själva samplingen ger upphov till \emph{vikning} (eng. \emph{aliasing}),
 sådan att spektrumet efter halva samplings-frekvensen blir vänt så att högre
@@ -238,7 +238,7 @@ inte vika bandet.
 För att hantera dessa delar använder man analog-till-digital konverterare
 (eng. \emph{Analog-Digital Conversion (ADC)}) samt digital-till-analog
 konverterare (eng. \emph{Digital-Analog Conversion (DAC)}).
-En ADC tar hand om sampling, kvantisering och PCM-kodning medans en DAC
+En ADC tar hand om sampling, kvantisering och PCM-kodning medan en DAC
 omvandlar PCM-koden till analog spänning.
 Ofta behöver man komplettera med analoga filter, men moderna sigma-delta
 omvandlare har kraftigt reducerat kraven.

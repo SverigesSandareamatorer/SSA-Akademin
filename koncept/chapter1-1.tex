@@ -7,7 +7,7 @@
 
 Elektrisk laddning, spänning och ström hänger samman med hur materian är
 uppbyggd.
-Den förmåga ett material har att leda laddningar, d.v.s. ström, kallas
+Den förmåga ett material har att leda laddningar, dvs. ström, kallas
 konduktivitet.
 
 \subsection{Grundämnen}
@@ -85,8 +85,8 @@ struktur utan också för dess elektriska egenskaper.
 Atomernas massa och volym är ytterst liten.
 Tag som exempel en kub av koppar med volymen \(1\ cm^3\) och vikten
 \(8,9\ gram\).
-Den består av ca \(8,5 \cdot 10^{25}\) kopparatomer, d.v.s.
-\(85\, 000\, 000\, 000\, 000\, 000\, 000\, 000\, 000\) stycken.
+Den består av ca \(8,5 \cdot 10^{22}\) kopparatomer, dvs.
+\(85\, 000\, 000\, 000\, 000\, 000\, 000\, 000\) stycken.
 
 Varje elementarpartikel har en massa och en atoms totala massa är summan av
 elementarpartiklarnas massor.
@@ -96,7 +96,7 @@ Väteatomens totala massa har kunnat beräknas till \(1,66 \cdot 10^{-24}\) gram
 Nästan hela massan i atomen är samlad till kärnans protoner och neutroner.
 Var och en av dem har en massa som är ungefär 2000 gånger större än massan i en
 elektron.
-\(1\ cm^3\) av koppar innehåller t.ex. \(10^{23}\) stycken fria elektroner.
+\(1\ cm^3\) av koppar innehåller cirka \(8,5 \cdot 10^{22}\) fria elektroner.
 
 \subsection{Elektrisk laddning och kraftverkan}
 \textbf{FÖRDJUPNING}
@@ -206,7 +206,7 @@ Indium och gallium är 3-värdiga -- deras valensskal innehåller 3 elektroner.
 Men för en fast bindning med germanium eller kisel saknas det en elektron och
 det uppstår då ett ''hål'' -- en ''bristelektron''.
 Hålet kan fyllas ut av en elektron från en annan atom.
-I den atom som elektronen lämnar bildas det i sin tur ett hål o.s.v.
+I den atom som elektronen lämnar bildas det i sin tur ett hål osv.
 När en spänning läggs på, kommer ''hålet'' att vandra mot den negativa polen.
 Materialet är då P-ledande.
 
@@ -447,20 +447,36 @@ denna.
 
 \(1\ \mathrm{volt\ [U]}\ \cdot\ 1\ \mathrm{ampere\ [I]}\ =\ 1\ \mathrm{watt\ [P]}\)
 
-Effektformeln \(P = U \cdot I\) kan skrivas om på flera sätt.
-Den gäller i första hand för likström men även för växelström om belastningen är
-resistiv och ström och spänning inte är fasförskjutna.
+Effektformeln \(P = U \cdot I\) gäller i första hand för likström men även för
+växelström om belastningen är resistiv och ström och spänning inte är
+fasförskjutna.
+Formeln kan för att underlätta beräkningar skrivas om på flera sätt.
+
+Vi börjar med att lösa ut \(I \quad \text{ur Ohms lag} \quad U = R \cdot I\) 
+
+\(
+I = \dfrac{U}{R}\\
+\)
+
+Vi sätter sedan in uttrycket för \(I\) i effektformeln
 
 \(
 \begin{array}{lllll}
-U = R \cdot I & & I = \dfrac{U}{R} & & R = \dfrac{U}{I}\\ \\
-P = U \cdot I & & P = \dfrac{U \cdot U }{R} & & P = \dfrac{U^2}{R}\\ \\
-P = R \cdot I \cdot I & & P = R \cdot I^2 & & U = \sqrt{P \cdot R}
+P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}\\
+\end{array}
+\)
+
+På motsvarande sätt kan vi ersätta \(U \quad\text{med}\quad R \cdot I\)
+
+\(
+\begin{array}{lllll}
+P=U \cdot I & \Rightarrow & P = R \cdot I \cdot I  & \Rightarrow & P = R \cdot I^2\\
 \end{array}
 \)
 
 Med hjälp av dessa formler kan effekten beräknas ur resistans- och strömvärdena
 respektive ur resistans- och spänningsvärdena.
+För övriga formler se formelsnurran bild \ref{fig:BildII1-4}
 
 \subsection{Elektrisk arbete -- Enheten joule}
 \textbf{FÖRDJUPNING}
