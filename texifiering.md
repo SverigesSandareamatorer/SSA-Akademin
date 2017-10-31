@@ -231,3 +231,5 @@ regler.
     Vector Network Analyzer (VNA)
 
 29. Tankesträck, kodas med --, skall användas sparsamt.
+
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
