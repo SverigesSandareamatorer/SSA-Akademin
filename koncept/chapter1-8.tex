@@ -838,7 +838,7 @@ teckenändringarna på signalen.
 \index{Quadrature (Q)}
 \index{I/Q modulation}
 
-Fasskiftmodulation kan även göras med flera nivåer, och 4 olika fas-lägen
+Fasskiftmodulation kan även göras med flera nivåer, och 4 olika faslägen
 kan användas och kallas då för \emph{fyrnivå fasskiftmodulation} (eng.
 \emph{4-state Phase Shift Keying (4-PSK)}.
 
@@ -846,10 +846,10 @@ Istället för 180 graders fas-skift (0 och 180 grader) som 2-PSK/BPSK använder
 så använder man 360/4 dvs. 90 graders fas-skift mellan symbolerna.
 Ett effektivt sätt att avkoda det är att göra \emph{kvadratur-modulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
-komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och \emph{kvadratur} (eng.
+komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och förskjuten 90 grader \emph{kvadratur} (eng.
 \emph{Quadrature (Q)}), ofta kallat I/Q modulering.
 
-De fyra fas-lägena kan nu enkelt förklaras som amplituder i de olika fas-lägena
+De fyra faslägena kan nu enkelt förklaras som amplituder i de olika faslägena
 som anges av tabell \ref{tab:4-PSK}.
 
 \begin{table*}[ht]
@@ -883,17 +883,17 @@ kan informationen avkodas korrekt.
 \index{DVB-T2}
 \index{Wi-Fi}
 
-Medans fasskiftnings kan göras för fler fas-steg har man funnit att det är
-inte lika smidigt för högre upplösningar. Redan vid 8 steg behöver man ha
-I och Q värden som är \(\sqrt{1/2}\), vilket iofs går att approximera.
+Medan fasskiftnings kan göras för fler fassteg har man funnit att det är
+inte lika enkelt för högre upplösningar. Redan vid 8 steg behöver man ha
+I- och Q-värden som är \(\sqrt{1/2}\), vilket iofs går att approximera.
 En smidigare modulationsform är istället att låta även amplituden variera,
 och genom att låta några bitar modulera I och några bitar modulera Q så kan
-man enkelt få en konsistent modulations-mappning som är effektiv att
+man enkelt få en konsistent modulationsmappning som är effektiv att
 implementera. Denna kallar man \emph{kvadratur-amplitud modulation} (eng.
 \emph{Quadrature Amplitude Modulation (QAM)}).
 
 Ofta benämner man olika varianter med antalet olika positioner, så att QAM-16
-har 16 olika fas-amplitud-lägen.
+har 16 olika lägen i fas och amplitud tillsammans.
 Ett exempel på hur QAM-16 kan moduleras finns i tabell \ref{tab:QAM-16}.
 
 \begin{table*}[ht]
@@ -923,29 +923,35 @@ Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
 \label{tab:QAM-16}
 \end{table*}
 
-Medans både amplituder och vinklar kan kännas udda, så är det enkelt att
-mappa bitarna över till I och Q amplituder via Isym och Qsym delarna av
-symboler.
+Medan både amplituder och vinklar kan kännas udda, så är det enkelt
+att mappa bitarna över till I- och Q-amplitud och fasläge via Isym- och
+Qsym-delarna av symboler.
 
 QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
-mikrovågslänkar och många andra moderna system.
-Mikrovågslänkar använder upp till QAM-2048.
-En fördel med QAM-moduleringen är att det är enkelt att få samma avstånd
-mellan de olika symbol-positionerna, och därmed kan också modulationen anpassas
-till störningen. Detta nyttjas av många moderna modulations-system så att
-QAM-modulationen anpassas utifrån mottagarens rapportering om störning.
-Denna dynamiska anpassning gör att kommunikationen kan upprätthållas även om
-kapaciteten tillåts variera.
+mikrovågslänkar och många andra moderna system såsom exempelvis EDGE
+(efterföljaren till GSM med högre datatakt), UMTS när man kör
+höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
+symboler men i stället väldigt många parallellt fördelat över ett
+större frekvensband. I mobiltelefonisystem använder man upp till
+QAM-64 i dag med QAM-256 som kommande.
+
+Mikrovågslänkar använder till och med upp till QAM-2048. En fördel med
+QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
+olika symbolpositionerna, och därmed kan också modulationen anpassas
+till störningen. Detta nyttjas av många moderna modulationssystem så
+att QAM-modulationen anpassas utifrån mottagarens rapportering om
+störning.  Denna dynamiska anpassning gör att kommunikationen kan
+upprätthållas även om kapaciteten tillåts variera.
 
 \subsection{Digital modulation}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9}\label{myHAREC.a.1.8.9}}
 \index{digital modulation}
 
-Digital modulation innebär också att signalerna som sänds har lite andra
-egenskaper än de analoga. Istället för varierande spänningsnivåer som för
-t.ex. tal så skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är
-därför lämpligt att diskutera några grundläggande begrepp kring digital
-modulation.
+Digital modulation innebär också att signalerna som sänds har lite
+andra egenskaper än de analoga. Istället för varierande
+spänningsnivåer som för till exempel tal så skickar vi diskreta fixa
+nivåer, ofta i form av bitar. Det är därför lämpligt att diskutera
+några grundläggande begrepp kring digital modulation.
 
 \subsubsection{Bit rate}
 \textbf{HAREC a.\ref{HAREC.a.1.8.9a}\label{myHAREC.a.1.8.9a}}
