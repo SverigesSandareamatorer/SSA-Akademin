@@ -20,7 +20,7 @@ Ett sinusformat förlopp med en enda frekvens -- en enda ton -- sägs vara
 spektralt ren.
 En sådan svängning kallas för grundton.
 
-Varje signal, som inte är sinusformad, är sammansatt av flera sinussvängningar.
+Varje signal som inte är sinusformad är sammansatt av flera sinussvängningar.
 Det är signalens grundton samt dess harmoniska övertoner, vilka kan ha 2, 3
 osv. gånger högre frekvens än grundtonen.
 Den inbördes styrkan på grundton och övertoner avgör signalens form.
@@ -57,12 +57,12 @@ Bild \ref{fig:BildII1-20} visar uppdelning av en fyrkantsvåg i grundton och
 övertoner.
 
 \index{Fourier, Joseph}
-\index{Fourier analys}
-\index{Fourier!Fourier analys}
-\index{Fourier transform (FT)}
-\index{Fourier!Fourier transform (FT)}
-\index{invers Fourier transform (IFT)}
-\index{Fourier!invers Fourier transform (IFT)}
+\index{Fourieranalys}
+\index{Fourier!Fourieranalys}
+\index{Fouriertransform (FT)}
+\index{Fourier!Fouriertransform (FT)}
+\index{invers Fouriertransform (IFT)}
+\index{Fourier!invers Fouriertransform (IFT)}
 \index{Discrete Fourier Transform (DFT)}
 \index{Fourier!Discrete Fourier Transform (DFT)}
 \index{DFT}
@@ -79,19 +79,18 @@ vid analys av värmeutbredning och vibration som presenterades 1822.
 Denna metod är kraftfull och har haft stort inflytande på vetenskapen och
 utvecklingen både som matematiskt verktyg och som praktiskt analys med
 spektrum-analysatorer och vid modern modulation och demodulation.
-Man pratar om \emph{Fourier analys} (eng. Fourier analysis) och
-\emph{Fourier transform (FT)} för omvandling från tid till frekvens och
-\emph{invers Fourier transform} för omvandling från frekvens till tid.
+Man pratar om \emph{fourieranalys} (eng. Fourier analysis) och
+\emph{fouriertransform (FT)} för omvandling från tid till frekvens och
+\emph{invers fouriertransform} för omvandling från frekvens till tid.
 För tidsdiskret (samplad) form är termerna
-\emph{Diskret Fourier Transform (DFT)} och
-\emph{invers Diskret Fourier Transform (IDFT)} respektive.
+\emph{diskret fouriertransform (DFT)} och
+\emph{invers diskret fouriertransform (IDFT)} respektive.
 Senare optimeringar av beräkningar har resulterat i
 \emph{Fast Fourier Transform (FFT)} och
 \emph{Inverse Fast Fourier Transform (IFFT)}.
 %%}
 
-Det finns olika karaktärer av förlopp såsom sinusvåg, triangelvåg, sågtandsvåg,
-fyrkantsvåg osv.
+Det finns olika karaktärer av förlopp såsom sinusvåg, triangelvåg, sågtandsvåg och fyrkantsvåg.
 
 Fyrkantsvågen är sammansatt av sinusvågor med grundfrekvensen och dess udda
 övertoner, varvid amplituderna fördelar sig som \(1/1\), \(1/3\), \(1/5\),
@@ -144,8 +143,8 @@ Likspänningen stoppas och kvar blir slutligen LF-signalen som förstärks.
 
 Resistorer och resistans, i alla dess former, uppvisar en egenskap av
 en varierande spänning även när ingen ström går genom motståndet.
-Denna extra spänning innehåller ett brett spektra av toner, men är också ett
-tätt spektra, sådan att ingen enskild ton kan särskiljas från någon annan.
+Denna extra spänning innehåller ett brett spektrum av toner, men är också ett
+tätt spektrum, sådant att ingen enskild ton kan särskiljas från någon annan.
 Istället för att tänka sig en grundton och dess övertoner med ingen energi
 emellan dem så är det istället ett kontinuerligt spektra med oändligt många
 toner.
@@ -153,7 +152,7 @@ Detta spektra begränsas dock av bandbredden.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
   \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-36.pdf}
-  \caption{En resistor kan ses ha brus ekvivalenter som spänning eller ström}
+  \caption{En resistor kan ses ha brusekvivalenter som spänning eller ström}
   \label{fig:BildII1-36}
 \end{wrapfigure}
 
@@ -172,11 +171,11 @@ Detta spektra begränsas dock av bandbredden.
 \index{vitt brus}
 \index{brus!vitt}
 \index{white noise}
-\index{Johnsson noise}
-\index{brus!Johnsson}
-Man kallar detta spektra i daglig tal för \emph{termiskt brus}
+\index{Johnson noise}
+\index{brus!Johnson}
+Man kallar detta spektrum i daglig tal för \emph{termiskt brus}
 (eng. thermal noise), eftersom det beror på temperaturen hos motståndet, eller
-\emph{Johnsson noise}, efter J. B. Johnsson som 1928 fann att detta brus fanns
+\emph{Johnson noise}, efter J. B. Johnson som 1928 fann att detta brus fanns
 i alla ledare \cite{ott1988}.
 Brus skapar en variation i spänning och ström, som illustreras i bild
 \ref{fig:BildII1-34}.
@@ -187,7 +186,7 @@ Med vitt brus menas brus som inte ''färgats'', och det betyder i det här
 sammanhanget att det har samma amplitud för alla frekvenser, så som illustreras
 i bild \ref{fig:BildII1-35}.
 I praktiken är allt brus begränsat med bandbredden på kanalen, men man
-betraktar det som vitt inom kanalen om det är jämn inom bandet.
+betraktar det som vitt inom kanalen om det är jämnt inom bandet.
 
 Effekten \(P_n\) av detta brus beror på Boltzmanns konstant
 \(k\ =\ 1,38 \cdot 10^{-23}\) J/K, den absoluta temperaturen \(T\) i
@@ -207,21 +206,20 @@ så som illustreras i bild \ref{fig:BildII1-36} är
 \index{brus!brusbandbredd}
 
 Medan vi initialt antagit att brusets bandbredd är för frekvenser
-från DC till övre gränsfrekvensen så är det inte nödvändigt.
-Formeln är även relevant för bruset på ett band, och bandbredden för det
-bandpass filter vi har för att enbart lyssna på detta band.
+från DC till övre gränsfrekvensen, är det inte nödvändigt.
+Formeln är även relevant för bruset på ett band och bandbredden för det
+bandpassfilter vi har för att enbart lyssna på detta band.
 
 Exempelvis behöver tal på SSB hantera 300~Hz till 3~kHz, dvs. 2,7~kHz
-bandbredd och därmed kommer även mottagarens bandbredd behöva vara så stort,
-och därmed även brusbandbredd på 2,7~kHz.
+bandbredd, och därmed kommer även mottagarens bandbredd att behöva vara så stor.
 Vi kommer då att ta emot brus för motsvarande bandbredd.
-Ett CW filter kan t.ex. vara 350~Hz och kommer därmed också ha ett
-motsvarande förhållande lägre brus-effekt.
+Ett filter för telegrafi kan t.ex. vara 350~Hz och kommer därmed också att ha ett
+motsvarande förhållande lägre bruseffekt.
 
 Detta är dock en förenkling, eftersom filtret inte filtrerar med branta kanter
 och är helt plant.
-Filtrets egentliga brus-bandbredd beror på hur filtret filtrerar över
+Filtrets egentliga brusbandbredd beror på hur filtret filtrerar över
 alla frekvenser och summan av dessa.
-Beroende på vilken typ av filter så behövs därför en korrigeringsfaktor
-från den normala bandbredden till brus-bandbredden.
+Beroende på typ av filter behövs därför en korrigeringsfaktor
+från den normala bandbredden till brusbandbredden.
 För ett normalt 12~dB/oktav lågpassfilter är korrigeringsfaktorn 1,22.
