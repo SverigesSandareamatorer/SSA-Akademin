@@ -1,16 +1,20 @@
 \documentclass[b5paper]{tufte-book}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{graphicx}
+
+\graphicspath{{graphics/}}
+
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 
 \IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
 \IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
 
 \usepackage{lipsum}
-
 \usepackage{booktabs}
 
-\usepackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-\graphicspath{{graphics/}}
 
 \usepackage{fancyvrb}
 \fvset{fontsize=\normalsize}
@@ -19,7 +23,6 @@
 
 \newcommand{\hangstar}{\makebox[0pt][l]{*}}
 
-\usepackage{xspace}
 
 \newcommand{\vdqi}{\textit{VDQI}\xspace}
 \newcommand{\ei}{\textit{EI}\xspace}
@@ -108,8 +111,6 @@
 \include{koncept/common}
 %tlfällig fix för kompilering%
 %%\nonstopmode
-\usepackage[swedish]{babel}
-\usepackage[utf8]{inputenc}
 
 %%\headheight = 12.6pt
 
