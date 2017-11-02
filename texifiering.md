@@ -4,27 +4,27 @@ Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till format-
 regler.
 
-1.  OCRningen feltolkar flera tecken, så den har tolkat I som l, vilket man ser
-    framförallt i inledning av mening. m kan tolkas som rn osv. Därför behöver
-    man hela tiden vara uppmärksam. I har även blivit 1 på en del ställen där
-    siffror förekommer. Många av de grekiska tecknen blir fel, så man får
-    kontrollera med orginalet och justera.
+1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
+    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
+    Därför behöver man hela tiden vara uppmärksam. I ("Ivar") har även blivit 
+    1 ("ett") på en del ställen där siffror förekommer. Många av de grekiska tecknen 
+    blir fel, så man får kontrollera med orginalet och justera.
 
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
     fel ordning. Man får vara uppmärksam på det och flytta runt text.
 
 3.  Sid-numrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
-    Jag låter det ligga kvar tills jag verkligen processar den delen av texten,
-    för det gör att det blir lättare att matcha mot orignalet. Sen tar jag bara
-    bort det, för vi behöver det inte.
+    Vi låter det ligga kvar tills vi verkligen processar den delen av texten,
+    eftersom det blir lättare att matcha mot orignalet. Sen tar vi bara
+    bort det.
 
-4.  För bilder har OCRen försökt tolka bilderna. När jag processar texten tar
-    jag bort det line-noise det innebär och behåller bara bild-referensen och
+4.  För bilder har OCRen försökt tolka bilderna. När vi processar texten tar
+    vi bort det line-noise det innebär och behåller bara bildreferensen och
     texten. I själva texten finns även en referens till vilken bild som skall
-    vara där, den behåller jag också tills vidare, sen skall de döljas.
+    vara där, den behåller vi också tills vidare, sen skall den döljas.
 
-5.  Själva texten bryter jag om så den blir läsbar. Jag håller mig inom
-    80-tecken bredd i min Emacs.
+5.  Själva texten bryter vi om så den blir läsbar. Vi håller oss inom
+    80-tecken per rad.
 
     Text skall övervägande brytas så att nya meningar bryts om så de börjar
     på ny rad, detta skall ses som ett obligatorium för ny text.
@@ -34,9 +34,9 @@ regler.
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla har jag markerat `\part{}` och `\chapter{}` så att det går
+6.  För att förenkla markerar vi `\part{}` och `\chapter{}` så att det går
     att hitta delarna.
-    Nu mer är \part{} borttaget då det ej fyller sitt syfte längre i nya
+    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya
     utgåvan.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
@@ -45,8 +45,8 @@ regler.
 
 8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
     `\emph{}`.
-    Nyckelbegrepp skall i förekommande fall även skrivas i sin engeska form,
-    för att underlätta sökning på nätet och läsande av engelsk literatur.
+    Nyckelbegrepp skall i förekommande fall även skrivas i sin engeslka form,
+    för att underlätta sökning på nätet och läsande av engelsk litteratur.
     Exempel:
     \emph{strömtransformator} (eng. \emph{current transformer})
 
@@ -66,25 +66,25 @@ regler.
 10. Alla formler latexas och kvarvarande "line-noise" tas bort.
 
 11. Formler med enhetsangivelser och liknande referenser i text skall också
-    latexas till formler. T.ex. `\(1\ Joule\ [J]\)`. Notera hur mellanslagen är
+    latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
     slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
     mellan värde och dess prefix och enhet.
 
-    Anders kommentar: I matermatiska formler där enheter ingår bör man
+    Kommentar: I matematiska formler där enheter ingår bör man
     omgärda enheter och storheter med `\mathrm{}` då det är bara
     variabler som skall sättas kursivt egentligen. Om man vill undvika
-    radbrytning mellan mätetal och enhet så kan man använda sig av
+    radbrytning mellan mätetal och enhet kan man använda sig av
     tecknet `~` (tilde) i löpande text, exempelvis *"...dipolantennen har
     2,15~dB mer förstärkning än en tänkt isotrop antenn som strålar
     lika i alla riktningar..."*. Slutligen
 
 12. Tabeller latexas givetvis.
 
-    Anders kommentar: Tabeller som riskerar att sidbrytas men som man
+    Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
     eller efter det refererande stycket) kan man köra longtable
     på. Slå upp det på webben eller i hundboken. Longtable kan
-    nämligen sidbrytas snyggt.
+    sidbrytas snyggt.
     
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
@@ -95,7 +95,7 @@ regler.
     krav a.1.1.1 uppfylls.
 
 14. Tabeller och bilder skall ha `\caption{}` och skall ha `\label{}` samt
-    refereras till från texten. Det gör att automatisk sammanställning av
+    refereras från texten. Det gör att automatisk sammanställning av
     bilder och tabeller kan ske, samt förstås gör det enkelt för alla läsare
     att se vilken bild/tabell som hör till texten.
     Det hjälper även LaTeX att rendrera så att bilder och tabeller hamnar nära
@@ -137,17 +137,16 @@ regler.
     markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
     Alla TODOs skall åtgärdas innan release.
 
-    En sammanställning av alla TODOs görs med
-    make TODOs
-    som producerar filen TODOs, listar antalet. Den inkluderar flera andra
-    källor av saker som skall åtgärdas innan release.
+    En sammanställning av alla TODOs görs med make TODOs som producerar filen 
+    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall 
+    åtgärdas innan release.
 
-18. Har lagt i `\dfrac` på formler med nedsänkta tecken då det blir tydligare
-    att läsa. /NTJ
+18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
+    att läsa.
 
-19. har lagt in \, som tusentalsavskiljare/ NTJ
+19. Lägg in \, som tusentalsavskiljare/
 
-20. Bild-referenserna har i ursprungliga Koncept gjorts som en separat rad.
+20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
     "I bild 3.16 illustreras..."
