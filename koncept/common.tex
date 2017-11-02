@@ -1,6 +1,6 @@
 
 % Prepare for svenska tecken
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage[swedish]{babel}
 \usepackage{icomma}
 \usepackage{lmodern}
@@ -12,11 +12,11 @@
 \usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{framed}
-\usepackage[fulladjust]{marginnote}
+%\usepackage[fulladjust]{marginnote}
 \usepackage{color}
-\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
-\usepackage[toctitles]{titlesec}
-\usepackage{hyperref}
+%\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+%\usepackage[toctitles]{titlesec}
+%\usepackage{hyperref}
 \hypersetup{
     pdftitle={KonCEPT för amatörradiocertifikat},
     pdfauthor={Föreningen Sveriges Sändareamatörer},
@@ -37,21 +37,21 @@
 % Undvik att nästla dem för det är ingen idé det fungerar inte.
 % De är testade med ett antal andra environemnt som tabular mm men kolla att det fungerar med de environments du använder.
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
-\usepackage[svgnames,rgb]{xcolor}
-\usepackage{pdfcomment}
-\newenvironment{rev-ogranskat}{\begin{pdfsidelinecomment}[color=black,linewidth=3px,caption=inline]{Ogranskat}}{\end{pdfsidelinecomment}}
-\newenvironment{rev-omarbetas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Omarbetas}}{\end{pdfsidelinecomment}}
-\newenvironment{rev-raderas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Raderas}}{\end{pdfsidelinecomment}}
-\newenvironment{rev-redo}{\begin{pdfsidelinecomment}[color=yellow,linewidth=3px,caption=inline]{Redo att granska}}{\end{pdfsidelinecomment}}
-\newenvironment{rev-granskat}[1][]%
-{\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]%
-{Granskat #1}}%
-{\end{pdfsidelinecomment}}
-\newenvironment{rev-nytt}[1][]%
-{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]%
-{Nytt #1}}%
-{\end{pdfsidelinecomment}}
-\newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
+%\usepackage[svgnames,rgb]{xcolor}
+%\usepackage{pdfcomment}
+%\newenvironment{rev-ogranskat}{\begin{pdfsidelinecomment}[color=black,linewidth=3px,caption=inline]{Ogranskat}}{\end{pdfsidelinecomment}}
+%\newenvironment{rev-omarbetas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Omarbetas}}{\end{pdfsidelinecomment}}
+%\newenvironment{rev-raderas}{\begin{pdfsidelinecomment}[color=red,linewidth=3px,caption=inline]{Raderas}}{\end{pdfsidelinecomment}}
+%\newenvironment{rev-redo}{\begin{pdfsidelinecomment}[color=yellow,linewidth=3px,caption=inline]{Redo att granska}}{\end{pdfsidelinecomment}}
+%\newenvironment{rev-granskat}[1][]%
+%{\begin{pdfsidelinecomment}[color=green,linewidth=3px,caption=inline]%
+%{Granskat #1}}%
+%{\end{pdfsidelinecomment}}
+%\newenvironment{rev-nytt}[1][]%
+%{\begin{pdfsidelinecomment}[color=brown,linewidth=3px,caption=inline]%
+%{Nytt #1}}%
+%{\end{pdfsidelinecomment}}
+%\newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
 \clubpenalty=9990
 \widowpenalty=9999
