@@ -149,7 +149,9 @@ signalen som amplitud av frekvens istället för amplitud av tid.
 Har man då även konverterat filtrets egenskaper så gör man helt enkelt en
 multiplikation av signal och filter för varje frekvens:
 
-\(Y(f) = X(f)H(f)\)
+\begin{equation*}
+Y(f) = X(f)H(f)
+\end{equation*}
 
 Bägge representerar faltning, och är viktig för förståelsen av \emph{linjära
 tids-invarianta} filter (eng. \emph{linear time-invariant (LTI)}) filter,
@@ -183,17 +185,20 @@ tids-diskret tid.
 \end{center}
 \end{figure*}
 
-Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
+Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC (likspänning), 
+sinus med
 3,6~kHz, 12,4~kHz och 38~kHz, samplas med samplingshastigheten 40 kS/s.
 Fallet med DC är uppenbart enkelt, alla punkterna hamnar på samma spänning.
 En lågfrekvens sinus, som fallet är med 3,6~kHz här, får man punkter spridda
 över kurvan och de påminner om den ursprungliga sinusen, än mer om man knyter
 samman punkterna, vilket anti-aliasingfiltret i praktiken gör.
+
 En frekvens som är nära nykvistfrekvensen, så som 12,4~kHz in i 40~kS/s och
 dess 20~kHz nykvistfrekvens, så är sample-punkterna nästa helt alternerande
 mellan högsta och lägsta läge. Detta fall är det svårt att se den bakomliggande
 sinus-signalen för ett otränat öga, men kan fortfarande rekonstrueras med ett
-antialiasingfiltret.
+antialiasingfilter.
+
 Ett ännu svårare fall är 38~kHz, där punkterna visar en sinus med 2~kHz, då
 frekvensen vikt sig ned run nykvistfrekvensen, och eftersom infrekvensen är
 18~kHz över nykvistfrekvensen hamnar den därför 18~kHz under nykvistfrekvensen,
@@ -231,7 +236,7 @@ behändigt sätt, men det förekommer också att man väljer samplingstakten fö
 inte vika bandet.
 
 \subsection{ADC/DAC}
-\textbf{HAREC a.\ref{HAREC.a.1.10.5}\label{myHAREC.a.1.10.5}}
+\marginnote{HAREC a.\ref{HAREC.a.1.10.5}\label{myHAREC.a.1.10.5}}
 \index{ADC}
 \index{DAC}
 
