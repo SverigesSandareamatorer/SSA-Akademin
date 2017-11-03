@@ -465,20 +465,20 @@ Formeln kan för att underlätta beräkningar skrivas om på flera sätt.
 
 Vi börjar med att lösa ut \(I \quad \text{ur Ohms lag} \quad U = R \cdot I\) 
 
-\(
+\[
 I = \dfrac{U}{R}
-\)
+\]
 
 Vi sätter sedan in uttrycket för \(I\) i effektformeln
 
 
-\[ \begin{array}{lllll}
-P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}
-\end{array} \]
-
+\begin{equation*}
+  \begin{array}{lllll}
+    P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}
+  \end{array}
+\end{equation*}
 
 På motsvarande sätt kan vi ersätta \(U \quad\text{med}\quad R \cdot I\)
-
 
 \[ \begin{array}{lllll}
 P=U \cdot I & \Rightarrow & P = R \cdot I \cdot I  & \Rightarrow & P = R \cdot I^2
@@ -536,11 +536,12 @@ kallas \(1\ \mathrm{wattsekund}\ \mathrm{[1\ Ws]}\).
 Vid sidan av grundenheten används multipler av denna.
 Exempel:
 
-\begin{alignat*}{7}
-1\ \mathrm{kilowattsekund} & = 1\ &\mathrm{kWs} & = 1\,000\ &\mathrm{Ws} & = 1,0 \cdot 10^3\ &\mathrm{Ws} \\
-1\ \mathrm{wattimme}       & = 1\ &\mathrm{Wh}  & = 3\,600\ &\mathrm{Ws} & = 3,6 \cdot 10^3\ &\mathrm{Ws} \\
-1\ \mathrm{kilowattimme}   & = 1\ &\mathrm{kWh} & = 1\,000\ &\mathrm{Wh} & = 3,6 \cdot 10^6\ &\mathrm{Ws} \\
-\end{alignat*}
+\begin{align*}
+  \centering
+  \num{1}\,&\mathrm{kilowattsekund} &=& \SI{1}{kWs} &=& \SI{1000}{Ws} &=& \SI{1,0d3}{Ws} \\
+  \num{1}\,&\mathrm{wattimme}       &=& \SI{1}{Wh}  &=& \SI{3600}{Ws} &=& \SI{3,6d3}{Ws} \\
+  \num{1}\,&\mathrm{kilowattimme}   &=& \SI{1}{kWh} &=& \SI{1000}{Wh} &=& \SI{3,6d6}{Ws} \\
+\end{align*}
 
 \subsection{Formelsnurran}
 \index{formelsnurran}
