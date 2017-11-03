@@ -264,18 +264,20 @@ effektutvecklingen \(1\ \mathrm{watt\ [W]}\).
 
 \subsection{Symboler}
 
-\begin{wrapfigure}[6]{R}{0.4\textwidth}
-  \begin{mdframed}
+%\begin{wrapfigure}[6]{R}{0.4\textwidth}
+\begin{marginfigure}
+%  \begin{mdframed}
     \centering
     \begin{circuitikz}
       \draw
-      (4,1) to[battery1] (1,1)
+      (3,1) to[battery1] (1,1)
       ;
     \end{circuitikz}
     \caption{Schemasymbol för batteri}
     \label{fig:bildII2-batteri}
-  \end{mdframed}
-\end{wrapfigure}
+%  \end{mdframed}
+\end{marginfigure}
+%\end{wrapfigure}
 
 \textbf{FÖRDJUPNING}
 
@@ -395,26 +397,29 @@ växelström.
 I en ledare med resistansen \(R\) är strömstyrkan \(I\) genom resistansen
 proportionell mot den pålagda spänningen \(U\).
 
-\[ \begin{array}{lll}
-  U=I\cdot R & I=\frac{U}{R} & R=\frac{U}{I}
-\end{array} \]
+\begin{align*}
+  U &= I \cdot R\\
+  I &= \frac{U}{R}\\
+  R &= \frac{U}{I}
+\end{align*}
 
+\subsection{Kirchhoffs lagar}
+\textbf{HAREC a.\ref{HAREC.a.1.1.5}\label{myHAREC.a.1.1.5}}
+\index{Kirchhoffs lagar}
+\index{Kirchhoffs strömlag}
+\index{Kirchhoffs spänningslag}
 
-%% \subsection{Kirchhoffs lagar}
-%% \textbf{HAREC a.\ref{HAREC.a.1.1.5}\label{myHAREC.a.1.1.5}}
-%% \index{Kirchhoffs lagar}
-%% \index{Kirchhoffs strömlag}
-%% \index{Kirchhoffs spänningslag}
+Den tyske fysikern G R Kirchhoff (1824--1887) formulerade sina välkända lagar
+först 1845 och sedan 1847.
 
-%% Den tyske fysikern G R Kirchhoff (1824--1887) formulerade sina välkända lagar
-%% först 1845 och sedan 1847.
+Kirchhoffs strömlag:
 
-%% Kirchhoffs strömlag:
+ Den algebraiska summan av alla strömmar (tagna med tecken) som flyter
+ till eller från varje punkt i en elektrisk krets, är lika med noll.
 
-%% Den algebraiska summan av alla strömmar, som flyter till eller från varje punkt
-i en elektrisk krets, är lika med noll.
-
-\(I_1 + I_2 + I_3 + \cdots + I_n = 0\)
+\begin{equation*}
+  I_1 + I_2 + I_3 + \cdots + I_n = 0
+\end{equation*}
 
 Kirchhoffs spänningslag:
 
@@ -422,7 +427,12 @@ I varje sluten strömkrets är den algebraiska summan av alla spänningskällor 
 med det totala spänningsfallet i alla resistorer.
 
 Uttryckt på ett annat sätt är algebraiska summan av spänningarna i en
-strömkrets lika med noll.
+strömkrets (tagna med tecken) lika med noll.
+
+\begin{equation*}
+  U_1 + U_2 + U_3 + \cdots + U_n = 0
+\end{equation*}
+
 
 \subsection{Elektrisk effekt -- Enheten watt}
 \textbf{HAREC a.\ref{HAREC.a.1.1.6}\label{myHAREC.a.1.1.6}, a.\ref{HAREC.a.1.1.7}\label{myHAREC.a.1.1.7}}
@@ -562,7 +572,9 @@ Exempel:
 \(R\) söks, \(U\) och \(I\) är kända;
 Om \(U = 230\ V\) och \(I = 2\ A\), så blir
 
-\(R=\dfrac{U}{I}=\dfrac{230}{2}=115\ \Omega\)
+\begin{equation*}
+  R=\dfrac{U}{I}=\dfrac{230}{2}=115\ \Omega
+\end{equation*}
 
 \subsubsection{Joules lag}
 
@@ -570,7 +582,9 @@ Om \(U = 230\ V\) och \(I = 2\ A\), så blir
 
 Om \(U = 230\ V\) och \(I = 2\ A\), så blir
 
-\(P = U \cdot I = 230 \cdot 2 = 460\ W\)
+\begin{equation*}
+  P = U \cdot I = 230 \cdot 2 = 460\ W
+\end{equation*}
 
 \subsection{Amperetimmar (Ah) och batterikapacitet}
 \textbf{HAREC a.\ref{HAREC.a.1.1.9}\label{myHAREC.a.1.1.9}}
