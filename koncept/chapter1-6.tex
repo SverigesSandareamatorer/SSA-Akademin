@@ -115,25 +115,36 @@ Måttenheten för periodtid är sekund [s].
 
 Periodtid
 
-\((T) = \dfrac{1}{f}\)
+\begin{equation*}
+	(T) = \dfrac{1}{f}
+\end{equation*} 
 
-\(T\ [s]  f\ [Hz]\) eller
-\(T\ [ms] f\ [kHz]\) eller
-\(T\ [ms] f\ [MHz]\)
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{rrr}
+		 Tidsområde &     Enhet & Frekvensområde \\ \hline
+		     sekund &         s &             Hz \\
+		millisekund &        ms &            kHz \\
+		mikrosekund & \textmu s &            MHz
+	\end{tabular}
+	\caption{Relation mellan tid och frekvens i ett periodiskt system}
+\end{table}
+
+%\begin{alignat*}{5}
+%	&T\ &\unit{[s]    }  &\unit{f} &\unit{[Hz]} \mathrm{eller} \\
+%	&T\ &\unit{[ms]}     &\unit{f} &\unit{[kHz]} \mathrm{eller} \\
+%	&T\ &\unit{[$\mu$s]} &\unit{f} &\unit{[MHz]}
+%\end{alignat*}
 
 Exempel:
 
-\begin{center}
-\begin{tabular}{lll}
-\(T_1=\dfrac{1}{10}\) s & = 0,100 s & = 100 ms (f = 10 Hz)\\
-\\
-\(T_2=\dfrac{1}{50}\) s & = 0,020 s & = 20 ms (f = 50 Hz)\\
-\\
-\(T_3=\dfrac{1}{1000}\) s & = 0,001 s & = 1 ms (f = 1 kHz)\\
-\\
-\(T_4=\dfrac{1}{1000000}\) s & = 0,000001 s & = 1 \(\mu\)s (f = 1 MHz)\\
-\end{tabular}
-\end{center}
+\begin{alignat*}{7}
+T_1&=&\dfrac{1}{10} \unit{s}       &=&  0,100 \unit{s}     &=& 100 ms (f = 10 \unit{Hz})\\
+T_2&=&\dfrac{1}{50} \unit{s}       &=&  0,020 \unit{s}     &=& 20 ms (f = 50 \unit{Hz})\\
+T_3&=&\dfrac{1}{1000} \unit{s}     &=&  0,001 \unit{s}     &=& 1 ms (f = 1 \unit{kHz})\\
+T_4&=&\dfrac{1}{1000000} \unit{s}  &=&  0,000001 \unit{s}  &=& 1 \mu s (f = 1 \unit{MHz})\\
+\end{alignat*}
 
 \subsection{Frekvens}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.4}\label{myHAREC.a.1.6.4}}
