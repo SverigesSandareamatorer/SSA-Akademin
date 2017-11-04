@@ -3,13 +3,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{xspace}
 \usepackage{graphicx}
+\usepackage{palatino}
 
 \graphicspath{{graphics/}}
 
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 
-\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
-\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
+%\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
+%\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
 
 \usepackage{lipsum}
 \usepackage{booktabs}
@@ -20,18 +21,16 @@
 \fvset{fontsize=\normalsize}
 
 \newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}}
-
 \newcommand{\hangstar}{\makebox[0pt][l]{*}}
 
-
-\newcommand{\vdqi}{\textit{VDQI}\xspace}
-\newcommand{\ei}{\textit{EI}\xspace}
-\newcommand{\ve}{\textit{VE}\xspace}
-\newcommand{\be}{\textit{BE}\xspace}
-\newcommand{\VDQI}{\textit{The Visual Display of Quantitative Information}\xspace}
-\newcommand{\EI}{\textit{Envisioning Information}\xspace}
-\newcommand{\VE}{\textit{Visual Explanations}\xspace}
-\newcommand{\BE}{\textit{Beautiful Evidence}\xspace}
+%% \newcommand{\vdqi}{\textit{VDQI}\xspace}
+%% \newcommand{\ei}{\textit{EI}\xspace}
+%% \newcommand{\ve}{\textit{VE}\xspace}
+%% \newcommand{\be}{\textit{BE}\xspace}
+%% \newcommand{\VDQI}{\textit{The Visual Display of Quantitative Information}\xspace}
+%% \newcommand{\EI}{\textit{Envisioning Information}\xspace}
+%% \newcommand{\VE}{\textit{Visual Explanations}\xspace}
+%% \newcommand{\BE}{\textit{Beautiful Evidence}\xspace}
 
 \newcommand{\TL}{Tufte-\LaTeX\xspace}
 
@@ -137,42 +136,43 @@
 % Colophone
 
 %% Tryckortssidan
-\include{koncept/tryckort}
+%%%\include{koncept/tryckort}
 
 %\lfoot[\revision]{}
 %\rfoot[]{\revision}
 
-\cleardoublepage
+%%%\cleardoublepage
 %\pagestyle{fancy}
 
 %\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
 %\author{Lennart Wiberg}
 %\maketitle
 
-\tableofcontents
+%%%\tableofcontents
 
 %\setlength{\parindent}{0pt}
 %\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
-\mainmatter
+%\mainmatter
 
 %\include{koncept/errata}
-\include{koncept/preface}
-\include{koncept/foreword}
-\include{koncept/introduction}
+%\include{koncept/preface}
+%\include{koncept/foreword}
+%\include{koncept/introduction}
 
 \input{koncept/koncept-core}
 
-\listoffigures
-\listoftables
+%%%\listoffigures
+%%%\listoftables
 
 \onecolumn
+
 \bibliography{koncept.bib}
 \bibliographystyle{plain}
 
-\backmatter
+%\backmatter
 
 %\printindex
-\include{koncept/backpage}
+%%%\include{koncept/backpage}
 
 \end{document}
