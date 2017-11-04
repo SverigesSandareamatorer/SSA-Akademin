@@ -190,6 +190,7 @@ Effekten \(P_n\) av detta brus beror på Boltzmanns konstant
 \(k\ =\ 1,38 \cdot 10^{-23}\) J/K, den absoluta temperaturen \(T\) i
 kelvin samt bandbredden \(B\) i hertz och anges enligt formeln:
 
+
 \begin{equation*}
 	P_n = k T B
 \end{equation*}
@@ -199,31 +200,49 @@ ekvivalent spänning \(e_n\) och ström \(i_n\) för resistansen \(R\),
 så som illustreras i bild \ref{fig:BildII1-36} är
 
 \begin{equation*}
-	e_n = \sqrt{4kTBR}
+  e_n = \sqrt{4kTBR}
 \end{equation*}
 
 \begin{equation*}
 	i_n = \sqrt{\dfrac{4kTB}{R}}
 \end{equation*}
 
+\marginnote{
+  \vspace{\baselineskip}\\\emph{Fördjupning:} Om man räknar fram vad grundbruset
+  är i det elektromagnetiska spektrat baserat på formeln ovan vid
+  rumstemperatur (ca \SI{300}{\kelvin}) så får man fram ett värde per
+  \unit{Hz} som kan vara intressant att lägga på minnet nämligen
+  \SI{-174}{dBm/Hz}.
+
+  Detta är det så kallade termiska brusgolvet och
+  betecknas ofta $N_0$.
+
+  När man talar om mottagarbandbredd kan man räkna ut det termiska
+  brusgolvet i en given bandbredd genom att ta bandbredden i Hz och
+  översätta till dB. Detta görs genom \( B_{\unit{dB}}=10 \cdot
+  \log(B) \). För en bandbredd på 3 kHz innebär det \SI{34,8}{dB} över
+  $N_0$.
+
+}
+
 \subsubsection{Brusbandbredd}
 \index{brus!brusbandbredd}
 
-Medan vi initialt antagit att brusets bandbredd är för frekvenser
-från DC till övre gränsfrekvensen, är det inte nödvändigt.
-Formeln är även relevant för bruset på ett band och bandbredden för det
-bandpassfilter vi har för att enbart lyssna på detta band.
+Medan vi initialt antagit att brusets bandbredd är för frekvenser från
+DC till övre gränsfrekvensen, är det inte nödvändigt.
+Formeln är även relevant för bruset på ett band och bandbredden för
+det bandpassfilter vi har för att enbart lyssna på detta band.
 
-Exempelvis behöver tal på SSB hantera 300~Hz till 3~kHz, dvs. 2,7~kHz
-bandbredd, och därmed kommer även mottagarens bandbredd att behöva vara så stor.
-Vi kommer då att ta emot brus för motsvarande bandbredd.
-Ett filter för telegrafi kan t.ex. vara 350~Hz och kommer därmed också att ha ett
-motsvarande förhållande lägre bruseffekt.
+Exempelvis behöver tal på SSB hantera \SI{300}{Hz} till \SI{3}{kHz},
+dvs. \SI{2,7}{kHz} bandbredd, och därmed kommer även mottagarens
+bandbredd att behöva vara så stor.  Vi kommer då att ta emot brus för
+motsvarande bandbredd.  Ett filter för telegrafi kan t.ex. vara
+\SI{350}{Hz} och kommer därmed också att ha ett motsvarande
+förhållande lägre bruseffekt.
 
-Detta är dock en förenkling, eftersom filtret inte filtrerar med branta kanter
-och är helt plant.
-Filtrets egentliga brusbandbredd beror på hur filtret filtrerar över
-alla frekvenser och summan av dessa.
-Beroende på typ av filter behövs därför en korrigeringsfaktor
-från den normala bandbredden till brusbandbredden.
-För ett normalt 12~dB/oktav lågpassfilter är korrigeringsfaktorn 1,22.
+Detta är dock en förenkling, eftersom filtret inte filtrerar med
+branta kanter och är helt plant.  Filtrets egentliga brusbandbredd
+beror på hur filtret filtrerar över alla frekvenser och summan av
+dessa.  Beroende på typ av filter behövs därför en korrigeringsfaktor
+från den normala bandbredden till brusbandbredden.  För ett normalt
+12~dB/oktav lågpassfilter är korrigeringsfaktorn 1,22.
