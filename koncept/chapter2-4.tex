@@ -1,5 +1,5 @@
 \section{Transformatorn}
-\textbf{HAREC a.\ref{HAREC.a.2.4}\label{myHAREC.a.2.4}}
+\marginnote{HAREC a.\ref{HAREC.a.2.4}\label{myHAREC.a.2.4}}
 \label{transformator}
 \label{primärlindning}
 \label{transformator!primärlindning}
@@ -18,7 +18,7 @@ När en växelspänning läggs över en lindning, kallas den \emph{primärlindni
 (eng. \emph{primary coil}).
 I och omkring primärlindningen alstras då ett magnetiskt fält som växlar i takt
 med spänningen. Primärfältet passerar även genom övriga lindningar --
-\emph{sekundärlindningarna} (eng. \emph{secondary coil}) -- och alstrar där
+\emph{sekundärlindningarna} (eng. \emph{secondary coils}) --- och alstrar där
 spänningar och strömmar.
 
 Den s.k. kopplingsfaktorn mellan lindningarna varierar för olika frekvenser,
@@ -29,7 +29,6 @@ effekt ska kunna överföras mellan lindningarna. Då kan ledningsförmågan i d
 magnetiska flödesvägen ökas med hjälp av en järnkärna.
 
 \begin{figure}[ht]
-%  \begin{mdframed}
     \begin{center}
       \begin{circuitikz}
         \draw
@@ -47,12 +46,9 @@ magnetiska flödesvägen ökas med hjälp av en järnkärna.
       \end{circuitikz}
       \\
       \begin{tabular}{ll}
-        1, 2 & Allmänna symboler \\
-        3 & Transformator med kärna
       \end{tabular}
     \end{center}
-    \caption{Schemasymboler för transformatorer}
-%  \end{mdframed}
+    \caption{Schemasymboler för transformatorer. 1, 2: Almänna symboler; 3: Transformator med kärna.}
   \label{fig:BildII2-5}
 \end{figure}
 
@@ -68,9 +64,9 @@ för transformatorer med två lindningar.
 \index{transformator!impedans-}
 
 Transformatorn kan utföras för olika ändamål, t.ex. som
-\emph{spänningstransformator} (eng. \emph{voltage transformer}),
-\emph{strömtransformator} (eng. \emph{current transformer}) eller
-\emph{impedanstransformator} (eng. \emph{impedance transformer}).
+spänningstransformator (eng. \emph{voltage transformer}),
+strömtransformator (eng. \emph{current transformer}) eller
+impedanstransformator (eng. \emph{impedance transformer}).
 
 Utförandet påverkas även av överförd effekt och frekvens.
 
@@ -80,20 +76,24 @@ Utförandet påverkas även av överförd effekt och frekvens.
 \index{impedansomsättning}
 \index{transformator!impedansomsättning}
 
-\begin{tabular}{ll}
-primärkrets & sekundärkrets \\
-primärlindning & sekundärlindning \\
-primärspänning \(u_1\) &  sekundärspänning \(u_2\) \\
-primärström \(i_1\) & sekundärström \(i_2\) \\
-lindningsvarvtal n & primärt \(n_1\) sekundärt \(n_2\)
+\begin{tabular}{lr|lr}
+	Term             &    Bet. & Term             &    Bet. \\ \hline
+	primärkrets      &         & sekundärkrets    &  \\
+	primärlindning   &         & sekundärlindning &  \\
+	primärspänning   & \(u_1\) & sekundärspänning & \(u_2\) \\
+	primärström      & \(i_1\) & sekundärström    & \(i_2\) \\
+	lindningsvarvtal &   \(n\) & primärt          & \(n_1\) \\
+	                 &         & sekundärt        & \(n_2\)
 \end{tabular}
 
-varvtalsomsättning = \(\dfrac{n_1}{n_2}\) eller \(\dfrac{n_2}{n_1}\)
+\[varvtalsomsättning = \dfrac{n_1}{n_2} \qquad 
+\mathrm{eller} \qquad \dfrac{n_2}{n_1} \]
 
-impedansomsättning = \(\dfrac{Z_1}{Z_2}\) eller \(\dfrac{Z_2}{Z_1}\)
+\[impedansomsättning = \dfrac{Z_1}{Z_2} \qquad 
+\mathrm{eller} \qquad \dfrac{Z_2}{Z_1}\]
 
 \subsection{Den ideala (förlustfria) transformatorn}
-\textbf{HAREC a.\ref{HAREC.a.2.4.1}, a.\ref{HAREC.a.2.4.2.1},
+\marginnote{HAREC a.\ref{HAREC.a.2.4.1}, a.\ref{HAREC.a.2.4.2.1},
 a.\ref{HAREC.a.2.4.2.2}\label{myHAREC.a.2.4.1}
 \label{myHAREC.a.2.4.2.1}\label{myHAREC.a.2.4.2.2}}
 \index{varvtalsomsättning}
@@ -101,13 +101,13 @@ a.\ref{HAREC.a.2.4.2.2}\label{myHAREC.a.2.4.1}
 \index{impedansomsättning}
 \index{transformator!impedansomsättning}
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-06.pdf}
+\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-06.pdf}
 \caption{Obelastad transformator}
 \label{fig:BildII2-6}
 \end{center}
-\end{figure*}
+\end{figure}
 
 I bild \ref{fig:BildII2-6} är transformatorn är obelastad när sekundärkretsen
 är bruten.
@@ -117,18 +117,18 @@ växelspänningar både över primär- och sekundärlindningarna. Det uppstår �
 ström i primärlindningen, men däremot inte i sekundärlindningen när
 sekundärkretsen är bruten. För den obelastade transformatorn gäller sambandet
 
-\(\dfrac{u_1}{u_2} = \dfrac{n_1}{n_2}\)
+\[ \frac{u_1}{u_2} = \frac{n_1}{n_2} \]
 
 dvs. spänningen över lindningarna är proportionell med lindningsvarvtalet,
 dvs enligt varvtalsomsättningen.
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-07.pdf}
+\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-07.pdf}
 \caption{Belastad transformator}
 \label{fig:BildII2-7}
 \end{center}
-\end{figure*}
+\end{figure}
 
 I bild \ref{fig:BildII2-7} är transformatorn är belastad när sekundärkretsen
 är sluten.
@@ -148,11 +148,11 @@ För den belastade transformatorn gäller, att strömmen genom lindningarna är
 omvänt proportionell med lindningsvarvtalet, dvs. omvänt proportionell med
 varvtalsomsättningen.
 
-\(\dfrac{i_1}{i_2} = \dfrac{n_2}{n_1}\)
+\[\frac{i_1}{i_2} = \frac{n_2}{n_1}\]
 
 Av föregående formler följer att:
 
-\(\dfrac{u_1}{u_2} = \dfrac{i_2}{i_1}\)
+\[\frac{u_1}{u_2} = \frac{i_2}{i_1}\]
 
 Av \(P_1 = u_1 \cdot i_1\) och \(P_2 = u_2 \cdot i_2\) följer att \(P_1 = P_2\).
 
@@ -163,23 +163,27 @@ Eftersom transformatorn transformerar både spänningar och strömmar så kommer
 även impedansen transformeras genom transformatorn.
 Denna impedanstransformation följer impedansomsättningen, dvs.
 
-\(\dfrac{Z_1}{Z_2} = \dfrac{n_1^2}{i_2^2}\)
+\[ \frac{Z_1}{Z_2} = \frac{n_1^2}{i_2^2} \]
 
 \subsection{Transformatortillämpningar}
-\textbf{HAREC a.\ref{HAREC.a.2.4.2.4}\label{myHAREC.a.2.4.2.4}}
+\marginnote{HAREC a.\ref{HAREC.a.2.4.2.4}\label{myHAREC.a.2.4.2.4}}
 
 \subsubsection{Sparkopplade transformatorer}
 \index{galvanisk förbindelse}
 \index{spartransformator}
 \index{transformator!spar-}
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-08.pdf}
+\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-08.pdf}
 \caption{Sparkopplad transformator}
 \label{fig:BildII2-8}
 \end{center}
-\end{figure*}
+\end{figure}
+
+\marginnote{\paragraph{OBSERVERA:} Med en spartransformator kommer olika strömkretsar i galvanisk förbindelse med
+	varandra och särskild försiktighet ska därför iakttas vid användning av
+	sparkopplade transformatorer, p.g.a. risken för elolycksfall.}
 
 I bild \ref{fig:BildII2-8} har transformatorn beskrivits så att primär- och
 sekundärlindningarnas enda förbindelse med varandra är över ett magnetfält,
@@ -191,31 +195,29 @@ spänning i proportion till det lindningsvarvtal som finns mellan uttagen.
 Detta är en metod att spara in på antalet lindningar. För att t.ex. omsätta
 nätspänningen 230~V till 115~V används ibland en \emph{spartransformator}.
 
-Med en spartransformator kommer olika strömkretsar i galvanisk förbindelse med
-varandra och särskild försiktighet ska därför iakttas vid användning av
-sparkopplade transformatorer, p.g.a. risken för elolycksfall.
-Spartransformatorer bör därför inte användas i amatörradiosammanhang. Säkrast
-är transformatorer med galvaniskt skilda ledningar och dessutom med speciellt
-bra isolering och kapsling -- s.k. skyddstransformatorer.
+Spartransformatorer bör av isolationsskäl undvikas och därför inte användas i
+amatörradiosammanhang. Säkrast är transformatorer med galvaniskt skilda ledningar
+och dessutom med speciellt bra isolering och kapsling --- s.k. 
+skyddstransformatorer.
 
 \subsubsection{Strömtransformatorer}
 \index{strömtransformator}
 \index{transformator!ström-}
 
 Hög sekundärström under låg sekundärspänning kännetecknar en
-\emph{strömtransformator} (eng. \emph{current transformer}),
+strömtransformator (eng. \emph{current transformer}),
 som illustreras i bild \ref{fig:BildII2-9}.
 Strömtransformatorer används i elektriska svetsningsutrustningar,
 induktionsugnar osv. Strömtransformatorer används även för mätning av höga
 växelströmmar.
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-09.pdf}
 \caption{Strömtransformator}
 \label{fig:BildII2-9}
 \end{center}
-\end{figure*}
+\end{figure}
 
 \subsubsection{Högspänningstransformatorer}
 \index{spänningstransformator}
@@ -224,21 +226,21 @@ växelströmmar.
 \index{transformator!högspännings-}
 
 Hög sekundärspänning under förhållandevis låg sekundärström kännetecknar en
-\emph{spänningstransformator} (eng. \emph{voltage transformer}).
+spänningstransformator (eng. \emph{voltage transformer}).
 Bild \ref{fig:BildII2-10} visar en transformator med ett gnistgap i
 sekundärkretsen för tändning av gas.
 
-\emph{Högspänningstransformatorer} (eng. \emph{high voltage transformer})
+Högspänningstransformatorer (eng. \emph{high voltage transformer})
 används i distributionsnät, neonskyltar, tändsystem för förbränningsmotorer,
 anodspänningsaggregat för sändare osv.
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-10.pdf}
 \caption{Högspänningstransformator}
 \label{fig:BildII2-10}
 \end{center}
-\end{figure*}
+\end{figure}
 
 \subsubsection{Låg- och klenspänningstransformatorer}
 \index{spänningstransformator}
@@ -248,25 +250,25 @@ anodspänningsaggregat för sändare osv.
 \index{skyddstransformator}
 \index{transformator!skydds-}
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \begin{center}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-11.pdf}
 \caption{Klenspänningstransformator}
 \label{fig:BildII2-11}
 \end{center}
-\end{figure*}
+\end{figure}
 
-Bild \ref{fig:BildII2-11} illustrerar \emph{lågspänningstransformator} (eng.
+Bild \ref{fig:BildII2-11} illustrerar lågspänningstransformator (eng.
 \emph{low voltage transformer}) som används i lokala distributionsnät,
-vanligen med spänningen 400/230~V.
+vanligen med spänningen 400/230\,V.
 
 För ökad säkerhet mot elektrisk chock krävs dock att vissa
-apparater drivs med en s.k. klenspänning av högst 50~V över en s.k.
-\emph{skyddstransformator} (eng. \emph{protection transformer}) med förstärkt
+apparater drivs med en klenspänning av högst 50\,V över en 
+skyddstransformator (eng. \emph{protection transformer}) med förstärkt
 isolering.
 
 \subsection{Sambandet mellan varvtal och impedans}
-\textbf{HAREC a.\ref{HAREC.a.2.4.2.3}\label{myHAREC.a.2.4.2.3}}
+\marginnote{HAREC a.\ref{HAREC.a.2.4.2.3}\label{myHAREC.a.2.4.2.3}}
 \index{impedans!transformator varvtal}
 \index{impedansomsättning}
 \index{transformator!impedansomsättning}
@@ -278,6 +280,6 @@ Impedansen Z i en lindning är proportionell mot kvadraten av dess
 lindningsvarvtal n.
 
 Om effekten i sekundärlindningen är lika stor som i primärlindningen, gäller
-formeln
+ekvationen:
 
-\(\dfrac{Z_p}{Z_s} = \dfrac{n_p^2}{n_s^2}\)
+\[\frac{Z_p}{Z_s} = \frac{n_p^2}{n_s^2}\]
