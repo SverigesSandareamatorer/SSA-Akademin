@@ -47,8 +47,8 @@ Den egenskapen som materialet har kallas för \emph{dielektricitet}
 
 Eftersom dielektriciteten ökar relativt den hos vakuum så använder man
 dielektricitetskonstanten för vakuum \(\epsilon_0\) som en skalfaktor för att
-omvandla den \emph{relativa dielektricitetskonstanten} \(\epsilon_r\) till den
-\emph{absoluta dielektricitetskonstanten} \(\epsilon\).
+omvandla den relativa dielektricitetskonstanten \(\epsilon_r\) till den
+absoluta dielektricitetskonstanten \(\epsilon\).
 \[
   \epsilon = \epsilon_0\epsilon_r
 \]
@@ -89,15 +89,18 @@ avståndet i meter, $\varepsilon$ är dielektricitetskonstanten i farad per mete
 \index{farad (F)}
 \index{enheter!farad (F)}
 
-Kapacitans är elektricitetsmängden per volt där måttenheten är \emph{farad} [F].
+Kapacitans är elektricitetsmängden per volt där måttenheten är \emph{farad} \unit{[F]}.
 Eftersom denna enhet är mycket stor, används inom elektroniken oftast bråkdelar
 av den.
 
-\begin{tabular}{rlcl}
- \SI{1}{mikrofarad} & \SI{1}{µF} &=& \num{1d-6} F \\
- \SI{1}{nanofarad}  & \SI{1}{nF}        &=& \num{1d-9} F \\
- \SI{1}{pikofarad}  & \SI{1}{pF}        &=& \num{1d-12} F
+\begin{table}[h]
+\begin{tabular}{llcr}
+ \SI{1}{mikrofarad} & \SI{1}{\micro\farad} &=& \num{1d-6} F \\
+ \SI{1}{nanofarad}  & \SI{1}{\nano\farad}  &=& \num{1d-9} F \\
+ \SI{1}{pikofarad}  & \SI{1}{\pico\farad}  &=& \num{1d-12} F
 \end{tabular}
+\caption{Kapacitansers förhållande till varandra}
+\end{table}
 
 \subsection{Kondensatorn i likströmskretsen}
 \index{laddningsmängd}
@@ -106,10 +109,8 @@ av den.
 En kondensator i en likströmskrets har alltid samma polaritet.
 Därvid förhåller sig kondensatorns polspänning \(U\) till dess
 \emph{laddningsmängd} \(Q\) och kapacitans \(C\) enligt sambandet
-
-\(U = C \cdot Q\)
-
-\(U\ [V]\) \(C\ [F]\) \(C\ [As]\)
+\[ U = C \cdot Q \]
+\[ 	U \unit{[V]} \qquad C \unit{[F]} \qquad Q \unit{[As]} \]
 
 Laddningsmängd har enheten ampere gånger sekund och är alltså ett mått på hur
 många laddningar som har samlats.
@@ -133,10 +134,10 @@ I en likströmskrets förhåller sig kondensatorns polspänning till
 laddningsmängden. I en växelströmskrets växlar emellertid spänningen och
 polariteten ständigt och därmed kondensatorns laddning och polaritet.
 
-\textbf{Not: Vissa kondensatortyper kan inte användas i rena
+\marginnote{OBSERVERA: Vissa kondensatortyper kan inte användas i rena
   växelströmskretsar.}
 
-\textbf{Försök}
+\paragraph{Försök:}
 
 En glödlampa och en kondensator kopplas i serie med varandra och ansluts till en
 växelströmskrets. Med lämpligt valda värden på komponenterna kommer lampan att
@@ -168,30 +169,45 @@ Större kapacitans innebär större förmåga att ta upp elektrisk laddning och 
 därmed en lägre reaktans. Resultatet blir ett kraftigare elektronflöde.
 En mindre kapacitans innebär ett svagare elektronflöde.
 
-\(X_C = \dfrac{1}{2\pi fC}\) eller \(X_C = \dfrac{1}{\omega C}\)
+Sambandet tecknas:
 
-\begin{tabular}{lll}
-\(X_C\ [\Omega]\) & \(f\ [Hz]\) & \(C\ [F]\) 
-\end{tabular}
+\[
+X_C = \frac{1}{2\pi fC} \qquad \mathrm{eller} \qquad X_C = \dfrac{1}{\omega C}
+\]
+Storheter och enheter hänger samman enligt följande:
+\[
+	X_C\ \unit{[\ohm]} \qquad 
+	f\ \unit{[Hz]} \qquad 
+	C\ \unit{[F]}
+\]
 
-\emph{Exempel:}
 
-1. \(C = 10\ \mu F\) \(f = 50\ Hz\) \(X_c = ?\)
+\noindent\emph{Exempel 1:} Kapacitansen \SI{10}{\micro\farad} och frekvensen \SI{50}{Hz} --- vad blir den kapacitiva reaktansen?
 
-\(X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = 318,3\ \Omega\)
+\[ C = \SI{10}{\micro\farad} \qquad f = \SI{50}{\hertz} \qquad X_c = ? \]
+\[
+X_c = \frac{1}{2 \pi f C} = 
+\frac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = 
+\SI{318,3}{\ohm}
+\]
 
-2. \(C = 10\ \mu F\) \(f = 5\ kHz\) \(X_c = ?\)
+\noindent\emph{Exempel 2:} Givet en kapacitans på 10\,µF och frekvensen 5\,kHz vad blir den resulternde kapacitiva reaktansen?
+\[ C = \SI{10}{\micro\farad} \qquad f = \SI{5}{kHz} \qquad X_c = ? \]
+\[
+X_c = \frac{1}{2\pi f C} = \frac{1}{2\pi 5 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
+= \SI{3,183}{\ohm}
+\]
 
-\(X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 5 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
-= 3,183\ \Omega\)
 
 En kondensators reaktans är således omvänt proportionell med dess kapacitans
 och frekvensen i kretsen.
 
+\marginnote{Detta kan nyttjas genom att man kopplar samman reaktanser och
+	 kapacitanser på olika sätt kan man skapa filter som släpper igenom enbart vissa frekvenser --- en vital del i varje radioutrustning!}
 Jämför detta med en induktor där reaktansen är proportionell med frekvensen.
 
 När en ström flyter genom en resistor, så uppstår det värmeförluster. När ström
-flyter genom en ideal reaktans --- en induktor eller en kondensator --- uppstår
+flyter genom en ideal reaktans --- en ideal induktor eller kondensator --- uppstår
 däremot inga värmeförluster.
 
 \subsection{Fasförskjutning i en kondensator}
@@ -207,7 +223,7 @@ I en ideal kondensator är spänningen fasförskjuten 90\degree~efter strömmen.
 \subsection{Förlustvinkel}
 \index{förlustvinkel}
 
-I praktiken är fasförskjutningen i en kondensator något mindre än 90\degree~på
+I praktiken är fasförskjutningen i en kondensator något mindre än 90\degree\ på
 grund av att laddning läcker igenom dielektrikum. Man talar om en förlustvinkel.
 Läckningen kan ses som en resistor som är kopplad parallellt över kondensatorn.
 
@@ -217,8 +233,8 @@ Läckningen kan ses som en resistor som är kopplad parallellt över kondensator
 
 Med sitt extremt tunna dielektrikum har elektolytkondensatorn en mycket högre
 kapacitet än andra former, men har också några nackdelar, bl.a. att den normalt
-endast kan användas med likspänning, den har hög förlustfaktor p.g.a. läckström,
-och det utvecklas värme av läckströmmen, vilket skapar övertryck p.g.a.
+endast kan användas med likspänning, den har hög förlustfaktor på grund av läckström,
+och det utvecklas värme av läckströmmen, vilket skapar övertryck på grund av
 gasbildning.
 
 \subsection{Utförandeformer}
@@ -274,7 +290,6 @@ Variabla kondensatorer har oftast sitt namn efter utförandeformen, så som
 vridkondensator och trimbar kondensator (trimmer).
 
 \subsection{Temperaturkoefficient}
-
 På liknande sätt som med resistorer, så påverkas kapaciteten i kondensatorer av
 temperaturen. Att sambandet mellan kapacitet och temperatur är viktigt, förstås
 av att temperaturkoefficienten i den frekvensbestämmande kapacitansen i en
@@ -283,23 +298,21 @@ oscillatorkrets är en av faktorerna för stabil frekvens.
 Temperaturkoefficienten \(\alpha _c\) anger kapacitetsändringen per grad temperaturändring.
 Kapacitetsändringen blir då
 
-\[\Delta C = \pm \alpha _c \cdot C_k \cdot \Delta\vartheta\]
+\[  \Delta C = \pm \alpha _c \cdot C_k \cdot \Delta\vartheta  \]
 
 varvid \(C_k\) är kapacitetsvärdet vid den lägre temperaturen (oftast 20~\degree C) och
 \(\Delta\vartheta\) är temperaturändringen i kelvin.
 Kelvin [K] är den normerade måttenheten för absolut temperatur.
-En ändring med 1~K motsvarar en ändring med 1~\degree C.
+En ändring med 1\,K motsvarar en ändring med 1\degree\,C.
 
 Är \(\alpha _c\) positivt betyder det att kapaciteten ökar med ökande
+temperatur. Är \(\alpha _c\) negativt betyder det att kapaciteten minskar med ökande
 temperatur.
 
-Är \(\alpha _c\) negativt betyder det att kapaciteten minskar med ökande
-temperatur.
+En kondensator som är märkt med N 100 betyder:
+\[ \alpha _c = -100 \cdot 10^{-6} 1/\unit{K}  \]
 
-En kondensator som är märkt med N 100 betyder
-\(\alpha _c = -100 \cdot 10^{-6}\ 1/K\)
-
-\subsection{Standardiserade komponentvärden}
+%\subsection{Standardiserade komponentvärden}
 \index{kondensator!standardiserade värden}
 
 Kondensatorer tillverkas vanligen med standardiserade värden från en talserie.
@@ -308,4 +321,3 @@ Kondensatorer tillverkas vanligen med standardiserade värden från en talserie.
 
 Kondensatorer märks med hjälp av siffror och bokstäver eller med en färgkod så att
 kondensatorns huvuddata kan avläsas.
-(Se f.ö. leverantörskataloger för information om komponentdata, märkning osv.)
