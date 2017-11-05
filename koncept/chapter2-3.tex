@@ -199,17 +199,13 @@ Sambandet är:
 \[X_L = 2\pi fL = \omega L\]
 \[ X_L \unit{[\Omega]} \qquad f \unit{[Hz]} \qquad L \unit{[H]} \]
 
+\noindent\paragraph{Exempel 1:}
+\[ L = \SI{1}{\henry} \qquad f = \SI{50}{\hertz} \qquad X_L = ? \]
+\[  X_L = 2\pi fL = 2\pi  \cdot 50 \cdot 1 = \SI{314}{\ohm}  \]
 
-
-\textbf{Exempel:}
-
-1. \(L = 1\ H\) \(f = 50\ Hz\) \(X_L = ?\)
-
-\(X_L = 2\pi fL = 2\pi  \cdot 50 \cdot 1 = 314\ \Omega\)
-
-2. \(L = 1\ H\) \(f = 5\ kHz\) \(X_L = ?\)
-
-\(X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = 31\, 400\ \Omega\)
+\noindent\paragraph{Exempel 2:}
+\[ L = \SI{1}{\henry} \qquad f = \SI{5}{kHz} \qquad X_L = ? \]
+\[ X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = \SI{31400}{\ohm} \]
 
 \subsection{Fasförskjutning mellan spänning och ström i en induktor}
 \marginnote{HAREC a.\ref{HAREC.a.2.3.5}\label{myHAREC.a.2.3.5}}
@@ -221,30 +217,31 @@ som spänningen över den. Orsaken är växlingarna mellan elektrisk och magneti
 energi i induktorn.
 Detta illustreras i bild \ref{fig:BildII3-11}.
 
-I en ideal induktor är spänningen fasförskjuten 90\degree~före strömmen.
-I praktiken är dock förskjutningen något mindre än 90\degree~på grund av
+I en ideal induktor är spänningen fasförskjuten 90\degree före strömmen.
+I praktiken är dock förskjutningen något mindre än 90\degree på grund av
 resistansen i induktorn.
 
 \subsection{Q-faktor --- godhetstal}
-\textbf{HAREC a.\ref{HAREC.a.2.3.6}\label{myHAREC.a.2.3.6}}
+\marginnote{HAREC a.\ref{HAREC.a.2.3.6}\label{myHAREC.a.2.3.6}}
 \index{Q-faktor!induktor}
 
 \emph{Q-faktorn} kan avse två olika saker, som inte ska förväxlas.
 Det är Q-faktorn för en komponent respektive den för en hel strömkrets.
 
 Q-faktorn för en induktor är kvoten av dess reaktans och serieresistans.
-
-\(Q_\text{komponent} = \dfrac{X_\text{komponent}}{R_\text{komponent}}\)
+\[ Q_\text{komponent} = \dfrac{X_\text{komponent}}{R_\text{komponent}} \]
 
 Q-faktorn för en hel svängningskrets beror däremot på bredden på det
 frekvensband som en viss komponentkombination ger.
 Q-faktorn för en resonant svängningskrets är därför ett mått på dess
-selektivitet (se kapitel \ref{Q-faktor}).
+selektivitet (se kapitel \ref{Q-faktor}).\marginnote{Kallas även för Q-värde. 
+Detta är ett mycket vanligt godhetstal hos filter, resonanskretsar, kopplingar 
+med kristaller med mera.}
 
 Medan Q-faktorn för en ingående komponent påverkar Q-faktorn för en hel krets,
 så gäller inte det omvända.
 
-\subsection{Yteffekt --- skin-effect}
+\subsection{Yteffekt --- skinn-effect}
 \index{yteffekt}
 \index{skin-effect}
 
@@ -252,8 +249,8 @@ I en ledare av homogent material fördelar sig en likström lika över hela
 tvärsnittet. Strömtätheten för en växelström däremot, minskar i ledarens mitt
 och ökar i stället vid ytan.
 Ju högre frekvensen är, desto större är strömtätheten vid ytan.
-Fenomenet kallas \emph{yteffekt} (eng. \emph{skin effect}) och uppträder i alla
-ledare.
+Fenomenet kallas \emph{yteffekt} eller \emph{skinneffekt} (eng. 
+\emph{skin effect}) och uppträder i alla ledare.
 
 Det djup i ledarmaterialet där laddningstätheten sjunkit till 37~\% av
 värdet vid ytan kallas \emph{skin depth}. För koppar är detta djup ca 70~mm vid
@@ -280,15 +277,14 @@ tvärsnittsyta då blir större, så är temperaturkoefficienten vanligen positi
 Temperaturkoefficienten \(\alpha_L\) anger induktansändringen per grad
 temperaturändring.
 
-Induktansändringen blir då
-
-\(\Delta L = \pm \alpha _L \cdot L_k \cdot \Delta\vartheta\)
+Induktansändringen blir då:
+\[\Delta L = \pm \alpha _L \cdot L_k \cdot \Delta\vartheta\]
 
 varvid \(L_k\) är induktansvärdet vid den lägre temperaturen (oftast
-20~\degree C) och \(\Delta\vartheta\) är temperaturändringen i kelvin.
+20\degree\,C) och \(\Delta\vartheta\) är temperaturändringen i kelvin.
 
 Kelvin [K] är den normerade måttenheten för absolut temperatur.
-En ändring med 1~K motsvarar en ändring med 1~\degree C.
+En ändring med 1\,K motsvarar en ändring med 1\degree\,C.
 
 Induktorer kan innehålla kärnor av någon metallegering, vars egenskaper också är
 temperaturberoende.
