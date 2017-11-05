@@ -9,7 +9,6 @@ den. Så snart strömmens styrka eller riktning ändras, uppstår en motsvarande
 s.k. elektromotorisk kraft (EMK), som motverkar ändringen. Kraften finns i
 magnetfältet, som är lagrad magnetisk energi.
 
-
 \subsection{Självinduktion --- induktans}
 \marginnote{HAREC a.\ref{HAREC.a.2.3.1}\label{myHAREC.a.2.3.1}}
 \index{induktans}
@@ -46,7 +45,7 @@ en strömkrets.
 
 \subsection{Försök med induktion}
 
-\emph{Försök 1}
+\paragraph{Försök 1:}
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-03.pdf}
@@ -67,12 +66,11 @@ respektive dras ut ur induktorn --- det uppstår en växelström.
 En växelspänning uppstår över induktorn, även när den ingår i en strömkrets som
 sluts och bryts --- alltså utan en magnet som rör sig.
 
-\emph{Försök 2}
+\noindent\paragraph{Försök 2:} 
 
-I bild \ref{fig:BildII2-3} mitten har permanentmagneten byts nu mot ännu en
-induktor.
-Utöver den första induktorn, som vi nu kallar sekundärlindning, kallar vi den
-nya induktorn för primärlindning.
+I bild \ref{fig:BildII2-3} mitten har permanentmagneten
+byts nu mot ännu en induktor. Utöver den första induktorn, som vi nu kallar
+sekundärlindning, kallar vi den nya induktorn för primärlindning.
 
 När vi släpper ström genom primärlindningen så alstrar den ett magnetfält.
 Först är strömmen noll för att sedan ändras till ett högt värde och därefter
@@ -86,7 +84,7 @@ sluts och motsatt riktning när den bryts, dvs. det blir en växelspänning.
 När sekundärlindningen ingår i en sluten krets, uppstår en växelström genom
 sekundärlindningen.
 
-\emph{Försök 3}
+\noindent\paragraph{Försök 3:}
 
 I bild \ref{fig:BildII2-3} nederst ställer vi oss frågan vad som händer när
 primärlindningen i försök 2 ansluts till en växelspänning, t.ex.
@@ -118,25 +116,24 @@ ramantenner osv.
 \index{symbol!\(L\) induktans}
 
 Måttenheten för självinduktion är \emph{henry (H)}.
-1~henry (1~H) är självinduktionen i en induktor, som alstrar en motspänning av
-1~volt vid en strömändring av 1~ampere under 1~sekund.
+1 henry [H] är självinduktionen i en induktor, som alstrar en motspänning av
+1 volt vid en strömändring av 1 ampere under 1 sekund.
 
-I formler betecknas induktans med symbolen L.
+I formler betecknas storheten induktans med symbolen L.
+Sambandet är:
 
-Sambandet är
-
-\(volt = henry \cdot ampere/sekund\)
+\[ \unit{volt} = \unit{henry} \cdot \unit{ampere}/\unit{sekund} \]
 
 1~H är en stor måttenhet. För elektroniktillämpningar används därför ett mer
 hanterligt format.
 
-Exempel:
+\noindent \paragraph{Exempel:}
 
-\begin{tabular}{ll}
-\(1\ H \) & \(= 1000\ mH\) \\
-\(1\ mH\) & \(= 1 \cdot 10^{-3}\ H\) \\
-\(1\ mH\) & \(= 1000\ \mu H\) \\
-\(1\ \mu H\) & \(= 1 \cdot 10^{-3}\ mH = 1 \cdot 10^{-6}\ H \)
+\begin{tabular}{rcrcr}
+	      \SI{1}{\henry} & = & \SI{1000}{\milli\henry} &   &  \\
+	\SI{1}{\milli\henry} & = &       \SI{1d-3}{\henry} &   &  \\
+	\SI{1}{\milli\henry} & = & \SI{1000}{\micro\henry} &   &  \\
+	\SI{1}{\micro\henry} & = & \SI{1d-3}{\milli\henry} & = & \SI{1d-6}{\henry}
 \end{tabular}
 
 \subsection{Hur induktansen påverkas}
@@ -160,12 +157,12 @@ då dess \emph{permabilitet} kan anta olika värden. Den absoluta permabiliteten
 \(\mu\) brukar delas upp i permabiliteten för vakuum \(\mu_0\) och den
 \emph{relativa permabiliteten} \(\mu_r\) som gives av
 
-\(\mu = \mu_0\mu_r\)
+\[ \mu = \mu_0\mu_r \]
 
 Den relativa permabiliteten går att hitta i tabeller och varierar med material.
 Dielektricitetskonstanten för vakuum är definierad som
 
-\(\mu_0 = 4\pi 10^{-7} \approx 1,256637 \cdot 10^{-6}\)
+\[ \mu_0 = 4\pi 10^{-7} \approx 1,256637 \cdot 10^{-6} \]
 
 \subsection{Induktiv reaktans}
 \marginnote{HAREC a.\ref{HAREC.a.2.3.4}\label{myHAREC.a.2.3.4}}
@@ -182,10 +179,9 @@ Ordet reaktans kommer från latinets re (åter) agere (verka).
 \emph{Reaktans} --- växelströmsmotstånd eller skenbart motstånd --- uppträder så
 länge som strömmen genom induktorn ändras. En induktor gör således också
 motstånd mot varje strömändring och detta motstånd ökar med ökande
-ändringshastighet.
-
-En fullbordad pendling i en växelström kan ses som ett varv i en cirkel --
-360\degree --- och en fullbordad pendling kallas en period.
+ändringshastighet. 
+\marginnote{En fullbordad pendling i en växelström kan ses som ett varv i en cirkel --
+360\degree --- och en fullbordad pendling kallas en period.}
 
 En period motsvarar omkretsen i en cirkel med radien r, där omkretsen är
 \(2 \cdot \pi  \cdot r\). När strömmen växlar 1 gång/sekund har
@@ -195,17 +191,15 @@ pendlingen en frekvens av 50~Hz osv.
 \emph{Induktiva reaktansen \(X_L\)} --- växelströmsmotståndet i en induktor --- är
 en funktion av strömmens s.k. vinkelhastighet \(\omega = 2 \cdot \pi  \cdot f\)
 och av storheten av induktansen L.
-
 Den induktiva reaktansen är proportionell mot strömmens frekvens och mot
 induktorns induktansvärde. Inga förluster uppstår i en ideal induktor, dvs. en
 som teoretiskt saknar resistans.
 
-Sambandet är
-\(X_L = 2\pi fL = \omega L\)
+Sambandet är:
+\[X_L = 2\pi fL = \omega L\]
+\[ X_L \unit{[\Omega]} \qquad f \unit{[Hz]} \qquad L \unit{[H]} \]
 
-\begin{tabular}{llll}
- \(X_L [\Omega]\) & \(f [Hz]\) & \(L [H]\)
- \end{tabular}
+
 
 \textbf{Exempel:}
 
