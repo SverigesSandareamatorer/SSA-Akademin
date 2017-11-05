@@ -4,7 +4,7 @@
 
 \subsection{Allmänt}
 
-Så snart det finns en elektrisk potentialskillnad -- en spänning -- mellan två
+Så snart det finns en elektrisk potentialskillnad --- en spänning --- mellan två
 kroppar, så uppstår ett elektriskt kraftfält mellan dem. Ett sådant fält är
 lagrad elektrisk energi. Kropparna måste då isoleras från varandra.
 
@@ -15,11 +15,9 @@ däremot, har kretsens utformning mindre inverkan. Då behövs i stället särsk
 anordningar för ta upp eller avge energi på önskade ställen i strömkretsen.
 
 En sådan anordning kallas kondensator. Den består i princip av två band eller
-plattor med anslutningsledningar samt ett isolerande skikt -- dielektricum --
-däremellan.
-
-Kapacitansen är näst efter resistansen den vanligaste egenskapen i en
-strömkrets.
+plattor med anslutningsledningar samt ett isolerande skikt --- dielektrikum ---
+däremellan. Kapacitansen är näst efter resistansen den vanligaste egenskapen i
+en strömkrets.
 
 \subsection{Kapacitans}
 \textbf{HAREC a.\ref{HAREC.a.2.2.1}\label{myHAREC.a.2.2.1}}
@@ -35,14 +33,14 @@ Ordet kommer från latinets capax, som betyder rymlig, duglig.
 
 Kapacitansen betecknas i formler med bokstaven C.
 
-En kondensators kapacitans bestäms av ytan på kondensatorns plattor,
-avståndet mellan dessa ytor, den absoluta dielektricitetskonstanten
-\(\epsilon_0\) och den relativa dielektricitetskonstanten \(\epsilon_r\) som är
-den faktor kapacitansen ökar med när dielektrikum är annat än vakuum.
+En kondensators kapacitans bestäms av ytan på kondensatorns plattor, avståndet
+mellan dessa ytor, den absoluta dielektricitetskonstanten \(\epsilon_0\) och den
+relativa dielektricitetskonstanten \(\epsilon_r\) som är den faktor kapacitansen
+ökar med när dielektrikum är annat än vakuum.
 
 Det isolerande materialet mellan plattorna kallas för \emph{dielektrum}
-(eng. \emph{dielectrum}), och egenskaperna hos materialet påverkar
-kondensatorns kapacitans.
+(eng. \emph{dielectrum}), och egenskaperna hos materialet påverkar kondensatorns
+kapacitans.
 Den egenskapen som materialet har kallas för \emph{dielektricitet}
 (eng. \emph{dielectric property}) och uttrycks så som dess
 \emph{dielektricitetskonstant} (eng. \emph{dielectric constant}).
@@ -51,13 +49,15 @@ Eftersom dielektriciteten ökar relativt den hos vakuum så använder man
 dielektricitetskonstanten för vakuum \(\epsilon_0\) som en skalfaktor för att
 omvandla den \emph{relativa dielektricitetskonstanten} \(\epsilon_r\) till den
 \emph{absoluta dielektricitetskonstanten} \(\epsilon\).
-
-\(\epsilon = \epsilon_0\epsilon_r\)
+\[
+  \epsilon = \epsilon_0\epsilon_r
+\]
 
 Den relativa dielektriska konstanten går att hitta i tabeller och varierar
 med material. Dielektricitetskonstanten för vakuum är definierad som
-
-\(\epsilon_0 = \dfrac{1}{c_0^2\mu_0} \approx 8,854187 \cdot 10^{-12}\)
+\[
+  \epsilon_0 = \dfrac{1}{c_0^2\mu_0} \approx 8,854187 \cdot 10^{-12}
+\]
 
 \subsection{Kapacitans, dimension och dielektrikum}
 \textbf{HAREC a.\ref{HAREC.a.2.2.3}\label{myHAREC.a.2.2.3}}
@@ -72,15 +72,17 @@ Följande formler gäller för kapacitansen i en enkel kondensator med två
 plattor. När en kondensator är uppbyggd av n stycken plattor, ökar kapacitansen
 med faktorn (n-1).
 
-Med vakuum som dielektrikum gäller
+Med vakuum som dielektrikum gäller sambandet 1 nedan och för ett godtyckligt
+dielektrikum gäller sambandet 2.
 
-1. \(C = \varepsilon _0 \dfrac{A}{d}\)
+\begin{enumerate}
+  \item \(C = \varepsilon _0 \dfrac{A}{d}\)
+  \item \(C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\)
+\end{enumerate}
 
-Med ett godtyckligt dielektrikum gäller
-
-2. \(C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\)
-
-\(C\ [farad]\) \(A\ [m^2]\) \(d\ [m]\) \(\varepsilon\ [\dfrac{F}{m}]\)
+\(C\) är kapacitansen i farad [F], \(A\) är arean i kvadratmeter [m$^2$], $d$ är
+avståndet i meter, $\varepsilon$ är dielektricitetskonstanten i farad per meter
+[F/m].
 
 \subsection{Enheten farad}
 \textbf{HAREC a.\ref{HAREC.a.2.2.2}\label{myHAREC.a.2.2.2}}
@@ -91,10 +93,10 @@ Kapacitans är elektricitetsmängden per volt där måttenheten är \emph{farad}
 Eftersom denna enhet är mycket stor, används inom elektroniken oftast bråkdelar
 av den.
 
-\begin{tabular}{ll}
-1 mikrofarad & \((1\ \mu F) = 10^{-6}\ F\) \\
-1 nanofarad & \((1\ nF) = 10^{-9}\ F\) \\
-1 pikofarad & \((1\ pF) = 10^{-12}\ F\) \\
+\begin{tabular}{rlcl}
+ \SI{1}{mikrofarad} & \SI{1}{µF} &=& \num{1d-6} F \\
+ \SI{1}{nanofarad}  & \SI{1}{nF}        &=& \num{1d-9} F \\
+ \SI{1}{pikofarad}  & \SI{1}{pF}        &=& \num{1d-12} F
 \end{tabular}
 
 \subsection{Kondensatorn i likströmskretsen}
@@ -189,7 +191,7 @@ och frekvensen i kretsen.
 Jämför detta med en induktor där reaktansen är proportionell med frekvensen.
 
 När en ström flyter genom en resistor, så uppstår det värmeförluster. När ström
-flyter genom en ideal reaktans -- en induktor eller en kondensator -- uppstår
+flyter genom en ideal reaktans --- en induktor eller en kondensator --- uppstår
 däremot inga värmeförluster.
 
 \subsection{Fasförskjutning i en kondensator}
