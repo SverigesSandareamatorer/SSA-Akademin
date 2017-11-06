@@ -149,7 +149,7 @@ En ingång kan behöva ha en inverterad funktion i förhållande till de övriga
 Man kan då göra som i bild \ref{fig:BildII2-41} med en OCH-grind som exempel.
 
 \begin{wrapfigure}{r}{.5\textwidth}
-\includegraphics[]{images/cropped_pdfs/bild_2_2-41.pdf}
+\includegraphics[width=.4\textwidth]{images/cropped_pdfs/bild_2_2-41.pdf}
 \caption{Inverterad ingång}
 \label{fig:BildII2-41}
 \end{wrapfigure}
@@ -162,7 +162,7 @@ antingen är 1 eller 0, så är utsignalen 0.
 När en, men inte alla insignaler är 1, så är utsignalen 1.
 
 \begin{marginfigure}%{R}{.5\textwidth}
-	\includegraphics[]{images/cropped_pdfs/bild_2_2-42.pdf}
+	\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-42.pdf}
 	\caption{Exklusiv ELLER-grind (EXOR-gate)}
 	\label{fig:BildII2-42}
 \end{marginfigure}
@@ -175,18 +175,30 @@ Sanningstabellen i bild \ref{fig:BildII2-43} säger, att när alla insignaler
 antingen är 1 eller 0, så är utsignalen 1.
 När en, men inte alla insignaler är 1, så är utsignalen 0.
 
-\begin{figure}%{R}{.5\textwidth}
-	\centering
-	\includegraphics[width=.5\textwidth]{images/cropped_pdfs/bild_2_2-43.pdf}
-	\caption{Exklusiv INTE ELLER-grind (EXNOR-gate)}
-	\label{fig:BildII2-43}
-\end{figure}
-
-
 \subsection{Grindar med dioder och transistorer}
 
 I stället för reläer i grindar använder man nu ytterst sällan något annat än
 kombinationer av dioder, transistorer och resistorer.
+
+\begin{figure}%{R}{.25\textwidth}
+	\centering
+	\includegraphics[width=.3\textwidth]{images/cropped_pdfs/bild_2_2-43.pdf}
+	\caption{Exklusiv INTE ELLER-grind (EXNOR-gate)}
+	\label{fig:BildII2-43}
+\end{figure}
+
+\begin{marginfigure}
+	\includegraphics[]{images/cropped_pdfs/bild_2_2-44.pdf}
+	\caption{DTL-logik}
+	\label{fig:BildII2-44}
+\end{marginfigure}
+
+\begin{marginfigure}
+	\vspace{\baselineskip}
+	\includegraphics[]{images/cropped_pdfs/bild_2_2-45.pdf}
+	\caption{TTL-logik}
+	\label{fig:BildII2-45}
+\end{marginfigure}
 
 Bild \ref{fig:BildII2-44} visar en NAND-grind.
 Den egentliga grinden består av tre dioder och en resistor.
@@ -195,23 +207,17 @@ Grinden styr en digitalt arbetande transistor liksom den i bild
 \ref{fig:BildII2-35}.
 Resultatet är en s.k. DTL-logik.
 
-\begin{figure}
-\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-44.pdf}
-\caption{DTL-logik}
-\label{fig:BildII2-44}
-\end{figure}
-
-\begin{figure}
-	\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_2-45.pdf}
-	\caption{TTL-logik}
-	\label{fig:BildII2-45}
-\end{figure}
-
 Bild \ref{fig:BildII2-45} visar en NAND-grind.
 Här består den egentliga grinden av en ingångstransistor med två emittrar,
 vilka motsvarar dioderna vid A och B i föregående bild.
+
 Kollektorn i denna transistor motsvarar ingångsdioden till transistorn i bild
 \ref{fig:BildII2-44}.
 De övriga tre transistorerna i bild \ref{fig:BildII2-45} bildar en s.k. switch,
 som ger snabb övergång mellan väl definierade logiska nivåer.
 Resultatet är en s.k. TTL-logik.
+
+
+
+
+
