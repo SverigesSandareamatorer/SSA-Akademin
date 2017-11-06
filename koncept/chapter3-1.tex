@@ -3,7 +3,7 @@
 \section[Serie och parallelt]{Komponenter i serie och parallellt}
 
 \subsection{Seriekopplade resistorer}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.3.1.1a}\label{myHAREC.a.3.1.1a},
   a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2a},
   a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3a},
@@ -11,26 +11,26 @@
 \index{resistor!seriekopplade}
 \index{seriekoppling!resistorer}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-01.pdf}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-01.pdf}
 \caption{Seriekopplade resistorer}
 \label{fig:BildII3-01}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-01} visar seriekopplade resistorer.
 Den totala resistansen av seriekopplade resistorer är summan av resistanserna.
 
-\[R = R_1 + R_2 + R_3 \cdots \]
+\[R = R_1 + R_2 + R_3 + \cdots + R_n \]
 
 Strömmen är lika stor genom alla seriekopplade resistorer i strömvägen (ingen
 avgrening).
 
-\[I = I_1 = I_2 = I_3 \cdots \]
+\[I = I_1 = I_2 = I_3 + \cdots + I_n \]
 
 Den totala spänningen över seriekopplade resistorer är summan av spänningen över
 var och en av dem.
 
-\[U = U_1 + U_2 + U_3 \cdots \]
+\[U = U_1 + U_2 + U_3 + \cdots + U_n \]
 
 Spänningen över var och en av seriekopplade resistorer förhåller sig som deras
 resistanser. För två resistorer gäller
@@ -39,51 +39,45 @@ resistanser. För två resistorer gäller
 
 
 \subsection{Parallellkopplade resistorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1b}\label{myHAREC.a.3.1.1b}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1b}\label{myHAREC.a.3.1.1b}}
 \index{resistor!parallellkopplade}
 \index{parallellkoppling!resistorer}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-02.pdf}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-02.pdf}
 \caption{Parallellkopplade resistorer}
 \label{fig:BildII3-02}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-02} visar parallelkopplade resistorer.
 Den totala resistansen av parallellkopplade resistorer är lägre än den lägsta
 enstaka resistansen.
 
-\[
-\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_1} +
-\frac{1}{R_2} + \frac{1}{R_3} + \cdots \frac{1}{R_n}
-\]
+\[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} +
+   \frac{1}{R_3} + \cdots + \frac{1}{R_n} \]
 
-För två resistorer gäller
+För två resistorer gäller:
 
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} && eller \\
-R &= \frac{R_1 \cdot R_2}{R_1 + R_2}
-\end{align*}
+\[\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}\]
+
+Alternativt kan man använda följande förenkling som enbart fungerar för 3 st resistorer:
+
+\[R = \frac{R_1 \cdot R_2}{R_1 + R_2}\]
 
 För tre resistorer gäller
 
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} && eller \\
-R &= \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 + R_2\cdot R_3}
-\end{align*}
+\[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \]
+
+\[ R = \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 + R_2\cdot R_3} \]
 
 Strömmen förgrenar sig mellan parallellkopplade resistorer.
 Den totala strömmen är summan av grenströmmarna
 
-\begin{align*}
-  I = I_1 + I_2 + \cdots I_n && \text{(Kirchhoffs 1:a lag)}
-\end{align*}
+\[ I = I_1 + I_2 + \cdots I_n  \qquad \text{(Kirchoffs 1:a lag)}\]
 
 Spänningen är lika stor över var och en av
 
-\begin{align*}
-  U = U_1 = U_2 = U_3 = \cdots U_n && \text{(Kirchhoffs 2:a lag)}
-\end{align*}
+\[ U = U_1 = U_2 = U_3 = \cdots U_n \qquad \text{(Kirchhoffs 2:a lag)} \]
 
 Grenströmmarna genom parallellkopplade resistorer fördelar sig omvänt
 proportionellt till deras respektive resistanser.
@@ -94,11 +88,11 @@ För två resistorer gäller
 \subsection{Spänningsdelare}
 \index{spänningsdelning}
 
-\begin{wrapfigure}[18]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-03.pdf}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-03.pdf}
 \caption{Resistiv spänningsdelare}
 \label{fig:BildII3-03}
-\end{wrapfigure}
+\end{marginfigure}
 
 Spänningsdelare förekommer i flera former.
 Bild \ref{fig:BildII3-03} visar en spänningsdelare med resistorer där
