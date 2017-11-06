@@ -1,49 +1,47 @@
 \section{Transistorn}
-\textbf{HAREC a.\ref{HAREC.a.2.6}\label{myHAREC.a.2.6}}
+\marginnote{HAREC a.\ref{HAREC.a.2.6}\label{myHAREC.a.2.6}}
 \label{transistorn}
 \index{transistor}
 
 \subsection{Allmänt}
 
-\begin{wrapfigure}[12]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-16.pdf}
-\caption{Schemasymboler}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-16.pdf}
+\caption{Schemasymboler för några olika sorters transistorer.}
 \label{fig:BildII2-16}
-\end{wrapfigure}
+\end{marginfigure}
 
 En transistor består av skikt av halvledarelement som sammanfogats.
 Vanligt är två N-skikt och ett mellanliggande P-skikt (NPN-transistor) eller
 två P-skikt och ett mellanliggande N-skikt (PNP-transistor).
 Skikten är försedda med anslutningar.
 
-Bild \ref{fig:BildII2-16} visar schemasymboler för vanliga transistortyper som
-är, NPN-transistorer (bipolära), PNP-transistorer (bipolära) och
+Bild \ref{fig:BildII2-16} visar schemasymboler för vanliga transistortyper 
+som är, NPN-transistorer (bipolära), PNP-transistorer (bipolära) och
 FET-transistorer (fälteffekt-).
 
 \subsection{NPN-transistorer}
-\textbf{HAREC a.\ref{HAREC.a.2.6.1b}\label{myHAREC.a.2.6.1b}}
+\marginnote{HAREC a.\ref{HAREC.a.2.6.1b}\label{myHAREC.a.2.6.1b}}
 \index{NPN-transistor}
 \index{transistor!NPN}
 
 Halvledarskikten kallas emitter (E), bas (B) och kollektor (C).
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\begin{center}
-\includegraphics[width=0.1\textwidth]{images/cropped_pdfs/bild_2_6-37.pdf}
-\end{center}
+\begin{marginfigure}
+\includegraphics[width=.15\textwidth]{images/cropped_pdfs/bild_2_6-37.pdf}
 \caption{Transistor}
 \label{fig:BildII2-17a}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII2-17a} visar en klassisk hålmonterad småsignaltransistor.
 
 \subsubsection{Spärrzonerna}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-17.pdf}
+\begin{marginfigure}
+\includegraphics[width=.5\textwidth]{images/cropped_pdfs/bild_2_2-17.pdf}
 \caption{Skikten i en bipolär transistor}
 \label{fig:BildII2-17}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII2-17} överst visar hur mellan skikten B och E respektive
 mellan B och C bildas zoner, vars ledningsförmåga kan styras elektriskt över
@@ -77,7 +75,7 @@ kollektorskiktet med spänningen \(U_{CE}\). Det flyter en kollektorström.
 För strömmen \(I_E\) (emitterström), \(I_B\) (basström) och \(I_C\)
 (kollektorström) gäller:
 
-\(I_E = I_B + I_C\) där \(I_B \ll I_C\) (\(\ll\) mycket mindre än)
+\[I_E = I_B + I_C\] där \[I_B \ll I_C\] (\(\ll\) mycket mindre än)
 
 Kollektorströmmen \(I_C\) kan styras med basspänningen \(U_{BE}\).
 
@@ -85,13 +83,13 @@ En liten ändring i basspänningen ger stor förstärkande verkan i
 kollektorströmmen.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-18.pdf}
+\includegraphics[width=.8\textwidth]{images/cropped_pdfs/bild_2_2-18.pdf}
 \caption{Emitterkopplad transistor}
 \label{fig:BildII2-18}
 \end{figure}
 
 \subsection{Förstärkningsfaktor}
-\textbf{HAREC a.\ref{HAREC.a.2.6.2}\label{myHAREC.a.2.6.2}}
+\marginngote{HAREC a.\ref{HAREC.a.2.6.2}\label{myHAREC.a.2.6.2}}
 \index{förstärkningsfaktor!transistor}
 \index{transistor!förstärkningsfaktor}
 
@@ -102,27 +100,26 @@ Av sambandet \(I_C = f(I_B)\) framgår strömförstärkningsfaktorn \(\beta\) el
 \(h_{FE}\) som är kvoten av ändringen i utgångsströmmen och i ingångsströmmen i
 transistorns aktiva (linjära) område.
 
-\begin{figure}
+\begin{figure*}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-19.pdf}
 \caption{Karaktäristika för transistor BC 107}
 \label{fig:BildII2-19}
-\end{figure}
+\end{figure*}
 
 Bild \ref{fig:BildII2-19} visar ström-spänning-diagram för BC 107 transistorn
 för olika bas-strömmar.
 
 För emitterkoppling gäller:
+\[ h_{FE} = \frac{\Delta I_C}{\Delta I_B} \]
 
-\(h_{FE} = \dfrac{\Delta I_C}{\Delta I_B}\)
-
-\begin{tabular}{ll}
-  \(h_{FE}\) & strömförstärkningsfaktorn \\
-  \(\Delta I_C\)   & ändringen i kollektorströmmen \\
-  \(\Delta I_B\)   & ändringen i basströmmen \\
+\begin{tabular}{lll}
+	\(h_{FE}\)     & strömförstärkningsfaktorn     &  \\
+	\(\Delta I_C\) & ändringen i kollektorströmmen & [mA] \\
+	\(\Delta I_B\) & ändringen i basströmmen       & [mV]
 \end{tabular}
 
 \subsection{PNP-transistorer}
-\textbf{HAREC a.\ref{HAREC.a.2.6.1a}\label{myHAREC.a.2.6.1a}}
+\marginnote{HAREC a.\ref{HAREC.a.2.6.1a}\label{myHAREC.a.2.6.1a}}
 \index{PNP-transistor}
 \index{transistor!PNP}
 
@@ -133,7 +130,7 @@ Uppbyggnad, koppling och användning av en PNP-transistor motsvarar i övrigt de
 för en NPN-transistor. Spänningskällorna måste emellertid ha motsatt polaritet.
 
 \subsection{Fälteffekttransistorer}
-\textbf{HAREC a.\ref{HAREC.a.2.6.3}\label{myHAREC.a.2.6.3}}
+\marginnote{HAREC a.\ref{HAREC.a.2.6.3}\label{myHAREC.a.2.6.3}}
 \index{fälteffekttransistor}
 \index{transistor!fälteffekt}
 \index{FET}
@@ -145,25 +142,25 @@ för en NPN-transistor. Spänningskällorna måste emellertid ha motsatt polarit
 styrströmmen blir därför mycket svag.
 Man säger därför att en FET är spänningsstyrd.
 
-Även NPN- och PNP-transistorer -- kallade bipolära transistorer -- styrs med
+\begin{marginfigure}
+	\includegraphics[width=0.2\textwidth]{images/cropped_pdfs/bild_2_2-20.pdf}
+	\caption{Schemasymbol för en FET}
+	\label{fig:BildII2-20}
+\end{marginfigure}
+
+Även NPN- och PNP-transistorer --- kallade bipolära transistorer --- styrs med
 spänning, men dessa typer har en relativt lågt ingångsimpedans och därför högre
 styrström. Man säger därför att de är strömstyrda.
-
-\begin{wrapfigure}[6]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-20.pdf}
-\caption{Schemasymbol för en FET}
-\label{fig:BildII2-20}
-\end{wrapfigure}
 
 Bild \ref{fig:BildII2-20} anger en schemasymbol för en FET.
 
 Fälteffekttransistorn har tre anslutningar, source (S), drain (D) och gate (G).
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-21.pdf}
-\caption{Skikten i en N-kanal FET}
-\label{fig:BildII2-21}
-\end{wrapfigure}
+\begin{marginfigure}
+	\includegraphics[width=.3\textwidth]{images/cropped_pdfs/bild_2_2-21.pdf}
+	\caption{Skikten i en N-kanal FET}
+	\label{fig:BildII2-21}
+\end{marginfigure}
 
 \subsubsection{Fälteffekttransistorns uppbyggnad}
 
@@ -173,29 +170,26 @@ N-kanalen passerar mellan två P-ledande skikt förbundna med styrelektroden G.
 
 När en spärrspänning läggs mellan G och S, så breder spärrskikten ut sig och
 N-kanalen blir trängre.
-Läggs en negativ spänning på S och en positiv spänning på D, så kommer det att
-flyta en ström i N-kanalen.
+Läggs en negativ spänning på S och en positiv spänning på D, så kommer det 
+att flyta en ström i N-kanalen.
 Strömmens styrka kan påverkas med spänningen på G.
 
 En liten spänningsändring \(\Delta U_{GS}\) medför stor ändring av strömmen
 \(\Delta I_{GS}\) i N-kanalen. Detta innebär förstärkning.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-22.pdf}
+\begin{marginfigure}
+\includegraphics[width=.4\textwidth]{images/cropped_pdfs/bild_2_2-22.pdf}
 \caption{Skikten i en N-kanal MOSFET}
 \label{fig:BildII2-22}
-\end{wrapfigure}
+\end{marginfigure}
 
 \index{MOSFET}
 \index{transitor!MOSFET}
-
-Bild \ref{fig:BildII2-22} visar skikten in en N-kanal MOSFET
-
 I en Metal Oxide Semicoductor Field Effect Transistor (MOSFET) är
 G-elektroden isolerad med ett kiseloxidskikt, trots att namnet förespeglar
 ett metalloxidskikt. Funktionssättet är samma som för en FET.
 Drain-strömmen kan ökas eller minskas med hjälp av en
-positiv respektive negativ spänning på G.
+positiv respektive negativ spänning på G. Bild \ref{fig:BildII2-22} visar skikten in en N-kanal MOSFET.
 
 \subsubsection{Resistansen mellan gate och source}
 
@@ -207,15 +201,15 @@ För att fastställa viloströmmen och därmed arbetspunkten för samma transist
 sätter man in en resistor \(R_S\) i source-strömkretsen.
 Storleken på source-resistorn ger sig av önskad gate-förspänning \(-U_{GS}\).
 
-\(R_S = \dfrac{-U_{GS}}{I_D}\)
+\[	R_S = \dfrac{-U_{GS}}{I_D}	\]
 
 \subsection{Sambandet drain-ström och spänning}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-23.pdf}
+\begin{marginfigure}
+\includegraphics[width=.5\textwidth]{images/cropped_pdfs/bild_2_2-23.pdf}
 \caption{Karaktäristik för N-kanal FET}
 \label{fig:BildII2-23}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII2-23} visar karakteristiken för en N-kanal FET.
 För att beskriva en FET använder man sig av karaktäristiska kurvor.
