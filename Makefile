@@ -124,9 +124,9 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
-	-pdflatex koncept-tryck.tex
-	-pdflatex koncept-tryck.tex
-	pdflatex koncept-tryck.tex
+	-xelatex koncept-tryck.tex
+	-xelatex koncept-tryck.tex
+	xelatex koncept-tryck.tex
 
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
 	-xelatex koncept-online.tex
