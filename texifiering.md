@@ -45,7 +45,7 @@ regler.
 
 8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
     `\emph{}`.
-    Nyckelbegrepp skall i förekommande fall även skrivas i sin engeslka form,
+    Nyckelbegrepp skall i förekommande fall även skrivas i sin engelska form,
     för att underlätta sökning på nätet och läsande av engelsk litteratur.
     Exempel:
     \emph{strömtransformator} (eng. \emph{current transformer})
@@ -54,11 +54,11 @@ regler.
     samband, de läggs inom `\begin{quote}\emph{ och }\end{quote}`. Ibland
     behöver radmatning ske och då får man göra separata `\emph{}` som i det här
     exemplet:
-    
+
     ```latex
     \begin{quote}
     \emph{Lika laddningar stöter bort varandra.}
-    
+
     \emph{Olika laddningar drar varandra till sig.}
     \end{quote}
     ```
@@ -85,7 +85,7 @@ regler.
     eller efter det refererande stycket) kan man köra longtable
     på. Slå upp det på webben eller i hundboken. Longtable kan
     sidbrytas snyggt.
-    
+
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
 
