@@ -12,9 +12,9 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ### Ändrat
 
-## 2.0.0-RC0 – 2017-09-10
+## 2.0.0-RC.0 – 2017-09-10
 ### Tillagt
-- Första version 2.0.0-RC0 och `git tag` v2.0.0-RC0 satt.
+- Första version 2.0.0-RC.0 och `git tag` v2.0.0-RC.0 satt.
 - [CEPT](https://cept.org) HAREC finns som detaljerat appendix med länkning till de textdelar som
   uppfyller dem.
 - Alla HAREC-krav har tillgodosets.
