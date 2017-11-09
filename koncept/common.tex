@@ -1,7 +1,19 @@
 
 % Prepare for svenska tecken
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
 \usepackage[swedish]{babel}
 %\usepackage[]{geometry}
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
@@ -28,12 +40,12 @@
 \usepackage{stmaryrd} % För symbolen \boxbox, kräver paketet texlive-math-extra
 \usepackage{gensymb}
 
-% % % % % % % % % % % 
+% % % % % % % % % % %
 % Detta är nya environments för review. De bör vara relativt självförklarande hur de används.
 % I princip sätter man bara den del av texten som har en viss status mellan\begin{rev-granskat} och \end{rev-granskat} tex.
 % Undvik att nästla dem för det är ingen idé det fungerar inte.
 % De är testade med ett antal andra environemnt som tabular mm men kolla att det fungerar med de environments du använder.
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \usepackage[svgnames,rgb]{xcolor}
 \usepackage{pdfcomment}
 \newenvironment{rev-ogranskat}{\begin{pdfsidelinecomment}[color=black,linewidth=3px,caption=inline]{Ogranskat}}{\end{pdfsidelinecomment}}
