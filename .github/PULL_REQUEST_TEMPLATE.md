@@ -9,6 +9,7 @@
 - [ ] Förändringar bygger utan fel lokalt och på byggserver
 - [ ] Förändringar (om signifikanta) införd i [`CHANGELOG.md`](../blob/master/CHANGELOG.md)
 - [ ] Godkänd av två granskare
+- [ ] Författaren är klar och godkänner merge
 
 ### Stänger följande issues
 
