@@ -184,8 +184,9 @@ ac2.pdf: lectures/ac2.tex
 koncept.xml:	koncept.tex $(KONCEPT_FILES)
 	latexml koncept.tex > koncept.xml
 koncept.webb:	koncept.xml
-	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
-
+	mkdir -p web/koncept.webb
+	cp web/style.css web/koncept.webb/style.css
+	latexmlpost --dest=web/koncept.webb/index.html --split --splitat=section --navigationtoc=context --css=web/koncept.webb/style.css koncept.xml
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
@@ -199,5 +200,6 @@ docker-build:
 
 clean: SHELL=/bin/bash -O extglob -c
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs 
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs
+	-rm -rf web/*.webb 
 

@@ -11,6 +11,14 @@ before_install:
     texlive-math-extra \
     texlive-xetex \
     sshpass"
+  - "sudo apt-get install -y -qq  \
+    libarchive-zip-perl libfile-which-perl libimage-size-perl \
+    libio-string-perl libjson-xs-perl libtext-unidecode-perl \
+    libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
+    libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
+    texlive-latex-base imagemagick libimage-magick-perl perl"
+  - git clone https://github.com/brucemiller/LaTeXML.git --depth=1
+  - (cd LaTeXML && perl Makefile.PL && make && sudo make install)
 
 script:
   - make koncept.pdf
@@ -19,7 +27,8 @@ after_success:
   - sha256sum koncept.pdf
   - sshpass -e scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
   - sshpass -e ssh ${FTP_USER}@${FTP_SERVER} ln -sf \~/${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+b$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf \~/${FTP_FOLDER}koncept-pdf/koncept.pdf
-
+  - make koncept.webb
+  - sshpass -e rsync -auvh --delete --checksum web/koncept.webb/ ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-web/latest
 deploy:
   provider: releases
   api_key:
