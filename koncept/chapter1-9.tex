@@ -235,7 +235,7 @@ med en impedans av 50~\(\Omega\).
 För god anpassning väljs då koaxialkablarna mellan apparaterna med en
 karaktäristisk impedans av 50~\(\Omega\).
 
-Det har utbildats en praxis, att referensvärdet vid jämförelse av signalnivåer
+Det har utvecklats en praxis, att referensvärdet vid jämförelse av signalnivåer
 i radiosystem ska vara en milliwatt (1~mW) utvecklad i en belastning med
 impedansen 50~\(\Omega\).
 Signalnivåer över belastningen 50~\(\Omega\) kan uttryckas i dB(m) eller ofta
@@ -245,20 +245,20 @@ dBm, där (m) står för milliwatt, varvid referenseffekten 1~mW är 0~dB(m) vid
 Det spänningsfall som bildas över belastningen 50~\(\Omega\) vid effektnivån
 0~dB( m) är
 
-\[U = \sqrt{P\cdot R} = 1\cdot 10^{-3} \cdot 50 \approx 0.224 \text{ V}\]
+\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx 0,224 \text{ V}\]
 
 Den ström som flyter genom belastningen 50~\(\Omega\) vid effektnivån 0~dB(m)
 är
 
 \[
-I = \sqrt{P}{R} = \sqrt{1\cdot 10^{-3}}{50} = 0.0045 \text{ A} = 4.5 \text{ mA}
+I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx 0,0045 \text{ A} = 4,5 \text{ mA}
 \]
 
-Strömmen 4.5~mA genom belastningen 50~\(\Omega\) motsvarar således 0~dB(m).
+Strömmen 4,5~mA genom belastningen 50~\(\Omega\) motsvarar således 0~dB(m).
 
 Varje annan effekt, spänningsfall och ström som uppstår vid en
 belastning av 50 \(\Omega\) kan jämföras med respektive referensvärden 1~mW,
-0.22~V och 4.5~mA.
+0,22~V och 4,5~mA.
 
 \emph{dB(m) är ett absolut och logaritmiskt mått.}
 
@@ -272,16 +272,16 @@ Effekt
 Ström
 
 \begin{gather*}
-	0 dB(m) = 4.47 mA_{50} \\
-	a [dB(m)] = 20 \log\frac{I_{50}}{4.47}
+	0 dB(m) \approx 4,47 mA_{50} \\
+	a [dB(m)] \approx 20 \log\frac{I_{50}}{4,47}
 \end{gather*}
 
 Spänning
 
 \begin{gather*}
-	0 dB(m) = 0.223 V_{50} \\
-	a [dB(m)] = 20 \log\frac{U_{50}}{0.223} \\
-	U_{50} = 0.223 \cdot 10^{\frac{a}{20}}
+	0 dB(m) \approx 0,224 V_{50} \\
+	a [dB(m)] \approx 20 \log\frac{U_{50}}{0,224} \\
+	U_{50} \approx 0,224 \cdot 10^{\frac{a}{20}}
 \end{gather*}
 
 \section[Sambandet spänning och dB(m)]{Sambandet mellan spänning och dB(m)}
