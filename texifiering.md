@@ -180,8 +180,10 @@ regler.
 
     Enheter indexeras givetvis med sin förkortning inom parantes både separat
     och i gruppen enheter:
-    \index{Farad (F)}
-    \index{enheter!Farad (F)}
+    \index{farad (F)}
+    \index{enheter!farad (F)}
+    
+    Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
