@@ -1,8 +1,7 @@
 # Texifiering av OCRad text.
 
 Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
-någorlunda vettig LaTeX. Med tiden har detta utvecklats även till format-
-regler.
+någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
 1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
     vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
@@ -226,12 +225,12 @@ regler.
     de har en naturlig kontext att definieras i, för de fallen skall förkortning
     användas och definitionen där det är ett bra kontext.
 
-    Tankesträck mellan förkortning och uttydning skall INTE användas.
+    Tankstreck mellan förkortning och uttydning skall INTE användas.
 
     Exempel:
     Vector Network Analyzer (VNA)
 
-29. Tankesträck, kodas med --, skall användas sparsamt.
+29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
 30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
 
