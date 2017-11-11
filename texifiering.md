@@ -236,3 +236,5 @@ regler.
 30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
 
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+
+32. LaTeX skrivs med två mellanslag som tab.
