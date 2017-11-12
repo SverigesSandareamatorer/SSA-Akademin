@@ -838,13 +838,13 @@ teckenändringarna på signalen.
 \index{Quadrature (Q)}
 \index{I/Q modulation}
 
-Fasskiftmodulation kan även göras med flera nivåer. Fyra olika faslägen
-kan användas och kallas då för \emph{fyrnivå fasskiftmodulation} (eng.
+Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
+används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
 \emph{4-state Phase Shift Keying (4-PSK)}.
 
-Istället för 180 graders fasskift (0 och 180 grader) som 2-PSK/BPSK använder
-så använder man 360/4 dvs. 90 graders fasskift mellan symbolerna.
-Ett effektivt sätt att avkoda det är att göra \emph{kvadratur-modulering}
+Istället för 180 graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK 
+så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
+Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
 komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och förskjuten 90 grader \emph{kvadratur} (eng.
 \emph{Quadrature (Q)}), ofta kallat I/Q modulering.
@@ -925,7 +925,7 @@ Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
 \end{table*}
 
 Medan både amplituder och vinklar kan kännas udda, så är det enkelt
-att mappa bitarna över till I- och Q-amplituder  fasläge via Isym- och
+att mappa bitarna över till I- och Q-amplituder och faslägen via Isym- och
 Qsym-delarna av symboler.
 
 QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
@@ -936,7 +936,7 @@ symboler men i stället väldigt många parallellt fördelat över ett
 större frekvensband. I mobiltelefonisystem använder man bland annat 
 64QAM och 256QAM.
 
-Mikrovågslänkar använder till och med upp till 2048QAM. En fördel med
+Mikrovågslänkar använder upp till 2048QAM. En fördel med
 QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
 olika symbolpositionerna, och därmed kan också modulationen anpassas
 till störningen. Detta nyttjas av många moderna modulationssystem så
@@ -1017,7 +1017,7 @@ multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 Genom att justera antalet bitar per symbol kan man ändra antalet symboler
 per sekund utan att ändra överföringskapaciteten. En anledning till att man
 vill göra det är att bandbredden som används av en överföring är ungefär
-proportionerlig med symboltakten, det vill säga hur många baud man överför med.
+proportionerlig mot symboltakten, det vill säga hur många baud man överför.
 Detta påverkar hur stor del av radiospektrat man upptar, och därmed också hur
 nära en annan signal man kan ligga i spektrat utan att störa varandra, dvs.
 det påverkar frekvensplaneringen av bandet ifråga.
@@ -1034,7 +1034,7 @@ att sample-raten måste vara minst dubbelt så hög som högsta frekvensen som
 \subsection{Bitfel -- detektion och korrigering}
 
 Hittills har vi diskuterat digital modulation utan att ta hänsyn till
-störningar och hur dessa störningar påverkar våra överförda data. Precis som
+störningar och hur dessa påverkar våra överförda data. Precis som
 vår CW eller SSB kan vara störd av atmosfäriska störningar, andra sändare
 eller helt enkelt vara svaga signaler så att det interna bruset blir en
 begränsning, så kommer mottagningen av digitala signaler att bli störd.
@@ -1263,7 +1263,7 @@ radio.
 
 \paragraph{Historia}
 
-Namnet beskriver modukationstypen och överföringshastigheten i baud.
+Namnet beskriver modulationstypen och överföringshastigheten i baud.
 Det första programmet utvecklades specifikt för windowsbaserade datorer med
 ljudkort, av den engelska radioamatören Peter Martinez, G3PLX, och
 introducerades i amatörradiovärlden 1998.
@@ -1323,9 +1323,9 @@ kontinenter med effekter under några watt, även med modesta antenner.
 
 WSJT, är som WSPR, ett program, som används inom amatörradiohobbyn för s.k.
 weak-signalling communication. 
-Även detta program är utvecklat av Joe taylor, K1JT.
-De flesta av dessa sändningsslag (se nedan) är smalbandiga och upptar ibland inte 
-större bandbredd än några hertz.
+Även detta program är utvecklat av Joe Taylor, K1JT.
+De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de ibland inte 
+upptar större bandbredd än några hertz.
 
 \paragraph{Historia}
 
