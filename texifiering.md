@@ -236,6 +236,10 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
 
-32. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
-Skriv "satellitmottagare" i stället för "satellit-mottagare". 
-Bindestreck ska dock användas i sammansättningar med förkortningar; skriv "FM-detektor" istället för "FM detektor".
+32. LaTeX skrivs med två mellanslag som tab.
+
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
+    Skriv "satellitmottagare" i stället för "satellit-mottagare". 
+    Bindestreck ska dock användas i sammansättningar med förkortningar;
+    skriv "FM-detektor" istället för "FM detektor".
+
