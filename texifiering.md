@@ -235,3 +235,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
 
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+
+32. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
+Skriv "satellitmottagare" i stället för "satellit-mottagare". 
+Bindestreck ska dock användas i sammansättningar med förkortningar; skriv "FM-detektor" istället för "FM detektor".
