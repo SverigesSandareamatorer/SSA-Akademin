@@ -1,0 +1,15 @@
+# Stilguide för Koncept
+
+root = true
+charset = utf-8
+insert_final_newline = true
+
+[*.{tex,css,yml}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = true
+
+[Makefile]
+indent_style = tab
