@@ -838,13 +838,13 @@ teckenändringarna på signalen.
 \index{Quadrature (Q)}
 \index{I/Q modulation}
 
-Fasskiftmodulation kan även göras med flera nivåer, och 4 olika faslägen
-kan användas och kallas då för \emph{fyrnivå fasskiftmodulation} (eng.
+Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
+används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
 \emph{4-state Phase Shift Keying (4-PSK)}.
 
-Istället för 180 graders fas-skift (0 och 180 grader) som 2-PSK/BPSK använder
-så använder man 360/4 dvs. 90 graders fas-skift mellan symbolerna.
-Ett effektivt sätt att avkoda det är att göra \emph{kvadratur-modulering}
+Istället för 180 graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK 
+så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
+Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
 komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och förskjuten 90 grader \emph{kvadratur} (eng.
 \emph{Quadrature (Q)}), ofta kallat I/Q modulering.
@@ -867,35 +867,35 @@ Symbol & Vinkel & I & Q \\ \hline
 \label{tab:4-PSK}
 \end{table*}
 
-Amplituden är densamma för alla 4 symbolerna, men med olika vinkel.
+Amplituden är densamma för alla fyra symbolerna, men med olika vinkel.
 I likhet med 2-PSK/BPSK behöver man återvinna fasen och sedan kunna avgöra
 vad som är 0 grader, men givet att det görs i den övriga modulationen så
 kan informationen avkodas korrekt.
 
-\subsubsection{Kvadratur-amplitud modulation -- QAM}
+\subsubsection{Kvadratur-amplitudmodulation -- QAM}
 \textbf{HAREC a.\ref{HAREC.a.1.8.8d}\label{myHAREC.a.1.8.8d}}
 \label{QAM}
-\index{kvadratur-amplitud modulation}
+\index{kvadratur-amplitudmodulation}
 \index{QAM}
-\index{QAM-16}
+\index{16QAM}
 \index{DAB}
 \index{DVB-T}
 \index{DVB-T2}
 \index{Wi-Fi}
 
 
-Medan fasskiftnings kan göras för fler fassteg har man funnit att det är
-inte lika enkelt för högre upplösningar. Redan vid 8 steg behöver man ha
-I- och Q-värden som är \(\sqrt{1/2}\), vilket iofs går att approximera.
+Medan fasskiftning kan göras för fler fassteg har man funnit att det inte 
+är lika enkelt för högre upplösningar. Redan vid åtta steg behöver man ha
+I- och Q-värden som är \(\sqrt{1/2}\), vilket i och för sig går att approximera.
 En smidigare modulationsform är istället att låta även amplituden variera,
-och genom att låta några bitar modulera I och några bitar modulera Q så kan
-man enkelt få en konsistent modulationsmappning som är effektiv att
-implementera. Denna kallar man \emph{kvadratur-amplitud modulation} (eng.
-\emph{Quadrature Amplitude Modulation (QAM)}).
+och genom att låta några bitar modulera I och några bitar modulera Q kan
+man enkelt få ett symbolmönster som är effektivt att implementera.
+Denna modulationsform kallar man \emph{kvadratur-amplitudmodulation} 
+(eng. \emph{Quadrature Amplitude Modulation (QAM)}).
 
-Ofta benämner man olika varianter med antalet olika positioner, så att QAM-16
+Ofta benämner man olika varianter med antalet olika positioner, så att 16QAM
 har 16 olika lägen i fas och amplitud tillsammans.
-Ett exempel på hur QAM-16 kan moduleras finns i tabell \ref{tab:QAM-16}.
+Ett exempel på hur 16QAM kan moduleras finns i tabell \ref{tab:16QAM}.
 
 \begin{table*}[ht]
 \begin{center}
@@ -920,12 +920,12 @@ Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
     15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
 \end{tabular}
 \end{center}
-\caption{Exempel på QAM-16 i kvadratur-modulering}
-\label{tab:QAM-16}
+\caption{Exempel på 16QAM i kvadraturmodulering}
+\label{tab:16QAM}
 \end{table*}
 
 Medan både amplituder och vinklar kan kännas udda, så är det enkelt
-att mappa bitarna över till I- och Q-amplitud och fasläge via Isym- och
+att mappa bitarna över till I- och Q-amplituder och faslägen via Isym- och
 Qsym-delarna av symboler.
 
 QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
@@ -933,10 +933,10 @@ mikrovågslänkar och många andra moderna system såsom EDGE
 (efterföljaren till GSM med högre datatakt), UMTS när man kör
 höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
 symboler men i stället väldigt många parallellt fördelat över ett
-större frekvensband. I mobiltelefonisystem använder man upp till
-QAM-64 i dag med QAM-256 som kommande.
+större frekvensband. I mobiltelefonisystem använder man bland annat 
+64QAM och 256QAM.
 
-Mikrovågslänkar använder till och med upp till QAM-2048. En fördel med
+Mikrovågslänkar använder upp till 2048QAM. En fördel med
 QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
 olika symbolpositionerna, och därmed kan också modulationen anpassas
 till störningen. Detta nyttjas av många moderna modulationssystem så
@@ -950,7 +950,7 @@ upprätthållas även om kapaciteten tillåts variera.
 
 Digital modulation innebär också att signalerna som sänds har lite
 andra egenskaper än de analoga. Istället för varierande
-spänningsnivåer som för till exempel tal så skickar vi diskreta fixa
+spänningsnivåer som för till exempel tal skickar vi diskreta fixa
 nivåer, ofta i form av bitar. Det är därför lämpligt att diskutera
 några grundläggande begrepp kring digital modulation.
 
@@ -967,18 +967,18 @@ Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit (b)}),
 denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
 (eng. \emph{bit rate}) i bitar per sekund.
 
-Ofta brukar vi referera till informationsmängden i mängden \emph{byte (B)}
+Ofta brukar vi referera till informationsmängden som mängden \emph{byte (B)}
 som t.ex. att en fil är 2~kB eller en bild är 1,25~MB. Då en byte innehåller
-8 bitar, så motsvarar det 16~kb respektive 10~Mb.
-I dagligt tal pratar vi då om storleken på en fil.
+8 bitar motsvarar det 16~kb respektive 10~Mb.
+I dagligt tal talar vi då om storleken på en fil.
 
 Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
 om i termer av \emph{bit rate} som 10~Mb/s (ofta skrivet \emph{bps -- bits per
 second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per sekund.
 
-Det är ofta som man pratar om den råa överföringskapaciteten, medan den
+Det är ofta som man talar om den råa överföringskapaciteten, medan den
 verkliga överföringskapaciteten för nyttotrafik är något lägre på grund av
-olika former av packningsformat och protokoll-behov, så kallad \emph{overhead}.
+olika former av packningsformat och protokollbehov, så kallad \emph{overhead}.
 Man ska därför vara noga med att skilja dessa åt.
 
 \subsubsection{Symboltakt -- Baud rate}
@@ -988,24 +988,24 @@ Man ska därför vara noga med att skilja dessa åt.
 \index{symbol rate}
 \index{Baud rate}
 \index{Baudot, Emile}
-\index{enheter!Baud (Bd)}
+\index{enheter!baud (Bd)}
 
 Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
-ihop-klumpade. Varje sådan ihop-klumpning kallas \emph{symbol}, och en symbol
+ihopklumpade. Varje sådan ihopklumpning kallas \emph{symbol}, och en symbol
 kan bära en eller flera bitar, ibland inte ens ett jämnt antal.
 
-Om man kan artikulera något i 2 olika \emph{nivåer} (av amplitud, fas, frekvens
-eller kombination), så kan man representera 1 bit. Om man kan artikulera något
-i 4 olika nivåer, så kan man representera 2 bitar. På samma sätt ger 8 nivåer
-support för 3 bitar. Varje representation kallar man en symbol, och varje
-symbol-tillfälle bär alltså 1, 2 eller 3 bitar information. Strikt räknat
-är det logaritmen med bas 2 (2-logaritm eller $\log_{2}$) av antalet nivåer som
-anger antalet bitar som en symbol kan bära. 3 nivåer brukar sägas kunna bära
+Om man kan artikulera något i två olika \emph{nivåer} (av amplitud, fas, frekvens
+eller kombination), så kan man representera en bit. Om man kan artikulera något
+i fyra olika nivåer, kan man representera två bitar. På samma sätt ger åtta nivåer
+support för tre bitar. Varje representation kallar man en symbol och varje
+symbol bär alltså en, två eller tre bitar information. Strikt räknat
+är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av antalet nivåer som
+anger antalet bitar som en symbol kan bära. Tre nivåer brukar sägas kunna bära
 1,5 bitar, vilket är en slarvig approximation men visar principen.
 
-Den takt varmed symboler överförs, \emph{symbol-takten} (eng. \emph{symbol rate})
-benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{Baud (Bd)}.
-Enheten Baud (förkortat Bd) anger antalet symboler per sekund. Genom att
+Den takt varmed symboler överförs \emph{symboltakten} (eng. \emph{symbol rate}),
+benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{baud (Bd)}.
+Enheten baud (förkortat Bd) anger antalet symboler per sekund. Genom att
 multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 överföringskapaciteten bitar per sekund.
 
@@ -1014,15 +1014,15 @@ multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 \index{bandbredd}
 \index{Nyquist-Shannons samplingsteorem}
 
-Genom att justera antalet bitar per symbol så kan man ändra antalet symboler
+Genom att justera antalet bitar per symbol kan man ändra antalet symboler
 per sekund utan att ändra överföringskapaciteten. En anledning till att man
-vill göra det är för att bandbredden som används av en överföring är ungefär
-proportionerlig med symboltakten, dvs. hur många Baud man överför i.
+vill göra det är att bandbredden som används av en överföring är ungefär
+proportionerlig mot symboltakten, det vill säga hur många baud man överför.
 Detta påverkar hur stor del av radiospektrat man upptar, och därmed också hur
 nära en annan signal man kan ligga i spektrat utan att störa varandra, dvs.
 det påverkar frekvensplaneringen av bandet ifråga.
 
-Ofta används begreppen bandbredd synonymt med överföringskapaciteten, eftersom
+Ofta används begreppet bandbredd synonymt med överföringskapaciteten, eftersom
 det finns en proportionell relation dem emellan, men bandbredden är inte den
 enda parametern som krävs, så i mer strikta sammanhang ska dessa begrepp
 hanteras som separata för att undvika missförstånd.
@@ -1033,37 +1033,36 @@ att sample-raten måste vara minst dubbelt så hög som högsta frekvensen som
 
 \subsection{Bitfel -- detektion och korrigering}
 
-Fram tills nu har vi diskuterat digital modulation utan att ta hänsyn till
-störningar och hur dessa störningar påverkar vårt överförda data. Precis som
+Hittills har vi diskuterat digital modulation utan att ta hänsyn till
+störningar och hur dessa påverkar våra överförda data. Precis som
 vår CW eller SSB kan vara störd av atmosfäriska störningar, andra sändare
 eller helt enkelt vara svaga signaler så att det interna bruset blir en
 begränsning, så kommer mottagningen av digitala signaler att bli störd.
-Vi ska titta på dessa grundläggande begrepp som bitfel, bitfelssannolikhet,
+Vi ska titta på dessa grundläggande begrepp såsom bitfel, bitfelssannolikhet,
 felupptäckt samt korrigering med återsändning eller korrigeringskoder.
 
 \subsubsection{Bitfel}
 \index{bitfel}
 \index{bit error}
 
-Utan att gå inpå varför, så varje gång vi får fel så kommer en eller flera
-bitar att bli fel, vi kallar varje sådant fel för att \emph{bitfel} (eng.
-\emph{bit error}). Störningar kan göra att vi tolkar en symbol fel, det kan
-resultera i att en eller flera bitar från den symbolen är fel.
+Av olika orsaker kommer en eller flera bitar ofta att bli fel. Vi kallar varje sådant 
+fel för att \emph{bitfel} (eng. \emph{bit error}). Störningar kan göra att vi tolkar 
+en symbol fel, vilket kan resultera i en eller flera felaktiga bitar.
 
-Om vi i t.ex. QAM-16 koden i kapitel \ref{QAM} får in +0.2 i I och +1.1 i Q
-så ser vi i tabell \ref{tab:QAM-16} att närmsta symbolen är symbol 5 med +1 i I
+Om vi i t.ex. 16QAM-koden i kapitel \ref{QAM} får in +0.2 i I och +1.1 i Q,
+ser vi i tabell \ref{tab:16QAM} att närmaste symbolen är symbol 5 med +1 i I
 och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
 Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
 det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
 avstånd är lägst och därmed rimligast. Det kan dock vara så att man egentligen
-sände symbol 9 med -1 i I och +1 i Q, och därmed fått för stor störning på I
+sände symbol 9 med -1 i I och +1 i Q, och därmed fick för stor störning på I
 för att man ska tolka det som rätt symbol. Vi kommer då lägga ut 9 istället
 för 5, vilket innebär att två bitar har ändrats.
 
-Genom att granska tabell \ref{tab:QAM-16} vidare så ser man att värdena för
-I och Q för de olika symbolerna är gjord sådan att minsta avstånd är 2 mellan
-alla närliggande symboler, i respektive I och Q riktning. Det förenklar
-tolkning av symbolerna. Är dock störningen större än 1 i någon riktning så
+Genom att granska tabell \ref{tab:16QAM} vidare ser man att värdena för
+I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
+alla närliggande symboler, i respektive I- och Q-riktning. Det förenklar
+tolkning av symbolerna. Är dock störningen större än 1 i någon riktning 
 kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
 bit-fel.
 
@@ -1087,23 +1086,23 @@ steg. Eftersom bruset antas vara vitt brus, så har det egenskaperna av
 \emph{Gaussiskt brus} (eng. \emph{Gaussian noise}).
 
 Gaussiskt brus har en statistisk fördelning med hög sannolikhet nära
-medelvärdet, och avtar sedan med avståndet. Sannolikheten att man tolkar en
-signal som vara på ena eller andra sidan av en gräns, beror på hur långt bort
-från medelvärdet den gränsen, ofta benämnd kvantiserings-gränsen, är, i
-förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} är i
+medelvärdet och avtar sedan med avståndet. Sannolikheten att man tolkar en
+signal som vara på ena eller andra sidan av en gräns beror på hur långt bort
+från medelvärdet den gränsen, ofta benämnd kvantiseringsgränsen, är i
+förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} i
 amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
 \emph{error function (erf)}.
 
-När gränsen är 1 sigma, dvs. 1 gånger RMS-värdet för brus-amplituden, från
-medelvärdet så är 67~\% sannolikhet att värdet är i inom gränsvärdet, dvs. en
+När gränsen är 1 sigma, dvs. 1 gånger RMS-värdet för brusamplituden, från
+medelvärdet så är det 67~\% sannolikhet att värdet ligger inom gränsvärdet, dvs. en
 bitfelssannolikhet på 33~\%.
-Ligger det inom 2 sigma, så har sannolikheten ökat till 97~\%, en
-bitfelssannolikhet på 3~\% och vid 3 sigma är den 99,7~\% med en
+Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
+bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
 ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
-För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, så
-behövs det 14 sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
-kvantiseringsgränsen. Den råa radio-kanalen uppvisar dock sällan så bra
+För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs 
+det 14 sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
+kvantiseringsgränsen. Den råa radiokanalen uppvisar dock sällan så bra
 egenskaper, men det kan uppnås i kabel och fiber.
 
 \subsubsection{Detektion}
@@ -1140,15 +1139,14 @@ starkare kod den vägen. CRC används t.ex. i Ethernet.
 \index{ARQ}
 \index{TCP}
 
-En enkel åtgärd för att hantera när man konstaterat att ett block data man
+En enkel åtgärd att vidta när man konstaterat att ett block data man
 tagit emot har fel, är att begära omsändning. Genom att sändaren håller en
 buffert med meddelanden som den skickat, och mottagaren meddelar sändare om
 den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
 realiseras. Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest
-(ARQ)}) är en typ av protokoll som gör automatisk omsändingsbegäran om ett
+(ARQ)}) är en typ av protokoll som gör automatisk omsändningsbegäran om ett
 enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
-försvunnit. Ett sådant protokoll är TCP, som ingår i internet-sviten av TCP/IP
-protokoll.
+försvunnit. Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
 
 \subsubsection{Korrigeringskod -- FEC}
 \textbf{HAREC a.\ref{HAREC.a.1.8.10c}\label{myHAREC.a.1.8.10c}}
@@ -1164,24 +1162,24 @@ En annan form av korrigering är att helt enkelt skicka för mycket data redan
 från början, som mottagaren kan använda för att korrigera meddelandet utan att
 skicka någon begäran till sändaren. Detta är praktiskt antingen om det skulle
 ta för mycket tid eller om det helt enkelt inte finns någon kommunikation från
-mottagaren till sändaren, t.ex. för satellit-mottagare.
+mottagaren till sändaren, t.ex. för satellitmottagare.
 
 En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
 sänder samma tecken två gånger. Liknande används i Bluetooth där meddelandet
-sänds tre gånger, varvid man kan göra majoritets-röstning.
+sänds tre gånger, varvid man kan göra majoritetsröstning.
 
-Andra system för FEC är Hamming-koder, paritets-paket, Reed-Solomon (RS) osv.
+Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
 
 \subsection{Digitala sändningsslag}
 
-Exempel på digitala modulationstekniker för kortvågstillämpningar inom
+Här ges exempel på digitala modulationstekniker för kortvågstillämpningar inom
 amatörradio.
 
-De flesta digitala moder för kortvåg är smalbandiga och bandbredden kan i vissa
-fall endast vara några Hertz.
+De flesta digitala sändningsslagen för kortvåg är smalbandiga och bandbredden kan i vissa
+fall endast vara några hertz.
 
-Signalbehandlingen sker i den dator som programmet körs på, och där datorns
-in- och utgång för dess ljudkort, är kopplat till amatöradioutrustningen.
+Signalbehandlingen sker i den dator som programmet körs på och där datorns
+in- och utgång för dess ljudkort är kopplade till amatöradioutrustningen.
 Oftast är programmets styrning av sändning och mottagning också kopplad till
 lämplig serieport, t.ex. via dess USB-anslutning.
 
@@ -1194,24 +1192,24 @@ lämplig serieport, t.ex. via dess USB-anslutning.
 
 \paragraph{Historia}
 
-En av de första digitala moderna som användes av radioamatörer var \emph{RTTY},
-eller uttytt ''RadioTeleTYpe'', där man använde sig av s.k. teleprintrar,
+Ett av de första digitala trafiksätten som användes av radioamatörer var \emph{RTTY},
+uttytt ''RadioTeleTYpe'', där man använde sig av s.k. teleprintrar,
 automatiska skrivmaskiner som skrev ut text.
 
-Emile Baudot konstruerade 1874 ett system, som, baserat på fem bitar,
-fortvarande används idag.
-I Augusti 1922, testade The US Department of Navy ''skriven telegrafi'' mellan
+Emile Baudot konstruerade år 1874 ett system baserat på fem bitar,
+som fortfarande används idag.
+I augusti 1922 testade The US Department of Navy ''skriven telegrafi'' mellan
 ett flygplan och en markstation.
 Amerikanska kommersiella RTTY-system fanns aktiva så tidigt som 1932.
-Under 50-talet, började surplusutrustning komma ut på den amerikanska
-marknaden, och radioamatörerna var inte sena att prova den nya tekniken på
+Under 50-talet började surplusutrustning komma ut på den amerikanska
+marknaden och radioamatörerna var inte sena att prova den nya tekniken på
 kortvågsbanden.
 De kommersiella systemen körde med 50 baud, 75 baud eller 100 baud.
 
-Amatörerna i USA körde med 45,45~Baud, vilket motsvarar 300 tecken per minut.
-De europeiska utrustningarna, bl.a. framtagna av Siemens, arbetade med 50 baud,
-men gick att justera ner till 45,45~Baud.
-45~Baud är idag den vedertagna standarden över världen.
+Amatörerna i USA körde med 45,45~baud, vilket motsvarar 300 tecken per minut.
+De europeiska utrustningarna, bl.a. framtagna av Siemens, arbetade med 50 baud
+men gick att justera ner till 45,45~baud.
+45~baud är idag den vedertagna standarden över världen.
 
 \paragraph{Teknik}
 
@@ -1229,7 +1227,7 @@ Det innebar att man slapp modifiera utrustningen.
 
 Idag kör de flesta radioamatörer RTTY med en dator, och använder sig ofta av
 AFSK-tekniken med hjälp av programvaror, med samma uppkoppling som man använder
-för andra digitala moder.
+för andra digitala trafiksätt.
 
 \subsubsection{SSTV}
 \index{SSTV}
@@ -1265,7 +1263,7 @@ radio.
 
 \paragraph{Historia}
 
-Namnet beskriver modukationstypen och överföringshastigheten i Baud.
+Namnet beskriver modulationstypen och överföringshastigheten i baud.
 Det första programmet utvecklades specifikt för windowsbaserade datorer med
 ljudkort, av den engelska radioamatören Peter Martinez, G3PLX, och
 introducerades i amatörradiovärlden 1998.
@@ -1280,7 +1278,7 @@ Istället för att använda den gängse metoden med frekvensskift, så baserades
 ''SLOWBPSK'' på polaritetsskiftning av fasläget.
 Ett bra designat PSK-baserat system kan ge bättre resultat än FSK, och kan
 arbeta med smalare bandbredd än FSK.
-Överföringshastigeten 31~Baud valdes för att passa en genomsnittlig
+Överföringshastigeten 31~baud valdes för att passa en genomsnittlig
 skrivhastighet, hos den gemene amatören.
 
 \subsubsection{WSPR}
@@ -1300,7 +1298,7 @@ Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområd
 \paragraph{Teknik}
 
 WSPR står för Weak Signaling Propagation Reporter, och uttalas ''Whisper''. 
-WSPR är en mode som använder amatörradiostationen som en radiofyr, en s.k.
+WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en s.k.
 beacon, då sändning och mottagning sker i tvåminuterspass, och efter varje
 sändningspass, rapporterar de stationer som mottagit signalen, in sitt resultat
 till en databas över internet.
@@ -1325,15 +1323,15 @@ kontinenter med effekter under några watt, även med modesta antenner.
 
 WSJT, är som WSPR, ett program, som används inom amatörradiohobbyn för s.k.
 weak-signalling communication. 
-Även detta program är utvecklat av Joe taylor, K1JT.
-De flesta moder (se nedan) är s.k. smalbandiga moder, som ibland inte upptar
-större bandbredd än några Hertz.
+Även detta program är utvecklat av Joe Taylor, K1JT.
+De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de ibland inte 
+upptar större bandbredd än några hertz.
 
 \paragraph{Historia}
 
 WSJT presenterades för amatörradiovärlden 2001, och har undergått ett flertal
 revisioner.
-Olika kommunikationsmoder har under åren lagts till och tagits bort.
+Olika sändningsslag har under åren lagts till och tagits bort.
 Sedan 2005 är programmet ett open sourceprogram, och även om K1JT fortvarande
 är ansvarig, utvecklas det nu av ett litet team.
 
@@ -1365,7 +1363,7 @@ slutföra kommunikationen inom en kort tid.
 \subsubsection{FreeDV}
 \index{FreeDV}
 
-FreeDV skiljer sig mot de moder som nämnts ovan, genom att denna mode är tänkt
+FreeDV skiljer sig mot de sändningsslag som nämnts ovan, genom att denna är tänkt
 för digitalt tal på kortvåg.
 
 \paragraph{Historia}
