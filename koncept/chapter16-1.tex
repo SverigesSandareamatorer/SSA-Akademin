@@ -352,13 +352,20 @@ teckengivningen.
 
 \section[Provtext]{Exempel på provtext}
 
-.... ASCUNCION ÄR HUVUDSTAD I PARAGUAY, SOM LIGGER I SYDAMERIKA.
-VID RADIOTELEFONERING UTGÖRES NÖDSIGNALEN AV ORDET MAYDAY OCH SKALL OM MÖJLIGT
-UTSÄNDAS PÅ FREKVENSEN 2182 KHZ.
-QRV? MEANS ARE YOU READY? THE RECEIVER CONTROL SETTINGS SHOULD BE ADJUSTED AS
-INDICATED ON PAGE 3-4, DATED 7/10 1994. QRT + @
-
-(summa 277 teckenvärden)
+\begin{tabular}{l|r|r|r|}
+	Provtext & bokstäver & siffror & skiljetecken\\ \hline
+	$\sim$ ASCUNCION ÄR HUVUDSTAD I PARAGUAY, & 29 & & 4\\
+	SOM LIGGER I SYDAMERIKA. PÅ KORTVÅG & 31 & & 2\\
+	BRUKAR FREKVENS ANGES I KILOHERTZ. & 29 & & 2\\
+	ENLIGT BANDPLANEN ÄR 3560 KHZ & 21 & 8 &\\
+	CENTRUM FÖR CW QRP. & 15& & 2\\
+	QRV? MEANS ARE YOU READY? & 19 & & 4 \\
+	THE RECEIVER CONTROL SETTINGS SHOULD & 32 & &\\
+	BE ADJUSTED AS INDICATED ON PAGE 3-4, & 27 & 4 & 4\\
+	DATED 8/9 2017. QRT + @ & 8 & 12 & 8\\ \hline
+	(Summa 261 teckenvärden)& 211 & 24 & 26\\
+\end{tabular}
+\label{provtext}
 
 \section[Teckenvärden]{Beräkning av antalet teckenvärden}
 
@@ -367,13 +374,14 @@ räknas som ett (1) teckenvärde.
 Siffror, skiljetecken, felsändningstecken samt bokstaven Å ska räknas som två
 (2) teckenvärden.
 
-I ovanstående exempel på provtext är fördelningen av teckenvärdena följande:
+I ovanstående exempel på provtext \ref{provtext} är fördelningen av
+teckenvärdena följande:
 
 \begin{tabular}{lrcrcr}
-Bokstäver          & 1 & $\cdot$ & 227 & = & 227 \\
-Siffror            & 2 & $\cdot$ & 13  & = & 26  \\
-Skiljetecken       & 2 & $\cdot$ & 12  & = & 24  \\
-Summa teckenvärden &   &         &     & = & 277
+	Bokstäver          & 1 & $\cdot$ & 211 & = & 211 \\
+	Siffror            & 2 & $\cdot$ & 12  & = & 24  \\
+	Skiljetecken       & 2 & $\cdot$ & 13  & = & 26  \\
+	Summa teckenvärden &   &         &     & = & 261
 \end{tabular}
 
 Observera, att lystrings-, slut- och avslutningstecken samt felsända avsnitt med
@@ -390,17 +398,25 @@ $$\frac{\mathrm{summa\ teckenv"arde }\cdot 60}{\mathrm{tid} [\mathrm{sekunder}]}
 
 \textbf{Exempel:}
 
-Felfri sändning av ovanstående exempel på provtext med summa teckenvärde 277
-tar exakt 4 minuter och 20 sekunder (260 sekunder).
+Felfri sändning av ovanstående exempel på provtext \ref{provtext} med summa
+teckenvärde 261 tar exakt 4 minuter och 20 sekunder (260 sekunder).
 Takten blir då:
 
-$$\frac{277 \cdot 60}{260} = 63,9\ \mathrm{tecken/min}$$
+$$\frac{261 \cdot 60}{260} = 60,2\ \mathrm{tecken/min}$$
+
+\section{Morsealfabetet}
+\index{morsealfabetet}
+\label{morsealfabetet}
 
 \begin{figure}
   \fbox{\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_morse_7.pdf}}
   \caption{Morsealfabetet}
   \label{fig:bild_morse_7}
 \end{figure}
+
+\section{Handstilar}
+\index{handstilar}
+\label{handstilar}
 
 \begin{figure}
   \fbox{\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_morse_8.pdf}}
