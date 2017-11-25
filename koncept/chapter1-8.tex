@@ -1213,19 +1213,19 @@ men gick att justera ner till 45,45~baud.
 
 \paragraph{Teknik}
 
-RTTY använder sig FSK-modulering.
-För att åstadkomma detta, behöver man styra frekvensen så att den hoppar mellan
-två frekvenser, med en skillnad, ett s.k. ''skift'' på 170~Hz.
+RTTY använder FSK-modulering.
+För att åstadkomma detta behöver man styra frekvensen så att den hoppar mellan
+två frekvenser med en skillnad, ett s.k. ''skift'', på 170~Hz.
 
 Äldre sändare behövde modifieras för att åstadkomma detta frekvensskift, men
 med en SSB-sändare kunde man istället mata sändaren med två toner, som gav
 samma resultat -- så kallad Audio Frequency Shift Keying (AFSK).
 
-Med nyare amatörradiotransceivrar, blev det senare den vanligaste förekommande
+Med nyare amatörradiotransceivrar blev det senare den vanligaste förekommande
 metoden att modulera sändaren.
 Det innebar att man slapp modifiera utrustningen.
 
-Idag kör de flesta radioamatörer RTTY med en dator, och använder sig ofta av
+Idag kör de flesta radioamatörer RTTY med en dator och använder sig ofta av
 AFSK-tekniken med hjälp av programvaror, med samma uppkoppling som man använder
 för andra digitala trafiksätt.
 
@@ -1235,13 +1235,13 @@ för andra digitala trafiksätt.
 \emph{Slow Scan TeleVision (SSTV)} är en blandning av analog och digital teknik.
 En SSTV sändning sker långsamt jämfört med traditionell TV, men är i grunden
 rätt lik. Varje linje sänds en efter en, men modulerad så att den kan sändas
-över en SSB radiolänk.
+över en SSB-radiolänk.
 Intensiteten för varje pixel anger tonhöjden som moduleras, vilket därmed
 innebär en FM-modulation.
 Denna FM-modulerade ton skickas sedan över SSB.
 I början på varje linje skickas ett 7-bitars tal med jämn paritet som anger
 vilken modulationsform som används.
-De olika modulationsformerna kan sedan hantera olika upplösningar, samt
+De olika modulationsformerna kan sedan hantera olika upplösningar samt
 variera med avseende på svart-vitt eller färg.
 
 \subsubsection{APRS}
@@ -1250,12 +1250,12 @@ variera med avseende på svart-vitt eller färg.
 \index{TNC}
 
 \emph{Automatic Packet Reporting System (APRS)} är en teknik för att
-huvudsakligen över VHF och UHF förmedla GPS position, väderdata, enkla
+huvudsakligen över VHF och UHF förmedla GPS-position, väderdata, enkla
 meddelanden och annat.
-Den bygger på en teknik som heter \emph{AX.25}, som är en amatörradio-specifik
-version av telekom-standarden X.25.
+Den bygger på en teknik som heter \emph{AX.25}, som är en amatörradiospecifik
+version av telekomstandarden X.25.
 AX.25 moduleras över 1200 baud Bell 202 AFSK teknik på vanlig talkanal.
-Ofta används en Terminal Node Controller (TNC) som interface mellan dator och
+Ofta används en Terminal Node Controller (TNC) som gränssnitt mellan dator och
 radio.
 
 \subsubsection{PSK31}
@@ -1265,47 +1265,46 @@ radio.
 
 Namnet beskriver modulationstypen och överföringshastigheten i baud.
 Det första programmet utvecklades specifikt för windowsbaserade datorer med
-ljudkort, av den engelska radioamatören Peter Martinez, G3PLX, och
+ljudkort av den engelska radioamatören Peter Martinez, G3PLX, och
 introducerades i amatörradiovärlden 1998.
 
 \paragraph{Teknik}
 
-Modulationen som används i PSK31, utvecklades från en idé av den polske
+Modulationen som används i PSK31 utvecklades från en idé av den polske
 radioamatören Pawel Jalocha, SP9VRC, som hade tagit fram en mjukvara
-''SLOWBPSK'', för Motorolas EVM radio, vilket var ett radiosystem för att
+''SLOWBPSK'' för Motorolas EVM-radio, vilket var ett radiosystem för att
 utvärdera olika modulationsformer.
-Istället för att använda den gängse metoden med frekvensskift, så baserades
+Istället för att använda den gängse metoden med frekvensskift baserades
 ''SLOWBPSK'' på polaritetsskiftning av fasläget.
-Ett bra designat PSK-baserat system kan ge bättre resultat än FSK, och kan
+Ett bra utformat PSK-baserat system kan ge bättre resultat än FSK, och kan
 arbeta med smalare bandbredd än FSK.
 Överföringshastigeten 31~baud valdes för att passa en genomsnittlig
-skrivhastighet, hos den gemene amatören.
+skrivhastighet hos den gemene amatören.
 
 \subsubsection{WSPR}
 \index{WSPR}
 
 \paragraph{Historia}
 
-WSPR släpptes i sin första version, 2008.
+WSPR släpptes i sin första version 2008.
 Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
-open source-program, och utvecklas av ett litet team. 
-Joe Taylor, är utbildad i astronomi vid Harvard University, och arbetar nu vid
-Princeton University inom området astrofysik.
-Joe Taylor är också nobelpristagare i fysik, 1993.
+open source-program och utvecklas av ett litet team. 
+Joe Taylor fick sin utbildning i astronomi vid Harvard University var sedan verksam 
+inom området astrofysik vid Princeton University, varifrån han pensionerades 2006.
+Han tilldelades Nobelpriset i fysik år 1993.
 
 Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
 
 \paragraph{Teknik}
 
-WSPR står för Weak Signaling Propagation Reporter, och uttalas ''Whisper''. 
-WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en s.k.
-beacon, då sändning och mottagning sker i tvåminuterspass, och efter varje
-sändningspass, rapporterar de stationer som mottagit signalen, in sitt resultat
-till en databas över internet.
+WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''. 
+WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en 
+så kallad beacon. Sändning och mottagning sker i tvåminuterspass och efter varje
+sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en 
+databas över internet.
 Den sändande stationen kan därefter studera resultatet.
-WSPR använder låga effekter.
-Det går att nå europeiska stationer med effekter under 100 mW, och andra
-kontinenter med effekter under några watt, även med modesta antenner.
+WSPR använder låga effekter, det går att nå europeiska stationer med effekter under 
+100 mW, och andra kontinenter med effekter under några watt, även med modesta antenner.
 
 \subsubsection{WSJT}
 \index{WSJT}
@@ -1321,19 +1320,19 @@ kontinenter med effekter under några watt, även med modesta antenner.
 \index{EME}
 \index{8FSK}
 
-WSJT, är som WSPR, ett program, som används inom amatörradiohobbyn för s.k.
-weak-signalling communication. 
+WSJT är liksom WSPR ett program som används inom amatörradiohobbyn för så 
+kommunikation med svaga signaler.
 Även detta program är utvecklat av Joe Taylor, K1JT.
-De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de ibland inte 
-upptar större bandbredd än några hertz.
+De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte upptar 
+större bandbredd än några hertz.
 
 \paragraph{Historia}
 
-WSJT presenterades för amatörradiovärlden 2001, och har undergått ett flertal
+WSJT presenterades för amatörradiovärlden år 2001 och har undergått ett flertal
 revisioner.
 Olika sändningsslag har under åren lagts till och tagits bort.
-Sedan 2005 är programmet ett open sourceprogram, och även om K1JT fortvarande
-är ansvarig, utvecklas det nu av ett litet team.
+Sedan 2005 är programmet ett open source-program och även om K1JT fortfarande
+är ansvarig utvecklas det nu av ett litet team.
 
 \paragraph{Teknik}
 
@@ -1341,46 +1340,46 @@ WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
 varianter av i huvudsak FSK-modulering används.
 
 FSK441 används för att utvärdera överföringar via radiovågsreflekterande skikt
-av laddade joner, som uppkommer från de spår som meteoriter lämnar efter sig.
+av laddade joner, som uppkommer från de spår som meteorer lämnar efter sig.
 
-JT6M introducerades 2002, och är avsett för kommunikation via bl.a.
-meteorreflektioner på bl.a. 6~m bandet.
+JT6M introducerades år 2002 och är avsett för kommunikation via bland annat
+meteorreflektioner på 6~m-bandet.
 
-JT65, utvecklat och släppt 2003, används för kommunikation via tropsfären, s.k.
-troposcatter, en också för kommunikation via reflexer mot månen. s.k.
-EME-trafik.
+JT65, utvecklat och släppt år 2003, används för kommunikation via troposfären, 
+så kallat troposcatter, men också för kommunikation via reflexer mot månen 
+så kallad EME-trafik.
 
-JT9 används för kortvågstrafik, och är snarlik JT65, men använder sig av en
+JT9 används för kortvågstrafik och är snarlikt JT65, men använder sig av en
 FSK-signal med nio toner.
 JT9 använder sig av mindre än 16~Hz bandbredd.
 
-FT8 utvecklades och släpptes 2017, och använder sig av en 8FSK-signal. 
+FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal. 
 
-FT8 är att föredra vis s.k. multi hop via E-skikt, där signalerna utsätts för
-fädning, och där öppningarna mot andra stationer är korta, och man behöver
+FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts för
+fädning och där öppningarna mot andra stationer är korta så att man behöver
 slutföra kommunikationen inom en kort tid.
 
 \subsubsection{FreeDV}
 \index{FreeDV}
 
-FreeDV skiljer sig mot de sändningsslag som nämnts ovan, genom att denna är tänkt
+FreeDV skiljer sig mot de sändningsslag som nämnts ovan genom att detta är tänkt
 för digitalt tal på kortvåg.
 
 \paragraph{Historia}
 
-FreeDV skapades av en grupp av radioamatörer från olika länder, som arbetade
-med kodning, design, användargränssnitt, och testning.
-FreeDV släpptes 2015.
+FreeDV skapades av en grupp radioamatörer från olika länder som arbetade
+med kodning, utformning, användargränssnitt och testning.
+FreeDV släpptes år 2015.
 
 \paragraph{Teknik}
 
-FreeDV är tänkt för att användas på kortvåg med SSB-modulerade radiostationer,
-men kan också användas med AM eller FM -modulering.
-Fördelen ska vara att överföringen blir ner robust, samt att signaleringen är
-designad att motverka påverkan av fädning.
+FreeDV är tänkt att användas på kortvåg med SSB-modulerade radiostationer,
+men kan också användas med AM- eller FM -modulering.
+Fördelen ska vara att överföringen blir ner robust samt att signaleringen är
+utformad för att motverka påverkan av fädning.
 
 FreeDV använder en något mer komplex modulering.
-Man använder sig av ett flertal bärvågor, inom dess bandbredd på 1,25~kHz.
-Bärvägorna ligger med 75~Hz mellanrum, och varje bärvåg moduleras med varianter
+Man använder sig av ett flertal bärvågor inom dess bandbredd på 1,25~kHz.
+Bärvägorna ligger med 75~Hz mellanrum och varje bärvåg moduleras med varianter
 av PSK-modulering.
-Bandbredden är hälften (1,25~kHz) mot en normal SSB-bandbredd (2,4~kHz).
+Bandbredden är hälften (1,25~kHz) av en normal SSB-bandbredd (2,4~kHz).
