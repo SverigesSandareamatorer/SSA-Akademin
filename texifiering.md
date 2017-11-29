@@ -232,7 +232,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
+    utom i parenteser och tabeller.
 
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
 
