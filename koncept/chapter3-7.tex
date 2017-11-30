@@ -103,7 +103,7 @@ i stället.
 
 Bild \ref{fig:BildII3-77} visar en Superheterodyn-VFO.
 En enkel LC-VFO är inte tillräckligt frekvensstabil i ett högt frekvensläge,
-t.ex. 144--146~MHz.
+till exempel 144--146~MHz.
 Man kan då använda en speciell koppling, som är en kombination av LC-VFO och
 XO, kallad super-VFO.
 
@@ -114,7 +114,7 @@ En VFO arbetar stabilare på låg frekvens medan en XO fortfarande arbetar
 stabilt även på högre frekvenser, dock inte så högt som vi behöver här.
 I vårt exempel arbetar därför VFO i området 8--10~MHz och XO på 17~MHz.
 VFO-signalen blandas med en fast signalfrekvens, som är XO-signalen 17~MHz
-multiplicerat med 8, dvs. 136~MHz.
+multiplicerat med 8, det vill säga 136~MHz.
 
 Ett bandpassfilter filtrerar fram den önskade blandningsprodukten, som
 ligger i frekvensområdet 144--146~MHz.
@@ -261,7 +261,7 @@ Signalen \(f_1\) från en VCO alstrar en sändningsfrekvens i bandet
 144--146~MHz.
 Denna blandas med signalen \(f_2\) (136~MHz), som är en multiplicerad
 XO-frekvens.
-Blandningsprodukten \(f_1 - f_2\) filtreras fram, dvs. en signal i området
+Blandningsprodukten \(f_1 - f_2\) filtreras fram, det vill säga en signal i området
 8--10~MHz som påförs en fasjämförare.
 Utsignalen från en VFO, som är variabel inom samma frekvensområde 8--10~MHz,
 påförs också fasjämföraren.
@@ -309,7 +309,7 @@ En frekvensdelare är en digital krets, som räknar svängningar eller pulser up
 till ett valt tal för att återställas till i och börja om igen.
 Vid varje återställning avges en utpuls.
 Vid en delning med två avges en utpuls för varannan inpuls.
-Vid delning med i 5 avges en utpuls för var i 5:e inpuls osv.
+Vid delning med i 5 avges en utpuls för var i 5:e inpuls och så vidare.
 
 Genom att välja delningstal i PLL kan arbetsfrekvensen i VCO ställas
 in stegvis, där varje steg är så stort som en referensfrekvens.
@@ -318,10 +318,10 @@ jämförs med referensfrekvensen från XO.
 Varje avvikelse från likhet med referensfrekvensen kommer att
 medföra justering av VCO-frekvensen.
 
-Om man t.ex. vill täcka 2-metersbandet i steg om 25~kHz, så väljer
+Om man till exempel vill täcka 2-metersbandet i steg om 25~kHz, så väljer
 man den referensfrekvensen samt att delaren kan fås att dela sändarens
-utfrekvens med vilket som helst av talen 5760, 5761, 5762 osv. upp till 5840.
-Om t.ex. delningstalet 5820 valts, så kommer jämförarens styrspänning att styra
+utfrekvens med vilket som helst av talen 5760, 5761, 5762 och så vidare upp till 5840.
+Om till exempel delningstalet 5820 valts, så kommer jämförarens styrspänning att styra
 VCO-frekvensen till 145500~kHz.
 Delarens utfrekvens blir då \(145500/5820 = 25\) kHz, vilket motsvarar
 referensfrekvensen.
@@ -334,7 +334,7 @@ PLL-oscillatorn har nästan samma frekvensstabilitet som en
 kristalloscillator och frekvensen är inställbar i steg.
 Till skillnad mot en VFO med mekaniskt inställbar frekvens, så är den PLL-styrda
 VGO-oscillatorns frekvens elektroniskt inställbar.
-Detta underlättar utformning och placering av reglage etc. för
+Detta underlättar utformning och placering av reglage etcetera för
 frekvensinställning, frekvensminne och automatisk frekvensavsökning.
 
 Först när den PLL-styrda oscillatorn kom till användning i handapparater och
@@ -385,15 +385,15 @@ En frekvensstabil oscillator ska ha följande egenskaper:
 
 \subsubsection{Stabil mekanisk uppbyggnad}
 
-Skakningar från underlaget t.ex. vid mobilt bruk, vibrationer från en
-transformatorkärna etc. kan försämra oscillatorns frekvensstabilitet.
+Skakningar från underlaget till exempel vid mobilt bruk, vibrationer från en
+transformatorkärna etcetera kan försämra oscillatorns frekvensstabilitet.
 
 Frekvensbestämmande komponenter såsom fasta och variabla kondensatorer, spolar
-etc. ska vara stabilt monterade, trimkärnorna i spolarna fixerade osv.
+etcetera ska vara stabilt monterade, trimkärnorna i spolarna fixerade och så vidare
 
 Förbindningarna får inte tillåtas att böja sig eller vibrera.
 Apparatstommen måste vara tillräckligt styv för att inte ändra formen och
-därigenom medföra frekvensändringar vid hantering osv.
+därigenom medföra frekvensändringar vid hantering och så vidare.
 
 \subsubsection{God elektrisk uppbyggnad och högt Q-värde i svängningskretsarna}
 
@@ -440,7 +440,7 @@ En oscillator i en radiosändare kan bestå av ett enda förstärkarsteg,
 som alstrar högfrekventa elektriska svängningar.
 Vanligen tas endast små effekter ut från en så enkel sändare, normalt mindre än
 en watt.
-Utan särskilda åtgärder, som t.ex. att använda en styrkristall, är nämligen
+Utan särskilda åtgärder, som till exempel att använda en styrkristall, är nämligen
 frekvensen inte särskilt stabil och olämplig för kommunikationsändamål.
 
 Särskilt varierande belastning över oscillatorns utgång medför frekvensändring.
@@ -489,7 +489,7 @@ omväxlande med att den dämpas lavinartat till ett minimum.
 Utan yttre påverkan befinner sig alltså förstärkaren i ett
 självsvängningstillstånd mellan två yttervärden.
 I återkopplingsvägen placeras ett filter som frekvensbestämmande
-element, t.ex. en LC-krets eller en kvartskristall.
+element, till exempel en LC-krets eller en kvartskristall.
 
 Återkopplingen blir starkast på filtrets resonansfrekvens, vilket
 medför att oscillatorn svänger bäst där.
@@ -515,7 +515,7 @@ Men bruset finns ändå där på en lägre nivå och överlagras på insignalen 
 mikrofonen.
 
 Även i en högfrekvensoscillator överlagras bruset på insignalen.
-Men ju högre godhetstalet är i svängningskretsen, t.ex. en kristall, desto
+Men ju högre godhetstalet är i svängningskretsen, till exempel en kristall, desto
 smalare är filtrets bandbredd, desto kraftigare blir brusundertryckningen och
 desto mer framhävs den önskade signalen.
 P.g.a. det större godhetstalet i svängningskretsen, och därmed den mindre
@@ -533,4 +533,4 @@ för flera kristaller och kanalväljaren.
 
 Kristalloscillatorn har många användningsområden, där en
 frekvensstabil och brusfattig signal önskas och där platsbrist,
-skakningar m.m. utesluter användning av en LC-VFO.
+skakningar med mera utesluter användning av en LC-VFO.

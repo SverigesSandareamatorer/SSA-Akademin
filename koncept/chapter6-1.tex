@@ -15,14 +15,14 @@ konstruktionsdetaljerna av enstaka block.
 
 Hela apparaten kan ses som ett antal funktionsblock. Hur de samverkar
 framgår i stort av blockschemat.
-Där återfinns oscillatorer, blandare, förstärkare etc.
-I schemat kan även finnas uppgifter om frekvenser och spänningar m.m.
+Där återfinns oscillatorer, blandare, förstärkare etcetera.
+I schemat kan även finnas uppgifter om frekvenser och spänningar med mera.
 
 Det finns olika slags funktionsblock -- kretsar. Kombinationen av block
 ger apparater med olika egenskaper.
 Exempel är s.k. raka sändare med samma frekvens genom hela sändaren,
 superheterodynsändare där frekvensblandning används,
-frekvensmultiplicerande sändare etc.
+frekvensmultiplicerande sändare etcetera.
 
 \subsection{Rak sändare}
 \textbf{HAREC
@@ -91,7 +91,7 @@ Helst väljer man en arbetsfrekvens för oscillatorn där den är mest
 frekvensstabil.
 
 Om högre frekvens önskas på nyttosignalen, så kan man
-t.ex. multiplicera oscillatorfrekvensen, detta kallas för
+till exempel multiplicera oscillatorfrekvensen, detta kallas för
 \emph{frekvensmultiplicering} (eng. \emph{frequency multiplication}).
 I olinjära kretsar alstras övertoner, som ofta utnyttjas i detta syfte.
 
@@ -136,7 +136,7 @@ Genom att ersätta frekvensmodulatorn med en fasmodulator så kan samma
 sändare även användas för fasmodulerad signal.
 
 De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
-dvs. olinjärt, vilket medför amplituddistorsion.
+det vill säga olinjärt, vilket medför amplituddistorsion.
 Vid frekvens- och fasmodulering saknar emellertid detta betydelse, eftersom
 amplituden i det fallet inte är informationsbärande.
 
@@ -221,7 +221,7 @@ Därför används fler valbara bandpassfilter.
 I en SSB-signal ligger all information i amplituden, till skillnad
 från en FM-signal där all information ligger i frekvensen.
 En SSB-signal får alltså inte förvrängas.
-Det innebär att förstärkarstegen i SSB-sändare måste arbeta linjärt, dvs. en
+Det innebär att förstärkarstegen i SSB-sändare måste arbeta linjärt, det vill säga en
 utsignal ska vara proportionell mot insignalen i varje moment.
 
 \subsection{PLL-styrda sändare}
@@ -235,7 +235,7 @@ frekvensen i en oscillator och hålla den stabil med hjälp av en
 likspänning från en \emph{faslåst loop} (eng. \emph{Phase Locked Loop (PLL)})
 vilket är en digitalt styrd krets.
 
-En PLL kan användas t.ex. i raka sändare och heterodynsändare.
+En PLL kan användas till exempel i raka sändare och heterodynsändare.
 I det första fallet (bild \ref{fig:bildII5-2}) kan frekvensen i den enda
 oscillatorn styras av en PLL.
 I det andra fallet (bild \ref{fig:bildII5-6}) kan frekvensen i
@@ -265,13 +265,13 @@ Delningstalet i denna delare kan programmeras in i steg om 1 mellan
 talen 5760 och 5840.
 
 Med den första delarens divisor 10 och den andra delarens divisor
-inställd t.ex. på 5760, så avges ur delarkedjan en puls varje gång som
+inställd till exempel på 5760, så avges ur delarkedjan en puls varje gång som
 VCO har genomfört 57600 svängningar.
 Vid en VCO-frekvens av 144~MHz (144000~kHz) motsvaras divisorn
 57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av 2,5~kHz ut från räknarkedjan.
 På samma sätt kommer en VCO-frekvens av 144025~kHz och divisorn
 57610 (= \(10 \cdot 5761\)) också att ge en pulsfrekvens av 2,5~kHz,
-likaså 146~MHz och divisorn 58400 osv.
+likaså 146~MHz och divisorn 58400 och så vidare.
 
 VCO-frekvensen låses alltså i intervall om 25~kHz till närmaste
 delningstal, för att uppnå en pulsfrekvens av 2,5~kHz.
@@ -300,9 +300,9 @@ blir därför inte utreglerade.
 Drosseln efter loop-filtret förhindrar att moduleringssignalen
 kortsluts av filtrets kondensator.
 
-Frekvensinställningen, dvs. programmeringen av delaren kan utföras
+Frekvensinställningen, det vill säga programmeringen av delaren kan utföras
 på flera sätt. Exempel på inställningsorgan är tumhjuls-omkopplare,
-logikkretsar i kombination med en knappsats osv.
+logikkretsar i kombination med en knappsats och så vidare.
 
 \subsubsection{PLL-styrd sändare för kortvåg}
 
@@ -322,7 +322,7 @@ frekvensen från VCO och därefter filtrera fram skillnadsfrekvensen.
 VCO i detta exempel täcker frekvensområdet 40--69,5~MHz.
 Således blir sändarens täckningsområde 1,5--30~MHz.
 För att filterfunktionen ska bli optimal, kan den delas upp på flera
-valbara filtersektioner, t.ex. ett per amatörband.
+valbara filtersektioner, till exempel ett per amatörband.
 Valet kan ske automatiskt och styrt av frekvensläget på VCO.
 
 Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
@@ -333,7 +333,7 @@ Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
 VCO för att täcka hela frekvensområdet
 
 \textbf{Exempel:} Vid en MF på 9~MHz behöver VCO-funktionen täcka 9,5--39~MHz,
-dvs. 1:4,11, vilket är för mycket för en VCO.
+det vill säga 1:4,11, vilket är för mycket för en VCO.
 
 SSB-signalen efter 2:a blandaren är inte lämplig att använda i
 regleringsslingan i PLL.
@@ -420,7 +420,7 @@ ofta 10~MHz.
 modulerade signalen har när den kommer ut ur sändaren.
 Det är viktigt att den är begränsad så att den håller sig inom de gränser
 som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
-T.ex. kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
+Till exempel kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
 NFM 12,5~kHz kanaldelning och helt enkelt störa grann-kanalerna.
 
 Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
@@ -463,7 +463,7 @@ att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
 utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
 oftast 3~kHz för amatörradio.
 Bandbredden kan också behöva begränsas nedåt vid 300~Hz för att inte råka
-störa t.ex. signalering med subtoner.
+störa till exempel signalering med subtoner.
 Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
 kunna skicka ut subtonssignaler, men även för andra former av signaler.
 
