@@ -111,7 +111,7 @@ onödigt frekvensutrymme.
 Vid 1979 års radioförvaltningskonferens (WARC 79) i Geneve reviderades det
 internationella radioreglementet (RR), som i huvudsak trädde i kraft 1982.
 Däri ingår bl.a. ett nytt system för klassindelning och beteckning av sätten
-att utsända information över radio m.m.
+att utsända information över radio med mera.
 Reglementet har reviderats senare, men i detta stycke gäller det ännu.
 
 Indelningen i \emph{sändningsslag} behövs för att känneteckna utsändningarna,
@@ -842,7 +842,7 @@ Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
 används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
 \emph{4-state Phase Shift Keying (4-PSK)}.
 
-Istället för 180 graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK 
+Istället för 180 graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
 så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
 Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
@@ -884,13 +884,13 @@ kan informationen avkodas korrekt.
 \index{Wi-Fi}
 
 
-Medan fasskiftning kan göras för fler fassteg har man funnit att det inte 
+Medan fasskiftning kan göras för fler fassteg har man funnit att det inte
 är lika enkelt för högre upplösningar. Redan vid åtta steg behöver man ha
 I- och Q-värden som är \(\sqrt{1/2}\), vilket i och för sig går att approximera.
 En smidigare modulationsform är istället att låta även amplituden variera,
 och genom att låta några bitar modulera I och några bitar modulera Q kan
 man enkelt få ett symbolmönster som är effektivt att implementera.
-Denna modulationsform kallar man \emph{kvadratur-amplitudmodulation} 
+Denna modulationsform kallar man \emph{kvadratur-amplitudmodulation}
 (eng. \emph{Quadrature Amplitude Modulation (QAM)}).
 
 Ofta benämner man olika varianter med antalet olika positioner, så att 16QAM
@@ -1028,7 +1028,7 @@ enda parametern som krävs, så i mer strikta sammanhang ska dessa begrepp
 hanteras som separata för att undvika missförstånd.
 
 Bandbredden för en digital ström är relaterad till nyquistteoremet, som säger
-att samplingstakten måste vara minst dubbelt så hög som den högsta frekvens 
+att samplingstakten måste vara minst dubbelt så hög som den högsta frekvens
 som överförs.
 
 \subsection{Bitfel -- detektion och korrigering}
@@ -1045,8 +1045,8 @@ felupptäckt samt korrigering med återsändning eller korrigeringskoder.
 \index{bitfel}
 \index{bit error}
 
-Av olika orsaker kommer en eller flera bitar ofta att bli fel. Vi kallar varje sådant 
-fel för att \emph{bitfel} (eng. \emph{bit error}). Störningar kan göra att vi tolkar 
+Av olika orsaker kommer en eller flera bitar ofta att bli fel. Vi kallar varje sådant
+fel för att \emph{bitfel} (eng. \emph{bit error}). Störningar kan göra att vi tolkar
 en symbol fel, vilket kan resultera i en eller flera felaktiga bitar.
 
 Om vi i till exempel 16QAM-koden i kapitel \ref{QAM} får in +0.2 i I och +1.1 i Q,
@@ -1062,7 +1062,7 @@ för 5, vilket innebär att två bitar har ändrats.
 Genom att granska tabell \ref{tab:16QAM} vidare ser man att värdena för
 I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
 alla närliggande symboler, i respektive I- och Q-riktning. Det förenklar
-tolkning av symbolerna. Är dock störningen större än 1 i någon riktning 
+tolkning av symbolerna. Är dock störningen större än 1 i någon riktning
 kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
 bit-fel.
 
@@ -1093,15 +1093,15 @@ förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} i
 amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
 \emph{error function (erf)}.
 
-När gränsen är 1 sigma, dvs. 1 gånger RMS-värdet för brusamplituden, från
+När gränsen är 1~sigma, dvs. 1 gånger RMS-värdet för brusamplituden, från
 medelvärdet så är det 67~\% sannolikhet att värdet ligger inom gränsvärdet, dvs. en
 bitfelssannolikhet på 33~\%.
 Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
 bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
 ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
-För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs 
-det 14 sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
+För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs
+det 14~sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
 kvantiseringsgränsen. Den råa radiokanalen uppvisar dock sällan så bra
 egenskaper, men det kan uppnås i kabel och fiber.
 
@@ -1288,8 +1288,8 @@ skrivhastighet hos den gemene amatören.
 
 WSPR släpptes i sin första version 2008.
 Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
-open source-program och utvecklas av ett litet team. 
-Joe Taylor fick sin utbildning i astronomi vid Harvard University. Han var sedan verksam 
+open source-program och utvecklas av ett litet team.
+Joe Taylor fick sin utbildning i astronomi vid Harvard University. Han var sedan verksam
 inom området astrofysik vid Princeton University, varifrån han pensionerades 2006.
 Joe Taylor tilldelades Nobelpriset i fysik år 1993.
 
@@ -1297,13 +1297,13 @@ Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområd
 
 \paragraph{Teknik}
 
-WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''. 
-WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en 
+WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''.
+WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en
 så kallad beacon. Sändning och mottagning sker i tvåminuterspass och efter varje
-sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en 
+sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en
 databas över internet.
 Den sändande stationen kan därefter studera resultatet.
-WSPR använder låga effekter, det går att nå europeiska stationer med effekter under 
+WSPR använder låga effekter, det går att nå europeiska stationer med effekter under
 100 mW, och andra kontinenter med effekter under några watt, även med modesta antenner.
 
 \subsubsection{WSJT}
@@ -1320,10 +1320,10 @@ WSPR använder låga effekter, det går att nå europeiska stationer med effekte
 \index{EME}
 \index{8FSK}
 
-WSJT är liksom WSPR ett program som används inom amatörradiohobbyn för så 
+WSJT är liksom WSPR ett program som används inom amatörradiohobbyn för så
 kommunikation med svaga signaler.
 Även detta program är utvecklat av Joe Taylor, K1JT.
-De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte upptar 
+De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte upptar
 större bandbredd än några hertz.
 
 \paragraph{Historia}
@@ -1345,15 +1345,15 @@ av laddade joner, som uppkommer från de spår som meteorer lämnar efter sig.
 JT6M introducerades år 2002 och är avsett för kommunikation via bland annat
 meteorreflektioner på 6~m-bandet.
 
-JT65, utvecklat och släppt år 2003, används för kommunikation via troposfären, 
-så kallat troposcatter, men också för kommunikation via reflexer mot månen 
+JT65, utvecklat och släppt år 2003, används för kommunikation via troposfären,
+så kallat troposcatter, men också för kommunikation via reflexer mot månen
 så kallad EME-trafik.
 
 JT9 används för kortvågstrafik och är snarlikt JT65, men använder sig av en
 FSK-signal med nio toner.
 JT9 använder sig av mindre än 16~Hz bandbredd.
 
-FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal. 
+FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal.
 
 FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts för
 fädning och där öppningarna mot andra stationer är korta så att man behöver
