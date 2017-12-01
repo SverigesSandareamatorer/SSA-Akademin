@@ -1,6 +1,6 @@
-# Texifiering av OCRad text.
+# Texifiering av OCR:ad text
 
-Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
+Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
 1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
@@ -151,15 +151,15 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     "I bild 3.16 illustreras..."
     "... illustreras av bild 3.17"
 
-21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som UNICODE tecken
+21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
     utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
-    u) i Math-environment. Det visar sig att UNICODE inte rendrerar rätt för
+    u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
 22. Tecknet för grader ° skall kodas som \degree.
     Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med ~
     för annars kommer mellanslaget kernas bort.
-    För grader celsius behövs ett mellanslag innan C, dvs. \degree C
+    För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
@@ -197,8 +197,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Reaktansen beror på kapacitans, se kapitel \ref{kapacitans}
 
-25. Referens till externa dokument, böcker mm skall göras och det uppmuntras.
-    De läggs till i filen koncept.bib i BiBTeX format, och en nyckeln-fras
+25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
+    De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
     läggas med i referensen. Man refererar sedan med \cite{} för att peka på
     hela dokumentet:
@@ -211,7 +211,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
-    på person-namn, t.ex. ohm. Följ SI-brochyrens stil.
+    på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
 27. Konstanter skall anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precission.
@@ -232,14 +232,14 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
+    utom i parenteser och tabeller.
 
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
 
-32. LaTeX skrivs med två mellanslag som tab.
+32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
 
 33. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
     Skriv "satellitmottagare" i stället för "satellit-mottagare". 
     Bindestreck ska dock användas i sammansättningar med förkortningar;
     skriv "FM-detektor" istället för "FM detektor".
-
