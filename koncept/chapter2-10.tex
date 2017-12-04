@@ -23,7 +23,7 @@ HAREC a.\ref{HAREC.a.2.7.1}\label{myHAREC.a.2.7.1}
 \index{elsäkerhet}
 \index{kallödning}
 
-Vi har tidigare betraktat Joules lag för effektutveckling i motstånd.
+Vi har tidigare betraktat Joles lagules lag för effektutveckling i motstånd.
 Det är dags att börja utveckla en lite mer komplett syn på värmeutveckling.
 Ett motstånd som utvecklar 1~watt kommer stiga i temperatur till dess att
 jämvikt uppstår mellan motståndets förmåga att avleda värme och
@@ -130,24 +130,25 @@ HAREC a.\ref{HAREC.a.2.7.3}\label{myHAREC.a.2.7.3}
 }
 
 För att förstå värmealstring i en transistor börjar vi med att tänka oss
-att vi har en transistor som matas med 12~V matspänning. Vi genererar då en
-\(10\ V_{pp}\) (topp-till-topp-spänning) sinus in i en 50~ohms last.
+att vi har en transistor med 12~V matningsspänning. Vi låter den generera en
+sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
 Vad är effektförlusten i transistorn?
 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=7cm]{images/power1.pdf}
-\caption{Utspänning $U_{ut}$, Transistor-spänning $U_t$, Transistor-ström $I_t$ och transistor-effekt $P_t$ varierar med vinkel sinus-signalen för resistiv last.}
+\caption{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}
 \label{fig:power1}
 \end{center}
 \end{figure}
 
-I bild \ref{fig:power1} ser vi utsignalen \(U_ut\) som en sinus med amplituden
-\(5\ V\), det vill säga \(10\ V_{pp}\). Eftersom transistorn har en vilospänning på 6~V
-för att få marginal mot \(0\ V\) och \(+12\ V\), kommer spänningen variera
-mellan \(1\ V\) och \(11\ V\) vilket man ser i \(V_t\)-kurvan. Utgångslastens
-resistor lastar med en ström \(I_t\) som är proportionerlig mot spänningen
-\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är sedan absolut-
-funktionen för strömmen gånger spänningen enligt Joules lag. Den observante ser
-att effekten är signifikant högre för andra halvan av kurvan, då man har både
+I bild \ref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med amplituden
+\(10\ V_{pp}\). Transistorn har en vilospänning på 6~V
+för att få marginal mot \(0\ V\) och \(+12\ V\). Spänningen \(U_t\) varierar
+mellan \(1\ V\) och \(11\ V\). I utgångslastens resistor alstras en ström \(I_t\) som är proportionerlig mot spänningen
+\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är absolutvärdet av strömmen gånger spänningen enligt Joules lag. 
+
+\(P_t = \lvert U_t \cdot I_t \rvert\) 
+
+Den observante ser att effekten är signifikant högre för andra halvan av kurvan, då man har både
 hög spänning och hög ström.
