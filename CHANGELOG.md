@@ -17,6 +17,7 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - I enlighet med texifiering.md #31
 - Extra radbrytning i enlighet med texifiering.md #5
 - Förtydligande av prefixs syfte.
+- Formel rättad i avsnittet "Exempel med 2 obekanta" i kapitlet "Matematik".
 
 ## 2.0.0-RC.0 – 2017-09-10
 ### Tillagt
