@@ -1,4 +1,5 @@
 language: generic
+group: travis_latest
 
 before_install:
   - sudo apt-get -qq update
