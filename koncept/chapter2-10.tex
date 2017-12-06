@@ -30,7 +30,7 @@ jämvikt uppstår mellan motståndets förmåga att avleda värme och
 omgivningstemperaturen.
 
 \emph{Termisk resistans} (eng. \emph{thermal resistance}) är ett mått på
-hur bra ett material är på att leda värme. Det betecknas med symbolen \(R_\Theta\),
+hur bra ett material är på att leda värme. Den betecknas med symbolen \(R_\Theta\),
 och anges i enheten kelvin per watt.
 Temperaturen \(T_k\) för en komponent beror på medeleffekten \(P\) som den
 producerar i värme, den termiska resistansen samt den \emph{omgivande temperaturen}
@@ -38,8 +38,8 @@ producerar i värme, den termiska resistansen samt den \emph{omgivande temperatu
 
 \(T_k = T_A + R_\Theta \cdot P\)
 
-Den termiska resistansen för komponent, kylpasta, isolerskiva och kylfläns
-kan summeras precis som resistansen för vanliga motstånd och det
+De termiska resistanserna för komponent, kylpasta, isolerskiva och kylfläns
+kan summeras precis som resistanser för vanliga motstånd och det
 sammanlagda värdet används sedan för att beräkna temperaturen på en
 komponent eller för att dimensionera en kylfläns.
 
@@ -52,7 +52,7 @@ HAREC a.\ref{HAREC.a.2.7.2}\label{myHAREC.a.2.7.2}
 \index{heatpipe}
 
 \emph{Konvektion} (eng. \emph{convection}) är när värme skapar ett
-naturligt flöde i vätska eller gas, oftast luft. När luft värms upp så
+naturligt flöde i vätska eller gas, oftast luft. När luft värms upp 
 vill den expandera, varvid densiteten sjunker och luften vill stiga uppåt.
 Kallare luft strömmar då till och kan därmed kyla värmekällan. En stor
 temperaturskillnad medför att konvektionen ökar och innebär därmed en bättre
@@ -120,7 +120,7 @@ har en relativt god värmeledningsförmåga. Ibland konstruerar man små mönste
 Ett effektivt sätt att kunna löda och framförallt löda av från sådana
 kort är att man förvärmer hela kretskortet eller området runt om
 lödpunkten. Då kommer temperaturskillnaden mellan lödpennans spets och
-omgivningen att minska och då krävs inte lika stor effekt för att få
+omgivningen att minska och det krävs inte lika stor effekt för att få
 upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
 \emph{vätning} och därmed undvika att det bildas en kallödning.
 
@@ -130,24 +130,25 @@ HAREC a.\ref{HAREC.a.2.7.3}\label{myHAREC.a.2.7.3}
 }
 
 För att förstå värmealstring i en transistor börjar vi med att tänka oss
-att vi har en transistor som matas med 12~V matspänning. Vi genererar då en
-\(10\ V_{pp}\) (topp-till-topp-spänning) sinus in i en 50~ohms last.
+att vi har en transistor med 12~V matningsspänning. Vi låter den generera en
+sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
 Vad är effektförlusten i transistorn?
 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=7cm]{images/power1.pdf}
-\caption{Utspänning $U_{ut}$, Transistor-spänning $U_t$, Transistor-ström $I_t$ och transistor-effekt $P_t$ varierar med vinkel sinus-signalen för resistiv last.}
+\caption{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}
 \label{fig:power1}
 \end{center}
 \end{figure}
 
-I bild \ref{fig:power1} ser vi utsignalen \(U_ut\) som en sinus med amplituden
-\(5\ V\), det vill säga \(10\ V_{pp}\). Eftersom transistorn har en vilospänning på 6~V
-för att få marginal mot \(0\ V\) och \(+12\ V\), kommer spänningen variera
-mellan \(1\ V\) och \(11\ V\) vilket man ser i \(V_t\)-kurvan. Utgångslastens
-resistor lastar med en ström \(I_t\) som är proportionerlig mot spänningen
-\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är sedan absolut-
-funktionen för strömmen gånger spänningen enligt Joules lag. Den observante ser
-att effekten är signifikant högre för andra halvan av kurvan, då man har både
+I bild \ref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med amplituden
+\(10\ V_{pp}\). Transistorn har en vilospänning på 6~V
+för att få marginal mot \(0\ V\) och \(+12\ V\). Spänningen \(U_t\) varierar
+mellan \(1\ V\) och \(11\ V\). I utgångslastens resistor alstras en ström \(I_t\) som är proportionerlig mot spänningen
+\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är absolutvärdet av strömmen gånger spänningen enligt Joules lag. 
+
+\(P_t = \lvert U_t \cdot I_t \rvert\) 
+
+Den observante ser att effekten är signifikant högre för andra halvan av kurvan, då man har både
 hög spänning och hög ström.
