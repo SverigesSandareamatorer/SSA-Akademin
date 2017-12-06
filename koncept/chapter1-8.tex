@@ -110,8 +110,8 @@ onödigt frekvensutrymme.
 
 Vid 1979 års radioförvaltningskonferens (WARC 79) i Geneve reviderades det
 internationella radioreglementet (RR), som i huvudsak trädde i kraft 1982.
-Däri ingår bl.a. ett nytt system för klassindelning och beteckning av sätten
-att utsända information över radio med mera.
+Däri ingår bland annat ett nytt system för klassindelning och beteckning av
+sätten att utsända information över radio med mera.
 Reglementet har reviderats senare, men i detta stycke gäller det ännu.
 
 Indelningen i \emph{sändningsslag} behövs för att känneteckna utsändningarna,
@@ -534,7 +534,7 @@ frekvensen \(f\) och den andra sänder \(f + \Delta f\).
 Båda sändarnas HF-signaler kommer då att bilda ett frekvensspektrum, som
 förutom \(f\) och \(f + \Delta f\) även innehåller sidofrekvenser.
 
-Bredden på detta spektrum beror bl.a. på nycklingsfrekvensen.
+Bredden på detta spektrum beror bland annat på nycklingsfrekvensen.
 Eftersom en fyrkantsvåg innehåller summan av dess grundfrekvens och övertoner,
 kommer alla dessa toner att modulera vardera sändaren.
 De högsta modulerande LF-frekvenserna alstrar sidofrekvenserna längst ut från
@@ -842,7 +842,7 @@ Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
 används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
 \emph{4-state Phase Shift Keying (4-PSK)}.
 
-Istället för 180 graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
+Istället för 180~graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
 så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
 Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
@@ -1123,8 +1123,8 @@ binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
 kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-upptäckt. Det är med andra ord inte en särdeles stark checksumma. Paritet
-används till exempel i seriekommunikation så som RS-232.
+upptäckt. Det är med andra ord inte en särdeles stark checksumma.
+Paritet används till exempel i seriekommunikation så som RS-232.
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
 typer av fel. För lite större meddelanden är det vanligt att summera bytes
@@ -1146,7 +1146,8 @@ den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
 realiseras. Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest
 (ARQ)}) är en typ av protokoll som gör automatisk omsändningsbegäran om ett
 enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
-försvunnit. Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
+försvunnit.
+Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
 
 \subsubsection{Korrigeringskod -- FEC}
 \textbf{HAREC a.\ref{HAREC.a.1.8.10c}\label{myHAREC.a.1.8.10c}}
@@ -1175,8 +1176,8 @@ Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
 Här ges exempel på digitala modulationstekniker för kortvågstillämpningar inom
 amatörradio.
 
-De flesta digitala sändningsslagen för kortvåg är smalbandiga och bandbredden kan i vissa
-fall endast vara några hertz.
+De flesta digitala sändningsslagen för kortvåg är smalbandiga och bandbredden
+kan i vissa fall endast vara några hertz.
 
 Signalbehandlingen sker i den dator som programmet körs på och där datorns
 in- och utgång för dess ljudkort är kopplade till amatöradioutrustningen.
@@ -1193,7 +1194,7 @@ lämplig serieport, till exempel via dess USB-anslutning.
 \paragraph{Historia}
 
 Ett av de första digitala trafiksätten som användes av radioamatörer var \emph{RTTY},
-uttytt ''RadioTeleTYpe'', där man använde sig av s.k. teleprintrar,
+uttytt ''RadioTeleTYpe'', där man använde sig av så kallade teleprintrar,
 automatiska skrivmaskiner som skrev ut text.
 
 Emile Baudot konstruerade år 1874 ett system baserat på fem bitar,
@@ -1204,18 +1205,18 @@ Amerikanska kommersiella RTTY-system fanns aktiva så tidigt som 1932.
 Under 50-talet började surplusutrustning komma ut på den amerikanska
 marknaden och radioamatörerna var inte sena att prova den nya tekniken på
 kortvågsbanden.
-De kommersiella systemen körde med 50 baud, 75 baud eller 100 baud.
+De kommersiella systemen körde med 50~baud, 75~baud eller 100~baud.
 
 Amatörerna i USA körde med 45,45~baud, vilket motsvarar 300 tecken per minut.
-De europeiska utrustningarna, bl.a. framtagna av Siemens, arbetade med 50 baud
-men gick att justera ner till 45,45~baud.
+De europeiska utrustningarna, bland annat framtagna av Siemens, arbetade med
+50~baud men gick att justera ner till 45,45~baud.
 45~baud är idag den vedertagna standarden över världen.
 
 \paragraph{Teknik}
 
 RTTY använder FSK-modulering.
 För att åstadkomma detta behöver man styra frekvensen så att den hoppar mellan
-två frekvenser med en skillnad, ett s.k. ''skift'', på 170~Hz.
+två frekvenser med en skillnad, ett så kallat ''skift'', på 170~Hz.
 
 Äldre sändare behövde modifieras för att åstadkomma detta frekvensskift, men
 med en SSB-sändare kunde man istället mata sändaren med två toner, som gav
@@ -1232,10 +1233,11 @@ för andra digitala trafiksätt.
 \subsubsection{SSTV}
 \index{SSTV}
 
-\emph{Slow Scan TeleVision (SSTV)} är en blandning av analog och digital teknik.
+\emph{Slow Scan Television (SSTV)} är en blandning av analog och digital teknik.
 En SSTV sändning sker långsamt jämfört med traditionell TV, men är i grunden
-rätt lik. Varje linje sänds en efter en, men modulerad så att den kan sändas
-över en SSB-radiolänk.
+rätt lik.
+Varje linje sänds en efter en, men modulerad så att den kan sändas över en
+SSB-radiolänk.
 Intensiteten för varje pixel anger tonhöjden som moduleras, vilket därmed
 innebär en FM-modulation.
 Denna FM-modulerade ton skickas sedan över SSB.
