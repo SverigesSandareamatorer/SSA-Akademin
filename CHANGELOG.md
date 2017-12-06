@@ -18,6 +18,10 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Extra radbrytning i enlighet med texifiering.md #5
 - Förtydligande av prefixs syfte.
 - Formel rättad i avsnittet "Exempel med 2 obekanta" i kapitlet "Matematik".
+- Ändrar rubrik till "Ekvation med en obkant" från "Exempel med .."
+- Ändrar 1/2 till en/två i rubrik i Bilaga B, matematik
+- Ändrar förkortningen s.k. till så kallad(e) i Bilaga B, matematik
+
 
 ## 2.0.0-RC.0 – 2017-09-10
 ### Tillagt
