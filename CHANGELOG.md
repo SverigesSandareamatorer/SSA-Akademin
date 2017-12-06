@@ -16,6 +16,7 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Ändrar till utskrivna siffor istället för siffror.
 - I enlighet med texifiering.md #31
 - Extra radbrytning i enlighet med texifiering.md #5
+- Förtydligande av prefixs syfte.
 
 ## 2.0.0-RC.0 – 2017-09-10
 ### Tillagt
