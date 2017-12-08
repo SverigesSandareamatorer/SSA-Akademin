@@ -21,6 +21,7 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Ändrar rubrik till "Ekvation med en obkant" från "Exempel med .."
 - Ändrar 1/2 till en/två i rubrik i Bilaga B, matematik
 - Ändrar förkortningen s.k. till så kallad(e) i Bilaga B, matematik
+- Ändrat O till Q i rapportkoder för kommeriell sjö och luftradiotrafik.
 
 
 ## 2.0.0-RC.0 – 2017-09-10
