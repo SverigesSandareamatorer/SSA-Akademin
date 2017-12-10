@@ -8,6 +8,7 @@ help:
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
 	@echo '   make koncept.webb           bygg webbversionen av koncept          '
 	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
@@ -141,6 +142,9 @@ emf-handout.ind: emf-handout.idx
 
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
 	xelatex handouts/emf-handout.tex
+
+prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
+	xelatex handouts/prefix.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
 	-xelatex handouts/iso-jordning.tex
