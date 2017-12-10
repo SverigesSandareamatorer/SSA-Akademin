@@ -11,7 +11,7 @@ help:
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf TODOs
+all:	koncept.pdf
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
@@ -148,16 +148,6 @@ iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
-
-# TODOs
-TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
-	rm TODOs
-#	grep -n TODO *.tex koncept/*.tex > TODOs
-#	grep HAREC koncept.log >> TODOs
-#	grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
-#	grep Missing koncept.log >> TODOs
-#	grep LaTeX koncept.log | grep Warning >> TODOs
-	wc -l TODOs
 
 # Länkade bilder
 images.linked: koncept.tex $(KONCEPT_FILES)
