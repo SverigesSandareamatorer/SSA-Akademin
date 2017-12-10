@@ -8,41 +8,46 @@ Ordet \emph{oscillare} (lat.) har betydelsen svänga och den företeelse
 eller anordning som skapar en svängning kallas oscillator.
 Vid alla slags svängningar sker växelverkan mellan olika energiformer.
 Svängningar förekommer i olika former.
-Det kan vara vibrationer i en kropp, en pendel som svänger, rörelser i gaser och
-vätskor, elektriska laddningar i en strömkrets osv.
-
-\subsubsection{Mekanisk pendel}
+Det kan till exempel vara vibrationer i en kropp, molekylrörelser i gaser och
+vätskor eller elektriska laddningars rörelser.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-63.pdf}
-\caption{Svängingar}
+\caption{Svängningar}
 \label{fig:BildII3-63}
 \end{figure}
 
-Energiinnehållet i en pendel växlar mellan lägesenergi (potentiell energi) och
-rörelseenergi (kinetisk energi), som illustreras i bild \ref{fig:BildII3-63}.
-Lägesenergin är störst i pendelns ytterlägen och minst i mittläget.
-Omvänt är rörelseenergin störst i mittläget och minst i ytterlägena.
+\subsubsection{Dämpad svängning}
+\index{dämpad~svängning}
+Radiosändningar med telegrafi genomfördes i början av 1900-talet med dämpade
+svängningar.
+Det vill säga en svängning vars amplitud minskar tills svängningen upphört.
 
-Stöt till en pendel bara en gång så att den börjar pendla, men utslagen blir
-allt mindre.
-Pendeln utför en dämpad svängning därför att det förbrukas energi under
-pendlingen.
+Svängningen skapades av en elektrisk gnista i ett gnistgap.
+Gnistgapet kopplades till en avstämningskrets som gjorde att svängningsenergin
+koncentrerades till en mer bestämd radiofrekvens.
 
-Dämpningen kommer av att energi förloras av friktionen i upphängningspunkten
-och av luftmotståndet.
+De dämpade svängningarna orsakade på grund av den stora bandbredden störningar
+som begränsade användbarheten för telegrafi.
 
-Stöt nu till pendeln varje gång, som den pendlar tillbaka.
-För lika stora utslag varje gång -- en odämpad svängning -- fordras det
-upprepade energitillskott som precis kompenserar förlusterna.
+\subsubsection{Odämpad svängning}
+\index{odämpad~svängning}
+\index{kontinuerlig~svängning}
+\index{continuous~wave}
+Begreppet odämpad svängning infördes för drygt 100 år sedan för att särskilja
+en sinussvängning med konstant amplitud och frekvens från den dämpade
+svängningen.
 
-Villkoren för att en svängning ska fortgå (vara odämpad) är att
-energitillskotten
-\begin{itemize}
-  \item kommer vid rätt tidpunkt
-  \item har rätt riktning -- polaritet
-  \item kompenserar förlusterna.
-\end{itemize}
+Till skillnad mot en dämpad svängning har en odämpad svängning en begränsad
+bandbredd och går att använda för flera modulationsformer.
+På engelska döptes svängningen till \emph{Continuous Wave} och förkortningen CW
+används fortfarande av radioamatörer som en beteckning för telegrafi.
+
+När fördelarna med odämpade sinusvågor blev tydliga och när oscillatorer med
+radiorör blev tillgängliga runt år 1913 började myndigheter efter några år
+införa begränsningar för användningen av gnistsändare.
+Begränsningarna utökades genom internationella överenskommelser och under
+1930-talet förbjöds användning av sändare med dämpade svängningar.
 
 \subsection{LC-oscillatorer}
 \textbf{HAREC a.\ref{HAREC.a.3.6.1}, a.\ref{HAREC.a.3.6.2}, a.\ref{HAREC.a.3.6.3}\label{myHAREC.a.3.6.1}\label{myHAREC.a.3.6.2}\label{myHAREC.a.3.6.3}}
@@ -88,10 +93,10 @@ Magnetfältet mellan induktansen i svängningskretsen och återkopplingsspolen �
 polariserat så att en förändring i utsignalen medverkar till självsvängning.
 (Motsatsen är motkoppling.)
 
-Förstärkaren kan t.ex. vara en emitterkopplad transistorförstärkare enligt bild
+Förstärkaren kan till exempel vara en emitterkopplad transistorförstärkare enligt bild
 \ref{fig:BildII3-67}.
 Kopplingskondensatorerna \(C_k\) är nödvändiga för att förhindra kortslutning
-av de likspänningar som pestämmer arbetspunkten för transistorn.
+av de likspänningar som bestämmer arbetspunkten för transistorn.
 Å andra sidan kan växelspänningssignalerna passera till och från transistorn.
 
 Återkopplingsvägen görs i detta fall så, att svängningskretsen kopplas
@@ -109,10 +114,10 @@ parallellt över förstärkaringången som visas i bild \ref{fig:BildII3-68}.
 
 Självsvängning i en förstärkare uppstår genom återkoppling, som visas i
 bild \ref{fig:BildII3-69}.
-Signalspänningen \(\hat{U}_{in}\) över ingången blir
-förstärkt med faktorn \(A\). När som i bild \ref{fig:BildII3-68} förstärkaren är
-emitterkopplad, blir utsignalen fasvriden 180\degree~i förhållande till
-insignalen.
+Signalspänningen \(\hat{U}_{in}\) över ingången blir förstärkt med
+faktorn \(A\).
+När som i bild \ref{fig:BildII3-68} förstärkaren är emitterkopplad, blir
+utsignalen fasvriden 180\degree~i förhållande till insignalen.
 Fasvridningen \(\alpha=180\degree\) betecknas här med minustecken, alltså blir
 förstärkningen \(-A\).
 
@@ -255,22 +260,22 @@ Bild \ref{fig:BildII3-74} illustrerar stegvis hur man åstaokommer
 bandspridning.
 Att ställa in frekvensen i en LC-oscillator gjordes förr oftast med en
 vridkondensator.
-I moderna mottagare och sändare används i stället en s.k. varicap, som styrs
-med en likspänning.
+I moderna mottagare och sändare används i stället en så kallad varicap, som
+styrs med en likspänning.
 
 Med en svängningskrets med endast en induktor och en vridkondensator, skulle
 alla amatörradiobanden endast vara smala områden utspridda på en mekanisk
 skala, dvs. över vridkondensatorns hela kapacitansområde, varvid
-kapacitansen kan varieras med förhållandet 1:5 à 1:10, t.ex.
+kapacitansen kan varieras med förhållandet 1:5 à 1:10, till exempel
 10-50~pF à 10-100~pF.
 
-För att i stället få vart och ett av amatörradiobanden utspridda över
-större delen av skalan kan man ordna med bandomkoppling och s.k. bandspridning.
+För att i stället få vart och ett av amatörradiobanden utspridda över större
+delen av skalan kan man ordna med bandomkoppling och så kallad bandspridning.
 Man parallellkopplar då en relativt stor fast kapacitans med vridkondensatorns
 relativt lilla kapacitans.
 Den totala kapacitansvariationen i LC-kretsen blir då liten, trots att
 kondensatorns hela kapacitansområde utnyttjas.
-Resultatet blir en frekvensskala med större upplösning, dvs. bättre
+Resultatet blir en frekvensskala med större upplösning, det vill säga bättre
 avläsningsnoggrannhet.
 
 Bandspridning kan också ordnas med två seriekopplade kondensatorer,
