@@ -18,12 +18,13 @@ omvandlar dem till analoga signaler igen.
 
 Om man har en särskilt processor för att göra det kallar man den för en
 \emph{Digital Signalprocessor (DSP)}.
-Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för speciellt 
+Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för speciellt
 ändamål, som inte kan programmeras på normalt sätt som en processor. Det är fortfarande
 \emph{Digital Signalbehandling}, men den används nu mer mest för de delar av
-signlbehandlingen där man behöver utföra samma standardiserade jobb fort och 
-effektivt. En processor kan i stället utföra de mindre frekventa jobben som därmed 
-kan tillåtas vara mer komplexa.
+signlbehandlingen där man behöver utföra samma standardiserade jobb fort och
+effektivt.
+En processor kan i stället utföra de mindre frekventa jobben som därmed kan
+tillåtas vara mer komplexa.
 
 En GPS-mottagare är ett exempel på en sådan mottagare där dedikerad hårdvara
 hanterar många miljoner sampel per sekund, men som reducerar dem till några värden
@@ -46,7 +47,7 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
 
-Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar spänning och 
+Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar spänning och
 ström kontinuerligt så snabbt att vi kan hantera det fulla radiospektrumet och mer därtill.
 Detta fungerar dock inte så väl i den digitala världen.
 Där vill vi dels ha värden i digital form, så vi behöver omvandla våra spänningar
@@ -88,7 +89,7 @@ Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
 Denna sista del i att omvandla de kvantiserade talen till värden kallas
 \emph{Pulse Code Modulation (PCM)}.
-Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i 
+Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i
 kvantiseringstrappan, vilket nyttjats för datakompression i telefonisystem.
 
 \subsection{Minsta samplingsfrekvensen}
@@ -203,8 +204,8 @@ undertrycker oönskade signaler.
 För exempelvis talsignaler använder man ett lågpassfilter för att undertrycka de
 oönskade signalerna högre upp.
 Detta filter kan istället användas för ett visst frekvensband för att
-konvertera ned detta band i processen, något som är väldigt populärt i SDR
-sammanhang.
+konvertera ned detta band i processen, något som är väldigt populärt i
+SDR-sammanhang.
 I bägge dessa fall är filtret ett \emph{antivikningsfilter} (eng.
 \emph{anti-aliasing filter}).
 

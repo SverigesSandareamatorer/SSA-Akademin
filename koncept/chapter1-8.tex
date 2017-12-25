@@ -1081,7 +1081,7 @@ bit-fel.
 
 Om vi antar att vi inte har störning från några andra signaler, utan enbart har
 brus som störning, så kan vi estimera \emph{bitfelssannolikheten} (eng.
-\emph{bit error rate (BER)} ur hur starkt bruset är i förhållande till vårt
+\emph{bit error rate (BER)}) ur hur starkt bruset är i förhållande till vårt
 steg. Eftersom bruset antas vara vitt brus, så har det egenskaperna av
 \emph{Gaussiskt brus} (eng. \emph{Gaussian noise}).
 
@@ -1089,13 +1089,13 @@ Gaussiskt brus har en statistisk fördelning med hög sannolikhet nära
 medelvärdet och avtar sedan med avståndet. Sannolikheten att man tolkar en
 signal som vara på ena eller andra sidan av en gräns beror på hur långt bort
 från medelvärdet den gränsen, ofta benämnd kvantiseringsgränsen, är i
-förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} i
+förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)}) i
 amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
 \emph{error function (erf)}.
 
-När gränsen är 1~sigma, dvs. 1 gånger RMS-värdet för brusamplituden, från
-medelvärdet så är det 67~\% sannolikhet att värdet ligger inom gränsvärdet, dvs. en
-bitfelssannolikhet på 33~\%.
+När gränsen är 1~sigma, det vill säga 1 gånger RMS-värdet för brusamplituden,
+från medelvärdet så är det 67~\% sannolikhet att värdet ligger inom
+gränsvärdet, det vill säga en bitfelssannolikhet på 33~\%.
 Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
 bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
@@ -1123,7 +1123,8 @@ binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
 kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-upptäckt. Det är med andra ord inte en särdeles stark checksumma.
+upptäckt.
+Det är med andra ord inte en särdeles stark checksumma.
 Paritet används till exempel i seriekommunikation så som RS-232.
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
@@ -1166,8 +1167,9 @@ ta för mycket tid eller om det helt enkelt inte finns någon kommunikation frå
 mottagaren till sändaren, till exempel för satellitmottagare.
 
 En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
-sänder samma tecken två gånger. Liknande används i Bluetooth där meddelandet
-sänds tre gånger, varvid man kan göra majoritetsröstning.
+sänder samma tecken två gånger.
+Liknande används i Bluetooth där meddelandet sänds tre gånger, varvid man kan
+göra majoritetsröstning.
 
 Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
 
@@ -1291,8 +1293,9 @@ skrivhastighet hos den gemene amatören.
 WSPR släpptes i sin första version 2008.
 Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
 open source-program och utvecklas av ett litet team.
-Joe Taylor fick sin utbildning i astronomi vid Harvard University. Han var sedan verksam
-inom området astrofysik vid Princeton University, varifrån han pensionerades 2006.
+Joe Taylor fick sin utbildning i astronomi vid Harvard University.
+Han var sedan verksam inom området astrofysik vid Princeton University,
+varifrån han pensionerades 2006.
 Joe Taylor tilldelades Nobelpriset i fysik år 1993.
 
 Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
