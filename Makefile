@@ -8,10 +8,11 @@ help:
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
 	@echo '   make koncept.webb           bygg webbversionen av koncept          '
 	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf TODOs
+all:	koncept.pdf
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
@@ -142,6 +143,9 @@ emf-handout.ind: emf-handout.idx
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
 	xelatex handouts/emf-handout.tex
 
+prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
+	xelatex handouts/prefix.tex
+
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
 	-xelatex handouts/iso-jordning.tex
 	xelatex handouts/iso-jordning.tex
@@ -173,6 +177,11 @@ images.unlinked: images.avail images.linked
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
 
+# Kursplan
+kursplan.pdf: lectures/kursplan.tex
+	-xelatex lectures/kursplan.tex
+	xelatex lectures/kursplan.tex
+
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
 	xelatex lectures/ac1.tex
@@ -199,5 +208,4 @@ docker-build:
 
 clean: SHELL=/bin/bash -O extglob -c
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs 
-
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin|versionsnummer).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs *.xml

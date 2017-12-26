@@ -1,8 +1,7 @@
-# Texifiering av OCRad text.
+# Texifiering av OCR:ad text
 
-Det är en hel del jobb för att konvertera den OCRade texten från Koncept till
-någorlunda vettig LaTeX. Med tiden har detta utvecklats även till format-
-regler.
+Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
+någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
 1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
     vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
@@ -45,7 +44,7 @@ regler.
 
 8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
     `\emph{}`.
-    Nyckelbegrepp skall i förekommande fall även skrivas i sin engeslka form,
+    Nyckelbegrepp skall i förekommande fall även skrivas i sin engelska form,
     för att underlätta sökning på nätet och läsande av engelsk litteratur.
     Exempel:
     \emph{strömtransformator} (eng. \emph{current transformer})
@@ -54,11 +53,11 @@ regler.
     samband, de läggs inom `\begin{quote}\emph{ och }\end{quote}`. Ibland
     behöver radmatning ske och då får man göra separata `\emph{}` som i det här
     exemplet:
-    
+
     ```latex
     \begin{quote}
     \emph{Lika laddningar stöter bort varandra.}
-    
+
     \emph{Olika laddningar drar varandra till sig.}
     \end{quote}
     ```
@@ -85,7 +84,7 @@ regler.
     eller efter det refererande stycket) kan man köra longtable
     på. Slå upp det på webben eller i hundboken. Longtable kan
     sidbrytas snyggt.
-    
+
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
 
@@ -152,15 +151,15 @@ regler.
     "I bild 3.16 illustreras..."
     "... illustreras av bild 3.17"
 
-21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som UNICODE tecken
+21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
     utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
-    u) i Math-environment. Det visar sig att UNICODE inte rendrerar rätt för
+    u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
 22. Tecknet för grader ° skall kodas som \degree.
     Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med ~
     för annars kommer mellanslaget kernas bort.
-    För grader celsius behövs ett mellanslag innan C, dvs. \degree C
+    För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
@@ -180,8 +179,10 @@ regler.
 
     Enheter indexeras givetvis med sin förkortning inom parantes både separat
     och i gruppen enheter:
-    \index{Farad (F)}
-    \index{enheter!Farad (F)}
+    \index{farad (F)}
+    \index{enheter!farad (F)}
+    
+    Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
@@ -196,8 +197,8 @@ regler.
 
     Reaktansen beror på kapacitans, se kapitel \ref{kapacitans}
 
-25. Referens till externa dokument, böcker mm skall göras och det uppmuntras.
-    De läggs till i filen koncept.bib i BiBTeX format, och en nyckeln-fras
+25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
+    De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
     läggas med i referensen. Man refererar sedan med \cite{} för att peka på
     hela dokumentet:
@@ -210,7 +211,7 @@ regler.
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
-    på person-namn, t.ex. ohm. Följ SI-brochyrens stil.
+    på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
 27. Konstanter skall anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precission.
@@ -224,11 +225,21 @@ regler.
     de har en naturlig kontext att definieras i, för de fallen skall förkortning
     användas och definitionen där det är ett bra kontext.
 
-    Tankesträck mellan förkortning och uttydning skall INTE användas.
+    Tankstreck mellan förkortning och uttydning skall INTE användas.
 
     Exempel:
     Vector Network Analyzer (VNA)
 
-29. Tankesträck, kodas med --, skall användas sparsamt.
+29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
+    utom i parenteser och tabeller.
+
+31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+
+32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
+
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
+    Skriv "satellitmottagare" i stället för "satellit-mottagare". 
+    Bindestreck ska dock användas i sammansättningar med förkortningar;
+    skriv "FM-detektor" istället för "FM detektor".
