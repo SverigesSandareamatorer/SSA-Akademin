@@ -18,19 +18,6 @@ omvandlar dem till analoga signaler igen.
 
 Om man har en särskilt processor för att göra det kallar man den för en
 \emph{Digital Signalprocessor (DSP)}.
-<<<<<<< HEAD
-Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för 
-speciellt ändamål, som inte kan programmeras på normalt sätt som en processor. 
-Det är fortfarande \emph{Digital Signalbehandling}, men den används nu mer mest 
-för de delar av signlbehandlingen där man behöver utföra samma standardiserade 
-jobb fort och effektivt. 
-En processor kan i stället utföra de mindre frekventa jobben som därmed kan 
-tillåtas vara mer komplexa.
-
-\marginnote{En GPS-mottagare är ett exempel på en sådan mottagare där dedikerad 
-hårdvara hanterar många miljoner sampel per sekund, men som reducerar dem till 
-några värden per millisekund som sedan behandlas vidare i en processor.}
-=======
 Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för speciellt
 ändamål, som inte kan programmeras på normalt sätt som en processor. Det är fortfarande
 \emph{Digital Signalbehandling}, men den används nu mer mest för de delar av
@@ -42,7 +29,6 @@ tillåtas vara mer komplexa.
 En GPS-mottagare är ett exempel på en sådan mottagare där dedikerad hårdvara
 hanterar många miljoner sampel per sekund, men som reducerar dem till några värden
 per millisekund som sedan behandlas vidare i en processor.
->>>>>>> master
 
 För att kunna förstå detta behöver vi gå igenom grunderna i konvertering av
 signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
@@ -61,14 +47,8 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
 
-<<<<<<< HEAD
-Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar 
-spänning och ström kontinuerligt så snabbt att vi kan hantera det fulla 
-radiospektrumet och mer därtill.
-=======
 Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar spänning och
 ström kontinuerligt så snabbt att vi kan hantera det fulla radiospektrumet och mer därtill.
->>>>>>> master
 Detta fungerar dock inte så väl i den digitala världen.
 Där vill vi dels ha värden i digital form, så vi behöver omvandla våra 
 spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
@@ -109,17 +89,11 @@ Har man t.ex. ett kvantiserings-steg på 0,1\,V så blir 0 till 0,1\,V tolkat so
 Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
 Denna sista del i att omvandla de kvantiserade talen till värden kallas
-<<<<<<< HEAD
 \emph{Pulse Coded Modulation (PCM)}.
 Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i 
 kvantiseringstrappan, vilket nyttjats för dynamikkompression i telefonisystem.
 % Datakompression ändrad till dynamikkomression
 % SM0UEI
-=======
-\emph{Pulse Code Modulation (PCM)}.
-Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i
-kvantiseringstrappan, vilket nyttjats för datakompression i telefonisystem.
->>>>>>> master
 
 \subsection{Minsta samplingsfrekvensen}
 \marginnote{HAREC a.\ref{HAREC.a.1.10.2}\label{myHAREC.a.1.10.2}}
