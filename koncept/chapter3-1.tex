@@ -160,15 +160,11 @@ det är fråga om en växelströmskrets.
 \index{kondensator!parallellkopplade}
 \index{parallellkoppling!kondensatorer}
 
-\begin{figure*}[ht]
-\begin{center}
-  %%\begin{wrapfigure}[18]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-05.pdf}
+\begin{marginfigure}%[18]{R}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-05.pdf}
   \caption{Parallellkopplade kondensatorer}
   \label{fig:BildII3-05}
-  %%\end{wrapfigure}
-\end{center}
-\end{figure*}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-05} visar parallelkopplade kondensatorer.
 I stället för att använda en enda kondensator kan man parallellkoppla flera
@@ -179,21 +175,23 @@ enskilda kapacitanserna.
 
 \[C = C_1 + C_2 + C_3 + \cdots C_n\]
 
-\textbf{Räkneexempel:}
-\begin{enumerate}
-\item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
-  \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 5 + 10 \\
-    &= 15\ \mu F
-  \end{align*}
-\item \(C_1 = 1\ nF \quad C_2 = 5\ pF \quad C =\ ?\)
-  \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 1 + 0,005 \\
-    &= 1,005\ nF
-  \end{align*}
-\end{enumerate}
+\noindent Räkneexempel 1.
+
+Vi har två kondensatorer med följande värden: \( C_1 =
+\SI{5}{\micro\farad}, \quad C_2 = \SI{10}{\mu F} \) och vi söker den
+resulterande kapacitansen vid parallellkoppling.
+\[   C_{\text{total}} = C_1 + C_2 = \SI{5}{\mu F} +
+     \SI{10}{\mu\farad} = \SI{15}{\mu F}   \]
+
+
+
+\noindent Räkneexempel 2.
+Vi har två kondensatorer med följande värden: \(C_1 =
+\SI{1}{\nano\farad},\quad C_2 = \SI{5{\pico\farad} \) vad blir den
+  resulterande kapacitansen vid parallellkoppling?
+\[   C_{\text{total}} = C_1 + C_2 = 1 + 0,005 = 1,005\unit{\nano\farad}
+     \SI{10}{\mu\farad} = \SI{15}{\mu F} \]
+ 
 
 \subsection{Seriekopplade kondensatorer}
 \marginnote{HAREC a.\ref{HAREC.a.3.1.1e}\label{myHAREC.a.3.1.1e}}
