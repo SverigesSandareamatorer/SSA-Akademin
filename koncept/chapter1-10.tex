@@ -17,12 +17,13 @@ digitalt i exempelvis en processor eller programmerbar logik (FPGA) och sedan
 omvandlar dem till analoga signaler igen.
 
 Om man har en särskilt processor för att göra det kallar man den för en
-\emph{Digital Signalprocessor (DSP)}.
-Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för speciellt
-ändamål, som inte kan programmeras på normalt sätt som en processor. Det är fortfarande
-\emph{Digital Signalbehandling}, men den används nu mer mest för de delar av
-signlbehandlingen där man behöver utföra samma standardiserade jobb fort och
-effektivt.
+\emph{Digital Signalprocessor (DSP)}. Behandlingen kan även göras av dedikerad
+logik, alltså logik avsedd för speciellt ändamål, som inte kan programmeras på
+normalt sätt som en processor.
+Det är fortfarande \emph{Digital Signalbehandling}, men den används nu mer mest
+för de delar av signlbehandlingen där man behöver utföra samma standardiserade
+jobb fort och effektivt.
+
 En processor kan i stället utföra de mindre frekventa jobben som därmed kan
 tillåtas vara mer komplexa.
 
@@ -47,15 +48,17 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
 
-Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar spänning och
-ström kontinuerligt så snabbt att vi kan hantera det fulla radiospektrumet och mer därtill.
+Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar
+spänning och ström kontinuerligt så snabbt att vi kan hantera det fulla
+radiospektrumet och mer därtill.
 Detta fungerar dock inte så väl i den digitala världen.
 Där vill vi dels ha värden i digital form, så vi behöver omvandla våra 
 spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
 
 \emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att 
 göra ett urval.
-Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en jämn takt,
+Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en
+jämn takt,
 \emph{samplingstakten} (eng. \emph{sample rate}).
 Denna benämner vi ofta med \(f_S\) och begreppet \emph{samplingsperiodtid}
 \(T_S=\frac{1}{f_S}\) används också.
@@ -88,12 +91,19 @@ Har man t.ex. ett kvantiserings-steg på 0,1\,V så blir 0 till 0,1\,V tolkat so
 0, 0,1--0,2\,V tolkat som 1 osv.
 Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
-Denna sista del i att omvandla de kvantiserade talen till värden kallas
-\emph{Pulse Coded Modulation (PCM)}.
-Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i 
-kvantiseringstrappan, vilket nyttjats för dynamikkompression i telefonisystem.
-% Datakompression ändrad till dynamikkomression
-% SM0UEI
+Denna sista del i att omvandla de kvantiserade talen till värden
+kallas \emph{Pulse Coded Modulation (PCM)}. Omvandlingen kan även ske
+olinjärt, alltså med olika avstånd mellan stegen i
+kvantiseringstrappan, vilket nyttjats för datakompression\footnote{I
+  litteraturen beskrivs detta ibland som dynamikkompression och det är
+  det egentligen också. Termen compander myntades någonstans här för
+  att beskriva \emph{compressor---expander} men det är i praktiken
+  antalet databitar som reduceras från 14 bitar som egentligen behövs
+  för att nå de ca 80 dB dynamik man behöver i telefonisystem till de
+  8 bitar i PCM-länken som används.}
+telefonisystem.
+% Förklaring till varför det kallas compander eller dynamikkompressor i
+% litteraturen. /SM0UEI
 
 \subsection{Minsta samplingsfrekvensen}
 \marginnote{HAREC a.\ref{HAREC.a.1.10.2}\label{myHAREC.a.1.10.2}}
