@@ -372,17 +372,12 @@ stor överföringssäkerhet, lång räckvidd, enkla sändare.
 
 \subsubsection{Princip}
 
-Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller samma
-information.
+Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller
+samma information.
 
 Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
-<<<<<<< HEAD
-sätt. Numera är den s.k. filtermetoden i särklass vanligast och den enda som
-=======
-sätt.
-Numera är den så kallade filtermetoden i särklass vanligast och den enda som
->>>>>>> master
-behandlas här.
+sätt. Numera är den så kallade filtermetoden i särklass vanligast och den enda
+som behandlas här.
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-27.pdf}
@@ -400,7 +395,8 @@ Till skillnad från i A3E-signalen saknas dock bärvågen i DSB-signalen.
 För att även undertrycka det ena sidbandet före sändningen följs blandaren
 av ett bandpassfilter med bandbredd och frekvensläge för avsett sidband.
 
-Den signal som sänds ut innehåller därför endast ett sidband (\emph{Single Side Band}) eller på svensk ESB, \emph{enkelt sidband}.
+Den signal som sänds ut innehåller därför endast ett sidband (\emph{Single Side
+  Band}) eller på svensk ESB, \emph{enkelt sidband}.
 
 \paragraph{Exempel}
 
@@ -733,15 +729,13 @@ modulationsindex varierar med den modulerande frekvensen.
   Det gör man genom att variera resonansfrekvensen i den svängningskrets som
   styr oscillatorfrekvensen.
 
-\item Fasmodulation \emph{Phase Modulation} (PM) alstras vanligen genom att efter sändaroscillatorn
-  variera den modulerande signalens fasläge i förhållande till en omodulerad
-<<<<<<< HEAD
-  bärvåg --- så kallad fasmodulering.
-=======
-  bärvåg -- så kallad fasmodulering.
->>>>>>> master
-  Det gör man genom att variera resonansfrekvensen i en svängningskrets efter
-  oscillatorn, dvs. utan att påverka oscillatorfrekvensen.
+\item Fasmodulation \emph{Phase Modulation} (PM) alstras vanligen
+  genom att efter sändaroscillatorn variera den modulerande signalens
+  fasläge i förhållande till en omodulerad bärvåg --- så kallad
+  fasmodulering.
+  Det gör man genom att variera resonansfrekvensen i en
+  svängningskrets efter oscillatorn, dvs. utan att påverka
+  oscillatorfrekvensen.
 
 \item I båda fallen ändrar man alltså resonansfrekvensen i en svängningskrets i
   takt med frekvensen i den modulerande spänningen, men denna krets har
@@ -767,22 +761,16 @@ modulationsindex varierar med den modulerande frekvensen.
 \index{PAM}
 \index{PPM}
 
-Pulsmodulation används mest i mikrovågsområdet.
-Pulsmodulerade signaler sänds vanligen som en serie korta pulser åtskilda av
-relativt långa pauser utan modulering.
+Pulsmodulation används mest i mikrovågsområdet. Pulsmodulerade signaler sänds
+vanligen som en serie korta pulser åtskilda av relativt långa pauser utan
+modulering.
 
 En typisk sändning kan bestå av pulser med en längd av 1 \(\mu\)s och en
-frekvens av 1000~Hz.
-Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
+frekvens av 1000~Hz. Toppeffekten på en pulssändning är därför mycket högre än
+dess medeleffekt
 
-<<<<<<< HEAD
-Före \emph{WARC 79} var symbolen för all pulssändning P, därefter används P 
-endast för omodulerade pulståg.
-=======
-Före WARC~79 var symbolen för all pulssändning P.
-Därefter används P endast för omodulerade pulståg.
-Annan pulsmodulation har följande symboler
->>>>>>> master
+Före WARC~79 var symbolen för all pulssändning P. Därefter används P endast för
+omodulerade pulståg. Annan pulsmodulation har följande symboler
 
 Annan pulsmodulation har följande symboler:
 
@@ -989,36 +977,28 @@ att mappa bitarna över till I- och Q-amplituder och faslägen via Isym- och
 Qsym-delarna av symboler.
 
 QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
-mikrovågslänkar och många andra moderna system såsom EDGE
-(efterföljaren till GSM med högre datatakt), UMTS när man kör
-höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
-symboler men i stället väldigt många parallellt fördelat över ett
-<<<<<<< HEAD
-större frekvensband. I mobiltelefonisystem använder man upp till
-QAM-64 i dag och i framtiden kommer man använda ännu högre ordningar 
-som QAM-256 och QAM-1024.
-=======
-större frekvensband.
-I mobiltelefonisystem använder man bland annat 64QAM och 256QAM.
->>>>>>> master
+mikrovågslänkar och många andra moderna system såsom EDGE (efterföljaren till
+GSM med högre datatakt), UMTS när man kör höghastighet (HSPA) liksom i LTE där
+man kör relativt långsamma symboler men i stället väldigt många parallellt
+fördelat över ett större frekvensband. I mobiltelefonisystem använder man upp
+till QAM-64 i dag och i framtiden kommer man använda ännu högre ordningar som
+QAM-256 och QAM-1024.
 
-Mikrovågslänkar använder upp till 2048QAM. En fördel med
-QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
-olika symbolpositionerna, och därmed kan också modulationen anpassas
-till störningen. Detta nyttjas av många moderna modulationssystem så
-att QAM-modulationen anpassas utifrån mottagarens rapportering om
-störning.  Denna dynamiska anpassning gör att kommunikationen kan
+Mikrovågslänkar använder upp till 2048QAM. En fördel med QAM-moduleringen är att
+det är enkelt att få samma avstånd mellan de olika symbolpositionerna, och
+därmed kan också modulationen anpassas till störningen. Detta nyttjas av många
+moderna modulationssystem så att QAM-modulationen anpassas utifrån mottagarens
+rapportering om störning. Denna dynamiska anpassning gör att kommunikationen kan
 upprätthållas även om kapaciteten tillåts variera.
 
 \subsection{Digital modulation}
 \marginnote{HAREC a.\ref{HAREC.a.1.8.9}\label{myHAREC.a.1.8.9}}
 \index{digital modulation}
 
-Digital modulation innebär också att signalerna som sänds har lite
-andra egenskaper än de analoga. Istället för varierande
-spänningsnivåer som för till exempel tal skickar vi diskreta fixa
-nivåer, ofta i form av bitar. Det är därför lämpligt att diskutera
-några grundläggande begrepp kring digital modulation.
+Digital modulation innebär också att signalerna som sänds har lite andra
+egenskaper än de analoga. Istället för varierande spänningsnivåer som för till
+exempel tal skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är därför
+lämpligt att diskutera några grundläggande begrepp kring digital modulation.
 
 \subsubsection{Bit rate}
 \marginnote{HAREC a.\ref{HAREC.a.1.8.9a}\label{myHAREC.a.1.8.9a}}
@@ -1033,23 +1013,23 @@ Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit (b)}),
 denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
 (eng. \emph{bit rate}) i bitar per sekund.
 
-Ofta brukar vi referera till informationsmängden i mängden \emph{byte (B)}
-som t.ex. att en fil är \SI{2}{kB} eller en bild är \SI{1,25}{MB}. Då en byte 
-innehåller 8 bitar, så motsvarar det \SI{16}{kbit} respektive \SI{10}{Mbit}.
-I dagligt tal pratar vi då om storleken på en fil.
+Ofta brukar vi referera till informationsmängden i mängden \emph{byte (B)} som
+t.ex. att en fil är \SI{2}{kB} eller en bild är \SI{1,25}{MB}. Då en byte
+innehåller 8 bitar, så motsvarar det \SI{16}{kbit} respektive \SI{10}{Mbit}. I
+dagligt tal pratar vi då om storleken på en fil.
 % kb och kB bör undvikas i samma informationstext då de är så snarlika och 
 % det är lätt att göra fel (tekniskt lexicon). I stället förordas att man 
 % använder kB för kilobyte och kbit för kilobit.
 
-Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
-om i termer av \emph{bit rate} som \SI{10}{Mbit/s} (ofta skrivet \emph{bps --- 
-bits per second}), dvs. man klarar av att överföra upp till 10 miljoner bitar 
-per sekund.
+Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata om
+i termer av \emph{bit rate} som \SI{10}{Mbit/s} (ofta skrivet \emph{bps --- bits
+  per second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per
+sekund.
 
-Det är ofta som man talar om den råa överföringskapaciteten, medan den
-verkliga överföringskapaciteten för nyttotrafik är något lägre på grund av
-olika former av packningsformat och protokollbehov, så kallad \emph{overhead}.
-Man ska därför vara noga med att skilja dessa åt.
+Det är ofta som man talar om den råa överföringskapaciteten, medan den verkliga
+överföringskapaciteten för nyttotrafik är något lägre på grund av olika former
+av packningsformat och protokollbehov, så kallad \emph{overhead}. Man ska därför
+vara noga med att skilja dessa åt.
 
 \subsubsection{Symboltakt --- Baud rate}
 \marginnote{HAREC a.\ref{HAREC.a.1.8.9b}\label{myHAREC.a.1.8.9b}}
@@ -1200,25 +1180,19 @@ binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
 kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-<<<<<<< HEAD
 upptäckt. Det är med andra ord inte en särdeles stark checksumma. Paritet
 används till exempel i seriekommunikation så som \emph{RS-232}\footnote{RS-232 
 är en standard för seriekommunikation som var mycket vanlig förr i tiden och 
 fortfarande används i många sammanhang även om den mer och mer blivit ersatt av 
 nyare standarder och ibland även seriekommunikation där RS-232 emuleras över 
 USB.}. 
-=======
-upptäckt.
-Det är med andra ord inte en särdeles stark checksumma.
-Paritet används till exempel i seriekommunikation så som RS-232.
->>>>>>> master
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
-typer av fel. För lite större meddelanden är det vanligt att summera bytes
-till en checksumma antingen additivt eller med XOR. För större meddelanden
-används en lite mer intrikat metod som heter \emph{Cyclic Redundancy Check (CRC)}
-där man återmatar överskjutande del på checksumman till sig själv och får en
-starkare kod den vägen. CRC används till exempel i Ethernet.
+typer av fel. För lite större meddelanden är det vanligt att summera bytes till
+en checksumma antingen additivt eller med XOR. För större meddelanden används en
+lite mer intrikat metod som heter \emph{Cyclic Redundancy Check (CRC)} där man
+återmatar överskjutande del på checksumman till sig själv och får en starkare
+kod den vägen. CRC används till exempel i Ethernet.
 
 \subsubsection{Omsändning}
 \marginnote{HAREC a.\ref{HAREC.a.1.8.10b}\label{myHAREC.a.1.8.10b}}
@@ -1253,16 +1227,15 @@ ta för mycket tid eller om det helt enkelt inte finns någon kommunikation frå
 mottagaren till sändaren, till exempel för satellitmottagare.
 
 En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
-<<<<<<< HEAD
-sänder samma tecken två gånger. Liknande används i Bluetooth där 
-meddelandet sänds tre gånger, varvid man kan göra majoritetsröstning.
-=======
 sänder samma tecken två gånger.
 Liknande används i Bluetooth där meddelandet sänds tre gånger, varvid man kan
 göra majoritetsröstning.
->>>>>>> master
 
-Andra system för FEC\footnote{FEC betyder Forward Error Correction och innebär att man stoppar in redundans i form av paritetsinformation i datat som skickas så att enstaka fel kan korrigeras av mottagaren helt utan omsändningar.} är Hamming-koder, paritets-paket, Reed-Solomon (RS), kombinationer av dessa och så kallad \emph{turbokodning} med mera.
+Andra system för FEC\footnote{FEC betyder Forward Error Correction och innebär
+  att man stoppar in redundans i form av paritetsinformation i datat som skickas
+  så att enstaka fel kan korrigeras av mottagaren helt utan omsändningar.} är
+Hamming-koder, paritets-paket, Reed-Solomon (RS), kombinationer av dessa och så
+kallad \emph{turbokodning} med mera.
 
 \subsection{Digitala sändningsslag}
 
