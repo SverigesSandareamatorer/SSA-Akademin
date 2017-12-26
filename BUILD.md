@@ -111,7 +111,7 @@ installeras.
 
     sudo apt-get update; 
     sudo apt-get install texlive texlive-lang-european \
-        texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
+        texlive-latex-extra texlive-pictures texlive-math-extra
 
 ### LATEXML
 

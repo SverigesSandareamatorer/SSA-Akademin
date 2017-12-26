@@ -29,7 +29,7 @@ kan behöva isoleras.
 Hur god isolationen är beror kraftigt på frekvensen, och de åtgärder man gör
 bör anpassas för hur god isolation man behöver eller vill ha för olika
 frekvenser.
-Man kan till exempel vilja ha god isolation vid sändar- och mottagarfrekvensen 14~MHz,
+Man kan t.ex. vilja ha god isolation vid sändar- och mottagarfrekvensen 14~MHz,
 men vill inte ha galvanisk isolation för det gemensamma 12~V kraftaggregatet.
 
 \section{Jordning}
@@ -62,7 +62,7 @@ Det är helt enkelt en galvanisk sammankoppling.
 
 Många gånger kallas den referenspotentialen för \emph{jordpotential} för att
 det är väldigt behändigt att använda jorden som referens, helt enkelt gräva ned
-en ledare i marken, till exempel jordspett (eng. \emph{earth electrode})
+en ledare i marken, t.ex. jordspett (eng. \emph{earth electrode})
 \cite[kap 3.1.2]{K27-1991}, för att den vägen få tillgång till jordpotentialen.
 
 Begreppen jord och jordning är dock ofta missförstådda då det finns en övertro
@@ -94,7 +94,7 @@ finnas skillnader.
 
 Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 \cite[kap 3]{ott1988} mellan ett antal strömförbrukare.
-Detta förekommer till exempel i en serie av eluttag matade från samma säkring
+Detta förekommer t.ex. i en serie av eluttag matade från samma säkring
 eller flera eluttag i en skarvdosa.
 
 \begin{figure}
@@ -216,10 +216,10 @@ Skyddsjorden har egentligen det som sitt huvudsyfte, men ger ofta en bra
 jordreferens.
 
 I apparater och även inne på kretskort kan man ha parallellkoppling.
-Det är även känt som \emph{stjärnjordning} (eng. \emph{star grounding})
-eftersom kopplingsschemat ser ut att ha en stjärna från en gemensam punkt.
+Det är även känt som \emph{stjärnjordning} (eng. \emph{star grounding}) eftersom
+kopplingsschemat ser ut att ha en stjärna från en gemensam punkt.
 Det kan vara nyttigt att isolera jord för analoga signaler från digitala eller
-rent av reläer, PA med mera.
+rent av reläer, PA m.m.
 Man försöker sätta stjärnan direkt vid anslutningen till kraftaggregatet för
 att hålla dem så gemensamt som möjligt men med så lite påverkan av
 seriejordning som möjligt.
@@ -284,7 +284,7 @@ Inte helt sällan råkar dock isolationen bli ett bekymmer antingen direkt eller
 genom att det stör funktionen indirekt.
 
 Ett försök att minska störningen är förstås att försöka minska \(Z_1\) och
-\(Z_2\) genom att göra motståndet mindre, till exempel genom kortare kablar eller
+\(Z_2\) genom att göra motståndet mindre, t.ex. genom kortare kablar eller
 grövre kablar.
 Detta fungerar givetvis, men enbart till en viss praktisk gräns.
 
@@ -375,7 +375,7 @@ impedansen \(Z_{GND}\) samtidigt som kapacitansen gör att impedansen
 \(Z_{iso2}\) sjunker varvid för högre frekvenser kommer \(Z_{load}\) vara mer
 kopplad lokalt mot \(Z_{2}\) snarare än \(Z_{1}\).
 
-Det här scenariot liknar till exempel det hos en normal hemmastereo och ändå kan det
+Det här scenariot liknar t.ex. det hos en normal hemmastereo och ändå kan det
 uppstå \emph{jordbrum} i denna koppling.
 Det finns flera skäl.
 Ett skäl är att transformatorer visserligen erbjuder en galvanisk isolation,
@@ -398,7 +398,7 @@ För att isolationsjordning ska fungera måste alla kontakter vara isolerade
 från chassit.
 Detta gäller även signaljord som inte får ha kontakt med chassi inuti apparaten.
 Man behöver alltså försäkra sig om bra isolationsavstånd, vilket väldigt lätt
-kan missas av att man har en skruv som råkar skrapa sig igenom skyddslack till exempel
+kan missas av att man har en skruv som råkar skrapa sig igenom skyddslack t.ex.
 
 En annan nackdel med isolationsjordning är att den gör det svårare att designa
 för god EMC-täthet.
@@ -484,7 +484,7 @@ försöker utjämna potentialen mellan de bägge jordanslutningarna, som då kom
 närmare varandra.
 Det är impedansen \(Z_{GND}\) på kabeln som kommer att avgöra hur stor strömmen
 blir och hur nära de kommer varandra spänningsmässigt.
-Denna ström kan bli ansenlig och har man då en kabel som har till exempel tunn skärm
+Denna ström kan bli ansenlig och har man då en kabel som har t.ex. tunn skärm
 så kommer kabeln helt enkelt bli varm.
 Det är därför lämpligt att lägga en jordkabel parallellt med signalkabeln, för
 att låta den med sin större tvärsnittsarea ta merparten av strömmen och därmed
@@ -503,7 +503,7 @@ Ett vanligt problem är om man låter jordströmmarna gå genom kretskort, vilke
 gör att man skapar lokala problem med seriejordning.
 Man ska se till att jordströmmarna knyter hårt till chassit, men svagt genom
 kortet för att på det sättet få bästa möjliga isolation.
-Denna princip är också lämplig för att kunna hantera till exempel ESD-skador.
+Denna princip är också lämplig för att kunna hantera t.ex. ESD-skador.
 
 En annan fördel är att man bygger en vana att jorda allt, och för varje
 kompletterande jordning gör man systemet starkare.
@@ -679,7 +679,7 @@ mottagna spänningen \(U_{g,in}\) och den mottagna differentiella spänningen
 
 \(V_{in+} = V_{in+}-V_{in-}\)
 
-Ett sätt att illustrera skillnaden är till exempel med en transformator.
+Ett sätt att illustrera skillnaden är t.ex. med en transformator.
 En transformator med 1:1 lindning kopplas in mellan två balanserade signaler.
 Transformatorns primärlindning kommer att omvandla den differentiella spänningen
 \(V_d\) till en motsvarande spänning på utgången.
@@ -697,7 +697,7 @@ För högre frekvenser är kopplingen väldigt god och transformatorn gör ingen
 nytta för att undertrycka den gemensamma spänningen.
 
 Eftersom nyttosignalen är differentiell kan man ibland medvetet använda den
-gemensamma spänningen för att överföra matningsspänning till till exempel en mikrofon.
+gemensamma spänningen för att överföra matningsspänning till t.ex. en mikrofon.
 Denna form av matningsspänning kallas för \emph{fantommatning}
 (eng. \emph{phantom power}). En vanligt förekommande spänning är 48~V, som då
 symboliseras med P48.
@@ -754,7 +754,7 @@ strömmen från de bägge ledarna kommer att motverka varandra i utstrålat
 magnetfält medan den gemensamma strömmen samverkar och därför är det enbart
 den som ger ett utstrålat magnetfält.
 
-Det är därför man ofta hittar klumpar som sitter på kablar till till exempel skärmar.
+Det är därför man ofta hittar klumpar som sitter på kablar till t.ex. skärmar.
 Dessa klumpar är helt enkelt en ringkärna som förstärker kopplingen mellan
 ledarna för att undertrycka den gemensamma strömmen för RF och därmed minska
 störningen.
@@ -800,8 +800,8 @@ I_{DM} = & \dfrac{I_+ - I_-}{2}
 
 Precis som man har impedans på ingångar så har man det på ingångar i
 treledarsystem.
-Det som är den normala impedansen för en transmissionsledare till exempel är
-egentligen den differentiella impedansen, det vill säga förhållande mellan den
+Det som är den normala impedansen för en transmissionsledare t.ex. är
+egentligen den differentiella impedansen, dvs. förhållande mellan den
 differentiella spänningen och differentiella strömmen.
 Den gemensamma impedansen är på samma sätt förhållandet mellan gemensam
 spänning och gemensam ström
@@ -820,9 +820,9 @@ många megaohm eller högre, eftersom den är isolerad.
 \index{strömbalun}
 \index{obalans}
 
-Så här långt har huvudsakligen antagit att vi har balans, det vill säga att
-transformatorer, induktorer med mera är ideala och ger lika bra koppling till
-bägge sidor.
+Så här långt har huvudsakligen antagit att vi har balans, dvs. att
+transformatorer, induktorer m.m. är ideala och ger lika bra koppling till bägge
+sidor.
 Givetvis finns inte detta i verkligheten, och man har en obalans.
 Vid obalans får man en signal som är gemensam att läcka över till den som är
 differentiell och omvänt att differentiell läcker över till den gemensamma.
@@ -920,10 +920,10 @@ Utöver balun finns även unun (unbalanced-unbalanced) som gör
 impedanskonvertering enbart.
 
 Även om man har en bra balun riskerar man att få mantelströmmar, ty antennen
-kan vara av en obalanserad typ, till exempel Off-Center-Feed (OCF)/Windom, eller
-för att den kopplar olika med miljön som träd och torn med mera.
+kan vara av en obalanserad typ, t.ex. Off-Center-Feed (OCF)/Windom, eller
+för att den kopplar olika med miljön som träd och torn m.m.
 
 Att undvika att det går gemensam ström, även kallad \emph{mantelström} kan
 krävas av många olika anledningar, och det är viktigt dels för att få ut
-energin där den ska, det vill säga radierat ut i luften på ett korrekt sätt,
-men även av säkerhetsskäl så att inte utrustning eller personskada uppstår.
+energin där den ska, dvs. radierat ut i luften på ett korrekt sätt, men även
+av säkerhetsskäl så att inte utrustning eller personskada uppstår.

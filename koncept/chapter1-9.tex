@@ -1,11 +1,11 @@
 \section{Effekt och energi}
-\marginnote{HAREC a.\ref{HAREC.a.1.9}\label{myHAREC.a.1.9}}
+\textbf{HAREC a.\ref{HAREC.a.1.9}\label{myHAREC.a.1.9}}
 \label{effect och energi}
 \index{effekt}
 \index{energi}
 
 \subsection{Effekt i en sinusformad signal}
-\marginnote{HAREC a.\ref{HAREC.a.1.9.1}\label{myHAREC.a.1.9.1}}
+\textbf{HAREC a.\ref{HAREC.a.1.9.1}\label{myHAREC.a.1.9.1}}
 
 För beräkning av effekten av en sinusformad signal använder man effektivvärdet
 av spänning och ström.
@@ -17,15 +17,14 @@ av spänning och ström.
 \]
 
 \subsection{Effektändring uttryckt i dB}
-\marginnote{HAREC a.\ref{HAREC.a.1.9.2}\label{myHAREC.a.1.9.2}}
+\textbf{HAREC a.\ref{HAREC.a.1.9.2}\label{myHAREC.a.1.9.2}}
 \label{decibel}
 \index{dB}
 \index{dB!effekt}
 \index{effekt!dB}
 
 Måtten i det metriska systemet är alldagliga och ingen finner det märkligt att
-det till exempel går tio decimeter på en meter.
-Däremot är begreppet decibel ovant för många.
+det t.ex. går tio decimeter på en meter. Däremot är begreppet decibel ovant för många.
 
 I detta avsnitt förklaras det mycket användbara begreppet decibel.
 Decibel (dB) är en tiondedel av grundenheten Bel (B). Räkning med decibel grundas 
@@ -42,11 +41,11 @@ ström. Den bromsande faktorn kan vara en resistans R, induktans L, kapacitans C
 sammansatta nätverk av R, L och C. Det är också förluster i ledningar till exempel
 antennkablar (koaxialkablar) och liknande som ger förluster.
 
-\marginnote{Effektförstärkning innebär att en transistor, ett elektronrör eller
-annan så kallad aktiv komponent kan styra en större elektrisk ström och därmed
+\emph{Effektförstärkning} innebär att en transistor, ett elektronrör eller
+annan s.k. aktiv komponent kan styra en större elektrisk ström och därmed
 större effekt än den själv styrs med.
 Vad som förorsakar effektförändringarna går vi inte in på i detta sammanhang,
-utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.}
+utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.
 
 En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 
@@ -88,10 +87,10 @@ dämpning (-a) beroendet på vilket förtecken som sätts.
 	a\mathrm{[dB]} = 10\log \dfrac{P_\text{hög}}{P_\text{låg}}
 \end{equation*}
 
-Att addera och subtrahera värden på en logaritmisk skala motsvarar att
-multiplicera respektive dividera värden på en linjär skala.
+Att addera eller subtrahera värden på en logaritmisk skala, motsvarar att
+multiplicera resp. dividera värden på en linjär skala.
 Huvudskalorna på en räknesticka är logaritmiska.
-(Räknestickan är ett enkelt och förut mycket använt hjälpmedel).
+(Räknestickan är ett enkelt, förut mycket använt hjälpmedel).
 
 Med hjälp av nomogrammet i bild \ref{ellära-nomogram-db-effekt} kan en
 \textbf{effektändring}, uttryckt som kvot (effekterna dividerade med varandra),
@@ -114,25 +113,22 @@ Följande avrundade värden kan utläsas:
 \caption{Tabell över dB och kvotvärden}
 \end{table}
 
-\marginnote{Vid ökning fördubblas effekten för var 3:e dB och vid minskning
-halveras effekten för var 3:e dB.}
+\begin{quote}
+	\emph{Det vill säga --- vid ökning fördubblas effekten för var 3:e dB och vid
+		 minskning halveras effekten för var 3:e dB.}
+\end{quote}
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
 
 \begin{table}[h]
 \begin{tabular}{rllr}
-	                      Kvot av & Analys              & Skriv            & dB 
-	                      \\ \hline
+	                      Kvot av & Analys              & Skriv            & dB \\ \hline
 	\(P_\text{hög}/P_\text{låg}\) &                     &                  &  \\
-	                            1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 
-	                            \\
-	                           10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 
-	                           \\
-	                          100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 
-	                          \\
-	                        1 000 & 1 000 har 3 nollor  & \(3 \cdot 10\) = & 30 
-	                        \\
+	                            1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 \\
+	                           10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 \\
+	                          100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 \\
+	                        1 000 & 1 000 har 3 nollor  & \(3 \cdot 10\) = & 30 \\
 	                       10 000 & 10 000 har 4 nollor & \(4 \cdot 10\) = & 40
 \end{tabular}
 \caption{Tiotalslogaritmer och antal nollor}
@@ -148,25 +144,26 @@ men annorlunda än mellan effekter.
 En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
 jämförelse.
 
-Enligt Joules lag (effektlagen) är: 
-\[P = I^2 \cdot R \qquad P = U \cdot I\]
+Enligt Joules lag är \(P = I^2 \cdot R\)\qquad (\(P = U \cdot I\))
 
-Och därmed följer att:
-\[\dfrac{P_\text{hög}}{P_\text{l{\aa}g}} = 
-\dfrac{I_\text{hög}^2 \cdot R}{I_\text{låg}^2 \cdot R}\]
+således \(\dfrac{P_\text{hög}}{P_\text{l{\aa}g}} = 
+\dfrac{I_\text{hög}^2 \cdot R}{I_\text{låg}^2 \cdot R}\)
 
 $R$ kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
 En jämförelse uttryckt i dB kan endast göras under samma förutsättningar;
-här att impedanserna (resistanserna) är lika, således:
-\[\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\]
+här att impedanserna (resistanserna) är lika,
+
+således \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
 
 Effektförhållandet eller kvadratvärdet på strömförhållandet kan uttryckas
-logaritmiskt i dB:
-\[a\text{[dB]} = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\]
+logaritmiskt i B eller dB
 
-Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen:
-\[a\text{[dB]} = 20\log \dfrac{I_\text{hög}}{I_\text{låg}}\]
+\(a\text{[dB]} = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
+
+Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen
+
+\(a\text{[dB]} = 20\log \dfrac{I_\text{hög}}{I_\text{låg}}\)
 
 \subsection{Spänningsändring uttryckt i dB}
 \index{spänning!dB}
@@ -175,22 +172,23 @@ Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen:
 Förhållandet mellan spänningar kan uttryckas i dB på ett liknande sätt som med
 strömmar.
 
-Enligt Joules lag är:
-\[P = \frac{U^2}{R} \qquad (P = U \cdot I)\]
+Enligt Joules lag är \(P = \frac{U^2}{R}\) (\(P = U \cdot I\))
 
 Två effekter kan ställas i förhållande till varandra på följande sätt:
-\[
+\begin{equation*}
 \frac{P_\text{hög}}{P_\text{låg}}=
 \frac{U_\text{hög}^2 \cdot R}{U_\text{låg}^2 \cdot R}
-\]
+\end{equation*}
 
 \(R\) avkortas och efter omskrivning fås en formel som liknar den för strömmar
-\[
+
+\begin{equation*}
 	\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{U_\text{hög}^2}{U_\text{låg}^2}
-\]
-\[
+\end{equation*}
+
+\begin{equation*}
 	a\text{[dB]} = 20\log \dfrac{U_\text{hög}}{U_\text{låg}}
-\]
+\end{equation*}
 
 Med nomogrammet i bild \ref{ellära-nomogram-db-spänning} kan kvoten av en
 ström- eller spänningsändring omvandlas till decibel och tvärt om.
@@ -203,8 +201,6 @@ ström- eller spänningsändring omvandlas till decibel och tvärt om.
 
 Följande avrundade värden kan utläsas:
 
-\vspace{\baselineskip}
-
 \begin{tabular}{rcr|rcr|rcr}
 	0 dB & = &   1 &  1 dB & = & 1,1 &  2 dB & = & 1,2 \\
 	3 dB & = & 1,4 &  4 dB & = & 1,6 &  5 dB & = & 1,8 \\
@@ -212,15 +208,13 @@ Följande avrundade värden kan utläsas:
 	9 dB & = & 2,8 & 10 dB & = & 3,2 & 11 dB & = & 3,6
 \end{tabular}
 
-\vspace{\baselineskip}
-
-\marginnote{Vid ökning fördubblas strömmen resp. spänningen för var 6:e dB och 
-att vid minskning halveras strömmen resp. spänningen för var 6:e dB.}
+\begin{quote}\emph{
+Vid ökning fördubblas strömmen resp. spänningen för var 6:e dB och att
+vid minskning halveras strömmen resp. spänningen för var 6:e dB.
+}\end{quote}
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
-enligt följande tabell:
-
-\vspace{\baselineskip}
+enligt följande tabell.
 
 \begin{tabular}{rllr}
 Kvot av & Analys             & Skriv            & dB \\
@@ -233,8 +227,6 @@ Kvot av & Analys             & Skriv            & dB \\
 10 000 & 10 000 har 4 nollor & \(4 \cdot 20\) = & 80
 \end{tabular}
 
-\vspace{\baselineskip}
-
 \section{dB med miniräknare}
 
 När beräkningen av förstärkning eller dämpning uttryckt i dB görs med
@@ -242,11 +234,9 @@ miniräknare låter man räknaren sköta hela beräkningen.
 
 Med miniräknare skrivs uttrycken för dB så här:
 
-För effekt 
-\[   a\text{[dB]} = 10\log \dfrac{P_\text{ut}}{P_\text{in}}   \]
+För effekt \(a\text{[dB]} = 10\log \dfrac{P_\text{ut}}{P_\text{in}}\)
 
-För spänning 
-\[   a\text{[dB]} = 20\log \dfrac{U_\text{ut}}{U_\text{in}}   \]
+För spänning \(a\text{[dB]} = 20\log \dfrac{U_\text{ut}}{U_\text{in}}\)
 
 \emph{Lägg märke till hur värdena ut och in används i ekvationerna.}
 
@@ -256,67 +246,62 @@ förstärkning och negativa svar för dämpning.
 \section{Decibel över 1 mW vid 50 ohm [dB(m)]}
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av \SI{50}{\Omega}.
+med en impedans av 50\,\(\Omega\).
 För god anpassning väljs då koaxialkablarna mellan apparaterna med en
-karaktäristisk impedans av \SI{50}{\Omega}.
+karaktäristisk impedans av 50\,\(\Omega\).
 
-Det har utvecklats en praxis, att referensvärdet vid jämförelse av signalnivåer
-i radiosystem ska vara en milliwatt (\SI{1}{mW}) utvecklad i en belastning med
-impedansen \SI{50}{\Omega}.
-Signalnivåer över belastningen \SI{50}{\Omega} kan uttryckas i \unit{dB(m)} 
-eller ofta \unit{dBm}, där (m) står för milliwatt, varvid referenseffekten 
-1\,mW är 0\,dB(m) vid 50\,\(\Omega\).
+Det har utbildats en praxis, att referensvärdet vid jämförelse av signalnivåer
+i radiosystem ska vara en milliwatt (1~mW) utvecklad i en belastning med
+impedansen 50\,\(\Omega\).
+Signalnivåer över belastningen 50\,\(\Omega\) kan uttryckas i dB(m) eller ofta
+dBm, där (m) står för milliwatt, varvid referenseffekten 1\,mW är 0\,dB(m) vid
+50\,\(\Omega\).
 
-Det spänningsfall som bildas över belastningen \SI{50}{\Omega} vid effektnivån
-\SI{0}{dBm} är:
+Det spänningsfall som bildas över belastningen 50\,\(\Omega\) vid effektnivån
+0\,dB(m) är
 
-\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx 0,224 \text{ V}\]
+\[
+	U = \sqrt{P\cdot R} = 1\cdot 10^{-3} \cdot 50 \approx 0.224 \text{ V}
+\]
 
-Den ström som flyter genom belastningen 50~\(\Omega\) vid effektnivån 
-\SI{0}{dBm}
-är:
+Den ström som flyter genom belastningen 50~\(\Omega\) vid effektnivån 0~dB(m)
+är
 
-\[   I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx 
-	\SI{0,0045}{A} = \SI{4,5}{mA}   \]
+\[
+	I = \sqrt{P}{R} = \sqrt{1\cdot 10^{-3}}{50} = 0.0045 \text{ A} = 4.5 \text{ mA}
+\]
 
-Strömmen \SI{4,5}{mA} genom belastningen \SI{50}{\Omega} motsvarar således 
-\SI{0}{dBm}.
+Strömmen 4.5\,mA genom belastningen 50~\(\Omega\) motsvarar således 0\,dB(m).
 
-\marginnote{Varje annan effekt, spänningsfall och ström som uppstår vid en
-belastning av \SI{50}{\Omega} kan jämföras med respektive referensvärden 
-\SI{1}{mW}, \SI{0,22}{V} och \SI{4,5}{mA}. dBm är ett absolut och logaritmiskt 
-mått.}
+Varje annan effekt, spänningsfall och ström som uppstår vid en
+belastning av 50 \(\Omega\) kan jämföras med respektive referensvärden 1\,mW,
+0.22\,V och 4.5\,mA.
 
-%\subsection{Effekt}
-%
-%\begin{gather*}
-%	a [\unit] = 10 \log\frac{P_{[50 \Omega]}}{1[mW_{50 \Omega}]} \\
-%	P_{50} = 1 [mW] \cdot 10^{\dfrac{a}{10}}
-%\end{gather*}
-%
-%\subsection{Ström}
-%
-%\begin{gather*}
-%	0 dB(m) \approx 4,47 mA_{50} \\
-%	a [dB(m)] \approx 20 \log\frac{I_{50}}{4,47}
-%\end{gather*}
-%
-%\subsection{Spänning}
-%
-%\begin{gather*}
-%	0 dB(m) \approx 0,224 V_{50} \\
-%	a [dB(m)] \approx 20 \log\frac{U_{50}}{0,224} \\
-%	U_{50} \approx 0,224 \cdot 10^{\dfrac{a}{20}}
-%\end{gather*}
-%
-% Ovanstående verkar inte tillföra något annat än att upprepa det som tidigare
-% gåtts igenom varför jag har kommenterat bort det. Behöver också snyggas till 
-%%% om det skall vara med öht i kommande.
-% SM0UEI
+\emph{dB(m) är ett absolut och logaritmiskt mått.}
 
+\subsection{Effekt}
+
+\begin{gather*}
+	a [dB(m)] = 10 \log\frac{P_{[50 \Omega]}}{1[mW_{50 \Omega}]} \\
+	P_{50} = 1 [mW] \cdot 10^{\frac{a}{10}}
+\end{gather*}
+
+\subsection{Ström}
+
+\begin{gather*}
+	0 dB(m) = 4.47 mA_{50} \\
+	a [dB(m)] = 20 \log\frac{I_{50}}{4.47}
+\end{gather*}
+
+\subsection{Spänning}
+
+\begin{gather*}
+	0 dB(m) = 0.223 V_{50} \\
+	a [dB(m)] = 20 \log\frac{U_{50}}{0.223} \\
+	U_{50} = 0.223 \cdot 10^{\frac{a}{20}}
+\end{gather*}
 
 \section[Sambandet spänning och dB(m)]{Sambandet mellan spänning och dB(m)}
-
 \begin{tabular}{r|rp{1cm}r|r}
 	dB(m) &       V &  & dB(m) &     V \\ \cline{1-2}\cline{4-5}
 	-40   & 0,00224 &  &       &  \\
@@ -334,30 +319,20 @@ mått.}
 	8     &   0,562 &  & 18    & 1,776 \\
 	9     &   0,630 &  & 19    & 1,993 \\
 	10    &   0,707 &  & 20    & 2,236
-\end{tabular}\\
+\end{tabular}
 
-\marginnote{Effektnivåer över en belastning kan också uttryckas i dB(W) eller 
-dBW, där [W] i uttrycket står för watt. Referenseffekten är då \SI{1}{W}, dvs. 
-\SI{0}{dBW}. 
-Liksom med \unit{dBm} anges impedansen i den belastning, som effekten utvecklas 
-över.
-
-Om man vill omvandla från dBm till dBW eller tvärt om så är skillnaden dem 
-mellan exakt 30 dB. Detta för att \SI{1}{W} är \num{1000} ggr större än 
-\SI{1}{mW} vilket motsvarar 30 dB. 
-
-Därmed är \SI{0}{dBW} = \SI{30}{dBm} och \SI{0}{dBm} = \SI{-30}{dBW}.}
+Effektnivåer över en belastning kan också uttryckas i dB(W), där (W)
+står för watt. Referenseffekten är då 1~W, dvs. 0~dB(W).
+Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
 \subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
-\marginnote{HAREC a.\ref{HAREC.a.1.9.3}\label{myHAREC.a.1.9.3}}
+\textbf{HAREC a.\ref{HAREC.a.1.9.3}\label{myHAREC.a.1.9.3}}
 
 Ett räkneexempel på effektändringar:
 
-Fråga: Vi har en enkel sändaranläggning med ett drivsteg som matas med 
-\SI{10}{W} HF.
-
-Drivsteget förstärker med \SI{6}{dB}. Vidare har vi ett effektslutsteg som 
-förstärker med \SI{10}{dB}. Antennkabeln dämpar med \SI{1}{dB}.
+Fråga: Vi har en enkel sändaranläggning med ett drivsteg med en in effekt av 10~W.
+Drivsteget förstärker med 6~dB. Vidare har vi ett effektslutsteg som förstärker
+med 10~dB. Antennkabeln dämpar med 1~dB.
 
 Med vilken effekt matas själva antennen?
 
@@ -366,15 +341,14 @@ Svar: (två sätt att lösa uppgiften)
 \begin{enumerate}
 \item Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och
 kabeln dämpar \(1/1,25 = 0,8\) gånger. Antennen matas då med
-\(10 \cdot 4 \cdot 10 \cdot 0,8 = \SI{320}{W}\)
-
+\(10 \cdot 4 \cdot 10 \cdot 0,8 = 320\ W\).
 \item Drivstegets 6~dB plus slutstegets 10~dB minus antennkabelns 1~dB = 15~dB.
-15~dB är \(10 + \SI{5}{dB}\) dvs. \(10 \cdot 3,2 = \SI{32}{ggr}\). Antennen 
-matas med \(\SI{10}{W} \cdot 32 = \SI{320}{W}\)
+15~dB är \(10 + 5\ dB\) dvs. \(10 \cdot 3,2 = 32\ ggr\). Antennen matas med
+\(10\ W \cdot 32 = 320\ W\).
 \end{enumerate}
 
 \subsection{Impedansanpassning}
-\marginnote{HAREC a.\ref{HAREC.a.1.9.4}\label{myHAREC.a.1.9.4}}
+\textbf{HAREC a.\ref{HAREC.a.1.9.4}\label{myHAREC.a.1.9.4}}
 \index{impedansanpassning}
 \index{impedans!anpassning}
 
@@ -390,56 +364,66 @@ För att förenkla det hela antar vi nu att en sändare med den inre resistansen
 Målet med anpassningen är att finna det optimala förhållandet mellan
 sändarresistansen och antennresistansen för att kunna överföra maximal effekt.
 Vi har de två ytterlighetsfallen obelastad sändare respektive kortsluten
-sändare. Sändarens elektromotoriska kraft (EMK) betecknas som \(E\ [\unit{V}]\) 
-och sändarens utspänning som \(U\ [\unit{V}]\).
+sändare. Sändarens elektromotoriska kraft (EMK) betecknas som \(E\ [V]\) och
+sändarens utspänning som \(U\ [V]\).
 
 Fall 1.
 En obelastad sändare avger ingen ström när ingen antenn eller en med oändligt
 stor resistans har anslutits.
 Alltså vid obelastad sändare:
-\[   	R_a = \infty \qquad I = 0 \qquad U = E   \]
+
+\[
+	R_a = \infty \qquad I = 0 \qquad U = E
+\]
 
 Fall 2.
-När sändarutgången är kortsluten, det vill säga belastningen
-(antennresistansen) är noll ohm, avger sändaren en ström som beror av EMK och
-inre resistans.
+När sändarutgången är kortsluten, dvs. belastningen (antennresistansen) är
+noll ohm, avger sändaren en ström som beror av EMK och inre resistans.
 Eftersom sändarutgången är kortsluten är utspänningen \(U\) noll.
 Alltså vid kortsluten sändare:
-\[   R_a = 0 \qquad I = \dfrac{E}{R_i} \qquad U = O	\]
+
+\[
+	R_a = 0 \qquad I = \dfrac{E}{R_i} \qquad U = O
+\]
 
 I båda ytterlighetsfallen är den effekt som omsätts i \(R_a\) lika med noll.
 För att få ut någon effekt måste man alltså söka ett värde på \(R_a\) som
 ligger mellan ytterlighetsvärdena.
 
 Enligt formeln för spänningsdelare är utspänningen
-\[   U = E \cdot \dfrac{R_a}{R_a+R_i}	\]
+
+\[
+	U = E \cdot \dfrac{R_a}{R_a+R_i}
+\]
 
 Formeln för uteffektens effektivvärde är
-\[   P_{ut} = \dfrac{U^2}{R_a} 	\]
+
+\[
+	P_{ut} = \dfrac{U^2}{R_a}
+\]
 
 Efter insättning får man
-\[   P_{ut} = \dfrac{E^2 \cdot R_a}{(R_a + R_i)^2}   \]
 
-\marginnote{För att finna det optimala förhållandet mellan \(R_i\) och \(R_a\), 
-det vill säga när \(R_a\) tar upp maximal effekt, måste man differentiera 
-formeln med \(d\ P_a/d\ R_a\), men vi hoppar över denna utflykt i matematiken.}
+\[
+	P_{ut} = \dfrac{E^2 \cdot R_a}{(R_a + R_i)^2}
+\]
 
-Vi konstaterar att \emph{maximal effektöverföring sker när \(R_i = R_a\)}. 
-Detta betyder att generatorns impedans skall vara lika stor som lastens 
-impedans om maximal effektöverföring skall ske. 
+För att finna det optimala förhållandet mellan \(R_i\) och \(R_a\), dvs. när
+\(R_a\) tar upp maximal effekt, måste man differentiera formeln med \(d\ P_a/d\ R_a\), men vi hoppar över denna utflykt i matematiken.
 
-Det är därför misanpassning försämrar både mottagning och sändning eftersom den 
-effekt mottagaren ser eller sändaren kan leverera till själva antennen minskar 
-vid missanpassning.
+I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker när
+\(R_i = R_a\)}. 
 
 \subsection{Förhållandet mellan in- och uteffekt uttryckt som procent verkningsgrad}
-\marginnote{HAREC a.\ref{HAREC.a.1.9.5}\label{myHAREC.a.1.9.5}}
+\textbf{HAREC a.\ref{HAREC.a.1.9.5}\label{myHAREC.a.1.9.5}}
 \index{verkningsgrad}
 
-Antag att en antennkabel har en effektförlust av \SI{1}{dB}.
-Det innebär en effektdämpning av \num{1,25} gånger, dvs. \num{0,8}.
-Nu matar vi in \SI{10}{W} i kabeln och får alltså ut \SI{8}{W}.
-
+Antag att en antennkabel har en effektförlust av 1\,dB.
+Det innebär en effektdämpning av 1,25 gånger, dvs. 0,8.
+Nu matar vi in 10\,W i kabeln och får alltså ut 8\,W.
 Hur stor verkningsgrad har kabeln uttryckt i procent?
 Lösning:
-\[   \eta = \dfrac{8}{10} \cdot 100 = 80\,\%   \]
+
+\[
+	\eta = \dfrac{8}{10} \cdot 100 = 80\ \%
+\]

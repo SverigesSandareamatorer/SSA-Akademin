@@ -68,7 +68,7 @@ BIDRA TILL PROJEKTET
 ====================
 
 Det finns många olika sätt att bidra till projektet även fast man
-inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
+inte vet hur man använder *Git* eller skriver *LaTeX*.
 
 **Q: Jag kan koda och vill bidra; vad gör jag?**  
 A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ 
@@ -97,7 +97,7 @@ Vårt mål är att
 
 -   fler ska vilja ta utbildningen för att bli radioamatör
 -   de som examineras ska göra bättre ifrån sig på provet
--   de som deltar i utbildningen ska känna att det är en bra utbildning.
+-   de som deltar i utbildningen ska känna att det är en bra utbildning
 
 KONTAKT
 =======

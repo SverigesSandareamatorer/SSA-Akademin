@@ -27,38 +27,38 @@ också en digital signalprocessing.
 
 Eftersom en signal så som den representeras för digitala kretsar måste vara
 samplad och kvantiserad, så kommer signalen att ofrånkomligen bestå av ett
-antal sampel med ett visst antal bitar för dess PCM värde.
+antal samples med ett visst antal bitar för dess PCM värde.
 
 Att ändra nivån på en sådan signal görs genom att multiplicera den med något
-värde, dvs. låta varje enskilt sampel i tur och ordning multipliceras med
+värde, dvs. låta varje enskilt sample i tur och ordning multipliceras med
 samma värde, men det ändrar inga egenskaper i frekvensen.
 För att få en påverkan med avseende på frekvens behöver man kombinera värdena
 från flera olika tidpunkter i signalen, och ofta väljer man att låta de
 vägas samman med olika vikt.
-Detta görs genom att helt enkelt fördröja samplen i flera steg,
+Detta görs genom att helt enkelt fördröja samplena i flera steg,
 multiplicera varje fördröjning med sin vikt-konstant och sedan summera
 resultatet.
 
 Det filter som man då skapat kallas för ett Finite Impulse Response (FIR)
 filter, för skickar man in en puls på ingången så kommer den att fördröjas
-stegvis och ge svaret från var och en av multiplikatorerna, i var sitt sampel,
-till dess att fördröjningskedjan är slut, varvid den impulsen inte ger något
+stegvis och ge svaret från var och en av multiplikatorerna, i var sitt sample,
+tills dess att fördröjningskedjan är slut, varvid den impulsen inte ger något
 mer bidrag till utgången.
-Den räcka med sampel som kom från impulsen kallas för impulsresponsen, och
+Den räcka med samples som kom från impulsen kallas för impulsresponsen, och
 eftersom den tar slut är den finit, därav namnet.
 
 Man kan göra en variant av det här där man helt enkelt låter en annan
-uppsättning med multiplikatorer väga samma fördröjda sampel, men där det
+uppsättning med multiplikatorer väga samma fördröja samples, men där det
 summerade svaret återmatas till ingången och adderas där innan
 fördröjningskedjan.
 Detta kallas för Infinite Impulse Response (IIR) filter, för att det i likhet
 med FIR-filter har en impulsrespons, men eftersom den återmatar så kan denna
-rent teoretiskt pågå i all oändligthet, det vill säga engelskans infinite.
+rent teoretiskt pågå i all oändligthet, dvs. engelskans infinite.
 I praktiken designas filter så att de inte pågår i evinnerlig tid utan, så att
 säga ringer ut.
 Själva arkitekturen är dock väldigt lämplig att använda för många ändamål.
 
-Utöver själva filterstrukturen, dvs. IIR och FIR, så karakteriseras de av hur
+Utöver själva filter-strukturen, dvs. IIR och FIR, så karakteriseras de av hur
 många fördröjningssteg man har, då det representerar hur komplext filtret är,
 samt av koefficienterna som ger responsen hos filtret.
 Design av filterkoefficienter skiljer markant för IIR och FIR, och det finns
@@ -77,7 +77,7 @@ Detta brukar bland annat öka taltydligheten.
 \index{Fouriertransform}
 \index{Fourier!DFT}
 \index{Fourier!FFT}
-\index{diskret fouriertransform}
+\index{diskret fouriertransform} 
 \index{Discrete Fourier Transform (DFT)}
 \index{DFT}
 \index{FFT}
@@ -102,22 +102,22 @@ kan användas av flera andra steg, och på så sätt minska beräkningsbördan.
 Detta kan sedan göras hierarkiskt, så att en rekursiv form kan göras.
 Det finns flera metoder att göra detta på, men de sammanfattas med som en
 snabb DFT, dvs. \emph{Fast Fourier Transform (FFT)}, som även den är diskret.
-En nackdel med FFT är man ofta hamnar på jämna tvåpotenser i antalet sampel,
-till exempel 512, 1024, 2048, 4096 sampel och frekvenser.
+En nackdel med FFT är man ofta hamnar på jämna två-potenser i antalet samples,
+t.ex. 512, 1024, 2048, 4096 osv samples och frekvenser.
 Man har därmed offrat lite av DFTns generalitet.
 
 Det finns mer avancerade formuleringar av FFT som utnyttjar ett eller annat
 trick för att jämna ut till fler storlekar, genom att inte bara göra
-kombination om 2 sampel, utan även 3, 5 och så vidare, som sedan kan kombineras till
+kombination om 2 samples, utan även 3, 5 osv. som sedan kan kombineras till
 flera storlekar.
 Ett annat trick är att helt enkelt fylla på med bara nollor efter, och köra
 med en för stor FFT.
 
 Oavsett hur fourieranalysen görs, medger den att man fort kan få upp ett
 spektrum.
-Detta används nu mer allt oftare för att få en spektrumplot och genom att
+Detta används nu mer allt oftare för att få en spektrum-plot och genom att
 lägga flera av dessa efter varandra kan man få de nu mer allt vanligare
-spektrumhistogrammen även kända som vattenfallsplottar då de påminner om ett
+spektrum-histogrammen även kända som vattenfallsplottar då de påminner om ett
 vattenfall med sina vertikala streck.
 
 \subsection{Direct Digital Synthesis -- DDS}
@@ -138,10 +138,10 @@ man gör en oscillator med en så kallad \emph{fasackumulator} (eng. \emph{phase
  accumulator (PA)}).
 En fasackumulator är inget annat än ett adderingssteg följt av en delay-steg.
 Det är ett extremfall av ett IIR filter, med enbart en pol, som integrerar,
-det vill säga ackumulerande effekt.
+dvs. ackumulerande effekt.
 Värdet ut från denna representerar oscillatorns fas, där av phase accumulator.
 Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
-ökas för varje sampel.
+ökas för varje sample.
 Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
 varieras fort och fritt.
 Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.

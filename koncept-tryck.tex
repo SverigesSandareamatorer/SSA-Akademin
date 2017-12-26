@@ -8,21 +8,8 @@
 
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 
-%%\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
-%%\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
-
-\usepackage{ifxetex}
-\ifxetex
-  \newcommand{\textls}[2][5]{%
-    \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
-  }
-  \renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
-  \renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
-  \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
-  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
-  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
-  \usepackage{fontspec}
-\fi
+\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
+\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
 
 \usepackage{lipsum}
 \usepackage{booktabs}
@@ -141,11 +128,7 @@
 %%\usepackage{makeidx}
 %%\makeindex
 
-\renewcommand{\subsubsection}[1]{\paragraph{#1}}
-
-\usepackage{fontspec}
-\setmainfont{Bembo Std}
-\setsansfont{GillSans}
+\renewcommand{\subsubsection}[1]{#1}
 
 \begin{document}
 % Frontpage
