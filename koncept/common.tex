@@ -17,9 +17,6 @@
 %\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
 %\usepackage[toctitles]{titlesec}
 %\usepackage{hyperref}
-\usepackage{siunitx}
-\sisetup{exponent-product = \cdot, output-product = \cdot,
-	output-decimal-marker = {,}}
 \hypersetup{
     pdftitle={KonCEPT för amatörradiocertifikat},
     pdfauthor={Föreningen Sveriges Sändareamatörer},
@@ -116,3 +113,15 @@ keepaspectratio]{images/koncept-larobok-front.jpg}%
 keepaspectratio]{images/koncept-back.pdf}%
 \vfill
 }}}
+
+% Används för att beskriva enheter enkelt i formler, kan även användas
+% i text men då skall man vara medveten om att siffrorna sätts med
+% matematikfonten som är vald. Ett annat sätt att sätta siffror i text
+% med enhet är att använda exempelvis följande:
+% 28\,V vilket motsvaras av \SI{28}{V} men den förra sätts då med
+% brödtextfonten och inte matematikfonten.
+% /SM0UEI
+\usepackage{siunitx}
+\sisetup{exponent-product = \cdot, output-product = \cdot,
+	output-decimal-marker = {,}}
+
