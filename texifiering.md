@@ -33,10 +33,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla markerar vi `\part{}` och `\chapter{}` så att det går
+6.  För att förenkla markerar vi ~~`\part{}` och~~ `\chapter{}` så att det går
     att hitta delarna.
-    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya
-    utgåvan.
+    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya utgåvan.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
@@ -156,20 +155,20 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
-22. Tecknet för grader ° skall kodas som \degree.
-    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med ~
-    för annars kommer mellanslaget kernas bort.
+22. Tecknet för grader ° skall kodas som `\degree`.
+    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med `~`
+    för annars kommer mellanslaget kernas bort.
     För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
     förstå dem och dess användning. En enkel användning är
-    \index{strömtransformator}
+    `\index{strömtransformator}`
 
     För vissa begrepp är det nyttigt att samla gemensamma grupper, det
     gör man genom att ange
-    \index{transformator!ström-}
-    där transformator är gruppens namn, och efter utropstecknet kommer det
+    `\index{transformator!ström-}`
+    där transformator är gruppens namn, och efter utropstecknet kommer det
     som skall stå i gruppen.
 
     Symboler läggs i gruppen symboler, anger symbolen först och sedan de
@@ -200,14 +199,14 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
-    läggas med i referensen. Man refererar sedan med \cite{} för att peka på
+    läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
     hela dokumentet:
 
-    \cite{ITU-RR}
+    `\cite{ITU-RR}`
 
     För att referera till ett visst kapitel anger man det inom hakparanteser:
 
-    \cite[1.56]{ITU-RR}
+    `\cite[1.56]{ITU-RR}`
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
