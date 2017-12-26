@@ -3,7 +3,7 @@
 \section[Serie och parallelt]{Komponenter i serie och parallellt}
 
 \subsection{Seriekopplade resistorer}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.3.1.1a}\label{myHAREC.a.3.1.1a},
   a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2a},
   a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3a},
@@ -19,26 +19,22 @@
 
 Bild \ref{fig:BildII3-01} visar seriekopplade resistorer.
 Den totala resistansen av seriekopplade resistorer är summan av resistanserna.
-
 \[R = R_1 + R_2 + R_3 + \cdots + R_n \]
 
 Strömmen är lika stor genom alla seriekopplade resistorer i strömvägen (ingen
 avgrening).
-
 \[I = I_1 = I_2 = I_3 + \cdots I_n \]
 
 Den totala spänningen över seriekopplade resistorer är summan av spänningen över
 var och en av dem.
-
 \[U = U_1 + U_2 + U_3 + \cdots + I_n \]
 
 Spänningen över var och en av seriekopplade resistorer förhåller sig som deras
 resistanser. För två resistorer gäller
-
 \[\dfrac{U_1}{U_2} = \dfrac{R_1}{R_2}\]
 
 \subsection{Parallellkopplade resistorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1b}\label{myHAREC.a.3.1.1b}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1b}\label{myHAREC.a.3.1.1b}}
 \index{resistor!parallellkopplade}
 \index{parallellkoppling!resistorer}
 
@@ -58,79 +54,71 @@ enstaka resistansen.
 \]
 
 För två resistorer gäller
+\[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} \]
 
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} && eller \\
-R &= \frac{R_1 \cdot R_2}{R_1 + R_2}
-\end{align*}
+Eller:
+\[ R = \frac{R_1 \cdot R_2}{R_1 + R_2} \]
 
-För tre resistorer gäller
+För tre resistorer gäller:
+\[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \]
 
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} && eller \\
-R &= \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 + R_2\cdot R_3}
-\end{align*}
+eller:
+\[ R = \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 +
+  R_2\cdot R_3} \]
 
-Strömmen förgrenar sig mellan parallellkopplade resistorer.
-Den totala strömmen är summan av grenströmmarna
-
-\begin{align*}
-  I = I_1 + I_2 + \cdots I_n && \text{(Kirchhoffs 1:a lag)}
-\end{align*}
+Strömmen förgrenar sig mellan parallellkopplade resistorer. Den totala strömmen
+är summan av grenströmmarna
+\[ I = I_1 + I_2 + \cdots I_n \qquad \text{(Kirchhoffs 1:a lag)} \]
 
 Spänningen är lika stor över var och en av
-
-\begin{align*}
-  U = U_1 = U_2 = U_3 = \cdots U_n && \text{(Kirchhoffs 2:a lag)}
-\end{align*}
+\[  U = U_1 = U_2 = U_3 = \cdots U_n \qquad \text{(Kirchhoffs 2:a lag)} \]
 
 Grenströmmarna genom parallellkopplade resistorer fördelar sig omvänt
 proportionellt till deras respektive resistanser.
 För två resistorer gäller
 
-\[\frac{I_1}{I_2} = \frac{R_2}{R_1}\]
+\[   \frac{I_1}{I_2} = \frac{R_2}{R_1}   \]
 
 \subsection{Spänningsdelare}
 \index{spänningsdelning}
 
-\begin{wrapfigure}[18]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-03.pdf}
-\caption{Resistiv spänningsdelare}
-\label{fig:BildII3-03}
-\end{wrapfigure}
+\begin{marginfigure}%[18]{R}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-03.pdf}
+  \caption{Resistiv spänningsdelare}
+  \label{fig:BildII3-03}
+\end{marginfigure}
 
 Spänningsdelare förekommer i flera former.
 Bild \ref{fig:BildII3-03} visar en spänningsdelare med resistorer där
 spänningen \(U\) delas upp i spänningen \(U_1\) över resistorn \(R_1\)
 respektive \(U_2\) över \(R_2\).
-Man kan då t.ex. använda spänningen för något ändamål.
+Man kan då till exempel använda spänningen för något ändamål.
 
 Ett alternativ till spänningsdelning med resistorer med fasta värden är
 \emph{potentiometern}. Det är en variabel spänningsdelare i form av en resistor
 med ett uttag som kan flyttas mellan ändanslutningarna.
 
-Om man nu ansluter en apparat parallellt över \(R_2\), t.ex. ett instrument
+Om man nu ansluter en apparat parallellt över \(R_2\), till exempel ett instrument
 vars inre resistans motsvaras av \(R_y\), så kommer spänningarna över \(R_1\)
 och \(R_2\) att påverkas.
 
 Om \(R_y\) är mycket större än \(R_2\), så kan man bortse från påverkan.
 För att beräkna \(U_2\) kan man då använda följande formel för en obelastad
 resistiv spänningsdelare.
+\[  \frac{U_2}{R_2} = \frac{U}{R_1 + R_2} \]
 
-\begin{align*}
-\frac{U_2}{R_2} &= \frac{U}{R_1 + R_2} \quad \text{eller} \\
-U_2 &= U \cdot \frac{R_2}{R_1 + R_2}
-\end{align*}
+Eller:
+\[  U_2 = U \cdot \frac{R_2}{R_1 + R_2} \]
 
 Om \(R_y\) däremot är av samma storleksordning eller lägre än \(R_2\), så måste
 man för att beräkna \(U_2\) använda en formel för en belastad resistiv
-spänningsdelare, t.ex.
+spänningsdelare.
 
 \[
 U_2 = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
 \]
 
-Härav förstås att t.ex. en spänningsmätning ger olika resultat beroende på den
+Härav förstås att en spänningsmätning ger olika resultat beroende på den
 inre resistansen i voltmetern.
 
 \subsection{Wheatstones brygga}
@@ -148,9 +136,9 @@ En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga},
 som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
-potentiometer med en skala graderad t.ex. i \(\Omega\).
+potentiometer med en skala graderad i \(\Omega\).
 Den andra spänningsdelaren består av en resistor med känd resistans och en
-resistor med okänd resistans, dvs. mätobjektet.
+resistor med okänd resistans, det vill säga mätobjektet.
 
 I ledningen som förbinder de respektive mittuttagen X och Y, finns en
 amperemeter som nollströmsindikator.
@@ -159,7 +147,7 @@ Det flyter ström mellan X och Y när det finns en potentialskillnad -- spännin
 -- däremellan.
 Bryggan är då i obalans.
 Det flyter däremot ingen ström där när det inte finns en potentialskillnad,
-dvs. när bryggan är i balans.
+det vill säga när bryggan är i balans.
 Balans (mätvärdet) får man genom justering av den graderade potentiometern
 till noll ström.
 Då gäller sambandet
@@ -173,7 +161,7 @@ Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt
 det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1f}\label{myHAREC.a.3.1.1f}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1f}\label{myHAREC.a.3.1.1f}}
 \index{kondensator!parallellkopplade}
 \index{parallellkoppling!kondensatorer}
 
@@ -271,12 +259,12 @@ Induktansvärdet för galvaniskt sammankopplade induktorer kan i princip
 beräknas på samma sätt som för motsvarande sammankoppling av resistorer.
 
 \subsubsection{Galvaniskt seriekopplade induktorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1c}\label{myHAREC.a.3.1.1c}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1c}\label{myHAREC.a.3.1.1c}}
 \index{induktor!seriekopplade}
 \index{seriekoppling!induktorer}
 
 Förutsatt att magnetfälten från de respektive induktorerna inte återverkar på
-varandra -- dvs. inte ''kopplar magnetiskt till varandra'' -- så gäller:
+varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
 
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
 
@@ -290,7 +278,7 @@ varandra -- dvs. inte ''kopplar magnetiskt till varandra'' -- så gäller:
 \end{align*}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1d}\label{myHAREC.a.3.1.1d}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1d}\label{myHAREC.a.3.1.1d}}
 \index{induktor!parallellkopplade}
 \index{parallellkoppling!induktorer}
 
@@ -577,7 +565,7 @@ Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar
 hastighetsändringen.
 
 \subsection{Växelströmskretsar}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1}\label{myHAREC.a.3.1.1h}, a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2b}, a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3b}}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1}\label{myHAREC.a.3.1.1h}, a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2b}, a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3b}}
 
 \subsubsection{Komponentegenskaper vid växelström}
 
@@ -694,7 +682,7 @@ Som framgår av bilden blir variationerna i tiden de omvända med kondensator
 jämfört med induktor.
 
 \subsection{Impedans}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3c},
   a.\ref{HAREC.a.3.2.2}\label{myHAREC.a.3.2.2}
 }
@@ -824,7 +812,7 @@ I en seriekrets är den resulterande reaktansen negativ (kapacitiv) om \(X_c\) �
 större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 \subsection{Ohms lag vid växelström}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.1.1.4}\label{myHAREC.a.1.1.4b}
 }
 
@@ -852,7 +840,7 @@ Av vad som framgått tidigare i detta avsnitt kan även slutsatsen dras att:
 \]
 
 \subsection{LC-kretsar}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3d},
   a.\ref{HAREC.a.3.2.1}\label{myHAREC.a.3.2.1}
 }
@@ -978,7 +966,7 @@ Spänningen över reaktansen \(X_L\) (induktorn) ligger 90\degree~före \(I\) oc
 ritad rakt uppåt.
 
 \subsection{Thomsons svängningskrets}
-\textbf{HAREC a.\ref{HAREC.a.3.2.4}\label{myHAREC.a.3.2.4}}
+\marginnote{HAREC a.\ref{HAREC.a.3.2.4}\label{myHAREC.a.3.2.4}}
 \index{Thomson svängningskrets}
 \index{svängningskrets}
 \index{oscillator}
@@ -1154,7 +1142,7 @@ Av strömmen bildas reaktiva spänningar, dvs.
 (som tar ut varandra) och 5~mV över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
-\textbf{HAREC a.\ref{HAREC.a.3.2.5}\label{myHAREC.a.3.2.5}}
+\marginnote{HAREC a.\ref{HAREC.a.3.2.5}\label{myHAREC.a.3.2.5}}
 \label{Q-faktor}
 \index{Q-faktor}
 \index{symbol!Q qualityfactor}
@@ -1204,14 +1192,14 @@ större kretsförlusterna.
 \end{wrapfigure}
 
 \subsection{Bandbredd}
-\textbf{HAREC a.\ref{HAREC.a.3.2.6}\label{myHAREC.a.3.2.6}}
+\marginnote{HAREC a.\ref{HAREC.a.3.2.6}\label{myHAREC.a.3.2.6}}
 \index{bandbredd}
 
 Bild \ref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har
 vid olika frekvenser.
 Impedansens högsta värde är vid frekvensen \(f_{res}\) och avtar vid frekvenser
 som är högre eller lägre.
-Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet t.ex. 70~\% av
+Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70~\% av
 maximalvärdet.
 Med bandbredden \(b\) förstås skillnaden mellan impedansvärdena i ett sådant
-frekvenspar, dvs. \(b = f_2 - f_1\).
+frekvenspar, det vill säga \(b = f_2 - f_1\).
