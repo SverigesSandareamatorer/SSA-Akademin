@@ -1,6 +1,6 @@
 \chapter{Kretsar}
 
-\section[Serie och parallelt]{Komponenter i serie och parallellt}
+\section[Serie och parallellt]{Komponenter i serie och parallellt}
 
 \subsection{Seriekopplade resistorer}
 \marginnote{HAREC
@@ -47,6 +47,8 @@ resistanser. För två resistorer gäller
 Bild \ref{fig:BildII3-02} visar parallelkopplade resistorer.
 Den totala resistansen av parallellkopplade resistorer är lägre än den lägsta
 enstaka resistansen.
+\[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} +
+   \frac{1}{R_3} + \cdots + \frac{1}{R_n} \]
 
 \[
 \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots
@@ -124,17 +126,14 @@ inre resistansen i voltmetern.
 \subsection{Wheatstones brygga}
 \index{Wheatstones brygga}
 
-\begin{wrapfigure}[18]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-04.pdf}
-\caption{Wheatstones brygga}
-\label{fig:BildII3-04}
-\end{wrapfigure}
-
-Bild \ref{fig:BildII3-04}
+\begin{marginfigure}%[18]{R}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-04.pdf}
+  \caption{Wheatstones brygga}
+  \label{fig:BildII3-04}
+\end{marginfigure}
 
 En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga},
 som används för att jämföra spänningar.
-
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
 potentiometer med en skala graderad i \(\Omega\).
 Den andra spänningsdelaren består av en resistor med känd resistans och en
@@ -142,6 +141,12 @@ resistor med okänd resistans, det vill säga mätobjektet.
 
 I ledningen som förbinder de respektive mittuttagen X och Y, finns en
 amperemeter som nollströmsindikator.
+Det flyter ström mellan X och Y när det finns en potentialskillnad,
+spänning, däremellan och bryggan är då i obalans.
+Det flyter däremot ingen ström där när det inte finns en
+potentialskillnad, dvs. när bryggan är i balans.
+Balans (mätvärdet) får man genom justering av den graderade
+potentiometern till noll ström.
 
 Det flyter ström mellan X och Y när det finns en potentialskillnad, spänning, däremellan.
 Bryggan är då i obalans.
@@ -150,8 +155,6 @@ det vill säga när bryggan är i balans.
 Balans (mätvärdet) får man genom justering av den graderade potentiometern
 till noll ström.
 Då gäller sambandet
-
-\[\frac{R_1}{R_2} = \frac{R_3}{R_4}\]
 
 Spänningsdelare och bryggor har tagits med för att påvisa att apparater påverkar
 varandra när de kopplas samman, vilket är fallet även vid mätningar.
@@ -164,15 +167,11 @@ det är fråga om en växelströmskrets.
 \index{kondensator!parallellkopplade}
 \index{parallellkoppling!kondensatorer}
 
-\begin{figure*}[ht]
-\begin{center}
-  %%\begin{wrapfigure}[18]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-05.pdf}
+\begin{marginfigure}%[18]{R}{0.5\textwidth}
+  \includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_3-05.pdf}
   \caption{Parallellkopplade kondensatorer}
   \label{fig:BildII3-05}
-  %%\end{wrapfigure}
-\end{center}
-\end{figure*}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-05} visar parallelkopplade kondensatorer.
 I stället för att använda en enda kondensator kan man parallellkoppla flera
@@ -183,74 +182,66 @@ enskilda kapacitanserna.
 
 \[C = C_1 + C_2 + C_3 + \cdots C_n\]
 
-\textbf{Räkneexempel:}
-\begin{enumerate}
-\item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
-  \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 5 + 10 \\
-    &= 15\ \mu F
-  \end{align*}
-\item \(C_1 = 1\ nF \quad C_2 = 5\ pF \quad C =\ ?\)
-  \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 1 + 0,005 \\
-    &= 1,005\ nF
-  \end{align*}
-\end{enumerate}
+\noindent Räkneexempel 1.
+
+Vi har två kondensatorer med följande värden: \( C_1 =
+\SI{5}{\mu F}, \quad C_2 = \SI{10}{\mu F} \) och vi söker den
+resulterande kapacitansen vid parallellkoppling.
+\[   C_{\text{total}} = C_1 + C_2 = \SI{5}{\mu F} +
+     \SI{10}{\mu\farad} = \SI{15}{\mu F}   \]
+
+
+
+\noindent Räkneexempel 2. Vi har två kondensatorer med följande
+värden: \(C_1 = \SI{1}{nF},\quad C_2 = \SI{5}{pF} \) vad blir den
+resulterande kapacitansen vid parallellkoppling?
+\[   C_{\text{total}} = C_1 + C_2 = 1 + 0,005 =
+1,005\unit{nF} \]
+ 
 
 \subsection{Seriekopplade kondensatorer}
-\textbf{HAREC a.\ref{HAREC.a.3.1.1e}\label{myHAREC.a.3.1.1e}}
-\index{kondensator!seriekopplade}
-\index{seriekoppling!kondensatorer}
+\marginnote{HAREC a.\ref{HAREC.a.3.1.1e}\label{myHAREC.a.3.1.1e}}
+\index{kondensator!seriekopplade} \index{seriekoppling!kondensatorer}
 
-\begin{figure*}[ht]
-\begin{center}
-  %%\begin{wrapfigure}[10]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-06.pdf}
+\begin{marginfigure}%[10]{R}{0.5\textwidth}
+  \includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_3-06.pdf}
   \caption{Seriekopplade kondensatorer}
   \label{fig:BildII3-06}
-  %%\end{wrapfigure}
-\end{center}
-\end{figure*}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-06} visar seriekopplade kondensatorer.
 Den totala kapacitansen för seriekopplade kondensatorer är lägre än kapacitansen
 för kondensatorn med det minsta värdet.
-
 \[
-\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} +
-\frac{1}{C_3} + \cdots \frac{1}{C_n}
+\frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots
+\frac{1}{C_n}
 \]
 
 För två kapacitanser gäller:
+\[ \frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} \]
 
-\begin{align*}
-  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \quad \text{eller} \\
-  C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
-\end{align*}
+Eller:
+
+\[  C = \frac{C_1 \cdot C_2}{C_1 + C_2} \]
 
 För tre kapacitanser gäller:
 
+\[  \frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} \]
+
+Eller:
+\[ C = \frac{C_1 \cdot C_2 \cdot C_3}
+   {C_1 \cdot C_2 + C_2 \cdot C_3 + C_2 \cdot C_3} \]
+
+\noindent Räkneexempel:
+
+\[ C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ? \]
+
 \begin{align*}
-  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3}
-  \quad \text{eller} \\
-  C &= \frac{C_1 \cdot C_2 \cdot C_3}
-  {C_1 \cdot C_2 + C_2 \cdot C_3 + C_2 \cdot C_3}
+  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\
+  \frac{1}{C} &= \frac{1}{\SI{5}{\mu F}} + \frac{1}{\SI{10}{\mu F}}\\
+  \frac{1}{C} &= \num{200000} + \num{100000} = \num{300000}\\
+  C &= \frac{1}{\num{300000}} = \SI{3,33}{\mu F} \\
 \end{align*}
-
-\textbf{Räkneexempel:}
-
-\begin{enumerate}
-  \item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
-    \begin{align*}
-      \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\
-      C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\
-      &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\
-      &= 3\frac{1}{3}\ \mu F \\
-      &\approx 3,33\ \mu F
-    \end{align*}
-\end{enumerate}
 
 \subsection{Galvaniskt kopplade induktorer}
 
@@ -267,13 +258,13 @@ varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
 
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
 
-\textbf{Räkneexempel:}
+\noindent Räkneexempel:
 
 \[L_1 = 20\ mH \quad L_2 = 50\ mH \quad L =\ ?\]
 \begin{align*}
   L &= L_1 + L_2 \\
-  & = 20 + 50 \\
-  &= 70\ mH
+    & = 20 + 50 \\
+    &= 70\ mH
 \end{align*}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
@@ -290,34 +281,34 @@ varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
 \]
 
 För två induktorer gäller:
-
 \begin{align*}
   \frac{1}{L} &= \frac{1}{L_1} + \frac{1}{L_2} \quad \text{eller} \\
   L &= \frac{L_1 \cdot L_2}{L_1 + L_2}
 \end{align*}
 
-\textbf{Räkneexempel:}
+\noindent Räkneexempel:
 
 \[L_1 = 50\ mH \quad L_2 = 60\ mH \quad L =\ ?\]
 
 \begin{align*}
   L &= \frac{L_1 \cdot L_2}{L_1 + L_2} \\
-    &= \frac{50 \cdot 60}{50 + 60}\ mH \\
-    &= \frac{3000}{110}\ mH \\
-  \approx 27\ mH
+    &= \frac{50 \cdot 60}{50 + 60} \\
+    &= \frac{3000}{110}\\
+  &\approx \SI{27}{mH}
 \end{align*}
 
 \subsection{Magnetiskt kopplade induktorer}
-
 \index{induktor!magnetiskt kopplade}
 \index{magnetisk koppling!induktorer}
 \index{ömsesidig induktans}
 
-\begin{wrapfigure}[15]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-07.pdf}
-\caption{Magnetiskt kopplade induktorer}
-\label{fig:BildII3-07}
-\end{wrapfigure}
+\begin{marginfigure}%[15]{R}{0.5\textwidth}
+  \includegraphics[width=1\textwidth]{images/cropped_pdfs/bild_2_3-07.pdf}
+  \caption{Magnetiskt kopplade induktorer}
+  \label{fig:BildII3-07}
+\end{marginfigure}
+
+\subsubsection{Magnetiskt kopplade induktorer i serie}
 
 I praktiken anordnas ofta induktorer så, att deras respektive magnetfält kan
 återverka på varandra --- så kallad magnetisk koppling.
@@ -336,20 +327,18 @@ kopplar till varandra på olika sätt.
 ''Pricken'' vid änden av induktorerna på bilden markerar att magnetfälten där
 har inbördes polarisering.
 
-\subsubsection{Magnetiskt kopplade induktorer i serie}
-
-\textbf{Formel:}
+\noindent Formel:
 
 \[L = L_1 +L_2 \pm 2M\]
 
-\textbf{Räkneexempel:}
+\noindent Räkneexempel:
 
-Två induktorer har en impedans av 20 resp. 10~\(\mu H\) och en ömsesidig
-induktans av 2~\(\mu H\).
+Två induktorer har en impedans av 20 resp. 10\,\textmu H och en ömsesidig
+induktans av 2\,\textmu H.
 Induktorerna är kopplade och placerade så att deras magnetfält verkar med
 varandra.
 
-Vardera induktansen ökas därför med \(M = 2\ \mu H\).
+Vardera induktansen ökas därför med \(M = 2\,\unit{\mu H}\).
 
 \begin{align*}
   L &= L_1 + M + L_2 + M \\
@@ -357,24 +346,35 @@ Vardera induktansen ökas därför med \(M = 2\ \mu H\).
   &= 34\ \mu H
 \end{align*}
 
-\textbf{Räkneexempel:}
-Två induktorer har en impedans av 20 resp 10~\(\mu H\) och en ömsesidig
-induktans av 2~\(\mu H\).
+\noindent Räkneexempel:
+
+Två induktorer har en impedans av 20 resp 10\,\textmu H och en ömsesidig
+induktans av 2\,\textmu H.
 Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
 varandra.
-Vardera induktansen minskas därför med \(M = 2\ \mu H\).
+Vardera induktansen minskas därför med \(M = 2\,\unit{\mu H}\).
 
 \begin{align*}
   L &= L_1 - M + L_2 - M \\
   & = 20 - 2 + 10 - 2\ \mu H \\
-  &= 28\ \mu H
+  &= 26\ \mu H
 \end{align*}
 
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
+När flera induktorer är parallellkopplade och placerade så att deras magnetiska
+fält interagerar behöver man ta hänsyn till om de med- eller motverkar varandra.
+Mer läsning om induktorer och hur de påverkar varandra finns att läsa i
+\cite{letrafo}.
 
-\textbf{Formel:}
+\textbf{Formler:}
 
-\[L = \frac{L_1 \cdot L_2 \cdot M^2}{L_1 + L_2 + M^2}\]
+Medkopplade parallella induktorer
+
+\[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 - 2M}\]
+
+Motkopplade parallella induktorer
+
+\[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 + 2M}\]
 
 \subsection{Upp- och urladdning av en kondensator}
 
@@ -551,7 +551,7 @@ det däremot kan göra i en kondensator.
 Under den tid som magnetfältet i en induktor avvecklas eller byggs upp, så
 induceras en motspänning i den.
 Denna spänning är högre än den som finns över induktorn innan strömmen bryts
-eller ändras och är proportionell till den hastighet som ändringen har.
+eller ändras och är proportionell mot den hastighet som ändringen har.
 När en en strömkrets med induktor bryts är det vanligt att det i
 brytögonblicket bildas en gnista eller ljusbåge över brytarens kontakter.
 
@@ -586,7 +586,7 @@ när de kombineras och kopplas till en växelströmkälla.
 
 Bild \ref{fig:BildII3-11} visar amplituden av spänning och ström vid ett
 sinusformat förlopp samt den effekt som då utvecklas.
-Tidsaxeln är graderad 0--360\degree per period.
+Tidsaxeln är graderad 0--360\degree~per period.
 
 \textbf{Fall a:} Förloppen med en resistor R.
 
@@ -727,8 +727,8 @@ spänningar eller strömmar inte är i fas med varandra.
 De arbetar ju inte ''i takt''.
 
 Att då addera max. värdena ger fel resultat.
-I stället söker man den s.k. resultanten av de olika vektorer som motsvarar
-ström- och spänningsvärden.
+I stället söker man den så kallade resultanten av de olika vektorer som
+motsvarar ström- och spänningsvärden.
 Detta kan göras grafiskt eller beräknas.
 
 \begin{figure}
@@ -762,7 +762,7 @@ I bild \ref{fig:BildII3-14} visas vektorerna för komponenterna i bild
 \ref{fig:BildII3-12} samt hur man grafiskt bestämmer impedansen av dessa
 vektorer.
 Vidare får man fasvinkeln mellan impedansens och resistansens vektor, varav den
-senare är den s.k. riktfasen för hela seriekretsen.
+senare är den så kallade riktfasen för hela seriekretsen.
 
 Resistansen ritas som en vektor \(R\), som riktas vågrätt mot höger.
 Vektorns längd motsvarar resistansens storlek i ohm.
@@ -802,18 +802,16 @@ Termerna ersätts med följande ekvationer:
 Efter division med \(I^2\) fås
 
 \begin{align*}
-  Z^2 &= R^2 + ( \omega L - \frac{1}{\omega L} )^2 \quad \text{eller} \\
-  Z &= \sqrt{R^2 + (\omega L - \frac{1}{\omega L})} \quad \text{eller} \\
+  Z^2 &= R^2 + ( \omega L - \frac{1}{\omega C} )^2 \quad \text{eller} \\
+  Z &= \sqrt{R^2 + (\omega L - \frac{1}{\omega C})^2} \quad \text{eller} \\
   Z &= \sqrt{R^2 + (X_L - X_C)^2}
 \end{align*}
 
-I en seriekrets är den resulterande reaktansen negativ (kapacitiv) om \(X_c\) är
+I en seriekrets är den resulterande reaktansen negativ (kapacitiv) om \(X_C\) är
 större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 \subsection{Ohms lag vid växelström}
-\marginnote{HAREC
-  a.\ref{HAREC.a.1.1.4}\label{myHAREC.a.1.1.4b}
-}
+\marginnote{HAREC a.\ref{HAREC.a.1.1.4}\label{myHAREC.a.1.1.4b}}
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
 \(X\).
@@ -883,7 +881,7 @@ För enkelhetens skull bortses här från dessa resistanser.
 
 I en parallellkopplad LC-krets är spänningen över induktans och kapacitans
 densamma.
-Spänningsvektorn \(U\) används därför som s.k. riktfas.
+Spänningsvektorn \(U\) används därför som så kallad riktfas.
 
 Riktfasen ritas på bilden åt höger.
 Strömmen \(I_C\) genom kondensatorn är fasförskjuten 90\degree~efter \(U\) och
@@ -955,7 +953,7 @@ parallellt över kapacitansen.
 För enkelhetens skull bortses här från dessa resistanser.
 
 Strömmen \(I\) är samma genom hela kretsen och strömvektorn \(I\) används
-därför som s.k. riktfas.
+därför som så kallad riktfas.
 Den ritas i bilden åt höger.
 Om serieresistansen \(R\) varit med, så skulle ett spänningsfall \(U_R\) varit
 inritad i samma riktning som \(I\) (i fas med \(I\)).
@@ -1027,7 +1025,7 @@ Formeln gäller både för parallell- och seriekretsar.
 \end{align*}
 
 \subsection{Impedansen i en resonant krets}
-\textbf{HAREC
+\marginnote{HAREC
   a.\ref{HAREC.a.3.2.1}\label{myHAREC.a.3.2.1b}
   a.\ref{HAREC.a.3.2.2}\label{myHAREC.a.3.2.2b}
   a.\ref{HAREC.a.3.2.3}\label{myHAREC.a.3.2.3}
@@ -1095,8 +1093,8 @@ Z = \frac{X_L \cdot X_C}{r_L} = \frac{L}{r_L \cdot C}
 
 Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
 
-Därav framgår, att impedansen i parallellkretsen är en funktion av det s.k.
-L/C-förhållandet samt av kretsens resistiva förluster.
+Därav framgår, att impedansen i parallellkretsen är en funktion av det så
+kallade L/C-förhållandet samt av kretsens resistiva förluster.
 
 \subsubsection{Resonansfallet i en seriekrets}
 \label{serieresonans}

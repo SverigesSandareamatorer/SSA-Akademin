@@ -31,9 +31,9 @@ Bild \ref{fig:BildII1-16} visar en sinusformad växelspänning med frekvensen
 \(50\ Hz\).
 Spänningen \(u\) är \(+230\ V\) vid tidpunkten 2,5~millisekunder efter en
 positiv nollgenomgång.
-Efter totalt \SI{5}{ms} uppnås toppvärdet \(u_{max}\) dvs. \SI{+325}{V}.
-Efter totalt \SI{10}{ms} sker en negativ nollgenomgång.
-Efter totalt \SI{12,5}{ms} är spänningen \(-u\), dvs. \SI{-230}{V} osv.
+Efter totalt 5\,ms uppnås toppvärdet \(u_{max}\) dvs. +325\,V.
+Efter totalt 10\,ms sker en negativ nollgenomgång.
+Efter totalt 12,5\,ms är spänningen \(-u\), dvs. -230\,V osv.
 
 \subsection{Toppvärde eller amplitud}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.2b}\label{myHAREC.a.1.6.2b}}
@@ -41,13 +41,13 @@ Efter totalt \SI{12,5}{ms} är spänningen \(-u\), dvs. \SI{-230}{V} osv.
 \index{amplitud}
 
 Toppvärdet \(u_{max}\) är det högsta värdet över eller under noll.
-På bild \ref{fig:BildII1-16} är de högsta värdena \SI{+325}{V} och \SI{-325}{V}.
+På bild \ref{fig:BildII1-16} är de högsta värdena +325\,V och -325\,V.
 
 \subsection{Topp-till-toppvärde}
 \index{topp-till-toppvärde}
 
 Topp-till-toppvärde är summan av toppvärdena över och under noll.
-På bild \ref{fig:BildII1-16} är detta värde \SI{650}{V}.
+På bild \ref{fig:BildII1-16} är detta värde 650\,V.
 
 \subsection{Effektivvärde}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.2c},
@@ -72,9 +72,10 @@ motsvarar amplituden vid vinklarna 45, 135, 225 och 270\degree.
 \index{symbol!\(\varphi\) fasläge}
 
 Fasläget \(\varphi\) är när inom en period, som ett givet momentanvärde
-uppträder. Tidpunkten för varje momentanvärde motsvarar en andel av 360\degree\ grader.
-Till exempel uppnås värdet \SI{0}{V} vid 0\degree, 180\degree~och
-360\degree~(= 0\degree).
+uppträder.
+Tidpunkten för varje momentanvärde motsvarar en andel av 360\degree elektriska
+grader.
+Till exempel uppnås värdet volt vid 0\degree, 180\degree~och 360\degree (= 0\degree).
 
 \subsection{Bågmått}
 \index{bågmått}
@@ -86,58 +87,48 @@ Till exempel uppnås värdet \SI{0}{V} vid 0\degree, 180\degree~och
 I beräkningar av växelströmskretsar används ofta inte vinkelmått för fasläget
 (gradtal) utan i stället begreppet bågmått.
 
-I en s.k. enhetskrets med radien \(r = 1\) motsvaras vinkeln 360\degree av en
-båge med längden \(2 \cdot \pi \cdot r= 2 \cdot \pi \cdot 1 = 2 \pi =\)
+I en så kallad enhetskrets med radien \(r = 1\) motsvaras vinkeln 360\degree av
+en båge med längden \(2 \cdot \pi \cdot r= 2 \cdot \pi \cdot 1 = 2 \pi =\)
 omkretsen.
 Vid \(f\) perioder per sekund blir båglängden \(= 2\pi f\).
 Denna storhet kallas båghastighet eller oftare vinkelhastighet och betecknas
-med \(\omega\) (uttalas omega).
-
-\[
-\omega= 2\pi f \unit{[1/s]}
-\]
+med det grekiska tecknet omega \(\omega\) (uttalas å'mega) men skall
+inte sammanblandas med stora omega som ju betecknar motstånd eller resistans.
+\[   \omega= 2\pi f \unit{[1/s]}   \]
 
 \subsection{Period}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.3a}\label{myHAREC.a.1.6.3a}}
 \index{period}
 
-En period har passerat, när en storhet (spänning, ström osv.) återtagit samma
-tillstånd eller värde efter att ha gjort en fullständig växling, t.ex. en hel
-pendelrörelse eller ett helt varv vid rotation.
+En period har passerat, när en storhet (spänning, ström, effekt eller
+liknande) återtagit samma tillstånd eller värde efter att ha gjort en
+fullständig växling, till exempel en hel pendelrörelse eller ett helt
+varv vid rotation.
 
 \subsection{Periodtid T}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.3b}\label{myHAREC.a.1.6.3b}}
 \index{periodtid (T)}
 \index{symbol!\(T\) periodtid}
 
-Periotid \(T\) är den tid som åtgår för att strömmen eller spänningen ska
-genomlöpa en period. Periodtiden är det inverterade värdet av frekvensen.
+Periodtid \(T\) är den tid som åtgår för att strömmen eller spänningen
+ska genomlöpa en period. Periodtiden är det inverterade värdet av
+frekvensen.
 
 Måttenheten för periodtid är sekund [s].
 
 Periodtid
-
-\begin{equation*}
-	(T) = \dfrac{1}{f}
-\end{equation*} 
-
+\[   (T) = \dfrac{1}{f}   \]
 
 \begin{table}[h]
-	\centering
-	\begin{tabular}{rrr}
-		 Tidsområde &     Enhet & Frekvensområde \\ \hline
-		     sekund &         s &             Hz \\
-		millisekund &        ms &            kHz \\
-		mikrosekund & \textmu s &            MHz
+  \centering
+    \begin{tabular}{rrr}
+	         Tidsområde & Enhet     & Frekvensområde \\ \hline
+		     sekund & s         & Hz             \\
+		millisekund & ms        & kHz            \\
+		mikrosekund & \textmu s & MHz
 	\end{tabular}
 	\caption{Relation mellan tid och frekvens i ett periodiskt system}
 \end{table}
-
-%\begin{alignat*}{5}
-%	&T\ &\unit{[s]    }  &\unit{f} &\unit{[Hz]} \mathrm{eller} \\
-%	&T\ &\unit{[ms]}     &\unit{f} &\unit{[kHz]} \mathrm{eller} \\
-%	&T\ &\unit{[$\mu$s]} &\unit{f} &\unit{[MHz]}
-%\end{alignat*}
 
 Exempel:
 
@@ -145,7 +136,7 @@ Exempel:
 T_1&=&\dfrac{1}{10} \unit{s}       &=&  0,100 \unit{s}     &=& 100 ms (f = 10 \unit{Hz})\\
 T_2&=&\dfrac{1}{50} \unit{s}       &=&  0,020 \unit{s}     &=& 20 ms (f = 50 \unit{Hz})\\
 T_3&=&\dfrac{1}{1000} \unit{s}     &=&  0,001 \unit{s}     &=& 1 ms (f = 1 \unit{kHz})\\
-T_4&=&\dfrac{1}{1000000} \unit{s}  &=&  0,000001 \unit{s}  &=& 1 \mu s (f = 1 \unit{MHz})\\
+T_4&=&\dfrac{1}{1\,000\,000} \unit{s}  &=&  0,000\,001 \unit{s}  &=& 1 \mu s (f = 1 \unit{MHz})\\
 \end{alignat*}
 
 \subsection{Frekvens}
@@ -156,7 +147,7 @@ Frekvens är antalet perioder per tidsenhet.
 
 Följande begrepp demonstreras med hjälp av pendeln:
 
-Period = en fullständig fram- och tillbakasvängning i ett system, t.ex.
+Period = en fullständig fram- och tillbakasvängning i ett system, till exempel
 pendelns väg mellan punkterna 2-3-2-1-2-3- osv.
 
 \begin{figure}[ht]
@@ -173,50 +164,53 @@ Amplitud \(A\) = den största avvikelsen från viloläget.
 
 Frekvens \(f\) = antal svängningar/tidsenhet.
 
-Sambandet mellan frekvensen \(f\) och periodtiden \(T\) är exempelvis
-
-\[f=\dfrac{1}{T}\] 
+Sambandet mellan frekvensen \(f\) och periodtiden \(T\) är
+\(f=\dfrac{1}{T}\) till exempel
+% Här fanns en satsrading som jag åtgärdade.
+% SM0UEI
 
 \[5 [\unit{Hz}] = \dfrac{1}{5}\ [\unit{sekunder}]\]
 
 \subsection{Enheten hertz}
+
 \marginnote{HAREC a.\ref{HAREC.a.1.6.5}\label{myHAREC.a.1.6.5}}
-\index{Hertz}
-\index{enheter!Hertz (Hz)}
+\index{hertz}
+\index{enheter!hertz (Hz)}
 \index{symbol!\(f\) frekvens}
 
 Måttenheten för frekvens är hertz [Hz].
 I formler betecknas frekvensen med \(f\).
 
 \begin{center}
-\begin{tabular}{ll}
-1~Hz      & = 1 period per sekund (p/s) \\
-10~Hz     & = 10 perioder per sekund \\
-50~Hz     & = 50 perioder per sekund \\
-1~000~Hz  & = \(10^3\)~Hz = 1~kHz (kilohertz) \\
-1~000~kHz & = \(10^6\)~Hz = 1~MHz (megahertz) \\
-1~000~MHz & = \(10^9\)~Hz = 1~GHz (gigahertz) \\
-\end{tabular}
+  \begin{tabular}{ll}
+		1~Hz      & =  \num{1} period per sekund (p/s) \\
+		10~Hz     & = \num{10} perioder per sekund \\
+		50~Hz     & = \num{50} perioder per sekund \\
+		1~000~Hz  & = \num{d3} Hz = 1~kHz (kilohertz) \\
+		1~000~kHz & = \num{d6} Hz = 1~MHz (megahertz) \\
+		1~000~MHz & = \num{d9} Hz = 1~GHz (gigahertz) \\
+	\end{tabular}
 \end{center}
 
-Nätfrekvensen för elkraft är i Europa 50~Hz.
-
-Andra nätfrekvenser förekommer, t.ex. 60~Hz i USA och Japan.
+Nätfrekvensen för elkraft är i Europa \SI{50}{\hertz}.
+Andra nätfrekvenser förekommer på andra ställen i världen, till exempel \SI{60}{\hertz} i delar av både nord- och sydamerika och liksom flera ställen i asien som exempelvis Japan.
 
 Frekvensområdet vid överföring av kvalitativt tal och musik, lågfrekvens LF, är
-mellan ca 16~Hz och 16~kHz.
+mellan ca \SI{16}{Hz} och \SI{16}{kHz}.
 
-Frekvensområdet för talöverföring, t.ex. över telefonlinjer eller
-kommunikationsradio, är ca 300 till 3000~Hz.
+Frekvensområdet för talöverföring, till exempel över telefonlinjer eller
+kommunikationsradio, är ca \num{300} till \SI{3000}{\hertz}.
 
-Frekvensområdet för radioöverföring, högfrekvens HF, är i huvudsak mellan
-50~kHz, s.k. långvåg, och 100-tals GHz, s.k. mikrovåg.
+% Här fanns ett fel där det stod HF i stället för RF. Var uppmärksam på detta
+% vid en merge så det inte återkommer! /SM0UEI
+Frekvensområdet för radioöverföring, högfrekvens RF, är i huvudsak mellan
+\SI{50}{kHz}, så kallad långvåg, och 100-tals \unit{GHz}, så kallad mikrovåg.
 
 \subsection{Fasförskjutning}
 \marginnote{HAREC a.\ref{HAREC.a.1.6.6}\label{myHAREC.a.1.6.6}}
 \index{fasförskjutning}
 Bild \ref{fig:BildII1-17} visar vektorer och fasförskjutning.
-Med fasförskjutning menas tidsskillnaden mellan förlopp, t.ex. spänningar
+Med fasförskjutning menas tidsskillnaden mellan förlopp, till exempel spänningar
 och/eller strömmar.
 Fasförskjutningen mellan vektorerna kallas även fasvinkel och uttrycks som ett
 gradtal mellan 0 och 360\degree.
@@ -239,9 +233,9 @@ kondensator kopplade i serie, där den gemensamma strömmen är en sinus.
 
 Antag att vektorerna roterar i ett oförändrat inbördes läge och med en
 vinkelhastighet av \(\omega= 2\pi f\).
-Systemet roterar då \(360\degree = 2\pi\ radianer = 1\ varv/period\).
+Systemet roterar då 360\degree = \SI{2}{\pi} radianer = \SI{1}{varv/period}.
 
 Vid varje tidpunkt har vektorsystemet uppnått en viss vridningsvinkel.
 Momentanvärdet på vektorernas spänningar avsätts till höger i bilden.
-Avståndet mellan en vektorspets och noll-linjen är vektorns momentana värde,
+Avståndet mellan en vektorspets och nollinjen är vektorns momentana värde,
 som kan vara positivt eller negativt.
