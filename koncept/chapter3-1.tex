@@ -413,12 +413,12 @@ som kallas tidskonstant:
 \end{gather*}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
-kondensatorn ökat från noll till 63~\% av maxvärdet.
-Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
+kondensatorn ökat från noll till 63\% av maxvärdet.
+Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99\%.
 
 Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
 
-\[i_c = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[ i_c = I_{max} \cdot e^{-t/\tau} \]
 
 \begin{tabular}{lp{\textwidth}}
   \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
@@ -426,61 +426,63 @@ Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
 \end{tabular}\\[\baselineskip]
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
-kondensatorn minskat till 37~\% av maxvärdet.
+kondensatorn minskat till 37\% av maxvärdet.
 
-Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
+Efter tiden \(t = 5\tau\) återstår 1\% av strömmens maxvärde.
 
 \subsubsection{Urladdning}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-09.pdf}
-\caption{Urladdning av en kondensator}
-\label{fig:BildII3-09}
-\end{wrapfigure}
+\begin{marginfigure}%{R}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-09.pdf}
+  \caption{Urladdning av en kondensator}
+  \label{fig:BildII3-09}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-09} visar urladdning av en kondensator.
 En kondensator C urladdas över resistor R.
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
-\[u_c = U_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[ u_c = U_{max} \cdot e^{-t/\tau} \]
 
 Strömmen från kondensatorn minskar exponentiellt under urladdningen.
 Strömriktningen är motsatt den vid uppladdningen.
 
-\[i_c = - I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[ i_c = - I_{max} \cdot e^{-t/\tau} \]
 
-Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{max}\)
+Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37\% av \(I_{max}\)
 respektive \(U_{max}\) återstår.
 
-Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
+Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1\% av
 \(I_{max}\) respektive \(U_{max}\) återstår.
 
-Exempel på beräkning av tidskonstanten:
-\begin{enumerate}
-\item \(C = 10\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
-  \begin{align*}
-    \tau &= R \cdot C \\
-    &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
-    &= 10 \cdot 10^{-3} \quad \text{dvs. var 1/100 sekund.}
-  \end{align*}
-\item \(C = 1000\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
-  \begin{align*}
-    \tau &= R \cdot C \\
-    &= 1 \cdot 10^3 \cdot 10^3 \cdot 10^{-6} \\
-    &= 1\ \text{sekund}
-  \end{align*}
-\end{enumerate}
+Nedan följer två exempel på beräkning av tidskonstanten.
+
+\noindent Exempel 1:
+\[ C = \SI{10}{\upmu F} \qquad R = \SI{1}{k\Omega} \qquad \tau =\ ? \]
+
+\[ \tau = R \cdot C = 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} =
+	10 \cdot 10^{-3}\,\unit{s} = 1/100\,\unit{s} \]
+	
+Det vill säga var hundradels sekund.
+
+\noindent Exempel 2:
+\[ C = \SI{1000}{\upmu F} \qquad R = \SI{1}{k\Omega} \qquad \tau =\ ? \]
+
+\[  \tau = R \cdot C = 1 \cdot 10^3 \cdot 1000 \cdot 10^{-6} 
+    = 1\,\unit{s} \]
+
+
 
 \subsection{In- och urkoppling av en induktor}
 
 \subsubsection{Inkoppling}
 
-\begin{wrapfigure}[23]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-10.pdf}
-\caption{Inkoppling av en induktor}
-\label{fig:BildII3-10}
-\end{wrapfigure}
+\begin{marginfigure}%[23]{R}{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-10.pdf}
+  \caption{Inkoppling av en induktor}
+  \label{fig:BildII3-10}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
@@ -492,7 +494,7 @@ Strömmen genom induktorn ökar från 0 till \(U_{max}\).
 
 Strömmen genom induktorn ökar exponentiellt efter inkopplingen
 
-\[i_L = I_{max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
+\[ i_L = I_{max} \cdot (1-e^{-t/\tau} )\]
 
 \begin{tabular}{lp{0.35\textwidth}}
   \(i_L\) &  strömmen efter en given inkopplingstid \\
@@ -504,18 +506,17 @@ Strömmen genom induktorn ökar exponentiellt efter inkopplingen
 I förloppet ingår storleken av resistans och induktans enligt följande samband,
 som kallas tidskonstant
 
-\[\tau = \frac{L}{R}\]
+\[ \tau = \frac{L}{R} \]
 
 \[
-L\ [\text{H}] \quad
-R\ [\Omega] \quad
-s\ [\text{sek}] \quad
-\tau\ [\text{tidskonstant}]
+L\ [\text{H}] \qquad
+R\ [\Omega] \qquad
+\tau\ [\text{tidskonstant, s}]
 \]
 
 Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
-induktorn ökat från noll till 63~\% av \(I_{max}\) och motspänningen över
-induktorn minskat till 37~\% av maxvärdet.
+induktorn ökat från noll till 63\% av \(I_{\text{max}}\) och motspänningen över
+induktorn minskat till 37\% av maxvärdet.
 
 \subsubsection{Urkoppling}
 
@@ -523,7 +524,8 @@ Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
 Energin i induktorn avleds genom resistorn som en ström med motsatt riktning
 än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter
+Strömmen är vid urkopplingstillfället \(I_\text{{max}} = i_L\) och minskar 
+därefter
 exponentiellt.
 
 \[i_L = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
@@ -536,7 +538,7 @@ exponentiellt.
 \end{tabular}
 
 Efter en tid av \(t = 1\tau\) från urkopplingsögonblicket har strömmen genom
-induktorn minskat till 37~\% av maxvärdet.
+induktorn minskat till 37\% av maxvärdet.
 
 Teoretiskt kan spänningarna och strömmarna aldrig nå ett noll- eller maxvärde,
 men för praktiskt bruk anses detta inträffa efter en tid av minst \(5\tau\).
@@ -1194,7 +1196,7 @@ Bild \ref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har
 vid olika frekvenser.
 Impedansens högsta värde är vid frekvensen \(f_{res}\) och avtar vid frekvenser
 som är högre eller lägre.
-Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70~\% av
+Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70\% av
 maximalvärdet.
 Med bandbredden \(b\) förstås skillnaden mellan impedansvärdena i ett sådant
 frekvenspar, det vill säga \(b = f_2 - f_1\).
