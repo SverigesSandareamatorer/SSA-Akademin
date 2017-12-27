@@ -350,21 +350,21 @@ Två induktorer har en impedans av 20 resp 10\,\textmu H och en ömsesidig
 induktans av 2\,\textmu H.
 Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
 varandra.
-Vardera induktansen minskas därför med \(M = 2\,\unit{\mu H}\).
+Vardera induktansen minskas därför med \(M = 2\,\unit{\upmu H}\).
 
-\begin{align*}
-  L &= L_1 - M + L_2 - M \\
-  & = 20 - 2 + 10 - 2\ \mu H \\
-  &= 26\ \mu H
-\end{align*}
-
+\[
+L = L_1 - M + L_2 - M 
+  = 20 - 2 + 10 - 2
+  = \SI{26}{\upmu H}
+\]
+  
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
 När flera induktorer är parallellkopplade och placerade så att deras magnetiska
 fält interagerar behöver man ta hänsyn till om de med- eller motverkar varandra.
 Mer läsning om induktorer och hur de påverkar varandra finns att läsa i
 \cite{letrafo}.
 
-\textbf{Formler:}
+\noindent Formler:
 
 Medkopplade parallella induktorer
 
@@ -378,30 +378,30 @@ Motkopplade parallella induktorer
 
 \subsubsection{Uppladdning}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-08.pdf}
-\caption{Uppladdning av en kondensator}
-\label{fig:BildII3-08}
-\end{wrapfigure}
+\begin{marginfigure}%{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-08.pdf}
+  \caption{Uppladdning av en kondensator}
+  \label{fig:BildII3-08}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-08} visar uppladdning av en kondensator.
 En kondensator \(C\) seriekopplas med en resistans \(R\)
 och kopplas in över spänningen \(U\).
 
-Spänningen över kondensatorn stiger från 0~volt till \(U_{max}\).
+Spänningen över kondensatorn stiger från 0\,volt till \(U_{max}\).
 
-Laddningsströmmen sjunker från \(I_{max}\) till 0~ampere.
+Laddningsströmmen sjunker från \(I_{max}\) till 0\,ampere.
 
 Spänningen över kondensatorn ökar exponentiellt uppladdningen.
 
-\[u_c = U_{max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+\[ u_c = U_{\text{max}} \cdot \left( 1 - e^{-t/\tau} \right) \]
 
-\begin{tabular}{lp{0.35\textwidth}}
-  \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
-  \(U_{max}\) & slutspänningen efter minst \(t = 5\tau\) \\
-  \(t\)       & inkopplingstiden \\
-  \(e\)       & 2,718 (e = basen för den naturliga logaritmen) \\
-\end{tabular}
+\begin{tabular}{lp{\textwidth}}
+  \(u_c\)         & spänningen över kondensatorn efter en given inkopplingstid \\
+  \(U_{\text{max}}\) & slutspänningen efter minst \(t = 5\tau\) \\
+  \(t\)           & inkopplingstiden \\
+  \(e\)           & 2,718... (e = basen för den naturliga logaritmen) \\
+\end{tabular}\\[\baselineskip]
 
 I förloppet ingår storleken av resistans och kapacitans enligt följande samband,
 som kallas tidskonstant:
@@ -420,10 +420,10 @@ Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
 
 \[i_c = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
-\begin{tabular}{lp{0.4\textwidth}}
+\begin{tabular}{lp{\textwidth}}
   \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
   \(I_{max}\) & begynnelseströmmen \\
-\end{tabular}
+\end{tabular}\\[\baselineskip]
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
 kondensatorn minskat till 37~\% av maxvärdet.
