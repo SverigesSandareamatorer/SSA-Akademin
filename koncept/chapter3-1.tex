@@ -1110,31 +1110,34 @@ kallade L/C-förhållandet samt av kretsens resistiva förluster.
 \end{marginfigure}
 
 Bild \ref{fig:BildII3-19} visar en seriekrets är i resonans, så är
-
-\begin{align*}
-& X_L = X_C \quad & \text{dvs.} \quad \omega L = \frac{1}{\omega C} \\
-& \text{eller} & \\
-& X_L - X_C = 0 \quad & \text{dvs.} \quad \omega L - \frac{1}{\omega C} = 0
-\end{align*}
-
+\[
+ X_L = X_C 
+ \quad\text{dvs.}\quad
+ \omega L = \frac{1}{\omega C} 
+ \quad\text{eller}\quad
+ X_L - X_C = 0 
+ \quad\text{dvs.}\quad
+ \omega L - \frac{1}{\omega C} = 0
+\]
 Med ovanstående kretsdata blir resonansfrekvensen:
 
 \[
-f_0 = \frac{1}{2\pi \sqrt{LC}} \approx 796\ kHz
+f_0 = \frac{1}{2\pi \sqrt{LC}} \approx \SI{796}{kHz}
 \]
 
-Vid resonansfrekvensen blir reaktansen 1000~\(\Omega\) både för induktansen och
+Vid resonansfrekvensen blir reaktansen 1000\,\(\Omega\) både för induktansen och
 kapacitansen.
 Eftersom reaktansernas spänningsfall är motriktade tar de ut varandra.
 Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
-Antag att det alstras en spänning av 5~mV i antennkretsen.
-Strömmen genom den vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
+Antag att det alstras en spänning av 5\,mV i antennkretsen.
+Strömmen genom den vid resonans blir då \(\SI{5}{mV}/\SI{10}{\Omega}=
+\SI{0,5}{mA}\).
 
 Av strömmen bildas reaktiva spänningar, det vill säga
-\(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans
-(som tar ut varandra) och 5~mV över resistansen.
+\(\SI{0,5}{mA} \cdot 1000\ \Omega = \SI{500}{mV}\) både över induktans och 
+kapacitans (som tar ut varandra) och 5~mV över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \marginnote{HAREC a.\ref{HAREC.a.3.2.5}\label{myHAREC.a.3.2.5}}
