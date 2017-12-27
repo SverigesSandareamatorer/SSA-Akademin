@@ -1,5 +1,6 @@
 \section{Filter}
-\textbf{HAREC a.\ref{HAREC.a.3.2}\label{myHAREC.a.3.2}, a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2}\label{myHAREC.a.3.2}, 
+a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9}}
 \index{filter}
 \index{filter!frekvensfilter}
 \index{frekvensgång}
@@ -32,7 +33,7 @@ Men nu i dataåldern börjar även digitala filter vinna intåg.
 Sådana är dock för komplicerade för att behandlas här.
 
 \subsection{Högpassfilter (HP)}
-\textbf{HAREC
+\marginpar{HAREC
   a.\ref{HAREC.a.3.2.8b}\label{myHAREC.a.3.2.8b},
   a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9a}
 }
@@ -41,25 +42,24 @@ Sådana är dock för komplicerade för att behandlas här.
 \index{highpass filter}
 \index{HP}
 
-\begin{figure}
+\begin{figure*}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-22.pdf}
 \caption{Högpassfilter}
 \label{fig:BildII3-22}
-\end{figure}
+\end{figure*}
 
-Bild \ref{fig:BildII3-22}
-
-Ett \emph{högpassfilter} (eng. \emph{highpass filter (HP)}) släpper igenom
-signaler med höga frekvenser och dämpar dem med låga frekvenser.
+Bild \ref{fig:BildII3-22} visar ett \emph{högpassfilter} (eng. \emph{highpass 
+filter (HP)}) släpper igenom signaler med höga frekvenser och dämpar dem med 
+låga frekvenser.
 
 \textbf{Exempel:} En frekvensberoende spänningsdelare som LC-högpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
-Över XL uppstår då ett litet spänningsfall -- en låg utgångsspänning \(U_a\).
+Över XL uppstår då ett litet spänningsfall --- en låg utgångsspänning \(U_a\).
 Resultatet blir att låga frekvenser dämpas.
 
 Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor.
-Över \(X_L\) uppstår då ett stort spänningsfall -- en hög utgångsspänning
+Över \(X_L\) uppstår då ett stort spänningsfall --- en hög utgångsspänning
 \(U_a\).
 Resultatet blir att höga frekvenser släpps igenom.
 
@@ -72,33 +72,34 @@ Gränsfrekvensen \(f_g\) beror av kapacitansen \(C\), induktansen \(L\) samt
 resistansen \(R\).
 
 \textbf{LC-högpass:}
-\begin{gather*}
-  f_g = \frac{1}{2\pi \sqrt{LC}} \\
-  f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
-\end{gather*}
+\[   f_g = \frac{1}{2\pi \sqrt{LC}}   \]
+\[   f_g\ \text{[Hz]} \qquad L\ \text{[H]} \qquad C\ \text{[F]}   \]
 
 \textbf{RC-Högpass:}
-\begin{gather*}
-  f_g = \frac{1}{2\pi RC}\\
-  f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}
-\end{gather*}
+\[  f_g = \frac{1}{2\pi RC} \]
+\[  f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}\]
 
-\textbf{Räkneexempel:}
-\begin{enumerate}
-\item \(L = 4\ \text{H} \quad C = 1\ \mu\text{F} \quad f_g =\ ?\)
-  \[
-  f_g = \frac{1}{2\pi \sqrt{4 \cdot 10^{-6}}} = \frac{500}{2\pi }
-  = 79,6\ \text{Hz}
-  \]
-\item \(R = 1\ k\Omega \quad C = 10\ \text{nF} \quad f_g =\ ?\)
+\noindent\textbf{Räkneexempel 1.}
+
+\[   L = 4\ \text{H} \qquad C = 1\ \mu\text{F} \qquad f_g =\ ?   \]
+
+\[
+	f_g = \frac{1}{2\pi \sqrt{4 \cdot 10^{-6}}} 
+	    = \frac{500}{2\pi }
+        = 79,6\,\unit{Hz}
+\]
+
+\noindent\textbf{Räkneexempel 2.}
+
+\[   R = 1\ k\Omega \qquad C = 10\ \text{nF} \qquad f_g =\ ?   \]
+
   \[
     f_g = \frac{1}{2\pi  \cdot 1 \cdot 10^3 \cdot 10 \cdot 10^{-9}}
-    = \frac{10^5}{2\pi } = 15,9\ \text{kHz}
+    = \frac{10^5}{2\pi } = 15,9\,\unit{kHz}
   \]
-\end{enumerate}
 
 \subsection{Lågpassfilter (LP)}
-\textbf{HAREC
+\marginpar{HAREC
   a.\ref{HAREC.a.3.2.8a}\label{myHAREC.a.3.2.8a},
   a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9b}
 }
@@ -107,11 +108,11 @@ resistansen \(R\).
 \index{lowpass filter}
 \index{LP}
 
-\begin{figure}
+\begin{figure*}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-23.pdf}
 \caption{Lågpassfilter}
 \label{fig:BildII3-23}
-\end{figure}
+\end{figure*}
 
 Om induktor och kondensator respektive resistor och kondensator i ett
 högpassfilter byter plats, som i bild \ref{fig:BildII3-23}, så får man i
@@ -123,12 +124,12 @@ signaler med låga frekvenser och dämpar dem med höga frekvenser.
 \textbf{Exempel:} En frekvensberoende spänningsdelare som LC-Lågpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
-Över \(X_L\) uppstår då ett litet spänningsfall -- en hög utgångsspänning
+Över \(X_L\) uppstår då ett litet spänningsfall --- en hög utgångsspänning
 \(U_a\).
 Resultatet blir att låga frekvenser släpps igenom.
 
 Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor.
-Över \(X_L\) uppstår då ett stort spänningsfall -- en låg utgångsspänning
+Över \(X_L\) uppstår då ett stort spänningsfall --- en låg utgångsspänning
 \(U_a\).
 Resultatet blir att höga frekvenser dämpas.
 
@@ -150,7 +151,7 @@ högpassfilter, således
 \end{gather*}
 
 \subsection{Bandpassfilter (BP)}
-\textbf{HAREC
+\marginpar{HAREC
   a.\ref{HAREC.a.3.2.7}\label{myHAREC.a.3.2.7},
   a.\ref{HAREC.a.3.2.8c}\label{myHAREC.a.3.2.8c},
   a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9c}
@@ -160,11 +161,11 @@ högpassfilter, således
 \index{bandpass filter}
 \index{BP}
 
-\begin{figure}
+\begin{figure*}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-24.pdf}
 \caption{Bandpassfilter}
 \label{fig:BildII3-24}
-\end{figure}
+\end{figure*}
 
 Ett \emph{bandpassfilter} (eng. \emph{bandpass filter}) släpper igenom signaler
 bara inom ett frekvensområde medan signaler inom andra frekvensområden dämpas.
@@ -179,11 +180,11 @@ koppling (lös koppling), kritisk koppling och överkritisk koppling
 
 På bilden visas hur passbandet påverkas bland annat av kopplingsgraden.
 Lös koppling liten bandbredd.
-Kritisk koppling -- större bandbredd.
-Fast koppling -- stor bandbredd.
+Kritisk koppling --- större bandbredd.
+Fast koppling --- stor bandbredd.
 
 \subsection{Passfilter}
-\textbf{HAREC
+\marginpar{HAREC
   a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9d}
 }
 \index{passfilter}
@@ -204,7 +205,7 @@ Passkretsen kopplas i serie med signalvägen och låter signaler med
 frekvenser inom filtrets passband att passera.
 
 \subsection{Bandspärrfilter}
-\textbf{HAREC
+\marginpar{HAREC
   a.\ref{HAREC.a.3.2.8d}\label{myHAREC.a.3.2.8d},
   a.\ref{HAREC.a.3.2.9}\label{myHAREC.a.3.2.9e}
 }
@@ -251,15 +252,15 @@ Sugkretsen kopplas parallellt med signalvägen och kortsluter (suger bort) en
 signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 \ref{fig:BildII3-27}.
 
-\begin{wrapfigure}[14]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-28.pdf}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-28.pdf}
 \caption{Kvartskristall}
 \label{fig:BildII3-28}
-\end{wrapfigure}
+\end{marginfigure}
 
 \subsection{Kvartskristall}
 
-\textbf{HAREC a.\ref{HAREC.a.3.2.11}\label{myHAREC.a.3.2.11}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2.11}\label{myHAREC.a.3.2.11}}
 \index{kvartskristall}
 \index{quartz crystal}
 \index{crystal}
@@ -286,11 +287,11 @@ Många moderna kvartskristaller kan uppvisa olastat Q-värde på 100000.
 \index{keramiska resonatorer}
 \index{ceramic resonators}
 
-\begin{wrapfigure}[17]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-29.pdf}
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-29.pdf}
 \caption{Bandfilter med kvartskristaller}
 \label{fig:BildII3-29}
-\end{wrapfigure}
+\end{marginfigure}
 
 Bild \ref{fig:BildII3-29} visar hur kvartskristaller kan kombineras till
 filter, ofta refererade till som \emph{kristallfilter} (eng.
@@ -339,11 +340,11 @@ avsevärt högre i frekvens.
 
 %%\begin{figure*}[ht]
 %%\begin{center}
-\begin{wrapfigure}[15]{R}{0\textwidth}
-  \includegraphics[width=0.2\textwidth]{images/cropped_pdfs/bild_2_3-31.pdf}
+\begin{marginfigure}
+  \includegraphics[width=.5\textwidth]{images/cropped_pdfs/bild_2_3-31.pdf}
   \caption{Kavitetsfilter}
   \label{fig:BildII3-31}
-\end{wrapfigure}
+\end{marginfigure}
 %%\end{center}
 %%\end{figure*}
 
@@ -378,16 +379,18 @@ Detta är dock på bekostnad av Q-värdet.
 Flera kavitetsfilter kan kopplas ihop för att bilda bandfilter, spärrfilter med
 mera.
 
+\begin{marginfigure}
+	\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_3-32.pdf}
+	\caption{Pi-filter}
+	\label{fig:BildII3-32}
+\end{marginfigure}
+
 \subsection{Pi-filter}
-\textbf{HAREC a.\ref{HAREC.a.3.2.10a}\label{myHAREC.a.3.2.10a}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2.10a}\label{myHAREC.a.3.2.10a}}
 \index{Pi-filter}
 \index{filter!Pi-filter}
 
-\begin{wrapfigure}[16]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-32.pdf}
-\caption{Pi-filter}
-\label{fig:BildII3-32}
-\end{wrapfigure}
+
 
 För att överföra HF-signaler med bästa verkningsgrad, så är det viktigt med god
 impedansanpassning mellan de olika funktionerna.
@@ -400,16 +403,17 @@ induktanser och kapacitanser.
 Ett Pi-format nät kan sägas bestå av två L-formade nät ställda mot varandra, där
 den seriella delen är gemensam (på bilden en induktor).
 
+\begin{marginfigure}
+	\includegraphics[width=.7\textwidth]{images/cropped_pdfs/bild_2_3-33.pdf}
+	\caption{T-filter}
+	\label{fig:BildII3-33}
+\end{marginfigure}
+
 \subsection{T-filter}
-\textbf{HAREC a.\ref{HAREC.a.3.2.10b}\label{myHAREC.a.3.2.10b}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2.10b}\label{myHAREC.a.3.2.10b}}
 \index{T-filter}
 \index{filter!T-filter}
 
-\begin{wrapfigure}[16]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-33.pdf}
-\caption{T-filter}
-\label{fig:BildII3-33}
-\end{wrapfigure}
 
 Ett nät kan också vara T-format, som bild \ref{fig:BildII3-33} visar, och bestå
 av induktanser och kapacitanser.
@@ -431,7 +435,7 @@ Ett Pi- eller T-filter kan fungera som
 \end{itemize}
 
 \subsection{Icke-ideala komponenter}
-\textbf{HAREC a.\ref{HAREC.a.3.2.12}\label{myHAREC.a.3.2.12}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2.12}\label{myHAREC.a.3.2.12}}
 
 För alla analoga kompoenter så är de verkliga egenskaperna behäftade med
 oönskade egenskaper, även kända som parasitiska egenskaper.
@@ -457,7 +461,7 @@ Varje resonator lastas dock, vilket ytterligare ökar på förlusten och därmed
 ytterligare sänker Q-värdet.
 
 \subsection{Digitala filter}
-\textbf{HAREC a.\ref{HAREC.a.3.2.13}\label{myHAREC.a.3.2.13}}
+\marginpar{HAREC a.\ref{HAREC.a.3.2.13}\label{myHAREC.a.3.2.13}}
 \index{digitala filter}
 
 Med den utveckling som skett, kan allt mer processing ske digitalt, det gör
