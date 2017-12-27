@@ -19,19 +19,19 @@
 
 Bild \ref{fig:BildII3-01} visar seriekopplade resistorer.
 Den totala resistansen av seriekopplade resistorer är summan av resistanserna.
-\[R = R_1 + R_2 + R_3 + \cdots + R_n \]
+\[ R = R_1 + R_2 + R_3 + \cdots + R_n \]
 
 Strömmen är lika stor genom alla seriekopplade resistorer i strömvägen (ingen
 avgrening).
-\[I = I_1 = I_2 = I_3 + \cdots + I_n \]
+\[ I = I_1 = I_2 = I_3 + \cdots + I_n \]
 
 Den totala spänningen över seriekopplade resistorer är summan av spänningen över
 var och en av dem.
-\[U = U_1 + U_2 + U_3 + \cdots + I_n \]
+\[ U = U_1 + U_2 + U_3 + \cdots + I_n \]
 
 Spänningen över var och en av seriekopplade resistorer förhåller sig som deras
 resistanser. För två resistorer gäller
-\[\dfrac{U_1}{U_2} = \dfrac{R_1}{R_2}\]
+\[   \dfrac{U_1}{U_2} = \dfrac{R_1}{R_2}   \]
 
 \subsection{Parallellkopplade resistorer}
 \marginnote{HAREC a.\ref{HAREC.a.3.1.1b}\label{myHAREC.a.3.1.1b}}
@@ -185,10 +185,10 @@ enskilda kapacitanserna.
 \noindent Räkneexempel 1.
 
 Vi har två kondensatorer med följande värden: \( C_1 =
-\SI{5}{\mu F}, \quad C_2 = \SI{10}{\mu F} \) och vi söker den
+\SI{5}{\upmu F}, \quad C_2 = \SI{10}{\upmu F} \) och vi söker den
 resulterande kapacitansen vid parallellkoppling.
-\[   C_{\text{total}} = C_1 + C_2 = \SI{5}{\mu F} +
-     \SI{10}{\mu\farad} = \SI{15}{\mu F}   \]
+\[   C_{\text{total}} = C_1 + C_2 = \SI{5}{\upmu F} +
+     \SI{10}{\upmu\farad} = \SI{15}{\upmu F}   \]
 
 
 
@@ -278,24 +278,23 @@ varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
 \[
 \frac{1}{L} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} +
 \cdots \frac{1}{L_n}
-\]
+\]\\[0.25\baselineskip]
+
 
 För två induktorer gäller:
-\begin{align*}
-  \frac{1}{L} &= \frac{1}{L_1} + \frac{1}{L_2} \quad \text{eller} \\
-  L &= \frac{L_1 \cdot L_2}{L_1 + L_2}
-\end{align*}
+\[  \frac{1}{L} = \frac{1}{L_1} + \frac{1}{L_2} \]
+
+Eller:
+
+\[ L = \frac{L_1 \cdot L_2}{L_1 + L_2} \]
 
 \noindent Räkneexempel:
 
-\[L_1 = 50\ mH \quad L_2 = 60\ mH \quad L =\ ?\]
+\[ L_1 = \SI{50}{mH} \quad L_2 = \SI{60}{mH} \quad L =\ ?   \]
 
-\begin{align*}
-  L &= \frac{L_1 \cdot L_2}{L_1 + L_2} \\
-    &= \frac{50 \cdot 60}{50 + 60} \\
-    &= \frac{3000}{110}\\
-  &\approx \SI{27}{mH}
-\end{align*}
+\[ L = \frac{L_1 \cdot L_2}{L_1 + L_2} = \frac{50 \cdot 60}{50 + 60} =
+\frac{3000}{110} \approx \SI{27}{mH} \]
+
 
 \subsection{Magnetiskt kopplade induktorer}
 \index{induktor!magnetiskt kopplade}
@@ -338,13 +337,12 @@ induktans av 2\,\textmu H.
 Induktorerna är kopplade och placerade så att deras magnetfält verkar med
 varandra.
 
-Vardera induktansen ökas därför med \(M = 2\,\unit{\mu H}\).
-
-\begin{align*}
-  L &= L_1 + M + L_2 + M \\
-  &= 20 + 2 + 10 + 2\ \mu H \\
-  &= 34\ \mu H
-\end{align*}
+Vardera induktansen ökas därför med \(M = 2\,\unit{\upmu H}\).
+\[
+L = L_1 + M + L_2 + M 
+  = 20 + 2 + 10 + 2 
+  = \SI{34}{\upmu H}
+\]
 
 \noindent Räkneexempel:
 
