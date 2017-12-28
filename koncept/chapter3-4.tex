@@ -157,10 +157,6 @@ användas för så kallad impedansomvandling.
   \end{tabular}
 \end{table*}
 
-
-%%
-
-
 \subsection{Stabilisering av arbetspunkten}
 
 För att en förstärkare ska kunna arbeta på avsett sätt måste
@@ -206,11 +202,11 @@ fall alltid är negativ medan bas/emitterspänningen är positiv.
 Styrspänningens relativa läge (arbetspunkten) mellan olika
 arbetsklasser är emellertid lika.
 
-\begin{wrapfigure}[37]{R}{0.3\textwidth}
-\includegraphics[width=0.3\textwidth]{images/cropped_pdfs/bild_2_3-44.pdf}
-\caption{Förstärkare i klass A}
-\label{fig:BildII3-44}
-\end{wrapfigure}
+\begin{marginfigure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-44.pdf}
+  \caption{Förstärkare i klass A}
+  \label{fig:BildII3-44}
+\end{marginfigure}
 
 \subsubsection{Klass A}
 \index{klass A}
@@ -237,11 +233,6 @@ distorsion.
 \subsubsection{Klass B}
 \index{klass B}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-45.pdf}
-\caption{Förstärkare i klass B}
-\label{fig:BildII3-45}
-\end{wrapfigure}
 
 Bild \ref{fig:BildII3-45}
 
@@ -260,14 +251,20 @@ Linjär förstärkning kan också erhållas med två mottaktkopplade rör eller
 transistorer i klass B.
 Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
 
+\begin{marginfigure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-45.pdf}
+  \caption{Förstärkare i klass B}
+  \label{fig:BildII3-45}
+\end{marginfigure}
+
+\begin{marginfigure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-46.pdf}
+  \caption{Förstärkare i klass C}
+  \label{fig:BildII3-46}
+\end{marginfigure}
+
 \subsubsection{Klass C}
 \index{klass C}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-46.pdf}
-\caption{Förstärkare i klass C}
-\label{fig:BildII3-46}
-\end{wrapfigure}
 
 Bild \ref{fig:BildII3-46} visar klass C som används i HF-förstärkarsteg i
 FM-, CW- och AM-sändare.
@@ -288,12 +285,6 @@ förstärkare i klass C.
 \index{frekvensmultiplicering}
 \index{frequency multiplication}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-47.pdf}
-\caption{Frekvensmultipliceringskedja}
-\label{fig:BildII3-47}
-\end{figure}
-
 \emph{Frekvensmultiplicering} (eng. \emph{frequency multiplication}) kan
 användas för att skapa en högre frekvens än den som avges av oscillatorn.
 Bild \ref{fig:BildII3-47} visar hur oscillatorn följs då av ett eller flera
@@ -304,6 +295,12 @@ svängningskrets, som är avstämd till önskad frekvens, dvs. överton
 av insignalen.
 Denna överton förstärks i efterföljande förstärkarsteg, vilket också kan vara
 frekvensmultiplicerande.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-47.pdf}
+\caption{Frekvensmultipliceringskedja}
+\label{fig:BildII3-47}
+\end{figure}
 
 Ju högre multiplikationsfaktorn är, desto högre förspänning krävs för
 att svängningskretsen i utgången ska svänga obehindrat.
@@ -346,12 +343,12 @@ amatörradio nås med frekvensmultiplicering.
 De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt
 relaterade av detta skäl.
 
-Således
+Således:
 \begin{align*}
-  3,5 \cdot 2 & = 7\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 & = 14\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 3 & = 21\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\ \text{MHz} \\
+  3,5 \cdot 2 & = 7\,\unit{MHz} \\
+  3,5 \cdot 2 \cdot 2 & = 14\,\unit{MHz} \\
+  3,5 \cdot 2 \cdot 3 & = 21\,\unit{MHz} \\
+  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\,\unit{MHz} \\
 \end{align*}
 
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen utan
