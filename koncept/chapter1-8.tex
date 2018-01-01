@@ -332,13 +332,14 @@ med ett avstånd till bärvågen av 5~Hz, 15~Hz, 25~Hz, 35~Hz osv.
 Telegrafisändaren har alltså liksom vid A3E en bandbredd, som dels står i
 förhållande till nycklingshastigheten och dels till ''kantigheten'' på tecknen,
 vilket bestämmer övertonshalten i bärvågen.
-Vid s.k. mjuk nyckling kan den 9:e övertonen antas vara den högsta som
+Vid så kallad mjuk nyckling kan den 9:e övertonen antas vara den högsta som
 uppfattas av en motstation.
 Med en nycklingsfrekvens av 5~Hz blir bandbredden inte större än
 \(2 \cdot 10 \cdot 5 = 100\ Hz\).
 
 En hård (kantig) och snabb teckengivning ökar bandbredden och kan resultera i
-att s.k. nycklingsknäppar kan uppfattas långt vid sidan om sändningsfrekvensen.
+att så kallade nycklingsknäppar kan uppfattas långt vid sidan om
+sändningsfrekvensen.
 Ju hårdare nycklingen är, desto längre bort från bärvågsfrekvensen hörs
 nycklingsknäpparna.
 Detta stör andra stationer.
@@ -361,7 +362,7 @@ information.
 
 Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
 sätt.
-Numera är den s.k. filtermetoden i särklass vanligast och den enda som
+Numera är den så kallade filtermetoden i särklass vanligast och den enda som
 behandlas här.
 
 \begin{figure}
@@ -688,7 +689,7 @@ modulationsindex varierar med den modulerande frekvensen.
 
 \item Fasmodulation (PM) alstras vanligen genom att efter sändaroscillatorn
   variera den modulerande signalens fasläge i förhållande till en omodulerad
-  bärvåg -- s.k. fasmodulering.
+  bärvåg -- så kallad fasmodulering.
   Det gör man genom att variera resonansfrekvensen i en svängningskrets efter
   oscillatorn, dvs. utan att påverka oscillatorfrekvensen.
 
@@ -724,7 +725,7 @@ En typisk sändning kan bestå av pulser med en längd av 1 \(\mu\)s och en
 frekvens av 1000~Hz.
 Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
 
-Före WARC 79 var symbolen för all pulssändning P.
+Före WARC~79 var symbolen för all pulssändning P.
 Därefter används P endast för omodulerade pulståg.
 Annan pulsmodulation har följande symboler
 
@@ -933,8 +934,8 @@ mikrovågslänkar och många andra moderna system såsom EDGE
 (efterföljaren till GSM med högre datatakt), UMTS när man kör
 höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
 symboler men i stället väldigt många parallellt fördelat över ett
-större frekvensband. I mobiltelefonisystem använder man bland annat 
-64QAM och 256QAM.
+större frekvensband.
+I mobiltelefonisystem använder man bland annat 64QAM och 256QAM.
 
 Mikrovågslänkar använder upp till 2048QAM. En fördel med
 QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
@@ -1081,7 +1082,7 @@ bit-fel.
 
 Om vi antar att vi inte har störning från några andra signaler, utan enbart har
 brus som störning, så kan vi estimera \emph{bitfelssannolikheten} (eng.
-\emph{bit error rate (BER)} ur hur starkt bruset är i förhållande till vårt
+\emph{bit error rate (BER)}) ur hur starkt bruset är i förhållande till vårt
 steg. Eftersom bruset antas vara vitt brus, så har det egenskaperna av
 \emph{Gaussiskt brus} (eng. \emph{Gaussian noise}).
 
@@ -1089,13 +1090,13 @@ Gaussiskt brus har en statistisk fördelning med hög sannolikhet nära
 medelvärdet och avtar sedan med avståndet. Sannolikheten att man tolkar en
 signal som vara på ena eller andra sidan av en gräns beror på hur långt bort
 från medelvärdet den gränsen, ofta benämnd kvantiseringsgränsen, är i
-förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)} i
+förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)}) i
 amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
 \emph{error function (erf)}.
 
-När gränsen är 1~sigma, dvs. 1 gånger RMS-värdet för brusamplituden, från
-medelvärdet så är det 67~\% sannolikhet att värdet ligger inom gränsvärdet, dvs. en
-bitfelssannolikhet på 33~\%.
+När gränsen är 1~sigma, det vill säga 1 gånger RMS-värdet för brusamplituden,
+från medelvärdet så är det 67~\% sannolikhet att värdet ligger inom
+gränsvärdet, det vill säga en bitfelssannolikhet på 33~\%.
 Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
 bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
@@ -1123,7 +1124,8 @@ binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
 kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-upptäckt. Det är med andra ord inte en särdeles stark checksumma.
+upptäckt.
+Det är med andra ord inte en särdeles stark checksumma.
 Paritet används till exempel i seriekommunikation så som RS-232.
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
@@ -1166,8 +1168,9 @@ ta för mycket tid eller om det helt enkelt inte finns någon kommunikation frå
 mottagaren till sändaren, till exempel för satellitmottagare.
 
 En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
-sänder samma tecken två gånger. Liknande används i Bluetooth där meddelandet
-sänds tre gånger, varvid man kan göra majoritetsröstning.
+sänder samma tecken två gånger.
+Liknande används i Bluetooth där meddelandet sänds tre gånger, varvid man kan
+göra majoritetsröstning.
 
 Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
 
@@ -1291,8 +1294,9 @@ skrivhastighet hos den gemene amatören.
 WSPR släpptes i sin första version 2008.
 Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
 open source-program och utvecklas av ett litet team.
-Joe Taylor fick sin utbildning i astronomi vid Harvard University. Han var sedan verksam
-inom området astrofysik vid Princeton University, varifrån han pensionerades 2006.
+Joe Taylor fick sin utbildning i astronomi vid Harvard University.
+Han var sedan verksam inom området astrofysik vid Princeton University,
+varifrån han pensionerades 2006.
 Joe Taylor tilldelades Nobelpriset i fysik år 1993.
 
 Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
