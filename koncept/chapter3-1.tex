@@ -44,7 +44,7 @@ resistanser. För två resistorer gäller
   \label{fig:BildII3-02}
 \end{marginfigure}
 
-Bild \ref{fig:BildII3-02} visar parallelkopplade resistorer.
+Bild \ref{fig:BildII3-02} visar parallellkopplade resistorer.
 Den totala resistansen av parallellkopplade resistorer är lägre än den lägsta
 enstaka resistansen.
 \[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} +
@@ -120,8 +120,8 @@ spänningsdelare.
 U_2 = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
 \]
 
-Härav förstås att en spänningsmätning ger olika resultat beroende på den
-inre resistansen i voltmetern.
+Från detta förstår vi att till exempel en spänningsmätning ger olika resultat beroende
+på den inre resistansen i voltmetern.
 
 \subsection{Wheatstones brygga}
 \index{Wheatstones brygga}
@@ -154,13 +154,15 @@ Det flyter däremot ingen ström där när det inte finns en potentialskillnad,
 det vill säga när bryggan är i balans.
 Balans (mätvärdet) får man genom justering av den graderade potentiometern
 till noll ström.
-Då gäller sambandet
+Då gäller sambandet: 
 
-Spänningsdelare och bryggor har tagits med för att påvisa att apparater påverkar
-varandra när de kopplas samman, vilket är fallet även vid mätningar.
+\[ \frac{R_1}{R_2} = \frac{R_3}{R_4} \]
 
-Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att
-det är fråga om en växelströmskrets.
+Spänningsdelare och bryggor har tagits med för att påvisa att apparater
+påverkar varandra när de kopplas samman, vilket är fallet även vid mätningar.
+
+Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt
+att det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
 \marginnote{HAREC a.\ref{HAREC.a.3.1.1f}\label{myHAREC.a.3.1.1f}}
@@ -254,7 +256,8 @@ beräknas på samma sätt som för motsvarande sammankoppling av resistorer.
 \index{seriekoppling!induktorer}
 
 Förutsatt att magnetfälten från de respektive induktorerna inte återverkar på
-varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
+varandra --- det vill säga inte ''kopplar magnetiskt till varandra'' --- så
+gäller:
 
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
 
@@ -273,7 +276,8 @@ varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
 \index{parallellkoppling!induktorer}
 
 Förutsatt att magnetfälten från de respektive induktorerna inte återverkar på
-varandra, det vill säga inte ''kopplar magnetiskt till varandra'', så gäller:
+varandra --- det vill säga inte ''kopplar magnetiskt till varandra'' --- så
+gäller:
 
 \[
 \frac{1}{L} = \frac{1}{L_1} + \frac{1}{L_2} + \frac{1}{L_3} +
@@ -344,7 +348,7 @@ L = L_1 + M + L_2 + M
   = \SI{34}{\upmu H}
 \]
 
-\noindent Räkneexempel:
+\noindent \textbf{Räkneexempel:}
 
 Två induktorer har en impedans av 20 resp 10\,\textmu H och en ömsesidig
 induktans av 2\,\textmu H.
@@ -625,8 +629,8 @@ Först vid 180\degree, när spänningen har nått maxvärdet åt andra hållet, 
 också strömmen riktning och bygger upp ett nytt magnetfält med motsatt
 polaritet.
 
-Effekt överförs från strömkällan till induktorn när ström och spänning har samma
-riktning.
+Effekt överförs från strömkällan till induktorn när ström och spänning har
+samma riktning.
 När ström och spänning har olika riktning, försöker induktorn i stället
 ''ladda'' strömkällan med energi från sitt kraftfält.
 Det pendlar därför effekt mellan strömkällan och induktorn, varvid effekten i
@@ -728,7 +732,7 @@ När man vill beräkna den resulterande impedansen i kretsen
 spänningar eller strömmar inte är i fas med varandra.
 De arbetar ju inte ''i takt''.
 
-Att då addera max. värdena ger fel resultat.
+Att då addera maxvärdena ger fel resultat.
 I stället söker man den så kallade resultanten av de olika vektorer som
 motsvarar ström- och spänningsvärden.
 Detta kan göras grafiskt eller beräknas.
@@ -1137,7 +1141,7 @@ Strömmen genom den vid resonans blir då \(\SI{5}{mV}/\SI{10}{\Omega}=
 
 Av strömmen bildas reaktiva spänningar, det vill säga
 \(\SI{0,5}{mA} \cdot 1000\ \Omega = \SI{500}{mV}\) både över induktans och 
-kapacitans (som tar ut varandra) och 5~mV över resistansen.
+kapacitans (som tar ut varandra) och 5\,mV över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \marginnote{HAREC a.\ref{HAREC.a.3.2.5}\label{myHAREC.a.3.2.5}}
@@ -1209,4 +1213,4 @@ frekvenser som är högre eller lägre.
 Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70\% av
 maximalvärdet.
 Med bandbredden \(b\) förstås skillnaden mellan impedansvärdena i ett sådant
-frekvenspar, det vill säga \[b = f_2 - f_1\].
+frekvenspar, det vill säga \(b = f_2 - f_1\).
