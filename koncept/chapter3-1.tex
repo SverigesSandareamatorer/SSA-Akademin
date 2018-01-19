@@ -58,18 +58,11 @@ enstaka resistansen.
 \frac{1}{R_2} + \frac{1}{R_3} + \cdots \frac{1}{R_n}
 \]
 
-För två resistorer gäller
+För två parallellkopplade resistorer gäller
 
 \begin{align*}
 \frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} && eller \\
 R &= \frac{R_1 \cdot R_2}{R_1 + R_2}
-\end{align*}
-
-För tre resistorer gäller
-
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} && eller \\
-R &= \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 + R_2\cdot R_3}
 \end{align*}
 
 Strömmen förgrenar sig mellan parallellkopplade resistorer.
@@ -100,18 +93,16 @@ Spänningsdelare förekommer i flera former.
 Bild \ref{fig:BildII3-03} visar en spänningsdelare med resistorer där
 spänningen \(U\) delas upp i spänningen \(U_1\) över resistorn \(R_1\)
 respektive \(U_2\) över \(R_2\).
-Man kan då till exempel använda spänningen för något ändamål.
 
-Ett alternativ till spänningsdelning med resistorer med fasta värden är
-\emph{potentiometern}. Det är en variabel spänningsdelare i form av en resistor
-med ett uttag som kan flyttas mellan ändanslutningarna.
+Ett alternativ till spänningsdelning med fasta resistorer är \emph{potentiometern}. 
+Den är en variabel spänningsdelare i form av en resistor med ett flyttbart uttag.
 
-Om man nu ansluter en apparat parallellt över \(R_2\), till exempel ett instrument
-vars inre resistans motsvaras av \(R_y\), så kommer spänningarna över \(R_1\)
+Om man ansluter en apparat parallellt över \(R_2\), till exempel ett instrument
+vars inre resistans motsvaras av \(R_y\), kommer spänningarna över \(R_1\)
 och \(R_2\) att påverkas.
 
-Om \(R_y\) är mycket större än \(R_2\), så kan man bortse från påverkan.
-För att beräkna \(U_2\) kan man då använda följande formel för en obelastad
+Om \(R_y\) är mycket större än \(R_2\), kan man bortse från påverkan.
+För att beräkna \(U_2\) kan man använda följande formel för en obelastad
 resistiv spänningsdelare.
 
 \begin{align*}
@@ -119,12 +110,16 @@ resistiv spänningsdelare.
 U_2 &= U \cdot \frac{R_2}{R_1 + R_2}
 \end{align*}
 
-Om \(R_y\) däremot är av samma storleksordning eller lägre än \(R_2\), så måste
-man för att beräkna \(U_2\) använda en formel för en belastad resistiv
-spänningsdelare, till exempel
+Om \(R_y\) däremot är av samma storleksordning som \(R_2\) eller lägre, är det lämpligt att först räkna ut resistansen \(R_p\) i parallellkretsen 
 
 \[
-U_2 = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
+R_p = \frac{R_2 \cdot R_y}{R_2 + R_y}
+\]
+
+och därefter räkna ut spänningen \(U_2\) 
+
+\[
+U_2 = U \cdot \dfrac{ R_p }{ R_1 + R_p } = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
 \]
 
 Härav förstås att till exempel en spänningsmätning ger olika resultat beroende
@@ -163,11 +158,9 @@ Då gäller sambandet
 
 \[\frac{R_1}{R_2} = \frac{R_3}{R_4}\]
 
-Spänningsdelare och bryggor har tagits med för att påvisa att apparater
-påverkar varandra när de kopplas samman, vilket är fallet även vid mätningar.
+Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra när de kopplas samman, vilket är fallet vid mätningar.
 
-Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt
-att det är fråga om en växelströmskrets.
+Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
 \textbf{HAREC a.\ref{HAREC.a.3.1.1f}\label{myHAREC.a.3.1.1f}}
@@ -233,20 +226,11 @@ för kondensatorn med det minsta värdet.
 \frac{1}{C_3} + \cdots \frac{1}{C_n}
 \]
 
-För två kapacitanser gäller:
+För två kondensatorer gäller:
 
 \begin{align*}
   \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \quad \text{eller} \\
   C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
-\end{align*}
-
-För tre kapacitanser gäller:
-
-\begin{align*}
-  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3}
-  \quad \text{eller} \\
-  C &= \frac{C_1 \cdot C_2 \cdot C_3}
-  {C_1 \cdot C_2 + C_2 \cdot C_3 + C_2 \cdot C_3}
 \end{align*}
 
 \textbf{Räkneexempel:}
@@ -343,8 +327,7 @@ I stället görs en förenklad framställning.
 
 Bild \ref{fig:BildII3-07} visar seriekopplade induktorer, vars magnetfält
 kopplar till varandra på olika sätt.
-''Pricken'' vid änden av induktorerna på bilden markerar att magnetfälten där
-har inbördes polarisering.
+''Pricken'' vid änden av induktorerna på bilden markerar magnetfältens inbördes polarisering.
 
 \subsubsection{Magnetiskt kopplade induktorer i serie}
 
@@ -354,10 +337,9 @@ har inbördes polarisering.
 
 \textbf{Räkneexempel:}
 
-Två induktorer har en impedans av 20 respektive 10~\(\mu H\) och en ömsesidig
+Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
-Induktorerna är kopplade och placerade så att deras magnetfält verkar med
-varandra.
+Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
 Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 
@@ -368,10 +350,9 @@ Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 \end{align*}
 
 \textbf{Räkneexempel:}
-Två induktorer har en impedans av 20 respektive 10~\(\mu H\) och en ömsesidig
+Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
-Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
-varandra.
+Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
 Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 
 \begin{align*}
@@ -382,17 +363,17 @@ Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
 När flera induktorer är parallellkopplade och placerade så att deras magnetiska
-fält interagerar behöver man ta hänsyn till om de med- eller motverkar varandra.
+fält interagerar behöver man ta hänsyn till om de samverkar eller motverkar varandra.
 Mer läsning om induktorer och hur de påverkar varandra finns att läsa i
 \cite{letrafo}.
 
 \textbf{Formler:}
 
-Medkopplade parallella induktorer
+Samverkande parallella induktorer
 
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 - 2M}\]
 
-Motkopplade parallella induktorer
+Motverkande parallella induktorer
 
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 + 2M}\]
 
@@ -408,13 +389,15 @@ Motkopplade parallella induktorer
 
 Bild \ref{fig:BildII3-08} visar uppladdning av en kondensator.
 En kondensator \(C\) seriekopplas med en resistans \(R\)
-och kopplas in över spänningen \(U\).
+och kopplas till spänningen \(U\).
+
+% PHU: Bilden förvirrar. U i kretsschemat är samma som U_max i diagrammet.
 
 Spänningen över kondensatorn stiger från 0~volt till \(U_{max}\).
 
 Laddningsströmmen sjunker från \(I_{max}\) till 0~ampere.
 
-Spänningen över kondensatorn ökar exponentiellt uppladdningen.
+Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
 
 \[u_c = U_{max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
 
@@ -460,8 +443,7 @@ Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
 \label{fig:BildII3-09}
 \end{wrapfigure}
 
-Bild \ref{fig:BildII3-09} visar urladdning av en kondensator.
-En kondensator C urladdas över resistor R.
+Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor \(R_2\).
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
@@ -506,13 +488,9 @@ Exempel på beräkning av tidskonstanten:
 
 Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
-Spänningen över induktorn ökar från 0 till \(U_{max}\).
+Spänningen över induktorn minskar från \(U_{max}\) till 0.
 
-(Egentligen, induktorns motspänning minskar så att...)
-
-Strömmen genom induktorn ökar från 0 till \(U_{max}\).
-
-Strömmen genom induktorn ökar exponentiellt efter inkopplingen
+Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{max}\).
 
 \[i_L = I_{max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
 
@@ -535,18 +513,14 @@ s\ [\text{sek}] \quad
 \tau\ [\text{tidskonstant}]
 \]
 
-Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
-induktorn ökat från noll till 63~\% av \(I_{max}\) och motspänningen över
-induktorn minskat till 37~\% av maxvärdet.
+Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom induktorn ökat från noll till 63~\% av \(I_{max}\) och spänningen över induktorn minskat till 37~\% av maxvärdet.
 
 \subsubsection{Urkoppling}
 
 Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
-Energin i induktorn avleds genom resistorn som en ström med motsatt riktning
-än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter
-exponentiellt.
+Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
+Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter exponentiellt.
 
 \[i_L = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
@@ -572,16 +546,12 @@ Under den tid som magnetfältet i en induktor avvecklas eller byggs upp, så
 induceras en motspänning i den.
 Denna spänning är högre än den som finns över induktorn innan strömmen bryts
 eller ändras och är proportionell mot den hastighet som ändringen har.
-När en en strömkrets med induktor bryts är det vanligt att det i
-brytögonblicket bildas en gnista eller ljusbåge över brytarens kontakter.
+När en en strömkrets med induktor bryts är det vanligt att det i brytögonblicket bildas en gnista eller ljusbåge över brytarens kontakter.
 
-Om induktansen är stor och kretsströmmen hög, så ska en stor mängd energi
-frigöras på mycket kort tid.
+Om induktansen är stor och kretsströmmen hög ska en stor mängd energi frigöras på mycket kort tid.
 Det är därför inte ovanligt att brytarkontakter bränns eller smälter.
-I likströmskretsar kan gnistan eller ljusbågen minskas eller undertryckas genom
-att en kondensator i serie med en resistor kopplas över kontaktstället.
-Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar
-hastighetsändringen.
+I likströmskretsar kan gnistan eller ljusbågen minskas eller undertryckas genom att en kondensator i serie med en resistor kopplas över kontaktstället.
+Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar hastighetsändringen.
 
 \subsection{Växelströmskretsar}
 \textbf{HAREC a.\ref{HAREC.a.3.1.1}\label{myHAREC.a.3.1.1h}, a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2b}, a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3b}}
