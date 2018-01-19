@@ -1,571 +1,606 @@
-\section{Antenner - allmänt}
-\index{antenner}
+\chapter[Sändare]{Sändare och transceivers}
 
-Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt
-utan ett effektivt antennsystem. Det är en huvudförutsättning för
-framgångsrik radiokommunikation.
+\section{Sändare}
+\label{sändare}
+\index{sändare}
 
-Antennen omsätter elektrisk energi från sändaren till
-elektromagnetiska fält som strålas ut, d.v.s. radiovågor.
+\subsection{Blockschema}
+\index{blockschema}
 
-Vid mottagning fångar antennen upp radiovågorna och omsätter dem till
-elektriska signaler som förs till mottagaren.
+\emph{Blockschema} är sätt att göra en översiktlig principskiss över en
+apparats design, där de övergripande principerna för funktionen är illustrerade
+i en förenklad form där varje block representerar en grundläggande funktion.
+Denna förenkling gör att man kan snabb få en översikt utan att fastna i
+konstruktionsdetaljerna av enstaka block.
 
-Antennsystemet består av den egentliga antennen och
-transmissionsledningen mellan denna och sändaren respektive
-mottagaren. I antennsystemet ingår även impedansanpassningar,
-antennkopplare m.m.
+Hela apparaten kan ses som ett antal funktionsblock. Hur de samverkar
+framgår i stort av blockschemat.
+Där återfinns oscillatorer, blandare, förstärkare etc.
+I schemat kan även finnas uppgifter om frekvenser och spänningar med mera.
 
+Det finns olika slags funktionsblock -- kretsar. Kombinationen av block
+ger apparater med olika egenskaper.
+Exempel är så kallade raka sändare med samma frekvens genom hela sändaren,
+superheterodynsändare där frekvensblandning används,
+frekvensmultiplicerande sändare etc.
 
-\subsubsection{Våghastighet}
-\label{ljushastigheten}
-\index{våghastighet}
-\index{ljushastighet}
-\index{dielektricitetskonstant}
-\index{permabilitetetskonstant}
-\index{frekvens}
-
-I vakuum breder elektromagnetiska vågor ut sig med hastigheten
-\(c_0\), vilken mest kallas ljushastigheten.
-
-\[c_0 \approx 300 \cdot 10^6 \text{ [m/s]}\]
-
-I andra media än vakuum har samma vågor utbredningshastigheten
-\(c\). Formeln är då
-
-\[c = \frac{c_0}{\sqrt{µ_o \cdot \varepsilon_r}}\]
-
-där \(µ_0\) är relativa permeabilitetskonstanten och \(\varepsilon_0\)
-är relativa dielektricitetskonstanten för det medium som vågorna
-passerar igenom.  För enkelhetens skull sätts här \(µ_0\) och
-\(\varepsilon_0\) till 1, alltså \(c_0 = c\).
-
-Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
-
-\[ c = \lambda \cdot f \quad c\text{ [m/s] }\quad f\text{ [Hz] } \quad \lambda\text{ [m]}\]
-
-och våglängden således
-
-\[ \lambda = \frac{c}{f} \quad \text{[m]} \]
-
-\subsection{Antennlängd}
-
-\subsubsection{Elektriska längden}
-\index{elektrisk längd}
-\index{antenn!elektrisk längd}
-
-Längden för en resonant, ideal antenn som är en våglängd lång kan
-beräknas med ovanstående formel. Vi kallar denna längd för den
-\emph{elektriska} längden. Således \(l_e = \lambda\).
-
-Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\))
-är hälften av den elektriska längden för en helvågsantenn
-(\(\lambda\)):
-
-\[l_e = \frac{c}{2f} \quad \text{[m]}\]
-
-\subsubsection{Mekaniska längden}
-\index{mekanisk längd}
-\index{antenn!mekanisk längd}
-\index{förkortningsfaktor}
-\index{antenn!förkortningsfaktor}
-\index{resonansfrekvens}
-\index{antenn!resonansfrekvens}
-
-Man skiljer på antennens elektriska och mekaniska längd. Av flera
-orsaker blir den mekaniska antennlängden (\(l_m\)) för samma
-frekvens kortare än den elektriska (\(l_e\)). Det beror bl.a. på
-våghastighet och ledningsförmåga i de material som ingår samt övriga
-elektriska egenskaper beroende på antennens mekaniska utförande,
-påverkan från jordplan och omgivning m.m.
-
-Ett förhållande mellan längd och tjocklek av 10000 ger t.ex. en ca 2~\%
-mekaniskt kortare antenn.
-Förhållandet 30 ger en ca 5~\% kortare antenn.
-Det första värdet kan passa för en 2~mm tjock halvvågsantenn för 7~MHz.
-Det andra värdet för en 3,5~mm tjock halvvågsantenn för 145~MHz.
-Diagram för den s.k. förkortningsfaktorn finns i de flesta antennhandböcker.
-
-I följande formel har den mekaniska längden (\(l_m\)) för en fritt upphängd
-trådantenn valts 2~\% kortare än den elektriska längden.
-
-\[l_m = \frac{c}{2f} \cdot 0,98 = \frac{147\cdot 10^6}{f} \quad \text{[m]}\]
-
-Exempel: Beräkna den elektriska och mekaniska längden på en halvvågsantenn med
-resonansfrekvensen \(f = 7\) MHz.
-
-\[
-c = \lambda \cdot f
-\quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
-\]
-
-Elektriska våglängden för 7~MHz är
-
-\[
-\lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
-\quad \text{[m]}
-\]
-
-Antennen är en halvvågsantenn, således är elektriska längden
-
-\[
-l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21,43 \quad \text{[m]}
-\]
-
-och mekaniska längden
-
-\[
-l_m = \frac{\lambda}{2f} \cdot 0,98 = \frac{42.86}{2}\cdot 0,98 = 21
-\quad \text{[m]}
-\]
-
-
-\subsection{Ström och spänning i en halvvågsantenn}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.1}\label{myHAREC.a.6.2.1}
+\subsection{Rak sändare}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.1.1b}\label{myHAREC.a.5.1.1b},
+  a.\ref{HAREC.a.5.2.1}\label{myHAREC.a.5.2.1},
+  a.\ref{HAREC.a.5.3.3}\label{myHAREC.a.5.3.3}
 }
-\index{halvvågsantenn}
-\index{antenn!halvvåg}
-\index{antenn!ström och spänning}
+\index{rak sändare}
+\index{sändare!rak}
 
 \begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-01}
-  \caption{Spänning och ström i en halvvågsantenn}
-  \label{fig:bildII6-1}
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_5-01.pdf}
+  \caption{Enstegs sändare}
+  \label{fig:bildII5-1}
 \end{wrapfigure}
 
-När en halvvågsantenn matas med HF-energi på grundfrekvensen, så
-uppstår en stående våg med ett typiskt utseende.
+En \emph{rak sändare}, som illustreras i bild \ref{fig:bildII5-1}, är det
+enklaste sändarkonceptet.
+Då är oscillatorns frekvens samma som sändningsfrekvensen och ingen
+frekvensomvandling sker i signalvägen.
+Om en antenn kopplas till oscillatorn så blir den en enkel enstegs sändare.
 
-Bild \ref{fig:bildII6-1} visar att i vardera änden av antennen uppnår spänningen
-\(U\) ett maximum (en spänningsbuk), i mitten uppnår strömmen \(I\)
-ett maximum (en strömbuk).  Antennen strålar mest där strömbuken
-finns.
-
-Tag t.ex. en 40~meter lång metalltråd som antenn. Dess
-grundresonansfrekvens är ca 3,5~MHz, men den är även i resonans på de
-harmoniska övertonerna (7, 14, 21, 28~MHz o.s.v.).
-
-Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid de
-respektive övertonerna.
-
-80 m (3.5~MHz): I matningpunkten står ett spänningsminimum (en
-spänningsnod) och ett strömmaximum (en strömbuk). Strömmen är hög
-därför att matningspunkten har låg impedans.
-
-Samma antenn på 40~m, 20~m, 15~m, 10~m (7, 14, 21, 28~MHz) har ett
-spänningsmaximum (spänningsbuk) och ett strömminimum (strömnod) i
-matningspunkten, som då har hög impedans.
-
-Ur horisontaldiagrammet för antennen kan utläsas att ytterligare
-strålningskäglor (strålningslober) utvecklas för varje överton i den
-påmatade frekvensen. Samtidigt blir strålningen alltmer till riktad
-längs med antennen.
-
-\subsection{Impedansen i antennens matningspunkt}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.2}\label{myHAREC.a.6.2.2}
-}
-\index{impedans!antenn}
-\index{antenn!impedans}
-\index{halvvågsantenn}
-\index{antenn!halvvågs}
-\index{överton}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-02}
-  \caption{Matningsimpedansen i en halvvågsantenn}
-  \label{fig:bildII6-2}
-\end{wrapfigure}
+I flerstegs raka sändare följs oscillatorn av ytterligare funktioner
+på samma frekvens som oscillatorn.
+Buffertsteg, drivsteg och slutsteg kan vara sådana funktioner.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_6-03}
-  \caption{Halvvågsdipol matad med harmoniska övertoner}
-  \label{fig:bildII6-3}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-02.pdf}
+  \caption{Flerstegs rak sändare}
+  \label{fig:bildII5-2}
 \end{figure}
 
-Impedansen Z för varje punkt på en antenn kan beräknas med Ohms lag
-\(Z = \frac{U}{I}\).
+Bild \ref{fig:bildII5-2} visar en rak sändare, som består av oscillator +
+buffertsteg 1 + buffertsteg 2 + drivsteg + effektförstärkare.
 
-Bild \ref{fig:bildII6-2}
+Oscillatorn följs av ett avlastande buffertsteg 1.
+På så sätt blir oscillatorns frekvensstabilitet bättre.
+Buffertsteg 2 avlastar ytterligare och matar dessutom ett effekthöjande
+drivsteg, som ger driveffekt till slutsteget, samt slutsteget där den slutliga
+effekthöjningen sker.
 
-I mitten av en halvvågsantenn på grundfrekvensen är impedansen \(Z\)
-låg eftersom spänningen är låg där och strömmen hög. Ute i ändarna är
-däremot impedansen hög eftersom spänningen där är hög och strömmen
-låg.
+Raka sändare kan användas för CW, FM, PM och AM, men inte DSB och SSB.
+Fördelen med raka sändare är enkelheten.
+Nackdelen är att alla steg arbetar på samma frekvens, varvid risken för
+återverkan på ett föregående funktionssteg är större.
+Oönskad återkoppling kan då bli följden, som kan ge ostabila egenskaper hos
+sändaren.
+Genom att i första hand bygga in VFO och buffertstegen i metallkapslingar,
+så kallade skärmar, så minskas denna risk då högre isolation åstadkoms.
 
-Impedansen i mittpunkten är 73~Ω på grundfrekvensen, när antennen mätt
-i våglängder befinner sig mycket högt över jordytan, d.v.s. utan
-nämnvärd påverkan från omgivningen. I praktiken kan impedansen avvika
-mycket från detta värde.
-
-Antenn och matningskabel måste vara impedansanpassade till varandra
-för att det inte ska uppstå vågreflexion i anslutningen.
-
-Märk, att halvvågsantennen är i resonans inte bara på grundtonen utan
-även på jämna övertoner, 2:a, 4:e etc. harmoniska, varvid
-matningspunkten har hög impedans.  Vid matning med en lågohmig
-koaxialkabel uppstår då en kraftig missanpassning i anslutningen
-mellan antenn och kabel, vilket måste åtgärdas på något sätt. Se
-avsnitt \ref{transmissionsledningar} i detta kapitel.
-
-\subsubsection{Matningsimpedansen i några antenner}
-\index{W3DZZ-antenn}
-\index{antenn!W3DZZ}
-\index{omvikt dipol}
-\index{antenn!omvikt dipol}
-\index{folded dipol}
-\index{jordplanantenn}
-\index{antenn!jordplan}
-\index{GP-antenn}
-\index{antenn!GP}
-\index{Yagi-antenn}
-\index{antenn!Yagi}
-\index{Quad-antenn}
-\index{antenn!Quad}
-
-Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet med
-mittmatade partier på 2:a harmoniska övertonen, d.v.s. dubbla
-grundfrekvensen. På 80- och 40~m-banden är antennens matningsimpedans
-ca 60~Ω och på de högre banden ca 120~Ω. En kompromiss är att mata
-denna antenn med en 75~Ω-kabel för att inte få alltför stor
-missanpassning på något band.
-
-\emph{Den omvikta dipolen (folded dipole):}
-Matningsimpedansen är ca 240~Ω. En bandkabel med impedansen 300~Ω kan
-användas alternativt en koaxialkabel med impedansen 50 eller 75~Ω över
-en transformator med impedansomsättningen 4:1.
-
-\emph{Jordplanantennen (GP-antennen):} Matningsimpedansen är 30--60~Ω.
-När jordplanets spröt inte riktas horisontellt, utan snett nedåt,
-erhålls en matningsimpedans av 50~Ω, vilket passar bra för en
-koaxialkabel med 50~Ω impedans.
-
-\emph{Yagi- och Quad-antenner:} En anpassningsanordning för anslutning
-av 50--60~Ω koaxialkabel ingår oftast i fabriksgjorda
-riktantenner. En 50--60~Ω koaxialkabel kan då användas direkt.
-
-\subsubsection{Reaktansen i en icke-resonant antenn}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.3}\label{myHAREC.a.6.2.3}
+\subsection{Sändare med frekvensmultiplicering}
+\textbf{HAREC
+ a.\ref{HAREC.a.5.3.2}\label{myHAREC.a.5.3.2},
+ a.\ref{HAREC.a.5.3.5}\label{myHAREC.a.5.3.5},
+ a.\ref{HAREC.a.5.3.6}\label{myHAREC.a.5.3.6},
+ a.\ref{HAREC.a.5.3.8}\label{myHAREC.a.5.3.8},
+ a.\ref{HAREC.a.5.3.9}\label{myHAREC.a.5.3.9},
+ a.\ref{HAREC.a.5.3.11}\label{myHAREC.a.5.3.11}
 }
-\index{reaktans!antenn}
-\index{antenn!reaktans}
+\index{frekvensmultiplicering}
+\index{sändare!frekvensmultiplicering}
+\index{utgångsfilter}
+\index{sändare!utgångsfilter}
 
-Den elektriska svängningskretsen behandlas i avsnitt \ref{oscillatorer}. Där framställs
-svängningskretsens grundegenskaper resistans \(R\), induktans \(L\)
-och kapacitans \(C\) som koncentrerade till komponenter kallade
-resistor, induktor respektive kondensator.
+Helst väljer man en arbetsfrekvens för oscillatorn där den är mest
+frekvensstabil.
 
-Även en enkel tråd har dessa egenskaper, men utfördelade över hela
-tråden. Denna kan därför ses som ett stort antal komponenter, som
-tillsammans bildar en svängningskrets, vilken naturligtvis kan fungera
-som antenn.
+Om högre frekvens önskas på nyttosignalen, så kan man
+till exempel multiplicera oscillatorfrekvensen, detta kallas för
+\emph{frekvensmultiplicering} (eng. \emph{frequency multiplication}).
+I olinjära kretsar alstras övertoner, som ofta utnyttjas i detta syfte.
 
-När antennen matas med växelström med samma frekvens som antennens
-resonansfrekvens, så svänger antennen med de minsta
-förlusterna. Resonansfallet kan i korthet beskrivas så att den
-induktiva och kapacitiva reaktansen i antennen tar ut varandra medan
-resistansen kvarstår.
-
-Impedansen är vektorsumman av resistansen och de kapacitiva och
-induktiva reaktanserna. I resonans är antennens impedans lika med
-resistansen, vilket är ett specialfall. Antennströmmen har alltid
-sändarens frekvens. Om sändningsfrekvensen är en annan än antennens
-resonansfrekvens, så händer endera av följande: När antennströmmen har
-lägre frekvens än antennens resonansfrekvens, så blir den resulterande
-reaktansen negativ (kapacitiv), d.v.s. \(X_C\) är större än \(X_L\).
-
-När antennströmmen har högre frekvens än antennens resonansfrekvens,
-så blir den resulterande reaktansen positiv (induktiv), d.v.s. \(X_L\)
-är större än \(X_C\).
-
-\subsection{Elektrisk ''förlängning'' och ''förkortning''}
-\index{elektrisk förlängning}
-\index{antenn!elektrisk förlängning}
-\index{elektrisk förkortning}
-\index{antenn!elektrisk förkortning}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-04}
-  \caption{Elektrisk förlängning och förkorting av antenner}
-  \label{fig:bildII6-4}
-\end{wrapfigure}
-
-Om sändarfrekvensen, avviker mycket från antennens resonansfrekvens,
-så kan reaktansen i antennen behöva elimineras eller åtminstone
-minskas för en bättre impedansanpassning mellan antenn och
-matarledning. Den enklaste åtgärden är då att försöka ändra
-antennlängden.
-
-Bild \ref{fig:bildII6-4}
-
-Om detta inte låter sig göras, så kan man i serie med en ''för kort''
-antenn sätta in en induktor --- en s.k. elektrisk förlängning. Om i
-motsatt fall antennen är ''för lång'', så kan man sätta in en
-kondensator en s.k. elektrisk förkortning.
-
-I amatörradio ändras sändarfrekvensen mycket och ofta, varför
-antennsystemet bör kunna stämmas av från marken/operatörsplatsen. Då
-kan en antennkopplare med nödvändiga reaktiva komponenter behövas.  Se
-längre fram i kapitlet.
-
-\subsection{Anpassning till sändarens impedans}
-\textbf{
-HAREC a.\ref{HAREC.a.5.3.7}\label{myHAREC.a.5.3.7}
-}
-\index{avstämningsanordning}
-\index{match}
-\index{sändare!match}
-\index{impedansanpassning}
-\index{sändare!impedansanpassning}
-\index{π-filter}
-\index{sändare!π-filter}
-\index{ståendevåg}
-
-Ett sändarslutsteg med elektronrör är vanligen utrustat med en
-\emph{avstämningsanordning} (eng. \emph{matching network} och \emph{match})
-vid HF-utgången. Syftet är att kunna anpassa
-sändarens utgångsimpedans till impedansen i antennledningen. I moderna
-sändare består denna anordning mycket ofta av ett s.k. π-filter, vars
-utgångsimpedans kan variera mellan ca 30--150~Ω.
-
-Ett transistoriserat slutsteg är oftast utfört för en fast
-utgångsimpedans av 50~Ω och är alltså i behov av en
-avstämningsanordning, om inte antennsystemet inom vissa gränser håller
-samma impedans. Toleransgränsen för felanpassning brukar vara ett SVF
-av storleksordningen 2:1 innan sändarens skyddskretsar styr ner
-uteffekten.
-
-Vid lika impedans i sändarutgång, matarledning och antennanslutning
-uppträder ingen stående våg på matarledningen och mesta möjliga effekt
-överförs från sändaren till antennen.
-
-\subsection{Antennens strålningsdiagram}
-\index{strålningsdiagram}
-\index{antenn!strålningdiagram}
+Endast när kravet på frekvensstabilitet är lågt används den frekvens,
+som VFO eller CO arbetar på, även för nyttosignalen.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_6-05}
-  \caption{Vertikaldiagram för halvvågsantenn}
-  \label{fig:bildII6-5}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-03.pdf}
+  \caption{FM-sändare med frekvensmultiplicering}
+  \label{fig:bildII5-3}
 \end{figure}
 
-En antenns strålningsbild beskrivs bäst i tre dimensioner. Bild \ref{fig:bildII6-3}
-visar bl.a. ett horisontaldiagram för en halvvågsantenn.
+Oscillatorn svänger här på en låg frekvens, som multipliceras i
+olinjära förstärkarsteg till en hög sändningsfrekvens.
+Oftast multipliceras frekvensen två eller tre gånger i vart och ett av
+förstärkarstegen.
 
-Bild \ref{fig:bildII6-5} visar strålningen i vertikalplanet som funktion av
-antennhöjden för samma antenn. Vertikaldiagrammet kan ha mycket olika
-utseende beroende på antennens utförande, dess elektriska höjd över
-mark och omgivningens elektriska egenskaper. För att överbrygga stora
-avstånd, måste antennen ha en flack utstrålning relativt
-markplanet. En horisontelit upphängd antenn med en längd av
-\(\lambda/2\) har övervägande flack utstrålning när den placeras på en
-höjd av \(\lambda/2\), \(\lambda\), \(3\lambda/2\), \(2\lambda\),
-o.s.v. över mark. När en horisontell antenn däremot placeras
-\(\lambda/4\), \(3\lambda/4\), \(5\lambda/4\) o.s.v. över mark, är
-utstrålningen övervägande vertikal, vilket inte ska förväxlas med
-polarisationen, som i detta fall är horisontell.
+Bild \ref{fig:bildII5-3} visar ett blockschema för en FM sändare för
+435~MHz (70~cm-bandet).
+Oscillatorfrekvensen är 8,056~MHz.
+I fyra av de efterföljande förstärkarna multipliceras frekvensen 2, 3, 3
+respektive 3~gånger, alltså totalt 54~gånger.
+Sändningsfrekvensen blir då \(8,056 \cdot 54 = 435\)~MHz.
 
-Samma diagram gäller både för en sändar- och mottagarantenn. styrkan
-på en utstrålad signal motsvaras av styrkan på mottagen signal.
+Variationer i oscillatorfrekvensen blir också multiplicerade.
+I detta exempel blir sändningsfrekvensens deviation 54~gånger större än
+oscillatorfrekvensens deviation.
+En deviation av max 3000~Hz från den nominella sändningsfrekvensen motsvaras
+av följande deviation från oscillatorfrekvensen,
 
-\subsection{Antennvinst}
-\index{antennvinst}
-\index{antenn!antennvinst}
-\index{isotropisk antenn}
-\index{antenn!isotropisk}
-\index{symbol!G antennvinst}
-\index{dBi isotropiskt gain}
-\index{antenn!dBi isotropiskt gain}
-\index{isotropiskt gain (dBi)}
-\index{antenn!isotropiskt gain (dBi)}
-\index{dBd dipol gain}
-\index{antenn!dBd dipol gain}
-\index{dipol gain (dBd)}
-\index{antenn!dipol gain (dBd)}
+\[\Delta f = \frac{3000}{54} = 55,6\text{ [Hz]}\]
 
-Med \emph{antennvinst} \(G\) (eng. \emph{gain}) menas förhållandet mellan effekten
-\(P_t\) i huvudstrålningsriktningen (framriktningen för en antenn med
-osymmetriskt utstrålad effekt) och effekten från en definierad
-referensantenn.
+FM-sändare för VHF, UHF och SHF utförs ofta med
+frekvensmultiplikation.
+Jämfört med en rak sändare är komponentbehovet större, men i stället ger
+den låga oscillatorfrekvensen god frekvensstabilitet, vilket är en fördel.
+Risken för oönskade självsvängningar är mindre i en frekvensmultiplicerande
+än i en rak sändare, eftersom in och utgångsfrekvenserna i flera av stegen är
+olika.
 
-En referensantenn som tänks vara oändligt liten och som strålar med
-exakt samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk
-  antenn}.  En isotropisk antenn är emellertid endast teoretisk
-definierbar.
+Genom att ersätta frekvensmodulatorn med en fasmodulator så kan samma
+sändare även användas för fasmodulerad signal.
 
-Med effekten \(P_i\) från den isotropiska antennen som referens blir
-antennvinsten
+De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
+det vill säga olinjärt, vilket medför amplituddistorsion.
+Vid frekvens- och fasmodulering saknar emellertid detta betydelse, eftersom
+amplituden i det fallet inte är informationsbärande.
 
-\[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
+Övertoner i nyttosignalen bör dock filtreras bort, något som sker med ett
+filter på utgången, det så kallade \emph{utgångsfiltret}
+(eng. \emph{output filter}).
 
-En i praktiken definierbar referens är halvvågsdipolen, vars
-huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
-Referenseffekten är då \(P_d\) och antennvinsten
+\subsection{Sändare med frekvensblandning -- superheterodynsändare}
+\textbf{HAREC a.\ref{HAREC.a.5.1.1a}\label{myHAREC.a.5.1.1a}}
 
-\[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
-
-Bild \ref{fig:bildII6-6}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-06}
-  \caption{Antennvinst dBd i effekt}
-  \label{fig:bildII6-6}
-
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-07}
-  \caption{Antennvinst dBd i spänning}
-  \label{fig:bildII6-7}
-\end{wrapfigure}
-
-Antennvinsten kan också definieras som förhållandet mellan den
-elektriska fältstyrkan uf i huvudstrålningsriktningen och
-referensfältstyrkan (dipol).
-
-Jämfört med \(\lambda/2\)-dipol är antennvinsten
-
-\[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
-
-Man använder uttrycket dBi när antennvinsten anges i förhållande till
-en isotrop antenn och dBd i förhållande till en halvvågsantenn.  Se
-appendix \ref{decibel} om decibelbegreppet.
-
-Exempel på beräkning av antennvinst:
-
-\begin{align*}
-  U_f &= 40\text{ µV} \quad U_d = 20\text{ µV} \quad G =\ ? \\
-  G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
-  &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
-\end{align*}
-
-6~dB antennvinst motsvarar en fördubblad fältstyrka [V/m], d.v.s. 1~S-enhets
-ökning vid den mottagande stationen, liksom att 6~dB antennvinst motsvarar
-en 4-faldigad sändareffekt \(\mathrm{[W/m^2]}\).
-
-Ungefärlig antennvinst för olika antenner med en isotropantenn som referens:
-\begin{tabular}{l|ll|ll}
-  & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
-  \multicolumn{2}{l}{Isotrop} \\
-  \hline
-  Isotrop antenn       & -2,1 & dBd & 0   & dBi \\
-  GP, \(\lambda/4\)    & -1,8 & dBd & 0,3 & dBi \\
-  Dipol, \(\lambda/2\) & 0    & dBd & 2,1 & dBi \\
-  GP, \(5/8\lambda\)   & 1,2  & dBd & 3,3 & dBi \\
-  & & & & \\
-  Dipol, \(1/1\lambda\) & 1,8 & dBd & 3,9  & dBi \\
-  2-elements yagi       & 5   & dBd & 7,1  & dBi \\
-  2-elements quad       & 6   & dBd & 8    & dBi \\
-  3-elements yagi       & 8   & dBd & 10,1 & dBi \\
-\end{tabular}
-
-
-\subsection{Effektivt utstrålad effekt}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
-}
-\index{effektivt utstrålad effekt (ERP)}
-\index{antenn!effektivt utstrålad effekt (ERP)}
-\index{ERP Effective Radiated Power}
-\index{antenn!ERP Effective Radiated Power}
-\index{ekvivalent isotropiskt utstrålad effekt (EIRP)}
-\index{antenn!ekvivalent isotropiskt utstrålad effekt (EIRP)}
-\index{EIRP Equivalent Isotropically Radiated Power}
-\index{antenn!EIRP Equivalent Isotropically Radiated Power}
-
-Effektivt utstrålad effekt (ERP) (eng. \emph{effective radiated power} är den
-effekt som sändarantennen strålar ut i sin bästa
-strålningriktning. ERP beräknas som den effekt som tillförs själva
-antennen, multiplicerat med antennvinsten relativt en
-halvvågsdipol. Förlusterna på vägen från sändaren ut till antennen är
-alltså borträknad före beräkningen av ERP.
-
-Ekvivalent isotropiskt utstrålad effekt (EIRP) (eng. \emph{Equivalent isotropically radiated power}.
-EIRP beräknas relativt en teoretisk antenn (\emph{isotropisk antenn}) som 
-strålar lika mycket i alla riktningar. Vid beräkningen används den effekt
-som tillförs själva antennen, multiplicerat med antennvinsten relativt en
-isotrop. Förlusterna på vägen från sändaren ut till antennen är liksom vid beräkningen av ERP borträknade vid beräkningen av EIRP.
-
-\subsection{Fram-/backförhållande (antennvinst)}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.8}\label{myHAREC.a.6.2.8}
-}
-\index{fram/backförhållande}
-\index{antenn!fram/backförhållande}
-
-Med fram-/backförhållande (F/B) för en riktantenn menas förhållandet
-mellan den utstrålade effekten i framriktningen \(P_f\) och effekten i
-backriktningen \(P_b\).
-
-\[ F/B = 10 \log\frac{P_f}{P_b} \quad \text{[dB]} \]
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-08}
-  \caption{F/B-förhållande i effekt}
-  \label{fig:bildII6-8}
-\end{wrapfigure}
-
-Fram/backförhållandet kan också definieras som förhållandet mellan
-elektriska fältstyrkan \(U_f\) i framriktningen och
-referensfältstyrkan \(U_b\) i backriktningen
-
-\[ F/B = 20 \log\frac{U_f}{U_b} \quad \text{[dB]} \]
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_6-09}
-  \caption{F/B-förhållande i spänning}
-  \label{fig:bildII6-9}
-\end{wrapfigure}
-
-Exempel 1:
-
-\begin{align*}
-  U_f &= 40 \text{ µV} \quad U_b = 4\text{ µV} \quad F/B =\ ? \\
-  F/B &= 20 \log\frac{U_f}{U_b} = 20 \log{40}{4} \\
-  &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]} \\
-\end{align*}
-
-\(F/B = 20\) dB betyder att fältstyrkan \(U_f\) i huvudriktningen är
-10 gånger så hög som referensfältstyrkan \(U_b\).
-
-Exempel 2:
-
-\begin{align*}
-  U_f &= 15 \text{ µV} \quad U_b = 15\text{ µV} \quad F/B =\ ? \\
-  F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
-  &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
-\end{align*}
-
-\(F/B = 0\) dB betyder att \(U_t = U_b\), d.v.s. att fältstyrkorna i
-fram- och backriktning är lika stora, vilket inträffar för en dipol.
-
-\subsection{Halvvärdesbredd}
-\index{halvvärdesbredd}
-\index{antenn!halvvärdesbredd}
-
-Studera diagrammet för den horisontella strålningen från en
-riktantenn.
-
-Antennen avger sin största utstrålade effekt \(P_f\) i
-huvudriktningen. Effekten avtar utanför huvudriktningen. Fältstyrkan
-Ut förhåller sig på liknande sätt.
-
-Med effekthalvvärdesbredd menas den vinkel inom vilken nyttoeffekten
-är minst hälften så stor som i huvudriktningen.
-
-Bild \ref{fig:bildII6-10}
-
-\begin{gather*}
-  \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
-  \sqrt{\frac{1}{2}}U_f \\
-  ( \approx 0,7 U_f \text{ motsvarande 3 dB })
-\end{gather*}
-
-Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
-(fältstyrkan) är minst hälften så stor som den största nyttospänningen
-\(U_f\). Spänningshalvvärdesbredden på en dipol är ungefär 90°.
+\subsubsection{Telegrafisändare (CW) för kortvåg}
+\index{CW}
+\index{sändare!CW}
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_6-10}
-  \caption{Halvvärdesbredder}
-  \label{fig:bildII6-10}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-04.pdf}
+  \caption{2-bands CW-sändare med frekvensblandning}
+  \label{fig:bildII5-4}
 \end{figure}
+
+En VFO är mest stabil på låga frekvenser medan en CO har god
+stabilitet även på högre frekvenser.
+När signalerna från dessa blandas, bildas blandningsprodukter som är
+skillnaden och summan av signalernas frekvenser.
+Bild \ref{fig:bildII5-4} visar en telegrafisändare där detta fenomen används
+för sändning inom området 14,0--14,5~MHz eller 3,5--4,0~MHz beroende
+på passbandet i filtret efter blandaren.
+
+Resultatet är en superheterodyn-VFO med både variabel och stabil
+signal.
+På bilden har valts ett filter med passband för det övre av dessa
+frekvensområden.
+
+\subsubsection{Telefonisändare (SSB) för kortvåg}
+\textbf{HAREC
+ a.\ref{HAREC.a.5.2.2}\label{myHAREC.a.5.2.2},
+ a.\ref{HAREC.a.5.3.1}\label{myHAREC.a.5.3.1},
+ a.\ref{HAREC.a.5.3.4}\label{myHAREC.a.5.3.4},
+ a.\ref{HAREC.a.5.3.10}\label{myHAREC.a.5.3.10},
+ a.\ref{HAREC.a.5.3.12}\label{myHAREC.a.5.3.12}
+}
+\index{telefoni}
+\index{SSB}
+\index{sändare!SSB}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-05.pdf}
+  \caption{2-bands SSB-sändare med frekvensblandning}
+  \label{fig:bildII5-5}
+\end{figure}
+
+Bild \ref{fig:bildII5-5} visar en SSB-sändare för två kortvågsband och
+bygger på sändaren i bild \ref{fig:bildII5-4}.
+Filtermetoden är den mest använda för att bereda en SSB-signal.
+Oscillatorsignalen amplitudmoduleras i en balanserad blandare.
+I en sådan undertrycks bärvågen medan de båda sidbanden släpps fram.
+Det ena sidbandet undertrycks med ett bandpassfilter, ofta implementerat med
+ett kristallfilter för att få god undertryckning av oönskat sidband.
+Denna SSB-signal flyttas till avsett frekvensband
+genom ännu en frekvensblandning och ytterligare filtrering.
+
+I exemplet är CO-frekvensen 9~MHz. VFO har frekvensområdet 5,0--5,5~MHz.
+Vid blandningen fås blandningsprodukter inom frekvensområdena
+14,0--14,5~MHz och 4,0--3,5~MHz.
+Genom att välja bandpassfilter kan man sända i ett av dessa frekvensområden.
+Efterföljande driv- och slutsteg utförs för att arbeta i detta frekvensband,
+antingen utan särskild avstämning -- så kallad bredbandigt utförande -- eller
+genom avstämning på en viss frekvens, vilket ger renaste signalen.
+
+Bild \ref{fig:bildII5-6} visar en SSB-sändare som liknar den i
+bild \ref{fig:bildII5-5}.
+Den stora skillnaden är att signalfrekvensen kan flyttas till flera olika band
+med hjälp av ännu en frekvensblandning.
+Därför används fler valbara bandpassfilter.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-06.pdf}
+  \caption{Flerbands SSB-sändare med frekvensblandning}
+  \label{fig:bildII5-6}
+\end{figure}
+
+I en SSB-signal ligger all information i amplituden, till skillnad
+från en FM-signal där all information ligger i frekvensen.
+En SSB-signal får alltså inte förvrängas.
+Det innebär att förstärkarstegen i SSB-sändare måste arbeta linjärt, det vill
+säga en utsignal ska vara proportionell mot insignalen i varje moment.
+
+\subsection{PLL-styrda sändare}
+\index{faslåstloop}
+\index{phase locked loop (PLL)}
+\index{PLL}
+\index{sändare!PLL}
+
+PLL-styrning är inte ett sändarkoncept. Det är ett sätt att styra
+frekvensen i en oscillator och hålla den stabil med hjälp av en
+likspänning från en \emph{faslåst loop} (eng. \emph{Phase Locked Loop (PLL)})
+vilket är en digitalt styrd krets.
+
+En PLL kan användas till exempel i raka sändare och heterodynsändare.
+I det första fallet (bild \ref{fig:bildII5-2}) kan frekvensen i den enda
+oscillatorn styras av en PLL.
+I det andra fallet (bild \ref{fig:bildII5-6}) kan frekvensen i
+någon av oscillatorerna styras av en PLL.
+En närmare beskrivning av PLL-styrning av dessa två sändarkoncept följer här.
+
+\subsubsection{PLL-styrd FM-sändare för 144--146~MHz}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.2.3}\label{myHAREC.a.5.2.3}
+}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-07.pdf}
+  \caption{PLL-styrd FM-sändare för FM}
+  \label{fig:bildII5-7}
+\end{figure}
+
+Bild \ref{fig:bildII5-7} visar en PLL-styrd rak sändare med en
+VCO (spänningsstyrd oscillator) och ett PA (effektförstärkare).
+
+VCO ingår som det frekvensstyrda elementet i en PLL.
+Utfrekvensen från VCO (ärvärdet) avläses och delas periodiskt med talet 10
+och matas in i en programmerbar frekvensdelare.
+Eftersom frekvensområdet för VCO är 144--146~MHz, kommer infrekvensen till
+den programmerbara delaren att ligga i området 14,4--14,6~MHz.
+Delningstalet i denna delare kan programmeras in i steg om 1 mellan
+talen 5760 och 5840.
+
+Med den första delarens divisor 10 och den andra delarens divisor
+inställd till exempel på 5760, så avges ur delarkedjan en puls varje gång som
+VCO har genomfört 57600 svängningar.
+Vid en VCO-frekvens av 144~MHz (144000~kHz) motsvaras divisorn
+57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av 2,5~kHz ut från räknarkedjan.
+På samma sätt kommer en VCO-frekvens av 144025~kHz och divisorn
+57610 (= \(10 \cdot 5761\)) också att ge en pulsfrekvens av 2,5~kHz,
+likaså 146~MHz och divisorn 58400 osv.
+
+VCO-frekvensen låses alltså i intervall om 25~kHz till närmaste
+delningstal, för att uppnå en pulsfrekvens av 2,5~kHz.
+Om VCO-frekvensen (är-värdet) avviker från det inställda delningstalet
+(bör-värdet), så kommer pulsfrekvensen att bli högre eller lägre än
+2,5~kHz.
+
+Pulsfrekvensen jämförs i en så kallad fasjämförare med en kristallstyrd
+referensfrekvens som efter en delning med 10 också är 2,5~kHz.
+Utspänningen från jämföraren är en likspänning, som intar ett
+medelvärde då infrekvenserna är lika, men ett högre eller lägre värde
+när de skiljer.
+Denna likspänning används för att kontinuerlig styra VCO-frekvensen
+till likhet med börvärdet.
+Regleringsförloppets hastighet bestäms av tidskonstanten i ett
+lågpassfilter, det så kallade loop-filtret.
+
+Sändningsfrekvensen regleras alltså med styrspänningen.
+Med samma spänning går det också att frekvensmodulera oscillatorn.
+Det görs så, att LF-signalen från modulatorn överlagras på styrspänningen genom
+additiv blandning (se kapitel \ref{blandare}) via en kondensator.
+De variationer i reglerspänningen som kommer av talet är snabbare än
+loopfiltrets tidskonstant.
+Variationerna av talet hinner därför inte uppfattas som frekvensavvikelser och
+blir därför inte utreglerade.
+Drosseln efter loop-filtret förhindrar att moduleringssignalen
+kortsluts av filtrets kondensator.
+
+Frekvensinställningen, det vill säga programmeringen av delaren, kan utföras
+på flera sätt. Exempel på inställningsorgan är tumhjuls-omkopplare,
+logikkretsar i kombination med en knappsats och så vidare.
+
+\subsubsection{PLL-styrd sändare för kortvåg}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-08.pdf}
+  \caption{PLL-styrd SSB-sändare för kortvåg}
+  \label{fig:bildII5-8}
+\end{figure}
+
+Bild \ref{fig:bildII5-8} visar ett avancerat koncept för en kortvågssändare.
+SSB-signalen alstras på frekvensen 9~MHz och blandas med 61~MHz i 1:a
+blandaren.
+
+Summafrekvensen 70~MHz filtreras fram som mellanfrekvens.
+Den önskade sändningsfrekvensen fås genom att blanda 70~MHz MF med
+frekvensen från VCO och därefter filtrera fram skillnadsfrekvensen.
+VCO i detta exempel täcker frekvensområdet 40--69,5~MHz.
+Således blir sändarens täckningsområde 1,5--30~MHz.
+För att filterfunktionen ska bli optimal, kan den delas upp på flera
+valbara filtersektioner, till exempel ett per amatörband.
+Valet kan ske automatiskt och styrt av frekvensläget på VCO.
+
+Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
+så stor som 28,5~MHz eller 1:20.
+Frekvensändringen i VCO är 29,5~MHz, men där är ändringsförhållandet
+mellan de extrema frekvenserna endast 1:1,74, vilket kan täckas av en enda VCO.
+Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
+VCO för att täcka hela frekvensområdet
+
+\textbf{Exempel:} Vid en MF på 9~MHz behöver VCO-funktionen täcka 9,5--39~MHz,
+det vill säga 1:4,11, vilket är för mycket för en VCO.
+
+SSB-signalen efter 2:a blandaren är inte lämplig att använda i
+regleringsslingan i PLL.
+Anledningen är att bärvågen är undertryckt i denna signal och att därför
+HF-frekvenserna i det resterande sidbandet varierar i takt med de
+modulerande LF-frekvenserna.
+
+I konceptet på bilden rekonstrueras bärvågen i en 1:a kontrollblandare,
+genom blandning av de två CO-frekvenserna 9 och 61~MHz.
+Den framfiltrerade bärvågen med frekvensen 70~MHz blandas med
+VCO-frekvensen i 2:a kontrollblandare och ur denna signal
+framfiltreras den rekonstruerade bärvågen.
+Denna stämmer perfekt med den undertryckta bärvågens frekvens och
+innehåller inga LF-signaler.
+Bärvågsfrekvensen delas i en programmerbar frekvensdelare och jämförs
+med frekvensen från en kristallstyrd referensoscillator CO.
+Ur fasjämföraren erhålls en likspänning som styr VCO via ett loop-filter.
+Frekvensen ställs in genom att programmera delaren i PLL.
+
+I en modern sändare finns ofta en mikroprocessor, som erbjuder talrika
+möjligheter bland annat till frekvensinställning, minnen och avsökning av
+frekvenser.
+
+Det beskrivna konceptet är avancerat.
+Frekvensen i alla oscillatorer styrs av samma referensoscillator.
+Frekvensstabiliteten beror alltså enbart på referensoscillatorns stabilitet.
+
+Omkopplingen mellan LSB och USB kan göras antingen genom att behålla
+SSB-filtret och ändra frekvensen 9~MHz med ett värde så att filtret
+blir verksamt i det motsatta sidbandet eller genom att behålla
+frekvensen 9~MHz och byta till ett SSB-filter som är verksamt i det
+motsatta sidbandet.
+
+En PLL-styrd sändare har både kristalloscillatorns stabilitet och variabel
+frekvens över ett stort frekvensområde trots ett litet antal styrkristaller.
+En sådan sändare kan relativt enkelt styras digitalt.
+
+En principiell nackdel med alla sändare med PLL-oscillator är fasbruset.
+En annan nackdel är den stora komponentmängden
+(se kapitel \ref{superheterojämförelse}).
+
+\section{Egenskaper i sändare}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4}\label{myHAREC.a.5.4}
+}
+
+Sändare har många olika egenskaper som man ska vara uppmärksam på, dels för
+att ha en effektiv sändare, dels för att få bra kvalitet på sändning och dels
+för att inte störa grannkanaler eller på andra band.
+
+\subsection{Frekvensstabilitet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.1}\label{myHAREC.a.5.4.1}
+}
+\index{frekvensstabilitet}
+
+\emph{Frekvensstabiliteten} (eng. \emph{frequency stability}) är en
+grundläggande egenskap, eftersom en sändare som inte är frekvensstabil nog
+kommer bli svår för en mottagare att följa och uppfatta.
+Dessutom riskerar man att störa grannkanaler.
+Mindre avdrift i frekvens kan tolereras, men helst ska den uppfattas som
+helt stabil.
+
+I gamla tider så var resonatorerna LC-kretsar, och både mekanik och elektronik
+kunde driva betänkligt.
+Med modernare kristallstyrda sändare, där man använder PLL eller DDS
+synteser så kan frekvensstabiliteten härledas till en enskild
+kristalloscillator.
+Denna är typiskt en okompenserad kristall, med man brukar kunna välja en
+temperatur-kompenserad kristalloscillator -- TCXO eller en ugnskompenserad
+kristalloscillator -- OCXO.
+Det kan även förekomma att man kan låsa på en extern referensfrekvens,
+ofta 10~MHz.
+
+\subsection{RF-bandbredd}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.2}\label{myHAREC.a.5.4.2}
+}
+\index{RF bandbredd}
+\index{splatter}
+\index{spegelfrekvenser}
+
+\emph{RF bandbredden} (eng. \emph{RF bandwidth}) är den bandbredd som den
+modulerade signalen har när den kommer ut ur sändaren.
+Det är viktigt att den är begränsad så att den håller sig inom de gränser
+som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
+Till exempel kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
+NFM 12,5~kHz kanaldelning och helt enkelt störa grann-kanalerna.
+
+Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
+eftersom den förväntas kunna byta kanal.
+Istället så begränsar man bandbredden på mellanfrekvens direkt vid modulatorn,
+och innan frekvens-skiftningen upp till rätt frekvens.
+Detta kräver dock att efterföljande steg är linjära nog att inte skapa oönskade
+sidband i så kallat splatter eller tar upp spegelfrekvenser.
+
+\subsection{Sidband}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.3}\label{myHAREC.a.5.4.3}
+}
+\index{sidband}
+\index{övre sidband}
+\index{sidband!övre}
+\index{Upper Side Band (USB)}
+\index{USB}
+\index{undre sidband}
+\index{sidband!undre}
+\index{Lower Side Band}
+
+När man sänder skapas \emph{sidband} (eng. \emph{side band}).
+För AM och SSB så skapas bägge, \emph{övre sidbandet}
+(eng. \emph{Upper Side Band (USB)}) eller \emph{undre sidbandet}
+(eng. \emph{Lower Side Band (LSB)}) av den modulerade signalen.
+För SSB undertrycks även bärvågen.
+För FM skapas bredare sidband som behöver filtreras.
+
+\subsection{Ljudbandbredd}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.4}\label{myHAREC.a.5.4.4}
+}
+\index{ljudbandbredd}
+\index{audio bandwidth}
+
+Bandbredden på ljudsignalen, den så kallade \emph{ljudbandbredden} (eng.
+\emph{audio bandwidth}) in kan vara väldigt stor, och det är därför viktigt
+att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
+utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
+oftast 3~kHz för amatörradio.
+Bandbredden kan också behöva begränsas nedåt vid 300~Hz för att inte råka
+störa till exempel signalering med subtoner.
+Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
+kunna skicka ut subtonssignaler, men även för andra former av signaler.
+
+\subsection{Olinjaritet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.5}\label{myHAREC.a.5.4.5}
+}
+\index{olinjaritet}
+\index{nonlinearity}
+\index{splatter}
+
+\emph{Olinjaritet} (eng. \emph{nonlinearity}) i ett sändarsteg ger dels
+övertoner som behöver begränsas, ofta genom ett filter på utgången, men man
+försöker även begränsa hur olinjärt steget tillåts bli.
+För tal kommer olinjäritet även att påverka intermodulationen mellan flera
+olika frekvenser i tal, vilket dels skapar störningar inom bandet men även
+utanför och därmed breddar det.
+Detta kallas för splatter och är en oönskad egenskap.
+God linjäritet även vid höga effekter är därför eftersträvansvärt.
+Ibland kan man ha så mycket olinjäritet att taltydligheten blir låg, det
+kan därför vara lämpligt att dra ned något på effekten så taltydligheten går
+upp, vilket då ger bättre signalrapport än när intermodulationen är för hög.
+
+\subsection{Utgångsimpedans}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.6}\label{myHAREC.a.5.4.6}
+}
+\index{utgångsimpedans}
+
+\emph{Utgångsimpedansen} (eng. \emph{output impedance}) är förstärkarens
+drivegenskaper och de ska oftast vara anpassade till kabel.
+Oftast är det 50~ohm, men för förstärkare som har inbyggd matchbox,
+automatisk eller ej, så kan förstärkarens utimpedans anpassas
+för att kunna driva en antennsystem med större avvikelser i impedans.
+En god matchning i impedans krävs för att få en bra energiöverföring av den
+tillförda energin utan att för mycket studsar tillbaka.
+Många sändare har skyddskretsar som drar ned uteffekten vid för stor
+reflekterad energi, för att skydda slutsteget, och det gör att ett
+impedansmatchfel ger ännu större reduktion i utsänd effekt än vad själva
+impedansfelet i sig skulle motivera.
+
+\subsection{Uteffekt}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.7}\label{myHAREC.a.5.4.7}
+}
+\index{uteffekt}
+
+\emph{Uteffekten} (eng. \emph{output power}) är den effekt som sändaren är
+kapabel att sända, på ett visst band, vid god utgångsmatchning.
+Ofta är den mätt i p.e.p. för att matcha kraven från övervakande myndigheter.
+Det kan gå att få högre faktisk effekt ur en sändare, men då kommer den vara
+så pass olinjär att den inte förväntas klara krav på splatter.
+
+\subsection{Effektivitet}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.8}\label{myHAREC.a.5.4.8}
+}
+\index{effektivitet}
+
+\emph{Effektiviteten} (eng. \emph{efficiency}) på en sändare eller slutsteg
+är den utsända effekten i förhållande till den tillförda effekten.
+Effektiviteten varierar med uteffekt och frekvens.
+
+\subsection{Frekvensdeviation}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.9}\label{myHAREC.a.5.4.9}
+}
+\index{frekvensdeviation}
+
+\emph{Frekvensdeviationen} är den maximala avvikelsen från bärvågen som
+tillåts vid frekvensmodulation.
+
+\subsection{Modulationsindex}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.10}\label{myHAREC.a.5.4.10}
+}
+\index{modulationsindex}
+\index{modulationsdjup}
+
+\emph{Modulationsindex} (eng. \emph{modulation index}), eller även
+\emph{modulationsdjupet}, anger hur djup modulation av bärvågen är.
+För hög modulations undertrycker bärvågen och kan göra det svårt för
+mottagaren att detektera.
+För låg modulation ger svaga sidband att förmedla tal, och för mycket
+av energin går till att sända enbart bärvåg.
+
+\subsection{CW-klickar}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.11}\label{myHAREC.a.5.4.11}
+}
+
+Vid CW kan för snabb stig och falltid på bärvågen ge onödig bandbredd och
+uppfattas som klickar eller chirpar. Då detta är störande ska bandbredden
+begränsas genom att filtrera bärvågens till- och frånslag.
+
+\subsection{SSB övermodulation och splatter}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.12}\label{myHAREC.a.5.4.12}
+}
+\index{övermodulation}
+\index{SSB!övermodulation}
+\index{splatter}
+
+Övermodulation vid SSB ger intermodulation och splatter, vilket ger dels en
+signal om är svår att läsa och dels en för bred signal.
+
+\subsection{RF-spurioser}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.13}\label{myHAREC.a.5.4.13}
+}
+\index{spurios}
+
+Utöver den förväntade bärvågen kan en sändare skicka ut frekvenser som vare
+sig tillhör bärvåg och dess sidband. Harmoniska undertoner samt helt andra
+orelaterade frekvenser ska vara undertryckta.
+Detta regleras i EMC standarden för radioutrustning, i det här fallet för
+amatörradio.
+
+\subsection{Chassistrålning}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.14}\label{myHAREC.a.5.4.14}
+}
+
+En sändare förväntas kunna leverera en stor effekt ut på antennutgången, men
+från själva inneslutningen, chassit, och övriga anslutningar ska sändaren
+inte sända bärvåg, sidband eller några andra signaler.
+
+\subsection{Fasbrus}
+\textbf{HAREC
+  a.\ref{HAREC.a.5.4.15}\label{myHAREC.a.5.4.15}
+}
+\index{fasbrus}
+
+\emph{Fasbrus} (eng. \emph{phase noise}) är en egenskap hos alla oscillatorer,
+som ger en fasmodulation av bärvågen.
+Alla steg i en sändare bidrar med brus och ger sammanlagt det totala fasbruset.
+En sändares fasbrus kan sträcka sig långt utanför den normala modulerade
+bandbredden, och speciellt för repeatrar så kan sändarens fasbrus höja
+brusgolvet för mottagaren om inte korrekt trimmade duplexfilter
+används för att undertrycka sändarens fasbrus på mottagarens ingångsfrekvens.

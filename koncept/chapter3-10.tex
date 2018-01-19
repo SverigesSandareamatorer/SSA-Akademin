@@ -1,0 +1,162 @@
+\section{Digital signalbehandling}
+\textbf{HAREC a.\ref{HAREC.a.3.8}\label{myHAREC.a.3.8}}
+\index{digital signalbehandling}
+\index{digital signal processing (DSP)}
+
+I takt med att utvecklingen gjort avancerade kretsar allt billigare har det
+blivit allt vanligare med olika former av digital signalbehandling, och dessa
+används i varierande grad även i radiodesign.
+
+Ofta sammanfattas det med termen \emph{digital signalbehandling} (eng.
+\emph{Digital Signal Processing (DSP)}).
+
+Ofta förväxlas det begreppet med Digital Signal Processor (DSP), som kommit att
+representera en typ av processorer anpassade för signalbearbetning.
+Dock är begreppet vidare än så, och vilken annan form av digital processing är
+också en digital signalprocessing.
+
+\subsection{Digitala filter}
+\textbf{HAREC a.\ref{HAREC.a.3.8.1}\label{myHAREC.a.3.8.1}}
+\label{digitala filter}
+\index{digitala filter}
+\index{filter!digitala}
+\index{FIR}
+\index{filter!FIR}
+\index{IIR}
+\index{filter!IIR}
+
+Eftersom en signal så som den representeras för digitala kretsar måste vara
+samplad och kvantiserad, så kommer signalen att ofrånkomligen bestå av ett
+antal sampel med ett visst antal bitar för dess PCM värde.
+
+Att ändra nivån på en sådan signal görs genom att multiplicera den med något
+värde, det vill säga låta varje enskilt sampel i tur och ordning multipliceras
+med samma värde, men det ändrar inga egenskaper i frekvensen.
+För att få en påverkan med avseende på frekvens behöver man kombinera värdena
+från flera olika tidpunkter i signalen, och ofta väljer man att låta de
+vägas samman med olika vikt.
+Detta görs genom att helt enkelt fördröja samplen i flera steg,
+multiplicera varje fördröjning med sin vikt-konstant och sedan summera
+resultatet.
+
+Det filter som man då skapat kallas för ett Finite Impulse Response (FIR)
+filter, för skickar man in en puls på ingången så kommer den att fördröjas
+stegvis och ge svaret från var och en av multiplikatorerna, i var sitt sampel,
+till dess att fördröjningskedjan är slut, varvid den impulsen inte ger något
+mer bidrag till utgången.
+Den räcka med sampel som kom från impulsen kallas för impulsresponsen, och
+eftersom den tar slut är den finit, därav namnet.
+
+Man kan göra en variant av det här där man helt enkelt låter en annan
+uppsättning med multiplikatorer väga samma fördröjda sampel, men där det
+summerade svaret återmatas till ingången och adderas där innan
+fördröjningskedjan.
+Detta kallas för Infinite Impulse Response (IIR) filter, för att det i likhet
+med FIR-filter har en impulsrespons, men eftersom den återmatar så kan denna
+rent teoretiskt pågå i all oändligthet, det vill säga engelskans infinite.
+I praktiken designas filter så att de inte pågår i evinnerlig tid utan, så att
+säga ringer ut.
+Själva arkitekturen är dock väldigt lämplig att använda för många ändamål.
+
+Utöver själva filterstrukturen, det vill säga IIR och FIR, så karakteriseras de
+av hur många fördröjningssteg man har, då det representerar hur komplext
+filtret är, samt av koefficienterna som ger responsen hos filtret.
+Design av filterkoefficienter skiljer markant för IIR och FIR, och det finns
+både enkla och avancerade verktyg för det.
+
+Ett specialfall på FIR filter är när koefficienterna är speglade runt mitten.
+Då kan man matematiskt visa att de har egenskapen av linjär fas (eng. linear
+phase filter), och de har enbart påverkan på amplituden.
+En fördel med sådana filter, som är fas-linjära, är att olika frekvensers
+signal upplever samma grupp-fördröjning och därmed inte förskjuts i förhållande
+till varandra.
+Detta brukar bland annat öka taltydligheten.
+
+\subsection{Fouriertransform -- FFT}
+\textbf{HAREC a.\ref{HAREC.a.3.8.2}\label{myHAREC.a.3.8.2}}
+\index{Fouriertransform}
+\index{Fourier!DFT}
+\index{Fourier!FFT}
+\index{diskret fouriertransform}
+\index{Discrete Fourier Transform (DFT)}
+\index{DFT}
+\index{FFT}
+\index{Fast Fourier Transform (FFT)}
+
+En specifik form av processing som blivit tillgänglig är fouriertransform,
+det vill säga förmågan att omvandla från signalstyrka över tid till
+signalstyrka över frekvens.
+Eftersom processingen sker i diskret tid, det vill säga värden med en viss tid
+emellan, så som ofrånkomligt med samplade värden, så är det ett specialfall av
+fouriertransform, som därför heter \emph{diskret fouriertransform} (eng.
+\emph{Discrete Fourier Transform (DFT)}).
+
+DFT kan göras på alla möjliga längder av sekvenser, men är beräkningstungt
+om man vill ha alla möjliga frekvenser.
+För att reducera beräkningsmängden kan man givetvis beräkna DFT bara för ett
+fåtal frekvenser, men när det inte är applicerbart behöver man agera lite
+smartare.
+Så som DFT är formulerat, så ger matematiken flera genvägar, som gör att man
+på flera olika sätt kan slå samman beräkningarna och göra del-beräkningar som
+kan användas av flera andra steg, och på så sätt minska beräkningsbördan.
+Detta kan sedan göras hierarkiskt, så att en rekursiv form kan göras.
+Det finns flera metoder att göra detta på, men de sammanfattas med som en snabb
+DFT, det vill säga \emph{Fast Fourier Transform (FFT)}, som även den är diskret.
+En nackdel med FFT är man ofta hamnar på jämna tvåpotenser i antalet sampel,
+till exempel 512, 1024, 2048, 4096 sampel och frekvenser.
+Man har därmed offrat lite av DFTns generalitet.
+
+Det finns mer avancerade formuleringar av FFT som utnyttjar ett eller annat
+trick för att jämna ut till fler storlekar, genom att inte bara göra
+kombination om 2 sampel, utan även 3, 5 och så vidare, som sedan kan kombineras
+till flera storlekar.
+Ett annat trick är att helt enkelt fylla på med bara nollor efter, och köra
+med en för stor FFT.
+
+Oavsett hur fourieranalysen görs, medger den att man fort kan få upp ett
+spektrum.
+Detta används nu mer allt oftare för att få en spektrumplot och genom att
+lägga flera av dessa efter varandra kan man få de nu mer allt vanligare
+spektrumhistogrammen även kända som vattenfallsplottar då de påminner om ett
+vattenfall med sina vertikala streck.
+
+\subsection{Direct Digital Synthesis -- DDS}
+\textbf{HAREC a.\ref{HAREC.a.3.8.3}\label{myHAREC.a.3.8.3}}
+\index{Direct Digital Synthesis (DDS)}
+\index{DDS}
+\index{fasackumulator}
+\index{phase accumulator (PA)}
+\index{PA}
+\index{nyquistfrekvens}
+
+En term som kommit starkt på senare år är \emph{Direct Digital Synthesis (DDS)}.
+Detta syftar på att man kan istället för som med en PLL indirekt styra en
+oscillator direkt syntetisera en vågform, och man kan göra det med väldigt
+hög upplösning och ändra den väldigt fort.
+Medan det kan göras på många sätt, så är den dominerande principen den att
+man gör en oscillator med en så kallad \emph{fasackumulator} (eng. \emph{phase
+accumulator (PA)}).
+En fasackumulator är inget annat än ett adderingssteg följt av en delay-steg.
+Det är ett extremfall av ett IIR filter, med enbart en pol, som integrerar,
+det vill säga ackumulerande effekt.
+Värdet ut från denna representerar oscillatorns fas, där av phase accumulator.
+Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
+ökas för varje sampel.
+Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
+varieras fort och fritt.
+Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.
+Högsta frekvensen blir \emph{Nykvist-frekvensen}, det vill säga halva
+samplingsfrekvensen och lägsta blir den som minst signifikanta biten ger.
+
+Den utgående fasen ur själva fasackumulatorn vågformas sedan om till sinus,
+cosinus eller vad man nu önskar.
+Det går även att använda en uppslagstabell för att kunna syntetisera godtyckliga
+vågformer.
+
+Idag finns det färdiga kretsar som ger väldigt stort frekvensområde med 32, 48,
+eller fler bitars upplösning.
+Inte helt sällan används DDS i kombination med mer klassiska PLL lösningar
+för att få bra egenskaper.
+
+DDS har skapat en enorm frihet i hur radioapparater kan designas, och det har
+bidragit enormt till både prestanda och miniatyrisering.

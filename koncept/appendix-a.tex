@@ -1,90 +1,99 @@
-\chapter{Sätt att uttrycka måttenheter}
+\chapter{Måttenheter}
 
   Inom fysiken förekommer allt mellan mycket höga och mycket låga
-  värden på frekvens, spänning, ström, resistans etc.  I en
-  radiomottagares antenningång är signalspänningen ofta mindre än
-  1~µV. I slutsteget i en amatörradiosändare kan anodspänningen vara
-  mer än 2~kV och uteffekten upp till 1~kW.  I spektrum för
-  elektromagnetiska vågor finns mycket höga frekvenser.
+  värden på frekvens, spänning, ström, resistans etc.
+  I en radiomottagares antenningång är signalspänningen ofta mindre än
+  0,000001~V.
+  I slutsteget i en amatörradiosändare kan anodspänningen vara mer än 2000~V
+  och uteffekten upp till 1000~W.
+  I spektrum för elektromagnetiska vågor finns mycket höga frekvenser
+  så som 10~000~000~000~Hz.
 
-  För att ange storheten på måttenheter används ofta ett \emph{prefix}
-  före måttenheten (av latinets \emph{pre}, före och \emph{fixare},
-  att tillägga). Med prefixet anges från fall till fall vilken
-  multiplikations- eller divisionsfaktor (talfaktor) som används. Det
-  finns ett antal prefix.  Märk, att enhetens sort inte har något att
-  göra med själva prefixet. Nedan ges sorterna Hz, W, V, F etc. som
-  exempel.
+  För att ange storheten på måttenheter används ofta ett \emph{prefix} före
+  måttenheten (av latinets \emph{pre}, före och \emph{fixare}, att tillägga).
+  Med prefixet anges från fall till fall vilken multiplikations- eller
+  divisionsfaktor (talfaktor) som används.
 
-  Exponenter, t.ex. siffran 6 i uttrycket \(10^6\) , förklaras i appendix B.
+  I exemplen ovan blir signalspänningen 1~\(\mu\)V, anodspänningen 2~kV,
+  uteffekten 1~kW samt frekvensen 10~GHz vilket i många fall kan vara lättare
+  att läsa och svårare att misstolka.
 
-\begin{table}[h]
+  Märk, att enhetens sort inte har något att göra med själva prefixet.
+  Nedan ges sorterna Hz, W, V, F etc. som exempel.
+
+  Exponenter, till exempel siffran 6 i uttrycket \(10^6\), förklaras i
+  bilaga \ref{potenser}.
+
+\begin{table}[ht]
   \caption{Prefix}
   \label{tab:prefix}
   \begin{tabular}{|llll|}
     \hline
-    1 000 0000 000 000 000 000 Hz & = 1 EHz & = \(1 \cdot 10^{18}\) Hz & (E är exa) \\
-    1 000 000 000 000 000 Hz & = 1 PHz & = \(1 \cdot 10^{15}\) Hz & (P är peta) \\
-    1 000 000 000 000 Hz & = 1 THz & = \(1 \cdot 10^{12}\) Hz & (T är tera) \\
-    1 000 000 000 W & = 1 GW & = \(1 \cdot 10^9\) W & (G är giga) \\
-    1 000 000 W & = 1 MW & = \(1 \cdot 10^6\) W & (M är mega) \\
-    1 000 W & = 1 kW & = \(1 \cdot 10^3\) W & (k är kilo) \\
-    100 & & = \(1 \cdot 10^2\) & (h är hecto) \\
-    10 & & = \(1 \cdot 10^1\) & (da är deca) \\
+    1\,000\,000\,000\,000\,000\,000 Hz & = 1 EHz & = \(1 \cdot 10^{18}\) Hz & (E är exa) \\
+    1\,000\,000\,000\,000\,000 Hz & = 1 PHz & = \(1 \cdot 10^{15}\) Hz & (P är peta) \\
+    1\,000\,000\,000\,000 Hz & = 1 THz & = \(1 \cdot 10^{12}\) Hz & (T är tera) \\
+    1\,000\,000\,000 W & = 1 GW & = \(1 \cdot 10^9\) W & (G är giga) \\
+    1\,000\,000 W & = 1 MW & = \(1 \cdot 10^6\) W & (M är mega) \\
+    1\,000 W & = 1 kW & = \(1 \cdot 10^3\) W & (k är kilo) \\
+    100 & & = \(1 \cdot 10^2\) & (h är hekto) \\
+    10 & & = \(1 \cdot 10^1\) & (da är deka) \\
     1 & & = \(1 \cdot 10^0\) V & (\(1 = 10^0\) är grundenhet) \\
-    1 : 10 & & = \(1 \cdot 10^{-1}\) & (d är deci) \\
-    1 : 100 & & = \(1 \cdot 10^{-2}\) & (c är centi) \\
-    1 : 1 000 & = 1 mV & = \(1 \cdot 10^{-3}\) V & (m är milli) \\
-    1 : 1 000 000 & = 1 µV & = \(1 \cdot 10^{-6}\) V & (µ är mikro) \\
-    1 : 1 000 000 000 & = 1 nF & = \(1 \cdot 10^{-9}\) F & (n är nano) \\
-    1 : 1 000 000 000 000 = & = 1 pF & = \(1 \cdot 10^{-12}\) F & (p är pico) \\
-    1 : 1 000 000 000 000 000 & = 1 f & = \(1 \cdot 10^{-15}\) & (f är femto) \\
-    1 : 1 000 000 000 000 000 000 & = 1 a & = \(1 \cdot 10^{-18}\) & (a är atto) \\
+    0,1 & & = \(1 \cdot 10^{-1}\) & (d är deci) \\
+    0,01 & & = \(1 \cdot 10^{-2}\) & (c är centi) \\
+    0,001 V & = 1 mV & = \(1 \cdot 10^{-3}\) V & (m är milli) \\
+    0,000\,001 V & = 1 \(\mu V\) & = \(1 \cdot 10^{-6}\) V & (\(\mu \) är mikro) \\
+    0,000\,000\,001 F & = 1 nF & = \(1 \cdot 10^{-9}\) F & (n är nano) \\
+    0,000\,000\,000\, 001 F & = 1 pF & = \(1 \cdot 10^{-12}\) F & (p är piko) \\
+    0,000\,000\,000\,000\,001 C & = 1 fC & = \(1 \cdot 10^{-15}\) & (f är femto) \\
+    0,000\,000\,000\,000\,000\, 001 C & = 1 aC & = \(1 \cdot 10^{-18}\) & (a är atto) \\
     \hline
   \end{tabular}
 \end{table}
 
 
-\section{Mer om att uttrycka måttenheter}
+\section{Flyttal}
 
-En decimal talstorhet uttrycks ofta med ett s.k. tekniskt flyttal.
+En decimal talstorhet uttrycks ofta med ett så kallat tekniskt flyttal.
 Decimaltecknet placeras då så att den visade tio-exponenten i talet
-blir en multipel av 3. Se exempel i ovanstående uppställning.
+blir en multipel av 3.
+Se exempel i ovanstående uppställning.
 
 Decimaltecknet kan även placeras så att tioexponenten är något annat
-än en multipel av 3. Talstorheten uttrycks då med ett s.k. allmänt
-flyttal.
+än en multipel av 3.
+Talstorheten uttrycks då med ett så kallat allmänt flyttal.
 
-I miniräknare m.m. visas ofta exponenten som bokstaven E, åtföljt av
-ett värde. Ibland utelämnas själva bokstaven medan exponentvärdet står
-kvar.
+I miniräknare med mera visas ofta exponenten som bokstaven E, åtföljt av
+ett värde.
+Ibland utelämnas själva bokstaven medan exponentvärdet står kvar.
 
 \begin{tabular}{llllll}
   Ex. & 1000  & visas som & \(1    \cdot 10^3  \) & eller & 1 E+03 \\
-      & 125   & visas som & \(1.25 \cdot 10^2  \) & eller & 1.25 E+02 \\
+      & 125   & visas som & \(1,25 \cdot 10^2  \) & eller & 1,25 E+02 \\
       & 10    & visas som & \(1    \cdot 10^1  \) & eller & 1 E+01 \\
       & 1     & visas som & \(1    \cdot 10^0  \) & eller & 1 E+00 \\
-      & 0.1   & visas som & \(1    \cdot 10^{-1}\) & eller & 1 E-01 \\
-      & 0.01  & visas som & \(1    \cdot 10^{-2}\) & eller & 1 E-02 \\
-      & 0.012 & visas som & \(12   \cdot 10^{-3}\) & eller & 12 E-03 \\
+      & 0,1   & visas som & \(1    \cdot 10^{-1}\) & eller & 1 E-01 \\
+      & 0,01  & visas som & \(1    \cdot 10^{-2}\) & eller & 1 E-02 \\
+      & 0,012 & visas som & \(12   \cdot 10^{-3}\) & eller & 12 E-03 \\
 \end{tabular}
 
 \section{Metallers resistivitet}
+\label{metallersresitivitet}
 
 \begin{tabular}{l|l}
-  Ämne & Resistivitet vid 20~°C \(\frac{Ω\cdot mm^2}{m}\) \\
+  Ämne & Resistivitet vid 20~\degree C \(\dfrac{\Omega\cdot mm^2}{m}\) \\
   \hline
-  Aluminium   & 0.028 \\
-  Bly         & 0.22  \\
-  Guld        & 0.024 \\
-  Järn        & 0.105 \\
-  Koppar      & 0.018 \\
-  Kvicksilver & 0.958 \\
-  Nickel      & 0.078 \\
-  Platina     & 0.108 \\
-  Silver      & 0.016 \\
-  Tenn        & 0.115 \\
-  Volfram     & 0.056 \\
-  Zink        & 0.058 \\
+  Aluminium   & 0,028 \\
+  Bly         & 0,22  \\
+  Guld        & 0,024 \\
+  Järn        & 0,105 \\
+  Koppar      & 0,018 \\
+  Kvicksilver & 0,958 \\
+  Nickel      & 0,078 \\
+  Platina     & 0,108 \\
+  Silver      & 0,016 \\
+  Tenn        & 0,115 \\
+  Volfram     & 0,056 \\
+  Zink        & 0,058 \\
 \end{tabular}
 
 
@@ -93,9 +102,10 @@ kvar.
 \begin{table}
   \caption{Grekiska alfabetet}
 
-  Bokstäver ur bl.a. grekiska alfabetet används som symboler för
-  tekniska begrepp.  Märk, att samma symboler används olika inom olika
-  teknikområden.  Här anges några användningar inom elektroniken.
+  Bokstäver ur bland annat grekiska alfabetet används som symboler för
+  tekniska begrepp.
+  Märk, att samma symboler används olika inom olika teknikområden.
+  Här anges några användningar inom elektroniken.
 
   \begin{tabular}{ll|l|l}
     Versaler  & Gemener   &       & \\
@@ -118,7 +128,7 @@ kvar.
     \(N\) & \(\nu\) & Ny & Frekvens \\
     \(\Xi\) & \(\xi\) & Xi & \\
     \(O\) & \(o\) & Omikron & \\
-    \(\Pi\) & \(\pi\) & Pi & 3.14159\dots \\
+    \(\Pi\) & \(\pi\) & Pi & 3,14159\dots \\
     \(P\) & \(\rho\) & Rho & Resistivitet \\
     \(\Sigma\) & \(\sigma\) & Sigma & Summa \\
     \(T\) & \(\tau\) & Tau & Tidskonstant \\

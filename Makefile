@@ -1,114 +1,166 @@
 DOCKER_IMAGE_NAME=	ssa-koncept
 
+help:
+	@echo 'Makefile för SSA-Akademin                                             '
+	@echo '                                                                      '
+	@echo 'Användning:                                                           '
+	@echo '   make all                    kör alla make mål                      '
+	@echo '   make koncept.pdf            bygg koncept.pdf                       '
+	@echo '   make koncept.webb           bygg webbversionen av koncept          '
+	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make prefix.pdf             bygg prefix.pdf                        '
+	@echo '   make clean                  rensa alla byggfiler                   '
+	@echo '   make help                   visa den här informationen             '
+
 all:	koncept.pdf
-all:	matterep.pdf
+#all:	matterep.pdf
 #all:	koncept-alpha.pdf
-all:	koncept-larobok.pdf
-all:	koncept-refbok.pdf
+#all:	koncept-larobok.pdf
+#all:	koncept-refbok.pdf
 
 .PHONY:	*.pdf
 
-KONCEPT_CH1_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
+KONCEPT_CH01_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-8.tex \
 	koncept/chapter1-9.tex
-KONCEPT_CH2_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
+KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex \
 	images/power1.pdf
-KONCEPT_CH3_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
+KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
-KONCEPT_CH4_FILES = koncept/chapter4-1.tex koncept/chapter4-2.tex \
-	koncept/chapter4-3.tex koncept/chapter4-4.tex \
-	koncept/chapter4-5.tex koncept/chapter4-6.tex \
-	koncept/chapter4-7.tex koncept/chapter4-8.tex \
-	koncept/chapter4-9.tex
-KONCEPT_CH5_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex
-KONCEPT_CH6_FILES = koncept/chapter6-1.tex koncept/chapter6-2.tex \
-	koncept/chapter6-3.tex koncept/chapter6-4.tex \
-	koncept/chapter6-5.tex koncept/chapter6-6.tex
-KONCEPT_CH7_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
+KONCEPT_CH04_FILES = koncept/chapter4-1.tex
+KONCEPT_CH05_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex \
+	koncept/chapter5-3.tex koncept/chapter5-4.tex \
+	koncept/chapter5-5.tex koncept/chapter5-6.tex \
+	koncept/chapter5-7.tex koncept/chapter5-8.tex \
+	koncept/chapter5-9.tex
+KONCEPT_CH06_FILES = koncept/chapter6-1.tex koncept/chapter6-2.tex
+KONCEPT_CH07_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
-	koncept/chapter7-5.tex
-KONCEPT_CH8_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex
-KONCEPT_CH9_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex \
-	koncept/chapter9-3.tex koncept/chapter9-4.tex
+	koncept/chapter7-5.tex koncept/chapter7-6.tex
+KONCEPT_CH08_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex \
+	koncept/chapter8-3.tex koncept/chapter8-4.tex \
+	koncept/chapter8-5.tex koncept/chapter8-6.tex \
+	koncept/chapter8-7.tex
+KONCEPT_CH09_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex
 KONCEPT_CH10_FILES = koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
-KONCEPT_CH11_FILES = koncept/chapter11-1.tex koncept/chapter11-2.tex \
-	koncept/chapter11-3.tex koncept/chapter11-4.tex \
-	koncept/chapter11-5.tex koncept/chapter11-6.tex
+KONCEPT_CH11_FILES = koncept/chapter11-1.tex
 KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
-	koncept/chapter12-3.tex
-KONCEPT_CH13_FILES = koncept/chapter13-1.tex
+	koncept/chapter12-3.tex koncept/chapter12-4.tex
+KONCEPT_CH13_FILES = koncept/chapter13-1.tex koncept/chapter13-2.tex \
+	koncept/chapter13-3.tex koncept/chapter13-4.tex \
+	koncept/chapter13-5.tex koncept/chapter13-6.tex
+KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
+	koncept/chapter14-3.tex
+KONCEPT_CH15_FILES = koncept/chapter15-1.tex
+KONCEPT_CH16_FILES = koncept/chapter16-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-b.tex \
 	koncept/appendix-c.tex koncept/appendix-d.tex \
 	koncept/appendix-e.tex koncept/appendix-f.tex \
 	koncept/appendix-g.tex koncept/appendix-h.tex \
 	koncept/appendix-i.tex koncept/appendix-j.tex \
 	koncept/appendix-l.tex
-KONCEPT_OTHER_FILES = common.tex errata.tex foreword.tex introduction.tex \
-	matte.tex koncept/morse.tex part3.tex preface.tex rest.tex koncept.bib \
-	koncept.tex koncept/emf.tex koncept/chapter14-1.tex
-KONCEPT_FILES = $(KONCEPT_CH1_FILES) $(KONCEPT_CH2_FILES) \
-	$(KONCEPT_CH3_FILES) $(KONCEPT_CH4_FILES) $(KONCEPT_CH5_FILES) \
-	$(KONCEPT_CH6_FILES) $(KONCEPT_CH7_FILES) $(KONCEPT_CH8_FILES) \
-	$(KONCEPT_CH9_FILES) $(KONCEPT_CH10_FILES) $(KONCEPT_CH11_FILES) \
-	$(KONCEPT_CH12_FILES) $(KONCEPT_CH13_FILES) \
+KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
+	koncept/foreword.tex koncept/introduction.tex \
+	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
+	koncept/matte.tex koncept/part3.tex \
+	koncept/preface.tex koncept.bib \
+	koncept/koncept-core.tex \
+	koncept.tex
+KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
+	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \
+	$(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
+	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) \
+	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \
+	$(KONCEPT_CH11_FILES) $(KONCEPT_CH12_FILES) \
+	$(KONCEPT_CH13_FILES) $(KONCEPT_CH14_FILES) \
+	$(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
-koncept.idx:
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	pdflatex koncept.tex
+	- xelatex koncept.tex
 
-koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-pdflatex koncept.tex
-	pdflatex koncept.tex
-
-matterep.pdf: matte.tex matterep.tex
-	-pdflatex matterep.tex
-	pdflatex matterep.tex
-
-koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
-	-pdflatex koncept-alpha.tex
-	pdflatex koncept-alpha.tex
-
-koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
-	-pdflatex koncept-larobok.tex
-	pdflatex koncept-larobok.tex
-
-koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
-	-pdflatex koncept-refbok.tex
-	pdflatex koncept-refbok.tex
+koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
+	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	bibtex koncept.aux
 
 koncept.ind: koncept.idx
-	makeindex koncept
+	makeindex koncept.idx
+
+koncept.log:
+koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
+	-xelatex koncept.tex
+	-xelatex koncept.tex
+	makeindex koncept.idx
+	xelatex koncept.tex
+
+matterep.pdf: koncept/matte.tex handouts/matterep.tex
+	-xelatex handouts/matterep.tex
+	xelatex handouts/matterep.tex
+
+koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
+	-xelatex koncept-alpha.tex
+	-xelatex koncept-alpha.tex
+	xelatex koncept-alpha.tex
+
+koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
+	-xelatex koncept-larobok.tex
+	-xelatex koncept-larobok.tex
+	xelatex koncept-larobok.tex
+
+koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
+	-xelatex koncept-refbok.tex
+	-xelatex koncept-refbok.tex
+	xelatex koncept-refbok.tex
+
+koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
+	-xelatex koncept-tryck.tex
+	-xelatex koncept-tryck.tex
+	xelatex koncept-tryck.tex
+
+koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
+	-xelatex koncept-online.tex
+	-xelatex koncept-online.tex
+	xelatex koncept-online.tex
+
+emf-handout.idx:
+	xelatex handouts/emf-handout.tex
 
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
-emf-handout.pdf: emf-handout.ind emf-handout.tex koncept/emf.tex common.tex
-	pdflatex emf-handout.tex
+emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
+	xelatex handouts/emf-handout.tex
 
-iso-jordning.pdf: koncept.bbl iso-jordning.tex $(KONCEPT_FILES)
-	-pdflatex iso-jordning.tex
-	pdflatex iso-jordning.tex
+prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
+	xelatex handouts/prefix.tex
+
+iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
+	-xelatex handouts/iso-jordning.tex
+	xelatex handouts/iso-jordning.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
 # TODOs
-TODOs:  koncept.tex $(KONCEPT_FILES)
-	grep -n TODO *.tex koncept/*.tex > TODOs
+TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
+	rm TODOs
+#	grep -n TODO *.tex koncept/*.tex > TODOs
+#	grep HAREC koncept.log >> TODOs
+#	grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
+#	grep Missing koncept.log >> TODOs
+#	grep LaTeX koncept.log | grep Warning >> TODOs
 	wc -l TODOs
 
 # Länkade bilder
@@ -125,18 +177,23 @@ images.unlinked: images.avail images.linked
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
 
+# Kursplan
+kursplan.pdf: lectures/kursplan.tex
+	-xelatex lectures/kursplan.tex
+	xelatex lectures/kursplan.tex
+
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
-	pdflatex lectures/ac1.tex
+	xelatex lectures/ac1.tex
 
 ac2.pdf: lectures/ac2.tex
-	pdflatex lectures/ac2.tex
+	xelatex lectures/ac2.tex
 
 # Web-generering
 koncept.xml:	koncept.tex $(KONCEPT_FILES)
 	latexml koncept.tex > koncept.xml
 koncept.webb:	koncept.xml
-	latexmlpost --dest=web/koncept.html koncept.xml
+	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
 
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
@@ -151,5 +208,4 @@ docker-build:
 
 clean: SHELL=/bin/bash -O extglob -c
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept).png *.ilg *.upa koncept/*.aux
-
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin|versionsnummer).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs *.xml

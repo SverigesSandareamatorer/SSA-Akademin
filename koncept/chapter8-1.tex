@@ -1,363 +1,178 @@
-\emph{I forskning, utveckling och produktion är mätning en hörnpelare
-  i verksamheten. Även inom mättekniken sker en snabb utveckling och
-  digitaltekniken kommer alltmer till användning, men grunderna för
-  mätning är desamma. I detta kapitel behandlas de viktigaste
-  mättekniska begreppen som radioamatörer kan behöva känna till.}
+\chapter{Vågutbredning}
+\label{vågutbredning}
+\index{vågutbredning}
 
-\section{Att mäta}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.1.1}\label{myHAREC.a.8.1.1.1}
-}
+\emph{Elektromagnetisk vågutbredning är energitransport och
+  förutsättningen för all radiokommunikation.
+  Radiovågornas utbredning på vägen mellan sändare och mottagare påverkas
+  emellertid på många sätt.
+  Med vetskap om radiovågornas utbredningssätt kan man mer
+  metodiskt försöka uppnå önskade radioförbindelser.}
 
-\subsection{Mäta likspänning}
+\section[Kraftfält antenner]{Kraftfälten omkring antenner}
+\index{kraftfält}
+\index{antenner!kraftfält}
 
-Vid spänningsmätning bestämmer man potentialskillnaden --- spänningen ---
-mellan två punkter. Om det finns en spänning, så flyter en motsvarande
-(mät)ström genom instrumentetinstrumentet presenterar mätströmmen som
-spänning.
+För att sända ut och ta emot radiovågor behövs antenner.
+Mycket förenklat är en antenn en elektrisk krets, som består av en induktor
+och en kondensator som illustreras i bild \ref{fig:BildII7-01}.
 
-Mätströmmen påverkar emellertid spänningsfördelningen i kretsen och då
-uppstår ett mätfel, vilket inte framgår av det visade mätvärdet. Med
-kännedom om kretsens och instrumentets data kan man dock beräkna
-mätfelet. En voltmeter ska ha hög inre resistans för att mätfelet
-ska bli litet.
+Med kondensatorns elektroder helt isärdragna och förminskade har
+svängningskretsen fått ett mycket annorlunda mekaniskt utseende.
+Sedan induktorn i LC-kretsen tagits bort, så återstår mekaniskt sett endast
+en enkel ledare, men elektriskt sett finns kretsen ändå kvar.
+Ledaren med sin utsträckning är fortfarande en induktor och ytorna på dess
+motstående halvor är fortfarande elektroderna i kondensatorn med
+omgivningen som dielektrikum.
 
-Endast vid mycket noggrann mätning kan man behöva räkna om det visade
-mätvärdet med hänsyn till voltmeterns inre resistans och
-förkopplingsresistansen --- om en sådan används).
+En elektrisk ledare, en stång, tråd etc. är alltså en elektrisk
+svängningskrets, vars resonansfrekvens mest bestäms av längden och
+tjockleken. Ledaren (antennen) kan kallas dipol -- den har två poler,
+detta är grunden för alla typer av antenner.
 
-\emph{På grund av den höga inre resistansen är en voltmeter endast
-  lämpad för spänningsmätning --- INTE för direkt strömmätning!}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_7-01.pdf}
+\caption{Från sluten LC-krets till antenn}
+\label{fig:BildII7-01}
+\end{figure}
 
-\subsubsection{Utöka mätområdet för en voltmeter}
+Det finns vissa likheter mellan en mekanisk pendel och en elektrisk
+svängningskrets.
 
-Bild \ref{fig:BildII3-01}
+\subsubsection{Mekanisk pendel}
 
-Med hjälp av förkopplingsresistor i serie med voltmetern kan man mäta
-högre spänning än den som voltmetern är gjord för.  Spänningen
-fördelas då proportionellt mellan förkopplingsresistorns resistans och
-instrumentets inre resistans.
+Energin i en mekanisk pendel växlar mellan två ytterlighetstillstånd.
+Det ena är när pendeln just vänder i ett ytterläge.
+Då innehåller den enbart lägesenergi och ingen rörelseenergi.
+När pendeln rör sig mot mittläget, så omvandlas lägesenergin till rörelseenergi.
+I mittläget, som är det andra ytterlighetstillståndet, innehåller pendeln enbart
+rörelseenergi och ingen lägesenergi etc.
 
-När förkopplingsresistor används måste mätvärdet räknas om med en
-skalfaktor eller en skala med motsvarande gradering användas. En
-voltmeter med valbar förkopplingsresistor kan därför har flera
-skalor. I digitala voltmetrar anpassas ''skalan'' oftast automatiskt.
+\subsubsection{Elektrisk svängningskrets}
+\index{kraftfält!elektrisk svängningskrets}
+\index{elektrisk svängningskrets}
+\index{Maxwell}
 
-\subsection{Mäta likström}
+Den elektriska svängningskretsen kan jämföras med den mekaniska
+pendeln i att det hela tiden pågår en pendling eller omvandling mellan
+lägesenergi och rörelseenergi. Se bild \ref{fig:BildII7-02}.
 
-Vid strömmätning bestämmer man strömstyrkan i en gren av en elektriskt
-strömkrets. Amperemetern ska kopplas i serie med den aktuella
-strömgrenen. Det visade mätvärdet motsvarar strömstyrkan.
-Amperemeterns inre resistans adderas emellertid till resistansen i
-strömgrenen och då uppstår ett mätfel. En amperemeter ska ha låg
-inre resistans för att mätfelet ska bli litet.
+När strömmen i den elektriska svängningskretsen just upphört för att
+vända så innehåller kondensatorn mest laddning, det vill säga, det
+starkaste elektriska fältet mellan elektroderna.
+Detta fält kan jämföras med pendelns lägesenergi.
+Den utjämningsström som följer från den ena elektroden över till den
+andra omges av ett magnetiskt fält som kan jämföras med pendelns
+rörelseenergi.
 
-Endast vid mycket noggrann mätning kan man behöva räkna om det visade
-mätvärdet med hänsyn till amperemeterns inre resistans och resistansen
-i strömshunten-om en sådan används.
+Förloppet visas i bild \ref{fig:BildII7-02}, där det framgår att dipolen omges
+av det starkaste elektriska fältet vid tidpunkten \(t=0\) samt vid
+\(t=1/2T\) med omvänd polaritet, där T är periodtiden.
+Vidare att dipolen omges av det starkaste magnetiska fältet vid tidpunkten
+\(t=1/4T\) samt vid \(t=3/4T\) med omvänd strömriktning och fältpolaritet.
 
-\emph{På grund av den låga inre resistansen ska en amperemeter
-  ALDRIG användas för spänningsmätning. Då förstörs den!}
-
-\subsubsection{Utöka mätområdet för en amperemeter}
-
-Bild \ref{fig:BildII3-02}
-
-Med en strömshunt (en resistor parallellt) över amperemetern kan man
-mäta högre ström än den som amperemetern är gjord för.
-
-Shunten dimensioneras så att större delen av strömmen leds förbi
-amperemetern. Kvar är den mätström som behövs för att amperemetern
-ska göra fullt utslag.
-
-Mätströmmen fördelar sig omvänt proportionellt till instrumentets och
-shuntens resistanser.
-
-När en strömshunt används måste mätvärdet räknas om med en skalfaktor
-eller en skala med motsvarande gradering användas. En amperemeter med
-valbar shuntresistor kan därför har flera skalor. I digitala
-amperemetrar anpassas ''skalan'' oftast automatiskt.
-
-\subsection{Mäta växelspänning och växelström}
-
-Grunderna för mätning av växelspänning och växelström är samma som för
-likspänning och likström, men att bl.a. en instrumentlikriktare oftast
-behövs.
-
-Beroende på frekvensen i strömkretsen och vilket slags värde man vill
-mäta, används olika instrument.
-
-Olika typer av instrument ger olika möjligheter, men också begränsningar.
-
-\emph{Mjukjärnsinstrument} utan likriktare kan mäta växelströmmar ner
-till ca 50~mA och upp till ca 10~A. Frekvensen får dock inte vara
-högre än ca 100~Hz.
-
-\emph{Vridspoleinstrument} används dels direkt för likströmsmätning
-och dels med likriktare även för växelströmsmätning.
-
-Vridspoleinstrument med likriktare används ofta för frekvenser upp
-till ca 10~kHz och strömmar ner till 0.1~mA. Noggrannheten är sällan
-bättre än 1.5~\% av fullt utslag.
-
-Beroende på funktionsprincipen kan det skilja på hur instrument mäter,
-vilket nödvändigtvis inte är detsamma som hur mätvärdet presenteras.
-
-Mjukjärnsinstrument mäter effektivvärdet av en växelström medan ett
-vridspoleinstrument med likriktare mäter likriktade medelvärdet. Som
-exempel kan skalan i ett instrument med likriktare även graderas för
-effektivvärdet för sinusformade förlopp.
-
-För mätning av växelström används vanligen instrument med likriktare,
-men för HF även instrument med termokors, vilka bygger på
-termogalvanisk spänning mellan metaller.
-
-\subsubsection{Frekvensens inverkan}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.2.1}\label{myHAREC.a.8.1.2.1}
-}
-
-Frekvensen på den mätta signalen inverkar mer eller mindre på
-mätresultatet. Till en del beror det på den instrumenttyp, som
-används. En faktor är instrumentets gränsfrekvens, d.v.s. hur högt i
-frekvens som instrumentet fortfarande är rimligt rättvisande. Detta
-kallas instrumentets bandbredd, vilken bör vara dokumenterad.
-
-\subsubsection{Vågformens inverkan}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.2.2}\label{myHAREC.a.8.1.2.2}
-}
-
-Även formen på den signal som mäts inverkar på mätresultatet och det
-är viktigt att veta för vilken vågform som instrumentet presenterar
-mätvärdet. Det vanligaste är att vågen förutsätts vara sinusformad,
-vilket ofta inte är fallet i praktiken. Det innebär att fel värde
-presenteras om vågformen är en annan än den förutsatta.
-
-\subsection{Mäta resistans}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.3}\label{myHAREC.a.8.1.3}
-}
-
-Mätning av resistans är enklast att göra på en fristående komponent,
-medan man vid mätning på en resistor i en strömkrets också måste ta
-hänsyn till att andra komponenter i kretsen kan påverka mätresultatet.
-
-Resistans kan mätas på flera sätt. Det grundläggande är att mäta
-strömmen genom resistorn och spänningen över den och sedan beräkna
-resistansen med Ohms lag.
-
-Därutöver finns direktvisande instrument för resistansmätning -
-s.k. ohm-metrar. Sådana instrument innehållervanligen en egen
-strömkälla i form av ett batteri.
-
-\hilight{TODO: Här borde vi främst beskriva den moderna DMM:en och hur man väljer en}
-
-\subsection{Mäta effekt}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.4}\label{myHAREC.a.8.1.4}
-}
-\label{mätaeffekt}
-
-Effektformler vid lik- och växelström (medel-, effektiv- och
-toppvärden)
-
-Vid likström:
-
-\begin{gather*}
-P = U \cdot I \quad \text{[W (watt)]} \\
-\text{d.v.s. Joules lag}
-\end{gather*}
-
-Vid sinusformad växelström:
-
-\begin{align*}
-  \text{medelvärde   } \quad P_{medel} &= \frac{0.8\cdot U_{eff}^2}{R} \\
-  \text{effektivvärde} \quad   P_{eff} &= \frac{U_{eff}^2}{R} \\
-  \text{toppvärde}     \quad   P_{PEP} &= \frac{U_{max}^2}{R} \\
-\end{align*}
-
-\subsection{Sändareffekt}
-
-\begin{rev-omarbetas}
-En sändares effekt kan mätas på olika sätt.  Förr, då radioamatören
-hade små möjligheter att mäta uteffekt, så var det naturligt att
-föreskrifterna angav en mätmetod baserad på ineffekt, vilket var
-enkelt och rättvisande för telegrafi m.fl. sändningsslag med bärvåg.
-Även för SSB fick effektmätning göras så, trots att resultatet var
-långt ifrån rättvisande.
-
-Numera är instrument som mäter \emph{uteffekt} mer tillgängliga för
-radioamatören --- även toppvärdeskännande sådana för mätning av
-p.e.p. Mot den bakgrunden anges nu (1997) i föreskrifterna
-sändareffekten som uteffekt.  Därvid måste även p.e.p. avses, fastän
-det inte uttryckligen uttalas.
-
-\hilight{TODO: Skippa hur det var förr i tiden, irrelevant idag}
-\end{rev-omarbetas}
-
-\begin{rev-raderas}
-För N-licensen föreskrivs fortfarande att uteffekten uttrycks i
-e.r.p. N-amatören kan dock endast i undantagsfall mäta e.r.p. utan den
-måste beräknas. Bakgrunden till detta unika myndighetsbeslut var att
-se som en anpassning till gällande regler för begränsning av
-radiostrålning.
-
-\hilight{TODO: Ta bort texten om N-licensen}
-\end{rev-raderas}
-
-Observera, att radioamatören måste beakta EMC-lagen. Se vidare kapitel
-\ref{EMC-lagen}.
-
-\subsection{Metoder för mätning av sändareffekt}
-
-Tidigare har avhandlats effektberäkning i allmänhet. Här nedan
-kommenteras mätning av sändareffekt i synnerhet.
-
-Ett tillförlitligt sätt att mäta sändareffekt är att ansluta sändaren
-till en konstlast med samma resistans som sändarens utgångsimpedans
-och mäta spänningen över lasten med ett oscilloscop med tillräcklig
-bandbredd. Då kan man se och mäta HF-spänningens topp-toppvärde och
-samtidigt se signalens vågform.
-
-Med spänningen och konstlastens impedans (resistans) bekanta så kan
-uteffekten beräknas enligt formlerna i kapitel \ref{mätaeffekt}.
-
-Den största HF-amplitud som uppstår momentant vid modulering motsvarar
-PEP-effekten (PEP = Peak Envelope Power).
-
-En mindre exakt metod att mäta HF-spänning är med voltmeter med
-likriktare.  Utifrån den uppmätta spänningen kan man beräkna effekten
-över en belastning. På grund av instrumentets tröghet visas emellertid
-bara ett ''utjämnat'' toppvärde, vilket inte är det faktiska värde som
-instrumentet ''känner''. Jämför med oscilloskopet som inte har denna
-visningströghet.
+\begin{figure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_7-02.pdf}
+\caption{Pendlingen mellan E-fält och H-fält}
+\label{fig:BildII7-02}
+\end{figure}
 
 \begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_8-01}
-  \caption{Mätning av sändareffekt}
-  \label{fig:bildII8-1}
+\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_7-03.pdf}
+\caption{Elementär dipol}
+\label{fig:BildII7-03}
 \end{wrapfigure}
 
-Bild \ref{fig:bildII8-1}.
+Med förklaringen av E- och H-fälten som bakgrund följer nu en enkel
+framställning av hur radiovågor uppstår ur dessa fält.
 
-Bilden visar en voltmeter med likriktare, som kopplats till en sändare
-över spänningsdelare. Två alternativa delare visas; den ena består av
-resistorer och den andra av kondensatorer.
+Maxwell påvisade i sina ekvationer bland annat sambandet mellan elektroner
+i rörelse i en ledare och elektromagnetiska vågor i rummet.
+Vidare, att elektroner som rör sig med avtagande eller tilltagande hastighet
+avger elektromagnetisk energi.
 
-Den resistiva delaren är bättre i den meningen att den är
-frekvensoberoende och inte belastar sändaren kapacitivt. Dessutom
-dämpas övertoner som bildas vid likriktningen. I den kapacitiva
-delaren kan övertoner passera lättare.
+Hur energi strålar från en ledare kan förklaras med en (tänkt)
+elementär dipol, som genomflyts av växelström (Bild \ref{fig:BildII7-03}).
 
-Denna mätmetod är noggrann bara när impedansen är lika i sändaren,
-kabeln till lasten och själva lasten. Lasten kan vara en konstlast, en
-antenn etc och ska ha ett känt värde för att effekten ska kunna
-beräknas.
+Dipolen består av två lika stora elektriska laddningar med motsatt polaritet.
+När den matas med en växelström, så rör sig laddningarna ständigt,
+omväxlande emot respektive ifrån varandra.
+Tänk på två kulor i var sin ände av en spiralfjäder.
+Avståndet mellan laddningarna ändras i takt med styrkan och riktningen på
+strömmen.
+Systemet är alltså under ständig hastighetsändring (ökning respektive
+minskning), vilket är förutsättningen för att energi ska strålas ut.
 
-Ett sätt att skaffa underlag för beräkning av PEP-effekten är att mäta
-HF-strömmen med ett termokorsinstrument och spänningen med en
-toppvärdesvisande voltmeter.  Utifrån dessa värden beräknar man
-effekten. Denna metod är dock inte så vanlig.
+Först är laddningarna nära varandra på grund av liten laddning.
+Vid ökande ström ökar avståndet mellan laddningarna och det byggs upp ett
+mer utbrett och energirikt E-fält.
+Samtidigt byggs även ett H-fält upp omkring dipolen, vinkelrätt mot E-fältet
+och så vidare.
+Detta gäller både för en elementär dipol och en elektrisk ledare med många fria
+elektroner (verklig antenn).
 
-\subsection{Direktvisande effektmetrar}
+Formeln för det resulterande S-fältet är \(\overline{S} =
+\overline{E}\cdot\overline{H}\), vilket visar att den lagrade energin
+i dipolens närmaste omgivning ökar när avståndet (potentialen) mellan
+dipolens laddningar ökar.
 
-Många föredrar direktvisande effektmätare. En HF-voltmeter kan
-givetvis graderas för att visa effekt i stället för spänning, men då
-med den viktiga förutsättningen att impedansen måste ha en fastställt
-värde.
+Bild \ref{fig:BildII7-04} visar hur ett E-fält byggs upp omkring en dipol och
+avskiljs från den.
+De visade kraftlinjerna är E- fältet.
+H-fältet visas inte, men ligger vinkelrätt mot E-fältet, i cirklar omkring
+antennen. Se bild \ref{fig:BildII7-05}.
 
-Om man avläser effekten genom en 75~Ω-kabel på ett instrument för 50~Ω, så är
-det verkliga värdet ett annat än den avlästa.
+\begin{figure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_7-04.pdf}
+\caption{Ett självständigt E-fält skapas}
+\label{fig:BildII7-04}
+\end{figure}
 
-De effektmetrar som förekommer i SVF-instrument är egentligen
-voltmetrar, men med skalan graderad i effekt.
+\begin{figure}
+\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_7-05.pdf}
+\caption{E-, H- och S-fälten omkring en antenn (förenklad framställning)}
+\label{fig:BildII7-05}
+\end{figure}
 
-\subsection{Mäta ståendevågförhållande - SVF}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.5}\label{myHAREC.a.8.1.5}
-}
-\label{mäta ståendevåg}
+När dipolens laddningar ändrar riktning och åter börjar att röra sig
+emot varandra, börjar det E-fält som byggts upp att också byta riktning.
+Men det kommer inte att falla tillbaka till dipolens mitt
+utan sluts till ett eget kretslopp -- Maxwells första ekvation.
+Jämför med en såpbubbla som lämnat blåsröret.
+Omkring dipolen har det nu bildats ett självständigt E-fält, som sin tur
+alstrar ett eget H-fält.
 
-När t.ex. en antennledning ansluts till en antenn och deras impedanser
-inte är lika, så kommer en del av inmatade effekten i ledningen att
-reflekteras tillbaka från antennen.
+En period av en elektromagnetisk våg (ett S-fält) har alstrats och
+fortsätter att utvidga sig.
+För varje följande period alstras ett nytt E-fält, som separeras från antennen
+och bildar ett H-fält osv.
+Varje gång bildas alltså en ny ''fältbubbla'' inne i den föregående, vilken
+håller på att utvidgas.
 
-Det uppstår då en stående våg i ledningen. Förhållandet mellan inmatad
-och reflekterad effekt uttrycks som ett ståendevågförhållande SVF
-(eng. SWR).
+Resultatet är ett elektromagnetiskt fält, det vill säga en radiovåg.
 
-Med en SVF-meter som sätts in mellan effektkälla och ledning kan man
-mäta hur stor effekt som matas in i ledningen och hur stor effekt som
-vänder tillbaka från slutet av ledningen.
+Som nämnts består en radiovåg av ett högfrekvent elektromagnetiskt fält (S).
+Det är i sin tur sammansatt av två andra fält, det elektriska E-
+och det magnetiska H-fältet.
+Energin i S-fältet fördelas lika mellan E-fältet och H-fälten,
+vars krafter korsar varandra vinkelrätt.
+S-fältet ligger i plan med både E- och H-fälten och breder ut sig vinkelrätt
+mot dem.
+S-fältets riktning beror av den inbördes riktningen på E- och H-fälten.
 
-SVF-värdet kan bestämmas på något av följande sätt:
-\begin{itemize}
-\item Man mäter framåt- respektive bakåtgående effekt var för sig med
-  en riktningskänslig effektmeter. Man beräknar därefter SVF eller
-  tar fram det ur ett diagram.
-\item Man använder ett instrument som beräknar eller visar SVF på
-  något sätt.
-\end{itemize}
+När E-fältet är vertikalt, sägs vågen vara vertikalt polariserad.
+När samma fält är horisontellt sägs vågen vara horisontellt polariserad.
+När E-fältet roterar i vågfrontens plan, och därmed även H-fältet, sägs vågen
+vara cirkulärt polariserad.
 
-\subsection{Studera vågformen}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.6}\label{myHAREC.a.8.1.6}
-}
+Fälten framställs i text och bild som så kallade kraftlinjer med pilar som
+föreställer kraftriktningen.
+Linjernas längd föreställer fältets styrka.
+Bild \ref{fig:BildII7-06} visar ett avsnitt av en vågfront S med vertikal
+polarisation.
 
-Vågformen för snabba växelströmsförlopp studeras bäst med oscilloskop.
-
-\subsection{Mäta frekvens}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.7}\label{myHAREC.a.8.1.7}
-}
-
-Frekvensmätning gör man bäst med en s.k. frekvensräknare, som är ett
-digitalt instrument.  Man kan också använda en
-s.k. absorbtionsvågmeter, som är mycket enkel och inte alls så exakt.
-Vid frekvensmätning ansluter man instrumentet till mätobjektet med en
-svag elektrisk eller magnetisk koppling.
-
-\subsection{Mäta resonansfrekvens}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.8}\label{myHAREC.a.8.1.8}
-}
-
-Mäta resonansfrekvensen för en passiv svängningskrets gör man enklast
-med en s.k. dip-meter. Även mer exakta metoder finns.
-
-\hilight{TODO: Komplettera med spec, SNA och VNA}
-
-\subsection{Mätfel}
-
-Mätinstrument indelas i noggrannhetsklasser efter största tillåtna
-felvisning. Klasserna är 0.1, 0.2, 0.5, 1.0, 1.5, 2.5 och 5.0 varvid
-klassen anges på instrumentet. Som exempel får ett instrument i klass
-2.5 ha ett tillåtet mätfel av \(\pm\)2.5~\% av fullt utslag.
-
-Mätresultatet bestäms av flera faktorer; dels av instrumentets
-s.k. mätonoggrannhet, dels av hur mätvärdet presenteras och slutligen
-av hur noga användaren läser av.
-
-Vid \emph{analog} visning presenteras mätvärdet med en visare mot en
-graderad skala med en viss upplösning. Visaren kan vara mekanisk eller
-optisk (ljusspalt). Vid snabba mätvärdesändringar är instrumentets
-mekaniska tröghet en faktor att ta hänsyn till.
-
-Vid \emph{digital} visning presenteras mätvärdet med siffror eller som
-längden på en pelare.  Det är förledande att se digital visning med
-siffror som mer exakt än analog, men det är inte alls säkert. Utöver
-instrumentets mätonoggrannhet, bestäms nämligen noggrannheten av hur
-många siffror som mätresultatet presenteras i.
-
-En oberäknelig källa till mätfel är elektromagnetiska fält från
-apparater i närheten.
-
-En ofta förbisedd felkälla är temperaturen i mätobjektet och/eller i
-instrumentet, det kan vara av inkopplingstiden m.m.
-
-\emph{Visningströgheten} är inget mätfel i sig men kan till nackdel
-vid snabba förlopp. Trögheten förekommer såväl vid analog som digital
-visning. I det förra fallet är masströghet i instrumentets rörliga
-delar orsaken och i det andra fallet är orsaken klockfrekvensen för
-instrumentets mikroprocessor.
+\begin{wrapfigure}{R}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_7-06.pdf}
+\caption{E-, H- och S-fält}
+\label{fig:BildII7-06}
+\end{wrapfigure}

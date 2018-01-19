@@ -1,7 +1,11 @@
-%\documentclass[a4paper,twoside,twocolumn,openright]{book}
 \documentclass[a4paper,twoside,openright]{book}
-\include{common}
+%\documentclass[a4paper,oneside,openright]{book}
+\include{koncept/common}
+%tlfällig fix för kompilering%
+\nonstopmode
 \usepackage[swedish]{babel}
+
+\headheight = 12.6pt
 
 % Prepare for abstract
 \pagestyle{plain}
@@ -18,77 +22,18 @@
 \makeindex
 
 \begin{document}
-\AddToShipoutPicture*{\BackgroundPic}
-
-\pagestyle{empty}
-
-%\frontmatter
-
-% Typsatt förstasida
-% Här borde bilder mm in
-
-\onecolumn
-\vspace{3cm}
-\begin{center}
-\Huge{\bfseries{\color{white}KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}} \\[2ex]
-\huge{\color{white}Lennart Wiberg} \\
-\Large{\color{white}Andra utgåvan}
-\end{center}
-
-\clearpage
+\frontmatter
+%\mainmatter
+% Frontpage
+\include{koncept/frontpage}
 
 % Colophone
 
-%% Tryckortssidan, denna behöver uppdateras med ny information så småningom.
+%% Tryckortssidan
+\include{koncept/tryckort}
 
-
-
-\vspace{10em}
-
-\begin{center}
-\Large{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
-
-Lennart Wiberg\\[2\baselineskip]
-\end{center}
-
-%Första upplagan
-%ISBN 91-86368-08-7
-
-\noindent \textbf{Andra upplagan}
-\begin{rev-granskat}[UEI]
-\noindent
-\\ 
-\noindent Det här verket är licenserat under Creative Commons:\newline
-\noindent\hilight{Erkännande-IckeKommersiell-DelaLika} 4.0 Internationell.
-\\
-\\
-\noindent Denna elektroniska faksimilutgåva är baserad på den första tryckta
-upplagan. Notera att information om certifikatsklasser, lagar och förordningar
-har ändrats sedan tryckningen.
-\end{rev-granskat}
-
-\begin{wrapfigure}{R}{4cm}
-    \includegraphics[width=4cm]{images/cc-by-nc-sa}
-    \caption*{CC BY-NC-SA}
-\end{wrapfigure}
-
-%Tryckt i Sverige / Printed in Sweden 1997
-%Smegraf, Smedjebacken
-
-\vfill
-
-\noindent
-\textbf{Förlag}
-
-\noindent
-\textit{Föreningen Sveriges Sändareamatörer (SSA)}\\
-Box 45, SE-191 21 Sollentuna\\
-Telefon +46 8 585 702 73\\
-E-post \href{mailto:hq@ssa.se}{hq@ssa.se}\\[\baselineskip]
-
-\noindent
-Ansvarig utgivare:\\
-\hilight{Namne Namnsson}
+\lfoot[\revision]{}
+\rfoot[]{\revision}
 
 \cleardoublepage
 \pagestyle{fancy}
@@ -99,147 +44,20 @@ Ansvarig utgivare:\\
 
 \tableofcontents
 
-\setlength{\parindent}{0px}
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 
 \mainmatter
 
-%\include{errata}
-\include{preface}
-\include{foreword}
-\include{introduction}
+%\include{koncept/errata}
+%\include{koncept/preface}
+\include{koncept/foreword}
+%\include{koncept/introduction}
 
-\part{RADIOTEKNIK}
-\chapter{El-lära}
-\label{ellära}
-\include{koncept/chapter1-1}
-\include{koncept/chapter1-2}
-\include{koncept/chapter1-3}
-\include{koncept/chapter1-4}
-\include{koncept/chapter1-5}
-\include{koncept/chapter1-6}
-\include{koncept/chapter1-7}
-\include{koncept/chapter1-8}
-\include{koncept/chapter1-9}
-\include{koncept/chapter1-10}
+\input{koncept/koncept-core}
 
-\chapter{KOMPONENTER}
-\label{komponenter}
-\include{koncept/chapter2-1}
-\include{koncept/chapter2-2}
-\include{koncept/chapter2-3}
-\include{koncept/chapter2-4}
-\include{koncept/chapter2-5}
-\include{koncept/chapter2-6}
-\include{koncept/chapter2-7}
-\include{koncept/chapter2-8}
-\include{koncept/chapter2-9}
-\include{koncept/chapter2-10}
-
-\chapter{KRETSAR}
-\include{koncept/chapter3-1}
-\include{koncept/chapter3-2}
-\include{koncept/chapter3-3}
-\include{koncept/chapter3-4}
-\include{koncept/chapter3-5}
-\include{koncept/chapter3-6}
-\include{koncept/chapter3-7}
-\include{koncept/chapter3-8}
-\include{koncept/chapter3-9}
-
-\include{koncept/chapter14-1}
-
-\chapter{MOTTAGARE}
-\include{koncept/chapter4-1}
-\include{koncept/chapter4-2}
-\include{koncept/chapter4-3}
-\include{koncept/chapter4-4}
-\include{koncept/chapter4-5}
-\include{koncept/chapter4-6}
-\include{koncept/chapter4-7}
-\include{koncept/chapter4-8}
-\include{koncept/chapter4-9}
-
-\chapter{SÄNDARE OCH TRANSCEIVER}
-\include{koncept/chapter5-1}
-\include{koncept/chapter5-2}
-
-\chapter{ANTENNSYSTEM}
-\include{koncept/chapter6-1}
-\include{koncept/chapter6-2}
-\include{koncept/chapter6-3}
-\include{koncept/chapter6-4}
-\include{koncept/chapter6-5}
-\include{koncept/chapter6-6}
-
-\chapter{VÅGUTBREDNING}
-\label{vågutbredning}
-\include{koncept/chapter7-1}
-\include{koncept/chapter7-2}
-\include{koncept/chapter7-3}
-\include{koncept/chapter7-4}
-\include{koncept/chapter7-5}
-\include{koncept/chapter7-6}
-
-\chapter{MÄTNING}
-\include{koncept/chapter8-1}
-\include{koncept/chapter8-2}
-
-\chapter{EMC}
-\include{koncept/chapter9-1}
-\include{koncept/chapter9-2}
-\include{koncept/chapter9-3}
-\include{koncept/chapter9-4}
-
-\include{koncept/emf}
-
-\chapter{FARLIGA STRÖMMEN}
-\include{koncept/chapter10-1}
-\include{koncept/chapter10-2}
-\include{koncept/chapter10-3}
-\include{koncept/chapter10-4}
-
-\include{part3}
-
-\chapter{Nationella och internationella trafikbestämmelse och procedurer}
-\include{koncept/chapter11-1}
-\include{koncept/chapter11-2}
-\include{koncept/chapter11-3}
-\include{koncept/chapter11-4}
-\include{koncept/chapter11-5}
-\include{koncept/chapter11-6}
-
-\chapter{Nationella och internationella bestämmelser för Amatör- och
-  Amatörsatellittjänsterna}
-\include{koncept/chapter12-1}
-\include{koncept/chapter12-2}
-\include{koncept/chapter12-3}
-
-\chapter{REGLER OCH TRAFIKMETODER}
-\include{koncept/chapter13-1}
-
-\part{MORSESIGNALERING}
-\chapter{MORSESIGNALERING}
-
-\include{koncept/morse}
-
-\appendix
-\part{APPENDIX}
-
-\include{koncept/appendix-a}
-\include{koncept/appendix-b}
-\include{koncept/appendix-c}
-\include{koncept/appendix-d}
-\include{koncept/appendix-e}
-\include{koncept/appendix-f}
-\include{koncept/appendix-g}
-\include{koncept/appendix-h}
-\include{koncept/appendix-i}
-\include{koncept/appendix-j}
-\include{koncept/appendix-l}
-
-\listoffigures
-\listoftables
+%\listoffigures
+%\listoftables
 
 \onecolumn
 \bibliography{koncept.bib}
@@ -248,6 +66,9 @@ Ansvarig utgivare:\\
 \backmatter
 
 \printindex
-\include{backpage}
+
+\lfoot[]{}
+\rfoot[]{}
+\include{koncept/backpage}
 
 \end{document}

@@ -1,0 +1,662 @@
+% !TeX spellcheck = <none>
+\section{Anropssignaler}
+
+\subsection{Anropssignalernas syfte}
+
+Alla radiosändare ska vara identifierbara, så att man kan veta vem
+som sänder \cite[\S19.1]{ITU-RR}.
+Identifiering görs med hjälp av en anropssignal, som är en kombination av
+bokstäver, (A--Z) och siffror (0--9). \cite[\S19.45]{ITU-RR}.
+Ett tecken är antingen en bokstav eller siffra.
+Nationella bokstäver som Å, Ä och Ö samt andra specialtecken används inte.
+Anropssignaler är internationellt koordinerade och unika, vilket är nödvändigt
+när signalerna kan komma att höras över hela världen.
+Systemet är gemensamt för kommersiell trafik och amatörradio, men vi kommer
+enbart beröra de anropssignaler som är aktuella för amatörradio.
+
+Alla sändningar med falsk eller missledande identifiering är förbjuden
+\cite[\S19.2]{ITU-RR}!
+
+Alla amatörradiosändningar ska vara identifierade \cite[\S19.4, \S19.5]{ITU-RR}.
+
+Identifiering sker normalt i tal eller på morsetelegrafi, men även andra former
+kan förekomma som är anpassade till modulationsmetoden som används.
+
+Det finns flera sätt på vilka personen bakom en anropssignal kan identifieras.
+För svenska anropssignaler tillhandahåller SSA en Callbook
+(\href{http://www.ssa.se/}{www.ssa.se}).
+En annan populär variant är QRZ (\href{https://www.qrz.com/}{www.qrz.com}) där
+man kan registrera sig.
+Anropssignalen används även för online-loggning av kontakter, så som
+Logbook of the World (LoTW) (\href{https://lotw.arrl.org/}{lotw.arrl.org}).
+
+\subsection{Anropssignalernas sammansättning}
+
+Varje land disponerar en eller flera serier med unika anropssignaler för all
+sin radiotrafik.
+Dessa utformas enligt ITU Radioreglemente (RR) \cite[\S19]{ITU-RR} på sätt,
+som beror på syftet med varje särskild radiostation.
+I RR finns definitioner för olika slags stationer, till exempel stationer för fast
+radio, landmobila stationer, stationer i fartyg, i sjöräddningsfarkoster,
+i flygplan, amatörradiostationer osv.
+
+\subsection{Identifiering av amatörradiostationer}
+\textbf{
+HAREC b.\ref{HAREC.b.5.1}\label{myHAREC.b.5.1},
+ b.\ref{HAREC.b.5.3}\label{myHAREC.b.5.3}
+}
+
+En radiostation ska identifieras med den anropssignal, som tilldelats av det
+egna landets teleadministration (myndighet).
+I Sverige är det Post- och telestyrelsen (PTS) som har ansvaret och som genom
+beslut har delegerat handläggningen av amatörradiosignaler till Föreningen
+Sveriges Sändareamatörer (SSA).
+
+Anropssignalen meddelas i det amatörradiocertifikat som erhålls efter godkänt
+kompetensprov.
+
+Anropssignaler för amatörradio är uppbyggda av ett prefix, en siffra och ett
+suffix på följande sätt \cite[\S19.68, \S19.69]{ITU-RR}:
+
+Prefixet består vanligtvis av två tecken, exempelvis SM~(Sverige), 9A~(Kroatien)
+eller S5~(Slovenien).
+Prefixet kan ibland bestå av en ensam bokstav, som i så fall måste vara någon
+av B, F, G, I, K, M, N, R eller W.
+
+Sverige är tilldelat prefix i serierna SA--SM, 7S och 8S
+\cite[Appendix 42]{ITU-RR}.
+
+Prefixet följs av en siffra och ett suffix. Suffixet består av minst ett och
+högst fyra tecken, där det sista tecknet inte får vara en siffra.
+
+Anropssignaler för speciella ändamål, exempelvis för att fira något jubileum,
+kan ha suffix som består av fler än fyra tecken \cite[\S19.68A]{ITU-RR}.
+Sådana anropssignaler, eller andra som inte följer formatmallen, behöver i så
+fall godkännas av PTS innan de kan tilldelas av SSA.
+
+\textbf{Exempel:} DL65DARC är en eventsignal för tyska (DL)
+amatörradioföreningen DARC:s 65:års jubileum.
+
+PTS regler för tilldelning av svenska anropssignaler kan skilja sig från
+grundreglerna i RR som anges ovan, men följer i allmänhet dessa.
+
+Anropssignaler för svenska amatörradiostationer är uppbyggda på följande
+sätt, varvid med distrikt avses amatörradiodistrikt.
+
+\begin{tabular}{lll}
+enskilda radioamatörer & SA & + distriktssiffra + treställigt suffix (grundsignal) \\
+enskilda radioamatörer & SM & + distriktssiffra + två- eller treställigt suffix (grundsignal) \\
+amatörradioklubbar & SA & + distriktssiffra + tvåställigt suffix \\
+amatörradioklubbar & SK & + distriktssiffra + tvåställigt suffix \\
+militära förband och FRO & SL & + distriktssiffra + två- eller treställigt suffix \\
+\end{tabular}
+
+Signalserien SM är tilldelad av Televerket och sedemera PTS fram till 2009.
+Signalserien SA är tilldelad av SSA från 2004.
+Äldre anropssignaler i SM-serien är tilldelade med tvåställiga suffix, medan
+nyare SM- och SA-signaler har treställiga suffix.
+
+Utöver grundsignalen finns även extra anropssignaler tilldelade i de övriga tillgängliga serierna.
+
+\textbf{Exempel:} SM0XXX är en radioamatör som fått sin tilldelning av PTS.
+
+\textbf{Exempel:} SA0XXX är en radioamatör som fått sin tilldelning av SSA.
+
+\textbf{Exempel:} SK2XX är en amatörklubb.
+
+\textbf{Exempel:} SM7X är en radioamatör med kort anropssignal.
+
+Sverige är indelat i amatörradiodistrikt med följande numrering och
+utsträckning:
+
+\begin{tabular}{rp{10cm}}
+Distrikt & Utsträckning \\
+0 & Stockholms (AB) län \\
+1 & Gotlands (I) län \\
+2 & Västerbottens (AC) och Norrbottens (BD) län \\
+3 & Gävleborgs (X), Jämtlands (Z) och Västernorrlands (Y) län \\
+4 & Örebro (T), Värmlands (S) och Dalarnas (W) län \\
+5 & Östergötlands (E), Södermanlands (D), Västmanlands (U) och Uppsala (C) län\\
+6 & Hallands (N) och Västra Götalands (O) län \\
+7 & Skåne (M), Blekinge (K), Kronobergs (G), Jönköpings (F) och Kalmar (H) län.\\
+\end{tabular}
+
+Distriktssiffran i anropssignalen bestäms av det län som hemadressen är belägen inom.
+Vid sändning utanför hemadressen bör det framgå av tillägg till anropssignalen.
+
+\textbf{Exempel:} SA0XXX är en radioamatör hemmahörande i Stockholms län.
+
+\textbf{Exempel:} SM7YYY är en radioamatör hemmahörande i Jönköpings län.
+
+\textbf{Exempel:} SK7AX är en amatörklubb hemmahörande i Jönköping län.
+
+I Post- och telestyrelsens föreskrifter sägs dock inte vilken distriktssiffra
+som ska användas, när sändning sker från annan plats än hemortsadressen.
+
+Med stöd av praxis rekommenderar dock SSA att följande regler tillämpas:
+
+\begin{itemize}
+\item Vid trafik från en regelbundet använd fritidsbostad kan i
+  anropssignalen användas den distriktssiffra som utvisar var
+  fritidsbostaden är belägen.
+
+\item Vid trafik från annan tillfällig plats bör anropssignalen
+  åtföljas av snedstreck och siffran för det distrikt varifrån
+  sändningen görs.
+  \textbf{Exempel:} SM0XYZ/0, SM0XYZ/6 etc.
+
+\item Vid trafik från mobil station bör den ordinarie anropssignalen
+  även åtföljas av /M.
+  \textbf{Exempel:} SM0XYZ/6/M.
+
+\item Vid trafik från mobil station inom hemorten kan dock den extra
+  distriktssiffran utelämnas.
+  \textbf{Exempel:} SM0XYZ/M.
+
+\item Vid trafik från sjöfarkost bör den ordinarie anropssignalen
+ åtföjas av /MM.
+
+\item Vid trafik från luftfarkost bör den ordinarie anropssignalen
+  åtföljas av /AM.
+
+\item Vid trafik från svensk farkost på internationellt territorium
+ kan distriktssiffran 8 användas.
+
+\item Vid sändning från ett annat lands territorium gäller det landets
+  bestämmelser.
+  Vid osäkerhet -- Vänd dig till SSA!
+
+\item Utländsk radioamatör på besök i Sverige ska använda sin
+  anropssignal från det egna landet, föregånget av SM/. \textbf{Exempel:} SM/LA9XX \cite{TR6101}.
+\end{itemize}
+
+\subsection{Nationella prefix}
+\textbf{HAREC
+	b.\ref{HAREC.b.5.4}\label{myHAREC.b.5.4}
+}
+
+Nationella prefix att kunna
+
+\begin{tabular}{llllll}
+    Prefix & Land& & & &  \\
+    LA & Norge & OH & Finland & OH0 & Åland\\
+    OZ & Danmark & DL & Tyskland & EA & Spanien\\
+    ES & Estland & F & Frankrike & G & Storbritannien\\
+    HB & Schweiz & I & Italien & LY & Litauen\\
+    OK & Tjekien & ON & Belgien & PA & Holland\\
+    S5 & Slovenien & SP & Polen & SV & Grekland\\
+    UA & Ryssland & YL & Lettland & EA8 & Kanarieöarna\\
+    ZS & Sydafrika & HS & Thailand & JA & Japan\\
+    K & USA & VE & Kanada & LU & Argentina\\
+    PY & Brazilien & VK & Australien & ZL & Nya Zeeland\\
+\end{tabular}
+
+
+\section{Användning av anropssignal}
+\textbf{HAREC
+  b.\ref{HAREC.b.5.2}\label{myHAREC.b.5.2},
+  b.\ref{HAREC.b.7.2.2}\label{myHAREC.b.7.2.2}
+}
+
+Både motstationens och den egna anropssignalen ska användas i början
+och slutet av varje sändning.
+Under sändningen ska anropssignalen upprepas ''med korta mellanrum'', utan
+närmare precisering av mellanrummet.
+Även om man inte har kontakt med en motstation, ska den egna anropssignalen
+anges vid varje sändning.
+Se vidare i PTS föreskrifter.
+
+\section{Exempel på kontakt}
+\textbf{HAREC
+  b.\ref{HAREC.b.7.2.1}\label{myHAREC.b.7.2.1}
+}
+
+Det finns många sätt att genomföra en radiokontakt, men det finns
+några grundregler för hur man uppträder och utväxlar samtal.
+Ett trevligt och kamratligt uppträdande är en hederssak inom amatörradion.
+Det behöver inte bli stelt för den skull!
+
+Allmänt anrop är ett sätt att kalla på någon
+-- vem som helst -- att kommunicera med.
+
+På telegrafi låter det så här:
+
+-- CQ CQ CQ de SM0XYZ K
+
+det vill säga anropet först och därefter den egna anropssignalen.
+
+På telefoni låter det så här:
+
+-- Allmänt anrop, allmänt anrop, allmänt anrop från SM0XYZ Kom
+
+Glöm inte Kom i slutet!
+
+Riktat anrop gör man, när man vill tala med någon särskild station.
+Då sänder man först anropssignalen på den station, som man vill tala med och
+därefter sin egen anropssignal.
+
+På telegrafi låter det så här:
+
+-- SM0ZYX SM0ZYX SM0ZYX de SM0XYZ SM0XYZ SM0XYZ K
+
+På telefoni låter det så här:
+
+-- SM0ZYX SM0ZYX SM0ZYX från SM0XYZ SM0XYZ SM0XYZ Kom
+
+Motstationen svarar förhoppningsvis på anropet, alltså
+
+-- SM0XYZ från SM0ZYX Kom
+
+\subsection{Upprättad förbindelse}
+
+När en station svarat på anrop, lämnar man först sin signalrapport
+enligt RST-koden och presenterar sig med sitt förnamn och berättar var man finns.
+Motstationen kvitterar troligen med sina motsvarande uppgifter.
+
+När man överlämnar ordet till motstationen avslutar man meningen med Kom och lyssnar.
+Om man har en telegrafiförbindelse och bara vill tala med den stationen kan man
+sända KN (kom du och ingen annan (nobody else).
+
+Om förbindelsen varar länge, är det lämpligt att upprepa anropssignalerna
+ungefär var tionde minut vid överlämning.
+
+-- SM0ZYX från SM0XYZ Kom
+
+\subsection{Avsluta förbindelse}
+
+När man så småningom avslutar kontakten tackar man för sig på och utbyter
+avskedshälsningar. Då kan det låta så här:
+
+-- Tack för en trevlig förbindelse och på återhörande. SM0ZYX från
+SM0XYZ. Klart Slut.
+
+Träna med din instruktör på att klara olika slags trafiksituationer!
+
+\subsection{Second operator}
+\index{Second operator}
+\label{secondoperator}
+
+Den som självständigt använder en amatörradiosändare ska ha ett
+amatörradiocertifikat.
+Det finns ett undantag från kravet på amatörradiocertifikat då en person
+tillfälligt använder en amatörradiosändare under uppsikt av någon som har ett
+amatörradiocertifikat.
+Detta kallas \emph{second operator} och innebär att en person som saknar
+amatörradiocertifikat kan agera operatör jämte en person som har ett.
+
+I Sverige är det reglerat i undantagsföreskriften PTSFS 2015:4 som tas upp i
+avsnitt \ref{PTSFS2015:4}.
+Detta medger att man kan förevisas hobbyn och även träna under kontrollerade
+förhållanden.
+För att detta ska fungera krävs att den med amatörradiocertifikat instruerar
+om hur man ska bete sig i etern, hur handhavandet går till och kan övervaka
+att detta följs.
+
+Självklart används anropssignalen för innehavaren av amatörradiocertifikatet.
+Det är bra att det tydligt framgår att det är en second operator som är aktiv.
+Antingen ropar amatören upp och sedan berättar att han lämnar över till second
+operator Simon.
+Alternativt kan en second operator göra anropen själv och då ropa till exempel
+''SM5XYZ second operator Anna''.
+
+Möjligheten att använda second operator ska användas med klokhet, och kan rätt
+använd skapa en god förståelse för hobbyn och utgöra en morot för att få både
+ungdomar och vuxna intresserade av amatörradio.
+
+\subsection{CQ DX och split}
+\index{CQ DX}
+\index{split}
+\index{DX expedition}
+\index{rar DX}
+\index{pile-up}
+
+Det förekommer att man hör någon ropa \emph{''CQ DX''}, vilket betyder att
+stationen söker långväga kontakter, i allmänhet utanför sin egen världsdel.
+
+-- ''CQ DX, CQ DX, CQ DX, SM0XYZ calling CQ DX and standing by''
+
+I detta fallet är det SM0XYZ som söker att nå någon utanför Europa.
+Är du själv inte ett DX, det vill säga om du befinner dig i samma världsdel så
+ska du undvika att svara.
+
+Ibland genomförs så kallade \emph{DX expeditioner} då man beger sig till en
+plats som sällan aktiveras.
+Man brukar tala om \emph{rara DX} (eng. \emph{rare DX}), då ett ovanligt
+landområde aktiveras, som många vill ha i sin logg.
+
+En station som ropar CQ kan få svar från många stationer samtidigt.
+Då uppstår ett sammelsurium av signaler som kallas för \emph{pile-up}.
+
+När stationen betar av en pile-up kan stationen även fråga \emph{''QRZ?''},
+alltså ''vem där''?
+
+Ett rart DX kan drabbas av enorma pile-ups, och det kan bli svårt
+motstationerna att höra DX-stationen bland alla andra som ropar samtidigt.
+Det kan kan också vara svårt för DX-stationen att urskilja vilka motstationer
+som svarar, om alla svarar på samma frekvens.
+En strategi för att få detta att fungera effektivare är att köra split
+\cite{LowBandDX}, det vill säga att DX-stationen sänder och lyssnar på olika
+frekvenser (men fortfarande inom samma frekvensband).
+
+Oftast väljer DX-stationen att lyssna på en frekvens som ligger några kilohertz
+högre än den egna sändningsfrekvensen, och anger detta genom att sända
+exempelvis \emph{''listening up''} eller \emph{''listening five up''}.
+
+Genom att använda sig av split undviker DX-stationen att störas ut av sin egen
+pile-up.
+DX-stationen kan också välja sprida ut sin pile-up, genom att inte lyssna på
+endast en frekvens, utan genom att svepa över ett lite större område.
+
+\emph{''Listening five to ten up''} betyder då att DX-stationen lyssnar i ett
+område mellan 5 och 10~kHz över den egna sändningsfrekvensen, och
+motstationerna får försöka gissa var i detta frekvensområde som DX-stationen
+lyssnar just för tillfället.
+
+För trafik på morsetelegrafi använder man vanligtvis ett mindre avstånd mellan
+sändar- och mottagarfrekvens än för trafik på SSB-telefoni, eftersom
+telegrafisignalerna upptar mindre bandbredd.
+
+Moderna transceivrar har nästan alltid möjlighet att ställa in split genom att
+man använder ''VFO A/B'', ''RIT/XIT'' eller ''clarifier''.
+Mer avancerade transceivrar kan ha möjlighet att separera de två frekvenserna i
+hörlurarnas vänster- respektive högerkanal.
+
+När en station ropar CQ och gör paus för anropande stationer, ange då din egen
+signal kort och tydligt en gång i varje pass.
+Istället för att ropa flera gånger varje pass, skrika eller på annat sätt
+ta utrymme, ha tålamod och vänta ut bra tillfälle.
+Ropa inte under den tid som DX-stationen sänder sitt CQ. Då hör han dig ju ändå inte.
+
+Det kan vara nyttigt att lyssna in sig på operatörens stil.
+Var medveten om att DX-stationen kan höra helt andra stationer starkare än vad du hör,
+eftersom konditionerna kan vara helt annorlunda för DX-stationen.
+
+Vid stora pile-ups kan operatören välja att bara lyssna efter vissa stationer,
+och därför fråga efter ''only number five stations please'' eller efter ''only
+European stations please''.
+Detta syftar till att dela upp en stor pile-up för en chans att lättare
+uppfatta vilka som anropar.
+
+Vid uppdelning efter nummer kommer operatören avverka några stationer med ett
+visst nummer i anropssignalen, för att sedan gå vidare till nästa och så
+vidare, tills 0 till 9 är genomgångna.
+
+Alternativet att gå efter regioner eller landsprefix kan vara att föredra om
+operatören upplever att konditionerna dit snart försvinner och därför vill ge
+dem en extra förtur innan de helt tappar chansen.
+
+Lär dig ''DX:arens ordningsregler'' (\href{http://www.dx-code.org/}{www.dx-code.org}) :
+
+\begin{itemize}
+	\item Jag ska lyssna, och lyssna, och sedan lyssna lite till.
+	\item Jag ska ropa endast om jag kan läsa DX-stationen ordentligt.
+	\item Jag ska icke lita på cluster-information, utan vara helt klar över DX-stationens anropssignal innan jag ropar.
+	\item Jag ska icke störa DX-stationen, eller någon som anropar denne, och jag ska aldrig stämma av på DX:ets egen frekvens, eller i det segment där denne lyssnar.
+	\item Jag ska vänta tills DX:et avslutat föregående kontakt innan jag ropar själv.
+	\item Jag ska alltid ange min fullständiga anropssignal.
+	\item Jag ska ropa och lyssna med lämpliga intervaller.
+	\item Jag ska icke ropa kontinuerligt.
+	\item Jag ska icke ropa då DX:et svarar någon annan än mig.
+	\item Jag ska icke ropa då DX:et frågar efter en anropssignal som icke liknar min egen.
+	\item Jag ska icke ropa då DX:et söker efter ett annat geografiskt område än mitt eget.
+	\item När DX:et svarar mig så ska jag icke upprepa min anropssignal, annat än om jag tror att denne ej uppfattat den korrekt.
+	\item Jag ska vara tacksam om och när jag får kontakt.
+	\item Jag ska respektera mina amatörkamrater och uppträda så jag förtjänar deras respekt.
+	\end{itemize}
+
+\textbf{Försök inte agera polis och rätta andra stationer, som du anser bryter mot reglerna!}
+
+\section{Innehåll i förbindelse}
+\textbf{HAREC
+	b.\ref{HAREC.b.7.2.3}\label{myHAREC.b.7.2.3}
+}
+
+Tidigare har det i Sverige varit reglerat vad innehållet får vara i
+förbindelser, eller snarare vad de inte får innehålla.
+Den regleringen är numera borttagen.
+Man ska vara medveten om att samma regler och förutsättningar inte gäller i
+alla länder och för deras radioamatörer.
+Därför uppmanas du att använda sunt förnuft, hålla god ton och respektera alla
+amatörer.
+Se även IARU etik och trafikmetoder.
+
+\subsection{Tystnadsplikt}
+\index{tystnadsplikt}
+\index{LEK}
+
+Innehållet i en radioförbindelse skyddas av
+\emph{Lagen för Elektronisk Kommunikation (LEK)} \cite{SFS2003:389}.
+I LEK regleras tystnadsplikt för radiobefordrade meddelanden i kapitel 6.
+
+\begin{quote}
+	Den som i annat fall än som avses i 20 \S~första stycket och 21 \S~i
+	radiomottagare har avlyssnat eller på annat sätt med användande av sådan
+	mottagare fått tillgång till ett radiobefordrat meddelande i ett
+	elektroniskt kommunikationsnät som inte är avsett för honom eller henne
+	själv eller för allmänheten får inte obehörigen föra det vidare.
+	Lag (2012:285).\cite[kap 6, \S23]{SFS2003:389}
+\end{quote}
+
+Tystnadsplikten gäller alla radiomeddelanden som avlyssnats, oavsett ursprung.
+
+Detta innebär att om du själv varit part i radiomeddelandet eller om 
+radiomeddelandet var en nyhetsbulletin avsett för många så du föra det vidare.
+
+En stor del av radioamatörhobbyn bygger dock på radiokommunikation med andra och
+att andra kan höra dig när du sänder.
+En radioamatör kan därför inte anses vara omedveten om att någon annan lyssnar
+på det som sänds ut.
+Därför är mycket accepterat inom amatörradio som annars skulle vara förbjudet.
+
+Tips om rara DX, tips om någon som ropar CQ, QSL från lyssnaramatörer, att
+berätta att du hörde någon ha förbindelse med någon annan anses därför normalt
+inte vara ett brott mot tystnadsplikten.
+
+Att koppla en radiomottagare till webben så att någon kan lyssna på radiotrafik
+i realtid är tillåtet.
+
+\emph{Observera även texten i andra punkten i kapitel 6 \S~20 gällande den som i
+	samband med tillhandahållande av ett elektronisk kommunikationstjänst har fått
+	del av eller tillgång till innehållet i ett elektroniskt meddelande inte
+	obehörigen får föra vidare eller utnyttja det han fått del av eller tillgång
+	till.}
+
+Detta kan vara aktuellt då någon som tillhandahåller en elektronisk
+kommunikationstjänst från punkt A till punkt B får tillgång till innehållet i
+ett elektroniskt meddelande när det har lämnat punkt A och innan det når fram
+till punkt B.
+
+\subsection{Inspelning av radiomeddelande}
+\index{inspelning}
+\index{GDPR}
+\index{Dataskyddsförordningen}
+
+Radiosamtal som du själv deltar i får spelas in utan att andra deltagare i
+samtalet informeras om att du spelar in samtalet.
+
+Grundregeln är att inspelning av radiomeddelanden är tillåten såvida inte
+inspelningen är förbjuden för att skydda personers personliga integritet.
+
+Uppspelning av de inspelade meddelandena får inte bryta mot bestämmelserna om
+tystnadsplikt.
+Det vill säga att meddelandet inte obehörigen får föras vidare.
+
+Alla radiomeddelanden får inte spelas in.
+Lagstiftningen skiljer även på analoga- och digitala inspelningar.
+Personuppgiftslagen SFS 1998:204 \cite{SFS1998:204} och dess ersättare från och
+med 25 maj 2018 Dataskyddsförordningen \cite{GDPR} samt 4 kap \S~9a i
+Brottsbalken \cite{SFS1962:700} är exempel på lagar som begränsar inspelning av
+avlyssnade radiomeddelanden.
+
+Av ovanstående följer att det inte är tillåtet att lagra inspelad radiotrafik
+för senare lyssning via webbaserade medier då det kan anses kränka den
+personliga integriteten.
+
+\subsection{Kryptering av radiomeddelande}
+\index{kryptering}
+
+Inom Sveriges gränser är kryptering av radiomeddelanden på amatörradiofrekvenser
+tillåten under villkor att en anropssignal regelbundet sänds ut, anropssignalen
+ska då kunna avläsas med kända tekniker.
+Trots detta rekommenderas inte användning av kryptering för amatörradiotrafik.
+
+Tekniken för kryptering av radiomeddelanden har blivit mera lättillgänglig i
+samband med införandet av digitala radiosystem typ DMR (Digital Mobile Radio) på
+amatörbanden.
+Ett flertal av dessa radiosystem är dock ihopkopplade via internationella
+nätverk och därigenom hörbara i flera länder där kryptering inte är tillåten.
+
+Användningen av krypteringsteknik på amatörradiofrekvenser riskerar därför att
+medföra begränsningar i de rättigheter vi har enligt PTSFS 2015:4.
+
+\section[Hederskod]{Radioamatörens hederskod}
+\textbf{HAREC
+  b.\ref{HAREC.b.7.1.1}\label{myHAREC.b.7.1.1}
+}
+\index{Radioamatörens hederskod}
+
+Radioamatören är
+
+\begin{tabular}{lp{9cm}}
+  \textbf{HÄNSYNSFULL} &
+     Han agerar aldrig medvetet på ett sätt som minskar nöjet för andra. \\
+  & \\
+
+  \textbf{LOJAL} &
+  Han erbjuder lojalitet, uppmuntran och stöd åt andra amatörer, lokala klubbar,
+  IARU organisationen i hans land genom vilken amatörradio i hans land
+  representeras nationellt och internationellt.\\
+  & \\
+
+  \textbf{PROGRESSIV} &
+  Han håller sin station på en hög teknisk nivå.
+  Den är välbyggd och effektiv.
+  Hans operationsteknik är oantastlig.\\
+  & \\
+
+  \textbf{VÄNLIG} &
+  Han kommunicerar sakta och tålmodigt när så begärs;
+  erbjuder kamratligt stöd och ger nybörjaren goda råd;
+  vänlig assistans, samarbete och omtanke i andras intresse.
+  Detta är kännetecknen för amatörandan.\\
+  & \\
+
+  \textbf{BALANSERAD} &
+  Radio är en hobby och får aldrig orsaka konflikt i förpliktelser gentemot
+  familj, arbete, skola eller samhälle.\\
+  & \\
+
+  \textbf{PATRIOTISK} &
+  Hans station och hans kunnande står alltid till förfogande för att
+  assistera land och samhälle.\\
+\end{tabular}
+
+-- anpassad från den ursprungliga Amateur's Code, skriven av Paul M. Segal, W9EEA, 1928.
+
+\section[Ordningsregler]{Radioamatörens ordningsregler}
+\textbf{HAREC
+  b.\ref{HAREC.b.7.1.2}\label{myHAREC.b.7.1.2}
+}
+
+\subsection{Grundläggande principer}
+\textbf{Grundläggande principer} som ska styra vårt \textbf{uppträdande} på
+amatörbanden är:
+
+\begin{itemize}
+\item \textbf{Samhörighet, broderskap och kompiskänsla}: många, många av oss
+  är aktiva i etern (vår spelplan).
+  Vi är aldrig ensamma.
+  Alla andra amatörer är våra kollegor, våra bröder och systrar, våra vänner.
+  Agera därefter.
+  Var alltid hänsynsfull.
+
+\item \textbf{Tolerans}: inte alla amatörer delar nödvändigtvis samma
+  uppfattning som du, och din uppfattning är kanske inte den bästa.
+  Förstå att det finns andra med en annan uppfattning om ett visst tema.
+  Var tolerant.
+  Du har inte denna värld för dig själv.
+
+\item \textbf{Anständighet}: aldrig får svordomar och oanständigheter yttras
+  på banden.
+  Ett sådant beteende säger ingenting om den person som de är avsedda för men
+  mycket om den person som uttalar dem.
+  Behåll ditt lugn i alla situationer.
+
+\item \textbf{Förståelse}: Var snäll och förstå att alla inte är så smarta,
+  så professionella eller så mycket expert som du.
+  Om du vill göra något åt detta agera positivt (hur kan jag hjälpa till,
+  hur kan jag förbättra, hur kan jag lära ut) i stället för negativt
+  (med svordomar, förolämpningar etc.).
+\end{itemize}
+
+\subsection{Risken för konflikter}
+\textbf{Endast en spelplan, etern}: alla radioamatörer vill spela sitt spel
+eller utöva sin sport men det måste göras på en enda spelplan: våra amatörband.
+Hundratusentals spelare på en enda spelplan leder ibland till konflikter.
+
+Ett exempel: Plötsligt hör du någon ropa CQ på din frekvens (den frekvens du
+har kört på en stund).
+Hur är detta möjligt?
+Du har varit igång här mer än en halvtimme på en helt ren frekvens!
+Jo, visst är det möjligt; den där andra stationen tror kanske också att du stör
+honom på HANS frekvens.
+Kanske har skippet eller konditionerna ändrats?
+
+\subsection{Hur undvika konflikter?}
+\begin{itemize}
+\item Genom att förklara för alla spelare vilka regler som gäller och genom
+  att motivera dem att tillämpa dessa regler.
+  De flesta konflikter orsakas av \textbf{okunskap}:
+  många spelare känner inte till reglerna tillräckligt väl.
+
+\item Dessutom hanteras många konflikter dåligt återigen på grund av
+  \textbf{okunskap}.
+
+\item Den IARU-etikhandbok som finns översatt på SSA:s webbplats avser att
+  åtgärda denna brist på kunnande i huvudsak genom att lära ut hur man kan
+  undvika konflikter av alla slag.
+\end{itemize}
+
+\subsection{Moraliska aspekter}
+\begin{itemize}
+\item I de flesta länder bryr sig myndigheterna inte om i detalj hur
+  amatörerna uppför sig på banden, förutsatt att de håller sig till reglerna
+  som myndigheten fastslagit.
+\item Radioamatörerna anses vara \textbf{självstyrande}, detta betyder att
+  självdisciplin måste utgöra basen i vårt agerande. Det betyder emellertid
+  inte att radioamatörerna har en egen polisiär funktion!
+\end{itemize}
+
+\subsection{Förhållningsregler}
+
+Vad menar vi med \textbf{förhållningsregler} (code of conduct)?
+De är en uppsättning regler baserade på såväl \textbf{etiska} principer som
+\textbf{trafikmässiga hänsyn}.
+
+\begin{itemize}
+\item \textbf{Etik}: Etik bestämmer vår attityd och vårt allmänna uppförande
+  som radioamatörer.
+  Etik har med moral att göra.
+  Etik utgör principerna för moral.
+
+  Exempel: etiken säger oss att aldrig medvetet störa andra stationers
+  radiotrafik.
+  Detta är en moralisk regel.
+  Det är omoraliskt att inte följa denna regel, likvärdigt med att fuska i en
+  tävling.
+\item \textbf{Praktiska regler}: för att hantera alla olika aspekter av
+  vårt uppförande behövs utöver etik också en uppsättning regler baserade på
+  \textbf{trafikmässiga hänsyn} och på \textbf{praxis och sedvänja}.
+  För att undvika konflikter behöver vi också praktiska regler som styr
+  vårt beteende på amatörbanden eftersom vårt huvudintresse är att köra
+  radio på de olika banden.
+  Vi avser här mycket \textbf{praktiska regler} och \textbf{riktlinjer} för
+  situationer som ej är etikrelaterade.
+  De flesta trafikmetoder (hur genomföra ett QSO, var får man köra,
+  vad betyder QRZ, hur använda Q-koderna) hör hit.
+  Respekt för dessa trafikmetoder säkerställer optimalt resultat och
+  effektivitet i våra QSO och kommer att vara nyckeln till att undvika
+  konflikter.
+  Dessa trafikmetoder har tillkommit som ett resultat av daglig radiotrafik
+  under många år och som ett resultat av den pågående tekniska utvecklingen.
+\end{itemize}

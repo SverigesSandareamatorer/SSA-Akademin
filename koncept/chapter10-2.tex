@@ -1,286 +1,85 @@
-\section{Allmänna elnätet}
+\section{Störningar i elektronik}
+\index{Electromagnetic Interference (EMI)}
+\index{EMI}
+\index{Electromagnetic Susceptibility (EMS)}
+\index{EMS}
+
+Liksom att radiomottagning kan ''störas'' av sändningar som inte är av
+intresse, så kan störningar i form av radiovågor från olika slags
+elektrisk utrustning försvåra mottagning eller andra funktioner.
+
+Utstrålning från till exempel datorer, kabel-TV, hushållsmaskiner,
+tändgnistor från oljebrännare, bilar och mopeder etc. är radiovågor.
+Elektriska apparater kan alltså både störa och störas genom
+radiovågor, även om de inte är definierade som \emph{radioanläggning},
+det vill säga radiosändare och/eller radiomottagare.
+
+Störningar som uppstår av elektromagnetiska fält kallas
+\emph{Electromagnetic Interference (EMI)}.
+Känsligheten för sådana störningar kallas för
+\emph{Electromagnetic Susceptibility (EMS)}.
+
+Äldre benämningar på störningar är till exempel BroadCasting Interference (BCI)
+och TeleVision Interference (TVI).
+Dessa återfinns dock inte i nu gällande terminologi.
+
+\subsection{Blockering}
 \textbf{
-HAREC a.\ref{HAREC.a.10.2}\label{myHAREC.a.10.2}
+HAREC a.\ref{HAREC.a.9.1.1}\label{myHAREC.a.9.1.1}
 }
-\label{jordning}
+\index{blockering}
 
-Elektrisk energi levereras till förbrukarna över
-transformatorstationer där högspänning först transformeras till
-lågspänning. Från transformatorstationerna förgrenas lågspänningsnätet
-till serviceskåp ute i kvarter och byar.
+I de flesta radiomottagare finns en automatisk förstärkningsreglering.
+Om insignalerna blir för starka, så räcker regleringen inte till.
+Då överstyrs förstärkarstegen så att de arbetar olinjärt.
+Detta kallas blockering.
 
-I Sverige är fördelningstransformatorns sekundärlindningar oftast
-sammankopplade till ett Y (s.k. Y- eller stjärnkoppling) där
-mittpunkten är jordad.
+Ett sätt att undvika blockering är att koppla en \emph{dämpsats}
+(eng. \emph{attenuator} till mottagaringången.
+En sådan sänker dock signalstyrkan över hela frekvensområdet, inte bara för en
+viss signalfrekvens.
 
-De i Sverige vanligast förekommande 3-fas lågspänningsnäten har
-huvudspänningen 400~V och fasspänningen 230~V. Spänningen mellan fasledarna
-kallas för huvudspänning och spänningen mellan respektive fasledare och
-nolledaren kallas för fasspänning.
+\subsection{Interferens}
+\textbf{
+HAREC a.\ref{HAREC.a.9.1.2}\label{myHAREC.a.9.1.2}
+}
+\index{interferens}
 
-Bruksföremålen i huset ansluts oftast 1-fasigt, d.v.s. mellan någon av
-fasledarna och nolledaren. Någorlunda lika belastning mellan faserna är
-önskvärd.  Mer effektkrävande apparater som el-pannor och spisar
-ansluts därför till alla tre faserna (3-fasigt).
-Amatörradioutrustningar ansluts oftast 1-fasigt.
+När den önskade signalen störs av en annan signal nära i frekvens, kallas det
+\emph{interferens} (eng. \emph{interference}).
+I mottagaringången finns frekvensfilter, som undertrycker ej önskade signaler,
+om de inte ligger alltför nära.
+Om ingången inte är tillräckligt selektiv, kan det behövas en tillsats som
+förbättrar selektiviteten.
 
-Nybyggnad, förändring eller reparation av starkströmsanläggning,
-fast anslutning av elektrisk utrustning till en starkströmsanläggning
-eller att koppla loss fast ansluten elektrisk utrustning från en
-starkströmsanläggning, klassas som elinstallationsarbete och får endast
-utföras av person som har auktorisation som elinstallatör eller av
-yrkesverksam som omfattas av ett elinstallationsföretags egenkontroll.
+\subsection{Intermodulation}
+\textbf{
+HAREC a.\ref{HAREC.a.9.1.3}\label{myHAREC.a.9.1.3}
+}
+\index{intermodulation}
 
-Om du har \emph{erforderlig kunskap} om elsäkerhet får du:
-\begin{itemize}
-\item Byta ut en elkopplare (strömbrytare) för högst 16A 400V.
-\item Byta ut ett anslutningsdon (vägguttag, lamputtag, stickpropp,
-skarvuttag eller liknande) för högst 16A 400V.
-\item Byta ut en ljusarmatur i torrt icke brandfarligt utrymme i bostäder
-\item Utföra, ändra eller reparera en starkströmsanläggning som ingår i en
-skyddsklenspänningskrets med nominell spänning om högst 50~V med effekt om
-högst 200~VA och ström begränsad av säkring på högst 10~A.
-\item Byta säkring.
-\item Byta ljuskälla (lampa, lysrör eller liknande).
-\item Reparera apparater.
-\item Reparera och tillverka apparatkablar och skarvsladdar
-\end{itemize}
+(se även kapitel \ref{intermodulation})
 
-\textbf{Kom ihåg, att auktoriserad installatör ska anlitas för arbete
-i fasta installationer.}
+Blandningsprodukter av signaler i en mottagare eller sändare kallas
+för \emph{intermodulation}.
 
-\subsection{Radioamatören och hembyggd elektronik}
-\index{Radioamatören och hembyggd elektronik}
-\index{Praktiska råd för självbyggaren}
+\subsection{LF-detektering}
+\textbf{
+HAREC a.\ref{HAREC.a.9.1.4}\label{myHAREC.a.9.1.4}
+}
 
-Enligt \emph{radioutrustningslagen} SFS 2016:392 \cite{SFS2016:392} ska radioutrustning som
-släpps ut eller tillhandahålls på marknaden ska vara konstruerad och
-tillverkad så att den uppfyller föreskrivna krav, ha en EU-försäkran om
-överensstämmelse och vara CE-märkt.
+HF-signaler kan komma in genom in- och utgångarna för LF samt genom nätkabeln.
 
-Som \emph{radioutrustning} räknas en elektrisk eller elektronisk produkt som
-avsiktligt avger eller tar emot radiovågor för radiokommunikation eller
-radiobestämning, eller en elektrisk eller elektronisk produkt som måste
-kompletteras med ett tillbehör, såsom en antenn, för att avsiktligt avge
-eller ta emot radiovågor för radiokommunikation eller radiobestämning. 
+Dessutom förekommer direktinstrålning av radiovågor genom apparathöljet, om
+detta inte har tillräckligt avskärmande verkan.
 
-Lagens tillämpningsområde och definitioner anger att lagen inte omfattar
-radioutrustning som används av radioamatörer för amatörradiotrafik, under
-förutsättning att utrustningen inte tillhandahålls på marknaden.
+\emph{LF-detektering} uppstår när HF-signaler demoduleras i diodsträckor i den
+störda apparatens komponenter.
+Detta sker oavsett vilken frekvens som sändaren eller mottagaren är inställd på.
 
-Radioutrustning som används av radioamatörer för amatörradiotrafik ska inte
-anses tillhandahållen om det är
-\begin{itemize}
-	\item radiobyggsatser som är avsedda att byggas samman och användas av
-	radioamatörer.
-	\item radioutrustning som har modifierats av radioamatörer för att
-	avvändas av	radioamatörer, eller
-	\item utrustning som har konstruerats av enskilda radioamatörer för
-	experimentella och vetenskapliga ändamål i samband med amatörradio.
-\end{itemize}
+\emph{LF-detektering} uppstår särskilt vid AM- eller SSB-modulerade sändningar
+samt av transienter vid bärvågsnyckling av sändare.
 
-Detta innebär att du som radioamatör, utöver vanlig elektronik, får bygga
-och använda en radioutrustning. Du är då ansvarig för att den utrustning du
-byggt är säker att använda och inte orsakar störningar. 
-
-Radioutrustningen får vara avsedd att anslutas till en starkströmsanläggning
-om utrustningen vid användning inte orsakar någon typ av skada på person
-egendom eller husdjur. Kom även ihåg att 12~V från ett bilbatteri räknas
-som en starkströmsanläggning.
-
-När en elektrisk eller elektronisk apparat konstrueras eller byggs finns det
-ett antal punkter som ska uppmärksammas för att apparaten ska vara säker att
-använda oavsett hur den är avsedd att strömförsörjas.
-Som stöd för hur en apparat kunde byggas för att uppfylla kraven gav
-dåvarande SEMKO ut \emph{Praktiska råd för självbyggaren}
-
-Nedanstående punkter bygger dessa praktiska råd.
-
-\begin{itemize}
-	\item Höljet ska vara anpassat till apparaten och inte vara öppningsbart
-	utan verktyg.
-	\item Höljet ska vara försett med nödvändiga ventilationshål för att
-	undvika överhettning. Observera att spänningsförande delar inte får
-	vara nåbara genom ventilationshålen.
-	\item Höljet får inte bli så varmt att skada kan uppstå på människa
-	eller egendom.
-	\item Är höljet eller chassiet till en elnätsansluten apparat av ledande
-	material och apparaten inte har förstärkt isolering så ska \emph{utsatta}
-	delar som riskerar att spänningssättas vid fel anslutas till skyddsjord.
-	\item Kabeln för nätanslutning ska vara försedd med en för ändamålet
-	lämplig dragavlastning som även skyddar kabeln mot nötning när den
-	passerar höljet.
-	\item Komponenter i apparaten ska vara dimensionerade och godkända
-	för den effekt de utvecklar och för den spänning och strömstyrka de
-	ansluts till. \emph{Not: Ett tips ära att ha god marginal vad gäller
-	värmetålighet då det ger ökad livslängd och större säkerhetsmarginaler.}
-	\item Apparaten ska vara försedd med korrekt dimensionerad säkring
-	som skydd mot kortslutning och överbelastning.
-	\item Elnätsansluten apparat ska vara försedd med 2-polig nätströmbrytare.
-	\item Spänningsförande delar i apparaten ska vara försedda med
-	beröringsskydd som skyddar mot oavsiktlig beröring.
-	\item Komponenter i apparaten ska monteras fast och placeras på lämpliga
-	inbördes avstånd så att risken för störningar, överslag, kortslutning eller
-	överhettning minimeras.
-	\item Kablar och ledningar för starkström ska skyddas mot varma komponenter,
-	nötning och skarpa kanter samt förläggas separerade från ledningar för
-	klenspänning och signaler.
-\end{itemize}
-
-\textbf{Sträva efter att alltid ansluta din apparat via vägguttag
-	skyddade av jordfelsbrytare.}
-
-
-\subsection{Strömbrytare}
-
-Kraftförsörjningen av radiostationens apparater bör ske över en
-gemensam huvudströmbrytare, som lätt kan nås. En indikatorlampa får
-gärna markera att den brytaren är tillslagen och att stationen är
-under spänning. Informera familjen och övriga i din omgivning om hur
-den brytaren fungerar. Det är en säkerhetsåtgärd om något skulle hända.
-
-Apparaternas nätströmbrytare ska vara utförda för den aktuella
-arbetsspänningen och ha ett godkänt utförande.
-
-Vid 1-fassystem ska nätströmbrytaren i apparaterna vara 2-polig och
-bryta fas- och N-ledare, men aldrig PE-ledaren.
-
-Vid 3-fassystem ska nätströmbrytaren vara 3-polig och bryta fasledarna,
-men aldrig N-ledare och PE-ledare.
-
-\textbf{Kom ihåg, att auktoriserad installatör ska
-  anlitas vid ingrepp i fasta installationer.}
-
-\subsection{Liten terminologi vid elinstallationer}
-\begin{description}[style=nextline]
-\item[Gruppcentral] Den säkringscentral som följer efter elmätaren,
-  t.ex. i villor och lägenheter.
-\item[Gruppledningar] Ledningar efter en gruppcentral, d.v.s.
-  ledningar till belysning, el-spisar, uttag m.m.
-\item[Fasledare] En ledare som för fasspänning.
-\item[Nolledare (N-ledare)] En ledare som är ansluten till elnätets
-  s.k.  nollpunkt (nollskena) och som normalt inte ska föra spänning
-  till jord.
-\item[Skyddsledare (PE-ledare)] De ledare i kablar och sladdar, som är
-  speciellt avsedda för skyddsjordning.
-\item[Bruksföremål] Ett i princip flyttbart elanslutet föremål,
-  t.ex. handverktyg och radioapparater.
-\item[Förstärkt isolering] Vissa bruksföremål tillverkas med en så god
-  isolering att de inte behöver skyddsjordas. Så isolerade får
-  anslutningsledningen förses med en speciell stickpropp, som passar i
-  vägguttag, såväl med som utan jorddon. Sådana bruksföremål är märkta
-  med fi-symbolen \(\boxbox\) och får inte ändras så att de kan skyddsjordas.
-\end{description}
-
-\subsection{Färgkoder för fas, noll- och skyddsledare}
-
-Isoleringsmaterialet omkring gruppledarna i fasta elinstallationer har
-färger som fyller en viktig funktion. Tyvärr har användningen av dessa
-färger ändrats flera gånger under årens lopp, vilket skapar risker för
-förväxling. Dessa färger får därför aldrig förväxlas.
-
-Fasledaren har numera brun färg vid nyinstallation, men har tidigare varit
-både svart, grå, vit eller röd.
-N-ledaren (nollan) har numera blå färg vid nyinstallation, men har tidigare
-varit både svart och vit.
-Skyddsledaren (PE-ledare) med gul/grön längsgående randig färgmärkning är
-alltid en skyddsjordledare och får endast användas för det ändamålet. I äldre
-installationer kan emellertid skyddsledarens isolering vara t.ex. röd.
-
-Det är till fas och N-ledarna i vägguttagen, som man kopplar apparaterna för
-att få ström. Helst ska uttagen vara i skyddsjordat utförande dvs. med ett
-jordningsbleck. Detta bleck är anslutet till den gul/gröna ledaren för
-skyddsjord.
-
-\subsection{Uttag och stickproppar med jorddon}
-
-Jorddonet ger förbindelse med elsystemets skyddsjord (PE).
-
-Det är tidigare rummets utförande som avgjorde om vägg- och lamputtagen skulle
-ha uttag med jorddon.
-
-Kök och tvättstugor med ledande plåtbänkar, vattenkranar o.s.v. anses
-som riskfyllda rum och måste ha uttag med jorddon.  Samma gäller
-källare och liknande andra rum med ledande golv, väggar och
-inredningar.
-
-Bostadsrum var klassade som inte särskilt riskfyllda och har därför tidigare
-inte försetts med lamp- och vägguttag med jorddon.
-
-Vid nybyggnation är emellertid numera alla uttag är av skyddsjordat utförande!
-
-Det rekommenderas att installera skyddsjordade vägguttag för
-radiostationen. Observera då, att alla uttag i det rummet ska vara
-skyddsjordade!
-
-\subsection{Skyddsjordning}
-
-Att jorda är det vanliga uttrycket för att ansluta ett föremål till
-skyddsjord. Men uttrycket används även lite slarvigt i andra fall utan att
-syfta på skyddsjordning av elsäkerhetsskäl.
-
-Metallhöljen på elektrisk utrustning kan av olika anledningar bli
-spänningsförande och är då en elsäkerhetsrisk. För att minska risken för
-farlig spänningssättning av metallhöljet ansluts höljet till skyddsjord.
-Om det blir isolationsfel mellan en strömförande del och höljet kommer
-säkringen att bryta strömtillförseln och risken för skada minskar.
-\textbf{PE-ledaren får därför aldrig brytas!}
-
-\emph{För skyddsjordning finns särskilda föreskrifter. Kontakta därför en
-behörig installatör.}
-
-\subsection{Jordfelsbrytare}
-
-Jordfelsbrytare är en automatisk strömbrytare som snabbt bryter strömmen
-då strömmen till eller från en apparat är olika. Detta kan inträffa vid
-ett jordfel eller vid överledning i en skyddsjordad apparat eller i andra
-fall när inkommande ström och utgående ström genom jordfelsbrytaren inte
-är lika stora.
-
-Jordfelsbrytaren skyddar dig:
-\begin{itemize}
-\item Vid isolations- och jordfel
-\item Om chassiet på en apparat blir strömförande
-\item Om du kommer åt spänningsförande delar och jord samtidigt
-\item Om du använder en apparat på ett felaktigt sätt i våtutrymmen
-\item Om du installerat en apparat på att felaktigt sätt
-\item Om apparatens kabel skadats
-\item Mot och minimerar risken för brand
-\end{itemize}
-
-Jordfelsbrytaren \textbf{skyddar inte} för strömmar som går genom fasledare
-och neutralledare eller genom fas till fasledare (3-fas).
-
-Jordfelsbrytare får inte ersätta skyddsjordning, men kan under särskilda
-förutsättningar komplettera skyddsjordningen som en extra säkerhetsåtgärd.
-Vid nyinstallation av bostäder är det numera krav på att minst en
-jordfelsbrytare ska installeras. Installera gärna jordfelsbrytare i äldre
-anläggningar!
-
-\subsection{Särjordning}
-
-Särjordning är ett uttryck för att jorda apparater till en separat
-jordpunkt, Det görs via separat jordlina till ett jordtag,
-d.v.s. jordplåt eller jordspett. Särjordning ska ske på rätt sätt
-eftersom det avsedda skyddet annars kan bli en fara.
-
-\emph{Om du har planer på särjordning, fråga en auktoriserad installatör.}
-
-\subsection{Jordning av antennsystem}
-
-I brist på annan jordpunkt är det frestande att ansluta
-antennjordledaren till PE-ledarens anslutningsbleck i vägguttaget med
-förhoppning att på så sätt få ett bättre HF-jordplan för
-antennen. Detta är emellertid ett dåligt exempel på särjordning, som
-både kan innebära säkerhetsrisker och medföra störningsproblem.
-
-\subsection{Snabba och tröga säkringar}
-
-Det finns snabba och tröga säkringar. Snabba säkringar är det som
-normalt används. Tröga säkringar för samma strömstyrka kan behövas för
-apparater som har speciellt hög startström, t.ex. stora
-nättransformatorer med toroidkärna.
-
-Säkringarna ska kunna bryta tillräcklig hög spänning, annars blir det
-en kvarstående ljusbåge i dem vid säkringsbrott. Använd säkringar med rätta
-strömvärden. Det är förbjudet att laga säkringar då det kan orsaka brand.
+Ofta är det inte möjligt att förhindra LF-detektering utan ingrepp i den störda
+apparaten.
+Sådana ingrepp bör endast utföras av fackman.

@@ -1,684 +1,360 @@
-\section{VHF/UHF/SHF/EHF bandplan}
+\section{VHF och högre}
+\label{Bandplan VHF och högre}
 
-\hilight{TODO: F.2 Behöver fixas.}
+Den vänstra delen är själva bandplanen, medan den högra delen rekommenderar
+användning/mötespunkter.
+(PTS bandplan och status för amatörradio i Sverige, framgår av Kapitel
+\ref{bandplaner} samt bilaga \ref{svensk frekvensplan} svensk frekvensplan och
+bilaga \ref{svenska repeatrar} frekvenser för svenska amatörradiorepeatrar.)
 
-Sammanfattad av SM7GVF Kjell
-
-Denna bandplan reviderades vid IARU Region 1-konferensen i Tel-Aviv 1996.
-\hilight{TODO: Referens till senare bandplan}
-Den vänstra delen är själva bandplanen, medan den högra delen rekommenderar användning/mötespunkter.
-(PTS bandplan och status för amatörradio i Sverige, framgår av Kapitel !111.6 samt Appendix G och H.)
-\hilight{TODO: Fixa referenserna}
-
-\hilight{TODO: Här används en annan tabell-form än i F.1, unifiera}
+\subsection{50 MHz bandplan}
+\label{50MHZbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
 \setlongtables
-\begin{longtable}{lll}
-\caption{50 MHz Användning: Experimentband, rundradio primär, landmobil radio tillåten} \\
-Segment & Trafiksätt & Rekommenderad användning \\
-kHz     &            & \\ \hline
+\begin{longtable}{llll}
+\caption{50 MHz Användning: Experimentband, landmobil- och, rundradio primära}\\
+Segment & Trafiksätt & Delband & Rekommenderad användning \\
+MHz     &            &         & \\ \hline
 \endhead
-50,000 - 50,100 & CW & \\
-50,020 - 50,080 & & Fyrar \\
-50,090          & & CW aktivitetscenter \\
+50,000 & CW &                 & \\
+       &    & 50,000--50,030 & Fyrar\\
+       &    & 50,050          & CW aktivitetscenter, internationellt\\
+       &    & 50,090          & CW aktivitetscenter, interkontinentalt\\
+50,100 &    &                 & \\ \hline
 
-50,100 - 50,500 & Alla smalbandsmoder & \\
-                & (CW, SSB, AM, RTTY, & \\
-                & SSTV, ETC)          & \\
-                & Smalband = 6 kHz    & \\
-50,100 - 50,130 &  & SSB/CW internationellt (interkontinentalt) \\
-50,110          &  & DX anropsfrekvens interkontinentalt \\
-50,150          &  & SSB aktivitetscenter \\
-50,185          &  & Aktivitetscenter för crossband \\
-50,200          &  & MS aktivitetscenter \\
+50,100 & Alla smalbandsmoder & &\\
+       & (CW, SSB, AM, RTTY, & &\\
+       & SSTV, ETC)          & &\\
+       & Smalband = 2,7~kHz  & &\\
+       & & 50,100--50,130 & interkontinentalt\\
+       & & 50,110 & aktivitetscenter interkontinentalt\\
+       & & 50,130--50,200 & internationellt\\
+       & & 50,150 & aktivitetscenter internationellt\\
+       & & 50,200--50,300 & Generell användning\\
+       & & 50,285 & crossband\\
+       & & 50,305 & aktivitetscenter PSK\\
+       & & 50,310--50,320 & aktivitetscenter MS\\
+       & Smalband 1000~Hz & 50,400--50,500 & exklusivt fyrar\\
+       & & 50,401 & \(\pm\) 500~Hz WSPR fyrar\\
+50,500 &    &                 & \\ \hline
 
-50,500 - 50,190 & Alla moder & \\
-50,510          & & SSTV (AFSK) \\
-50,550          & & FAX arbetsfrekvens \\
-50,600          & & RTTY (FSK) \\
-50,620 - 50,750 & & Digital kommunikation \\
+50,500 & Alla moder & & \\
+       & & 50,510 & SSTV (AFSK)\\
+       & & 50,520--50,540 & FM simplex Internet gateways\\
+       & & 50,550 & Bild arbetsfrekvens\\
+       & & 50,600 & RTTY (FSK)\\
+       & & 50,620--50,750 & Digital kommunikation\\
+       & & 50,630 & DV anrop\\
+51,190 &    &   & \\ \hline
+
+51,210 & RF81 & & \\
+       & \multicolumn{3}{l}{NBFM repeater infrekvenser, 20~kHz kanaldelning, 10~kHz kanalbredd} \\
+51,390 & RF99 & & \\ \hline
+
+51,410 & F41 & & \\
+       & NBFM, simplex & 51,510 & NBFM anropsfrekvens\\
+51,590 & F59 & & \\ \hline
+
+51,810 & RF81 & & \\
+       & \multicolumn{3}{l}{NBFM repeater utfrekvenser, 20~kHz kanaldelning, 10~kHz kanalbredd} \\
+51,990 & RF99 & & \\
+52,000 & & & \\
 \end{longtable}
 
-\hilight{TODO: 50,500-50,190 har fel bakre gräns, hitta rätt}
+\textbf{ANMÄRKNINGAR}
+\textbf{Sändningsslag}
 
-51,210
+Telegrafi är tillåtet över hela bandet, men är exklusivt i området
+50,000--50,100~MHz.
 
-51,390
-51,410
+Under 50,500~MHz används inte FM.
 
-l
+\textbf{Anropsfrekvenser}
 
-51,590
-51,810
+50,110~MHz är interkontinental DX anropsfrekvens och bör inte användas för
+trafik inom Europa.
 
-l
-
-51,990
-52,000
-
-
-
-RF81
-NBFM repeater infrekvenser, 20~kHz kanaldelning, i 0~kHz kanalbredd, varannan kanal används
-RF99
-F41
-NBFM, simplex
-51,510
-NBFM anropsfrekvens
-F59
-RF81
-NBFM repeater utfrekvenser, 20~kHz kanaldelning, 10~kHz kanalbredd, varannan kanal används
-RF99
-
-ANMÄRKNINGAR
-Sändningsslag
-
-Telegrafi är tillåtet över hela bandet, men är exklusivt i området 50,000--50,100~MHz
-
-Anropsfrekvenser
-
-50,110~MHz är interkontinental DX anropsfrekvens och bör inte användas för trafik inom Europa.
-
-Kanaltrafik
+\textbf{Kanaltrafik}
 
 För kanaltrafik är kanaldelningen 20~kHz, förskjutet 10~kHz.
 
-Tillståndskrav i Sverige
-
-För amatörradiotrafik i bandet 50--52~MHz, krävs i Sverige utöver amatörradiotillståndet ett särskilt tillstånd !
-
-F-3
-
-APPENDIX F2
-144 MHz
-
-Användning: Amatörradio primär
-
-144,000
-
-CW(a)
-144,150
-SSB
-
-l
-
-144,400
-
-144,000- 144,035
-144,050
-144, i 00
-144,140 - i 44,150
-i 44,150 - 144,160
-144,195 - i 44,205
-144,300
-144,390 - 144,400
-
-EME (månstuds) exklusiv användning
-CW anropsfrekvens
-CW MS referensfrekvens, random
-CW, FAl (Field Aligned lrregularities)
-SSB, FAl (Field Aligned lrregularities)
-SSB MS (Meteorscatter), Random
-SSB anropsfrekvens
-SSB MS (Meteorscatter), Random
-
-144,490
-144,500
-144,525
-144,600
-144,700
-144,750
-
-SAREX uplink, temporär
-SSTV anropsfrekvens
-ATV SSB talk back center
-RTTY anropsfrekvens
-FAX anropsfrekvens
-ATV anropsfrekvens
-
-Fyrar (b)
-
-l
-
-144,490
-144,500
-Alla moder (c)
-
-144,800
-
-l
-
-144,990
-145,000
-
-l
-
-145, i 875
-145,200
-
-l
-
-i45,5875
-145,600
-
-l
-
-i45,7875
-145,800
-
-l
-
-i46,000
-
-Digital kommunikation (d)
-RV48
-NBFM repeater infrekvenser, 12,5 kHz kanalseparation, 600kHz skift (e)
-RV 63
-145,200
-Bemannad rymdtrafik, upplänk
-V16
-RTTY lokal
-i 2,5 kHz NBFM
-i45,300
-(Mobil) anropsfrekvens
-i45,500
-simplex
-V47
-RV 48
-NBFM repeater utfrekvenser, 12,5 kHz kanalseparation, 600 kHz skift
-RV63
-145,800
-Bemannad rymdtrafik, nerlänk
-satellitservice
-
-ANMÄRKNINGAR
-Generella
-i) I Europa skall inga in- eller utfrekvenser för NBFM repeatrar förekomma inom segmentet 144 - 145 MHz.
-ii) Med undantag för satellitsegmentet tillåts inte in- eller utfrekvenser i 2-metersbandet för repeatrar i andra band.
-iii) Inga nya nät för packet radio skall sättas upp i 2-metersbandet.
-Access från nät i 2-metersbandet till nät i andra band skall inte förekomma. Emellertid får detta förekomma
-under begränsad tid i delar av Region 1 för att där introducera packet radio. De delar av regionen som avses är
-där amatörtätheten är låg och/eller i regionens utkanter där sådan access inte påverkar trafiken i de delar av
-regionen där stort tryck på tillgång till spektrum motiverar att bandplanen följs metodiskt. Denna andra del av
-fotnoten skall aldrig användas för att legitimera att första stycket ignoreras för avsevärd tid.
-iv) Fyrar skall oavsett ERP ligga i fyrbandet
-Särskilda
-(a) Telegrafi är tillåtet över hela bandet, exklusivt i segmentet 144,035- 144,150 MHz.
-(b) Fyrar med ERP över 50 W koordineras av IARU Region 1 fyrkoordinator. Förfyrar med 1OW eller mer skall denne
-meddelas. Under begränsad tid- inte längre än att noviser i Nederländerna har detta segment tillgängligt- är
-även SSB och CW tillåtet i detta segment.
-(c) Inga obemannade stationer skall användas i all mode-segmentet.
-
-F-4
-
-F2
-
-APPENDIX
-
-(d) stationer i nätverk för digital trafik skall använda den digitala delen av bandet och tillåtas för en begränsad tid.
-Dessa bör ha access till portar på andra VHF-, UHF- eller mikrovågsband och bör inte använda 2-metersbandet
-för forward-trafik till andra nätverksstationer. Nya nätverksstationer uppmuntras inte. Obemannade stationer
-tillåts endast i segmentet 144,800 - 144,990 MHz. Utanför detta segment skall sidband inte överstiga -60dB i 12
-kHz band bredd. Hänsyn skall tas till den använda bandbredde n, så att sidband ej faller utanför segmentet. För
-stationer med 12,5 kHz bandbredd betyder det att kanalerna 144,8125 - 144,975 MHz då kan användas.
-(e) En övergång till genuint i 2,5 kHz kanalsystem uppmuntras.
-144,140 - 144,160 MHz utgör ett alternativt segment för EME.
-
-432 MHz
-432,000
-
-l
-
-432,150
-
-l
-
-432,500
-
-l
-
-432,600
-
-Användning: Amatörradio och radiolokalisering delat primär
-CW (a)
-
-432,000 - 432,025
-432,050
-
-Månstuds
-CW aktivitetscenter
-
-SSB/CW
-
-432,200
-432,350
-
-SSB aktivitetscenter
-Mikrovågor "talk-back" center
-
-Linjära transpondrar, in
-
-432,500
-432,600
-432,700
-432,700- 432,775
-
-SSTV (smalband)
-RTTY (FSK/PSK)
-FAX (FSK)
-Digital kommunikation, ej mer än
-25 kHz kanalseparation
-
-Linjära transpondrar, ut
-
-l
-
-432,800
-
-l
-
-432,990
-433,000
-
-l
-
-433,3875
-433,400
-
-l
-
-433,5875
-433,600
-
-Fyrar (b)
-RU368
-NBFM repeater infrekvenser, 12,5 kHz kanalseparation, 1,6 MHz skift
-RU399
-U272
-Simplex, i 2.5 kHz
-SSTV (FM/AFSK)
-433,400
-433,500
-(Mobil) FM anropskanal
-U287
-
-Alla moder
-
-434,575
-434,600
-
-433,600
-433,625 - 433,775
-433,700
-434,450 - 434,575
-
-RTTY (FM)
-Digital kommunikation
-FAX (FM/AFSK)
-Digital kommunikation, ej mer än
-25 kHz kanalseparation
-
-l
-
-RU 368
-NBFM repeater utfrekvenser, 12,5 kHz kanalseparation, i ,6 MHz skift
-RU 399
-
-l
-
-satellitservice
-
-434,9875
-435,000
-438,000
-
-Förslag till packet duplex frekvenser: 432,700/434,500 - 432,775/434,575 MHz.
-ANMÄRKNINGAR
-
-Generella
-
-i) I Europa skall inga in- eller utfrekvenser för NBFM repeatrar förekomma inom segmentet 432 - 433 MHz.
-ii) Fyrar skall oavsett ERP placeras i fyrbandet
-
-Särskilda
-
-(a) Telegrafi är tillåtet över hela bandet, exklusivt i segmentet 144,035- 144,150 MHz.
-(b) Fyrar med ERP över 50 W koordineras av IARU Region 1 fyrkoordinator.
-
-F-5
-
-APPENDIX
-1296 MH:z
-1240.000
-
-Användning: Amatörradio sekundär
-Alla moder
-
-1240,000-1241,000
-1242,025- 1242,700
-i 242,725- 1243,250
-
-Digital kommunikation
-Repeater ut, RS1 - RS28
-Packet duplex, RS29 - RS50
-
-l
-
-Amatörtelevision
-
-1258, i 50- i 259,350
-
-Repeater ut, R20 - R68
-
-l
-
-satellitservice
-1270,025- 1270,700
-1270,725- 1271,250
-
-Repeater in, RSI - RS28
-Packet duplex, RS29 - RS50
-
-l
-
-1243,250
-1260,000
-1270,000
-
-l
-
-1272,000
-
-l
-
-12l000
-1291,475
-1291,500
-
-Alla moder
-
-Amatörtelevision
-RMO
-(används i Sverige)
-NBFM repeater infrekvenser
-25 kHz kanalseparation, 6 MHz skift
-RM19
-
-l
-
-Alla moder
-
-i 293,150 - i 294,350
-
-Repeater in, R20 - R68
-
-l
-
-CW(a)
-
-i 296,000 - 1296,025
-
-Månstuds
-
-1296,200
-1296,400 - 1296,600
-1296,500
-1296,600
-i 296,600 - i 296,800
-1296,700
-
-Smalbands aktivitetscenter
-Linjär transponder infrekvens
-SSTV
-RTTY
-Linjär transponder utfrekvens
-FAX
-
-1296,000
-1296,150
-
-SSB
-
-1296,800
-
-l
-
-1296,990
-1297,000
-
-l
-
-1297,475
-1297,500
-
-l
-
-1297,975
-1298,000
-
-1300,000
-
-Fyrar
-
-RMO
-(används i Sverige)
-NBFM repeater utfrekvenser,
-25 kHz kanalseparation, 6 MHz skift
-RM19
-SM20
-NBFM simplex kanaler,
-25 kHz kanalseparation,
-SM39
-
-1297,500
-
-FM aktivitetscenter
-
-Alla moder
-
-1298,025- 1298,700
-i 298,500 - i 300,000
-1298,725- 1299,000
-
-Repeater ut, RS1 - RS28
-Digital kommunikation
-Packet duplex, RS29 - RS40
-
-ANMÄRKNINGAR
-Särskilda
-(a) Telegrafi är tillåtet över hela smalbandsegmentet, exklusivt i segmentet 1296,000 - i 296, i 50 MHz.
-(b) Fyrar med ERP över 50 W koordineras av IARU Region 1 fyrkoordinator.
-
-F-6
-
-APPENDIX F2
-2300 Mhz
-2300,000
-
-l
-
-Användning: Amatörradio sekundär
-Subregional planering
-
-2320,000
-
-l
-l
-
-CW
-
-2320,000- 2320,025
-
-Månstuds
-
-CW/SSB
-
-2320,200
-
-SSB aktivitetscenter
-
-2320,150
-2320,800
-
-l
-
-Fyrar
-
-2320,990
-2321,000
-
-Simplex och repeater, NBFM
-
-2322,000
-Alla moder
-
-2400,000
-
-l
-
-2322,000- 2355,000
-2355,000- 2365,000
-2365,000- 2370,000
-2370,000- 2392,000
-2392,000 - 2400,000
-
-Amatörtelevision
-Digital kommunikation
-Repeatrar
-Amatörtelevision
-Digital kommunikation
-
-satellitservice
-
-2450,000
-5650 MH:z
-5650,000
-
-l
-
-5670,000
-5661'000
-567,,000
-5700,000
-
-l
-l
-5760,000
-l
-5762,000
-l
-5790,000
-l
-
-5720,000
-
-Användning: Amatörradio sekundär
-Satellitservice, upplänk
-Smalband, CW/SSB/FM
-
-5668,200
-
-Aktivitetscenter
-
-5760,200
-
-Aktivitetscenter
-
-Digital kommunikation
-Amatörtelevision
-Alla moder
-Smalband, CW/SSB/FM
-Alla moder
-Satellitservice, nerlänk
-
-5850,000
-
-10000 MH:z
-10000,000
-
-l
-
-10150,000
-
-l
-l
-10350,000
-
-10250,000
-
-Användning: Amatörradio sekundär
-Digital kommunikation
-Alla moder: ATV, data, FM simplex/duplex/repeatrar
-Digital kommunikation
-
-l
-l
-
-Alla moder
-
-l
-
-Alla moder
-
-l
-
-satellitservice
-
-10368,000
-10370,000
-10450,000
-
-Smalband CW/SSB/fyrar
-
-10368,200
-
-Aktivitetscenter
-
-10500,000
-
-F-7
-
-PPENDIX
-
-F2
-
-24000 MHz Användning: Amatörradio sekundär
-24000,000
-
-l
-
-satellitservice
-
-l
-
-CW/SSB/fyrar
-
-24048,200
-
-Aktivitetscenter, smalbandsmoder
-
-Alla moder
-
-24125,000
-
-Aktivitetscenter,
-bredbandiga moder
-
-24048,000
-24050,000
-
-l
-24250,000
-
-47000 MHz Användning: Amatörradio primär
-47000,000
-
-l
-
-47200,000
-
-F-8
-
-47088,000
-
-Aktivitetscenter, smalbandsmoder
+\subsection{144 MHz bandplan}
+\label{144MHzbandplan}
+Denna bandplan baseras på IARU Region~1 2016 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{144 MHz Användning: Amatörradio primär}\\
+
+144,000 & & &\\
+        & & 144,000--144,025 & satellit downlink exklusiv användning\\
+        & CW(a) & 144,025--144,110 & EME\\
+        & & 144,050 & CW anropsfrekvens \\
+        & & 144,100 & CW MS referensfrekvens, random\\
+        & & 144,110--144,160 & EME MGM\\
+        & & 144,138 & aktivitetscenter PSK31\\
+        & & 144,140--144,150 & CW, MGM\\
+144,150 & SSB & 144,150--144,180 & CW SSB MGM\\
+        & & 144,195--144,205 & SSB MS (Meteorscatter), Random\\
+        & & 144,300 & SSB anropsfrekvens\\
+        & & 144,370 & FSK441, Random calling\\
+144,399 & & 144,390--144,399 & CW SSB MGM\\
+144,400 & & &\\
+        & CW MGM & & Exklusivt fyrar(b)\\
+        & & 144,4920 & \(\pm\) 500~Hz WSPR beacons\\
+144,491 & & &\\
+144,500 & Alla moder (c) & 144,500 & Bild aktivitetscenter, SSTV FAX\\
+        & & 144,525 & ATV SSB talk back center \\
+        & & 144,600 & aktivitetscenter data MGM RTTY\\
+144,794 & & 144,750 & ATV anropsfrekvens \\
+144,9625 & & & \\
+        & \multicolumn{3}{l}{Digital kommunikation (d)}\\
+144,975 & RV46 & &\\
+        & \multicolumn{3}{l}{NBFM repeater infrekvenser, 12,5~kHz kanalseparation, 600~kHz skift} \\
+145,1875 & RV63 & & \\
+145,200 & V16--V45 & 145,200 & Bemannad rymdtrafik, upplänk \\
+        & 12,5 kHz NBFM & 145,375 & DV anropsfrekvens\\
+        & simplex & 145,500 & (Mobil) anropsfrekvens\\
+145,575 & RV46 & & \\
+        & \multicolumn{3}{l}{NBFM repeater utfrekvenser, 12,5~kHz kanalseparation, 600~kHz skift} \\
+145,7875 & RV63 & 145,800 & Bemannad rymdtrafik, nerlänk \\
+145,794 & & & \\
+        & \multicolumn{3}{l}{Satellitservice} \\
+146,000 & & & \\
+\end{longtable}
+
+\textbf{ANMÄRKNINGAR}
+
+\textbf{Generella}
+\begin{enumerate}[label=\alph*.]
+\item Inga sändningar får ske på frekvenser under 144,0025~MHz.
+\item I Europa ska inga in- eller utfrekvenser för NBFM repeatrar
+  förekomma inom segmentet 144,000--144,794~MHz.
+\item Med undantag för satellitsegmentet tillåts inte in- eller
+  utfrekvenser i 2-metersbandet för repeatrar i andra band.
+\item Fyrar ska oavsett ERP ligga i fyrbandet.
+\end{enumerate}
+
+\textbf{Särskilda}
+\begin{itemize}
+\item[(a)] Telegrafi är tillåtet över hela bandet, exklusivt i segmentet
+  144,035--144,150~MHz.
+\item[(b)] Fyrar med ERP över 10~W koordineras av IARU Region~1 fyrkoordinator.
+\item[(c)] Inga obemannade stationer ska användas i all mode-segmentet.
+\item[(d)] Obemannade stationer tillåts endast i segmentet 144,800--144,990~MHz
+förutsatt att de till fullo klarar 12,5~kHz kanaldelning.
+\end{itemize}
+
+\subsection{432 MHz bandplan}
+\label{432MHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{432~MHz Användning: Amatörradio och radiolokalisering delat primär} \\
+432,000 &        & &\\
+        & CW (a) & 432,000--432,025 & EME\\
+        &        & 432,050 & CW aktivitetscenter\\
+        & & 432,088 & PSK31 aktivitetscenter\\
+432,150 & & & \\
+        & SSB/CW & 432,200 & SSB aktivitetscenter\\
+        & & 432,350 & Mikrovågor ''talk-back'' center\\
+        & & 432,370 & FSK441, Random calling\\
+        & CW MGM & 432,400--432,490 & Exklusivt fyrar(b)\\
+432,500 & Alla moder & 432,500 & APRS\\
+432,500 & RU361 & & Notera överenskommelse NRAU 2004\\
+ & \multicolumn{3}{l}{NBFM repeater infrekvenser, 12,5~kHz kanalseparation, 2~MHz skift}\\
+432,975 & RU399 & & \\
+433,000 & RU368 & & Notera att repeater med 1,6~MHz skift ska fasas ut\\
+ & \multicolumn{3}{l}{NBFM repeater infrekvenser, 12,5~kHz kanalseparation, 1,6~MHz skift}\\
+433,3875 & RU399 & & \\
+433,400 & & 433,400 & SSTV FM AFSK\\
+        & FM/DV 12,5 kHz & 433,450 & DV anropsfrekvens\\
+        & & 433,500 & (Mobil) FM anropskanal\\
+433,5875 & U287 & & \\
+433,600 &            & 433,600           & Data aktivitetscenter\\
+        &            & 433,625--433,775 & Digital kommunikation \\
+        & Alla moder & 433,700           & FAX (FM/AFSK)\\
+        & & 434,000 & Digital wide band modes centerfrekvens\\
+        &            & 434,450--434,575 & Digital kommunikation, ej mer än\\
+434,500 &            &                   & 25~kHz kanalseparation\\
+434,5125 & RU 361 & & Notera överenskommelse NRAU\\
+        & \multicolumn{3}{l}{NBFM repeater utfrekvenser, 12,5~kHz kanalseparation}\\
+434,9875 & RU 399 & & \\
+435,000 & & & \\
+        & \multicolumn{3}{l}{satellitservice} \\
+438,000 & & & \\
+\end{longtable}
+
+\textbf{ANMÄRKNINGAR}
+
+\textbf{Generella}
+
+\begin{enumerate}[label=\alph*.]
+\item I Europa ska inga in- eller utfrekvenser för NBFM repeatrar
+förekomma inom segmentet 432--432,6~MHz.
+\item Fyrar ska oavsett ERP placeras i fyrbandet.
+\end{enumerate}
+
+\textbf{Särskilda}
+
+\begin{itemize}
+\item[(a)] Telegrafi är tillåtet över hela smalbandssegmentet, exklusivt i
+segmentet 432,000--432,100~MHz.
+\item[(b)] Fyrar med ERP över 10~W koordineras av IARU Region~1 fyrkoordinator.
+\end{itemize}
+
+\subsection{1296 MHz bandplan}
+\label{1296MHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{1296 MHz Användning: Amatörradio sekundär} \\
+
+1240.000 & Alla moder & 1240,000--1241,000 & Digitala moder\\
+         & & 1242,025--1242,250 & Repeater ut RS1--RS10\\
+         & & 1242,275--1242,700 & Repeater ut RS11--RS28\\
+         & & 1242,725--1243,250 & Digitala moder RS29--RS50\\
+1243,250 & & & \\
+         & Amatörtelevision & 1258,150--1259,350 & Repeater ut, R20--R68 \\
+1260,000 & & & \\
+         & satellitservice & & \\
+1270,000 & & & \\
+         & Alla moder & 1270,025--1270,700 & Repeater in, RS1--RS28\\
+         &            & 1270,725--1271,250 & Packet duplex, RS29--RS50\\
+1272,000 & & &\\
+         & Amatörtelevision & &\\
+1290,994 & FM/DV & 1291,000 & RM0--RM19\\
+         & \multicolumn{3}{l}{NBFM repeater in 25~kHz kanalseparation, 6~MHz skift}\\
+1291,475 & & &\\
+1291,500 & & &\\
+         & Alla moder & 1293,150--1294,350 & Repeater in, R20--R68\\
+1296,000 & & &\\
+         & CW(a) & 1296,000--1296,025 & EME\\
+         & & 1296,138 & PSK31 aktivitetscentrum\\
+1296,150 & & & \\
+         &     & 1296,200           & Smalbands aktivitetscenter \\
+         &     & 1296,400--1296,600 & Linjär transponder infrekvens \\
+         & SSB & 1296,500           & Bild SSTV FAX\\
+         &     & 1296,600           & Data smalband MGM RTTY\\
+         &     & 1296,600--1296,800 & Linjär transponder utfrekvens\\
+         &     & 1296,700--1296,800 & Lokala fyrar max 10W ERP\\
+1296,800 & & & \\
+         & CW MGM & & Exklusivt fyrar\\
+1296,994 & & & \\
+1297,000 & RMO & (används i Sverige) & \\
+         & \multicolumn{3}{l}{NBFM repeater utfrekvenser, 25~kHz kanalseparation, 6~MHz skift} \\
+1297,481 & RM19 & & \\
+1297,500 & SM20 & 1297,500 & FM aktivitetscenter \\
+         & \multicolumn{3}{l}{NBFM simplex kanaler, 25~kHz kanalseparation,}\\
+1297,975 & SM39 & & \\
+1298,000 & & & \\
+         &            & 1298,025--1298,975 & Repeater ut, RS1--RS39\\
+         & Alla moder & 1299,000--1299,750 & Digital kommunikation \\
+         &            & 1298,750--1300,000 & FM/DV\\
+\end{longtable}
+
+\textbf{ANMÄRKNINGAR}
+
+\textbf{Särskilda}
+
+\begin{itemize}
+\item[(a)] Telegrafi är tillåtet över hela smalbandsegmentet, exklusivt
+i segmentet 1296,000--1296,150~MHz.
+\item[(b)] Fyrar med ERP över 10~W koordineras av IARU Region~1 fyrkoordinator.
+\end{itemize}
+
+\subsection{2300 MHz bandplan}
+\label{2300MHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+Delbandet 2300--2400~MHz är inte längre ett amatörband varför endast det
+kvarvarande delbandet redovisas här.
+ 
+\setlongtables
+\begin{longtable}{llll}
+\caption{2300 Mhz Användning: Amatörradio sekundär}\\
+2400,000 & & & \\
+         & \multicolumn{3}{l}{Satellitservice} \\
+2450,000 & & & \\
+\end{longtable}
+
+\subsection{5650 MHz bandplan}
+\label{5650MHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{5650 MHz Användning: Amatörradio sekundär} \\
+5650,000 & & & \\
+         & \multicolumn{3}{l}{Satellitservice, upplänk} \\
+5670,000 & & & \\
+5668,000 & & & \\
+         & Smalband, CW/SSB/FM & 5668,200 & Aktivitetscenter \\
+5670,000 & & & \\
+         & Digital kommunikation & & \\
+5700,000 & & & \\
+         & Amatörtelevision & & \\
+5720,000 & & & \\
+         & Alla moder & & \\
+5760,000 & & & \\
+         & Smalband, CW/SSB/FM & 5760,200 & Aktivitetscenter \\
+5762,000 & & & \\
+         & Alla moder & & \\
+5790,000 & & & \\
+         & \multicolumn{3}{l}{Satellitservice, nerlänk} \\
+5850,000 & & & \\
+\end{longtable}
+
+\subsection{10 GHz bandplan}
+\label{10GHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{10000 MHz Användning: Amatörradio sekundär} \\
+10000,000 & & & \\
+          & \multicolumn{3}{l}{Digital kommunikation} \\
+10150,000 & & & \\
+          & \multicolumn{3}{l}{Alla moder: ATV, data, FM simplex/duplex/repeatrar} \\
+10250,000 & & & \\
+          & \multicolumn{3}{l}{Digital kommunikation} \\
+10350,000 & & & \\
+          & \multicolumn{3}{l}{Alla moder} \\
+10368,000 & & & \\
+          & Smalband CW/SSB/fyrar & 10368,200 & Aktivitetscenter \\
+10370,000 & & & \\
+          & \multicolumn{3}{l}{Alla moder} \\
+10450,000 & & & \\
+          & \multicolumn{3}{l}{Satellitservice} \\
+10500,000 & & & \\
+\end{longtable}
+
+\subsection{24 GHz bandplan}
+\label{24GHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{24000 MHz Användning: Amatörradio sekundär} \\
+24000,000 & & & \\
+          & \multicolumn{3}{l}{Satellitservice} \\
+24048,000 & & & \\
+          & CW/SSB/fyrar & 24048,200 & Aktivitetscenter, smalbandsmoder \\
+24050,000 & & & \\
+          & Alla moder   & 24125,000 & Aktivitetscenter, bredbandiga moder \\
+24250,000 & & & \\
+\end{longtable}
+
+\subsection{47 GHz bandplan}
+\label{47GHzbandplan}
+Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
+
+\setlongtables
+\begin{longtable}{llll}
+\caption{47000 MHz Användning: Amatörradio primär} \\
+47000,000 & & & \\
+          & & 47088,200 & Aktivitetscenter, smalbandsmoder \\
+47200,000 & & & \\
+\end{longtable}

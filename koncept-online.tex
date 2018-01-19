@@ -1,0 +1,68 @@
+\documentclass[a4paper,oneside,openright]{book}
+\include{koncept/common}
+%tlfällig fix för kompilering%
+\nonstopmode
+\usepackage[swedish]{babel}
+
+\headheight = 12.6pt
+
+% Prepare for abstract
+\pagestyle{plain}
+\newenvironment{abstract}%
+{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
+%{\cleardoublepage\null \vfill\begin{center}%
+%\bfseries \abstractname \end{center}}%
+     {\vfill\null}
+
+\usepackage{refbook}
+
+% Prepare for index
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+% Frontpage
+\include{koncept/frontpage}
+
+% Colophone
+
+%% Tryckortssidan
+\include{koncept/tryckort}
+
+\lfoot[\revision]{}
+\rfoot[]{\revision}
+
+\cleardoublepage
+\pagestyle{fancy}
+
+%\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
+%\author{Lennart Wiberg}
+%\maketitle
+
+\tableofcontents
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+\mainmatter
+
+%\include{koncept/errata}
+\include{koncept/preface}
+\include{koncept/foreword}
+\include{koncept/introduction}
+
+\input{koncept/koncept-core}
+
+\listoffigures
+\listoftables
+
+\onecolumn
+\bibliography{koncept.bib}
+\bibliographystyle{plain}
+
+\backmatter
+
+\printindex
+\include{koncept/backpage}
+
+\end{document}

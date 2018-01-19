@@ -1,134 +1,127 @@
-\section{Människokroppen}
-\textbf{
-HAREC a.\ref{HAREC.a.10.1}\label{myHAREC.a.10.1}
-}
+\chapter{EMC}
 
-\subsection{Elektrisk chock}
+Endast en del av frekvensspektrum av elektromagnetiska vågor används för
+radiosändningar.
+Samtidigt används detta utrymme av allt fler intressenter och för allt fler
+ändamål.
+Samhället blir alltmer tekniskt avancerat och elektroniktätheten tilltar
+kraftigt.
+Den ökande mängden och komplexiteten hos apparaterna kräver därför regler, som
+styr både utförande och användning med rimligt bibehållen säkerhet och funktion.
 
-Människokroppen är ett komplicerat elektrokemiskt system, som främst
-kontrolleras av hjärnan. Musklerna styrs av svaga elektriska
-strömimpulser genom nervsystemet. Främmande strömmar genom kroppen kan
-störa kroppsfunktioner och kan i olyckliga fall göra stor
-skada. Styrkan och frekvensen på strömmarna avgör skadans art och
-omfattning.
+\section{Störningar och störkänslighet}
 
-Elektrisk chock kan döda av flera orsaker.
+\subsection{Om EMC-lagen}
+\label{EMC-lagen}
 
-En orsak är att hjärtrytmen störs. Hjärtkammarflimmer och
-hjärtstillestånd kan lätt uppstå. Flimmer innebär att hjärtat arbetar
-okontrollerat och med kraftigt nedsatt eller helt upphävd
-pumpfunktion. Hjärtstillestånd inträffar lätt av hög spänning. Av
-otillräcklig blodtillförsel blir det syrebrist i hjärncellerna, som då
-skadas snabbt. Medvetslöshet inträder redan efter ett fåtal sekunder.
+Det kan inte längre ges enkla svar på vad som är att vara störd och att störa.
+Internationella och nationella väl preciserade regler för radio- och
+teletekniskt samexistens är numera helt nödvändiga.
 
-En annan orsak är andningsstillestånd genom att andningscentum
-blockeras. Det kan hända när strömmen från en högspänningskondensator
-går genom kroppen.
+Samlingsbegreppet är \emph{Electromagnetic Compatibility} (EMC), det vill säga
+en apparats förmåga att fungera tillfredsställande i sin elektromagnetiska
+omgivning utan att alstra elektromagnetiska störningar som överstiger en nivå,
+som tillåter radio- och teleutrustning och andra apparater att fungera som
+avsett.
+Vidare ska apparater ha en sådan tillräcklig inbyggd tålighet mot
+elektromagnetiska störningar, att de kan fungera som avsett.
 
-\subsection{Hjärt- och lungräddning, HLR}
-\index{hjärt- och lungräddning (HLR)}
-\index{HLR}
+Till skydd för liv, personlig säkerhet och hälsa samt kommunikationer och
+näringsverksamheter har därför Lag om elektromagnetisk kompatibilitet införts.
+Denna lag är anpassad efter av EG/EES utfärdade direktiv angående bland annat
+radiostörningar.
 
-Vid hjärtstillestånd, hjärtkammarflimmer eller andningsstillestånd ska
-hjärt- och lungräddning påbörjas omedelbart då obotliga hjärnskador av
-syrebrist kan uppstå inom några få minuter. Finns en hjärtstartare,
-AED, i närheten bör den användas så skyndsamt som möjligt.
+Förordning om elektromagnetisk kompatibilitet \emph{SFS 2016:363}
+\cite{SFS2016:363} definierar nyckelbegreppen; apparater, EMC, elektromagnetisk
+störning och tålighet.
+Elsäkerhetsverket är ansvarig myndighet, med rätt att utfärda föreskrifter om
+bland annat skyddskraven, kontroll och märkning samt om vissa undantag.
+Föreskrifter utfärdade av Elsäkerhetsverket publiceras som ELSÄK-FS.
 
-\textbf{Glöm inte att ringa efter hjälp! Ring 112!}
+Post- och telestyrelsens föreskrifter om undantag från tillståndsplikt för
+användning av vissa radiosändare \emph{PTSFS 2015:4} \cite{PTSFS2015:4} hänvisar
+till\\
+Lag om elektronisk kommunikation (\textbf{LEK}) \emph{SFS 2003:389}
+\cite{SFS2003:389}.
+Där kan följande läsas om åtgärder vid störningar.
 
-Broschyren \emph{Vägledning vid elskada} kan laddas ner eller beställas från
-Elsäkerhetsverkets hemsida (\url{http://www.elsakerhetsverket.se}).
+\subsection{Ur LEK}
 
-Vårdguidens hemsida (\url{https://www.1177.se}) har instruktioner för hjärt- och lungräddning, HLR.
+\begin{quote}
+3 Kap. 13\S Om det uppkommer skadlig störning, skall tillståndshavaren
+omedelbart se till att störningen upphör eller i möjligaste mån minskar, om
+inte störningen är tillåten.
+Detsamma gäller den som använder en radiomottagare som stör användningen av en
+annan radiomottagare.
+\end{quote}
 
-Svenska rådet för Hjärt- och Lungräddning (\url{http://www.hlr.nu}) har beskrivningar
-och instruktionsfilmer för hjärt- och lungräddning.
+\begin{quote}
+3 Kap 14\S Elektriska eller elektroniska anläggningar som, utan att vara
+radioanläggningar, är avsedda att alstra radiofrekvent energi för
+kommunikationsändamål i ledning eller för industriellt, vetenskapligt,
+medicinskt eller något annat liknande ändamål, får användas endast i enlighet
+med föreskrifter som meddelas av regeringen eller den myndighet som regeringen
+bestämmer.
 
-\subsection{Resistansen genom människokroppen}
+Regeringen eller den myndighet som regeringen bestämmer får meddela
+föreskrifter om förbud mot att inneha elektriska eller elektroniska
+anläggningar som inte omfattas av första stycket och som, utan att vara
+radioanläggningar, är avsedda att sända radiovågor.
+\end{quote}
 
-Vid kontakt med ett strömförande föremål kommer kroppen att bli en del
-av strömkretsen. Det flyter då en främmande ström genom kroppen.
+I \textbf{LEK} definieras bland annat radioanläggning:
+\begin{quote}
+anordning som möjliggör radiokommunikation eller bestämning av position,
+hastighet eller andra kännetecken hos ett föremål genom sändning av radiovågor
+(radiosändare) eller mottagning av radiovågor (radiomottagare)
+\end{quote}
 
-Strömstyrkan följer Ohms lag och beror av strömkällans spänning och
-inre resistans samt av övergångsresistansen i huden och kroppens inre
-resistans.
+\subsection{Utstrålning från amatörradiosändare}
 
-Övergångsresistansen minskar med fuktigare hud samt med större
-kontaktyta och större kontakttryck. Beröringsspänningen inverkar
-också. Vid spänningar över ca 75 V minskar övergångsresistansen med
-ökande spänning. Vid allvarliga förbränningar minskar
-övergångsresistansen särskilt mycket. Den totala resistansen genom
-kroppen blir då nära lika med dess inre resistans --- ungefär 500~Ω.
+Vad som sägs i 3 Kap 4\S Lag om elektronisk kommunikation och skrivningen i
+Post- och telestyrelsens föreskrifter om undantag från tillståndsplikt för
+användning av vissa radiosändare 3 Kap 14\S \emph{De tekniska egenskaperna hos
+amatörradiosändaren ska anpassas så att de inte stör användningen av andra
+radioanläggningar.}
+Samt skrivningen i Strålsäkerhetsmyndighetens SSMFS 2008:18.
+Medför att sändareffekten alltid ska anpassas så att styrkan av utstrålade
+fält inte förorsakar störningar eller för höga nivåer av elektromagnetiska fält.
 
-\textbf{VARNING. Experimentera inte med detta!}
+Den enligt undantagsföreskrifterna högsta tillåtna effekten kan alltså inte
+användas hinderslöst.
 
+Om störningarna inte kan avhjälpas kan PTS komma att anvisa om restriktioner
+(begränsningar i sändningstillståndet), det kan vara sändningsförbud under
+vissa tider, på vissa frekvenser, över viss sändareffekt etc.
 
-\subsection{Strömmens inverkan på människan}
-
-Sjukvården skiljer på verkan av strömstöt, strömgenomgång och ljusbåge.
-
-En strömstöt kan tyckas ofarlig men kan leda till okontrollerade rörelser,
-fallskada eller beröring av andra spänningsförande föremål.
-
-Vid en strömgenomgång utjämnas en elektrisk potentialskillnad genom kroppen
-vilket utöver hjärtstillestånd, hjärtkammarflimmer, och andningsstillestånd
-kan leda till blodpropp, muskelskador, njurskador eller inre brännskador.
-
-Vid en ljusbågsolycka ökar risken för kraftiga brännskador på grund av den
-höga temperaturen i ljusbågen. En ljusbåge kan även orsaka skador på ögonen
-på grund av bländning eller den stora mängden UV-ljus.
-
-\emph{
-Personer som drabbats av olycka med:
+\subsection{PM vid störningsproblem}
 \begin{itemize}
-\item högspänning,
-\item lågspänning med strömgenomgång genom bålen
-\item som är omtöcknade eller medvetslösa efter strömolycka
-\item som har drabbats av brännskada
-\item som visar tecken på nervskada till exempel förlamning
+\item Störningar är alltid förenade med obehag och ställer grannsämjan på prov.
+  Håll dig väl med dem som bor i omgivningen!
+\item Om det väcks klagomål på dig om störningar, ska du först
+  kontrollera din egen sändare och antennanläggning.
+\item Be därefter att få undersöka antennanläggning och apparater hos
+  den som besväras av störningar.
+\item Om du ser en lösning, berätta om vad som kan göras.
+  Kom överens om vad som får göras.
+  Ändra då inte något inne i apparater, men prova gärna ut yttre,
+  kompletterande filter etc.
+\item Om det inte går att komma till rätta med störningarna bör de som
+  levererat och installerat anläggningen anlitas.
+\item Störningsanmälan kan även ske till PTS närmaste tillsynsområde.
 \end{itemize}
-Ska omedelbart till sjukhus för akut behandling.}
 
-Starka strömmar ger häftiga muskelkramper och/eller brännskador. Muskelkramp
-kan förekomma redan vid strömmar under 10~mA. För vuxna, friska människor är
-det direkt farligt när strömmen överstiger detta värde. För unga eller sjuka
-kan strömmar under 10~mA vara direkt farliga.
+\subsection{Arbeta aktivt med avstörning}
+\begin{itemize}
+\item Låna hem en av SSA:s avstörningslådor och försök att finna en lösning.
+  I lådan finns ett sortiment av frekvensfilter för avstörning.
+\item Undvik att störa i onödan.
+  Sänk sändareffekten och begränsa sändningstiden under utprovningen av en
+  lösning.
+\end{itemize}
 
-Strömstyrkan påverkar kroppen olika från fall till fall och det är osäkert
-vilken strömstyrka som är farlig. Det finns både de som överlevt höga strömmar
-och de som inte har klarat någon milliampere. Strömmar som går genom hjärta
-eller hjärna är särskilt farliga. När man arbetar med elektriska apparater
-under spänning, bör man för säkerhets skull hålla den ena handen i fickan!
-
-\subsection{Påverkan från elektromagnetiska fält}
-
-Undersökningar har visat att vistelse i starka elektromagnetiska fält
-kan kan påverka människan. Personer som har varit utsatta för kraftig
-exponering av fält har bl.a. klagat över svettningar och
-huvudvärk. Det forskas omkring dessa fenomen.
-
-Elektromagnetiska fält kan förorsaka fel i
-elektronikutrustningar. Halvledare är särskilt känsliga för
-kraftfält. Det är möjligt att känsliga instrument, hjärtstimulatorer
-(pacemaker) etc. kan påverkas av högfrekventa elektromagnetiska
-fält från radiosändare. När du använder en sändare, mobiltelefon etc.
-och någon får svårigheter med hjärta eller andning så ska du
-omedelbart stänga av din apparat helt! Med tiden utvecklas
-störningsokänsligare elektronik, men säker mot störningar kan man
-aldrig vara.
-
-\subsection{Normer för fältstyrkor}
-
-Det finns flera olika normer och rekommendationer för elektromagnetiska
-fältstyrkor. Några av dessa normer har till exempel syftet att olika slags
-apparater ska kunna samexistera och därför fungera utan att påverkas av
-elektromagnetiska fält eller stråla ut elektromagnetiska fält överstigande
-givna gränsvärden (EMC).
-
-Andra normer och råd har till syftet att skydda arbetstagare eller individer
-ur allmänheten från akuta biologiska effekter när de exponeras för
-elektromagnetiska fält.
-
-Strålsäkerhetsmyndigheten har genom utgivandet av SSMFS 2008:18 publicerat
-allmänna råd om begränsning av allmänhetens exponering för elektromagnetiska
-fält. Dessa råd bygger på rekommendationer från Europeiska unionens råd. 
+Lyckas du inte själv med att störa av:
+\begin{itemize}
+\item Ta gärna hjälp av en radioamatör med erfarenhet av avstörning.
+\item Anlita annan sakkunnig hjälp.
+\end{itemize}

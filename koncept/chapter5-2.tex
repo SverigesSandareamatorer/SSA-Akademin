@@ -1,291 +1,386 @@
-\section{Transceiver}
-\index{transceiver}
+\section{Raka mottagare}
+\textbf{HAREC a.\ref{HAREC.a.4.1.2}\label{myHAREC.a.4.1.2}}
+\index{rak mottagare}
+\index{mottagare!rak}
 
-\begin{wrapfigure}[26]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/bild_2_5-09}
-  \caption{Separat sändare och mottagare}
-  \label{fig:bildII5-9}
+\subsection{Mottagare med kristalldetektor}
+\index{kristalldetektor}
+\index{mottagare!kristall}
 
-  \includegraphics[width=0.5\textwidth]{images/bild_2_5-10}
-  \caption{Transceiver med samma VFO}
-  \label{fig:bildII5-10}
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-01.pdf}
+  \caption{Detektormottagare}
+  \label{fig:bildII4-1}
+\end{figure}
+
+Detektormottagaren består av ett mycket litet antal komponenter.
+Princip och arbetssätt framgår av bild \ref{fig:bildII4-1}.
+Samma princip används även i mer komplicerade mottagare, mätinstrument etc.
+Antennkretsen består av antenn, jordtag och däremellan en induktor
+(kopplingsspole), som överför energin från antennen till en svängningskrets.
+Svängningskretsen används för att välja ut (selektera)
+en bärvåg med önskad frekvens.
+Bärvågen kan naturligtvis inte höras, men av kurvformen på bilden framgår
+att bärvågen är amplitudmodulerad med en LF-signal.
+
+För att återvinna LF-signalen utför man en så kallad demodulering med hjälp
+av dioden.
+Dioden klipper bort antingen de positiva eller negativa halvvågorna i den
+mottagna signalen, beroende på hur dioden är vänd, polariserad.
+Kondensatorn, som är kopplad parallellt över hörtelefonen, glättar de
+högfrekventa spänningstopparna till ett amplitudmedelvärde (jämför med
+entaktsblandare i Kapitel \ref{detektorer}).
+Detta spänningsvärde varierar på ett sätt, som motsvarar den modulerande
+spänning i sändaren som kommer av tal, musik etc.
+Vi har nu demodulerat bärvågen, återställt LF-signalen och kan höra den i
+mottagaren.
+
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-02.pdf}
+  \caption{Selektion i detektormottagare}
+  \label{fig:bildII4-2}
 \end{wrapfigure}
 
-En transceiver --- transmitter receiver --- är både en sändare och
-mottagare med delvis gemensamma funktioner. Dessa kan t.ex.  vara
-oscillatorer, signalbehandlingskretsar, filter, strömförsörjning
-o.s.v., vilket innebär besparing av ingående komponenter, men också
-vissa funktionella begränsningar.
+Signalspänningen över svängningskretsen är störst när dess
+resonansfrekvens och antennströmmens frekvens är lika.
 
-Transceiverkoncept är numera vad som används allra mest av
-radioamatörer. Eftersom man på olika vis önskar sig så många sändar-
-och mottagarfunktioner som möjligt inom samma skal, så kan det vara
-svårt att undvika kompromisser. Så kan t.ex. en specialiserad, separat
-mottagare ha bättre eller fler egenskaper än i en transceiver.
+Överst i bild \ref{fig:bildII4-2} ser man att mottagaren är inställd på
+samma frekvens som sändare 2.
+Även sändare 3 hörs eftersom bandbredden i svängningskretsen är stor.
+Nederst i bilden är svängningskretsen inställd på sändare 3, men man hör
+också sändare 2 och 4.
 
-\subsection{Jämförelse mellan stationskoncept}
+Bandbredden i svängningskretsen blir mindre ju mindre den belastas,
+det vill säga dämpas.
+I bild \ref{fig:bildII4-1} består belastningen av antennen (via
+kopplingsspolen), hörtelefonen och avkopplingskondensatorn (via dioden).
 
-Bild \ref{fig:bildII5-9} visar i stort en station med skilda sändar- och
-mottagarfunktioner, men att antennen är gemensam.  Bild \ref{fig:bildII5-10} visar
-i stort en transceiver där VFO och antenn är gemensamma, men i övrigt
-med skilda funktioner.  Bild \ref{fig:bildII5-11} visar samma transceiver, men med
-ett mer detaljerat blockschema.
+Mindre belastning kan åstadkommas på två sätt; dels med ''lösare''
+koppling mellan antennkrets och svängningskrets och dels med bättre
+impedansanpassning mellan svängningskrets och diod. Båda sätten
+tillämpas i bild \ref{fig:bildII4-3}. Hur selektionen då förbättras visas i
+bild \ref{fig:bildII4-4}, vilket ska jämföras med bild \ref{fig:bildII4-2}.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_5-11}
-  \caption{Direktblandad transceiver med gemensam VFO}
-  \label{fig:bildII5-11}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-03.pdf}
+  \caption{Detektormottagare med LF-förstärkare}
+  \label{fig:bildII4-3}
+
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-05.pdf}
+  \caption{Förbättrade HF-egenskaper i detektormottagare}
+  \label{fig:bildII4-5}
 \end{figure}
 
-\subsection{CW-transceiver med direktblandare}
+\subsection{Detektormottagare med förstärkare}
+
+Om man vill höra sändningarna över högtalare, behövs högre effekt än
+vad som kan fångas upp genom antennen.
+För ändamålet används en LF-förstärkare, som drivs av en annan energikälla,
+till exempel ett batteri.
+LF-förstärkaren kan även minska belastningen på svängningskretsen.
+
+I bild \ref{fig:bildII4-3} har ett LF-lågpassfilter satts in efter
+HF-avkopplingskondensatorn.
+Det dämpar LF-signaler med högre frekvens än vad som behövs för god mottagning.
+
+\subsubsection{Mottagare med bättre HF-egenskaper}
+
+Ett sätt att minska bandbredden i en detektormottagare är att koppla
+flera svängningskretsar med samma frekvens efter varandra, så som illustreras
+i bild \ref{fig:bildII4-5}.
+Den större dämpningen av fler kretsar kan kompenseras med en HF-förstärkare.
+
+Sådana mottagare används för speciella ändamål, till exempel för övervakning
+av en enda frekvens.
+Då är svängningskretsarna fast avstämda.
+Kanske utnyttjas till och med en kvartskristall som filter för den speciella
+frekvensen.
+Se bild \ref{fig:bildII4-6} om hög selektion.
+
+\begin{wrapfigure}{R}{0.5\textwidth}
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-04.pdf}
+  \caption{Förbättrad selektion}
+  \label{fig:bildII4-4}
+
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-06.pdf}
+  \caption{Hög HF-selektion}
+  \label{fig:bildII4-6}
+
+  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-07.pdf}
+  \caption{CW i detektormottagare}
+  \label{fig:bildII4-7}
+\end{wrapfigure}
+
+\subsection{Detektormottagare och sändningsslag}
+
+I huvudsak fungerar detektormottagaren endast vid amplitudmodulering.
+Det innebär sändningsslagen A3E och A2A, det vill säga amplitudmodulerad
+telefoni respektive tonmodulerad telegrafi, båda med full bärvåg.
+
+Däremot fungerar detektormottagaren inte vid A1A, det vill säga telegrafi med
+endast bärvåg.
+En omodulerad bärvåg alstrar nämligen endast en likström i en
+detektormottagare.
+Vid nyckling hörs då endast knäppningar i hörtelefonen vid början och
+slutet av teckendelarna, så som illustreras i bild \ref{fig:bildII4-7}.
+
+Detektormottagaren fungerar inte heller vid J3E, det vill säga SSB och övriga
+sändningsslag med undertryckt bärvåg.
+Ljud såsom tal förvrängs nämligen kraftigt i en J3E-signal eftersom
+bärvågskomponenten saknas.
+
+I båda ovannämnda fall kan talet återställas med tillsats av en bärvåg.
+Slutligen kan sändningsslag som innebär frekvens- och fasmodulering i
+princip inte demoduleras med detektormottagare.
+
+\subsection{Mottagare med direkt frekvensblandning}
+\textbf{HAREC a.\ref{HAREC.a.4.2.2}\label{myHAREC.a.4.2.2},
+a.\ref{HAREC.a.4.3.2}\label{myHAREC.a.4.3.2},
+a.\ref{HAREC.a.4.3.3}\label{myHAREC.a.4.3.3},
+a.\ref{HAREC.a.4.3.6}\label{myHAREC.a.4.3.6},
+a.\ref{HAREC.a.4.3.7}\label{myHAREC.a.4.3.7}
+}
+\index{frekvensblandning}
+\index{mottagare!direkt frekvensblandare}
+\index{svävningston}
+\index{BFO}
+\index{Beat Frequency Oscillator (BFO)}
+\index{A1A}
+\index{J3E}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-08.pdf}
+  \caption{Mottagare med direkt frekvensblandning}
+  \label{fig:bildII4-8}
+\end{figure}
+
+För att demodulera \emph{A1A} och \emph{J3E} i en rak mottagare --
+detektormottagare måste den kompletteras med en oscillator som alstrar en
+intern bärvåg.
+Denna blandas med den mottagna signalen.
+Det uppstår då en \emph{svävningston} (eng. \emph{beat frequency}).
+Därav namnet \emph{Beat Frequency Oscillator (BFO)}.
+
+Förfarandet har givit mottagartypen sitt namn -- direktblandad mottagare.
+
+Ett sätt att komplettera den raka mottagaren med BFO framgår av bild
+\ref{fig:bildII4-8}.
+När BFO kopplas till och ställs in på en frekvens tillräckligt
+nära mottagningsfrekvensen så uppstår en hörbar ton.
+
+Demodulatordioden tillförs alltså två HF-signaler, dels den från
+antennen och dels den från BFO.
+Dessa båda signaler blandas i dioden och skillnadsfrekvensen är den hörbara
+tonen.
+Övriga blandningsprodukter dämpas av ett lågpassfilter.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-09.pdf}
+  \caption{Demodulering i mottagare med direkt frekvensomvandling -- CW-signaler}
+  \label{fig:bildII4-9}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-10.pdf}
+  \caption{Demodulering i mottagare med direkt frekvensomvandling -- SSB-signaler}
+  \label{fig:bildII4-10}
+\end{figure}
+
+\subsubsection{Mottagning av telegrafi (CW)}
+\textbf{HAREC a.\ref{HAREC.a.4.2.1}\label{myHAREC.a.4.2.1}}
 \index{CW}
-\index{transceiver!CW}
-\index{direktblandare}
+\index{telegrafi}
+\index{mottagare!CW}
 
-Bild \ref{fig:bildII5-11}
+Bild \ref{fig:bildII4-9} illustrerar blandning av CW-signal och BFO-signal
+för ett antal fall.
 
-Bilden visar en enkel transceiver för telegrafi. Sändaren är en
-raksändare och mottagaren arbetar med direktblandning. För
-1-kanaltrafik räcker det med en gemensam VFO för sändning och
-mottagning. Om motstationen svarar exakt på sändningsfrekvensen,
-vilken ju är VFO-frekvensen, så erhålls svävningsnoll i
-mottagaren. För att få hörbara morsetecken är mottagaren utrustad med
-RIT, som ändrar VFO-frekvensen med ca 800~Hz vid mottagning.
+Då BFO (VFO) är inställd på frekvensen \(f_2\) = 1831~kHz och den
+mottagna signalen \(f_1\) har frekvensen 1830~kHz så hörs en
+svävningston med frekvensen 1000~Hz.
+Samma resultat fås om BFO ställs in på frekvensen \(f_2\) = 1829~kHz.
 
-I konstruktionen finns en anordning kallad KOX (Key Operated
-Xmitter). Denna kopplar om transceivern till sändning när
-telegrafnyckeln trycks ner och till mottagning igen efter en viss tid
-sedan nyckeln har släppts upp. Telegrafnyckeln styr också en
-tongenerator som ljuder i takt med de sända morsetecknen,
-s.k. medhörning.
+Med BFO på frekvensen \(f_2\) = 1830~kHz hörs ingenting av signalen
+\(f_1\) = 1830~kHz från sändaren.
+Frekvensskillnaden är noll Hz.
 
-Denna transceiver är utförd för endast ett frekvensband och i övrigt
-mycket enkel.
+Med BFO på frekvensen \(f_2\) = 1849~kHz hörs nästan ingenting av signalen
+\(f_1\) = 1830~kHz från sändaren, då mixprodukten 19~kHz knappt är hörbar.
 
-\subsection{Kristallstyrd FM-transceiver för VHF}
-\index{FM}
-\index{transceiver!FM}
-
-Bild \ref{fig:bildII5-12}
-
-Bilden visar en kristallstyrd FM-sändare med frekvensomkopplare för
-kanalval inom 144--146~MHz-bandet.
-
-En kristallfrekvens av ca 12~MHz multipliceras 12 gånger i en kedja
-av förstärkarsteg för att ge sändningsfrekvensen. Bilden visar
-räkneexempel för två frekvenskanaler. Det frekvenssving i oscillatorn,
-som alstras av modulatorn, multipliceras också med 12. För ett sving
-av 3~kHz på bärvågen är svinget på oscillatorn bara 250~Hz.
-
-Efter mikrofonförstärkaren följer en amplitudbegränsare, som ska
-hålla deviationen inom ett givet maxvärde, oavsett signalstyrkan från
-mikrofonen. Därefter följer ett lågpassfilter, som dels dämpar de
-övertoner som uppstår vid amplitudbegränsningen och dels begränsar de
-höga frekvenserna i den modulerade signalen. Båda åtgärderna begränsar
-bandbredden.
-
-Mottagaren är en dubbelsuper. Den mottagna signalen passerar genom ett
-förselektionsfilter och en HF-förstärkare för att i 1:a blandaren
-blandas med en lokal signal.
+De flesta föredrar en ton med frekvensen cirka 800~Hz för mottagning av telegrafi.
+BFO-frekvensen skulle i så fall ställas in på 1830,8 eller 1829,2~kHz om \(f_1\)
+vore en telegrafisändning.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_5-12}
-  \caption{Kristallstyrd 6-kanals FM-transceiver för VHF}
-  \label{fig:bildII5-12}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-11.pdf}
+  \caption{Selektionen i direktblandade mottagare}
+  \label{fig:bildII4-11}
 \end{figure}
 
-%%
-
-
-En kristallstyrd lokaloscillator med efterföljande
-frekvensmultipliceringssteg alstrar denna signal.
-
-Lokaloscillatorkedjans utfrekvens läggs 10,7~MHz över eller under
-mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen
-blir då 10,7~MHz. Skilda oscillatorer används vid sändning
-resp. mottagning varför styrkristallerna för sändning resp.
-mottagning på en given kanal får olika frekvens. Vid omkoppling till
-en annan kanal väljs ett annat kristallpar, vilket lämpligen sker med
-samma omkopplare.
-
-Den relativt höga 1:a mellanfrekvensen 10,7~MHz ger ett så stort
-avstånd till spegelfrekvensen, att bandbredden i förselektionsfiltren
-är tillräckligt smal för att undertrycka spegelfrekvensen. Av samma
-skäl bör 1:a mellanfrekvensen i en UHF-mottagare väljas ytterligare
-tre gånger högre. Den relativt låga 2:a mellanfrekvensen medger en god
-närselektering redan med enkla bandfilter. En eventuell
-MF-förstärkare ger tillräcklig signalstyrka till FM-demodulatorn.
-
-För denna lösning behövs det två styrkristaller för varje
-frekvenskanal, vilket av kostnadsskäl kan vara en nackdel.
-
-\subsection{PLL-styrd FM-transceiver för VHF}
-\index{PLL}
-\index{FM}
-\index{transceiver!PLL}
-\index{transceiver!FM}
-
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_5-13}
-  \caption{PLL-styrd FM-transceiver för VHF}
-  \label{fig:bildII5-13}
-\end{figure}
-
-Bild \ref{fig:bildII5-13}
-
-Den PLL-styrda sändare som redan beskrivits i bild \ref{fig:bildII5-7} har här
-kompletterats med en svingbegränsare och ett lågpassfilter i
-modulatorn. Liksom i den station med kanalkristaller, som beskrivits i
-bild \ref{fig:bildII5-12}, är mottagaren även i detta fall en dubbelsuper.
-
-VCO används även som lokaloscillator i mottagaren. Eftersom sändaren
-och mottagaren ska användas på samma frekvens (simplextrafik), måste
-i detta koncept VCO-frekvensen vara olika vid sändning och
-mottagning. Eftersom mottagarens mellanfrekvens MF är 10,7~MHz måste
-nämligen VCO ligga 10,7~MHz högre eller lägre vid mottagning än vid
-sändning. Vid sändning däremot, är VCO-frekvensen densamma som
-sändningsfrekvensen.
-
-Den programmerbara frekvensdelaren i PLL-kretsen arbetar därför med
-olika delningstal vid sändning resp. mottagning. Inställningen av
-divisorn kan ske med kanalomkopplare, tumhjulssats, knappsats eller
-''VFO-ratt'' + digitalräknare o.s.v. PLL-styrningen ger dessutom
-möjligheter, t.ex. att ordna en automatisk avsökning över ett önskat
-frekvensområde --- s.k. scanning.
-
-\begin{table}[h]
-  \begin{tabular}{ll|lll}
-    \multicolumn{2}{l|}{Sändning} &
-    \multicolumn{3}{l}{Mottagning} \\
-    QRG & Deln.- & QRG & VCO & Deln.- \\
-    MHZ & tal    & MHz & MHz & tal \\
-    \hline
-    \multicolumn{2}{l|}{Simplexkanaler,} & & & \\
-    \multicolumn{2}{l|}{exempel} & & & \\
-    144,000 & 5760 & 144,000 & 154,700 & 6188 \\
-    144,025 & 5761 & 144,025 & 154,725 & 6189 \\
-    & & & & \\
-    \multicolumn{2}{l|}{Repeaterkanaler,} & & & \\
-    \multicolumn{2}{l|}{exempel} & & & \\
-    145,000 & 5800 & 145,600 & 156,300 & 6252 \\
-    145,025 & 5801 & 145,625 & 156,325 & 6253 \\
-  \end{tabular}
-\end{table}
-
-\hilight{TODO: tabellen kan göras bredare}
-
-VCO-frekvensen är lika vid sändning och mottagning medan delningstalet
-bestämmer arbetsfrekvensen.
-
-\subsection{Kortvågstransceiver för SSB och CW}
+\subsubsection{Mottagning av J3E (SSB)}
+\textbf{HAREC a.\ref{HAREC.a.4.2.3}\label{myHAREC.a.4.2.3}}
+\index{J3E}
 \index{SSB}
-\index{transceiver!SSB}
-\index{CW}
-\index{transceiver!CW}
+\index{mottagare!SSB}
 
-Bild \ref{fig:bildII5-14}
+När en SSB-sändare sägs arbeta till exempel på frekvensen 1835~kHz, så
+innebär det frekvensen på den bärvåg som undertryckts i sändaren redan
+före utsändningen.
 
-Vi har redan beskrivit en KV-sändare och KV-mottagare för SSB. I det
-koncept på en kortvågstransceiver, som visas här, ingår en super-VFO i
-signalberedningen. VFO-signalen (5--5,5~MHz) blandas med signalen
-från en kristallstyrd CO, vars frekvens är valbar med en
-bandomkopplare. Samtidigt kopplas ett bandpassfilter in efter
-blandaren i super-VFO, som svarar till det aktuella frekvensbandet.
+Vad som uppfattas av mottagarens ingångskretsar är alltså det utsända sidbandet.
+När en SSB-signal demoduleras, så blandas den lokala bärvågen i mottagaren med
+de mottagna modulationsprodukterna.
+Vid blandningen uppstår blandningsprodukter som består dels av LF, dels av
+andra högre frekvenser som dämpas i ett lågpassfilter.
 
-För t.ex. 21~MHz-bandet är VFO-filtrets passband 12--12,5~MHz. När en
-VFO-signal 12--12,5~MHz blandas med en 9~MHz SSB modulerad signal
-erhålls en frekvens i området 3--3,5~MHz och en frekvens i området
-21--21,5~MHz. Den önskade av dessa frekvenser filtreras fram med
-omkopplingsbara bandpassfilter, vilket sker med den bandkopplare som
-nämnts tidigare.
+Bild \ref{fig:bildII4-10} illustrerar en undertryckt bärvåg på 1835~kHz och
+dess lägre sidband LSB som sträcker sig från 1832~kHz till 1834,7~kHz.
+Det demodulerade sidbandet sträcker sig från 300~Hz till 3~kHz.
 
-I den enkla kortvågssändare som beskrivits tidigare är det
-tillräckligt med en enda sats av omkopplingsbara bandpassfilter. Det
-större antalet filter i den här beskrivna utrustningen behövs för att
-även kunna använda super-VFO som en del i mottagaren, vilken arbetar
-som enkelsuper. Eftersom en MF på 9~MHz används även i mottagaren
-kommer mottagning och sändning att kunna ske på samma frekvens.
+Inom amatörradio används för SSB det lägre sidbandet vid frekvenser
+under 10~MHz.
+Med en frekvens av till exempel 1835~kHz och ett talspektrum av 300--3000~Hz
+kommer det lägre sidbandet att finnas mellan 1834,7 och 1832,0~kHz.
+Tre modulerande frekvenser 300, 1000 och 3000~Hz visas på bilden.
 
-Mottagaren beskrivs inte närmare. Med lämpliga omkopplingsanordningar
-kan vissa funktionsblock i transceivern användas både vid mottagning
-och sändning. Bilden visar en SSB-transceiver där passbandfilter i
-förkretsar, MF-filter och kristalloscillatorer har dubbel
-användning. Funktionsblocken visas inplacerade i sina alternativa
-funktioner, däremot inte omkopplingsanordningarna.
+Med en bärvågsfrekvens av 1835~kHz motsvaras dessa modulerande
+frekvenser av utfrekvenserna 1834,7, 1834 och 1832~kHz.
+VFO ersätter SSB-sändarens bärvåg och ska ha samma frekvens -- 1835~kHz --
+för att kunna återge 300, 1000 och 3000~Hz.
 
-Vid sändning och mottagning av CW förbikopplas den balanserade
-modulatorn och kristallfiltret i signalbehandlingskretsarna för 9
-MHz. För mottagning av CW ändras BFO-frekvensen i mottagaren så att
-det hörs en svävningston när en bärvåg tas emot. Utan denna
-frekvensändring skulle endast bärvågsbruset höras.
+\subsection{Selektionen i direktblandade mottagare}
+\index{selektion}
+\index{mottagare!selektion}
 
-Även en RIT och en VOX (Voice Operated Xmitter, talstyrd
-sändnings-/mottagningsomkoppling) är inritade.
+Direktblandade mottagare kan ses som en typ av detektormottagare, även
+kallad ''rak'' mottagare.
+Begreppet ''rak'' kommer av att HF-signalen från antennen passerar genom en
+selektiv krets och en eventuell HF-förstärkare rakt fram till detektorn,
+utan att frekvensen omvandlas.
+
+I en detektormottagare är bandbredden oftast rätt stor.
+Flera sändare hörs därför samtidigt.
+
+På grund av att blandningsdioden i en direktblandad mottagare även fungerar
+som AM-demodulator, så hörs faktiskt alla sändare inom förkretsens bandbredd.
+Detta kan undvikas till en del genom att dioden, som fungerar som
+entaktsblandare, byts till en mottaktsblandare eller ännu hellre till en
+ringblandare.
+Sådana blandare undertrycker ingångsfrekvenserna och släpper endast igenom
+blandningsprodukter.
+Bara den sändarsignal hörs då, vars frekvens tillsammans med VFO-frekvensen
+ger blandningsprodukter, som faller inom LF-filtrets passband.
+Mottagningsfrekvensen är VFO-frekvensen.
+Svängningskretsen fungerar som en ställbar förselektor och LF-lågpassfiltret
+ger den egentliga frekvensselektionen.
+
+Vilka HF-signaler bildar blandningsprodukter med VFO-frekvensen och
+vilka av dessa passerar sedan genom lågpassfiltret efter blandning ner
+till LF-nivå?
+
+\textbf{Exempel:}
+En CW-sändare med frekvensen 1830~kHz tas emot genom att
+mottagarens VFO ställs in på frekvensen 1829,2~kHz.
+Från blandarutgången kommer då en ton med frekvensen 800~Hz.
+
+Men sändaren är inte ensam på bandet.
+Kommer till exempel SSB-sändaren på 1835, som moduleras med 300, 1000 och 3000~Hz,
+att störa mottagningen?
+(Se bild \ref{fig:bildII4-11}).
+
+Förkretsen i mottagaren är så bred att denna sändning passerar.
+SSB-sändarens signalfrekvenser i det utsända sidbandet är 1834,7, 1834,0 och
+1832~kHz.
+Dessa frekvenser blandas med mottagarens VFO-frekvens 1829,2~kHz och alstrar
+blandningsprodukterna 5,5, 4,8 och 2,8~kHz.
+Eftersom lågpassfiltret i mottagarens LF-förstärkare har bandbredden
+0--3000~Hz, så kommer endast blandningsprodukten 2,8~kHz att vara störande.
+För att förbättra CW-mottagningen, så kan lågpassfiltret bytas ut mot ett
+bandpassfilter, som endast släpper igenom ett smalt frekvensområde omkring
+mittfrekvensen 800~Hz.
+
+\subsection{Passband och spegelfrekvenser i direktblandare}
+\index{passband}
+\index{spegelfrekvenser}
+\index{direktblandare}
+\index{blandare!spegelfrekvenser}
+
+I exemplet i förra stycket blev problemet med en störande ton löst med
+ett bandpassfilter med annan frekvensgång.
+Men vilka frekvenser kan tas emot genom ett lågpassfilter, 0--3000~Hz,
+om VFO-frekvensen är till exempel 1829,2~kHz?
+
+\textbf{Experiment:}
+Ändra frekvensen på en CW-sändare långsamt från 1820 till 1840~kHz.
+Se bild \ref{fig:bildII4-12}
+
+Sändarfrekvensen 1820~kHz hörs knappast eftersom blandningsprodukten har
+frekvensen 9,2~kHz och den dämpas kraftigt av lågpassfiltret.
+Först när sändarfrekvensen är 1826,2~kHz hörs en tydlig ton med frekvensen
+3000~Hz.
+Fortsätter man att ändra sändarfrekvensen, så sjunker tonens frekvens för att
+bli noll (svävningsnoll), när sändarfrekvensen är lika med mottagarens
+VFO-frekvens 1829,2~kHz.
+Om man nu fortsätter med att höja frekvens, så blir blandningsproduktens
+frekvens åter högre.
+Vid sändarfrekvensen 1832,2 är den 3000~Hz. Vid ännu högre sändarfrekvens
+dämpas blandningsprodukten igen av lågpassfiltret.
+
+Slutsatsen av experimentet blir följande:
+Vid en direktblandande mottagare med VFO-frekvensen 1829,2~kHz och ett 3~kHz
+lågpassfilter blir varje sändare hörbar, som har en sändningsfrekvens mellan
+1826,2 och 1832,2~kHz, varvid blandningsprodukten har frekvenser från 3000~Hz, ner
+genom noll och upp till 3000~Hz igen.
 
 \begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_5-14}
-  \caption{SSB-transceiver för kortvåg}
-  \label{fig:bildII5-14}
+  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-12.pdf}
+  \caption{Passbandbredd och spegelfrekvenser i direktblandade mottagare}
+  \label{fig:bildII4-12}
 \end{figure}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/bild_2_5-15}
-  \caption{PLL-styrd SSB-transceiver för kortvåg}
-  \label{fig:bildII5-15}
-\end{figure}
+Vår mottagare har bandbredden 6~kHz.
+Varje annan sändare inom denna \emph{passbandbredd} kommer att höras eller --
+om man så tycker -- störa mottagningen.
 
-\subsection{PLL-styrd kortvågstransceiver}
-\index{PLL}
-\index{transceiver!PLL}
+Tillbaka till exemplet med bandpassfiltret.
+Vilka frekvenser kan tas emot med ett bandpassfilter 700--900~Hz
+(mittfrekvens 800~Hz), om VFO-frekvensen är 1829,2~kHz?
+Jo, vi kan lyssna rätt ostört till vår CW-sändares 800~Hz-ton på frekvensen
+1830~kHz.
+Ändå kan en annan sändare med frekvensen 1828,4~kHz störa mottagningen därför
+att denna är \emph{spegelfrekvens} (eng. \emph{mirror frequency}) till
+mottagningsfrekvensen 1830~kHz.
+Vid VFO-frekvensen 1829,2~kHz uppstår en blandningsprodukt, inte bara vid
+sändarfrekvensen 1830~kHz utan också vid 1828,2~kHz.
+Även denna andra sändarfrekvens, liksom nyttofrekvensen, släpps igenom
+bandpassfiltret.
 
-Bild \ref{fig:bildII5-15} En modern transceiver i den högre prisklassen, i
-s.k. ''all-mode''-utförande, erbjuder många funktionella
-möjligheter. Flera av dem kommer emellertid endast till användning i
-speciella situationer. Konceptet för en sådan transceiver beskrivs här
-i stort.  Huvudprincipen för signalbehandlingen kan beskrivas som en
-PLL-styrd dubbelsuper.  SSB-signalen bereds på 9 MHz-nivån och flyttas
-därefter upp till 70 MHz-nivån genom frekvensblandning och
-filtrering. De möjliga sändningsfrekvenserna mellan 0,5 och 30 MHz
-skapas genom att blanda den fasta SSB-signalen med en variabel
-frekvens från VCO. Den steglösa frekvenstäckningen som innefattar
-mellanvågs- och kortvågsområdet är emellertid endast avsedd för
-mottagningsfunktionen i transceivern. För sändningsfunktionen kan
-tillkomma blockeringskretsar, som förhindrar sändning utanför tillåtna
-frekvensband.
+Spegelfrekvensmottagning är en principiell nackdel i mottagare med
+direktblandning.
+Nyttofrekvens och spegelfrekvens i det senaste exemplet ligger 1,6~kHz
+(\(2 \cdot 800\) Hz) ifrån varandra, alltså dubbla värdet av bandpassfiltrets
+mittfrekvens.
 
-Denna förenklade beskrivning omfattar inte kristalloscillatorerna för
-9 och 61~MHz i fasregleringskretsen och inte heller SSB-modulatorn,
-FM-modulatorn och anordningarna för CW-sändning.
+Vid SSB-mottagning måste naturligtvis hela LF-området upp till 3000~Hz
+kunna släppas igenom.
+Utöver det önskade frekvensområdet 1832--1835~kHz, kommer även spegelfrekvenser
+i området 1835--1838~kHz att kunna tas emot.
 
-Mottagaren är en dubbelsuper med hög 1:a MF-frekvens. Mottagare för
-höga frekvenser kan till och med utföras som en trippelsuper. Samma
-bandpassfilter, blandare och kristallfilter används både vid sändning
-och mottagning.
+Vid en LF-bandbredd av 3~kHz har således den direktblandade mottagaren
+en bandbredd av 6~kHz, vilket är en god avstämningsskärpa i jämförelse
+med den 300~kHz breda förkretsen.
 
-Genom lämplig programmering av frekvensdelaren kan sändning och
-mottagning ske på samma frekvens eller på skilda frekvenser
-(split-trafik).
+\subsection{För- och nackdelar med direktblandare}
 
-En extra VFO-funktion kan åstadkommas genom att frekvensdelaren
-programmeras med delningstal som hämtas från ett digitalt minne. Den
-extra VFO-funktionen kan sedan efterjusteras genom att ändra
-delningstalet med frekvensratten. Minnet blir ännu mer användbart, om
-det förutom frekvenser också kan lagra uppgifter t.ex. om
-sändningsslag och andra inställningar.
+Enkel uppbyggnad, men trots det en god känslighet och hygglig avstämningsskärpa.
+VFO kan även användas till att styra en sändare.
 
-\subsection{Sammanfattning}
+Spegelfrekvensmottagning är tyvärr oundviklig.
+Vidare kan signaler från starka sändare stråla in i den känsliga LF-förstärkaren
+och orsaka LF-detektering, om mottagaren är otillräckligt skärmad.
+Förbättrad isolering mellan antenn och VFO kan dock fås med en HF-förstärkare.
 
-Till skillnad från den raka sändaren är den här beskrivna PLL-styrda
-transceivern mycket komplicerad. Den tekniska utvecklingen går
-fort. Nya, bättre och mer invecklade apparater utvecklas ständigt. Men
-det är inte alls nödvändigt att använda det senaste och mest
-avancerade inom apparattekniken för att utöva amatörradio. Det går
-mycket bra att börja med enkla medel och med liten ekonomisk insats.
-
-Det finns ett stort utbud av begagnade apparater som i olika avseenden
-är konkurrenskraftiga med senare konstruktioner. Det ligger i
-amatörradions traditioner att ta tillvara tillgänglig utrustning och
-förbättra denna efter bästa förmåga.
-
-Ytterst beror resultatet och framgången mest på radiooperatörens
-skicklighet, val av frekvens, antenn och tillfälle.
+Entakts diodblandare är olämplig i en direktblandad mottagare.
+Den tar emot alla sändare inom förkretsens passband och en del av VFO-signalen
+kommer att strålas ut i antennen.
+Ingen av dessa nackdelar finns i en mottakts- eller ringblandare.

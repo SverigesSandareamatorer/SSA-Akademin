@@ -1,9 +1,11 @@
-![KonCEPT för radioamatörcertifikat](koncept.png)
+![SSA-Akademin](ssa-akademin.png)
 
 -   [LADDA NER OCH BYGG PROJEKTET](#ladda-ner-och-bygg-projektet)
 -   [BIDRA TILL PROJEKTET](#bidra-till-projektet)
 -   [OM SSA AKADEMIN](#om-ssa-akademin)
 -   [KONTAKT](#kontakt)
+
+[![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/)
 
 **KonCEPT för Radioamatörcertifikat** är en bok
 ursprungligen skriven av Lennart Wiberg och utgiven av 
@@ -20,6 +22,29 @@ utan endast som ett underlag för arbetet med den.
 LADDA NER OCH BYGG PROJEKTET
 ============================
 
+
+Version
+-------
+
+Eftersom nytt material läggs till och fel rättas allt eftersom används en
+versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
+på hur det kan se ut och en förklaring till vad allt betyder.
+
+<!--
+koncept  .2.0.0  -RC.1  +b12345 .8c04343 .pdf
+          │ │ │    │ │     │        │
+          │ │ │    │ │     │        └ Git hash
+          │ │ │    │ │     └ Byggnummer
+          │ │ │    │ └ Version av pre relase
+          │ │ │    └ Pre release
+          │ │ └ Ej tryckt uppdatering
+          │ └ Tryckning
+          └ Upplaga
+ -->
+
+ ![versionsnumrering](versionsnummer.png)
+
+
 Bygg projektet
 --------------
 
@@ -29,36 +54,25 @@ själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
 PDF
 ---
 
-Du kan ladda hem en hyfsat sen version av arbetet. Denna är dock inte
-uppdaterad kontinuerligt så datumet visar hur pass ny den är.
+**Hämta det senaste bygget:**
+**[koncept.pdf](http://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
+([arkiv](http://akademin.ssa.se/files/koncept-pdf/))
 
-**Hämta hem utkast version 2017-06-11:**
-**[koncept.pdf](https://drive.google.com/open?id=0B7Mlo8g4g-UBZkhQUUxZNEpzSW8)**
+Notera att fokus för stunden ligger på innehåll och inte layout, så alla
+layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
+Det finns dock gott om innehåll att granska och komma med förbättringsförslag
+på.
 
 
 BIDRA TILL PROJEKTET
 ====================
 
 Det finns många olika sätt att bidra till projektet även fast man
-inte vet hur man använder *Git* eller skriver *LaTeX*.
+inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
 **Q: Jag kan koda och vill bidra; vad gör jag?**  
-A: Börja med att läsa igenom filen [`texifiering.txt`](texifiering.txt)
-noggrant och följa alla instruktioner där för hur koden till boken
-är uppbyggd. Till exempel skrivs kommentarer i texten så här:
-
-    Kommentarer vi har som del av den editoriella bearbetningen lägger vi
-    synligt i texten med följande format:
-
-    \hilight{TODO: Här ser det lite fel ut.}
-
-    Det är behändigt att kunna söka på TODO:, och \hilight{} ger en
-    gul markör i texten så vi vet när vi läser att här är något vi skall
-    åtgärda.
-
-Om du hittar något så kan du lämna en *issue* där du beskriver vart
-du har hittat ett problem och om du har någon föreslagen förändring
-så kommer din anmärkning att hanteras.
+A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ 
+instruktionerna.
 
 **Q: Jag vet inte hur man redigerar kod**  
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
@@ -83,7 +97,7 @@ Vårt mål är att
 
 -   fler ska vilja ta utbildningen för att bli radioamatör
 -   de som examineras ska göra bättre ifrån sig på provet
--   de som deltar i utbildningen ska känna att det är en bra utbildning
+-   de som deltar i utbildningen ska känna att det är en bra utbildning.
 
 KONTAKT
 =======
@@ -93,4 +107,3 @@ KONTAKT
 -   [Hans "SM0UTY" Insulander](mailto:hans.insulander@codium.se)
 -   [Petter "SA2PKA" Karkea](mailto:petter@karkea.se)
 -   [Peter "SA2BLV" Lundberg](mailto:pette.lundberg@gmail.com)
-
