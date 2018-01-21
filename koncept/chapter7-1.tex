@@ -153,7 +153,7 @@ de harmoniska övertonerna (7, 14, 21, 28~MHz osv.).
 Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid
 de respektive övertonerna.
 
-För 80~m (3,5~MHz) är matningpunkten ett i spänningsminimum (en spänningsnod)
+För 80~m (3,5~MHz) är matningspunkten ett i spänningsminimum (en spänningsnod)
 och ett strömmaximum (en strömbuk).
 Strömmen är hög därför att matningspunkten har låg impedans.
 
@@ -409,7 +409,7 @@ på en utstrålad signal motsvaras av styrkan på mottagen signal.
 \index{antenn!dipol gain (dBd)}
 
 Med \emph{antennvinst} eller \emph{antennförstärkning} \(G_{ant}\) (eng.
-\emph{antenna gain}) menas förhållandet mellan effekten \(P_t\) i
+\emph{antenna gain}) menas förhållandet mellan effekten \(P_f\) i
 huvudstrålningsriktningen (framriktningen för en antenn med osymmetriskt
 utstrålad effekt) och effekten från en definierad referensantenn.
 
@@ -417,19 +417,19 @@ Förmågan att ha högre antennförstärkning i en riktning i förhållande till
 riktningar kallas för direktivitet (eng. \emph{antenna directivity}).
 
 En referensantenn som tänks vara oändligt liten och som strålar med exakt
-samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk antenn}.
+samma effekt \(P_f\) i alla riktningar kallas \emph{isotropisk antenn}.
 En isotropisk antenn är emellertid endast teoretisk definierbar.
 
 Med effekten \(P_i\) från den isotropiska antennen som referens blir
 antennförstärkningen
 
-\[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
+\[G = 10 \log\frac{P_f}{P_i} \quad \text{[dBi]}\]
 
 En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennförstärkningen
 
-\[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
+\[G = 10 \log\frac{P_f}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
 
 Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 
@@ -444,11 +444,11 @@ Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 \end{wrapfigure}
 
 Antennförstärkning kan också definieras som förhållandet mellan den elektriska
-fältstyrkan uf i huvudstrålningsriktningen och referensfältstyrkan (dipol).
+fältstyrkan \(U_f\) i huvudstrålningsriktningen och referensfältstyrkan (dipol).
 
 Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
 
-\[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
+\[G = 20 \log\frac{U_f}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
 
 Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
@@ -623,4 +623,3 @@ Antenngainet (G) beror antennarean (\(A_{phy}\)), effektiviteten (\(e_a\)) och
 våglängden (\(\lambda\)) enligt
 
 \[ G = \frac{4\pi A_{phy}e_a}{\lambda^2} \]
-9
