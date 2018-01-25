@@ -3,7 +3,16 @@ group: travis_latest
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y -qq texlive-full sshpass
+  - "sudo apt-get install -y -qq \
+    texlive \
+    texlive-lang-european \
+    texlive-latex-extra \
+    texlive-fonts-extra \
+    texlive-pictures \
+    texlive-math-extra \
+    texlive-science \
+    texlive-xetex \
+    sshpass"
 
 script:
   - make koncept.pdf
