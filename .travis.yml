@@ -10,7 +10,6 @@ before_install:
     texlive-fonts-extra \
     texlive-pictures \
     texlive-math-extra \
-    texlive-science \
     texlive-xetex \
     sshpass"
 
