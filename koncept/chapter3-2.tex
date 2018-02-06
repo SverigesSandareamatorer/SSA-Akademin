@@ -4,7 +4,7 @@
 \index{filter!frekvensfilter}
 \index{frekvensgång}
 \index{filter!frekvensgång}
-\index{frequency responce}
+\index{frequency response}
 
 Frekvensfilter, eller mer allmänt \emph{filter}, används inom radiotekniken för
 många olika ändamål, till exempel för att
@@ -14,22 +14,19 @@ många olika ändamål, till exempel för att
   \item framhäva eller dämpa ett sidband i en AM-signal med mera.
 \end{itemize}
 
-\emph{Frekvensgången} (eng. \emph{frequency responce}) är ett mått på ett
+\emph{Frekvensgången} (eng. \emph{frequency response}) är ett mått på ett
 filters förmåga att släppa igenom olika mycket av olika frekvenser.
 Frekvensgången presenteras i allmänhet som en kurva med amplitud av genomsläppt
-sinus-signal som funktion av frekvensen.
+sinussignal som funktion av frekvensen.
 
-Beroende på den så kallade frekvensgången, så indelas filtren i flera
-''familjer'', varav de vanligaste presenteras här.
+Beroende på frekvensgången indelas filtren i olika typer, varav de vanligaste presenteras här.
 
 Beroende på det tekniska utförandet finns dels så kallade passiva filter vilka
 använder extern energi för sin funktion, och dels aktiva filter vilka i princip
 är förstärkare som likaledes använder passiva kretsar.
-Här presenteras för enkelhetens skull passiva filter.
+Här presenteras för enkelhets skull passiva filter.
 
-Traditionella frekvensfilter är vad som kallas analoga.
-Men nu i dataåldern börjar även digitala filter vinna intåg.
-Sådana är dock för komplicerade för att behandlas här.
+Man skiljer även på analoga filter och digitala filter. Vi beskriver här först några olika typer av klassiska analoga filter.
 
 \subsection{Högpassfilter (HP)}
 \textbf{HAREC
@@ -50,12 +47,12 @@ Sådana är dock för komplicerade för att behandlas här.
 Bild \ref{fig:BildII3-22}
 
 Ett \emph{högpassfilter} (eng. \emph{highpass filter (HP)}) släpper igenom
-signaler med höga frekvenser och dämpar dem med låga frekvenser.
+signaler med höga frekvenser och dämpar de med låga frekvenser.
 
 \textbf{Exempel:} En frekvensberoende spänningsdelare som LC-högpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
-Över XL uppstår då ett litet spänningsfall -- en låg utgångsspänning \(U_a\).
+Över \(X_L\) uppstår då ett litet spänningsfall -- en låg utgångsspänning \(U_a\).
 Resultatet blir att låga frekvenser dämpas.
 
 Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor.
@@ -63,8 +60,7 @@ Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor.
 \(U_a\).
 Resultatet blir att höga frekvenser släpps igenom.
 
-\(X_L\) kan bytas ut mot en resistor \(R\), men då blir passbandkurvan inte så
-brant.
+\(X_L\) kan bytas ut mot en resistor \(R\), men då blir passbandskurvan inte lika brant.
 
 \textbf{Gränsfrekvens}
 
@@ -77,7 +73,7 @@ resistansen \(R\).
   f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
 \end{gather*}
 
-\textbf{RC-Högpass:}
+\textbf{RC-högpass:}
 \begin{gather*}
   f_g = \frac{1}{2\pi RC}\\
   f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}
@@ -118,9 +114,9 @@ högpassfilter byter plats, som i bild \ref{fig:BildII3-23}, så får man i
 stället ett LC-lågpassfilter respektive ett RC-lågpassfilter.
 
 Ett \emph{lågpassfilter} (eng. \emph{lowpass filter (LP)}) släpper igenom
-signaler med låga frekvenser och dämpar dem med höga frekvenser.
+signaler med låga frekvenser och dämpar de med höga frekvenser.
 
-\textbf{Exempel:} En frekvensberoende spänningsdelare som LC-Lågpassfilter.
+\textbf{Exempel:} En frekvensberoende spänningsdelare som LC-lågpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
 Över \(X_L\) uppstår då ett litet spänningsfall -- en hög utgångsspänning
@@ -137,13 +133,13 @@ Resultatet blir att höga frekvenser dämpas.
 Samma formler används vid beräkning av gränsfrekvensen både i lågpass- och
 högpassfilter, således
 
-\textbf{LC-Lågpass:}
+\textbf{LC-lågpass:}
 \begin{gather*}
   f_g = \frac{1}{2\pi \sqrt{LC}} \\
   f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
 \end{gather*}
 
-\textbf{RC-Lågpass:}
+\textbf{RC-lågpass:}
 \begin{gather*}
   f_g = \frac{1}{2\pi {RC}} \\
   f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}
@@ -167,7 +163,7 @@ högpassfilter, således
 \end{figure}
 
 Ett \emph{bandpassfilter} (eng. \emph{bandpass filter}) släpper igenom signaler
-bara inom ett frekvensområde medan signaler inom andra frekvensområden dämpas.
+bara inom ett visst frekvensområde medan signaler utanför detta frekvensområde dämpas.
 
 Bandpassfiltret består i enklaste fall av två svängningskretsar av LC-typ, vilka
 är avstämda till angränsande frekvenser. Kretsarna är kopplade induktivt,
@@ -177,7 +173,7 @@ Beroende på kopplingsgrad eller dämpning skiljer man mellan underkritisk
 koppling (lös koppling), kritisk koppling och överkritisk koppling
 (fast koppling).
 
-På bilden visas hur passbandet påverkas bland annat av kopplingsgraden.
+I bild \ref{fig:BildII3-24} visas hur passbandet påverkas bland annat av kopplingsgraden.
 Lös koppling liten bandbredd.
 Kritisk koppling -- större bandbredd.
 Fast koppling -- stor bandbredd.
@@ -219,7 +215,7 @@ frekvenser inom filtrets passband att passera.
 \label{fig:BildII3-26}
 \end{figure}
 
-Om serie- och parallellkretsarna i ett bandpassfilter byter plats, så får man
+Om serie- och parallellkretsarna i ett bandpassfilter byter plats får man
 i stället ett bandspärrfilter så som illustreras i bild \ref{fig:BildII3-26}.
 Ett sådant spärrar signaler inom ett visst frekvensområde, men släpper igenom
 signaler utom detta område.
