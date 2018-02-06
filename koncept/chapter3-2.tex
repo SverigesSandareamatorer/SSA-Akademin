@@ -247,12 +247,6 @@ Sugkretsen kopplas parallellt med signalvägen och kortsluter (suger bort) en
 signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 \ref{fig:BildII3-27}.
 
-\begin{wrapfigure}[14]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-28.pdf}
-\caption{Kvartskristall}
-\label{fig:BildII3-28}
-\end{wrapfigure}
-
 \subsection{Kvartskristall}
 
 \textbf{HAREC a.\ref{HAREC.a.3.2.11}\label{myHAREC.a.3.2.11}}
@@ -261,6 +255,12 @@ signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 \index{crystal}
 \index{Q-värde}
 \index{resonator}
+
+\begin{figure}
+	\includegraphics[width=50mm]{images/cropped_pdfs/bild_2_3-28.pdf}
+	\caption{Kvartskristall}
+	\label{fig:BildII3-28}
+\end{figure}
 
 En \emph{kvartskristall} (eng. \emph{quartz crystal} eller \emph{crystal}),
 egentligen en slipad skiva av kvarts, kan fungera som en
@@ -305,8 +305,8 @@ som med sammankopplade LC-kretsar.
 
 Med en elektromekanisk givare kan man få en kropp (resonator) att svänga på sin
 resonansfrekvens.
-Med ännu en elektromagnetisk givare kan man känna av svängningarna och
-återvandla dem till elektriska signaler.
+Med ännu en elektromekanisk givare kan man känna av svängningarna och
+åter omvandla dem till elektriska signaler.
 Bild \ref{fig:BildII3-30} illustrerar ett sådant arrangemang.
 Hela anordningen fungerar som en \emph{elektromekanisk resonator} (eng.
 \emph{mechanical resonator}), vars egenskaper liknar dem i en LC-krets.
@@ -318,7 +318,7 @@ Hela anordningen fungerar som en \emph{elektromekanisk resonator} (eng.
 \end{figure}
 
 Resonatorerna kan kombineras till filterkomplex med önskad bandbredd där
-resenatorerna är avstämda till var sin bestämda frekvens.
+resonatorerna är avstämda till var sin bestämd frekvens.
 Hela komplexet bidrar på så sätt till att bilda ett passband på samma sätt som
 med sammankopplade LC-kretsar.
 Beroende på tillämpningen finns olika frekvenslägen i intervallet 60--600~kHz.
@@ -356,23 +356,22 @@ kompletteras/justeras med en extra kondensator.
 
 Inkommande och utgående signaler ansluts till filtrets mittledare över
 induktionsslingor, kondensatorer eller direkt galvaniskt.
-\emph{Kavitetsfilter} (eng. \emph{cavity filter}) kan kopplas ihop för att
-bilda bandfilter, frekvensdelare med mera.
+\emph{Kavitetsfilter} (eng. \emph{cavity filter}) kan kopplas ihop för att till exempel 
+bilda bandfilter eller frekvensdelare.
 
 Kavitetsfilter används ofta på sändare eftersom de med sina låga förluster kan
-hantera stora effekter samt åstadkomma djuppa utsläckningar.
-Dessa egenskaper gör dem oerhört lämpliga som duplex filter till repeatrar.
+hantera stora effekter samt åstadkomma djupa utsläckningar.
+Dessa egenskaper gör dem oerhört lämpliga som duplexfilter till repeatrar.
 
 \subsection{Helixfilter}
 \index{helixfilter}
 %\index{helix filter}
 \index{filter!helix}
 
-När ett kompakt kavitetsfilter behövs, så kan man öka reaktansen i mittledaren
+När ett kompakt kavitetsfilter behövs kan man öka reaktansen i mittledaren
 både induktivt och kapacitivt genom att utforma den som en spiral (helix).
-Detta är dock på bekostnad av Q-värdet.
-Flera kavitetsfilter kan kopplas ihop för att bilda bandfilter, spärrfilter med
-mera.
+Detta sker dock på bekostnad av Q-värdet.
+Flera kavitetsfilter kan kopplas ihop för att bilda till exempel bandfilter eller spärrfilter.
 
 \subsection{Pi-filter}
 \textbf{HAREC a.\ref{HAREC.a.3.2.10a}\label{myHAREC.a.3.2.10a}}
@@ -385,13 +384,12 @@ mera.
 \label{fig:BildII3-32}
 \end{wrapfigure}
 
-För att överföra HF-signaler med bästa verkningsgrad, så är det viktigt med god
-impedansanpassning mellan de olika funktionerna.
-Om anslutningsimpedansen är lika i båda funktionerna, så behövs inga extra
-åtgärder.
-Är impedanserna däremot olika, så behövs korrigeringsnät (filter).
+För att överföra HF-signaler med bästa verkningsgrad är det viktigt med god
+impedansanpassning mellan de olika kretsarna.
+Om anslutningsimpedansen är lika i båda kretsarna behövs inga extra åtgärder.
+Om impedanserna däremot är olika behövs korrigeringsnät (filter).
 
-Ofta är nätet Pi-format, så som bild \ref{fig:BildII3-32} visar, och består av
+Ofta är nätet Pi-format så som bild \ref{fig:BildII3-32} visar och består av
 induktanser och kapacitanser.
 Ett Pi-format nät kan sägas bestå av två L-formade nät ställda mot varandra, där
 den seriella delen är gemensam (på bilden en induktor).
@@ -413,56 +411,41 @@ Ett sådant nät kan sägas bestå av två L-formade nät ställda ''rygg mot ry
 Då är den parallella delen gemensam.
 På bilden visas två alternativ.
 
-När den parallella delen är kapacitiv, blir huvudkaraktären ett lågpassfilter,
-men att impedansanpassning också är möjlig med en induktiv impedansdelning.
-
-När den parallell delen är induktiv blir huvudkaraktären ett högpassfilter, men
-att impedansanpassning också är möjlig med en kapacitiv impedansdelning.
+När den parallella delen är kapacitiv, blir huvudkaraktären ett lågpassfilter. 
+När den parallella delen i stället är induktiv blir huvudkaraktären ett högpassfilter.
 
 Ett Pi- eller T-filter kan fungera som
 \begin{itemize}
   \item svängningskrets
   \item impedanstransformator (anpassning)
-  \item balansera ut en reaktans osv.
+  \item neutralisering av reaktans
 \end{itemize}
 
 \subsection{Icke-ideala komponenter}
 \textbf{HAREC a.\ref{HAREC.a.3.2.12}\label{myHAREC.a.3.2.12}}
 
-För alla analoga kompoenter så är de verkliga egenskaperna behäftade med
-oönskade egenskaper, även kända som parasitiska egenskaper.
+I verkligheten är alla analoga komponenter även behäftade med oönskade egenskaper, även kallade parasitiska egenskaper.
 
-Ett motstånd uppvisar inte enbart en strikt resitiv egenskap, utan för högre
-frekvenser kommer även en parasitisk seriekopplad induktans göra sig påmind.
+Ett motstånd uppvisar inte enbart en strikt resistiv egenskap, utan för högre
+frekvenser kommer även en parasitisk seriekopplad induktans att göra sig påmind.
 
-En kondensator har inte perfekt isolation, utan det läcker alltid mellan
-plattorna med en parasitisk parallelkopplad resistans, som kommer att ladda ur
-kondensatorn.
+En kondensator har inte perfekt isolation. Genom en parasitisk resistans parallellkopplad med kondensatorplattorna flyter en läckström , som kommer att ladda ur kondensatorn.
 
-En induktor är inte perfekt förlustfri, utan den har en parasitisk
-serieresistans.
+En induktor är inte perfekt förlustfri, utan den har en parasitisk serieresistans.
 
-För kondensatorer och induktorer kommer resistansen att påverka dess Q-värde,
-och ett högt Q-värde anger att man har låg förlust i förhållande till dess
-reaktans.
-Dessa förluster kommer även göra sig påminda när man bygger kretsar med dessa
-komponenter, till exempel kommer en LC krets i praktiken alltid vara en LCR krets, där
-förlusterna i spole och kondensator ger en ekvivalent förlust i kretsen och
-sätter en begränsning i hur högt Q-värde den kan uppnå, givet en ideal omvärld.
-Varje resonator lastas dock, vilket ytterligare ökar på förlusten och därmed
-ytterligare sänker Q-värdet.
+För kondensatorer och induktorer kommer resistansen att påverka deras Q-värde. 
+Ett högt Q-värde innebär att man har låg förlust.
+Förlusterna kommer att göra sig påminda när man bygger kretsar med dessa
+komponenter. Till exempel kommer en LC krets i praktiken alltid att vara en LCR-krets, där
+förlusterna i spole och kondensator ger en förlust i kretsen och begränsar hur högt Q-värde som kan uppnås.
+När en resonator belastas ökar förlusten ytterligare och därmed sjunker Q-värdet.
 
 \subsection{Digitala filter}
 \textbf{HAREC a.\ref{HAREC.a.3.2.13}\label{myHAREC.a.3.2.13}}
 \index{digitala filter}
 
-Med den utveckling som skett, kan allt mer processing ske digitalt, det gör
-det möjligt att göra \emph{digitala filter}, om bara signalen konveterats till
-digital form och sedan konverteras tillbaka till analog form.
-Digitala filter har en många fördelar, då man kan göra komplicerade och
-skarpa filter som behåller sina egenskaper då den digitala implementationsformen
-är stabil över tiden, där klassiska analoga kan behöva trimmas både
-individuellt vid tillverkning och över tiden för att upprätthålla sina
-egenskaper.
+Utvecklingen går mot att allt mer signalbehandling sker digitalt. 
+\emph{Digitala filter} kan utnyttjas genom att signalen först konverteras till digital form och sedan efter filtrering konverteras tillbaka till analog form.
+Digitala filter har många fördelar. Man kan konstruera komplicerade och skarpa filter som behåller sina egenskaper över tiden, där klassiska analoga kan behöva trimmas både individuellt vid tillverkning och sedan över tiden för att upprätthålla sina egenskaper.
 
 För mer om digitala filter se \ref{DSP} samt \ref{digitala filter}.
