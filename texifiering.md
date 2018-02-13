@@ -112,9 +112,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \label{fig:BildII1-15}
     \end{center}
     \end{figure}
-    
+
     Bild \ref{fig:BildII1-15}
-    
+
     \begin{figure*}[h]
     \begin{center}
     \includegraphics[width=14cm]{images/bild_2_1-15}
@@ -122,10 +122,10 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \label{fig:BildII1-15}
     \end{center}
     \end{figure*}
-    
+
     Bild \ref{fig:BildII1-15}
     ```
-    
+
 17. Kommentarer vi har som del av den editoriella bearbetningen lägger vi
     synligt i texten med följande format:
 
@@ -135,14 +135,14 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
     Alla TODOs skall åtgärdas innan release.
 
-    En sammanställning av alla TODOs görs med make TODOs som producerar filen 
-    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall 
+    En sammanställning av alla TODOs görs med make TODOs som producerar filen
+    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall
     åtgärdas innan release.
 
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in \, som tusentalsavskiljare/
+19. Lägg in `\,` som tusentalsavskiljare/
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
@@ -151,7 +151,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     "... illustreras av bild 3.17"
 
 21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
-    utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
+    utan läggas in som `\(\mu\)` i löpande text och \mu (notera mellanslag efter
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
@@ -173,14 +173,18 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Symboler läggs i gruppen symboler, anger symbolen först och sedan de
     representerar, men indexeras givetvis separat också:
+    ```latex
     \index{kapacitans}
     \index{symbol!C kapacitans}
+    ```
 
     Enheter indexeras givetvis med sin förkortning inom parantes både separat
     och i gruppen enheter:
+    ```latex
     \index{farad (F)}
     \index{enheter!farad (F)}
-    
+    ```
+
     Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
@@ -238,7 +242,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
 
-33. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
-    Skriv "satellitmottagare" i stället för "satellit-mottagare". 
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop.
+    Skriv "satellitmottagare" i stället för "satellit-mottagare".
     Bindestreck ska dock användas i sammansättningar med förkortningar;
     skriv "FM-detektor" istället för "FM detektor".
