@@ -272,7 +272,7 @@ Gamla frekvensräknare hade en fix tid som den räknade över, och utan justerin
 av egentlig tid.
 Dessa har en enkel princip och tiden valdes ofta för att få en enkel skalfaktor
 mellan räknarens värde och frekvensen, genom att ha steg om 100~ms, 1~s, 10~s
-osv.
+och så vidare.
 Dessa räknare har dock problemet att för låga frekvenser så krävs lång
 observationstid för att försäkra sig om en tillräckligt bra numerisk precision.
 En variant av detta som framkom var den så kallade reciproka räknaren, som är
@@ -457,16 +457,16 @@ En spektrum-analysator består förenklat av en svep-bar oscillator,
 variabelt filter på mellanfrekvensen, en detektor och ett ställbart
 filter från detektorn.
 
-Den variabla oscillatorn sveper så att det tänkta frekvensområdet täcks,
-ofta med ett bestämt antal punkter, till exempel 801, där varje punkt är mätning på
+Den variabla oscillatorn sveper så att det tänkta frekvensområdet täcks, ofta
+med ett bestämt antal punkter, till exempel 801, där varje punkt är mätning på
 en specifik frekvens.
 Ibland kan man anpassa antalet punkter för att få mätningen gå snabbare,
 mot att man får en lägre upplösning.
 
 Filtret sätter bandbredden på mätningen, och det kan gå i 1--3 steg, till exempel
 3~Hz, 10~Hz, 30~Hz, osv. till 3~MHz.
-För vissa specifika mätändamål, som till exempel för EMC mätningar, behöver man ha
-filter av rätt bandbredd och dessa är extra optioner.
+För vissa specifika mätändamål, som till exempel för EMC mätningar, behöver man
+ha filter av rätt bandbredd och dessa är extra optioner.
 
 Filtret, vars inställning brukar kallas för \emph{Resolution Bandwidth},
 fungerar som ett fönster, där fönstret släpper in de signaler som finns i det
