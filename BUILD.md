@@ -79,7 +79,7 @@ har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 ### MAKE-MÅL OCH BYGGBEROENDEN
 
 För att få en översikt över vilka mål som finns listas dom här i
-tabellen med en beskrivning om vad dom gör och vilka verktyg som de är 
+tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
 beroende utav. För att köra ett Make mål, se till att du
 har installerat beroendet som det behöver.
 
@@ -109,7 +109,7 @@ installeras.
 
 **Linux/Debian**
 
-    sudo apt-get update; 
+    sudo apt-get update;
     sudo apt-get install texlive texlive-lang-european \
         texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
 
@@ -123,7 +123,7 @@ som är läsbart på webben.
 För att få den senaste versionen av LaTeXML måste projektet laddas
 ner och beroenden måste hämtas.
 
-**Linux/Debian**  
+**Linux/Debian**
 Hämta LaTeXML:
 
     git clone https://github.com/brucemiller/LaTeXML.git
@@ -151,4 +151,3 @@ och kör följande:
 (detta måste göras med *sudo*):
 
     sudo make install
-

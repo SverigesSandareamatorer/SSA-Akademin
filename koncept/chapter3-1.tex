@@ -58,18 +58,11 @@ enstaka resistansen.
 \frac{1}{R_2} + \frac{1}{R_3} + \cdots \frac{1}{R_n}
 \]
 
-För två resistorer gäller
+För två parallellkopplade resistorer gäller
 
 \begin{align*}
 \frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} && eller \\
 R &= \frac{R_1 \cdot R_2}{R_1 + R_2}
-\end{align*}
-
-För tre resistorer gäller
-
-\begin{align*}
-\frac{1}{R} &= \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} && eller \\
-R &= \frac{R_1\cdot R_2\cdot R_3}{R_1\cdot R_2 + R_1\cdot R_3 + R_2\cdot R_3}
 \end{align*}
 
 Strömmen förgrenar sig mellan parallellkopplade resistorer.
@@ -100,18 +93,16 @@ Spänningsdelare förekommer i flera former.
 Bild \ref{fig:BildII3-03} visar en spänningsdelare med resistorer där
 spänningen \(U\) delas upp i spänningen \(U_1\) över resistorn \(R_1\)
 respektive \(U_2\) över \(R_2\).
-Man kan då till exempel använda spänningen för något ändamål.
 
-Ett alternativ till spänningsdelning med resistorer med fasta värden är
-\emph{potentiometern}. Det är en variabel spänningsdelare i form av en resistor
-med ett uttag som kan flyttas mellan ändanslutningarna.
+Ett alternativ till spänningsdelning med fasta resistorer är \emph{potentiometern}. 
+Den är en variabel spänningsdelare i form av en resistor med ett flyttbart uttag.
 
-Om man nu ansluter en apparat parallellt över \(R_2\), till exempel ett instrument
-vars inre resistans motsvaras av \(R_y\), så kommer spänningarna över \(R_1\)
+Om man ansluter en apparat parallellt över \(R_2\), till exempel ett instrument
+vars inre resistans motsvaras av \(R_y\), kommer spänningarna över \(R_1\)
 och \(R_2\) att påverkas.
 
-Om \(R_y\) är mycket större än \(R_2\), så kan man bortse från påverkan.
-För att beräkna \(U_2\) kan man då använda följande formel för en obelastad
+Om \(R_y\) är mycket större än \(R_2\), kan man bortse från påverkan.
+För att beräkna \(U_2\) kan man använda följande formel för en obelastad
 resistiv spänningsdelare.
 
 \begin{align*}
@@ -119,12 +110,16 @@ resistiv spänningsdelare.
 U_2 &= U \cdot \frac{R_2}{R_1 + R_2}
 \end{align*}
 
-Om \(R_y\) däremot är av samma storleksordning eller lägre än \(R_2\), så måste
-man för att beräkna \(U_2\) använda en formel för en belastad resistiv
-spänningsdelare, till exempel
+Om \(R_y\) däremot är av samma storleksordning som \(R_2\) eller lägre, är det lämpligt att först räkna ut resistansen \(R_p\) i parallellkretsen 
 
 \[
-U_2 = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
+R_p = \frac{R_2 \cdot R_y}{R_2 + R_y}
+\]
+
+och därefter räkna ut spänningen \(U_2\) 
+
+\[
+U_2 = U \cdot \dfrac{ R_p }{ R_1 + R_p } = U \cdot \dfrac{ \dfrac{R_2 \cdot R_y}{R_2 + R_y} }{ R_1 + \dfrac{R_2 \cdot R_y}{R_2 + R_y} }
 \]
 
 Härav förstås att till exempel en spänningsmätning ger olika resultat beroende
@@ -163,11 +158,9 @@ Då gäller sambandet
 
 \[\frac{R_1}{R_2} = \frac{R_3}{R_4}\]
 
-Spänningsdelare och bryggor har tagits med för att påvisa att apparater
-påverkar varandra när de kopplas samman, vilket är fallet även vid mätningar.
+Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra när de kopplas samman, vilket är fallet vid mätningar.
 
-Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt
-att det är fråga om en växelströmskrets.
+Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
 \textbf{HAREC a.\ref{HAREC.a.3.1.1f}\label{myHAREC.a.3.1.1f}}
@@ -184,7 +177,7 @@ att det är fråga om en växelströmskrets.
 \end{center}
 \end{figure*}
 
-Bild \ref{fig:BildII3-05} visar parallelkopplade kondensatorer.
+Bild \ref{fig:BildII3-05} visar parallellkopplade kondensatorer.
 I stället för att använda en enda kondensator kan man parallellkoppla flera
 kondensatorer för att uppnå önskad total kapacitans.
 
@@ -233,20 +226,11 @@ för kondensatorn med det minsta värdet.
 \frac{1}{C_3} + \cdots \frac{1}{C_n}
 \]
 
-För två kapacitanser gäller:
+För två kondensatorer gäller:
 
 \begin{align*}
   \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \quad \text{eller} \\
   C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
-\end{align*}
-
-För tre kapacitanser gäller:
-
-\begin{align*}
-  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3}
-  \quad \text{eller} \\
-  C &= \frac{C_1 \cdot C_2 \cdot C_3}
-  {C_1 \cdot C_2 + C_2 \cdot C_3 + C_2 \cdot C_3}
 \end{align*}
 
 \textbf{Räkneexempel:}
@@ -343,8 +327,7 @@ I stället görs en förenklad framställning.
 
 Bild \ref{fig:BildII3-07} visar seriekopplade induktorer, vars magnetfält
 kopplar till varandra på olika sätt.
-''Pricken'' vid änden av induktorerna på bilden markerar att magnetfälten där
-har inbördes polarisering.
+''Pricken'' vid änden av induktorerna på bilden markerar magnetfältens inbördes polarisering.
 
 \subsubsection{Magnetiskt kopplade induktorer i serie}
 
@@ -354,10 +337,9 @@ har inbördes polarisering.
 
 \textbf{Räkneexempel:}
 
-Två induktorer har en impedans av 20 respektive 10~\(\mu H\) och en ömsesidig
+Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
-Induktorerna är kopplade och placerade så att deras magnetfält verkar med
-varandra.
+Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
 Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 
@@ -368,10 +350,9 @@ Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 \end{align*}
 
 \textbf{Räkneexempel:}
-Två induktorer har en impedans av 20 respektive 10~\(\mu H\) och en ömsesidig
+Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
-Induktorerna är kopplade och placerade så att deras magnetfält verkar mot
-varandra.
+Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
 Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 
 \begin{align*}
@@ -382,17 +363,17 @@ Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
 När flera induktorer är parallellkopplade och placerade så att deras magnetiska
-fält interagerar behöver man ta hänsyn till om de med- eller motverkar varandra.
+fält interagerar behöver man ta hänsyn till om de samverkar eller motverkar varandra.
 Mer läsning om induktorer och hur de påverkar varandra finns att läsa i
 \cite{letrafo}.
 
 \textbf{Formler:}
 
-Medkopplade parallella induktorer
+Samverkande parallella induktorer
 
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 - 2M}\]
 
-Motkopplade parallella induktorer
+Motverkande parallella induktorer
 
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 + 2M}\]
 
@@ -408,13 +389,15 @@ Motkopplade parallella induktorer
 
 Bild \ref{fig:BildII3-08} visar uppladdning av en kondensator.
 En kondensator \(C\) seriekopplas med en resistans \(R\)
-och kopplas in över spänningen \(U\).
+och kopplas till spänningen \(U\).
+
+% PHU: Bilden förvirrar. U i kretsschemat är samma som U_max i diagrammet.
 
 Spänningen över kondensatorn stiger från 0~volt till \(U_{max}\).
 
 Laddningsströmmen sjunker från \(I_{max}\) till 0~ampere.
 
-Spänningen över kondensatorn ökar exponentiellt uppladdningen.
+Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
 
 \[u_c = U_{max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
 
@@ -460,8 +443,7 @@ Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
 \label{fig:BildII3-09}
 \end{wrapfigure}
 
-Bild \ref{fig:BildII3-09} visar urladdning av en kondensator.
-En kondensator C urladdas över resistor R.
+Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor \(R_2\).
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
@@ -506,13 +488,9 @@ Exempel på beräkning av tidskonstanten:
 
 Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
-Spänningen över induktorn ökar från 0 till \(U_{max}\).
+Spänningen över induktorn minskar från \(U_{max}\) till 0.
 
-(Egentligen, induktorns motspänning minskar så att...)
-
-Strömmen genom induktorn ökar från 0 till \(U_{max}\).
-
-Strömmen genom induktorn ökar exponentiellt efter inkopplingen
+Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{max}\).
 
 \[i_L = I_{max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
 
@@ -536,17 +514,15 @@ s\ [\text{sek}] \quad
 \]
 
 Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
-induktorn ökat från noll till 63~\% av \(I_{max}\) och motspänningen över
-induktorn minskat till 37~\% av maxvärdet.
+induktorn ökat från noll till 63~\% av \(I_{max}\) och spänningen över induktorn
+minskat till 37~\% av maxvärdet.
 
 \subsubsection{Urkoppling}
 
 Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
-Energin i induktorn avleds genom resistorn som en ström med motsatt riktning
-än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter
-exponentiellt.
+Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
+Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter exponentiellt.
 
 \[i_L = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
 
@@ -572,16 +548,14 @@ Under den tid som magnetfältet i en induktor avvecklas eller byggs upp, så
 induceras en motspänning i den.
 Denna spänning är högre än den som finns över induktorn innan strömmen bryts
 eller ändras och är proportionell mot den hastighet som ändringen har.
-När en en strömkrets med induktor bryts är det vanligt att det i
-brytögonblicket bildas en gnista eller ljusbåge över brytarens kontakter.
+När en en strömkrets med induktor bryts är det vanligt att det i brytögonblicket
+bildas en gnista eller ljusbåge över brytarens kontakter.
 
-Om induktansen är stor och kretsströmmen hög, så ska en stor mängd energi
-frigöras på mycket kort tid.
+Om induktansen är stor och kretsströmmen hög ska en stor mängd energi frigöras på mycket kort tid.
 Det är därför inte ovanligt att brytarkontakter bränns eller smälter.
 I likströmskretsar kan gnistan eller ljusbågen minskas eller undertryckas genom
 att en kondensator i serie med en resistor kopplas över kontaktstället.
-Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar
-hastighetsändringen.
+Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar hastighetsändringen.
 
 \subsection{Växelströmskretsar}
 \textbf{HAREC a.\ref{HAREC.a.3.1.1}\label{myHAREC.a.3.1.1h}, a.\ref{HAREC.a.3.1.2}\label{myHAREC.a.3.1.2b}, a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3b}}
@@ -594,7 +568,7 @@ varandra.
 När svängningskretsens egenfrekvens sätts lika med frekvensen på den signal som
 tillförs kretsen, så får kretsen särskilda egenskaper som används på olika sätt.
 
-För att förstå hur ''LC-kretsar'' fungerar, beskrivs först hur de ingående
+För att förstå hur ''LC-kretsar'' fungerar beskrivs först hur de ingående
 komponenternas resistans, induktans och kapacitans förhåller sig till varandra,
 när de kombineras och kopplas till en växelströmkälla.
 
@@ -610,34 +584,34 @@ Tidsaxeln är graderad 0--360\degree~per period.
 
 \textbf{Fall a:} Förloppen med en resistor R.
 
-Med en resistor följer ström- och spänningskurvorna varandra tidsmässigt, även
+I en resistor följer ström- och spänningskurvorna varandra tidsmässigt, även
 vid riktningsändring.
-När kurvorna följs åt på det sättet, sägs de vara i fas med varandra.
+När kurvorna följs åt på det sättet sägs de vara i fas med varandra.
 
 Effekt överförs från strömkällan till resistorn.
 Den effekt som utvecklas i resistorn är, vid varje tidpunkt av perioden,
 produkten av strömmen och spänningen just då.
-Eftersom storheterna av spänning och ström är antingen positiva eller negativa
-samtidigt, så blir produkten alltid positiv.
+Eftersom storheterna spänning och ström är antingen positiva eller negativa
+samtidigt, blir produkten alltid positiv.
 Det betyder att den effekt som utvecklas pulserar två gånger per period mellan
 ett noll- och maxvärde.
 
 \textbf{Fall b:} Förloppen med en induktor L.
 
-Med en induktor är utvecklingen av ström och spänning inte samtidig.
+I en induktor är utvecklingen av ström och spänning inte samtidig.
 Vid inkopplingen stiger spänningen genast till maxvärdet medan strömmen stiger
 långsammare och bygger under tiden upp ett magnetfält i induktorn och omkring
 övriga ledare i kretsen.
 
 Strömmen fördröjs alltså i förhållande till spänningen.
-Eftersom kurvornas max- och nollvärden inträffar vid olika tidpunkter, så heter
+Eftersom kurvornas max- och nollvärden inträffar vid olika tidpunkter heter
 det att de är \emph{ur fas} eller \emph{fasförskjutna}.
 
 En växelström genom en ideal induktor är förskjuten 90\degree~\emph{efter}
 spänningen.
 Strömmen når toppvärdet vid tidpunkten 90\degree~av perioden, när spänningen
 nått ner till noll.
-När spänningen minskar, så sjunker strömmen och tar med sig energin i
+När spänningen minskar sjunker strömmen och tar med sig energin i
 magnetfältet.
 Först vid 180\degree, när spänningen har nått maxvärdet åt andra hållet, ändrar
 också strömmen riktning och bygger upp ett nytt magnetfält med motsatt
@@ -645,9 +619,9 @@ polaritet.
 
 Effekt överförs från strömkällan till induktorn när ström och spänning har
 samma riktning.
-När ström och spänning har olika riktning, försöker induktorn i stället
+När ström och spänning har olika riktning försöker induktorn i stället
 ''ladda'' strömkällan med energi från sitt kraftfält.
-Det pendlar därför effekt mellan strömkällan och induktorn, varvid effekten i
+Effekt pendlar mellan strömkällan och induktorn, varvid effekten i
 ena riktningen är lika stor som i andra riktningen.
 
 Sett över en hel period upphäver därför dessa effekter varandra.
@@ -658,44 +632,44 @@ Man säger att en reaktans, här en induktor, arbetar med reaktiv effekt.
 I praktiken har kretsen även en viss resistans.
 Därför sätts reaktansens 90\degree~fasförskjutna ström samman med resistansens
 0\degree~fasförskjutna ström.
-Resultatet blir en ström, som är mindre än 90\degree~ur fas, och det förbrukas
+Resultatet blir en ström som är mindre än 90\degree~ur fas och det förbrukas
 då en viss aktiv effekt i resistansen.
 
 \textbf{Fall c:} Förloppen med en kondensator C.
 
-Inte heller med en kondensator utvecklas ström och spänning samtidigt.
+Inte heller i en kondensator utvecklas ström och spänning samtidigt.
 Efter inkopplingen laddar strömmen upp kondensatorn, det vill säga bygger upp
 ett elektriskt fält med en viss potential (spänning).
 Spänningen utvecklas långsammare än strömmen -- den blir \emph{fasförskjuten}.
 
 Strömmen till (och från) en ideal kondensator är fasförskjuten 90\degree~före
 spänningen.
-När kondensatorn är kopplad till en växelströmskälla, når strömmen toppvärdet
+När kondensatorn är kopplad till en växelströmskälla når strömmen toppvärdet
 vid tidpunkten 90\degree~eller 270\degree~av perioden.
 Spänningen passerar då i båda fallen värdet noll.
-När spänningen minskar, så sjunker strömmen och tar energi ur det elektriska
+När spänningen minskar sjunker strömmen och tar energi ur det elektriska
 fältet.
 
-Sedan strömmen passerat noll vid 180\degree~eller 0\degree/360\degree, bygger
+Sedan strömmen passerat noll vid 180\degree~eller 0\degree/360\degree bygger
 den upp ett nytt elektriskt fält med motsatt polaritet.
 
 Liksom med en induktor överförs effekt från strömkällan till kondensatorn när
 ström och spänning har samma riktning.
-När ström och spänning har olika riktning, försöker kondensatorn i stället
+När ström och spänning har olika riktning försöker kondensatorn i stället
 ''ladda'' strömkällan med energi.
-Det pendlar därför effekt mellan strömkällan och kondensatorn, varvid effekten i
+Effekt pendlar mellan strömkällan och kondensatorn, varvid effekten i
 ena riktningen är lika stor som i andra riktningen.
 
 Sett över en hel period upphäver därför dessa effekter varandra.
 Följden blir att en ideal kondensator, i motsats till en resistor, inte
 förbrukar någon aktiv effekt.
-Man säger då, att en reaktans, här en kondensator, arbetar med \emph{reaktiv}
+Man säger då att en reaktans, här en kondensator, arbetar med \emph{reaktiv}
 effekt.
 
 I praktiken har kretsen även en viss resistans.
 Därför sätts reaktansens 90\degree~fasförskjutna spänning samman med
 resistansens 0\degree~fasförskjutna ström.
-Resultatet blir en spänning, som är mindre än 90\degree~ur fas, och det
+Resultatet blir en spänning som är mindre än 90\degree~ur fas och det
 förbrukas då en viss aktiv effekt i resistansen.
 Som framgår av bilden blir variationerna i tiden de omvända med kondensator
 jämfört med induktor.
@@ -714,7 +688,7 @@ Liten ordlista:
 \item Impedans -- hindra (lat. impedire).
 \item Resistans -- motstå (lat. resistere).
   Del av impedansen, kallas ibland ohmskt motstånd.
-\item Reaktans- återverka (lat. reagere).
+\item Reaktans -- återverka (lat. reagere).
   Del av impedansen, samlingsord för växelströmsmotstånd.
   \begin{itemize}
   \item Kapacitans -- inrymma (lat. capax). Del av reaktansen.
@@ -726,12 +700,12 @@ Hittills har storheterna resistans, induktans och kapacitans behandlats var för
 sig, men i praktiken förekommer de alltid tillsammans och kallas impedans.
 
 Resistansen är i princip oförändrad vid ström- eller spänningsändringar.
-Men när strömmen genom en ledare eller induktor liksom spänningen över en
-kondensator ändras, så tillkommer en reaktans som motverkar förändringarna.
+Men när strömmen genom en ledare eller induktor, liksom spänningen över en
+kondensator ändras, tillkommer en reaktans som motverkar förändringarna.
 
 Reaktansen kan från fall till fall vara kapacitiv eller induktiv och ingår i
 impedansen.
-Om ingen reaktans finns, så är impedansen lika med resistansen.
+Om ingen reaktans finns, är impedansen lika med resistansen.
 
 \begin{wrapfigure}{R}{0.5\textwidth}
 \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-12.pdf}
@@ -757,10 +731,8 @@ Detta kan göras grafiskt eller beräknas.
 \label{fig:BildII3-13}
 \end{figure}
 
-Bild \ref{fig:BildII3-13}
-
-Vi tänker oss att vektorerna i systemet vrider sig moturs med hastigheten
-\(\omega = 2\pi f\) där \(f\) är frekvensen och \(\omega\) är vinkelhastighet.
+I bild \ref{fig:BildII3-13} tänker vi oss att vektorerna i systemet vrider sig moturs med vinkelhastigheten
+\(\omega = 2\pi f\) där \(f\) är frekvensen.
 Eftersom vektorerna har samma frekvens, så är vektorernas lägen inbördes samma.
 Ögonblicksvärdet av respektive vektorer följer en sinuskurva.
 
@@ -770,7 +742,7 @@ Spänningsvektorn i den ''kapacitiva reaktansen'' ligger 90\degree~efter
 strömmen och spänningen i resistansen.
 Vektorerna i dessa två reaktanser är således \(2 \cdot 90 = 180\degree\)
 åtskilda, det vill säga motriktade.
-Det kallas att de är i motfas.
+Man säger att de är i motfas.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-14.pdf}
@@ -779,7 +751,7 @@ Det kallas att de är i motfas.
 \end{figure}
 
 I bild \ref{fig:BildII3-14} visas vektorerna för komponenterna i bild
-\ref{fig:BildII3-12} samt hur man grafiskt bestämmer impedansen av dessa
+\ref{fig:BildII3-12} samt hur man grafiskt bestämmer impedansen för dessa
 vektorer.
 Vidare får man fasvinkeln mellan impedansens och resistansens vektor, varav den
 senare är den så kallade riktfasen för hela seriekretsen.
@@ -794,14 +766,13 @@ Slutligen ritas den kapacitiva reaktansen \(X_C\) lodrätt neråt.
 Man subtraherar de motverkande reaktiva vektorerna \(X_L\) och \(X_c\) från
 varandra och avsätter resultatet \(X\) på den vertikala axeln, uppåt om \(X_L\)
 är större och neråt om \(X_c\) är större.
-Den resistiva vektorn \(R\) avsätts åt höger på den horisontella axeln.
 
 Man låter nu vektorerna \(X\) och \(R\) bilda sidor i en rätvinklig rektangel.
 Längden på rektangelns diagonal är den resulterande impedansen \(Z\).
 Fasvinkeln mellan impedans och resistans kan också avläsas.
 
 Eftersom vektordiagrammet bildar en rätvinklig triangel kan den resulterande
-spänningen \(U\) i kretsen även beräknas med Pytagoras sats:
+spänningen \(U\) i kretsen även beräknas med Pythagoras sats:
 
 \[C^2 = A^2 + B^2 \quad eller \quad C = \sqrt{A^2 + B^2}\]
 
@@ -843,8 +814,8 @@ Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
 ström- respektive spänningsändring än vad resistansen gör.
 
-Om impedansen \(Z\) sätts in i Ohms lag, så fås följande samband som ofta kallas
-Ohms lag för växelström, således
+Om impedansen \(Z\) sätts in i Ohms lag fås följande samband, som ofta kallas
+Ohms lag för växelström
 
 \begin{align*}
   U_{eff} &= I_{eff} \cdot Z \quad \text{eller} \\
@@ -858,14 +829,12 @@ Av vad som framgått tidigare i detta avsnitt kan även slutsatsen dras att:
 \text{skenbar effekt} = \sqrt{(\text{aktiv effekt})^2 + (\text{reaktiv effekt})^2}
 \]
 
-\subsection{LC-kretsar}
+\subsection{Parallellkopplade LC-kretsar}
 \textbf{HAREC
   a.\ref{HAREC.a.3.1.3}\label{myHAREC.a.3.1.3d},
   a.\ref{HAREC.a.3.2.1}\label{myHAREC.a.3.2.1}
 }
 \index{LC-krets}
-
-\subsubsection{Parallellkopplade LC-kretsar}
 \index{parallellkopplad LC-krets}
 \index{LC-krets!parallellkopplad}
 
@@ -906,35 +875,34 @@ densamma.
 Spänningsvektorn \(U\) används därför som så kallad riktfas.
 
 Riktfasen ritas på bilden åt höger.
-Strömmen \(I_C\) genom kondensatorn är fasförskjuten 90\degree~efter \(U\) och
-ritas rakt neråt (vektorerna roterar motsols).
-Strömmen \(I_L\) genom induktorn är fasförskjuten 90\degree~före \(U\) och
-ritas rakt uppåt.
+Strömmen \(I_C\) genom kondensatorn är fasförskjuten 90\degree~före \(U\) och
+ritas rakt uppåt (vektorerna roterar moturs).
+Strömmen \(I_L\) genom induktorn är fasförskjuten 90\degree~efter \(U\) och
+ritas rakt nedåt.
 Den resulterande reaktiva strömmen genom kretsen är skillnaden mellan
 strömmarna \(I_C\) och \(I_L\), vilka är motriktade varandra.
 
 Formeln för parallellkopplade resistanser kan även användas för
-parallellkopplade reaktanser om man tillämpar Pytagoras sats
+parallellkopplade reaktanser om man tillämpar Pythagoras sats
 \(A^2 + B^2 = C^2\), således
 
 \begin{gather*}
-  \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_1} + \cdots \\
-  \left(\frac{1}{Z}\right)^2 = \left(\frac{1}{R}\right)^2 +
-  \left(\frac{1}{R}\right)^2 \quad \text{eller}
+	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots \\
+	\left(\frac{1}{Z}\right)^2 = \left(\frac{1}{R}\right)^2 +
+	\left(\frac{1}{X}\right)^2 \quad \text{eller}
 \end{gather*}
 \begin{align*}
-  \frac{1}{Z} &=
-  \sqrt{\left(\frac{1}{R}\right)^2 + \left(\frac{1}{X}\right)^2} \\
-  &= \sqrt{\frac{1}{R^2} + \frac{1}{X^2}}
+	\frac{1}{Z} &= \sqrt{\left(\frac{1}{R}\right)^2 + \left(\frac{1}{X}\right)^2} \\
+	\frac{1}{Z} &= \sqrt{\frac{1}{R^2} + \frac{1}{X^2}}
 \end{align*}
 
-Med \(R\) försumbart kan den resulterande reaktansen av kapacitansen \(X_C\)
-och den vektormässigt motriktade induktansen \(X_L\) beräknas på följande sätt:
+Med \(R\) försumbart kan den totala reaktansen beräknas ur den induktiva reaktansen \(X_L\)
+och den vektormässigt motriktade kapacitiva reaktansen \(X_C\) på följande sätt:
 
 \begin{align*}
-  \frac{1}{X} &= \frac{1}{X_C} - \frac{1}{X_L} \quad \text{dvs.} \quad
-  \frac{1}{X} = \frac{X_L - X_C}{-X_L \cdot X_C} \quad \text{eller} \\
-  X &= \frac{-X_L \cdot X_C}{X_L - X_C}
+	\frac{1}{X} &= \frac{1}{X_L} - \frac{1}{X_C} = \frac{X_C - X_L}{X_C \cdot X_L}
+	\quad \text{eller} \\
+	X &= \frac{X_C \cdot X_L}{X_C - X_L}
 \end{align*}
 
 I en parallellkopplad LC-krets är den resulterande reaktansen negativ
@@ -942,6 +910,7 @@ I en parallellkopplad LC-krets är den resulterande reaktansen negativ
 mindre än \(X_C\).
 
 \subsection{Seriekopplade LC-kretsar}
+\index{LC-krets}
 \index{seriekopplad LC-krets}
 \index{LC-krets!seriekopplad}
 
@@ -967,29 +936,29 @@ Det flyter en stark ström i ledningen mellan generator och krets.
 Frekvensen \(f\) ställs lägre eller högre än kretsens resonansfrekvens
 \(f_{res}\).
 
-Eftersom svängningskretsen då visar hög impedans \(Z\) mot generatorn, så
-flyter endast en svag ström i ledningen mellan generator och krets.
+Eftersom svängningskretsen då visar hög impedans \(Z\) mot generatorn, flyter
+endast en svag ström i ledningen mellan generator och krets.
 
 I praktiken finns även en resistans i serie med induktansen liksom en
 parallellt över kapacitansen.
-För enkelhetens skull bortses här från dessa resistanser.
+För enkelhets skull bortses här från dessa resistanser.
 
 Strömmen \(I\) är samma genom hela kretsen och strömvektorn \(I\) används
-därför som så kallad riktfas.
+därför som riktfas.
 Den ritas i bilden åt höger.
-Om serieresistansen \(R\) varit med, så skulle ett spänningsfall \(U_R\) varit
-inritad i samma riktning som \(I\) (i fas med \(I\)).
-Spänningen över reaktansen \(X_C\) ligger 90\degree~efter \(I\) och ritad
-rakt neråt (vektorerna roterar motsols).
+Om serieresistansen \(R\) varit med skulle ett spänningsfall \(U_R\) varit
+inritat i samma riktning som \(I\) (i fas med \(I\)).
+Spänningen över reaktansen \(X_C\) ligger 90\degree~efter \(I\) och ritas
+rakt neråt (vektorerna roterar moturs).
 Spänningen över reaktansen \(X_L\) (induktorn) ligger 90\degree~före \(I\) och
-ritad rakt uppåt.
+ritas rakt uppåt.
 
 \subsection{Thomsons svängningskrets}
 \textbf{HAREC a.\ref{HAREC.a.3.2.4}\label{myHAREC.a.3.2.4}}
-\index{Thomson svängningskrets}
+\index{Thomsons svängningskrets}
 \index{svängningskrets}
 \index{oscillator}
-\index{oscillator!Thomson svängningskrets}
+\index{oscillator!Thomsons svängningskrets}
 
 \begin{figure*}[ht]
 \begin{center}
@@ -1001,12 +970,12 @@ ritad rakt uppåt.
 \end{center}
 \end{figure*}
 
-Bild \ref{fig:BildII3-17} visar en svängningskrets, som består av en
+Bild \ref{fig:BildII3-17} visar en svängningskrets som består av en
 kondensator och en induktor med förskjutbar järnkärna.
 En ändring av kärnans tvärsnitt ändrar den magnetiska ledningsförmågan och
 därmed induktansen.
 
-Med anordningen kan resonansfrekvensen alltså ställas in så att den blir högre,
+Med anordningen kan resonansfrekvensen alltså ställas in så att den blir högre än,
 lika med eller lägre än den anslutna spänningens frekvens.
 Tre fall undersöks:
 \begin{enumerate}
@@ -1016,12 +985,10 @@ Tre fall undersöks:
   induktorn,
 \item \(X_L= X_C\) LA2 och LA3 lyser upp, LA1 lyser inte, en kraftig ström
   flyter i kretsen men inte i tilledningarna
-\item \(X_L = X_C\) kallas Thomsons svängningsformel, vilken beskriver
-  resonansfallet
+
 \end{enumerate}
 
-Då är de induktiva och kapacitiva reaktanserna i kretsen lika stora och tar ut
-varandra.
+\(X_L = X_C\) kallas Thomsons svängningsformel, vilken beskriver resonansfallet då de induktiva och kapacitiva reaktanserna i kretsen är lika stora och tar ut varandra.
 Kvar är kretsens resistans, vilken vi tills vidare betraktar som försumbar.
 
 Således \(X_L = X_C\), där
@@ -1076,18 +1043,17 @@ kapacitans 200~pF, förlustresistans 10~\(\Omega\).
 \end{center}
 \end{figure*}
 
-Parallellkretsen består i sig själv av seriekopplade komponenter, varav
-\(X_L\) och \(X_C\) är reaktiva.
+Kretsen består av parallellkopplade reaktanser, \(X_L\) och \(X_C\).
 Vid resonans är dessa lika stora och motverkande.
 Inom kretsen är således den resulterande reaktansen:
 
-\[X_L - X_C = 0\]
+\[X_C - X_L = 0\]
 
 Därför uppvisar samma krets en yttre reaktans av:
 
 \[
-  X = \frac{-X_L \cdot X_C}{X_L - X_C}
-  = \frac{-X_L \cdot X_C}{0}
+  X = \frac{X_C \cdot X_L}{X_C - X_L}
+  = \frac{X_C \cdot X_L}{0}
   = \infty
 \]
 
@@ -1100,8 +1066,8 @@ Bild \ref{fig:BildII3-18} visar en parallellkrets där induktorn har resistansen
 \(r_L\) och kondensatorn antas vara förlustfri.
 Vidare förutsätts att kretsen är i resonans.
 
-Vid resonans kan termen \(X_L - X_C = 0\) bytas mot \(r_L\) i formeln
-\[X = \frac{-X_L \cdot X_C}{X_L - X_C}\] förutsatt att \(r_L\) är försumbart
+Vid resonans kan termen \(X_C - X_L = 0\) bytas mot \(r_L\) i formeln
+\[X = \frac{X_C \cdot X_L}{X_C - X_L}\] förutsatt att \(r_L\) är försumbart
 jämfört med \(X_L\).
 
 Därtill är \(X_L = 2\pi fL\) och \(X_C = \frac{1}{2\pi fC}\) det vill säga
@@ -1110,7 +1076,7 @@ Därtill är \(X_L = 2\pi fL\) och \(X_C = \frac{1}{2\pi fC}\) det vill säga
 Parallellkretsens impedans vid resonans kan då skrivas
 
 \[
-Z = \frac{X_L \cdot X_C}{r_L} = \frac{L}{r_L \cdot C}
+Z = \frac{X_C \cdot X_L}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
 Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
@@ -1136,9 +1102,9 @@ kallade L/C-förhållandet samt av kretsens resistiva förluster.
 Bild \ref{fig:BildII3-19} visar en seriekrets är i resonans, så är
 
 \begin{align*}
-& X_L = X_C \quad & \text{dvs.} \quad \omega L = \frac{1}{\omega C} \\
+& X_C = X_L \quad & \text{dvs.} \quad \frac{1}{\omega C} = \omega L\\
 & \text{eller} & \\
-& X_L - X_C = 0 \quad & \text{dvs.} \quad \omega L - \frac{1}{\omega C} = 0
+& X_C - X_L = 0 \quad & \text{dvs.} \quad \frac{1}{\omega C} - \omega L = 0
 \end{align*}
 
 Med ovanstående kretsdata blir resonansfrekvensen:
