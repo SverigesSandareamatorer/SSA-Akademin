@@ -72,7 +72,7 @@ signal upplever samma grupp-fördröjning och därmed inte förskjuts i förhål
 till varandra.
 Detta brukar bland annat öka taltydligheten.
 
-\subsection{Fouriertransform -- FFT}
+\subsection{Fouriertransform (FFT)}
 \textbf{HAREC a.\ref{HAREC.a.3.8.2}\label{myHAREC.a.3.8.2}}
 \index{Fouriertransform}
 \index{Fourier!DFT}
@@ -97,7 +97,7 @@ För att reducera beräkningsmängden kan man givetvis beräkna DFT bara för et
 fåtal frekvenser, men när det inte är applicerbart behöver man agera lite
 smartare.
 Så som DFT är formulerat, så ger matematiken flera genvägar, som gör att man
-på flera olika sätt kan slå samman beräkningarna och göra del-beräkningar som
+på flera olika sätt kan slå samman beräkningarna och göra delberäkningar som
 kan användas av flera andra steg, och på så sätt minska beräkningsbördan.
 Detta kan sedan göras hierarkiskt, så att en rekursiv form kan göras.
 Det finns flera metoder att göra detta på, men de sammanfattas med som en snabb
@@ -120,7 +120,7 @@ lägga flera av dessa efter varandra kan man få de nu mer allt vanligare
 spektrumhistogrammen även kända som vattenfallsplottar då de påminner om ett
 vattenfall med sina vertikala streck.
 
-\subsection{Direct Digital Synthesis -- DDS}
+\subsection{Direct Digital Synthesis (DDS)}
 \textbf{HAREC a.\ref{HAREC.a.3.8.3}\label{myHAREC.a.3.8.3}}
 \index{Direct Digital Synthesis (DDS)}
 \index{DDS}
@@ -145,7 +145,7 @@ Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
 Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
 varieras fort och fritt.
 Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.
-Högsta frekvensen blir \emph{Nykvist-frekvensen}, det vill säga halva
+Högsta frekvensen blir \emph{Nyquistfrekvensen}, det vill säga halva
 samplingsfrekvensen och lägsta blir den som minst signifikanta biten ger.
 
 Den utgående fasen ur själva fasackumulatorn vågformas sedan om till sinus,
