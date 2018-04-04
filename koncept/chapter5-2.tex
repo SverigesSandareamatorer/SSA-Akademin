@@ -17,9 +17,9 @@ Detektormottagaren består av ett mycket litet antal komponenter.
 Princip och arbetssätt framgår av bild \ref{fig:bildII4-1}.
 Samma princip används även i mer komplicerade mottagare, mätinstrument etc.
 Antennkretsen består av antenn, jordtag och däremellan en induktor
-(kopplingsspole), som överför energin från antennen till en svängningskrets.
-Svängningskretsen används för att välja ut (selektera)
-en bärvåg med önskad frekvens.
+(kopplingsspole), som överför energin från antennen till en resonanskrets.
+Resonanskretsen används för att välja ut (selektera) en bärvåg med önskad
+frekvens.
 Bärvågen kan naturligtvis inte höras, men av kurvformen på bilden framgår
 att bärvågen är amplitudmodulerad med en LF-signal.
 
@@ -41,23 +41,23 @@ mottagaren.
   \label{fig:bildII4-2}
 \end{wrapfigure}
 
-Signalspänningen över svängningskretsen är störst när dess
+Signalspänningen över resonanskretsen är störst när dess
 resonansfrekvens och antennströmmens frekvens är lika.
 
 Överst i bild \ref{fig:bildII4-2} ser man att mottagaren är inställd på
 samma frekvens som sändare 2.
-Även sändare 3 hörs eftersom bandbredden i svängningskretsen är stor.
-Nederst i bilden är svängningskretsen inställd på sändare 3, men man hör
+Även sändare 3 hörs eftersom bandbredden i resonanskretsen är stor.
+Nederst i bilden är resonanskretsen inställd på sändare 3, men man hör
 också sändare 2 och 4.
 
-Bandbredden i svängningskretsen blir mindre ju mindre den belastas,
+Bandbredden i resonanskretsen blir mindre ju mindre den belastas,
 det vill säga dämpas.
 I bild \ref{fig:bildII4-1} består belastningen av antennen (via
 kopplingsspolen), hörtelefonen och avkopplingskondensatorn (via dioden).
 
 Mindre belastning kan åstadkommas på två sätt; dels med ''lösare''
-koppling mellan antennkrets och svängningskrets och dels med bättre
-impedansanpassning mellan svängningskrets och diod. Båda sätten
+koppling mellan antennkrets och resonanskrets och dels med bättre
+impedansanpassning mellan resonanskrets och diod. Båda sätten
 tillämpas i bild \ref{fig:bildII4-3}. Hur selektionen då förbättras visas i
 bild \ref{fig:bildII4-4}, vilket ska jämföras med bild \ref{fig:bildII4-2}.
 
@@ -77,7 +77,7 @@ Om man vill höra sändningarna över högtalare, behövs högre effekt än
 vad som kan fångas upp genom antennen.
 För ändamålet används en LF-förstärkare, som drivs av en annan energikälla,
 till exempel ett batteri.
-LF-förstärkaren kan även minska belastningen på svängningskretsen.
+LF-förstärkaren kan även minska belastningen på resonanskretsen.
 
 I bild \ref{fig:bildII4-3} har ett LF-lågpassfilter satts in efter
 HF-avkopplingskondensatorn.
@@ -86,13 +86,13 @@ Det dämpar LF-signaler med högre frekvens än vad som behövs för god mottagn
 \subsubsection{Mottagare med bättre HF-egenskaper}
 
 Ett sätt att minska bandbredden i en detektormottagare är att koppla
-flera svängningskretsar med samma frekvens efter varandra, så som illustreras
+flera resonanskretsar med samma frekvens efter varandra, så som illustreras
 i bild \ref{fig:bildII4-5}.
 Den större dämpningen av fler kretsar kan kompenseras med en HF-förstärkare.
 
 Sådana mottagare används för speciella ändamål, till exempel för övervakning
 av en enda frekvens.
-Då är svängningskretsarna fast avstämda.
+I sådana fall är resonanskretsarna fast avstämda.
 Kanske utnyttjas till och med en kvartskristall som filter för den speciella
 frekvensen.
 Se bild \ref{fig:bildII4-6} om hög selektion.
@@ -271,7 +271,7 @@ blandningsprodukter.
 Bara den sändarsignal hörs då, vars frekvens tillsammans med VFO-frekvensen
 ger blandningsprodukter, som faller inom LF-filtrets passband.
 Mottagningsfrekvensen är VFO-frekvensen.
-Svängningskretsen fungerar som en ställbar förselektor och LF-lågpassfiltret
+Resonanskretsen fungerar som en ställbar förselektor och LF-lågpassfiltret
 ger den egentliga frekvensselektionen.
 
 Vilka HF-signaler bildar blandningsprodukter med VFO-frekvensen och

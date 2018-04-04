@@ -562,10 +562,10 @@ Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar has
 
 \subsubsection{Komponentegenskaper vid växelström}
 
-Inom radiotekniken används mycket ofta svängningskretsar bestående av
-kondensatorer och induktorer, som är kopplade i serie eller parallellt med
-varandra.
-När svängningskretsens egenfrekvens sätts lika med frekvensen på den signal som
+Inom radiotekniken används mycket ofta resonanskretsar (benämns även
+svängningskretsar) bestående av kondensatorer och induktorer, som är kopplade i
+serie eller parallellt med varandra.
+När resonanskretsens egenfrekvens sätts lika med frekvensen på den signal som
 tillförs kretsen, så får kretsen särskilda egenskaper som används på olika sätt.
 
 För att förstå hur ''LC-kretsar'' fungerar beskrivs först hur de ingående
@@ -853,8 +853,8 @@ Två fall studeras.
 Signalgeneratorns frekvens \(f\) ställs lika med LC-kretsens resonansfrekvens
 \(f_{res}\).
 Då visar kretsen hög impedans \(Z\) mot generatorn.
-En stark ström cirkulerar i svängningskretsen, men endast en svag ström flyter
-i ledningen mellan generator och krets.
+En stark ström cirkulerar i LC-kretsen, men endast en svag ström flyter i
+ledningen mellan generator och krets.
 Jämför med modellförsöket på bild \ref{fig:BildII3-17}.
 
 \textbf{Fall 2:} \(f > f_{res}\) eller \(f < f_{res}\)
@@ -862,8 +862,8 @@ Jämför med modellförsöket på bild \ref{fig:BildII3-17}.
 Frekvensen \(f\) ställs högre eller lägre än kretsens resonansfrekvens
 \(f_{res}\).
 
-Svängningskretsen visar då en låg impedans \(Z\) mot generatorn.
-En svag ström cirkulerar i svängningskretsen, medan en starkare ström flyter i
+Kretsen visar då en låg impedans \(Z\) mot generatorn.
+En svag ström cirkulerar i LC-kretsen, medan en starkare ström flyter i
 ledningen mellan generator och krets.
 
 I praktiken finns även en resistans (belastning) parallellt över kretsen och en
@@ -926,8 +926,8 @@ Två fall studeras.
 
 \textbf{Fall 1:} \(f = f_{res}\)
 
-Signalgeneratorns frekvens \(f\) ställs lika med svängningskretsens
-resonansfrekvens \(f_{res}\).
+Signalgeneratorns frekvens \(f\) ställs lika med LC-kretsens resonansfrekvens
+\(f_{res}\).
 Impedansen \(Z\) i en seriekrets visar då ett mycket lågt värde mot generatorn.
 Det flyter en stark ström i ledningen mellan generator och krets.
 
@@ -936,7 +936,7 @@ Det flyter en stark ström i ledningen mellan generator och krets.
 Frekvensen \(f\) ställs lägre eller högre än kretsens resonansfrekvens
 \(f_{res}\).
 
-Eftersom svängningskretsen då visar hög impedans \(Z\) mot generatorn, flyter
+Eftersom LC-kretsen då visar hög impedans \(Z\) mot generatorn, flyter
 endast en svag ström i ledningen mellan generator och krets.
 
 I praktiken finns även en resistans i serie med induktansen liksom en
@@ -953,18 +953,19 @@ rakt neråt (vektorerna roterar moturs).
 Spänningen över reaktansen \(X_L\) (induktorn) ligger 90\degree~före \(I\) och
 ritas rakt uppåt.
 
-\subsection{Thomsons svängningskrets}
+\subsection{Thomsons formel}
 \textbf{HAREC a.\ref{HAREC.a.3.2.4}\label{myHAREC.a.3.2.4}}
-\index{Thomsons svängningskrets}
+\index{Thomsons formel}
 \index{svängningskrets}
+\index{resonanskrets}
 \index{oscillator}
-\index{oscillator!Thomsons svängningskrets}
+\index{oscillator!Thomsons formel}
 
 \begin{figure*}[ht]
 \begin{center}
   %%\begin{wrapfigure}[30]{R}{0.5\textwidth}
   \includegraphics[width=0.4\textwidth]{images/cropped_pdfs/bild_2_3-17.pdf}
-  \caption{Thomsons svängningskrets}
+  \caption{Svängningskrets}
   \label{fig:BildII3-17}
   %%\end{wrapfigure}
 \end{center}
@@ -973,7 +974,7 @@ ritas rakt uppåt.
 Bild \ref{fig:BildII3-17} visar en svängningskrets som består av en
 kondensator och en induktor med förskjutbar järnkärna.
 En ändring av kärnans tvärsnitt ändrar den magnetiska ledningsförmågan och
-därmed induktansen.
+därmed induktansen varför även reaktansen \(X_L\) ändras.
 
 Med anordningen kan resonansfrekvensen alltså ställas in så att den blir högre än,
 lika med eller lägre än den anslutna spänningens frekvens.
@@ -988,7 +989,12 @@ Tre fall undersöks:
 
 \end{enumerate}
 
-\(X_L = X_C\) kallas Thomsons svängningsformel, vilken beskriver resonansfallet då de induktiva och kapacitiva reaktanserna i kretsen är lika stora och tar ut varandra.
+När \(X_L = X_C\) är kretsen i resonans och Thomsons formel
+\(\omega L 0 \frac{1}{\omega C}\) kan användas för att beräkna
+resonansfrekvensen.
+Formeln namngiven efter William Thomson (Lord Kelvin) beskriver resonansfallet
+då de induktiva och kapacitiva reaktanserna i kretsen är lika stora och tar ut
+varandra.
 Kvar är kretsens resistans, vilken vi tills vidare betraktar som försumbar.
 
 Således \(X_L = X_C\), där
@@ -1024,7 +1030,7 @@ Formeln gäller både för parallell- och seriekretsar.
 \index{impedans!resonanskrets}
 
 En enkel framställning görs av hur impedans, reaktans och resistans förhåller
-sig inbördes när en svängningskrets är i resonans.
+sig inbördes när en resonanskrets är i resonans.
 Som exempel används följande kretsdata: Induktans 200~\(\mu H\),
 kapacitans 200~pF, förlustresistans 10~\(\Omega\).
 
@@ -1139,7 +1145,7 @@ Av strömmen bildas reaktiva spänningar, det vill säga
 \end{wrapfigure}
 
 Bild \ref{fig:BildII3-20} illustrerar Q-värden för parallellkrets.
-Godhetstalet Q (=Quality Factor) kan ses som den förmåga en svängningskrets har
+Godhetstalet Q (=Quality Factor) kan ses som den förmåga en resonanskrets har
 att lagra energi, det vill säga förhållandet mellan den lagrade energin och
 energiförlusten i kretsen.
 Energiförlusten yttrar sig som värmeutveckling.
@@ -1163,7 +1169,7 @@ Ju högre \(Q\) är i kretsen desto större är förhållandet mellan \(U_2\) oc
 I kortvågsområdet är det vanligt med ett \(Q\) i storleksordningen 30--100.
 Ju högre Q är, desto mindre är bandbredden.
 
-När svängningskretsen är i resonans gäller sambandet
+När kretsen är i resonans gäller sambandet
 
 \[Q = \frac{f_{res}}{b}\]
 
