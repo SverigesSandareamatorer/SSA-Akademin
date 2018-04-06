@@ -272,10 +272,9 @@ av styrkaraktäristikan.
 Endast toppen av den ena halvvågen av insignalen återges och i starkt
 förvrängd form.
 Verkningsgraden är upp till 80~\%.
-Övertonerna dämpas av svängningskretsen.
-En resonanskrets med högt Q-värde behövs som utgångskrets varvid
-amplituddistorsion inte framstår som besvärande vid CW och FM.
-Med hjälp av en utgångskrets kan frekvensmultiplicering utföras med
+En resonanskrets med högt Q-värde dämpar övertoner och behövs som utgångskrets
+varvid amplituddistorsion inte framstår som besvärande vid CW och FM.
+Med hjälp av resonanskretsen kan frekvensmultiplicering utföras med
 förstärkare i klass C.
 (På följande tre bilder är \(I_R\)=anodviloström.)
 
@@ -295,16 +294,16 @@ Bild \ref{fig:BildII3-47} visar hur oscillatorn följs av ett eller flera
 frekvensmultiplicerande förstärkarsteg som arbetar i klass C.
 
 I utgången av ett frekvensmultiplicerande steg måste finnas en
-svängningskrets som är avstämd till önskad frekvens, det vill säga till en av insignalens övertoner.
+resonanskrets som är avstämd till önskad frekvens, det vill säga till en av insignalens övertoner.
 Denna överton förstärks i efterföljande förstärkarsteg, vilket också kan vara
 frekvensmultiplicerande.
 
 Ju högre multiplikationsfaktorn är desto högre förspänning krävs för
-att svängningskretsen i utgången ska svänga obehindrat.
+att resonanskretsen i utgången ska svänga obehindrat.
 Med hög multipliceringsfaktor i ett enda steg dämpas signalen så mycket att
 en hög förstärkning behövs i efterföljande steg.
 I praktiken anordnas därför en kedja av frekvensdubblande och
-frekvenstripplande.
+frekvenstripplande steg.
 Den totala multipliceringsfaktorn är faktorerna för vardera steget
 multiplicerat med varandra.
 
@@ -315,7 +314,7 @@ slutliga sändningsfrekvensen.
 I frekvensmultiplicerande sändare kan även slutsteget arbeta i klass C, vilket
 är vanligt i sändare för telegrafi eller FM-telefoni.
 För att förhindra utsändning av alla de övertoner som alstras i
-förstärkarkedjan förses slutstegets utgång med en svängningskrets som är
+förstärkarkedjan förses slutstegets utgång med en resonanskrets som är
 avstämd till sändningsfrekvensen.
 Övertonsdämpningen kan förbättras ytterligare med ett efterföljande
 lågpassfilter.
@@ -374,13 +373,13 @@ högre effektförstärkningen.
 Moderna LDMOS-transistorer kan lämna en kilowatt.
 
 Bild \ref{fig:BildII3-48} visar ett sådant förstärkarsteg.
-Kollektorbelastningen består av en svängningskrets.
-För att anpassa transistorns kollektorimpedans till svängningskretsens
-impedans, har kollektorn anslutits till ett uttag på svängningskretsens spole.
+Kollektorbelastningen består av en resonanskrets.
+För att anpassa transistorns kollektorimpedans till resonanskretsens
+impedans, har kollektorn anslutits till ett uttag på kretsens spole.
 
 Drosseln \(Dr\) och kondensatorn \(C\) fungerar som en HF-mässig avkoppling av
 strömförsörjningen.
-Uteffekten tas ut från svängningskretsen över en kopplingslindning med samma
+Uteffekten tas ut från resonanskretsen över en kopplingslindning med samma
 impedans som belastningen.
 För linjär återgivning krävs drift i klass A eller möjligen klass AB.
 
@@ -437,7 +436,7 @@ Orsakerna kan vara många, bland annat dålig avkoppling av matningsspänningar,
 induktiv och/eller kapacitiv återkoppling i kretsarna med mera.
 
 Återkopplingsvägar både före och efter röret kan bilda oavsiktliga
-svängningskretsar som genererar självsvängning, ofta på mycket höga
+resonanskretsar som genererar självsvängning, ofta på mycket höga
 frekvenser till exempel i VHF-området.
 Sådana så kallade parasitsvängningar kan stoppas/dämpas med UHF-drosslar (UHF
 Dr) omedelbart intill röranslutningarna.
@@ -448,9 +447,9 @@ Slutstegets utgångskrets kan utformas på olika sätt.
 Bilden visar ett numera vanligt sätt, det så kallade \(\pi\)-filtret (utläses
 pi-), som fungerar som
 \begin{itemize}
-  \item en svängningskrets som är avstämd till sändningsfrekvensen
+  \item en resonanskrets som är avstämd till sändningsfrekvensen
   \item ett övertonsdämpande lågpassfilter
-  \item anpassning mellan rörets utgångsimpedans och antenntilledningens impedans.
+  \item anpassning mellan rörets utgångsimpedans och antenntilledningen.
 \end{itemize}
 
 \subsection{Högeffektslutsteg med två gallerjordade trioder (elektronrör)}
@@ -487,7 +486,7 @@ Ett enda slutrör för hela effekten är emellertid dyrare än flera små med
 tillsammans jämförbar effekt.
 Mottaktkoppling av två rör (eng. ''push-pull'') i stället för parallellkoppling
 har en fördel i högre förstärkning, men nackdelar i mer komplicerad
-bandomkoppling av svängningskretsar med mera.
+bandomkoppling av resonanskretsar med mera.
 I moderna rörutrustade slutsteg för amatörradio förekommer därför endast ett
 slutrör eller flera parallellkopplade.
 Utgångskretsen är i regel ett \(\pi \)-filter med manuell eller automatisk
