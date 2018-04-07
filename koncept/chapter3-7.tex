@@ -199,10 +199,10 @@ stor kapacitans.
 Med en kapacitansdiod i resonanskretsen i stället för en mekaniskt
 variabel kondensator, behövs ytterligare två komponenter.
 Drosseln \(D_r\) hindrar högfrekvenssignalen att överlagras på styrkretsens
-likspänning, vilket annars skulle skulle försämra resonanskretsens godhetstal (förlorad HF-energi
-innebär dämpning).
-Omvänt hindrar kondensatorn \(C\) att dioden och spärrspänningen kortsluts genom
-induktorn.
+likspänning, vilket annars skulle skulle försämra resonanskretsens godhetstal 
+(förlorad HF-energi innebär dämpning).
+Omvänt hindrar kondensatorn \(C\) att dioden och spärrspänningen kortsluts 
+genom induktorn.
 Oscillatorfrekvensen ställs in med den variabla likspänningen \(U\).
 Av en VFO har det blivit en VCO.
 
@@ -227,9 +227,10 @@ En sådan reglerkrets består av digitala komponenter.
 Bild \ref{fig:BildII3-80b} illustrerar en oscillator med PLL-styrning.
 Fasjämföraren levererar en cykliskt justerad styrspänning till
 kapacitansdioden i VCO.
-Eftersom denna spänning ändras språngvis, avrundas förloppet så att frekvensändringarna blir mjuka.
-Avrundningen sker med ett RC-filter där kondensatorn antar ett medelvärde av den
-pulserande utgångsspänningen från jämföraren.
+Eftersom denna spänning ändras språngvis, avrundas förloppet så att 
+frekvensändringarna blir mjuka.
+Avrundningen sker med ett RC-filter där kondensatorn antar ett medelvärde av 
+den pulserande utgångsspänningen från jämföraren.
 Om VCO-frekvensen är för låg, levererar jämföraren en positiv spänning.
 Styrspänningen på kapacitansdioden stiger då med en hastighet som bestäms av
 filtrets tidskonstant.
@@ -239,7 +240,8 @@ spärrskiktet blir tjockare och frekvensen på VCO stiger.
 
 När signalen från VCO åter är lik referenssignalen från XO, till
 fasläge och frekvens, ökar utgångsresistansen i fasjämföraren.
-Lågpassfiltrets kondensator behåller då sin laddning och styrspänningen till VCO ändras inte.
+Lågpassfiltrets kondensator behåller då sin laddning och styrspänningen till 
+VCO ändras inte.
 Skulle frekvensen på VCO vara för hög, blir jämförarens utgång lågohmig och
 filtrets kondensator urladdas med den hastighet som bestäms av tidskonstanten.
 Den sjunkande styrspänningen medför att kapacitansdiodens spärrskikt blir
@@ -260,8 +262,8 @@ Signalen \(f_1\) från en VCO alstrar en sändningsfrekvens i bandet
 144--146~MHz.
 Denna blandas med signalen \(f_2\) (136~MHz), som är en multiplicerad
 XO-frekvens.
-Blandningsprodukten \(f_1 - f_2\) är en signal i området 8--10~MHz som filtreras fram och påförs en 
-fasjämförare.
+Blandningsprodukten \(f_1 - f_2\) är en signal i området 8--10~MHz som 
+filtreras fram och påförs en fasjämförare.
 Utsignalen från en VFO, som är variabel inom samma frekvensområde 8--10~MHz,
 påförs också fasjämföraren.
 
@@ -298,28 +300,30 @@ programmerbar frekvensdelare.
 \end{figure}
 
 Bild \ref{fig:BildII3-82} visar en PLL med frekvensdelare.
-Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen
-rekvensenfrån en XO.
-I princip fås en VCO med samma frekvensstabilitet som en XO, men som också är lika
-svår att ändra frekvensen på.
+Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen 
+från en XO.
+I princip fås en VCO med samma frekvensstabilitet som en XO, men som också är 
+lika svår att ändra frekvensen på.
 Med en frekvensdelare i fasregleringsslingan (PLL) kan emellertid utfrekvensen
 ändras, medan XO fortfarande avger samma referensfrekvens.
 En frekvensdelare är en digital krets som räknar svängningar eller pulser upp
 till ett valt tal för att återställas till 1 och börja om igen.
 Vid varje återställning avges en utpuls.
 Vid en delning med två avges en utpuls för varannan inpuls.
-Vid delning med i fem avges en utpuls för var femte inpuls och så vidare.
+Vid delning med 15 avges en utpuls för var 15:e inpuls och så vidare.
 
 Genom att välja delningstal i PLL kan arbetsfrekvensen i VCO ställas
 in stegvis, där varje steg är så stort som en referensfrekvens.
 Signalfrekvensen från VCO delas med det valda delningstalet och resultatet
 jämförs med referensfrekvensen från XO.
-Varje avvikelse referensfrekvensen kommer att medföra justering av VCO-frekvensen.
+Varje avvikelse referensfrekvensen kommer att medföra justering av 
+VCO-frekvensen.
 
 Om man till exempel vill täcka 2-metersbandet i steg om 25~kHz, väljer man
-referensfrekvensen 25~kHz. I delaren delas sändarens utfrekvens med ett tal 5760, 5761, 5762 och så vidare upp till 5840.
-Om till exempel delningstalet 5820 valts, så kommer jämförarens styrspänning att
-styra VCO-frekvensen till 145500~kHz.
+referensfrekvensen 25~kHz. I delaren delas sändarens utfrekvens med ett tal 
+5760, 5761, 5762 och så vidare upp till 5840.
+Om till exempel delningstalet 5820 valts, så kommer jämförarens styrspänning 
+att styra VCO-frekvensen till 145500~kHz.
 Delarens utfrekvens blir då \(145500/5820 = 25\)~kHz, vilket motsvarar
 referensfrekvensen.
 I detta exempel styrs alltså sändarens utfrekvens så att den alltid blir i steg
@@ -357,8 +361,8 @@ Trots det är långtidsstabiliteten god i en VCO, när den ingår i en PLL,
 eftersom frekvensen hålls ständigt efterjusterad.
 PLL kan däremot inte åstadkomma en lika bra korttidsstabilitet.
 Ett fasjämförelseförlopp omfattar ju redan tiden för en period av
-referensfrekvensen, och det kommer att förflyta en multipel av denna kortaste tid innan
-styrspänningen kan återställa VCO-frekvensen igen.
+referensfrekvensen, och det kommer att förflyta en multipel av denna kortaste 
+tid innan styrspänningen kan återställa VCO-frekvensen igen.
 Detta beror på att kondensatorn i regleringsslingans lågpassfilter först måste
 laddas upp under ett antal perioder innan reglering sker.
 
@@ -385,7 +389,8 @@ Skakningar från underlaget till exempel vid mobilt bruk, vibrationer från en
 transformatorkärna etc. kan försämra oscillatorns frekvensstabilitet.
 
 Frekvensbestämmande komponenter såsom fasta och variabla kondensatorer, spolar
-och liknande ska vara stabilt monterade, trimkärnorna i spolarna fixerade och så vidare.
+och liknande ska vara stabilt monterade, trimkärnorna i spolarna fixerade och 
+så vidare.
 
 Förbindningarna får inte tillåtas att böja sig eller vibrera.
 Apparatstommen måste vara tillräckligt styv för att inte ändra form och
@@ -406,7 +411,8 @@ att resonanskretsarna blir alltför belastade och deras godhetstal för lågt.
 
 \subsubsection{Avskärmande kapslingar}
 
-Resonanskretsar ska skärmas från yttre kapacitanstillskott, till exempel från användarens hand.
+Resonanskretsar ska skärmas från yttre kapacitanstillskott, till exempel från 
+användarens hand.
 Det görs med skiljeväggar och komponentkapslingar av metall.
 Skärmningarna förhindrar också oönskad koppling mellan oscillatorn och
 efterföljande förstärkare genom elektriska och magnetiska fält.
@@ -441,8 +447,8 @@ frekvensen inte särskilt stabil och olämplig för kommunikationsändamål.
 Särskilt varierande belastning över oscillatorns utgång medför frekvensändring.
 Oscillatorn bör därför ges en så låg och stabil belastning som möjligt.
 Ett buffertsteg med hög ingångsimpedans kopplas därför in efter oscillatorn.
-Buffertsteget ska också kunna lämna tillräcklig driveffekt till efterföljande förstärkare
-och bör därför ha låg utgångs impedans.
+Buffertsteget ska också kunna lämna tillräcklig driveffekt till efterföljande 
+förstärkare och bör därför ha låg utgångs impedans.
 Det måste dessutom arbeta linjärt (se klass A-drift, bild \ref{fig:BildII3-44})
 för att inte alstra övertoner och därmed förvränga oscillatorsignalen.
 Bild \ref{fig:BildII3-42} visar ett buffertsteg i kollektorkoppling, vilken har
@@ -513,7 +519,8 @@ desto mer framhävs den önskade signalen.
 Tack vare det större godhetstalet i resonanskretsen, och därmed den mindre
 bandbredden, brusar alltså en kristalloscillator mindre än en LC-oscillator.
 
-En nackdel med kristalloscillatorn är att dess frekvens inte kan ändras inom ett större område.
+En nackdel med kristalloscillatorn är att dess frekvens inte kan ändras inom 
+ett större område.
 Önskas flera valbara frekvenser från en kristalloscillator måste flera
 kristaller användas tillsammans med någon slags omkopplingsanordning
 (kanalväljare).
