@@ -4,14 +4,14 @@
 \subsection{Allmänt}
 \index{modulation}
 
-När en signal (bärvågen) påverkas så att den överför informationen i
+När en signal (bärvåg) påverkas så att den överför informationen i
 en annan signal, sägs bärvågen bli modulerad.
 Detta förlopp kallas modulation.
 Vad som då händer behandlas främst i avsnitt \ref{modulation}, med
 tillämpningar i kapitel \ref{sändare} och delvis i kapitel \ref{mottagare}.
 
 En anordning för modulation kallas för modulator.
-En modulator kan ingå som en funktion i sändare, mottagare m.fl. system.
+En modulator kan ingå som en funktion i sändare, mottagare med flera system.
 Beroende på modulationsmetoden används olika kombinationer av delkretsar som
 tillsammans utgör modulatorn.
 
@@ -36,8 +36,8 @@ ett analogt förlopp, till exempel tal, med vilket bärvågens amplitud modulera
 Här beskrivs amplitudmodulation i en förstärkare med ett katodkopplat
 elektronrör.
 En emitterkopplad transistorförstärkare kan moduleras på ett liknande sätt.
-I båda fallen moduleras förstärkarens arbetsspänning (anodspänning resp.
-kollektorspänning) med den modulerande signalens.
+I båda fallen moduleras förstärkarens arbetsspänning (anodspänning respektive 
+kollektorspänning) med den modulerande signalen.
 Det som då händer är att två signaler blandas på ett sätt som beskrivs i
 avsnitt \ref{modulation} med tillämpning på A3E.
 I vila är då bärvågsamplituden halva den möjliga inom arbetskurvans linjära del.
@@ -67,7 +67,7 @@ Om som på bilden anodspänningen i ett förstärkarsteg amplitudmoduleras,
 kan förstärkarsteget arbeta olinjärt, till exempel i klass C.
 Varje följande förstärkarsteg måste däremot arbeta linjärt, till exempel i klass A.
 
-På grund av den låga verkningsgraden och det stora bandbreddsbehovet,
+På grund av den låga verkningsgraden och det stora bandbreddsbehovet 
 används i dagens amatörradiosändare knappast ''äkta'' amplitudmodulering,
 det vill säga A3E.
 I stället används i läget ''AM'' nästan alltid H3E, det vill säga enkelt
@@ -83,7 +83,7 @@ Bärvågen innehåller inte någon information.
 Den kan därför undertryckas redan i sändaren för att ersättas i mottagaren.
 Därmed uppstår sändningsslaget J3E.
 
-\subsection{Vid sändningsslaget J3E (SSB)}
+\subsection{Sändningsslaget J3E (SSB)}
 \index{Single Side Band (SSB)}
 \index{SSB}
 \index{J3E}
@@ -99,16 +99,16 @@ behandlas här.
 \label{fig:BildII3-90}
 \end{figure}
 
-Bild \ref{fig:BildII3-90} visar Alstring av J3E (SSB).
+Bild \ref{fig:BildII3-90} visar alstring av J3E (SSB).
 \index{Upper Side Band (USB)}
 \index{USB}
 \index{Lower Side Band}
 \index{LSB|see {Lower Side Band}}
 Med filtermetoden blandas HF- och LF-signalerna i en balanserad blandare där de
 undertrycks medan blandningsprodukterna med deras summa- och
-skillnadsfrekvenser blir kvar, det vill säga det övre och nedre sidbandet.
+skillnadsfrekvenser blir kvar, det vill säga det övre och undre sidbandet.
 
-För att undertrycka det ena sidbandet före sändningen, följs blandaren
+För att undertrycka det ena sidbandet före sändningen följs blandaren
 av ett bandpassfilter med bandbredd och frekvensläge för avsett sidband.
 Den signal som sänds ut innehåller på så sätt endast ett sidband (Single Side
 Band).
@@ -147,7 +147,7 @@ Likspänningsnivåer kan således överföras eftersom en frekvensavvikelse
 Vid F3E påverkas resonansfrekvensen i den resonanskrets i oscillatorn som
 bestämmer dess arbetsfrekvens.
 Det görs enklast genom att tillföra en kondensator med variabelt
-kapacitansvärde, en så kallad varicap (se avsnitt \ref{varicap}).
+kapacitansvärde, en kapacitansdiod (se avsnitt \ref{varicap}).
 
 \begin{figure}
 \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-91.pdf}
@@ -156,8 +156,8 @@ kapacitansvärde, en så kallad varicap (se avsnitt \ref{varicap}).
 \end{figure}
 
 Bild \ref{fig:BildII3-91} visar en LC-resonanskrets där det ingår en
-varicap som styrs av en likspänning med en överlagrad modulerande LF-signal.
-En likspänning tjänar som en ställbar förspänning till varicap.
+kapacitansdiod som styrs av en likspänning med en överlagrad modulerande LF-signal.
+En likspänning tjänar som en ställbar förspänning till kapacitansdioden.
 På så sätt kan man påverka arbetsfrekvensen.
 Med den överlagrade LF-signalen påverkas arbetsfrekvensen i takt med
 signalamplituden.
@@ -169,7 +169,7 @@ signalamplituden.
 \index{G3E}
 
 Vid sändningsslaget G3E (även kallat PM) varierar bärvågens fasläge i
-förhållande, till en referens, som är en omodulerad bärvåg.
+förhållande till en omodulerad referens.
 Bärvågens amplitud ändras däremot inte.
 Fasändringen -- deviationen -- är direkt proportionell mot hur snabbt fasläget
 ändras och till den totala fasändringen.
@@ -186,7 +186,7 @@ en resonanskrets någonstans efter oscillatorn, det vill säga där
 oscillatorfrekvensen inte påverkas.
 Denna resonanskrets har i viloläge samma resonansfrekvens som oscillatorn.
 När kretsen bringas ur resonans genom modulation -- samtidigt som kretsen
-påtrycks oscillatorsignalen -- så uppstår i kretsen omväxlande en induktiv och
+påtrycks oscillatorsignalen -- uppstår i kretsen omväxlande en induktiv och
 kapacitiv reaktans -- detta inom tiden för varje halv period.
 Reaktansen skapar därvid den fasförskjutning som innebär fasmodulation.
 Se även avsnitt \ref{parallellresonans} och \ref{serieresonans}, bilderna
@@ -199,5 +199,5 @@ Se även avsnitt \ref{parallellresonans} och \ref{serieresonans}, bilderna
 \end{figure}
 
 Bild \ref{fig:BildII3-92} visar alstring av G3E (PM).
-Liksom vid frekvensmodulation kan till exempel en varicap användas för att
+Liksom vid frekvensmodulation kan till exempel en kapacitansdiod användas för att
 med en modulerande signal påverka resonansfrekvensen i en krets.
