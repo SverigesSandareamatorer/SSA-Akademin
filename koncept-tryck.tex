@@ -1,11 +1,87 @@
-\documentclass[b5paper,twoside,openright]{book}
-%\documentclass[a4paper,oneside,openright]{book}
+\documentclass[b5paper,twoside,openright]{memoir}
 \include{koncept/common}
 %tlfällig fix för kompilering%
 \nonstopmode
 \usepackage[swedish]{babel}
 
+\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+
+\usepackage{multicol}
+\usepackage{float}
+
 \headheight = 12.6pt
+
+% Figure macros
+\newcommand{\smallfig}[4][0.4]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
+\newcommand{\mediumfig}[4][0.7]{
+  \begin{figure*}
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\largefig}[4][0.9]{
+  \begin{figure*}
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\smalltikz}[3]{
+  \begin{figure}[H]
+    \begin{center}
+      #1
+      \caption{#2}
+      \label{#3}
+    \end{center}
+    \vspace{-20pt}
+  \end{figure}
+}
+
+%% \newcommand{\sfig}[4][1]{
+%%   \begin{figure}
+%%     \includegraphics{#2}   %[width=#1\textwidth]{#2}
+%%     \caption{#3}
+%%     \label{#4}
+%% %%    \vspace{-20pt}
+%%   \end{figure}
+%% }
+
+%% \newcommand{\mediumfig}[4][0.7]{
+%%   \begin{figure}
+%%     \centering
+%%     \includegraphics[width=#1\textwidth]{#2}
+%%     \caption{#3}
+%%     \label{#4}
+%%   \end{figure}
+%% }
+
+
+%% \newcommand{\largefig}[4][1]{
+%%   \begin{figure*}
+%%     \begin{center}
+%%       \includegraphics[width=#1\textwidth]{#2}
+%%       \caption{#3}
+%%       \label{#4}
+%%     \end{center}
+%%   \end{figure*}
+%% }
+
 
 % Prepare for abstract
 \pagestyle{plain}
@@ -22,6 +98,7 @@
 \makeindex
 
 \begin{document}
+
 % Frontpage
 \include{koncept/frontpage}
 
