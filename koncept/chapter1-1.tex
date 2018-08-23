@@ -1,6 +1,8 @@
 \chapter{Ellära}
 \label{ellära}
 
+\begin{multicols}{2}
+
 \section{Elektriska grundbegrepp}
 
 \harec{a}{1.1}
@@ -51,12 +53,7 @@ dels av elektroner, som kretsar omkring kärnan.
 \emph{Elektronerna är negativt (−) laddade}
 \end{quote}
 
-\begin{wrapfigure}{L}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-01.pdf}
-  \caption{Atomernas uppbyggnad}
-  \label{fig:BildII1-1}
-  \vspace{-20pt}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_1-01.pdf}{Atomernas uppbyggnad}{fig:BildII1-1}
 
 Elektronerna kretsar i banor omkring atomkärnorna, liksom
 planeterna kretsar i banor omkring sina solar, vilket illustreras i bild
@@ -236,13 +233,7 @@ Materialet är då P-ledande.
 \index{symbol!\(U\) spänning}
 \index{symbol!\(V\) spänning}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
-\caption{Tankeförsök med kulor i ett rör}
-\label{fig:BildII1-2}
-\end{center}
-\end{figure*}
+\largefig{images/cropped_pdfs/bild_2_1-02.pdf}{Tankeförsök med kulor i ett rör}{fig:BildII1-2}
 
 Bild \ref{fig:BildII1-2} illustrerar ett tankeförsök med ett rör med kulor i.
 Materialet i röret tänks motsvara atomstrukturen i en strömledare och kulorna
@@ -283,18 +274,13 @@ effektutvecklingen \(1\ \mathrm{watt\ [W]}\).
 
 \subsection{Symboler}
 
-\begin{wrapfigure}[6]{R}{0.4\textwidth}
-  \begin{mdframed}
-    \centering
-    \begin{circuitikz}
-      \draw
-      (4,1) to[battery1] (1,1)
-      ;
-    \end{circuitikz}
-    \caption{Schemasymbol för batteri}
-    \label{fig:bildII2-batteri}
-  \end{mdframed}
-\end{wrapfigure}
+\smalltikz{
+  \begin{circuitikz}
+    \draw
+    (3,1) to[battery1] (1,1)
+    ;
+  \end{circuitikz}
+}{Schemasymbol för batteri}{fig:bildII2-batteri}
 
 \textbf{FÖRDJUPNING}
 
@@ -345,13 +331,7 @@ flyter genom ett givet ledartvärsnitt, vilket motsvarar laddningen
 \textbf{FÖRDJUPNING}
 \index{strömkrets}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{images/cropped_pdfs/bild_2_1-03.pdf}
-\caption{Potential och spänning i en strömkrets}
-\label{fig:BildII1-3}
-\end{center}
-\end{figure*}
+\mediumfig{images/cropped_pdfs/bild_2_1-03.pdf}{Potential och spänning i en strömkrets}{fig:BildII1-3}
 
 Bild \ref{fig:BildII1-3} visar potential och spänning i en strömkrets.
 
@@ -556,16 +536,7 @@ Exempel:
 \index{formelsnurran}
 \textbf{FÖRDJUPNING}
 
-\begin{figure*}[ht]
-\begin{center}
-  %%\begin{wrapfigure}{R}{0.3\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-04.pdf}
-  \caption{''Formelsnurra'' för Ohms och Joules lagar}
-  \label{fig:BildII1-4}
-  %  \vspace{-100pt}
-  %%\end{wrapfigure}
-\end{center}
-\end{figure*}
+\mediumfig[0.4]{images/cropped_pdfs/bild_2_1-04.pdf}{''Formelsnurra'' för Ohms och Joules lagar}{fig:BildII1-4}
 
 Så här finner man rätt formel i ''snurran'' (bild \ref{fig:BildII1-4}):
 Välj ett segment med önskad storhet \(I\), \(U\), \(R\) eller \(P\) som det
@@ -652,3 +623,5 @@ vilken strömstyrka man tar ut.
 Tar man ut \(1\ \mathrm{A}\) ur \(100\ \mathrm{Ah}\)-cellen här ovan, så blir
 urladdningstiden nominellt
 \(t = 100\ \mathrm{Ah}/1\ \mathrm{A} = 100\ \mathrm{h}\).
+
+\end{multicols}

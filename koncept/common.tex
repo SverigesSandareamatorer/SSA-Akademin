@@ -9,7 +9,7 @@
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{framed}
 \usepackage[fulladjust]{marginnote}
@@ -70,11 +70,11 @@
     innerleftmargin=20pt,
     backgroundcolor=gray!50!white}
 \newcommand{\infobox}[1]{
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{figure}{r}{0.5\textwidth}
   \begin{mdframed}[style=FactBox]
 #1
   \end{mdframed}
-\end{wrapfigure}
+\end{figure}
 }
 
 % Prepare for tables
