@@ -34,7 +34,7 @@ För att kunna förstå detta behöver vi gå igenom grunderna i konvertering av
 signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 
 \subsection{Sampling och kvantisering}
-\textbf{HAREC a.\ref{HAREC.a.1.10.1}\label{myHAREC.a.1.10.1}}
+\harec{a}{1.10.1}{1.10.1}
 \index{sampling}
 \index{samplingstakt}
 \index{sample rate}
@@ -66,13 +66,7 @@ Bild \ref{fig:BildII1-37} illustrerar hur en analog signal samplas och
 kvantiseras i en ADC, för att behandlas i en DSP, för att därefter konverteras
 till analog signal med DAC och filtreras.
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-37.pdf}
-\caption{Sampling med ADC, DSP och DAC för att återvinna analog signal}
-\label{fig:BildII1-37}
-\end{center}
-\end{figure*}
+\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC, DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
 
 Medan sampling är den process som ger oss \emph{tidsdiskreta} värden istället
 för tidskontinuerliga värden så är värdena fortfarande inte representerade som
@@ -93,7 +87,7 @@ Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i
 kvantiseringstrappan, vilket nyttjats för datakompression i telefonisystem.
 
 \subsection{Minsta samplingsfrekvensen}
-\textbf{HAREC a.\ref{HAREC.a.1.10.2}\label{myHAREC.a.1.10.2}}
+\harec{a}{1.10.2}{1.10.2}
 \index{nyquistfrekvens}
 \index{Nyquist-Shannons samplingsteorem}
 
@@ -113,7 +107,7 @@ mellan två värden, säg -1 +1 -1 +1 vilket ju ger hälften av samplingstakten
 \(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
 
 \subsection{Faltning}
-\textbf{HAREC a.\ref{HAREC.a.1.10.3}\label{myHAREC.a.1.10.3}}
+\harec{a}{1.10.3}{1.10.3}
 \index{faltning}
 \index{convolution}
 \index{konvolution}
@@ -151,7 +145,7 @@ tidsinvarianta} filter (eng. \emph{linear time-invariant (LTI)}) filter,
 som är det vi i allmänhet fokuserar på.
 
 \subsection{Antivikningsfilter}
-\textbf{HAREC a.\ref{HAREC.a.1.10.4}\label{myHAREC.a.1.10.4}}
+\harec{a}{1.10.4}{1.10.4}
 \index{vikning}
 \index{aliasing}
 \index{antivikningsfilter}
@@ -225,7 +219,7 @@ behändigt sätt, men det förekommer också att man väljer samplingstakten fö
 inte vika bandet.
 
 \subsection{ADC/DAC}
-\textbf{HAREC a.\ref{HAREC.a.1.10.5}\label{myHAREC.a.1.10.5}}
+\harec{a}{1.10.5}{1.10.5}
 \index{ADC}
 \index{DAC}
 

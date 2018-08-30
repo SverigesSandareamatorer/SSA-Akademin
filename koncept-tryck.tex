@@ -1,12 +1,12 @@
-\documentclass[b5paper,twoside,openright]{memoir}
+%\documentclass[a4paper,twoside,openright,10pt]{memoir}
+\documentclass[a4paper,twocolumn]{memoir}
 \include{koncept/common}
 %tlfällig fix för kompilering%
 \nonstopmode
 \usepackage[swedish]{babel}
 
-\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+%\usepackage[inner=3cm, outer=1cm, top=1cm, bottom=1cm]{geometry}
 
-\usepackage{multicol}
 \usepackage{float}
 
 \headheight = 12.6pt
@@ -24,14 +24,36 @@
   \end{figure}
 }
 
+\newcommand{\tallfig}[4][0.4]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
 \newcommand{\mediumfig}[4][0.7]{
-  \begin{figure*}
+  \begin{figure*}[bt]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
       \label{#4}
     \end{center}
   \end{figure*}
+}
+
+\newcommand{\hpfig}[4][0.6]{
+  \onecolumn
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure}
+  \twocolumn
 }
 
 \newcommand{\largefig}[4][0.9]{
@@ -55,45 +77,15 @@
   \end{figure}
 }
 
-%% \newcommand{\sfig}[4][1]{
-%%   \begin{figure}
-%%     \includegraphics{#2}   %[width=#1\textwidth]{#2}
-%%     \caption{#3}
-%%     \label{#4}
-%% %%    \vspace{-20pt}
-%%   \end{figure}
-%% }
-
-%% \newcommand{\mediumfig}[4][0.7]{
-%%   \begin{figure}
-%%     \centering
-%%     \includegraphics[width=#1\textwidth]{#2}
-%%     \caption{#3}
-%%     \label{#4}
-%%   \end{figure}
-%% }
-
-
-%% \newcommand{\largefig}[4][1]{
-%%   \begin{figure*}
-%%     \begin{center}
-%%       \includegraphics[width=#1\textwidth]{#2}
-%%       \caption{#3}
-%%       \label{#4}
-%%     \end{center}
-%%   \end{figure*}
-%% }
-
-
 % Prepare for abstract
-\pagestyle{plain}
+%\pagestyle{plain}
 \newenvironment{abstract}%
 {\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
 %{\cleardoublepage\null \vfill\begin{center}%
 %\bfseries \abstractname \end{center}}%
      {\vfill\null}
 
-\usepackage{refbook}
+\usepackage{textbook}
 
 % Prepare for index
 \usepackage{makeidx}
@@ -113,7 +105,7 @@
 \rfoot[]{\revision}
 
 \cleardoublepage
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
 %\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
 %\author{Lennart Wiberg}
