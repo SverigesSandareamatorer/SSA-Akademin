@@ -12,11 +12,7 @@ Ett system med två tillstånd kallas binärt. En lampa som tänds eller släcks
 
 \subsection{Transistorn som strömställare}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-35.pdf}
-\caption{Transistorn som analog förstärkare respektive digital strömställare}
-\label{fig:BildII2-35}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-35.pdf}{Transistorn som analog förstärkare respektive digital strömställare}{fig:BildII2-35}
 
 Bild \ref{fig:BildII2-35} visar två transistorkopplingar.
 Den till vänster är en analog förstärkare för växelspänning.
@@ -40,14 +36,11 @@ Denna logiska funktion kallas inverterande.
 \index{inverterande grind}
 \index{NOT-gate}
 
-\begin{wrapfigure}[6]{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-36.pdf}
-\caption{NOT-gate}
-\label{fig:BildII2-36}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_2-36.pdf}{NOT-gate}{fig:BildII2-36}
 
 Logiska funktioner beskrivs med internationella symboler.
-En ring vid utgången betyder att utspänningens nivå är motsatt inspänningens vilket illustreras i bild \ref{fig:BildII2-36}.
+En ring vid utgången betyder att utspänningens nivå är motsatt
+inspänningens vilket illustreras i bild \ref{fig:BildII2-36}.
 Sambandet mellan in- och utnivåerna beskrivs med en \emph{sanningstabell}.
 
 \subsection{Villkorskretsar -- s.k. grindar}
@@ -69,11 +62,7 @@ kontakter. Observera placeringen av resistorn på kretsens utgångssida i respek
 \subsubsection{OCH-grind eller AND-gate}
 \index{AND-gate}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-37.pdf}
-\caption{OCH-grind (AND-gate)}
-\label{fig:BildII2-37}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-37.pdf}{OCH-grind (AND-gate)}{fig:BildII2-37}
 
 Sanningstabellen i bild \ref{fig:BildII2-37} säger att när alla insignaler
 är 1 så är utsignalen också 1.
@@ -81,11 +70,7 @@ Sanningstabellen i bild \ref{fig:BildII2-37} säger att när alla insignaler
 \subsubsection{ELLER-grind eller OR-gate}
 \index{OR-gate}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-38.pdf}
-\caption{ELLER-grind (OR-gate)}
-\label{fig:BildII2-38}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-38.pdf}{ELLER-grind (OR-gate)}{fig:BildII2-38}
 
 Sanningstabellen i bild \ref{fig:BildII2-38} säger att när en eller flera av
 insignalerna är 1 så är utsignalen också 1.
@@ -94,11 +79,7 @@ När alla insignaler är 0 är utsignalen 0.
 \subsubsection{OCH INTE-grind eller NAND-gate}
 \index{NAND-gate}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-39.pdf}
-\caption{OCH INTE-grind (NAND-gate)}
-\label{fig:BildII2-39}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-39.pdf}{OCH INTE-grind (NAND-gate)}{fig:BildII2-39}
 
 Sanningstabellen i bild \ref{fig:BildII2-39} säger att när ingen eller någon
 insignal är 1, men inte alla, så är utsignalen 1.
@@ -107,11 +88,7 @@ När alla insignaler är 1 är utsignalen 0.
 \subsubsection{INTE ELLER-grind eller NOR-gate}
 \index{NOR-gate}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-40.pdf}
-\caption{INTE ELLER-grind (NOR-gate)}
-\label{fig:BildII2-40}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-40.pdf}{INTE ELLER-grind (NOR-gate)}{fig:BildII2-40}
 
 Sanningstabellen i bild \ref{fig:BildII2-40} säger att när någon eller alla
 insignaler är 1 är utsignalen 0.
@@ -123,20 +100,14 @@ En ingång kan behöva ha en inverterad funktion i förhållande till de övriga
 (\emph{low active}).
 Man kan då göra som i exemplet med en OCH-grind i bild \ref{fig:BildII2-41}.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-41.pdf}
-\caption{Inverterad ingång}
-\label{fig:BildII2-41}
-\end{wrapfigure}
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-41.pdf}{Inverterad ingång}{fig:BildII2-41}
+
+\clearpage
 
 \subsubsection{Exklusiv ELLER-grind (XOR-gate)}
 \index{XOR-gate}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-42.pdf}
-\caption{Exklusiv ELLER-grind (EXOR-gate)}
-\label{fig:BildII2-42}
-\end{wrapfigure}
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-42.pdf}{Exklusiv ELLER-grind (EXOR-gate)}{fig:BildII2-42}
 
 Sanningstabellen i bild \ref{fig:BildII2-42} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 0.
 När någon insignal är 1, men inte alla, så är utsignalen 1.
@@ -144,11 +115,7 @@ När någon insignal är 1, men inte alla, så är utsignalen 1.
 \subsubsection{Exklusiv INTE ELLER-grind (XNOR-gate)}
 \index{XNOR-gate}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-43.pdf}
-\caption{Exklusiv INTE ELLER-grind (EXNOR-gate)}
-\label{fig:BildII2-43}
-\end{wrapfigure}
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-43.pdf}{Exklusiv INTE ELLER-grind (EXNOR-gate)}{fig:BildII2-43}
 
 Sanningstabellen i bild \ref{fig:BildII2-43} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 1.
 När en insignal är 1, men inte alla, så är utsignalen 0.
@@ -157,11 +124,7 @@ När en insignal är 1, men inte alla, så är utsignalen 0.
 
 I stället för reläer eller diskreta halvledare i grindar använder man nu ytterst sällan något annat än integrerade digitala kretsar (se avsnitt \ref{integrerade kretsar}).
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-44.pdf}
-\caption{DTL-logik}
-\label{fig:BildII2-44}
-\end{wrapfigure}
+\smallfig[0.4]{images/cropped_pdfs/bild_2_2-44.pdf}{DTL-logik}{fig:BildII2-44}
 
 Bild \ref{fig:BildII2-44} visar en NAND-grind.
 Den egentliga grinden består av tre dioder och en resistor.
@@ -170,11 +133,7 @@ Grinden styr en digitalt arbetande transistor liksom den i bild
 \ref{fig:BildII2-35}.
 Resultatet är en så kallad DTL-logik (eng. \emph{Diode-Transistor Logic}).
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_2-45.pdf}
-\caption{TTL-logik}
-\label{fig:BildII2-45}
-\end{wrapfigure}
+\smallfig[0.4]{images/cropped_pdfs/bild_2_2-45.pdf}{TTL-logik}{fig:BildII2-45}
 
 Bild \ref{fig:BildII2-45} visar en NAND-grind.
 Här består den egentliga grinden av en ingångstransistor med två emittrar,
