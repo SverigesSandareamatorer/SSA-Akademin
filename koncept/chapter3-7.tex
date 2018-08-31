@@ -1,5 +1,5 @@
 \section{Kristalloscillatorer}
-\textbf{HAREC a.\ref{HAREC.a.3.6.4}\label{myHAREC.a.3.6.4}}
+\harec{a}{3.6.4}{3.6.4}
 \index{kristalloscillator}
 \index{oscillator!kristalloscillator}
 
@@ -15,11 +15,7 @@ När mycket bättre stabilitet än så krävs, speciellt inom stora
 temperaturområden, är kvartskristallen en svängningskrets med bättre data.
 Kvartskristallens höga Q-värde ger också en renare signal.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-75.pdf}
-  \caption{Colpittsoscillator med kristall i parallellresonansfallet}
-  \label{fig:BildII3-75}
-\end{wrapfigure}
+\tallfig{images/cropped_pdfs/bild_2_3-75.pdf}{Colpittsoscillator med kristall i parallellresonansfallet}{fig:BildII3-75}
 
 I en \emph{kristalloscillator} (eng. \emph{Crystal Oscillator (XO)}) är en
 kvartskristall det frekvensbestämmande elementet i stället för en LC-krets.
@@ -60,11 +56,7 @@ enligt följande formel:
 \index{övertonskristall}
 \index{kristall!övertonskristall}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-76.pdf}
-\caption{Colpittsoscillator med kristall i serieresonansfallet}
-\label{fig:BildII3-76}
-\end{wrapfigure}
+\tallfig{images/cropped_pdfs/bild_2_3-76.pdf}{Colpittsoscillator med kristall i serieresonansfallet}{fig:BildII3-76}
 
 Bild \ref{fig:BildII3-76} visar en Colpittsoscillator med kristall i
 serieresonansfallet.
@@ -96,11 +88,7 @@ i stället.
 \index{superheterodyn!VFO}
 \index{oscillator!syperheterodyn-VFO}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-77.pdf}
-\caption{Superheterodyn-VFO}
-\label{fig:BildII3-77}
-\end{figure}
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-77.pdf}{Superheterodyn-VFO}{fig:BildII3-77}
 
 Bild \ref{fig:BildII3-77} visar en superheterodyn-VFO.
 En enkel LC-VFO är inte tillräckligt frekvensstabil i ett högt frekvensläge,
@@ -137,9 +125,7 @@ vilket kan göras med effektiva bandpassfilter.
 Se vidare i avsnitt \ref{blandare} om frekvensblandning.
 
 \subsection{Oscillatorer med faslåsning (PLL)}
-\textbf{HAREC
-  a.\ref{HAREC.a.3.7}\label{myHAREC.a.3.7}
-}
+\harec{a}{3.7}{3.7}
 \index{PLL}
 \index{Phase Locked Loop (PLL)}
 
@@ -156,7 +142,7 @@ En PLL är en sluten krets för elektrisk styrning av en oscillator, så att des
 frekvens är både stabil och variabel.
 
 \subsubsection{Spänningsstyrd oscillator (VCO)}
-\textbf{HAREC a.\ref{HAREC.a.3.6.5}\label{myHAREC.a.3.6.5}}
+\harec{a}{3.6.5}{3.6.5}
 \index{spänningsstyrd oscillator}
 \index{oscillator!spänningsstyrd}
 \index{VCO}
@@ -171,21 +157,11 @@ En VFO, vars frekvens kan styras med en likspänning, kallas
 \emph{spänningstyrd oscillator} (eng. \emph{Voltage Controlled Oscillator
   (VCO)}).
 I resonanskretsen i en VCO fyller en kapacitansdiod (eng. \emph{varicap, variable
-capacitor}]) samma uppgift som den mekaniskt variabla kondensatorn i en VFO.
+capacitor}) samma uppgift som den mekaniskt variabla kondensatorn i en VFO.
 
-\begin{wrapfigure}[43]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-78.pdf}
-  \caption{VFO och VCO jämförs}
-  \label{fig:BildII3-78}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-79.pdf}
-  \caption{Kapacitansdiod -- Varicap}
-  \label{fig:BildII3-79}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-80a.pdf}
-  \caption{Analogi Människa-PLL}
-  \label{fig:BildII3-80a}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_3-78.pdf}{VFO och VCO jämförs}{fig:BildII3-78}
+\smallfig{images/cropped_pdfs/bild_2_3-79.pdf}{Kapacitansdiod -- Varicap}{fig:BildII3-79}
+\smallfig{images/cropped_pdfs/bild_2_3-80a.pdf}{Analogi Människa-PLL}{fig:BildII3-80a}
 
 Bild \ref{fig:BildII3-79} visar en kapacitansdiod.
 När en motriktad spänning läggs på dioden bildas ett spärrskikt i dioden,
@@ -208,7 +184,7 @@ Oscillatorfrekvensen ställs in med den variabla likspänningen \(U\).
 Av en VFO har det blivit en VCO.
 
 \subsubsection{Oscillator med PLL-styrning}
-\textbf{HAREC a.\ref{HAREC.a.3.7.1}\label{myHAREC.a.3.7.1}}
+\harec{a}{3.7.1}{3.7.1}
 
 Bild \ref{fig:BildII3-80a} visar en manuell frekvensstyrning.
 Människan jämför och reglerar förlopp utifrån givna fakta.
@@ -219,11 +195,7 @@ Som resultat av jämförelsen justeras styrspänningen så att är- och
 börfrekvenserna hålls lika.
 En sådan reglerkrets består av digitala komponenter.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-80b.pdf}
-  \caption{Oscillator med PLL-styrning}
-  \label{fig:BildII3-80b}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-80b.pdf}{Oscillator med PLL-styrning}{fig:BildII3-80b}
 
 Bild \ref{fig:BildII3-80b} illustrerar en oscillator med PLL-styrning.
 Fasjämföraren levererar en cykliskt justerad styrspänning till
@@ -251,11 +223,7 @@ frekvenslikhet uppnåtts.
 
 \subsubsection{PLL-oscillator i kombination med frekvensblandning}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-81.pdf}
-\caption{PLL-oscillator kombinerad med frekvensblandning}
-\label{fig:BildII3-81}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_3-81.pdf}{PLL-oscillator kombinerad med frekvensblandning}{fig:BildII3-81}
 
 Bild \ref{fig:BildII3-81} visar en PLL-oscillator kombinerad med
 frekvensblandning.
@@ -291,14 +259,10 @@ Frekvensstabiliteten är sämre än den för en PLL-oscillator med XO och
 programmerbar frekvensdelare.
 
 \subsubsection{PLL med programmerbar frekvensdelare}
-\textbf{HAREC a.\ref{HAREC.a.3.7.2}\label{myHAREC.a.3.7.2}}
+\harec{a}{3.7.2}{3.7.2}
 \index{PLL!programmerbar}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-82.pdf}
-\caption{PLL med frekvensdelare}
-\label{fig:BildII3-82}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-82.pdf}{PLL med frekvensdelare}{fig:BildII3-82}
 
 Bild \ref{fig:BildII3-82} visar en PLL med frekvensdelare.
 Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen 
@@ -473,7 +437,7 @@ Komponenterna bör ha uppnått drifttemperatur innan användningen.
 Oscillatorn bör därför värmas upp under åtminstone 15~minuter.
 
 \subsection{Frekvensstabilitet och oscillatorbrus}
-\textbf{HAREC a.\ref{HAREC.a.3.6.6}\label{myHAREC.a.3.6.6}}
+\harec{a}{3.6.6}{3.6.6}
 
 Frekvensstabiliteten i kristalloscillatorer är cirka 100 gånger bättre än
 den är i LC-oscillatorer.
