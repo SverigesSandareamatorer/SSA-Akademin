@@ -1,5 +1,4 @@
 \chapter[Isolation och jord]{Isolation och jordning}
-\begin{multicols}{2}
 
 Isolation och jordning är samlingsbegrepp för ett antal viktiga koncept för
 att reducera störningar, som även berör EMC och elsäkerhet.
@@ -98,28 +97,24 @@ Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 Detta förekommer till exempel i en serie av eluttag matade från samma säkring
 eller flera eluttag i en skarvdosa.
 
-\begin{figure}
-  \begin{center}
-    \begin{circuitikz}[american voltages]
-      % Ground reference
-      \draw (0,0) node[ground]{};
-      % Source 1 ground
-      \draw (0,0) to [R, l^=$Z_1$] (2,0);
-      \draw (2,1) to [short, i^=$I_1$] (2,0);
-      \draw (1.75,-1) to [short, i=$I_1+I_2+I_3$] (0.25,-1);
-      % Source 2 ground
-      \draw (2,0) to [R, l^=$Z_2$] (4,0);
-      \draw (4,1) to [short, i^=$I_2$] (4,0);
-      \draw (3.75,-1) to [short, i=$I_2+I_3$] (2.25,-1);
-      % Source 3 ground
-      \draw (4,0) to [R, l^=$Z_3$] (6,0);
-      \draw (6,1) to [short, i^=$I_3$] (6,0);
-      \draw (5.75,-1) to [short, i=$I_3$] (4.25,-1);
-    \end{circuitikz}
-  \end{center}
-  \caption{Seriekopplat jordsystem}
-  \label{fig:kap4-1}
-\end{figure}
+\smalltikz{
+  \begin{circuitikz}[american voltages]
+    % Ground reference
+    \draw (0,0) node[ground]{};
+    % Source 1 ground
+    \draw (0,0) to [R, l^=$Z_1$] (2,0);
+    \draw (2,1) to [short, i^=$I_1$] (2,0);
+    \draw (1.75,-1) to [short, i=$I_1+I_2+I_3$] (0.25,-1);
+    % Source 2 ground
+    \draw (2,0) to [R, l^=$Z_2$] (4,0);
+    \draw (4,1) to [short, i^=$I_2$] (4,0);
+    \draw (3.75,-1) to [short, i=$I_2+I_3$] (2.25,-1);
+    % Source 3 ground
+    \draw (4,0) to [R, l^=$Z_3$] (6,0);
+    \draw (6,1) to [short, i^=$I_3$] (6,0);
+    \draw (5.75,-1) to [short, i=$I_3$] (4.25,-1);
+  \end{circuitikz}
+}{Seriekopplat jordsystem}{fig:kap4-1}
 
 I bild \ref{fig:kap4-1} att vi har tre strömförbrukare som var och en
 bidrar med en ström \(I_1\), \(I_2\) och \(I_3\), och att dessa är
@@ -181,8 +176,7 @@ av jord \cite[kap 3]{ott1988}.
 Vi har därmed åstadkommit en isolation mellan strömmarna med avseende på
 jordanslutningen.
 
-\begin{figure}
-  \begin{center}
+\smalltikz{
     \begin{circuitikz}[american voltages]
       % Ground reference
       \draw (3,0) node[ground]{};
@@ -197,10 +191,7 @@ jordanslutningen.
       \draw (5,0) to [R, l^=$Z_3$] (5,2);
       \draw (5,3) to [short, i^=$I_3$] (5,2);
     \end{circuitikz}
-  \end{center}
-  \caption{Parallellkopplat jordsystem}
-  \label{fig:kap4-2}
-\end{figure}
+}{Parallellkopplat jordsystem}{fig:kap4-2}
 
 Dock kommer varje strömkälla uppleva en förskjutning i spänningen av
 sin jord som beror på dess egen ström och impedansen den har till jord.
@@ -237,8 +228,7 @@ En första naiv lösning är ju att helt enkelt bara dra en tråd \(Z_{signal}\)
 från den ena apparaten över till den andra.
 Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
 
-\begin{figure}
-  \begin{center}
+\smalltikz{
     \begin{circuitikz}[american voltages]
       % Ground reference
       \draw (2,0) node[ground]{};
@@ -255,10 +245,7 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
       \draw (3,2) to [R, l_=$Z_2$, v^=$U_2$] (3,0);
       \draw (4,2) to [short, i_=$I_2$] (3,2);
     \end{circuitikz}
-  \end{center}
-  \caption{Sammankopplat system}
-  \label{fig:kap4-3}
-\end{figure}
+}{Sammankopplat system}{fig:kap4-3}
 
 Problemet är att när strömmen \(I_1\) till den första apparaten går igenom
 anslutningsimpedansen \(Z_1\) till jord så ger det en spänning
@@ -316,8 +303,7 @@ för \emph{isolerad jordning} (eng. \emph{isolated bonding} även \emph{isolated
 Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
 (eng. \emph{signal ground}).
 
-\begin{figure}
-  \begin{center}
+\smalltikz{
     \begin{circuitikz}[american voltages]
       % Ground reference
       \draw (3.5,0) node[ground]{};
@@ -337,10 +323,7 @@ Man börjar plötsligt prata om \emph{skyddsjord} skilt från \emph{signaljord}
       \draw (6,0) to [R, l^=$Z_2$] (6,2);
       \draw (7,2) to [short, i_=$I_2$] (6,2);
     \end{circuitikz}
-  \end{center}
-  \caption{Sammankopplat system med utjämningsledare}
-  \label{fig:kap4-4}
-\end{figure}
+}{Sammankopplat system med utjämningsledare}{fig:kap4-4}
 
 I apparater med växelströmsmatning har man redan en transformator som
 tillhandahåller en galvanisk isolation mellan primärsidan (elkraft) och
@@ -445,29 +428,25 @@ I detta system kommer varje extra kabel att koppla samman jordarna hårdare,
 eftersom man parallellkopplar många impedanser.
 Denna strategi väljs ofta i telekommunikationssystem.
 
-\begin{figure}
-  \begin{center}
-    \begin{circuitikz}[american voltages]
-      % Ground reference
-      \draw (2.5,0) node[ground]{};
-      \draw (1,0) to (4,0);
-      % Source ground
-      \draw (1,0) to [R, l^=$Z_1$] (1,2);
-      \draw (0,2) to [short, i^=$I_1$] (1,2);
-      % Source output
-      \draw (1,4) to [american voltage source, l^=$U_{ut}$] (1,2);
-      % Interconnection
-      \draw (1,4) to [R, l^=$Z_{signal}$] (4,4)
-      to [R, l^=$Z_{load}$, v_=$U_{in}$] (4,2);
-      \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (4,2);
-      % Destination ground
-      \draw (4,0) to [R, l^=$Z_2$] (4,2);
-      \draw (5,2) to [short, i_=$I_2$] (4,2);
-\end{circuitikz}
-  \end{center}
-  \caption{Sammankopplat system med utjämningsledare}
-  \label{fig:kap4-5}
-\end{figure}
+\smalltikz{
+  \begin{circuitikz}[american voltages]
+    % Ground reference
+    \draw (2.5,0) node[ground]{};
+    \draw (1,0) to (4,0);
+    % Source ground
+    \draw (1,0) to [R, l^=$Z_1$] (1,2);
+    \draw (0,2) to [short, i^=$I_1$] (1,2);
+    % Source output
+    \draw (1,4) to [american voltage source, l^=$U_{ut}$] (1,2);
+    % Interconnection
+    \draw (1,4) to [R, l^=$Z_{signal}$] (4,4)
+    to [R, l^=$Z_{load}$, v_=$U_{in}$] (4,2);
+    \draw (1,2) to [R, l^=$Z_{GND}$, v_=$U_{GND}$] (4,2);
+    % Destination ground
+    \draw (4,0) to [R, l^=$Z_2$] (4,2);
+    \draw (5,2) to [short, i_=$I_2$] (4,2);
+  \end{circuitikz}
+}{Sammankopplat system med utjämningsledare}{fig:kap4-5}
 
 I ett system som har sammankopplad jord kommer man ofrånkomligen att behöva
 hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller även
