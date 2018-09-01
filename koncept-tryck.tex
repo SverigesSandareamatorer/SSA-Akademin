@@ -24,6 +24,18 @@
   \end{figure}
 }
 
+\newcommand{\multifig}[4][0.4]{
+  \begin{figure}[H]
+    \centering
+    \foreach \i in {#2} {
+      \includegraphics[width=#1\textwidth]{\i}
+    }
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
 \newcommand{\tallfig}[4][0.4]{
   \begin{figure}
     \centering
