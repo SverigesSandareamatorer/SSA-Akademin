@@ -9,7 +9,7 @@
 
 \usepackage{float}
 
-\headheight = 12.6pt
+%%\headheight = 12.6pt
 
 \setsecnumdepth{subsection}
 
@@ -89,13 +89,28 @@
   \end{figure}
 }
 
+%\def\frdjp{\textbf{FÖRDJUPNING}}
+\def\frdjp{}
+  
+\makechapterstyle{ssa}{%
+  \chapterstyle{default}
+  \chapterstyle{article}%
+  %\renewcommand*{\thechapter}{\Roman{chapter}}
+  \renewcommand*{\printchapternum}{% center number/title
+    \centering\chapnumfont \textsc\thechapter\space\space}%
+  \renewcommand*{\printchapternonum}{\centering}
+  %\renewcommand*{\clearforchapter}{}% no new page
+  \aliaspagestyle{chapter}{headings}}% no special pagestyle
+
+\semiisopage[12]
+
 % Prepare for abstract
 %\pagestyle{plain}
-\newenvironment{abstract}%
-{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
+%\newenvironment{abstract}%
+%{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
 %{\cleardoublepage\null \vfill\begin{center}%
 %\bfseries \abstractname \end{center}}%
-     {\vfill\null}
+%     {\vfill\null}
 
 \usepackage{textbook}
 
@@ -104,6 +119,8 @@
 \makeindex
 
 \begin{document}
+
+\chapterstyle{ssa}
 
 % Frontpage
 \include{koncept/frontpage}
