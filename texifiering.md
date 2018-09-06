@@ -3,10 +3,10 @@
 Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
-1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
-    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
-    Därför behöver man hela tiden vara uppmärksam. I ("Ivar") har även blivit 
-    1 ("ett") på en del ställen där siffror förekommer. Många av de grekiska tecknen 
+1.  OCRningen feltolkar flera tecken, så den har tolkat I (”Ivar”) som l (”Ludvig”),
+    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv.
+    Därför behöver man hela tiden vara uppmärksam. I (”Ivar”) har även blivit
+    1 (”ett”) på en del ställen där siffror förekommer. Många av de grekiska tecknen
     blir fel, så man får kontrollera med orginalet och justera.
 
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
@@ -61,7 +61,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \end{quote}
     ```
 
-10. Alla formler latexas och kvarvarande "line-noise" tas bort.
+10. Alla formler latexas och kvarvarande ”line-noise” tas bort.
 
 11. Formler med enhetsangivelser och liknande referenser i text skall också
     latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
@@ -147,8 +147,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
-    "I bild 3.16 illustreras..."
-    "... illustreras av bild 3.17"
+    ”I bild 3.16 illustreras...”
+    ”... illustreras av bild 3.17”
 
 21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
     utan läggas in som `\(\mu\)` i löpande text och \mu (notera mellanslag efter
@@ -185,7 +185,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \index{enheter!farad (F)}
     ```
 
-    Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
+    Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
+    stället för ”Hertz” och ”Volt”.
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
@@ -243,6 +244,6 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
 
 33. Undvik sammansättningar med bindestreck, skriv hellre ihop.
-    Skriv "satellitmottagare" i stället för "satellit-mottagare".
+    Skriv ”satellitmottagare” i stället för ”satellit-mottagare”.
     Bindestreck ska dock användas i sammansättningar med förkortningar;
-    skriv "FM-detektor" istället för "FM detektor".
+    skriv ”FM-detektor” istället för ”FM detektor”.
