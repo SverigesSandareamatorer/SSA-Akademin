@@ -1,13 +1,27 @@
 %\documentclass[a4paper,twoside,openright,10pt]{memoir}
-\documentclass[a4paper,twocolumn]{memoir}
+\documentclass[10pt,openright]{article}
+\usepackage[utf8]{inputenc}
+
 \include{koncept/common}
 %tlfällig fix för kompilering%
 \nonstopmode
 \usepackage[swedish]{babel}
 
-%\usepackage[inner=3cm, outer=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+\usepackage[a4paper,twoside,twocolumn,margin=2cm,columnsep=1cm]{geometry}
 
 \usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\cfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\bfdefault}{b}
+\SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
 
 %%\headheight = 12.6pt
 
@@ -92,17 +106,17 @@
 %\def\frdjp{\textbf{FÖRDJUPNING}}
 \def\frdjp{}
   
-\makechapterstyle{ssa}{%
-  \chapterstyle{default}
-  \chapterstyle{article}%
-  %\renewcommand*{\thechapter}{\Roman{chapter}}
-  \renewcommand*{\printchapternum}{% center number/title
-    \centering\chapnumfont \textsc\thechapter\space\space}%
-  \renewcommand*{\printchapternonum}{\centering}
-  %\renewcommand*{\clearforchapter}{}% no new page
-  \aliaspagestyle{chapter}{headings}}% no special pagestyle
+% \makechapterstyle{ssa}{%
+%   \chapterstyle{default}
+%   \chapterstyle{article}%
+%   %\renewcommand*{\thechapter}{\Roman{chapter}}
+%   \renewcommand*{\printchapternum}{% center number/title
+%     \centering\chapnumfont \textsc\thechapter\space\space}%
+%   \renewcommand*{\printchapternonum}{\centering}
+%   %\renewcommand*{\clearforchapter}{}% no new page
+%   \aliaspagestyle{chapter}{headings}}% no special pagestyle
 
-\semiisopage[12]
+%% \semiisopage[12]
 
 % Prepare for abstract
 %\pagestyle{plain}
@@ -130,8 +144,8 @@
 %% Tryckortssidan
 \include{koncept/tryckort}
 
-\lfoot[\revision]{}
-\rfoot[]{\revision}
+% \lfoot[\revision]{}
+% \rfoot[]{\revision}
 
 \cleardoublepage
 %\pagestyle{fancy}
@@ -142,9 +156,9 @@
 
 \tableofcontents
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
-
+% \setlength{\parindent}{0pt}
+% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+ 
 \mainmatter
 
 %\include{koncept/errata}
