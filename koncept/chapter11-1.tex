@@ -23,14 +23,14 @@ under de värden där kroppstemperaturen skulle öka.
 \index{strålning!icke-joniserande}
 Icke-joniserande strålning, som optisk strålning (infraröd strålning,
 synligt~ljus och ultraviolett~strålning) och elektromagnetiska fält (radiovågor
-och mikrovågor) är normalt inte lika energirik som joniserande strålning.
+och mikro\-vågor) är normalt inte lika energirik som joniserande strålning.
 När elektromagnetisk strålning absorberas i biologisk vävnad eller material är
 den dominerande effekten därför endast en temperaturhöjning i vävnaden eller
 materialet.
 
 \index{joniserande strålning}
 \index{strålning!joniserande}
-Joniserande strålning är partikelstrålning eller elektromagnetisk strålning som
+Joniserande strålning är partikelstrålning eller elektro\-magnetisk strålning som
 har tillräcklig energi för att rycka loss elektroner från de atomer som den
 träffar och förvandla dem till positivt laddade joner, jonisering.
 Exempel på joniserande strålning är röntgenstrålning och strålning från
@@ -261,21 +261,31 @@ Antennförstärkning i förhållande till en isotrop antenn uttrycks vanligen i 
 Detta medför att en vanlig dipolantenn som används som referens för 0~dBd har
 en förstärkning på 2,15~dBi jämfört med en isotrop antenn.
 
+%% Alla värden på antennförstärkning uttryckt i dBd ska därför ökas med 2,15 för
+%% att kunna användas i nedanstående tabell som visar förhållandet mellan
+%% förstärkning i dB och linjära faktorer.
+
 Alla värden på antennförstärkning uttryckt i dBd ska därför ökas med 2,15 för
-att kunna användas i nedanstående tabell som visar förhållandet mellan
+att kunna användas i tabell \ref{tab:forst} som visar förhållandet mellan
 förstärkning i dB och linjära faktorer.
 
-\begin{tabular}{|l|ccccccccccc|}
+\begin{table*}[h]
+  \begin{center}
+    \begin{tabular}{|l|ccccccccccc|}
 	\hline
 	dB     &  0  &  1  &  2 & 2,15 &  3  &  4  &  5  &  6  &  7  &  8  &  9  \\ \hline
 	G & 1,0 & 1,3 & 1,6 & 1,64 & 2,0 & 2,5 & 3,2 & 4,0 & 5,0 & 6,3 & 7,9 \\ \hline
 	dB     &  10  &  11  &  12  &  13  &  14  &  15  &  16  &  17  &  18  &  19  &  20 \\ \hline
 	G & 10,0 & 12,6 & 15,8 & 20,0 & 25,1 & 31,6 & 39,8 & 50,1 & 63,1 & 79,4 & 100,0 \\ \hline
-\end{tabular}
+    \end{tabular}
+    \caption{G = Antennens förstärkning i linjära faktorer}
+    \label{tab:forst}
+  \end{center}
+\end{table*}
 
 För en antenn med förstärkningen 7~dBi ska alltså värdet 5,0 användas.
 
-\textbf{G = Antennens förstärkning i linjära faktorer}
+%%\textbf{G = Antennens förstärkning i linjära faktorer}
 
 \subsection{Sändareffekten}
 Alla SAR-värden ska beräknas som ett medelvärde under en period av sex minuter.
@@ -296,7 +306,9 @@ Nedanstående tabell är de faktorer som enligt OET bulletin 65 supplement b,
 \cite{OETbul65b} används i USA för att räkna ut medeleffekten på grund
 av modulationsfaktorn.
 
-\begin{tabular}{|l|c|}
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|l|c|}
 	\hline
 	Trafiksätt & Modulationsfaktor \\ \hline
 	SSB & 0,2 \\ \hline
@@ -305,8 +317,12 @@ av modulationsfaktorn.
 	FM & 1,0 \\ \hline
 	MGM (t.ex. RTTY,PSK) & 1,0 \\ \hline
 	Bärvåg & 1,0 \\ \hline
-\end{tabular}
-
+    \end{tabular}
+    \caption{Modulationsfaktor per trafiksätt}
+    \label{tab:modfakt}
+  \end{center}
+\end{table}
+  
 \subsubsection{Intermittensfaktor:}
 \index{EMF!intermittensfaktor}
 \index{intermittensfaktor}
@@ -316,7 +332,9 @@ mellan sändning och lyssning sker regelbundet.
 Sänder man och tar emot lika mycket under en sexminutersperiod så blir faktorn
 0,5 men om man lyssnar mycket mer och sänder sällan blir faktorn mindre.
 
-\begin{tabular}{|c|c|c|}
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{|c|c|c|}
 	\hline
 	Sändning  & Mottagning & Intermittensfaktor \\
 	(minuter) & (minuter)  & \\ \hline
@@ -326,7 +344,11 @@ Sänder man och tar emot lika mycket under en sexminutersperiod så blir faktorn
 	4 & 2 & 0,67 \\ \hline
 	5 & 1 & 0,83 \\ \hline
 	6 & 0 & 1,00 \\ \hline
-\end{tabular}
+    \end{tabular}
+    \caption{Intermittensfaktor}
+    \label{tab:intfakt}
+  \end{center}
+\end{table}
 
 \subsubsection{Medeleffekt:}
 \index{EMF!medeleffekt}
@@ -347,17 +369,23 @@ Annars överskattas den genererade fältstyrkan.
 
 Även här måste linjära faktorer användas.
 Förlusterna i en kabel har negativa värden uttryckt i dB vilket medför att
-faktorerna i nedanstående tabell blir mindre än ett.
+faktorerna i tabell \ref{tab:feedannut} blir mindre än ett.
 
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{table*}[h]
+  \begin{center}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
 	\hline
 	dB & 0,0  & 0,5  & 1,0  & 1,5  & 2,0  & 2,5  & 3,0  & 3,5  & 4,0  & 4,5  & 5,0 \\ \hline
 	k  & 1,00 & 0,89 & 0,79 & 0,71 & 0,63 & 0,56 & 0,50 & 0,45 & 0,40 & 0,35 & 0,32 \\ \hline
-\end{tabular}
+    \end{tabular}
+    \caption{k = Matarkabels dämpning i linjära termer}
+    \label{tab:feedannut}
+  \end{center}
+\end{table*}
 
 För en kabel med dämpningen 2,5~dB ska alltså värdet 0,56 användas.
 
-\textbf{k = Matarkabels dämpning i linjära termer}
+%% \textbf{k = Matarkabels dämpning i linjära termer}
 
 \subsection{Distans}
 \index{EMF!distans}
@@ -389,11 +417,17 @@ Följande formler gäller enbart för beräkning av korrekt fältstyrka i
 fjärrfältet men kan för enklare antenner användas för att uppskatta den
 fältstyrka som uppträder i närfältet.
 
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\begin{table*}[h]
+  \begin{center}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
 	\hline
 	Band [m] & 160 & 80 & 40 & 30 & 20 & 17 & 15 & 12 & 10 & 6 \\ \hline
 	Fjärrfältsgräns [m] & 27 & 13 & 6,7 & 5 & 3,3 & 2,8 & 2,5 & 2 & 1,7 & 1 \\ \hline
-\end{tabular}
+    \end{tabular}
+    \caption{Fjärrfältsgräns per band}
+    \label{tab:fjfltgr}
+  \end{center}
+\end{table*}
 
 \textbf{E = Det elektromagnetiska fältets storlek i fjärrfältet}
 
@@ -425,8 +459,12 @@ Max uteffekt är 1000~W och trafiksättet är MGM (t.ex. RTTY, PSK) med
 Den valda matarledningen har en dämpning på 2,5~dB (0,56~gånger).
 Avståndet från antennen till beräkningspunkten är 15~m.
 
-\(P_{medel} = P_{pep} \cdot modulationsfaktor \cdot intermittensfaktorn
+\(P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = 500\ \mathrm{W}\)
+
+\(k_{mod} = modulationsfaktor\)
+
+\(k_{if} = intermittensfaktor\)
 
 \(G = 31 \quad k = 0,56 \quad d = 15\)
 
@@ -448,8 +486,12 @@ Max uteffekt är 1000~W och trafiksättet är MGM (t.ex. RTTY, PSK) med
 Den valda matarledningen har en dämpning på 2,5~dB (0,56~gånger).
 Referensvärdet för 144~MHz är 28~V/m.
 
-\(P_{medel} = P_{pep} \cdot modulationsfaktor \cdot intermittensfaktorn
+\(P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = 500\ \mathrm{W}\)
+
+\(k_{mod} = modulationsfaktor\)
+
+\(k_{if} = intermittensfaktor\)
 
 \(G = 31 \quad k = 0,56 \quad E = 28\)
 
@@ -471,8 +513,12 @@ Max uteffekt är 100~W och trafiksättet är SSB med normala TX/RX intervaller.
 Den valda matarledningen har en dämpning på 0,5~dB (0,89 gånger).
 Referensvärdet för 3,75~MHz är 45~V/m.
 
-\(P_{medel} = P_{pep} \cdot modulationsfaktor \cdot intermittensfaktor
+\(P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 100 \cdot 0,5 \cdot 0,5 = 25\ \mathrm{W}\)
+
+\(k_{mod} = modulationsfaktor\)
+
+\(k_{if} = intermittensfaktor\)
 
 \(G = 1,6 \quad k = 0,89 \quad E = 45\)
 
@@ -644,14 +690,16 @@ de fält som genereras och att kunna begränsa dem där så behövs.
 
 Det går att finna mer information om elektromagnetiska fält på:
 
-Strålskyddsmyndighetens webbplats där återfinns även SSMFS 2008:18 \cite{SSMFS2008:18}.
+\begin{itemize}
+\item Strålskyddsmyndighetens webbplats där återfinns även SSMFS 2008:18 \cite{SSMFS2008:18}.
 
-Arbetsmiljöverkets webbplats där finns även AFS 2016:3 Arbetsmiljöverkets
+\item Arbetsmiljöverkets webbplats där finns även AFS 2016:3 Arbetsmiljöverkets
 föreskrifter om elektromagnetiska fält och allmänna råd om tillämpningen av
 föreskrifterna.
 
-Folkhälsomyndighetens webbplats.
+\item Folkhälsomyndighetens webbplats.
 
-Federal Communications Commission (FCC) OET bulletin 65 supplement B \cite{OETbul65b}.
+\item Federal Communications Commission (FCC) OET bulletin 65 supplement B \cite{OETbul65b}.
 
-EU-direktiv 1999/519/EG \cite{1999/519/EG}
+\item EU-direktiv 1999/519/EG \cite{1999/519/EG}
+\end{itemize}
