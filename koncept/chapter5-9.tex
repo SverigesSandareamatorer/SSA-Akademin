@@ -1,9 +1,9 @@
 \section{Egenskaper i mottagare}
-\textbf{HAREC a.\ref{HAREC.a.4.4}\label{myHAREC.a.4.4}}
+\harec{a}{4.4}{4.4}
 \index{mottagare!egenskaper}
 
 \subsection{Närliggande kanaler}
-\textbf{HAREC a.\ref{HAREC.a.4.4.1}\label{myHAREC.a.4.4.1}}
+\harec{a}{4.4.1}{4.4.1}
 
 Närliggande kanaler kan skapa störningar när de läcker in.
 Därför gäller det att mottagaren kan undertrycka dem, även när de är starkare
@@ -16,7 +16,7 @@ filtrera med branta flanker och god undertryckningsförmåga.
 Detta är en del av många att ha goda så kallade stor-signal-egenskaper.
 
 \subsection{Selektivitet}
-\textbf{HAREC a.\ref{HAREC.a.4.4.2}\label{myHAREC.a.4.4.2}}
+\harec{a}{4.4.2}{4.4.2}
 \index{selektivitet}
 \index{mottagare!selektivitet}
 \index{förselektering}
@@ -37,7 +37,7 @@ för att utskilja den önskade signalen efter blandningsförloppen.
 \end{itemize}
 
 \subsection{Frekvensstabilitet}
-\textbf{HAREC a.\ref{HAREC.a.4.4.4}\label{myHAREC.a.4.4.4}}
+\harec{a}{4.4.4}{4.4.4}
 \index{frekvensstabilitet}
 \index{temperaturkompenserad}
 \index{TCXO}
@@ -63,7 +63,7 @@ till samma kristalloscillator, något som med modern PLL och DDS teknik blivit
 inte bara möjligt utan både kompakt, billigt och med hög prestanda.
 
 \subsection{Spegelfrekvensproblemet vid mottagning}
-\textbf{HAREC a.\ref{HAREC.a.4.4.5}\label{myHAREC.a.4.4.5}}
+\harec{a}{4.4.5}{4.4.5}
 \index{spegelfrekvenser}
 \index{mottagare!spegelfrekvenser}
 \index{närselektion}
@@ -71,11 +71,7 @@ inte bara möjligt utan både kompakt, billigt och med hög prestanda.
 \index{förselektion}
 \index{mottagare!förselektion}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-22.pdf}
-  \caption{Enkelsuper med låg MF och ingen förselektion}
-  \label{fig:bildII4-22}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
 
 \textbf{Exempel:}
 I bild \ref{fig:bildII4-22} ska en sändning på 3600~kHz ska tas emot och
@@ -99,11 +95,7 @@ blandningsprodukter med VFO-frekvensen, som har mellanfrekvensens värde.
 Mellanfrekvensfiltret kan därför inte undertrycka en främmande signal på
 spegelfrekvensen.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-23.pdf}
-  \caption{Enkelsuper med låg MF och med förselektion}
-  \label{fig:bildII4-23}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-23.pdf}{Enkelsuper med låg MF och med förselektion}{fig:bildII4-23}
 
 Däremot kan en mottagaringång med \emph{förselektering} (eng.
 \emph{preselection}) undertrycka den.
@@ -113,11 +105,7 @@ frekvensen 4510~kHz på grund av den stora frekvensskillnaden.
 En förselektion har alltså tillförts som komplement till den närselektion som
 erhålls med mellanfrekvensfiltret.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-24.pdf}
-  \caption{Enkelsuper med hög MF och med förselektion}
-  \label{fig:bildII4-24}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_4-24.pdf}{Enkelsuper med hög MF och med förselektion}{fig:bildII4-24}
 
 Ju längre ifrån varandra nyttofrekvens och spegelfrekvens ligger, desto bättre
 är förselektionen.
@@ -150,11 +138,7 @@ spegelfrekvensen 48~MHz, vilket är 1,6~gånger mottagningsfrekvensen.
 Detta möjliggör förselektionsfilter med tillräcklig dämpning av
 spegelfrekvensen.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-25.pdf}
-  \caption{Samtidig för- och närselektion i superheterodynmottagare}
-  \label{fig:bildII4-25}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-25.pdf}{Samtidig för- och närselektion i superheterodynmottagare}{fig:bildII4-25}
 
 Bilden \ref{fig:bildII4-25} visar hur när- och förselektion kompletterar
 varandra i ett frekvensspektrum.
@@ -173,11 +157,7 @@ Andra lösningar blir då nödvändiga, till exempel kavitetsfilter och helixfil
 \index{MF-bandbredd}
 \index{mottagare!MF-bandbredd}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-26.pdf}
-  \caption{MF-bandbredd vid AM (A3E)}
-  \label{fig:bildII4-26}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-26.pdf}{MF-bandbredd vid AM (A3E)}{fig:bildII4-26}
 
 Bild \ref{fig:bildII4-26} visar en amplitudmodulerad signals frekvensspektrum
 består av bärvågen och två sidfrekvenser -- eller sidband om sidfrekvenserna
@@ -209,11 +189,7 @@ mindre störd mottagning.
 \index{MF-skift}
 \index{passband-tuning}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-27.pdf}
-  \caption{MF-Bandbredd och passbandtuning vid SSB (J3E)}
-  \label{fig:bildII4-27}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-27.pdf}{MF-Bandbredd och passbandtuning vid SSB (J3E)}{fig:bildII4-27}
 
 Mellanfrekvensfiltret för SSB-mottagning ska endast släppa igenom
 ett av de två sidbanden, så som illustreras i bild \ref{fig:bildII4-27},
@@ -282,11 +258,7 @@ stationer på närliggande frekvenser att höras, detta illustreras i bild
 \ref{fig:bildII4-28}.
 Låt vara att de flesta av dessa stationer hörs med olika frekvens.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-28.pdf}
-  \caption{Olika MF-bandbreder vid CW (A1A)}
-  \label{fig:bildII4-28}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_4-28.pdf}{Olika MF-bandbreder vid CW (A1A)}{fig:bildII4-28}
 
 Fler än 20 CW-stationer får plats inom en bandbredd motsvarande en SSB-kanal.
 Den mänskliga hjärnan, kan med någon övning koncentrera sig på en av dessa
@@ -348,7 +320,7 @@ Det blir allt vanligare med 12,5~kHz kanalavstånd även för repeatrar,
 varför det är viktigt att alla sändare är rätt inställda.
 
 \subsection{Signalkänslighet och brus}
-\textbf{HAREC a.\ref{HAREC.a.4.4.3}\label{myHAREC.a.4.4.3}}
+\harec{a}{4.4.3}{4.4.3}
 \index{signalkänslighet}
 \index{mottagare!signalkänslighet}
 \index{brus}
@@ -394,15 +366,9 @@ nyttosignalen vara ett antal gånger starkare än bruset.
 Den lägre gränsen för att uppfatta tal i kortvågsmottagare är ett brusavstånd
 i storleksordningen 10~dB.
 
-\begin{wrapfigure}[19]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-29.pdf}
-  \caption{S/N-värde}
-  \label{fig:bildII4-29}
+\smallfig{images/cropped_pdfs/bild_2_4-29.pdf}{S/N-värde}{fig:bildII4-29}
 
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_4-30.pdf}
-  \caption{SINAD-värde}
-  \label{fig:bildII4-30}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_4-30.pdf}{SINAD-värde}{fig:bildII4-30}
 
 I en broschyr på en kortvågsmottagare kan man till exempel läsa
 ''Sensitivity SSB, CW: less than 0,25~\(\mu V\) for 10~dB S/N''
@@ -435,10 +401,8 @@ av den modulerande signalen.
 \]
 
 \subsection{Intermodulation, korsmodulation}
-\textbf{HAREC
-  a.\ref{HAREC.a.4.4.6}\label{myHAREC.a.4.4.6},
-  a.\ref{HAREC.a.4.4.7}\label{myHAREC.a.4.4.7}
-}
+\harec{a}{4.4.6}{4.4.6}
+\harec{a}{4.4.7}{4.4.7}
 \label{intermodulation}
 \index{intermodulation}
 \index{korsmodulation}
@@ -466,9 +430,7 @@ signal kan detekteras varvid känsligheten sjunker och till slut kommer den
 tänkta signalen vara helt undertryckt, så kallad \emph{blocking}.
 
 \subsubsection{Korsmodulation}
-\textbf{HAREC
-  a.\ref{HAREC.a.4.4.8}\label{myHAREC.a.4.4.8}
-}
+\harec{a}{4.4.8}{4.4.8}
 \index{korsmodulation}
 \index{mottagare!korsmodulation}
 

@@ -4,7 +4,7 @@
 \usepackage[swedish]{babel}
 \usepackage{icomma}
 \usepackage{lmodern}
-\usepackage[numbered]{bookmark}
+%\usepackage[numbered]{bookmark}
 %\usepackage[]{geometry}
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 \usepackage{amsmath}
@@ -70,7 +70,7 @@
     innerleftmargin=20pt,
     backgroundcolor=gray!50!white}
 \newcommand{\infobox}[1]{
-\begin{figure}{r}{0.5\textwidth}
+\begin{figure}%[r][0.5\textwidth]
   \begin{mdframed}[style=FactBox]
 #1
   \end{mdframed}
@@ -131,8 +131,7 @@ keepaspectratio]{images/koncept-larobok-front.jpg}%
 \parbox[b][\paperheight]{\paperwidth}{%
 \vfill
 \centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/koncept-back.pdf}%
+\includegraphics[width=\paperwidth,height=\paperheightsssss]{images/koncept-back.pdf}%
 \vfill
 }}}
 

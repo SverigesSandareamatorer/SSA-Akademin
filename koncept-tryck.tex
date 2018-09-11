@@ -1,15 +1,31 @@
-\documentclass[b5paper,twoside,openright]{memoir}
+%\documentclass[a4paper,twoside,openright,10pt]{memoir}
+\documentclass[10pt,openright]{article}
+\usepackage[utf8]{inputenc}
+
 \include{koncept/common}
 %tlfällig fix för kompilering%
 \nonstopmode
 \usepackage[swedish]{babel}
 
-\usepackage[left=1cm, right=1cm, top=1cm, bottom=1cm]{geometry}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 
-\usepackage{multicol}
+\usepackage[a4paper,twoside,twocolumn,margin=2cm,columnsep=1cm]{geometry}
+
 \usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\cfoot{}
+\fancyfoot[LE,RO]{\thepage}
 
-\headheight = 12.6pt
+\renewcommand{\bfdefault}{b}
+\SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
+
+%%\headheight = 12.6pt
+
+\setsecnumdepth{subsection}
 
 % Figure macros
 \newcommand{\smallfig}[4][0.4]{
@@ -22,14 +38,48 @@
   \end{figure}
 }
 
+\newcommand{\multifig}[4][0.4]{
+  \begin{figure}[H]
+    \centering
+    \foreach \i in {#2} {
+      \includegraphics[width=#1\textwidth]{\i}
+    }
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
+\newcommand{\tallfig}[4][0.4]{
+  \begin{figure}
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
 \newcommand{\mediumfig}[4][0.7]{
-  \begin{figure*}
+  \begin{figure*}[bt]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
       \label{#4}
     \end{center}
   \end{figure*}
+}
+
+\newcommand{\hpfig}[4][0.6]{
+  \onecolumn
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure}
+  \twocolumn
 }
 
 \newcommand{\largefig}[4][0.9]{
@@ -53,51 +103,38 @@
   \end{figure}
 }
 
-%% \newcommand{\sfig}[4][1]{
-%%   \begin{figure}
-%%     \includegraphics{#2}   %[width=#1\textwidth]{#2}
-%%     \caption{#3}
-%%     \label{#4}
-%% %%    \vspace{-20pt}
-%%   \end{figure}
-%% }
+%\def\frdjp{\textbf{FÖRDJUPNING}}
+\def\frdjp{}
+  
+% \makechapterstyle{ssa}{%
+%   \chapterstyle{default}
+%   \chapterstyle{article}%
+%   %\renewcommand*{\thechapter}{\Roman{chapter}}
+%   \renewcommand*{\printchapternum}{% center number/title
+%     \centering\chapnumfont \textsc\thechapter\space\space}%
+%   \renewcommand*{\printchapternonum}{\centering}
+%   %\renewcommand*{\clearforchapter}{}% no new page
+%   \aliaspagestyle{chapter}{headings}}% no special pagestyle
 
-%% \newcommand{\mediumfig}[4][0.7]{
-%%   \begin{figure}
-%%     \centering
-%%     \includegraphics[width=#1\textwidth]{#2}
-%%     \caption{#3}
-%%     \label{#4}
-%%   \end{figure}
-%% }
-
-
-%% \newcommand{\largefig}[4][1]{
-%%   \begin{figure*}
-%%     \begin{center}
-%%       \includegraphics[width=#1\textwidth]{#2}
-%%       \caption{#3}
-%%       \label{#4}
-%%     \end{center}
-%%   \end{figure*}
-%% }
-
+%% \semiisopage[12]
 
 % Prepare for abstract
-\pagestyle{plain}
-\newenvironment{abstract}%
-{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
+%\pagestyle{plain}
+%\newenvironment{abstract}%
+%{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
 %{\cleardoublepage\null \vfill\begin{center}%
 %\bfseries \abstractname \end{center}}%
-     {\vfill\null}
+%     {\vfill\null}
 
-\usepackage{refbook}
+\usepackage{textbook}
 
 % Prepare for index
 \usepackage{makeidx}
 \makeindex
 
 \begin{document}
+
+\chapterstyle{ssa}
 
 % Frontpage
 \include{koncept/frontpage}
@@ -107,11 +144,11 @@
 %% Tryckortssidan
 \include{koncept/tryckort}
 
-\lfoot[\revision]{}
-\rfoot[]{\revision}
+% \lfoot[\revision]{}
+% \rfoot[]{\revision}
 
 \cleardoublepage
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
 %\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
 %\author{Lennart Wiberg}
@@ -119,9 +156,9 @@
 
 \tableofcontents
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
-
+% \setlength{\parindent}{0pt}
+% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+ 
 \mainmatter
 
 %\include{koncept/errata}
