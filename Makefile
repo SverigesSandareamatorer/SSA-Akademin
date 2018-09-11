@@ -12,11 +12,12 @@ help:
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf
+#all:	koncept.pdf
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
 #all:	koncept-refbok.pdf
+all:	koncept-tryck.pdf
 
 .PHONY:	*.pdf
 
@@ -93,7 +94,8 @@ koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
-	bibtex koncept.aux
+	bibtex koncept-tryck
+#	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx
@@ -125,9 +127,12 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
-	-xelatex koncept-tryck.tex
-	-xelatex koncept-tryck.tex
-	xelatex koncept-tryck.tex
+	pdflatex koncept-tryck.tex
+	pdflatex koncept-tryck.tex
+
+#	-xelatex koncept-tryck.tex
+#	-xelatex koncept-tryck.tex
+#	xelatex koncept-tryck.tex
 
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
 	-xelatex koncept-online.tex
