@@ -76,158 +76,78 @@ dessa är QRT, QRZ, QRV och QSB.
 En uppsättning Q-koder handlar om utbyte av kontakt, dessa är QSL, QSO,
 QSY, QRX och QTH.
 
-\begin{table}
+\begin{table*}
+  \begin{threeparttable}
   \label{tab:q-kod}
   \caption{Q-koderna}
   \begin{tabular}{lp{6cm}p{6cm}}
-    Q-kod & Fråga & Svar eller meddelande \\
+    \textbf{Q-kod} & \textbf{Fråga} & \textbf{Svar eller meddelande} \\
     \hline
-    QRK &
-    Vilken uppfattbarhet har mina (eller \dots:s) signaler?
-    &
-    Uppfattbarheten hos dina (eller \dots:s) signaler är
-    \vspace{-\topsep}
-    \begin{enumerate}[noitemsep]
-    \item dålig
-    \item bristfällig
-    \item ganska god
-    \item god
-    \item utmärkt.
-    \end{enumerate} \\
-    QRM &
-    Är min sändning störd?
-    &
-    Störningarna på din sändning är
-    \vspace{-\topsep}
-    \begin{enumerate}[noitemsep]
-    \item obefintliga
-    \item svaga
-    \item måttliga
-    \item starka
-    \item mycket starka.
-    \end{enumerate} \\
-    QRN
-    &
-    Besväras du av atmosfäriska störningar?
-    &
-    Atmosfäriska störningar är
-    \vspace{-\topsep}
-    \begin{enumerate}[noitemsep]
-    \item obefintliga
-    \item svaga
-    \item måttliga
-    \item starka
-    \item mycket starka.
-    \end{enumerate} \\
-    QRO
-    &
-    Ska jag öka sändningseffekten?
-    &
-    Öka sändningseffekten.
-    \\
-    QRP
-    &
-    Ska jag minska sändningseffekten?
-    &
-    Minska sändningseffekten.
-    \\
-    QRT
-    &
-    Ska jag avbryta sändningen?
-    &
-    Avbryt sändningen.
-    \\
-    QRV
-    &
-    Är du redo?
-    &
-    Jag är redo.
-    \\
-    QRX
-    &
-    När anropar du mig igen?
-    &
-    Jag anropar dig igen kl \dots på \dots kHz/MHz.
-    \\
-    QRZ
-    &
-    Vem anropar mig?
-    &
-    Du anropas av \dots * (på \dots kHz/MHz).
-    \\
-    QSB
-    &
-    Varierar min signalstyrka?
-    &
-    Din signalstyrka varierar.
-    \\
-    QSL
-    &
-    Kan du ge mig kvittens?
-    &
-    Jag kvitterar.
-    \\
-    QSO
-    &
-    Kan få förbindelse med \dots * direkt?
-    &
-    Jag kan få förbindelse med \dots * direkt.
-    \\
-    QSY
-    &
-    Ska jag gå över till annan frekvens?
-    &
-    Gå över till annan frekvens.
-    \\
-    QTH
-    &
-    Vilket är ditt geografiska läge?
-    &
-    Mitt geografiska läge är \dots
-    \\
-    (QRS)
-    &
-    Ska jag minska sändningshastigheten?
-    &
-    Minska sändningshastigheten
-    (sänd \dots ord i minuten).
-    \\
-    (QRU)
-    &
-    Har ni något till mig?
-    &
-    Jag har inget till dig.
-    \\
-    (QSA)
-    &
-    Vilken styrka har mina
-    (eller: \dots *:s) signaler?
-    &
-    Dina (eller: \dots *:s) signaler är
-    \vspace{-\topsep}
-    \begin{enumerate}[noitemsep]
-    	\item knappast uppfattbara
-    	\item svaga
-    	\item ganska starka
-    	\item starka
-    	\item mycket starka.
-    \end{enumerate}
-    \\
-    (QTC)
-    &
-    Hur många telegram har du att sända?
-    &
-    Jag har telegram till Dig.
-    \\
-    (QTR)
-    &
-    Kan du ge mig rätt tid?
-    &
-    Rätt tid är \dots
-    \\
+    \textbf{QRK} & Vilken uppfattbarhet har mina
+                   (eller \dots:s)\tnote{*} signaler? &
+                   Uppfattbarheten hos dina (eller \dots:s)\tnote{*} signaler är
+                   \vspace{-\topsep}
+                   \begin{enumerate}[noitemsep]
+                       \item dålig
+                       \item bristfällig
+                       \item ganska god
+                       \item god
+                       \item utmärkt.
+                   \end{enumerate} \\
+    \textbf{QRM} & Är min sändning störd? &
+                   Störningarna på din sändning är
+                   \vspace{-\topsep}
+                   \begin{enumerate}[noitemsep]
+                       \item obefintliga
+                       \item svaga
+                       \item måttliga
+                       \item starka
+                       \item mycket starka.
+                   \end{enumerate} \\
+    \textbf{QRN} & Besväras du av atmosfäriska störningar? &
+                   Atmosfäriska störningar är
+                   \vspace{-\topsep}
+                   \begin{enumerate}[noitemsep]
+                       \item obefintliga
+                       \item svaga
+                       \item måttliga
+                       \item starka
+                       \item mycket starka.
+                   \end{enumerate} \\
+    \textbf{QRO} & Ska jag öka sändningseffekten? & Öka sändningseffekten. \\
+    \textbf{QRP} & Ska jag minska sändningseffekten? & Minska sändningseffekten. \\
+    \textbf{QRT} & Ska jag avbryta sändningen? & Avbryt sändningen. \\
+    \textbf{QRV} & Är du redo? & Jag är redo. \\
+    \textbf{QRX} & När anropar du mig igen? & Jag anropar dig igen kl \dots på \dots kHz/MHz.\\
+    \textbf{QRZ} & Vem anropar mig? & Du anropas av \dots\tnote{*} (på \dots kHz/MHz). \\
+    \textbf{QSB} & Varierar min signalstyrka? & Din signalstyrka varierar. \\
+    \textbf{QSL} & Kan du ge mig kvittens? & Jag kvitterar. \\
+    \textbf{QSO} & Kan få förbindelse med \dots \tnote{*} direkt? &
+                   Jag kan få förbindelse med \dots \tnote{*} direkt. \\
+    \textbf{QSY} & Ska jag gå över till annan frekvens? & Gå över till annan frekvens. \\
+    \textbf{QTH} & Vilket är ditt geografiska läge? & Mitt geografiska läge är \dots \\
+    (\textbf{QRS}) & Ska jag minska sändningshastigheten? & Minska sändningshastigheten
+                                                            (sänd \dots ord i minuten). \\
+    (\textbf{QRU}) & Har ni något till mig? & Jag har inget till dig. \\
+    (\textbf{QSA}) & Vilken styrka har mina (eller: \dots:s)\tnote{*} signaler?
+                   & Dina (eller: \dots:s)\tnote{*} signaler är
+                     \vspace{-\topsep}
+                     \begin{enumerate}[noitemsep]
+     	                 \item knappast uppfattbara
+    	                 \item svaga
+    	                 \item ganska starka
+    	                 \item starka
+    	                 \item mycket starka.
+                     \end{enumerate} \\
+    (\textbf{QTC}) & Hur många telegram har du att sända? & Jag har telegram till Dig. \\
+    (\textbf{QTR}) & Kan du ge mig rätt tid? & Rätt tid är \dots \\
   \end{tabular}
-* namn och /eller anropssignal
-\end{table}
+  \vspace{1em}
+  \begin{tablenotes}
+  \item [*] \emph{namn och/eller anropssignal}
+  \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
 
 Användning av Q-koder för maritimt bruk enligt ITU-R M.1172
 \begin{enumerate}

@@ -4,7 +4,7 @@
 
 \include{koncept/common}
 %tlfällig fix för kompilering%
-\nonstopmode
+%\nonstopmode
 \usepackage[swedish]{babel}
 
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
@@ -26,7 +26,8 @@
 
 \usepackage{titlesec}
 \titlespacing{\chapter}{0pt}{1cm}{1cm}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+%%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter|}{0pt}{\Huge\bfseries}
 
 %%\headheight = 12.6pt
 
@@ -109,6 +110,23 @@
   \end{figure}
 }
 
+\usepackage{threeparttable}
+\usepackage[symbol]{footmisc}
+
+\newcommand{\Mdotlength}{3pt}
+\newcommand{\Mdahlength}{9pt}
+\newcommand{\Mcharseplength}{9pt}
+\newcommand{\Mwordseplength}{21pt}
+\newcommand{\Mdiditlength}{6pt}
+\newcommand{\Mfetvadd}{1.5pt}
+\newcommand{\Mcharsep}{\hspace{9pt}}
+\newcommand{\Mwordsep}{\hspace{21pt}}
+
+\newcommand{\dit}{\raisebox{0.5ex}{$\rule{\Mdotlength}{\Mfetvadd}\hspace{\Mdotlength}$}}
+\newcommand{\dah}{\raisebox{0.5ex}{$\rule{\Mdahlength}{\Mfetvadd}\hspace{\Mdotlength}$}}
+
+\newcommand{\MSOS}{\Mcharsep \dit\dit\dit\dah\dah\dah\dit\dit\dit \Mcharsep}
+
 %\def\frdjp{\textbf{FÖRDJUPNING}}
 \def\frdjp{}
   
@@ -165,7 +183,7 @@
 % \setlength{\parindent}{0pt}
 % \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
  
-\mainmatter
+%%\mainmatter
 
 %\include{koncept/errata}
 \include{koncept/preface}
@@ -181,7 +199,7 @@
 \bibliography{koncept.bib}
 \bibliographystyle{plain}
 
-\backmatter
+%%\backmatter
 
 \printindex
 \include{koncept/backpage}

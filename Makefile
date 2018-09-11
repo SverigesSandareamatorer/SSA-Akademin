@@ -94,8 +94,8 @@ koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
-	bibtex koncept-tryck
-#	bibtex koncept.aux
+#	bibtex koncept-tryck
+	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx

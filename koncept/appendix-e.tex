@@ -1,3 +1,5 @@
+\onecolumn
+
 \chapter{Beskrivningskod typ av sändning}
 \label{sändslag}
 \index{bandbredd}
@@ -29,7 +31,7 @@ Om man till exempel nycklar ett RTTY-modem med en direktskrivande fjärrskrivare
 sedan byter till en dator för att göra samma sak, så ändras benämningen av
 sändningsslaget.
 
-\subsection{Bandbredd}
+\section{Bandbredd}
 \index{nödvändig bandbredd}
 \index{basband}
 \index{sidband}
@@ -125,7 +127,7 @@ absoluta frekvenstoleransen.
 \(10^6\)), procent eller i Hz är den maximalt tillåtna frekvensavvikelsen från
 den korrekta frekvensen.
 
-\subsection{Sändningsklass}
+\section{Sändningsklass}
 Sändningklass anges med tre tecken där:\\
 \begin{tabular}{ll}
 	Första tecknet beskriver &  Huvudbärvågens modulation \\
@@ -133,7 +135,7 @@ Sändningklass anges med tre tecken där:\\
 	Tredje tecknet beskriver & Typ av information \\
 \end{tabular}
 
-\subsubsection{Huvudbärvågens modulation}
+\subsection{Huvudbärvågens modulation}
 \textbf{Första tecknet} -- Huvudbärvågens modulation.\\
 \begin{tabular}{ll}
 	Ingen modulation & N\\
@@ -167,7 +169,7 @@ Sändningklass anges med tre tecken där:\\
   vilken är kodad i kvantiserad form (t.ex. pulskodmodulation) ska hänföras till
   amplitud eller vinkelmodulation.}
 
-\subsubsection{Den modulerande signalens karaktär}
+\subsection{Den modulerande signalens karaktär}
 \textbf{Andra tecknet} -- Den modulerande signalens karaktär\\
 \begin{tabular}{ll}
 	Ingen modulerande signal & 0\\
@@ -193,7 +195,7 @@ där signalen kan variera kontinuerligt inom givna gränser.
   I många fall får den information som ska överföras, modulera en underbärvåg,
   som i sin tur påtrycks modulatorn för huvudbärvågen.}
 
-\subsubsection{Informationens form}
+\subsection{Informationens form}
 \textbf{Tredje tecknet} -- Informationens form\\
 \begin{tabular}{ll}
 	Ingen överförd information & N\\
@@ -214,12 +216,12 @@ Faksimilsignaler är analoga eller kvantiserade, beroende på om gråtoner
 överförs eller ej.
 
 
-\subsection{Tilläggstecken}
+\section{Tilläggstecken}
 De två avslutande tecknen är tilläggstecken som ger en mer komplett
 beskrivning av signalen.
 Om ingen komplettering behövs ska tecknen ersättas med två streck ( - - )
 
-\subsubsection{Närmare beskrivning av signalen}
+\subsection{Närmare beskrivning av signalen}
 \textbf{Första tilläggstecknet}- Närmare beskrivning av signalen.\\
 \begin{tabular}{ll}
 	Tvåtillståndskod med element av: &\\
@@ -247,7 +249,7 @@ Om ingen komplettering behövs ska tecknen ersättas med två streck ( - - )
 	Övriga fall & X\\
 \end{tabular}
 
-\subsubsection{Arten av multiplex}
+\subsection{Arten av multiplex}
 \textbf{Andra tilläggstecknet} -- Arten av multiplex.\\
 \begin{tabular}{ll}
 	Ingen multiplex & N\\
@@ -259,7 +261,7 @@ Om ingen komplettering behövs ska tecknen ersättas med två streck ( - - )
 \end{tabular}
 
 
-\subsection{Exempel på beskrivningskod}
+\section{Exempel på beskrivningskod}
 \begin{tabular}{ll}
 	N0N & Omodulerad bärvåg, ingen överförd information.\\
 	100H A1A AN & Morsetelegrafi genom nyckling av bärvåg,\\
@@ -295,3 +297,5 @@ En enda kanal med analog information.
 Sändningsslaget tillämpas i effektbesparande syfte bland annat för
 rundradiosändningar på AM, varvid traditionella rundradiomottagare fortfarande
 kan användas.
+
+\twocolumn
