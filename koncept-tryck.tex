@@ -1,5 +1,5 @@
 %\documentclass[a4paper,twoside,openright,10pt]{memoir}
-\documentclass[10pt,openright]{article}
+\documentclass[10pt,openright]{report}
 \usepackage[utf8]{inputenc}
 
 \include{koncept/common}
@@ -19,13 +19,19 @@
 \rhead{}
 \cfoot{}
 \fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
 
 \renewcommand{\bfdefault}{b}
 \SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
 
+\usepackage{titlesec}
+\titlespacing{\chapter}{0pt}{1cm}{1cm}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
 %%\headheight = 12.6pt
 
-\setsecnumdepth{subsection}
+%% \setsecnumdepth{subsection}
+\setcounter{secnumdepth}{3}
 
 % Figure macros
 \newcommand{\smallfig}[4][0.4]{
@@ -134,7 +140,7 @@
 
 \begin{document}
 
-\chapterstyle{ssa}
+%% \chapterstyle{ssa}
 
 % Frontpage
 \include{koncept/frontpage}

@@ -149,7 +149,7 @@ lägre än referensspänningen.
 Det är enkelt att ändra utgångens egenskaper genom att växla signaler mellan
 positiv och negativ ingång på operationsförstärkaren.
 
-\subsection{Negativ återkoppling och förstärkare}
+\subsection{Negativ återkoppling och\\ förstärkare}
 
 En operationsförstärkare som har en negativ återkoppling, det vill säga där
 signal från utgången matas tillbaka till den negativa ingången, kommer att
@@ -186,14 +186,26 @@ strömstyrka.
 Den relativt höga ingångsimpedansen hos operationsförstärkaren, uppemot en
 teraohm, gör att drivsignalen inte påverkas av en lågohmig last.
 
-\subsubsection{Positiv (icke-inverterande) förstärkning med op-amp}
+\subsubsection{Positiv (icke-inverterande) förstärkning\\ med op-amp}
 \label{icke-inverterande förstärkning}
 
 En enkel variant av buffertförstärkaren fås när man kopplar in en
 spänningsdelare mellan utgången och den negativa ingången, så som illustreras i
 bild \ref{fig:BildII2-46}.
 
-\smallfig{images/cropped_pdfs/bild_2_2-46.pdf}{Icke-inverterande förstärkare}{fig:BildII2-46}
+%% \smalltikz{
+%%   \begin{circuitikz}
+%%     \draw
+%%     (0,0) node[op amp,yscale=-1] (opamp) {}
+%%     (opamp.+) to (-2, 0.5)
+%%     (-2, 0.5) node[label={[font=\footnotesize]below:in}] {}
+%%     (2.1, 0)  node[label={[font=\footnotesize]ut}] {}
+%%     (opamp.out) to (2, 0)
+%%     ;
+%%   \end{circuitikz}
+%% }{Icke-inverterande förstärkare}{fig:BildII2-46}
+
+\smallfig{images/cropped_pdfs/bild_2_2-46.pdf}{Icke-inverterande förstärkare}{fig:BildII2-46.x}
 
 Om förhållandet i spänningsdelaren är 1:10 kommer spänningen på den negativa
 ingången att vara en tiondel av spänningen på utgången.
