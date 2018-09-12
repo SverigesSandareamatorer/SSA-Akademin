@@ -110,22 +110,16 @@
   \end{figure}
 }
 
+\newsavebox\TBox
+\def\textoverline#1{\savebox\TBox{#1}%
+  \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
+
+\usepackage[textfont=it,labelfont=bf,margin=10pt]{caption}
+
 \usepackage{threeparttable}
 \usepackage[symbol]{footmisc}
-
-\newcommand{\Mdotlength}{3pt}
-\newcommand{\Mdahlength}{9pt}
-\newcommand{\Mcharseplength}{9pt}
-\newcommand{\Mwordseplength}{21pt}
-\newcommand{\Mdiditlength}{6pt}
-\newcommand{\Mfetvadd}{1.5pt}
-\newcommand{\Mcharsep}{\hspace{9pt}}
-\newcommand{\Mwordsep}{\hspace{21pt}}
-
-\newcommand{\dit}{\raisebox{0.5ex}{$\rule{\Mdotlength}{\Mfetvadd}\hspace{\Mdotlength}$}}
-\newcommand{\dah}{\raisebox{0.5ex}{$\rule{\Mdahlength}{\Mfetvadd}\hspace{\Mdotlength}$}}
-
-\newcommand{\MSOS}{\Mcharsep \dit\dit\dit\dah\dah\dah\dit\dit\dit \Mcharsep}
+\usepackage{morse}
+\usepackage{scalerel}
 
 %\def\frdjp{\textbf{FÖRDJUPNING}}
 \def\frdjp{}
