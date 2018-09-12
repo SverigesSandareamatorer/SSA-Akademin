@@ -1,5 +1,5 @@
 \onecolumn
-
+\newgeometry{left=4cm,right=4cm}
 \chapter{Beskrivningskod typ av sändning}
 \label{sändslag}
 \index{bandbredd}
@@ -46,7 +46,8 @@ Bokstäverna H (Hz), K (kHz), M (MHz) och G (GHz) används, medan varken 0 eller
 K, M eller G får vara det första tecknet.
 Numeriska värden med mer än tre signifikanta siffror avrundas.
 
-Decimaltecknen används på följande sätt:\\
+Decimaltecknen används på följande sätt:]
+
 \begin{tabular}{lll}
 	bandbredd & 0,001--999~Hz & (decimaltecken H),\\
 	bandbredd & 1,00--999~kHz & (decimaltecken K),\\
@@ -128,7 +129,9 @@ absoluta frekvenstoleransen.
 den korrekta frekvensen.
 
 \section{Sändningsklass}
-Sändningklass anges med tre tecken där:\\
+
+Sändningklass anges med tre tecken där:
+
 \begin{tabular}{ll}
 	Första tecknet beskriver &  Huvudbärvågens modulation \\
 	Andra tecknet beskriver & Den modulerade signalens karaktär \\
@@ -297,5 +300,5 @@ En enda kanal med analog information.
 Sändningsslaget tillämpas i effektbesparande syfte bland annat för
 rundradiosändningar på AM, varvid traditionella rundradiomottagare fortfarande
 kan användas.
-
+\restoregeometry
 \twocolumn
