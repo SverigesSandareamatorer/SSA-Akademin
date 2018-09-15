@@ -702,22 +702,30 @@ Annan pulsmodulation har följande symboler
 
 \begin{table*}[ht]
 \begin{center}
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|L{.12\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.19\textwidth}|}
 \hline
-Sändningsslag & Amplituden på & Tonhöjden på & Bandbredden b      & För stor amplitud \\
-              & LF-signalen   & LF-signalen  & förhåller sig till & på LF-signalen \\
-              & påverkar      & påverkar     &                    & medför \\ \hline
-A3E (AM) & amplituden i   & sidofrekvenser- & LF-signalens    & övermodulering \\
-         & båda sidbanden & nas avstånd    & högsta frekvens & och för stor bandbredd \\
-         &                & från bärvågen  & & \\
-J3E (SSB)& amplituden på  & sidofrekvenser- & skillnaden mellan & för stor bandbredd,\\
-         & utsänt sidband & nas avstånd    & LF-signalens      & överstyrning av\\
-         &                & från bärvågen  & högsta och lägsta & förstärkarsteg\\
-         &                &                & frekvens          & \\
-F3E (FM) & deviationen    & hastigheten på & dubbla summan     & för stor deviation,\\
-         &                & bärvågens      & av största devia- & för stor bandbredd\\
-         &                & frekvens-      & tion och högsta   & \\
-         &                & ändring        & LF-frekvens       & \\ \hline
+  Sändningsslag &
+    Amplituden på LF-signalen &
+    Tonhöjden på LF- signalen påverkar & 
+    Bandbredden b förhåller sig till &
+    För stor amplitud på LF-signalen medför \\
+  \hline % =======================================================
+  A3E (AM) & 
+    amplituden i båda sidbanden &
+    sidofrekvensernas avstånd från bärvågen &
+    LF-signalens högsta frekvens & 
+    övermodulering och för stor bandbredd \\
+  J3E (SSB) & 
+    amplituden på utsänt sidband & 
+    sidofrekvensernas avstånd från bärvågen  & 
+    skillnaden mellan LF-signalens högsta och lägsta frekvens & 
+    för stor bandbredd, överstyrning av förstärkarsteg \\
+  F3E (FM) &
+    deviationen & 
+    hastigheten på bärvågens frekvensändring &
+    dubbla summan av största deviation och högsta LF-frekvens & 
+    för stor deviation, för stor bandbredd \\
+  \hline % =======================================================
 \end{tabular}
 \end{center}
 \caption{Jämförelse mellan några vanliga sändningsslag inom amatörradio}
@@ -1351,3 +1359,9 @@ Man använder sig av ett flertal bärvågor inom dess bandbredd på 1,25~kHz.
 Bärvägorna ligger med 75~Hz mellanrum och varje bärvåg moduleras med varianter
 av PSK-modulering.
 Bandbredden är hälften (1,25~kHz) av en normal SSB-bandbredd (2,4~kHz).
+
+%%% Local Variables: ***
+%%% mode: latex ***
+%%% TeX-master: "../koncept-tryck.tex"  ***
+%%% ispell-local-dictionary: "swedish"  ***
+%%% End: ***
