@@ -33,7 +33,7 @@
 \renewcommand{\bfdefault}{b}
 \SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
 
-\usepackage{titlesec}
+\usepackage[raggedright]{titlesec}
 \titlespacing{\chapter}{0pt}{1cm}{1cm}
 %%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter|}{0pt}{\Huge\bfseries}
@@ -52,6 +52,17 @@
     \label{#4}
     \vspace{-10pt}
   \end{figure}
+}
+
+% Figure macros
+\newcommand{\smallpagefig}[4][0.4]{
+  \begin{figure*}[p]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure*}
 }
 
 \newcommand{\multifig}[4][0.4]{
