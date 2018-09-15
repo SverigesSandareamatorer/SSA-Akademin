@@ -15,7 +15,9 @@
 
 \usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
 
+\usepackage{dblfloatfix}
 \usepackage{float}
+\usepackage{placeins}
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
@@ -43,7 +45,7 @@
 
 % Figure macros
 \newcommand{\smallfig}[4][0.4]{
-  \begin{figure}[h]
+  \begin{figure}[th]
     \centering
     \includegraphics[width=#1\textwidth]{#2}
     \caption{#3}
@@ -76,6 +78,26 @@
 
 \newcommand{\mediumfig}[4][0.7]{
   \begin{figure*}[bt]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumtopfig}[4][0.7]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\pagefig}[4][0.7]{
+  \begin{figure*}[pbt]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
@@ -157,6 +179,10 @@
 % Prepare for index
 \usepackage{makeidx}
 \makeindex
+
+\newcommand{\Hz}{\textit{Hz}}
+\newcommand{\kHz}{\textit{kHz}}
+\newcommand{\MHz}{\textit{MHz}}
 
 \begin{document}
 
