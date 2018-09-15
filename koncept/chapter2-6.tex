@@ -32,17 +32,6 @@ Bild \ref{fig:BildII2-17a} visar en klassisk hålmonterad småsignaltransistor.
 
 Bild \ref{fig:BildII2-17} överst visar hur mellan skikten B och E respektive mellan B och C bildas zoner vars ledningsförmåga kan styras elektriskt över anslutningarna.
 
-\subsubsection{Spänningskällan \(U_{BE}\)}
-
-Bild \ref{fig:BildII2-17} mitten visar att mellan bas och emitter finns en diodsträcka.
-När en positiv spänning läggs på basen och en negativ spänning på emittern polariseras diodsträckans spärrzon i passriktningen.
-Spärrzonen upplöses då och det flyter en så kallad basström \(I_B\).
-
-\subsubsection{Spänningskällan \(U_{CE}\)}
-
-Bild \ref{fig:BildII2-17} nederst visar att när en positiv spänning läggs på kollektorn och en negativ spänning läggs på emittern polariseras diodsträckan i spärriktningen.
-Spärrzonen förstärks då och det flyter ingen ström.
-
 \begin{figure*}[p]
   \begin{center}
     \includegraphics[width=0.66\textwidth]{images/cropped_pdfs/bild_2_2-18.pdf}
@@ -58,6 +47,19 @@ Spärrzonen förstärks då och det flyter ingen ström.
     \label{fig:BildII2-19}
   \end{center}
 \end{figure*}
+
+\clearpage
+
+\subsubsection{Spänningskällan \(U_{BE}\)}
+
+Bild \ref{fig:BildII2-17} mitten visar att mellan bas och emitter finns en diodsträcka.
+När en positiv spänning läggs på basen och en negativ spänning på emittern polariseras diodsträckans spärrzon i passriktningen.
+Spärrzonen upplöses då och det flyter en så kallad basström \(I_B\).
+
+\subsubsection{Spänningskällan \(U_{CE}\)}
+
+Bild \ref{fig:BildII2-17} nederst visar att när en positiv spänning läggs på kollektorn och en negativ spänning läggs på emittern polariseras diodsträckan i spärriktningen.
+Spärrzonen förstärks då och det flyter ingen ström.
 
 \subsubsection{Inverkan av både \(U_{BE}\) och \(U_{CE}\)}
 
@@ -95,7 +97,7 @@ Bild \ref{fig:BildII2-19} visar ström-spänning-diagram för BC 107-transistorn
 
 För emitterkoppling gäller:
 
-\(h_{FE} = \dfrac{\Delta I_C}{\Delta I_B}\)
+\[h_{FE} = \dfrac{\Delta I_C}{\Delta I_B}~.\]
 
 \begin{tabular}{ll}
   \(h_{FE}\) & strömförstärkningsfaktorn \\
@@ -154,7 +156,7 @@ En liten spänningsändring \(\Delta U_{GS}\) medför stor ändring av strömmen
 \index{MOSFET}
 \index{transitor!MOSFET}
 
-Bild \ref{fig:BildII2-22} visar skikten in en N-kanal MOSFET
+Bild \ref{fig:BildII2-22} visar skikten i en N-kanal MOSFET.
 
 I en MOSFET (eng. \emph{Metal Oxide Semicoductor Field Effect Transistor}) är G-elektroden isolerad med ett kiseloxidskikt, trots att namnet förespeglar ett metalloxidskikt. Funktionssättet är samma som för en FET.
 Drainströmmen kan ökas eller minskas med hjälp av en positiv respektive negativ spänning på G.
@@ -167,7 +169,7 @@ För att erhålla en förstärkning med en FET sätter man in en resistor \(R_0\
 För att fastställa viloströmmen och därmed arbetspunkten för samma transistor sätter man in en resistor \(R_S\) i sourceströmkretsen.
 Storleken på sourceresistorn ger sig av önskad gateförspänning \(-U_{GS}\).
 
-\(R_S = \dfrac{-U_{GS}}{I_D}\)
+\[R_S = \dfrac{-U_{GS}}{I_D}~.\]
 
 \subsection{Sambandet drain-ström och spänning}
 

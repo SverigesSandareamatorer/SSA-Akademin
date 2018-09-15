@@ -80,9 +80,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
-    eller efter det refererande stycket) kan man köra longtable
-    på. Slå upp det på webben eller i hundboken. Longtable kan
-    sidbrytas snyggt.
+    eller efter det refererande stycket) kan man köra xtabular
+    på. Slå upp det på webben eller i hundboken. Xtabular kan
+    sidbrytas snyggt, även i 2-kolumner.
 
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
