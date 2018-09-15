@@ -39,7 +39,7 @@
 
 % Figure macros
 \newcommand{\smallfig}[4][0.4]{
-  \begin{figure}[H]
+  \begin{figure}[h]
     \centering
     \includegraphics[width=#1\textwidth]{#2}
     \caption{#3}
@@ -49,7 +49,7 @@
 }
 
 \newcommand{\multifig}[4][0.4]{
-  \begin{figure}[H]
+  \begin{figure}[h]
     \centering
     \foreach \i in {#2} {
       \includegraphics[width=#1\textwidth]{\i}
@@ -82,7 +82,7 @@
 
 \newcommand{\hpfig}[4][0.6]{
   \onecolumn
-  \begin{figure}[H]
+  \begin{figure}[h]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
@@ -103,7 +103,7 @@
 }
 
 \newcommand{\smalltikz}[3]{
-  \begin{figure}[H]
+  \begin{figure}[h]
     \begin{center}
       #1
       \caption{#2}
