@@ -90,13 +90,6 @@ Skyddsjorden ska ha väldigt lite ström på sig, och därmed även ha väldigt
 låg spänningsskillnad från jordpotentialen, men i praktiken kommer det ändå
 finnas skillnader.
 
-\subsection{Seriekoppling av jord}
-
-Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
-\cite[kap 3]{ott1988} mellan ett antal strömförbrukare.
-Detta förekommer till exempel i en serie av eluttag matade från samma säkring
-eller flera eluttag i en skarvdosa.
-
 \smalltikz{
   \begin{circuitikz}[american voltages]
     % Ground reference
@@ -115,6 +108,13 @@ eller flera eluttag i en skarvdosa.
     \draw (5.75,-1) to [short, i=$I_3$] (4.25,-1);
   \end{circuitikz}
 }{Seriekopplat jordsystem}{fig:kap4-1}
+
+\subsection{Seriekoppling av jord}
+
+Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
+\cite[kap 3]{ott1988} mellan ett antal strömförbrukare.
+Detta förekommer till exempel i en serie av eluttag matade från samma säkring
+eller flera eluttag i en skarvdosa.
 
 I bild \ref{fig:kap4-1} att vi har tre strömförbrukare som var och en
 bidrar med en ström \(I_1\), \(I_2\) och \(I_3\), och att dessa är
@@ -138,25 +138,25 @@ och \(I_3\) plus spänningen \(U_1\) och därför blir
 \(U_2 = U_1 + Z_2 (I_2 + I_3)\).
 Slutligen blir den sista spänningen \(U_3 = U_2 + Z_3 I_3\).
 Med förenkling får vi
-
-\(
+%%
+\[
 \begin{array}{ll}
 U_1 & = Z_1 I_1 + Z_1 I_2 + Z_1 I_3 \\
 U_2 & = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2) I_3 \\
 U_3 & = Z_1 I_1 + (Z_1 + Z_2) I_2 + (Z_1 + Z_2 + Z_3) I_3
 \end{array}
-\)
-
+\]
+%%
 Vi ser då att störningen blir
-
-\(
+%%
+\[
 \begin{array}{ll}
 \Delta U_1 & =  Z_1 I_2 + Z_1 I_3 \\
 \Delta U_2 & = Z_1 I_1 + (Z_1 + Z_2) I_3 \\
 \Delta U_3 & = Z_1 I_1 + (Z_1 + Z_2) I_2
 \end{array}
-\)
-
+\]
+%%
 Vilket är ett tydligt exempel på hur strömmarna stör varandras spänningar och
 därmed har avsaknad av isolation.
 
@@ -401,9 +401,17 @@ störningar.
 Detta är oftast inte tillåtet göra då man normalt inte bryter mot
 elsäkerhetsregler och anläggningen riskerar bli farlig, då personskyddet
 sätts ur spel.
-\textbf{Varje gång som skyddsjorden kopplas bort för att lösa ett problem så
-  har man skaffat sig ett större problem, nämligen signifikant sänkt
-  elsäkerhet, vilket indikerar att man valt en felaktig lösning.}
+
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+Varje gång som skyddsjorden kopplas bort för att lösa ett problem så
+har man skaffat sig ett större problem, nämligen signifikant sänkt
+elsäkerhet, vilket indikerar att man valt en felaktig lösning.
+\end{minipage}
+\end{center}
 
 \subsection{Sammankopplad jordning}
 \index{sammankopplad jordning}
@@ -639,26 +647,23 @@ från ersatt de förskjutna jordpunkterna i tidigare exempel.
 Den differentiella spänningen \(U_d\), det vill säga den drivande spänningen
 mellan \(V_{ut+}\) och  \(V_{ut-}\) är fördelad på två spänningskällor som
 levererar halva spänningen var.
-
-\(V_{ut+} = U_g + \dfrac{U_d}{2}\)
-
-\(V_{ut-} = U_g - \dfrac{U_d}{2}\)
-
+%%
+\[V_{ut+} = U_g + \dfrac{U_d}{2}\]
+\[V_{ut-} = U_g - \dfrac{U_d}{2}\]
+%%
 Omvänt kan man formulera uttrycken för gemensam spänningen \(U_g\) samt
 den differentiella spänningen \(U_d\) som \(V_{ut+}\) och \(V_{ut-}\):
-
-\(U_g = \dfrac{V_{ut+}+V_{ut-}}{2}\)
-
-\(U_d = {V_{ut+}-V_{ut-}}\)
-
+%%
+\[U_g = \dfrac{V_{ut+}+V_{ut-}}{2}\]
+\[U_d = {V_{ut+}-V_{ut-}}\]
+%%
 På motsvarande sätt på ingången kan man skriva uttrycken för den gemensamma
 mottagna spänningen \(U_{g,in}\) och den mottagna differentiella spänningen
 \(U_{d,in}\) baserat på inspänningarna \(V_{in+}\) och \(V_{in-}\), man får då
-
-\(V_{g,in} = \dfrac{V_{in+} + V_{in-}}{2}\)
-
-\(V_{in+} = V_{in+}-V_{in-}\)
-
+%%
+\[V_{g,in} = \dfrac{V_{in+} + V_{in-}}{2}\]
+\[V_{in+} = V_{in+}-V_{in-}\]
+%%
 Ett sätt att illustrera skillnaden är till exempel med en transformator.
 En transformator med 1:1 lindning kopplas in mellan två balanserade signaler.
 Transformatorns primärlindning kommer att omvandla den differentiella spänningen
@@ -694,14 +699,14 @@ Precis som för spänning kan man beskriva strömmarna i samma ledare som
 gemensam och differentiell ström.
 Vi kan därför återanvända formlerna och bara byta ut V mot I genomgående och
 får då:
-
+%%
 \begin{eqnarray}
 I_+ = & I_g + I_d\\
 I_- = & I_g - I_d\\
 I_g = & \dfrac{I_+ + I_-}{2}\\
 I_d = & \dfrac{I_+ - I_-}{2}
 \end{eqnarray}
-
+%%
 Om vi återgår till transformatorexemplet så kommer det vara den differentiella
 strömmen på primärlindningen som ger upphov till magnetfältet i transformatorn
 och som sedan inducerar en differentiell ström i sekundärlindningen.
@@ -757,18 +762,17 @@ de individuella spänningarna och strömmarna till \emph{gemensam överföring}
 (eng. \emph{Common Mode (CM)}) och \emph{differentiell överföring}
 (eng. \emph{Differential Mode (DM)}) är en kraftfull metod både för att
 förstå och avhjälpa problem och uppnå isolation.
-
 För spänning har vi ekvationerna
-
+%%
 \begin{eqnarray}
 V_+ = & V_{CM} + V_{DM}\\
 V_- = & V_{CM} - V_{DM}\\
 V_{CM} = & \dfrac{V_+ + V_-}{2}\\
 V_{DM} = & \dfrac{V_+ - V_-}{2}
 \end{eqnarray}
-
+%%
 För ström har vi ekvationerna
-
+%%
 \begin{eqnarray}
 I_+ = & I_{CM} + I_{DM}\\
 I_- = & I_{CM} - I_{DM}\\
@@ -785,12 +789,12 @@ egentligen den differentiella impedansen, det vill säga förhållande mellan de
 differentiella spänningen och differentiella strömmen.
 Den gemensamma impedansen är på samma sätt förhållandet mellan gemensam
 spänning och gemensam ström
-
+%%
 \begin{eqnarray}
 Z_{DM} = & \dfrac{U_{DM}}{I_{DM}}\\
 Z_{CM} = & \dfrac{U_{CM}}{I_{CM}}
 \end{eqnarray}
-
+%%
 Egentligen är det inte så konstigt, om man har en koaxialkabel i ett 50~ohm
 system så har sändare och mottagare idealt 50~ohm som differentiell impedans.
 I ett system som har isolerad jordning så kan den gemensamma impedansen vara
