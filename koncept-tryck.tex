@@ -30,13 +30,19 @@
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
+%% This fixes page numbering on chapter head pages
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[LE,RO]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}}
+
 \renewcommand{\bfdefault}{b}
 \SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
 
 \usepackage[raggedright]{titlesec}
 \titlespacing{\chapter}{0pt}{1cm}{1cm}
 %%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\fcolorbox{black}{black}{\color{white}\,\vstrut\thechapter\,}~~}{0pt}{\Huge\bfseries}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\fcolorbox{black}{black}{\color{white}\,\thechapter\,}~~}{0pt}{\Huge\bfseries}
 
 %%\headheight = 12.6pt
 
