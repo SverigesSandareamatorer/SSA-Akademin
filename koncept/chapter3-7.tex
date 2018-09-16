@@ -46,7 +46,7 @@ Kristallens och oscillatorns egenskaper avgör hur stort området kan vara.
 Om kristaller dras för mycket, så kan resonansfrekvensen bli ostabil.
 Den relativa frekvensändringen uppgår till högst \(10^{-4} = 0,01\%\)
 enligt följande formel:
-
+%
 \[
 \text{relativ frekvensändring} =
 \frac{\text{absolut ändring}}{\text{resonansfrekvens}}
@@ -77,7 +77,7 @@ tillverkningsprocedur, nämligen att slipa mycket tunna kristallskivor.
 En övertonsoscillator måste alltid innehålla en resonanskrets som är
 avstämd till den överton som anges på kristallen.
 
-\textbf{Modellförsök:}
+\paragraph{Modellförsök}
 En instrumentsträng sätts i svängning på sin grundton genom en knäppning mitt
 på strängen.
 En knäppning på en punkt bort från mitten får strängen att svänga på en överton
@@ -109,13 +109,13 @@ Ett bandpassfilter filtrerar fram den önskade blandningsprodukten, som
 ligger i frekvensområdet 144--146~MHz.
 Resultatet blir en hög frekvens, som är både variabel och stabil.
 
-\textbf{Fördelar:}
+\paragraph{Fördelar}
 Frekvensstabiliteten hos en super-VFO är mycket bättre än hos en enkel VFO,
 som arbetar direkt i VHF-området.
 En super-VFO är dessutom mycket brusfattigare än en PLL-VFO, vilken
 beskrivs här nedan.
 
-\textbf{Nackdelar:}
+\paragraph{Nackdelar}
 Vid frekvensblandning uppstår oönskade blandningsprodukter, vilka visserligen
 dämpas av bandpassfilter, men som det är omöjligt att undertryckta helt.
 Bland annat alstras en svag spegelfrekvens, som vandrar från 128 till 126~MHz,
@@ -247,13 +247,13 @@ Vid varje frekvensändring i VCO, kommer systemet att sträva mot
 frekvensskillnaden noll i fasjämföraren, vilket gör att sändningsfrekvensen
 hålls vid rätt värde.
 
-\textbf{Fördelar med en PLL-oscillator:}
+\paragraph{Fördelar med en PLL-oscillator}
 Den har samma frekvensstabilitet som en VFO eftersom denna även här arbetar på
 en låg frekvens.
 Till skillnad mot en super-VFO finns inga sidofrekvenser i PLL-oscillatorn,
 eftersom VCO alstrar nyttofrekvensen direkt.
 
-\textbf{Nackdelar med en PLL-oscillator:}
+\paragraph{Nackdelar med en PLL-oscillator}
 Den har högre brusnivå än en super-VFO.
 Frekvensstabiliteten är sämre än den för en PLL-oscillator med XO och
 programmerbar frekvensdelare.
@@ -262,7 +262,7 @@ programmerbar frekvensdelare.
 \harec{a}{3.7.2}{3.7.2}
 \index{PLL!programmerbar}
 
-\largefig{images/cropped_pdfs/bild_2_3-82.pdf}{PLL med frekvensdelare}{fig:BildII3-82}
+\mediumtopfig{images/cropped_pdfs/bild_2_3-82.pdf}{PLL med frekvensdelare}{fig:BildII3-82}
 
 Bild \ref{fig:BildII3-82} visar en PLL med frekvensdelare.
 Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen 
@@ -467,7 +467,7 @@ Hur mycket beror bland annat på loopfiltret.
 Alltså är frekvensen egentligen ett mycket litet band av flera frekvenser varav
 en framträder mest.
 
-\textbf{Försök:}
+\paragraph{Försök}
 
 Volymkontrollen i en lågfrekvensförstärkare utan insignal vrids till maximum.
 Det kommer att höras ett brus i högtalaren, som huvudsakligen kommer från
