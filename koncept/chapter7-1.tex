@@ -28,25 +28,25 @@ I antennsystemet ingår även impedansanpassningar, antennkopplare med mera.
 I vakuum breder elektromagnetiska vågor ut sig med hastigheten \(c_0\), vilken
 mest kallas ljushastigheten.
 Den är i SI-systemet \cite{SIbrochure8} fastställd till
-
+%%
 \[c_0 = 299\,792\,458 \approx 300 \cdot 10^6 \text{ [m/s]}\]
-
+%%
 I andra media än vakuum har samma vågor utbredningshastigheten \(c\).
 Formeln är då
-
+%%
 \[c = \frac{c_0}{\sqrt{\mu_r \cdot \varepsilon_r}}\]
-
+%%
 där \(\mu_r\) är relativa permeabilitetskonstanten och \(\varepsilon_r\) är
 relativa dielektricitetskonstanten för det medium som vågorna passerar igenom.
 För enkelhetens skull sätts här \(\mu_r\) och \(\varepsilon_r\) till 1,
 alltså \(c_0 = c\).
 
-Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
-
+Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat:
+%%
 \[ c = \lambda \cdot f \quad c\text{ [m/s] }\quad f\text{ [Hz] } \quad \lambda\text{ [m]}\]
-
+%%
 och våglängden således
-
+%%
 \[ \lambda = \frac{c}{f} \quad \text{[m]} \]
 
 \subsection{Antennlängd}
@@ -62,7 +62,7 @@ Således \(l_e = \lambda\).
 
 Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\)) är hälften
 av den elektriska längden för en helvågsantenn (\(\lambda\)):
-
+%%
 \[l_e = \frac{\lambda}{2} \quad \text{[m]}\]
 
 \subsubsection{Mekaniska längden}
@@ -90,39 +90,37 @@ antennhandböcker.
 
 I följande formel har den mekaniska längden (\(l_m\)) för en fritt upphängd
 trådantenn valts 2~\% kortare än den elektriska längden.
-
+%%
 \[l_m = \frac{\lambda}{2} \cdot 0,98 \quad \text{[m]}\]
-
+%%
 \textbf{Exempel:}
-
 Beräkna den elektriska och mekaniska längden på en halvvågsantenn med
 resonansfrekvensen \(f = 7\)~MHz.
-
+%%
 \[
 c = \lambda \cdot f
 \quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
 \]
-
-Elektriska våglängden för 7~MHz är
-
+%%
+Elektriska våglängden för 7~MHz är:
+%%
 \[
 \lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
 \quad \text{[m]}
 \]
-
-Antennen är en halvvågsantenn, således är elektriska längden
-
+%%
+Antennen är en halvvågsantenn, således är elektriska längden:
+%%
 \[
 l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21,43 \quad \text{[m]}
 \]
-
-och mekaniska längden
-
+%%
+och mekaniska längden:
+%%
 \[
 l_m = \frac{\lambda}{2} \cdot 0,98 = \frac{42.86}{2}\cdot 0,98 = 21
 \quad \text{[m]}
 \]
-
 
 \subsection{Ström och spänning i en halvvågs\-antenn}
 \harec{a}{6.2.1}{6.2.1}
@@ -269,13 +267,17 @@ specialfall.
 Om sändningsfrekvensen är en annan än antennens resonansfrekvens, så händer
 endera av följande:
 
-När antennströmmen har lägre frekvens än antennens resonansfrekvens, så blir
+\begin{description}
+\item[När antennströmmen har lägre frekvens] än antennens resonansfrekvens, så blir
 den resulterande reaktansen negativ (kapacitiv), det vill säga \(X_C\) är större
 än \(X_L\).
 
-När antennströmmen har högre frekvens än antennens resonansfrekvens,
+\item[När antennströmmen har högre frekvens] än antennens resonansfrekvens,
 så blir den resulterande reaktansen positiv (induktiv), det vill säga \(X_L\)
 är större än \(X_C\).
+\end{description}
+
+\smallfig{images/cropped_pdfs/bild_2_6-04.pdf}{Elektrisk förlängning och förkortning av antenner}{fig:bildII6-4}
 
 \subsection{Elektrisk ''förlängning'' och ''förkortning''}
 \label{elektrisk förlängning}
@@ -283,8 +285,6 @@ så blir den resulterande reaktansen positiv (induktiv), det vill säga \(X_L\)
 \index{antenn!elektrisk förlängning}
 \index{elektrisk förkortning}
 \index{antenn!elektrisk förkortning}
-
-\smallfig{images/cropped_pdfs/bild_2_6-04.pdf}{Elektrisk förlängning och förkortning av antenner}{fig:bildII6-4}
 
 Om sändarfrekvensen, avviker mycket från antennens resonansfrekvens,
 så kan reaktansen i antennen behöva elimineras eller åtminstone
@@ -392,15 +392,15 @@ En isotropisk antenn är emellertid endast teoretisk definierbar.
 
 Med effekten \(P_i\) från den isotropiska antennen som referens blir
 antennförstärkningen
-
+%%
 \[G = 10 \log\frac{P_f}{P_i} \quad \text{[dBi]}\]
-
+%%
 En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennförstärkningen
-
+%%
 \[G = 10 \log\frac{P_f}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
-
+%%
 Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 
 \smallfig{images/cropped_pdfs/bild_2_6-06.pdf}{Antennförstärkning dBd i effekt}{fig:bildII6-6}
@@ -409,30 +409,33 @@ Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 
 Antennförstärkning kan också definieras som förhållandet mellan den elektriska
 fältstyrkan \(U_f\) i huvudstrålningsriktningen och referensfältstyrkan (dipol).
-
 Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
-
+%%
 \[G = 20 \log\frac{U_f}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
-
+%%
 Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
 Se kapitel \ref{decibel} om decibelbegreppet.
 
-\textbf{Exempel på beräkning av antennförstärkning:}
-
+\vspace{1ex}
+\noindent\textbf{Exempel på beräkning av antennförstärkning:}
+%%
 \begin{align*}
   U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
-  &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
+  &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
-
+%%
 6~dB antennförstärkning motsvarar en fördubblad fältstyrka [V/m], det vill säga
 1~S-enhets ökning vid den mottagande stationen, liksom att 6~dB
 antennförstärkning motsvarar en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
 
+\newpage
+\noindent
 Ungefärlig antennförstärkning för olika antenner med en isotrop antenn som
 referens:
-
+\vspace{1ex}
+\begin{center}
 \begin{tabular}{l|ll|ll}
   & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
   \multicolumn{2}{l}{Isotrop} \\
@@ -447,14 +450,17 @@ referens:
   2-elements quad       & 6   & dBd & 8    & dBi \\
   3-elements yagi       & 8   & dBd & 10,1 & dBi \\
 \end{tabular}
+\end{center}
 
+\vspace{1ex}
+\noindent
 Antenner har förluster, det gör att olika antenner kan ha olika
 effektivitet, därför finns måttet \emph{antenneffektivitet}
 (eng. \emph{antenna efficiency}) \(\eta\) som beror på relationen mellan
-utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\)
-
+utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\):
+%%
 \[\eta = \frac{R_R}{R_R+R_L}\]
-
+%%
 Antennens effektivitet, verkningsgrad, kan även beräknas med hjälp av antennens
 förlusteffekt och den tillförda effekten.
 Observera att verkningsgraden för en antenn alltid är mindre än 1 då det är lätt
@@ -499,38 +505,38 @@ till antennen räknas bort före beräkningen av EIRP.
 Med fram/backförhållande (F/B) för en riktantenn menas förhållandet mellan den
 utstrålade effekten i framriktningen \(P_f\) och effekten i backriktningen
 \(P_b\).
-
+%%
 \[ F/B = 10 \log\frac{P_f}{P_b} \quad \text{[dB]} \]
-
+%%
 \smallfig{images/cropped_pdfs/bild_2_6-08.pdf}{F/B-förhållande i effekt}{fig:bildII6-8}
 
 Fram/backförhållandet kan också definieras som förhållandet mellan elektriska
 fältstyrkan \(U_f\) i framriktningen och referensfältstyrkan \(U_b\) i
 backriktningen
-
+%%
 \[ F/B = 20 \log\frac{U_f}{U_b} \quad \text{[dB]} \]
-
+%%
 \smallfig{images/cropped_pdfs/bild_2_6-09.pdf}{F/B-förhållande i spänning}{fig:bildII6-9}
-
+%%
 \textbf{Exempel 1:}
-
+%%
 \begin{align*}
   U_f &= 40 \text{ \(\mu V\)} \quad U_b = 4\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{40}{4} \\
-  &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]} \\
+  &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]}
 \end{align*}
-
+%%
 \(F/B = 20\) dB betyder att fältstyrkan \(U_f\) i huvudriktningen är
 10 gånger så hög som fältstyrkan i backriktningen \(U_b\).
 
-\textbf{Exempel 2:}
-
+\noindent\textbf{Exempel 2:}
+%%
 \begin{align*}
   U_f &= 15 \text{ \(\mu V\)} \quad U_b = 15\text{ \(\mu V\)} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
-  &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
+  &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]}
 \end{align*}
-
+%%
 \(F/B = 0\) dB betyder att \(U_f = U_b\), det vill säga att fältstyrkorna i
 fram- och backriktning är lika stora, vilket inträffar för en dipol.
 
@@ -547,13 +553,13 @@ Fältstyrkan \(U_f\) förhåller sig på liknande sätt.
 Med effekthalvvärdesbredd menas den vinkel inom vilken nyttoeffekten
 är minst hälften så stor som i huvudriktningen.
 Bild \ref{fig:bildII6-10} visar halvvärdesbredder.
-
+%%
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
   \sqrt{\frac{1}{2}}U_f \\
   ( \approx 0,7 U_f \text{ motsvarande 3 dB })
 \end{gather*}
-
+%%
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 (fältstyrkan) är minst hälften så stor som den största nyttospänningen \(U_f\).
 Spänningshalvvärdesbredden för en dipol är ungefär 90\degree.
@@ -566,6 +572,6 @@ Spänningshalvvärdesbredden för en dipol är ungefär 90\degree.
 \emph{Antennarea} (eng. \emph{capture area}) är den area som parabolantenner
 och horn har.
 Antenngainet (G) beror antennarean (\(A_{phy}\)), effektiviteten (\(e_a\)) och
-våglängden (\(\lambda\)) enligt
-
+våglängden (\(\lambda\)) enligt:
+%%
 \[ G = \frac{4\pi A_{phy}e_a}{\lambda^2} \]
