@@ -27,8 +27,19 @@ Endast vid mycket noggrann mätning kan man behöva räkna om det visade
 mätvärdet med hänsyn till voltmeterns inre resistans och
 förkopplingsresistansen -- om en sådan används.
 
-\textbf{På grund av den höga inre resistansen är en voltmeter endast lämpad
-  för spänningsmätning -- INTE för direkt strömmätning!}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+  %%\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+  \fontfamily{futs}\Huge{\hspace{1ex}!}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+På grund av den höga inre resistansen är en voltmeter endast lämpad
+för spänningsmätning -- INTE för direkt strömmätning!
+\end{minipage}
+\end{center}
+
+%%\textbf{På grund av den höga inre resistansen är en voltmeter endast lämpad
+%  för spänningsmätning -- INTE för direkt strömmätning!}
 
 \subsubsection{Utöka mätområdet för en voltmeter}
 
@@ -72,8 +83,18 @@ Endast vid mycket noggrann mätning kan man behöva räkna om det visade
 mätvärdet med hänsyn till amperemeterns inre resistans och resistansen
 i strömshunten -- om en sådan används.
 
-\textbf{På grund av den låga inre resistansen ska en amperemeter
-  ALDRIG användas för spänningsmätning. Då förstörs den!}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+På grund av den låga inre resistansen ska en amperemeter
+ALDRIG användas för spänningsmätning. Då förstörs den!
+\end{minipage}
+\end{center}
+
+%%\textbf{På grund av den låga inre resistansen ska en amperemeter
+%%  ALDRIG användas för spänningsmätning. Då förstörs den!}
 
 \subsubsection{Utöka mätområdet för en amperemeter}
 
@@ -177,24 +198,23 @@ Denna mätmetod är relevant framförallt för lågohmiga motstånd.
 \index{effekt!Peak Envelope Power (PEP)}
 
 Effektformler vid lik- och växelström (medel-, effektiv- och toppvärden)
-
 Vid likström:
-
-\(
-P = U \cdot I \quad \text{[W (watt)]} \quad \text{dvs. Joules lag} \\
-\)
-
-Vid sinusformad växelström och resistiva belastningar:
-För PEP-effekt se även avsnitt \ref{PEP-effekt}
-
-\(
+%
+\[
+P = U \cdot I \quad \text{[W (watt)]} \quad \text{dvs. Joules lag}
+\]
+%%
+Vid sinusformad växelström och resistiva belastningar
+(För PEP-effekt se även avsnitt \ref{PEP-effekt}):
+%%
+\[
 \begin{array}{ll}
 \text{effektivvärde} \quad P & = \dfrac{U^2}{R} \\
 &\\
 \text{toppvärde}     \quad P_{PEP} & = \dfrac{U_{max}^2}{R}
 \end{array}
-\)
-
+\]
+%%
 U = spänningens effektivvärde
 R = resistansen
 
@@ -289,8 +309,8 @@ och reflekterad effekt uttrycks som ett \emph{ståendevågförhållande (SVF)}
 Med en SVF-meter som sätts in mellan effektkälla och ledning kan man
 mäta hur stor effekt som matas in i ledningen och hur stor effekt som
 vänder tillbaka från slutet av ledningen.
+SVF-värdet kan då bestämmas på något av följande sätt:
 
-SVF-värdet kan bestämmas på något av följande sätt:
 \begin{itemize}
 \item Man mäter framåt- respektive bakåtgående effekt var för sig med
   en riktningskänslig effektmeter.
