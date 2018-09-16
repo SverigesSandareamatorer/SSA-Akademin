@@ -157,61 +157,61 @@ kondensatorer för att uppnå önskad total kapacitans.
 
 Den totala kapacitansen för parallellkopplade kondensatorer är summan av de
 enskilda kapacitanserna.
-
-\[C = C_1 + C_2 + C_3 + \cdots C_n\]
-
-\newpage
-
+%
+\[
+  C = C_1 + C_2 + C_3 + \cdots C_n
+\]
+%
+\begin{minipage}{\columnwidth}
 \textbf{Räkneexempel:}
 \begin{enumerate}
 \item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
   \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 5 + 10 \\
+    C &= C_1 + C_2 \\[1ex]
+    &= 5 + 10 \\[1ex]
     &= 15\ \mu F
   \end{align*}
 \item \(C_1 = 1\ nF \quad C_2 = 5\ pF \quad C =\ ?\)
   \begin{align*}
-    C &= C_1 + C_2 \\
-    &= 1 + 0,005 \\
+    C &= C_1 + C_2 \\[1ex]
+    &= 1 + 0,005 \\[1ex]
     &= 1,005\ nF
   \end{align*}
 \end{enumerate}
+\end{minipage}
 
 \subsection{Seriekopplade kondensatorer}
 \harec{a}{3.1.1e}{3.1.1e}
 \index{kondensator!seriekopplade}
 \index{seriekoppling!kondensatorer}
 
-\smallfig{images/cropped_pdfs/bild_2_3-06.pdf}{Seriekopplade kondensatorer}{fig:BildII3-06}
+\smallfig[0.3]{images/cropped_pdfs/bild_2_3-06.pdf}{Seriekopplade kondensatorer}{fig:BildII3-06}
 
 Bild \ref{fig:BildII3-06} visar seriekopplade kondensatorer.
 Den totala kapacitansen för seriekopplade kondensatorer är lägre än kapacitansen
 för kondensatorn med det minsta värdet.
-
+%
 \[
 \frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} +
 \frac{1}{C_3} + \cdots \frac{1}{C_n}
 \]
-
+%
 För två kondensatorer gäller:
-
-\begin{align*}
-  \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \quad \text{eller} \\
-  C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
-\end{align*}
-
-\newpage
-
+%%
+\[
+  \frac{1}{C} = \frac{1}{C_1} + \frac{1}{C_2} \quad \text{eller} \quad
+  C = \frac{C_1 \cdot C_2}{C_1 + C_2}
+\]
+%%
+\noindent
 \textbf{Räkneexempel:}
-
 \begin{enumerate}
   \item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
     \begin{align*}
-      \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\
-      C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\
-      &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\
-      &= 3\frac{1}{3}\ \mu F \\
+      \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
+      C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\[1ex]
+      &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\[1ex]
+      &= 3\frac{1}{3}\ \mu F \\[1ex]
       &\approx 3,33\ \mu F
     \end{align*}
 \end{enumerate}
@@ -229,17 +229,19 @@ beräknas på samma sätt som för motsvarande sammankoppling av resistorer.
 Förutsatt att magnetfälten från de respektive induktorerna inte återverkar på
 varandra -- det vill säga inte ''kopplar magnetiskt till varandra'' -- så
 gäller:
-
+%
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
-
+%
+\noindent
 \textbf{Räkneexempel:}
-
-\[L_1 = 20\ mH \quad L_2 = 50\ mH \quad L =\ ?\]
+\begin{enumerate}
+\item \(L_1 = 20\ mH \quad L_2 = 50\ mH \quad L =\ ?\)
 \begin{align*}
-  L &= L_1 + L_2 \\
-  & = 20 + 50 \\
+  L &= L_1 + L_2 \\[1ex]
+  & = 20 + 50 \\[1ex]
   &= 70\ mH
 \end{align*}
+\end{enumerate}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
 \harec{a}{3.1.1d}{3.1.1d}
@@ -298,35 +300,34 @@ kopplar till varandra på olika sätt.
 \subsubsection{Magnetiskt kopplade induktorer i serie}
 
 \textbf{Formel:}
-
+%
 \[L = L_1 +L_2 \pm 2M\]
-
+%
 \textbf{Räkneexempel:}
-
 Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
 Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
 Vardera induktansen ökas därför med \(M = 2\ \mu H\).
-
-\begin{align*}
-  L &= L_1 + M + L_2 + M \\
-  &= 20 + 2 + 10 + 2\ \mu H \\
-  &= 34\ \mu H
-\end{align*}
-
+\[
+\begin{array}{rcl}
+  L &=& L_1 + M + L_2 + M \\
+    &=& 20 + 2 + 10 + 2\ \mu H \\
+    &=& 34\ \mu H
+\end{array}
+\]
 \textbf{Räkneexempel:}
 Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
 induktans av 2~\(\mu H\).
 Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
 Vardera induktansen minskas därför med \(M = 2\ \mu H\).
-
-\begin{align*}
-  L &= L_1 - M + L_2 - M \\
-  & = 20 - 2 + 10 - 2\ \mu H \\
-  &= 26\ \mu H
-\end{align*}
-
+\[
+\begin{array}{rcl}
+  L &=& L_1 - M + L_2 - M \\
+    & &= 20 - 2 + 10 - 2\ \mu H \\
+    &=& 26\ \mu H
+\end{array}
+\]
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
 När flera induktorer är parallellkopplade och placerade så att deras magnetiska
 fält interagerar behöver man ta hänsyn till om de samverkar eller motverkar varandra.
@@ -336,13 +337,13 @@ Mer läsning om induktorer och hur de påverkar varandra finns att läsa i
 \textbf{Formler:}
 
 Samverkande parallella induktorer
-
+%
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 - 2M}\]
-
+%
 Motverkande parallella induktorer
-
+%
 \[L = \frac{L_1 \cdot L_2 - M^2}{L_1 + L_2 + 2M}\]
-
+%
 \subsection{Upp- och urladdning av en kondensator}
 
 \subsubsection{Uppladdning}
@@ -355,17 +356,17 @@ och kopplas till spänningen \(U\).
 
 % PHU: Bilden förvirrar. U i kretsschemat är samma som U_max i diagrammet.
 
-Spänningen över kondensatorn stiger från 0~volt till \(U_{max}\).
+Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\).
 
-Laddningsströmmen sjunker från \(I_{max}\) till 0~ampere.
+Laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
 
 Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
-
-\[u_c = U_{max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
-
+%
+\[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+%
 \begin{tabular}{lp{0.35\textwidth}}
   \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
-  \(U_{max}\) & slutspänningen efter minst \(t = 5\tau\) \\
+  \(U_{\it max}\) & slutspänningen efter minst \(t = 5\tau\) \\
   \(t\)       & inkopplingstiden \\
   \(e\)       & 2,718 (e = basen för den naturliga logaritmen) \\
 \end{tabular}
@@ -385,11 +386,11 @@ Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
 
 Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
 
-\[i_c = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 \begin{tabular}{lp{0.4\textwidth}}
   \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
-  \(I_{max}\) & begynnelseströmmen \\
+  \(I_{\it max}\) & begynnelseströmmen \\
 \end{tabular}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
@@ -405,18 +406,18 @@ Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor 
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
-\[u_c = U_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[u_c = U_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 Strömmen från kondensatorn minskar exponentiellt under urladdningen.
 Strömriktningen är motsatt den vid uppladdningen.
 
-\[i_c = - I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = - I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
 
-Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{max}\)
-respektive \(U_{max}\) återstår.
+Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{\it max}\)
+respektive \(U_{\it max}\) återstår.
 
 Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
-\(I_{max}\) respektive \(U_{max}\) återstår.
+\(I_{\it max}\) respektive \(U_{\it max}\) återstår.
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
@@ -442,24 +443,24 @@ Exempel på beräkning av tidskonstanten:
 
 Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
-Spänningen över induktorn minskar från \(U_{max}\) till 0.
+Spänningen över induktorn minskar från \(U_{\it max}\) till 0.
 
-Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{max}\).
-
-\[i_L = I_{max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
-
+Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\).
+%
+\[i_L = I_{\it max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
+%
 \begin{tabular}{lp{0.35\textwidth}}
   \(i_L\) &  strömmen efter en given inkopplingstid \\
-  \(I_{max}\) & slutströmmen efter minst \(t = 5\tau\) \\
+  \(I_{\it max}\) & slutströmmen efter minst \(t = 5\tau\) \\
   \(t\) & inkopplingstiden \\
   \(e\) & 2,718 (e = basen för den naturliga logaritmen) \\
 \end{tabular}
 
 I förloppet ingår storleken av resistans och induktans enligt följande samband,
 som kallas tidskonstant
-
+%
 \[\tau = \frac{L}{R}\]
-
+%
 \[
 L\ [\text{H}] \quad
 R\ [\Omega] \quad
@@ -468,7 +469,7 @@ s\ [\text{sek}] \quad
 \]
 
 Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
-induktorn ökat från noll till 63~\% av \(I_{max}\) och spänningen över induktorn
+induktorn ökat från noll till 63~\% av \(I_{\it max}\) och spänningen över induktorn
 minskat till 37~\% av maxvärdet.
 
 \subsubsection{Urkoppling}
@@ -476,18 +477,21 @@ minskat till 37~\% av maxvärdet.
 Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
 Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{max} = i_L\) och minskar därefter exponentiellt.
+Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt.
 
-\[i_L = I_{max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_L = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
 
 \begin{tabular}{lp{0.4\textwidth}}
   \(i_L\) & strömmen genom ind. efter en given \\
           &ur\-kop\-p\-li\-ngs\-tid \\
-  \(I_{max}\) & strömmen i urkopplingsögonblicket \\
+  \(I_{\it max}\) & strömmen i urkopplingsögonblicket \\
   \(e\) & 2,718 \\
   \(t\) & tiden efter urkopplingsögonblicket \\
 \end{tabular}
 
+\vspace*{1ex}
+
+\noindent
 Efter en tid av \(t = 1\tau\) från urkopplingsögonblicket har strömmen genom
 induktorn minskat till 37~\% av maxvärdet.
 
@@ -635,17 +639,15 @@ jämfört med induktor.
 \index{reaktans}
 
 Liten ordlista:
-\begin{itemize}
-\item Impedans -- hindra (lat. impedire).
-\item Resistans -- motstå (lat. resistere).
+\begin{description}
+\item[Impedans] -- hindra (lat. impedire).
+\item[Resistans] -- motstå (lat. resistere).
   Del av impedansen, kallas ibland ohmskt motstånd.
-\item Reaktans -- återverka (lat. reagere).
+\item[Reaktans] -- återverka (lat. reagere).
   Del av impedansen, samlingsord för växelströmsmotstånd.
-  \begin{itemize}
-  \item Kapacitans -- inrymma (lat. capax). Del av reaktansen.
-  \item Induktans -- införa (lat. inducere). Del av reaktansen.
-  \end{itemize}
-\end{itemize}
+\item[Kapacitans] -- inrymma (lat. capax). Del av reaktansen.
+\item[Induktans] -- införa (lat. inducere). Del av reaktansen.
+\end{description}
 
 Hittills har storheterna resistans, induktans och kapacitans behandlats var för
 sig, men i praktiken förekommer de alltid tillsammans och kallas impedans.
@@ -712,31 +714,33 @@ Fasvinkeln mellan impedans och resistans kan också avläsas.
 
 Eftersom vektordiagrammet bildar en rätvinklig triangel kan den resulterande
 spänningen \(U\) i kretsen även beräknas med Pythagoras sats:
-
+%
 \[C^2 = A^2 + B^2 \quad eller \quad C = \sqrt{A^2 + B^2}\]
-
+%
 Tillämpad på ovanstående vektordiagram kan satsen skrivas som
-
+%
 \[U_{LCR}^2 = U_R^2 + ( U_L - U_C)^2\]
-
+%
 Termerna ersätts med följande ekvationer:
-
-\begin{align*}
-  U_{LRC} &= I \cdot Z \\
-  U_R &= I \cdot R \\
-  U_L &= I X_L = I \omega L \\
-  U_C &= I X_C = I \frac{1}{\omega C} \\
-  I^2 Z^2 &= I^2 R^2 + ( I \omega L - I\frac{1}{\omega C})^2
-\end{align*}
-
+\[
+\begin{array}{rcl}
+  U_{LRC} &=& I \cdot Z \\[1ex]
+  U_R     &=& I \cdot R \\[1ex]
+  U_L     &=& I X_L = I \omega L \\[1ex]
+  U_C     &=& I X_C = I \frac{1}{\omega C} \\[1ex]
+  I^2 Z^2 &=& I^2 R^2 + ( I \omega L - I\frac{1}{\omega C})^2
+\end{array}
+\]
+%
 Efter division med \(I^2\) fås
-
-\begin{align*}
-  Z^2 &= R^2 + ( \omega L - \frac{1}{\omega C} )^2 \quad \text{eller} \\
-  Z &= \sqrt{R^2 + (\omega L - \frac{1}{\omega C})^2} \quad \text{eller} \\
-  Z &= \sqrt{R^2 + (X_L - X_C)^2}
-\end{align*}
-
+%
+\[
+\begin{array}{rcl}
+  Z^2 &=& R^2 + ( \omega L - \frac{1}{\omega C} )^2 \quad \text{eller} \\[1ex]
+  Z   &=& \sqrt{R^2 + (\omega L - \frac{1}{\omega C})^2} \quad \text{eller} \\[1ex]
+  Z   &=& \sqrt{R^2 + (X_L - X_C)^2}
+\end{array}
+\]
 I en seriekrets är den resulterande reaktansen negativ (kapacitiv) om \(X_C\) är
 större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
@@ -753,19 +757,19 @@ ström- respektive spänningsändring än vad resistansen gör.
 
 Om impedansen \(Z\) sätts in i Ohms lag fås följande samband, som ofta kallas
 Ohms lag för växelström
-
-\begin{align*}
-  U_{eff} &= I_{eff} \cdot Z \quad \text{eller} \\
-  U_{eff} &= I_{eff} \cdot \sqrt{R^2 + X^2} \quad \text{eller} \\
-  U_{eff} &= I_{eff} \cdot \sqrt{R^2 + (X_L - X_C)^2} \quad \text{osv.}
-\end{align*}
-
+\[
+\begin{array}{rcl}
+  U_{\it eff} &=& I_{\it eff} \cdot Z \quad \text{eller} \\
+  U_{\it eff} &=& I_{\it eff} \cdot \sqrt{R^2 + X^2} \quad \text{eller} \\
+  U_{\it eff} &=& I_{\it eff} \cdot \sqrt{R^2 + (X_L - X_C)^2} \quad \text{osv.}
+\end{array}
+\]
 Av vad som framgått tidigare i detta avsnitt kan även slutsatsen dras att:
-
+%
 \[
 \text{skenbar effekt} = \sqrt{(\text{aktiv effekt})^2 + (\text{reaktiv effekt})^2}
 \]
-
+%
 \subsection{Parallellkopplade LC-kretsar}
 \harec{a}{3.1.3}{3.1.3d}
 \harec{a}{3.2.1}{3.2.1}
@@ -780,19 +784,21 @@ En parallellkopplad LC-krets är i bild \ref{fig:BildII3-15} ansluten till
 växelspänningen \(U\) från en signalgenerator med inställbar frekvens \(f\).
 Två fall studeras.
 
-\textbf{Fall 1:} \(f = f_{res}\)
+\begin{description}
+
+\item[Fall 1:] \(f = f_{\it res}\)
 
 Signalgeneratorns frekvens \(f\) ställs lika med LC-kretsens resonansfrekvens
-\(f_{res}\).
+\(f_{\it res}\).
 Då visar kretsen hög impedans \(Z\) mot generatorn.
 En stark ström cirkulerar i LC-kretsen, men endast en svag ström flyter i
 ledningen mellan generator och krets.
 Jämför med modellförsöket på bild \ref{fig:BildII3-17}.
 
-\textbf{Fall 2:} \(f > f_{res}\) eller \(f < f_{res}\)
+\item[Fall 2:] \(f > f_{\it res}\) eller \(f < f_{\it res}\)
 
 Frekvensen \(f\) ställs högre eller lägre än kretsens resonansfrekvens
-\(f_{res}\).
+\(f_{\it res}\).
 
 Kretsen visar då en låg impedans \(Z\) mot generatorn.
 En svag ström cirkulerar i LC-kretsen, medan en starkare ström flyter i
@@ -817,7 +823,7 @@ strömmarna \(I_C\) och \(I_L\), vilka är motriktade varandra.
 Formeln för parallellkopplade resistanser kan även användas för
 parallellkopplade reaktanser om man tillämpar Pythagoras sats
 \(A^2 + B^2 = C^2\), således
-
+%
 \begin{gather*}
 	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots \\
 	\left(\frac{1}{Z}\right)^2 = \left(\frac{1}{R}\right)^2 +
@@ -830,7 +836,7 @@ parallellkopplade reaktanser om man tillämpar Pythagoras sats
 
 Med \(R\) försumbart kan den totala reaktansen beräknas ur den induktiva reaktansen \(X_L\)
 och den vektormässigt motriktade kapacitiva reaktansen \(X_C\) på följande sätt:
-
+%
 \begin{align*}
 	\frac{1}{X} &= \frac{1}{X_L} - \frac{1}{X_C} = \frac{X_C - X_L}{X_C \cdot X_L}
 	\quad \text{eller} \\
@@ -840,6 +846,7 @@ och den vektormässigt motriktade kapacitiva reaktansen \(X_C\) på följande s�
 I en parallellkopplad LC-krets är den resulterande reaktansen negativ
 (kapacitiv) om \(X_L\) är större än \(X_C\) och positiv (induktiv) om \(X_L\) är
 mindre än \(X_C\).
+\end{description}
 
 \subsection{Seriekopplade LC-kretsar}
 \index{LC-krets}
@@ -852,17 +859,18 @@ En seriekopplad LC-krets i bild \ref{fig:BildII3-16} ansluts till
 växelspänningen \(U\) från en signalgenerator med inställbar frekvens \(f\).
 Två fall studeras.
 
-\textbf{Fall 1:} \(f = f_{res}\)
+\begin{description}
+\item[Fall 1:] \(f = f_{\it res}\)
 
 Signalgeneratorns frekvens \(f\) ställs lika med LC-kretsens resonansfrekvens
-\(f_{res}\).
+\(f_{\it res}\).
 Impedansen \(Z\) i en seriekrets visar då ett mycket lågt värde mot generatorn.
 Det flyter en stark ström i ledningen mellan generator och krets.
 
-\textbf{Fall 2:} \(f < f_{res} \quad \text{eller} \quad f > f_{res}\)
+\item[Fall 2:] \(f < f_{\it res} \quad \text{eller} \quad f > f_{\it res}\)
 
 Frekvensen \(f\) ställs lägre eller högre än kretsens resonansfrekvens
-\(f_{res}\).
+\(f_{\it res}\).
 
 Eftersom LC-kretsen då visar hög impedans \(Z\) mot generatorn, flyter
 endast en svag ström i ledningen mellan generator och krets.
@@ -880,6 +888,7 @@ Spänningen över reaktansen \(X_C\) ligger 90\degree~efter \(I\) och ritas
 rakt neråt (vektorerna roterar moturs).
 Spänningen över reaktansen \(X_L\) (induktorn) ligger 90\degree~före \(I\) och
 ritas rakt uppåt.
+\end{description}
 
 \subsection{Thomsons formel}
 \harec{a}{3.2.4}{3.2.4}
@@ -918,7 +927,7 @@ varandra.
 Kvar är kretsens resistans, vilken vi tills vidare betraktar som försumbar.
 
 Således \(X_L = X_C\), där
-
+%
 \begin{gather*}
   X_L = 2\pi fL \quad \text{och} \\
   X_C = \frac{1}{2\pi fC} \quad \text{sätts in.} \\
@@ -929,8 +938,10 @@ Således \(X_L = X_C\), där
 
 Formeln gäller både för parallell- och seriekretsar.
 
+\vspace*{1ex}
+\noindent
 \textbf{Räkneexempel:}
-
+%
 \[L = 100\ nH \quad C = 10\ pF \quad f =\ ?\]
 \begin{align*}
   f &= \frac{1}{2\pi \sqrt{100 \cdot 10^{-9} \cdot 10 \cdot 10^{-12}}} \\
@@ -963,17 +974,17 @@ kapacitans 200~pF, förlustresistans 10~\(\Omega\).
 Kretsen består av parallellkopplade reaktanser, \(X_L\) och \(X_C\).
 Vid resonans är dessa lika stora och motverkande.
 Inom kretsen är således den resulterande reaktansen:
-
+%
 \[X_C - X_L = 0\]
-
+%
 Därför uppvisar samma krets en yttre reaktans av:
-
+%
 \[
   X = \frac{X_C \cdot X_L}{X_C - X_L}
   = \frac{X_C \cdot X_L}{0}
   = \infty
 \]
-
+%
 I praktiken finns i kretsen också en resistans varför dessa extremvärden inte
 uppstår.
 Inne i en parallellkrets i resonans cirkulerar alltså en stark ström,
@@ -1017,11 +1028,11 @@ Bild \ref{fig:BildII3-19} visar en seriekrets är i resonans, så är
 \end{align*}
 
 Med ovanstående kretsdata blir resonansfrekvensen:
-
+%
 \[
 f_0 = \frac{1}{2\pi \sqrt{LC}} \approx 796\ kHz
 \]
-
+%
 Vid resonansfrekvensen blir reaktansen 1000~\(\Omega\) både för induktansen och
 kapacitansen.
 Eftersom reaktansernas spänningsfall är motriktade tar de ut varandra.
@@ -1048,11 +1059,11 @@ Godhetstalet Q (=Quality Factor) kan ses som den förmåga en resonanskrets har
 att lagra energi, det vill säga förhållandet mellan den lagrade energin och
 energiförlusten i kretsen.
 Energiförlusten yttrar sig som värmeutveckling.
-
+%
 \[
 Q = 2\pi \frac{\text{lagrad energi i kretsen}}{\text{energiförlusten per period}}
 \]
-
+%
 Energiförluster uppstår både i kretsens kondensator och induktor, men moderna
 kondensatorer har så låga förluster att induktorn ensam kan anses bestämma
 Q-värdet, åtminstone i kortvågsområdet.
@@ -1069,9 +1080,9 @@ I kortvågsområdet är det vanligt med ett \(Q\) i storleksordningen 30--100.
 Ju högre Q är, desto mindre är bandbredden.
 
 När kretsen är i resonans gäller sambandet
-
-\[Q = \frac{f_{res}}{b}\]
-
+%
+\[Q = \frac{f_{\it res}}{b}\]
+%
 Bandbredden ökar (avstämningsskärpan minskar) vid ökande frekvens på grund av de
 större kretsförlusterna.
 
@@ -1083,7 +1094,7 @@ större kretsförlusterna.
 
 Bild \ref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har
 vid olika frekvenser.
-Impedansens högsta värde är vid frekvensen \(f_{res}\) och avtar vid frekvenser
+Impedansens högsta värde är vid frekvensen \(f_{\it res}\) och avtar vid frekvenser
 som är högre eller lägre.
 Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70~\% av
 maximalvärdet.

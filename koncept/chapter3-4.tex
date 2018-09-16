@@ -131,17 +131,19 @@ Denna koppling har emellertid ingen spänningsförstärkning, men kan användas 
 impedansomvandling.
 
 \begin{table*}[!h]
-\caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
-  \begin{tabular}{p{0.20\textwidth}|p{0.30\textwidth}|p{0.20\textwidth}|p{0.25\textwidth}}
-    \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
-    \(Z_{in}\) & medel \quad 1 k\(\Omega\) & liten \quad 50 \(\Omega\) & stor \quad 100 k\(\Omega\) \\
-    \(Z_{ut}\) & medel \quad 10 k\(\Omega\) & stor \quad 100 k\(\Omega\) & liten \quad 50 k\(\Omega\) \\
-    Förstärkning & & & \\
-    \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
-    \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
-    \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
-    Fasläge & motfas \quad 180\degree & medfas \quad 0\degree & medfas 0\degree \\
-  \end{tabular}
+  \begin{center}
+    \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
+    \begin{tabular}{p{0.15\textwidth}|p{0.22\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}}
+      \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
+      \(Z_{in}\) & medel \quad 1 k\(\Omega\) & liten \quad 50 \(\Omega\) & stor \quad 100 k\(\Omega\) \\
+      \(Z_{ut}\) & medel \quad 10 k\(\Omega\) & stor \quad 100 k\(\Omega\) & liten \quad 50 k\(\Omega\) \\
+      Förstärkning & & & \\
+      \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
+      \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
+      \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
+      Fasläge & motfas \quad 180\degree & medfas \quad 0\degree & medfas 0\degree \\
+    \end{tabular}
+  \end{center}
 \end{table*}
 
 \subsection{Stabilisering av arbetspunkten}
@@ -213,14 +215,12 @@ verkningsgraden är lägre.
 Klass AB är en kompromiss med bättre verkningsgrad utan en alltför stor
 distorsion.
 
+\smallfig{images/cropped_pdfs/bild_2_3-45.pdf}{Förstärkare i klass B}{fig:BildII3-45}
+
 \subsubsection{Klass B}
 \index{klass B}
 
-\smallfig{images/cropped_pdfs/bild_2_3-45.pdf}{Förstärkare i klass B}{fig:BildII3-45}
-
-Bild \ref{fig:BildII3-45}
-
-Klass B är ett olinjärt arbetssätt med en låg viloström i förhållande
+Klass B (bild \ref{fig:BildII3-45}) är ett olinjärt arbetssätt med en låg viloström i förhållande
 till \(I_{max}\), det vill säga att arbetspunkten ligger i nederkant av
 styrkaraktäristikans nedre krökta del. Verkningsgraden är upp till
 67~\%. Trots det används klass B i linjära LF-och HF-förstärkarsteg
@@ -236,12 +236,12 @@ Linjär förstärkning kan också erhållas med två mottaktkopplade rör eller
 transistorer i klass B.
 Utgångskretsen behöver då inte vara avstämd av linjäritetsskäl.
 
+\smallfig{images/cropped_pdfs/bild_2_3-46.pdf}{Förstärkare i klass C}{fig:BildII3-46}
+
 \subsubsection{Klass C}
 \index{klass C}
 
-\smallfig{images/cropped_pdfs/bild_2_3-46.pdf}{Förstärkare i klass C}{fig:BildII3-46}
-
-Bild \ref{fig:BildII3-46} visar klass C som används i HF-förstärkarsteg i
+Bild \ref{fig:BildII3-46} visar klass C som används i HF-förstärkar\-steg i
 FM- och CW-sändare.
 Arbetssättet är kraftigt olinjärt.
 Viloströmmen är noll, det vill säga arbetspunkten ligger på den negativa delen
@@ -253,7 +253,7 @@ En resonanskrets med högt Q-värde dämpar övertoner och behövs som utgångsk
 varvid amplituddistorsion inte framstår som besvärande vid CW och FM.
 Med hjälp av resonanskretsen kan frekvensmultiplicering utföras med
 förstärkare i klass C.
-(På följande tre bilder är \(I_R\)=anodviloström.)
+(På följande tre bilder är \(I_R\) = anodviloström.)
 
 \subsection{Frekvensmultiplicering}
 \index{frekvensmultiplicering}
@@ -267,7 +267,7 @@ Bild \ref{fig:BildII3-47} visar hur oscillatorn följs av ett eller flera
 frekvensmultiplicerande förstärkarsteg som arbetar i klass C.
 
 I utgången av ett frekvensmultiplicerande steg måste finnas en
-resonanskrets som är avstämd till önskad frekvens, det vill säga till en av insignalens övertoner.
+resonanskrets som är avstämd till önskad frekvens, dvs. till en av insignalens övertoner.
 Denna överton förstärks i efterföljande förstärkarsteg, vilket också kan vara
 frekvensmultiplicerande.
 
@@ -310,16 +310,15 @@ Förr täckte VFO i amatörradiosändarna oftast frekvensområdet 3,5--3,8~MHz.
 Med en så vald VFO-frekvens kunde alla upplåtna frekvensband för
 amatörradio nås med frekvensmultiplicering.
 De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt
-relaterade av detta skäl.
-
-Således
+relaterade av detta skäl. Således:
+%%
 \begin{align*}
   3,5 \cdot 2 & = 7\ \text{MHz} \\
   3,5 \cdot 2 \cdot 2 & = 14\ \text{MHz} \\
   3,5 \cdot 2 \cdot 3 & = 21\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\ \text{MHz} \\
+  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\ \text{MHz}
 \end{align*}
-
+%%
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen utan
 även variationerna i den.
 Om till exempel VFO-frekvensen i området 3,5~MHz ändras med 50~Hz, ändras
@@ -486,22 +485,20 @@ En konstlast är en resistor som kan omsätta sändarens hela effekt till värme
 Med en HF-mätprob och en detektordiod eller en HF-voltmeter kan man mäta
 effektivvärdet på spänningen över konstlasten och beräkna uteffekten med
 formeln
-
-\(P_{ut} = \dfrac{U^2}{R}\)
-
+%
+\[P_{ut} = \dfrac{U^2}{R}\]
+%
 \(U\) = HF-spänningens effektivvärde och 
 \(R\) = resistansen i konstlasten
 
-\newpage
-
-\textbf{Beräkning och mätning av PEP-effekt}
+\paragraph{Beräkning och mätning av PEP-effekt}
 
 Uteffekten definierad som \emph{Peak Envelope Power (PEP)} \cite[1.157]{ITU-RR}
 är ''den medeleffekt som matas in i en antennmatarledning under det högsta
 effektvärdet inom en frekvenscykel och mätt under normal drift''.
-
-\(P_{PEP} = \left[\dfrac{\hat{u}}{\sqrt{2}}\right]^2\dfrac{1}{R} =  \dfrac{\hat{u}^2}{2R}\)
-
+%
+\[P_{PEP} = \left[\dfrac{\hat{u}}{\sqrt{2}}\right]^2\dfrac{1}{R} =  \dfrac{\hat{u}^2}{2R}\]
+%
 där \(\hat{u}\) är momentanspänningen på den största modulationstoppen.
 
 \smallfig{images/cropped_pdfs/bild_2_3-52.pdf}{Bestämning av PEP-effekten}{fig:BildII3-52}
@@ -517,25 +514,22 @@ oscilloskop när slutsteget är kopplat till en konstlast.
 
 Med topp-till-toppvärdet känt kan man med följande formler beräkna
 toppvärdet (amplituden)
-
-\(
+%
+\[
 \begin{array}{lll}
 \text{toppvärdet (amplituden)} &  \quad \hat{u}= & \dfrac{\hat{u}_{t-t}}{2}\\
 & & \\
 \text{effektivvärdet} &\quad  U =& \dfrac{\hat{u}}{\sqrt{2}}
 \end{array}
-\)
-
+\]%
+%
 Effekten vid moduleringstopparna, så kallad \emph{Peak Envelope Power (PEP)},
 kan beräknas med följande formler.
-
-\(
-\begin{array}{ll}
-P_{PEP} & = \dfrac{U^2}{R} \text{respektive} \\
-&\\
-P_{PEP} & = \dfrac{\hat{u}_{t-t}^2}{8R}
-\end{array}
-\)
+%
+\[
+P_{PEP} = \dfrac{U^2}{R} \quad\text{respektive}\quad
+P_{PEP} = \dfrac{\hat{u}_{t-t}^2}{8R}
+\]
 
 \subsection{Linjäritetskontroll vid SSB}
 \harec{b}{7.2.4}{7.2.4}

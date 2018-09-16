@@ -10,9 +10,9 @@ till mottagaren med så små förluster som möjligt.
 \subsection{Avstämd matarledning}
 \index{transmissionsledning!avstämd}
 
-\subsubsection{Spännings- och strömkoppling}
-
 \smallfig{images/cropped_pdfs/bild_2_6-21.pdf}{Spänningskopplad $\lambda/2$-dipol}{fig:bildII6-21}
+
+\subsubsection{Spännings- och strömkoppling}
 
 Bild \ref{fig:bildII6-21} visar en \(\lambda/2\)-dipol som kopplas till
 sändarutgången via en \(\lambda/4\) matarledning.
@@ -142,15 +142,15 @@ isolationsskiktet.
 Ett vanligt förekommande isolationsmaterial i koaxialkablar är polyetylen med
 dielektricitetskonstanten \(\varepsilon = 2,25\).
 Hastighetsfaktorn \(v\) (velocity factor) blir då
-
+%%
 \[
 v = \frac{1}{\sqrt{\varepsilon}} = \frac{1}{\sqrt{2.25}} = \frac{1}{1,5} = 0,666
 \]
-
+%%
 1~meter av en sådan koaxialkabel är \(1/0,666 = 1,333\) meter för en HF-signal.
 Även bandkablar har naturligtvis en hastighetsfaktor, vanligen 0,7--0,85.
 
-\subsection{Karaktäristisk impedans Z i ledningar}
+\subsection{Karaktäristisk impedans Z i led\-ningar}
 \harec{a}{6.3.4}{6.3.4}
 \index{transmissionsledning!impedans}
 
@@ -165,50 +165,45 @@ Oändligt långa ledningar är ju orealistiska och då kan man i stället bestä
 vågimpedansen genom ledningens geometriska uppbyggnad, dielektricitetskonstant
 och dess induktivitet och kapacitet per längdenhet.
 
-\textbf{Exempel:}
-
+\noindent\textbf{Exempel:}
 Vi undersöker elektriska karaktäristika i en kabel av typ RG-213/U.
-
 På en provbit med längden 1~meter mäter vi en kapacitans av 97~pF
 mellan inner och ytterledaren.
 När kabelns ena ände kortsluts mäter vi en induktans av 262~nH.
 
 Den uppmätta kapacitansen och induktansen bestämmer kabelns karaktäristiska
 impedans \(Z\), också kallat våg motstånd, som är oberoende av ledningens längd.
-
 Med ovanstående uppmätta värden blir impedansen:
-
+%%
 \begin{align*}
   Z &= \sqrt{\frac{L}{C}} \quad L\text{ [H]} \quad C\text{ [F]} \quad
   Z[\Omega] \\
   Z &= \sqrt{\frac{262000\cdot 10^{-12}}{97\cdot 10^{-12}}} =
   \sqrt{\frac{262000}{97}} = 52\ \Omega
 \end{align*}
-
+%%
 Den karaktäristiska impedansen för en matarledning, bestäms av ledningens
 dimensioner och av isolationsmaterialets dielektricitetskonstant.
-För en bandkabel är
 
-\[
-Z = \frac{276}{\sqrt{\varepsilon_r}}\cdot\log\frac{2a}{d} \quad [\Omega] \\
-\]
+\noindent
+För en bandkabel är:
+%%
 \begin{align*}
+Z = & \frac{276}{\sqrt{\varepsilon_r}}\cdot\log\frac{2a}{d} \quad [\Omega] \\
 [&a = \text{centrumavståndet mellan ledarna i mm}] \\
 [&d = \text{ledardiametern i mm}] \\
 [&\varepsilon_r = \text{dielektricitetskonstanten, överslagsvärde 1,5}] \\
-[&\varepsilon_r \text{ för luft} = 1,0] \\
+[&\varepsilon_r \text{ för luft} = 1,0]
 \end{align*}
-
-För en koaxialkabel är
-
-\[
-Z = \frac{138}{\sqrt{\varepsilon_r}}\cdot\log\frac{D}{d} \quad [\Omega]
-\]
+%%
+För en koaxialkabel är:
+%%
 \begin{align*}
+Z = & \frac{138}{\sqrt{\varepsilon_r}}\cdot\log\frac{D}{d} \quad [\Omega] \\
 [&D = \text{ytterledarens innerdiameter i mm}] \\
 [&d = \text{innerledarens ytterdiameter i mm}]
 \end{align*}
-
+%%
 Data, impedansdiagram och formler för beräkning av transmissionsledningar
 finns bland annat i antennhandböcker.
 
@@ -249,7 +244,7 @@ och så vidare.
 
 Bild \ref{fig:bildII6-26} visar stående våg på ledning.
 Spänningen utmed kabeln varierar regelbundet mellan
-
+%%
 \[U_{max} = U_f + U_b \quad \text{och} \quad U_{min} = U_f - U_b\]
 
 \subsection{Ståendevågförhållande (SVF)}
@@ -267,15 +262,15 @@ och \(U_{min}\) eller mellan \(I_{max}\) och \(I_{min}\).
   \text{eller} \\
   \text{SVF} &= \frac{I_{max}}{I_{min}}
 \end{align*}
-
-ståendevågförhållandet SVF kan även anges med hjälp av impedanserna i
+%%
+Ståendevågförhållandet SVF kan även anges med hjälp av impedanserna i
 matarledningen (\(Z\)) och i antennens matningspunkt (\(Z_a\)).
-
+%%
 \begin{align*}
   \text{SVF} &= \frac{Z}{Z_a} \quad \text{där } Z > Z_a \quad \text{eller} \\
   \text{SVF} &= \frac{Z_a}{Z} \quad \text{där } Z > Z_a
 \end{align*}
-
+%%
 Ståendevågmätning beskrivs i avsnitt \ref{mäta ståendevåg}.
 
 \largefig{images/cropped_pdfs/bild_2_6-27.pdf}{SVF-problemet förenklad bild}{fig:bildII6-27}
@@ -360,11 +355,12 @@ anordning kallad BAL UN (av de engelska orden BALanced-UNbalanced).
 Baluner kan utföras på flera sätt.
 Grundläggande har balunen lika in- och utgångsimpedans,
 
+\noindent
 \textbf{Exempel:}
-
-Ringkärnebalun 1:1 för balansering.
-
-Koaxialledare anordnad som balun 1:1.
+\begin{itemize}
+\item Ringkärnebalun 1:1 för balansering.
+\item Koaxialledare anordnad som balun 1:1.
+\end{itemize}
 
 \subsubsection{Transformering}
 
@@ -384,10 +380,11 @@ Bilden visar också att matarledningens impedans \(Z\) transformeras om så
 att den blir lika antennens anslutningsimpedans \(R_a\).
 Denna transformering kan ske induktivt eller kapacitivt.
 
-\textbf{Exempel:}
-Ringkärnebalun 1:4.
-
-Koaxialledare anordnad som balun 1:4.
+\noindent\textbf{Exempel:}
+\begin{itemize}
+\item Ringkärnebalun 1:4.
+\item Koaxialledare anordnad som balun 1:4.
+\end{itemize}
 
 \subsection{Ringkärnebalun}
 \index{balun!ringkärna}
@@ -510,7 +507,6 @@ strömindikator.
 
 Bild \ref{fig:bildII6-33} visar Förlopp i öppen $\lambda/4$
 transmissionsledning.
-
 Håll glimlampan nära intill ledningen.
 Glimlampan tänds med jämna mellanrum när den flyttas utmed ledningen.
 
@@ -522,8 +518,7 @@ Det har bildats en stående våg på ledningen.
 
 Bilden visar ström- och spänningsfördelningen för en öppen transmissionsledning
 med längden \(l = n\cdot\lambda/4\) med udda \(n = 1, 3, 5 \dots\).
-
-För bilden har valts n = 5.
+För bilden har valts $n = 5$.
 
 Utmed ledningen uppstår omväxlande elektriska och magnetiska fält allt
 efter som svängningen fortsätter.
@@ -595,7 +590,7 @@ kort för att kunna avstämmas.
 Märk, att en antennkopplare mycket väl även kan utformas för
 koaxialkabelutgång.
 
-\smallfig[0.25]{images/cropped_pdfs/bild_2_6-36.pdf}{Antennkopplare}{fig:bildII6-36}
+\tallfig[0.30]{images/cropped_pdfs/bild_2_6-36.pdf}{Antennkopplare}{fig:bildII6-36}
 
 \subsection{För- och nackdelar med avstämd matarledning}
 
@@ -622,5 +617,6 @@ Detta är av flera skäl:
 
 \item Vid tvära bockar på ledningen kan det upp stå oönskad
   utstrålning och därmed risk för störningar på radio och TV med mera.
-
 \end{itemize}
+
+

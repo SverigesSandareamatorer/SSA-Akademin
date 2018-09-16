@@ -39,12 +39,11 @@ Man skiljer även mellan analoga filter och digitala filter. Vi beskriver här f
 
 \largefig{images/cropped_pdfs/bild_2_3-22.pdf}{Högpassfilter}{fig:BildII3-22}
 
-Bild \ref{fig:BildII3-22}
 
-Ett \emph{högpassfilter} (eng. \emph{highpass filter (HP)}) släpper igenom
+Ett \emph{högpassfilter} (eng. \emph{highpass filter (HP)}, bild \ref{fig:BildII3-22}) släpper igenom
 signaler med höga frekvenser och dämpar de med låga frekvenser.
 
-\textbf{Exempel:} En frekvensberoende spänningsdelare som LC-högpassfilter.
+\paragraph{Exempel} En frekvensberoende spänningsdelare som LC-högpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
 Över \(X_L\) uppstår då ett litet spänningsfall -- en låg utgångsspänning \(U_a\).
@@ -57,24 +56,24 @@ Resultatet blir att höga frekvenser släpps igenom.
 
 \(X_L\) kan bytas ut mot en resistor \(R\), men då blir passbandskurvan inte lika brant.
 
-\textbf{Gränsfrekvens}
+\paragraph{Gränsfrekvens}
 
 Gränsfrekvensen \(f_g\) beror av kapacitansen \(C\), induktansen \(L\) samt
 resistansen \(R\).
 
-\textbf{LC-högpass:}
+\paragraph{LC-högpass}
 \begin{gather*}
   f_g = \frac{1}{2\pi \sqrt{LC}} \\
   f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
 \end{gather*}
 
-\textbf{RC-högpass:}
+\paragraph{RC-högpass}
 \begin{gather*}
   f_g = \frac{1}{2\pi RC}\\
   f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}
 \end{gather*}
 
-\textbf{Räkneexempel:}
+\paragraph{Räkneexempel}
 \begin{enumerate}
 \item \(L = 4\ \text{H} \quad C = 1\ \mu\text{F} \quad f_g =\ ?\)
   \[
@@ -106,7 +105,7 @@ stället ett LC-lågpassfilter respektive ett RC-lågpassfilter.
 Ett \emph{lågpassfilter} (eng. \emph{lowpass filter (LP)}) släpper igenom
 signaler med låga frekvenser och dämpar de med höga frekvenser.
 
-\textbf{Exempel:} En frekvensberoende spänningsdelare som LC-lågpassfilter.
+\paragraph{Exempel} En frekvensberoende spänningsdelare som LC-lågpassfilter.
 
 Vid låga frekvenser är \(X_C\) stor och \(X_L\) liten.
 Över \(X_L\) uppstår då ett litet spänningsfall -- en hög utgångsspänning
@@ -118,18 +117,18 @@ Vid höga frekvenser är \(X_C\) liten och \(X_L\) stor.
 \(U_a\).
 Resultatet blir att höga frekvenser dämpas.
 
-\textbf{Gränsfrekvens}
+\paragraph{Gränsfrekvens}
 
 Samma formler används vid beräkning av gränsfrekvensen både i lågpass- och
 högpassfilter, således
 
-\textbf{LC-lågpass:}
+\paragraph{LC-lågpass}
 \begin{gather*}
   f_g = \frac{1}{2\pi \sqrt{LC}} \\
   f_g\ \text{[Hz]} \quad L\ \text{[H]} \quad C\ \text{[F]}
 \end{gather*}
 
-\textbf{RC-lågpass:}
+\paragraph{RC-lågpass}
 \begin{gather*}
   f_g = \frac{1}{2\pi {RC}} \\
   f_g\ \text{[Hz]} \quad R\ [\Omega] \quad C\ \text{[F]}
@@ -162,6 +161,8 @@ Lös koppling liten bandbredd.
 Kritisk koppling -- större bandbredd.
 Fast koppling -- stor bandbredd.
 
+\smallfig[0.5]{images/cropped_pdfs/bild_2_3-25.pdf}{Passfilter}{fig:BildII3-25}
+
 \subsection{Passfilter}
 \harec{a}{3.2.9}{3.2.9d}
 \index{passfilter}
@@ -169,12 +170,12 @@ Fast koppling -- stor bandbredd.
 \index{pass filter|see {passfilter}}
 \index{BP}
 
-\smallfig{images/cropped_pdfs/bild_2_3-25.pdf}{Passfilter}{fig:BildII3-25}
-
 Passkretsen eller passfilter stäms av till en viss frekvens och erbjuder där
 en mycket låg impedans så som illustreras i bild \ref{fig:BildII3-25}.
 Passkretsen kopplas i serie med signalvägen och låter signaler med
 frekvenser inom filtrets passband att passera.
+
+\smallfig[0.5]{images/cropped_pdfs/bild_2_3-26.pdf}{Bandspärrfilter}{fig:BildII3-26}
 
 \subsection{Bandspärrfilter}
 \harec{a}{3.2.8d}{3.2.8d}
@@ -183,8 +184,6 @@ frekvenser inom filtrets passband att passera.
 \index{filter!bandspärr (BR)}
 \index{band reject filter (BR)}
 \index{BR}
-
-\smallfig{images/cropped_pdfs/bild_2_3-26.pdf}{Bandspärrfilter}{fig:BildII3-26}
 
 Om serie- och parallellkretsarna i ett bandpassfilter byter plats får man
 i stället ett bandspärrfilter så som illustreras i bild \ref{fig:BildII3-26}.
@@ -351,8 +350,6 @@ På bilden visas två alternativ.
 
 När den parallella delen är kapacitiv, blir huvudkaraktären ett lågpassfilter. 
 När den parallella delen i stället är induktiv blir huvudkaraktären ett högpassfilter.
-
-\newpage
 
 Ett Pi- eller T-filter kan fungera som
 \begin{itemize}

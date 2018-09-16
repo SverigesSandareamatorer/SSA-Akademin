@@ -32,7 +32,6 @@ strömkrets.
 Förmågan att lagra elektrisk energi (elektrisk laddning) kallas
 \emph{kapacitans} (eng. \emph{capacitance}).
 Ordet kommer från latinets capax, som betyder rymlig eller duglig.
-
 Kapacitansen betecknas i formler med bokstaven C.
 
 En kondensators kapacitans bestäms av ytan på kondensatorns plattor,
@@ -46,18 +45,17 @@ kondensatorns kapacitans.
 Materialets egenskap kallas för \emph{dielektricitet}
 (eng. \emph{dielectric property}) och kännetecknas av dess
 \emph{dielektricitetskonstant} (eng. \emph{dielectric constant}).
-
-Dielektricitetskonstanten för vakuum är definierad som
-
-\(\epsilon_0 = \dfrac{1}{c_0^2\mu_0} \approx 8,854187 \cdot 10^{-12}\)
-
+Dielektricitetskonstanten för vakuum är definierad som:
+%%
+\[\epsilon_0 = \dfrac{1}{c_0^2\mu_0} \approx 8,854187 \cdot 10^{-12}\]
+%%
 Den \emph{relativa dielektricitetskonstanten} \(\epsilon_r\) varierar för olika material och dess värde 
 går att finna i tabeller. Genom att multiplicera den relativa dielektricitetskonstanten 
 för ett material med dielektricitetskonstanten för vakuum \(\epsilon_0\) får man den
 \emph{absoluta dielektricitetskonstanten} \(\epsilon\).
-
-\(\epsilon = \epsilon_0\epsilon_r\)
-
+%%
+\[\epsilon = \epsilon_0\epsilon_r\]
+%%
 
 \subsection{Kapacitans, dimension och dielektrikum}
 \harec{a}{2.2.3}{2.2.3}
@@ -71,16 +69,14 @@ proportionell mot plattavståndet.
 Följande formler gäller för kapacitansen i en enkel kondensator med två
 plattor. När en kondensator är uppbyggd av n stycken plattor, ökar kapacitansen
 med faktorn (n-1).
-
 Med vakuum som dielektrikum gäller
-
-\(C = \varepsilon _0 \dfrac{A}{d}\)
-
+%%
+\[C = \varepsilon _0 \dfrac{A}{d}\]
+%%
 Med ett godtyckligt dielektrikum gäller
-
-\(C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\)
-
-\(C\ [farad]\) \(A\ [m^2]\) \(d\ [m]\) \(\varepsilon\ [\dfrac{F}{m}]\)
+%%
+\[C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\]
+\[C\ [\textit{farad}]\quad A\ [m^2]\qquad d\ [m]\quad \varepsilon\ [\dfrac{F}{m}]\]
 
 \subsection{Enheten farad}
 \harec{a}{2.2.2}{2.2.2}
@@ -91,11 +87,13 @@ Kapacitans är elektricitetsmängden per volt där måttenheten är \emph{farad}
 Eftersom denna enhet är mycket stor används inom elektroniken oftast bråkdelar
 av den.
 
+\begin{center}
 \begin{tabular}{ll}
 1 mikrofarad & \((1\ \mu F) = 10^{-6}\ F\) \\
 1 nanofarad & \((1\ nF) = 10^{-9}\ F\) \\
 1 pikofarad & \((1\ pF) = 10^{-12}\ F\) \\
 \end{tabular}
+\end{center}
 
 \subsection{Kondensatorn i likströmskretsen}
 \index{laddningsmängd}
@@ -104,11 +102,10 @@ av den.
 En kondensator i en likströmskrets har alltid samma polaritet.
 Därvid förhåller sig kondensatorns polspänning \(U\) till dess
 \emph{laddningsmängd} \(Q\) och kapacitans \(C\) enligt sambandet
-
-\(U = C \cdot Q\)
-
-\(U\ [V]\) \(C\ [F]\) \(C\ [As]\)
-
+%%
+\[U = C \cdot Q\]
+\[U\ [V]\quad C\ [F]\quad C\ [As]\]
+%%
 Laddningsmängd har enheten ampere gånger sekund och är alltså ett mått på hur
 många laddningar som har lagrats.
 
@@ -131,14 +128,12 @@ I en likströmskrets förhåller sig kondensatorns polspänning till
 laddningsmängden. Men i en väx\-el\-st\-röm\-s\-kr\-ets växlar spänningen och polariteten 
 ständigt och därmed växlar även kondensatorns laddning och polaritet.
 
-\textbf{Not: Vissa kondensatortyper kan inte användas i rena
+\textbf{Not:} \emph{Vissa kondensatortyper kan inte användas i rena
   växelströmskretsar.}
 
-\textbf{Försök:}
-
-En glödlampa och en kondensator kopplas i serie med varandra och ansluts till en
-växelströmskrets. Med lämpligt valda värden på komponenterna kommer lampan att
-lysa.
+\textbf{Försök:} En glödlampa och en kondensator kopplas i serie
+med varandra och ansluts till en växelströmskrets. Med lämpligt
+valda värden på komponenterna kommer lampan att lysa.
 
 Detta visar att en kondensator inte hindrar elektronflödet i en vä\-xel\-st\-rö\-m\-s\-krets.
 Man brukar säga att kondensatorn ''släpper igenom växelström'', men i själva 
@@ -164,29 +159,23 @@ Ordet reaktans kommer från latinets \emph{re} (åter) \emph{agere} (verka).
 Större kapacitans innebär större förmåga att ta upp elektrisk laddning och ger
 därmed en lägre reaktans. Resultatet blir ett kraftigare elektronflöde.
 En mindre kapacitans innebär ett svagare elektronflöde.
-
-\(X_C = \dfrac{1}{2\pi fC}\) eller \(X_C = \dfrac{1}{\omega C}\)
-
-\begin{tabular}{lll}
-\(X_C\ [\Omega]\) & \(f\ [Hz]\) & \(C\ [F]\) 
-\end{tabular}
-
+%%
+\[X_C = \dfrac{1}{2\pi fC}\quad \text{eller}\quad X_C = \dfrac{1}{\omega C}\]
+\[X_C\ [\Omega]\quad (f\ [Hz]\quad (C\ [F]\]
+%%
 \emph{Exempel:}
-
-\(C = 10\ \mu F\) \(f = 50\ Hz\) \(X_c = ?\)
-
-\(X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = 318,3\ \Omega\)
-
+%%
+\[C = 10\ \mu F\quad f = 50\ Hz\quad X_c = ?\]
+\[X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = 318,3\ \Omega\]
+%%
 \emph{Exempel:}
-
-\(C = 10\ \mu F\) \(f = 5\ kHz\) \(X_c = ?\)
-
-\(X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 5 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
-= 3,183\ \Omega\)
-
+%%
+\[C = 10\ \mu F\quad f = 5\ kHz\quad X_c = ?\]
+\[X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 5 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
+= 3,183\ \Omega\]
+%%
 En kondensators reaktans är således omvänt proportionell mot dess kapacitans
 och frekvensen i kretsen.
-
 Jämför detta med en induktor (spole) där reaktansen är proportionell mot frekvensen.
 
 När en ström flyter genom en resistor uppstår värmeförluster. När ström flyter genom 
@@ -227,37 +216,34 @@ Dielektrikum består då av ett skikt av glimmer, impregnerat papper eller likna
 
 Kondensatorer kan även utföras med variabelt kapacitansvärde.
 Dielektrikum består då oftast av luft, men kan även bestå av ett fast material.
+\emph{(Bild \ref{fig:BildII2-2})}
 
 \subsubsection{Fasta kondensatorer}
 
 \mediumfig{images/cropped_pdfs/bild_2_2-02.pdf}{Schemasymboler för kondensatorer}{fig:BildII2-2}
 
-Bild \ref{fig:BildII2-2}
-
 Kondensatorer har oftast namn efter utförande och det dielektriska materialet.
-
-\emph{Pappers- och plastkondensatorer}
-
+\begin{description}
+\item[Pappers- och plastkondensatorer]
 Plattorna i dessa typer består av aluminiumremsor med anslutningstrådar.
 Däremellan finns en pap\-pe\-rs- re\-spe\-k\-ti\-ve plastremsa som dielektrikum. För att
 spara plats rullas det hela ihop och skyddas med en plastingjutning.
 
-\emph{Keramiska kondensatorer}
-
+\item[Keramiska kondensatorer]
 I keramiska kondensatorer består dielektrikum av något keramiskt material.
 På ömse sidor om detta sätts en metallbeläggning med anslutningstrådar.
 
-\emph{Glimmerkondensatorer}
-
+\item[Glimmerkondensatorer]
 I denna kondensatortyp består dielektrikum av tunna glimmerskivor.
 
-\emph{Elektrolytkondensatorer}
-
+\item[Elektrolytkondensatorer]
 Elektrolytkondensatorer har elektroder av aluminium eller tantal där pluspolen
 (anoden) ges ett mycket tunt oxidskikt. Detta är inte ledande och fungerar som
 dielektrikum. Mellan oxidskiktet och minuspolen (katoden) läggs en elektrolyt
 med låg resistivitet.
+\end{description}
 
+\noindent
 Elekrolytkondensatorer har särskilt högt kapacitansvärde. Till skillnad från
 andra kondensatortyper är elektolytkondensatorer polariserade. Utom i ett
 specialfall innebär det att polariteten på den pålagda spänningen inte får
@@ -277,20 +263,17 @@ oscillatorkrets är en av faktorerna för stabil frekvens.
 
 Temperaturkoefficienten \(\alpha _c\) anger kapacitansändringen per grad temperaturändring.
 Kapacitansändringen blir då
-
+%%
 \[\Delta C = \pm \alpha _c \cdot C_k \cdot \Delta\vartheta\]
-
+%%
 varvid \(C_k\) är kapacitansvärdet vid den lägre temperaturen (oftast 20~\degree C) och
 \(\Delta\vartheta\) är temperaturändringen i kelvin.
 Kelvin [K] är den normerade måttenheten för absolut temperatur.
 En ändring med 1~K motsvarar en ändring med 1~\degree C.
-
 Är \(\alpha _c\) positivt betyder det att kapacitansen ökar med ökande
 temperatur.
-
 Är \(\alpha _c\) negativt betyder det att kapacitansen minskar med ökande
 temperatur.
-
 En kondensator som är märkt med N 100 betyder
 \(\alpha _c = -100 \cdot 10^{-6}\ 1/K\)
 

@@ -6,7 +6,6 @@
 \subsection{Allmänt}
 För att prova ut ett filter, som bäst löser ett visst radiostörningsproblem,
 kan man behöva tillgång till ett filtersortiment.
-
 Som exempel nämns bland annat filter i SSA:s avstörningslådor.
 
 \subsection{Nätfilter}
@@ -26,7 +25,7 @@ för och bör anslutas så nära apparaten som möjligt.
 Om filtret inte kan placeras där, kan det vara nödvändigt att även skärma
 nätledningen mellan filtret och apparaten och jorda skärmen.
 
-\mediumfig{images/cropped_pdfs/bild_2_9-01.pdf}{Nätfilter}{fig:bildII9-1}
+\mediumfig[0.5]{images/cropped_pdfs/bild_2_9-01.pdf}{Nätfilter}{fig:bildII9-1}
 
 Om ledningen förses med till exempel en serieinduktans -- en drossel -- så dämpas
 HF-signalerna.
@@ -113,7 +112,7 @@ viktigt för en lyckad avstörning.
 
 \mediumfig{images/cropped_pdfs/bild_2_9-05.pdf}{Spärrfilter för mottagare}{fig:bildII9-5}
 
-\mediumfig{images/cropped_pdfs/bild_2_9-06.pdf}{Sugkretsar för mottagare}{fig:bildII9-6}
+\pagefig{images/cropped_pdfs/bild_2_9-06.pdf}{Sugkretsar för mottagare}{fig:bildII9-6}
 
 Om en störande signal råkar finnas inom passbandet för mottagaren kan
 man undertrycka -- ''spärra'' -- den signalen med ett spärr- eller sugfilter.
@@ -143,11 +142,13 @@ Exempel på kommersiella spärrfilter är SF~145-S för 144~MHz och
 SF~435-S, för 435~MHz amatörband.
 De är avsedda att kopplas in före mottagare som störs av amatörradiosändningar.
 
-SF~145-S spärrar amatörbandet 144--148~MHz och släpper igenom banden
+\begin{description}
+\item[SF~145-S] spärrar amatörbandet 144--148~MHz och släpper igenom banden
 0--120 och 174--870~MHz.
 
-SF~435-S spärrar amatörbandet 430--440~MHz och släpper igenom
+\item[SF~435-S] spärrar amatörbandet 430--440~MHz och släpper igenom
 0--350 och 470--870~MHz.
+\end{description}
 
 \subsection{Nät- och skärmströmfilter för mottagning}
 \index{gemensam överföring}
@@ -156,7 +157,7 @@ SF~435-S spärrar amatörbandet 430--440~MHz och släpper igenom
 \index{Common Mode (CM)}
 \index{common mode current}
 
-\smallfig{images/cropped_pdfs/bild_2_9-07.pdf}{Nät- och skärmströmfilter}{fig:bildII9-7}
+\smallpagefig{images/cropped_pdfs/bild_2_9-07.pdf}{Nät- och skärmströmfilter}{fig:bildII9-7}
 
 Bild \ref{fig:bildII9-7} visar nät- och skärmströmfilter.
 Det är vanligt att \emph{gemensam strömöverföring} (eng.
@@ -174,9 +175,9 @@ En nätkabel, så kallad sladdställ, får inte kapas och skarvas.
 \subsection{Phono-ingångsfilter (TBA~302)}
 \index{avstörning!phonofilter}
 
-\smallfig{images/cropped_pdfs/bild_2_9-08.pdf}{Phonoingångsfilter}{fig:bildII9-8}
+\smallpagefig{images/cropped_pdfs/bild_2_9-08.pdf}{Phonoingångsfilter}{fig:bildII9-8}
 
-\smallfig{images/cropped_pdfs/bild_2_9-09.pdf}{Högtalarledningsfilter}{fig:bildII9-9}
+\smallpagefig{images/cropped_pdfs/bild_2_9-09.pdf}{Högtalarledningsfilter}{fig:bildII9-9}
 
 Bild \ref{fig:bildII9-8} visar phonoingångsfilter.
 Störande påverkan från radiosändningar kan uppstå om anslutningsledningarna
@@ -198,11 +199,11 @@ eller att linda upp en sträcka av ledningarna på en ferritkärna.
 \harec{a}{9.3.1.2}{9.3.1.2}
 \index{avstörning!avkoppling}
 
-\smallfig{images/cropped_pdfs/bild_2_9-10b.pdf}{HF-avkopplad bas på tre sätt}{fig:bildII9-10b}
+\smallpagefig{images/cropped_pdfs/bild_2_9-10b.pdf}{HF-avkopplad bas på tre sätt}{fig:bildII9-10b}
 
-\smallfig[.2]{images/cropped_pdfs/bild_2_9-10a.pdf}{HF-avkopplat styrgaller}{fig:bildII9-10a}
+\smallpagefig[.2]{images/cropped_pdfs/bild_2_9-10a.pdf}{HF-avkopplat styrgaller}{fig:bildII9-10a}
 
-\smallfig{images/cropped_pdfs/bild_2_9-11.pdf}{Parasitfilter i HF-förstärkare}{fig:bildII9-11}
+\smallpagefig{images/cropped_pdfs/bild_2_9-11.pdf}{Parasitfilter i HF-förstärkare}{fig:bildII9-11}
 
 Med avkoppling av en signal menas att den avleds från en signalväg till en
 annan.
@@ -213,7 +214,6 @@ HF-avkopplas med kondensatorer och/eller HF-spärras med drosslar.
 
 I svåra störningsfall kan det också bli nödvändigt med HF-avskärmning av
 LF-ingångsstegen, liksom med ytterligare avstörningsfilter inne i förstärkaren.
-
 Sådana åtgärder innebär emellertid att konstruktionsändringar har gjorts.
 Apparatens elsäkerhetsmärkningar är då ogiltiga.
 
@@ -247,7 +247,7 @@ insvängningsförloppet bromsas med en drossel i serie med nycklingskontakten oc
 dels ursvängningsförloppet med en seriekrets av en resistor och en kondensator,
 kopplade parallellt över nycklingskontakten.
 
-\smallfig{images/cropped_pdfs/bild_2_9-12.pdf}{Nycklingsfilter}{fig:bildII9-12}
+\smallpagefig{images/cropped_pdfs/bild_2_9-12.pdf}{Nycklingsfilter}{fig:bildII9-12}
 
 \subsection{Förbättrad skärmning}
 \harec{a}{9.3.1.3}{9.3.1.3}
