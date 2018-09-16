@@ -98,6 +98,7 @@ som han publicerade åren 1924 och 1928. Den ingår i \emph{Nyquist-Shannons
 samplingsteorem} (eng. \emph{Nyquist-Shannon sampling theorem}).}
 \end{quote}
 
+\noindent
 Vår nya begreppsvärld har några inneboende begränsningar, en av dem är minsta
 samplingsfrekvensen.
 Den lägsta frekvensen vi kan hantera i vårt samplade material är fasta värden
@@ -124,9 +125,9 @@ svängning med sin amplitud, och responsen från alla sampel blir därför summa
 av alla dessa.
 
 Den matematiskt sinnade kan då använda formeln
-
-\(y(n) = \sum_{m=0}^{N-1} x(n-m)h(m)\)
-
+%%
+\[y(n) = \sum_{m=0}^{N-1} x(n-m)h(m)\]
+%%
 där \(x(n)\) är den inkommande sampelströmmen och \(n\) är indexet för det
 n:te samplet, \(h(m)\) är filtrets respons och slutligen \(y(n)\) är de utgående
 samplen.
@@ -137,9 +138,9 @@ Motsvarande process kan även utföras i frekvensplanet, det vill säga när vi
 istället uttrycker amplituden som funktion av frekvens.
 Om vi då även har konverterat filtrets egenskaper, gör vi helt enkelt en
 multiplikation av signal och filter för varje frekvens:
-
-\(Y(f) = X(f)H(f)\)
-
+%%
+\[Y(f) = X(f)H(f)\]
+%%
 Bägge representerar faltning, och är viktiga för förståelsen av \emph{linjära
 tidsinvarianta} filter (eng. \emph{linear time-invariant (LTI)}) filter,
 som är det vi i allmänhet fokuserar på.
