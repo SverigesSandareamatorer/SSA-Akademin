@@ -261,7 +261,12 @@
 
 \printindex
 
-\newpage
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
+\cleartoleftpage
 
 \input{koncept/backpage}
 
