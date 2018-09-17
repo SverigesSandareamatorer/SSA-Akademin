@@ -122,7 +122,24 @@ När en insignal är 1, men inte alla, så är utsignalen 0.
 
 I stället för reläer eller diskreta halvledare i grindar använder man nu ytterst sällan något annat än integrerade digitala kretsar (se avsnitt \ref{integrerade kretsar}).
 
-\smallfig[0.4]{images/cropped_pdfs/bild_2_2-44.pdf}{DTL-logik}{fig:BildII2-44}
+\smalltikz{
+  \begin{circuitikz}
+    \draw (-2,1) to[short,-o] (1,1);
+    \draw
+    (0,-2) node[npn](T) {}
+    ;
+    \draw (T.collector) to[R] (0,1) to (0,1);
+    \draw (-2,-2) to[D] (-1,-2) to (T.base);
+    \draw (-2,-2) to[D] (-4,-2) to node[label=A] {} (-4,-2);
+    \draw (-2,1) to[R] (-2,-1) to (-2,-2);
+    \draw (-2,-2) to (-2,-3);
+    \draw (-2,-3) to[D] (-4,-3) to node[label=B] {} (-4,-3);
+    \draw (T.emitter) to (0,-3) to node[ground] {} (0,-3);
+    \draw (T.collector) to node[label=C] {} (1,-1.235);
+  \end{circuitikz}
+}{DTL-logik}{fig:BildII2-44}
+
+%%\smallfig[0.4]{images/cropped_pdfs/bild_2_2-44.pdf}{DTL-logik}{fig:BildII2-44}
 
 Bild \ref{fig:BildII2-44} visar en NAND-grind.
 Den egentliga grinden består av tre dioder och en resistor.
