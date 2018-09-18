@@ -225,6 +225,7 @@
 
 %% Tryckortssidan
 \include{koncept/tryckort}
+\pagenumbering{gobble}
 
 % \lfoot[\revision]{}
 % \rfoot[]{\revision}
@@ -247,6 +248,10 @@
 \include{koncept/preface}
 \include{koncept/foreword}
 \include{koncept/introduction}
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{5}
 
 \input{koncept/koncept-core}
 
