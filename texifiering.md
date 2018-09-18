@@ -248,12 +248,3 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
     användas i sammansättningar med förkortningar; skriv "FM-detektor" istället
     för "FM detektor".
-
-34. För tal och enheter finns nu ett nytt paket installerat. Tal sätts korrekt
-    om man använder \num{siffra} och enhet \unit{mV} eller \unit{\micro\henry}
-    sätter man en storhet kan man skriva \SI{640]{\milli\ohm} då får man rätt
-    proprotioner på saker och ting. Fungerar också i matte-environment.
-
-    Siffror kan skrivas som 6e3 eller 1100e-9 så sätts de som det skall. Enkla
-    tusental sätts som 2000 medan 26000 sätts som 26\,000 (enl.
-    SI-rekommendation).
