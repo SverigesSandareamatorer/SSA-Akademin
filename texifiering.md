@@ -257,5 +257,3 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Siffror kan skrivas som 6e3 eller 1100e-9 så sätts de som det skall. Enkla
     tusental sätts som 2000 medan 26000 sätts som 26\,000 (enl.
     SI-rekommendation).
-
->>>>>>> Lade till om enheter o nummer i texifieringen.
