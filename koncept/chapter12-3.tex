@@ -27,9 +27,7 @@ Den som bygger och använder en elektrisk apparat bör därför ha nödvändiga
 kunskaper om elsäkerhet.
 
 \subsection{Höga spänningar}
-\textbf{
-HAREC a.\ref{HAREC.a.10.3}\label{myHAREC.a.10.3}
-}
+\harec{a}{10.3}{10.3}
 \index{batteri}
 \index{ackumulator}
 
@@ -50,11 +48,13 @@ spänning.
 Höga strömmar ger häftiga muskelkramper och brännskador.
 Man vet att det skiljer mellan skador av lik- respektive växelström.
 
-Lågfrekvent växelström ger upphov till muskelkramper, som kan göra det
+\begin{description}
+\item[Lågfrekvent växelström] ger upphov till muskelkramper, som kan göra det
 omöjligt att släppa det strömförande föremålet.
 
-Högfrekvent växelström i MHz-området värmer upp kroppsvävnaderna,
+\item[Högfrekvent växelström] i MHz-området värmer upp kroppsvävnaderna,
 snarare än att förorsaka muskel reaktioner.
+\end{description}
 
 Likström påverkar kroppen annorlunda än växelström.
 Genom det elektriska motståndet i kroppens vävnader och vätskor utvecklas det
@@ -89,20 +89,19 @@ men iakttag försiktighet.
 Obalans bör åtgärdas, inte enbart av personsäkerhet utan även för att få en
 effektiv antenn.
 
-Antenner får inte korsa eller placeras nära högspännings-, lågspännings- eller
+Antenner får inte korsa eller placeras nära hög\-spännings-, låg\-spännings- eller
 telefonlinjer.
 Det är en olycksrisk om antenner och kraft- eller teleledningar av någon
 anledning slår ihop.
 Det är också en olycksrisk om antenner faller ner över dessa ledningar.
 
-Endast efter tillstånd från berörd myndighet och/eller linjeägare får
+Endast efter tillstånd från berörd myndighet och eller linjeägare får
 man dra ledningar av något slag över väg eller offentlig plats även antenner.
 Höga likspänningar från sändaren får inte komma ut i antennen.
 Se till att antennernas matarledningar är kopplade till god likströmsjord
 via HF-drosslar eller försedda med överspänningsavledare.
 Som extra säkerhetsåtgärd bör sändaren anslutas till antennledningen över en
 stor kondensator.
-
 Undvik att beröra antenner utan att de jordats, särskilt vid vistelse
 på tak eller i träd.
 
@@ -115,6 +114,7 @@ Det är då lätt hänt att tappa taget och falla ner.
 
 Kondensatorer kan behålla en betydande restladdning under många timmar
 sedan kraften brutits.
+
 \begin{itemize}
 \item Koppla urladdningsresistorer (bleeder) över filterkondensatorer,
   så att de laddas ur när matningen stängs av.
@@ -130,20 +130,35 @@ sedan kraften brutits.
 \index{litiumbatteri}
 \index{LiPo-batteri}
 
-Transformator med förstärkt säkerhet
-\begin{itemize}
-\item Om du är osäker på det elsäkerhetsmässiga utförandet på en
-  apparat, till exempel en gammal sändare, använd då en skiljetransformator
-  (fulltransformator) -- helst av klass II (extraisolerad).
-\end{itemize}
+Transformator med förstärkt säkerhet:
 
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+Om du är osäker på det elsäkerhetsmässiga utförandet på en
+apparat, till exempel en gammal sändare, använd då en skiljetransformator
+(fulltransformator) -- helst av klass II (extraisolerad).
+\end{minipage}
+\end{center}
+
+%% \begin{itemize}
+%% \item Om du är osäker på det elsäkerhetsmässiga utförandet på en
+%%   apparat, till exempel en gammal sändare, använd då en skiljetransformator
+%%   (fulltransformator) -- helst av klass II (extraisolerad).
+%% \end{itemize}
+
+\noindent
 Vid reparation ska utrustningen vara spänningslös.
-Före arbetet ska du
-\begin{itemize}
+Före arbetet ska du:
+
+\begin{enumerate}
   \item stänga av utrustningens nätströmbrytare
   \item dra ur stickproppen ur vägguttaget (dubbel säkerhet).
-\end{itemize}
+\end{enumerate}
 
+\noindent
 Om trimning eller felsökning måste ske under spänning ska följande iakttas:
 \begin{itemize}
 \item Arbeta inte med anläggningen när du är trött eller omotiverad.
@@ -159,7 +174,11 @@ Om trimning eller felsökning måste ske under spänning ska följande iakttas:
   Se gärna till att han/hon kan elolycksfallshjälp.
 \end{itemize}
 
+\newpage
+
+\noindent
 Vid arbete med ackumulatorbatterier:
+
 \begin{itemize}
 \item Trots att spänningen är låg kan ackumulatorbatterier lämna
   mycket höga strömmar vid kortslutning.

@@ -80,9 +80,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
-    eller efter det refererande stycket) kan man köra longtable
-    på. Slå upp det på webben eller i hundboken. Longtable kan
-    sidbrytas snyggt.
+    eller efter det refererande stycket) kan man köra xtabular
+    på. Slå upp det på webben eller i hundboken. Xtabular kan
+    sidbrytas snyggt, även i 2-kolumner.
 
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
@@ -142,7 +142,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in `\,` som tusentalsavskiljare/
+19. Lägg in `\,` som tusentalsavskiljare
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
@@ -236,14 +236,15 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
-    utom i parenteser och tabeller.
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
+    sin helhet, utom i parenteser och tabeller.
 
-31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
+    siffror.
 
 32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
 
-33. Undvik sammansättningar med bindestreck, skriv hellre ihop.
-    Skriv ”satellitmottagare” i stället för ”satellit-mottagare”.
-    Bindestreck ska dock användas i sammansättningar med förkortningar;
-    skriv ”FM-detektor” istället för ”FM detektor”.
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
+    "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
+    användas i sammansättningar med förkortningar; skriv "FM-detektor" istället
+    för "FM detektor".
