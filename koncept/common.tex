@@ -4,18 +4,19 @@
 \usepackage[swedish]{babel}
 \usepackage{icomma}
 \usepackage{lmodern}
-\usepackage[numbered]{bookmark}
+%\usepackage[numbered]{bookmark}
 %\usepackage[]{geometry}
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 \usepackage{amsmath}
-\usepackage{fancyhdr}
-\usepackage{wrapfig}
+%\usepackage{fancyhdr}
+%\usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{framed}
 \usepackage[fulladjust]{marginnote}
 \usepackage{color}
+\usepackage{amssymb}
 \newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
-\usepackage[toctitles]{titlesec}
+\usepackage[toctitles,raggedright]{titlesec}
 \usepackage{hyperref}
 \hypersetup{
     pdftitle={KonCEPT för amatörradiocertifikat},
@@ -70,22 +71,22 @@
     innerleftmargin=20pt,
     backgroundcolor=gray!50!white}
 \newcommand{\infobox}[1]{
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{figure}%[r][0.5\textwidth]
   \begin{mdframed}[style=FactBox]
 #1
   \end{mdframed}
-\end{wrapfigure}
+\end{figure}
 }
 
 % Prepare for tables
 \usepackage{multirow}
-\usepackage{longtable}
+\usepackage{xtab}
 
 % Prepare for lists
 \usepackage{enumitem}
 
 % Prepare for graphics
-\usepackage{xspace,graphicx}
+\usepackage{graphicx}
 
 \raggedbottom
 
@@ -129,11 +130,11 @@ keepaspectratio]{images/koncept-larobok-front.jpg}%
 \newcommand\BackgroundPicLast{%
 \put(0,0){%
 \parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{images/koncept-back.pdf}%
-\vfill
+\centering%
+\vfill%
+%\includegraphics[width=6cm]{images/isbn_9789186368234}%
+%\includegraphics[width=\paperwidth,height=\paperheight]{images/koncept-back.pdf}%
+\vfill%
 }}}
 
 

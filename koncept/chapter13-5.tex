@@ -14,21 +14,23 @@ när signalerna kan komma att höras över hela världen.
 Systemet är gemensamt för kommersiell trafik och amatörradio, men vi kommer
 enbart beröra de anropssignaler som är aktuella för amatörradio.
 
-Alla sändningar med falsk eller missledande identifiering är förbjuden
+\begin{itemize}
+\item Alla sändningar med falsk eller missledande identifiering är förbjuden
 \cite[\S19.2]{ITU-RR}!
 
-Alla amatörradiosändningar ska vara identifierade \cite[\S19.4, \S19.5]{ITU-RR}.
+\item Alla amatörradiosändningar ska vara identifierade \cite[\S19.4, \S19.5]{ITU-RR}.
+\end{itemize}
 
 Identifiering sker normalt i tal eller på morsetelegrafi, men även andra former
 kan förekomma som är anpassade till modulationsmetoden som används.
 
 Det finns flera sätt på vilka personen bakom en anropssignal kan identifieras.
 För svenska anropssignaler tillhandahåller SSA en Callbook
-(\href{http://www.ssa.se/}{www.ssa.se}).
-En annan populär variant är QRZ (\href{https://www.qrz.com/}{www.qrz.com}) där
+(\href{http://www.ssa.se/}{\texttt{www.ssa.se}}).
+En annan populär variant är QRZ (\href{https://www.qrz.com/}{\texttt{www.qrz.com}}) där
 man kan registrera sig.
 Anropssignalen används även för online-loggning av kontakter, så som
-Logbook of the World (LoTW) (\href{https://lotw.arrl.org/}{lotw.arrl.org}).
+Logbook of the World (LoTW) (\href{https://lotw.arrl.org/}{\texttt{lotw.arrl.org}}).
 
 \subsection{Anropssignalernas sammansättning}
 
@@ -41,27 +43,26 @@ radio, landmobila stationer, stationer i fartyg, i sjöräddningsfarkoster,
 i flygplan, amatörradiostationer och så vidare.
 
 \subsection{Identifiering av amatörradiostationer}
-\textbf{
-HAREC b.\ref{HAREC.b.5.1}\label{myHAREC.b.5.1},
- b.\ref{HAREC.b.5.3}\label{myHAREC.b.5.3}
-}
+\harec{b}{5.1}{5.1}
+\harec{b}{5.3}{5.3}
 
 En radiostation ska identifieras med den anropssignal, som tilldelats av det
 egna landets teleadministration (myndighet).
 I Sverige är det Post- och telestyrelsen (PTS) som har ansvaret och som genom
 beslut har delegerat handläggningen av amatörradiosignaler till Föreningen
 Sveriges Sändareamatörer (SSA).
-
 Anropssignalen meddelas i det amatörradiocertifikat som erhålls efter godkänt
 kompetensprov.
 
 Anropssignaler för amatörradio är uppbyggda av ett prefix, en siffra och ett
 suffix på följande sätt \cite[\S19.68, \S19.69]{ITU-RR}:
 
-Prefixet består vanligtvis av två tecken, exempelvis SM~(Sverige), 9A~(Kroatien)
+\begin{itemize}
+\item Prefixet består vanligtvis av två tecken, exempelvis SM~(Sverige), 9A~(Kroatien)
 eller S5~(Slovenien).
-Prefixet kan ibland bestå av en ensam bokstav, som i så fall måste vara någon
+\item Prefixet kan ibland bestå av en ensam bokstav, som i så fall måste vara någon
 av B, F, G, I, K, M, N, R eller W.
+\end{itemize}
 
 Sverige är tilldelat prefix i serierna SA--SM, 7S och 8S
 \cite[Appendix 42]{ITU-RR}.
@@ -74,7 +75,7 @@ kan ha suffix som består av fler än fyra tecken \cite[\S19.68A]{ITU-RR}.
 Sådana anropssignaler, eller andra som inte följer formatmallen, behöver i så
 fall godkännas av PTS innan de kan tilldelas av SSA.
 
-\textbf{Exempel:} DL65DARC är en eventsignal för tyska (DL)
+\paragraph{Exempel:} DL65DARC är en eventsignal för tyska (DL)
 amatörradioföreningen DARC:s 65:års jubileum.
 
 PTS regler för tilldelning av svenska anropssignaler kan skilja sig från
@@ -83,13 +84,24 @@ grundreglerna i RR som anges ovan, men följer i allmänhet dessa.
 Anropssignaler för svenska amatörradiostationer är uppbyggda på följande
 sätt, varvid med distrikt avses amatörradiodistrikt.
 
-\begin{tabular}{lll}
-enskilda radioamatörer & SA & + distriktssiffra + treställigt suffix (grundsignal) \\
-enskilda radioamatörer & SM & + distriktssiffra + två- eller treställigt suffix (grundsignal) \\
-amatörradioklubbar & SA & + distriktssiffra + tvåställigt suffix \\
-amatörradioklubbar & SK & + distriktssiffra + tvåställigt suffix \\
-militära förband och FRO & SL & + distriktssiffra + två- eller treställigt suffix \\
-\end{tabular}
+\begin{table*}[h]
+  \begin{center}
+    \begin{tabular}{lll}
+      \emph{enskilda radioamatörer} & \textbf{SA} &
+      + distriktssiffra + treställigt suffix (grundsignal) \\
+      \emph{enskilda radioamatörer} & \textbf{SM} &
+      + distriktssiffra + två- eller treställigt suffix (grundsignal) \\
+      \emph{amatörradioklubbar} & \textbf{SA} &
+      + distriktssiffra + tvåställigt suffix \\
+      \emph{amatörradioklubbar} & \textbf{SK} &
+      + distriktssiffra + tvåställigt suffix \\
+      \emph{militära förband och FRO} & \textbf{SL} &
+      + distriktssiffra + två- eller treställigt suffix \\
+    \end{tabular}
+    \caption{Svenska anropssignalprefix}
+    \label{tab:seprefix}
+  \end{center}
+\end{table*}
 
 Signalserien SM är tilldelad av Televerket och sedermera PTS fram till 2009.
 Signalserien SA är tilldelad av SSA från 2004.
@@ -97,39 +109,36 @@ Signalserien SA är tilldelad av SSA från 2004.
 nyare SM- och SA-signaler har treställiga suffix.
 
 Utöver grundsignalen finns även extra anropssignaler tilldelade i de övriga tillgängliga serierna.
-
-\textbf{Exempel:} SM0XXX är en radioamatör som fått sin tilldelning av PTS.
-
-\textbf{Exempel:} SA0XXX är en radioamatör som fått sin tilldelning av SSA.
-
-\textbf{Exempel:} SK2XX är en amatörklubb.
-
-\textbf{Exempel:} SM7X är en radioamatör med kort anropssignal.
-
+\paragraph{Exempel:} SM0XXX är en radioamatör som fått sin tilldelning av PTS.
+\paragraph{Exempel:} SA0XXX är en radioamatör som fått sin tilldelning av SSA.
+\paragraph{Exempel:} SK2XX är en amatörklubb.
+\paragraph{Exempel:} SM7X är en radioamatör med kort anropssignal.
+\vspace{1ex}
 Sverige är indelat i amatörradiodistrikt med följande numrering och
 utsträckning:
 
-\begin{tabular}{rp{10cm}}
-Distrikt & Utsträckning \\
-0 & Stockholms (AB) län \\
-1 & Gotlands (I) län \\
-2 & Västerbottens (AC) och Norrbottens (BD) län \\
-3 & Gävleborgs (X), Jämtlands (Z) och Västernorrlands (Y) län \\
-4 & Örebro (T), Värmlands (S) och Dalarnas (W) län \\
-5 & Östergötlands (E), Södermanlands (D), Västmanlands (U) och Uppsala (C) län\\
-6 & Hallands (N) och Västra Götalands (O) län \\
-7 & Skåne (M), Blekinge (K), Kronobergs (G), Jönköpings (F) och Kalmar (H) län.\\
+\begin{center}
+\begin{tabular}{rp{6cm}}
+\emph{Distrikt} & \emph{Utsträckning} \\
+\textbf{0} & Stockholms (AB) län \\
+\textbf{1} & Gotlands (I) län \\
+\textbf{2} & Västerbottens (AC) och Norrbottens (BD) län \\
+\textbf{3} & Gävleborgs (X), Jämtlands (Z) och Västernorrlands (Y) län \\
+\textbf{4} & Örebro (T), Värmlands (S) och Dalarnas (W) län \\
+\textbf{5} & Östergötlands (E), Södermanlands (D), Västmanlands (U) och Uppsala (C) län\\
+\textbf{6} & Hallands (N) och Västra Götalands (O) län \\
+\textbf{7} & Skåne (M), Blekinge (K), Kronobergs (G), Jönköpings (F) och Kalmar (H) län.\\
 \end{tabular}
+\end{center}
 
 Distriktssiffran i anropssignalen bestäms av det län som hemadressen är belägen inom.
 Vid sändning utanför hemadressen bör det framgå av tillägg till anropssignalen.
+\paragraph{Exempel:} SA0XXX är en radioamatör hemmahörande i Stockholms län.
 
-\textbf{Exempel:} SA0XXX är en radioamatör hemmahörande i Stockholms län.
+\paragraph{Exempel:} SM7YYY är en radioamatör hemmahörande i Jönköpings län.
 
-\textbf{Exempel:} SM7YYY är en radioamatör hemmahörande i Jönköpings län.
-
-\textbf{Exempel:} SK7AX är en amatörklubb hemmahörande i Jönköping län.
-
+\paragraph{Exempel:} SK7AX är en amatörklubb hemmahörande i Jönköping län.
+\vspace{1ex}
 I Post- och telestyrelsens föreskrifter sägs dock inte vilken distriktssiffra
 som ska användas, när sändning sker från annan plats än hemortsadressen.
 
@@ -171,32 +180,68 @@ Med stöd av praxis rekommenderar dock SSA att följande regler tillämpas:
 \end{itemize}
 
 \subsection{Nationella prefix}
-\textbf{HAREC
-	b.\ref{HAREC.b.5.4}\label{myHAREC.b.5.4}
-}
+\harec{b}{5.4}{5.4}
 
-Nationella prefix att kunna
+Tabell \ref{tab:landsprefix} visar några viktiga nationella prefix att kunna.
 
-\begin{tabular}{llllll}
-    Prefix & Land& & & &  \\
-    LA & Norge & OH & Finland & OH0 & Åland\\
-    OZ & Danmark & DL & Tyskland & EA & Spanien\\
-    ES & Estland & F & Frankrike & G & Storbritannien\\
-    HB & Schweiz & I & Italien & LY & Litauen\\
-    OK & Tjeckien & ON & Belgien & PA & Holland\\
-    S5 & Slovenien & SP & Polen & SV & Grekland\\
-    UA & Ryssland & YL & Lettland & EA8 & Kanarieöarna\\
-    ZS & Sydafrika & HS & Thailand & JA & Japan\\
-    K & USA & VE & Kanada & LU & Argentina\\
-    PY & Brasilien & VK & Australien & ZL & Nya Zeeland\\
-\end{tabular}
-
+\begin{table*}[h]
+  \begin{center}
+    \begin{minipage}{.3\linewidth}
+      \begin{tabular}{ll}
+        \emph{Prefix} & \emph{Land} \\
+        \hline
+        LA            & Norge       \\
+        OZ            & Danmark     \\
+        ES            & Estland     \\
+        HB            & Schweiz     \\
+        OK            & Tjeckien    \\
+        S5            & Slovenien   \\
+        UA            & Ryssland    \\
+        ZS            & Sydafrika   \\
+        K             & USA         \\
+        PY            & Brasilien   \\
+      \end{tabular}
+    \end{minipage}
+    \begin{minipage}{.3\linewidth}
+      \begin{tabular}{ll}
+        \emph{Prefix} & \emph{Land} \\
+        \hline
+        OH            & Finland     \\
+        DL            & Tyskland    \\
+        F             & Frankrike   \\
+        I             & Italien     \\
+        ON            & Belgien     \\
+        SP            & Polen       \\
+        YL            & Lettland    \\
+        HS            & Thailand    \\
+        VE            & Kanada      \\
+        VK            & Australien  \\
+      \end{tabular}
+    \end{minipage}
+    \begin{minipage}{.3\linewidth}
+      \begin{tabular}{ll}
+        \emph{Prefix} & \emph{Land} \\
+        \hline
+        OH0           & Åland          \\
+        EA            & Spanien        \\
+        G             & Storbritannien \\
+        LY            & Litauen        \\
+        PA            & Holland        \\
+        SV            & Grekland       \\
+        EA8           & Kanarieöarna   \\
+        JA            & Japan          \\
+        LU            & Argentina      \\
+        ZL            & Nya Zeeland    \\
+      \end{tabular}
+    \end{minipage}
+    \caption{Landsprefix}
+    \label{tab:landsprefix}
+  \end{center}
+\end{table*}
 
 \section{Användning av anropssignal}
-\textbf{HAREC
-  b.\ref{HAREC.b.5.2}\label{myHAREC.b.5.2},
-  b.\ref{HAREC.b.7.2.2}\label{myHAREC.b.7.2.2}
-}
+\harec{b}{5.2}{5.2}
+\harec{b}{7.2.2}{7.2.2}
 
 Både motstationens och den egna anropssignalen ska användas i början
 och slutet av varje sändning.
@@ -207,9 +252,7 @@ anges vid varje sändning.
 Se vidare i PTS föreskrifter.
 
 \section{Exempel på kontakt}
-\textbf{HAREC
-  b.\ref{HAREC.b.7.2.1}\label{myHAREC.b.7.2.1}
-}
+\harec{b}{7.2.1}{7.2.1}
 
 Det finns många sätt att genomföra en radiokontakt, men det finns några
 grundregler för hur man uppträder och utväxlar samtal.
@@ -218,30 +261,26 @@ Det behöver inte bli stelt för den skull!
 
 Allmänt anrop är ett sätt att kalla på någon
 -- vem som helst -- att kommunicera med.
-
 På telegrafi låter det så här:
 
--- CQ CQ CQ de SM0XYZ K
+-- CQ CQ CQ de SM0XYZ SM0XYZ K
 
-det vill säga anropet först och därefter den egna anropssignalen.
-
+Det vill säga anropet först och därefter den egna anropssignalen.
 På telefoni låter det så här:
 
 -- Allmänt anrop, allmänt anrop, allmänt anrop från SM0XYZ Kom
 
-Glöm inte Kom i slutet!
-
+Glöm inte Kom i slutet.
 Riktat anrop gör man, när man vill tala med någon särskild station.
 Då sänder man först anropssignalen på den station, som man vill tala med och
 därefter sin egen anropssignal.
-
 På telegrafi låter det så här:
 
--- SM0ZYX SM0ZYX SM0ZYX de SM0XYZ SM0XYZ SM0XYZ K
+-- SM0ZYX SM0ZYX de SM0XYZ SM0XYZ K
 
 På telefoni låter det så här:
 
--- SM0ZYX SM0ZYX SM0ZYX från SM0XYZ SM0XYZ SM0XYZ Kom
+-- SM0ZYX SM0ZYX från SM0XYZ SM0XYZ Kom
 
 Motstationen svarar förhoppningsvis på anropet, alltså
 
@@ -385,31 +424,29 @@ Alternativet att gå efter regioner eller landsprefix kan vara att föredra om
 operatören upplever att konditionerna dit snart försvinner och därför vill ge
 dem en extra förtur innan de helt tappar chansen.
 
-Lär dig ''DX:arens ordningsregler'' (\href{http://www.dx-code.org/}{www.dx-code.org}) :
+\paragraph{Lär dig ''DX:arens ordningsregler'' (\href{http://www.dx-code.org/}{\texttt{www.dx-code.org}}):}
 
 \begin{itemize}
-	\item Jag ska lyssna, och lyssna, och sedan lyssna lite till.
-	\item Jag ska ropa endast om jag kan läsa DX-stationen ordentligt.
-	\item Jag ska icke lita på cluster-information, utan vara helt klar över DX-stationens anropssignal innan jag ropar.
-	\item Jag ska icke störa DX-stationen, eller någon som anropar denne, och jag ska aldrig stämma av på DX:ets egen frekvens, eller i det segment där denne lyssnar.
-	\item Jag ska vänta tills DX:et avslutat föregående kontakt innan jag ropar själv.
-	\item Jag ska alltid ange min fullständiga anropssignal.
-	\item Jag ska ropa och lyssna med lämpliga intervaller.
-	\item Jag ska icke ropa kontinuerligt.
-	\item Jag ska icke ropa då DX:et svarar någon annan än mig.
-	\item Jag ska icke ropa då DX:et frågar efter en anropssignal som icke liknar min egen.
-	\item Jag ska icke ropa då DX:et söker efter ett annat geografiskt område än mitt eget.
-	\item När DX:et svarar mig så ska jag icke upprepa min anropssignal, annat än om jag tror att denne ej uppfattat den korrekt.
-	\item Jag ska vara tacksam om och när jag får kontakt.
-	\item Jag ska respektera mina amatörkamrater och uppträda så jag förtjänar deras respekt.
-	\end{itemize}
+\item Jag ska lyssna, och lyssna, och sedan lyssna lite till.
+\item Jag ska ropa endast om jag kan läsa DX-stationen ordentligt.
+\item Jag ska icke lita på cluster-information, utan vara helt klar över DX-stationens anropssignal innan jag ropar.
+\item Jag ska icke störa DX-stationen, eller någon som anropar denne, och jag ska aldrig stämma av på DX:ets egen frekvens, eller i det segment där denne lyssnar.
+\item Jag ska vänta tills DX:et avslutat föregående kontakt innan jag ropar själv.
+\item Jag ska alltid ange min fullständiga anropssignal.
+\item Jag ska ropa och lyssna med lämpliga intervaller.
+\item Jag ska icke ropa kontinuerligt.
+\item Jag ska icke ropa då DX:et svarar någon annan än mig.
+\item Jag ska icke ropa då DX:et frågar efter en anropssignal som icke liknar min egen.
+\item Jag ska icke ropa då DX:et söker efter ett annat geografiskt område än mitt eget.
+\item När DX:et svarar mig så ska jag icke upprepa min anropssignal, annat än om jag tror att denne ej uppfattat den korrekt.
+\item Jag ska vara tacksam om och när jag får kontakt.
+\item Jag ska respektera mina amatörkamrater och uppträda så jag förtjänar deras respekt.
+\end{itemize}
 
-\textbf{Försök inte agera polis och rätta andra stationer, som du anser bryter mot reglerna!}
+Försök inte agera polis och rätta andra stationer som du anser bryter mot reglerna!
 
 \section{Innehåll i förbindelse}
-\textbf{HAREC
-	b.\ref{HAREC.b.7.2.3}\label{myHAREC.b.7.2.3}
-}
+\harec{b}{7.2.3}{7.2.3}
 
 Tidigare har det i Sverige varit reglerat vad innehållet får vara i
 förbindelser, eller snarare vad de inte får innehålla.
@@ -510,84 +547,99 @@ Användningen av krypteringsteknik på amatörradiofrekvenser riskerar därför 
 medföra begränsningar i de rättigheter vi har enligt PTSFS 2015:4.
 
 \section[Hederskod]{Radioamatörens hederskod}
-\textbf{HAREC
-  b.\ref{HAREC.b.7.1.1}\label{myHAREC.b.7.1.1}
-}
+\harec{b}{7.1.1}{7.1.1}
 \index{Radioamatörens hederskod}
 
 Radioamatören är
 
-\begin{tabular}{lp{9cm}}
-  \textbf{HÄNSYNSFULL} &
-     Han agerar aldrig medvetet på ett sätt som minskar nöjet för andra. \\
-  & \\
+\begin{description}
+  \item[HÄNSYNSFULL] Han agerar aldrig medvetet på ett sätt som minskar nöjet för andra.
 
-  \textbf{LOJAL} &
-  Han erbjuder lojalitet, uppmuntran och stöd åt andra amatörer, lokala klubbar,
-  IARU organisationen i hans land genom vilken amatörradio i hans land
-  representeras nationellt och internationellt.\\
-  & \\
+  \item[LOJAL] Han erbjuder lojalitet, uppmuntran och stöd åt andra amatörer, lokala klubbar,
+    IARU organisationen i hans land genom vilken amatörradio i hans land
+    representeras nationellt och internationellt.
 
-  \textbf{PROGRESSIV} &
-  Han håller sin station på en hög teknisk nivå.
-  Den är välbyggd och effektiv.
-  Hans operationsteknik är oantastlig.\\
-  & \\
+  \item[PROGRESSIV] Han håller sin station på en hög teknisk nivå. Den är välbyggd och effektiv.
+    Hans operationsteknik är oantastlig.
 
-  \textbf{VÄNLIG} &
-  Han kommunicerar sakta och tålmodigt när så begärs;
-  erbjuder kamratligt stöd och ger nybörjaren goda råd;
-  vänlig assistans, samarbete och omtanke i andras intresse.
-  Detta är kännetecknen för amatörandan.\\
-  & \\
+  \item[VÄNLIG] Han kommunicerar sakta och tålmodigt när så begärs; erbjuder kamratligt stöd och ger nybörjaren goda råd; vänlig assistans, samarbete och omtanke i andras intresse. Detta är kännetecknen för amatörandan.
 
-  \textbf{BALANSERAD} &
-  Radio är en hobby och får aldrig orsaka konflikt i förpliktelser gentemot
-  familj, arbete, skola eller samhälle.\\
-  & \\
+  \item[BALANSERAD] Radio är en hobby och får aldrig orsaka konflikt i förpliktelser gentemot
+    familj, arbete, skola eller samhälle.
 
-  \textbf{PATRIOTISK} &
-  Hans station och hans kunnande står alltid till förfogande för att
-  assistera land och samhälle.\\
-\end{tabular}
+  \item[PATRIOTISK] Hans station och hans kunnande står alltid till förfogande för att
+    assistera land och samhälle.
+\end{description}
 
--- anpassad från den ursprungliga Amateur's Code, skriven av Paul M. Segal, W9EEA, 1928.
+%% \begin{tabular}{lp{6cm}}
+%%   \textbf{HÄNSYNSFULL} &
+%%   Han agerar aldrig medvetet på ett sätt som minskar nöjet för andra. \\
+%%   & \\
+  
+%%   \textbf{LOJAL} &
+%%   Han erbjuder lojalitet, uppmuntran och stöd åt andra amatörer, lokala klubbar,
+%%   IARU organisationen i hans land genom vilken amatörradio i hans land
+%%   representeras nationellt och internationellt.\\
+%%   & \\
+  
+%%   \textbf{PROGRESSIV} &
+%%   Han håller sin station på en hög teknisk nivå.
+%%   Den är välbyggd och effektiv.
+%%   Hans operationsteknik är oantastlig.\\
+%%   & \\
+  
+%%   \textbf{VÄNLIG} &
+%%   Han kommunicerar sakta och tålmodigt när så begärs;
+%%   erbjuder kamratligt stöd och ger nybörjaren goda råd;
+%%   vänlig assistans, samarbete och omtanke i andras intresse.
+%%   Detta är kännetecknen för amatörandan.\\
+%%   & \\
+  
+%%   \textbf{BALANSERAD} &
+%%   Radio är en hobby och får aldrig orsaka konflikt i förpliktelser gentemot
+%%   familj, arbete, skola eller samhälle.\\
+%%   & \\
+  
+%%   \textbf{PATRIOTISK} &
+%%   Hans station och hans kunnande står alltid till förfogande för att
+%%   assistera land och samhälle.\\
+%% \end{tabular}
 
-\section[Ordningsregler]{Radioamatörens ordningsregler}
-\textbf{HAREC
-  b.\ref{HAREC.b.7.1.2}\label{myHAREC.b.7.1.2}
-}
+\emph{-- anpassad från den ursprungliga Amateur's Code, skriven av Paul M. Segal, W9EEA, 1928.}
+
+\section[Ordningsregler]{Radioamatörens ordnings\-regler}
+\harec{b}{7.1.2}{7.1.2}
 
 \subsection{Grundläggande principer}
 \textbf{Grundläggande principer} som ska styra vårt \textbf{uppträdande} på
 amatörbanden är:
 
-\begin{itemize}
-\item \textbf{Samhörighet, broderskap och kompiskänsla}: många, många av oss
+\begin{description}
+\item[Samhörighet, broderskap och kompiskänsla:] många, många av oss
   är aktiva i etern (vår spelplan).
   Vi är aldrig ensamma.
   Alla andra amatörer är våra kollegor, våra bröder och systrar, våra vänner.
   Agera därefter.
   Var alltid hänsynsfull.
 
-\item \textbf{Tolerans}: inte alla amatörer delar nödvändigtvis samma
+\item[Tolerans:] inte alla amatörer delar nödvändigtvis samma
   uppfattning som du, och din uppfattning är kanske inte den bästa.
   Förstå att det finns andra med en annan uppfattning om ett visst tema.
   Var tolerant.
   Du har inte denna värld för dig själv.
 
-\item \textbf{Anständighet}: aldrig får svordomar och oanständigheter yttras
+\item[Anständighet:] aldrig får svordomar och oanständigheter yttras
   på banden.
   Ett sådant beteende säger ingenting om den person som de är avsedda för men
   mycket om den person som uttalar dem.
   Behåll ditt lugn i alla situationer.
 
-\item \textbf{Förståelse}: Var snäll och förstå att alla inte är så smarta,
+\item[Förståelse:] Var snäll och förstå att alla inte är så smarta,
   så professionella eller så mycket expert som du.
   Om du vill göra något åt detta agera positivt (hur kan jag hjälpa till,
   hur kan jag förbättra, hur kan jag lära ut) i stället för negativt
   (med svordomar, förolämpningar etc.).
-\end{itemize}
+\end{description}
 
 \subsection{Risken för konflikter}
 \textbf{Endast en spelplan, etern}: alla radioamatörer vill spela sitt spel
@@ -633,8 +685,8 @@ Vad menar vi med \textbf{förhållningsregler} (code of conduct)?
 De är en uppsättning regler baserade på såväl \textbf{etiska} principer som
 \textbf{trafikmässiga hänsyn}.
 
-\begin{itemize}
-\item \textbf{Etik}: Etik bestämmer vår attityd och vårt allmänna uppförande
+\begin{description}
+\item[Etik] Etik bestämmer vår attityd och vårt allmänna uppförande
   som radioamatörer.
   Etik har med moral att göra.
   Etik utgör principerna för moral.
@@ -644,7 +696,7 @@ De är en uppsättning regler baserade på såväl \textbf{etiska} principer som
   Detta är en moralisk regel.
   Det är omoraliskt att inte följa denna regel, likvärdigt med att fuska i en
   tävling.
-\item \textbf{Praktiska regler}: för att hantera alla olika aspekter av
+\item[Praktiska regler] för att hantera alla olika aspekter av
   vårt uppförande behövs utöver etik också en uppsättning regler baserade på
   \textbf{trafikmässiga hänsyn} och på \textbf{praxis och sedvänja}.
   För att undvika konflikter behöver vi också praktiska regler som styr
@@ -659,4 +711,4 @@ De är en uppsättning regler baserade på såväl \textbf{etiska} principer som
   konflikter.
   Dessa trafikmetoder har tillkommit som ett resultat av daglig radiotrafik
   under många år och som ett resultat av den pågående tekniska utvecklingen.
-\end{itemize}
+\end{description}

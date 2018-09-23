@@ -1,5 +1,5 @@
 \section{Oscillatorer}
-\textbf{HAREC a.\ref{HAREC.a.3.6}\label{myHAREC.a.3.6}}
+\harec{a}{3.6}{3.6}
 \index{oscillator}
 \label{oscillatorer}
 
@@ -11,11 +11,7 @@ Svängningar förekommer i olika former.
 Det kan till exempel vara vibrationer i en kropp, molekylrörelser i gaser och
 vätskor eller elektriska laddningars rörelser.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-63.pdf}
-\caption{Svängningar}
-\label{fig:BildII3-63}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_3-63.pdf}{Svängningar}{fig:BildII3-63}
 
 \subsubsection{Dämpad svängning}
 \index{dämpad~svängning}
@@ -49,7 +45,9 @@ Begränsningarna utökades genom internationella överenskommelser och under
 1930-talet förbjöds användning av sändare med dämpade svängningar.
 
 \subsection{LC-oscillatorer}
-\textbf{HAREC a.\ref{HAREC.a.3.6.1}, a.\ref{HAREC.a.3.6.2}, a.\ref{HAREC.a.3.6.3}\label{myHAREC.a.3.6.1}\label{myHAREC.a.3.6.2}\label{myHAREC.a.3.6.3}}
+\harec{a}{3.6.1}{3.6.1}
+\harec{a}{3.6.2}{3.6.2}
+\harec{a}{3.6.3}{3.6.3}
 \index{LC-oscillator}
 \index{oscillator!LC}
 
@@ -57,19 +55,9 @@ Begränsningarna utökades genom internationella överenskommelser och under
 \index{oscillator!VFO}
 \index{oscillator!variabel frekvens}
 
-\begin{wrapfigure}[32]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-66.pdf}
-  \caption{Oscillator enligt Meissner}
-  \label{fig:BildII3-66}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-67.pdf}
-  \caption{Emitterkopplad förstärkare}
-  \label{fig:BildII3-67}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-68.pdf}
-  \caption{Komplett Meissneroscillator}
-  \label{fig:BildII3-68}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_3-66.pdf}{Oscillator enligt Meissner}{fig:BildII3-66}
+\smallfig{images/cropped_pdfs/bild_2_3-67.pdf}{Emitterkopplad förstärkare}{fig:BildII3-67}
+\smallfig{images/cropped_pdfs/bild_2_3-68.pdf}{Komplett Meissneroscillator}{fig:BildII3-68}
 
 En oscillator med inställbar frekvens kallas för VFO (variabel
 frekvensoscillator).
@@ -105,11 +93,7 @@ parallellt över förstärkaringången som visas i bild \ref{fig:BildII3-68}.
 \subsection{Självsvängningsvillkoret}
 \index{oscillator!självsvängningsvillkoret}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-69.pdf}
-\caption{Svängningsvillkoret}
-\label{fig:BildII3-69}
-\end{wrapfigure}
+\smallfig[0.2]{images/cropped_pdfs/bild_2_3-69.pdf}{Svängningsvillkoret}{fig:BildII3-69}
 
 Självsvängning i en förstärkare uppstår genom återkoppling, som visas i
 bild \ref{fig:BildII3-69}.
@@ -121,9 +105,9 @@ Fasvridningen \(\alpha=180\degree\) betecknas här med minustecken, alltså blir
 förstärkningen \(-A\).
 
 På förstärkarens utgång fås en signalspänning \(\hat{U}_{ut}\) med sambandet
-
+%
 \[\hat{U}_{ut} = -A \cdot \hat{U}_{in}\]
-
+%
 En del av utsignalen återförs (återkopplas) till ingången.
 I en Meissneroscillator sker återkopplingen med en induktor, som är
 induktivt kopplad till resonanskretsens induktor.
@@ -133,15 +117,15 @@ signalspänningen out på förstärkarens utgång kallas återkopplingsfaktor.
 Den återkopplade spänningen \(\hat{U}_k\) fasvrids så att den kommer
 i fas med med insignalen.
 För den återkopplade signalen fås då sambandet
-
+%
 \[\hat{U}_k = -k \cdot \hat{U}_{ut}\]
-
+%
 Tillräcklig signalspänning från utgången måste återföras till ingången
 för att det ska uppstå självsvängning.
 Det sker när den återkopplade signalspänningen \(\hat{U}_k\) är minst lika stor
 som ingångsspänningen \(\hat{U}_{in}\) och är i rätt fasläge, det vill säga i
 detta exempel
-
+%
 \[
 \hat{U}_k \geq \hat{U}_{in}
 \quad \text{eller} \quad
@@ -149,15 +133,15 @@ detta exempel
 \quad \text{eller} \quad
 k \geq \frac{1}{A}
 \]
-
+%
 Självsvängningsvillkoret blir
-
+%
 \[
 k \geq \frac{1}{A}
 \quad \text{eller} \quad
 k \cdot A \geq 1
 \]
-
+%
 Ett \(k \cdot A \approx 3\) är önskvärt för att oscillatorn ska svänga igång
 snabbt.
 
@@ -169,19 +153,9 @@ snabbt.
 \index{Tuned-Grid-Tuned-Platekoppling}
 \index{oscillator!Tuned-Grid-Tuned-Platekoppling}
 
-\begin{wrapfigure}[25]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-70.pdf}
-  \caption{Hartleykoppling}
-  \label{fig:BildII3-70}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-71.pdf}
-  \caption{TPTG-koppling}
-  \label{fig:BildII3-71}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-72.pdf}
-  \caption{Colpittskoppling}
-  \label{fig:BildII3-72}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_3-70.pdf}{Hartleykoppling}{fig:BildII3-70}
+\smallfig{images/cropped_pdfs/bild_2_3-71.pdf}{TPTG-koppling}{fig:BildII3-71}
+\smallfig{images/cropped_pdfs/bild_2_3-72.pdf}{Colpittskoppling}{fig:BildII3-72}
 
 Bild \ref{fig:BildII3-70} visar en Harleykoppling.
 
@@ -241,19 +215,9 @@ LC-krets som avkopplas HF-mässigt med en kondensator.
 \index{oscillator!frekvensinställning}
 \index{oscillator!bandspridning}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-73a.pdf}
-  \caption{Clappkoppling}
-  \label{fig:BildII3-73a}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-73b.pdf}
-  \caption{Förstärkare i Clappkoppling}
-  \label{fig:BildII3-73b}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_3-74.pdf}
-  \caption{Bandspridning}
-  \label{fig:BildII3-74}
-\end{wrapfigure}
+\tallfig{images/cropped_pdfs/bild_2_3-73a.pdf}{Clappkoppling}{fig:BildII3-73a}
+\tallfig{images/cropped_pdfs/bild_2_3-73b.pdf}{Förstärkare i Clappkoppling}{fig:BildII3-73b}
+\tallfig{images/cropped_pdfs/bild_2_3-74.pdf}{Bandspridning}{fig:BildII3-74}
 
 Bild \ref{fig:BildII3-74} illustrerar stegvis hur man åstadkommer
 bandspridning.

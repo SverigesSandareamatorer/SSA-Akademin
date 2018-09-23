@@ -1,17 +1,13 @@
 \section{Värmeutveckling}
 
-\textbf{
-HAREC a.\ref{HAREC.a.2.7}\label{myHAREC.a.2.7}
-}
+\harec{a}{2.7}{2.7}
 
 \index{värmeutveckling}
 \index{heat dissipation}
 
 \subsection{Värmeledning}
 
-\textbf{
-HAREC a.\ref{HAREC.a.2.7.1}\label{myHAREC.a.2.7.1}
-}
+\harec{a}{2.7.1}{2.7.1}
 
 \index{värmeledning}
 \index{heat transfer}
@@ -35,18 +31,16 @@ och anges i enheten kelvin per watt.
 Temperaturen \(T_k\) för en komponent beror på medeleffekten \(P\) som den
 producerar i värme, den termiska resistansen samt den \emph{omgivande temperaturen}
 (eng. \emph{ambient temperature}) \(T_A\) enligt:
-
-\(T_k = T_A + R_\Theta \cdot P\)
-
+%%
+\[T_k = T_A + R_\Theta \cdot P\]
+%%
 De termiska resistanserna för komponent, kylpasta, isolerskiva och kylfläns
 kan summeras precis som resistanser för vanliga motstånd och det
 sammanlagda värdet används sedan för att beräkna temperaturen på en
 komponent eller för att dimensionera en kylfläns.
 
 \subsection{Konvektion}
-\textbf{
-HAREC a.\ref{HAREC.a.2.7.2}\label{myHAREC.a.2.7.2}
-}
+\harec{a}{2.7.2}{2.7.2}
 \index{konvektion}
 \index{kylfläns}
 \index{heatpipe}
@@ -86,9 +80,7 @@ transistor och kylfläns är ett annat exempel på hur dålig värmeledning skap
 problem med överhettning.
 
 \subsection{Värmealstring}
-\textbf{
-HAREC a.\ref{HAREC.a.2.7.4}\label{myHAREC.a.2.7.4}
-}
+\harec{a}{2.7.4}{2.7.4}
 \index{värmealstring}
 
 \emph{Värmealstring} kan ske på fler ställen än i motstånd. Lite förenklat
@@ -125,30 +117,22 @@ upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
 \emph{vätning} och därmed undvika att det bildas en kallödning.
 
 \subsection{Värme i transistor}
-\textbf{
-HAREC a.\ref{HAREC.a.2.7.3}\label{myHAREC.a.2.7.3}
-}
+\harec{a}{2.7.3}{2.7.3}
 
 För att förstå värmealstring i en transistor börjar vi med att tänka oss
 att vi har en transistor med 12~V matningsspänning. Vi låter den generera en
 sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
 Vad är effektförlusten i transistorn?
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=7cm]{images/power1.pdf}
-\caption{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}
-\label{fig:power1}
-\end{center}
-\end{figure}
+\smallfig[0.5]{images/power1.pdf}{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
 
 I bild \ref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med amplituden
 \(10\ V_{pp}\). Transistorn har en vilospänning på 6~V
 för att få marginal mot \(0\ V\) och \(+12\ V\). Spänningen \(U_t\) varierar
 mellan \(1\ V\) och \(11\ V\). I utgångslastens resistor alstras en ström \(I_t\) som är proportionerlig mot spänningen
 \(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är absolutvärdet av strömmen gånger spänningen enligt Joules lag. 
-
-\(P_t = \lvert U_t \cdot I_t \rvert\) 
-
+%%
+\[P_t = \lvert U_t \cdot I_t \rvert\]
+%%
 Den observante ser att effekten är signifikant högre för andra halvan av kurvan, då man har både
 hög spänning och hög ström.

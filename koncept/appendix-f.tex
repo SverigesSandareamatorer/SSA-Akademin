@@ -1,3 +1,5 @@
+\onecolumn
+
 \chapter{IARU Region 1 bandplan}
 \label{IARU bandplan}
 
@@ -12,22 +14,19 @@ användning/mötespunkter.
 \ref{bandplaner} samt bilaga \ref{svensk frekvensplan} och
 \ref{svenska repeatrar}.)
 
-\setlongtables
-\begin{longtable}{lcl}
+\begin{xtabular}{lcl}
 Band & Segment & Trafiksätt \\
 MHz  & kHz     & \\ \hline
-\endhead
-
+%% \endhead
 0,137 & 135,7--137,8 & CW, QRSS and narrow band digital modes\\
-
 0,472 & 472--475 & CW\\
  & 475--479 & CW, digimodes\\
-
+%
 1,8  & 1810--1838 & CW, 1836~kHz QRP Centre of Activity\\
      & 1838--1840 & Narrow band modes\\
      & 1840--1843 & All modes--digimodes\\
      & 1843--2000 & All modes\\
-
+%
 3,5  & 3500--3510 & CW, priority for intercontinental operation\\
      & 3510--3560 & CW, contest preferred, 3555~kHz--QRS Centre of Activity\\
      & 3560--3570 & CW, 3560~kHz--QRP Centre of Activity\\
@@ -45,12 +44,12 @@ MHz  & kHz     & \\ \hline
      & & 3760~kHz--Reg.1 Emergency Centre of Activity\\
      & 3775--3800 & All modes, SSB contest preferred\\
      & & priority for intercontinental operation\\
-
+%
 5,3  & & \textbf{Är inte ett amatörband i Sverige}\\
  & 535105--5354,0 & CW, Narrow band modes--digimodes\\
  & 5340,0--5366,0 & All modes, USB recommended for voice operation\\
  & 5366,0--5366,5 & Weak signal narrow band modes\\
-
+%
 7    & 7000--7040 & CW, 7030~kHz--QRP Centre of Activity\\
      & 7040--7047 & Narrow band modes--digimodes\\
      & 7047--7050 & Narrow band modes--digimodes\\
@@ -66,10 +65,10 @@ MHz  & kHz     & \\ \hline
      & & 7165~kHz--Image Centre of Activity\\
      & 7175--7200 & All modes, SSB contest preferred\\
      & & priority for intercontinental operation\\
-
+%
 10   & 10100--10140 & CW, 10116~kHz--QRP Centre of Activity\\
      & 10140--10150 & Narrow band modes--digimodes\\
-
+%
 14   & 14000--14060 & CW, contest preferred, 14055~kHz--QRS Centre of Activity\\
      & 14060--14070 & CW, 14060~kHz--QRP Centre of Activity\\
      & 14070--14089 & Narrow band modes--digimodes\\
@@ -85,7 +84,7 @@ MHz  & kHz     & \\ \hline
      & & 14230~kHz--Image Centre of Activity\\
      & & 14285~kHz--SSB QRP Centre of Activity\\
      & 14300--14350 & All modes, 14300~kHz--Global Emergency centre of activity\\
-
+%
 18   & 18068--18095 & CW, 18086~kHz--QRP Centre of Activity\\
      & 18095--18105 & Narrow band modes--digimodes\\
      & 18105--18109 & Narrow band modes--digimodes\\
@@ -98,7 +97,7 @@ MHz  & kHz     & \\ \hline
      & & 18130~kHz--SSB QRP Centre of Activity\\
      & & 18150~kHz--Digital Voice Centre of Activity\\
      & & 18160~kHz--Global Emergency Centre of Activity\\
-
+%
 21   & 21000--21070 & CW, 21055~kHz--QRS Centre of Activity\\
  & & 21060~kHz--QRP Centre of Activity\\
  & 21070--21090 & Narrow band modes--digimodes\\
@@ -112,7 +111,7 @@ MHz  & kHz     & \\ \hline
      & & 21285~kHz--SSB QRP Centre of Activity\\
      & & 21340~kHz--Image Centre of Activity\\
      & & 21360~kHz--Global Emergency Centre of Activity\\
-
+%
 24   & 24890--24915 & CW, 24906~kHz--QRP centre of activity\\
      & 24915--24925 & Narrow band modes--digimodes\\
      & 24925--27929 & Narrow band modes--digimodes\\
@@ -122,7 +121,7 @@ MHz  & kHz     & \\ \hline
      & & automatically controlled data stations (unattended)\\
      & 24940--24990 & All modes, 24950~kHz--SSB QRP Centre of Activity\\
      & & 24960 kHz--Digital Voice Centre of Activity\\
-
+%
 28   & 28000--28070 & CW, 28055~kHz--QRS Centre of Activity\\
  & & 28060~kHz--QRP Centre of Activity\\
      & 28070--28120 & Narrow band modes--digimodes\\
@@ -138,7 +137,7 @@ MHz  & kHz     & \\ \hline
      & 28320--2900 & All modes, 28330~kHz--Digital Voice Centre of Activity\\
      & & 28360~kHz--SSB QRP Centre of Activity\\
      & & 28680~kHz--Image Centre of Activity\\
-
+%
 29   & 29000--29100 & All modes\\
      & 29100--29200 & All modes--FM simplex--10~kHz channels\\
      & 29200--29300 & All modes--digimodes\\
@@ -148,24 +147,26 @@ MHz  & kHz     & \\ \hline
      & 29520--29590 & All modes--FM repeater input (RH1--RH8)\\
      & 29600 & All modes--FM calling channel\\
      & 29610 & All modes--FM simplex repeater (parrot input and output)\\
-     & 29620--29700 & All modes--FM repeater outputs (RH1--RH8)\\
-\end{longtable}
+& 29620--29700 & All modes--FM repeater outputs (RH1--RH8)\\
+\end{xtabular}
 
-\subsection{ANMÄRKNINGAR}
+\subsection{Anmärkningar}
 
 \subsubsection{Definitioner}
 
-\textbf{All modes} CW, SSB och AM samt de trafiksätt som angetts som
+\begin{description}
+\item[All modes] CW, SSB och AM samt de trafiksätt som angetts som
 \emph{Centre of activity}.
 
-\textbf{Image modes} Alla analoga eller digitala trafiksätt för bildöverföring
+\item[Image modes] Alla analoga eller digitala trafiksätt för bildöverföring
 som ryms inom överenskommen bandbredd. Till exempel SSTV och FAX.
 
-\textbf{Narrow band modes} Alla trafiksätt som använder en bandbredd upp till
+\item[Narrow band modes] Alla trafiksätt som använder en bandbredd upp till
 500~Hz inklusive CW, RTTY, PSK med flera.
 
-\textbf{Digimodes} Alla digitala trafiksätt som ryms inom överenskommen
+\item[Digimodes] Alla digitala trafiksätt som ryms inom överenskommen
 bandbredd. Till exempel RTTY, PSK, MT63 med flera.
+\end{description}
 
 \subsubsection{Sändarfrekvenser}
 
@@ -187,7 +188,6 @@ sidbandet (USB).
 
 Då DX-trafik ej är involverad ska testsegmenten ej innefatta
 3500--3510 eller 3775--3800~kHz.
-
 Frekvensbanden på 10, 18 och 24~MHz ska inte användas för tester.
 
 \subsubsection{10 MHz-bandet}
@@ -212,14 +212,13 @@ Undantag gäller för fyrar och speciella experimentstationer.
 
 Med fjärrstyrda radiostationer (eng. \emph{remote controlled station}) menas en
 sändare som fjärrstyrs av en radioamatör via någon typ av kontrollterminal.
-
 Användningen av en fjärrstyrda radiostationer måste vara tillåten i det land där
 stationen är placerad.
-
 Anropssignalen som används vid fjärrstyrning måste vara tilldelad av myndigheten
 i det land där stationen är placerad oavsett var i världen radioamatören som
 använder den befinner sig.
-
 Notera att överenskommelsen i CEPT T/R 61-01 \cite{TR6101} om användningen av
 egen anropssignal med tillägg av landsprefix för besökt land endast gäller om
 operatören befinner sig i landet, inte vid fjärrstyrning.
+
+\twocolumn

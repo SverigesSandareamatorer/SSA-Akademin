@@ -11,7 +11,7 @@ måttenhet, så kallad S-enhet.
 Signalspänningen mäts över en impedans av 50~\(\Omega\).
 
 Eftersom S-enheten är logaritmisk, så motsvarar till exempel signalstyrkan S8
-halva signalspänningen, det vill säga 25~\(\mu V\) eller -6~dB jämfört med S9.
+halva signalspänningen, det vill säga 25~\(\mu V\) eller -6\,dB jämfört med S9.
 Om halveringen fortsätts, fås att S0 (noll) motsvarar en signalstyrka av 0,1~\(\mu V\).
 
 I en kortvågsmottagare alstras det ett internt brus med en nivå av
@@ -24,6 +24,32 @@ Det är då frågan om mycket starka signaler.
 
 Följande tabell gäller för det ideala sambandet mellan S-enheter och
 signalstyrkor över två alternativa brusnivåer.
+
+\begin{table}[h!]
+  \vspace{10ex}
+	\centering
+	\begin{tabular}{l|lll|lll}
+    S-Meter  & \multicolumn{3}{c}{Under 30~MHz} & \multicolumn{3}{c}{Över 30~MHz} \\
+    värde    & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) \\
+    \hline
+    S9+ 40 dB & -33  & 5,0 mV  & 74  & -53  & 500 \(\mu V\) & 54  \\
+    S9+ 30 dB & -43  & 1,6 mV  & 64  & -63  & 160 \(\mu V\) & 44  \\
+    S9+ 20 dB & -53  & 500 \(\mu V\)  & 54  & -73  & 50 \(\mu V\) & 34  \\
+    S9+ 10 dB & -63  & 160 \(\mu V\)  & 44  & -83  & 16 \(\mu V\) & 24  \\
+    S9        & -73  & 50 \(\mu V\)   & 34  & -93  & 5 \(\mu V\) & 14  \\
+    S8        & -79  & 25 \(\mu V\)   & 28  & -99  & 2,5 \(\mu V\) & 8   \\
+    S7        & -85  & 12,6 \(\mu V\) & 22  & -105 & 1,26 \(\mu V\) & +2  \\
+    S6        & -91  & 6,3 \(\mu V\)  & 16  & -111 & 0,63 \(\mu V\) & -4  \\
+    S5        & -97  & 3,2 \(\mu V\)  & 10  & -117 & 0,32 \(\mu V\) & -10 \\
+    S4        & -103 & 1,6 \(\mu V\)  & +4  & -123 & 0,16 \(\mu V\) & -16 \\
+    S3        & -109 & 0,8 \(\mu V\)  & -2  & -129 & 0,08 \(\mu V\) & -22 \\
+    S2        & -115 & 0,4 \(\mu V\)  & -8  & -135 & 0,04 \(\mu V\) & -28 \\
+    S1        & -121 & 0,21 \(\mu V\) & -14 & -141 & 0,02 \(\mu V\) & -34 \\
+  \end{tabular}
+  \caption{Tabell över S-värden, spännigar och effekter}
+\end{table}
+
+\newpage
 
 Signalstyrkan mäts vid mottagarens antenningång, varför skillnaden i
 signalstyrkan olika antenner och mottagningsriktningar samt dämpningen
@@ -48,25 +74,3 @@ Vid konferensen 1981 i Brighton antogs förslaget som rekommendation.
 Mätningar ska i båda fallen göras med en kvasi-toppvärdesdetektor
 med en stigtid av 10~ms \(\pm\)0,2~ms och en falltid av 500~ms.
 
-\begin{table}[ht]
-  \begin{tabular}{l|lll|lll}
-    S-Meter  & \multicolumn{3}{c}{Under 30~MHz} & \multicolumn{3}{c}{Över 30~MHz} \\
-    värde    & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) \\
-    \hline
-    S9+ 40 dB & -33  & 5,0 mV  & 74  & -53  & 500 \(\mu V\) & 54  \\
-    S9+ 30 dB & -43  & 1,6 mV  & 64  & -63  & 160 \(\mu V\) & 44  \\
-    S9+ 20 dB & -53  & 500 \(\mu V\)  & 54  & -73  & 50 \(\mu V\) & 34  \\
-    S9+ 10 dB & -63  & 160 \(\mu V\)  & 44  & -83  & 16 \(\mu V\) & 24  \\
-    S9        & -73  & 50 \(\mu V\)   & 34  & -93  & 5 \(\mu V\) & 14  \\
-    S8        & -79  & 25 \(\mu V\)   & 28  & -99  & 2,5 \(\mu V\) & 8   \\
-    S7        & -85  & 12,6 \(\mu V\) & 22  & -105 & 1,26 \(\mu V\) & +2  \\
-    S6        & -91  & 6,3 \(\mu V\)  & 16  & -111 & 0,63 \(\mu V\) & -4  \\
-    S5        & -97  & 3,2 \(\mu V\)  & 10  & -117 & 0,32 \(\mu V\) & -10 \\
-    S4        & -103 & 1,6 \(\mu V\)  & +4  & -123 & 0,16 \(\mu V\) & -16 \\
-    S3        & -109 & 0,8 \(\mu V\)  & -2  & -129 & 0,08 \(\mu V\) & -22 \\
-    S2        & -115 & 0,4 \(\mu V\)  & -8  & -135 & 0,04 \(\mu V\) & -28 \\
-    S1        & -121 & 0,21 \(\mu V\) & -14 & -141 & 0,02 \(\mu V\) & -34 \\
-  \end{tabular}
-  \caption{S-enheter, rekommenderade normvärden inom IARU Region~1}
-  \label{s-enhet tabell}
-\end{table}
