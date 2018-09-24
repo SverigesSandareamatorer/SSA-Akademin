@@ -7,4 +7,5 @@ RUN apk add --no-cache \
         texmf-dist-fontsextra \
         texmf-dist-latexextra \
         texmf-dist-pictures \
-        texmf-dist-science
+        texmf-dist-science \
+        sshpass
