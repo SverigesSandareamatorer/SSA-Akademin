@@ -1,93 +1,116 @@
 \chapter{EMC}
+\label{EMC}
+\index{EMC}
 
-Endast en del av frekvensspektrum av elektromagnetiska vågor används för
-radiosändningar.
-Samtidigt används detta utrymme av allt fler intressenter och för allt fler
-ändamål.
-Samhället blir alltmer tekniskt avancerat och elektroniktätheten tilltar
-kraftigt.
+Det moderna samhället blir alltmer tekniskt avancerat och antalet elektroniska
+apparater i hemmen och på arbetsplatserna ökar kraftigt.
 Den ökande mängden och komplexiteten hos apparaterna kräver därför regler, som
 styr både utförande och användning med rimligt bibehållen säkerhet och funktion.
+Internationella och nationella väl preciserade regler för radio- och
+teletekniskt samexistens är numera helt nödvändiga.
 
 \section{Störningar och störkänslighet}
 
 \subsection{Om EMC-lagen}
 \label{EMC-lagen}
+\index{EMC!lag}
+\index{EMC!förordning}
+\index{EMC!apparater}
+\index{EMC!störningar}
 
-Det kan inte längre ges enkla svar på vad som är att vara störd och att störa.
-Internationella och nationella väl preciserade regler för radio- och
-teletekniskt samexistens är numera helt nödvändiga.
+Samlingsbegreppet är \emph{Electromagnetic Compatibility} (EMC), det vill säga
+en apparats förmåga att fungera tillfredsställande i sin elektromagnetiska
+omgivning så att den:
 
-Samlingsbegreppet är \emph{Electromagnetic Compatibility} (EMC), dvs. en
-apparats förmåga att fungera tillfredsställande i sin elektromagnetiska
-omgivning utan att alstra elektromagnetiska störningar som överstiger en nivå,
-som tillåter radio- och teleutrustning och andra apparater att fungera som
-avsett.
-Vidare ska apparater ha en sådan tillräcklig inbyggd tålighet mot
-elektromagnetiska störningar, att de kan fungera som avsett.
+\begin{itemize}
+\item inte alstrar en elektromagnetisk störning som överskrider en nivå som
+  tillåter radio- eller teleutrustning eller annan utrustning att fungera som
+  avsett
 
-Till skydd för liv, personlig säkerhet och hälsa samt kommunikationer och
-näringsverksamheter har därför Lag om elektromagnetisk kompatibilitet införts.
-Denna lag är anpassad efter av EG/EES utfärdade direktiv angående bl.a.
-radiostörningar.
+\item har en sådan tålighet att den elektromagnetiska störning som kan
+  förväntas vid avsedd användning inte medför att utrustningens funktion
+  försämras i en oacceptabel utsträckning.
+\end{itemize}
 
+Lagen om elektromagnetisk kompatibilitet, \emph{SFS 1992:1512} \cite{SFS1992:1512}
+ger regeringen eller den myndighet regeringen bestämmer rätt att i fråga om
+kommunikationer eller näringsverksamhet eller skydd för liv, personlig säkerhet
+eller hälsa meddela föreskrifter om EMC.
 Förordning om elektromagnetisk kompatibilitet \emph{SFS 2016:363}
 \cite{SFS2016:363} definierar nyckelbegreppen; apparater, EMC, elektromagnetisk
 störning och tålighet.
+
+Lagen och förordningen tillsammans med Elsäkerhetsverkets föreskrifter
+\emph{ELSÄK-FS} samt direktivet om elektromagnetisk kompatibilitet implementerar
+EU-direktiv 2014/30/EU i Sverige.
 Elsäkerhetsverket är ansvarig myndighet, med rätt att utfärda föreskrifter om
-bl.a. skyddskraven, kontroll och märkning samt om vissa undantag.
-Föreskrifter utfärdade av Elsäkerhetsverket publiceras som ELSÄK-FS.
+bland annat skyddskraven, kontroll och märkning samt om vissa undantag.
+
+Ovanstående handlar om störningar orsakade av apparater eller störningar på
+apparaters funktion.
+Sådana störningar kan anmälas till Elsäkerhetsverket.
+Störningar orsakade av radiosändare eller radiomottagare behandlas i avsnitt
+\ref{LEK}.
+
+
+\subsection{Utdrag ur LEK}
+\label{LEK}
+\index{LEK}
+\index{störning}
+\index{störning!skadlig}
+\index{störning!tillåten}
 
 Post- och telestyrelsens föreskrifter om undantag från tillståndsplikt för
 användning av vissa radiosändare \emph{PTSFS 2015:4} \cite{PTSFS2015:4} hänvisar
-till\\
-Lag om elektronisk kommunikation (\textbf{LEK}) \emph{SFS 2003:389}
+till Lag om elektronisk kommunikation \emph{LEK} \emph{SFS 2003:389}
 \cite{SFS2003:389}.
-Där kan följande läsas om åtgärder vid störningar.
-
-\subsection{Ur LEK}
-
+Där kan följande läsas om åtgärder vid störningar:
+%%
 \begin{quote}
-3 Kap. 13\S Om det uppkommer skadlig störning, skall tillståndshavaren
-omedelbart se till att störningen upphör eller i möjligaste mån minskar, om
-inte störningen är tillåten.
-Detsamma gäller den som använder en radiomottagare som stör användningen av en
-annan radiomottagare.
+	3 Kap. 13\S~Om det uppkommer skadlig störning, skall tillståndshavaren
+	omedelbart se till att störningen upphör eller i möjligaste mån minskar, om
+	inte störningen är tillåten.
+	Detsamma gäller den som använder en radiomottagare som stör användningen av en
+	annan radiomottagare.
 \end{quote}
-
+%%
+Skadlig störning definieras i 1 Kap 7\S~som:
+%%
 \begin{quote}
-3 Kap 14\S Elektriska eller elektroniska anläggningar som, utan att vara
-radioanläggningar, är avsedda att alstra radiofrekvent energi för
-kommunikationsändamål i ledning eller för industriellt, vetenskapligt,
-medicinskt eller något annat liknande ändamål, får användas endast i enlighet
-med föreskrifter som meddelas av regeringen eller den myndighet som regeringen
-bestämmer.
-
-Regeringen eller den myndighet som regeringen bestämmer får meddela
-föreskrifter om förbud mot att inneha elektriska eller elektroniska
-anläggningar som inte omfattas av första stycket och som, utan att vara
-radioanläggningar, är avsedda att sända radiovågor.
+	störning som äventyrar funktionen hos en radionavigationstjänst eller någon
+	annan säkerhetstjänst, eller som på annat sätt allvarligt försämrar,
+	hindrar eller upprepat avbryter en radiokommunikationstjänst som fungerar i
+	enlighet med gällande bestämmelser, inbegripet störning av befintliga eller
+	planerade tjänster på nationellt tilldelade frekvenser
 \end{quote}
-
-I \textbf{LEK} definieras bl.a. radioanläggning:
+%%
+Tillåten störning definieras i förarbetena till \emph{LEK} som en störning
+orsakad av användares delning av frekvens och anses i då vara tillåten.
+Observera dock att användare med sekundär status inte får störa användare med
+primär status vid delning av frekvens eller frekvensband.
+%%
+I \emph{LEK} definieras även radioanläggning:
+\index{radioanläggning}
 \begin{quote}
-anordning som möjliggör radiokommunikation eller bestämning av position,
-hastighet eller andra kännetecken hos ett föremål genom sändning av radiovågor
-(radiosändare) eller mottagning av radiovågor (radiomottagare)
+	anordning som möjliggör radiokommunikation eller bestämning av position,
+	hastighet eller andra kännetecken hos ett föremål genom sändning av radiovågor
+	(radiosändare) eller mottagning av radiovågor (radiomottagare)
 \end{quote}
 
 \subsection{Utstrålning från amatörradiosändare}
+\index{uteffekt!begränsning}
 
-Vad som sägs i 3 Kap 4\S Lag om elektronisk kommunikation och skrivningen i
+Vad som sägs i 3 Kap 4\S~Lag om elektronisk kommunikation och skrivningen i
 Post- och telestyrelsens föreskrifter om undantag från tillståndsplikt för
-användning av vissa radiosändare 3 Kap 14\S \emph{De tekniska egenskaperna hos
-amatörradiosändaren ska anpassas så att de inte stör användningen av andra
-radioanläggningar.}
-Samt skrivningen i Strålsäkerhetsmyndighetens SSMFS 2008:18.
-Medför att sändareffekten alltid ska anpassas så att styrkan av utstrålade
+användning av vissa radiosändare 3 Kap 14\S~\emph{De tekniska egenskaperna hos
+	amatörradiosändaren ska anpassas så att de inte stör användningen av andra
+	radioanläggningar}.
+Tillsammans med skrivningarna i Strålsäkerhetsmyndighetens \emph{SSMFS 2008:18}
+och Förordning om elektromagnetisk kompatibilitet \emph{SFS 2016:363}.
+Medför detta att sändareffekten alltid ska anpassas så att styrkan av utstrålade
 fält inte förorsakar störningar eller för höga nivåer av elektromagnetiska fält.
 
-Den enligt undantagsföreskrifterna högsta tillåtna effekten kan alltså inte
+Den enligt undantagsföreskrifterna högsta tillåtna uteffekten kan alltså inte
 användas hinderslöst.
 
 Om störningarna inte kan avhjälpas kan PTS komma att anvisa om restriktioner
@@ -95,34 +118,40 @@ Om störningarna inte kan avhjälpas kan PTS komma att anvisa om restriktioner
 vissa tider, på vissa frekvenser, över viss sändareffekt etc.
 
 \subsection{PM vid störningsproblem}
+\index{störning!PM}
+
 \begin{itemize}
-\item Störningar är alltid förenade med obehag och ställer grannsämjan på prov.
-  Håll dig väl med dem som bor i omgivningen!
-\item Om det väcks klagomål på dig om störningar, ska du först
-  kontrollera din egen sändare och antennanläggning.
-\item Be därefter att få undersöka antennanläggning och apparater hos
-  den som besväras av störningar.
-\item Om du ser en lösning, berätta om vad som kan göras.
-  Kom överens om vad som får göras.
-  Ändra då inte något inne i apparater, men prova gärna ut yttre,
-  kompletterande filter etc.
-\item Om det inte går att komma till rätta med störningarna bör de som
-  levererat och installerat anläggningen anlitas.
-\item Störningsanmälan kan även ske till PTS närmaste tillsynsområde.
-%PHU: Finns fortfarande "PTS tillsynsområde?
+	\item Störningar är alltid förenade med obehag och ställer grannsämjan på prov.
+	Håll dig väl med dem som bor i omgivningen! Observera även att gällande EMC
+	har myndigheter inte rättighet att få tillträde till bostäder.
+	\item Om det väcks klagomål på dig om störningar, ska du först
+	kontrollera din egen sändare och antennanläggning.
+	\item Be därefter att få undersöka antennanläggning och apparater hos
+	den som besväras av störningar.
+	\item Om du ser en lösning, berätta om vad som kan göras.
+	Kom överens om vad som får göras.
+	Ändra då inte något inne i apparater, men prova gärna ut yttre,
+	kompletterande filter etc.
+	\item Om det inte går att komma till rätta med störningarna bör de som
+	levererat och installerat anläggningen anlitas.
+	\item Störningsanmälan gällande radiokommunikation kan göras på PTS webbplats.
+	\item Störningsanmälan gällande produkter kan göras till Elsäkerhetsverket.
 \end{itemize}
 
 \subsection{Arbeta aktivt med avstörning}
-\begin{itemize}
-\item Låna hem en av SSA:s avstörningslådor och försök att finna en lösning.
-  I lådan finns ett sortiment av frekvensfilter för avstörning.
-\item Undvik att störa i onödan.
-  Sänk sändareffekten och begränsa sändningstiden under utprovningen av en
-  lösning.
-\end{itemize}
+\index{störning!avstörningslåda}
 
-Lyckas du inte själv med att störa av
 \begin{itemize}
-\item ta gärna hjälp av en radioamatör med erfarenhet av avstörning
-\item anlita annan sakkunnig hjälp.
+	\item Låna hem en av SSA:s avstörningslådor och försök att finna en lösning.
+	I lådan finns ett sortiment av frekvensfilter för avstörning.
+	\item Undvik att störa i onödan.
+	Sänk sändareffekten och begränsa sändningstiden under utprovningen av en
+	lösning.
+\end{itemize}
+%%
+Lyckas du inte själv med att störa av:
+%%
+\begin{itemize}
+	\item Ta gärna hjälp av en radioamatör med erfarenhet av avstörning.
+	\item Anlita annan sakkunnig hjälp.
 \end{itemize}

@@ -16,28 +16,22 @@ konstruktionsdetaljerna av enstaka block.
 Hela apparaten kan ses som ett antal funktionsblock. Hur de samverkar
 framgår i stort av blockschemat.
 Där återfinns oscillatorer, blandare, förstärkare etc.
-I schemat kan även finnas uppgifter om frekvenser och spänningar m.m.
+I schemat kan även finnas uppgifter om frekvenser och spänningar med mera.
 
 Det finns olika slags funktionsblock -- kretsar. Kombinationen av block
 ger apparater med olika egenskaper.
-Exempel är s.k. raka sändare med samma frekvens genom hela sändaren,
+Exempel är så kallade raka sändare med samma frekvens genom hela sändaren,
 superheterodynsändare där frekvensblandning används,
 frekvensmultiplicerande sändare etc.
 
+\smallfig{images/cropped_pdfs/bild_2_5-01.pdf}{Enstegs sändare}{fig:bildII5-1}
+
 \subsection{Rak sändare}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.1.1b}\label{myHAREC.a.5.1.1b},
-  a.\ref{HAREC.a.5.2.1}\label{myHAREC.a.5.2.1},
-  a.\ref{HAREC.a.5.3.3}\label{myHAREC.a.5.3.3}
-}
+\harec{a}{5.1.1b}{5.1.1b}
+\harec{a}{5.2.1}{5.2.1}
+\harec{a}{5.3.3}{5.3.3}
 \index{rak sändare}
 \index{sändare!rak}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_5-01.pdf}
-  \caption{Enstegs sändare}
-  \label{fig:bildII5-1}
-\end{wrapfigure}
 
 En \emph{rak sändare}, som illustreras i bild \ref{fig:bildII5-1}, är det
 enklaste sändarkonceptet.
@@ -49,11 +43,7 @@ I flerstegs raka sändare följs oscillatorn av ytterligare funktioner
 på samma frekvens som oscillatorn.
 Buffertsteg, drivsteg och slutsteg kan vara sådana funktioner.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-02.pdf}
-  \caption{Flerstegs rak sändare}
-  \label{fig:bildII5-2}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-02.pdf}{Flerstegs rak sändare}{fig:bildII5-2}
 
 Bild \ref{fig:bildII5-2} visar en rak sändare, som består av oscillator +
 buffertsteg 1 + buffertsteg 2 + drivsteg + effektförstärkare.
@@ -71,17 +61,15 @@ Nackdelen är att alla steg arbetar på samma frekvens, varvid risken för
 Oönskad återkoppling kan då bli följden, som kan ge ostabila egenskaper hos
 sändaren.
 Genom att i första hand bygga in VFO och buffertstegen i metallkapslingar,
-s.k. skärmar, så minskas denna risk då högre isolation åstadkoms.
+så kallade skärmar, så minskas denna risk då högre isolation åstadkoms.
 
 \subsection{Sändare med frekvensmultiplicering}
-\textbf{HAREC
- a.\ref{HAREC.a.5.3.2}\label{myHAREC.a.5.3.2},
- a.\ref{HAREC.a.5.3.5}\label{myHAREC.a.5.3.5},
- a.\ref{HAREC.a.5.3.6}\label{myHAREC.a.5.3.6},
- a.\ref{HAREC.a.5.3.8}\label{myHAREC.a.5.3.8},
- a.\ref{HAREC.a.5.3.9}\label{myHAREC.a.5.3.9},
- a.\ref{HAREC.a.5.3.11}\label{myHAREC.a.5.3.11}
-}
+\harec{a}{5.3.2}{5.3.2}
+\harec{a}{5.3.5}{5.3.5}
+\harec{a}{5.3.6}{5.3.6}
+\harec{a}{5.3.8}{5.3.8}
+\harec{a}{5.3.9}{5.3.9}
+\harec{a}{5.3.11}{5.3.11}
 \index{frekvensmultiplicering}
 \index{sändare!frekvensmultiplicering}
 \index{utgångsfilter}
@@ -91,18 +79,14 @@ Helst väljer man en arbetsfrekvens för oscillatorn där den är mest
 frekvensstabil.
 
 Om högre frekvens önskas på nyttosignalen, så kan man
-t.ex. multiplicera oscillatorfrekvensen, detta kallas för
+till exempel multiplicera oscillatorfrekvensen, detta kallas för
 \emph{frekvensmultiplicering} (eng. \emph{frequency multiplication}).
 I olinjära kretsar alstras övertoner, som ofta utnyttjas i detta syfte.
 
 Endast när kravet på frekvensstabilitet är lågt används den frekvens,
 som VFO eller CO arbetar på, även för nyttosignalen.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-03.pdf}
-  \caption{FM-sändare med frekvensmultiplicering}
-  \label{fig:bildII5-3}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-03.pdf}{FM-sändare med frekvensmultiplicering}{fig:bildII5-3}
 
 Oscillatorn svänger här på en låg frekvens, som multipliceras i
 olinjära förstärkarsteg till en hög sändningsfrekvens.
@@ -121,9 +105,9 @@ I detta exempel blir sändningsfrekvensens deviation 54~gånger större än
 oscillatorfrekvensens deviation.
 En deviation av max 3000~Hz från den nominella sändningsfrekvensen motsvaras
 av följande deviation från oscillatorfrekvensen,
-
+%%
 \[\Delta f = \frac{3000}{54} = 55,6\text{ [Hz]}\]
-
+%%
 FM-sändare för VHF, UHF och SHF utförs ofta med
 frekvensmultiplikation.
 Jämfört med en rak sändare är komponentbehovet större, men i stället ger
@@ -136,7 +120,7 @@ Genom att ersätta frekvensmodulatorn med en fasmodulator så kan samma
 sändare även användas för fasmodulerad signal.
 
 De frekvensmultiplicerande stegen i bild \ref{fig:bildII5-3} arbetar i klass C,
-dvs. olinjärt, vilket medför amplituddistorsion.
+det vill säga olinjärt, vilket medför amplituddistorsion.
 Vid frekvens- och fasmodulering saknar emellertid detta betydelse, eftersom
 amplituden i det fallet inte är informationsbärande.
 
@@ -145,17 +129,13 @@ filter på utgången, det så kallade \emph{utgångsfiltret}
 (eng. \emph{output filter}).
 
 \subsection{Sändare med frekvensblandning -- superheterodynsändare}
-\textbf{HAREC a.\ref{HAREC.a.5.1.1a}\label{myHAREC.a.5.1.1a}}
+\harec{a}{5.1.1a}{5.1.1a}
 
 \subsubsection{Telegrafisändare (CW) för kortvåg}
 \index{CW}
 \index{sändare!CW}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-04.pdf}
-  \caption{2-bands CW-sändare med frekvensblandning}
-  \label{fig:bildII5-4}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-04.pdf}{2-bands CW-sändare med frekvensblandning}{fig:bildII5-4}
 
 En VFO är mest stabil på låga frekvenser medan en CO har god
 stabilitet även på högre frekvenser.
@@ -171,22 +151,16 @@ På bilden har valts ett filter med passband för det övre av dessa
 frekvensområden.
 
 \subsubsection{Telefonisändare (SSB) för kortvåg}
-\textbf{HAREC
- a.\ref{HAREC.a.5.2.2}\label{myHAREC.a.5.2.2},
- a.\ref{HAREC.a.5.3.1}\label{myHAREC.a.5.3.1},
- a.\ref{HAREC.a.5.3.4}\label{myHAREC.a.5.3.4},
- a.\ref{HAREC.a.5.3.10}\label{myHAREC.a.5.3.10},
- a.\ref{HAREC.a.5.3.12}\label{myHAREC.a.5.3.12}
-}
+\harec{a}{5.2.2}{5.2.2}
+\harec{a}{5.3.1}{5.3.1}
+\harec{a}{5.3.4}{5.3.4}
+\harec{a}{5.3.10}{5.3.10}
+\harec{a}{5.3.12}{5.3.12}
 \index{telefoni}
 \index{SSB}
 \index{sändare!SSB}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-05.pdf}
-  \caption{2-bands SSB-sändare med frekvensblandning}
-  \label{fig:bildII5-5}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-05.pdf}{2-bands SSB-sändare med frekvensblandning}{fig:bildII5-5}
 
 Bild \ref{fig:bildII5-5} visar en SSB-sändare för två kortvågsband och
 bygger på sändaren i bild \ref{fig:bildII5-4}.
@@ -203,8 +177,8 @@ Vid blandningen fås blandningsprodukter inom frekvensområdena
 14,0--14,5~MHz och 4,0--3,5~MHz.
 Genom att välja bandpassfilter kan man sända i ett av dessa frekvensområden.
 Efterföljande driv- och slutsteg utförs för att arbeta i detta frekvensband,
-antingen utan särskild avstämning -- s.k. bredbandigt utförande -- eller genom
-avstämning på en viss frekvens, vilket ger renaste signalen.
+antingen utan särskild avstämning -- så kallad bredbandigt utförande -- eller
+genom avstämning på en viss frekvens, vilket ger renaste signalen.
 
 Bild \ref{fig:bildII5-6} visar en SSB-sändare som liknar den i
 bild \ref{fig:bildII5-5}.
@@ -212,21 +186,17 @@ Den stora skillnaden är att signalfrekvensen kan flyttas till flera olika band
 med hjälp av ännu en frekvensblandning.
 Därför används fler valbara bandpassfilter.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-06.pdf}
-  \caption{Flerbands SSB-sändare med frekvensblandning}
-  \label{fig:bildII5-6}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-06.pdf}{Flerbands SSB-sändare med frekvensblandning}{fig:bildII5-6}
 
 I en SSB-signal ligger all information i amplituden, till skillnad
 från en FM-signal där all information ligger i frekvensen.
 En SSB-signal får alltså inte förvrängas.
-Det innebär att förstärkarstegen i SSB-sändare måste arbeta linjärt, dvs. en
-utsignal ska vara proportionell till insignalen i varje moment.
+Det innebär att förstärkarstegen i SSB-sändare måste arbeta linjärt, det vill
+säga en utsignal ska vara proportionell mot insignalen i varje moment.
 
 \subsection{PLL-styrda sändare}
 \index{faslåstloop}
-\index{phase locked loop (PLL)}
+\index{Phase Locked Loop (PLL)}
 \index{PLL}
 \index{sändare!PLL}
 
@@ -235,7 +205,7 @@ frekvensen i en oscillator och hålla den stabil med hjälp av en
 likspänning från en \emph{faslåst loop} (eng. \emph{Phase Locked Loop (PLL)})
 vilket är en digitalt styrd krets.
 
-En PLL kan användas t.ex. i raka sändare och heterodynsändare.
+En PLL kan användas till exempel i raka sändare och heterodynsändare.
 I det första fallet (bild \ref{fig:bildII5-2}) kan frekvensen i den enda
 oscillatorn styras av en PLL.
 I det andra fallet (bild \ref{fig:bildII5-6}) kan frekvensen i
@@ -243,21 +213,15 @@ någon av oscillatorerna styras av en PLL.
 En närmare beskrivning av PLL-styrning av dessa två sändarkoncept följer här.
 
 \subsubsection{PLL-styrd FM-sändare för 144--146~MHz}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.2.3}\label{myHAREC.a.5.2.3}
-}
+\harec{a}{5.2.3}{5.2.3}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-07.pdf}
-  \caption{PLL-styrd FM-sändare för FM}
-  \label{fig:bildII5-7}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-07.pdf}{PLL-styrd FM-sändare för FM}{fig:bildII5-7}
 
 Bild \ref{fig:bildII5-7} visar en PLL-styrd rak sändare med en
 VCO (spänningsstyrd oscillator) och ett PA (effektförstärkare).
 
 VCO ingår som det frekvensstyrda elementet i en PLL.
-Utfrekvensen från VCO (ärvärdet) avläses och delas periodiskt med talet 10
+Utfrekvensen från VCO (är-värdet) avläses och delas periodiskt med talet 10
 och matas in i en programmerbar frekvensdelare.
 Eftersom frekvensområdet för VCO är 144--146~MHz, kommer infrekvensen till
 den programmerbara delaren att ligga i området 14,4--14,6~MHz.
@@ -265,13 +229,13 @@ Delningstalet i denna delare kan programmeras in i steg om 1 mellan
 talen 5760 och 5840.
 
 Med den första delarens divisor 10 och den andra delarens divisor
-inställd t.ex. på 5760, så avges ur delarkedjan en puls varje gång som
+inställd till exempel på 5760, så avges ur delarkedjan en puls varje gång som
 VCO har genomfört 57600 svängningar.
 Vid en VCO-frekvens av 144~MHz (144000~kHz) motsvaras divisorn
 57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av 2,5~kHz ut från räknarkedjan.
 På samma sätt kommer en VCO-frekvens av 144025~kHz och divisorn
 57610 (= \(10 \cdot 5761\)) också att ge en pulsfrekvens av 2,5~kHz,
-likaså 146~MHz och divisorn 58400 osv.
+likaså 146~MHz och divisorn 58400 och så vidare.
 
 VCO-frekvensen låses alltså i intervall om 25~kHz till närmaste
 delningstal, för att uppnå en pulsfrekvens av 2,5~kHz.
@@ -279,7 +243,7 @@ Om VCO-frekvensen (är-värdet) avviker från det inställda delningstalet
 (bör-värdet), så kommer pulsfrekvensen att bli högre eller lägre än
 2,5~kHz.
 
-Pulsfrekvensen jämförs i en s.k. fasjämförare med en kristallstyrd
+Pulsfrekvensen jämförs i en så kallad fasjämförare med en kristallstyrd
 referensfrekvens som efter en delning med 10 också är 2,5~kHz.
 Utspänningen från jämföraren är en likspänning, som intar ett
 medelvärde då infrekvenserna är lika, men ett högre eller lägre värde
@@ -287,7 +251,7 @@ när de skiljer.
 Denna likspänning används för att kontinuerlig styra VCO-frekvensen
 till likhet med börvärdet.
 Regleringsförloppets hastighet bestäms av tidskonstanten i ett
-lågpassfilter, det s.k. loop-filtret.
+lågpassfilter, det så kallade loop-filtret.
 
 Sändningsfrekvensen regleras alltså med styrspänningen.
 Med samma spänning går det också att frekvensmodulera oscillatorn.
@@ -300,17 +264,13 @@ blir därför inte utreglerade.
 Drosseln efter loop-filtret förhindrar att moduleringssignalen
 kortsluts av filtrets kondensator.
 
-Frekvensinställningen, dvs. programmeringen av delaren kan utföras
-på flera sätt. Exempel på inställningsorgan är tumhjuls-omkopplare,
-logikkretsar i kombination med en knappsats osv.
+Frekvensinställningen, det vill säga programmeringen av delaren, kan utföras
+på flera sätt. Exempel är tumhjuls-omkopplare,
+logikkretsar i kombination med en knappsats och så vida\-re.
 
 \subsubsection{PLL-styrd sändare för kortvåg}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-08.pdf}
-  \caption{PLL-styrd SSB-sändare för kortvåg}
-  \label{fig:bildII5-8}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-08.pdf}{PLL-styrd SSB-sändare för kortvåg}{fig:bildII5-8}
 
 Bild \ref{fig:bildII5-8} visar ett avancerat koncept för en kortvågssändare.
 SSB-signalen alstras på frekvensen 9~MHz och blandas med 61~MHz i 1:a
@@ -319,10 +279,11 @@ blandaren.
 Summafrekvensen 70~MHz filtreras fram som mellanfrekvens.
 Den önskade sändningsfrekvensen fås genom att blanda 70~MHz MF med
 frekvensen från VCO och därefter filtrera fram skillnadsfrekvensen.
+
 VCO i detta exempel täcker frekvensområdet 40--69,5~MHz.
 Således blir sändarens täckningsområde 1,5--30~MHz.
 För att filterfunktionen ska bli optimal, kan den delas upp på flera
-valbara filtersektioner, t.ex. ett per amatörband.
+valbara filtersektioner, till exempel ett per amatörband.
 Valet kan ske automatiskt och styrt av frekvensläget på VCO.
 
 Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
@@ -333,7 +294,7 @@ Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
 VCO för att täcka hela frekvensområdet
 
 \textbf{Exempel:} Vid en MF på 9~MHz behöver VCO-funktionen täcka 9,5--39~MHz,
-dvs. 1:4,11, vilket är för mycket för en VCO.
+det vill säga 1:4,11, vilket är för mycket för en VCO.
 
 SSB-signalen efter 2:a blandaren är inte lämplig att använda i
 regleringsslingan i PLL.
@@ -353,9 +314,8 @@ med frekvensen från en kristallstyrd referensoscillator CO.
 Ur fasjämföraren erhålls en likspänning som styr VCO via ett loop-filter.
 Frekvensen ställs in genom att programmera delaren i PLL.
 
-I en modern sändare finns ofta en mikroprocessor, som erbjuder talrika
-möjligheter bl.a. till frekvensinställning, minnen och avsökning av
-frekvenser.
+I moderna sändare finns även mikroprocessorer, som erbjuder
+frekvensinställning, minnen och avsökning av frekvenser, m.m.
 
 Det beskrivna konceptet är avancerat.
 Frekvensen i alla oscillatorer styrs av samma referensoscillator.
@@ -376,18 +336,14 @@ En annan nackdel är den stora komponentmängden
 (se kapitel \ref{superheterojämförelse}).
 
 \section{Egenskaper i sändare}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4}\label{myHAREC.a.5.4}
-}
+\harec{a}{5.4}{5.4}
 
 Sändare har många olika egenskaper som man ska vara uppmärksam på, dels för
 att ha en effektiv sändare, dels för att få bra kvalitet på sändning och dels
 för att inte störa grannkanaler eller på andra band.
 
 \subsection{Frekvensstabilitet}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.1}\label{myHAREC.a.5.4.1}
-}
+\harec{a}{5.4.1}{5.4.1}
 \index{frekvensstabilitet}
 
 \emph{Frekvensstabiliteten} (eng. \emph{frequency stability}) är en
@@ -409,9 +365,7 @@ Det kan även förekomma att man kan låsa på en extern referensfrekvens,
 ofta 10~MHz.
 
 \subsection{RF-bandbredd}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.2}\label{myHAREC.a.5.4.2}
-}
+\harec{a}{5.4.2}{5.4.2}
 \index{RF bandbredd}
 \index{splatter}
 \index{spegelfrekvenser}
@@ -420,7 +374,7 @@ ofta 10~MHz.
 modulerade signalen har när den kommer ut ur sändaren.
 Det är viktigt att den är begränsad så att den håller sig inom de gränser
 som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
-T.ex. kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
+Till exempel kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
 NFM 12,5~kHz kanaldelning och helt enkelt störa grann-kanalerna.
 
 Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
@@ -431,9 +385,7 @@ Detta kräver dock att efterföljande steg är linjära nog att inte skapa oöns
 sidband i så kallat splatter eller tar upp spegelfrekvenser.
 
 \subsection{Sidband}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.3}\label{myHAREC.a.5.4.3}
-}
+\harec{a}{5.4.3}{5.4.3}
 \index{sidband}
 \index{övre sidband}
 \index{sidband!övre}
@@ -451,9 +403,7 @@ För SSB undertrycks även bärvågen.
 För FM skapas bredare sidband som behöver filtreras.
 
 \subsection{Ljudbandbredd}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.4}\label{myHAREC.a.5.4.4}
-}
+\harec{a}{5.4.4}{5.4.4}
 \index{ljudbandbredd}
 \index{audio bandwidth}
 
@@ -463,14 +413,12 @@ att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
 utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
 oftast 3~kHz för amatörradio.
 Bandbredden kan också behöva begränsas nedåt vid 300~Hz för att inte råka
-störa t.ex. signalering med subtoner.
+störa till exempel signalering med subtoner.
 Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
 kunna skicka ut subtonssignaler, men även för andra former av signaler.
 
 \subsection{Olinjaritet}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.5}\label{myHAREC.a.5.4.5}
-}
+\harec{a}{5.4.5}{5.4.5}
 \index{olinjaritet}
 \index{nonlinearity}
 \index{splatter}
@@ -488,9 +436,7 @@ kan därför vara lämpligt att dra ned något på effekten så taltydligheten g
 upp, vilket då ger bättre signalrapport än när intermodulationen är för hög.
 
 \subsection{Utgångsimpedans}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.6}\label{myHAREC.a.5.4.6}
-}
+\harec{a}{5.4.6}{5.4.6}
 \index{utgångsimpedans}
 
 \emph{Utgångsimpedansen} (eng. \emph{output impedance}) är förstärkarens
@@ -506,9 +452,7 @@ impedansmatchfel ger ännu större reduktion i utsänd effekt än vad själva
 impedansfelet i sig skulle motivera.
 
 \subsection{Uteffekt}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.7}\label{myHAREC.a.5.4.7}
-}
+\harec{a}{5.4.7}{5.4.7}
 \index{uteffekt}
 
 \emph{Uteffekten} (eng. \emph{output power}) är den effekt som sändaren är
@@ -518,9 +462,7 @@ Det kan gå att få högre faktisk effekt ur en sändare, men då kommer den var
 så pass olinjär att den inte förväntas klara krav på splatter.
 
 \subsection{Effektivitet}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.8}\label{myHAREC.a.5.4.8}
-}
+\harec{a}{5.4.8}{5.4.8}
 \index{effektivitet}
 
 \emph{Effektiviteten} (eng. \emph{efficiency}) på en sändare eller slutsteg
@@ -528,18 +470,14 @@ så pass olinjär att den inte förväntas klara krav på splatter.
 Effektiviteten varierar med uteffekt och frekvens.
 
 \subsection{Frekvensdeviation}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.9}\label{myHAREC.a.5.4.9}
-}
+\harec{a}{5.4.9}{5.4.9}
 \index{frekvensdeviation}
 
 \emph{Frekvensdeviationen} är den maximala avvikelsen från bärvågen som
 tillåts vid frekvensmodulation.
 
 \subsection{Modulationsindex}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.10}\label{myHAREC.a.5.4.10}
-}
+\harec{a}{5.4.10}{5.4.10}
 \index{modulationsindex}
 \index{modulationsdjup}
 
@@ -550,19 +488,15 @@ mottagaren att detektera.
 För låg modulation ger svaga sidband att förmedla tal, och för mycket
 av energin går till att sända enbart bärvåg.
 
-\subsection{CW klickar}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.11}\label{myHAREC.a.5.4.11}
-}
+\subsection{CW-klickar}
+\harec{a}{5.4.11}{5.4.11}
 
 Vid CW kan för snabb stig och falltid på bärvågen ge onödig bandbredd och
 uppfattas som klickar eller chirpar. Då detta är störande ska bandbredden
 begränsas genom att filtrera bärvågens till- och frånslag.
 
 \subsection{SSB övermodulation och splatter}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.12}\label{myHAREC.a.5.4.12}
-}
+\harec{a}{5.4.12}{5.4.12}
 \index{övermodulation}
 \index{SSB!övermodulation}
 \index{splatter}
@@ -570,10 +504,8 @@ begränsas genom att filtrera bärvågens till- och frånslag.
 Övermodulation vid SSB ger intermodulation och splatter, vilket ger dels en
 signal om är svår att läsa och dels en för bred signal.
 
-\subsection{RF spurioser}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.13}\label{myHAREC.a.5.4.13}
-}
+\subsection{RF-spurioser}
+\harec{a}{5.4.13}{5.4.13}
 \index{spurios}
 
 Utöver den förväntade bärvågen kan en sändare skicka ut frekvenser som vare
@@ -583,18 +515,14 @@ Detta regleras i EMC standarden för radioutrustning, i det här fallet för
 amatörradio.
 
 \subsection{Chassistrålning}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.14}\label{myHAREC.a.5.4.14}
-}
+\harec{a}{5.4.14}{5.4.14}
 
 En sändare förväntas kunna leverera en stor effekt ut på antennutgången, men
 från själva inneslutningen, chassit, och övriga anslutningar ska sändaren
 inte sända bärvåg, sidband eller några andra signaler.
 
 \subsection{Fasbrus}
-\textbf{HAREC
-  a.\ref{HAREC.a.5.4.15}\label{myHAREC.a.5.4.15}
-}
+\harec{a}{5.4.15}{5.4.15}
 \index{fasbrus}
 
 \emph{Fasbrus} (eng. \emph{phase noise}) är en egenskap hos alla oscillatorer,

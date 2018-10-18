@@ -1,5 +1,5 @@
-\section[AGC]{Automatiskt förstärkningsreglering (AGC)}
-\textbf{HAREC a.\ref{HAREC.a.4.3.8}\label{myHAREC.a.4.3.8}}
+\section[AGC]{Automatisk förstärknings\-reglering (AGC)}
+\harec{a}{4.3.8}{4.3.8}
 \index{automatisk förstärkningreglering}
 \index{AGC}
 \index{mottagare!automatisk förstärkningsreglering}
@@ -19,7 +19,8 @@ insignalen och utsignalen förvrängs om inget ytterligare görs.
 Det är därför nödvändigt att minska förstärkningen även i HF- och
 MF-förstärkarstegen, ju mer desto starkare insignalen är.
 Som hjälpmedel finns oftast ett reglage för HF-förstärkningen (RF gain), och
-därutöver en \emph{automatisk förstärkningsreglering} (eng. \emph{Automatic Gain Control (AGC)}).
+därutöver en \emph{automatisk förstärkningsreglering} (eng. \emph{Automatic
+Gain Control (AGC)}).
 
 En mottagare med god reglering kan arbeta med signalstyrkor mellan mikrovolt
 och volt.
@@ -36,11 +37,9 @@ Förstärkningen i mottagaren måste alltså regleras med hänsyn till detta.
 \index{AGC}
 \index{A3E}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-20.pdf}
-  \caption{AGC vid AM-mottagning med superheterodynmottagare}
-  \label{fig:bildII4-20}
-\end{figure}
+%\largefig{images/cropped_pdfs/bild_2_4-20.pdf}{AGC vid AM-mottagning med superheterodynmottagare}{fig:bildII4-20}
+\pagefig{images/cropped_pdfs/bild_2_4-20.pdf}{AGC vid AM-mottagning med superheterodynmottagare}{fig:bildII4-20}
+\pagefig{images/cropped_pdfs/bild_2_4-21.pdf}{AGC vid SSB- och CW-mottagning med superheterodynmottagare}{fig:bildII4-21}
 
 Den likspänning som uppstår vid demoduleringen av MF-signalen i en
 AM-mottagare används till förstärkningsreglering -- AGC, så som illustreras
@@ -48,7 +47,7 @@ i bild \ref{fig:bildII4-20}.
 Den LF-spänning som är överlagrad på likspänningen undertrycks i ett
 RC-lågpassfilter.
 Likspänningen över kondensatorn följer variationerna i den mottagna signalens
-styrka med en tidskonstant av ca 0,1~sekunder.
+styrka med en tidskonstant av cirka 0,1~sekunder.
 Likspänningen blir alltså inte påverkad av de betydligt snabbare
 spänningsändringarna som kommer av moduleringen.
 
@@ -80,8 +79,8 @@ så som illustreras i bild \ref{fig:bildII4-21}.
 Vid SSB alstras det ju ingen MF-spänning under talpauserna, eftersom
 ingen bärvåg tas emot då.
 Tidskonstanten på lågpassfiltret för reglerspänningen måste därför vara längre
-än vid AM, dvs. 0,5 till 2~sekunder.
-En alltför snabb tillbakagång i reglerspänningen p.g.a. en för kort
+än vid AM, det vill säga 0,5 till 2~sekunder.
+En alltför snabb tillbakagång i reglerspänningen på grund av en för kort
 tidskonstant skulle leda till mer mottagningsbrus i talpauserna.
 I moderna mottagare finns det ofta en omkopplare eller justering för olika
 tidskonstanter.
@@ -100,14 +99,10 @@ FM-mottagare brukar inte regleras av den anledningen att det vid FM
 inte finns någon information i signalamplituden, utan finns i stället
 i frekvensvariationerna i signalen.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_4-21.pdf}
-  \caption{AGC vid SSB- och CW-mottagning med superheterodynmottagare}
-  \label{fig:bildII4-21}
-\end{figure}
+%\mediumfig{images/cropped_pdfs/bild_2_4-21.pdf}{AGC vid SSB- och CW-mottagning med superheterodynmottagare}{fig:bildII4-21}
 
 Helt avsiktligt läggs därför förstärkningen i mottagaren så, att en
-sinussignal blir en kantvåg p.g.a. överstyrning i förstärkarstegen.
+sinussignal blir en kantvåg på grund av överstyrning i förstärkarstegen.
 Ett eller flera sådana amplitudbegränsande steg, även kallat ''limiter'',
 placeras före demoduleringssteget.
 Störningar av amplitudvariationer kommer då att klippas bort och inte störa
@@ -118,11 +113,11 @@ så länge som den önskade signalens styrka är en halv s-enhet större än
 den störande signalens styrka.
 Likaså försvinner det störande bruset vid mottagning av en FM-sändare mycket
 snabbt över denna signalnivå.
-Amplitudmodulerade störningar, som t.ex. de från tändgnistor i
+Amplitudmodulerade störningar, som till exempel de från tändgnistor i
 förbränningsmotorer, har liten påverkan vid tillräckligt stark nyttosignal.
 
 \subsection{Signalstyrkemätare (S-meter)}
-\textbf{HAREC a.\ref{HAREC.a.4.3.9}\label{myHAREC.a.4.3.9}}
+\harec{a}{4.3.9}{4.3.9}
 \index{signalstyrkemätare}
 \index{mottagare!signalstyrkemätare}
 \index{S-meter}
@@ -133,7 +128,7 @@ S-meter, som ger besked om hur stark signalen in i mottagaren är.
 (Se bilaga \ref{s-enhet}.)
 
 \subsection{Brusspärr}
-\textbf{HAREC a.\ref{HAREC.a.4.3.10}\label{myHAREC.a.4.3.10}}
+\harec{a}{4.3.10}{4.3.10}
 \index{brusspärr}
 \index{mottagare!brusspärr}
 \index{squelch}
@@ -155,8 +150,9 @@ Ofta finns ett reglage (squelch) för hur stark signalen ska vara innan spärren
 öppnar.
 
 För en \emph{repeater} används brusspärren även för att starta sändaren när den
-är \emph{bärvågsstyrd}, dvs. man låter signalstyrkan på den mottagna signalen
-slå på även sändaren om den inkomna signalen är tillräckligt stark.
+är \emph{bärvågsstyrd}, det vill säga att man låter signalstyrkan på den
+mottagna signalen slå på även sändaren om den inkomna signalen är tillräckligt
+stark.
 Nuförtiden anses bärvågsstyrd repeater inte lämplig, då den kan okynnesöppna av
 störningar, varvid störningen förstärks.
 Istället bör tonöppning eller subton användas.
@@ -166,23 +162,24 @@ Istället bör tonöppning eller subton användas.
 \index{1750 Hz}
 
 Ett alternativ till bärvågsbaserad brusspärr är \emph{tonöppning} (eng.
-\emph{1750 Hz tone-burst}) som i allmänhet är att man lägger ut en 1750 Hz
+\emph{1750 Hz tone-burst}) som i allmänhet är att man lägger ut en 1750~Hz
 tonskur för att öppna en repeater.
 En del äldre amatörer har lärt sig att vissla rätt ton för att öpnna repeatern
-då de en gång i tiden inte hade handapparater med inbyggd 1750 Hz knapp.
+då de en gång i tiden inte hade handapparater med inbyggd 1750~Hz-knapp.
 
 \subsection{Subton}
 \index{subton}
 \index{CTCSS}
 
-Ett problem med 1750 Hz tonöppning är när närliggande repeatrar med samma in
-och utfrekvens har sådana konventioner att bägge hör handapparatens öppningston,
-då kommer bägge repeatrarna riskera öppna och då störa varandras sändning.
+Ett problem med bärvågsöppning och 1750~Hz tonöppning är när närliggande
+repeatrar med samma in- och utfrekvens har sådana konventioner att bägge hör
+handapparatens öppningston, då kommer bägge repeatrarna riskera att öppna och
+då störa varandras sändning.
 
 Ett alternativ är därför att använda \emph{subton} (eng. \emph{subtone}) som är
-en frekvens under 300 Hz, i allmänhet 60 till 250 Hz.
+en frekvens under 300~Hz, i allmänhet 60 till 250~Hz.
 Ett existerande subton-system är \emph{Continuous Tone Coded Squelch System
-  (CTCSS)} där sändaren lägger ut en kontinurlig subton.
+  (CTCSS)} där sändaren lägger ut en kontinuerlig subton.
 Mottagaren detekterar en vald subton, och enbart när den tonen har tillräcklig
 styrka så öppnar squelchen och håller den öppen så länge som det finns en
 subton.
@@ -209,7 +206,7 @@ Ett system för att skicka styrkommandon och även öppna repeatrar är
 \emph{Dual Tone Multi Frequency (DTMF)}, som bygger på principen att man
 skickar två samtidiga toner.
 De två tonerna väljs som en av fyra i två olika serier.
-Detta ger 4x4=16 kombinationer, varav 10 representerar siffrorna 0-9.
+Detta ger 4x4=16 kombinationer, varav 10 representerar siffrorna 0--9.
 DTMF kommer ursprungligen från telefonisystem, men fungerar även bra över
 vanliga radiokanaler.
 DTMF kan användas för att styra repeatrar, som att slå på och stänga av dem,

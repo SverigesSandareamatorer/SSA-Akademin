@@ -1,38 +1,38 @@
 \section{Internationell nödtrafik}
-\textbf{
-	HAREC b.\ref{HAREC.b.4.1}\label{myHAREC.b.4.1},
-	b.\ref{HAREC.b.4.2}\label{myHAREC.b.4.2},
-	b.\ref{HAREC.b.4.3}\label{myHAREC.b.4.3},
-	b.\ref{HAREC.b.4.4}\label{myHAREC.b.4.4}
-}
+\harec{b}{4.1}{4.1}
+\harec{b}{4.2}{4.2}
+\harec{b}{4.3}{4.3}
+\harec{b}{4.4}{4.4}
 
 \subsection{Nödsignaler}
 \index{nödsignaler}
+\index{nödanrop}
 \index{SOS}
 \index{MAYDAY}
 
 I CEPT-rekommendation T/R 61-02 \cite{TR6102} ställs krav på att radioamatörer
 ska ha känna till de internationella nödsignalerna SOS och MAYDAY.
 
-Nödsignalen på morsetelegrafi består av teckendelarna . . . --- --- --- . . .
+Nödsignalen på morsetelegrafi består av teckendelarna \Mcharsep\MSOS %. . . --- --- --- . . .
 sända i en följd, där längden på de långa teckendelarna betonas så att de klart
 skiljer sig från de korta.
 
-Signalen skrivs som bokstäverna $\overline{SOS}$ med ett streck ovanför.
+Signalen skrivs som bokstäverna \textoverline{SOS} med ett streck ovanför.
 
 Nödsignalen på radiotelefoni består av ordet MAYDAY uttalat som det franska
 uttrycket ''m'aider''. I Sverige kan man även ropa ''NÖDANROP''.
 
 \subsection{Internationella nödfrekvenser}
-\index{nödfrekvenser}
+\index{nödfrekvens}
 
 Nödsignaler på telefoni sänds i första hand på frekvenserna:
+
 \begin{itemize}
-	\item 121,5~MHz AM (Flygradio)
-	\item 156,8~MHz FM (Marin VHF kanal 16).
+  \item 121,5~MHz AM (Flygradio).
+  \item 156,8~MHz FM (Marin VHF kanal 16).
 \end{itemize}
 
-En äldre nödfrekvens är 2182 kHz, men den är ej längre en primär frekvens för
+En äldre nödfrekvens är 2182~kHz, men den är ej längre en primär frekvens för
 nöd- och säkerhetstrafik.
 Det finns inte längre krav på att fartyg ska ha radiopassning på frekvensen
 vilket framgår av \emph{Transportstyrelsens föreskrifter och allmänna råd
@@ -40,12 +40,22 @@ vilket framgår av \emph{Transportstyrelsens föreskrifter och allmänna råd
 (Läs mer om nödfrekvens i avsnitt \ref{nödtrafik})
 
 Kustradion i Sverige upphörde med sin radiopassning, vakthållning, av frekvensen
-i början av 2005 och US-coast guard slutade radiopassningen i augusti 2013.
+i början av 2005 och US Coast Guard slutade radiopassningen i augusti 2013.
 
-\textbf{I händelse av nöd, med omedelbart behov av assistans, är det därför
-	olämpligt att i första hand söka hjälp på frekvensen 2182 kHz.}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+I händelse av nöd, med omedelbart behov av assistans, är det därför
+olämpligt att i första hand söka hjälp på frekvensen 2182~kHz.
+\end{minipage}
+\end{center}
 
-Frekvensen 2182 kHz är fortfarande reserverad i ITU Radioreglemente (RR)
+%% \textbf{I händelse av nöd, med omedelbart behov av assistans, är det därför
+%% 	olämpligt att i första hand söka hjälp på frekvensen 2182~kHz.}
+
+Frekvensen 2182~kHz är fortfarande reserverad i ITU Radioreglemente (RR)
 \cite{ITU-RR} för ''Distress and safety communications'' och radiopliktiga
 fartyg som trafikerar vatten i och utanför kustnära områden ska ha
 radioutrustning för frekvensen.
@@ -81,9 +91,20 @@ globala frekvenser för \emph{Emergency Centre of Activity}.
 Det vill säga centerfrekvenser för radiokommunikation som kan användas i
 händelse av naturkatastrofer.
 
-\textbf{IARUs rekommendationer och förändringen av ITU RR innebär alltså att
-  det inte finns någon speciell nödsignal för amatörradiobanden och inga
-  nödfrekvenser inom amatörradiobanden.}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontfamily{futs}\Huge{\hspace{1ex}!}}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+IARU:s rekommendationer och förändringen av ITU RR innebär alltså att
+det inte finns någon speciell nödsignal för amatörradiobanden och inga
+nödfrekvenser inom amatörradiobanden.
+\end{minipage}
+\end{center}
+
+%% \textbf{IARU:s rekommendationer och förändringen av ITU RR innebär alltså att
+%%   det inte finns någon speciell nödsignal för amatörradiobanden och inga
+%%   nödfrekvenser inom amatörradiobanden.}
 
 För vidare läsning rekommenderas
 \emph{IARU Emergency Telecommunications Guide} \cite{IARU-ETG}.
@@ -91,9 +112,8 @@ För vidare läsning rekommenderas
 \subsection{Om du hör en nödsignal på radio}
 
 Avbryt omedelbart din egen sändning när du hör en nödsignal. Lyssna på
-nödmeddelandet och \textbf{skriv ner} vad som sägs. Notera position, frekvens, tidpunkt
-etc. Anmäl vad du hört på följande sätt.
-%tagit bort telefonnummer till UD och räddningscentraler. NTJ
+nödmeddelandet och \textbf{skriv ner} vad som sägs.
+Notera position, frekvens, tidpunkt etc. Anmäl vad du hört på följande sätt.
 
 \subsubsection{Nödsignal från radioamatör i utlandet}
 
@@ -106,13 +126,14 @@ kanske vara läge att vara lite mer restriktiv.
 
 Oavsett bör man först avvakta en stund för att monitorera om anropet verkar
 besvaras innan man själv besvarar det, då man i och med det påtar sig ansvaret
-för att räddningsinsatsen påbörjas. Eftersom 112 kan välja att prioritera ned
-det sitter man då med ansvaret utan att kunna göra mer.
+för att räddningsinsatsen påbörjas.
+Eftersom 112 kan välja att prioritera ned det sitter man då med ansvaret utan
+att kunna göra mer.
 
 \subsection{Nödsignal från svenskt landområde}
 
-Ring 112 för att kalla på Ambulans, Polis, Räddningstjänst, Sjöräddning,
-Flygräddning etc.
+Ring 112 för att kalla på räddningstjänst, ambulans, polis, sjöräddning,
+flygräddning etcetera.
 Ditt telefonnummer visas automatiskt i larmoperatörens display.
 För att undvika missförstånd och feldirigering av räddningsinsatserna
 \textbf{måste} du meddela operatören att nödanropet kommit via radio.
@@ -122,18 +143,28 @@ telefonsamtal kommer ifrån.
 \subsection{Nödsignal från fartyg eller luftfarkost}
 
 Om nödsignalen inte besvaras av någon kust- eller markstation, ring 112
-och begär Sjöräddning respektive Flygräddning och meddela dina iakttagelser.
+och begär sjöräddning respektive flygräddning och meddela dina iakttagelser.
 
-\emph{Vidarebefordra nödmeddelandet utan att ändra på det!}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontfamily{futs}\Huge{\hspace{1ex}!}}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+Vidarebefordra nödmeddelandet utan att ändra på det!
+\end{minipage}
+\end{center}
+
+%% \emph{Vidarebefordra nödmeddelandet utan att ändra på det!}
 
 \subsection{Du själv sänder nödsignal över radio}
 
 I första hand bör du välja andra signalvägar än amatörradio, så som fast och
-mobil telefoni, båt eller flygradio eller därför avsedda nödsändare om möjligt.
+mobil telefoni, båt- eller flygradio eller därför avsedda nödsändare om möjligt.
 
 Välj gärna en frekvens med mycket trafik utifall du inte använder en
 nödfrekvens, så det finns en chans att den är bevakad så att någon kan höra
-ditt nödanrop. Att använda en repeater för att höras bättre är en bra strategi.
+ditt nödanrop.
+Att använda en repeater för att höras bättre är en bra strategi.
 
 Uppträd lugnt och sansat, när du kallar på hjälp över radion.
 Tänk först och sänd sedan.
@@ -144,37 +175,54 @@ larmoperatören att ditt nödanrop kommit via radio.
 
 Nyckelordet för dina åtgärder är LARMA:
 
-\begin{tabular}{lp{9cm}}
-	\textbf{L}äge &
-        Ange olycksplatsens läge.
-        Du kan ange gatu- eller vägnamn eller riktmärken som
-        t.ex. vägkorset, gränsen, bron, järnvägen etc.
-	\\
-	\textbf{A}nalysera
-	&
-        Gör en överblick över olycksplatsen och tala om vad som hänt.
-        Några skadade? Några innestängda?
-        Brinner det? Släpps farliga ämnen ut?
-	\\
-	\textbf{R}opa &
-        Ropa på hjälp.
-        Använd gärna en repeater på 2-metersbandet så att du når många,
-        men även andra frekvenser kan användas.
-        Anropa med NÖDANROP FRÅN SMXxxx.
-        Fråga efter någon med telefon.
-        Ge inte upp om du inte får svar genast.
-	\\
-	\textbf{M}eddela &
-        Meddela när du fått kontakt med någon med telefon, sänd NÖDTRAFIK PÅGÅR
-        för att freda frekvensen och NÖDMEDDELANDET med de viktigaste
-        uppgifterna.
-        Begär att uppgifterna repeteras och ta löfte på att de sänds vidare.
-        Begär att få veta när så har skett.
-        Påminn annars!
-	\\
-	\textbf{A}vvakta &
-        Vänta på platsen tills hjälp har anlänt.
-        Passa radion så att du kan svara på frågor.
-        Behövs inte längre din hjälp, avsluta då med\\
-	& NÖDTRAFIK UPPHÖR FRAN SMXxxx \dots KLART SLUT.
-\end{tabular}
+\begin{description}
+\item[Läge] Ange olycksplatsens läge. Du kan ange gatu- eller vägnamn eller riktmärken som
+  till exempel vägkorset, gränsen, bron, järnvägen etc.
+\item[Analysera] Gör en överblick över olycksplatsen och tala om vad som hänt.
+  Några skadade? Några innestängda? Brinner det? Släpps farliga ämnen ut?
+\item[Ropa] Ropa på hjälp. Använd gärna en repeater på 2-metersbandet så att du når många,
+  men även andra frekvenser kan användas. Anropa med NÖDANROP FRÅN SMXxxx.
+  Fråga efter någon med telefon. Ge inte upp om du inte får svar genast.
+\item[Meddela] Meddela när du fått kontakt med någon med telefon, sänd NÖDTRAFIK PÅGÅR
+  för att freda frekvensen och NÖDMEDDELANDET med de viktigaste uppgifterna.
+  Begär att uppgifterna repeteras och ta löfte på att de sänds vidare.
+  Begär att få veta när så har skett. Påminn annars!
+\item[Avvakta] Vänta på platsen tills hjälp har anlänt.
+  Passa radion så att du kan svara på frågor. Behövs inte längre din hjälp, avsluta då med
+  NÖDTRAFIK UPPHÖR FRAN SMXxxx \dots KLART SLUT.
+\end{description}
+  
+%% \begin{tabular}{lp{9cm}}
+%% 	\textbf{L}äge &
+%%         Ange olycksplatsens läge.
+%%         Du kan ange gatu- eller vägnamn eller riktmärken som
+%%         till exempel vägkorset, gränsen, bron, järnvägen etc.
+%% 	\\
+%% 	\textbf{A}nalysera
+%% 	&
+%%         Gör en överblick över olycksplatsen och tala om vad som hänt.
+%%         Några skadade? Några innestängda?
+%%         Brinner det? Släpps farliga ämnen ut?
+%% 	\\
+%% 	\textbf{R}opa &
+%%         Ropa på hjälp.
+%%         Använd gärna en repeater på 2-metersbandet så att du når många,
+%%         men även andra frekvenser kan användas.
+%%         Anropa med NÖDANROP FRÅN SMXxxx.
+%%         Fråga efter någon med telefon.
+%%         Ge inte upp om du inte får svar genast.
+%% 	\\
+%% 	\textbf{M}eddela &
+%%         Meddela när du fått kontakt med någon med telefon, sänd NÖDTRAFIK PÅGÅR
+%%         för att freda frekvensen och NÖDMEDDELANDET med de viktigaste
+%%         uppgifterna.
+%%         Begär att uppgifterna repeteras och ta löfte på att de sänds vidare.
+%%         Begär att få veta när så har skett.
+%%         Påminn annars!
+%% 	\\
+%% 	\textbf{A}vvakta &
+%%         Vänta på platsen tills hjälp har anlänt.
+%%         Passa radion så att du kan svara på frågor.
+%%         Behövs inte längre din hjälp, avsluta då med\\
+%% 	& NÖDTRAFIK UPPHÖR FRAN SMXxxx \dots KLART SLUT.
+%% \end{tabular}

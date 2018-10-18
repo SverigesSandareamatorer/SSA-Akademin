@@ -1,26 +1,21 @@
+\smallfig{images/cropped_pdfs/bild_2_5-09.pdf}{Separat sändare och mottagare}{fig:bildII5-9}
+
+\smallfig{images/cropped_pdfs/bild_2_5-10.pdf}{Transceiver med samma VFO}{fig:bildII5-10}
+
 \section{Transceiver}
 \index{transceiver}
-
-\begin{wrapfigure}[26]{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_5-09.pdf}
-  \caption{Separat sändare och mottagare}
-  \label{fig:bildII5-9}
-
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_5-10.pdf}
-  \caption{Transceiver med samma VFO}
-  \label{fig:bildII5-10}
-\end{wrapfigure}
+\index{sändtagare|see {transceiver}}
 
 En \emph{transceiver} -- transmitter receiver -- är både en sändare och
 mottagare med delvis gemensamma funktioner.
-Dessa kan t.ex. vara oscillatorer, signalbehandlingskretsar, filter,
-strömförsörjning osv., vilket innebär besparing av ingående komponenter,
-men också vissa funktionella begränsningar.
+Dessa kan till exempel vara oscillatorer, signalbehandlingskretsar, filter,
+strömförsörjning och så vidare, vilket innebär besparing av ingående
+komponenter, men också vissa funktionella begränsningar.
 
 Transceiverkoncept är numera vad som används allra mest av radioamatörer.
 Eftersom man på olika vis önskar sig så många sändar- och mottagarfunktioner
 som möjligt inom samma skal, så kan det vara svårt att undvika kompromisser.
-Så kan t.ex. en specialiserad, separat mottagare ha bättre eller fler
+Så kan till exempel en specialiserad, separat mottagare ha bättre eller fler
 egenskaper än i en transceiver.
 
 \subsection{Jämförelse mellan stationskoncept}
@@ -32,17 +27,13 @@ gemensamma, men i övrigt med skilda funktioner.
 Bild \ref{fig:bildII5-11} visar samma transceiver, men med ett mer detaljerat
 blockschema.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-11.pdf}
-  \caption{Direktblandad transceiver med gemensam VFO}
-  \label{fig:bildII5-11}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-11.pdf}{Direktblandad transceiver med gemensam VFO}{fig:bildII5-11}
 
 \subsection{Simplex}
 \index{simplex}
 
 En station sägs sända \emph{simplex} när den enbart kan sända eller ta emot,
-dvs. när den inte samtidigt sänder och tar emot.
+det vill säga när den inte samtidigt sänder och tar emot.
 Detta är det normala för kortvågs-stationer som sänder på samma frekvens.
 
 \subsection{Halv duplex}
@@ -50,7 +41,8 @@ Detta är det normala för kortvågs-stationer som sänder på samma frekvens.
 \index{split}
 
 En station sägs sända \emph{halv duplex} (eng. \emph{half duplex}) när den
-enbart sänder eller tar emot, dvs. när den inte samtidigt sänder och tar emot.
+enbart sänder eller tar emot, det vill säga när den inte samtidigt sänder och
+tar emot.
 Om detta sker på samma frekvens, så kallas det även simplex, men när stationen
 opereras med split frekvens så räcker inte simplex-begreppet men halv duplex
 täcker det.
@@ -66,12 +58,12 @@ En stations sägs sända \emph{duplex} eller \emph{full duplex} när den kan
 samtidigt sända och ta emot på två olika frekvenser.
 
 Duplex-operation kräver i allmänhet stor isolation mellan sändare och mottagare,
-något som ofta åstakomms med kavitets-filter kopplade mellan sändare och antenn
+något som ofta åstadkoms med kavitetsfilter kopplade mellan sändare och antenn
 och mottagare och antenn.
 Om gemensam antenn används, så kopplas dessa kavitetsfilter ihop till vad som
 kallas \emph{duplexfilter}.
 
-För en lyckad duplex-operation krävs i allmänhet mer än 100 dB isolation mellan
+För en lyckad duplex-operation krävs i allmänhet mer än 100~dB isolation mellan
 sändare och mottagare.
 Mottagarens kavitetsfilter trimmas så att det får en djup \emph{utsläckning}
 (eng. \emph{notch}) vid sändarens frekvens, men med så lite förlust som möjligt
@@ -97,13 +89,13 @@ Om motstationen svarar exakt på sändningsfrekvensen, vilken ju är
 VFO-frekvensen, så erhålls svävningsnoll i mottagaren.
 För att få hörbara morsetecken är mottagaren utrustad med
 \emph{Receiver Incremental Tuning (RIT)}, som ändrar VFO-frekvensen med
-ca 800~Hz vid mottagning.
+cirka 800~Hz vid mottagning.
 
 I konstruktionen finns en anordning kallad \emph{Key Operated Xmitter (KOX)}.
 Denna kopplar om transceivern till sändning när telegrafnyckeln trycks ner och
 till mottagning igen efter en viss tid sedan nyckeln har släppts upp.
 Telegrafnyckeln styr också en tongenerator som ljuder i takt med de sända
-morsetecknen, s.k. medhörning.
+morsetecknen, så kallad medhörning.
 
 Denna transceiver är utförd för endast ett frekvensband och i övrigt
 mycket enkel.
@@ -116,8 +108,8 @@ mycket enkel.
 Bild \ref{fig:bildII5-12} visar en kristallstyrd FM-sändare med
 frekvensomkopplare för kanalval inom 144--146~MHz-bandet.
 
-En kristallfrekvens av ca 12~MHz multipliceras 12 gånger i en kedja
-av förstärkarsteg för att ge sändningsfrekvensen.
+En kristallfrekvens av cirka 12~MHz multipliceras 12 gånger i en kedja av
+förstärkarsteg för att ge sändningsfrekvensen.
 Bilden visar räkneexempel för två frekvenskanaler.
 Det frekvenssving i oscillatorn, som alstras av modulatorn,
 multipliceras också med 12.
@@ -135,14 +127,7 @@ Mottagaren är en \emph{dubbelsuperheterodyn}, ofta kallad för dubbelsuper.
 Den mottagna signalen passerar genom ett förselektionsfilter och en
 HF-förstärkare för att i 1:a blandaren blandas med en lokal signal.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-12.pdf}
-  \caption{Kristallstyrd 6-kanals FM-transceiver för VHF}
-  \label{fig:bildII5-12}
-\end{figure}
-
-%%
-
+\mediumfig{images/cropped_pdfs/bild_2_5-12.pdf}{Kristallstyrd 6-kanals FM-transceiver för VHF}{fig:bildII5-12}
 
 En kristallstyrd lokaloscillator med efterföljande
 frekvensmultipliceringssteg alstrar denna signal.
@@ -150,8 +135,8 @@ frekvensmultipliceringssteg alstrar denna signal.
 Lokaloscillatorkedjans utfrekvens läggs 10,7~MHz över eller under
 mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen
 blir då 10,7~MHz.
-Skilda oscillatorer används vid sändning resp. mottagning varför
-styrkristallerna för sändning resp. mottagning på en given kanal får
+Skilda oscillatorer används vid sändning respektive mottagning varför
+styrkristallerna för sändning respektive mottagning på en given kanal får
 olika frekvens.
 Vid omkoppling till en annan kanal väljs ett annat kristallpar, vilket
 lämpligen sker med samma omkopplare.
@@ -176,11 +161,7 @@ frekvenskanal, vilket av kostnadsskäl kan vara en nackdel.
 \index{dubbelsuperheterodyn}
 \index{simplex}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-13.pdf}
-  \caption{PLL-styrd FM-transceiver för VHF}
-  \label{fig:bildII5-13}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_5-13.pdf}{PLL-styrd FM-transceiver för VHF}{fig:bildII5-13}
 
 Den PLL-styrda sändare som redan beskrivits i bild \ref{fig:bildII5-7} har här
 kompletterats med en svingbegränsare och ett lågpassfilter i modulatorn.
@@ -196,11 +177,11 @@ ligga 10,7~MHz högre eller lägre vid mottagning än vid sändning.
 Vid sändning däremot, är VCO-frekvensen densamma som sändningsfrekvensen.
 
 Den programmerbara frekvensdelaren i PLL-kretsen arbetar därför med
-olika delningstal vid sändning resp. mottagning.
+olika delningstal vid sändning respektive mottagning.
 Inställningen av divisorn kan ske med kanalomkopplare, tumhjulssats,
-knappsats eller ''VFO-ratt'' + digitalräknare osv.
-PLL-styrningen ger dessutom möjligheter, t.ex. att ordna en automatisk
-avsökning över ett önskat frekvensområde -- s.k. scanning.
+knappsats eller ''VFO-ratt'' + digitalräknare och så vidare.
+PLL-styrningen ger dessutom möjligheter, till exempel att ordna en automatisk
+avsökning över ett önskat frekvensområde -- så kallad scanning.
 
 \begin{table}[ht]
 \begin{center}
@@ -210,11 +191,11 @@ avsökning över ett önskat frekvensområde -- s.k. scanning.
     QRG & Deln.- & QRG & VCO & Deln.- \\
     MHZ & tal    & MHz & MHz & tal \\
     \hline
-    \multicolumn{2}{l|}{Simplexkanaler,exempel} & & & \\
+    \multicolumn{2}{p{7em}|}{Simplexkanaler, exempel} & & & \\
     144,000 & 5760 & 144,000 & 154,700 & 6188 \\
     144,025 & 5761 & 144,025 & 154,725 & 6189 \\
     & & & & \\
-    \multicolumn{2}{l|}{Repeaterkanaler,exempel} & & & \\
+    \multicolumn{2}{p{7em}|}{Repeaterkanaler, exempel} & & & \\
     145,000 & 5800 & 145,600 & 156,300 & 6252 \\
     145,025 & 5801 & 145,625 & 156,325 & 6253 \\
   \end{tabular}
@@ -241,7 +222,7 @@ vars frekvens är valbar med en bandomkopplare.
 Samtidigt kopplas ett bandpassfilter in efter blandaren i super-VFO,
 som svarar till det aktuella frekvensbandet.
 
-För t.ex. 21~MHz-bandet är VFO-filtrets passband 12--12,5~MHz.
+För till exempel 21~MHz-bandet är VFO-filtrets passband 12--12,5~MHz.
 När en VFO-signal 12--12,5~MHz blandas med en 9~MHz SSB modulerad signal
 erhålls en frekvens i området 3--3,5~MHz och en frekvens i området 21--21,5~MHz.
 Den önskade av dessa frekvenser filtreras fram med omkopplingsbara
@@ -272,24 +253,16 @@ Utan denna frekvensändring skulle endast bärvågsbruset höras.
 Även en RIT och en \emph{talstyrd sändning} (eng.
 \emph{Voice Operated Xmitter (VOX)}) är inritade.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-14.pdf}
-  \caption{SSB-transceiver för kortvåg}
-  \label{fig:bildII5-14}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_5-14.pdf}{SSB-transceiver för kortvåg}{fig:bildII5-14}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_5-15.pdf}
-  \caption{PLL-styrd SSB-transceiver för kortvåg}
-  \label{fig:bildII5-15}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_5-15.pdf}{PLL-styrd SSB-transceiver för kortvåg}{fig:bildII5-15}
 
 \subsection{PLL-styrd kortvågstransceiver}
 \index{PLL}
 \index{transceiver!PLL}
 
 En modern transceiver i den högre prisklassen finns i bild \ref{fig:bildII5-15},
-i s.k. ''all-mode''-utförande, erbjuder många funktionella möjligheter.
+i så kallad ''all-mode''-utförande, erbjuder många funktionella möjligheter.
 Flera av dem kommer emellertid endast till användning i speciella situationer.
 Konceptet för en sådan transceiver beskrivs här i stort.
 Huvudprincipen för signalbehandlingen kan beskrivas som en PLL-styrd
@@ -321,7 +294,7 @@ programmeras med delningstal som hämtas från ett digitalt minne.
 Den extra VFO-funktionen kan sedan efterjusteras genom att ändra
 delningstalet med frekvensratten.
 Minnet blir ännu mer användbart, om det förutom frekvenser också kan lagra
-uppgifter t.ex. om sändningsslag och andra inställningar.
+uppgifter till exempel om sändningsslag och andra inställningar.
 
 \subsection{Sammanfattning}
 

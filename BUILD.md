@@ -48,9 +48,9 @@ använda dig av versionshanteringssystemet Git och verktyget Make.
 GIT
 ---
 
-Git är ett versionshanteringsverktyg som håller reda på historiken av
-kodutveckling. Den hjälper en kodare med arbetet genom smarta verktyg
-och möjligheten att utveckla kollaborativt.
+[Git](https://git-scm.com) är ett versionshanteringsverktyg som håller reda på
+historiken av kodutveckling. Den hjälper en kodare med arbetet genom smarta
+verktyg och möjligheten att utveckla kollaborativt.
 
 Navigera till den mapp du vill ladda ner SSA-Akademin repot i. De som
 kör Git med grafiskt användargränssnitt (GUI) kan välja Clone och
@@ -71,15 +71,15 @@ mål. Till exempel:
 
     make <mål>
 
-Dessa Make "mål" kräver vissa verktyg för att kunna köras och dessa
+Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
 kallas för beroenden. Dessa beroenden måste installeras innan Make
-"mål:et" kan köras och instruktioner för vilka beroenden ett mål
+”mål:et” kan köras och instruktioner för vilka beroenden ett mål
 har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 
 ### MAKE-MÅL OCH BYGGBEROENDEN
 
 För att få en översikt över vilka mål som finns listas dom här i
-tabellen med en beskrivning om vad dom gör och vilka verktyg som de är 
+tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
 beroende utav. För att köra ett Make mål, se till att du
 har installerat beroendet som det behöver.
 
@@ -109,9 +109,9 @@ installeras.
 
 **Linux/Debian**
 
-    sudo apt-get update; 
+    sudo apt-get update;
     sudo apt-get install texlive texlive-lang-european \
-        texlive-latex-extra texlive-pictures texlive-math-extra
+        texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
 
 ### LATEXML
 
@@ -123,7 +123,7 @@ som är läsbart på webben.
 För att få den senaste versionen av LaTeXML måste projektet laddas
 ner och beroenden måste hämtas.
 
-**Linux/Debian**  
+**Linux/Debian**
 Hämta LaTeXML:
 
     git clone https://github.com/brucemiller/LaTeXML.git
@@ -151,4 +151,3 @@ och kör följande:
 (detta måste göras med *sudo*):
 
     sudo make install
-

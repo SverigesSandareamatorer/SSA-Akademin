@@ -1,3 +1,5 @@
+\onecolumn
+
 \section{VHF och högre}
 \label{Bandplan VHF och högre}
 
@@ -11,12 +13,12 @@ bilaga \ref{svenska repeatrar} frekvenser för svenska amatörradiorepeatrar.)
 \label{50MHZbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{50 MHz Användning: Experimentband, landmobil-- och, rundradio primära}\\
-Segment & Trafiksätt & delband & Rekommenderad användning \\
+\begin{table}[h]
+\caption{50 MHz Användning: Experimentband, landmobil- och, rundradio primära}
+\begin{xtabular}{llll}
+Segment & Trafiksätt & Delband & Rekommenderad användning \\
 MHz     &            &         & \\ \hline
-\endhead
+% \endhead
 50,000 & CW &                 & \\
        &    & 50,000--50,030 & Fyrar\\
        &    & 50,050          & CW aktivitetscenter, internationellt\\
@@ -26,7 +28,7 @@ MHz     &            &         & \\ \hline
 50,100 & Alla smalbandsmoder & &\\
        & (CW, SSB, AM, RTTY, & &\\
        & SSTV, ETC)          & &\\
-       & Smalband = 2,7 kHz  & &\\
+       & Smalband = 2,7~kHz  & &\\
        & & 50,100--50,130 & interkontinentalt\\
        & & 50,110 & aktivitetscenter interkontinentalt\\
        & & 50,130--50,200 & internationellt\\
@@ -60,33 +62,29 @@ MHz     &            &         & \\ \hline
        & \multicolumn{3}{l}{NBFM repeater utfrekvenser, 20~kHz kanaldelning, 10~kHz kanalbredd} \\
 51,990 & RF99 & & \\
 52,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
-\textbf{ANMÄRKNINGAR}
-\textbf{Sändningsslag}
+\subsubsection*{Anmärkningar: sändningsslag}
 
-Telegrafi är tillåtet över hela bandet, men är exklusivt i området
+\begin{itemize}
+\item[a] Telegrafi är tillåtet över hela bandet, men är exklusivt i området
 50,000--50,100~MHz.
-
-Under 50,500~MHz används inte FM.
-
-\textbf{Anropsfrekvenser}
-
-50,110~MHz är interkontinental DX anropsfrekvens och bör inte användas för
+\item[b] Under 50,500~MHz används inte FM.
+\item[c] 50,110~MHz är interkontinental DX anropsfrekvens och bör inte användas för
 trafik inom Europa.
-
-\textbf{Kanaltrafik}
-
-För kanaltrafik är kanaldelningen 20~kHz, förskjutet 10~kHz.
+\item[d] För kanaltrafik är kanaldelningen 20~kHz, förskjutet 10~kHz.
+\end{itemize}
 
 \subsection{144 MHz bandplan}
 \label{144MHzbandplan}
 Denna bandplan baseras på IARU Region~1 2016 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{144 MHz Användning: Amatörradio primär}\\
-
+\small
+\begin{table}[thp]
+        \normalsize
+  \caption{144 MHz Användning: Amatörradio primär}
+  \begin{xtabular}{llll}
 144,000 & & &\\
         & & 144,000--144,025 & satellit downlink exklusiv användning\\
         & CW(a) & 144,025--144,110 & EME\\
@@ -122,21 +120,24 @@ Denna bandplan baseras på IARU Region~1 2016 \cite{IARU1}.
 145,794 & & & \\
         & \multicolumn{3}{l}{Satellitservice} \\
 146,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
-\textbf{ANMÄRKNINGAR}
+\subsubsection*{Anmärkningar}
 
-\textbf{Generella}
+\noindent\textbf{Generella}
+
 \begin{enumerate}[label=\alph*.]
 \item Inga sändningar får ske på frekvenser under 144,0025~MHz.
 \item I Europa ska inga in- eller utfrekvenser för NBFM repeatrar
   förekomma inom segmentet 144,000--144,794~MHz.
 \item Med undantag för satellitsegmentet tillåts inte in- eller
   utfrekvenser i 2-metersbandet för repeatrar i andra band.
-\item Fyrar ska oavsett ERP ligga i fyrbandet
+\item Fyrar ska oavsett ERP ligga i fyrbandet.
 \end{enumerate}
 
-\textbf{Särskilda}
+\noindent\textbf{Särskilda}
+
 \begin{itemize}
 \item[(a)] Telegrafi är tillåtet över hela bandet, exklusivt i segmentet
   144,035--144,150~MHz.
@@ -146,13 +147,15 @@ Denna bandplan baseras på IARU Region~1 2016 \cite{IARU1}.
 förutsatt att de till fullo klarar 12,5~kHz kanaldelning.
 \end{itemize}
 
+\newpage
+
 \subsection{432 MHz bandplan}
 \label{432MHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{432~MHz Användning: Amatörradio och radiolokalisering delat primär} \\
+\begin{table}[thp]
+\caption{432~MHz Användning: Amatörradio och radiolokalisering delat primär}
+  \begin{xtabular}{llll}
 432,000 &        & &\\
         & CW (a) & 432,000--432,025 & EME\\
         &        & 432,050 & CW aktivitetscenter\\
@@ -185,11 +188,12 @@ Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 435,000 & & & \\
         & \multicolumn{3}{l}{satellitservice} \\
 438,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
-\textbf{ANMÄRKNINGAR}
+\subsubsection*{Anmärkningar}
 
-\textbf{Generella}
+\noindent\textbf{Generella}
 
 \begin{enumerate}[label=\alph*.]
 \item I Europa ska inga in- eller utfrekvenser för NBFM repeatrar
@@ -197,7 +201,7 @@ förekomma inom segmentet 432--432,6~MHz.
 \item Fyrar ska oavsett ERP placeras i fyrbandet.
 \end{enumerate}
 
-\textbf{Särskilda}
+\noindent\textbf{Särskilda}
 
 \begin{itemize}
 \item[(a)] Telegrafi är tillåtet över hela smalbandssegmentet, exklusivt i
@@ -205,14 +209,15 @@ segmentet 432,000--432,100~MHz.
 \item[(b)] Fyrar med ERP över 10~W koordineras av IARU Region~1 fyrkoordinator.
 \end{itemize}
 
+\newpage
+
 \subsection{1296 MHz bandplan}
 \label{1296MHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{1296 MHz Användning: Amatörradio sekundär} \\
-
+\begin{table}[h]
+\caption{1296 MHz Användning: Amatörradio sekundär} 
+  \begin{xtabular}{llll}
 1240.000 & Alla moder & 1240,000--1241,000 & Digitala moder\\
          & & 1242,025--1242,250 & Repeater ut RS1--RS10\\
          & & 1242,275--1242,700 & Repeater ut RS11--RS28\\
@@ -254,11 +259,12 @@ Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
          &            & 1298,025--1298,975 & Repeater ut, RS1--RS39\\
          & Alla moder & 1299,000--1299,750 & Digital kommunikation \\
          &            & 1298,750--1300,000 & FM/DV\\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
-\textbf{ANMÄRKNINGAR}
+\subsubsection*{Anmärkningar}
 
-\textbf{Särskilda}
+\noindent\textbf{Särskilda}
 
 \begin{itemize}
 \item[(a)] Telegrafi är tillåtet över hela smalbandsegmentet, exklusivt
@@ -266,27 +272,30 @@ i segmentet 1296,000--1296,150~MHz.
 \item[(b)] Fyrar med ERP över 10~W koordineras av IARU Region~1 fyrkoordinator.
 \end{itemize}
 
+\newpage
+
 \subsection{2300 MHz bandplan}
 \label{2300MHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 Delbandet 2300--2400~MHz är inte längre ett amatörband varför endast det
 kvarvarande delbandet redovisas här.
  
-\setlongtables
-\begin{longtable}{llll}
-\caption{2300 Mhz Användning: Amatörradio sekundär}\\
+\begin{table}[h]
+  \caption{2300 Mhz Användning: Amatörradio sekundär}
+  \begin{xtabular}{llll}
 2400,000 & & & \\
          & \multicolumn{3}{l}{Satellitservice} \\
 2450,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
 \subsection{5650 MHz bandplan}
 \label{5650MHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{5650 MHz Användning: Amatörradio sekundär} \\
+\begin{table}[h]
+  \caption{5650 MHz Användning: Amatörradio sekundär} 
+  \begin{xtabular}{llll}
 5650,000 & & & \\
          & \multicolumn{3}{l}{Satellitservice, upplänk} \\
 5670,000 & & & \\
@@ -305,15 +314,16 @@ Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 5790,000 & & & \\
          & \multicolumn{3}{l}{Satellitservice, nerlänk} \\
 5850,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
 \subsection{10 GHz bandplan}
 \label{10GHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{10000 MHz Användning: Amatörradio sekundär} \\
+\begin{table}[h]
+  \caption{10000 MHz Användning: Amatörradio sekundär} 
+  \begin{xtabular}{llll}
 10000,000 & & & \\
           & \multicolumn{3}{l}{Digital kommunikation} \\
 10150,000 & & & \\
@@ -329,15 +339,18 @@ Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 10450,000 & & & \\
           & \multicolumn{3}{l}{Satellitservice} \\
 10500,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
+
+\newpage
 
 \subsection{24 GHz bandplan}
 \label{24GHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{24000 MHz Användning: Amatörradio sekundär} \\
+\begin{table}[h]
+  \caption{24000 MHz Användning: Amatörradio sekundär} 
+  \begin{xtabular}{llll}
 24000,000 & & & \\
           & \multicolumn{3}{l}{Satellitservice} \\
 24048,000 & & & \\
@@ -345,16 +358,20 @@ Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 24050,000 & & & \\
           & Alla moder   & 24125,000 & Aktivitetscenter, bredbandiga moder \\
 24250,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
 
 \subsection{47 GHz bandplan}
 \label{47GHzbandplan}
 Denna bandplan baseras på IARU Region~1 2014 \cite{IARU1}.
 
-\setlongtables
-\begin{longtable}{llll}
-\caption{47000 MHz Användning: Amatörradio primär} \\
+\begin{table}[h]
+  \caption{47000 MHz Användning: Amatörradio primär} 
+  \begin{xtabular}{llll}
 47000,000 & & & \\
           & & 47088,200 & Aktivitetscenter, smalbandsmoder \\
 47200,000 & & & \\
-\end{longtable}
+\end{xtabular}
+\end{table}
+
+\twocolumn

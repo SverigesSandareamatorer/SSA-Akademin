@@ -8,14 +8,16 @@ help:
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
 	@echo '   make koncept.webb           bygg webbversionen av koncept          '
 	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf TODOs
+all:	koncept.pdf
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
 #all:	koncept-refbok.pdf
+all:	koncept-tryck.pdf
 
 .PHONY:	*.pdf
 
@@ -86,23 +88,31 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	- xelatex koncept.tex
+	- pdflatex koncept.tex
+#	- xelatex koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
-	bibtex koncept.aux
+	pdflatex koncept-tryck.tex
+	bibtex koncept-tryck.aux
+#	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	-xelatex koncept.tex
-	-xelatex koncept.tex
+	pdflatex koncept.tex
+	pdflatex koncept.tex
 	makeindex koncept.idx
-	xelatex koncept.tex
+	pdflatex koncept.tex
+
+#	-xelatex koncept.tex
+#	-xelatex koncept.tex
+#	makeindex koncept.idx
+#	xelatex koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex
@@ -124,9 +134,12 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
-	-xelatex koncept-tryck.tex
-	-xelatex koncept-tryck.tex
-	xelatex koncept-tryck.tex
+	pdflatex koncept-tryck.tex
+	pdflatex koncept-tryck.tex
+
+#	-xelatex koncept-tryck.tex
+#	-xelatex koncept-tryck.tex
+#	xelatex koncept-tryck.tex
 
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
 	-xelatex koncept-online.tex
@@ -141,6 +154,9 @@ emf-handout.ind: emf-handout.idx
 
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
 	xelatex handouts/emf-handout.tex
+
+prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
+	xelatex handouts/prefix.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
 	-xelatex handouts/iso-jordning.tex
@@ -173,6 +189,11 @@ images.unlinked: images.avail images.linked
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
 
+# Kursplan
+kursplan.pdf: lectures/kursplan.tex
+	-xelatex lectures/kursplan.tex
+	xelatex lectures/kursplan.tex
+
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
 	xelatex lectures/ac1.tex
@@ -201,5 +222,4 @@ docker-build:
 clean: SHELL=/bin/bash -O extglob -c
 clean:
 	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs
-	-rm -rf web/*.webb 
-
+	-rm -rf web/*.webb

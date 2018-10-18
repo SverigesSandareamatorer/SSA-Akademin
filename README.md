@@ -7,13 +7,13 @@
 
 [![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/)
 
-**KonCEPT för Radioamatörcertifikat** är en bok
-ursprungligen skriven av Lennart Wiberg och utgiven av 
-[Sveriges Sändareamatörer](http://ssa.se) (SSA) i syfte att utbilda nya
-radioamatörer. Den första upplagan är skriven 1997 och behöver
-därför en uppdatering och tryckas i en ny upplaga. Detta projekt,
-SSA Akademin, är bland annat till för digitalisering och uppdatering
-av KonCEPT som kommer att leda till den andra upplagan av boken.
+**KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
+Wiberg och utgiven av  [Sveriges Sändareamatörer](http://ssa.se) (SSA) i syfte
+att utbilda nya radioamatörer.
+Den första upplagan är skriven 1997 och behöver därför en uppdatering och
+tryckas i en ny upplaga.
+Detta projekt, SSA Akademin, är bland annat till för digitalisering och
+uppdatering av KonCEPT som kommer att leda till den andra upplagan av boken.
 
 > :warning: **Observera:** Boken och materialet som finns att läsa här
 är ett arbetsmaterial och ska inte användas som en färdig produkt
@@ -68,13 +68,13 @@ BIDRA TILL PROJEKTET
 ====================
 
 Det finns många olika sätt att bidra till projektet även fast man
-inte vet hur man använder *Git* eller skriver *LaTeX*.
+inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
-**Q: Jag kan koda och vill bidra; vad gör jag?**  
-A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ 
+**Q: Jag kan koda och vill bidra; vad gör jag?**
+A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
 instruktionerna.
 
-**Q: Jag vet inte hur man redigerar kod**  
+**Q: Jag vet inte hur man redigerar kod**
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
 förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
@@ -97,7 +97,7 @@ Vårt mål är att
 
 -   fler ska vilja ta utbildningen för att bli radioamatör
 -   de som examineras ska göra bättre ifrån sig på provet
--   de som deltar i utbildningen ska känna att det är en bra utbildning
+-   de som deltar i utbildningen ska känna att det är en bra utbildning.
 
 KONTAKT
 =======

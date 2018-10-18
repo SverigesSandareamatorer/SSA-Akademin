@@ -1,15 +1,13 @@
+sudo: required
+
 language: generic
+
+services:
+  - docker
 
 before_install:
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
-    texlive \
-    texlive-lang-european \
-    texlive-latex-extra \
-    texlive-fonts-extra \
-    texlive-pictures \
-    texlive-math-extra \
-    texlive-xetex \
     sshpass"
   - "sudo apt-get install -y -qq  \
     libarchive-zip-perl libfile-which-perl libimage-size-perl \
@@ -20,8 +18,11 @@ before_install:
   - git clone https://github.com/brucemiller/LaTeXML.git --depth=1
   - (cd LaTeXML && perl Makefile.PL && make && sudo make install)
 
+before_script:
+  - make docker-image
+
 script:
-  - make koncept.pdf
+  - make docker-build
 
 after_success:
   - sha256sum koncept.pdf

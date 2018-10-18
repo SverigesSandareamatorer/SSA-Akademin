@@ -2,7 +2,6 @@
 \label{Rapportkoder}
 
 Det finns olika sätt och system att rapportera hur en radiostation hörs.
-%Plockat bort rapport om Modulation då den inte längre förekommer vid telefoni.
 
 \section{Amatörradiotrafik}
 
@@ -13,7 +12,7 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 \begin{description}
   \item[Readability] (läsbarhet),
   \item[Signal strenght] (signalstyrka),
-  \item[Tone] (ton),
+  \item[Tone] (ton).
 \end{description}
 
 \subsection{R-skala (läsbarhet)}
@@ -42,7 +41,7 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 
 \subsection{T-skala (ton)}
 
-\begin{tabular}{p{0.02\textwidth}p{0.98\textwidth}}
+\begin{tabular}{p{0.02\textwidth}p{0.9\columnwidth}}
 1 & Mycket rå växelströmston, ostabil och omusikalisk \\
 2 & Mycket rå växelströmston, stabil men musikalisk \\
 3 & Rå växelströmston, ostabil och omusikalisk \\
@@ -53,10 +52,10 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 8 & Nästan ren likströmston, med spår av brum eller ojämnheter \\
 9 & Absolut ren likströmston, stabil \\
 \end{tabular}
-
+%%
 Dessutom kan följande tillägg till T-skalan förekomma:
-
-\begin{tabular}{p{0.02\textwidth}p{0.98\textwidth}}
+%%
+\begin{tabular}{p{0.02\textwidth}p{0.9\columnwidth}}
   X & Absolut ren likströmston, mycket stabil, kristallklar, mjuka tecken utan
       knäppar \\
 C & Absolut ren, men ostabil likströmston vid nycklingen \\
@@ -65,15 +64,15 @@ K & Knäppar alstras vid nycklingen \\
 
 \section{Kommersiell sjö- och luftradiotrafik}
 
-I kommersiell sjö- och luftradiotrafik används t.ex. Q-förkortningarna
-QSA (signalstyrka), ORM (störningar från annan station), QRN
-(atmosfäriska störningar), QSB (fädning) och ORK (uppfattbarhet)
+I kommersiell sjö- och luftradiotrafik används till exempel Q-förkortningarna
+QSA (signalstyrka), QRM (störningar från annan station), QRN
+(atmosfäriska störningar), QSB (fädning) och QRK (uppfattbarhet)
 åtföljda av en siffra för graden i skala 1--5. Jämför med SINPO-koden
 i avsnitt \ref{sinpo}.
 
 \textbf{Exempel:}
 
-''QSA 5, ORK 3, QRN 1'', vilket betyder
+''QSA 5, QRK 3, QRN 1'', vilket betyder
 ''ljudstyrka mycket god, uppfattbarhet ganska god, störningar från andra
 stationer måttliga, atmosfäriska störningar obefintliga''.
 
@@ -82,7 +81,9 @@ Se mer om Q-förkortningar i avsnitt \ref{q-koden}.
 \section{Rundradiosändningar m.m.}
 \label{sinpo}
 
-\begin{wraptable}{R}{0.5\textwidth}
+%\begin{wraptable}{R}{0.5\textwidth}
+\begin{table}[h]
+  \begin{center}
 \begin{tabular}{lll}
   Kod & Grad & Bedömning \\
   S   & 1    & Knappt uppfattbar \\
@@ -131,10 +132,11 @@ Se mer om Q-förkortningar i avsnitt \ref{q-koden}.
       & 4    & God \\
       & 5    & Utmärkt \\
 \end{tabular}
-\end{wraptable}
+\end{center}
+\end{table}
 
-För rapportering till rundradiostationer m.m. används ett system
-som kallas SINPO eller tidigare SINPFEMO.
+För rapportering till rundradiostationer med mera används ett system som kallas
+SINPO eller tidigare SINPFEMO.
 Numera används enbart SINPO-koden.
 
 Namnet på koden kommer av begynnelsebokstäverna i orden
