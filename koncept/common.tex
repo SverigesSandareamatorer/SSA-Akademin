@@ -1,20 +1,7 @@
 
 % Prepare for svenska tecken
 \usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-\fi
+\usepackage[utf8]{inputenc}
 \usepackage[swedish]{babel}
 \usepackage{icomma}
 \usepackage{lmodern}
