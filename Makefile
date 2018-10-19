@@ -89,10 +89,9 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex koncept.tex
-#	- xelatex koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
-	- xelatex koncept.tex
+	- pdflatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	pdflatex koncept-tryck.tex
@@ -109,58 +108,49 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	makeindex koncept.idx
 	pdflatex koncept.tex
 
-#	-xelatex koncept.tex
-#	-xelatex koncept.tex
-#	makeindex koncept.idx
-#	xelatex koncept.tex
-
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
-	-xelatex handouts/matterep.tex
-	xelatex handouts/matterep.tex
+	-pdflatex handouts/matterep.tex
+	pdflatex handouts/matterep.tex
 
 koncept-alpha.pdf: koncept.bbl koncept-alpha.tex $(KONCEPT_FILES)
-	-xelatex koncept-alpha.tex
-	-xelatex koncept-alpha.tex
-	xelatex koncept-alpha.tex
+	-pdflatex koncept-alpha.tex
+	-pdflatex koncept-alpha.tex
+	pdflatex koncept-alpha.tex
 
 koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
-	-xelatex koncept-larobok.tex
-	-xelatex koncept-larobok.tex
-	xelatex koncept-larobok.tex
+	-pdflatex koncept-larobok.tex
+	-pdflatex koncept-larobok.tex
+	pdflatex koncept-larobok.tex
 
 koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
-	-xelatex koncept-refbok.tex
-	-xelatex koncept-refbok.tex
-	xelatex koncept-refbok.tex
+	-pdflatex koncept-refbok.tex
+	-pdflatex koncept-refbok.tex
+	pdflatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
 	pdflatex koncept-tryck.tex
 	pdflatex koncept-tryck.tex
 
-#	-xelatex koncept-tryck.tex
-#	-xelatex koncept-tryck.tex
-#	xelatex koncept-tryck.tex
-
 koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
-	-xelatex koncept-online.tex
-	-xelatex koncept-online.tex
-	xelatex koncept-online.tex
+	-pdflatex koncept-online.tex
+	-pdflatex koncept-online.tex
+	pdflatex koncept-online.tex
 
 emf-handout.idx:
-	xelatex handouts/emf-handout.tex
+	pdflatex handouts/emf-handout.tex
 
 emf-handout.ind: emf-handout.idx
 	makeindex emf-handout
 
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
-	xelatex handouts/emf-handout.tex
+	pdflatex handouts/emf-handout.tex
 
 prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
-	xelatex handouts/prefix.tex
+	pdflatex handouts/prefix.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
-	-xelatex handouts/iso-jordning.tex
-	xelatex handouts/iso-jordning.tex
+	-pdflatex handouts/iso-jordning.tex
+	pdflatex handouts/iso-jordning.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
@@ -191,15 +181,15 @@ images/power1.pdf: images/power1.mac
 
 # Kursplan
 kursplan.pdf: lectures/kursplan.tex
-	-xelatex lectures/kursplan.tex
-	xelatex lectures/kursplan.tex
+	-pdflatex lectures/kursplan.tex
+	pdflatex lectures/kursplan.tex
 
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
-	xelatex lectures/ac1.tex
+	pdflatex lectures/ac1.tex
 
 ac2.pdf: lectures/ac2.tex
-	xelatex lectures/ac2.tex
+	pdflatex lectures/ac2.tex
 
 # Web-generering
 koncept.xml:	koncept.tex $(KONCEPT_FILES)
