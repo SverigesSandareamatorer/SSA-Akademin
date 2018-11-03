@@ -3,7 +3,7 @@
 
 \section{Elektriska grundbegrepp}
 
-\harec{a}{1.1}
+\harec{a}{1.1}{1.1}
 
 Elektrisk laddning, spänning och ström hänger samman med hur materian är
 uppbyggd.
@@ -11,7 +11,7 @@ Den förmåga ett material har att leda laddningar, det vill säga ström, kalla
 konduktivitet.
 
 \subsection{Grundämnen}
-\textbf{FÖRDJUPNING}
+\frdjp
 \index{grundämnen}
 
 Det finns många former av materia.
@@ -32,7 +32,7 @@ flesta övriga är icke-metaller (isolatorer).
 Det finns även en liten mellangrupp som kallas för halvledare.
 
 \subsection{Atomernas uppbyggnad}
-\textbf{FÖRDJUPNING}
+\frdjp
 
 Länge ansågs atomerna vara de minsta beståndsdelarna i materian.
 Men omkring förra sekelskiftet upptäcktes att atomerna i sin tur består av ännu mindre
@@ -48,15 +48,10 @@ dels av elektroner, som kretsar omkring kärnan.
 
 \emph{Neutronerna är neutrala, ej laddade.}
 
-\emph{Elektronerna är negativt (-) laddade}
+\emph{Elektronerna är negativt (--) laddade}
 \end{quote}
 
-\begin{wrapfigure}{L}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-01.pdf}
-  \caption{Atomernas uppbyggnad}
-  \label{fig:BildII1-1}
-  \vspace{-20pt}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_1-01.pdf}{Atomernas uppbyggnad}{fig:BildII1-1}
 
 Elektronerna kretsar i banor omkring atomkärnorna, liksom
 planeterna kretsar i banor omkring sina solar, vilket illustreras i bild
@@ -100,7 +95,7 @@ Var och en av dem har en massa som är ungefär 2000 gånger större än massan 
 elektron.
 
 \subsection{Elektrisk laddning och kraftverkan}
-\textbf{FÖRDJUPNING}
+\frdjp
 \index{elektrisk laddning}
 
 Enligt sägnen upptäckte Thales från Milteus redan för 2500~år sedan, att en bit
@@ -117,13 +112,10 @@ Då kommer håret att dras mot kammen därför att håret och kammen har
 fått olika slags elektriska laddningar.
 Samtidigt har hårstråna sinsemellan samma slags laddning och stöter bort
 varandra -- håret ''reser sig''.
+\emph{Lika laddningar stöter bort varandra -- olika laddningar drar varandra till sig.}
 
-Lika laddningar stöter bort varandra.
-
-Olika laddningar drar varandra till sig.
-
-\subsection{Konduktivitet -- Ledare, halvledare och isolator}
-\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}
+\subsection{Konduktivitet -- ledare, halvledare och isolator}
+\harec{a}{1.1.1}{1.1.1}
 \index{konduktivitet}
 
 En elektrisk ström sägs flyta, när de fria laddningsbärarna i ett material -- en
@@ -197,7 +189,7 @@ förändras egenskaperna och den elektriska ledningsförmågan ökar tusenfalt.
 \subsubsection{N-ledning}
 \index{halvledare!N-ledning}
 
-Man talar om N-ledande material respektive N-ledning- ''elektronledning''.
+Man talar om N-ledande material respektive N-ledning; ''elektronledning''.
 
 Germanium, kisel m.fl. halvledare har fyra elektroner med ''fasta platser'' i
 valensskalet -- förutsatt att materialet är helt rent.
@@ -227,8 +219,9 @@ I den atom som elektronen lämnar bildas det i sin tur ett hål osv.
 När en spänning läggs på, kommer ''hålet'' att vandra mot den negativa polen.
 Materialet är då P-ledande.
 
-\subsection{Elektrisk spänning -- Enheten volt}
-\textbf{HAREC a.\ref{HAREC.a.1.1.2}\label{myHAREC.a.1.1.2b}, a.\ref{HAREC.a.1.1.3}\label{myHAREC.a.1.1.3b}}
+\subsection{Elektrisk spänning -- enheten volt}
+\harec{a}{1.1.2}{1.1.2b}
+\harec{a}{1.1.3}{1.1.3b}
 \index{elektrisk spänning}
 \index{spänning}
 \index{volt (V)}
@@ -236,13 +229,7 @@ Materialet är då P-ledande.
 \index{symbol!\(U\) spänning}
 \index{symbol!\(V\) spänning}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-02.pdf}
-\caption{Tankeförsök med kulor i ett rör}
-\label{fig:BildII1-2}
-\end{center}
-\end{figure*}
+\mediumfig{images/cropped_pdfs/bild_2_1-02.pdf}{Tankeförsök med kulor i ett rör}{fig:BildII1-2}
 
 Bild \ref{fig:BildII1-2} illustrerar ett tankeförsök med ett rör med kulor i.
 Materialet i röret tänks motsvara atomstrukturen i en strömledare och kulorna
@@ -283,20 +270,15 @@ effektutvecklingen \(1\ \mathrm{watt\ [W]}\).
 
 \subsection{Symboler}
 
-\begin{wrapfigure}[6]{R}{0.4\textwidth}
-  \begin{mdframed}
-    \centering
-    \begin{circuitikz}
-      \draw
-      (4,1) to[battery1] (1,1)
-      ;
-    \end{circuitikz}
-    \caption{Schemasymbol för batteri}
-    \label{fig:bildII2-batteri}
-  \end{mdframed}
-\end{wrapfigure}
+\smalltikz{
+  \begin{circuitikz}
+    \draw
+    (3,1) to[battery1] (1,1)
+    ;
+  \end{circuitikz}
+}{Schemasymbol för batteri}{fig:bildII2-batteri}
 
-\textbf{FÖRDJUPNING}
+\frdjp
 
 När man ritar scheman för elektriska kretsar används symboler.
 Symbolen i bild \ref{fig:bildII2-batteri} visar ett elektriskt batteri med en
@@ -307,7 +289,8 @@ Ofta refererar dessa till en komponentlista.
 Se även kapitel \ref{komponenter}.
 
 \subsection{Elektrisk ström -- Enheten ampere}
-\textbf{HAREC a.\ref{HAREC.a.1.1.2}\label{myHAREC.a.1.1.2a}, a.\ref{HAREC.a.1.1.3}\label{myHAREC.a.1.1.3a}}
+\harec{a}{1.1.2}{1.1.2a}
+\harec{a}{1.1.3}{1.1.3a}
 \index{elektrisk ström}
 \index{ström}
 \index{ampere (A)}
@@ -331,27 +314,23 @@ så kallade tekniska strömriktningen -- medan elektronströmmens riktning är d
 motsatta -- den så kallade fysikaliska strömriktningen.
 
 Måttenheten för ström är \emph{ampere} \(\mathrm{A}\) \cite{SIbrochure8}.
+I formler betecknas ström med:
 
-I formler betecknas ström med
-\(I\) för effektivvärdet,\\
-\(i\) för momentanvärdet (ögonblicks-),\\
-\(\hat{i}\) för toppvärdet (amplitud-).
+\begin{description}
+\item[\(I\)] för effektivvärdet
+\item[\(i\)] för momentanvärdet (ögonblicks-)
+\item[\(\hat{i}\)] för toppvärdet (amplitud-)
+\end{description}
 
 Strömmen är \(1\ \mathrm{A}\) när \(6,25 \cdot 10^{18}\) elektroner per sekund
 flyter genom ett givet ledartvärsnitt, vilket motsvarar laddningen
 \(1\ \mathrm{coulomb}\).
 
 \subsection{Strömkrets}
-\textbf{FÖRDJUPNING}
+\frdjp
 \index{strömkrets}
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.6\textwidth]{images/cropped_pdfs/bild_2_1-03.pdf}
-\caption{Potential och spänning i en strömkrets}
-\label{fig:BildII1-3}
-\end{center}
-\end{figure*}
+\mediumfig{images/cropped_pdfs/bild_2_1-03.pdf}{Potential och spänning i en strömkrets}{fig:BildII1-3}
 
 Bild \ref{fig:BildII1-3} visar potential och spänning i en strömkrets.
 
@@ -366,7 +345,7 @@ punkt i en strömkrets, när det flyter ström.
 Man talar om spänningsfall.
 
 \subsection{Strömförlopp}
-\textbf{FÖRDJUPNING}
+\frdjp
 \index{strömförlopp}
 
 Likströms- och växelströmsförloppen kan vara sammansatta av ett huvudförlopp och
@@ -379,7 +358,8 @@ Växelström kan variera enligt något visst förlopp, till exempel sinusvåg,
 fyrkantsvåg, och växlar ständigt riktning.
 
 \subsection{Resistans -- Enheten ohm}
-\textbf{HAREC a.\ref{HAREC.a.1.1.2}\label{myHAREC.a.1.1.2c}, a.\ref{HAREC.a.1.1.3}\label{myHAREC.a.1.1.3c}}
+\harec{a}{1.1.2}{1.1.2c}
+\harec{a}{1.1.3}{1.1.3c}
 \index{resistans}
 \index{ohm (\(\Omega\))}
 \index{enheter!ohm (\(\Omega\))}
@@ -402,7 +382,7 @@ Resistansen i en resistor är \(1\ [\Omega]\), när en spänning av \(1\ \mathrm
 driver en ström av \(1\ \mathrm{[A]}\) genom den resistorn.
 
 \subsection{Ohms lag}
-\textbf{HAREC a.\ref{HAREC.a.1.1.4}\label{myHAREC.a.1.1.4}}
+\harec{a}{1.1.4}{1.1.4}
 \index{Ohms lag}
 \index{resistor!Ohms lag}
 
@@ -414,37 +394,32 @@ växelström.
 
 I en ledare med resistansen \(R\) är strömstyrkan \(I\) genom resistansen
 proportionell mot den pålagda spänningen \(U\).
-
-\(
+%%
+\[
 \begin{array}{lllll}U=I \cdot R & & I=\dfrac{U}{R} & & R=\dfrac{U}{I}\end{array}
-\)
-
+\]
+%%
 \subsection{Kirchhoffs lagar}
-\textbf{HAREC a.\ref{HAREC.a.1.1.5}\label{myHAREC.a.1.1.5}}
+\harec{a}{1.1.5}{1.1.5}
 \index{Kirchhoffs lagar}
 \index{Kirchhoffs strömlag}
 \index{Kirchhoffs spänningslag}
 
-Den tyske fysikern G R Kirchhoff (1824--1887) formulerade sina välkända lagar
+Den tyske fysikern G~R~Kirchhoff (1824--1887) formulerade sina välkända lagar
 först 1845 och sedan 1847.
 
-Kirchhoffs strömlag:
-
-Den algebraiska summan av alla strömmar, som flyter till eller från varje punkt
-i en elektrisk krets, är lika med noll.
-
-\(I_1 + I_2 + I_3 + \cdots + I_n = 0\)
-
-Kirchhoffs spänningslag:
-
-I varje sluten strömkrets är den algebraiska summan av alla spänningskällor lika
-med det totala spänningsfallet i alla resistorer.
+Kirchhoffs strömlag: \emph{Den algebraiska summan av alla strömmar, som flyter till eller från varje punkt i en elektrisk krets, är lika med noll.}
+%%
+\[I_1 + I_2 + I_3 + \cdots + I_n = 0\]
+%%
+Kirchhoffs spänningslag: \emph{I varje sluten strömkrets är den algebraiska summan av alla spänningskällor lika med det totala spänningsfallet i alla resistorer.}
 
 Uttryckt på ett annat sätt är algebraiska summan av spänningarna i en
 strömkrets lika med noll.
 
-\subsection{Elektrisk effekt -- Enheten watt}
-\textbf{HAREC a.\ref{HAREC.a.1.1.6}\label{myHAREC.a.1.1.6}, a.\ref{HAREC.a.1.1.7}\label{myHAREC.a.1.1.7}}
+\subsection{Elektrisk effekt -- enheten watt}
+\harec{a}{1.1.6}{1.1.6}
+\harec{a}{1.1.7}{1.1.7}
 \index{elektrisk effekt}
 \index{effekt}
 \index{voltampere (VA)}
@@ -464,42 +439,42 @@ För effekt som alstras av likström används enheten \emph{watt} \(\mathrm{[W]}
 \cite{SIbrochure8} i stället för \emph{voltampere} \(\mathrm{[VA]}\).
 Vid sidan om grundenheten \(1\ \mathrm{W}\) används delar och multipler av
 denna.
-
-\(1\ \mathrm{volt\ [U]}\ \cdot\ 1\ \mathrm{ampere\ [I]}\ =\ 1\ \mathrm{watt\ [P]}\)
-
+%%
+\[1\ \mathrm{volt\ [U]}\ \cdot\ 1\ \mathrm{ampere\ [I]}\ =\ 1\ \mathrm{watt\ [P]}\]
+%%
 Effektformeln \(P = U \cdot I\) gäller i första hand för likström men även för
 växelström om belastningen är resistiv och ström och spänning inte är
 fasförskjutna.
 Formeln kan för att underlätta beräkningar skrivas om på flera sätt.
 
-Vi börjar med att lösa ut \(I \quad \text{ur Ohms lag} \quad U = R \cdot I\) 
-
-\(
-I = \dfrac{U}{R}\\
-\)
-
-Vi sätter sedan in uttrycket för \(I\) i effektformeln
-
-\(
+Vi börjar med att lösa ut $I$ ur Ohms lag $U = R \cdot I$:
+%%
+\[
+I = \dfrac{U}{R}
+\]
+%%
+Vi sätter sedan in uttrycket för $I$ i effektformeln
+%%
+\[
 \begin{array}{lllll}
-P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}\\
+P=U \cdot I & \Rightarrow & P= \dfrac{U \cdot U}{R} & \Rightarrow & P= \dfrac{U^2}{R}
 \end{array}
-\)
-
-På motsvarande sätt kan vi ersätta \(U \quad\text{med}\quad R \cdot I\)
-
-\(
+\]
+%%
+På motsvarande sätt kan vi ersätta $U$ med $R \cdot I$:
+%%
+\[
 \begin{array}{lllll}
-P=U \cdot I & \Rightarrow & P = R \cdot I \cdot I  & \Rightarrow & P = R \cdot I^2\\
+P=U \cdot I & \Rightarrow & P = R \cdot I \cdot I  & \Rightarrow & P = R \cdot I^2
 \end{array}
-\)
-
+\]
+%%
 Med hjälp av dessa formler kan effekten beräknas ur resistans- och strömvärdena
 respektive ur resistans- och spänningsvärdena.
-För övriga formler se formelsnurran bild \ref{fig:BildII1-4}
+För övriga formler se for\-mel\-snu\-r\-r\-an bild \ref{fig:BildII1-4}
 
-\subsection{Elektrisk arbete -- Enheten joule}
-\textbf{FÖRDJUPNING}
+\subsection{Elektrisk arbete -- enheten joule}
+\frdjp
 \index{elektriskt arbete}
 \index{joule (J)}
 \index{enheter!joule (J)}
@@ -519,18 +494,18 @@ Arbetsmängden i alla energiformer kan mätas med samma enhet \emph{joule}
 förflyttas \(1\ \mathrm{meter}\) med kraften \(1\ \mathrm{newton\ [N]}\),
 d. v. s. \(1\ \mathrm{newtonmeter\ [Nm]}\).
 
-\(W = l \cdot F \ \ \ \mathrm{[J] = [Nm]}\)
+\[W = l \cdot F \ \ \ \mathrm{[J] = [Nm]}\]
 
 Arbetet \(W\ \mathrm{[J]}\) är mer ju längre tid \(t\ [s]\) en viss effekt
 \(P\ \mathrm{[W]}\) utvecklas.
 
-\(W = t \cdot P \ \ \ \mathrm{[J] = [sW]}\)
-  
+\[W = t \cdot P \ \ \ \mathrm{[J] = [sW]}\]
+
 \subsection{Joules lag}
-\textbf{HAREC a.\ref{HAREC.a.1.1.8}\label{myHAREC.a.1.1.8}}
+\harec{a}{1.1.8}{1.1.8}
 \index{Joules lag}
 
-\(Arbete\ =\ Effekt\ \cdot\ tid\ \ \ \mathrm{[W]} = \mathrm{[P]} \cdot \mathrm{[s]}\)
+\(\textit{Arbete} = \textit{Effekt} \cdot \textit{tid}\qquad \mathrm{[W]} = \mathrm{[P]} \cdot \mathrm{[s]}\)
 
 Eftersom effekten uttrycks som \(P = U \cdot I\) kan det elektriska arbetet
 uttryckas som \(W = U \cdot I \cdot t\), vilket också är Joules lag.
@@ -540,60 +515,51 @@ sekund \(\mathrm{[s]}\) sätts in i formeln fås en måttenhet, uttryckt som
 voltamperesekunder \(\mathrm{[VAs]}\) eller wattsekunder \(\mathrm{[Ws]}\)
 eller joule\ \(\mathrm{[J]}\).
 
-Måttenheten för elektriskt arbete är \(1\ joule\ per\ sekund\), som vanligen
-kallas \(1\ \mathrm{wattsekund}\ \mathrm{[1\ Ws]}\).
+Måttenheten för elektriskt arbete är 1 joule per sekund, som vanligen
+kallas \(1\,\mathrm{wattsekund}\ 1\,\mathrm{[Ws]}\).
 Vid sidan av grundenheten används multipler av denna.
-Exempel:
-\(
-\begin{array}{llll}
-1\ \mathrm{kilowattsekund} & = 1\ \mathrm{kWs} & = 1\ 000\ \mathrm{Ws} & = 1,0 \cdot 10^3\ \mathrm{Ws}\\
-1\ \mathrm{wattimme} & = 1\ \mathrm{Wh} & = 3\ 600\ \mathrm{Ws} & = 3,6 \cdot 10^3\ \mathrm{Ws} \\
-1\ \mathrm{kilowattimme} & = 1\ \mathrm{kWh} & = 1 000\ \mathrm{Wh} & = 3,6 \cdot 10^6\ \mathrm{Ws}
-\end{array}
-\)
+
+\begin{center}
+\small
+\noindent
+\begin{tabular}{@{}l@{\,}l@{}l@{}l@{}}
+   1 kilowattsekund & = $1\ \text{kWs}$ & = $1000\ \text{Ws}$ & = $1,0\cdot 10^3\ \text{Ws}$ \\
+   1 wattimme       & = $1\ \text{Wh}$  & = $3600\ \text{Ws}$ & = $3,6\cdot 10^3\ \text{Ws}$ \\
+   1 kilowattimme   & = $1\ \text{kWh}$ & = $1000\ \text{Wh}$ & = $3,6\cdot 10^6\ \text{Ws}$
+\end{tabular}
+\end{center}
 
 \subsection{Formelsnurran}
 \index{formelsnurran}
-\textbf{FÖRDJUPNING}
+\frdjp
 
-\begin{figure*}[ht]
-\begin{center}
-  %%\begin{wrapfigure}{R}{0.3\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_1-04.pdf}
-  \caption{''Formelsnurra'' för Ohms och Joules lagar}
-  \label{fig:BildII1-4}
-  %  \vspace{-100pt}
-  %%\end{wrapfigure}
-\end{center}
-\end{figure*}
+\smallfig[0.4]{images/cropped_pdfs/bild_2_1-04.pdf}{''Snurra'' för Ohms och Joules lagar}{fig:BildII1-4}
 
-Så här finner man rätt formel i ''snurran'' (bild \ref{fig:BildII1-4}):
+Så här finner man rätt formel i formelsnurran (bild \ref{fig:BildII1-4}):
 Välj ett segment med önskad storhet \(I\), \(U\), \(R\) eller \(P\) som det
 första ledet i formeln.
 Inom valt segment finns tre alternativ för det andra ledet i formeln.
 Välj det alternativ som innehåller två kända storheter.
 
-Bild \ref{fig:BildII1-4} visar ''Formelsnurra'' för Ohms och Joules lagar.
-
-Exempel:
+%%Exempel:
+%% TODO: Var är exemplet?
 
 \subsubsection{Ohms lag}
 
 \(R\) söks, \(U\) och \(I\) är kända;
 Om \(U = 230\ V\) och \(I = 2\ A\), så blir
-
-\(R=\dfrac{U}{I}=\dfrac{230}{2}=115\ \Omega\)
-
+%%
+\[R=\dfrac{U}{I}=\dfrac{230}{2}=115\ \Omega\]
+%%
 \subsubsection{Joules lag}
 
-\(P\) söks, \(U\) och \(I\) är kända;
-
+\(P\) söks, \(U\) och \(I\) är kända.
 Om \(U = 230\ V\) och \(I = 2\ A\), så blir
-
-\(P = U \cdot I = 230 \cdot 2 = 460\ W\)
-
+%%
+\[P = U \cdot I = 230 \cdot 2 = 460\ W\]
+%%
 \subsection{Amperetimmar (Ah) och batterikapacitet}
-\textbf{HAREC a.\ref{HAREC.a.1.1.9}\label{myHAREC.a.1.1.9}}
+\harec{a}{1.1.9}{1.1.9}
 \index{amperetimmar (Ah)}
 \index{batterikapacitet}
 \index{batteri}
@@ -636,9 +602,9 @@ Kapaciteten i en elektrisk cell skiljer sig i det avseendet från den i
 till exempel en oljetank, där man kan ta ut lika mycket energimängd som man häller i
 och oberoende av hur fort man gör det.
 
-Elektriska celler kan samlas till så kallade batterier, varvid cellerna oftast
+Elektriska celler kan samlas till batterier, varvid cellerna oftast
 seriekopplas.
-Batteriets polspänning är då summan av cellernas polspänningar.
+Batteriets polspänning är då summan av cellernas pols\-pänningar.
 
 Hur stort arbete ett batteri avger, beror såväl på hela batteriets
 polspänning som på de enskilda cellernas kapacitet.

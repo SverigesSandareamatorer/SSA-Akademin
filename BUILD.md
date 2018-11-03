@@ -48,9 +48,9 @@ använda dig av versionshanteringssystemet Git och verktyget Make.
 GIT
 ---
 
-Git är ett versionshanteringsverktyg som håller reda på historiken av
-kodutveckling. Den hjälper en kodare med arbetet genom smarta verktyg
-och möjligheten att utveckla kollaborativt.
+[Git](https://git-scm.com) är ett versionshanteringsverktyg som håller reda på
+historiken av kodutveckling. Den hjälper en kodare med arbetet genom smarta
+verktyg och möjligheten att utveckla kollaborativt.
 
 Navigera till den mapp du vill ladda ner SSA-Akademin repot i. De som
 kör Git med grafiskt användargränssnitt (GUI) kan välja Clone och
@@ -71,9 +71,9 @@ mål. Till exempel:
 
     make <mål>
 
-Dessa Make "mål" kräver vissa verktyg för att kunna köras och dessa
+Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
 kallas för beroenden. Dessa beroenden måste installeras innan Make
-"mål:et" kan köras och instruktioner för vilka beroenden ett mål
+”mål:et” kan köras och instruktioner för vilka beroenden ett mål
 har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 
 ### MAKE-MÅL OCH BYGGBEROENDEN

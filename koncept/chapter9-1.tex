@@ -7,10 +7,8 @@
   mättekniska begreppen som radioamatörer kan behöva känna till.}
 
 \section{Att mäta}
-\textbf{HAREC
-  a.\ref{HAREC.a.8.1}\label{myHAREC.a.8.1}
-  a.\ref{HAREC.a.8.1.1.1}\label{myHAREC.a.8.1.1.1}
-}
+\harec{a}{8.1}{8.1}
+\harec{a}{8.1.1.1}{8.1.1.1}
 
 \subsection{Mäta likspänning}
 \index{inre resistans}
@@ -27,10 +25,21 @@ En voltmeter ska ha hög \emph{inre resistans} för att mätfelet ska bli litet.
 
 Endast vid mycket noggrann mätning kan man behöva räkna om det visade
 mätvärdet med hänsyn till voltmeterns inre resistans och
-förkopplingsresistansen -- om en sådan används).
+förkopplingsresistansen -- om en sådan används.
 
-\textbf{På grund av den höga inre resistansen är en voltmeter endast lämpad
-  för spänningsmätning -- INTE för direkt strömmätning!}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+  %%\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+  \fontfamily{futs}\Huge{\hspace{1ex}!}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+På grund av den höga inre resistansen är en voltmeter endast lämpad
+för spänningsmätning -- INTE för direkt strömmätning!
+\end{minipage}
+\end{center}
+
+%%\textbf{På grund av den höga inre resistansen är en voltmeter endast lämpad
+%  för spänningsmätning -- INTE för direkt strömmätning!}
 
 \subsubsection{Utöka mätområdet för en voltmeter}
 
@@ -46,9 +55,7 @@ En voltmeter med valbar förkopplingsresistor kan därför har flera skalor.
 I digitala voltmetrar anpassas ''skalan'' oftast automatiskt.
 
 \subsubsection{Inre resistansens inverkan}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.2.3}\label{myHAREC.a.8.1.2.3}
-}
+\harec{a}{8.1.2.3}{8.1.2.3}
 \index{inre resistans}
 
 Vid mätning av spänning kommer den inre resistansen hos voltmetern att lasta
@@ -76,8 +83,18 @@ Endast vid mycket noggrann mätning kan man behöva räkna om det visade
 mätvärdet med hänsyn till amperemeterns inre resistans och resistansen
 i strömshunten -- om en sådan används.
 
-\textbf{På grund av den låga inre resistansen ska en amperemeter
-  ALDRIG användas för spänningsmätning. Då förstörs den!}
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+På grund av den låga inre resistansen ska en amperemeter
+ALDRIG användas för spänningsmätning. Då förstörs den!
+\end{minipage}
+\end{center}
+
+%%\textbf{På grund av den låga inre resistansen ska en amperemeter
+%%  ALDRIG användas för spänningsmätning. Då förstörs den!}
 
 \subsubsection{Utöka mätområdet för en amperemeter}
 
@@ -130,9 +147,7 @@ men för HF även instrument med termokors, vilka bygger på
 termogalvanisk spänning mellan metaller.
 
 \subsubsection{Frekvensens inverkan}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.2.1}\label{myHAREC.a.8.1.2.1}
-}
+\harec{a}{8.1.2.1}{8.1.2.1}
 
 Frekvensen på den mätta signalen inverkar mer eller mindre på mätresultatet.
 Till en del beror det på den instrumenttyp, som används.
@@ -141,9 +156,7 @@ instrumentet fortfarande är rimligt rättvisande.
 Detta kallas instrumentets bandbredd, vilken bör vara dokumenterad.
 
 \subsubsection{Vågformens inverkan}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.2.2}\label{myHAREC.a.8.1.2.2}
-}
+\harec{a}{8.1.2.2}{8.1.2.2}
 
 Även formen på den signal som mäts inverkar på mätresultatet och det
 är viktigt att veta för vilken vågform som instrumentet presenterar mätvärdet.
@@ -153,9 +166,7 @@ Det innebär att fel värde presenteras om vågformen är en annan än den
 förutsatta.
 
 \subsection{Mäta resistans}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.3}\label{myHAREC.a.8.1.3}
-}
+\harec{a}{8.1.3}{8.1.3}
 
 Mätning av resistans är enklast att göra på en fristående komponent,
 medan man vid mätning på en resistor i en strömkrets också måste ta
@@ -171,7 +182,7 @@ En del kräver att man ställer in området för resistans, medan andra
 kan göra det automatiskt.
 
 Precisionsmätning av motstånd kan göras av mer avancerade instrument
-där man använder 4-punktsmätning.
+där man använder 4-punkts\-mätning.
 För 4-punktsmätning så är ström och spänninganslutningarna separerade
 så att anslutningsledningarnas resistans inte ger spänning som inkluderas
 i den mätta resistansen.
@@ -180,33 +191,30 @@ medan spänningsförlusten för strömledarna därmed kan elimineras.
 Denna mätmetod är relevant framförallt för lågohmiga motstånd.
 
 \subsection{Mäta effekt}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.4}\label{myHAREC.a.8.1.4}
-}
+\harec{a}{8.1.4}{8.1.4}
 \label{mätaeffekt}
 \index{PEP}
 \index{Peak Envelope Power (PEP)}
 \index{effekt!Peak Envelope Power (PEP)}
 
 Effektformler vid lik- och växelström (medel-, effektiv- och toppvärden)
-
 Vid likström:
-
-\(
-P = U \cdot I \quad \text{[W (watt)]} \quad \text{dvs. Joules lag} \\
-\)
-
-Vid sinusformad växelström och resistiva belastningar:
-För PEP-effekt se även avsnitt \ref{PEP-effekt}
-
-\(
+%
+\[
+P = U \cdot I \quad \text{[W (watt)]} \quad \text{dvs. Joules lag}
+\]
+%%
+Vid sinusformad växelström och resistiva belastningar
+(För PEP-effekt se även avsnitt \ref{PEP-effekt}):
+%%
+\[
 \begin{array}{ll}
 \text{effektivvärde} \quad P & = \dfrac{U^2}{R} \\
 &\\
 \text{toppvärde}     \quad P_{PEP} & = \dfrac{U_{max}^2}{R}
 \end{array}
-\)
-
+\]
+%%
 U = spänningens effektivvärde
 R = resistansen
 
@@ -247,11 +255,7 @@ På grund av instrumentets tröghet visas emellertid bara ett ''utjämnat''
 toppvärde, vilket inte är det faktiska värde som instrumentet ''känner''.
 Jämför med oscilloskopet som inte har denna visningströghet.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_8-01.pdf}
-  \caption{Mätning av sändareffekt}
-  \label{fig:bildII8-1}
-\end{wrapfigure}
+\tallfig{images/cropped_pdfs/bild_2_8-01.pdf}{Mätning av sändareffekt}{fig:bildII8-1}
 
 Bild \ref{fig:bildII8-1} visar en voltmeter med likriktare, som kopplats till
 en sändare över spänningsdelare.
@@ -275,9 +279,7 @@ Utifrån dessa värden beräknar man effekten.
 Denna metod är dock inte så vanlig.
 
 \subsection{Direktvisande effektmetrar}
-\textbf{
-HAREC a.\ref{HAREC.a.8.2.1.2}\label{myHAREC.a.8.2.1.2}
-}
+\harec{a}{8.2.1.2}{8.2.1.2}
 
 Många föredrar direktvisande effektmätare.
 En HF-voltmeter kan givetvis graderas för att visa effekt i stället för
@@ -291,9 +293,7 @@ De effektmetrar som förekommer i SVF-instrument är egentligen voltmetrar,
 men med skalan graderad i effekt.
 
 \subsection{Mäta ståendevågförhållande (SVF)}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.5}\label{myHAREC.a.8.1.5}
-}
+\harec{a}{8.1.5}{8.1.5}
 \label{mäta ståendevåg}
 \label{ståendevågförhållande (SVF)}
 \label{Standing Wave Ratio (SWR)}
@@ -309,8 +309,8 @@ och reflekterad effekt uttrycks som ett \emph{ståendevågförhållande (SVF)}
 Med en SVF-meter som sätts in mellan effektkälla och ledning kan man
 mäta hur stor effekt som matas in i ledningen och hur stor effekt som
 vänder tillbaka från slutet av ledningen.
+SVF-värdet kan då bestämmas på något av följande sätt:
 
-SVF-värdet kan bestämmas på något av följande sätt:
 \begin{itemize}
 \item Man mäter framåt- respektive bakåtgående effekt var för sig med
   en riktningskänslig effektmeter.
@@ -319,16 +319,12 @@ SVF-värdet kan bestämmas på något av följande sätt:
 \end{itemize}
 
 \subsection{Studera vågformen}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.6}\label{myHAREC.a.8.1.6}
-}
+\harec{a}{8.1.6}{8.1.6}
 
 Vågformen för snabba växelströmsförlopp studeras bäst med oscilloskop.
 
 \subsection{Mäta frekvens}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.7}\label{myHAREC.a.8.1.7}
-}
+\harec{a}{8.1.7}{8.1.7}
 
 Frekvensmätning gör man bäst med en så kallad frekvensräknare, som är ett
 digitalt instrument.
@@ -338,11 +334,9 @@ Vid frekvensmätning ansluter man instrumentet till mätobjektet med en
 svag elektrisk eller magnetisk koppling.
 
 \subsection{Mäta resonansfrekvens}
-\textbf{
-HAREC a.\ref{HAREC.a.8.1.8}\label{myHAREC.a.8.1.8}
-}
+\harec{a}{8.1.8}{8.1.8}
 
-Mäta resonansfrekvensen för en passiv svängningskrets gör man klassiskt
+Mäta resonansfrekvensen för en passiv resonanskrets gör man klassiskt
 med en så kallad dip-meter.
 Idag använder man antingen en spektrum-analysator med tracking-generator,
 det vill säga en SNA, eller en nätverksanalysator för att med bättre precision

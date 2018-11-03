@@ -3,10 +3,10 @@
 Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
-1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
-    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
-    Därför behöver man hela tiden vara uppmärksam. I ("Ivar") har även blivit 
-    1 ("ett") på en del ställen där siffror förekommer. Många av de grekiska tecknen 
+1.  OCRningen feltolkar flera tecken, så den har tolkat I (”Ivar”) som l (”Ludvig”),
+    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv.
+    Därför behöver man hela tiden vara uppmärksam. I (”Ivar”) har även blivit
+    1 (”ett”) på en del ställen där siffror förekommer. Många av de grekiska tecknen
     blir fel, så man får kontrollera med orginalet och justera.
 
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
@@ -61,7 +61,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \end{quote}
     ```
 
-10. Alla formler latexas och kvarvarande "line-noise" tas bort.
+10. Alla formler latexas och kvarvarande ”line-noise” tas bort.
 
 11. Formler med enhetsangivelser och liknande referenser i text skall också
     latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
@@ -80,9 +80,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
-    eller efter det refererande stycket) kan man köra longtable
-    på. Slå upp det på webben eller i hundboken. Longtable kan
-    sidbrytas snyggt.
+    eller efter det refererande stycket) kan man köra xtabular
+    på. Slå upp det på webben eller i hundboken. Xtabular kan
+    sidbrytas snyggt, även i 2-kolumner.
 
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
@@ -142,13 +142,13 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in `\,` som tusentalsavskiljare/
+19. Lägg in `\,` som tusentalsavskiljare
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
-    "I bild 3.16 illustreras..."
-    "... illustreras av bild 3.17"
+    ”I bild 3.16 illustreras...”
+    ”... illustreras av bild 3.17”
 
 21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
     utan läggas in som `\(\mu\)` i löpande text och \mu (notera mellanslag efter
@@ -185,7 +185,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \index{enheter!farad (F)}
     ```
 
-    Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
+    Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
+    stället för ”Hertz” och ”Volt”.
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
@@ -235,14 +236,15 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
-    utom i parenteser och tabeller.
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
+    sin helhet, utom i parenteser och tabeller.
 
-31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
+    siffror.
 
 32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
 
-33. Undvik sammansättningar med bindestreck, skriv hellre ihop.
-    Skriv "satellitmottagare" i stället för "satellit-mottagare".
-    Bindestreck ska dock användas i sammansättningar med förkortningar;
-    skriv "FM-detektor" istället för "FM detektor".
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
+    "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
+    användas i sammansättningar med förkortningar; skriv "FM-detektor" istället
+    för "FM detektor".

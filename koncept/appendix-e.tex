@@ -1,3 +1,5 @@
+% \onecolumn
+% \newgeometry{left=4cm,right=4cm}
 \chapter{Beskrivningskod typ av sändning}
 \label{sändslag}
 \index{bandbredd}
@@ -8,6 +10,7 @@
 \index{tilldelat frekvensband}
 \index{frekvenstolerans}
 
+\noindent
 Radiosändningar beskrivs enligt ITU-RR~\cite[Appendix 1]{ITU-RR} med
 standardiserade kombinationer av siffror och bokstäver som beskriver
 sändningens nödvändiga bandbredd och sändningsklass.
@@ -29,47 +32,53 @@ Om man till exempel nycklar ett RTTY-modem med en direktskrivande fjärrskrivare
 sedan byter till en dator för att göra samma sak, så ändras benämningen av
 sändningsslaget.
 
-\subsection{Bandbredd}
+\section{Bandbredd}
 \index{nödvändig bandbredd}
 \index{basband}
 \index{sidband}
 \index{Lower Side Band}
 \index{USB}
 
-Den nödvändiga bandbredden (eng. \emph{necessary bandwidth}) beskrivs med
-tre siffror och en bokstav.
-Bokstaven placeras på platsen för decimaltecknet och representerar enheten för
-bandbredd.
-Bokstäverna H (Hz), K (kHz), M (MHz) och G (GHz) används, medan varken 0 eller
-K, M eller G får vara det första tecknet.
-Numeriska värden med mer än tre signifikanta siffror avrundas.
+Den nödvändiga bandbredden (eng. \emph{necessary bandwidth})
+beskrivs med tre siffror och en bokstav. Bokstaven placeras på
+platsen för decimaltecknet och representerar enheten för
+bandbredd. Bokstäverna H (Hz), K (kHz), M (MHz) och G (GHz)
+används, medan varken 0 eller K, M eller G får vara det första
+tecknet. Numeriska värden med mer än tre signifikanta siffror
+avrundas.
 
-Decimaltecknen används på följande sätt:\\
+Decimaltecknen används på följande sätt:
+%
+\begin{center}
 \begin{tabular}{lll}
 	bandbredd & 0,001--999~Hz & (decimaltecken H),\\
 	bandbredd & 1,00--999~kHz & (decimaltecken K),\\
 	bandbredd & 1,00--999~MHz & (decimaltecken M),\\
 	bandbredd & 1,00--999~GHz & (decimaltecken G).\\
 \end{tabular}
+\end{center}
 
-\textbf{Exempel:}
+\paragraph{Exempel:}
 
-\begin{tabular}{lll}
-	0,002~Hz & skrivs & H002\\
-	12,5~kHz & skrivs & 12K5\\
-	0,1~Hz & skrivs & H100\\
-	2,4~kHz & skrivs & 2K40\\
-	25,3~Hz & skrivs & 25H3\\
-	6~kHz & skrivs & 6K00\\
-	180~kHz & skrivs & 181K\\
-	6,25~MHz & skrivs & 6M25\\
+\begin{center}
+\begin{tabular}{rll}
+	0,002~Hz & skrivs & H002 \\
+	12,5~kHz & skrivs & 12K5 \\
+	0,1~Hz   & skrivs & H100 \\
+	2,4~kHz  & skrivs & 2K40 \\
+	25,3~Hz  & skrivs & 25H3 \\
+	6~kHz    & skrivs & 6K00 \\
+	180~kHz  & skrivs & 181K \\
+	6,25~MHz & skrivs & 6M25 \\
 \end{tabular}
+\end{center}
 
 Det är särskilt viktigt att komma ihåg bandbredden vid utsändningar nära
 bandgränserna.
 Till exempel kommer sidbandet (USB) i en telefonisignal med bärvågsfrekvensen 29,699,
 att tydligt överskrida den övre bandgränsen för 10-metersbandet.
-Bandgränserna får INTE överskridas och det gäller även för sändningens sidband.
+Bandgränserna får \textbf{inte} överskridas och det gäller även för sändningens
+sidband.
 
 \emph{Basbandet} är det frekvensområde, som upptas av signaler innan de
 modulerar bärvågen.
@@ -91,8 +100,8 @@ basband.
 \emph{Sidband} alstras alltid när en bärvåg moduleras.
 De är blandningsprodukter på båda sidor om bärvågen, som resultat av att
 signaler från basbandet modulerar bärvågen på något sätt.
-Det övre sidbandet kallas USB (eng. \emph{upper sideband (USB)}
-och det undre sidbandet LSB (eng. \emph{lower sideband (LSB)}.
+Det övre sidbandet kallas USB (eng. \emph{upper sideband (USB)})
+och det undre sidbandet LSB (eng. \emph{lower sideband (LSB)}).
 
 I system för amplitudmodulation är bredden på sidbanden i stort lika med den
 högsta frekvenskomposanten i basbandet.
@@ -124,168 +133,164 @@ absoluta frekvenstoleransen.
 \(10^6\)), procent eller i Hz är den maximalt tillåtna frekvensavvikelsen från
 den korrekta frekvensen.
 
-\subsection{Sändningsklass}
-Sändningklass anges med tre tecken där:\\
-\begin{tabular}{ll}
-	Första tecknet beskriver &  Huvudbärvågens modulation \\
-	Andra tecknet beskriver & Den modulerade signalens karaktär \\
-	Tredje tecknet beskriver & Typ av information \\
+\section{Sändningsklass}
+
+Sändningklass anges med tre tecken där:
+
+\begin{itemize}
+\item 
+	Första tecknet beskriver huvudbärvågens modulation 
+\item 
+	Andra tecknet beskriver den modulerade signalens karaktär 
+\item 
+	Tredje tecknet beskriver typ av information 
+\end{itemize}
+
+\subsection{Huvudbärvågens modulation}
+\textbf{Första tecknet} -- huvudbärvågens modulation.\\[1ex]
+\begin{tabular}[c]{lp{7cm}}
+N &	Ingen modulation \\
+  &	Utsändning där huvudbärvågen är amplitudmodulerad \\
+  &	(även i fall med vinkelmodulerad underbärvåg) \\
+A &	Dubbla sidband \\
+H &	Enkelt sidband, full bärvåg \\
+R &	Enkelt sidband, reducerad bärvåg eller bärvåg av varierande nivå \\
+J &	Enkelt sidband, undertryckt bärvåg \\
+B &	Sinsemellan oavhängiga sidband \\
+C &	Stympat sidband \\
+  &	Utsändning där huvudbärvågen är vinkelmodulerad \\
+F &	Frekvensmodulation \\
+G &	Fasmodulation \\
+  &	Utsändning vars huvudbärvåg är amplitud- och vinkelmodulerad \\
+D &	antingen samtidigt eller i viss förutbestämd följd. \\
+  &	Utsändning av huvudbärvågen som en sekvens av pulser \emph{not}. \\
+P  &	Omodulerade pulser \\
+K &	Amplitudmodulerade pulser \\
+L &Bredd- eller tidmodulerade pulser \\
+M &	Faslägesmodulerade pulser \\
+Q &	Vinkelmodulerad bärvåg under pulsens varaktighet \\
+V &	Kombination av ovanstående eller alstrat på annat sätt \\
+  &	Övriga fall där utsändningens huvudbärvåg är modulerad, \\
+  &	antingen samtidigt eller i förutbestämd följd på två eller \\
+W &	flera av sätten amplitud-, vinkel- eller pulsmodulering \\
+X &	Övriga fall \\[1em]
 \end{tabular}
 
-\subsubsection{Huvudbärvågens modulation}
-\textbf{Första tecknet} -- Huvudbärvågens modulation.\\
-\begin{tabular}{ll}
-	Ingen modulation & N\\
-	Utsändning där huvudbärvågen är amplitudmodulerad &\\
-	(även i fall med vinkelmodulerad underbärvåg) &\\
-	Dubbla sidband & A\\
-	Enkelt sidband, full bärvåg & H\\
-	Enkelt sidband, reducerad bärvåg eller bärvåg av varierande nivå & R\\
-	Enkelt sidband, undertryckt bärvåg & J\\
-	Sinsemellan oavhängiga sidband & B\\
-	Stympat sidband & C\\
-	Utsändning där huvudbärvågen är vinkelmodulerad &\\
-	Frekvensmodulation & F\\
-	Fasmodulation & G\\
-	Utsändning vars huvudbärvåg är amplitud- och vinkelmodulerad &\\
-	antingen samtidigt eller i viss förutbestämd följd. & D\\
-	Utsändning av huvudbärvågen som en sekvens av pulser \emph{not}. &\\
-	Omodulerade pulser & P \\
-	Amplitudmodulerade pulser & K\\
-	Bredd- eller tidmodulerade pulser & L\\
-	Faslägesmodulerade pulser & M\\
-	Vinkelmodulerad bärvåg under pulsens varaktighet & Q\\
-	Kombination av ovanstående eller alstrat på annat sätt & V\\
-	Övriga fall där utsändningens huvudbärvåg är modulerad, &\\
-	antingen samtidigt eller i förutbestämd följd på två eller &\\
-	flera av sätten amplitud-, vinkel- eller pulsmodulering & W\\
-	Övriga fall & X\\
+\textbf{Not:} Utsändning där huvudbärvågen är direkt modulerad av
+en signal, vilken är kodad i kvantiserad form (t.ex.
+pulskodmodulation) ska hänföras till amplitud eller
+vinkelmodulation.
+
+\subsection{Den modulerande signalens karaktär}
+\textbf{Andra tecknet} -- den modulerande signalens karaktär.\\[1ex]
+\begin{tabular}{lp{7cm}}
+0 &	Ingen modulerande signal \\
+  &	En enda kanal med kvantiserad eller digital information, \\
+1 &	utan användning av modulerande underbärvåg \\
+  &	En enda kanal med kvantiserad eller digital information, \\
+2 &	med användning av modulerande underbärvåg \\
+3 &	En enda kanal med analog information \\
+7 &	Två eller flera kanaler med kvantiserad eller digital information \\
+8 &	Två eller flera kanaler med analog information \\
+  &	Sammansatta system av en eller flera kanaler med kvantiserad eller \\
+9 &	digital information samt en eller flera kanaler med analog information \\
+X &	Övriga fall \\[1em]
 \end{tabular}
 
-\textbf{Not: Utsändning där huvudbärvågen är direkt modulerad av en signal,
-  vilken är kodad i kvantiserad form (t.ex. pulskodmodulation) ska hänföras till
-  amplitud eller vinkelmodulation.}
-
-\subsubsection{Den modulerande signalens karaktär}
-\textbf{Andra tecknet} -- Den modulerande signalens karaktär\\
-\begin{tabular}{ll}
-	Ingen modulerande signal & 0\\
-	En enda kanal med kvantiserad eller digital information, &\\
-	utan användning av modulerande underbärvåg & 1\\
-	En enda kanal med kvantiserad eller digital information, &\\
-	med användning av modulerande underbärvåg & 2\\
-	En enda kanal med analog information & 3\\
-	Två eller flera kanaler med kvantiserad eller digital information & 7\\
-	Två eller flera kanaler med analog information & 8\\
-	Sammansatta system av en eller flera kanaler med kvantiserad eller & \\
-	digital information samt en eller flera kanaler med analog information & 9\\
-	Övriga fall & X\\
-\end{tabular}
-
+\noindent
 I fråga om bassignalens karaktär skiljer man å ena sidan på kanaler för
 kvantiserad eller digital information, det vill säga där signalen växlar
 språngvis mellan vissa givna tillstånd, och på kanaler för analog information,
 där signalen kan variera kontinuerligt inom givna gränser.
 
-\emph{Att fastställa arten av huvudbärvågens modulation kan kräva viss
-  eftertanke.
-  I många fall får den information som ska överföras, modulera en underbärvåg,
-  som i sin tur påtrycks modulatorn för huvudbärvågen.}
+\emph{Att fastställa arten av huvudbärvågens modulation kan kräva
+  viss eftertanke. I många fall får den information som ska
+  överföras, modulera en underbärvåg, som i sin tur påtrycks
+  modulatorn för huvudbärvågen.}
 
-\subsubsection{Informationens form}
-\textbf{Tredje tecknet} -- Informationens form\\
-\begin{tabular}{ll}
-	Ingen överförd information & N\\
-	Telegrafi för hörselmottagning & A\\
-	Telegrafi för automatisk mottagning & B\\
-	Faksimil & C\\
-	Dataöverföring, fjärrmätning, fjärrstyrning & D\\
-	Telefoni, även rundradio & E\\
-	Television, video & F\\
-	Kombination av ovanstående fall & W\\
-	Övriga fall & X\\
+\subsection{Informationens form}
+\textbf{Tredje tecknet} -- informationens form.\\[1ex]
+\begin{tabular}{lp{7cm}}
+N &	Ingen överförd information \\
+A &	Telegrafi för hörselmottagning \\
+B &	Telegrafi för automatisk mottagning \\
+C &	Faksimil \\
+D &	Dataöverföring, fjärrmätning, fjärrstyrning \\
+E &	Telefoni, även rundradio \\
+F &	Television, video \\
+W &	Kombination av ovanstående fall \\
+X &	Övriga fall \\[1em]
 \end{tabular}
 
-Telegrafisignaler är kvantiserade (till/från, mark/space).
+\noindent
+Telegrafisignaler är kvantiserade (till/från, mark/\-space).
 Telefonisignaler har mestadels varit analoga, men är allt oftare
-kvantiserade (digitala).
-Faksimilsignaler är analoga eller kvantiserade, beroende på om gråtoner
-överförs eller ej.
+kvantiserade (digitala). Faksimilsignaler är analoga eller
+kvantiserade, beroende på om gråtoner överförs eller ej.
 
 
-\subsection{Tilläggstecken}
-De två avslutande tecknen är tilläggstecken som ger en mer komplett
-beskrivning av signalen.
-Om ingen komplettering behövs ska tecknen ersättas med två streck ( - - )
+\section{Tilläggstecken}
+De två avslutande tecknen är tilläggstecken som ger en mer
+komplett beskrivning av signalen. Om ingen komplettering behövs
+ska tecknen ersättas med två streck ( - - ).
 
-\subsubsection{Närmare beskrivning av signalen}
-\textbf{Första tilläggstecknet}- Närmare beskrivning av signalen.\\
-\begin{tabular}{ll}
-	Tvåtillståndskod med element av: &\\
-	Olika antal och/eller olika varaktighet- morsetelegrafi & A\\
-	Samma antal och varaktighet, utan felkorrigering -- fjärrskrift & B\\
-	Samma antal och varaktighet, med felkorrigering- fjärrskrift, &\\
-	AMTOR, paketradio m.m. & C\\
-	Fyratillståndskod där: &\\
-	Varje tillstånd företräder ett tillstånd om ett antal bitar & D\\
-	Flertillståndskod där: &\\
-	Varje tillstånd företräder ett signalelement om ett antal bitar & E\\
-	Varje tillstånd eller kombination av tillstånd företräder ett tecken & F\\
-	Ljud av rundradiokvalitet: & \\
-	Monatoniskt & G\\
-	stereofoniskt eller kvadrafoniskt & H\\
-	Ljud av kommersiell kvalitet: &\\
-	Alla fall utom K och L enligt nedan & J\\
-	Med användning av frekvensinversion eller banduppdelning & K\\
-	Med särskilda frekvensmodulerade signaler för styrning av &\\
-	den demodulerade signalens nivå & L\\
-	Video &\\
-	Monokrom & M\\
-	Färg & N\\
-	Kombination av ovanstående fall & W\\
-	Övriga fall & X\\
+\subsection{Närmare beskrivning av signalen}
+\textbf{Första tilläggstecknet} -- närmare beskrivning av signalen.\\[1ex]
+\begin{tabular}{lp{7cm}}
+  &	Tvåtillståndskod med element av: \\
+A &	Olika antal och/eller olika varaktighet- morsetelegrafi \\
+B &	Samma antal och varaktighet, utan felkorrigering -- fjärrskrift \\
+  &	Samma antal och varaktighet, med felkorrigering- fjärrskrift, \\
+C &	AMTOR, paketradio m.m. \\
+  &	Fyratillståndskod där: \\
+D &	Varje tillstånd företräder ett tillstånd om ett antal bitar \\
+  &	Flertillståndskod där: \\
+E &	Varje tillstånd företräder ett signalelement om ett antal bitar \\
+F &	Varje tillstånd eller kombination av tillstånd företräder ett tecken \\
+  &	Ljud av rundradiokvalitet: \\
+G &	Monatoniskt \\
+H &	stereofoniskt eller kvadrafoniskt \\
+  &	Ljud av kommersiell kvalitet: \\
+J &	Alla fall utom K och L enligt nedan \\
+K &	Med användning av frekvensinversion eller banduppdelning \\
+  &	Med särskilda frekvensmodulerade signaler för styrning av \\
+L &	den demodulerade signalens nivå \\
+  &	Video \\
+M &	Monokrom \\
+N &	Färg \\
+W &	Kombination av ovanstående fall \\
+X &	Övriga fall \\
 \end{tabular}
 
-\subsubsection{Arten av multiplex}
-\textbf{Andra tilläggstecknet} -- Arten av multiplex.\\
-\begin{tabular}{ll}
-	Ingen multiplex & N\\
-	Koddelning & C\\
-	Frekvensdelning & F\\
-	Tiddelning & T\\
-	Kombination av Frekvens- och Tidsdelning & W\\
-	Andra arter av multiplex & X\\
+\subsection{Arten av multiplex}
+\textbf{Andra tilläggstecknet} -- arten av multiplex.\\[1ex]
+\begin{tabular}{lp{7cm}}
+N &	Ingen multiplex \\
+C &	Koddelning \\
+F &	Frekvensdelning \\
+T &	Tiddelning \\
+W &	Kombination av Frekvens- och Tidsdelning \\
+X &	Andra arter av multiplex \\
 \end{tabular}
 
 
-\subsection{Exempel på beskrivningskod}
-\begin{tabular}{ll}
-	N0N & Omodulerad bärvåg, ingen överförd information.\\
-	100H A1A AN & Morsetelegrafi genom nyckling av bärvåg,\\
-	& 125-takt, bandbredd 100~Hz, s.k. CW.\\
-	16K0 F2A AN & Morsetelegrafi, frekvensmodulation med nyckling av ton,\\
-	& t.ex. i repeater, s.k. tontelegrafi.\\
-	254H F1B BN & Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK),\\
-	& utan felkorrigering, hastighet 50~Bd, frekvensskift i 70~Hz, s.k. RTTY.\\
-	254H J2B BN & Fjärrskrift genom frekvensskiftnyckling av modulerande\\
-	& tonpar (AFSK), vid sändning av enkelt sidband med undertryckt bärvåg,\\
-	& bandbredden beroende av hastighet och frekvenser i tonparet\\
-	& Jfr 254H F1B BN\\
-	304H F1B CN & Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK),\\
-	& med felkorrigering, hastighet 100~Bd, frekvensskift 170~Hz, t.ex. AMTOR.\\
-	& Jfr 254H F1B BN.\\
-	6K00 A3E JN & Telefoni, amplitudmodulation med dubbla sidband och full\\
-	& bärvåg, bandbredd 6~kHz, s.k. AM.\\
-	2K70 J3E JN & Telefoni, enkelt sidband och undertryckt bärvåg,\\
-	& bandbredd 2,7~kHz, s.k. SSB.\\
-	16K0 F3E JN & Telefoni, frekvensmodulation, bandbredd 16~kHz,\\
-	& s.k. NBFM (smalbands-FM).\\
-	2K12 F3C MN & Faksimil med halvtoner (telefoto), kooperationsindex 264,\\
-	& avsökningshastighet 90~linjer/minut,\\
-	& frekvensmodulering med \(\pm\) 400~Hz skift.\\
-	6M25 C3F MN & Television i svartvitt enligt det europeiska 625-linjerssystemet.\\
-	3K00 F3F MN & Smalbandstelevision enligt amatörradiostandard, s.k. ATV.\\
-\end{tabular}
+\section{Exempel på beskrivningskod}
+
+\begin{description}\raggedright
+\item[\textnormal{N0N}] Omodulerad bärvåg, ingen överförd information.
+\item[\textnormal{100H A1A AN}] Morsetelegrafi genom nyckling av bärvåg, 125-takt, bandbredd 100~Hz, s.k. CW.
+\item[\textnormal{16K0 F2A AN}] Morsetelegrafi, frekvensmodulation med nyckling av ton, t.ex. i repeater, s.k. tontelegrafi.
+\item[\textnormal{254H F1B BN}] Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK), utan felkorrigering, hastighet 50~Bd, frekvensskift i 70~Hz, s.k. RTTY.
+\item[\textnormal{254H J2B BN}] Fjärrskrift genom frekvensskiftnyckling av modulerande tonpar (AFSK), vid sändning av enkelt sidband med undertryckt bärvåg, bandbredden beroende av hastighet och frekvenser i tonparet Jfr 254H F1B BN
+\item[\textnormal{304H F1B CN}] Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK), med felkorrigering, hastighet 100~Bd, frekvensskift 170~Hz, t.ex. AMTOR. Jfr 254H F1B BN.
+\item[\textnormal{6K00 A3E JN}] Telefoni, amplitudmodulation med dubbla sidband och full bärvåg, bandbredd 6~kHz, s.k. AM.
+\item[\textnormal{2K70 J3E JN}] Telefoni, enkelt sidband och undertryckt bärvåg, bandbredd 2,7~kHz, s.k. SSB.
+\item[\textnormal{16K0 F3E JN}] Telefoni, frekvensmodulation, bandbredd 16~kHz, s.k. NBFM (smalbands-FM).
+\item[\textnormal{2K12 F3C MN}] Faksimil med halvtoner (telefoto), kooperationsindex 264, avsökningshastighet 90~linjer/minut, frekvensmodulering med \(\pm\) 400~Hz skift.
+\item[\textnormal{6M25 C3F MN}] Television i svartvitt enligt det europeiska 625-linjerssystemet.
+\item[\textnormal{3K00 F3F MN}] Smalbandstelevision enligt amatörradiostandard, s.k. ATV.
+\end{description}
+
 
 Exempel på sändningsslag utan ITU beskrivningskod enligt ovan
 -- Telefoni, amplitudmodulation med dubbla sidband och reducerad bärvåg.
@@ -294,3 +299,5 @@ En enda kanal med analog information.
 Sändningsslaget tillämpas i effektbesparande syfte bland annat för
 rundradiosändningar på AM, varvid traditionella rundradiomottagare fortfarande
 kan användas.
+% \restoregeometry
+% \twocolumn

@@ -1,5 +1,5 @@
 \section{Induktorn}
-\textbf{HAREC a.\ref{HAREC.a.2.3}\label{myHAREC.a.2.3}}
+\harec{a}{2.3}{2.3}
 \index{induktor}
 
 \subsection{Allmänt}
@@ -11,7 +11,7 @@ magnetfältet i form av lagrad magnetisk energi.
 
 
 \subsection{Självinduktion -- induktans}
-\textbf{HAREC a.\ref{HAREC.a.2.3.1}\label{myHAREC.a.2.3.1}}
+\harec{a}{2.3.1}{2.3.1}
 \index{induktans}
 \index{självinduktion}
 \index{elektromotorisk kraft (EMK)}
@@ -46,14 +46,9 @@ en strömkrets.
 
 \subsection{Försök med induktion}
 
-\emph{Försök 1}
+\largefig{images/cropped_pdfs/bild_2_2-03.pdf}{Försök med induktion}{fig:BildII2-3}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-03.pdf}
-\caption{Försök med induktion}
-\label{fig:BildII2-3}
-\end{figure}
-
+\paragraph{Försök 1:}
 Överst i bild \ref{fig:BildII2-3} är ett känsligt vridspoleinstrument kopplat
 till en induktor.
 Instrumentet bör ha noll på skalans mitt, så att strömriktningen syns.
@@ -67,8 +62,7 @@ respektive dras ut ur induktorn -- det uppstår en växelström.
 En växelspänning uppstår över induktorn även när den ingår i en strömkrets som
 sluts och bryts -- alltså utan en magnet som rör sig.
 
-\emph{Försök 2}
-
+\paragraph{Försök 2:}
 I mitten i bild \ref{fig:BildII2-3} har permanentmagneten bytts mot ännu en
 induktor.
 Utöver den första induktorn, som vi nu kallar sekundärlindning, kallar vi den
@@ -86,8 +80,7 @@ sluts och motsatt riktning när den bryts -- en växelspänning alstras.
 När sekundärlindningen ingår i en sluten krets uppstår en växelström genom
 sekundärlindningen.
 
-\emph{Försök 3}
-
+\paragraph{Försök 3:}
 Nederst i bild \ref{fig:BildII2-3} ställer vi oss frågan vad som händer när
 primärlindningen i försök 2 ansluts till en växelspänning, till exempel 
 med nätfrekvensen 50~Hz. Använd för säkerhets skull en skyddstransformator
@@ -98,21 +91,16 @@ växlar 100 gånger per sekund. Det uppstår alltså en växelspänning över
 sekundärlindningen och om denna ingår i en sluten strömkrets uppstår det en
 motsvarande växelström.
 
-
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-04.pdf}
-\caption{Schemasymboler för induktorer}
-\label{fig:BildII2-4}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-04.pdf}{Schemasymboler för induktorer}{fig:BildII2-4}
 
 \subsection{Olika utföranden}
 
 Bild \ref{fig:BildII2-4} visar schemasymboler för ett antal vanliga induktorer.
-Utöver dessa finns elektromagneter, drosslar, induktorer för svängningskretsar,
+Utöver dessa finns elektromagneter, drosslar, induktorer för resonanskretsar,
 ramantenner och så vidare.
 
 \subsection{Enheten henry (H)}
-\textbf{HAREC a.\ref{HAREC.a.2.3.2}\label{myHAREC.a.2.3.2}}
+\harec{a}{2.3.2}{2.3.2}
 \index{henry (H)}
 \index{enheter!henry (H)}
 \index{symbol!\(L\) induktans}
@@ -120,27 +108,27 @@ ramantenner och så vidare.
 Måttenheten för självinduktion är \emph{henry (H)}.
 1~henry (1~H) är självinduktionen i en induktor som alstrar en motspänning av
 1~volt vid en strömändring av 1~ampere under 1~sekund.
-
 I formler betecknas induktans med symbolen L.
-
-Sambandet är
-
-\(volt = henry \cdot ampere/sekund\)
-
+Sambandet är:
+%%
+\[\textit{volt} = \textit{henry} \cdot \textit{ampere}/\textit{sekund}\]
+%%
 1~H är en stor måttenhet. För elektroniktillämpningar används därför ett mer
 hanterligt format.
 
-Exempel:
+\noindent\textbf{Exempel:}
 
+\begin{center}
 \begin{tabular}{ll}
 \(1\ H \) & \(= 1000\ mH\) \\
 \(1\ mH\) & \(= 1 \cdot 10^{-3}\ H\) \\
 \(1\ mH\) & \(= 1000\ \mu H\) \\
 \(1\ \mu H\) & \(= 1 \cdot 10^{-3}\ mH = 1 \cdot 10^{-6}\ H \)
 \end{tabular}
+\end{center}
 
 \subsection{Hur induktansen påverkas}
-\textbf{HAREC a.\ref{HAREC.a.2.3.3}\label{myHAREC.a.2.3.3}}
+\harec{a}{2.3.3}{2.3.3}
 \index{permabilitet}
 \index{relativa permabiliteten}
 \index{symbol!\(\mu_0\) permabilitetskonstanten}
@@ -159,16 +147,16 @@ Precis som för kondensatorn har materialet i en induktors kärna betydelse,
 då dess \emph{permabilitet} kan anta olika värden. Den absoluta permabiliteten
 \(\mu\) brukar delas upp i permabiliteten för vakuum \(\mu_0\) och den
 \emph{relativa permabiliteten} \(\mu_r\) som gives av
-
-\(\mu = \mu_0\mu_r\)
-
+%%
+\[\mu = \mu_0\mu_r\]
+%%
 Den relativa permabiliteten går att hitta i tabeller och varierar med material.
 Dielektricitetskonstanten för vakuum är definierad som
-
-\(\mu_0 = 4\pi 10^{-7} \approx 1,256637 \cdot 10^{-6}\)
+%%
+\[\mu_0 = 4\pi 10^{-7} \approx 1,256637 \cdot 10^{-6}\]
 
 \subsection{Induktiv reaktans}
-\textbf{HAREC a.\ref{HAREC.a.2.3.4}\label{myHAREC.a.2.3.4}}
+\harec{a}{2.3.4}{2.3.4}
 \index{induktiv reaktans}
 \index{reaktans!induktiv}
 \index{symbol!\(X_L\) induktiv reaktans}
@@ -199,28 +187,23 @@ och av induktansen L.
 Den induktiva reaktansen är proportionell mot strömmens frekvens och mot
 induktorns induktansvärde. Inga förluster uppstår i en ideal induktor, det vill säga 
 en induktor som teoretiskt saknar resistans.
-
-Sambandet är
-\(X_L = 2\pi fL = \omega L\)
-
-\begin{tabular}{llll}
- \(X_L [\Omega]\) & \(f [Hz]\) & \(L [H]\)
- \end{tabular}
-
+Sambandet är:
+%%
+\[X_L = 2\pi fL = \omega L\]
+\[X_L [\Omega]\quad f [Hz]\quad L [H]\]
+%%
 \textbf{Exempel:}
-
-\(L = 1\ H\) \(f = 50\ Hz\) \(X_L = ?\)
-
-\(X_L = 2\pi fL = 2\pi  \cdot 50 \cdot 1 = 314\ \Omega\)
-
+%%
+\[L = 1\ H\quad f = 50\ Hz\quad X_L = ?\]
+\[X_L = 2\pi fL = 2\pi \cdot 50 \cdot 1 = 314\ \Omega\]
+%%
 \textbf{Exempel:}
-
-\(L = 1\ H\) \(f = 5\ kHz\) \(X_L = ?\)
-
-\(X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = 31\, 400\ \Omega\)
+%%
+\[L = 1\ H\quad f = 5\ kHz\quad X_L = ?\]
+\[X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = 31\, 400\ \Omega\]
 
 \subsection{Fasförskjutning mellan spänning och ström i en induktor}
-\textbf{HAREC a.\ref{HAREC.a.2.3.5}\label{myHAREC.a.2.3.5}}
+\harec{a}{2.3.5}{2.3.5}
 \index{induktor!fasförskjutning}
 
 Med fasförskjutning menas den tidsmässiga förskjutningen mellan ström- och
@@ -234,7 +217,7 @@ I praktiken är dock förskjutningen något mindre än 90\degree~på grund av
 resistansen i induktorn.
 
 \subsection{Q-faktor -- godhetstal}
-\textbf{HAREC a.\ref{HAREC.a.2.3.6}\label{myHAREC.a.2.3.6}}
+\harec{a}{2.3.6}{2.3.6}
 \index{Q-faktor!induktor}
 
 \emph{Q-faktorn} kan avse två olika saker, som inte ska förväxlas.
@@ -242,11 +225,11 @@ Dessa är Q-faktorn för en komponent respektive Q-faktorn för en hel strömkre
 
 Q-faktorn för en induktor är kvoten av dess reaktans och dess serieresistans.
 
-\(Q_\text{komponent} = \dfrac{X_\text{komponent}}{R_\text{komponent}}\)
+\[Q_\text{komponent} = \dfrac{X_\text{komponent}}{R_\text{komponent}}\]
 
-Q-faktorn för en hel svängningskrets beror däremot på bredden på det
+Q-faktorn för en hel resonanskrets beror däremot på bredden på det
 frekvensband som en viss komponentkombination ger.
-Q-faktorn för en resonant svängningskrets är därför ett mått på dess
+Q-faktorn för en resonanskrets är därför ett mått på dess
 selektivitet (se kapitel \ref{Q-faktor}).
 
 Q-faktorn för en ingående komponent påverkar Q-faktorn för en hel krets.
@@ -288,10 +271,7 @@ tvärsnittsyta då blir större, är temperaturkoefficienten vanligen positiv.
 Temperaturkoefficienten \(\alpha_L\) anger induktansändringen per grad
 temperaturändring.
 
-Induktansändringen blir då
-
-\(\Delta L = \pm \alpha _L \cdot L_k \cdot \Delta\vartheta\)
-
+Induktansändringen blir då $\Delta L = \pm \alpha _L \cdot L_k \cdot \Delta\vartheta$
 där \(L_k\) är induktansvärdet vid den lägre temperaturen (oftast
 20~\degree C) och \(\Delta\vartheta\) är temperaturändringen i kelvin.
 
@@ -302,7 +282,7 @@ Induktorer kan innehålla kärnor av någon metallegering vars egenskaper också
 temperaturberoende.
 
 I praktiken kan man knappast påverka temperaturkoefficienten i en induktor.
-Eftersom en svängningskrets för det mesta även innehåller kondensatorer kan
+Eftersom en resonanskrets för det mesta även innehåller kondensatorer kan
 man kompensera en positiv temperaturkoefficient i induktorn med en negativ
 temperaturkoefficient i en kondensator.
 

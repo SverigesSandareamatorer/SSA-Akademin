@@ -1,19 +1,20 @@
+sudo: required
+
 language: generic
+
+services:
+  - docker
 
 before_install:
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
-    texlive \
-    texlive-lang-european \
-    texlive-latex-extra \
-    texlive-fonts-extra \
-    texlive-pictures \
-    texlive-math-extra \
-    texlive-xetex \
     sshpass"
 
+before_script:
+  - make docker-image
+
 script:
-  - make koncept.pdf
+  - make docker-build
 
 after_success:
   - sha256sum koncept.pdf

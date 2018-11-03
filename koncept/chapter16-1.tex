@@ -43,11 +43,7 @@ användning.
 
 \section{Morsetecknen}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \fbox{\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_morse_1.pdf}}
-  \caption{Morsetecknens uppbyggnad}
-  \label{fig:bild_morse_1}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_morse_1.pdf}{Morsetecknens uppbyggnad}{fig:bild_morse_1}
 
 Bild \ref{fig:bild_morse_1} visar morsetecknens uppbyggnad.
 Morsetecknen består av korta och långa teckendelar samt mellanrum.
@@ -230,16 +226,9 @@ med en bug.
 Med en el-bug är risken stor för nya fel ''bara för att man råkat snudda vid fel
 paddel'' därför kommer ett fel sällan ensamt.
 
-\section[Ställning]{Arbetsställning vid sändning}
+\multifig{images/cropped_pdfs/bild_morse_3.pdf,images/cropped_pdfs/bild_morse_4.pdf}{Rätt sittställning sett framifrån och från sidan}{fig:bild_morse_3_4}
 
-\begin{figure}
-  \fbox{
-    \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_morse_3.pdf}
-    \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_morse_4.pdf}
-  }
-  \caption{Rätt sittställning sett framifrån och från sidan}
-  \label{fig:bild_morse_3_4}
-\end{figure}
+\section[Ställning]{Arbetsställning vid sändning}
 
 Det är viktigt att ha rätt arbetsställning redan från början.
 Vid hög sändningstakt och långa sändningspass blir man annars lätt trött och
@@ -262,12 +251,8 @@ olämpligt högt bord. Detta medför en olämplig och tröttande arbetsställnin
 
 \section[Fattning]{Nyckelfattning och handrörelser}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \fbox{\includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_morse_5.pdf}}
-  \caption{Rätta handledsrörelser}
-  \label{fig:bild_morse_5}
-\end{wrapfigure}
-
+\smallfig{images/cropped_pdfs/bild_morse_5.pdf}{Rätta handledsrörelser}{fig:bild_morse_5}
+  
 Bild \ref{fig:bild_morse_5} visar nyckling med handledsrörelser.
 Håll löst omkring nyckelknoppen med tummen och långfingret.
 Pekfingrets undersida ska vila lätt ovanpå knoppen.
@@ -327,11 +312,7 @@ Sänd inte fortare än att handleden fortfarande arbetar mjukt vid kontaktläget
 men ändå distinkt.
 Sändningen är ditt visitkort och därför krävs att den har kvalitet.
 
-\begin{figure}
-  \fbox{\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_morse_6.pdf}}
-  \caption{Telegrafnyckel}
-  \label{fig:bild_morse_6}
-\end{figure}
+\mediumfig[0.8]{images/cropped_pdfs/bild_morse_6.pdf}{Telegrafnyckel}{fig:bild_morse_6}
 
 \section[Teckengivning]{Kontroll av teckengivningen}
 
@@ -351,9 +332,9 @@ har ju en sådan inte grafisk visning.
 En telegraferingskunnig person bör därför anlitas för bedömning av
 teckengivningen.
 
-\section[Provtext]{Exempel på provtext}
-
-\begin{tabular}{l|r|r|r|}
+\begin{table*}[t]
+  \begin{center}
+    \begin{tabular}{l|r|r|r|}
 	Provtext & bokstäver & siffror & skiljetecken\\ \hline
 	$\sim$ ASCUNCION ÄR HUVUDSTAD I PARAGUAY, & 29 & & 4\\
 	SOM LIGGER I SYDAMERIKA. PÅ KORTVÅG & 31 & & 2\\
@@ -365,8 +346,11 @@ teckengivningen.
 	BE ADJUSTED AS INDICATED ON PAGE 3-4, & 27 & 4 & 4\\
 	DATED 8/9 2017. QRT + @ & 8 & 12 & 8\\ \hline
 	(Summa 261 teckenvärden)& 211 & 24 & 26\\
-\end{tabular}
-\label{provtext}
+    \end{tabular}
+    \caption{Provtext och teckenvärden}
+    \label{tab:provtext}
+  \end{center}
+\end{table*}
 
 \section[Teckenvärden]{Beräkning av antalet teckenvärden}
 
@@ -392,35 +376,67 @@ Den därefter beräknade takten är den så kallade telegram- eller trafikhastig
 
 \section[Taktberäkning]{Beräkning av takten}
 
-\textbf{Formel:}
+\paragraph{Formel:}
+%%
+\[\frac{\textit{summa\ teckenvärde}\ \cdot\ 60}{\textit{tid} [\textit{sekunder}]}
+= \textit{tecken/min}\]
+\[\frac{\textit{tecken/min}}{5} = \textit{ord/min}\quad (\text{WPM})\]
 
-$$\frac{\mathrm{summa\ teckenv"arde }\cdot 60}{\mathrm{tid} [\mathrm{sekunder}]}
-= \mathrm{tecken/min}$$
-
-\textbf{Exempel:}
-
-Felfri sändning av ovanstående exempel på provtext \ref{provtext} med summa
+\paragraph{Exempel}
+Felfri sändning av ovanstående exempel på provtext \ref{tab:provtext} med summa
 teckenvärde 261 tar exakt 4 minuter och 20 sekunder (260 sekunder).
 Takten blir då:
 
 $$\frac{261 \cdot 60}{260} = 60,2\ \mathrm{tecken/min}$$
 
-\section{Morsealfabetet}
 \index{morsealfabetet}
 \label{morsealfabetet}
 
-\begin{figure}
-  \fbox{\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_morse_7.pdf}}
-  \caption{Morsealfabetet}
-  \label{fig:bild_morse_7}
-\end{figure}
+\begin{table*}[b]
+  \begin{center}
+    \begin{tabular}{ll|lll}
+      A   & \MAdam    & 1 & \MEtt & \\
+      B   & \MBertil  & 2 & \MTva & \\
+      C   & \MCesar   & 3 & \MTre & \\
+      D   & \MDavid   & 4 & \MFyra & \\
+      E   & \MErik    & 5 & \MFem & \\
+      F   & \MFilip   & 6 & \MSex & \\
+      G   & \MGustav  & 7 & \MSju & \\
+      H   & \MHelge   & 8 & \MAtta & \\
+      I   & \MIvar    & 9 & \MNio & ibland förkortat till \MNiklas \\
+      J   & \MJohan   & 0 & \MNoll & ibland förkortat till \MTore \\
+      K   & \MKalle   &   &       & \\
+      L   & \MLudvig  & . & \MPunkt & Punkt \\
+      M   & \MMartin  & , & \MKomma & Komma \\
+      N   & \MNiklas  & ? & \MFragetecken & Frågetecken \\
+      O   & \MOlof    & - & \MBindestreck & Bindestreck eller minus \\
+      P   & \MPetter  & / & \MBraktecken & Bråkstreck \\
+      Q   & \MQvintus & = & \MAtskillnad & Åtskillnad, skrivs också \textoverline{BT} \\
+      R   & \MRudolf  & \textasciitilde & \MLystring & Lystring, skrivs också \textoverline{KA} \\
+      S   & \MSigurd  & $\sqrt{}$  & \MVanta & Vänta, skrivs också \textoverline{AS} \\
+      T   & \MTore    & $f$  & \MForstatt & Förstått \\
+      U   & \MUrban   & \textoverline{HH}  & \MFelskrivning & Felsändning \\
+      V   & \MViktor  & + & \MSluttecken & Plus eller slut, skrivs också \textoverline{AR} \\
+      W   & \MWilhelm & @ & \MAvslutning & Avslutning, skrivs också \textoverline{SK} \\
+      X   & \MXerxes  & ( & \MVParen & Vänster parentes \\
+      Y   & \MYngve   & ) & \MHParen & Höger parentes \\
+      Z   & \MZata    & " & \MAnforing & Anföring \\
+      Å   & \MAke     & ' & \MApostrof & Apostrof \\
+      Ä   & \MArlig   & \textunderscore & \MUnderstrykning & Understrykning \\
+      Ö   & \MOsten   & ${}_{\scaleto{\times}{6pt}}$ & \MRepetera & Repetition \\
+      \textoverline{SOS} & \MSOS     &   &     & \\
+      É   & \MEakut   & ! & \MUtropstecken & Utropstecken \\
+      Ü   & \MUbel    & : & \MKolon      & Kolon eller division \\
+      \~N & \MNiklas  & ; & \MSemikolon & Semikolon \\
+      CH  & \Mch      & $\times$ & \MXerxes & Multiplikation \\
+    \end{tabular}
+    \caption{Morsealfabetet}
+  \end{center}
+\end{table*}
 
-\section{Handstilar}
+%% \largefig[.5]{images/cropped_pdfs/bild_morse_7.pdf}{Morsealfabetet}{fig:bild_morse_7}
+
 \index{handstilar}
 \label{handstilar}
 
-\begin{figure}
-  \fbox{\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_morse_8.pdf}}
-  \caption{Handstilar}
-  \label{fig:bild_morse_8}
-\end{figure}
+\largefig[.7]{images/cropped_pdfs/bild_morse_8.pdf}{Handstilar}{fig:bild_morse_8}
