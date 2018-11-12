@@ -1,14 +1,17 @@
 # Changelog
 Alla anmärkningsvärda ändringar till projektet dokumenteras här.
 
-Det här projektet använder [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
 
 ## [Unreleased]
 
-### Tillagt
+## [2.1.0] - 2018-10-24
 
-### Borttaget
+### Fixat
+- Appendix med HAREC-referenserna hade försvunnit. Återställt.
+
+
+## [2.0.0] - 2018-08-18
 
 ### Ändrat
 - Bytt felaktig användning av ordet ”decimal” till ”siffra”.
@@ -23,9 +26,10 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 - Ändrat O till Q i rapportkoder för kommeriell sjö och luftradiotrafik.
 
 
-## 2.0.0-RC.0 – 2017-09-10
+## [2.0.0-RC.1] - 2017-09-10
+
 ### Tillagt
-- Första version 2.0.0-RC.0 och `git tag` v2.0.0-RC.0 satt.
+- Första version 2.0.0-RC.1 och `git tag` v2.0.0-RC.1 satt.
 - [CEPT](https://cept.org) HAREC finns som detaljerat appendix med länkning till de textdelar som
   uppfyller dem.
 - Alla HAREC-krav har tillgodosets.
@@ -41,6 +45,10 @@ och följer [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-### Ändrat
+[Unreleased]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0...v2.1.0
+[2.0.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0-RC.1...v2.0.0
+[2.0.0-RC.1]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/8141940...v2.0.0-RC.1
 
-[Unreleased]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/8141940...HEAD
+[Keep a Changelog]: http://keepachangelog.com/en/1.0.0/
+[Semantic Versioning]: http://semver.org/spec/v2.0.0.html

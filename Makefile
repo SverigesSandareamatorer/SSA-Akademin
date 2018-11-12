@@ -12,7 +12,7 @@ help:
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-#all:	koncept.pdf
+all:	koncept.pdf
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
