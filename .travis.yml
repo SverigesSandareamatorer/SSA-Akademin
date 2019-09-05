@@ -1,6 +1,4 @@
 dist: bionic
-sudo: required
-
 language: minimal
 
 services:
