@@ -7,7 +7,7 @@ services:
 before_install:
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
-    language-pack-se \
+    language-pack-sv \
     sshpass"
 
 before_script:
