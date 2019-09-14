@@ -11,6 +11,7 @@ before_install:
     sshpass"
 
 before_script:
+  - update-locale LANG=sv_SE.UTF-8
   - make docker-image
 
 script:
