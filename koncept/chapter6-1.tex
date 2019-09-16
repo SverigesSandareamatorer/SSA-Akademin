@@ -94,8 +94,8 @@ Oftast multipliceras frekvensen två eller tre gånger i vart och ett av
 förstärkarstegen.
 
 Bild \ref{fig:bildII5-3} visar ett blockschema för en FM sändare för
-435~MHz (70~cm-bandet).
-Oscillatorfrekvensen är 8,056~MHz.
+\SI{435}{\mega\hertz} (70~cm-bandet).
+Oscillatorfrekvensen är \SI{8,056}{\mega\hertz}.
 I fyra av de efterföljande förstärkarna multipliceras frekvensen 2, 3, 3
 respektive 3~gånger, alltså totalt 54~gånger.
 Sändningsfrekvensen blir då \(8,056 \cdot 54 = 435\)~MHz.
@@ -103,8 +103,8 @@ Sändningsfrekvensen blir då \(8,056 \cdot 54 = 435\)~MHz.
 Variationer i oscillatorfrekvensen blir också multiplicerade.
 I detta exempel blir sändningsfrekvensens deviation 54~gånger större än
 oscillatorfrekvensens deviation.
-En deviation av max 3000~Hz från den nominella sändningsfrekvensen motsvaras
-av följande deviation från oscillatorfrekvensen,
+En deviation av max \SI{3000}{\hertz} från den nominella sändningsfrekvensen
+motsvaras av följande deviation från oscillatorfrekvensen,
 %%
 \[\Delta f = \frac{3000}{54} = 55,6\text{ [Hz]}\]
 %%
@@ -172,9 +172,10 @@ ett kristallfilter för att få god undertryckning av oönskat sidband.
 Denna SSB-signal flyttas till avsett frekvensband
 genom ännu en frekvensblandning och ytterligare filtrering.
 
-I exemplet är CO-frekvensen 9~MHz. VFO har frekvensområdet 5,0--5,5~MHz.
+I exemplet är CO-frekvensen \SI{9}{\mega\hertz}.
+VFO har frekvensområdet \SIrange{5,0}{5,5}{\mega\hertz}.
 Vid blandningen fås blandningsprodukter inom frekvensområdena
-14,0--14,5~MHz och 4,0--3,5~MHz.
+\SIrange{14,0}{14,5}{\mega\hertz} och \SIrange{4,0}{3,5}{\mega\hertz}.
 Genom att välja bandpassfilter kan man sända i ett av dessa frekvensområden.
 Efterföljande driv- och slutsteg utförs för att arbeta i detta frekvensband,
 antingen utan särskild avstämning -- så kallad bredbandigt utförande -- eller
@@ -375,7 +376,7 @@ modulerade signalen har när den kommer ut ur sändaren.
 Det är viktigt att den är begränsad så att den håller sig inom de gränser
 som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
 Till exempel kan en sändare anpassad för FM 25~kHz kanaldelning modulera för starkt för
-NFM 12,5~kHz kanaldelning och helt enkelt störa grann-kanalerna.
+NFM \SI{12,5}{\kilo\hertz} kanaldelning och helt enkelt störa grann-kanalerna.
 
 Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
 eftersom den förväntas kunna byta kanal.
@@ -411,9 +412,9 @@ Bandbredden på ljudsignalen, den så kallade \emph{ljudbandbredden} (eng.
 \emph{audio bandwidth}) in kan vara väldigt stor, och det är därför viktigt
 att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
 utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
-oftast 3~kHz för amatörradio.
-Bandbredden kan också behöva begränsas nedåt vid 300~Hz för att inte råka
-störa till exempel signalering med subtoner.
+oftast \SI{3}{\kilo\hertz} för amatörradio.
+Bandbredden kan också behöva begränsas nedåt vid \SI{300}{\hertz} för att inte
+råka störa till exempel signalering med subtoner.
 Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
 kunna skicka ut subtonssignaler, men även för andra former av signaler.
 
