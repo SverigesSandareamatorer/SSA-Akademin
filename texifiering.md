@@ -63,18 +63,12 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 10. Alla formler latexas och kvarvarande ”line-noise” tas bort.
 
-11. Formler med enhetsangivelser och liknande referenser i text skall också
-    latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
-    slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
-    mellan värde och dess prefix och enhet.
+11. Formler med enhetsangivelser och liknande referenser i text ska också
+    latexas till formler med hjälp av siunitx. T.ex. `\SI{1}{\joule}`.
 
     Kommentar: I matematiska formler där enheter ingår bör man
     omgärda enheter och storheter med `\mathrm{}` då det är bara
-    variabler som skall sättas kursivt egentligen. Om man vill undvika
-    radbrytning mellan mätetal och enhet kan man använda sig av
-    tecknet `~` (tilde) i löpande text, exempelvis *"...dipolantennen har
-    2,15~dB mer förstärkning än en tänkt isotrop antenn som strålar
-    lika i alla riktningar..."*. Slutligen
+    variabler som ska sättas kursivt egentligen.
 
 12. Tabeller latexas givetvis.
 
