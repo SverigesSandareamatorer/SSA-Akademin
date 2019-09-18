@@ -173,21 +173,24 @@ Detta fenomen uppstår alltid när man går mellan kontinuerlig och diskret tid.
 \end{figure*}
 
 Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
-3,6~kHz, 12,4~kHz och 38~kHz, samplas med samplingstakten 40 kS/s.
+\SI{3,6}{\kilo\hertz}, \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz}, samplas
+med samplingstakten 40~kS/s.
 Fallet med DC är uppenbart enkelt, alla punkterna hamnar på samma spänning.
-Vid en lågfrekvent sinus, som fallet är med 3,6~kHz här, får man punkter spridda
-över kurvan och de påminner om den ursprungliga sinusen, än mer om man knyter
-samman punkterna, vilket antivikningsfiltret i praktiken gör.
-En frekvens som är nära nyquistfrekvensen, såsom 12,4~kHz in i 40~kS/s och
-dess 20~kHz nyquistfrekvens, så är samplingspunkterna nästa helt alternerande
-mellan högsta och lägsta läge. I detta fall är det svårt att se den bakomliggande
-sinussignalen för ett otränat öga, men den kan fortfarande rekonstrueras med ett
-antialiasingfiltret.
-Ett ännu svårare fall är 38~kHz, där punkterna visar en sinus med 2~kHz, då
-frekvensen vikt sig ned runt nyquistfrekvensen, och eftersom infrekvensen är
-18~kHz över nyquistfrekvensen hamnar den därför 18~kHz under nyquistfrekvensen,
-det vill säga på 2~kHz i det här fallet. Denna vikning är det man försöker undvika med
-antivikningsfiltret, eftersom toner kan vika sig ned och bli störningar.
+Vid en lågfrekvent sinus, som fallet är med \SI{3,6}{\kilo\hertz} här, får man
+punkter spridda över kurvan och de påminner om den ursprungliga sinusen, än mer
+om man knyter samman punkterna, vilket antivikningsfiltret i praktiken gör.
+En frekvens som är nära nyquistfrekvensen, såsom \SI{12,4}{\kilo\hertz} in i
+40~kS/s och dess \SI{20}{\kilo\hertz} nyquistfrekvens, så är samplingspunkterna
+nästa helt alternerande mellan högsta och lägsta läge.
+I detta fall är det svårt att se den bakomliggande sinussignalen för ett otränat
+öga, men den kan fortfarande rekonstrueras med ett antialiasingfiltret.
+Ett ännu svårare fall är \SI{38}{\kilo\hertz}, där punkterna visar en sinus med
+\SI{2}{\kilo\hertz}, då frekvensen vikt sig ned runt nyquistfrekvensen, och
+eftersom infrekvensen är \SI{18}{\kilo\hertz} över nyquistfrekvensen hamnar den
+därför \SI{18}{\kilo\hertz} under nyquistfrekvensen, det vill säga på
+\SI{2}{\kilo\hertz} i det här fallet.
+Denna vikning är det man försöker undvika med antivikningsfiltret, eftersom
+toner kan vika sig ned och bli störningar.
 Denna vikning sker både vid själva samplingen och även omvänt när man lägger ut
 en signal analogt igen. Därför krävs filtrering i bägge riktningarna.
 
@@ -235,4 +238,4 @@ har kraftigt reducerat kraven.
 ADC och DAC köper man idag som färdiga integrerade kretsar, inte sällan med
 flera kanaler och det finns även de som har bägge integrerade i samma krets.
 Utvecklingen har gjort att man idag kan köpa 24-bitars 48~kS/s ADC och DAC med
-dynamiskt område bättre än 100~dB för väldigt låg kostnad.
+dynamiskt område bättre än \SI{100}{\decibel} för väldigt låg kostnad.

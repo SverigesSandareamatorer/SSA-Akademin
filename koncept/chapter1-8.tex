@@ -243,8 +243,9 @@ Alltså \(f_{HF} + f_{LF}\) (övre sidofrekvens) och skillnadsfrekvensen
 \(f_{HF} - f_{LF}\) (undre sidofrekvens).
 
 Eftersom tal inte bara omfattar en enda frekvens utan ett helt frekvensspektrum
-(ca 0,3--3~kHz) uppstår inte bara två sidofrekvenser utan två sidband, det
-lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper Side Band).
+(ca \SIrange{0,3}{3}{\kilo\hertz}) uppstår inte bara två sidofrekvenser utan två
+sidband, det lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper
+Side Band).
 
 LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
 Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
@@ -319,7 +320,7 @@ förhållande till nycklingshastigheten och dels till ''kantigheten'' på teckne
 vilket bestämmer övertonshalten i bärvågen.
 Vid så kallad mjuk nyckling kan den 9:e övertonen antas vara den högsta som
 uppfattas av en motstation.
-Med en nycklingsfrekvens av 5~Hz blir bandbredden inte större än
+Med en nycklingsfrekvens av \SI{5}{\hertz} blir bandbredden inte större än
 \(2 \cdot 10 \cdot 5 = 100\ Hz\).
 
 En hård (kantig) och snabb teckengivning ökar bandbredden och kan resultera i
@@ -380,7 +381,7 @@ Det undre sidbandet \SIrange{8997}{8999,7}{\kilo\hertz} faller utanför filtrets
 passband och blir också undertryckt.
 
 Ska däremot det undre sidbandet kunna passera igenom samma filter, så måste
-bärvågsfrekvensen höjas med 3~kHz, alltså till 9003~kHz.
+bärvågsfrekvensen höjas med \SI{3}{\kilo\hertz}, alltså till 9003~kHz.
 Då faller det undre sidbandet, 9002,7--9000,0~kHz inom filtrets passband.
 
 Det övre sidbandet 9003,3--9006,0~kHz faller nu utanför passbandet och blir
@@ -557,8 +558,8 @@ För att inte interferera med trafik på grannkanalerna måste såväl deviation
 frekvensen på den modulerande signalen begränsas.
 En deviationsbegränsare begränsar amplituden på denna signal.
 Ett lågpassfilter reducerar den distorsion, som uppstår av begränsningen.
-Vidare undertrycks modulerande frekvenser högre än 3~kHz, vilket är
-tillräckligt för överföring av tal.
+Vidare undertrycks modulerande frekvenser högre än \SI{3}{\kilo\hertz}, vilket
+är tillräckligt för överföring av tal.
 
 \paragraph{Jämförelse}
 
