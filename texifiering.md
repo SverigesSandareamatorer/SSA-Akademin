@@ -136,7 +136,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in `\,` som tusentalsavskiljare
+19. Tusentalsavskiljare läggs in som `\num{9000000}`.
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
@@ -149,10 +149,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
-22. Tecknet för grader ° skall kodas som `\degree`.
-    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med `~`
-    för annars kommer mellanslaget kernas bort.
-    För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
+22. Grader kodas som `\ang{90}`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
