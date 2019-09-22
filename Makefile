@@ -91,10 +91,19 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex koncept.tex
 #	- xelatex koncept.tex
 
+koncept-tryck.aux: koncept-tryck.tex $(KONCEPT_FILES)
+	- pdflatex koncept-tryck.tex
+#	- xelatex koncept.tex
+
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
+	pdflatex koncept.tex
+	bibtex koncept.aux
+#	bibtex koncept.aux
+
+koncept-tryck.bbl: koncept-tryck.aux koncept.bib
 	pdflatex koncept-tryck.tex
 	bibtex koncept-tryck.aux
 #	bibtex koncept.aux
@@ -133,7 +142,7 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	-xelatex koncept-refbok.tex
 	xelatex koncept-refbok.tex
 
-koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
+koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.tex $(KONCEPT_FILES)
 	pdflatex koncept-tryck.tex
 	pdflatex koncept-tryck.tex
 
