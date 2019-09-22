@@ -91,16 +91,31 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex koncept.tex
 #	- xelatex koncept.tex
 
+koncept-tryck.aux: koncept-tryck.tex $(KONCEPT_FILES)
+	- pdflatex koncept-tryck.tex
+#	- xelatex koncept.tex
+
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
+koncept-tryck.idx: koncept-tryck.tex koncept-tryck.aux $(KONCEPT_FILES)
+	- pdflatex koncept-tryck.tex
+
 koncept.bbl: koncept.aux koncept.bib
+	pdflatex koncept.tex
+	bibtex koncept.aux
+#	bibtex koncept.aux
+
+koncept-tryck.bbl: koncept-tryck.aux koncept.bib
 	pdflatex koncept-tryck.tex
 	bibtex koncept-tryck.aux
 #	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx
+
+koncept-tryck.ind: koncept-tryck.idx
+	makeindex koncept-tryck.idx
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
@@ -133,7 +148,7 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	-xelatex koncept-refbok.tex
 	xelatex koncept-refbok.tex
 
-koncept-tryck.pdf: koncept.bbl koncept-tryck.tex $(KONCEPT_FILES)
+koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCEPT_FILES)
 	pdflatex koncept-tryck.tex
 	pdflatex koncept-tryck.tex
 
@@ -167,12 +182,12 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 
 # TODOs
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
-	rm TODOs
-#	grep -n TODO *.tex koncept/*.tex > TODOs
-#	grep HAREC koncept.log >> TODOs
-#	grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
-#	grep Missing koncept.log >> TODOs
-#	grep LaTeX koncept.log | grep Warning >> TODOs
+	rm -f TODOs
+	- grep -n TODO *.tex koncept/*.tex > TODOs
+	- grep HAREC koncept.log >> TODOs
+	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
+	- grep Missing koncept.log >> TODOs
+	- grep LaTeX koncept.log | grep Warning >> TODOs
 	wc -l TODOs
 
 # Länkade bilder
