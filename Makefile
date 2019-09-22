@@ -98,6 +98,9 @@ koncept-tryck.aux: koncept-tryck.tex $(KONCEPT_FILES)
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
+koncept-tryck.idx: koncept-tryck.tex koncept-tryck.aux $(KONCEPT_FILES)
+	- pdflatex koncept-tryck.tex
+
 koncept.bbl: koncept.aux koncept.bib
 	pdflatex koncept.tex
 	bibtex koncept.aux
