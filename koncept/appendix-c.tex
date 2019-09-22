@@ -39,15 +39,16 @@ I samtliga fall rör det sig om förhållandet mellan två storheter --
 \emph{aldrig absoluta storheter}.
 
 Exempel: Ett drivsteg i en sändare drivs med 1~watt och avger 10~watt.
-Effektförhållandet är 10:1 och effektförstärkningen är 10 gånger
-eller 10~dB. Slutförstärkaren i samma sändare drivs med 10~watt från
-drivsteget och avger 100~watt till antennen. Även i detta fall är
-effektförhållandet 10:1 och effektförstärkningen 10 gånger eller 10
-dB.
+Effektförhållandet är 10:1 och effektförstärkningen är 10 gånger eller
+\SI{10}{\decibel}.
+Slutförstärkaren i samma sändare drivs med 10~watt från drivsteget och avger
+100~watt till antennen.
+Även i detta fall är effektförhållandet 10:1 och effektförstärkningen 10 gånger
+eller \SI{10}{\decibel}.
 
-Slutförstärkaren hanterar en 10 gånger så hög effektnivå som
-drivsteget och ändå är förstärkningen 10~dB i båda fallen. Decibel är
-m.a.o. dimensionslöst.
+Slutförstärkaren hanterar en 10 gånger så hög effektnivå som drivsteget och ändå
+är förstärkningen \SI{10}{\decibel} i båda fallen.
+Decibel är m.a.o. dimensionslöst.
 
 Men om en av två jämförda effekterna alltid är densamma och väl
 definierad så medges nya möjligheter. Den effekt som ska
@@ -57,33 +58,35 @@ effektnivåerna, till exempel genom en sändare uttryckas i decibel. Detta
 tillgår på följande sätt.
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av 50~\(\Omega\). För god anpassning väljs då koaxialkablarna
-mellan apparaterna med en karaktäristisk impedans av 50~\(\Omega\).
+med en impedans av \SI{50}{\ohm}.
+För god anpassning väljs då koaxialkablarna mellan apparaterna med en
+karaktäristisk impedans av \SI{50}{\ohm}.
 
 \emph{Det har utbildats en praxis, att referensvärdet vid jämförelse
   av signalnivåer i radiosystem ska vara en milliwatt (1~mW)
-  utvecklad i en belastning med impedansen 50~\(\Omega\).}
+  utvecklad i en belastning med impedansen \SI{50}{\ohm}.}
 
-Signalnivåer över belastningen 50~\(\Omega\) kan uttryckas i dB(m), där (m)
-står för milliwatt, varvid referenseffekten 1~mW är 0~dB(m) vid 50~\(\Omega\).
+Signalnivåer över belastningen \SI{50}{\ohm} kan uttryckas i dB(m), där (m)
+står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} är 0~dB(m) vid
+\SI{50}{\ohm}.
 
-Det spänningsfall som bildas över belastningen 50~\(\Omega\) vid effektnivån
+Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
 0~dB(m) är
 %%
 \[U = \sqrt{P\cdot R} = 1\cdot 10^{-3} \cdot 50 \approx 0.224 \text{ V}\]
 %%
-Den ström som flyter genom belastningen 50~\(\Omega\) vid effektnivån 0~dB(m)
+Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0~dB(m)
 är
 %%
 \[
 I = \sqrt{P}{R} = \sqrt{1\cdot 10^{-3}}{50} = 0.0045 \text{ A} = 4.5 \text{ mA}
 \]
 %%
-Strömmen 4,5~mA genom belastningen 50~\(\Omega\) motsvarar således 0~dB(m).
+Strömmen 4,5~mA genom belastningen \SI{50}{\ohm} motsvarar således 0~dB(m).
 
-Varje annan effekt, spänningsfall och ström som uppstår vid en
-belastning av 50 \(\Omega\) kan jämföras med respektive referensvärden 1~mW,
-0,22~V och 4,5~mA.
+Varje annan effekt, spänningsfall och ström som uppstår vid en belastning av
+\SI{50}{\ohm} kan jämföras med respektive referensvärden \SI{1}{\milli\watt},
+\SI{0,22}{\volt} och \SI{4,5}{\milli\ampere}~mA.
 \emph{dB(m) är ett absolut och logaritmiskt mått.}
 
 \noindent
@@ -136,8 +139,8 @@ Spänning:
 \emph{dB(W) är ett annat absolut mått.}
 Effektnivåer över en belastning kan också uttryckas i dB(W), där (W) står
 för watt.
-Referenseffekten är då 1~W, det vill säga 0~dB(W).
+Referenseffekten är då \SI{1}{\watt}, det vill säga 0~dB(W).
 Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas
 över.
 Exempelvis motsvarar 26~dB(W) 398~W (se tabellen för sambandet mellan
-effektförhållande och dB).
+effektförhållande och \si{\decibel}).

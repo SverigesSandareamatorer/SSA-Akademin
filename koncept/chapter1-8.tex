@@ -170,7 +170,7 @@ Bild \ref{fig:BildII1-23} illustrerar modulerade signaler.
 Ett vanligt sätt att överföra information över radio är med telefoni, det vill
 säga tal.
 
-Frekvensområdet 300--3000~Hz räcker för god förståelighet av tal.
+Frekvensområdet \SIrange{300}{3000}{\hertz} räcker för god förståelighet av tal.
 Dels är örat känsligast inom det området och dels finns där den mesta energin
 i talet.
 
@@ -213,7 +213,7 @@ amplitudmodulation med
 
 \textbf{Försök}
 
-Modulera en A3E-sändare med en 3~kHz-signal.
+Modulera en A3E-sändare med en \SI{3}{\kilo\hertz}-signal.
 Med en mottagare utrustad med ett smalt filter för telegrafi, kan man urskilja
 och påvisa bärvågen och de båda sidbanden.
 
@@ -243,16 +243,17 @@ Alltså \(f_{HF} + f_{LF}\) (övre sidofrekvens) och skillnadsfrekvensen
 \(f_{HF} - f_{LF}\) (undre sidofrekvens).
 
 Eftersom tal inte bara omfattar en enda frekvens utan ett helt frekvensspektrum
-(ca 0,3--3~kHz) uppstår inte bara två sidofrekvenser utan två sidband, det
-lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper Side Band).
+(ca \SIrange{0,3}{3}{\kilo\hertz}) uppstår inte bara två sidofrekvenser utan två
+sidband, det lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper
+Side Band).
 
 LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
 Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
 dubbelt så stor som den högsta modulerande LF-frekvensen:
 \(b= 2 \cdot f_{LFmax}\)
 
-Om de modulerande LF-frekvenserna är mellan 0,3 och 3~kHz blir sändningens
-totala bandbredd 6~kHz.
+Om de modulerande LF-frekvenserna är mellan 0,3 och \SI{3}{\kilo\hertz} blir
+sändningens totala bandbredd \SI{6}{\kilo\hertz}.
 
 LF-signalernas amplitud påverkar sidbandens och sidofrekvensernas amplitud.
 Vid maximal modulation (100~\% modulationsgrad) varierar signalamplituden mellan
@@ -306,18 +307,20 @@ Det beror på att den takt, som sändaren nycklas med, egentligen är en ton --
 låt vara med låg frekvens.
 Antag att sändaren nycklas med en serie korta morsetecken.
 Vid telegraferingshastigheten 60~tecken/minut alstrar bärvågspulserna en kantvåg
-med frekvensen 5~Hz.
+med frekvensen \SI{5}{\hertz}.
 Som tidigare beskrivits, består en sådan kantvåg av summan av sinussignaler med
-frekvenserna 5~Hz, 15~Hz, 25~Hz, 35~Hz och så vidare.
+frekvenserna \SI{5}{\hertz}, \SI{15}{\hertz}, \SI{25}{\hertz}, \SI{35}{\hertz}
+och så vidare.
 
 Det innebär att det uppstår sidofrekvenser över och under bärvågens frekvens och
-med ett avstånd till bärvågen av 5~Hz, 15~Hz, 25~Hz, 35~Hz osv.
+med ett avstånd till bärvågen av \SI{5}{\hertz}, \SI{15}{\hertz},
+\SI{25}{\hertz}, \SI{35}{\hertz} osv.
 Telegrafisändaren har alltså liksom vid A3E en bandbredd, som dels står i
 förhållande till nycklingshastigheten och dels till ''kantigheten'' på tecknen,
 vilket bestämmer övertonshalten i bärvågen.
 Vid så kallad mjuk nyckling kan den 9:e övertonen antas vara den högsta som
 uppfattas av en motstation.
-Med en nycklingsfrekvens av 5~Hz blir bandbredden inte större än
+Med en nycklingsfrekvens av \SI{5}{\hertz} blir bandbredden inte större än
 \(2 \cdot 10 \cdot 5 = 100\ Hz\).
 
 En hård (kantig) och snabb teckengivning ökar bandbredden och kan resultera i
@@ -369,16 +372,16 @@ Den signal som sänds ut innehåller därför endast ett sidband (Single Side Ba
 \tallfig[0.5]{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
 
 Bild \ref{fig:BildII1-28} illustrerar sidbandsval vid SSB-modulering.
-Ett SSB-filter har ett passband av 9000,3--9003~kHz.
-Vid bärvågsfrekvensen 9000~kHz sträcker sig det övre sidbandet från
-9000,3--9003~kHz och släpps igenom.
+Ett SSB-filter har ett passband av \SIrange{9000,3}{9003}{\kilo\hertz}.
+Vid bärvågsfrekvensen \SI{9000}{\kilo\hertz} sträcker sig det övre sidbandet
+från \SIrange{9000,3}{9003}{\kilo\hertz} och släpps igenom.
 Däremot blir bärvågsfrekvensen undertryckt.
 
-Det undre sidbandet 8997--8999,7~kHz faller utanför filtrets passband och blir
-också undertryckt.
+Det undre sidbandet \SIrange{8997}{8999,7}{\kilo\hertz} faller utanför filtrets
+passband och blir också undertryckt.
 
 Ska däremot det undre sidbandet kunna passera igenom samma filter, så måste
-bärvågsfrekvensen höjas med 3~kHz, alltså till 9003~kHz.
+bärvågsfrekvensen höjas med \SI{3}{\kilo\hertz}, alltså till 9003~kHz.
 Då faller det undre sidbandet, 9002,7--9000,0~kHz inom filtrets passband.
 
 Det övre sidbandet 9003,3--9006,0~kHz faller nu utanför passbandet och blir
@@ -464,8 +467,8 @@ vid varje tillfälle proportionell mot den modulerande signalens amplitud.
 Sålunda är deviationen liten när den modulerande signalens amplitud är liten
 och störst när amplituden når sitt toppvärde, antingen amplituden är positiv
 eller negativ.
-Vid en modulationsfrekvens av 300~Hz varierar bärvågsfrekvensen 300 gånger per
-sekund, vid 3~kHz varierar den 3000 gånger per sekund.
+Vid en modulationsfrekvens av \SI{300}{\hertz} varierar bärvågsfrekvensen 300
+gånger per sekund, vid \SI{3}{\kilo\hertz} varierar den 3000 gånger per sekund.
 
 Likspänningsnivåer kan överföras med FM, eftersom en motsvarande
 frekvensavvikelse kan framställas.
@@ -555,8 +558,8 @@ För att inte interferera med trafik på grannkanalerna måste såväl deviation
 frekvensen på den modulerande signalen begränsas.
 En deviationsbegränsare begränsar amplituden på denna signal.
 Ett lågpassfilter reducerar den distorsion, som uppstår av begränsningen.
-Vidare undertrycks modulerande frekvenser högre än 3~kHz, vilket är
-tillräckligt för överföring av tal.
+Vidare undertrycks modulerande frekvenser högre än \SI{3}{\kilo\hertz}, vilket
+är tillräckligt för överföring av tal.
 
 \paragraph{Jämförelse}
 
@@ -671,7 +674,7 @@ modulationsindex varierar med den modulerande frekvensen.
   frekvensgång.
   Vid samtidig användning av PM-sändare och FM-mottagare är det alltså lämpligt
   att justera frekvensgången i PM-sändarens modulator, lämpligen
-  med 6~dB dämpning per oktav ökad frekvens.
+  med \SI{6}{\decibel} dämpning per oktav ökad frekvens.
 \end{itemize}
 
 \subsection{Pulsmodulation}
@@ -684,8 +687,8 @@ Pulsmodulation används mest i mikrovågsområdet.
 Pulsmodulerade signaler sänds vanligen som en serie korta pulser åtskilda av
 relativt långa pauser utan modulering.
 
-En typisk sändning kan bestå av pulser med en längd av 1 \(\mu\)s och en
-frekvens av 1000~Hz.
+En typisk sändning kan bestå av pulser med en längd av \SI{1}{\micro\second} och
+en frekvens av \SI{1000}{\hertz}.
 Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
 
 Före WARC~79 var symbolen för all pulssändning P.
@@ -1327,7 +1330,7 @@ så kallad EME-trafik.
 
 JT9 används för kortvågstrafik och är snarlikt JT65, men använder sig av en
 FSK-signal med nio toner.
-JT9 använder sig av mindre än 16~Hz bandbredd.
+JT9 använder sig av mindre än \SI{16}{\hertz} bandbredd.
 
 FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal.
 
@@ -1355,10 +1358,12 @@ Fördelen ska vara att överföringen blir ner robust samt att signaleringen är
 utformad för att motverka påverkan av fädning.
 
 FreeDV använder en något mer komplex modulering.
-Man använder sig av ett flertal bärvågor inom dess bandbredd på 1,25~kHz.
-Bärvägorna ligger med 75~Hz mellanrum och varje bärvåg moduleras med varianter
-av PSK-modulering.
-Bandbredden är hälften (1,25~kHz) av en normal SSB-bandbredd (2,4~kHz).
+Man använder sig av ett flertal bärvågor inom dess bandbredd på
+\SI{1,25}{\kilo\hertz}.
+Bärvägorna ligger med \SI{75}{\hertz} mellanrum och varje bärvåg moduleras med
+varianter av PSK-modulering.
+Bandbredden är hälften (\SI{1,25}{\kilo\hertz}) av en normal SSB-bandbredd
+(\SI{2,4}{\kilo\hertz}).
 
 %%% Local Variables: ***
 %%% mode: latex ***

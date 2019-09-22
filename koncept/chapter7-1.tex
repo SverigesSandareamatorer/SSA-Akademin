@@ -83,8 +83,10 @@ utförande, påverkan från jordplan och omgivning med mera.
 Ett förhållande mellan längd och tjocklek av 10000 ger till exempel en cirka 2~\%
 mekaniskt kortare antenn.
 Förhållandet 30 ger en cirka 5~\% kortare antenn.
-Det första värdet kan passa för en 2~mm tjock halvvågsantenn för 7~MHz.
-Det andra värdet för en 3,5~mm tjock halvvågsantenn för 145~MHz.
+Det första värdet kan passa för en \SI{2}{\milli\metre} tjock halvvågsantenn för
+\SI{7}{\mega\hertz}.
+Det andra värdet för en \SI{3,5}{\milli\metre} tjock halvvågsantenn för
+\SI{145}{\mega\hertz}.
 Diagram för den så kallade förkortningsfaktorn finns i de flesta
 antennhandböcker.
 
@@ -102,7 +104,7 @@ c = \lambda \cdot f
 \quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
 \]
 %%
-Elektriska våglängden för 7~MHz är:
+Elektriska våglängden för \SI{7}{\mega\hertz} är:
 %%
 \[
 \lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
@@ -138,20 +140,20 @@ Bild \ref{fig:bildII6-1} visar att i vardera änden av antennen uppnår spännin
 ett maximum (en strömbuk).
 Antennen strålar mest där strömbuken finns.
 
-Tag till exempel en 40~meter lång metalltråd som antenn.
-Frekvensen för grundresonansen är cirka 3,5~MHz, men den är även i resonans på
-de harmoniska övertonerna (7, 14, 21, 28~MHz osv.).
+Tag till exempel en \SI{40}{\metre} lång metalltråd som antenn.
+Frekvensen för grundresonansen är cirka \SI{3,5}{\mega\hertz}, men den är även i
+resonans på de harmoniska övertonerna (7, 14, 21, \SI{28}{\mega\hertz} osv.).
 
 Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid
 de respektive övertonerna.
 
-För 80~m (3,5~MHz) är matningspunkten ett i spänningsminimum (en spänningsnod)
-och ett strömmaximum (en strömbuk).
+För \SI{80}{\metre} (\SI{3,5}{\mega\hertz}) är matningspunkten ett i
+spänningsminimum (en spänningsnod) och ett strömmaximum (en strömbuk).
 Strömmen är hög därför att matningspunkten har låg impedans.
 
-Samma antenn på 40~m, 20~m, 15~m, 10~m (7, 14, 21, 28~MHz) har ett
-spänningsmaximum (spänningsbuk) och ett strömminimum (strömnod) i
-matningspunkten, som då har hög impedans.
+Samma antenn på \SI{40}{\metre}, \SI{20}{\metre}, \SI{15}{\metre},
+\SI{10}{\metre} (7, 14, 21, 28~MHz) har ett spänningsmaximum (spänningsbuk) och
+ett strömminimum (strömnod) i matningspunkten, som då har hög impedans.
 
 Ur horisontaldiagrammet för antennen kan utläsas att ytterligare
 strålningskäglor (strålningslober) utvecklas för varje överton i den
@@ -181,7 +183,7 @@ strömmen är låg och spänningen är hög.
 
 När antennen, mätt i våglängder, befinner sig mycket högt över jordytan, det
 vill säga utan nämnvärd påverkan från omgivningen är impedansen i mittpunkten
-73~\(\Omega\) på grundfrekvensen.
+\SI{73}{\ohm} på grundfrekvensen.
 I praktiken kan impedansen avvika mycket från detta värde.
 
 Antenn och matningskabel måste vara impedansanpassade till varandra
@@ -201,9 +203,9 @@ Se avsnitt \ref{transmissionsledningar} i detta kapitel.
 Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet
 med mittmatade partier på 2:a harmoniska övertonen, det vill säga dubbla
 grundfrekvensen.
-På 80- och 40~m-banden är antennens matningsimpedans cirka 60~\(\Omega\) och på de
-högre banden cirka 100~\(\Omega\).
-En kompromiss är att mata denna antenn med en 75~\(\Omega\)-kabel för att inte
+På 80- och 40~m-banden är antennens matningsimpedans cirka \SI{60}{\ohm} och på de
+högre banden cirka \SI{100}{\ohm}.
+En kompromiss är att mata denna antenn med en \SI{75}{\ohm}-kabel för att inte
 få alltför stor missanpassning på något band.
 
 \paragraph{Den omvikta dipolen (folded dipole):}
@@ -212,9 +214,9 @@ få alltför stor missanpassning på något band.
 \index{folded dipol}
 \index{antenn!folded dipol}
 
-Matningsimpedansen är cirka 240~\(\Omega\).
-En bandkabel med impedansen 300~\(\Omega\) kan användas alternativt en
-koaxialkabel med impedansen 50 eller 75~\(\Omega\) över en transformator med
+Matningsimpedansen är cirka \SI{240}{\ohm}.
+En bandkabel med impedansen \SI{300}{\ohm} kan användas alternativt en
+koaxialkabel med impedansen 50 eller \SI{75}{\ohm} över en transformator med
 impedansomsättningen 4:1.
 
 \paragraph{Jordplanantennen (GP-antennen):}
@@ -223,10 +225,10 @@ impedansomsättningen 4:1.
 \index{GP-antenn}
 \index{antenn!GP}
 
-Matningsimpedansen är 30--60~\(\Omega\).
+Matningsimpedansen är \SIrange{30}{60}{\ohm}.
 När jordplanets spröt inte riktas horisontellt, utan snett nedåt, erhålls en
-matningsimpedans av 50~\(\Omega\), vilket passar bra för en koaxialkabel med
-50~\(\Omega\) impedans.
+matningsimpedans av \SI{50}{\ohm}, vilket passar bra för en koaxialkabel med
+\SI{50}{\ohm} impedans.
 
 \paragraph{Yagi- och Quad-antenner:}
 \index{yagiantenn}
@@ -236,9 +238,10 @@ matningsimpedans av 50~\(\Omega\), vilket passar bra för en koaxialkabel med
 \index{quadantenn}
 \index{antenn!Quad}
 
-En anpassningsanordning för anslutning av 50~\(\Omega\) koaxialkabel ingår
+En anpassningsanordning för anslutning av \SI{50}{\ohm} koaxialkabel ingår
 oftast i fabriksgjorda riktantenner.
-En 50~\(\Omega\) koaxialkabel kan då anslutas direkt till antennens matningspunkt.
+En \SI{50}{\ohm} koaxialkabel kan då anslutas direkt till antennens
+matningspunkt.
 
 \subsubsection{Reaktansen i en icke-resonant antenn}
 \harec{a}{6.2.3}{6.2.3}
@@ -320,10 +323,11 @@ vid HF-utgången.
 Syftet är att kunna anpassa sändarens utgångsimpedans till impedansen i
 antennledningen.
 I moderna sändare består denna anordning mycket ofta av ett så kallat
-\(\pi \)-filter, vars utgångsimpedans kan variera mellan cirka 30--150~\(\Omega\).
+\(\pi \)-filter, vars utgångsimpedans kan variera mellan cirka
+\SIrange{30}{150}{\ohm}.
 
 Ett transistoriserat slutsteg är oftast utfört för en fast utgångsimpedans av
-50~\(\Omega\) och är alltså i behov av en avstämningsanordning, om inte
+\SI{50}{\ohm} och är alltså i behov av en avstämningsanordning, om inte
 antennsystemet inom vissa gränser håller samma impedans.
 Toleransgränsen för felanpassning brukar vara ett SVF av storleksordningen 2:1
 innan sändarens skyddskretsar automatiskt minskar uteffekten.
@@ -426,8 +430,8 @@ Se kapitel \ref{decibel} om decibelbegreppet.
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
 %%
-6~dB antennförstärkning motsvarar en fördubblad fältstyrka [V/m], det vill säga
-1~S-enhets ökning vid den mottagande stationen, liksom att 6~dB
+\SI{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka [V/m], det vill säga
+1~S-enhets ökning vid den mottagande stationen, liksom att \SI{6}{\decibel}
 antennförstärkning motsvarar en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
 
 \newpage

@@ -63,8 +63,8 @@ och mottagare och antenn.
 Om gemensam antenn används, så kopplas dessa kavitetsfilter ihop till vad som
 kallas \emph{duplexfilter}.
 
-För en lyckad duplex-operation krävs i allmänhet mer än 100~dB isolation mellan
-sändare och mottagare.
+För en lyckad duplex-operation krävs i allmänhet mer än \SI{100}{\decibel}
+isolation mellan sändare och mottagare.
 Mottagarens kavitetsfilter trimmas så att det får en djup \emph{utsläckning}
 (eng. \emph{notch}) vid sändarens frekvens, men med så lite förlust som möjligt
 på mottagarens frekvens.
@@ -113,7 +113,8 @@ förstärkarsteg för att ge sändningsfrekvensen.
 Bilden visar räkneexempel för två frekvenskanaler.
 Det frekvenssving i oscillatorn, som alstras av modulatorn,
 multipliceras också med 12.
-För ett sving av 3~kHz på bärvågen är svinget på oscillatorn bara 250~Hz.
+För ett sving av \SI{3}{\kilo\hertz} på bärvågen är svinget på oscillatorn bara
+\SI{250}{\hertz}.
 
 Efter mikrofonförstärkaren följer en amplitudbegränsare, som ska
 hålla deviationen inom ett givet maxvärde, oavsett signalstyrkan från
@@ -132,16 +133,16 @@ HF-förstärkare för att i 1:a blandaren blandas med en lokal signal.
 En kristallstyrd lokaloscillator med efterföljande
 frekvensmultipliceringssteg alstrar denna signal.
 
-Lokaloscillatorkedjans utfrekvens läggs 10,7~MHz över eller under
-mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen
-blir då 10,7~MHz.
+Lokaloscillatorkedjans utfrekvens läggs \SI{10,7}{\mega\hertz} över eller under
+mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen blir då
+\SI{10,7}{\mega\hertz}.
 Skilda oscillatorer används vid sändning respektive mottagning varför
 styrkristallerna för sändning respektive mottagning på en given kanal får
 olika frekvens.
 Vid omkoppling till en annan kanal väljs ett annat kristallpar, vilket
 lämpligen sker med samma omkopplare.
 
-Den relativt höga 1:a mellanfrekvensen 10,7~MHz ger ett så stort
+Den relativt höga 1:a mellanfrekvensen \SI{10,7}{\mega\hertz} ger ett så stort
 avstånd till spegelfrekvensen, att bandbredden i förselektionsfiltren
 är tillräckligt smal för att undertrycka spegelfrekvensen.
 Av samma skäl bör 1:a mellanfrekvensen i en UHF-mottagare väljas ytterligare
@@ -172,8 +173,9 @@ VCO används även som lokaloscillator i mottagaren.
 Eftersom sändaren och mottagaren ska användas på samma frekvens
 (simplextrafik), måste i detta koncept VCO-frekvensen vara olika vid
 sändning och mottagning.
-Eftersom mottagarens mellanfrekvens MF är 10,7~MHz måste nämligen VCO
-ligga 10,7~MHz högre eller lägre vid mottagning än vid sändning.
+Eftersom mottagarens mellanfrekvens MF är \SI{10,7}{\mega\hertz} måste nämligen
+VCO ligga \SI{10,7}{\mega\hertz} högre eller lägre vid mottagning än vid
+sändning.
 Vid sändning däremot, är VCO-frekvensen densamma som sändningsfrekvensen.
 
 Den programmerbara frekvensdelaren i PLL-kretsen arbetar därför med
@@ -244,8 +246,8 @@ förkretsar, MF-filter och kristalloscillatorer har dubbel användning.
 Funktionsblocken visas inplacerade i sina alternativa
 funktioner, däremot inte omkopplingsanordningarna.
 
-Vid sändning och mottagning av CW förbikopplas den balanserade
-modulatorn och kristallfiltret i signalbehandlingskretsarna för 9~MHz.
+Vid sändning och mottagning av CW förbikopplas den balanserade modulatorn och
+kristallfiltret i signalbehandlingskretsarna för \SI{9}{\mega\hertz}.
 För mottagning av CW ändras BFO-frekvensen i mottagaren så att
 det hörs en svävningston när en bärvåg tas emot.
 Utan denna frekvensändring skulle endast bärvågsbruset höras.
@@ -276,8 +278,8 @@ Den steglösa frekvenstäckningen som innefattar mellanvågs- och kortvågsområ
 För sändningsfunktionen kan tillkomma blockeringskretsar, som förhindrar
 sändning utanför tillåtna frekvensband.
 
-Denna förenklade beskrivning omfattar inte kristalloscillatorerna för
-9 och 61~MHz i fasregleringskretsen och inte heller SSB-modulatorn,
+Denna förenklade beskrivning omfattar inte kristalloscillatorerna för 9 och
+\SI{61}{\mega\hertz} i fasregleringskretsen och inte heller SSB-modulatorn,
 FM-modulatorn och anordningarna för CW-sändning.
 
 Mottagaren är en dubbelsuper med hög 1:a MF-frekvens.
