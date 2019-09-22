@@ -305,7 +305,7 @@ kopplar till varandra på olika sätt.
 %
 \textbf{Räkneexempel:}
 Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
-induktans av 2~\(\mu H\).
+induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
 Vardera induktansen ökas därför med \(M = 2\ \mu H\).
@@ -317,8 +317,8 @@ Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 \end{array}
 \]
 \textbf{Räkneexempel:}
-Två induktorer har en induktans av 20 respektive 10~\(\mu H\) och en ömsesidig
-induktans av 2~\(\mu H\).
+Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
+ömsesidig induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
 Vardera induktansen minskas därför med \(M = 2\ \mu H\).
 \[
@@ -961,8 +961,8 @@ Formeln gäller både för parallell- och seriekretsar.
 
 En enkel framställning görs av hur impedans, reaktans och resistans förhåller
 sig inbördes när en resonanskrets är i resonans.
-Som exempel används följande kretsdata: Induktans 200~\(\mu H\),
-kapacitans 200~pF, förlustresistans 10~\(\Omega\).
+Som exempel används följande kretsdata: Induktans \SI{200}{\micro\henry},
+kapacitans \SI{200}{\pico\farad}, förlustresistans \SI{10}{\ohm}.
 
 \subsubsection{Resonansfallet i en parallellkrets}
 \label{parallellresonans}
@@ -1033,18 +1033,18 @@ Med ovanstående kretsdata blir resonansfrekvensen:
 f_0 = \frac{1}{2\pi \sqrt{LC}} \approx 796\ kHz
 \]
 %
-Vid resonansfrekvensen blir reaktansen 1000~\(\Omega\) både för induktansen och
+Vid resonansfrekvensen blir reaktansen \SI{1000}{\ohm} både för induktansen och
 kapacitansen.
 Eftersom reaktansernas spänningsfall är motriktade tar de ut varandra.
 Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
-Antag att det alstras en spänning av 5~mV i antennkretsen.
+Antag att det alstras en spänning av \SI{5}{\milli\volt} i antennkretsen.
 Strömmen genom den vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
 
 Av strömmen bildas reaktiva spänningar, det vill säga
 \(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans
-(som tar ut varandra) och 5~mV över resistansen.
+(som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \harec{a}{3.2.5}{3.2.5}

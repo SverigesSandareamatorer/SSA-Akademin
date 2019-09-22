@@ -62,9 +62,9 @@ En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 %% \end{center}
 %% \end{figure}
 
-Antag att den inmatade effekten P är 1~W.
+Antag att den inmatade effekten P är \SI{1}{\watt}.
 Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna
-effekten 1~W.
+effekten \SI{1}{\watt}.
 
 \emph{Effektförhållandet} mellan in- och utgångarna är då:
 %%
@@ -73,11 +73,12 @@ effekten 1~W.
 Oförändrad effekt varken dämpas eller förstärks, varför både dämpningen och
 förstärkningen har talvärdet 0.
 Enheten på talvärdet är Bel, dämpningen eller förstärkningen är således 0~Bel.
-En tiondel därav är 0~decibel (0~dB).
+En tiondel därav är 0~decibel (\SI{0}{\decibel}).
 
-Omräkning av kvoten av en effektändring till dB görs så, att 10-logaritmen för
-kvoten söks och resultatet blir effektändringen uttryckt i Bel (B). Om
-resultatet uttrycks i dB, ska Bel-värdet multipliceras med 10.
+Omräkning av kvoten av en effektändring till \si{\decibel} görs så, att
+10-logaritmen för kvoten söks och resultatet blir effektändringen uttryckt i Bel
+(B).
+Om resultatet uttrycks i \si{\decibel}, ska Bel-värdet multipliceras med 10.
 
 Logaritmer förklaras i bilaga \ref{logaritmer}.
 
@@ -112,7 +113,7 @@ Följande avrundade värden kan utläsas:
 \end{center}
 
 Det vill säga vid ökning fördubblas effekten för var 3:e dB och vid minskning
-halveras effekten för var 3:e dB.
+halveras effekten för var 3:e \si{\decibel}.
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
@@ -131,8 +132,8 @@ Kvot av & Analys             & Skriv            & dB \\
 \index{ström!dB}
 \index{dB!ström}
 
-Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i dB,
-men annorlunda än mellan effekter.
+Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i
+\si{\decibel}, men annorlunda än mellan effekter.
 En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
 jämförelse.
 
@@ -190,8 +191,9 @@ Följande avrundade värden kan utläsas:
 \end{tabular}
 \end{center}
 
-Det vill säga vid ökning fördubblas strömmen resp. spänningen för var 6:e dB
-och att vid minskning halveras strömmen resp. spänningen för var 6:e dB.
+Det vill säga vid ökning fördubblas strömmen resp. spänningen för var 6:e
+\si{\decibel} och att vid minskning halveras strömmen resp. spänningen för var
+6:e \si{\decibel}.
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
@@ -212,10 +214,10 @@ enligt följande tabell.
 
 \section{dB med miniräknare}
 
-När beräkningen av förstärkning eller dämpning uttryckt i dB görs med
+När beräkningen av förstärkning eller dämpning uttryckt i \si{\decibel} görs med
 miniräknare låter man räknaren sköta hela beräkningen.
 
-Med miniräknare skrivs uttrycken för dB så här:
+Med miniräknare skrivs uttrycken för \si{\decibel} så här:
 
 För effekt \(a[dB] = 10\log \dfrac{P_\text{ut}}{P_\text{in}}\)
 
@@ -229,34 +231,36 @@ förstärkning och negativa svar för dämpning.
 \section{Decibel över 1 mW vid 50 ohm [dB(m)]}
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av 50~\(\Omega\).
+med en impedans av \SI{50}{\ohm}.
 För god anpassning väljs då koaxialkablarna mellan apparaterna med en
-karaktäristisk impedans av 50~\(\Omega\).
+karaktäristisk impedans av \SI{50}{\ohm}.
 
 Det har utvecklats en praxis, att referensvärdet vid jämförelse av signalnivåer
-i radiosystem ska vara en milliwatt (1~mW) utvecklad i en belastning med
-impedansen 50~\(\Omega\).
-Signalnivåer över belastningen 50~\(\Omega\) kan uttryckas i dB(m) eller ofta
-dBm, där (m) står för milliwatt, varvid referenseffekten 1~mW är 0~dB(m) vid
-50~\(\Omega\).
+i radiosystem ska vara en milliwatt (\SI{1}{\milli\watt}) utvecklad i en
+belastning med impedansen \SI{50}{\ohm}.
+Signalnivåer över belastningen \SI{50}{\ohm} kan uttryckas i dB(m) eller ofta
+dBm, där (m) står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} är
+0~dB(m) vid \SI{50}{\ohm}.
 
-Det spänningsfall som bildas över belastningen 50~\(\Omega\) vid effektnivån
+Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
 0~dB(m) är
 %%
 \[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx 0,224 \text{ V}\]
 %%
-Den ström som flyter genom belastningen 50~\(\Omega\) vid effektnivån 0~dB(m)
+Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0~dB(m)
 är
 %%
 \[
 I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx 0,0045 \text{ A} = 4,5 \text{ mA}
 \]
 %%
-Strömmen 4,5~mA genom belastningen 50~\(\Omega\) motsvarar således 0~dB(m).
+Strömmen \SI{4,5}{\milli\ampere} genom belastningen \SI{50}{\ohm} motsvarar
+således 0~dB(m).
 
-Varje annan effekt, spänningsfall och ström som uppstår vid en
-belastning av 50 \(\Omega\) kan jämföras med respektive referensvärden 1~mW,
-0,22~V och 4,5~mA. \emph{dB(m) är ett absolut och logaritmiskt mått.}
+Varje annan effekt, spänningsfall och ström som uppstår vid en belastning av
+\SI{50}{\ohm} kan jämföras med respektive referensvärden \SI{1}{\milli\watt},
+\SI{0,22}{\volt} och \SI{4,5}{\milli\ampere}.
+\emph{dB(m) är ett absolut och logaritmiskt mått.}
 
 \vspace*{1ex}
 \noindent
@@ -310,7 +314,8 @@ Spänning
 
 \noindent
 Effektnivåer över en belastning kan också uttryckas i dB(W), där (W)
-står för watt. Referenseffekten är då 1~W, dvs. 0~dB(W).
+står för watt.
+Referenseffekten är då \SI{1}{\watt}, dvs. 0~dB(W).
 Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
 \subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
@@ -318,9 +323,11 @@ Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över
 
 Ett räkneexempel på effektändringar:
 Fråga:
-Vi har en enkel sändaranläggning med ett drivsteg som matas med 10~W HF.
-Drivsteget förstärker med 6~dB. Vidare har vi ett effektslutsteg som förstärker
-med 10~dB. Antennkabeln dämpar med 1~dB.
+Vi har en enkel sändaranläggning med ett drivsteg som matas med \SI{10}{\watt}
+HF.
+Drivsteget förstärker med \SI{6}{\decibel}.
+Vidare har vi ett effektslutsteg som förstärker med \SI{10}{\decibel}.
+Antennkabeln dämpar med \SI{1}{\decibel}.
 
 Fråga: Med vilken effekt matas själva antennen?
 
@@ -406,9 +413,9 @@ I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker 
 \harec{a}{1.9.5}{1.9.5}
 \index{verkningsgrad}
 
-Antag att en antennkabel har en effektförlust av 1~dB.
+Antag att en antennkabel har en effektförlust av \SI{1}{\decibel}.
 Det innebär en effektdämpning av 1,25 gånger, det vill säga 0,8.
-Nu matar vi in 10~W i kabeln och får alltså ut 8~W.
+Nu matar vi in \SI{10}{\watt} i kabeln och får alltså ut \SI{8}{\watt}.
 Hur stor verkningsgrad har kabeln uttryckt i procent?
 Lösning:
 %%

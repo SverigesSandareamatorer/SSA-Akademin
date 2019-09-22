@@ -83,10 +83,11 @@ signalens brusmängd en viktig sådan relation och därför så använder man
 begreppet \emph{signal-brus-förhållande} (eng.
 \emph{signal to noise ratio (S/N)}).
 
-Signal-brus förhållandet uttrycks oftast i dB och kan enkelt räknas fram som
-skillnaden i nivå på signal och på brus, det vill säga signal minus brus,
-räknat i dB.
-Med en signalnivå på 45~dB och brusnivå på 22~dB har man således +23~dB S/N.
+Signal-brus förhållandet uttrycks oftast i \si{\decibel} och kan enkelt räknas
+fram som skillnaden i nivå på signal och på brus, det vill säga signal minus
+brus, räknat i \si{\decibel}.
+Med en signalnivå på \SI{45}{\decibel} och brusnivå på \SI{22}{\decibel} har man
+således +23~dB S/N.
 
 \subsubsection{Minimal signal-brus-förhållande}
 \harec{a}{7.20.2}{7.20.2}
@@ -140,10 +141,10 @@ mottagaren.
 \emph{Brusfaktor} (eng. \emph{noise factor (NF)}) ger förhållandet mellan en
 förstärkares egenbrus i förhållande till det termiska bruset för ett motstånd
 på dess ingång.
-Brusfaktor redovisas oftast i dB, som varande dB över brusgolvet.
+Brusfaktor redovisas oftast i \si{\decibel}, som varande dB över brusgolvet.
 
 En förstärkares egenbrus kommer givetvis att förstärkas, och därför kommer
-bruset på utgången vara brusfaktorn plus förstärkningen, räknat i dB.
+bruset på utgången vara brusfaktorn plus förstärkningen, räknat i \si{\decibel}.
 Exempelvis kommer en förstärkare med 4,5~dB i brusfaktor och 20~dB förstärkning
 ha brus på 24,5~dB över brusgolvet.
 En efterföljande förstärkare med 10~dB brusfaktor kommer inte signifikant
@@ -187,11 +188,11 @@ Fri-rymds förlusten beror förenklat på frekvens och avstånd, en enkel model
 %%
 \[L_{fs} = 32.45 + 20\log d + 20\log f\]
 %%
-där \(d\) är avståndet i km och \(f\) är frekvensen i MHz och det ger
-\(L_{fs}\) är vägförlusten i dB.
-Fri-rymds förlusten avtar med kvadraten på avståndet, det vill säga 6~dB på
-dubblat avstånd och det är i allmänhet den dominerande effekten när man lämnat
-antennens närfält.
+där \(d\) är avståndet i km och \(f\) är frekvensen i \si{\mega\hertz} och det
+ger \(L_{fs}\) är vägförlusten i \si{\decibel}.
+Fri-rymds förlusten avtar med kvadraten på avståndet, det vill säga
+\SI{6}{\decibel} på dubblat avstånd och det är i allmänhet den dominerande
+effekten när man lämnat antennens närfält.
 
 Ytterligare förluster kan förekomma på grund av vegetation, delvis täckt
 \emph{Fresnelzon}, studsar mot jonosfär med mera.

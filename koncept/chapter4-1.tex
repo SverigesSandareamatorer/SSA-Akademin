@@ -29,8 +29,9 @@ kan behöva isoleras.
 Hur god isolationen är beror kraftigt på frekvensen, och de åtgärder man gör
 bör anpassas för hur god isolation man behöver eller vill ha för olika
 frekvenser.
-Man kan till exempel vilja ha god isolation vid sändar- och mottagarfrekvensen 14~MHz,
-men vill inte ha galvanisk isolation för det gemensamma 12~V kraftaggregatet.
+Man kan till exempel vilja ha god isolation vid sändar- och mottagarfrekvensen
+\SI{14}{\mega\hertz}, men vill inte ha galvanisk isolation för det gemensamma
+\SI{12}{\volt} kraftaggregatet.
 
 \section{Jordning}
 \index{jordning}
@@ -466,7 +467,7 @@ hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller äve
 Många gånger förklaras det som att man får en loop som agerar antenn för ett
 magnetfält.
 Det är dock sällan som ett magnetfält är så starkt att det inducerar flera
-ampere av vanlig 50~Hz ström.
+ampere av vanlig \SI{50}{\hertz} ström.
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
 \ref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
@@ -688,8 +689,8 @@ nytta för att undertrycka den gemensamma spänningen.
 Eftersom nyttosignalen är differentiell kan man ibland medvetet använda den
 gemensamma spänningen för att överföra matningsspänning till till exempel en mikrofon.
 Denna form av matningsspänning kallas för \emph{fantommatning}
-(eng. \emph{phantom power}). En vanligt förekommande spänning är 48~V, som då
-symboliseras med P48.
+(eng. \emph{phantom power}).
+En vanligt förekommande spänning är \SI{48}{\volt}, som då symboliseras med P48.
 Det förekommer även på modern Ethernet-utrustning och kallas då för
 \emph{Power over Ethernet (PoE)}.
 
@@ -851,10 +852,11 @@ efter det.
 Många gånger kan en kombination av åtgärder ge fullgott resultat utan att vara
 särdeles dyrt eller klumpigt, men det kräver eftertanke och helhetssyn.
 
-Ett enkelt fall i ljudsammanhang är 50~Hz 230~V men man vill hålla störningen
-mindre än säg 1~mV.
-Det kräver mer än 106~dB isolation mellan 230~V differentiellt på
-primärlindningen och 1~mV gemensamt på sekundärlindningen.
+Ett enkelt fall i ljudsammanhang är \SI{50}{\hertz} \SI{230}{\volt} men man vill
+hålla störningen mindre än säg \SI{1}{\milli\volt}.
+Det kräver mer än \SI{106}{\decibel} isolation mellan \SI{230}{\volt}
+differentiellt på primärlindningen och \SI{1}{\milli\volt} gemensamt på
+sekundärlindningen.
 Så god balans kan vara svår att finna i enskilda komponenter.
 Principen återkommer oavsett spänning och frekvens, det är en brist
 man behöver lära sig att förstå och hantera.
