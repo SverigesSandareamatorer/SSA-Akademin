@@ -167,12 +167,12 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 
 # TODOs
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
-	rm TODOs
-#	grep -n TODO *.tex koncept/*.tex > TODOs
-#	grep HAREC koncept.log >> TODOs
-#	grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
-#	grep Missing koncept.log >> TODOs
-#	grep LaTeX koncept.log | grep Warning >> TODOs
+	rm -f TODOs
+	- grep -n TODO *.tex koncept/*.tex > TODOs
+	- grep HAREC koncept.log >> TODOs
+	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
+	- grep Missing koncept.log >> TODOs
+	- grep LaTeX koncept.log | grep Warning >> TODOs
 	wc -l TODOs
 
 # Länkade bilder
