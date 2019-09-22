@@ -111,6 +111,9 @@ koncept-tryck.bbl: koncept-tryck.aux koncept.bib
 koncept.ind: koncept.idx
 	makeindex koncept.idx
 
+koncept-tryck.ind: koncept-tryck.idx
+	makeindex koncept-tryck.idx
+
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
@@ -142,7 +145,7 @@ koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
 	-xelatex koncept-refbok.tex
 	xelatex koncept-refbok.tex
 
-koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.tex $(KONCEPT_FILES)
+koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCEPT_FILES)
 	pdflatex koncept-tryck.tex
 	pdflatex koncept-tryck.tex
 
