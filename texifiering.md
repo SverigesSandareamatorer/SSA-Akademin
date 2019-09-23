@@ -33,9 +33,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla markerar vi ~~`\part{}` och~~ `\chapter{}` så att det går
-    att hitta delarna.
-    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya utgåvan.
+6.  För att förenkla markerar vi kapitlen med `\chapter{}`.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
@@ -136,7 +134,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Tusentalsavskiljare läggs in som `\num{9000000}`.
+19. Tusentalsavskiljare läggs in med `\num{}` t.ex. `\num{9000000}`.
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
@@ -149,7 +147,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
-22. Grader kodas som `\ang{90}`.
+22. Grader kodas med `\ang{}` t.ex. `\ang{90}`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
