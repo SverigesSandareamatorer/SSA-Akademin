@@ -162,7 +162,7 @@ för ett antal fall.
 
 Då BFO (VFO) är inställd på frekvensen \(f_2\) = 1831~kHz och den
 mottagna signalen \(f_1\) har frekvensen 1830~kHz så hörs en
-svävningston med frekvensen 1000~Hz.
+svävningston med frekvensen \SI{1000}{\hertz}.
 Samma resultat fås om BFO ställs in på frekvensen \(f_2\) = 1829~kHz.
 
 Med BFO på frekvensen \(f_2\) = 1830~kHz hörs ingenting av signalen
@@ -172,7 +172,8 @@ Frekvensskillnaden är noll Hz.
 Med BFO på frekvensen \(f_2\) = 1849~kHz hörs nästan ingenting av signalen
 \(f_1\) = 1830~kHz från sändaren, då mixprodukten 19~kHz knappt är hörbar.
 
-De flesta föredrar en ton med frekvensen cirka 800~Hz för mottagning av telegrafi.
+De flesta föredrar en ton med frekvensen cirka \SI{800}{\hertz} för mottagning
+av telegrafi.
 BFO-frekvensen skulle i så fall ställas in på 1830,8 eller 1829,2~kHz om \(f_1\)
 vore en telegrafisändning.
 
@@ -184,9 +185,9 @@ vore en telegrafisändning.
 \index{SSB}
 \index{mottagare!SSB}
 
-När en SSB-sändare sägs arbeta till exempel på frekvensen 1835~kHz, så
-innebär det frekvensen på den bärvåg som undertryckts i sändaren redan
-före utsändningen.
+När en SSB-sändare sägs arbeta till exempel på frekvensen
+\SI{1835}{\kilo\hertz}, så innebär det frekvensen på den bärvåg som undertryckts
+i sändaren redan före utsändningen.
 
 Vad som uppfattas av mottagarens ingångskretsar är alltså det utsända sidbandet.
 När en SSB-signal demoduleras, så blandas den lokala bärvågen i mottagaren med
@@ -199,15 +200,15 @@ dess lägre sidband LSB som sträcker sig från 1832~kHz till 1834,7~kHz.
 Det demodulerade sidbandet sträcker sig från 300~Hz till 3~kHz.
 
 Inom amatörradio används för SSB det lägre sidbandet vid frekvenser
-under 10~MHz.
+under \SI{10}{\mega\hertz}.
 Med en frekvens av till exempel 1835~kHz och ett talspektrum av 300--3000~Hz
 kommer det lägre sidbandet att finnas mellan 1834,7 och 1832,0~kHz.
-Tre modulerande frekvenser 300, 1000 och 3000~Hz visas på bilden.
+Tre modulerande frekvenser 300, 1000 och \SI{3000}{\hertz} visas på bilden.
 
 Med en bärvågsfrekvens av 1835~kHz motsvaras dessa modulerande
 frekvenser av utfrekvenserna 1834,7; 1834 och 1832~kHz.
 VFO ersätter SSB-sändarens bärvåg och ska ha samma frekvens -- 1835~kHz --
-för att kunna återge 300, 1000 och 3000~Hz.
+för att kunna återge 300, 1000 och \SI{3000}{\hertz}.
 
 \subsection{Selektionen i direktblandade mottagare}
 \index{selektion}
@@ -240,25 +241,25 @@ vilka av dessa passerar sedan genom lågpassfiltret efter blandning ner
 till LF-nivå?
 
 \textbf{Exempel:}
-En CW-sändare med frekvensen 1830~kHz tas emot genom att
-mottagarens VFO ställs in på frekvensen 1829,2~kHz.
-Från blandarutgången kommer då en ton med frekvensen 800~Hz.
+En CW-sändare med frekvensen \SI{1830}{\kilo\hertz} tas emot genom att
+mottagarens VFO ställs in på frekvensen \SI{1829,2}{\kilo\hertz}.
+Från blandarutgången kommer då en ton med frekvensen \SI{800}{\hertz}.
 
 Men sändaren är inte ensam på bandet.
-Kommer till exempel SSB-sändaren på 1835, som moduleras med 300, 1000 och 3000~Hz,
-att störa mottagningen?
+Kommer till exempel SSB-sändaren på 1835, som moduleras med 300, 1000 och
+\SI{3000}{\hertz}, att störa mottagningen?
 (Se bild \ref{fig:bildII4-11}).
 
 Förkretsen i mottagaren är så bred att denna sändning passerar.
 SSB-sändarens signalfrekvenser i det utsända sidbandet är 1834,7; 1834,0 och
-1832~kHz.
+\SI{1832}{\kilo\hertz}.
 Dessa frekvenser blandas med mottagarens VFO-\-frekvens 1829,2~kHz och alstrar
 blandningsprodukterna 5,5; 4,8 och 2,8~kHz.
 Eftersom lågpassfiltret i mottagarens LF-förstärkare har bandbredden
 0--3000~Hz, så kommer endast blandningsprodukten 2,8~kHz att vara störande.
 För att förbättra CW-mottagningen, så kan lågpassfiltret bytas ut mot ett
 bandpassfilter, som endast släpper igenom ett smalt frekvensområde omkring
-mittfrekvensen 800~Hz.
+mittfrekvensen \SI{800}{\hertz}.
 
 \subsection{Passband och spegelfrekvenser i direktblandare}
 \index{passband}
@@ -295,7 +296,7 @@ genom noll och upp till 3000~Hz igen.
 
 \largefig{images/cropped_pdfs/bild_2_4-12.pdf}{Passbandbredd och spegelfrekvenser i direktblandade mottagare}{fig:bildII4-12}
 
-Vår mottagare har bandbredden 6~kHz.
+Vår mottagare har bandbredden \SI{6}{\kilo\hertz}.
 Varje annan sändare inom denna \emph{passbandbredd} kommer att höras eller --
 om man så tycker -- störa mottagningen.
 

@@ -7,9 +7,11 @@ services:
 before_install:
   - sudo apt-get -qq update
   - "sudo apt-get install -y -qq \
+    language-pack-sv \
     sshpass"
 
 before_script:
+  - sudo update-locale LANG=sv_SE.UTF-8
   - make docker-image
 
 script:
