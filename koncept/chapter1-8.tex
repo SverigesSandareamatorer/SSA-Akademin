@@ -599,10 +599,10 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \cline{3-9}
 &\multicolumn{1}{l}{}  & \multicolumn{7}{|c|}{Modulationsindex} \\ \cline{3-9}
 &\multicolumn{1}{l|}{}  &   1   &   2   &    3   &    4   &    5   &    6   &    7   \\ \hline
-\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & -0,260 & -0,397 & -0,178 &  0,151 &  0,300 \\
-\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & -0,066 & -0,328 & -0,277 & -0,005 \\
-\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & -0,243 & -0,301 \\
-\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & -0,168 \\
+\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & \num{-0,260} & \num{-0,397} & \num{-0,178} &  0,151 &  0,300 \\
+\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & \num{-0,066} & \num{-0,328} & \num{-0,277} & \num{-0,005} \\
+\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & \num{-0,243} & \num{-0,301} \\
+\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & \num{-0,168} \\
 \multicolumn{1}{|c|}{}&\(A_4\) &       & 0,034 &  0,132 &  0,281 &  0,391 &  0,358 &  0,158 \\
 \multicolumn{1}{|c|}{}&\(A_5\) &       & 0,016 &  0,043 &  0,132 &  0,261 &  0,362 &  0,348 \\
 \multicolumn{1}{|c|}{}&\(A_6\) & \multicolumn{2}{c|}{} &  0,011 &  0,049 &  0,131 &  0,246 &  0,339 \\
@@ -832,10 +832,10 @@ som anges av tabell \ref{tab:4-PSK}.
 \begin{tabular}{|r|r|r|r|}
 \hline
 Symbol & Vinkel & I & Q \\ \hline
-0 &   0 & +1 &  0 \\
-1 &  90 &  0 & +1 \\
-2 & 180 & -1 &  0 \\
-3 & 270 &  0 & -1 \\ \hline
+0 &   0 & +1       &  0 \\
+1 &  90 &  0       & +1 \\
+2 & 180 & \num{-1} &  0 \\
+3 & 270 &  0       & \num{-1} \\ \hline
 \end{tabular}
 \end{center}
 \caption{4-PSK i kvadratur-modulering}
@@ -878,20 +878,20 @@ Ett exempel på hur 16QAM kan moduleras finns i tabell \ref{tab:16QAM}.
 Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
      0 &    0 &    0 & \(3\sqrt{2}\) &    +45 & +3 &  +3 \\
      1 &    0 &    1 & \(\sqrt{10}\) &    +72 & +3 &  +1 \\
-     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  -1 \\
-     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  -3 \\
+     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  \num{-1} \\
+     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  \num{-3} \\
      4 &    1 &    0 & \(\sqrt{10}\) &    +18 & +1 &  +3 \\
      5 &    1 &    1 &  \(\sqrt{2}\) &    +45 & +1 &  +1 \\
-     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  -1 \\
-     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  -3 \\
-     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & -1 &  +3 \\
-     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & -1 &  +1 \\
-    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & -1 &  -1 \\
-    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & -1 &  -3 \\
-    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & -3 &  +3 \\
-    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & -3 &  +1 \\
-    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & -3 &  -1 \\
-    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
+     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  \num{-1} \\
+     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  \num{-3} \\
+     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & \num{-1} &  +3 \\
+     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & \num{-1} &  +1 \\
+    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & \num{-1} &  \num{-1} \\
+    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & \num{-1} &  \num{-3} \\
+    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & \num{-3} &  +3 \\
+    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & \num{-3} &  +1 \\
+    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & \num{-3} &  \num{-1} \\
+    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & \num{-3} &  \num{-3} \\ \hline
 \end{tabular}
 \end{center}
 \caption{Exempel på 16QAM i kvadraturmodulering}
