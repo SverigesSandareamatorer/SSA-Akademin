@@ -203,8 +203,8 @@ Se avsnitt \ref{transmissionsledningar} i detta kapitel.
 Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet
 med mittmatade partier på 2:a harmoniska övertonen, det vill säga dubbla
 grundfrekvensen.
-På 80- och 40~m-banden är antennens matningsimpedans cirka \SI{60}{\ohm} och på de
-högre banden cirka \SI{100}{\ohm}.
+På 80- och \SI{40}{\metre}-banden är antennens matningsimpedans cirka
+\SI{60}{\ohm} och på de högre banden cirka \SI{100}{\ohm}.
 En kompromiss är att mata denna antenn med en \SI{75}{\ohm}-kabel för att inte
 få alltför stor missanpassning på något band.
 
@@ -430,9 +430,10 @@ Se kapitel \ref{decibel} om decibelbegreppet.
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
 %%
-\SI{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka [V/m], det vill säga
-1~S-enhets ökning vid den mottagande stationen, liksom att \SI{6}{\decibel}
-antennförstärkning motsvarar en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
+\SI{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka
+[\si{\volt\per\metre}], det vill säga 1~S-enhets ökning vid den mottagande
+stationen, liksom att \SI{6}{\decibel} antennförstärkning motsvarar en 4~dubblad
+sändareffekt [\si{\watt\per\square\metre}].
 
 \newpage
 \noindent
@@ -444,8 +445,8 @@ referens:
   & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
   \multicolumn{2}{l}{Isotrop} \\
   \hline
-  Isotrop antenn       & -2,1 & dBd & 0   & dBi \\
-  GP, \(\lambda/4\)    & -1,8 & dBd & 0,3 & dBi \\
+  Isotrop antenn       & \num{-2,1} & dBd & 0   & dBi \\
+  GP, \(\lambda/4\)    & \num{-1,8} & dBd & 0,3 & dBi \\
   Dipol, \(\lambda/2\) & 0    & dBd & 2,1 & dBi \\
   GP, \(5/8\lambda\)   & 1,2  & dBd & 3,3 & dBi \\
   & & & & \\
@@ -566,7 +567,7 @@ Bild \ref{fig:bildII6-10} visar halvvärdesbredder.
 %%
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 (fältstyrkan) är minst hälften så stor som den största nyttospänningen \(U_f\).
-Spänningshalvvärdesbredden för en dipol är ungefär 90\degree.
+Spänningshalvvärdesbredden för en dipol är ungefär \ang{90}.
 
 \mediumfig{images/cropped_pdfs/bild_2_6-10.pdf}{Halvvärdesbredder}{fig:bildII6-10}
 

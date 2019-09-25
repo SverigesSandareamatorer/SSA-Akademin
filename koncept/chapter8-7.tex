@@ -87,7 +87,7 @@ Signal-brus förhållandet uttrycks oftast i \si{\decibel} och kan enkelt räkna
 fram som skillnaden i nivå på signal och på brus, det vill säga signal minus
 brus, räknat i \si{\decibel}.
 Med en signalnivå på \SI{45}{\decibel} och brusnivå på \SI{22}{\decibel} har man
-således +23~dB S/N.
+således +23\,dB S/N.
 
 \subsubsection{Minimal signal-brus-förhållande}
 \harec{a}{7.20.2}{7.20.2}
@@ -145,34 +145,44 @@ Brusfaktor redovisas oftast i \si{\decibel}, som varande dB över brusgolvet.
 
 En förstärkares egenbrus kommer givetvis att förstärkas, och därför kommer
 bruset på utgången vara brusfaktorn plus förstärkningen, räknat i \si{\decibel}.
-Exempelvis kommer en förstärkare med 4,5~dB i brusfaktor och 20~dB förstärkning
-ha brus på 24,5~dB över brusgolvet.
-En efterföljande förstärkare med 10~dB brusfaktor kommer inte signifikant
-bidra med brus, eftersom föregående steg har 14,5~dB högre brus än egenbruset.
+Exempelvis kommer en förstärkare med \SI{4,5}{\decibel} i brusfaktor och
+\SI{20}{\decibel} förstärkning ha brus på \SI{24,5}{\decibel} över brusgolvet.
+En efterföljande förstärkare med \SI{10}{\decibel} brusfaktor kommer inte
+signifikant bidra med brus, eftersom föregående steg har \SI{14,5}{\decibel}
+högre brus än egenbruset.
 För detta fall är den första förstärkaren dominant.
 
 Eftersom kabeldämpning kan vara signifikant, så kommer signalen dämpas genom
 kabeln.
-Givet att vi har 15~dB dämpning i kabeln, en signal 40~dB över brusgolvet och
-en 20~dB förstärkare med brusfaktor 4,5~dB, var ska vi sätta förstärkaren?
+Givet att vi har \SI{15}{\decibel} dämpning i kabeln, en signal
+\SI{40}{\decibel} över brusgolvet och en \SI{20}{\decibel} förstärkare med
+brusfaktor \SI{4,5}{\decibel}, var ska vi sätta förstärkaren?
 
 Om förstärkaren sitter efter kabeln så kommer signalen att dämpas först i
-kabeln, bruset kommer att läggas på och sedan kommer det att förstärkas 20~dB.
-Det ger 40~dB minus 15~dB plus 20~dB för signalen, det vill säga 45~dB.
-För bruset får vi 4,5~dB plus 20~dB det vill säga 24,5~dB.
-För detta fallet får vi ett signal-brus-förhållande på 45~dB minus 24,5~dB,
-det vill säga 20,5~dB, givet att det är det interna bruset som är dominerande.
+kabeln, bruset kommer att läggas på och sedan kommer det att förstärkas
+\SI{20}{\decibel}.
+Det ger \SI{40}{\decibel} minus \SI{15}{\decibel} plus \SI{20}{\decibel} för
+signalen, det vill säga \SI{45}{\decibel}.
+För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} det vill säga
+\SI{24,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
+\SI{24,5}{\decibel}, det vill säga \SI{20,5}{\decibel}, givet att det är det
+interna bruset som är dominerande.
 
 Om förstärkaren sitter före kabeln så kommer signalen först förstärkas och
 sedan dämpas i kabeln.
-Det ger 40~dB plus 20~dB minus 15~dB för signalen, det vill säga 45~dB.
-För bruset får vi 4,5~dB plus 20~dB minus 15~dB det vill säga 9,5~dB.
-För detta fallet får vi ett signal-brus-förhållande på 45~dB minus 9,5~dB,
-det vill säga 35,5~dB, givet att det är det interna bruset som är dominerande.
+Det ger \SI{40}{\decibel} plus \SI{20}{\decibel} minus \SI{15}{\decibel} för
+signalen, det vill säga \SI{45}{\decibel}.
+För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} minus
+\SI{15}{\decibel} det vill säga \SI{9,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
+\SI{9,5}{\decibel}, det vill säga \SI{35,5}{\decibel}, givet att det är det
+interna bruset som är dominerande.
 
 Med detta exempel ser vi hur en länkbudget hjälper oss att få
-signal-brus-förhållandet att gå från 20,5~dB till 35,5~dB enbart genom att
-ändra placeringen av förstärkaren i systemet.
+signal-brus-förhållandet att gå från \SI{20,5}{\decibel} till
+\SI{35,5}{\decibel} enbart genom att ändra placeringen av förstärkaren i
+systemet.
 
 \subsubsection{Vägförlust}
 \harec{a}{7.20.4}{7.20.4}

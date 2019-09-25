@@ -205,8 +205,8 @@ Med en frekvens av till exempel 1835~kHz och ett talspektrum av 300--3000~Hz
 kommer det lägre sidbandet att finnas mellan 1834,7 och 1832,0~kHz.
 Tre modulerande frekvenser 300, 1000 och \SI{3000}{\hertz} visas på bilden.
 
-Med en bärvågsfrekvens av 1835~kHz motsvaras dessa modulerande
-frekvenser av utfrekvenserna 1834,7; 1834 och 1832~kHz.
+Med en bärvågsfrekvens av \SI{1835}{\kilo\hertz} motsvaras dessa modulerande
+frekvenser av utfrekvenserna 1834,7; 1834 och \SI{1832}{\kilo\hertz}.
 VFO ersätter SSB-sändarens bärvåg och ska ha samma frekvens -- 1835~kHz --
 för att kunna återge 300, 1000 och \SI{3000}{\hertz}.
 
@@ -269,24 +269,27 @@ mittfrekvensen \SI{800}{\hertz}.
 
 I exemplet i förra stycket blev problemet med en störande ton löst med
 ett bandpassfilter med annan frekvensgång.
-Men vilka frekvenser kan tas emot genom ett lågpassfilter, 0--3000~Hz,
-om VFO-frekvensen är till exempel 1829,2~kHz?
+Men vilka frekvenser kan tas emot genom ett lågpassfilter,
+\SIrange{0}{3000}{\hertz}, om VFO-frekvensen är till exempel
+\SI{1829,2}{\kilo\hertz}?
 
 \textbf{Experiment:}
-Ändra frekvensen på en CW-sändare långsamt från 1820 till 1840~kHz.
+Ändra frekvensen på en CW-sändare långsamt från 1820 till
+\SI{1840}{\kilo\hertz}.
 Se bild \ref{fig:bildII4-12}
 
-Sändarfrekvensen 1820~kHz hörs knappast eftersom blandningsprodukten har
-frekvensen 9,2~kHz och den dämpas kraftigt av lågpassfiltret.
-Först när sändarfrekvensen är 1826,2~kHz hörs en tydlig ton med frekvensen
-3000~Hz.
+Sändarfrekvensen \SI{1820}{\kilo\hertz} hörs knappast eftersom
+blandningsprodukten har frekvensen \SI{9,2}{\kilo\hertz} och den dämpas kraftigt
+av lågpassfiltret.
+Först när sändarfrekvensen är \SI{1826,2}{\kilo\hertz} hörs en tydlig ton med
+frekvensen \SI{3000}{\hertz}.
 Fortsätter man att ändra sändarfrekvensen, så sjunker tonens frekvens för att
 bli noll (svävningsnoll), när sändarfrekvensen är lika med mottagarens
-VFO-frekvens 1829,2~kHz.
+VFO-frekvens \SI{1829,2}{\kilo\hertz}.
 Om man nu fortsätter med att höja frekvens, så blir blandningsproduktens
 frekvens åter högre.
-Vid sändarfrekvensen 1832,2 är den 3000~Hz. Vid ännu högre sändarfrekvens
-dämpas blandningsprodukten igen av lågpassfiltret.
+Vid sändarfrekvensen 1832,2 är den \SI{3000}{\hertz}.
+Vid ännu högre sändarfrekvens dämpas blandningsprodukten igen av lågpassfiltret.
 
 Slutsatsen av experimentet blir följande:
 Vid en direktblandande mottagare med VFO-frekvensen \\ 1829,2~kHz och ett 3~kHz
@@ -303,8 +306,8 @@ om man så tycker -- störa mottagningen.
 Tillbaka till exemplet med bandpassfiltret.
 Vilka frekvenser kan tas emot med ett bandpassfilter 700--900~Hz
 (mittfrekvens 800~Hz), om VFO-frekvensen är 1829,2~kHz?
-Jo, vi kan lyssna rätt ostört till vår CW-sändares 800~Hz-ton på frekvensen
-1830~kHz.
+Jo, vi kan lyssna rätt ostört till vår CW-sändares \SI{800}{\hertz}-ton på
+frekvensen \SI{1830}{\kilo\hertz}.
 Ändå kan en annan sändare med frekvensen 1828,4~kHz störa mottagningen därför
 att denna är \emph{spegelfrekvens} (eng. \emph{mirror frequency}) till
 mottagningsfrekvensen 1830~kHz.
@@ -315,18 +318,18 @@ bandpassfiltret.
 
 Spegelfrekvensmottagning är en principiell nackdel i mottagare med
 direktblandning.
-Nyttofrekvens och spegelfrekvens i det senaste exemplet ligger 1,6~kHz
-(\(2 \cdot 800\) Hz) ifrån varandra, alltså dubbla värdet av bandpassfiltrets
-mittfrekvens.
+Nyttofrekvens och spegelfrekvens i det senaste exemplet ligger
+\SI{1,6}{\kilo\hertz} (\(2 \cdot 800\) Hz) ifrån varandra, alltså dubbla värdet
+av bandpassfiltrets mittfrekvens.
 
-Vid SSB-mottagning måste naturligtvis hela LF-området upp till 3000~Hz
+Vid SSB-mottagning måste naturligtvis hela LF-området upp till \SI{3000}{\hertz}
 kunna släppas igenom.
 Utöver det önskade frekvensområdet 1832--1835~kHz, kommer även spegelfrekvenser
 i området 1835--1838~kHz att kunna tas emot.
 
-Vid en LF-bandbredd av 3~kHz har således den direktblandade mottagaren
-en bandbredd av 6~kHz, vilket är en god avstämningsskärpa i jämförelse
-med den 300~kHz breda förkretsen.
+Vid en LF-bandbredd av \SI{3}{\kilo\hertz} har således den direktblandade
+mottagaren en bandbredd av \SI{6}{\kilo\hertz}, vilket är en god
+avstämningsskärpa i jämförelse med den \SI{300}{\kilo\hertz} breda förkretsen.
 
 \subsection{För- och nackdelar med direkt\-blandare}
 

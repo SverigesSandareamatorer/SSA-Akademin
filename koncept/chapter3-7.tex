@@ -102,9 +102,10 @@ frekvens från en XO.
 Ordet super kommer från superheterodyn = överlagring, blandning.
 En VFO arbetar stabilare på låg frekvens medan en XO fortfarande arbetar
 stabilt även på högre frekvenser, dock inte så högt som vi behöver här.
-I vårt exempel arbetar därför VFO i området 8--10~MHz och XO på 17~MHz.
-VFO-signalen blandas med en fast signalfrekvens, som är XO-signalen 17~MHz
-multiplicerat med 8, det vill säga \SI{136}{\mega\hertz}.
+I vårt exempel arbetar därför VFO i området \SIrange{8}{10}{\mega\hertz} och XO
+på \SI{17}{\mega\hertz}.
+VFO-signalen blandas med en fast signalfrekvens, som är XO-signalen
+\SI{17}{\mega\hertz} multiplicerat med 8, det vill säga \SI{136}{\mega\hertz}.
 
 Ett bandpassfilter filtrerar fram den önskade blandningsprodukten, som
 ligger i frekvensområdet \SIrange{144}{146}{\mega\hertz}.
