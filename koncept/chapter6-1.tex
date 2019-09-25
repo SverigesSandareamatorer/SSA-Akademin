@@ -232,9 +232,10 @@ talen 5760 och 5840.
 Med den första delarens divisor 10 och den andra delarens divisor
 inställd till exempel på 5760, så avges ur delarkedjan en puls varje gång som
 VCO har genomfört 57600 svängningar.
-Vid en VCO-frekvens av 144~MHz (144000~kHz) motsvaras divisorn
-57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av 2,5~kHz ut från räknarkedjan.
-På samma sätt kommer en VCO-frekvens av 144025~kHz och divisorn
+Vid en VCO-frekvens av \SI{144}{\mega\hertz} (\SI{144000}{\kilo\hertz}) motsvaras
+divisorn 57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av \SI{2,5}{\kilo\hertz}
+ut från räknarkedjan.
+På samma sätt kommer en VCO-frekvens av \SI{144025}{\kilo\hertz} och divisorn
 57610 (= \(10 \cdot 5761\)) också att ge en pulsfrekvens av 2,5~kHz,
 likaså 146~MHz och divisorn 58400 och så vidare.
 
@@ -277,7 +278,7 @@ Bild \ref{fig:bildII5-8} visar ett avancerat koncept för en kortvågssändare.
 SSB-signalen alstras på frekvensen 9~MHz och blandas med 61~MHz i 1:a
 blandaren.
 
-Summafrekvensen 70~MHz filtreras fram som mellanfrekvens.
+Summafrekvensen \SI{70}{\mega\hertz} filtreras fram som mellanfrekvens.
 Den önskade sändningsfrekvensen fås genom att blanda 70~MHz MF med
 frekvensen från VCO och därefter filtrera fram skillnadsfrekvensen.
 
@@ -288,7 +289,7 @@ valbara filtersektioner, till exempel ett per amatörband.
 Valet kan ske automatiskt och styrt av frekvensläget på VCO.
 
 Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
-så stor som 28,5~MHz eller 1:20.
+så stor som \SI{28,5}{\mega\hertz} eller 1:20.
 Frekvensändringen i VCO är 29,5~MHz, men där är ändringsförhållandet
 mellan de extrema frekvenserna endast 1:1,74, vilket kan täckas av en enda VCO.
 Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
