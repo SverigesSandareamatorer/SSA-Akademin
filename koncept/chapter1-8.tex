@@ -381,11 +381,13 @@ Det undre sidbandet \SIrange{8997}{8999,7}{\kilo\hertz} faller utanför filtrets
 passband och blir också undertryckt.
 
 Ska däremot det undre sidbandet kunna passera igenom samma filter, så måste
-bärvågsfrekvensen höjas med \SI{3}{\kilo\hertz}, alltså till 9003~kHz.
-Då faller det undre sidbandet, 9002,7--9000,0~kHz inom filtrets passband.
+bärvågsfrekvensen höjas med \SI{3}{\kilo\hertz}, alltså till
+\SI{9003}{\kilo\hertz}.
+Då faller det undre sidbandet, \SIrange{9002,7}{9000,0}{\kilo\hertz} inom
+filtrets passband.
 
-Det övre sidbandet 9003,3--9006,0~kHz faller nu utanför passbandet och blir
-undertryckt.
+Det övre sidbandet \SIrange{9003,3}{9006,0}{\kilo\hertz} faller nu utanför
+passbandet och blir undertryckt.
 
 \largefig{images/cropped_pdfs/bild_2_1-29.pdf}{Sidbandslägen vid SSB}{fig:BildII1-29}
 
@@ -599,10 +601,10 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \cline{3-9}
 &\multicolumn{1}{l}{}  & \multicolumn{7}{|c|}{Modulationsindex} \\ \cline{3-9}
 &\multicolumn{1}{l|}{}  &   1   &   2   &    3   &    4   &    5   &    6   &    7   \\ \hline
-\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & -0,260 & -0,397 & -0,178 &  0,151 &  0,300 \\
-\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & -0,066 & -0,328 & -0,277 & -0,005 \\
-\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & -0,243 & -0,301 \\
-\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & -0,168 \\
+\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & \num{-0,260} & \num{-0,397} & \num{-0,178} &  0,151 &  0,300 \\
+\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & \num{-0,066} & \num{-0,328} & \num{-0,277} & \num{-0,005} \\
+\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & \num{-0,243} & \num{-0,301} \\
+\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & \num{-0,168} \\
 \multicolumn{1}{|c|}{}&\(A_4\) &       & 0,034 &  0,132 &  0,281 &  0,391 &  0,358 &  0,158 \\
 \multicolumn{1}{|c|}{}&\(A_5\) &       & 0,016 &  0,043 &  0,132 &  0,261 &  0,362 &  0,348 \\
 \multicolumn{1}{|c|}{}&\(A_6\) & \multicolumn{2}{c|}{} &  0,011 &  0,049 &  0,131 &  0,246 &  0,339 \\
@@ -833,10 +835,10 @@ som anges av tabell \ref{tab:4-PSK}.
 \begin{tabular}{|r|r|r|r|}
 \hline
 Symbol & Vinkel & I & Q \\ \hline
-0 &   0 & +1 &  0 \\
-1 &  90 &  0 & +1 \\
-2 & 180 & -1 &  0 \\
-3 & 270 &  0 & -1 \\ \hline
+0 &   0 & +1       &  0 \\
+1 &  90 &  0       & +1 \\
+2 & 180 & \num{-1} &  0 \\
+3 & 270 &  0       & \num{-1} \\ \hline
 \end{tabular}
 \end{center}
 \caption{4-PSK i kvadratur-modulering}
@@ -879,20 +881,20 @@ Ett exempel på hur 16QAM kan moduleras finns i tabell \ref{tab:16QAM}.
 Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
      0 &    0 &    0 & \(3\sqrt{2}\) &    +45 & +3 &  +3 \\
      1 &    0 &    1 & \(\sqrt{10}\) &    +72 & +3 &  +1 \\
-     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  -1 \\
-     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  -3 \\
+     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  \num{-1} \\
+     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  \num{-3} \\
      4 &    1 &    0 & \(\sqrt{10}\) &    +18 & +1 &  +3 \\
      5 &    1 &    1 &  \(\sqrt{2}\) &    +45 & +1 &  +1 \\
-     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  -1 \\
-     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  -3 \\
-     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & -1 &  +3 \\
-     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & -1 &  +1 \\
-    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & -1 &  -1 \\
-    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & -1 &  -3 \\
-    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & -3 &  +3 \\
-    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & -3 &  +1 \\
-    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & -3 &  -1 \\
-    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
+     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  \num{-1} \\
+     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  \num{-3} \\
+     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & \num{-1} &  +3 \\
+     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & \num{-1} &  +1 \\
+    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & \num{-1} &  \num{-1} \\
+    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & \num{-1} &  \num{-3} \\
+    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & \num{-3} &  +3 \\
+    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & \num{-3} &  +1 \\
+    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & \num{-3} &  \num{-1} \\
+    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & \num{-3} &  \num{-3} \\ \hline
 \end{tabular}
 \end{center}
 \caption{Exempel på 16QAM i kvadraturmodulering}
@@ -943,12 +945,12 @@ denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten
 (eng. \emph{bit rate}) i bitar per sekund.
 
 Ofta brukar vi referera till informationsmängden som mängden \emph{byte (B)}
-som till exempel att en fil är 2~kB eller en bild är 1,25~MB. Då en byte innehåller
-8 bitar motsvarar det 16~kb respektive 10~Mb.
+som till exempel att en fil är 2\,kB eller en bild är 1,25\,MB.
+Då en byte innehåller åtta bitar motsvarar det 16\,kb respektive 10\,Mb.
 I dagligt tal talar vi då om storleken på en fil.
 
 Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
-om i termer av \emph{bit rate} som 10~Mb/s (ofta skrivet \emph{bps -- bits per
+om i termer av \emph{bit rate} som 10\,Mb/s (ofta skrivet \emph{bps -- bits per
 second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per sekund.
 
 Det är ofta som man talar om den råa överföringskapaciteten, medan den
@@ -975,8 +977,9 @@ i fyra olika nivåer, kan man representera två bitar. På samma sätt ger åtta
 support för tre bitar. Varje representation kallar man en symbol och varje
 symbol bär alltså en, två eller tre bitar information. Strikt räknat
 är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av antalet nivåer som
-anger antalet bitar som en symbol kan bära. Tre nivåer brukar sägas kunna bära
-1,5 bitar, vilket är en slarvig approximation men visar principen.
+anger antalet bitar som en symbol kan bära.
+Tre nivåer brukar sägas kunna bära 1,5~bitar, vilket är en slarvig approximation
+men visar principen.
 
 Den takt varmed symboler överförs \emph{symboltakten} (eng. \emph{symbol rate}),
 benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{baud (Bd)}.
@@ -1193,7 +1196,7 @@ De europeiska utrustningarna, bland annat framtagna av Siemens, arbetade med
 
 RTTY använder FSK-modulering.
 För att åstadkomma detta behöver man styra frekvensen så att den hoppar mellan
-två frekvenser med en skillnad, ett så kallat ''skift'', på 170~Hz.
+två frekvenser med en skillnad, ett så kallat ''skift'', på \SI{170}{\hertz}.
 
 Äldre sändare behövde modifieras för att åstadkomma detta frekvensskift, men
 med en SSB-sändare kunde man istället mata sändaren med två toner, som gav
@@ -1283,8 +1286,9 @@ så kallad beacon. Sändning och mottagning sker i tvåminuterspass och efter va
 sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en
 databas över internet.
 Den sändande stationen kan därefter studera resultatet.
-WSPR använder låga effekter, det går att nå europeiska stationer med effekter under
-100 mW, och andra kontinenter med effekter under några watt, även med modesta antenner.
+WSPR använder låga effekter, det går att nå europeiska stationer med effekter
+under \SI{100}{\milli\watt}, och andra kontinenter med effekter under några
+watt, även med modesta antenner.
 
 \subsubsection{WSJT}
 \index{WSJT}
@@ -1323,7 +1327,7 @@ FSK441 används för att utvärdera överföringar via radiovågsreflekterande s
 av laddade joner, som uppkommer från de spår som meteorer lämnar efter sig.
 
 JT6M introducerades år 2002 och är avsett för kommunikation via bland annat
-meteorreflektioner på 6~m-bandet.
+meteorreflektioner på \SI{6}{\metre}-bandet.
 
 JT65, utvecklat och släppt år 2003, används för kommunikation via troposfären,
 så kallat troposcatter, men också för kommunikation via reflexer mot månen
