@@ -19,12 +19,15 @@ Inom IARU har man enats bland annat om frekvensparen för smalbandiga
 FM-repeatrar.
 Se IARU:s bandplaner för 10~m repeatrar i bilaga \ref{IARU bandplan}.
 För VHF-repeatrar finns bandplanen i bilaga \ref{Bandplan VHF och högre}.
-Frekvensplaner finns för repeatrar inom banden 51--52~MHz (6~m), 145--146~MHz
-(2~m), 432--438~MHz (70~cm), 1240--1300~MHz (10~cm) samt 28000--29700~kHz (10~m).
+Frekvensplaner finns för repeatrar inom banden \SIrange{51}{52}{\mega\hertz}
+(\SI{6}{\metre}), \SIrange{145}{146}{\mega\hertz} (\SI{2}{\metre}),
+\SIrange{432}{438}{\mega\hertz} (\SI{70}{\centi\metre}),
+\SIrange{1240}{1300}{\mega\hertz} (\SI{10}{\centi\metre}) samt
+\SIrange{28000}{29700}{\kilo\hertz} (\SI{10}{\metre}).
 
 \section{Kanalnumreringsmetod}
 Vid införandet av \SI{12,5}{\kilo\hertz} kanalavstånd på 2~meter- och
-70~cm-banden infördes ett nytt system.
+\SI{70}{\centi\metre}~cm-banden infördes ett nytt system.
 Man börjar med en bokstav som talar om vilket band det är
 \begin{itemize}
   \item F för \SI{51}{\mega\hertz}, kanalavstånd \SI{10}{\kilo\hertz}
@@ -33,8 +36,8 @@ Man börjar med en bokstav som talar om vilket band det är
 \end{itemize}
 Kanalnumret börjar med 00 på varje sådant band och ökar med ett (1) för varje
 kanal i bandet.
-På 51 och 145~MHz används tvåsiffrig numrering och på \SI{430}{\mega\hertz}
-tresiffrig.
+På 51 och \SI{145}{\mega\hertz} används tvåsiffrig numrering och på
+\SI{430}{\mega\hertz} tresiffrig.
 För repeaterkanaler sätts ett R före bandbokstaven.
 
 \newpage
@@ -45,7 +48,7 @@ Repeaterskift \SI{2000}{\kilo\hertz}.
 \begin{tabular}{ r | c | l | l }
 	Kanal &       & Sändar-        & Mottagar-  \\
 	Ny    & fd    & frekvens       & frekvens \\
-        &       & [MHz]          & [MHz] \\
+          &       & [\si{\mega\hertz}] & [\si{\mega\hertz}] \\
 	\hline
 	RU361 &       & 432,5125       & 434,5125 DV    \\
 	RU362 &       & 432,5250       & 434,5250 DV    \\
@@ -95,7 +98,7 @@ Repeaterskift \SI{600}{\kilo\hertz}.
 
 \begin{tabular}{ r | c | l | l }
 	Kanal & & Din sändar- & Din mottagar- \\
-	Ny    & fd & frekvens [MHz] & frekvens [MHz] \\
+	Ny    & fd & frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
 	\hline
 	RV46 & & 144,975 & 145,575\\
 	RV47 & & 144,9875 & 145,5875\\

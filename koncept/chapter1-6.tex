@@ -24,12 +24,12 @@ viss tidpunkt \(t\).
 bokstäver.)
 
 Bild \ref{fig:BildII1-16} visar en sinusformad växelspänning med frekvensen
-\(50\ \text{Hz}\).
+\SI{50}{\hertz}.
 Spänningen \(u\) är \(+230\ \text{V}\) vid tidpunkten 2,5~millisekunder efter en
 positiv nollgenomgång.
-Efter totalt \(5\, \text{ms}\) uppnås toppvärdet \(u_{max}\) dvs. \(+325\ \text{V}\).
-Efter totalt \(10\, \text{ms}\) sker en negativ nollgenomgång.
-Efter totalt \(12,5\, \text{ms}\) är spänningen \(-u\), dvs. \SI{-230}{\volt} osv.
+Efter totalt \SI{5}{\milli\second} uppnås toppvärdet \(u_{max}\) dvs. \(+325\ \text{V}\).
+Efter totalt \SI{10}{\milli\second} sker en negativ nollgenomgång.
+Efter totalt \SI{12,5}{\milli\second} är spänningen \(-u\), dvs. \SI{-230}{\volt} osv.
 
 \subsection{Toppvärde eller amplitud}
 \harec{a}{1.6.2b}{1.6.2b}
@@ -44,7 +44,7 @@ På bild \ref{fig:BildII1-16} är de högsta värdena \(+325\ \text{V}\) och
 \index{topp-till-toppvärde}
 
 Topp-till-toppvärde är summan av toppvärdena över och under noll.
-På bild \ref{fig:BildII1-16} är detta värde \(650\ \text{V}\).
+På bild \ref{fig:BildII1-16} är detta värde \SI{650}{\volt}.
 
 \subsection{Effektivvärde}
 \harec{a}{1.6.2c}{1.6.2c}\harec{a}{1.6.2d}{1.6.2d}
@@ -55,7 +55,7 @@ effektutveckling som en likspänning \(U\).
 
 För ett sinusformat förlopp gäller följande samband mellan toppvärdet och
 effektivvärdet (det s.k. kvadratiska medelvärdet), vilket motsvarar amplituden
-vid vinklarna 45, 135, 225 och 270\degree.
+vid vinklarna 45, 135, 225 och \ang{270}.
 %%
 \[
 \begin{array}{lllll}
@@ -69,9 +69,9 @@ U=\dfrac{\hat{u}}{\sqrt{2}} & & I=\dfrac{\hat{i}}{\sqrt{2}} & & (\sqrt{2} = 1,41
 
 Fasläget \(\varphi\) är när inom en period, som ett givet momentanvärde
 uppträder.
-Tidpunkten för varje momentanvärde motsvarar en andel av 360\degree elektriska
+Tidpunkten för varje momentanvärde motsvarar en andel av \ang{360} elektriska
 grader.
-Till exempel uppnås värdet noll volt vid 0\degree, 180\degree~och 360\degree~(= 0\degree).
+Till exempel uppnås värdet noll volt vid \ang{0}, \ang{180} och \ang{360} (= 0\degree).
 
 \subsection{Bågmått}
 \index{bågmått}
@@ -83,7 +83,7 @@ Till exempel uppnås värdet noll volt vid 0\degree, 180\degree~och 360\degree~(
 I beräkningar av växelströmskretsar används ofta inte vinkelmått för fasläget
 (gradtal) utan i stället begreppet bågmått.
 
-I en så kallad enhetskrets med radien \(r = 1\) motsvaras vinkeln 360\degree av
+I en så kallad enhetskrets med radien \(r = 1\) motsvaras vinkeln \ang{360} av
 en båge med längden \(2 \cdot \pi \cdot r= 2 \cdot \pi \cdot 1 = 2 \pi =\)
 omkretsen.
 Vid \(f\) perioder per sekund blir båglängden \(= 2\pi f\).
@@ -162,17 +162,17 @@ till exempel:
 \index{symbol!\(f\) frekvens}
 \index{HF}
 
-Måttenheten för frekvens är hertz [Hz].
+Måttenheten för frekvens är hertz [\si{\hertz}].
 I formler betecknas frekvensen med \(f\).
 
 \begin{center}
 \begin{tabular}{ll}
-1~Hz      & = 1 period per sekund (p/s) \\
-10~Hz     & = 10 perioder per sekund \\
-50~Hz     & = 50 perioder per sekund \\
-1~000~Hz  & = \(10^3\)~Hz = 1~kHz (kilohertz) \\
-1~000~kHz & = \(10^6\)~Hz = 1~MHz (megahertz) \\
-1~000~MHz & = \(10^9\)~Hz = 1~GHz (gigahertz) \\
+\SI{1}{\hertz}      & = 1 period per sekund (p/s) \\
+\SI{10}{\hertz}     & = 10 perioder per sekund \\
+\SI{50}{\hertz}     & = 50 perioder per sekund \\
+\SI{1000}{\hertz}  & = \SI{e3}{\hertz} = \SI{1}{\kilo\hertz} (kilohertz) \\
+\SI{1000}{\kilo\hertz} & = \SI{e6}{\hertz} = \SI{1}{\mega\hertz} (megahertz) \\
+\SI{1000}{\mega\hertz} & = \SI{e9}{\hertz} = \SI{1}{\giga\hertz} (gigahertz) \\
 \end{tabular}
 \end{center}
 
@@ -201,7 +201,7 @@ Bild \ref{fig:BildII1-17} visar vektorer och fasförskjutning.
 Med fasförskjutning menas tidsskillnaden mellan förlopp, till exempel spänningar
 och/eller strömmar.
 Fasförskjutningen mellan vektorerna kallas även fasvinkel och uttrycks som ett
-gradtal mellan 0 och 360\degree.
+gradtal mellan 0 och \ang{360}.
 
 \subsection{Vektorer}
 \index{vektorer}
@@ -209,7 +209,7 @@ gradtal mellan 0 och 360\degree.
 En spänning, ström, kraft osv. kan beskrivas som en vektor med en storhet och
 riktning.
 På bilden \ref{fig:BildII1-17} har vektorerna \(X_L\), \(R\) och \(X_C\) en
-inbördes fasförskjutning av 90\degree.
+inbördes fasförskjutning av \ang{90}.
 De motsvarar spänningsfallen i en krets med en induktor, en resistor och en
 kondensator kopplade i serie, där den gemensamma strömmen är en sinus.
 
