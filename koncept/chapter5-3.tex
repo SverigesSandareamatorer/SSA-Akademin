@@ -31,8 +31,8 @@ ett antal filter.
 
 \mediumfig{images/cropped_pdfs/bild_2_4-13.pdf}{Superheterodynmottagaren i princip}{fig:bildII4-13}
 
-Bild \ref{fig:bildII4-13} visar en mottagare med mellanfrekvensen 455~kHz,
-som är vanlig i äldre mottagare.
+Bild \ref{fig:bildII4-13} visar en mottagare med mellanfrekvensen
+\SI{455}{\kilo\hertz}, som är vanlig i äldre mottagare.
 MF-filtret kan i enklaste fall bestå av ömsesidigt magnetiskt kopplade
 LC-resonanskretsar.
 Bättre avstämningsskärpa fås med resonatorer av keramik eller kvarts eller med
@@ -41,17 +41,17 @@ hjälp av elektromekaniska resonatorer.
 \textbf{Exempel:}
 En sändning på frekvensen \SI{3600}{\kilo\hertz} ska tas emot.
 Vi ställer då in VFO-frekvensen till \SI{4055}{\kilo\hertz}, eftersom
-mellanfrekvensen är \(4055 - 3600 = 455\)\,kHz.
+mellanfrekvensen är \(4055 - 3600 = \SI{455}{\kilo\hertz}\).
 Den mottagna signalen hamnar då mitt i MF-filtrets passband.
 
 Signaler på angränsande frekvenser tas också emot och alstrar
 blandningsprodukter.
 Med ett mellanfrekvensfilter med till exempel \SI{3}{\kilo\hertz} bandbredd
-(453,5--456,5~kHz), kan signalfrekvenser mellan 3598,5 och 3601,5~kHz passera
-genom filtret.
-En signal med en närliggande frekvens till exempel 3603~kHz, och blandad med den
-inställda VFO-frekvensen 4055~kHz, kommer att alstra en skillnadsfrekvens av
-\SI{452}{\kilo\hertz}.
+(\SIrange{453,5}{456,5}{\kilo\hertz}), kan signalfrekvenser mellan 3598,5 och
+\SI{3601,5}{\kilo\hertz} passera genom filtret.
+En signal med en närliggande frekvens till exempel \SI{3603}{\kilo\hertz}, och
+blandad med den inställda VFO-frekvensen \SI{4055}{\kilo\hertz}, kommer att
+alstra en skillnadsfrekvens av \SI{452}{\kilo\hertz}.
 Denna signal ligger utanför filtrets passband och kommer att dämpas och når
 inte detektorn.
 
@@ -60,7 +60,7 @@ VFO-signalen kan givetvis läggas under i stället för över mellanfrekvensen.
 \textbf{Exempel:}
 VFO-frekvensen \SI{3145}{\kilo\hertz} kan också användas för mottagning av
 frekvensen \SI{3600}{\kilo\hertz}, om mellanfrekvensen är \SI{455}{\kilo\hertz}
-(\(3600 - 455 = 3145\)~kHz).
+(\(3600 - 455 = \SI{3145}{\kilo\hertz}\)).
 Men för att undvika att eventuella övertoner från VFO-signalen blandas med
 mottagna signaler är det lämpligt att placera VFO-frekvensen över
 mottagningsfrekvensen.
@@ -86,8 +86,9 @@ Däremot går det att få god närselektion med enklare medel på lägre frekven
 En dubbelsuper, det vill säga en super med dubbel frekvensomvandling,
 möjliggör god både när- och förselektion, illustreras i bild
 \ref{fig:bildII4-14}.
-I 1:a blandaren blandas den mottagna signalen med signalen från en
-1:a oscillator (VFO) till en hög mellanfrekvens, till exempel 9 eller 10,7~MHz.
+I 1:a blandaren blandas den mottagna signalen med signalen från en 1:a
+oscillator (VFO) till en hög mellanfrekvens, till exempel 9 eller
+\SI{10,7}{\mega\hertz}.
 
 Därmed kan en god spegelfrekvensdämpning erhållas.
 Första MF-filtret kan göras enklare och utan den höga selektivitet som hade
@@ -120,7 +121,7 @@ Om man antar en dubbelsuper-mottagare för VHF-området
 \SIrange{144}{146}{\mega\hertz} enligt bilden, så skulle en 1:a MF med
 frekvensen \SI{10,7}{\mega\hertz} inte vara tillräckligt hög.
 Vid en mottagningsfrekvens av \SI{146}{\mega\hertz} är nämligen spegelfrekvensen
-\(146 + (2 \cdot 10,7) = 167,4\)~MHz, alltså endast 1,15 gånger
+\(146 + (2 \cdot 10,7) = \SI{167,4}{\mega\hertz}\), alltså endast 1,15 gånger
 mottagningsfrekvensen.
 Det hade alltså varit lämpligt med en trippelsuper, det vill säga en trefaldig
 frekvensomvandling, med en 1:a MF i frekvensområdet \SI{70}{\mega\hertz}.

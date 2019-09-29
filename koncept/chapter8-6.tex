@@ -16,10 +16,10 @@ Frekvensområdet \SIrange{30}{300000}{\mega\hertz} delas upp i följande mindre
 avsnitt som kallas:
 
 \begin{itemize}
-  \item Very High Frequency (VHF), 30--300~MHz
-  \item Ultra High Frequency (UHF), 300--3000~MHz
-  \item Super High Frequency (SHF), 3--30~GHz
-  \item Extremely High Frequency (EHF), 30--300~GHz.
+  \item Very High Frequency (VHF), \SIrange{30}{300}{\mega\hertz}
+  \item Ultra High Frequency (UHF), \SIrange{300}{3000}{\mega\hertz}
+  \item Super High Frequency (SHF), \SIrange{3}{30}{\giga\hertz}
+  \item Extremely High Frequency (EHF), \SIrange{30}{300}{\giga\hertz}.
 \end{itemize}
 
 På VHF och högre frekvenser (tidigare UKV) förekommer sällan någon
@@ -52,8 +52,8 @@ Vid högre frekvenser begränsas emellertid räckvidden av atmosfärens
 dämpande inverkan.
 Likaså förloras vågenergi i den topografi, vegetation och bebyggelse som ligger
 i siktlinjen mellan sändare och mottagare.
-I gynnsamma fall är det dock möjligt att överbrygga avstånd på upp till 1000~km
-genom troposfären.
+I gynnsamma fall är det dock möjligt att överbrygga avstånd på upp till
+\SI{1000}{\kilo\metre} genom troposfären.
 Sådana avstånd kallas för överräckvidd.
 
 \subsection{Troposfären -- Troposcatter}
@@ -189,9 +189,9 @@ OSCAR-satelliterna har många olika transpondrar i funktion, vilka var och en
 arbetar med olika kombinationer av sändningsslag (moder) och frekvensband.
 Detta kallas numera att de har olika konfiguration.
 
-En vanlig konfiguration av transponder är CONFIG-V/U (f.d. MOD-J) där
-upplänken är på VHF-bandet, till exempel 145,900--146,000~MHz och nerlänken på
-UHF-bandet till exempel \SIrange{435,800}{435,900}{\mega\hertz}.
+En vanlig konfiguration av transponder är CONFIG-V/U (f.d. MOD-J) där upplänken
+är på VHF-bandet, till exempel \SIrange{145,900}{146,000}{\mega\hertz} och
+nerlänken på UHF-bandet till exempel \SIrange{435,800}{435,900}{\mega\hertz}.
 Varje upplänk-frekvens motsvarar en bestämd nerlänk-frekvens, till exempel upp
 145,950 och ner \SI{435,850}{\mega\hertz}.
 Trafiken över transpondern kan därför ske i full duplex.
