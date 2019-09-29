@@ -266,7 +266,7 @@ För två induktorer gäller:
 
 \textbf{Räkneexempel:}
 
-\[L_1 = 50\ mH \quad L_2 = 60\ mH \quad L =\ ?\]
+\[L_1 = \SI{50}{\milli\henry} \quad L_2 = \SI{60}{\milli\henry} \quad L =\ ?\]
 \[
   L = \frac{L_1 \cdot L_2}{L_1 + L_2} \\
   = \frac{50 \cdot 60}{50 + 60}\ mH \\
@@ -308,7 +308,7 @@ Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
 ömsesidig induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
-Vardera induktansen ökas därför med \(M = 2\ \mu H\).
+Vardera induktansen ökas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 + M + L_2 + M \\
@@ -320,7 +320,7 @@ Vardera induktansen ökas därför med \(M = 2\ \mu H\).
 Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
 ömsesidig induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
-Vardera induktansen minskas därför med \(M = 2\ \mu H\).
+Vardera induktansen minskas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 - M + L_2 - M \\
@@ -749,7 +749,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
 \(X\).
-I båda fallen är enheten ohm [\(\Omega\)].
+I båda fallen är enheten ohm [\si{\ohm}].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -1007,7 +1007,7 @@ Parallellkretsens impedans vid resonans kan då skrivas
 Z = \frac{X_C \cdot X_L}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
-Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
+Med ovanstående kretsdata blir Z = \SI{100}{\kilo\ohm}.
 
 Därav framgår, att impedansen i parallellkretsen är en funktion av det så
 kallade L/C-förhållandet samt av kretsens resistiva förluster.
@@ -1040,11 +1040,12 @@ Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
 Antag att det alstras en spänning av \SI{5}{\milli\volt} i antennkretsen.
-Strömmen genom den vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
+Strömmen genom den vid resonans blir då
+\(\frac{\SI{5}{\milli\volt}}{\SI{10}{\ohm}} = \SI{0,5}{\milli\ampere}\).
 
-Av strömmen bildas reaktiva spänningar, det vill säga
-\(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans
-(som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
+Av strömmen bildas reaktiva spänningar, det vill säga \(\SI{0,5}{\milli\ampere}
+\cdot \SI{1000}{\ohm} = \SI{500}{\milli\volt}\) både över induktans och
+kapacitans (som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \harec{a}{3.2.5}{3.2.5}
