@@ -400,7 +400,8 @@ LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågsfrekven
 Bandbredden på den utsända signalen är skillnaden mellan högsta och lägsta
 modulerande frekvens i signalen:
 
-till exempel \(b = 3~kHz - 0,3~kHz = 2,7~kHz\)
+till exempel \(b = \SI{3}{\kilo\hertz} - \SI{0,3}{\kilo\hertz} =
+\SI{2,7}{\kilo\hertz}\)
 
 \subsubsection{Fördelar med J3E-modulation}
 Bra verkningsgrad vid J3E-modulation jämfört med vid A3E-modulation
@@ -544,15 +545,16 @@ kvoten av maximal deviation \(\Delta f\) och högsta frekvensen \(f_{LF}\).
 %%
 \[m = \dfrac{\Delta f_{max}}{f_{LFmax}}\]
 %%
-Inom amatörradion är det vanligt att arbeta med \(\Delta f_{max} = 3~kHz\) och
-\(f_{LFmax} = 3~kHz\), dvs. \(m = 1\).
+Inom amatörradion är det vanligt att arbeta med \(\Delta f_{max} =
+\SI{3}{\kilo\hertz}\) och \(f_{LFmax} = \SI{3}{\kilo\hertz}\), dvs. \(m = 1\).
 
 Vid modulationsindex \(m = 1\), gäller följande formel för bandbredden \(b\)
 
 \(b = 2 \cdot ( \Delta f_{max} + f_{LFmax}) = 2 \cdot \Delta f_{max}
  + 2 \cdot f_{LFmax}\)
 
-Med ovan nämnda värden blir bandbredden \(b = 2 \cdot (3~kHz + 3~kHz) = 12~kHz\)
+Med ovan nämnda värden blir bandbredden \(b = 2 \cdot (\SI{3}{\kilo\hertz} +
+\SI{3}{\kilo\hertz}) = \SI{12}{\kilo\hertz}\)
 
 Bandbredden ökar således både med ökande deviation och ökande modulerande
 frekvens.
@@ -568,8 +570,9 @@ Vidare undertrycks modulerande frekvenser högre än \SI{3}{\kilo\hertz}, vilket
 En VHF-rundradiosändare är tilldelad ett större frekvensutrymme och kan därför
 använda mycket större bandbredd.
 
-Där är \(\Delta f_{max} = 75~kHz\) och \(f_{LFmax} = 15~kHz\), därmed är
-\(m = \frac{75}{15} = 5\) och \(b = 2 \cdot (75 + 15) = 180~kHz\).
+Där är \(\Delta f_{max} = \SI{75}{\kilo\hertz}\) och \(f_{LFmax} =
+\SI{15}{\kilo\hertz}\), därmed är \(m = \frac{75}{15} = 5\) och \(b = 2 \cdot
+(75 + 15) = \SI{180}{\kilo\hertz}\).
 
 Som framgår av tabellen på nästa uppslag varierar bärvågens liksom
 sidofrekvensernas inbördes amplitud med modulationsindex.
@@ -792,8 +795,9 @@ använder 65 frekvenser som den skiftar mellan, medan JT9 använder 9~frekvenser
 Istället för att modulera frekvensen kan man modulera polariteten eller fasen.
 En sådan modulationsform är \emph{binär fasskift modulation} (eng.
 \emph{Binary Phase Shift Keying (BPSK)} eller \emph{2-state Phase Shift Keying
-(2-PSK)}. Förenklat kan man säga att bärvågen moduleras med +1 eller -1,
-ofta med +1 representerande 0 och -1 representerande 1.
+(2-PSK)}.
+Förenklat kan man säga att bärvågen moduleras med \num{+1} eller \num{-1}, ofta
+med \num{+1} representerande \num{0} och \num{-1} representerande \num{1}.
 
 En nackdel med BPSK är att om polariteten blir förväxlad kommer meddelandet
 att bli inverterat, dvs. 0 blir 1 och 1 blir 0. BPSK behöver därför också
@@ -1031,10 +1035,12 @@ ser vi i tabell \ref{tab:16QAM} att närmaste symbolen är symbol 5 med +1 i I
 och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
 Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
 det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
-avstånd är lägst och därmed rimligast. Det kan dock vara så att man egentligen
-sände symbol 9 med -1 i I och +1 i Q, och därmed fick för stor störning på I
-för att man ska tolka det som rätt symbol. Vi kommer då lägga ut 9 istället
-för 5, vilket innebär att två bitar har ändrats.
+avstånd är lägst och därmed rimligast.
+Det kan dock vara så att man egentligen sände symbol 9 med \num{-1} i I och +1 i
+Q, och därmed fick för stor störning på I för att man ska tolka det som rätt
+symbol.
+Vi kommer då lägga ut 9 istället för 5, vilket innebär att två bitar har
+ändrats.
 
 Genom att granska tabell \ref{tab:16QAM} vidare ser man att värdena för
 I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
