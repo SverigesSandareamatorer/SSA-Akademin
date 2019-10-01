@@ -55,8 +55,8 @@ PDF
 ---
 
 **Hämta det senaste bygget:**
-**[koncept.pdf](http://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
-([arkiv](http://akademin.ssa.se/files/koncept-pdf/))
+**[koncept.pdf](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
+([arkiv](https://akademin.ssa.se/files/koncept-pdf/))
 
 
 BIDRA TILL PROJEKTET
