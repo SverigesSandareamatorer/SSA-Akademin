@@ -1,11 +1,6 @@
 ![SSA-Akademin](ssa-akademin.png)
 
--   [LADDA NER OCH BYGG PROJEKTET](#ladda-ner-och-bygg-projektet)
--   [BIDRA TILL PROJEKTET](#bidra-till-projektet)
--   [OM SSA AKADEMIN](#om-ssa-akademin)
--   [KONTAKT](#kontakt)
-
-[![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/)
+[![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/) [![dfg](https://img.shields.io/badge/download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
 
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
@@ -13,7 +8,7 @@ syfte att utbilda nya radioamatörer.
 Den första upplagan är skriven 1997 och behöver därför en uppdatering och
 tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
-uppdatering av KonCEPT som lett fram till en andra upplagan av boken.
+uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 
 > :warning: **Observera:** Boken och materialet som finns att läsa här
 är ett arbetsmaterial och ska inte användas som en färdig produkt
