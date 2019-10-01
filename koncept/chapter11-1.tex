@@ -260,10 +260,6 @@ Antennförstärkning i förhållande till en isotrop antenn uttrycks vanligen i 
 Detta medför att en vanlig dipolantenn som används som referens för 0\,dBd har
 en förstärkning på 2,15\,dBi jämfört med en isotrop antenn.
 
-%% Alla värden på antennförstärkning uttryckt i dBd ska därför ökas med 2,15 för
-%% att kunna användas i nedanstående tabell som visar förhållandet mellan
-%% förstärkning i dB och linjära faktorer.
-
 Alla värden på antennförstärkning uttryckt i dBd ska därför ökas med 2,15 för
 att kunna användas i tabell \ref{tab:forst} som visar förhållandet mellan
 förstärkning i \si{\decibel} och linjära faktorer.
@@ -355,7 +351,6 @@ Sänder man och tar emot lika mycket under en sexminutersperiod så blir faktorn
 För att räkna ut vilken medeleffekt som används ska man ta hänsyn
 till både modulationsfaktor och intermittensfaktor enligt följande
 
-%% TODO: Den här ser förskräcklig ut, måste formuleras på något annat sätt.
 \(\textit{Medeleffekt} = \textit{Maxeffekten} \cdot \textit{Modulationsfaktor} \cdot \textit{Intermittensfaktor}\)
 
 \noindent\textbf{P = Medeleffekten under en sexminutersperiod}
@@ -384,8 +379,6 @@ medför att faktorerna i tabell \ref{tab:feedannut} blir mindre än ett.
 \end{table*}
 
 För en kabel med dämpningen \SI{2,5}{\decibel} ska alltså värdet 0,56 användas.
-
-%% \textbf{k = Matarkabels dämpning i linjära termer}
 
 \subsection{Distans}
 \index{EMF!distans}
@@ -457,10 +450,7 @@ Max uteffekt är \SI{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) me
 30 sekunders intervaller.
 Den valda matarledningen har en dämpning på \SI{2,5}{\decibel} (0,56~gånger).
 Avståndet från antennen till beräkningspunkten är \SI{15}{\metre}.
-%%
-% Den här uppställningen är läsbar, men inte så städad.
-% Borde fixas.
-%%
+
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = \SI{500}{\watt}\]
 \[k_{mod} = modulationsfaktor\]
@@ -483,10 +473,7 @@ Max uteffekt är \SI{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) me
 30~sekunders intervaller.
 Den valda matarledningen har en dämpning på \SI{2,5}{\decibel} (0,56~gånger).
 Referensvärdet för \SI{144}{\mega\hertz} är \SI{28}{\volt\per\metre}.
-%%
-% Den här uppställningen är läsbar, men inte så städad.
-% Borde fixas.
-%%
+
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = \SI{500}{\watt}\]
 \[k_{mod} = \textit{modulationsfaktor}\]
@@ -494,8 +481,8 @@ Referensvärdet för \SI{144}{\mega\hertz} är \SI{28}{\volt\per\metre}.
 \[G = 31 \quad k = 0,56 \quad E = 28\]
 \[d = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
 = \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
-%%
 = \SI{18,22}{\metre}\]
+
 För att följa de allmänna råden bör allmänheten inte kunna vistas i huvudloben
 framför antennen på ett avstånd mindre än \SI{19}{\metre} då sändning utförs
 enligt exemplet.
@@ -510,10 +497,7 @@ Max uteffekt är \SI{100}{\watt} och trafiksättet är SSB med normala TX/RX
 intervaller.
 Den valda matarledningen har en dämpning på \SI{0,5}{\decibel} (0,89 gånger).
 Referensvärdet för \SI{3,75}{\mega\hertz} är \SI{45}{\volt\per\metre}.
-%%
-% Den här uppställningen är läsbar, men inte så städad.
-% Borde fixas.
-%%
+
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 100 \cdot 0,5 \cdot 0,5 = \SI{25}{\watt}\]
 \[k_{mod} = modulationsfaktor\]
