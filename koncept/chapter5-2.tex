@@ -160,18 +160,19 @@ tonen.
 Bild \ref{fig:bildII4-9} illustrerar blandning av CW-signal och BFO-signal
 för ett antal fall.
 
-Då BFO (VFO) är inställd på frekvensen \(f_2\) = 1831~kHz och den
-mottagna signalen \(f_1\) har frekvensen 1830~kHz så hörs en
+Då BFO (VFO) är inställd på frekvensen \(f_2\) = \SI{1831}{\kilo\hertz} och den
+mottagna signalen \(f_1\) har frekvensen \SI{1830}{\kilo\hertz} så hörs en
 svävningston med frekvensen \SI{1000}{\hertz}.
-Samma resultat fås om BFO ställs in på frekvensen \(f_2\) = 1829~kHz.
+Samma resultat fås om BFO ställs in på frekvensen \(f_2\) =
+\SI{1829}{\kilo\hertz}.
 
-Med BFO på frekvensen \(f_2\) = 1830~kHz hörs ingenting av signalen
-\(f_1\) = 1830~kHz från sändaren.
-Frekvensskillnaden är noll Hz.
+Med BFO på frekvensen \(f_2\) = \SI{1830}{\kilo\hertz} hörs ingenting av
+signalen \(f_1\) = \SI{1830}{\kilo\hertz} från sändaren.
+Frekvensskillnaden är noll hertz.
 
-Med BFO på frekvensen \(f_2\) = 1849~kHz hörs nästan ingenting av signalen
-\(f_1\) = 1830~kHz från sändaren, då mixprodukten \SI{19}{\kilo\hertz} knappt är
-hörbar.
+Med BFO på frekvensen \(f_2\) = \SI{1849}{\kilo\hertz} hörs nästan ingenting av
+signalen \(f_1\) = \SI{1830}{\kilo\hertz} från sändaren, då mixprodukten
+\SI{19}{\kilo\hertz} knappt är hörbar.
 
 De flesta föredrar en ton med frekvensen cirka \SI{800}{\hertz} för mottagning
 av telegrafi.
@@ -257,8 +258,8 @@ Kommer till exempel SSB-sändaren på 1835, som moduleras med 300, 1000 och
 Förkretsen i mottagaren är så bred att denna sändning passerar.
 SSB-sändarens signalfrekvenser i det utsända sidbandet är 1834,7; 1834,0 och
 \SI{1832}{\kilo\hertz}.
-Dessa frekvenser blandas med mottagarens VFO-\-frekvens 1829,2~kHz och alstrar
-blandningsprodukterna 5,5; 4,8 och 2,8~kHz.
+Dessa frekvenser blandas med mottagarens VFO-frekvens \SI{1829,2}{\kilo\hertz}
+och alstrar blandningsprodukterna 5,5; 4,8 och \SI{2,8}{\kilo\hertz}.
 Eftersom lågpassfiltret i mottagarens LF-förstärkare har bandbredden
 \SIrange{0}{3000}{\hertz}, så kommer endast blandningsprodukten
 \SI{2,8}{\kilo\hertz} att vara störande.
@@ -297,10 +298,11 @@ Vid sändarfrekvensen 1832,2 är den \SI{3000}{\hertz}.
 Vid ännu högre sändarfrekvens dämpas blandningsprodukten igen av lågpassfiltret.
 
 Slutsatsen av experimentet blir följande:
-Vid en direktblandande mottagare med VFO-frekvensen \\ 1829,2~kHz och ett 3~kHz
-lågpassfilter blir varje sändare hörbar, som har en sändningsfrekvens mellan
-1826,2 och 1832,2~kHz, varvid blandningsprodukten har frekvenser från 3000~Hz, ner
-genom noll och upp till 3000~Hz igen.
+Vid en direktblandande mottagare med VFO-frekvensen \\ \SI{1829,2}{\kilo\hertz}
+och ett \SI{3}{\kilo\hertz} lågpassfilter blir varje sändare hörbar, som har en
+sändningsfrekvens mellan 1826,2 och \SI{1832,2}{\kilo\hertz}, varvid
+blandningsprodukten har frekvenser från \SI{3000}{\hertz}, ner genom noll och
+upp till \SI{3000}{\hertz} igen.
 
 \largefig{images/cropped_pdfs/bild_2_4-12.pdf}{Passbandbredd och spegelfrekvenser i direktblandade mottagare}{fig:bildII4-12}
 
@@ -313,24 +315,26 @@ Vilka frekvenser kan tas emot med ett bandpassfilter \SIrange{700}{900}{\hertz}
 (mittfrekvens \SI{800}{\hertz}), om VFO-frekvensen är \SI{1829,2}{\kilo\hertz}?
 Jo, vi kan lyssna rätt ostört till vår CW-sändares \SI{800}{\hertz}-ton på
 frekvensen \SI{1830}{\kilo\hertz}.
-Ändå kan en annan sändare med frekvensen 1828,4~kHz störa mottagningen därför
-att denna är \emph{spegelfrekvens} (eng. \emph{mirror frequency}) till
-mottagningsfrekvensen 1830~kHz.
-Vid VFO-frekvensen 1829,2~kHz uppstår en blandningsprodukt, inte bara vid
-sändarfrekvensen 1830~kHz utan också vid 1828,2~kHz.
+Ändå kan en annan sändare med frekvensen \SI{1828,4}{\kilo\hertz} störa
+mottagningen därför att denna är \emph{spegelfrekvens} (eng. \emph{mirror
+frequency}) till mottagningsfrekvensen \SI{1830}{\kilo\hertz}.
+Vid VFO-frekvensen \SI{1829,2}{\kilo\hertz} uppstår en blandningsprodukt, inte
+bara vid sändarfrekvensen \SI{1830}{\kilo\hertz} utan också vid
+\SI{1828,2}{\kilo\hertz}.
 Även denna andra sändarfrekvens, liksom nyttofrekvensen, släpps igenom
 bandpassfiltret.
 
 Spegelfrekvensmottagning är en principiell nackdel i mottagare med
 direktblandning.
 Nyttofrekvens och spegelfrekvens i det senaste exemplet ligger
-\SI{1,6}{\kilo\hertz} (\(2 \cdot 800\) Hz) ifrån varandra, alltså dubbla värdet
+\SI{1,6}{\kilo\hertz} (\SI{2*800}{\hertz}) ifrån varandra, alltså dubbla värdet
 av bandpassfiltrets mittfrekvens.
 
 Vid SSB-mottagning måste naturligtvis hela LF-området upp till \SI{3000}{\hertz}
 kunna släppas igenom.
-Utöver det önskade frekvensområdet 1832--1835~kHz, kommer även spegelfrekvenser
-i området 1835--1838~kHz att kunna tas emot.
+Utöver det önskade frekvensområdet \SIrange{1832}{1835}{\kilo\hertz}, kommer
+även spegelfrekvenser i området \SIrange{1835}{1838}{\kilo\hertz} att kunna tas
+emot.
 
 Vid en LF-bandbredd av \SI{3}{\kilo\hertz} har således den direktblandade
 mottagaren en bandbredd av \SI{6}{\kilo\hertz}, vilket är en god
