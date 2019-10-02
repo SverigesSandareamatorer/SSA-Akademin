@@ -13,16 +13,23 @@
 \usepackage{tikz}
 \usepackage{amsmath,amsfonts,amssymb,bm,mathrsfs}
 \usetikzlibrary{shapes,arrows}
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker = {,},
+	per-mode=symbol,
+	range-units=single,
+	range-phrase={--}
+}
 
-\title{Elsäkerhet}
-\author{SM7NTJ Lorentz}
+\title[SM7NTJ]{Elsäkerhet}
+\author{SSA utbildning}
 
 \begin{document}
-
-\begin{frame}
-\titlepage
-\includegraphics[height=0.3\textheight]{images/ssalogo.png}
-\end{frame}
+	
+	\begin{frame}
+		\titlepage
+		\includegraphics[height=0.3\textheight]{images/ssalogo}
+	\end{frame}
 
 \begin{frame}{Innehåll}
 \tableofcontents
@@ -32,7 +39,7 @@
 
 \begin{frame}{Det grundläggande}
 
-I Sverige har elnätet frekvensen 50~Hz och spänningen 230/400~V.
+I Sverige har elnätet frekvensen \SI{50}{\hertz} och systemspänningarna \SI{230/400}{\volt}.
 
 En person som har auktorisation som elinstallatör eller är yrkesverksam som
 elektriker och omfattas av ett elinstallationsföretags egenkontroll får ändra,
@@ -43,17 +50,17 @@ Vissa elarbeten får göras av den som vet hur man gör:
 
 \begin{frame}{Gör elarbete själv}
 \begin{itemize}
-	\item byta ut en elkopplare (strömbrytare) för högst 16A 400V
+	\item byta ut en elkopplare (strömbrytare) för högst \SI{16}{\ampere} \SI{400}{\volt}
 	\item byta ut ett anslutningsdon (vägguttag, lamputtag, stickpropp,
-	skarvuttag eller liknande) för högst 16A 400V
+	skarvuttag eller liknande) för högst \SI{16}{\ampere} \SI{400}{\volt}
 	\item byta säkring
 	\item byta ljuskälla (lampa, lysrör eller liknande)
 	\item reparera apparater
 	\item byta ut en ljusarmatur i torrt icke brandfarligt utrymme i bostäder
 	\item reparera och tillverka apparatkablar och skarvsladdar.
 	\item utföra, ändra eller reparera en starkströmsanläggning som ingår i en
-	skyddsklenspänningskrets med nominell spänning om högst 50~V med effekt
-	om högst 200~VA och ström begränsad av säkring på högst 10~A.
+	skyddsklenspänningskrets med nominell spänning om högst \SI{50}{\volt} med effekt
+	om högst 200\,VA och ström begränsad av säkring på högst \SI{10}{\ampere}.
 \end{itemize}
 \end{frame}
 
@@ -105,7 +112,7 @@ använda oavsett hur den är avsedd att strömförsörjas.
 Som stöd för hur en apparat kunde byggas för att uppfylla kraven gav
 dåvarande SEMKO ut \emph{Praktiska råd för självbyggaren}.\\
 \vspace{5mm}
-Nedanstående punkter bygger dessa praktiska råd:
+Nedanstående punkter bygger på dessa praktiska råd:
 \end{frame}
 
 \begin{frame}{Praktiska råd sid 1/3}
@@ -269,8 +276,8 @@ Vid reparation ska utrustningen vara spänningslös.
 Före arbetet ska du
 
 \begin{enumerate}
-	\item Stänga av utrustningens nätströmbrytare.
-	\item Dra ur stickproppen ur vägguttaget (dubbel säkerhet).
+	\item stänga av utrustningens nätströmbrytare
+	\item dra ur stickproppen ur vägguttaget (dubbel säkerhet).
 \end{enumerate}
 \end{frame}
 
@@ -337,7 +344,7 @@ En obalanserad antenn kan resultera i stor spänning även på ansluten
 antennkabel.
 Att röra antennkabeln kan därför innebära samma risker som att ta i själva
 antennen.
-T-antennen är en antenn som är konstruerad för att utnyttja denna balans då
+T-antennen är en antenn som är konstruerad för att utnyttja denna obalans då
 själva antennkabeln är del av antennens utstrålande delar.
 För de flesta andra antenner så ska antennkabeln inte stråla och därför ska inte
 beröring innebära fara.
@@ -383,8 +390,8 @@ säkerhetsrisker och medföra störningsproblem.
 Det finns snabba och tröga säkringar.
 Snabba säkringar är det som normalt används.
 Tröga säkringar för samma strömstyrka kan behövas för apparater som har
-speciellt hög startström, till exempel stora nättransformatorer med toroidkärna.
-
+speciellt hög startström, till exempel stora nättransformatorer med toroidkärna.\\
+\vspace{2mm}
 Säkringarna ska kunna bryta tillräcklig hög spänning, annars blir det
 en kvarstående ljusbåge i dem vid säkringsbrott.
 Använd säkringar med rätta strömvärden och välj en säkring med lite marginal
@@ -398,7 +405,7 @@ Nästan all elektrisk utrustning producerar värme.
 För att motverka brandrisk måste värmen ledas bort.
 Åtgärder för att leda bort värme får inte påverka den elektriska utrustningens
 beröringsskydd.\\
-\vspace{5mm}
+\vspace{2mm}
 Självbyggda apparater ska uppfylla kraven på elsäkerhet -- det vill säga
 säkerhet mot elchock och brand -- och byggaren bär ensam ansvaret för att
 utförandet och hanterandet av apparaterna är betryggande.
@@ -410,7 +417,7 @@ Vid ingrepp till exempel i sändare, mottagare och kraftförsörjningsaggregat �
 det lätt att utsätta sig för höga likspänningar.
 I sändare med elektronrör förekommer spänningar i storleksordningen hundratals
 till tusentals volt.\\
-\vspace{5mm}
+\vspace{2mm}
 Observera att även apparater som drivs med batteri eller ackumulatorer kan
 innehålla kretsar som omvandlar den låga spänningen till direkt livsfarlig hög
 spänning.
@@ -421,7 +428,7 @@ Vid ingrepp till exempel i sändare, mottagare och kraftförsörjningsaggregat �
 det lätt att utsätta sig för höga likspänningar.
 I sändare med elektronrör förekommer spänningar i storleksordningen hundratals
 till tusentals volt.\\
-\vspace{5mm}
+\vspace{2mm}
 Observera att även apparater som drivs med batteri eller ackumulatorer kan
 innehålla kretsar som omvandlar den låga spänningen till direkt livsfarlig hög
 spänning.
@@ -449,4 +456,14 @@ sedan kraften brutits.
 	Använd en urladdningsresistor som tål den effekt som utvecklas vid urladdning!
 \end{itemize}
 \end{frame}
+
+\begin{frame}{Frågor}
+	
+	\begin{itemize}
+		\item ?
+		\item ?
+		\item ?
+	\end{itemize}
+\end{frame}
+
 \end{document}

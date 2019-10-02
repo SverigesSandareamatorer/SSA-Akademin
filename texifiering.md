@@ -33,9 +33,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla markerar vi ~~`\part{}` och~~ `\chapter{}` så att det går
-    att hitta delarna.
-    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya utgåvan.
+6.  För att förenkla markerar vi kapitlen med `\chapter{}`.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
@@ -63,18 +61,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 10. Alla formler latexas och kvarvarande ”line-noise” tas bort.
 
-11. Formler med enhetsangivelser och liknande referenser i text skall också
-    latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
-    slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
-    mellan värde och dess prefix och enhet.
-
-    Kommentar: I matematiska formler där enheter ingår bör man
-    omgärda enheter och storheter med `\mathrm{}` då det är bara
-    variabler som skall sättas kursivt egentligen. Om man vill undvika
-    radbrytning mellan mätetal och enhet kan man använda sig av
-    tecknet `~` (tilde) i löpande text, exempelvis *"...dipolantennen har
-    2,15~dB mer förstärkning än en tänkt isotrop antenn som strålar
-    lika i alla riktningar..."*. Slutligen
+11. Formler med enhetsangivelser och liknande referenser i text ska latexas med
+    hjälp av siunitx. T.ex. `\SI{15}{\joule}`.
 
 12. Tabeller latexas givetvis.
 
@@ -142,7 +130,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in `\,` som tusentalsavskiljare
+19. Tusentalsavskiljare läggs in med `\num{}` t.ex. `\num{9000000}`.
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
@@ -155,10 +143,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
-22. Tecknet för grader ° skall kodas som `\degree`.
-    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med `~`
-    för annars kommer mellanslaget kernas bort.
-    För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
+22. Grader kodas med `\ang{}` t.ex. `\ang{90}`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att

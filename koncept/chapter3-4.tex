@@ -36,8 +36,8 @@ och transistor.
 
 \index{LF-förstärkare}
 \index{förstärkare!LF}
-Med \emph{LF-förstärkare} menas förstärkare som arbetar med signaler i
-det lägre frekvensområdet, typiskt upp till cirka 100~kHz.
+Med \emph{LF-förstärkare} menas förstärkare som arbetar med signaler i det lägre
+frekvensområdet, typiskt upp till cirka \SI{100}{\kilo\hertz}.
 LF-förstärkare är mycket vanliga såväl i mottagare som sändare.
 Utöver de aktiva komponenterna (transistorer, elektronrör) är kondensatorer
 och resistorer de viktigaste passiva.
@@ -72,15 +72,16 @@ Frekvensgången anger hur förstärkningen varierar för olika frekvenser inom f
 Det frekvensområde där förstärkaren arbetar med fulla data kallas
 \emph{bandbredd} (eng. \emph{bandwidth}).
 Bandgränserna uttrycks som en nedre och övre gränsfrekvens, där signalnivån
-avviker från ett givet värde, vanligen med högst 3~dB.
+avviker från ett givet värde, vanligen med högst \SI{3}{\decibel}.
 
 För LF-förstärkare för amatörradiobruk är kravet på bandbredd litet; inom ett
-band av 300~Hz till 3~kHz uppnås godtagbar återgivningskvalitet för tal.
+band av \SI{300}{\hertz} till \SI{3}{\kilo\hertz} uppnås godtagbar
+återgivningskvalitet för tal.
 Bandbredden bestäms främst av kondensatorer i kretsen avsedda för överföring
 och avkoppling.
 
-HF-förstärkare används för signaler med hög frekvens, typiskt 100~kHz och
-däröver.
+HF-förstärkare används för signaler med hög frekvens, typiskt
+\SI{100}{\kilo\hertz} och däröver.
 Det finns så kallade bredbandiga förstärkare för ett stort frekvensområde, men
 även avstämda förstärkare för smala frekvensband.
 
@@ -141,7 +142,7 @@ impedansomvandling.
       \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
       \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
       \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
-      Fasläge & motfas \quad 180\degree & medfas \quad 0\degree & medfas 0\degree \\
+      Fasläge & motfas \quad \ang{180} & medfas \quad \ang{0} & medfas \ang{0} \\
     \end{tabular}
   \end{center}
 \end{table*}
@@ -281,7 +282,7 @@ Den totala multipliceringsfaktorn är faktorerna för vardera steget
 multiplicerat med varandra.
 
 Som exempel visar bilden blockschemat för en VHF-sändare med
-oscillatorkristaller i 8~MHz-området.
+oscillatorkristaller i \SI{8}{\mega\hertz}-området.
 Som räkneövning kan andra kristallfrekvenser sättas in för beräkning av den
 slutliga sändningsfrekvensen.
 I frekvensmultiplicerande sändare kan även slutsteget arbeta i klass C, vilket
@@ -291,7 +292,8 @@ förstärkarkedjan förses slutstegets utgång med en resonanskrets som är
 avstämd till sändningsfrekvensen.
 Övertonsdämpningen kan förbättras ytterligare med ett efterföljande
 lågpassfilter.
-Övertoner för 144~MHz är 288~MHz, 432~MHz och så vidare.
+Övertoner för \SI{144}{\mega\hertz} är \SI{288}{\mega\hertz},
+\SI{432}{\mega\hertz} och så vidare.
 
 Frekvensmultiplicering behöver nödvändigtvis inte göras med ett förstärkarsteg
 i klass C.
@@ -300,29 +302,31 @@ de strömmar som passerar genom den.
 En av dessa övertoner kan filtreras fram och förstärkas.
 Till exempel finns det frekvenstripplingssteg byggda kring en speciell typ av
 kapacitansdiod -- varaktordiod.
-Vanliga frekvensområden för så kallad varaktortripplare är 144/432~MHz och
-432/1296~MHz.
+Vanliga frekvensområden för så kallad varaktortripplare är
+144/\SI{432}{\mega\hertz} och 432/\SI{1296}{\mega\hertz}.
 
 Såväl signalen från en kristalloscillator som den från en VFO kan
 multipliceras till en högre frekvens.
 
-Förr täckte VFO i amatörradiosändarna oftast frekvensområdet 3,5--3,8~MHz.
+Förr täckte VFO i amatörradiosändarna oftast frekvensområdet
+\SIrange{3,5}{3,8}{\mega\hertz}.
 Med en så vald VFO-frekvens kunde alla upplåtna frekvensband för
 amatörradio nås med frekvensmultiplicering.
 De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt
 relaterade av detta skäl. Således:
 %%
 \begin{align*}
-  3,5 \cdot 2 & = 7\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 & = 14\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 3 & = 21\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\ \text{MHz}
+  3,5 \cdot 2 & = \SI{7}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 & = \SI{14}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 3 & = \SI{21}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 \cdot 2 & = \SI{28}{\mega\hertz}
 \end{align*}
 %%
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen utan
 även variationerna i den.
-Om till exempel VFO-frekvensen i området 3,5~MHz ändras med 50~Hz, ändras
-utfrekvensen i området 28~MHz med \(2 \cdot 2 \cdot 2 \cdot 50 = 400\) Hz.
+Om till exempel VFO-frekvensen i området \SI{3,5}{\mega\hertz} ändras med
+\SI{50}{\hertz}, ändras utfrekvensen i området \SI{28}{\mega\hertz} med
+\(2 \cdot 2 \cdot 2 \cdot 50 = \SI{400}{\hertz}\).
 Alla frekvenser i signalen multipliceras på detta sätt.
 Amplitudmodulerad telefoni kan därför inte överföras genom en
 frekvensmultipliceringskedja utan att talet förvrängs.

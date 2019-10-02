@@ -13,8 +13,8 @@ Vissa batterityper kan återuppladdas och kallas då ackumulator.
 
 Batterier och ackumulatorer avger en nominell spänning som beror av
 de ingående materialen och givetvis av laddningstillståndet.
-Moderna utrustningar för amatörradio är utförda för 12~V likström och försörjs
-vanligen från ett nätanslutet kraftaggregat.
+Moderna utrustningar för amatörradio är utförda för \SI{12}{\volt} likström och
+försörjs vanligen från ett nätanslutet kraftaggregat.
 På så sätt kan mobila radioutrustningar även försörjas från startackumulatorn
 i fordonet.
 
@@ -26,8 +26,9 @@ kraftaggregat med en eller flera transformatorer och likriktare.
 Alternativt kan samma transformators sekundärsida vara
 försedd med flera lindningar för olika spänningar och strömkretsar.
 
-Det allmänna elnätet i Sverige levererar växelspänning med frekvensen 50~Hz.
-Nätspänningen för hushållsändamål är numera 400/230~V.
+Det allmänna elnätet i Sverige levererar växelspänning med frekvensen
+\SI{50}{\hertz}.
+Nätspänningen för hushållsändamål är numera 400/\SI{230}{\volt}.
 
 Tidigare importerade utrustningar i marknaden kan vara utförda för andra
 nätspännings- och skyddsjordningssystem än vad som nu tillämpas i Sverige.
@@ -112,9 +113,9 @@ egen effektförbrukning.
 
 I obelastat tillstånd är spänningen över laddningskondensatorn \(\sqrt{2}\)
 gånger större än effektivvärdet på transformatorns sekundärspänning.
-När en transformator i tomgång har ett effektivvärde av 230~V över
+När en transformator i tomgång har ett effektivvärde av \SI{230}{\volt} över
 sekundärlindningen blir spänningen över säkerhetsmotståndet
-\(230\cdot\sqrt{2} \approx 325\)~V.
+\(230\cdot\sqrt{2} \approx 325\)\,V.
 
 \subsubsection{Spänningshöjande likriktarkopplingar}
 \index{kraftaggregat!spänningshöjning}
@@ -168,7 +169,10 @@ regleras av zenerdioden.
 I vissa fall behövs i stället en reglerad utström från kraftaggregatet.
 Även för detta ändamål används kopplingar med zenerdioder och transistorer.
 
-Färdiga stabiliseringskretsar i form av integrerade kretsar är numera vanligare än sådana som är uppbyggda av diskreta komponenter. Exempel är linjära spänningsregulatorer som 7805 för 5 V och 7912 för -12 V.
+Färdiga stabiliseringskretsar i form av integrerade kretsar är numera vanligare
+än sådana som är uppbyggda av diskreta komponenter.
+Exempel är linjära spänningsregulatorer som 7805 för \SI{5}{\volt} och 7912 för
+\SI{-12}{\volt}.
 
 \subsection{Switchaggregat}
 \harec{a}{3.3.4}{3.3.4}
@@ -180,7 +184,7 @@ I sådana regleras spänningen eller strömmen genom sönderhackning (switching)
 Genom att förändra förhållandet mellan till- och frånslagstiderna kan man skapa
 det önskade medelvärdet.
 Metoden ger hög verkningsgrad.
-Switchfrekvensen är i storleksordningen 20~kHz eller högre.
+Switchfrekvensen är i storleksordningen \SI{20}{\kilo\hertz} eller högre.
 Sådana kraftaggregat kan emellertid ge upphov till radiofrekventa störningar, varför effektiv avstörning
 behövs.
 
@@ -188,7 +192,9 @@ Kraftaggregat som omvandlar från nätspänning till likspänning använder
 den primärswitchade principen.
 I ett primärswitchat aggregat likriktas nätspänningen och switchas på
 primärssidan av transformatorn.
-Eftersom frekvensen är relativt hög och inte riskerar mätta transformatorns kärna på samma sätt som vid nätfrekvensen (50~Hz), behöver kärnan inte vara så stor.
+Eftersom frekvensen är relativt hög och inte riskerar mätta transformatorns
+kärna på samma sätt som vid nätfrekvensen (\SI{50}{\hertz}), behöver kärnan
+inte vara så stor.
 På sekundärsidan likriktas sedan spänningen och glättning kan ske med relativt
 små kondensatorer tack vare den höga frekvensen.
 Genom att återkoppla spänningen till primärsidan kan utspänningen regleras i
@@ -199,7 +205,8 @@ Ett primärswitchat aggregat måste ha nätfilter för att klara EMC-kraven.
 En annan kategori av switchade aggregat används för likspänningsomvandling, så kallad DCDC-om\-vand\-ling.
 Exempel på sådana är kallade drop-omvandlare, som kan används för att sänka spänningen.
 Andra omvandlare kan höja spänningen eller byta polaritet på den.
-Dessa omvandlare arbetar inte sällan med frekvenser på 200~kHz till 2~MHz.
+Dessa omvandlare arbetar inte sällan med frekvenser på \SI{200}{\kilo\hertz}
+till \SI{2}{\mega\hertz}.
 Likspänningsomvandlare har inte alltid galvanisk isolation mellan in- och utgång.
 
 Numera finns även switchade ersättare med lägre effektförlust än i de äldre linjära regulatorerna i 78- och 79-serien.

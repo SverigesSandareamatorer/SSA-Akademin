@@ -35,16 +35,16 @@ Dess utmärkande egenskap är \emph{resistans} (eng. \emph{resistance}) --
 %%(Se även kapitel \ref{ellära}.)
 
 Resistansen mellan två punkter i en strömkrets är 1~ohm som även skrives
-1~\(\Omega\) (uttalas ''en åm''), när spänningen 1~V mellan punkterna gör att
-en ström av 1~A (en ampere) flyter i kretsen.
+\SI{1}{\ohm} (uttalas ''en åm''), när spänningen \SI{1}{\volt} mellan punkterna
+gör att en ström av \SI{1}{\ampere} (en ampere) flyter i kretsen.
 
 Inom elektroniken används höga resistansvärden och därför även följande
 multipler av enheten
 
 \begin{center}
 \begin{tabular}{lll}
-  1 kiloohm & (\(1\ k\Omega\)) & = \(10^3\) ohm \\
-  1 megaohm & (\(1\ M\Omega\)) & = \(10^6\) ohm \\
+  1 kiloohm & (\SI{1}{\kilo\ohm}) & = \(10^3\) ohm \\
+  1 megaohm & (\SI{1}{\mega\ohm}) & = \(10^6\) ohm \\
 \end{tabular}
 \end{center}
 
@@ -69,27 +69,27 @@ där resistansen \(R\) på en längd \(l\) av en strömledare med en
 genomsnittsarea \(A\) (som oftast anges i kvadratmillimeter).
 
 Resitiviteten för material finns ofta i tabeller, och i bilaga
-\ref{metallersresitivitet} finns ett antal vanliga metallers resitivitet
+\ref{metallersresistivitet} finns ett antal vanliga metallers resitivitet
 angivna.
 
 Följande formel gäller för beräkning av resistansen i en strömledare med
 linjär ström/spänningskaraktär.
 %%
 \[\begin{array}{c}
-    R = \rho \dfrac{l}{A} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] \qquad l=\text{meter}; A=mm^2
+    R = \rho \dfrac{l}{A} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] \qquad l=\text{meter}; A=\si{\milli\metre\squared}
 \end{array}\]
 %%
 \noindent
 \textbf{Exempel}
 
-\(l = 4\ m\) koppartråd
+\(l = \SI{4}{\metre}\) koppartråd
 
-\(A = 2\ mm^2\)
+\(A = \SI{2}{\milli\metre\squared}\)
 
 \(\rho \text{ (koppar)} = 0,017\)
 
 \[\begin{array}{c}
-R = \dfrac{\rho \cdot l}{A} \qquad R = \dfrac{0,017 \cdot 4}{2} = 0,034\ \Omega
+R = \dfrac{\rho \cdot l}{A} \qquad R = \dfrac{0,017 \cdot 4}{2} = \SI{0,034}{\ohm}
 \end{array}\]
 
 \noindent
@@ -233,8 +233,9 @@ infraröda området.
 Resistansen ökar med längden på strömledaren. Denna egenskap används i
 \emph{magnetfältsberoende fältplattor} som utnyttjar \emph{halleffekten}, även
 kända som \emph{hallresistor}. En sådan består av en keramisk bärarplatta med
-en yta av indiumantimonid. I ytan är ytterst smala parallella metallbanor
-inlagda på ett avstånd av någon \(\mu m\).
+en yta av indiumantimonid.
+I ytan är ytterst smala parallella metallbanor inlagda på ett avstånd av någon
+\si{\micro\metre}\.
 Normalt går strömmen kortaste vägen tvärs över banorna, men när ett magnetfält
 träffar vinkelrätt mot plattans yta avlänkas elektronerna.
 De får då längre väg över till nästa metallbana och den totala resistansen
@@ -276,7 +277,7 @@ och mangan.
 Alla material har en temperaturkoefficient, som anger hur mycket resistansen
 ändras per grad. Resistansen vid någon annan temperatur kan därför beräknas med
 följande formel, där man sätter in begynnelsetemperaturen [\(\vartheta\)]
-(\degree C), temperaturändringen [\(\Delta \vartheta\)] och
+(\si{\degreeCelsius}), temperaturändringen [\(\Delta \vartheta\)] och
 temperaturkoefficienten [\(\alpha\)].
 %%
 \[R_{varm} = R_{kall} \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}\]
@@ -354,4 +355,4 @@ Resistorer tillverkas vanligen med standardiserade värden från en talserie.
 
 Resistorer märks med hjälp av siffror och bokstäver eller med en färgkod så att
 resistorns huvuddata kan avläsas. Ofta finns märkningen förklarad i 
-komponentleverantörenas kataloger.
+komponentleverantörernas kataloger.

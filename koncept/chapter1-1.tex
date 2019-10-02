@@ -43,13 +43,11 @@ Det gemensamma namnet för alla dessa partiklar är \emph{nukleoner}.
 En atom består dels av en kärna som är sammansatt av protoner och neutroner,
 dels av elektroner, som kretsar omkring kärnan.
 
-\begin{quote}
-\emph{Protonerna är positivt (+) laddade.}
-
-\emph{Neutronerna är neutrala, ej laddade.}
-
-\emph{Elektronerna är negativt (--) laddade}
-\end{quote}
+\begin{itemize}
+	\item Protonerna är positivt (+) laddade.
+	\item Neutronerna är neutrala, ej laddade.
+	\item Elektronerna är negativt (--) laddade.
+\end{itemize}
 
 \smallfig{images/cropped_pdfs/bild_2_1-01.pdf}{Atomernas uppbyggnad}{fig:BildII1-1}
 
@@ -78,7 +76,7 @@ Valenselektronerna är alltså inte bara av betydelse för materialets kemiska
 struktur utan också för dess elektriska egenskaper.
 
 Atomernas massa och volym är ytterst liten.
-Tag som exempel en kub av koppar med volymen \(1\ cm^3\) och vikten
+Tag som exempel en kub av koppar med volymen \SI{1}{\cubic\centi\metre} och vikten
 \(8,9\ gram\).
 Den består av ca \(8,5 \cdot 10^{22}\) kopparatomer, dvs.
 \(85\, 000\, 000\, 000\, 000\, 000\, 000\, 000\) stycken.
@@ -547,16 +545,16 @@ Välj det alternativ som innehåller två kända storheter.
 \subsubsection{Ohms lag}
 
 \(R\) söks, \(U\) och \(I\) är kända;
-Om \(U = 230\ V\) och \(I = 2\ A\), så blir
+Om \(U = \SI{230}{\volt}\) och \(I = \SI{2}{\ampere}\), så blir
 %%
-\[R=\dfrac{U}{I}=\dfrac{230}{2}=115\ \Omega\]
+\[R=\dfrac{U}{I}=\dfrac{230}{2}=\SI{115}{\ohm}\]
 %%
 \subsubsection{Joules lag}
 
 \(P\) söks, \(U\) och \(I\) är kända.
-Om \(U = 230\ V\) och \(I = 2\ A\), så blir
+Om \(U = \SI{230}{\volt}\) och \(I = \SI{2}{\ampere}\), så blir
 %%
-\[P = U \cdot I = 230 \cdot 2 = 460\ W\]
+\[P = U \cdot I = 230 \cdot 2 = \SI{460}{\watt}\]
 %%
 \subsection{Amperetimmar (Ah) och batterikapacitet}
 \harec{a}{1.1.9}{1.1.9}
@@ -586,10 +584,9 @@ Sådana celler kallas vanligtvis primärcell eller primärbatteri.
 Energi i form av en elektrisk laddning kan även lagras i en kondensator.
 Energin kan då lagras och tas ut utan omvandling.
 
-Kapaciteten i en elektrisk cell uttrycks som produkten av den ström
-\(\mathrm{[A]}\) som cellen avger och under den tid \(\mathrm{[s, h]}\) detta
-kan ske.
-Uttryckt med tidsenheten timmar blir då kapaciteten \(\mathrm{[Ah]}\).
+Kapaciteten i en elektrisk cell uttrycks som produkten av den ström \si{\ampere}
+som cellen avger och under den tid \(\mathrm{[s, h]}\) detta kan ske.
+Uttryckt med tidsenheten timmar blir då kapaciteten Ah.
 
 Den kapacitet som anges i en cells produktdata är den nominella.
 Denna kapacitet gäller endast under vissa normerade förhållanden såsom
@@ -609,12 +606,12 @@ Batteriets polspänning är då summan av cellernas pols\-pänningar.
 Hur stort arbete ett batteri avger, beror såväl på hela batteriets
 polspänning som på de enskilda cellernas kapacitet.
 Exempel:
-Ett batteri med polspänningen \(12\ \mathrm{V}\) och cellkapaciteten
-\(100\ \mathrm{Ah}\) kan nominellt avge
-\(P = U \cdot I = 12 \cdot 100 = 1200\ \mathrm{VAh} = 1,2\ \mathrm{kWh}\).
+Ett batteri med polspänningen \SI{12}{\volt} och cellkapaciteten
+\SI{100}{Ah} kan nominellt avge
+\(P = U \cdot I = 12 \cdot 100 = \SI{1200}{VAh} = \SI{1,2}{kWh}\).
 
 Hur länge batteriet ''räcker'' per laddning beror som sagt bland annat på
 vilken strömstyrka man tar ut.
-Tar man ut \(1\ \mathrm{A}\) ur \(100\ \mathrm{Ah}\)-cellen här ovan, så blir
-urladdningstiden nominellt
-\(t = 100\ \mathrm{Ah}/1\ \mathrm{A} = 100\ \mathrm{h}\).
+Tar man ut \SI{1}{\ampere} ur \SI{100}{Ah}-cellen här ovan, så blir
+urladdningstiden nominellt \(t = \SI{100}{Ah}/\SI{1}{\ampere} =
+\SI{100}{\hour}\).

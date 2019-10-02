@@ -62,14 +62,14 @@ Decimaltecknen används på följande sätt:
 
 \begin{center}
 \begin{tabular}{rll}
-	0,002~Hz & skrivs & H002 \\
-	12,5~kHz & skrivs & 12K5 \\
-	0,1~Hz   & skrivs & H100 \\
-	2,4~kHz  & skrivs & 2K40 \\
-	25,3~Hz  & skrivs & 25H3 \\
-	6~kHz    & skrivs & 6K00 \\
-	180~kHz  & skrivs & 181K \\
-	6,25~MHz & skrivs & 6M25 \\
+	\SI{0,002}{\hertz}     & skrivs & H002 \\
+	\SI{12,5}{\kilo\hertz} & skrivs & 12K5 \\
+	\SI{0,1}{\hertz}       & skrivs & H100 \\
+	\SI{2,4}{\kilo\hertz}  & skrivs & 2K40 \\
+	\SI{25,3}{\hertz}      & skrivs & 25H3 \\
+	\SI{6}{\kilo\hertz}    & skrivs & 6K00 \\
+	\SI{180}{\kilo\hertz}  & skrivs & 181K \\
+	\SI{6,25}{\mega\hertz} & skrivs & 6M25 \\
 \end{tabular}
 \end{center}
 
@@ -84,7 +84,7 @@ sidband.
 modulerar bärvågen.
 Signaler i basbandet ligger vanligen mycket lägre i frekvens än bärvågen.
 I den låga änden av basbandet kan frekvensen närma sig eller vara likström
-(0~Hz).
+(\SI{0}{\hertz}).
 I den höga änden beror frekvensen på det värde där information finns liksom att
 det finns underbärvågor eller andra speciella signaler inom basbandet.
 Det finns ett basband för alla typer av signaler, vare sig de är analoga eller
@@ -113,7 +113,7 @@ I andra modulationssystem än för amplitudmodulation kan däremot bredden på
 sidbanden mycket överstiga den högsta frekvenskomposanten i basbandssignalen.
 
 \emph{Använd bandbredd} (eng. \emph{occupied bandwidth}) är avståndet mellan
-(-23~dB) av den totala medeleffekten.
+(\SI{-23}{\decibel}) av den totala medeleffekten.
 För amatörer är det inte alltid lätt att översta och nedersta delen av ett
 spektrum, där medeleffekten är lägre än 0,5~\% bestämma den använda bandbredden.
 Den kan mätas med en spektrumanalysator, men ett sådant instrument är
@@ -129,21 +129,18 @@ finns i kapitel \ref{modulation}.
 \emph{Tilldelat frekvensband} är den nödvändiga bandbredden plus två gånger den
 absoluta frekvenstoleransen.
 
-\emph{Frekvenstolerans} (eng. \emph{frequency tolerance}) uttryckt i PPM (del per
-\(10^6\)), procent eller i Hz är den maximalt tillåtna frekvensavvikelsen från
-den korrekta frekvensen.
+\emph{Frekvenstolerans} (eng. \emph{frequency tolerance}) uttryckt i PPM (del
+per \(10^6\)), procent eller i \si{\hertz} är den maximalt tillåtna
+frekvensavvikelsen från den korrekta frekvensen.
 
 \section{Sändningsklass}
 
-Sändningklass anges med tre tecken där:
+Sändningklass anges med tre tecken där
 
 \begin{itemize}
-\item 
-	Första tecknet beskriver huvudbärvågens modulation 
-\item 
-	Andra tecknet beskriver den modulerade signalens karaktär 
-\item 
-	Tredje tecknet beskriver typ av information 
+\item första tecknet beskriver huvudbärvågens modulation
+\item andra tecknet beskriver den modulerade signalens karaktär
+\item tredje tecknet beskriver typ av information.
 \end{itemize}
 
 \subsection{Huvudbärvågens modulation}
@@ -278,7 +275,7 @@ X &	Andra arter av multiplex \\
 
 \begin{description}\raggedright
 \item[\textnormal{N0N}] Omodulerad bärvåg, ingen överförd information.
-\item[\textnormal{100H A1A AN}] Morsetelegrafi genom nyckling av bärvåg, 125-takt, bandbredd 100~Hz, s.k. CW.
+\item[\textnormal{100H A1A AN}] Morsetelegrafi genom nyckling av bärvåg, 125-takt, bandbredd \SI{100}{\hertz}, s.k. CW.
 \item[\textnormal{16K0 F2A AN}] Morsetelegrafi, frekvensmodulation med nyckling av ton, t.ex. i repeater, s.k. tontelegrafi.
 \item[\textnormal{254H F1B BN}] Fjärrskrift genom frekvensskiftnyckling av bärvåg (FSK), utan felkorrigering, hastighet 50~Bd, frekvensskift i 70~Hz, s.k. RTTY.
 \item[\textnormal{254H J2B BN}] Fjärrskrift genom frekvensskiftnyckling av modulerande tonpar (AFSK), vid sändning av enkelt sidband med undertryckt bärvåg, bandbredden beroende av hastighet och frekvenser i tonparet Jfr 254H F1B BN
