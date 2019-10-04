@@ -54,14 +54,6 @@ En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 
 \mediumfig[0.4]{images/cropped_pdfs/bild_2_1-32.pdf}{Effektförhållande}{fig:BildII1-32}
 
-%% \begin{figure}[ht]
-%% \begin{center}
-%% \includegraphics[width=7cm]{images/cropped_pdfs/bild_2_1-32.pdf}
-%% \caption{Effektförhållande}
-%% \label{fig:BildII1-32}
-%% \end{center}
-%% \end{figure}
-
 Antag att den inmatade effekten P är \SI{1}{\watt}.
 Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna
 effekten \SI{1}{\watt}.
@@ -245,13 +237,13 @@ dBm, där (m) står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} 
 Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
 0\,dB(m) är
 %%
-\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx 0,224 \text{ V}\]
+\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \SI{0,224}{\volt}\]
 %%
 Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0\,dB(m)
 är
 %%
 \[
-I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx 0,0045 \text{ A} = 4,5 \text{ mA}
+I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx \SI{0,0045}{\ampere} = \SI{4,5}{\milli\ampere}
 \]
 %%
 Strömmen \SI{4,5}{\milli\ampere} genom belastningen \SI{50}{\ohm} motsvarar
@@ -335,10 +327,10 @@ Svar: (två sätt att lösa uppgiften)
 \begin{enumerate}
 \item Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och
 kabeln dämpar \(1/1,25 = 0,8\) gånger. Antennen matas då med
-\(10 \cdot 4 \cdot 10 \cdot 0,8 = 320\ W\).
-\item Drivstegets 6~dB plus slutstegets 10~dB minus antennkabelns 1~dB = 15~dB.
-15~dB är \(10 + 5\ dB\) dvs. \(10 \cdot 3,2 = 32\ ggr\). Antennen matas med
-\(10\ W \cdot 32 = 320\ W\).
+\(10 \cdot 4 \cdot 10 \cdot 0,8 = \SI{320}{\watt}\).
+\item Drivstegets \SI{6}{\decibel} plus slutstegets \SI{10}{\decibel} minus antennkabelns \SI{1}{\decibel} = \SI{15}{\decibel}.
+\SI{15}{\decibel} är \(10 + \SI{5}{\decibel}\) dvs. \(10 \cdot 3,2 = 32\ ggr\). Antennen matas med
+\(\SI{10}{\watt} \cdot 32 = \SI{320}{\watt}\).
 \end{enumerate}
 
 \subsection{Impedansanpassning}

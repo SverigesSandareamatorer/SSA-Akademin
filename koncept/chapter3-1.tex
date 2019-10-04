@@ -140,9 +140,11 @@ Då gäller sambandet
 
 \[\frac{R_1}{R_2} = \frac{R_3}{R_4}\]
 
-Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra när de kopplas samman, vilket är fallet vid mätningar.
+Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra
+när de kopplas samman, vilket är fallet vid mätningar.
 
-Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att det är fråga om en växelströmskrets.
+Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att
+det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
 \harec{a}{3.1.1f}{3.1.1f}
@@ -269,8 +271,8 @@ För två induktorer gäller:
 \[L_1 = \SI{50}{\milli\henry} \quad L_2 = \SI{60}{\milli\henry} \quad L =\ ?\]
 \[
   L = \frac{L_1 \cdot L_2}{L_1 + L_2} \\
-  = \frac{50 \cdot 60}{50 + 60}\ mH \\
-  = \frac{3000}{110}\ mH \\
+  = \frac{50 \cdot 60}{50 + 60}\ \si{\milli\henry} \\
+  = \frac{3000}{110}\ \si{\milli\henry} \\
   \approx \SI{27}{\milli\henry}
 \]
 
@@ -312,8 +314,8 @@ Vardera induktansen ökas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 + M + L_2 + M \\
-    &=& 20 + 2 + 10 + 2\ \mu H \\
-    &=& 34\ \mu H
+    &=& 20 + 2 + 10 + \SI{2}{\micro\henry} \\
+    &=& \SI{34}{\micro\henry}
 \end{array}
 \]
 \textbf{Räkneexempel:}
@@ -324,8 +326,8 @@ Vardera induktansen minskas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 - M + L_2 - M \\
-    & &= 20 - 2 + 10 - 2\ \mu H \\
-    &=& 26\ \mu H
+    &=& 20 - 2 + 10 - \SI{2}{\micro\henry} \\
+    &=& \SI{26}{\micro\henry}
 \end{array}
 \]
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
@@ -421,7 +423,7 @@ Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
-\item \(C = 10\ \mu F \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
+\item \(C = \SI{10}{\micro\farad} \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
