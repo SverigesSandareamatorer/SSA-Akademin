@@ -47,11 +47,12 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
 
-Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar spänning och
-ström kontinuerligt så snabbt att vi kan hantera det fulla radiospektrumet och mer därtill.
+Analoga signaler är vad vi kallar för kontinuerliga i tid.
+Hos dessa varierar spänning och ström kontinuerligt så snabbt att vi kan hantera
+det fulla radiospektrumet och mer därtill.
 Detta fungerar dock inte så väl i den digitala världen.
-Där vill vi dels ha värden i digital form, så vi behöver omvandla våra spänningar
-och strömmar till tal, och dels behöver vi göra det i en jämn takt.
+Där vill vi dels ha värden i digital form, så vi behöver omvandla våra
+spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
 
 \emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att göra ett urval.
 Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en jämn takt,
@@ -105,9 +106,9 @@ Vår nya begreppsvärld har några inneboende begränsningar, en av dem är mins
 samplingsfrekvensen.
 Den lägsta frekvensen vi kan hantera i vårt samplade material är fasta värden
 (eller DC som man oftast säger) medan den högsta är den när man alternerar
-mellan två värden, säg -1 +1 -1 +1 vilket ju ger hälften av samplingstakten
-\(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och därmed
-\(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
+mellan två värden, säg \num{-1} \num{+1} \num{-1} \num{+1} vilket ju ger hälften
+av samplingstakten \(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och
+därmed \(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
 
 \subsection{Faltning}
 \harec{a}{1.10.3}{1.10.3}
@@ -168,7 +169,7 @@ Detta fenomen uppstår alltid när man går mellan kontinuerlig och diskret tid.
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
-\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med 40\,kS/s samplingstakt}
+\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med \SI{40}{kS/s} samplingstakt}
 \label{fig:BildII1-38}
 \end{center}
 \end{figure*}
