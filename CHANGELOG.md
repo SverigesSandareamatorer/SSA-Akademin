@@ -5,6 +5,15 @@ Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning
 
 ## [Unreleased]
 
+## [2.3.0] - 2019-10-06
+- Gått över till siunix
+- Anpassat länkar till HTTPS
+- Referenser åtgärdade.
+- Index genereras.
+- Elsäkerhets-slides tillagda.
+- Uppdatering av bygg-miljön.
+- TOODs generering återställd.
+
 ## [2.2.0] - 2019-01-27
 - Justerat permabilitet
 - Justerat med avseende på nya PTS föreskrift	
