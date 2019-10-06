@@ -76,7 +76,7 @@ Med vakuum som dielektrikum gäller
 Med ett godtyckligt dielektrikum gäller
 %%
 \[C = \varepsilon _0 \cdot \varepsilon _r \frac{A}{d}\]
-\[C\ [\textit{farad}]\quad A\ [m^2]\qquad d\ [m]\quad \varepsilon\ [\dfrac{F}{m}]\]
+\[C\ [\textit{farad}]\quad A\ [\si{\metre\squared}]\qquad d\ [\si{\metre}]\quad \varepsilon\ [\dfrac{F}{m}]\]
 
 \subsection{Enheten farad}
 \harec{a}{2.2.2}{2.2.2}
@@ -89,9 +89,9 @@ av den.
 
 \begin{center}
 \begin{tabular}{ll}
-1 mikrofarad & \((1\ \mu F) = 10^{-6}\ F\) \\
-1 nanofarad & \((1\ nF) = 10^{-9}\ F\) \\
-1 pikofarad & \((1\ pF) = 10^{-12}\ F\) \\
+1~mikrofarad & \((\SI{1}{\micro\farad}) = \SI{e-6}{\farad}\) \\
+1~nanofarad & \((\SI{1}{\nano\farad}) = \SI{e-9}{\farad}\) \\
+1~pikofarad & \((\SI{1}{\pico\farad}) = \SI{e-12}{\farad}\) \\
 \end{tabular}
 \end{center}
 
@@ -104,7 +104,7 @@ Därvid förhåller sig kondensatorns polspänning \(U\) till dess
 \emph{laddningsmängd} \(Q\) och kapacitans \(C\) enligt sambandet
 %%
 \[U = \frac{Q}{C} \]
-\[U\ [V]\quad Q\ [As]\quad C\ [F]\]
+\[U\ [\si{\volt}]\quad Q\ [As]\quad C\ [\si{\farad}]\]
 %%
 Laddningsmängd har enheten ampere gånger sekund och är alltså ett mått på hur
 många laddningar som har lagrats.
@@ -161,18 +161,18 @@ därmed en lägre reaktans. Resultatet blir ett kraftigare elektronflöde.
 En mindre kapacitans innebär ett svagare elektronflöde.
 %%
 \[X_C = \dfrac{1}{2\pi fC}\quad \text{eller}\quad X_C = \dfrac{1}{\omega C}\]
-\[X_C\ [\Omega]\quad (f\ [Hz]\quad (C\ [F]\]
+\[X_C\ [\si{\ohm}]\quad f\ [\si{\hertz}]\quad C\ [\si{\farad}]\]
 %%
 \emph{Exempel:}
 %%
-\[C = 10\ \mu F\quad f = 50\ Hz\quad X_c = ?\]
-\[X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = 318,3\ \Omega\]
+\[C = \SI{10}{\micro\farad}\quad f = \SI{50}{\hertz}\quad X_c = ?\]
+\[X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 50 \cdot 10 \cdot 10^{-6}} = \SI{318,3}{\ohm}\]
 %%
 \emph{Exempel:}
 %%
-\[C = 10\ \mu F\quad f = 5\ kHz\quad X_c = ?\]
+\[C = \SI{10}{\micro\farad}\quad f = \SI{5}{\kilo\hertz}\quad X_c = ?\]
 \[X_c = \dfrac{1}{2\pi fC} = \dfrac{1}{2\pi 5 \cdot 10^3 \cdot 10 \cdot 10^{-6}}
-= 3,183\ \Omega\]
+= \SI{3,183}{\ohm}\]
 %%
 En kondensators reaktans är således omvänt proportionell mot dess kapacitans
 och frekvensen i kretsen.
@@ -285,6 +285,6 @@ Kondensatorer tillverkas vanligen med standardiserade värden från en talserie.
 
 \subsection{Märkning av kondensatorer}
 
-Kondensatorer märks med hjälp av siffror och bokstäver eller med en färgkod så att
-kondensatorns huvuddata kan avläsas. Ofta finns märkningen förklarad i 
-komponentleverantörernas kataloger.
+Kondensatorer märks med hjälp av siffror och bokstäver eller med en färgkod så
+att kondensatorns huvuddata kan avläsas.
+Ofta finns märkningen förklarad i komponentleverantörernas kataloger.

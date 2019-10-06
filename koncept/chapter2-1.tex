@@ -76,20 +76,20 @@ Följande formel gäller för beräkning av resistansen i en strömledare med
 linjär ström/spänningskaraktär.
 %%
 \[\begin{array}{c}
-    R = \rho \dfrac{l}{A} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] \qquad l=\text{meter}; A=mm^2
+    R = \rho \dfrac{l}{A} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] \qquad l=\text{meter}; A=\si{\milli\metre\squared}
 \end{array}\]
 %%
 \noindent
 \textbf{Exempel}
 
-\(l = 4\ m\) koppartråd
+\(l = \SI{4}{\metre}\) koppartråd
 
-\(A = 2\ mm^2\)
+\(A = \SI{2}{\milli\metre\squared}\)
 
 \(\rho \text{ (koppar)} = 0,017\)
 
 \[\begin{array}{c}
-R = \dfrac{\rho \cdot l}{A} \qquad R = \dfrac{0,017 \cdot 4}{2} = 0,034\ \Omega
+R = \dfrac{\rho \cdot l}{A} \qquad R = \dfrac{0,017 \cdot 4}{2} = \SI{0,034}{\ohm}
 \end{array}\]
 
 \noindent
@@ -233,8 +233,9 @@ infraröda området.
 Resistansen ökar med längden på strömledaren. Denna egenskap används i
 \emph{magnetfältsberoende fältplattor} som utnyttjar \emph{halleffekten}, även
 kända som \emph{hallresistor}. En sådan består av en keramisk bärarplatta med
-en yta av indiumantimonid. I ytan är ytterst smala parallella metallbanor
-inlagda på ett avstånd av någon \(\mu m\).
+en yta av indiumantimonid.
+I ytan är ytterst smala parallella metallbanor inlagda på ett avstånd av någon
+\si{\micro\metre}\.
 Normalt går strömmen kortaste vägen tvärs över banorna, men när ett magnetfält
 träffar vinkelrätt mot plattans yta avlänkas elektronerna.
 De får då längre väg över till nästa metallbana och den totala resistansen

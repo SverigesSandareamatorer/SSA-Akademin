@@ -142,7 +142,7 @@ impedansomvandling.
       \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
       \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
       \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
-      Fasläge & motfas \quad 180\degree & medfas \quad 0\degree & medfas 0\degree \\
+      Fasläge & motfas \quad \ang{180} & medfas \quad \ang{0} & medfas \ang{0} \\
     \end{tabular}
   \end{center}
 \end{table*}
@@ -302,8 +302,8 @@ de strömmar som passerar genom den.
 En av dessa övertoner kan filtreras fram och förstärkas.
 Till exempel finns det frekvenstripplingssteg byggda kring en speciell typ av
 kapacitansdiod -- varaktordiod.
-Vanliga frekvensområden för så kallad varaktortripplare är 144/432~MHz och
-432/1296~MHz.
+Vanliga frekvensområden för så kallad varaktortripplare är
+144/\SI{432}{\mega\hertz} och 432/\SI{1296}{\mega\hertz}.
 
 Såväl signalen från en kristalloscillator som den från en VFO kan
 multipliceras till en högre frekvens.
@@ -316,17 +316,17 @@ De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt
 relaterade av detta skäl. Således:
 %%
 \begin{align*}
-  3,5 \cdot 2 & = 7\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 & = 14\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 3 & = 21\ \text{MHz} \\
-  3,5 \cdot 2 \cdot 2 \cdot 2 & = 28\ \text{MHz}
+  3,5 \cdot 2 & = \SI{7}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 & = \SI{14}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 3 & = \SI{21}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 \cdot 2 & = \SI{28}{\mega\hertz}
 \end{align*}
 %%
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen utan
 även variationerna i den.
 Om till exempel VFO-frekvensen i området \SI{3,5}{\mega\hertz} ändras med
 \SI{50}{\hertz}, ändras utfrekvensen i området \SI{28}{\mega\hertz} med
-\(2 \cdot 2 \cdot 2 \cdot 50 = 400\)\,Hz.
+\(2 \cdot 2 \cdot 2 \cdot 50 = \SI{400}{\hertz}\).
 Alla frekvenser i signalen multipliceras på detta sätt.
 Amplitudmodulerad telefoni kan därför inte överföras genom en
 frekvensmultipliceringskedja utan att talet förvrängs.

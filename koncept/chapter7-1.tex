@@ -426,7 +426,7 @@ Se kapitel \ref{decibel} om decibelbegreppet.
 \noindent\textbf{Exempel på beräkning av antennförstärkning:}
 %%
 \begin{align*}
-  U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
+  U_f &= \SI{40}{\micro\volt} \quad U_d = \SI{20}{\micro\volt} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
@@ -527,24 +527,25 @@ backriktningen
 \textbf{Exempel 1:}
 %%
 \begin{align*}
-  U_f &= 40 \text{ \(\mu V\)} \quad U_b = 4\text{ \(\mu V\)} \quad F/B =\ ? \\
+  U_f &= \SI{40}{\micro\volt} \quad U_b = \SI{4}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{40}{4} \\
   &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]}
 \end{align*}
 %%
-\(F/B = 20\) dB betyder att fältstyrkan \(U_f\) i huvudriktningen är
+\(F/B = \SI{20}{\decibel}\) betyder att fältstyrkan \(U_f\) i huvudriktningen är
 10 gånger så hög som fältstyrkan i backriktningen \(U_b\).
 
 \noindent\textbf{Exempel 2:}
 %%
 \begin{align*}
-  U_f &= 15 \text{ \(\mu V\)} \quad U_b = 15\text{ \(\mu V\)} \quad F/B =\ ? \\
+  U_f &= \SI{15}{\micro\volt} \quad U_b = \SI{15}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]}
 \end{align*}
 %%
-\(F/B = 0\) dB betyder att \(U_f = U_b\), det vill säga att fältstyrkorna i
-fram- och backriktning är lika stora, vilket inträffar för en dipol.
+\(F/B = \SI{0}{\decibel}\) betyder att \(U_f = U_b\), det vill säga att
+fältstyrkorna i fram- och backriktning är lika stora, vilket inträffar för en
+dipol.
 
 \subsection{Halvvärdesbredd}
 \index{halvvärdesbredd}
@@ -563,7 +564,7 @@ Bild \ref{fig:bildII6-10} visar halvvärdesbredder.
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
   \sqrt{\frac{1}{2}}U_f \\
-  ( \approx 0,7 U_f \text{ motsvarande 3 dB })
+  ( \approx 0,7 U_f \text{ motsvarande \SI{3}{\decibel}})
 \end{gather*}
 %%
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen

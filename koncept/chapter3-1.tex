@@ -140,9 +140,11 @@ Då gäller sambandet
 
 \[\frac{R_1}{R_2} = \frac{R_3}{R_4}\]
 
-Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra när de kopplas samman, vilket är fallet vid mätningar.
+Exemplen med spänningsdelare och bryggor visar att apparater påverkar varandra
+när de kopplas samman, vilket är fallet vid mätningar.
 
-Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att det är fråga om en växelströmskrets.
+Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt att
+det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
 \harec{a}{3.1.1f}{3.1.1f}
@@ -165,17 +167,17 @@ enskilda kapacitanserna.
 \begin{minipage}{\columnwidth}
 \textbf{Räkneexempel:}
 \begin{enumerate}
-\item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
+\item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
   \begin{align*}
     C &= C_1 + C_2 \\[1ex]
     &= 5 + 10 \\[1ex]
-    &= 15\ \mu F
+    &= \SI{15}{\micro\farad}
   \end{align*}
-\item \(C_1 = 1\ nF \quad C_2 = 5\ pF \quad C =\ ?\)
+\item \(C_1 = \SI{1}{\nano\farad} \quad C_2 = \SI{5}{\pico\farad} \quad C =\ ?\)
   \begin{align*}
     C &= C_1 + C_2 \\[1ex]
     &= 1 + 0,005 \\[1ex]
-    &= 1,005\ nF
+    &= \SI{1,005}{\nano\farad}
   \end{align*}
 \end{enumerate}
 \end{minipage}
@@ -206,13 +208,13 @@ För två kondensatorer gäller:
 \noindent
 \textbf{Räkneexempel:}
 \begin{enumerate}
-  \item \(C_1 = 5\ \mu F \quad C_2 = 10\ \mu F \quad C =\ ?\)
+  \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
       C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\[1ex]
       &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\[1ex]
       &= 3\frac{1}{3}\ \mu F \\[1ex]
-      &\approx 3,33\ \mu F
+      &\approx \SI{3,33}{\micro\farad}
     \end{align*}
 \end{enumerate}
 
@@ -235,11 +237,11 @@ gäller:
 \noindent
 \textbf{Räkneexempel:}
 \begin{enumerate}
-\item \(L_1 = 20\ mH \quad L_2 = 50\ mH \quad L =\ ?\)
+\item \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
 \begin{align*}
   L &= L_1 + L_2 \\[1ex]
   & = 20 + 50 \\[1ex]
-  &= 70\ mH
+  &= \SI{70}{\milli\henry}
 \end{align*}
 \end{enumerate}
 
@@ -266,12 +268,12 @@ För två induktorer gäller:
 
 \textbf{Räkneexempel:}
 
-\[L_1 = 50\ mH \quad L_2 = 60\ mH \quad L =\ ?\]
+\[L_1 = \SI{50}{\milli\henry} \quad L_2 = \SI{60}{\milli\henry} \quad L =\ ?\]
 \[
   L = \frac{L_1 \cdot L_2}{L_1 + L_2} \\
-  = \frac{50 \cdot 60}{50 + 60}\ mH \\
-  = \frac{3000}{110}\ mH \\
-  \approx 27\ mH
+  = \frac{50 \cdot 60}{50 + 60}\ \si{\milli\henry} \\
+  = \frac{3000}{110}\ \si{\milli\henry} \\
+  \approx \SI{27}{\milli\henry}
 \]
 
 \subsection{Magnetiskt kopplade induktorer}
@@ -308,24 +310,24 @@ Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
 ömsesidig induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
-Vardera induktansen ökas därför med \(M = 2\ \mu H\).
+Vardera induktansen ökas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 + M + L_2 + M \\
-    &=& 20 + 2 + 10 + 2\ \mu H \\
-    &=& 34\ \mu H
+    &=& 20 + 2 + 10 + \SI{2}{\micro\henry} \\
+    &=& \SI{34}{\micro\henry}
 \end{array}
 \]
 \textbf{Räkneexempel:}
 Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
 ömsesidig induktans av \SI{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
-Vardera induktansen minskas därför med \(M = 2\ \mu H\).
+Vardera induktansen minskas därför med \(M = \SI{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 - M + L_2 - M \\
-    & &= 20 - 2 + 10 - 2\ \mu H \\
-    &=& 26\ \mu H
+    &=& 20 - 2 + 10 - \SI{2}{\micro\henry} \\
+    &=& \SI{26}{\micro\henry}
 \end{array}
 \]
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
@@ -421,13 +423,13 @@ Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
-\item \(C = 10\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
+\item \(C = \SI{10}{\micro\farad} \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
     &= 10 \cdot 10^{-3} \quad \text{dvs var 1/100 sekund.}
   \end{align*}
-\item \(C = 1000\ \mu F \quad R = 1 k\Omega \quad \tau =\ ?\)
+\item \(C = \SI{1000}{\micro\farad} \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10^3 \cdot 10^{-6} \\
@@ -568,8 +570,7 @@ En växelström genom en ideal induktor är förskjuten \ang{90} \emph{efter}
 spänningen.
 Strömmen når toppvärdet vid tidpunkten \ang{90} av perioden, när spänningen nått
 ner till noll.
-När spänningen minskar sjunker strömmen och tar med sig energin i
-magnetfältet.
+När spänningen minskar sjunker strömmen och tar med sig energin i magnetfältet.
 Först vid \ang{180}, när spänningen har nått maxvärdet åt andra hållet, ändrar
 också strömmen riktning och bygger upp ett nytt magnetfält med motsatt
 polaritet.
@@ -749,7 +750,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
 \(X\).
-I båda fallen är enheten ohm [\(\Omega\)].
+I båda fallen är enheten ohm [\si{\ohm}].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -942,12 +943,12 @@ Formeln gäller både för parallell- och seriekretsar.
 \noindent
 \textbf{Räkneexempel:}
 %
-\[L = 100\ nH \quad C = 10\ pF \quad f =\ ?\]
+\[L = \SI{100}{\nano\henry} \quad C = \SI{10}{\pico\farad} \quad f =\ ?\]
 \begin{align*}
   f &= \frac{1}{2\pi \sqrt{100 \cdot 10^{-9} \cdot 10 \cdot 10^{-12}}} \\
   &= \frac{1}{2\pi 10^{-9}} \\
   &= \frac{10^9}{2\pi } \\
-  &\approx 159\ MHz
+  &\approx \SI{159}{\mega\hertz}
 \end{align*}
 
 \subsection{Impedansen i en resonant krets}
@@ -1007,7 +1008,7 @@ Parallellkretsens impedans vid resonans kan då skrivas
 Z = \frac{X_C \cdot X_L}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
-Med ovanstående kretsdata blir Z = 100~k\(\Omega\).
+Med ovanstående kretsdata blir Z = \SI{100}{\kilo\ohm}.
 
 Därav framgår, att impedansen i parallellkretsen är en funktion av det så
 kallade L/C-förhållandet samt av kretsens resistiva förluster.
@@ -1040,11 +1041,12 @@ Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
 Antag att det alstras en spänning av \SI{5}{\milli\volt} i antennkretsen.
-Strömmen genom den vid resonans blir då \(\frac{5\ mV}{10\ \Omega} = 0,5\ mA\).
+Strömmen genom den vid resonans blir då
+\(\frac{\SI{5}{\milli\volt}}{\SI{10}{\ohm}} = \SI{0,5}{\milli\ampere}\).
 
-Av strömmen bildas reaktiva spänningar, det vill säga
-\(0,5 mA \cdot 1000\ \Omega = 500\ mV\) både över induktans och kapacitans
-(som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
+Av strömmen bildas reaktiva spänningar, det vill säga \(\SI{0,5}{\milli\ampere}
+\cdot \SI{1000}{\ohm} = \SI{500}{\milli\volt}\) både över induktans och
+kapacitans (som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \harec{a}{3.2.5}{3.2.5}
