@@ -68,6 +68,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     typsättas med \num{250000} som exempel. Dessa kommer då typsättas korrekt
     så att de får rätt avstånd och separation.
 
+<<<<<<< Updated upstream
     Enheter typsätts t.ex. med \si{kg.m/s^2} för att få kilogrammeter per sekund-
     kvadrat. För en komplett lista av enheter som siunitx förstår, se paketets
     dokumentation.
@@ -76,6 +77,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     omgärda enheter och storheter med '\mathrm{}' då det är bara
     variabler som ska sättas kursivt.
 
+=======
+>>>>>>> Stashed changes
 12. Tabeller typsätts givetvis.
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
