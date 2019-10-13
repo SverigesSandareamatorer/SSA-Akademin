@@ -1,6 +1,6 @@
 # Texifiering av OCR:ad text
 
-Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
+Det är en hel del jobb för att konvertera den OCR:ade texten från KonCEPT till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
 1.  OCRningen feltolkar flera tecken, så den har tolkat I (”Ivar”) som l (”Ludvig”),
@@ -72,7 +72,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     på. Slå upp det på webben eller i hundboken. Xtabular kan
     sidbrytas snyggt, även i 2-kolumner.
 
-13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
+13. Avsnitt markeras med vilken eller vilka HAREC-krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
 
     `\ref{HAREC.a.1.1.1}` gör att man får en pekare på kravet i texten.
@@ -171,13 +171,14 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     ```
 
     Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
-    stället för ”Hertz” och ”Volt”.
+    stället för ”~~Hertz~~” och ”~~Volt~~”.
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
     hitta relevant kompelterande material direkt istället för att behöva söka
-    via index. I PDFen ger det klickbara länkar.
+    via index. I PDF:en ger det klickbara länkar.
 
+    ```latex
     \label{kapacitans}
     Förmågan att lagra elektrisk energi (elektrisk laddning) kallas
     \emph{kapacitans} (eng. \emph{capacitance}).
@@ -185,6 +186,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     ...
 
     Reaktansen beror på kapacitans, se kapitel \ref{kapacitans}
+    ```
 
 25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
