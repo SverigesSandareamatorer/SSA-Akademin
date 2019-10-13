@@ -6,9 +6,10 @@ services:
 
 before_install:
   - sudo apt-get -qq update
-  - "sudo apt-get install -y -qq \
-    language-pack-sv \
-    sshpass"
+  - |
+    sudo apt-get install -y -qq
+    language-pack-sv
+    sshpass
 
 before_script:
   - sudo update-locale LANG=sv_SE.UTF-8
@@ -19,10 +20,14 @@ script:
 
 after_success:
   - sha256sum koncept.pdf
-  - sshpass -e scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.+$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
-  - sshpass -e ssh ${FTP_USER}@${FTP_SERVER} ln -sf \~/${FTP_FOLDER}koncept-pdf/koncept.+$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf \~/${FTP_FOLDER}koncept-pdf/koncept.pdf
-  - if [[ ${TRAVIS_TAG} =~ ^v\d ]]; then
-      sshpass -e scp koncept-tryck.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt).${TRAVIS_COMMIT:0:7}.pdf
+  - |
+    if [[ ${TRAVIS_BRANCH} == "master" && ${TRAVIS_EVENT_TYPE} != "pull_request" ]]; then
+      sshpass -e scp koncept.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.beta+$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf
+      sshpass -e ssh ${FTP_USER}@${FTP_SERVER} ln -sf \~/${FTP_FOLDER}koncept-pdf/koncept.beta+$(printf "%04d" "${TRAVIS_BUILD_NUMBER}").${TRAVIS_COMMIT:0:7}.pdf \~/${FTP_FOLDER}koncept-pdf/koncept.pdf
+    fi
+  - |
+    if [[ ${TRAVIS_BRANCH} == "master" && ${TRAVIS_TAG} =~ ^v\d ]]; then
+      sshpass -e scp koncept-tryck.pdf ${FTP_USER}@${FTP_SERVER}:${FTP_FOLDER}koncept-pdf/koncept.$(cat VERSION.txt)+${TRAVIS_COMMIT:0:7}.pdf
     fi
 
 addons:
