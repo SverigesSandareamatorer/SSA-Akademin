@@ -6,6 +6,7 @@ help:
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
+	@echo '   make koncept.epub           bygg koncept.epub                       '
 	@echo '   make koncep-tryck.pdf       bygger den riktiga versionen för tryck '
 	@echo '   make koncept.webb           bygg webbversionen av koncept          '
 	@echo '   make koncept.ind            bygg index till koncept                '
@@ -14,6 +15,7 @@ help:
 	@echo '   make help                   visa den här informationen             '
 
 all:	koncept.pdf
+all:    koncept.epub
 #all:	matterep.pdf
 #all:	koncept-alpha.pdf
 #all:	koncept-larobok.pdf
@@ -223,6 +225,8 @@ koncept.xml:	koncept.tex $(KONCEPT_FILES)
 koncept.webb:	koncept.xml
 	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
 
+koncept.epub:
+	tex4ebook -f epub3 koncept.tex
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
