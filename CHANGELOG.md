@@ -4,6 +4,11 @@ Alla anmärkningsvärda ändringar till projektet dokumenteras här.
 Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
 
 ## [Unreleased]
+- Liten uppdatering med läsanvisningar för teknikdelen
+- Liten uppdatering med läsanvisningar för reglementesdelen
+- Tillagt ett litet nytt appendix med bandplaner
+- Städat upp HAREC-referenser som var lite yviga i kapitel 13 (28 stycken på rad)
+- Lite annan småfix
 
 ## [2.3.0] - 2019-10-06
 - Gått över till siunix
