@@ -18,13 +18,12 @@ digitalt i exempelvis en processor eller programmerbar logik (FPGA) och sedan
 omvandlar dem till analoga signaler igen.
 
 Om man har en särskilt processor för att göra det kallar man den för en
-\emph{Digital Signalprocessor (DSP)}. Behandlingen kan även göras av dedikerad
-logik, alltså logik avsedd för speciellt ändamål, som inte kan programmeras på
-normalt sätt som en processor.
-Det är fortfarande \emph{Digital Signalbehandling}, men den används nu mer mest
-för de delar av signlbehandlingen där man behöver utföra samma standardiserade
-jobb fort och effektivt.
-
+\emph{Digital Signalprocessor (DSP)}.
+Behandlingen kan även göras av dedikerad logik, alltså logik avsedd för speciellt
+ändamål, som inte kan programmeras på normalt sätt som en processor. Det är fortfarande
+\emph{Digital Signalbehandling}, men den används nu mer mest för de delar av
+signlbehandlingen där man behöver utföra samma standardiserade jobb fort och
+effektivt.
 En processor kan i stället utföra de mindre frekventa jobben som därmed kan
 tillåtas vara mer komplexa.
 
@@ -50,7 +49,6 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{PCM}
 \label{sampling}
 
-
 Analoga signaler är vad vi kallar för kontinuerliga i tid.
 Hos dessa varierar spänning och ström kontinuerligt så snabbt att vi kan hantera
 det fulla radiospektrumet och mer därtill.
@@ -58,10 +56,8 @@ Detta fungerar dock inte så väl i den digitala världen.
 Där vill vi dels ha värden i digital form, så vi behöver omvandla våra
 spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
 
-\emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att 
-göra ett urval.
-Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en
-jämn takt,
+\emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att göra ett urval.
+Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en jämn takt,
 \emph{samplingstakten} (eng. \emph{sample rate}).
 Denna benämner vi ofta med \(f_S\) och begreppet \emph{samplingsperiodtid}
 \(T_S=\frac{1}{f_S}\) används också.
@@ -74,8 +70,7 @@ Bild \ref{fig:BildII1-37} illustrerar hur en analog signal samplas och
 kvantiseras i en ADC, för att behandlas i en DSP, för att därefter konverteras
 till analog signal med DAC och filtreras.
 
-\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC,
-  DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
+\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC, DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
 
 Medan sampling är den process som ger oss \emph{tidsdiskreta} värden istället
 för tidskontinuerliga värden så är värdena fortfarande inte representerade som
@@ -91,19 +86,10 @@ Har man till exempel ett kvantiseringssteg på \SI{0,1}{\volt} så blir 0 till
 vidare.
 Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
-Denna sista del i att omvandla de kvantiserade talen till värden
-kallas \emph{Pulse Coded Modulation (PCM)}. Omvandlingen kan även ske
-olinjärt, alltså med olika avstånd mellan stegen i
-kvantiseringstrappan, vilket nyttjats för datakompression\footnote{I
-  litteraturen beskrivs detta ibland som dynamikkompression och det är
-  det egentligen också. Termen compander myntades någonstans här för
-  att beskriva \emph{compressor---expander} men det är i praktiken
-  antalet databitar som reduceras från 14 bitar som egentligen behövs
-  för att nå de ca 80 dB dynamik man behöver i telefonisystem till de
-  8 bitar i PCM-länken som används.}
-telefonisystem.
-% Förklaring till varför det kallas compander eller dynamikkompressor i
-% litteraturen. /SM0UEI
+Denna sista del i att omvandla de kvantiserade talen till värden kallas
+\emph{Pulse Code Modulation (PCM)}.
+Omvandlingen kan även ske olinjärt, alltså med olika avstånd mellan stegen i
+kvantiseringstrappan, vilket nyttjats för datakompression i telefonisystem.
 
 \subsection{Minsta samplingsfrekvensen}
 \harec{a}{1.10.2}{1.10.2}
@@ -216,7 +202,6 @@ en signal analogt igen. Därför krävs filtrering i bägge riktningarna.
 Vid sampling kan alltså högre frekvenser vika ned sig i spektrumet.
 Detta är oftast oönskat, varvid man har ett filter före ingången som
 undertrycker oönskade signaler.
-
 För exempelvis talsignaler använder man ett lågpassfilter för att undertrycka de
 oönskade signalerna högre upp.
 Detta filter kan istället användas för ett visst frekvensband för att

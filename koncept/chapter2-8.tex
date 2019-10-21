@@ -46,8 +46,7 @@ Om däremot inspänningen är \SI{0}{\volt}, spärras kollektorströmmen och
 utspänningen blir nära \SI{5}{\volt}.
 Man säger då att utgången är hög (H) eller 1.
 
-För NPN-transistorn i bilden gäller att hög inspänning ger låg
-utspänning och vice versa.
+För NPN-transistorn i bilden gäller att hög inspänning ger låg utspänning och vice versa.
 
 Denna logiska funktion kallas inverterande.
 
@@ -103,18 +102,18 @@ Sanningstabellen i bild \ref{fig:BildII2-37} säger att när alla insignaler
 
 \mediumfig{images/cropped_pdfs/bild_2_2-38.pdf}{ELLER-grind (OR-gate)}{fig:BildII2-38}
 
-Sanningstabellen i bild \ref{fig:BildII2-38} säger att när en eller
-flera av insignalerna är 1 så är utsignalen också 1. När alla
-insignaler är 0 är utsignalen 0.
+Sanningstabellen i bild \ref{fig:BildII2-38} säger att när en eller flera av
+insignalerna är 1 så är utsignalen också 1.
+När alla insignaler är 0 är utsignalen 0.
 
 \subsubsection{OCH INTE-grind eller NAND-gate}
 \index{NAND-gate}
 
 \mediumfig{images/cropped_pdfs/bild_2_2-39.pdf}{OCH INTE-grind (NAND-gate)}{fig:BildII2-39}
 
-Sanningstabellen i bild \ref{fig:BildII2-39} säger att när ingen eller
-någon insignal är 1, men inte alla, så är utsignalen 1. När alla
-insignaler är 1 är utsignalen 0.
+Sanningstabellen i bild \ref{fig:BildII2-39} säger att när ingen eller någon
+insignal är 1, men inte alla, så är utsignalen 1.
+När alla insignaler är 1 är utsignalen 0.
 
 \subsubsection{INTE ELLER-grind eller NOR-gate}
 \index{NOR-gate}
@@ -127,27 +126,27 @@ När alla insignaler är 0 är utsignalen 1.
 
 \subsubsection{Inverterad ingång}
 
-En ingång kan behöva ha en inverterad funktion i förhållande till de
-övriga (\emph{low active}). Man kan då göra som i exemplet med en
-OCH-grind i bild \ref{fig:BildII2-41}.
+En ingång kan behöva ha en inverterad funktion i förhållande till de övriga
+(\emph{low active}).
+Man kan då göra som i exemplet med en OCH-grind i bild \ref{fig:BildII2-41}.
 
 \smallfig[0.25]{images/cropped_pdfs/bild_2_2-41.pdf}{Inverterad ingång}{fig:BildII2-41}
 
 \subsubsection{Exklusiv ELLER-grind (XOR-gate)}
 \index{XOR-gate}
 
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-42.pdf}{Exklusiv
-  ELLER-grind (EXOR-gate)}{fig:BildII2-42}
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-42.pdf}{Exklusiv ELLER-grind (EXOR-gate)}{fig:BildII2-42}
+
+Sanningstabellen i bild \ref{fig:BildII2-42} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 0.
+När någon insignal är 1, men inte alla, så är utsignalen 1.
 
 \subsubsection{Exklusiv INTE ELLER-grind (XNOR-gate)}
 \index{XNOR-gate}
 
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-43.pdf}{Exklusiv INTE
-  ELLER-grind (EXNOR-gate)}{fig:BildII2-43}
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-43.pdf}{Exklusiv INTE ELLER-grind (EXNOR-gate)}{fig:BildII2-43}
 
-Sanningstabellen i bild \ref{fig:BildII2-43} säger att när alla
-insignaler antingen är 1 eller 0, så är utsignalen 1. När en insignal
-är 1, men inte alla, så är utsignalen 0.
+Sanningstabellen i bild \ref{fig:BildII2-43} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 1.
+När en insignal är 1, men inte alla, så är utsignalen 0.
 
 \subsection{Grindar med dioder och transistorer}
 
@@ -184,7 +183,6 @@ Resultatet är en så kallad DTL-logik (eng. \emph{Diode-Transistor Logic}).
 Bild \ref{fig:BildII2-45} visar en NAND-grind.
 Här består den egentliga grinden av en ingångstransistor med två emittrar,
 vilka motsvarar dioderna vid A och B i föregående bild.
-
 Kollektorn i denna transistor motsvarar ingångsdioden till transistorn i bild
 \ref{fig:BildII2-44}.
 De övriga tre transistorerna i bild \ref{fig:BildII2-45} bildar en switch (digital strömställare, jämför bild \ref{fig:BildII2-35}),

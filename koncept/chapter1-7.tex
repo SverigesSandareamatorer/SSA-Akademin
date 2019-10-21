@@ -1,4 +1,3 @@
-
 \section{Icke sinusformade signaler}
 \harec{a}{1.7}{1.7}
 
@@ -37,10 +36,8 @@ Den totala amplituden blir emellertid inte summan av 1, 0,7 och 0,2~volt
 eftersom de olika delspänningarnas toppvärden inte uppträder samtidigt.
 I stället måste delspänningarna adderas vid varje tidpunkt för sig.
 
-\pagefig{images/cropped_pdfs/bild_2_1-20.pdf}{Uppdelning av en
-  fyrkantsvåg i grundton och övertoner}{fig:BildII1-20}
-\pagefig{images/cropped_pdfs/bild_2_1-21.pdf}{Överlagrade
-  spänningar}{fig:BildII1-21}
+\pagefig{images/cropped_pdfs/bild_2_1-20.pdf}{Uppdelning av en fyrkantsvåg i grundton och övertoner}{fig:BildII1-20}
+\pagefig{images/cropped_pdfs/bild_2_1-21.pdf}{Överlagrade spänningar}{fig:BildII1-21}
 
 Bild \ref{fig:BildII1-20} visar uppdelning av en fyrkantsvåg i grundton och
 övertoner.
@@ -127,12 +124,11 @@ Likspänningen stoppas och kvar blir slutligen LF-signalen som förstärks.
 
 Resistorer och resistans, i alla dess former, uppvisar en egenskap av
 en varierande spänning även när ingen ström går genom motståndet.
-Denna extra spänning innehåller ett brett spektrum av toner, men är
-också ett tätt spektrum, sådant att ingen enskild ton kan särskiljas
-från någon annan.
-  Istället för att tänka sig en grundton och dess övertoner med ingen
-energi emellan dem så är det istället ett kontinuerligt spektra med
-oändligt många toner.
+Denna extra spänning innehåller ett brett spektrum av toner, men är också ett
+tätt spektrum, sådant att ingen enskild ton kan särskiljas från någon annan.
+Istället för att tänka sig en grundton och dess övertoner med ingen energi
+emellan dem så är det istället ett kontinuerligt spektra med oändligt många
+toner.
 Detta spektra begränsas dock av bandbredden.
 
 \smallfig{images/cropped_pdfs/bild_2_1-36.pdf}{En resistor kan ses ha brusekvivalenter som spänning eller ström}{fig:BildII1-36}
@@ -162,7 +158,7 @@ I praktiken är allt brus begränsat med bandbredden på kanalen, men man
 betraktar det som vitt inom kanalen om det är jämnt inom bandet.
 
 Effekten \(P_n\) av detta brus beror på Boltzmanns konstant
-\(k\ =\ \num{1,38d-23}\) J/K, den absoluta temperaturen \(T\) i
+\(k\ =\ 1,38 \cdot 10^{-23}\) J/K, den absoluta temperaturen \(T\) i
 kelvin samt bandbredden \(B\) i hertz och anges enligt formeln:
 %%
 \[P_n = k T B\]
@@ -176,10 +172,10 @@ så som illustreras i bild \ref{fig:BildII1-36} är
 \subsubsection{Brusbandbredd}
 \index{brus!brusbandbredd}
 
-Medan vi initialt antagit att brusets bandbredd är för frekvenser från
-DC till övre gränsfrekvensen, är det inte nödvändigt.
-Formeln är även relevant för bruset på ett band och bandbredden för
-det bandpassfilter vi har för att enbart lyssna på detta band.
+Medan vi initialt antagit att brusets bandbredd är för frekvenser
+från DC till övre gränsfrekvensen, är det inte nödvändigt.
+Formeln är även relevant för bruset på ett band och bandbredden för det
+bandpassfilter vi har för att enbart lyssna på detta band.
 
 Exempelvis behöver tal på SSB hantera \SI{300}{\hertz} till \SI{3}{\kilo\hertz},
 det vill säga \SI{2,7}{\kilo\hertz} bandbredd, och därmed kommer även
@@ -188,8 +184,8 @@ Vi kommer då att ta emot brus för motsvarande bandbredd.
 Ett filter för telegrafi kan till exempel vara \SI{350}{\hertz} och kommer
 därmed också att ha ett motsvarande förhållande lägre bruseffekt.
 
-Detta är dock en förenkling, eftersom filtret inte filtrerar med
-branta kanter och är helt plant.
+Detta är dock en förenkling, eftersom filtret inte filtrerar med branta kanter
+och är helt plant.
 Filtrets egentliga brusbandbredd beror på hur filtret filtrerar över
 alla frekvenser och summan av dessa.
 Beroende på typ av filter behövs därför en korrigeringsfaktor

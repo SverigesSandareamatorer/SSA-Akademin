@@ -16,8 +16,7 @@ oräkneliga elektroniska kopplingar för alstring av signaler, för
 \emph{förstärkning} (eng. \emph{amplification}) och \emph{blandning} (eng.
 \emph{mixing}) av signaler, för multiplicering av signalfrekvenser etc.
 
-Transistorn presenteras i avsnitt \ref{transistorn} och elektronröret i avsnitt
-\ref{elektronrör}.
+Transistorn presenteras i avsnitt \ref{transistorn} och elektronröret i avsnitt \ref{elektronrör}.
 
 Först förekom endast elektronrör.
 Dessa har emellertid nästan helt ersatts av transistorer.
@@ -129,23 +128,25 @@ gränsfrekvens och goda isolation mellan in- och utgång.
 
 \index{kollektorkoppling}
 \index{förstärkare!kollektorkoppling}
+\emph{Kollektorkoppling} används när hög ingångsimpe\-da\-ns och
+utgångsimpedans önskas.
+Denna koppling har emellertid ingen spänningsförstärkning, men kan användas för
+impedansomvandling.
 
-\emph{Kollektorkoppling} används när hög ingångsimpedans och utgångsimpedans
-önskas. Denna koppling har emellertid ingenspänningsförstärkning, men kan
-användas för så kallad impedansomvandling.
-
-\begin{table*}[!h]
-\caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
-  \begin{tabular}{llll}
-    \bf Egenskap & \bf Emitterkoppl. & \bf Baskoppl. & \bf Kollektorkoppl. \\ \hline\hline
-    \(Z_{in}\) & medel  1\,k\(\Omega\) & liten  50\,\(\Omega\) & stor 100\,k\(\Omega\) \\
-    \(Z_{ut}\) & medel  10\,k\(\Omega\) & stor  100\,k\(\Omega\) & liten 50\,k\(\Omega\) \\ \hline
-    Förstärkning & & & \\
-     \quad Ström- & stor  100\,ggr & $<$1 0,9\,ggr & stor  100\,ggr \\
-     \quad Spänning- & stor  100\,ggr & stor  100\,ggr & $<$1  0,99\,ggr \\
-     \quad Effekt- & m. stor \num{10000}\,ggr & stor  100\,ggr & stor  100\,ggr \\ \hline
-    Fasläge & motfas 180\degree & medfas  0\degree & medfas 0\degree \\
-  \end{tabular}
+\begin{table*}[!ht]
+  \begin{center}
+    \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
+    \begin{tabular}{p{0.15\textwidth}|p{0.22\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}}
+      \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
+      \(Z_{in}\) & medel \quad 1 k\(\Omega\) & liten \quad 50 \(\Omega\) & stor \quad 100 k\(\Omega\) \\
+      \(Z_{ut}\) & medel \quad 10 k\(\Omega\) & stor \quad 100 k\(\Omega\) & liten \quad 50 k\(\Omega\) \\
+      Förstärkning & & & \\
+      \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
+      \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
+      \quad Effekt- & mycket stor 10000 ggr & stor \quad 100 ggr & stor \quad 100 ggr \\
+      Fasläge & motfas \quad \ang{180} & medfas \quad \ang{0} & medfas \ang{0} \\
+    \end{tabular}
+  \end{center}
 \end{table*}
 
 \subsection{Stabilisering av arbetspunkten}
@@ -204,7 +205,7 @@ sändare.
 Vilovärdet på strömmen i huvudkretsen, den så kallade arbetspunkten, placeras i
 mitten på den rakaste delen av styrkaraktäristikan (\(I=0,5\cdot I_{max}\)).
 Därmed fås låg distorsion.
-Verkningsgraden är upp till 50\%.
+Verkningsgraden är upp till 50~\%.
 
 \subsubsection{Klass AB}
 \index{klass AB}
@@ -250,7 +251,7 @@ Viloströmmen är noll, det vill säga arbetspunkten ligger på den negativa del
 av styrkaraktäristikan.
 Endast toppen av den ena halvvågen av insignalen återges och i starkt
 förvrängd form.
-Verkningsgraden är upp till 80\%.
+Verkningsgraden är upp till 80~\%.
 En resonanskrets med högt Q-värde dämpar övertoner och behövs som utgångskrets
 varvid amplituddistorsion inte framstår som besvärande vid CW och FM.
 Med hjälp av resonanskretsen kan frekvensmultiplicering utföras med
@@ -260,6 +261,8 @@ förstärkare i klass C.
 \subsection{Frekvensmultiplicering}
 \index{frekvensmultiplicering}
 \index{frequency multiplication|see {frekvensmultiplicering}}
+
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-47.pdf}{Frekvensmultipliceringskedja}{fig:BildII3-47}
 
 \emph{Frekvensmultiplicering} (eng. \emph{frequency multiplication}) kan
 användas för att skapa en högre frekvens än den som avges av oscillatorn.
@@ -359,8 +362,7 @@ För linjär återgivning krävs drift i klass A eller möjligen klass AB.
 \index{slutsteg!mottaktskopplat}
 \index{push-pull amplifier}
 
-\smallfig[0.5]{images/cropped_pdfs/bild_2_3-49.pdf}{Mottaktskopplat
-  slutsteg med transistorer}{fig:BildII3-49}
+\smallfig[0.5]{images/cropped_pdfs/bild_2_3-49.pdf}{Mottaktskopplat slutsteg med transistorer}{fig:BildII3-49}
 
 Bild \ref{fig:BildII3-49} visar ett \emph{mottaktkopplat} (eng.
 \emph{push-pull amplifier}) förstärkarsteg i klass B, vilket har god verkningsgrad
@@ -379,12 +381,6 @@ För noggrann anpassning till antennen behövs en antennanpassare --
 så kallad matchbox -- med ett \(\pi \)-, T- eller L-kopplat LC-filter.
 
 Att ett slutsteg är ''bredbandsavstämt'' är således en fråga om definitioner.
-
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-49.pdf}
-\caption{Mottaktskopplat slutsteg med transistorer}
-\label{fig:BildII3-49}
-\end{figure}
 
 \subsubsection{Högeffektslutsteg med en tetrod}
 
@@ -494,30 +490,24 @@ En konstlast är en resistor som kan omsätta sändarens hela effekt till värme
 
 Med en HF-mätprob och en detektordiod eller en HF-voltmeter kan man mäta
 effektivvärdet på spänningen över konstlasten och beräkna uteffekten med
-
-formeln:
-\[   P_{\text{ut}} = \dfrac{U^2}{R}   \]
-
-\(U\) = HF-spänningens effektivvärde\\
+formeln
+%
+\[P_{ut} = \dfrac{U^2}{R}\]
+%
+\(U\) = HF-spänningens effektivvärde och 
 \(R\) = resistansen i konstlasten
 
 \paragraph{Beräkning och mätning av PEP-effekt}
 
-Uteffekten definierad som \emph{Peak Envelope Power (PEP)} %\cite[1.157]{ITU-RR}
-\cite{ITU-RR}
+Uteffekten definierad som \emph{Peak Envelope Power (PEP)} \cite[1.157]{ITU-RR}
 är ''den medeleffekt som matas in i en antennmatarledning under det högsta
 effektvärdet inom en frekvenscykel och mätt under normal drift''.
-
 %
 \[P_{PEP} = \left[\dfrac{\hat{u}}{\sqrt{2}}\right]^2\dfrac{1}{R} =  \dfrac{\hat{u}^2}{2R}\]
 %
 där \(\hat{u}\) är momentanspänningen på den största modulationstoppen.
 
-\begin{marginfigure}%{R}{0.5\textwidth}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-52.pdf}
-  \caption{Bestämning av PEP-effekten}
-  \label{fig:BildII3-52}
-\end{marginfigure}
+\smallfig{images/cropped_pdfs/bild_2_3-52.pdf}{Bestämning av PEP-effekten}{fig:BildII3-52}
 
 På grund av SSB-signalens karaktär kan man inte mäta effektivvärdet av
 uteffekten från en SSB-sändare.
@@ -530,25 +520,22 @@ oscilloskop när slutsteget är kopplat till en konstlast.
 
 Med topp-till-toppvärdet känt kan man med följande formler beräkna
 toppvärdet (amplituden)
-
-Toppvärdet (amplituden):
+%
 \[
-\hat{u}= \dfrac{\hat{u}_{\text{t-t}}}{2}
-\]
-
-Effektivvärdet:
-\[
-U = \dfrac{\hat{u}}{\sqrt{2}}
-\]
-
+\begin{array}{lll}
+\text{toppvärdet (amplituden)} &  \quad \hat{u}= & \dfrac{\hat{u}_{t-t}}{2}\\
+& & \\
+\text{effektivvärdet} &\quad  U =& \dfrac{\hat{u}}{\sqrt{2}}
+\end{array}
+\]%
+%
 Effekten vid moduleringstopparna, så kallad \emph{Peak Envelope Power (PEP)},
 kan beräknas med följande formler.
-
+%
 \[
-P_{\text{PEP}} = \dfrac{U^2}{R} \quad \text{respektive} \quad
-P_{\text{PEP}} = \dfrac{\hat{u}_{t-t}^2}{8R}
+P_{PEP} = \dfrac{U^2}{R} \quad\text{respektive}\quad
+P_{PEP} = \dfrac{\hat{u}_{t-t}^2}{8R}
 \]
-
 
 \subsection{Linjäritetskontroll vid SSB}
 \harec{b}{7.2.4}{7.2.4}
@@ -639,11 +626,11 @@ fåtal watt.
 slutsteget och driveffekten inte kan regleras ner, måste en dämpsats
 kopplas in mellan drivsteg och slutsteg.
 En sådan dämpsats kan behöva ta upp en betydande effekt, från en vanligt
-förekommande amatörradiosändare med upp till 100\,watt PEP.
+förekommande amatörradiosändare med upp till 100~watt PEP.
 
-Ett slutsteg med jordat galler fordrar en större driveffekt, varvid risken för
-överstyrning i slutsteget är något mindre och de förebyggande åtgärderna inte så
-omfattande.
+Ett slutsteg med jordat galler fordrar en större driveffekt, varvid
+risken för överstyrning i slutsteget är något mindre och de
+förebyggande åtgärderna inte så omfattande.
 
 Linjära slutsteg innehåller oftast en funktion kallad ALC (Automatic Level
 Control), som kontinuerligt känner av driveffektens inverkan på slutsteget.
@@ -661,16 +648,3 @@ När ALC-regleringen sätter in är överstyrningen således redan ett faktum.
 En orsak till övermodulering är för stor amplitud på den modulerande signalen.
 Detta kan bland annat avhjälpas med inställning av mikrofonförstärkaren och
 riktig mikrofonhantering.
-
-\begin{figure*}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-53.pdf}
-\caption{Linjäritetskontroll vid SSB}
-\label{fig:BildII3-53}
-\end{figure*}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-54.pdf}
-\caption{Linjäritetens betydelse}
-\label{fig:BildII3-54}
-\end{figure}
-

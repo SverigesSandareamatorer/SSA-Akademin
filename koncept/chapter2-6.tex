@@ -8,10 +8,9 @@
 \subsection{Allmänt}
 \label{transistor_allmänt}
 
-En transistor består av skikt av dopade halvledarelement som
-sammanfogats. Vanligt är två N-skikt och ett mellanliggande P-skikt
-(NPN-transistor) eller två P-skikt och ett mellanliggande N-skikt
-(PNP-transistor). Skikten är försedda med anslutningar.
+En transistor består av skikt av dopade halvledarelement som sammanfogats.
+Vanligt är två N-skikt och ett mellanliggande P-skikt (NPN-transistor) eller två P-skikt och ett mellanliggande N-skikt (PNP-transistor).
+Skikten är försedda med anslutningar.
 
 Bild \ref{fig:BildII2-16} visar schemasymboler för de vanliga tran\-sistor\-typerna 
 NPN-transistorer (bipolära), PNP-\-tran\-sistorer (bipolära) och
@@ -25,6 +24,7 @@ FET-transistorer (fälteffekt-).
 Halvledarskikten kallas emitter (E), bas (B) och kollektor (C).
 
 \smallfig[0.06]{images/cropped_pdfs/bild_2_6-37.pdf}{Transistor}{fig:BildII2-17a}
+
 \noindent
 Bild \ref{fig:BildII2-17a} visar en klassisk hålmonterad småsignaltransistor.
 
@@ -32,9 +32,7 @@ Bild \ref{fig:BildII2-17a} visar en klassisk hålmonterad småsignaltransistor.
 
 \tallfig[0.30]{images/cropped_pdfs/bild_2_2-17.pdf}{Skikten i en bipolär transistor}{fig:BildII2-17}
 
-Bild \ref{fig:BildII2-17} överst visar hur mellan skikten B och E
-respektive mellan B och C bildas zoner vars ledningsförmåga kan styras
-elektriskt över anslutningarna.
+Bild \ref{fig:BildII2-17} överst visar hur mellan skikten B och E respektive mellan B och C bildas zoner vars ledningsförmåga kan styras elektriskt över anslutningarna.
 
 \begin{figure*}[p]
   \begin{center}
@@ -56,28 +54,24 @@ elektriskt över anslutningarna.
 
 \subsubsection{Spänningskällan \(U_{BE}\)}
 
-Bild \ref{fig:BildII2-17} mitten visar att mellan bas och emitter
-finns en diodsträcka. När en positiv spänning läggs på basen och en
-negativ spänning på emittern polariseras diodsträckans spärrzon i
-passriktningen. Spärrzonen upplöses då och det flyter en så kallad
-basström \(I_B\).
+Bild \ref{fig:BildII2-17} mitten visar att mellan bas och emitter finns en diodsträcka.
+När en positiv spänning läggs på basen och en negativ spänning på emittern polariseras diodsträckans spärrzon i passriktningen.
+Spärrzonen upplöses då och det flyter en så kallad basström \(I_B\).
 
 \subsubsection{Spänningskällan \(U_{CE}\)}
 
-Bild \ref{fig:BildII2-17} nederst visar att när en positiv spänning
-läggs på kollektorn och en negativ spänning läggs på emittern
-polariseras diodsträckan i spärriktningen. Spärrzonen förstärks då och
-det flyter ingen ström.
+Bild \ref{fig:BildII2-17} nederst visar att när en positiv spänning läggs på kollektorn och en negativ spänning läggs på emittern polariseras diodsträckan i spärriktningen.
+Spärrzonen förstärks då och det flyter ingen ström.
 
 \subsubsection{Inverkan av både \(U_{BE}\) och \(U_{CE}\)}
 
 Bild \ref{fig:BildII2-18} visar hur två spänningskällor \(U_{BE}\) och
-\(U_{CE}\) ansluts till en emitterkopplad NPN-transistor. Ur den
-starkt dopade emitterzonen strömmar elektronerna in i den svagt dopade
-baszonen (spänning: \(U_{BE}\)). De flesta elektronerna blir
-emellertid inte kvar i basen. De stöter igenom det tunna basskiktet
-och når fram till kollektorskiktet med spänningen \(U_{CE}\). Det
-flyter en kollektorström.
+\(U_{CE}\) ansluts till en emitterkopplad NPN-transistor.
+Ur den starkt dopade emitterzonen strömmar elektronerna in i den svagt dopade
+baszonen (spänning: \(U_{BE}\)).
+De flesta elektronerna blir emellertid inte kvar i basen.
+De stöter igenom det tunna basskiktet och når fram till
+kollektorskiktet med spänningen \(U_{CE}\). Det flyter en kollektorström.
 
 För strömmen \(I_E\) (emitterström), \(I_B\) (basström) och \(I_C\)
 (kollektorström) gäller:
@@ -98,10 +92,9 @@ Om strömmen i ingångskretsen för en transistor ändras kan strömmen i
 utgångskretsen ändras mer.
 Vi får en förstärkning.
 
-Av sambandet \(I_C = f(I_B)\) framgår strömförstärkningsfaktorn
-\(\beta\) eller \(h_{FE}\) som är kvoten mellan ändringen i
-utgångsströmmen och ändringen i ingångsströmmen i transistorns aktiva
-(linjära) område.
+Av sambandet \(I_C = f(I_B)\) framgår strömförstärkningsfaktorn \(\beta\) eller
+\(h_{FE}\) som är kvoten mellan ändringen i utgångsströmmen och ändringen i ingångsströmmen i
+transistorns aktiva (linjära) område.
 
 Bild \ref{fig:BildII2-19} visar ström-spänning-diagram för BC~107-transistorn
 för olika basströmmar.
@@ -148,26 +141,22 @@ Man säger därför att de är strömstyrda.
 
 Bild \ref{fig:BildII2-20} anger en schemasymbol för en FET.
 
-Fälteffekttransistorn har tre anslutningar, source (S), drain (D) och
-gate (G).
+Fälteffekttransistorn har tre anslutningar, source (S), drain (D) och gate (G).
 
 \smallfig[0.25]{images/cropped_pdfs/bild_2_2-21.pdf}{Skikten i en N-kanal FET}{fig:BildII2-21}
 
 \subsubsection{Fälteffekttransistorns uppbyggnad}
 
-Bild \ref{fig:BildII2-21} visar ett N-ledande skikt (även kallat
-N-kanal) med anslutningarna S och D anslutna till respektive ändar av
-skiktet. N-kanalen passerar mellan två P-ledande skikt förbundna med
-styrelektroden G.
+Bild \ref{fig:BildII2-21} visar ett N-ledande skikt (även kallat N-kanal) med
+anslutningarna S och D anslutna till respektive ändar av skiktet.
+N-kanalen passerar mellan två P-ledande skikt förbundna med styrelektroden G.
 
-När en spärrspänning läggs mellan G och S breder spärrskikten ut sig
-och N-kanalen blir trängre. Läggs en negativ spänning på S och en
-positiv spänning på D, kommer en ström att flyta i N-kanalen.
-
+När en spärrspänning läggs mellan G och S breder spärrskikten ut sig och N-kanalen blir trängre.
+Läggs en negativ spänning på S och en positiv spänning på D, kommer en ström att flyta i N-kanalen.
 Strömmens styrka kan påverkas med spänningen på G.
 
-En liten spänningsändring \(\Delta U_{GS}\) medför stor ändring av
-strömmen \(\Delta I_{GS}\) i N-kanalen. Detta innebär förstärkning.
+En liten spänningsändring \(\Delta U_{GS}\) medför stor ändring av strömmen
+\(\Delta I_{GS}\) i N-kanalen. Detta innebär förstärkning.
 
 \smallfig[0.25]{images/cropped_pdfs/bild_2_2-22.pdf}{Skikten i en N-kanal MOSFET}{fig:BildII2-22}
 
@@ -184,9 +173,8 @@ Drainströmmen kan ökas eller minskas med hjälp av en positiv respektive negat
 
 \subsubsection{Resistansen mellan gate och source}
 
-För att erhålla en förstärkning med en FET sätter man in en resistor
-\(R_0\) i drainströmkretsen. Över resistorn uppstår då
-spänningsändringar i proportion med strömändringarna.
+För att erhålla en förstärkning med en FET sätter man in en resistor \(R_0\) i drainströmkretsen.
+Över resistorn uppstår då spänningsändringar i proportion med strömändringarna.
 
 För att fastställa viloströmmen och därmed arbetspunkten för samma transistor sätter man in en resistor \(R_S\) i sourceströmkretsen.
 Storleken på sourceresistorn ger sig av önskad gateförspänning \(-U_{GS}\).

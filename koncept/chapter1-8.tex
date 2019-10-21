@@ -18,7 +18,10 @@ elektrisk signal, som får påverka (modulera) en högfrekvent elektrisk signal.
 Denna modulerade signal strålas ut från antennen som ett elektromagnetiskt fält.
 
 Den signal som innehåller informationen kallas \emph{modulerande signal},
-\emph{basband} eller \emph{underbärvåg} medan den signal som informationen överförts till kallas \emph{modulerad signal}, \emph{bärvåg} eller \emph{huvudbärvåg}.
+\emph{basband} eller \emph{underbärvåg}.
+
+Den signal som informationen överförts till kallas \emph{modulerad signal},
+\emph{bärvåg} eller \emph{huvudbärvåg}.
 
 \subsection{Modulationssystem}
 \label{modulationssystem}
@@ -27,16 +30,15 @@ Den största gruppen av modulationssystem är definierad med avseende på hur
 huvudbärvågen är modulerad.
 Vanligast är då amplitud- och vinkelmodulation.
 Av vinkelmodulation finns främst två slag, frekvensmodulation och fasmodulation.
-
-Utäver dessa finns system för pulsmodulation och även direkta digitala modulationsmetoder som påverkar fas och amplitud direkt, så kallad I/Q-modulation. Mer om detta senare.
+Därutöver finns system för pulsmodulation.
 
 \subsection{Sändningsslag}
 \index{sändningsslag}
 \label{sändningsslag}
 
 Sätten att modulera kallas \emph{sändningsslag}.
-Gemensamt för sändningsslagen är att en givare --- det kan vara en mikrofon, en
-telegrafnyckel, en fjärrskriftsmaskin, en dator, en TV-kamera --- alstrar
+Gemensamt för sändningsslagen är att en givare -- det kan vara en mikrofon, en
+telegrafnyckel, en fjärrskriftsmaskin, en dator, en TV-kamera -- alstrar
 en analog eller digital signal.
 Denna styr underbärvågen så att huvudbärvågen moduleras med den avsedda
 informationen och sänds ut.
@@ -91,7 +93,7 @@ samma linje, bärvåg etc.
 \index{frekvenseffektivitet}
 \label{bandbredd_modulation}
 
-Varje radiosändning tar upp plats omkring den nominella bärvågsfrekvensen ---
+Varje radiosändning tar upp plats omkring den nominella bärvågsfrekvensen --
 tillsammans \emph{bandbredden}.
 
 Radioamatören måste veta detta ''platsbehov'', främst för att inte sända utanför
@@ -181,10 +183,9 @@ Mikrofonen tar upp de lufttrycksvariationer som uppstår när man talar och
 omvandlar dem till elektriska svängningar.
 Svängningarna varierar mellan positiva och negativa spänningsvärden.
 
-\paragraph{Försök}
+\textbf{Försök}
 
 \begin{enumerate}
-	
 \item Anslut en mikrofon till ett oscilloskop och studera spänningsförloppen
   för olika slags ljud, toner, tal osv. som funktion av tiden.
   På bilden är dessa svängningar mycket förenklade, till exempel sinusformade.
@@ -216,16 +217,11 @@ amplitudmodulation med
 \item ett frekvensspektrum.
 \end{enumerate}
 
-\paragraph{Försök:}
+\textbf{Försök}
 
 Modulera en A3E-sändare med en \SI{3}{\kilo\hertz}-signal.
 Med en mottagare utrustad med ett smalt filter för telegrafi, kan man urskilja
-och påvisa bärvågen och de båda sidbanden. 
-
-\marginnote{Finns det tillgång till ett instrument som kallas 
-spektrumanalysator så kan man förstås med fördel tillämpa detta för att visa 
-hur signalen ter sig. Genom att variera tonhöjden på modulationen och styrkan 
-kan man visa hur sidbanden representerar den modulerade signalen.}
+och påvisa bärvågen och de båda sidbanden.
 
 \subsubsection{A3E-modulation med en ton}
 
@@ -260,7 +256,6 @@ Side Band).
 LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
 Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
 dubbelt så stor som den högsta modulerande LF-frekvensen:
-
 \(b= 2 \cdot f_{LFmax}\)
 
 Om de modulerande LF-frekvenserna är mellan 0,3 och \SI{3}{\kilo\hertz} blir
@@ -304,14 +299,15 @@ alstras interferenstoner i mottagarna.
 \largefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
 
 Bild \ref{fig:BildII1-26} visar amplitudmodulation med morsetecken.
-Man kan överföra meddelanden med morsetelegrafi på olika sätt. Det
-enklaste sättet är att koppla in och ur sändarens bärvåg i takt med
-teckendelarna i morsetecknen. Man kan kalla det för bärvågstelegrafi.
-Förfarandet kallas sedan mycket länge även för CW (continous waves),
-vilket egentligen anger att bärvågen svänger med konstant amplitud, om
-man bortser från att den nycklas. Detta står i motsats till de dämpade
-bärvågssvängningar som var fallet i sedan mycket länge förbjudna
-gnistsändare.
+Man kan överföra meddelanden med morsetelegrafi på olika sätt.
+Det enklaste sättet är att koppla in och ur sändarens bärvåg i takt med
+teckendelarna i morsetecknen.
+Man kan kalla det för bärvågstelegrafi.
+Förfarandet kallas sedan mycket länge även för CW (continous waves), vilket
+egentligen anger att bärvågen svänger med konstant amplitud, om man bortser
+från att den nycklas.
+Detta står i motsats till de dämpade bärvågssvängningar som var fallet i sedan
+mycket länge förbjudna gnistsändare.
 
 Fastän en sändare ''moduleras utan ton'', har den en viss bandbredd.
 Det beror på att den takt, som sändaren nycklas med, egentligen är en ton --
@@ -343,15 +339,8 @@ Detta stör andra stationer.
 
 Kännetecken för sändningsslaget A1A, telegrafi genom nycklad bärvåg:
 
-Mycket liten bandbredd, extremt gott utnyttjande av sändareffekten,
-stor överföringssäkerhet, lång räckvidd, enkla sändare.
-
-\subsection{Sändningsslaget J3E (även kallat SSB eller ESB)}
-
-\marginnote{HAREC a.\ref{HAREC.a.1.8.3c}, 
-	a.\ref{HAREC.a.1.8.6c}, 
-	a.\ref{HAREC.a.1.8.7c}
-	\label{myHAREC.a.1.8.3c}\label{myHAREC.a.1.8.6c}\label{myHAREC.a.1.8.7c}}
+Mycket liten bandbredd, extremt gott utnyttjande av sändareffekten, stor
+överföringssäkerhet, lång räckvidd, enkla sändare.
 
 \subsection{Sändningsslaget J3E (SSB)}
 \harec{a}{1.8.3c}{1.8.3c}
@@ -364,12 +353,13 @@ stor överföringssäkerhet, lång räckvidd, enkla sändare.
 
 \subsubsection{Princip}
 
-Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller
-samma information.
+Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller samma
+information.
 
 Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
-sätt. Numera är den så kallade filtermetoden i särklass vanligast och den enda
-som behandlas här.
+sätt.
+Numera är den så kallade filtermetoden i särklass vanligast och den enda som
+behandlas här.
 
 \mediumfig{images/cropped_pdfs/bild_2_1-27.pdf}{Sidband vid DSB}{fig:BildII1-27}
 
@@ -383,8 +373,7 @@ Till skillnad från i A3E-signalen saknas dock bärvågen i DSB-signalen.
 För att även undertrycka det ena sidbandet före sändningen följs blandaren
 av ett bandpassfilter med bandbredd och frekvensläge för avsett sidband.
 
-Den signal som sänds ut innehåller därför endast ett sidband (\emph{Single Side
-  Band}) eller på svensk ESB, \emph{enkelt sidband}.
+Den signal som sänds ut innehåller därför endast ett sidband (Single Side Band).
 
 \paragraph{Exempel}
 
@@ -413,49 +402,33 @@ passbandet och blir undertryckt.
 Bild \ref{fig:BildII1-29} illustrerar sidbandslägen vid SSB.
 LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
 
-LF-signalens frekvens bestämmer sidofrekvensens avstånd från
-bärvågsfrekvensen (bärvågen undertryckt).
+LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågsfrekvensen
+(bärvågen undertryckt).
+
+Bandbredden på den utsända signalen är skillnaden mellan högsta och lägsta
+modulerande frekvens i signalen:
 
 till exempel \(b = \SI{3}{\kilo\hertz} - \SI{0,3}{\kilo\hertz} =
 \SI{2,7}{\kilo\hertz}\)
 
 \subsubsection{Fördelar med J3E-modulation}
-
-En fördel som vi får är hög verkningsgrad vid J3E-modulation jämfört
-med vid A3E-modulation (traditionell AM).
+Bra verkningsgrad vid J3E-modulation jämfört med vid A3E-modulation
+(traditionell AM).
 Effekten i det utsända sidbandet motsvarar den i ett av sidbanden vid A3E.
-Hela den utsända effekten finns alltså i ett enda sidband, som överför
-hela informationen.
-Det gör att vi kan nå längre med lägre effekt, tränga igenom brus
-bättre och därför är det för många amatörer favoritmodulationen vid
-exempelvis tal på kortvågsbanden.
+Hela den utsända effekten finns alltså i ett enda sidband,
+som överför hela informationen.
 
-I sändningspauserna sänds ingen effekt ut. Det spar exempelvis
-batterier.
-Bandbredden är mindre än hälften av den vid A3E vilket medför fler
-stationer ryms på en begränsad bandbredd.
-
+I sändningspauserna sänds ingen effekt ut.
+Bandbredden är mindre än hälften av den vid A3E.
 Vid mottagning av en J3E-sändning (SSB) är det mindre besvär med
-interferenstoner från J3E-sändningar på närliggande frekvenser,
-eftersom ingen bärvåg och endast ett sidband sänds ut.
+interferenstoner från J3E-sändningar på närliggande frekvenser, eftersom ingen
+bärvåg och endast ett sidband sänds ut.
 
 \subsubsection{Nackdelar med J3E-modulation}
-
-Eftersom bärvågen i enkelt sidband saknas måste operatören själv hitta
-frekvensen mycket exakt och justera mottagaren mycket noga.
-En J3E-signal blir förvrängd och hörs i fel tonläge, om mottagaren
-inte är inställd på exakt rätt frekvens.
-
-\marginnote{ När flera stationer pratar SSB med varandra i ett
-  \emph{ring-QSO} kan man få justera för respektive motstation
-  eftersom sändarnas avvikelse kan vara olika från station till
-  station.
-
-  En J3E-signal blir förvrängd och hörs i fel tonläge om mottagaren
-  inte är inställd på exakt rätt frekvens. }
-	
 J3E-modulation medför mera komplicerade apparater, både för mottagning och
 sändning.
+En J3E-signal blir förvrängd och hörs i fel tonläge om mottagaren
+inte är inställd på exakt rätt frekvens.
 
 \subsection{Vinkelmodulation}
 \harec{a}{1.8.3a}{1.8.3a}
@@ -473,9 +446,8 @@ varieras utan att fasen också varieras, och vice versa.
 Hur effektiv kommunikationen då är beror mest på mottagningsmetoderna.
 I båda fallen uppfattas ändringar i den mottagna signalens frekvens och fasläge.
 Amplitudändringar uppfattas däremot inte.
-
-De flesta störningar --- särskilt pulserande sådana som från
-tändningssystem --- kommer att därför att skiljas bort.
+De flesta störningar -- särskilt pulserande sådana som från tändningssystem --
+kommer därför att skiljas bort.
 
 För att effektivt utnyttja fördelarna med vinkelmodulation, antingen det är
 frekvens eller fasmodulation, behövs tillräckligt frekvensutrymme.
@@ -538,9 +510,8 @@ Bild \ref{fig:BildII1-30} (nederst) visar bandbredd på vinkelmodulation.
 Vi gör tankeexperimentet att en FM-sändare moduleras med en fyrkantsvåg.
 Frekvensen kommer då att hoppa växelvis mellan frekvenserna \(f\) och
 \(f + \Delta f\).
-Sättet kallas FSK\marginnote{FSK---Frequency shift keying}
-(frekvensskiftnyckling) och används t.ex. vid sändning av olika typer
-av radiofjärrskrift (RTTY, AMTOR, PACTOR, \emph{Packet radio} etc.).
+Sättet kallas FSK (frekvensskiftnyckling) och används till exempel vid sändning av
+radiofjärrskrift (RTTY, AMTOR, Paketradio etc.).
 
 Vi föreställer oss två sändare, som sänder varannan gång, varav den ena sänder
 frekvensen \(f\) och den andra sänder \(f + \Delta f\).
@@ -568,9 +539,10 @@ ett frekvensspektrum som på överst i bilden.
 
 \largefig{images/cropped_pdfs/bild_2_1-31.pdf}{Sidbandsspektrum vid FM-modulering med 1 sinuston}{fig:BildII1-31}
 
-Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-modulering med
-1 sinuston. Vid vinkelmodulation uppstår talrika sidofrekvenser, som
-beror av den modulerande frekvensen \(f_{LF}\).
+Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-modulering med 1
+sinuston.
+Vid vinkelmodulation uppstår talrika sidofrekvenser, som beror av den
+modulerande frekvensen \(f_{LF}\).
 Amplitudfördelningen mellan sidofrekvenserna står i förhållande till
 deviationen, varvid deras amplitud blir mindre ju längre bort från bärvågen
 de är.
@@ -605,24 +577,23 @@ Vidare undertrycks modulerande frekvenser högre än \SI{3}{\kilo\hertz}, vilket
 
 \paragraph{Jämförelse}
 
-En VHF-rundradiosändare (vanlig FM-radio i bandet 88--108\,MHz)är
-tilldelad ett större frekvensutrymme och kan därför använda mycket
-större bandbredd.
+En VHF-rundradiosändare är tilldelad ett större frekvensutrymme och kan därför
+använda mycket större bandbredd.
 
 Där är \(\Delta f_{max} = \SI{75}{\kilo\hertz}\) och \(f_{LFmax} =
 \SI{15}{\kilo\hertz}\), därmed är \(m = \frac{75}{15} = 5\) och \(b = 2 \cdot
 (75 + 15) = \SI{180}{\kilo\hertz}\).
 
 Som framgår av tabellen på nästa uppslag varierar bärvågens liksom
-sidofrekvensernas inbördes amplitud med modulationsindex. Detta ska
-jämföras med AM där bärvågens amplitud är konstant och endast
+sidofrekvensernas inbördes amplitud med modulationsindex.
+Detta ska jämföras med AM där bärvågens amplitud är konstant och endast
 sidbandens amplitud varierar.
 
-Vid vinkelmodulation utsläcks bärvågen \(A_0\) vid modulationsindex
-2,404. Den blir sedan ''negativ'' vid högre index, vilket betyder att
-den återkommer, men att dess fasläge blir omvänt. I vinkelmodulation
-tas energin i sidbanden från bärvågen, vilket innebär att den totala
-effekten förblir densamma oavsett modulationsindex.
+Vid vinkelmodulation utsläcks bärvågen \(A_0\) vid modulationsindex 2,404.
+Den blir sedan ''negativ'' vid högre index, vilket betyder att den återkommer,
+men att dess fasläge blir omvänt.
+I vinkelmodulation tas energin i sidbanden från bärvågen, vilket innebär att
+den totala effekten förblir densamma oavsett modulationsindex.
 
 %\paragraph{Kännetecken för sändningsslaget F3E (FM)}
 %\index{F3E}
@@ -636,11 +607,9 @@ tändgnistor undertrycks i mottagaren.
 En relativt stor bandbredd behövs för överföring av ett basband med stort
 frekvensomfång.
 Sändaren måste avge full effekt, även när modulation inte sker.
-\end{itemize}
 
-
-\small
-\begin{table}[ht]
+\begin{table*}[ht]
+\begin{center}
 \begin{tabular}{ll|l|l|l|l|l|l|l|l|}
 \cline{3-9}
 &\multicolumn{1}{l}{}  & \multicolumn{7}{|c|}{Modulationsindex} \\ \cline{3-9}
@@ -657,11 +626,12 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \multicolumn{1}{|c|}{}&\(A_9\) & \multicolumn{4}{c}{} &        &  0,021 &  0,059 \\
 \multicolumn{1}{|c|}{}&\(A_{10}\) & \multicolumn{5}{c}{Tomma fält för \(A_n\) under 0,01 (1 \%)} &  &  0,024 \\ \hline
 \end{tabular}
+\end{center}
 \caption{Relativa amplituden på bärvåg $A_0$ och sidofrekvenser $A_1$--$A_{10}$ vid
 modulationsindex 1--7 (Vid omodulerad bärvåg är modulationsindex 0. Då är
 bärvågens relativa amplitud 1,0)}
-\end{table}
-\normalsize
+\end{table*}
+
 
 \subsection{Fasmodulation (PM)}
 \index{fasmodulation}
@@ -669,7 +639,7 @@ bärvågens relativa amplitud 1,0)}
 
 Vid fasmodulation varierar bärvågens fasläge i förhållande till ett
 referensvärde.
-Vid PM är frekvensändringen, deviationen, direkt proportionell till hur
+Vid PM är frekvensändringen -- deviationen -- direkt proportionell mot hur
 snabbt fasläget på den modulerande frekvensen ändras och till den totala
 fasändringen.
 Hastigheten på fasändringen är direkt proportionell mot frekvensen på den
@@ -728,29 +698,27 @@ modulationsindex varierar med den modulerande frekvensen.
 \index{PAM}
 \index{PPM}
 
-Pulsmodulation används mest i mikrovågsområdet. Pulsmodulerade signaler sänds
-vanligen som en serie korta pulser åtskilda av relativt långa pauser utan
-modulering.
+Pulsmodulation används mest i mikrovågsområdet.
+Pulsmodulerade signaler sänds vanligen som en serie korta pulser åtskilda av
+relativt långa pauser utan modulering.
 
 En typisk sändning kan bestå av pulser med en längd av \SI{1}{\micro\second} och
 en frekvens av \SI{1000}{\hertz}.
 Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
 
-Före WARC~79 var symbolen för all pulssändning P. Därefter används P endast för
-omodulerade pulståg. Annan pulsmodulation har följande symboler
+Före WARC~79 var symbolen för all pulssändning P.
+Därefter används P endast för omodulerade pulståg.
+Annan pulsmodulation har följande symboler
 
-Annan pulsmodulation har följande symboler:
+\begin{description}
+\item[K] -- puls-/amplitudmodulation (PAM)
+\item[L] -- pulsviddmodulation (PWM)
+\item[M] -- pulsposition/fasmodulation (PPM)
+\item[Q] -- vinkelmodulation under pulsen
+\item[V] -- kombination av dessa eller annat sätt.
+\end{description}
 
-\begin{itemize}
-	\item[K] --- puls-/amplitudmodulation (PAM)
-	\item[L] --- pulsviddmodulation (PWM)
-	\item[M] --- pulsposition/fasmodulation (PPM)
-	\item[Q] --- vinkelmodulation under pulsen
-	\item[V] --- kombination av dessa eller annat sätt.
-\end{itemize}
-
-\begin{table}[ht]
-\tiny
+\begin{table*}[ht]
 \begin{center}
 \begin{tabular}{|L{.12\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.19\textwidth}|}
 \hline
@@ -779,8 +747,7 @@ Annan pulsmodulation har följande symboler:
 \end{tabular}
 \end{center}
 \caption{Jämförelse mellan några vanliga sändningsslag inom amatörradio}
-\normalsize
-\end{table}
+\end{table*}
 
 \subsection{Digital modulation}
 \harec{a}{1.8.8}{1.8.8}
@@ -854,7 +821,6 @@ som \emph{Costas loop}, eftersom en normal PLL-loop inte klarar av
 teckenändringarna på signalen.
 
 \newpage
-
 \subsubsection{Fyrnivå fasskiftmodulation -- 4-PSK}
 \harec{a}{1.8.8c}{1.8.8c}
 \index{4-PSK}
@@ -923,7 +889,7 @@ Ofta benämner man olika varianter med antalet olika positioner, så att 16QAM
 har 16 olika lägen i fas och amplitud tillsammans.
 Ett exempel på hur 16QAM kan moduleras finns i tabell \ref{tab:16QAM}.
 
-\begin{table}[ht]
+\begin{table*}[ht]
 \begin{center}
 \begin{tabular}{|r|r|r|r|r|r|r|}
 \hline
@@ -946,37 +912,39 @@ Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
     15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & \num{-3} &  \num{-3} \\ \hline
 \end{tabular}
 \end{center}
-\caption{Exempel på QAM-16 i kvadratur-modulering}
-\label{tab:QAM-16}
-\end{table}
+\caption{Exempel på 16QAM i kvadraturmodulering}
+\label{tab:16QAM}
+\end{table*}
 
 Medan både amplituder och vinklar kan kännas udda, så är det enkelt
 att mappa bitarna över till I- och Q-amplituder och faslägen via Isym- och
 Qsym-delarna av symboler.
 
 QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
-mikrovågslänkar och många andra moderna system såsom EDGE (efterföljaren till
-GSM med högre datatakt), UMTS när man kör höghastighet (HSPA) liksom i LTE där
-man kör relativt långsamma symboler men i stället väldigt många parallellt
-fördelat över ett större frekvensband. I mobiltelefonisystem använder man upp
-till QAM-64 i dag och i framtiden kommer man använda ännu högre ordningar som
-QAM-256 och QAM-1024.
+mikrovågslänkar och många andra moderna system såsom EDGE
+(efterföljaren till GSM med högre datatakt), UMTS när man kör
+höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
+symboler men i stället väldigt många parallellt fördelat över ett
+större frekvensband.
+I mobiltelefonisystem använder man bland annat 64QAM och 256QAM.
 
-Mikrovågslänkar använder upp till 2048QAM. En fördel med QAM-moduleringen är att
-det är enkelt att få samma avstånd mellan de olika symbolpositionerna, och
-därmed kan också modulationen anpassas till störningen. Detta nyttjas av många
-moderna modulationssystem så att QAM-modulationen anpassas utifrån mottagarens
-rapportering om störning. Denna dynamiska anpassning gör att kommunikationen kan
+Mikrovågslänkar använder upp till 2048QAM. En fördel med
+QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
+olika symbolpositionerna, och därmed kan också modulationen anpassas
+till störningen. Detta nyttjas av många moderna modulationssystem så
+att QAM-modulationen anpassas utifrån mottagarens rapportering om
+störning.  Denna dynamiska anpassning gör att kommunikationen kan
 upprätthållas även om kapaciteten tillåts variera.
 
 \subsection{Begrepp vid digital modulation}
 \harec{a}{1.8.9}{1.8.9}
 \index{digital modulation}
 
-Digital modulation innebär också att signalerna som sänds har lite andra
-egenskaper än de analoga. Istället för varierande spänningsnivåer som för till
-exempel tal skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är därför
-lämpligt att diskutera några grundläggande begrepp kring digital modulation.
+Digital modulation innebär också att signalerna som sänds har lite
+andra egenskaper än de analoga. Istället för varierande
+spänningsnivåer som för till exempel tal skickar vi diskreta fixa
+nivåer, ofta i form av bitar. Det är därför lämpligt att diskutera
+några grundläggande begrepp kring digital modulation.
 
 \subsubsection{Bit rate}
 \harec{a}{1.8.9a}{1.8.9a}
@@ -1056,7 +1024,7 @@ Bandbredden för en digital ström är relaterad till nyquistteoremet, som säge
 att samplingstakten måste vara minst dubbelt så hög som den högsta frekvens
 som överförs.
 
-\subsection{Bitfel --- detektion och korrigering}
+\subsection{Bitfel -- detektion och korrigering}
 
 Hittills har vi diskuterat digital modulation utan att ta hänsyn till
 störningar och hur dessa påverkar våra överförda data. Precis som
@@ -1070,19 +1038,13 @@ felupptäckt samt korrigering med återsändning eller korrigeringskoder.
 \index{bitfel}
 \index{bit error}
 
-wAv olika orsaker kommer en eller flera bitar ofta att bli fel.
+Av olika orsaker kommer en eller flera bitar ofta att bli fel.
 Vi kallar varje sådant fel för att \emph{bitfel} (eng. \emph{bit error}).
 Störningar kan göra att vi tolkar en symbol fel, vilket kan resultera i en eller
 flera felaktiga bitar.
 
-Det finns många olika strategier för att minska bitfelen, vilken typ av 
-modulation som används är intressant liksom överföringshastigheten, kodningen 
-av datat, hur mycket redundans som skickas med, felrättningsalgoritmer som gör 
-det möjligt att återställa enstaka fel med mera.
-
-\marginnote{Om vi i till exempel 16QAM-koden i kapitel \ref{QAM} får in +0.2 i 
-I och +1.1 i Q, ser vi i tabell \ref{tab:16QAM} att närmaste symbolen är symbol 
-5 med +1 i I
+Om vi i till exempel 16QAM-koden i kapitel \ref{QAM} får in +0.2 i I och +1.1 i Q,
+ser vi i tabell \ref{tab:16QAM} att närmaste symbolen är symbol 5 med +1 i I
 och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
 Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
 det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
@@ -1100,7 +1062,7 @@ tolkning av symbolerna. Är dock störningen större än 1 i någon riktning
 kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
 bitfel.
 
-\subsubsection{Bitfelsannolikhet}
+\subsubsection{Bitfelssannolikhet}
 \index{bitfelssannolikhet}
 \index{bit error rate}
 \index{BER|see {bit error rate}}
@@ -1134,12 +1096,12 @@ Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
 bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
 ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
-För en bitfelssannolikhet på \num{d-12}, ofta benämnt BER på 1E-12, behövs
+För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs
 det 14~sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
 kvantiseringsgränsen. Den råa radiokanalen uppvisar dock sällan så bra
 egenskaper, men det kan uppnås i kabel och fiber.
 
-
+\subsubsection{Detektion}
 \harec{a}{1.8.10a}{1.8.10a}
 \index{bitfelsdetektion}
 \index{paritet}
@@ -1158,19 +1120,16 @@ binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
 kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
 har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
 antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-upptäckt. Det är med andra ord inte en särdeles stark checksumma. Paritet
-används till exempel i seriekommunikation så som \emph{RS-232}\footnote{RS-232 
-är en standard för seriekommunikation som var mycket vanlig förr i tiden och 
-fortfarande används i många sammanhang även om den mer och mer blivit ersatt av 
-nyare standarder och ibland även seriekommunikation där RS-232 emuleras över 
-USB.}. 
+upptäckt.
+Det är med andra ord inte en särdeles stark checksumma.
+Paritet används till exempel i seriekommunikation så som RS-232.
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
-typer av fel. För lite större meddelanden är det vanligt att summera bytes till
-en checksumma antingen additivt eller med XOR. För större meddelanden används en
-lite mer intrikat metod som heter \emph{Cyclic Redundancy Check (CRC)} där man
-återmatar överskjutande del på checksumman till sig själv och får en starkare
-kod den vägen. CRC används till exempel i Ethernet.
+typer av fel. För lite större meddelanden är det vanligt att summera bytes
+till en checksumma antingen additivt eller med XOR. För större meddelanden
+används en lite mer intrikat metod som heter Cyclic Redundancy Check (CRC)
+där man återmatar överskjutande del på checksumman till sig själv och får en
+starkare kod den vägen. CRC används till exempel i Ethernet.
 
 \subsubsection{Omsändning}
 \harec{a}{1.8.10b}{1.8.10b}
@@ -1209,11 +1168,7 @@ sänder samma tecken två gånger.
 Liknande används i Bluetooth där meddelandet sänds tre gånger, varvid man kan
 göra majoritetsröstning.
 
-Andra system för FEC\footnote{FEC betyder Forward Error Correction och innebär
-  att man stoppar in redundans i form av paritetsinformation i datat som skickas
-  så att enstaka fel kan korrigeras av mottagaren helt utan omsändningar.} är
-Hamming-koder, paritets-paket, Reed-Solomon (RS), kombinationer av dessa och så
-kallad \emph{turbokodning} med mera.
+Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
 
 \subsection{Digitala sändningsslag}
 
@@ -1226,7 +1181,7 @@ kan i vissa fall endast vara några hertz.
 Signalbehandlingen sker i den dator som programmet körs på och där datorns
 in- och utgång för dess ljudkort är kopplade till amatöradioutrustningen.
 Oftast är programmets styrning av sändning och mottagning också kopplad till
-lämplig serieport ofta via dess USB-anslutning.
+lämplig serieport, till exempel via dess USB-anslutning.
 
 \subsubsection{RTTY}
 \index{RTTY}
@@ -1249,8 +1204,8 @@ Amerikanska kommersiella RTTY-system fanns aktiva så tidigt som 1932.
 Under 50-talet började surplusutrustning komma ut på den amerikanska
 marknaden och radioamatörerna var inte sena att prova den nya tekniken på
 kortvågsbanden.
+De kommersiella systemen körde med 50~baud, 75~baud eller 100~baud.
 
-De kommersiella systemen körde med 50~Baud, 75~Baud eller 100~Baud.
 Amatörerna i USA körde med 45,45~baud, vilket motsvarar 300 tecken per minut.
 De europeiska utrustningarna, bland annat framtagna av Siemens, arbetade med
 50~baud men gick att justera ner till 45,45~baud.
@@ -1264,7 +1219,7 @@ två frekvenser med en skillnad, ett så kallat ''skift'', på \SI{170}{\hertz}.
 
 Äldre sändare behövde modifieras för att åstadkomma detta frekvensskift, men
 med en SSB-sändare kunde man istället mata sändaren med två toner, som gav
-samma resultat --- så kallad \emph{Audio Frequency Shift Keying (AFSK)}.
+samma resultat -- så kallad Audio Frequency Shift Keying (AFSK).
 
 Med nyare amatörradiotransceivrar blev det senare den vanligaste förekommande
 metoden att modulera sändaren.
@@ -1285,7 +1240,6 @@ SSB-radiolänk.
 Intensiteten för varje pixel anger tonhöjden som moduleras, vilket därmed
 innebär en FM-modulation.
 Denna FM-modulerade ton skickas sedan över SSB.
-
 I början på varje linje skickas ett 7-bitars tal med jämn paritet som anger
 vilken modulationsform som används.
 De olika modulationsformerna kan sedan hantera olika upplösningar samt
@@ -1386,32 +1340,6 @@ Sedan 2005 är programmet ett open source-program och även om K1JT fortfarande
 är ansvarig utvecklas det nu av ett litet team.
 
 \paragraph{Teknik}
-\marginnote{
-	\paragraph{FreeDV}
-	\index{FreeDV}
-	
-	FreeDV skiljer sig mot de moder som nämnts ovan, genom att denna mode är tänkt
-	för digitalt tal på kortvåg.
-	
-	\paragraph{Historia}
-	
-	FreeDV skapades av en grupp av radioamatörer från olika länder, som arbetade
-	med kodning, design, användargränssnitt, och testning.
-	FreeDV släpptes 2015.
-	
-	\paragraph{Teknik}
-	
-	FreeDV är tänkt för att användas på kortvåg med SSB-modulerade radiostationer,
-	men kan också användas med AM eller FM -modulering.
-	Fördelen ska vara att överföringen blir ner robust, samt att signaleringen är
-	designad att motverka påverkan av fädning.
-	
-	FreeDV använder en något mer komplex modulering.
-	Man använder sig av ett flertal bärvågor, inom dess bandbredd på 1,25~kHz.
-	Bärvägorna ligger med 75~Hz mellanrum, och varje bärvåg moduleras med varianter
-	av PSK-modulering.
-	Bandbredden är hälften (1,25~kHz) mot en normal SSB-bandbredd (2,4~kHz).
-}
 
 WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
 varianter av i huvudsak FSK-modulering används.
@@ -1462,3 +1390,9 @@ Bärvägorna ligger med \SI{75}{\hertz} mellanrum och varje bärvåg moduleras m
 varianter av PSK-modulering.
 Bandbredden är hälften (\SI{1,25}{\kilo\hertz}) av en normal SSB-bandbredd
 (\SI{2,4}{\kilo\hertz}).
+
+%%% Local Variables: ***
+%%% mode: latex ***
+%%% TeX-master: "../koncept-tryck.tex"  ***
+%%% ispell-local-dictionary: "swedish"  ***
+%%% End: ***

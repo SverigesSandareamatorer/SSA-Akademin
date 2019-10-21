@@ -1,10 +1,14 @@
 \section{Värmeutveckling}
+
 \harec{a}{2.7}{2.7}
+
 \index{värmeutveckling}
 \index{heat dissipation}
 
 \subsection{Värmeledning}
+
 \harec{a}{2.7.1}{2.7.1}
+
 \index{värmeledning}
 \index{heat transfer}
 \index{termisk resistans}
@@ -41,38 +45,32 @@ komponent eller för att dimensionera en kylfläns.
 \index{kylfläns}
 \index{heatpipe}
 
-\emph{Konvektion} (eng. \emph{convection}) är när värme skapar ett naturligt
-flöde i vätska eller gas, oftast luft. När luft värms upp vill den expandera,
-varvid densiteten sjunker och luften vill stiga uppåt. Kallare luft strömmar då
-till och kan därmed kyla värmekällan. En stor temperaturskillnad medför att
-konvektionen ökar och innebär därmed en bättre kylning.
+\emph{Konvektion} (eng. \emph{convection}) är när värme skapar ett
+naturligt flöde i vätska eller gas, oftast luft. När luft värms upp 
+vill den expandera, varvid densiteten sjunker och luften vill stiga uppåt.
+Kallare luft strömmar då till och kan därmed kyla värmekällan. En stor
+temperaturskillnad medför att konvektionen ökar och innebär därmed en bättre
+kylning.
 
 För exempelvis transistorer kan värmealstringen ske på en sådan liten yta att
 konvektion från komponenten inte räcker för att kyla bort den producerade
-värmen. Därför monterar man dem på en \emph{kylfläns} (eng. \emph{heat sink})
-som fördelar värmen över en större yta så att verkan av konvektion ökar.
+värmen. Därför monterar man dem på en \emph{kylfläns} (eng.
+\emph{heat sink}) som fördelar värmen över en större yta så att verkan av
+konvektion ökar.
 
-En effektiv metod för att transportera värme är via en så kallad \emph{heat
-  pipe}. Det är ett rör innehållande en vätska som förångas vid en temperatur
-strax över rumstemperatur och som då effektivt leder överskottsvärme till ett
-plats där den kan kylas bort. Heat pipe används numera ofta i datorer och
-solfångare.
+En effektiv metod för att transportera värme är via en så kallad \emph{heat pipe}.
+Det är ett rör innehållande en vätska som förångas vid en temperatur strax över
+rumstemperatur och som då effektivt leder överskottsvärme till ett plats där den kan
+kylas bort. Heat pipe används numera ofta i datorer och solfångare.
 
-\marginnote{Ett problem som kan uppstå är att utrustning som är gjord för
-  självkonvektion blir placerad eller monterad så att luftkylning inte kan flöda
-  fritt runt utrustningen. Detta kan leda till överhettning på motsvarande sätt
-  som när en fläkt för forcerad kylning går sönder. Dålig termisk kontakt mellan
-  transistor och kylfläns är ett annat exempel på hur dålig värmeledning skapar
-  problem med överhettning.}
-
-Om värme produceras på en lite yta kan man behöva hjälpa konvektionen, vilket
+Om värme produceras på en liten yta kan man behöva hjälpa konvektionen, vilket
 ibland kallas för \emph{forcerad konvektion} (eng. \emph{forced convection}).
 Med hjälp av en fläkt blåses luft mot eller sugs förbi kylflänsen vilket ökar
-värmeutbytet. Eftersom fläktar skapar oljud brukar man försöka anpassa fläktens
-varvtal i förhållande till temperaturen, men även en variation av varvtal kan
-uppfattas som störande. Andra åtgärder för att minska ljudnivån är att skapa
-släta ytor för luften så det inte bildas luftvirvlar eller att styra in- och
-utgående luftflöde med bafflar.
+värmeutbytet. Eftersom fläktar skapar oljud brukar man försöka anpassa
+fläktens varvtal i förhållande till temperaturen, men även en variation av
+varvtal kan uppfattas som störande. Andra åtgärder för att minska ljudnivån
+är att skapa släta ytor för luften så det inte bildas luftvirvlar eller att 
+styra in- och utgående luftflöde med bafflar.
 
 Ett problem som kan uppstå är att utrustning som är gjord för självkonvektion
 blir placerad eller monterad så att luft inte kan flöda fritt runt
@@ -93,18 +91,6 @@ på apparater där det går större strömmar vilka ofrånkomligen också alstra
 mera värme. Lägre förluster skapar man genom att helt enkelt ha bättre
 ledningsförmåga, lägre resistans.
 
-\marginnote{En annan effekt av värmeledning är att det kan ibland vara svårt att löda
-	på kretskort, framför allt vid ledare som går mot stora kopparytor som
-	har en relativt god värmeledningsförmåga. Ibland designar man små mönster
-	''thermals'' runt sådana lödpunkter för att minska värmeavledningen.
-	
-	Ett effektivt sätt att kunna löda och framförallt löda av från sådana
-	kort är att man förvärmer hela kretskortet eller området runt om
-	lödpunkten. Då kommer temperaturskillnaden mellan lödpennans spets och
-	omgivningen att minska och då krävs det inte lika stor effekt för att få
-	upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
-	\emph{vätning} och därmed undvika att det bildas en ''kallödning''.}
-
 Även halvledare skapar värme, och även här gäller Joules lag med spänning
 gånger ström. I exempelvis ett effektsteg kommer transistorn utveckla en
 effekt motsvarande spänningen över transistorn gånger strömmen genom den. 
@@ -119,16 +105,16 @@ ska gå genom den. Av det skälet finns dimensioneringsregler, till exempel
 krav på minsta arean av koppar i ledare, helt enkelt för att det inte ska
 uppstå brand.
 
-En annan effekt av värmeledning är att det kan ibland vara svårt att löda på
-kretskort, framför allt vid ledare som går mot stora kopparytor som har en
-relativt god värmeledningsförmåga. Ibland konstruerar man små mönster
-''thermals'' runt sådana lödpunkter för att minska värmeavledningen. Ett
-effektivt sätt att kunna löda och framförallt löda av från sådana kort är att
-man förvärmer hela kretskortet eller området runt om lödpunkten. Då kommer
-temperaturskillnaden mellan lödpennans spets och omgivningen att minska och det
-krävs inte lika stor effekt för att få upp lödpunkten i rätt temperatur för att
-kunna genomföra lödningen med god \emph{vätning} och därmed undvika att det
-bildas en kallödning.
+En annan effekt av värmeledning är att det kan ibland vara svårt att löda
+på kretskort, framför allt vid ledare som går mot stora kopparytor som
+har en relativt god värmeledningsförmåga. Ibland konstruerar man små mönster
+''thermals'' runt sådana lödpunkter för att minska värmeavledningen.
+Ett effektivt sätt att kunna löda och framförallt löda av från sådana
+kort är att man förvärmer hela kretskortet eller området runt om
+lödpunkten. Då kommer temperaturskillnaden mellan lödpennans spets och
+omgivningen att minska och det krävs inte lika stor effekt för att få
+upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
+\emph{vätning} och därmed undvika att det bildas en kallödning.
 
 \subsection{Värme i transistor}
 \harec{a}{2.7.3}{2.7.3}

@@ -16,6 +16,7 @@ av spänning och ström.
     \quad P = U_{\textit{eff}} \cdot I_{\textit{eff}} \\
     \end{array}\]
 
+
 \subsection{Effektändring uttryckt i dB}
 \harec{a}{1.9.2}{1.9.2}
 \label{decibel}
@@ -29,25 +30,26 @@ det till exempel går tio decimeter på en meter.
 Däremot är begreppet decibel ovant för många.
 
 I detta avsnitt förklaras det mycket användbara begreppet decibel.
-Decibel (dB) är en tiondedel av grundenheten Bel (B). Räkning med decibel grundas 
-på logaritmer, som är ett bekvämt sätt att uttrycka och behandla talvärden, 
-särskilt mycket stora eller mycket små tal som vi snart ska se.
+Decibel (dB) är en tiondedel av grundenheten Bel (B).
 
-\begin{quote}
-	\emph{Decibel är ett dimensionslöst uttryck för graden av dämpning alternativt
-		förstärkning.}
-\end{quote}
+Räkning med decibel grundas på logaritmer, som är ett bekvämt sätt att uttrycka
+och behandla talvärden.
+
+\begin{quote}\emph{
+Decibel är ett dimensionslöst uttryck för graden av dämpning alternativt
+förstärkning.
+}\end{quote}
 
 \emph{Effektdämpning} är följden av att vissa komponenter bromsar elektrisk
-ström. Den bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
-sammansatta nätverk av R, L och C. Det är också förluster i ledningar till exempel
-antennkablar (koaxialkablar) och liknande som ger förluster.
+ström.
+Den bromsande faktorn kan vara en resistans R, induktans L, kapacitans C eller
+sammansatta nätverk av R, L och C.
 
-\marginnote{Effektförstärkning innebär att en transistor, ett elektronrör eller
+\emph{Effektförstärkning} innebär att en transistor, ett elektronrör eller
 annan så kallad aktiv komponent kan styra en större elektrisk ström och därmed
 större effekt än den själv styrs med.
 Vad som förorsakar effektförändringarna går vi inte in på i detta sammanhang,
-utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.}
+utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.
 
 En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
 
@@ -74,7 +76,8 @@ Om resultatet uttrycks i \si{\decibel}, ska Bel-värdet multipliceras med 10.
 Logaritmer förklaras i bilaga \ref{logaritmer}.
 
 För att förenkla beräkningen av dB-talet divideras det högre effekttalet med det
-lägre. Bokstaven a i följande formler betyder antingen förstärkning (+a) eller
+lägre.
+Bokstaven a i följande formler betyder antingen förstärkning (+a) eller
 dämpning (-a) beroendet på vilket förtecken som sätts.
 %%
 \[a[B] = \log \dfrac{P_\text{hög}}{P_\text{låg}}\]
@@ -108,24 +111,15 @@ halveras effekten för var 3:e \si{\decibel}.
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
 
-\begin{table}[h]
 \begin{tabular}{rllr}
-	                      Kvot av & Analys              & Skriv            & dB 
-	                      \\ \hline
-	\(P_\text{hög}/P_\text{låg}\) &                     &                  &  \\
-	                            1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 
-	                            \\
-	                           10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 
-	                           \\
-	                          100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 
-	                          \\
-	                        1 000 & 1 000 har 3 nollor  & \(3 \cdot 10\) = & 30 
-	                        \\
-	                       10 000 & 10 000 har 4 nollor & \(4 \cdot 10\) = & 40
+Kvot av & Analys             & Skriv            & dB \\
+\(P_\text{hög}/P_\text{låg}\) &          &                  &    \\
+     1 & 1 har 0 nollor      & \(0 \cdot 10\) = &  0 \\
+    10 & 10 har 1 nolla      & \(1 \cdot 10\) = & 10 \\
+   100 & 100 har 2 nollor    & \(2 \cdot 10\) = & 20 \\
+ 1 000 &  1 000 har 3 nollor & \(3 \cdot 10\) = & 30 \\
+10 000 & 10 000 har 4 nollor & \(4 \cdot 10\) = & 40
 \end{tabular}
-\caption{Tiotalslogaritmer och antal nollor}
-\end{table}
-
 
 \subsection{Strömändring uttryckt i dB}
 \index{ström!dB}
@@ -136,20 +130,19 @@ Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i
 En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
 jämförelse.
 
-Enligt Joules lag (effektlagen) är: 
-\[P = I^2 \cdot R \qquad P = U \cdot I\]
+Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\))
 
 således \(\dfrac{P_\text{hög}}{P_\text{l{\aa}g}} = \dfrac{I_\text{hög}^2 \cdot R}{I_\text{l{\aa}g}^2 \cdot R}\)
 
-$R$ kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
+R kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
 En jämförelse uttryckt i dB kan endast göras under samma förutsättningar;
-här att impedanserna (resistanserna) är lika, således:
-\[\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\]
+här att impedanserna (resistanserna) är lika,
+
+således \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
 
 Effektförhållandet eller kvadratvärdet på strömförhållandet kan uttryckas
-logaritmiskt i dB:
-\[a\text{[dB]} = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\]
+logaritmiskt i B eller dB
 
 \(a[dB] = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
 
@@ -164,8 +157,7 @@ Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen
 Förhållandet mellan spänningar kan uttryckas i dB på ett liknande sätt som med
 strömmar.
 
-Enligt Joules lag är:
-\[P = \frac{U^2}{R} \qquad (P = U \cdot I)\]
+Enligt Joules lag är \(P = \frac{U^2}{R}\) (\(P = U \cdot I\))
 
 Två effekter kan ställas i förhållande till varandra på följande sätt:
 %%
@@ -197,9 +189,7 @@ Det vill säga vid ökning fördubblas strömmen resp. spänningen för var 6:e
 6:e \si{\decibel}.
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
-enligt följande tabell:
-
-\vspace{\baselineskip}
+enligt följande tabell.
 
 \begin{center}
 \begin{tabular}{rllr}
@@ -215,8 +205,6 @@ enligt följande tabell:
 \end{tabular}
 \end{center}
 
-\vspace{\baselineskip}
-
 \section{dB med miniräknare}
 
 När beräkningen av förstärkning eller dämpning uttryckt i \si{\decibel} görs med
@@ -224,11 +212,9 @@ miniräknare låter man räknaren sköta hela beräkningen.
 
 Med miniräknare skrivs uttrycken för \si{\decibel} så här:
 
-För effekt 
-\[   a\text{[dB]} = 10\log \dfrac{P_\text{ut}}{P_\text{in}}   \]
+För effekt \(a[dB] = 10\log \dfrac{P_\text{ut}}{P_\text{in}}\)
 
-För spänning 
-\[   a\text{[dB]} = 20\log \dfrac{U_\text{ut}}{U_\text{in}}   \]
+För spänning \(a[dB] = 20\log \dfrac{U_\text{ut}}{U_\text{in}}\)
 
 \emph{Lägg märke till hur värdena ut och in används i ekvationerna.}
 
@@ -340,7 +326,6 @@ Antennkabeln dämpar med \SI{1}{\decibel}.
 Fråga: Med vilken effekt matas själva antennen?
 
 Svar: (två sätt att lösa uppgiften)
-
 \begin{enumerate}
 \item Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och
 kabeln dämpar \(1/1,25 = 0,8\) gånger. Antennen matas då med
@@ -367,8 +352,9 @@ För att förenkla det hela antar vi nu att en sändare med den inre resistansen
 Målet med anpassningen är att finna det optimala förhållandet mellan
 sändarresistansen och antennresistansen för att kunna överföra maximal effekt.
 Vi har de två ytterlighetsfallen obelastad sändare respektive kortsluten
-sändare. Sändarens elektromotoriska kraft (EMK) betecknas som \(E\ [\unit{V}]\) 
-och sändarens utspänning som \(U\ [\unit{V}]\).
+sändare.
+Sändarens elektromotoriska kraft (EMK) betecknas som \(E\ [V]\) och sändarens
+utspänning som \(U\ [V]\).
 
 Fall 1.
 En obelastad sändare avger ingen ström när ingen antenn eller en med oändligt
@@ -414,9 +400,8 @@ För att finna det optimala förhållandet mellan \(R_i\) och \(R_a\), det vill
 säga när \(R_a\) tar upp maximal effekt, måste man differentiera formeln med
 \(d\ P_a/d\ R_a\), men vi hoppar över denna utflykt i matematiken.
 
-Det är därför misanpassning försämrar både mottagning och sändning eftersom den 
-effekt mottagaren ser eller sändaren kan leverera till själva antennen minskar 
-vid missanpassning.
+I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker när
+\(R_i = R_a\)}.
 
 \subsection{Förhållandet mellan in- och uteffekt uttryckt som procent verkningsgrad}
 \harec{a}{1.9.5}{1.9.5}

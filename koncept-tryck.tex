@@ -205,14 +205,8 @@
 \usepackage{textbook}
 
 % Prepare for index
-%%\usepackage{makeidx}
-%%\makeindex
-
-\renewcommand{\subsubsection}[1]{\paragraph{#1}}
-
-\usepackage{fontspec}
-\setmainfont{Bembo Std}
-\setsansfont{GillSans}
+\usepackage{makeidx}
+\makeindex
 
 \usepackage[black,sfdefault]{sourcesanspro}
 
@@ -221,7 +215,7 @@
 %% \chapterstyle{ssa}
 
 % Frontpage
-%\include{koncept/frontpage}
+\include{koncept/frontpage}
 
 % Colophone
 
@@ -246,10 +240,10 @@
  
 %%\mainmatter
 
-%%\include{koncept/errata}
-%%\include{koncept/preface}
-%%\include{koncept/foreword}
-%%\include{koncept/introduction}
+%\include{koncept/errata}
+\include{koncept/preface}
+\include{koncept/foreword}
+\include{koncept/introduction}
 
 \cleardoublepage
 \pagenumbering{arabic}
@@ -257,12 +251,12 @@
 
 \input{koncept/koncept-core}
 
-%%\listoffigures
-%%\listoftables
+\listoffigures
+\listoftables
 
-%%\onecolumn
-%%\bibliography{koncept.bib}
-%%\bibliographystyle{plain}
+\onecolumn
+\bibliography{koncept.bib}
+\bibliographystyle{plain}
 
 %%\backmatter
 
