@@ -6,6 +6,7 @@
 \index{Software Defined Radio}
 \index{SDR|see {Software Defined Radio}}
 \index{FPGA}
+\label{digital_signalbehandling}
 
 \emph{Digital signalbehandling} (eng. \emph{Digital Signal Processing (DSP)})
 har blivit allt viktigare i vardagen och så även inom amatörradion i och med
@@ -35,7 +36,7 @@ För att kunna förstå detta behöver vi gå igenom grunderna i konvertering av
 signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 
 \subsection{Sampling och kvantisering}
-\marginnote{HAREC a.\ref{HAREC.a.1.10.1}\label{myHAREC.a.1.10.1}}
+\harec{a}{1.10.1}{1.10.1}
 \index{sampling}
 \index{samplingstakt}
 \index{sample rate}
@@ -47,12 +48,14 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 \index{quantize}
 \index{Pulse Code Modulation (PCM)}
 \index{PCM}
+\label{sampling}
 
-Analoga signaler är vad vi kallar för kontinuerliga i tid. Hos dessa varierar
-spänning och ström kontinuerligt så snabbt att vi kan hantera det fulla
-radiospektrumet och mer därtill.
+
+Analoga signaler är vad vi kallar för kontinuerliga i tid.
+Hos dessa varierar spänning och ström kontinuerligt så snabbt att vi kan hantera
+det fulla radiospektrumet och mer därtill.
 Detta fungerar dock inte så väl i den digitala världen.
-Där vill vi dels ha värden i digital form, så vi behöver omvandla våra 
+Där vill vi dels ha värden i digital form, så vi behöver omvandla våra
 spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
 
 \emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att 
@@ -63,20 +66,16 @@ jämn takt,
 Denna benämner vi ofta med \(f_S\) och begreppet \emph{samplingsperiodtid}
 \(T_S=\frac{1}{f_S}\) används också.
 Samplingstakten är alltså den jämna takt varmed vi får värden.
-Ibland säger man lite slarvigt att samplingstakten är exempelvis 1~MHz, men det
-mer korrekta är att den är 1~MS/s, det vill säga 1 miljon sampel per sekund.
+Ibland säger man lite slarvigt att samplingstakten är exempelvis
+\SI{1}{\mega\hertz}, men det mer korrekta är att den är 1~MS/s, det vill säga 1
+miljon sampel per sekund.
 
 Bild \ref{fig:BildII1-37} illustrerar hur en analog signal samplas och
 kvantiseras i en ADC, för att behandlas i en DSP, för att därefter konverteras
 till analog signal med DAC och filtreras.
 
-\begin{figure*}
-  \begin{center}
-    \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-37.pdf}
-    \caption{Sampling med ADC, DSP och DAC för att återvinna analog signal}
-    \label{fig:BildII1-37}
-  \end{center}
-\end{figure*}
+\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC,
+  DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
 
 Medan sampling är den process som ger oss \emph{tidsdiskreta} värden istället
 för tidskontinuerliga värden så är värdena fortfarande inte representerade som
@@ -87,8 +86,9 @@ process som kallas för \emph{kvantisering} (eng. \emph{quantize}).
 Vid kvantisering har man ofta ett fixt avstånd mellan stegen på en
 trappstege av värden. Varje steg kallas ibland för kvantiseringssteg och
 storleken på varje kvantiseringssteg avgör därmed hur hög upplösning man får.
-Har man t.ex. ett kvantiserings-steg på 0,1\,V så blir 0 till 0,1\,V tolkat som
-0, 0,1--0,2\,V tolkat som 1 osv.
+Har man till exempel ett kvantiseringssteg på \SI{0,1}{\volt} så blir 0 till
+\SI{0,1}{\volt} tolkat som 0, \SIrange{0,1}{0,2}{\volt} blir tolkat som 1 och så
+vidare.
 Bild \ref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
 Denna sista del i att omvandla de kvantiserade talen till värden
@@ -106,26 +106,29 @@ telefonisystem.
 % litteraturen. /SM0UEI
 
 \subsection{Minsta samplingsfrekvensen}
-\marginnote{HAREC a.\ref{HAREC.a.1.10.2}\label{myHAREC.a.1.10.2}}
+\harec{a}{1.10.2}{1.10.2}
 \index{nyquistfrekvens}
 \index{Nyquist-Shannons samplingsteorem}
+\label{nyquist}
 
-\marginnote{Denna frekvens kallas för nyquistfrekvensen efter Harry Nyquist
-  (1889--1976), från Stora Kil i Värmland, efter hans banbrytande arbete på Bell
-  laboratories som han publicerade åren 1924 och 1928.
-  Den ingår i \emph{Nyquist-Shannons samplingsteorem} (eng.
-  \emph{Nyquist-Shannon sampling theorem}).}
+\begin{quote}
+\emph{Denna frekvens kallas för nyquistfrekvensen efter Harry Nyquist (1889--1976),
+från Stora Kil i Värmland, efter hans banbrytande arbete på Bell laboratories
+som han publicerade åren 1924 och 1928. Den ingår i \emph{Nyquist-Shannons
+samplingsteorem} (eng. \emph{Nyquist-Shannon sampling theorem}).}
+\end{quote}
 
+\noindent
 Vår nya begreppsvärld har några inneboende begränsningar, en av dem är minsta
 samplingsfrekvensen.
 Den lägsta frekvensen vi kan hantera i vårt samplade material är fasta värden
 (eller DC som man oftast säger) medan den högsta är den när man alternerar
-mellan två värden, säg -1 +1 -1 +1 vilket ju ger hälften av samplingstakten
-\(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och därmed:
-\[   f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}   \]
+mellan två värden, säg \num{-1} \num{+1} \num{-1} \num{+1} vilket ju ger hälften
+av samplingstakten \(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och
+därmed \(f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\).
 
 \subsection{Faltning}
-\marginnote{HAREC a.\ref{HAREC.a.1.10.3}\label{myHAREC.a.1.10.3}}
+\harec{a}{1.10.3}{1.10.3}
 \index{faltning}
 \index{convolution}
 \index{konvolution}
@@ -140,12 +143,10 @@ process kallas för \emph{faltning} (ty. \emph{faltung} ''vikning'') eller iblan
 Man kan se det som att varje enskilt sampel kommer att spela upp hela filtrets
 svängning med sin amplitud, och responsen från alla sampel blir därför summan
 av alla dessa.
-För varje utgående sampel så kommer man därför ha summan av filterresponsen
-i en viss fördröjning från ett sampel som ligger på samma fördröjning bort.
-
-Den matematiskt sinnade kan då använda formeln
-\[   y(n) = \sum_{m=0}^{N-1} x(n-m)h(m)   \]
-
+Den matematiskt sinnade kan då använda formeln:
+%%
+\[y(n) = \sum_{m=0}^{N-1} x(n-m)h(m)\]
+%%
 där \(x(n)\) är den inkommande sampelströmmen och \(n\) är indexet för det
 n:te samplet, \(h(m)\) är filtrets respons och slutligen \(y(n)\) är de utgående
 samplen.
@@ -156,14 +157,15 @@ Motsvarande process kan även utföras i frekvensplanet, det vill säga när vi
 istället uttrycker amplituden som funktion av frekvens.
 Om vi då även har konverterat filtrets egenskaper, gör vi helt enkelt en
 multiplikation av signal och filter för varje frekvens:
-\[   	Y(f) = X(f)H(f)   \]
-
+%%
+\[Y(f) = X(f)H(f)\]
+%%
 Bägge representerar faltning, och är viktiga för förståelsen av \emph{linjära
 tidsinvarianta} filter (eng. \emph{linear time-invariant (LTI)}) filter,
 som är det vi i allmänhet fokuserar på.
 
 \subsection{Antivikningsfilter}
-\marginnote{HAREC a.\ref{HAREC.a.1.10.4}\label{myHAREC.a.1.10.4}}
+\harec{a}{1.10.4}{1.10.4}
 \index{vikning}
 \index{aliasing}
 \index{antivikningsfilter}
@@ -184,34 +186,34 @@ Detta fenomen uppstår alltid när man går mellan kontinuerlig och diskret tid.
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
-\caption{Sampling av DC, 3,6~kHz, 12,4~kHz och 38~kHz med 40~kS/s samplingstakt}
+\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med \SI{40}{kS/s} samplingstakt}
 \label{fig:BildII1-38}
 \end{center}
 \end{figure*}
 
-Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC (likspänning), 
-sinus med
-3,6\,kHz, 12,4\,kHz och 38\,kHz, samplas med samplingshastigheten 40\,kS/s.
+Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
+\SI{3,6}{\kilo\hertz}, \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz}, samplas
+med samplingstakten 40\,kS/s.
 Fallet med DC är uppenbart enkelt, alla punkterna hamnar på samma spänning.
-En lågfrekvens sinus, som fallet är med 3,6\,kHz här, får man punkter spridda
-över kurvan och de påminner om den ursprungliga sinusen, än mer om man knyter
-samman punkterna, vilket anti-aliasingfiltret i praktiken gör.
+Vid en lågfrekvent sinus, som fallet är med \SI{3,6}{\kilo\hertz} här, får man
+punkter spridda över kurvan och de påminner om den ursprungliga sinusen, än mer
+om man knyter samman punkterna, vilket antivikningsfiltret i praktiken gör.
+En frekvens som är nära nyquistfrekvensen, såsom \SI{12,4}{\kilo\hertz} in i
+40\,kS/s och dess \SI{20}{\kilo\hertz} nyquistfrekvens, så är samplingspunkterna
+nästa helt alternerande mellan högsta och lägsta läge.
+I detta fall är det svårt att se den bakomliggande sinussignalen för ett otränat
+öga, men den kan fortfarande rekonstrueras med ett antialiasingfiltret.
+Ett ännu svårare fall är \SI{38}{\kilo\hertz}, där punkterna visar en sinus med
+\SI{2}{\kilo\hertz}, då frekvensen vikt sig ned runt nyquistfrekvensen, och
+eftersom infrekvensen är \SI{18}{\kilo\hertz} över nyquistfrekvensen hamnar den
+därför \SI{18}{\kilo\hertz} under nyquistfrekvensen, det vill säga på
+\SI{2}{\kilo\hertz} i det här fallet.
+Denna vikning är det man försöker undvika med antivikningsfiltret, eftersom
+toner kan vika sig ned och bli störningar.
+Denna vikning sker både vid själva samplingen och även omvänt när man lägger ut
+en signal analogt igen. Därför krävs filtrering i bägge riktningarna.
 
-En frekvens som är nära nykvistfrekvensen, så som 12,4\,kHz in i 40\,kS/s och
-dess 20\,kHz nykvistfrekvens, så är sample-punkterna nästa helt alternerande
-mellan högsta och lägsta läge. Detta fall är det svårt att se den bakomliggande
-sinus-signalen för ett otränat öga, men kan fortfarande rekonstrueras med ett
-antialiasingfilter.
-
-Ett ännu svårare fall är 38\,kHz, där punkterna visar en sinus med 2\,kHz, då
-frekvensen vikt sig ned run nykvistfrekvensen, och eftersom infrekvensen är
-18\,kHz över nykvistfrekvensen hamnar den därför 18~kHz under nykvistfrekvensen,
-dvs. på 2\,kHz i det här fallet. Denna vikning är det man försöker undvika med
-anti-aliasing-filtret, eftersom toner kan vika sig ned och bli störningar.
-Denna vikning sker både vid själva samplingen men även omvänt när man lägger ut
-en signal analogt igen. Därför krävs filtrering i bägge riktning.
-
-Vid sampling så kan alltså högre frekvenser vika ned sig i spektrat.
+Vid sampling kan alltså högre frekvenser vika ned sig i spektrumet.
 Detta är oftast oönskat, varvid man har ett filter före ingången som
 undertrycker oönskade signaler.
 
@@ -241,9 +243,10 @@ behändigt sätt, men det förekommer också att man väljer samplingstakten fö
 inte vika bandet.
 
 \subsection{ADC/DAC}
-\marginnote{HAREC a.\ref{HAREC.a.1.10.5}\label{myHAREC.a.1.10.5}}
+\harec{a}{1.10.5}{1.10.5}
 \index{ADC}
 \index{DAC}
+\label{ADC-DAC}
 
 För att hantera dessa delar använder man analog-till-digital-omvandlare
 (eng. \emph{Analog-Digital Conversion (ADC)}) samt digital-till-analog-omvandlare 
@@ -255,5 +258,5 @@ har kraftigt reducerat kraven.
 
 ADC och DAC köper man idag som färdiga integrerade kretsar, inte sällan med
 flera kanaler och det finns även de som har bägge integrerade i samma krets.
-Utvecklingen har gjort att man idag kan köpa 24-bitars 48~kS/s ADC och DAC med
-dynamiskt område bättre än 100~dB för väldigt låg kostnad.
+Utvecklingen har gjort att man idag kan köpa 24-bitars 48\,kS/s ADC och DAC med
+dynamiskt område bättre än \SI{100}{\decibel} för väldigt låg kostnad.

@@ -1,5 +1,5 @@
 \section{Modulation}
-\marginnote{HAREC a.\ref{HAREC.a.1.8}\label{myHAREC.a.1.8}}
+\harec{a}{1.8}{1.8}
 \label{modulation}
 \index{modulation}
 
@@ -21,6 +21,7 @@ Den signal som innehåller informationen kallas \emph{modulerande signal},
 \emph{basband} eller \emph{underbärvåg} medan den signal som informationen överförts till kallas \emph{modulerad signal}, \emph{bärvåg} eller \emph{huvudbärvåg}.
 
 \subsection{Modulationssystem}
+\label{modulationssystem}
 
 Den största gruppen av modulationssystem är definierad med avseende på hur
 huvudbärvågen är modulerad.
@@ -31,6 +32,7 @@ Utäver dessa finns system för pulsmodulation och även direkta digitala modula
 
 \subsection{Sändningsslag}
 \index{sändningsslag}
+\label{sändningsslag}
 
 Sätten att modulera kallas \emph{sändningsslag}.
 Gemensamt för sändningsslagen är att en givare --- det kan vara en mikrofon, en
@@ -51,17 +53,14 @@ Det innebär att bärvågen måste moduleras av en underbärvåg och att denna
 motsvarar lufttrycksvariationerna i ljudet.
 
 \subsection{Kännetecken för modulerade signaler}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.5}\label{myHAREC.a.1.8.5a}}
+\label{kännetecken_modulerade_signaler}
+\harec{a}{1.8.5}{1.8.5a}
 \index{amplitudmodulation}
 \index{frekvensmodulation}
 \index{fasmodulation}
 \index{pulsmodulation}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-22.pdf}
-\caption{Modulerade signaler}
-\label{fig:BildII1-22}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_1-22.pdf}{Modulerade signaler}{fig:BildII1-22}
 
 Bild \ref{fig:BildII1-22} illustrerar modulerade signaler.
 En modulerad signal kännetecknas av dess amplitud, frekvens och fasläge.
@@ -72,7 +71,7 @@ varje tidpunkt motsvarar den modulerande signalens variation.
 Vid \emph{frekvensmodulation} påverkas huvudbärvågens frekvens, så att den i
 varje tidpunkt motsvarar den modulerande signalens variation.
 
-Vid \emph{fasmodulation}, som är besläktad med frekvensmodulation, påverkas i
+Vid \emph{fasmodulation}, som är besläktad med fre\-kvens\-mod\-ul\-ati\-on, påverkas i
 stället för frekvensen huvudbärvågens fasläge i förhållande till en
 referenssignal, så att fasläget i varje tidpunkt motsvarar den modulerande
 signalens variation.
@@ -81,15 +80,16 @@ Frekvens- och fasmodulation liknar varandra och kan sammanfattas som
 vinkelmodulation, eftersom fasvinkeln mellan bärvågens spänning och ström
 varierar i båda fallen.
 
-Vid \emph{pulsmodulation} används pulståg (korta upprepade bärvågspaket), till 
-exempel pulsamplitud-, pulslängds-, pulsläges- och pulskodmodulation.
-Pulskodmodulation används till exempel vid samtidig överföring av flera 
-telesamtal på samma linje, bärvåg etc.
+Vid \emph{pulsmodulation} används pulståg (korta upprepade bärvågspaket), till exempel
+pulsamplitud-, puls\-läng\-ds-, pulsläges- och pulskodmodulation.
+Pulskodmodulation används till exempel vid samtidig överföring av flera telesamtal på
+samma linje, bärvåg etc.
 
 \subsection{Bandbredd vid olika sändningsslag}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.5}\label{myHAREC.a.1.8.5b}}
+\harec{a}{1.8.5}{1.8.5b}
 \index{bandbredd}
 \index{frekvenseffektivitet}
+\label{bandbredd_modulation}
 
 Varje radiosändning tar upp plats omkring den nominella bärvågsfrekvensen ---
 tillsammans \emph{bandbredden}.
@@ -105,6 +105,7 @@ onödigt frekvensutrymme.
 
 \subsection{Beskrivningskod för sändningsslagen}
 \index{sändningsslag}
+\label{modulation_beskrivningskod}
 
 Vid 1979 års radioförvaltningskonferens (WARC 79) i Geneve reviderades det
 internationella radioreglementet (RR), som i huvudsak trädde i kraft 1982.
@@ -152,7 +153,7 @@ Därför är termen \emph{amplitudmodulation} inte tillräcklig för att beskriv
 flera likartade sändningsslag.
 
 \subsection{Modulerande signaler}
-\marginnote{HAREC a.\ref{HAREC.a.1.7.1}\label{myHAREC.a.1.7.1}}
+\harec{a}{1.7.1}{1.7.1}
 \index{modulerande signaler}
 
 \subsubsection{Basband}
@@ -166,17 +167,13 @@ Till exempel är en nycklad ton, som går till sändaren genom mikrofoningången
 dess analoga basband medan nycklingspulserna till tongeneratorn är dess
 digitala basband.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-23.pdf}
-\caption{Modulerande signaler}
-\label{fig:BildII1-23}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-23.pdf}{Modulerande signaler}{fig:BildII1-23}
 
 Bild \ref{fig:BildII1-23} illustrerar modulerade signaler.
 Ett vanligt sätt att överföra information över radio är med telefoni, det vill
 säga tal.
 
-Frekvensområdet 300--3000 \unit{Hz} räcker för god förståelighet av tal.
+Frekvensområdet \SIrange{300}{3000}{\hertz} räcker för god förståelighet av tal.
 Dels är örat känsligast inom det området och dels finns där den mesta energin
 i talet.
 
@@ -199,19 +196,16 @@ En baston har låg frekvens och en diskantton har hög frekvens.
 En svag ton har liten amplitud och en stark ton har stor amplitud.
 \end{enumerate}
 
-\subsection{Sändningsslaget A3E (även kallat AM)}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.2}, a.\ref{HAREC.a.1.8.6b}, 
-a.\ref{HAREC.a.1.8.7b}\label{myHAREC.a.1.8.2}\label{myHAREC.a.1.8.6b}
-	\label{myHAREC.a.1.8.7b}}
+\subsection{Sändningsslaget A3E (AM)}
+\harec{a}{1.8.2}{1.8.2}
+\harec{a}{1.8.6b}{1.8.6b}
+\harec{a}{1.8.7b}{1.8.7b}
 \index{amplitudmodulation}
 \index{A3E}
 \index{AM|see {amplitudmodulation}}
+\label{modulation_am}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-24.pdf}
-\caption{Sidband vid A3E-modulation}
-\label{fig:BildII1-24}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_1-24.pdf}{Sidband vid A3E-modulation}{fig:BildII1-24}
 
 Bild \ref{fig:BildII1-24} visar frekvensspektrum av en signal vid
 amplitudmodulation med
@@ -224,7 +218,7 @@ amplitudmodulation med
 
 \paragraph{Försök:}
 
-Modulera en A3E-sändare med en 3~kHz-signal.
+Modulera en A3E-sändare med en \SI{3}{\kilo\hertz}-signal.
 Med en mottagare utrustad med ett smalt filter för telegrafi, kan man urskilja
 och påvisa bärvågen och de båda sidbanden. 
 
@@ -235,11 +229,7 @@ kan man visa hur sidbanden representerar den modulerade signalen.}
 
 \subsubsection{A3E-modulation med en ton}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-25.pdf}
-\caption{A3E-modulation med toner med olika styrka och frekvens}
-\label{fig:BildII1-25}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-25.pdf}{A3E-modulation med toner med olika styrka och frekvens}{fig:BildII1-25}
 
 Bild \ref{fig:BildII1-25} visar A3E-modulation med toner av olika styrka och
 frekvens.
@@ -263,19 +253,18 @@ Alltså \(f_{HF} + f_{LF}\) (övre sidofrekvens) och skillnadsfrekvensen
 \(f_{HF} - f_{LF}\) (undre sidofrekvens).
 
 Eftersom tal inte bara omfattar en enda frekvens utan ett helt frekvensspektrum
-(ca 0,3--3~kHz) uppstår inte bara två sidofrekvenser utan två sidband, det
-lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper Side Band).
+(ca \SIrange{0,3}{3}{\kilo\hertz}) uppstår inte bara två sidofrekvenser utan två
+sidband, det lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper
+Side Band).
 
 LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
 Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
 dubbelt så stor som den högsta modulerande LF-frekvensen:
 
-\[
-	b= 2 \cdot f_{LFmax}
-\]
+\(b= 2 \cdot f_{LFmax}\)
 
-Om de modulerande LF-frekvenserna är mellan 0,3 och 3~kHz blir sändningens
-totala bandbredd 6~kHz.
+Om de modulerande LF-frekvenserna är mellan 0,3 och \SI{3}{\kilo\hertz} blir
+sändningens totala bandbredd \SI{6}{\kilo\hertz}.
 
 LF-signalernas amplitud påverkar sidbandens och sidofrekvensernas amplitud.
 Vid maximal modulation (100~\% modulationsgrad) varierar signalamplituden mellan
@@ -304,18 +293,15 @@ I talpauser sänds endast bärvågseffekten och till ingen nytta.
 Då en annan, alltför närliggande sändares bärvåg blandas med den egna,
 alstras interferenstoner i mottagarna.
 
-\subsection{Sändningsslaget A1A (även kallat CW)}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.1}, a.\ref{HAREC.a.1.8.6a}, 
-  a.\ref{HAREC.a.1.8.7a}\label{myHAREC.a.1.8.1}\label{myHAREC.a.1.8.6a}
-  \label{myHAREC.a.1.8.7a}}
+\subsection{Sändningsslaget A1A (CW)}
+\harec{a}{1.8.1}{1.8.1}
+\harec{a}{1.8.6a}{1.8.6a}
+\harec{a}{1.8.7a}{1.8.7a}
 \index{A1A}
 \index{CW}
+\label{modulation_cw}
 
-\begin{figure}
-	\includegraphics[width=.9\textwidth]{images/cropped_pdfs/bild_2_1-26.pdf}
-	\caption{Amplitudmodulation med morsetecken}
-	\label{fig:BildII1-26}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
 
 Bild \ref{fig:BildII1-26} visar amplitudmodulation med morsetecken.
 Man kan överföra meddelanden med morsetelegrafi på olika sätt. Det
@@ -328,28 +314,32 @@ bärvågssvängningar som var fallet i sedan mycket länge förbjudna
 gnistsändare.
 
 Fastän en sändare ''moduleras utan ton'', har den en viss bandbredd.
-Det beror på att den takt, som sändaren nycklas med, egentligen är en
-ton --- låt vara med låg frekvens. Antag att sändaren nycklas med en
-serie korta morsetecken. Vid telegraferingshastigheten 60~tecken/minut
-alstrar bärvågspulserna en kantvåg med frekvensen \SI{5}{Hz}. Som
-tidigare beskrivits, består en sådan kantvåg av summan av
-sinussignaler med frekvenserna 5\,Hz, 15\,Hz, 15\,Hz, 35\,Hz osv.
+Det beror på att den takt, som sändaren nycklas med, egentligen är en ton --
+låt vara med låg frekvens.
+Antag att sändaren nycklas med en serie korta morsetecken.
+Vid telegraferingshastigheten 60~tecken/minut alstrar bärvågspulserna en kantvåg
+med frekvensen \SI{5}{\hertz}.
+Som tidigare beskrivits, består en sådan kantvåg av summan av sinussignaler med
+frekvenserna \SI{5}{\hertz}, \SI{15}{\hertz}, \SI{25}{\hertz}, \SI{35}{\hertz}
+och så vidare.
 
-Det innebär att det uppstår sidofrekvenser över och under bärvågens
-frekvens och med ett avstånd till bärvågen av 5\,Hz, 15\,Hz, 25\,Hz,
-35\,Hz. Telegrafisändaren har alltså liksom vid A3E en bandbredd, som
-dels står i förhållande till nycklingshastigheten och dels till
-''kantigheten'' (stigtiden) på tecknen, vilket bestämmer
-övertonshalten i bärvågen. Vid s.k. mjuk nyckling kan den 9:e
-övertonen antas vara den högsta som uppfattas av en motstation. Med en
-nycklingsfrekvens av \SI{5}{Hz} blir bandbredden inte större än \(2
-\cdot 10 \cdot 5 = \SI{100}{Hz}\).
+Det innebär att det uppstår sidofrekvenser över och under bärvågens frekvens och
+med ett avstånd till bärvågen av \SI{5}{\hertz}, \SI{15}{\hertz},
+\SI{25}{\hertz}, \SI{35}{\hertz} osv.
+Telegrafisändaren har alltså liksom vid A3E en bandbredd, som dels står i
+förhållande till nycklingshastigheten och dels till ''kantigheten'' på tecknen,
+vilket bestämmer övertonshalten i bärvågen.
+Vid så kallad mjuk nyckling kan den 9:e övertonen antas vara den högsta som
+uppfattas av en motstation.
+Med en nycklingsfrekvens av \SI{5}{\hertz} blir bandbredden inte större än
+\(2 \cdot 10 \cdot 5 = 100\ Hz\).
 
-En hård (kantig) och snabb teckengivning ökar bandbredden och kan
-resultera i att s.k. nycklingsknäppar kan uppfattas långt vid sidan om
-sändningsfrekvensen. Ju hårdare nycklingen är, desto längre bort från
-bärvågsfrekvensen hörs nycklingsknäpparna. Detta kan då störa andra
-stationer på närliggande frekvenser.
+En hård (kantig) och snabb teckengivning ökar bandbredden och kan resultera i
+att så kallade nycklingsknäppar kan uppfattas långt vid sidan om
+sändningsfrekvensen.
+Ju hårdare nycklingen är, desto längre bort från bärvågsfrekvensen hörs
+nycklingsknäpparna.
+Detta stör andra stationer.
 
 Kännetecken för sändningsslaget A1A, telegrafi genom nycklad bärvåg:
 
@@ -363,12 +353,14 @@ stor överföringssäkerhet, lång räckvidd, enkla sändare.
 	a.\ref{HAREC.a.1.8.7c}
 	\label{myHAREC.a.1.8.3c}\label{myHAREC.a.1.8.6c}\label{myHAREC.a.1.8.7c}}
 
+\subsection{Sändningsslaget J3E (SSB)}
+\harec{a}{1.8.3c}{1.8.3c}
+\harec{a}{1.8.6c}{1.8.6c}
+\harec{a}{1.8.7c}{1.8.7c}
 \index{Single Side Band (SSB)}
 \index{J3E}
 \index{SSB}
-\index{ESB}
-\index{enkelt sidband}
-\index{sidband, enkelt}
+\label{modulation_ssb}
 
 \subsubsection{Princip}
 
@@ -379,11 +371,7 @@ Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
 sätt. Numera är den så kallade filtermetoden i särklass vanligast och den enda
 som behandlas här.
 
-\begin{figure}
-	\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-27.pdf}
-	\caption{Sidband vid DSB}
-	\label{fig:BildII1-27}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_1-27.pdf}{Sidband vid DSB}{fig:BildII1-27}
 
 Bild \ref{fig:BildII1-27} illustrerar sidband vid DSB-modulation.
 Med filtermetoden blandas HF- och LF-signalerna i en speciell blandare.
@@ -400,34 +388,27 @@ Den signal som sänds ut innehåller därför endast ett sidband (\emph{Single S
 
 \paragraph{Exempel}
 
-\begin{figure}
-	\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-28.pdf}
-	\caption{Sidbandsval vid SSB}
-	\label{fig:BildII1-28}
-\end{figure}
+\tallfig[0.5]{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
 
-Bild \ref{fig:BildII1-28} illustrerar sidbandsval vid SSB modulering.
-Ett SSB-filter har ett passband av 9000,3--9003\,kHz.
-Vid bärvågsfrekvensen 9000\,kHz sträcker sig det övre sidbandet från
-9000,3--9003~kHz och släpps igenom.
+Bild \ref{fig:BildII1-28} illustrerar sidbandsval vid SSB-modulering.
+Ett SSB-filter har ett passband av \SIrange{9000,3}{9003}{\kilo\hertz}.
+Vid bärvågsfrekvensen \SI{9000}{\kilo\hertz} sträcker sig det övre sidbandet
+från \SIrange{9000,3}{9003}{\kilo\hertz} och släpps igenom.
 Däremot blir bärvågsfrekvensen undertryckt.
 
-Det undre sidbandet 8997--8999,7\,kHz faller utanför filtrets passband
-och blir också undertryckt.
+Det undre sidbandet \SIrange{8997}{8999,7}{\kilo\hertz} faller utanför filtrets
+passband och blir också undertryckt.
 
-Ska däremot det undre sidbandet kunna passera igenom samma filter, så
-måste bärvågsfrekvensen höjas med 3~kHz, alltså till 9003~kHz. Då
-faller det undre sidbandet, 9002,7--9000,0\,kHz inom filtrets
-passband.
+Ska däremot det undre sidbandet kunna passera igenom samma filter, så måste
+bärvågsfrekvensen höjas med \SI{3}{\kilo\hertz}, alltså till
+\SI{9003}{\kilo\hertz}.
+Då faller det undre sidbandet, \SIrange{9002,7}{9000,0}{\kilo\hertz} inom
+filtrets passband.
 
-Det övre sidbandet 9003,3--9006,0\,kHz faller nu utanför passbandet
-och blir undertryckt.
+Det övre sidbandet \SIrange{9003,3}{9006,0}{\kilo\hertz} faller nu utanför
+passbandet och blir undertryckt.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-29.pdf}
-  \caption{Sidbandslägen vid SSB}
-  \label{fig:BildII1-29}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-29.pdf}{Sidbandslägen vid SSB}{fig:BildII1-29}
 
 Bild \ref{fig:BildII1-29} illustrerar sidbandslägen vid SSB.
 LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
@@ -435,9 +416,8 @@ LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
 LF-signalens frekvens bestämmer sidofrekvensens avstånd från
 bärvågsfrekvensen (bärvågen undertryckt).
 
-Bandbredden på den utsända signalen är skillnaden mellan högsta och
-lägsta modulerande frekvens i signalen till exempel \(b = \SI{3}{kHz}
-- \SI{0,3}{kHz} = \SI{2,7}{kHz}\)
+till exempel \(b = \SI{3}{\kilo\hertz} - \SI{0,3}{\kilo\hertz} =
+\SI{2,7}{\kilo\hertz}\)
 
 \subsubsection{Fördelar med J3E-modulation}
 
@@ -478,8 +458,9 @@ J3E-modulation medför mera komplicerade apparater, både för mottagning och
 sändning.
 
 \subsection{Vinkelmodulation}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.3a}\label{myHAREC.a.1.8.3a}}
+\harec{a}{1.8.3a}{1.8.3a}
 \index{vinkelmodulation}
+\label{modulation_vinkel}
 
 Termen vinkelmodulation är samlingsnamnet för frekvensmodulation (FM) och
 fasmodulation (PM).
@@ -500,19 +481,14 @@ För att effektivt utnyttja fördelarna med vinkelmodulation, antingen det är
 frekvens eller fasmodulation, behövs tillräckligt frekvensutrymme.
 Det innebär att främst högre frekvensband kommer i fråga.
 
-\subsection{Frekvensmodulation (även kallat FM)}
-\marginnote{HAREC
-  a.\ref{HAREC.a.1.8.3b}\label{myHAREC.a.1.8.3b},
-  a.\ref{HAREC.a.1.8.6d}\label{myHAREC.a.1.8.6d}
-}
+\subsection{Frekvensmodulation (FM)}
+\harec{a}{1.8.3b}{1.8.3b}
+\harec{a}{1.8.6d}{1.8.6d}
 \index{frekvensmodulation}
 \index{FM|see {frekvensmodulation}}
+\label{modulation_fm}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-30.pdf}
-\caption{Frekvensmodulation}
-\label{fig:BildII1-30}
-\end{figure}
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_1-30.pdf}{Frekvensmodulation}{fig:BildII1-30}
 
 Bild \ref{fig:BildII1-30} (överst och i mitten) visar frekvensmodulation.
 
@@ -532,8 +508,8 @@ vid varje tillfälle proportionell mot den modulerande signalens amplitud.
 Sålunda är deviationen liten när den modulerande signalens amplitud är liten
 och störst när amplituden når sitt toppvärde, antingen amplituden är positiv
 eller negativ.
-Vid en modulationsfrekvens av 300\,Hz varierar bärvågsfrekvensen 300 gånger per
-sekund, vid 3\,kHz är det 3000 gånger per sekund.
+Vid en modulationsfrekvens av \SI{300}{\hertz} varierar bärvågsfrekvensen 300
+gånger per sekund, vid \SI{3}{\kilo\hertz} varierar den 3000 gånger per sekund.
 
 Likspänningsnivåer kan överföras med FM, eftersom en motsvarande
 frekvensavvikelse kan framställas.
@@ -585,53 +561,47 @@ Vid modulation med en sinussignal istället för med en fyrkantssignal, uppstår
 ett frekvensspektrum som på överst i bilden.
 
 \paragraph{Frekvensdeviation och modulationsindex}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.4}\label{myHAREC.a.1.8.4}}
+\harec{a}{1.8.4}{1.8.4}
 \index{frekvensdeviation}
 \index{modulationsindex}
 \index{symbol!\(m\) modulationsindex}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-31.pdf}
-\caption{Sidbandsspektrum vid FM-modulering med 1 sinuston}
-\label{fig:BildII1-31}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-31.pdf}{Sidbandsspektrum vid FM-modulering med 1 sinuston}{fig:BildII1-31}
 
 Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-modulering med
 1 sinuston. Vid vinkelmodulation uppstår talrika sidofrekvenser, som
 beror av den modulerande frekvensen \(f_{LF}\).
 Amplitudfördelningen mellan sidofrekvenserna står i förhållande till
-deviationen, varvid deras amplitud blir mindre ju längre bort från
-bärvågen de är.
+deviationen, varvid deras amplitud blir mindre ju längre bort från bärvågen
+de är.
 
-I praktiken anses en sidofrekvens försumbar när dess amplitud är
-mindre än 1~\% av amplituden för omodulerad bärvåg.
+I praktiken anses en sidofrekvens försumbar när dess amplitud är mindre än 1~\%
+av amplituden för omodulerad bärvåg.
 
-För beräkning av bandbredden används begreppet modulationsindex \(m\),
-vilket är kvoten av maximal deviation \(\Delta f\) och högsta
-frekvensen \(f_{LF}\).
-\[   m = \dfrac{\Delta f_{max}}{f_{LFmax}}   \]
-
+För beräkning av bandbredden används begreppet modulationsindex \(m\), vilket är
+kvoten av maximal deviation \(\Delta f\) och högsta frekvensen \(f_{LF}\).
+%%
+\[m = \dfrac{\Delta f_{max}}{f_{LFmax}}\]
+%%
 Inom amatörradion är det vanligt att arbeta med \(\Delta f_{max} =
-\SI{3}{kHz}\) och \(f_{LFmax} = \SI{3}{kHz}\), dvs. \(m = 1\).
+\SI{3}{\kilo\hertz}\) och \(f_{LFmax} = \SI{3}{\kilo\hertz}\), dvs. \(m = 1\).
 
-Vid modulationsindex \(m = 1\), gäller följande formel för bandbredden
-\(b\)
-\[
-	b = 2 \cdot ( \Delta f_{max} + f_{LFmax}) = 
-	2 \cdot \Delta f_{max} + 2 \cdot f_{LFmax}
-\]
+Vid modulationsindex \(m = 1\), gäller följande formel för bandbredden \(b\)
 
-Med ovan nämnda värden blir bandbredden
-\[	b = 2 \cdot (\SI{3}{kHz} + \SI{3}{kHz}) = \SI{12}{kHz}     \]
+\(b = 2 \cdot ( \Delta f_{max} + f_{LFmax}) = 2 \cdot \Delta f_{max}
+ + 2 \cdot f_{LFmax}\)
 
-Bandbredden ökar således både med ökande deviation och ökande
-modulerande frekvens.
-För att inte interferera med trafik på grannkanalerna måste såväl
-deviation som frekvensen på den modulerande signalen begränsas.
+Med ovan nämnda värden blir bandbredden \(b = 2 \cdot (\SI{3}{\kilo\hertz} +
+\SI{3}{\kilo\hertz}) = \SI{12}{\kilo\hertz}\)
+
+Bandbredden ökar således både med ökande deviation och ökande modulerande
+frekvens.
+För att inte interferera med trafik på grannkanalerna måste såväl deviation som
+frekvensen på den modulerande signalen begränsas.
 En deviationsbegränsare begränsar amplituden på denna signal.
-Ett lågpassfilter reducerar den distorsion, som uppstår av
-begränsningen. Vidare undertrycks modulerande frekvenser högre än
-3~kHz, vilket är tillräckligt för överföring av tal.
+Ett lågpassfilter reducerar den distorsion, som uppstår av begränsningen.
+Vidare undertrycks modulerande frekvenser högre än \SI{3}{\kilo\hertz}, vilket
+är tillräckligt för överföring av tal.
 
 \paragraph{Jämförelse}
 
@@ -639,8 +609,9 @@ En VHF-rundradiosändare (vanlig FM-radio i bandet 88--108\,MHz)är
 tilldelad ett större frekvensutrymme och kan därför använda mycket
 större bandbredd.
 
-Där är \(\Delta f_{max} = \SI{75}{kHz}\) och \(f_{LFmax} = \SI{15}{kHz}\), därmed är
-\(m = 75/15 = 5\) och \(b = 2 \cdot (75 + 15) = \SI{180}{kHz}\).
+Där är \(\Delta f_{max} = \SI{75}{\kilo\hertz}\) och \(f_{LFmax} =
+\SI{15}{\kilo\hertz}\), därmed är \(m = \frac{75}{15} = 5\) och \(b = 2 \cdot
+(75 + 15) = \SI{180}{\kilo\hertz}\).
 
 Som framgår av tabellen på nästa uppslag varierar bärvågens liksom
 sidofrekvensernas inbördes amplitud med modulationsindex. Detta ska
@@ -653,18 +624,16 @@ den återkommer, men att dess fasläge blir omvänt. I vinkelmodulation
 tas energin i sidbanden från bärvågen, vilket innebär att den totala
 effekten förblir densamma oavsett modulationsindex.
 
-\index{F3E}
+%\paragraph{Kännetecken för sändningsslaget F3E (FM)}
+%\index{F3E}
 
-\paragraph{Fördelar med F3J}
-\begin{itemize}
-\item F3E-sändaren är enkel till sin uppbyggnad och hög överföringskvalitet
-	uppnås vid stor bandbredd, störningar från amplitudmodulerade signaler t.ex.
-	tändgnistor undertrycks i mottagaren.
-\end{itemize}
+\paragraph{Fördelar med sändningsslaget F3E (FM)}
+F3E-sän\-daren är enkel till sin uppbyggnad och hög överföringskvalitet
+uppnås vid stor bandbredd, störningar från amplitudmodulerade signaler såsom
+tändgnistor undertrycks i mottagaren.
 
-\paragraph{Nackdelar med F3J}
-\begin{itemize}
-\item En relativt stor bandbredd behövs för överföring av ett basband med stort
+\paragraph{Nackdelar med sändningsslaget F3E (FM)}
+En relativt stor bandbredd behövs för överföring av ett basband med stort
 frekvensomfång.
 Sändaren måste avge full effekt, även när modulation inte sker.
 \end{itemize}
@@ -676,10 +645,10 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \cline{3-9}
 &\multicolumn{1}{l}{}  & \multicolumn{7}{|c|}{Modulationsindex} \\ \cline{3-9}
 &\multicolumn{1}{l|}{}  &   1   &   2   &    3   &    4   &    5   &    6   &    7   \\ \hline
-\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & -0,260 & -0,397 & -0,178 &  0,151 &  0,300 \\
-\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & -0,066 & -0,328 & -0,277 & -0,005 \\
-\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & -0,243 & -0,301 \\
-\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & -0,168 \\
+\multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & \num{-0,260} & \num{-0,397} & \num{-0,178} &  0,151 &  0,300 \\
+\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & \num{-0,066} & \num{-0,328} & \num{-0,277} & \num{-0,005} \\
+\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & \num{-0,243} & \num{-0,301} \\
+\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & \num{-0,168} \\
 \multicolumn{1}{|c|}{}&\(A_4\) &       & 0,034 &  0,132 &  0,281 &  0,391 &  0,358 &  0,158 \\
 \multicolumn{1}{|c|}{}&\(A_5\) &       & 0,016 &  0,043 &  0,132 &  0,261 &  0,362 &  0,348 \\
 \multicolumn{1}{|c|}{}&\(A_6\) & \multicolumn{2}{c|}{} &  0,011 &  0,049 &  0,131 &  0,246 &  0,339 \\
@@ -694,7 +663,7 @@ bärvågens relativa amplitud 1,0)}
 \end{table}
 \normalsize
 
-\subsection{Fasmodulation (även kallat PM)}
+\subsection{Fasmodulation (PM)}
 \index{fasmodulation}
 \index{PM}
 
@@ -726,18 +695,16 @@ modulationsindex varierar med den modulerande frekvensen.
 \begin{itemize}
 \item Frekvensmodulation (FM) alstras genom att sändarens oscillatorfrekvens
   varieras (devieras) i takt med den modulerande signalen (t.ex. tal).
-  Det gör man genom att variera resonansfrekvensen i den svängningskrets som
+  Det gör man genom att variera resonansfrekvensen i den resonanskrets som
   styr oscillatorfrekvensen.
 
-\item Fasmodulation \emph{Phase Modulation} (PM) alstras vanligen
-  genom att efter sändaroscillatorn variera den modulerande signalens
-  fasläge i förhållande till en omodulerad bärvåg --- så kallad
-  fasmodulering.
-  Det gör man genom att variera resonansfrekvensen i en
-  svängningskrets efter oscillatorn, dvs. utan att påverka
-  oscillatorfrekvensen.
+\item Fasmodulation (PM) alstras vanligen genom att efter sändaroscillatorn
+  variera den modulerande signalens fasläge i förhållande till en omodulerad
+  bärvåg -- så kallad fasmodulering.
+  Det gör man genom att variera resonansfrekvensen i en resonanskrets efter
+  oscillatorn, dvs. utan att påverka oscillatorfrekvensen.
 
-\item I båda fallen ändrar man alltså resonansfrekvensen i en svängningskrets i
+\item I båda fallen ändrar man alltså resonansfrekvensen i en resonanskrets i
   takt med frekvensen i den modulerande spänningen, men denna krets har
   olika placering i FM-sändare respektive PM-sändare.
 
@@ -752,7 +719,7 @@ modulationsindex varierar med den modulerande frekvensen.
   frekvensgång.
   Vid samtidig användning av PM-sändare och FM-mottagare är det alltså lämpligt
   att justera frekvensgången i PM-sändarens modulator, lämpligen
-  med 6~dB dämpning per oktav ökad frekvens.
+  med \SI{6}{\decibel} dämpning per oktav ökad frekvens.
 \end{itemize}
 
 \subsection{Pulsmodulation}
@@ -765,9 +732,9 @@ Pulsmodulation används mest i mikrovågsområdet. Pulsmodulerade signaler sänd
 vanligen som en serie korta pulser åtskilda av relativt långa pauser utan
 modulering.
 
-En typisk sändning kan bestå av pulser med en längd av 1 \(\mu\)s och en
-frekvens av 1000~Hz. Toppeffekten på en pulssändning är därför mycket högre än
-dess medeleffekt
+En typisk sändning kan bestå av pulser med en längd av \SI{1}{\micro\second} och
+en frekvens av \SI{1000}{\hertz}.
+Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
 
 Före WARC~79 var symbolen för all pulssändning P. Därefter används P endast för
 omodulerade pulståg. Annan pulsmodulation har följande symboler
@@ -785,22 +752,30 @@ Annan pulsmodulation har följande symboler:
 \begin{table}[ht]
 \tiny
 \begin{center}
-\begin{tabular}{|l|l|l|l|l|}
-	\hline
-	Typ       & Amplituden på  & Tonhöjden på    & Bandbredden $b$      & För stor amplitud      \\
-	          & LF-signalen    & LF-signalen     & förhåller sig till & på LF-signalen         \\
-	          & påverkar       & påverkar        &                    & medför                 \\ \hline
-	A3E (AM)  & amplituden i   & sidofrekvenser- & LF-signalens       & övermodulering         \\
-	          & båda sidbanden & nas avstånd     & högsta frekvens    & och för stor bandbredd \\
-	          &                & från bärvågen   &                    &  \\
-	J3E (SSB) & amplituden på  & sidofrekvenser- & skillnaden mellan  & för stor bandbredd,    \\
-	          & utsänt sidband & nas avstånd     & LF-signalens       & överstyrning av        \\
-	          &                & från bärvågen   & högsta och lägsta  & förstärkarsteg         \\
-	          &                &                 & frekvens           &  \\
-	F3E (FM)  & deviationen    & hastigheten på  & dubbla summan      & för stor deviation,    \\
-	          &                & bärvågens       & av största devia-  & för stor bandbredd     \\
-	          &                & frekvens-       & tion och högsta    &  \\
-	          &                & ändring         & LF-frekvens        &  \\ \hline
+\begin{tabular}{|L{.12\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.19\textwidth}|}
+\hline
+  Sändningsslag &
+    Amplituden på LF-signalen &
+    Tonhöjden på LF- signalen påverkar & 
+    Bandbredden b förhåller sig till &
+    För stor amplitud på LF-signalen medför \\
+  \hline % =======================================================
+  A3E (AM) & 
+    amplituden i båda sidbanden &
+    sidofrekvensernas avstånd från bärvågen &
+    LF-signalens högsta frekvens & 
+    övermodulering och för stor bandbredd \\
+  J3E (SSB) & 
+    amplituden på utsänt sidband & 
+    sidofrekvensernas avstånd från bärvågen  & 
+    skillnaden mellan LF-signalens högsta och lägsta frekvens & 
+    för stor bandbredd, överstyrning av förstärkarsteg \\
+  F3E (FM) &
+    deviationen & 
+    hastigheten på bärvågens frekvensändring &
+    dubbla summan av största deviation och högsta LF-frekvens & 
+    för stor deviation, för stor bandbredd \\
+  \hline % =======================================================
 \end{tabular}
 \end{center}
 \caption{Jämförelse mellan några vanliga sändningsslag inom amatörradio}
@@ -808,8 +783,9 @@ Annan pulsmodulation har följande symboler:
 \end{table}
 
 \subsection{Digital modulation}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.8}\label{myHAREC.a.1.8.8}}
+\harec{a}{1.8.8}{1.8.8}
 \index{digital modulation}
+\label{modulation_digital}
 
 Utöver de klassiska analoga modulationsmetoderna finns ett antal digitala
 modulationsformer.
@@ -819,9 +795,9 @@ och 1 moduleras med bärvåg.
 Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK, 4-PSK och
 QAM vilka presenteras i följande delavsnitt.
 
-\subsubsection{Frekvensskift modulation --- FSK}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.8a}\label{myHAREC.a.1.8.8a}}
-\index{frekvensskift modulation}
+\subsubsection{Frekvensskiftsmodulation -- FSK}
+\harec{a}{1.8.8a}{1.8.8a}
+\index{frekvensskiftsmodulation}
 \index{Frequency Shift Keying (FSK)}
 \index{FSK}
 \index{frekvensmodulation}
@@ -850,8 +826,8 @@ Man kan använda fler än två frekvenser, till exempel används fyra frekvenser
 Frekvensskift används även för att sända långsamma meddelanden där JT65
 använder 65 frekvenser som den skiftar mellan, medan JT9 använder 9~frekvenser.
 
-\subsubsection{Binär fasskift modulation --- 2-PSK \& BPSK}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.8b}\label{myHAREC.a.1.8.8b}}
+\subsubsection{Binär fasskiftsmodulation -- 2-PSK \& BPSK}
+\harec{a}{1.8.8b}{1.8.8b}
 \index{binär fasskift modulation}
 \index{fasskift modulation!binär}
 \index{2-PSK}
@@ -863,8 +839,9 @@ använder 65 frekvenser som den skiftar mellan, medan JT9 använder 9~frekvenser
 Istället för att modulera frekvensen kan man modulera polariteten eller fasen.
 En sådan modulationsform är \emph{binär fasskift modulation} (eng.
 \emph{Binary Phase Shift Keying (BPSK)} eller \emph{2-state Phase Shift Keying
-(2-PSK)}. Förenklat kan man säga att bärvågen moduleras med +1 eller -1,
-ofta med +1 representerande 0 och -1 representerande 1.
+(2-PSK)}.
+Förenklat kan man säga att bärvågen moduleras med \num{+1} eller \num{-1}, ofta
+med \num{+1} representerande \num{0} och \num{-1} representerande \num{1}.
 
 En nackdel med BPSK är att om polariteten blir förväxlad kommer meddelandet
 att bli inverterat, dvs. 0 blir 1 och 1 blir 0. BPSK behöver därför också
@@ -876,8 +853,10 @@ För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
 som \emph{Costas loop}, eftersom en normal PLL-loop inte klarar av
 teckenändringarna på signalen.
 
-\subsubsection{Fyrnivå fasskiftmodulation --- 4-PSK}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.8c}\label{myHAREC.a.1.8.8c}}
+\newpage
+
+\subsubsection{Fyrnivå fasskiftmodulation -- 4-PSK}
+\harec{a}{1.8.8c}{1.8.8c}
 \index{4-PSK}
 \index{fasskift modulation!4-PSK}
 \index{kvadratur-modulering}
@@ -888,7 +867,7 @@ teckenändringarna på signalen.
 
 Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
 används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
-\emph{4-state Phase Shift Keying (4-PSK)}.
+\emph{4-state Phase Shift Keying (4-PSK)}).
 
 Istället för 180~graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
 så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
@@ -905,10 +884,10 @@ som anges av tabell \ref{tab:4-PSK}.
 \begin{tabular}{|r|r|r|r|}
 \hline
 Symbol & Vinkel & I & Q \\ \hline
-0 &   0 & +1 &  0 \\
-1 &  90 &  0 & +1 \\
-2 & 180 & -1 &  0 \\
-3 & 270 &  0 & -1 \\ \hline
+0 &   0 & +1       &  0 \\
+1 &  90 &  0       & +1 \\
+2 & 180 & \num{-1} &  0 \\
+3 & 270 &  0       & \num{-1} \\ \hline
 \end{tabular}
 \end{center}
 \caption{4-PSK i kvadratur-modulering}
@@ -920,8 +899,8 @@ I likhet med 2-PSK/BPSK behöver man återvinna fasen och sedan kunna avgöra
 vad som är 0 grader, men givet att det görs i den övriga modulationen så
 kan informationen avkodas korrekt.
 
-\subsubsection{Kvadratur-amplitud modulation --- QAM}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.8d}\label{myHAREC.a.1.8.8d}}
+\subsubsection{Kvadratur-amplitudmodulation -- QAM}
+\harec{a}{1.8.8d}{1.8.8d}
 \label{QAM}
 \index{kvadratur-amplitudmodulation}
 \index{QAM}
@@ -930,7 +909,6 @@ kan informationen avkodas korrekt.
 \index{DVB-T}
 \index{DVB-T2}
 \index{Wi-Fi}
-
 
 Medan fasskiftning kan göras för fler fassteg har man funnit att det inte
 är lika enkelt för högre upplösningar. Redan vid åtta steg behöver man ha
@@ -952,20 +930,20 @@ Ett exempel på hur 16QAM kan moduleras finns i tabell \ref{tab:16QAM}.
 Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
      0 &    0 &    0 & \(3\sqrt{2}\) &    +45 & +3 &  +3 \\
      1 &    0 &    1 & \(\sqrt{10}\) &    +72 & +3 &  +1 \\
-     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  -1 \\
-     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  -3 \\
+     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  \num{-1} \\
+     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  \num{-3} \\
      4 &    1 &    0 & \(\sqrt{10}\) &    +18 & +1 &  +3 \\
      5 &    1 &    1 &  \(\sqrt{2}\) &    +45 & +1 &  +1 \\
-     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  -1 \\
-     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  -3 \\
-     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & -1 &  +3 \\
-     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & -1 &  +1 \\
-    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & -1 &  -1 \\
-    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & -1 &  -3 \\
-    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & -3 &  +3 \\
-    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & -3 &  +1 \\
-    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & -3 &  -1 \\
-    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & -3 &  -3 \\ \hline
+     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  \num{-1} \\
+     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  \num{-3} \\
+     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & \num{-1} &  +3 \\
+     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & \num{-1} &  +1 \\
+    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & \num{-1} &  \num{-1} \\
+    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & \num{-1} &  \num{-3} \\
+    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & \num{-3} &  +3 \\
+    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & \num{-3} &  +1 \\
+    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & \num{-3} &  \num{-1} \\
+    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & \num{-3} &  \num{-3} \\ \hline
 \end{tabular}
 \end{center}
 \caption{Exempel på QAM-16 i kvadratur-modulering}
@@ -991,8 +969,8 @@ moderna modulationssystem så att QAM-modulationen anpassas utifrån mottagarens
 rapportering om störning. Denna dynamiska anpassning gör att kommunikationen kan
 upprätthållas även om kapaciteten tillåts variera.
 
-\subsection{Digital modulation}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.9}\label{myHAREC.a.1.8.9}}
+\subsection{Begrepp vid digital modulation}
+\harec{a}{1.8.9}{1.8.9}
 \index{digital modulation}
 
 Digital modulation innebär också att signalerna som sänds har lite andra
@@ -1001,7 +979,7 @@ exempel tal skickar vi diskreta fixa nivåer, ofta i form av bitar. Det är där
 lämpligt att diskutera några grundläggande begrepp kring digital modulation.
 
 \subsubsection{Bit rate}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.9a}\label{myHAREC.a.1.8.9a}}
+\harec{a}{1.8.9a}{1.8.9a}
 \index{bit}
 \index{byte}
 \index{informationsmängd}
@@ -1013,26 +991,22 @@ Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit (b)}),
 denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
 (eng. \emph{bit rate}) i bitar per sekund.
 
-Ofta brukar vi referera till informationsmängden i mängden \emph{byte (B)} som
-t.ex. att en fil är \SI{2}{kB} eller en bild är \SI{1,25}{MB}. Då en byte
-innehåller 8 bitar, så motsvarar det \SI{16}{kbit} respektive \SI{10}{Mbit}. I
-dagligt tal pratar vi då om storleken på en fil.
-% kb och kB bör undvikas i samma informationstext då de är så snarlika och 
-% det är lätt att göra fel (tekniskt lexicon). I stället förordas att man 
-% använder kB för kilobyte och kbit för kilobit.
+Ofta brukar vi referera till informationsmängden som mängden \emph{byte (B)}
+som till exempel att en fil är 2\,kB eller en bild är 1,25\,MB.
+Då en byte innehåller åtta bitar motsvarar det 16\,kb respektive 10\,Mb.
+I dagligt tal talar vi då om storleken på en fil.
 
-Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata om
-i termer av \emph{bit rate} som \SI{10}{Mbit/s} (ofta skrivet \emph{bps --- bits
-  per second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per
-sekund.
+Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
+om i termer av \emph{bit rate} som 10\,Mb/s (ofta skrivet \emph{bps -- bits per
+second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per sekund.
 
-Det är ofta som man talar om den råa överföringskapaciteten, medan den verkliga
-överföringskapaciteten för nyttotrafik är något lägre på grund av olika former
-av packningsformat och protokollbehov, så kallad \emph{overhead}. Man ska därför
-vara noga med att skilja dessa åt.
+Det är ofta som man talar om den råa överföringskapaciteten, medan den
+verkliga överföringskapaciteten för nyttotrafik är något lägre på grund av
+olika former av packningsformat och protokollbehov, så kallad \emph{overhead}.
+Man ska därför vara noga med att skilja dessa åt.
 
-\subsubsection{Symboltakt --- Baud rate}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.9b}\label{myHAREC.a.1.8.9b}}
+\subsubsection{Symboltakt -- Baud rate}
+\harec{a}{1.8.9b}{1.8.9b}
 \index{symbol}
 \index{symboltakt}
 \index{symbol rate}
@@ -1050,8 +1024,9 @@ i fyra olika nivåer, kan man representera två bitar. På samma sätt ger åtta
 support för tre bitar. Varje representation kallar man en symbol och varje
 symbol bär alltså en, två eller tre bitar information. Strikt räknat
 är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av antalet nivåer som
-anger antalet bitar som en symbol kan bära. Tre nivåer brukar sägas kunna bära
-1,5 bitar, vilket är en slarvig approximation men visar principen.
+anger antalet bitar som en symbol kan bära.
+Tre nivåer brukar sägas kunna bära 1,5~bitar, vilket är en slarvig approximation
+men visar principen.
 
 Den takt varmed symboler överförs \emph{symboltakten} (eng. \emph{symbol rate}),
 benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{baud (Bd)}.
@@ -1060,7 +1035,7 @@ multiplicera antalet symboler per sekund med antalet bitar per symbol fås
 överföringskapaciteten bitar per sekund.
 
 \subsubsection{Bandbredd}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.9c}\label{myHAREC.a.1.8.9c}}
+\harec{a}{1.8.9c}{1.8.9c}
 \index{bandbredd}
 \index{Nyquist-Shannons samplingsteorem}
 
@@ -1095,10 +1070,10 @@ felupptäckt samt korrigering med återsändning eller korrigeringskoder.
 \index{bitfel}
 \index{bit error}
 
-Av olika orsaker kommer en eller flera bitar ofta att bli fel. Vi kallar varje 
-sådant fel för att \emph{bitfel} (eng. \emph{bit error}). Störningar kan göra 
-att vi tolkar en symbol fel, vilket kan resultera i en eller flera felaktiga 
-bitar.
+wAv olika orsaker kommer en eller flera bitar ofta att bli fel.
+Vi kallar varje sådant fel för att \emph{bitfel} (eng. \emph{bit error}).
+Störningar kan göra att vi tolkar en symbol fel, vilket kan resultera i en eller
+flera felaktiga bitar.
 
 Det finns många olika strategier för att minska bitfelen, vilken typ av 
 modulation som används är intressant liksom överföringshastigheten, kodningen 
@@ -1111,16 +1086,19 @@ I och +1.1 i Q, ser vi i tabell \ref{tab:16QAM} att närmaste symbolen är symbo
 och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
 Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
 det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
-avstånd är lägst och därmed rimligast. Det kan dock vara så att man egentligen
-sände symbol 9 med -1 i I och +1 i Q, och därmed fick för stor störning på I
-för att man ska tolka det som rätt symbol. Vi kommer då lägga ut 9 istället
-för 5, vilket innebär att två bitar har ändrats.
+avstånd är lägst och därmed rimligast.
+Det kan dock vara så att man egentligen sände symbol 9 med \num{-1} i I och +1 i
+Q, och därmed fick för stor störning på I för att man ska tolka det som rätt
+symbol.
+Vi kommer då lägga ut 9 istället för 5, vilket innebär att två bitar har
+ändrats.
 
-Genom att granska tabell \ref{tab:16QAM} vidare ser man att värdena 
-för I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
-alla närliggande symboler, i respektive I- och Q-riktning. Det förenklar 
-tolkning av symbolerna. Är dock störningen större än 1 i någon riktning kommer 
-man tolka den symbolen fel, och det kan då leda till 1 eller fler bit-fel.}
+Genom att granska tabell \ref{tab:16QAM} vidare ser man att värdena för
+I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
+alla närliggande symboler, i respektive I- och Q-riktning. Det förenklar
+tolkning av symbolerna. Är dock störningen större än 1 i någon riktning
+kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
+bitfel.
 
 \subsubsection{Bitfelsannolikhet}
 \index{bitfelssannolikhet}
@@ -1162,11 +1140,11 @@ kvantiseringsgränsen. Den råa radiokanalen uppvisar dock sällan så bra
 egenskaper, men det kan uppnås i kabel och fiber.
 
 
-\subsubsection{Detektion}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.10a}\label{myHAREC.a.1.8.10a}}
+\harec{a}{1.8.10a}{1.8.10a}
 \index{bitfelsdetektion}
 \index{paritet}
 \index{CRC}
+\label{bitfel_detektion}
 
 Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
 än vad den råa kanalen medger är det lämpligt att identifiera när det har
@@ -1195,7 +1173,7 @@ lite mer intrikat metod som heter \emph{Cyclic Redundancy Check (CRC)} där man
 kod den vägen. CRC används till exempel i Ethernet.
 
 \subsubsection{Omsändning}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.10b}\label{myHAREC.a.1.8.10b}}
+\harec{a}{1.8.10b}{1.8.10b}
 \index{omsändning}
 \index{ARQ}
 \index{TCP}
@@ -1210,8 +1188,8 @@ enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
 försvunnit.
 Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
 
-\subsubsection{Korrigeringskod --- FEC}
-\marginnote{HAREC a.\ref{HAREC.a.1.8.10c}\label{myHAREC.a.1.8.10c}}
+\subsubsection{Korrigeringskod -- FEC}
+\harec{a}{1.8.10c}{1.8.10c}
 \index{korrigeringskod}
 \index{felrättandekod}
 \index{FEC}
@@ -1280,9 +1258,9 @@ De europeiska utrustningarna, bland annat framtagna av Siemens, arbetade med
 
 \paragraph{Teknik}
 
-RTTY använder sig av FSK-modulering.
-För att åstadkomma detta, behöver man styra frekvensen så att den hoppar mellan
-två frekvenser, med en skillnad, ett s.k. ''skift'' på \SI{170}{Hz}.
+RTTY använder FSK-modulering.
+För att åstadkomma detta behöver man styra frekvensen så att den hoppar mellan
+två frekvenser med en skillnad, ett så kallat ''skift'', på \SI{170}{\hertz}.
 
 Äldre sändare behövde modifieras för att åstadkomma detta frekvensskift, men
 med en SSB-sändare kunde man istället mata sändaren med två toner, som gav
@@ -1317,6 +1295,7 @@ variera med avseende på svart-vitt eller färg.
 \index{APRS}
 \index{AX.25}
 \index{TNC}
+\label{modulation_aprs}
 
 \emph{Automatic Packet Reporting System (APRS)} är en teknik för att
 huvudsakligen över VHF och UHF förmedla GPS-position, väderdata, enkla
@@ -1329,6 +1308,7 @@ radio.
 
 \subsubsection{PSK31}
 \index{PSK31}
+\label{modulation_psk31}
 
 \paragraph{Historia}
 
@@ -1373,8 +1353,9 @@ så kallad beacon. Sändning och mottagning sker i tvåminuterspass och efter va
 sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en
 databas över internet.
 Den sändande stationen kan därefter studera resultatet.
-WSPR använder låga effekter, det går att nå europeiska stationer med effekter under
-100 mW, och andra kontinenter med effekter under några watt, även med modesta antenner.
+WSPR använder låga effekter, det går att nå europeiska stationer med effekter
+under \SI{100}{\milli\watt}, och andra kontinenter med effekter under några
+watt, även med modesta antenner.
 
 \subsubsection{WSJT}
 \index{WSJT}
@@ -1432,32 +1413,28 @@ Sedan 2005 är programmet ett open source-program och även om K1JT fortfarande
 	Bandbredden är hälften (1,25~kHz) mot en normal SSB-bandbredd (2,4~kHz).
 }
 
-\begin{description}
-	\item[WSJT] erbjuder en plattform för ett flertal olika tillämpningar där olika
-	varianter av i huvudsak FSK-modulering används.
-	
-	\item [FSK441] används för att utvärdera överföringar via 
-	radiovågsreflekterande skikt av laddade joner, som uppkommer från de spår 
-	som meteoriter lämnar efter sig.
-	
-	\item[JT6M] introducerades 2002, och är avsett för kommunikation via bl.a.
-	meteorreflektioner på bl.a. 6~m bandet.
-	
-	\item[JT65], utvecklat och släppt 2003, används för kommunikation via 
-	tropsfären, så kallat troposcatter, en också för kommunikation via reflexer 
-	mot månen, även kallad EME-trafik (Earth-Moon-Earth).
-	
-	\item[JT9] används för kortvågstrafik, och är snarlik JT65, men använder 
-	sig av en FSK-signal med nio toner. JT9 använder sig av mindre än 16~Hz 
-	bandbredd.
-	
-	\item[FT8] utvecklades och släpptes 2017, och använder sig av en 8FSK-signal. 
-	
-	\item[FT8] är att föredra vis s.k. multi hop via E-skikt, där signalerna 
-	utsätts för	fädning, och där öppningarna mot andra stationer är korta, 
-	och man behöver slutföra kommunikationen inom en kort tid.
-	
-\end{description}
+WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
+varianter av i huvudsak FSK-modulering används.
+
+FSK441 används för att utvärdera överföringar via radiovågsreflekterande skikt
+av laddade joner, som uppkommer från de spår som meteorer lämnar efter sig.
+
+JT6M introducerades år 2002 och är avsett för kommunikation via bland annat
+meteorreflektioner på \SI{6}{\metre}-bandet.
+
+JT65, utvecklat och släppt år 2003, används för kommunikation via troposfären,
+så kallat troposcatter, men också för kommunikation via reflexer mot månen
+så kallad EME-trafik.
+
+JT9 används för kortvågstrafik och är snarlikt JT65, men använder sig av en
+FSK-signal med nio toner.
+JT9 använder sig av mindre än \SI{16}{\hertz} bandbredd.
+
+FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal.
+
+FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts för
+fädning och där öppningarna mot andra stationer är korta så att man behöver
+slutföra kommunikationen inom en kort tid.
 
 \subsubsection{FreeDV}
 \index{FreeDV}
@@ -1479,10 +1456,9 @@ Fördelen ska vara att överföringen blir ner robust samt att signaleringen är
 utformad för att motverka påverkan av fädning.
 
 FreeDV använder en något mer komplex modulering.
-Man använder sig av ett flertal bärvågor inom dess bandbredd på 1,25~kHz.
-Bärvägorna ligger med \SI{75}{Hz} mellanrum och varje bärvåg moduleras med 
-varianter
-av PSK-modulering.
-Bandbredden är hälften (\SI{1,25}{kHz}) av en normal SSB-bandbredd 
-(\SI{2,4}{kHz}).
-
+Man använder sig av ett flertal bärvågor inom dess bandbredd på
+\SI{1,25}{\kilo\hertz}.
+Bärvägorna ligger med \SI{75}{\hertz} mellanrum och varje bärvåg moduleras med
+varianter av PSK-modulering.
+Bandbredden är hälften (\SI{1,25}{\kilo\hertz}) av en normal SSB-bandbredd
+(\SI{2,4}{\kilo\hertz}).

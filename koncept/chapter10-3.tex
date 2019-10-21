@@ -1,10 +1,9 @@
 \section{Störningsorsaker}
-
+\label{Störningsorsaker}
 \subsection{Störningar från sändare}
-\textbf{
-HAREC a.\ref{HAREC.a.9.2.1}\label{myHAREC.a.9.2.1},
- a.\ref{HAREC.a.9.2.2}\label{myHAREC.a.9.2.2}
-}
+\harec{a}{9.2.1}{9.2.1}
+\harec{a}{9.2.2}{9.2.2}
+\index{störning!av sändare}
 
 HF-förstärkare, till exempel i sändarslutsteg, kan komma i oönskad självsvängning,
 vilket kan uppstå av flera orsaker; det kan vara bristande avkoppling av
@@ -12,9 +11,10 @@ matningsspänningar, induktiv och/eller kapacitiv återkoppling etc.
 
 Effektförstärkare kan även överstyras.
 Då uppstår intermodulation och övertoner som strålas ut på oönskade frekvenser.
-
 I många fall kan störningar undvikas med en eller flera av följande åtgärder:
+
 \begin{itemize}
+\item Använd inte mer effekt än vad som behövs.
 \item Undvik att överstyra sändarslutsteget (kontrolleras t.ex. med
   ALC-mätaren).
 \item Förse sändarutgången med lågpassfilter.
@@ -29,24 +29,22 @@ I många fall kan störningar undvikas med en eller flera av följande åtgärde
   störningskänslig utrustning som möjligt.
   Fältstyrkan är nämligen högst närmast antennen.
   Se kapitel \ref{EMF} om elektriska fält.
-\item Undvik direkt HF-instrålning på belysningsnätet genom att använda
-  nätfilter.
+\item Undvik direkt HF-instrålning på elnätet genom att använda nätfilter.
 \item Använd ''mjuk'' nyckling av bärvågen (avrundade telegrafitecken).
   Vid hård nyckling alstras övertoner i form av knäppar som hörs långt vid
-  sidan av sändningsfrekvensen.
+  sidan av sändningsfrekvensen. Se även kapitel \ref{Nycklingsfilter}.
 \end{itemize}
 
 \subsection{Störningar på radiomottagning}
-\textbf{
-HAREC a.\ref{HAREC.a.9.2.3.1}\label{myHAREC.a.9.2.3.1},
- a.\ref{HAREC.a.9.2.3.2}\label{myHAREC.a.9.2.3.2},
- a.\ref{HAREC.a.9.2.3.3}\label{myHAREC.a.9.2.3.3}
-}
+\harec{a}{9.2.3.1}{9.2.3.1}
+\harec{a}{9.2.3.2}{9.2.3.2}
+\harec{a}{9.2.3.3}{9.2.3.3}
+\index{störning!radiomottagning}
 
-I regel uppstår störningar på radiomottagning först när utstrålade signaler
+I regel uppstår störningar på radiomottagning först när instrålade signaler
 uppnått en viss styrka -- immunitetsnivån för HF.
-
 Man kan tala om tre slags HF-immunitet hos mottagare:
+
 \begin{itemize}
 \item mot signaler genom antenningången
 \item mot signaler genom övriga anslutna ledningar, till exempel högtalar-
@@ -63,48 +61,65 @@ mottagaren, vilket bör överlåtas till en fackman med tillgång till
 tillverkarens serviceinstruktioner.
 
 \subsection{Störningar på TV-mottagning}
+\index{störning!TV-mottagning}
+\index{störning!digital-TV}
 
-Störningar från radiosändare kan yttra sig till exempel på följande sätt:
+Störningar från radiosändare kan yttra sig till exempel på följande sätt för
+digital TV:
+
+Sändningar, främst på 2-meter men även på 70-cm, kan orsaka blockering och
+bildstörningar vid mottagning av digital-TV.
+TV-bilden tappar då information, det blir pixlingar (fyrkantiga rutor), grönt
+brus eller hela bilden fryses eller försvinner kortvarigt.
+För analog TV i till exempel kabel-TV-nät kan störningarna yttra sig på
+följande sätt:
+
 \begin{itemize}
 \item Vid sändning av amplitudmodulerade signaler, till exempel AM och SSB,
-  uppstår ljudförvrängning i ljudkanalen samt ränder med mera i bilden,
+  uppstår ljudförvrängning i ljudkanalen samt ränder med mera i bilden.
 \item Vid sändning av FM och CW uppstår ljudstörningar samt
   kontrastvariationer, interferensmönster (moire-effekter) med mera i bilden.
-\item Sändningar, främst på 2-meter men även på 70-cm, kan orsaka blockering och
-  bildstörningar vid mottagning av digital-TV.
 \end{itemize}
 
-Störningar i TV som orsakas av sändare på lägre frekvenser kan i många fall
-avhjälpas med frekvensfilter.
-Det kan till exempel uppstå TV-störningar, när en amatörradiostation sänder på
-21~MHz-bandet.
-Dess 3:e överton hamnar då på TV-kanal E-4 (61--68~MHz).
 Problem med störningar av den här typen har minskat betydligt sedan digital-TV
 infördes och de flesta TV-sändningar numera sker på VHF- och UHF-banden.
 
+Störningar i TV som orsakas av sändare på lägre frekvenser kan i många fall
+avhjälpas med frekvensfilter.
 Ett lågpassfilter efter en kortvågsändare kan till exempel dimensioneras att
-endast släppa igenom signaler under cirka 35~MHz.
+endast släppa igenom signaler under cirka \SI{35}{\mega\hertz}.
+Läs mer om lågpassfilter i kapitel \ref{Lågpassfilter}.
 
 Ett högpassfilter före en TV-mottagare kan till exempel dimensioneras att
-endast släppa igenom signaler med frekvenser över cirka 35~MHz.
+endast släppa igenom signaler med frekvenser över cirka \SI{35}{\mega\hertz}.
+Läs mer om högpassfilter i kapitel \ref{Högpassfilter}.
 
-Om inte mottagning i TV-band I (40--68~MHz) är av intresse, så kan ett
-högpassfilter med en gränsfrekvens av ca 160~MHz sättas in.
-Det dämpar den oönskade utstrålning från sändare i HF- och VHF-området,
-det vill säga upp till och med 144--146~MHz amatörband.
-Däremot släpps TV-band III (174--230~MHz) och TV-banden IV och V igenom
-(470--890~MHz).
+Om inte mottagning i TV-band I och II är av intresse, så kan ett högpassfilter
+med en gränsfrekvens av cirka \SI{160}{\mega\hertz} sättas in.
+Det dämpar den oönskade utstrålning från sändare i HF- och lägre VHF-området,
+det vill säga upp till och med \SIrange{144}{146}{\mega\hertz} amatörband.
+Däremot släpps TV-band III (\SIrange{174}{230}{\mega\hertz}) och TV-banden IV
+och V igenom (\SIrange{470}{890}{\mega\hertz}).
 
 Ytterligare avstörningsmedel kan sättas in om det uppstår störningar av
 amatörradiosändningar.
 Det kan vara skärmströmsfilter på antennkablar, bandspärrar samt sug- och
 spärrkretsar avstämda till störfrekvensen, bandpassfilter avstämt till
-nyttofrekvensen.
+nyttofrekvensen. Läs mer om filter i kapitel \ref{spärrfilter}.
 
-Ett vanligt störningsfall är att en dåligt skärmad och bredbandig
-antennförstärkare blir överstyrd av starka sändare.
+Ett vanligt störningsfall är att en bredbandig antennförstärkare blir
+överstyrd eller blockerad av en sändare. Se även kapitel \ref{blockering}.
+
+\begin{itemize}
+\item Försök att undvika antennförstärkare.
+\item Försök att undvika dåligt skärmade skarvar och antennkontakter.
+\item Skaffa en bättre TV-antenn som även kan ta emot TV-sändningar på VHF.
+  Många hushåll har idag endast en UHF-antenn och har därför dålig
+  antennsignal på VHF-bandet där sändningar för HD-TV sker i många områden.
+\end{itemize}
 
 \subsection{Störningar på LF-apparater}
+\index{störning!LF-apparater}
 
 Störningar av HF-instrålning i ljudbandspelare, LF-förstärkare, telefonapparater
 etc. kan ofta stoppas med avkopplingskondensatorer och HF-drosslar.

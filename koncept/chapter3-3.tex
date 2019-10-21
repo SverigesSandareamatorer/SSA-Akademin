@@ -1,10 +1,11 @@
 \section{Kraftförsörjning}
-\marginnote{HAREC a.\ref{HAREC.a.3.3}\label{myHAREC.a.3.3}}
+\harec{a}{3.3}{3.3}
 \label{kraftaggregat}
 \index{kraftförsörjning}
 \index{kraftaggregat}
 \index{batteri}
 \index{ackumulator}
+\label{kraftförsörjning}
 
 \marginnote{Äldre stationära radioutrustningar drivs nästan alltid med nätanslutna
 kraftaggregat med en eller flera transformatorer och likriktare.
@@ -19,54 +20,61 @@ nätspännings- och skyddsjordningssystem än vad som nu tillämpas i Sverige.
 Försiktighet med sådan utrustning rekommenderas.}
 
 Den elektriska energi, som behövs för elektronikutrustningar, hämtas
-från det allmänna elektricitetsnätet, ett batteri eller en
+från det allmänna elnätet, ett batteri eller en
 ackumulator.
 Vissa batterityper kan återuppladdas och kallas då ackumulator.
 
-Batterier och ackumulatorer avger en nominell spänning, som beror av
+Batterier och ackumulatorer avger en nominell spänning som beror av
 de ingående materialen och givetvis av laddningstillståndet.
-Moderna utrustningar för amatörradio är utförda för 12\,V likström och försörjs
-vanligen från ett nätanslutet kraftaggregat.
+Moderna utrustningar för amatörradio är utförda för \SI{12}{\volt} likström och
+försörjs vanligen från ett nätanslutet kraftaggregat.
 På så sätt kan mobila radioutrustningar även försörjas från startackumulatorn
 i fordonet.
 
-Handburna radioutrustningar försörjs från en inbyggd ackumulator, som laddas
+Handburna radioutrustningar försörjs från en inbyggd ackumulator som laddas
 från stationär laddare.
 
-\subsection{Halv- och helvågslikriktning m.m.}
-\marginnote{HAREC a.\ref{HAREC.a.3.1.1g}\label{myHAREC.a.3.1.1g}, a.\ref{HAREC.a.3.3.1}\label{myHAREC.a.3.3.1}}
+Äldre stationära radioutrustningar drivs nästan alltid med nätanslutna
+kraftaggregat med en eller flera transformatorer och likriktare.
+Alternativt kan samma transformators sekundärsida vara
+försedd med flera lindningar för olika spänningar och strömkretsar.
+
+Det allmänna elnätet i Sverige levererar växelspänning med frekvensen
+\SI{50}{\hertz}.
+Nätspänningen för hushållsändamål är numera 400/\SI{230}{\volt}.
+
+Tidigare importerade utrustningar i marknaden kan vara utförda för andra
+nätspännings- och skyddsjordningssystem än vad som nu tillämpas i Sverige.
+Försiktighet med sådan utrustning rekommenderas.
+
+\smallfig[0.2]{images/cropped_pdfs/bild_2_3-34.pdf}{Halvledardioder}{fig:BildII3-34}
+
+\subsection{Halv- och helvågslikriktning}
+\harec{a}{3.1.1g}{3.1.1g}
+\harec{a}{3.3.1}{3.3.1}
 \index{likriktning}
 \index{rectifier}
-
-\begin{marginfigure}
-  \includegraphics[width=.5\textwidth]{images/cropped_pdfs/bild_2_3-34.pdf}
-  \caption{Halvledardioder}
-  \label{fig:BildII3-34}
-\end{marginfigure}
+\label{likriktning}
 
 \emph{Likriktning} (eng. \emph{rectificiation}) av spänningar och strömmar i en
-krets görs med ''elektroniska ventiler'', som släpper igenom ström endast i den
-så kallade passriktningen och stoppas i spärriktningen så som illustreras i
+krets görs med ''elektroniska ventiler'' som släpper igenom ström endast i den
+så kallade passriktningen och stoppar i spärriktningen så som illustreras i
 bild \ref{fig:BildII3-34}.
 En sådan strömventil kallas för diod och kan vara av typen vakuumrör eller
 halvledare.
 I moderna konstruktioner används uteslutande halvledardioder i
 likriktarkopplingar.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-35.pdf}
-\caption{Halv- och helvågslikriktning}
-\label{fig:BildII3-35}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-35.pdf}{Halv- och helvågslikriktning}{fig:BildII3-35}
 
 \subsubsection{Halvvågslikriktning}
 \index{halvvågslikriktning}
 \index{likriktning!halvvågs}
 
-Vid \emph{halvvågslikriktning} (eng. \emph{half wave rectifier}) släpps endast
+Vid \emph{halvvågslikriktning} (eng. \emph{half wave rectification}) släpps endast
 varannan halvvåg av en växelspänning igenom.
-I den strömkrets, som bildas av transformatorns sekundärlindning, dioden och
-belastningen, flyter därför ström endast under varannan halvperiod, så som
+I den strömkrets som bildas av transformatorns sekundärlindning, dioden och
+lasten, flyter därför ström endast under varannan halvperiod, så som
 illustreras i bild \ref{fig:BildII3-35}.
 
 \subsubsection{Helvågslikriktning}
@@ -77,55 +85,51 @@ illustreras i bild \ref{fig:BildII3-35}.
 
 I följande kopplingar med två respektive fyra dioder släpps varje halvvåg av
 transformatorns växelspänning igenom så att alla halvvågor får samma polaritet.
-Ström flyter genom belastningen i samma riktning under varje halvperiod.
+Ström flyter genom lasten i samma riktning under varje halvperiod.
 Följande sätt att anordna \emph{helvågslikriktning}
-(\emph{full wave rectifier}) är vanliga:
+(\emph{full wave rectification}) är vanliga:
 \begin{itemize}
 \item Med två dioder och mittuttag på transformatorns sekundärlindning.
-  Den ena dioden och ena lindningshalvan släpper igenom ström till belastningen
+  Den ena dioden och ena lindningshalvan släpper igenom ström till lasten
   under ena halvperioden.
-  Den andra dioden och andra lindningshalvan under följande halvperiod osv.
+  Den andra dioden och andra lindningshalvan under den följande halvperioden.
   Detta illustreras i bild \ref{fig:BildII3-35}, delfigur a.
 
 \item Med fyra dioder (s.k. Graetz-brygga) och inget mittuttag på
-  transformatorns sekundärlindning, släpper dioderna 1 och 3 igenom
+  transformatorns sekundärlindning släpper dioderna 1 och 3 igenom
   ström under den ena halvperioden.
-  Dioderna 2 och 4 släpper igenom ström under följande halvperiod osv.
-  Detta illustreras i bild \ref{fig:BildII3-35}, delfigur b samt 1a och 2a
+  Dioderna 2 och 4 släpper igenom ström under den följande halvperioden.
+  Detta illustreras i bild \ref{fig:BildII3-35}, delfigur b samt 1:a och 2:a
   halvvågen.
 \end{itemize}
 
 \subsection{Glättningskretsar}
-\marginnote{HAREC a.\ref{HAREC.a.3.3.2}\label{myHAREC.a.3.3.2}}
+\harec{a}{3.3.2}{3.3.2}
 \index{glättning}
 \index{kraftaggregat!glättning}
 \index{säkerhetsresistor}
 \index{bleeder}
+\label{glättningskretsar}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-36.pdf}
-\caption{Glättning av likspänning}
-\label{fig:BildII3-36}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_3-36.pdf}{Glättning av likspänning}{fig:BildII3-36}
 
 Efter likriktningen har växelspänningen omvandlats till en pulserande
 likspänning som kan ''glättas''.
-Efter likriktarna ansluts då ett glättningsfilter som utför \emph{glättning},
-som till exempel kan bestå av laddningskondensatorn \(C_L\), induktansen \(L\) (s.k.
-drossel) och glättningskondensatorn \(C_S\) så som bild \ref{fig:BildII3-36}
+Efter likriktarna ansluts då ett filter som utför \emph{glättning}.
+Glättningsfiltret kan till exempel bestå av laddningskondensatorn \(C_L\), induktansen \(L\) och glättningskondensatorn \(C_S\) så som bild \ref{fig:BildII3-36}
 illustrerar.
 Parallellt över denna kondensator ligger för elsäkerhetens skull en
 urladdningsresistor \(R\) med hög resistans alltid inkopplad.
 
 \emph{Säkerhetsresistorn} (eng. \emph{bleeder}) ska ladda ur kondensatorerna,
-när kraftaggregatet inte är anslutet till strömförsörjningen och belastningen.
+när kraftaggregatet är obelastat och inte anslutet till strömförsörjningen på primärsidan.
 Säkerhetsresistorn ska vara av trådlindad typ och kunna tåla fyra gånger sin
 egen effektförbrukning.
 
 I obelastat tillstånd är spänningen över laddningskondensatorn \(\sqrt{2}\)
-större än effektivvärdet på transformatorns sekundärspänning.
-När en transformator i tomgång har ett effektivvärde av 230\,V över
-sekundärlindningen, så blir spänningen över säkerhetsmotståndet
+gånger större än effektivvärdet på transformatorns sekundärspänning.
+När en transformator i tomgång har ett effektivvärde av \SI{230}{\volt} över
+sekundärlindningen blir spänningen över säkerhetsmotståndet
 \(230\cdot\sqrt{2} \approx 325\)\,V.
 
 \subsubsection{Spänningshöjande likriktarkopplingar}
@@ -136,33 +140,31 @@ Vid likriktning av växelspänningar enligt någon av ovanstående metoder behö
 en sekundärspänning från transformatorn av minst samma storlek som den önskade
 likspänningen.
 Önskas en högre likspänning, till exempel den dubbla, men med samma sekundärspänning
-på transformatorn, så måste en speciell likriktarkoppling användas.
+på transformatorn, så kan en speciell likriktarkoppling användas.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-37.pdf}
-\caption{Likriktarkoppling med spänningsdubbling}
-\label{fig:BildII3-37}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_3-37.pdf}{Likriktarkoppling med spänningsdubbling}{fig:BildII3-37}
 
-Bild \ref{fig:BildII3-37} visar en spänningsfördubblande koppling.
+Bild \ref{fig:BildII3-37} visar en spänningsdubblande koppling.
 Under 1:a halvvågen laddas kondensator \(C_1\) upp.
 Under 2:a halvvågen laddas kondensator \(C_2\) upp.
 Kondensatorerna är kopplade i serie och den ena kondensatorn hinner inte bli
 urladdad under tiden som den andra kondensatorn blir uppladdad.
 Följden blir att belastningen ser kondensatorernas spänningar som seriekopplade
-och därmed har en spänningsfördubbling erhållits.
-Det finns även kopplingar för flerdubbling av spänningar, vilket bland annat
-används för att alstra accelerationsspänningen för TV-bildrör.
+och därmed har en fördubbling av spänningen erhållits.
+Det finns även kopplingar för flerdubbling av spänningar, vilka bland annat
+brukade användas för att alstra accelerationsspänningen för TV-bildrör.
+
+\smallfig{images/cropped_pdfs/bild_2_3-38.pdf}{Spänningsstabilisering}{fig:BildII3-38}
 
 \subsection{Spänningsstabilisering}
-\textbf{HAREC a.\ref{HAREC.a.3.3.3}\label{myHAREC.a.3.3.3}}
+\harec{a}{3.3.3}{3.3.3}
 \index{spänningsstabilisering}
 \index{kraftaggregat!spänningsstabilisering}
+\label{spänningsstabilisering}
 
-Utspänningen från ett kraftaggregat tillåts i många fall att endast variera
-mellan vissa värden, fastän inspänningen och strömuttaget varierar mycket.
-Ett vanligt sätt att hålla konstant spänning är att anordna en automatisk
-spänningsdelare efter glättningsfiltret, som visas i bild \ref{fig:BildII3-38}.
+Utspänningen från ett kraftaggregat tillåts i många fall endast att variera
+mellan vissa värden, även om inspänningen och strömuttaget varierar mycket.
+Ett vanligt sätt att hålla konstant spänning är att efter glättningsfiltret anordna en stabiliseringskrets, som visas i bild \ref{fig:BildII3-38}.
 
 Glimlampan och zenerdioden har egenskapen att spänningsfallet över dem är i det
 närmaste konstant inom ett visst strömområde.
@@ -189,8 +191,13 @@ regleras av zenerdioden.
 I vissa fall behövs i stället en reglerad utström från kraftaggregatet.
 Även för detta ändamål används kopplingar med zenerdioder och transistorer.
 
+Färdiga stabiliseringskretsar i form av integrerade kretsar är numera vanligare
+än sådana som är uppbyggda av diskreta komponenter.
+Exempel är linjära spänningsregulatorer som 7805 för \SI{5}{\volt} och 7912 för
+\SI{-12}{\volt}.
+
 \subsection{Switchaggregat}
-\marginnote{HAREC a.\ref{HAREC.a.3.3.4}\label{myHAREC.a.3.3.4}}
+\harec{a}{3.3.4}{3.3.4}
 \index{switchaggregat}
 \index{kraftaggregat!switchaggregat}
 
@@ -199,48 +206,35 @@ I sådana regleras spänningen eller strömmen genom sönderhackning (switching)
 Genom att förändra förhållandet mellan till- och frånslagstiderna kan man skapa
 det önskade medelvärdet.
 Metoden ger hög verkningsgrad.
-Switch-frekvensen är i storleksordningen 20\,kHz eller högre.
-På grund av den högre frekvensen krävs mindre kondensatorer i switchade
-aggregat.
-Sådana kraftaggregat kan emellertid ge störningar, varför effektiv avstörning
+Switchfrekvensen är i storleksordningen \SI{20}{\kilo\hertz} eller högre.
+Sådana kraftaggregat kan emellertid ge upphov till radiofrekventa störningar, varför effektiv avstörning
 behövs.
 
 Kraftaggregat som omvandlar från nätspänning till likspänning använder
-den primär-switchade principen.
-I ett primär-switchat aggregat likriktas nätspänningen innan den switchas på
-primärspolen i transformatorn.
-Eftersom frekvensen är relativt hög, behöver transformatorns kärna inte
-vara så stor, eftersom lägsta frekvensen inte riskerar mätta den på samma
-sätt som vid nätfrekvensen (50\,Hz).
+den primärswitchade principen.
+I ett primärswitchat aggregat likriktas nätspänningen och switchas på
+primärssidan av transformatorn.
+Eftersom frekvensen är relativt hög och inte riskerar mätta transformatorns
+kärna på samma sätt som vid nätfrekvensen (\SI{50}{\hertz}), behöver kärnan
+inte vara så stor.
 På sekundärsidan likriktas sedan spänningen och glättning kan ske med relativt
-små kondensatorer på grund av den höga frekvensen.
-Genom att återmata spänningen till primärsidan, kan utspänningen regleras i
-primär-switchningen istället för att behöva stabilisera spänningen på
-sekundärsidan, vilket skulle leda till ytterligare förluster som därigenom kan
-undvikas.
-Ett primärswitchat aggregat ska ha nätfilter för att klara EMC-krav, något som
-även är till nytta att hålla störningar nere.
+små kondensatorer tack vare den höga frekvensen.
+Genom att återkoppla spänningen till primärsidan kan utspänningen regleras i
+primärswitchningen istället för att behöva stabiliseras på
+sekundärsidan. Därigenom kan förluster i stabiliseringskretsen undvikas.
+Ett primärswitchat aggregat måste ha nätfilter för att klara EMC-kraven.
 
-En annan kategori av switchade aggregat är det som finns för
-likströmsomvandling, även känt som DCDC-omvandling.
-Dessa har inte alltid galvanisk isolation mellan in och utgång, men de kan vara
-värdefulla kompletteringar, genom den enkelhet de har.
-Det har även kommit switchade ersättare med lägre effektförlust än i de
-traditionella linjära regulatorerna i 78- och 79-serien.
-Problemet med dessa är att de kan producera störningar om man inte tar hänsyn
-till det.
-Detta är ett exempel på en enklare så kallad drop-omvandlare som kan sänka
-spänningen med switchning.
+En annan kategori av switchade aggregat används för likspänningsomvandling, så kallad DCDC-om\-vand\-ling.
+Exempel på sådana är kallade drop-omvandlare, som kan används för att sänka spänningen.
 Andra omvandlare kan höja spänningen eller byta polaritet på den.
-Dessa omvandlare har inte sällan frekvenser på 200\,kHz till 2\,MHz idag.
+Dessa omvandlare arbetar inte sällan med frekvenser på \SI{200}{\kilo\hertz}
+till \SI{2}{\mega\hertz}.
+Likspänningsomvandlare har inte alltid galvanisk isolation mellan in- och utgång.
 
-Switchade kraftaggregat och spänningsstabiliseringar är nu en naturlig del
-av elektroniken, då effektförlusterna kan hållas mycket lägre än gamla
-linjära aggregat.
-Switchingen innebär dock att det kan läcka ut störningar både på ingång och
-utgång så väl som direkt från själva aggregatet i sig.
-En del tillåter manuell styrning av switch-frekvensen, varvid man kan flytta
-störningarna till en frekvens där deras påverkan minskar.
-Störningarna kan vara både i differentiell och gemensam mod, och därför bör man
-vara uppmärksam på det när man försöker göra avstörning.
-Lyckligtvis är switch-frekvenserna relativt höga, vilket förenklar komponentval.
+Numera finns även switchade ersättare med lägre effektförlust än i de äldre linjära regulatorerna i 78- och 79-serien.
+Problemet med dessa är att de kan generera störningar som behöver tas hänsyn till.
+
+Switchade kraftaggregat och spänningsstabilisatorer är nu en vanliga eftersom effektförlusterna kan hållas mycket lägre än i gamla linjära aggregat.
+Switchningen innebär dock att störningar kan läcka ut både på ingång och utgång såväl som genom direktutstrålning från själva aggregatet.
+På en del switchade nätaggregat kan switchfrekvensen justeras manuellt med en ratt. På så sätt kan man flytta störningarna till en frekvens där deras inverkan minskar.
+Störningar kan uppträda både i differentiell och gemensam mode, vilket man måste ta hänsyn till vid avstörning.

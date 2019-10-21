@@ -8,14 +8,16 @@ Eftersom spänningen från antennen in i mottagaren kan variera över ett stort
 område, är det praktiskt att uttrycka styrkevärdena med en logaritmisk
 måttenhet, så kallad S-enhet.
 
-Signalspänningen mäts över en impedans av 50~\(\Omega\).
+Signalspänningen mäts över en impedans av \SI{50}{\ohm}.
 
 Eftersom S-enheten är logaritmisk, så motsvarar till exempel signalstyrkan S8
-halva signalspänningen, det vill säga 25~\(\mu V\) eller -6~dB jämfört med S9.
-Om halveringen fortsätts, fås att S0 (noll) motsvarar en signalstyrka av 0,1~\(\mu V\).
+halva signalspänningen, det vill säga \SI{25}{\micro\volt} eller
+\SI{-6}{\decibel} jämfört med S9.
+Om halveringen fortsätts, fås att S0 (noll) motsvarar en signalstyrka av
+\SI{0,1}{\micro\volt}.
 
 I en kortvågsmottagare alstras det ett internt brus med en nivå av
-åtminstone 0,1~\(\mu V\).
+åtminstone \SI{0,1}{\micro\volt}.
 Detta brus blandas med den inkommande signalen.
 En insignal med en styrka under brusnivån (S0) kommer alltså inte att
 kunna höras.
@@ -25,48 +27,53 @@ Det är då frågan om mycket starka signaler.
 Följande tabell gäller för det ideala sambandet mellan S-enheter och
 signalstyrkor över två alternativa brusnivåer.
 
+\begin{table}[h!]
+  \vspace{10ex}
+	\centering
+	\begin{tabular}{l|lll|lll}
+    S-Meter  & \multicolumn{3}{c}{Under \SI{30}{\mega\hertz}} & \multicolumn{3}{c}{Över \SI{30}{\mega\hertz}} \\
+    värde    & dBm & (U vid \SI{50}{\ohm}) & \si{dB\micro V} & dBm & (U vid \SI{50}{\ohm}) & \si{dB\micro V} \\
+    \hline
+    S9 +\SI{40}{\decibel} & \num{-33}  & \SI{5,0}{\milli\volt}  & 74        & \num{-53}  & \SI{500}{\micro\volt}  & 54  \\
+    S9 +\SI{30}{\decibel} & \num{-43}  & \SI{1,6}{\milli\volt}  & 64        & \num{-63}  & \SI{160}{\micro\volt}  & 44  \\
+    S9 +\SI{20}{\decibel} & \num{-53}  & \SI{500}{\micro\volt}  & 54        & \num{-73}  & \SI{50}{\micro\volt}   & 34  \\
+    S9 +\SI{10}{\decibel} & \num{-63}  & \SI{160}{\micro\volt}  & 44        & \num{-83}  & \SI{16}{\micro\volt}   & 24  \\
+    S9                    & \num{-73}  & \SI{50}{\micro\volt}   & 34        & \num{-93}  & \SI{5}{\micro\volt}    & 14  \\
+    S8                    & \num{-79}  & \SI{25}{\micro\volt}   & 28        & \num{-99}  & \SI{2,5}{\micro\volt}  & 8   \\
+    S7                    & \num{-85}  & \SI{12,6}{\micro\volt} & 22        & \num{-105} & \SI{1,26}{\micro\volt} & +2  \\
+    S6                    & \num{-91}  & \SI{6,3}{\micro\volt}  & 16        & \num{-111} & \SI{0,63}{\micro\volt} & \num{-4}  \\
+    S5                    & \num{-97}  & \SI{3,2}{\micro\volt}  & 10        & \num{-117} & \SI{0,32}{\micro\volt} & \num{-10} \\
+    S4                    & \num{-103} & \SI{1,6}{\micro\volt}  & +4        & \num{-123} & \SI{0,16}{\micro\volt} & \num{-16} \\
+    S3                    & \num{-109} & \SI{0,8}{\micro\volt}  & \num{-2}  & \num{-129} & \SI{0,08}{\micro\volt} & \num{-22} \\
+    S2                    & \num{-115} & \SI{0,4}{\micro\volt}  & \num{-8}  & \num{-135} & \SI{0,04}{\micro\volt} & \num{-28} \\
+    S1                    & \num{-121} & \SI{0,21}{\micro\volt} & \num{-14} & \num{-141} & \SI{0,02}{\micro\volt} & \num{-34} \\
+  \end{tabular}
+  \caption{Tabell över S-värden, spännigar och effekter}
+\end{table}
+
+\newpage
+
 Signalstyrkan mäts vid mottagarens antenningång, varför skillnaden i
 signalstyrkan olika antenner och mottagningsriktningar samt dämpningen
 i antenn och nedledning kan behöva bedömas.
 
-I kortvågsområdet (under 30~MHz) uppträder ett atmosfäriskt bredbandigt brus
-tillsammans med bruset från den stora mängden rundradio- m.fl. andra starka
-sändare.
+I kortvågsområdet (under \SI{30}{\mega\hertz}) uppträder ett atmosfäriskt
+bredbandigt brus tillsammans med bruset från den stora mängden rundradio- m.fl.
+andra starka sändare.
 Detta brus är mer dominerande än mottagarens interna brus.
-I praktiken har de flesta KV-mottagare en högre brusnivå än 0,1~\(\mu V\).
+I praktiken har de flesta KV-mottagare en högre brusnivå än
+\SI{0,1}{\micro\volt}.
 
-Över 30~MHz däremot, är det mest mottagarens interna brus som sätter
-gränsen för hörbarheten av svaga signaler.
+Över \SI{30}{\mega\hertz} däremot, är det mest mottagarens interna brus som
+sätter gränsen för hörbarheten av svaga signaler.
 Med samma S-skala som för kortvågsområdet, börjar man uppfatta signaler i
 bruset utan att S-metern ger utslag.
 
 Vid IARU Region~1-konferensen 1978 i Miskolcz föreslog de nationella
 föreningarna VERON (Nederländerna) och RSGB (Storbritannien) en annan
-S-skala över 30~MHz.
+S-skala över \SI{30}{\mega\hertz}.
 Vid konferensen 1981 i Brighton antogs förslaget som rekommendation.
 
 Mätningar ska i båda fallen göras med en kvasi-toppvärdesdetektor
-med en stigtid av 10~ms \(\pm\)0,2~ms och en falltid av 500~ms.
+med en stigtid av 10~ms \(\pm\)0,2~ms och en falltid av \SI{500}{\milli\second}.
 
-\begin{table}[ht]
-  \begin{tabular}{l|lll|lll}
-    S-Meter  & \multicolumn{3}{c}{Under 30 MHz} & \multicolumn{3}{c}{Över 30 MHz} \\
-    värde    & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) & dBm & (U vid 50 \(\Omega\)) & dB\(\mu V\) \\
-    \hline
-    S9+ 40 dB & -33  & 5,0 mV  & 74  & -53  & 500 \(\mu V\) & 54  \\
-    S9+ 30 dB & -43  & 1,6 mV  & 64  & -63  & 160 \(\mu V\) & 44  \\
-    S9+ 20 dB & -53  & 500 \(\mu V\)  & 54  & -73  & 50 \(\mu V\) & 34  \\
-    S9+ 10 dB & -63  & 160 \(\mu V\)  & 44  & -83  & 16 \(\mu V\) & 24  \\
-    S9        & -73  & 50 \(\mu V\)   & 34  & -93  & 5 \(\mu V\) & 14  \\
-    S8        & -79  & 25 \(\mu V\)   & 28  & -99  & 2,5 \(\mu V\) & 8   \\
-    S7        & -85  & 12,6 \(\mu V\) & 22  & -105 & 1,26 \(\mu V\) & +2  \\
-    S6        & -91  & 6,3 \(\mu V\)  & 16  & -111 & 0,63 \(\mu V\) & -4  \\
-    S5        & -97  & 3,2 \(\mu V\)  & 10  & -117 & 0,32 \(\mu V\) & -10 \\
-    S4        & -103 & 1,6 \(\mu V\)  & +4  & -123 & 0,16 \(\mu V\) & -16 \\
-    S3        & -109 & 0,8 \(\mu V\)  & -2  & -129 & 0,08 \(\mu V\) & -22 \\
-    S2        & -115 & 0,4 \(\mu V\)  & -8  & -135 & 0,04 \(\mu V\) & -28 \\
-    S1        & -121 & 0,21 \(\mu V\) & -14 & -141 & 0,02 \(\mu V\) & -34 \\
-  \end{tabular}
-  \caption{S-enheter, rekommenderade normvärden inom IARU Region~1}
-  \label{s-enhet tabell}
-\end{table}

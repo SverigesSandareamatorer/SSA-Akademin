@@ -2,9 +2,10 @@
 \label{komponenter}
 
 \section{Resistorn}
- \textbf{HAREC a.\ref{HAREC.a.2.1}\label{myHAREC.a.2.1}}
+\harec{a}{2.1}{2.1}
 \index{resistor}
 \index{resistans}
+\label{resistorn}
 
 \subsection{Allmänt}
 
@@ -13,13 +14,11 @@ Den vanligaste egenskapen, åtminstone i likströmskretsar,
 är resistansen.  För att få avsedd funktion, så anpassar
 man resistansen i komponenterna.
 
-\noindent\textbf{Exempel}: En krets med strömkälla, lampa,
-kopplingsledningar och smältsäkring.
-
-Kopplingsledningarna mellan komponenterna bör ha låg
-resistans och därför lågt spänningsfall (små förluster).
-Lampan ska däremot ha hög resistans och därmed höga
-förluster för att kunna bli het och lysa.
+\textbf{Exempel:} En krets med strömkälla, lampa, kopplingsledningar och smältsäkring.
+Kopplingsledningarna mellan komponenterna bör ha låg resistans och därför lågt
+spänningsfall (små förluster).
+Lampan ska däremot ha hög resistans och därmed höga förluster för att kunna bli
+het och lysa.
 Smältsäkringen ska skydda ledningarna från för hög ström.
 Säkringen ges därför en resistans som gör att den smälter när strömmen
 överstiger ett tillåtet värde.
@@ -30,31 +29,30 @@ Dess utmärkande egenskap är \emph{resistans} (eng. \emph{resistance}) --
 även kallad ohmskt motstånd.
 
 \subsection{Enheten ohm}
-\textbf{HAREC a.\ref{HAREC.a.2.1.1}\label{myHAREC.a.2.1.1}}
+\harec{a}{2.1.1}{2.1.1}
 \index{ohm (\(\Omega\))}
 \index{enheter!ohm (\(\Omega\))}
 \index{symbol!\(R\) resistans}
+\label{enheten_ohm}
 
-(Se även kapitel \ref{ellära}.)
+%%(Se även kapitel \ref{ellära}.)
 
-Resistansen mellan två punkter i en strömkrets är
-\SI{1}{\ohm} som även skrives \SI{1}{\ohm} (uttalas ''en
-åm''), när spänningen \SI{1}{V} mellan punkterna gör att
-en ström av \SI{1}{A} (en ampere) flyter i kretsen.
+Resistansen mellan två punkter i en strömkrets är 1~ohm som även skrives
+\SI{1}{\ohm} (uttalas ''en åm''), när spänningen \SI{1}{\volt} mellan punkterna
+gör att en ström av \SI{1}{\ampere} (en ampere) flyter i kretsen.
 
 Inom elektroniken används höga resistansvärden och därför även följande
-multipler av enheten:
+multipler av enheten
 
-\begin{table}[h]
-  \begin{tabular}{lll}
-    1 kiloohm & \SI{1}{\kilo\ohm} & = \SI{1d3}{\ohm} \\
-    1 megaohm & \SI{1}{\mega\ohm} & = \SI{1d6}{\ohm} \\
-  \end{tabular}
-  \caption{Motståndsvärden och deras relationer}
-\end{table}
+\begin{center}
+\begin{tabular}{lll}
+  1 kiloohm & (\SI{1}{\kilo\ohm}) & = \(10^3\) ohm \\
+  1 megaohm & (\SI{1}{\mega\ohm}) & = \(10^6\) ohm \\
+\end{tabular}
+\end{center}
 
 \subsection{Resistans i strömledare}
-\textbf{HAREC a.\ref{HAREC.a.2.1.2}\label{myHAREC.a.2.1.2}}
+\harec{a}{2.1.2}{2.1.2}
 \index{resistivitet}
 \index{specifik resistans}
 \index{symbol!\(\rho\) resitivitet}
@@ -66,35 +64,39 @@ resistivitet, tvärsnittsyta, längd och temperatur.
 strömledningsegenskaper.
 Ett annat namn för resistivitet är \emph{specifik resistans}.
 Symbolen för resistivitet är \(\rho\) (uttalas ''rå'').
-
 Formeln for resistivitet är:
-\[
-	\rho = \frac{R A}{l} \left[\frac{\unit \cdot \unit{mm^2}}{m}\right]
-\]
-
+%%
+\[\rho = \dfrac{R A}{l}\qquad \left[\dfrac{ohm \cdot mm^2}{m}\right]\]
+%%
 där resistansen \(R\) på en längd \(l\) av en strömledare med en
 genomsnittsarea \(A\) (som oftast anges i kvadratmillimeter).
 
 Resitiviteten för material finns ofta i tabeller, och i bilaga
-\ref{metallersresitivitet} finns ett antal vanliga metallers resitivitet
+\ref{metallersresistivitet} finns ett antal vanliga metallers resitivitet
 angivna.
 
 Följande formel gäller för beräkning av resistansen i en strömledare med
 linjär ström/spänningskaraktär.
-
-\[R = \rho \dfrac{l}{A}\]
-Där:
-\[ 
-	l\unit{[m]} \qquad A\unit{[mm^2]} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] 
-\]
-
+%%
+\[\begin{array}{c}
+    R = \rho \dfrac{l}{A} \qquad \left[\rho = \frac{\Omega \cdot A}{m} \right] \qquad l=\text{meter}; A=\si{\milli\metre\squared}
+\end{array}\]
+%%
+\noindent
 \textbf{Exempel}
 
-\(l = 4\ m\) koppartråd med arean \(A = 2\ mm^2\) ger oss \(\rho \text{ (koppar)} = 0,017\).
-\[
-R = \dfrac{\rho \cdot l}{A} \qquad \rightarrow \qquad R = \dfrac{0,017 \cdot 4}{2} = 0.034\ \Omega
-\]
-\marginnote{Not. Förväxla inte \(A\) som här är tvärsnittsytan i denna formel med enheten ampere. Bokstaven \(A\) kan nämligen betecka både storheten area och enheten ampere.}
+\(l = \SI{4}{\metre}\) koppartråd
+
+\(A = \SI{2}{\milli\metre\squared}\)
+
+\(\rho \text{ (koppar)} = 0,017\)
+
+\[\begin{array}{c}
+R = \dfrac{\rho \cdot l}{A} \qquad R = \dfrac{0,017 \cdot 4}{2} = \SI{0,034}{\ohm}
+\end{array}\]
+
+\noindent
+\textbf{Not.} \emph{Förväxla inte A [tvärsnittsytan] i denna formel med enheten ampere.}
 
 \subsection{Resistiva material}
 
@@ -120,6 +122,7 @@ först en översikt över resistorer med olika resistiva material och fast
 resistansvärde.
 
 \subsection{Fasta resistorer med linjär karaktär}
+\label{fasta_resistorer_linjära}
 
 \subsubsection{Massaresistor}
 \index{massaresistor}
@@ -195,9 +198,10 @@ hög temperatur. Stommen kan vara av keramik, glas eller liknande.
 Tåligheten mot pulser och höga temperaturer är stor.
 
 \subsection{Fasta resistorer med olinjär karaktär}
-\textbf{HAREC a.\ref{HAREC.a.2.1.3}\label{myHAREC.a.2.1.3}}
+\harec{a}{2.1.3}{2.1.3}
 \index{olinjära resistorer}
 \index{resistor!olinjär}
+\label{fasta_resistorer_olinjära}
 
 Vanligast är att materialet i resistorer har linjär ström- och spänningskaraktär,
 men det finns även sådana med olinjär karaktär. I resistorer med olinjär
@@ -238,11 +242,13 @@ infraröda området.
 Resistansen ökar med längden på strömledaren. Denna egenskap används i
 \emph{magnetfältsberoende fältplattor} som utnyttjar \emph{halleffekten}, även
 kända som \emph{hallresistor}. En sådan består av en keramisk bärarplatta med
-en yta av indiumantimonid. I ytan är ytterst smala parallella metallbanor
-inlagda på ett avstånd av någon \textmu m (mikrometer). Normalt går strömmen kortaste vägen
-tvärs över banorna, men när ett magnetfält träffar vinkelrätt mot plattans yta,
-så avlänkas elektronerna. De får då längre väg över till nästa metallbana och
-den totala resistansen ökar.
+en yta av indiumantimonid.
+I ytan är ytterst smala parallella metallbanor inlagda på ett avstånd av någon
+\si{\micro\metre}\.
+Normalt går strömmen kortaste vägen tvärs över banorna, men när ett magnetfält
+träffar vinkelrätt mot plattans yta avlänkas elektronerna.
+De får då längre väg över till nästa metallbana och den totala resistansen
+ökar.
 
 \subsubsection{Temperaturberoende resistor}
 \index{temperaturberoende resistor}
@@ -261,6 +267,7 @@ Se nedan om NTC och PTC i resistorer.
 \index{resistor!NTC}
 \index{PTC}
 \index{resistor!PTC}
+\label{resistor_temperaturkoefficient}
 
 Resistansen i ingående material påverkas av temperaturen, varvid det skiljer
 mellan materialen.
@@ -277,24 +284,20 @@ nästan konstant vid varierande temperatur.
 
 Alla material har en temperaturkoefficient, som anger hur mycket resistansen
 ändras per grad. Resistansen vid någon annan temperatur kan därför beräknas med
-följande formel, där man sätter in begynnelsetemperaturen [ \(\vartheta\) ]
-(\degree C), temperaturändringen [\(\Delta \vartheta\)] och
+följande formel, där man sätter in begynnelsetemperaturen [\(\vartheta\)]
+(\si{\degreeCelsius}), temperaturändringen [\(\Delta \vartheta\)] och
 temperaturkoefficienten [\(\alpha\)].
-\[R_{varm} = R_{kall} \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}
-\]
-
+%%
+\[R_{varm} = R_{kall} \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}\]
+%%
 Resistansändringen är ledet
-
-\[\Delta R = \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}
-\]
+%%
+\[ \Delta R = \pm \alpha \cdot \Delta \vartheta \cdot R_{kall}\]
+%%
 Temperaturkoefficienten kan vara positiv (PTC) eller negativ (NTC).
-I principscheman har PTC- respektive NTC-resistorer symboler som på bilden.
+I principscheman har PTC- respektive NTC-resistorer symboler som i bild \ref{fig:BildII2-1}.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-01.pdf}
-\caption{Schemasymboler för resistorer}
-\label{fig:BildII2-1}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_2-01.pdf}{Schemasymboler för resistorer}{fig:BildII2-1}
 
 \subsection{Variabla resistorer}
 \index{variabla resistorer}
@@ -338,7 +341,7 @@ linjära segment, som tillsammans någorlunda motsvarar den önskade olinjära
 formen.
 
 \subsection{Effektutveckling i resistorer}
-\textbf{HAREC a.\ref{HAREC.a.2.1.4}\label{myHAREC.a.2.1.4}}
+\harec{a}{2.1.4}{2.1.4}
 \index{effektutveckling i resistorer}
 \index{resistor!effektutveckling}
 
@@ -360,4 +363,4 @@ Resistorer tillverkas vanligen med standardiserade värden från en talserie.
 
 Resistorer märks med hjälp av siffror och bokstäver eller med en färgkod så att
 resistorns huvuddata kan avläsas. Ofta finns märkningen förklarad i 
-komponentleverantörenas kataloger.
+komponentleverantörernas kataloger.

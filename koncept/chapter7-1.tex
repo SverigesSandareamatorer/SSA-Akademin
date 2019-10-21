@@ -2,6 +2,7 @@
 
 \section{Antenner -- allmänt}
 \index{antenn}
+\label{antenner_allmänt}
 
 Aldrig så förnämliga radioapparater kommer inte till sin fulla rätt utan ett
 effektivt antennsystem.
@@ -17,7 +18,7 @@ Antennsystemet består av den egentliga antennen och transmissionsledningen
 mellan denna och sändaren respektive mottagaren.
 I antennsystemet ingår även impedansanpassningar, antennkopplare med mera.
 
-\subsubsection{Våghastighet}
+\subsection{Våghastighet}
 \label{ljushastigheten}
 \index{våghastighet}
 \index{ljushastighet}
@@ -28,25 +29,25 @@ I antennsystemet ingår även impedansanpassningar, antennkopplare med mera.
 I vakuum breder elektromagnetiska vågor ut sig med hastigheten \(c_0\), vilken
 mest kallas ljushastigheten.
 Den är i SI-systemet \cite{SIbrochure8} fastställd till
-
+%%
 \[c_0 = 299\,792\,458 \approx 300 \cdot 10^6 \text{ [m/s]}\]
-
+%%
 I andra media än vakuum har samma vågor utbredningshastigheten \(c\).
 Formeln är då
-
+%%
 \[c = \frac{c_0}{\sqrt{\mu_r \cdot \varepsilon_r}}\]
-
+%%
 där \(\mu_r\) är relativa permeabilitetskonstanten och \(\varepsilon_r\) är
 relativa dielektricitetskonstanten för det medium som vågorna passerar igenom.
 För enkelhetens skull sätts här \(\mu_r\) och \(\varepsilon_r\) till 1,
 alltså \(c_0 = c\).
 
-Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat
-
+Sambandet mellan våghastigheten i vakuum, frekvensen och våglängden är förenklat:
+%%
 \[ c = \lambda \cdot f \quad c\text{ [m/s] }\quad f\text{ [Hz] } \quad \lambda\text{ [m]}\]
-
+%%
 och våglängden således
-
+%%
 \[ \lambda = \frac{c}{f} \quad \text{[m]} \]
 
 \subsection{Antennlängd}
@@ -62,7 +63,7 @@ Således \(l_e = \lambda\).
 
 Elektriska längden (\(l_e\)) för en halvvågsantenn (\(\lambda/2\)) är hälften
 av den elektriska längden för en helvågsantenn (\(\lambda\)):
-
+%%
 \[l_e = \frac{\lambda}{2} \quad \text{[m]}\]
 
 \subsubsection{Mekaniska längden}
@@ -83,60 +84,54 @@ utförande, påverkan från jordplan och omgivning med mera.
 Ett förhållande mellan längd och tjocklek av 10000 ger till exempel en cirka 2~\%
 mekaniskt kortare antenn.
 Förhållandet 30 ger en cirka 5~\% kortare antenn.
-Det första värdet kan passa för en 2~mm tjock halvvågsantenn för 7~MHz.
-Det andra värdet för en 3,5~mm tjock halvvågsantenn för 145~MHz.
+Det första värdet kan passa för en \SI{2}{\milli\metre} tjock halvvågsantenn för
+\SI{7}{\mega\hertz}.
+Det andra värdet för en \SI{3,5}{\milli\metre} tjock halvvågsantenn för
+\SI{145}{\mega\hertz}.
 Diagram för den så kallade förkortningsfaktorn finns i de flesta
 antennhandböcker.
 
 I följande formel har den mekaniska längden (\(l_m\)) för en fritt upphängd
 trådantenn valts 2~\% kortare än den elektriska längden.
-
+%%
 \[l_m = \frac{\lambda}{2} \cdot 0,98 \quad \text{[m]}\]
-
+%%
 \textbf{Exempel:}
-
 Beräkna den elektriska och mekaniska längden på en halvvågsantenn med
 resonansfrekvensen \(f = 7\)~MHz.
-
+%%
 \[
 c = \lambda \cdot f
 \quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
 \]
-
-Elektriska våglängden för 7~MHz är
-
+%%
+Elektriska våglängden för \SI{7}{\mega\hertz} är:
+%%
 \[
 \lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
 \quad \text{[m]}
 \]
-
-Antennen är en halvvågsantenn, således är elektriska längden
-
+%%
+Antennen är en halvvågsantenn, således är elektriska längden:
+%%
 \[
 l_e = \frac{\lambda}{2} = \frac{42.86}{2} = 21,43 \quad \text{[m]}
 \]
-
-och mekaniska längden
-
+%%
+och mekaniska längden:
+%%
 \[
 l_m = \frac{\lambda}{2} \cdot 0,98 = \frac{42.86}{2}\cdot 0,98 = 21
 \quad \text{[m]}
 \]
 
-
-\subsection{Ström och spänning i en halvvågsantenn}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.1}\label{myHAREC.a.6.2.1}
-}
+\subsection{Ström och spänning i en halvvågs\-antenn}
+\harec{a}{6.2.1}{6.2.1}
 \index{halvvågsantenn}
 \index{antenn!halvvågs}
 \index{antenn!ström och spänning}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-01.pdf}
-  \caption{Spänning och ström i en halvvågsantenn}
-  \label{fig:bildII6-1}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_6-01.pdf}{Spänning och ström i en halvvågsantenn}{fig:bildII6-1}
 
 När en halvvågsantenn matas med HF-energi på grundfrekvensen, så uppstår en
 stående våg med ett typiskt utseende.
@@ -146,20 +141,21 @@ Bild \ref{fig:bildII6-1} visar att i vardera änden av antennen uppnår spännin
 ett maximum (en strömbuk).
 Antennen strålar mest där strömbuken finns.
 
-Tag till exempel en 40~meter lång metalltråd som antenn.
-Frekvensen för grundresonansen är cirka 3,5~MHz, men den är även i resonans på
-de harmoniska övertonerna (7, 14, 21, 28~MHz osv.).
+Tag till exempel en \SI{40}{\metre} lång metalltråd som antenn.
+Frekvensen för grundresonansen är cirka \SI{3,5}{\mega\hertz}, men den är även i
+resonans på de harmoniska övertonerna (7, 14, 21, \SI{28}{\mega\hertz} osv.).
 
 Bild \ref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid
 de respektive övertonerna.
 
-För 80~m (3,5~MHz) är matningpunkten ett i spänningsminimum (en spänningsnod)
-och ett strömmaximum (en strömbuk).
+För \SI{80}{\metre} (\SI{3,5}{\mega\hertz}) är matningspunkten ett i
+spänningsminimum (en spänningsnod) och ett strömmaximum (en strömbuk).
 Strömmen är hög därför att matningspunkten har låg impedans.
 
-Samma antenn på 40~m, 20~m, 15~m, 10~m (7, 14, 21, 28~MHz) har ett
-spänningsmaximum (spänningsbuk) och ett strömminimum (strömnod) i
-matningspunkten, som då har hög impedans.
+Samma antenn på \SI{40}{\metre}, \SI{20}{\metre}, \SI{15}{\metre},
+\SI{10}{\metre} (7, 14, 21, \SI{28}{\mega\hertz}) har ett spänningsmaximum
+(spänningsbuk) och ett strömminimum (strömnod) i matningspunkten, som då har hög
+impedans.
 
 Ur horisontaldiagrammet för antennen kan utläsas att ytterligare
 strålningskäglor (strålningslober) utvecklas för varje överton i den
@@ -167,26 +163,17 @@ påmatade frekvensen.
 Samtidigt blir strålningen alltmer till riktad längs med antennen.
 
 \subsection{Impedansen i antennens matningspunkt}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.2}\label{myHAREC.a.6.2.2}
-}
+\harec{a}{6.2.2}{6.2.2}
 \index{impedans!antenn}
 \index{antenn!impedans}
 \index{halvvågsantenn}
 \index{antenn!halvvågs}
 \index{överton}
+\label{antenner_impedans}
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-02.pdf}
-  \caption{Matningsimpedansen i en halvvågsantenn}
-  \label{fig:bildII6-2}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_6-02.pdf}{Matningsimpedansen i en halvvågsantenn}{fig:bildII6-2}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_6-03.pdf}
-  \caption{Halvvågsdipol matad med harmoniska övertoner}
-  \label{fig:bildII6-3}
-\end{figure}
+\tallfig[0.5]{images/cropped_pdfs/bild_2_6-03.pdf}{Halvvågsdipol matad med harmoniska övertoner}{fig:bildII6-3}
 
 Impedansen \(Z\) för varje punkt på en antenn kan beräknas med Ohms lag
 \(Z = \frac{U}{I}\).
@@ -199,7 +186,7 @@ strömmen är låg och spänningen är hög.
 
 När antennen, mätt i våglängder, befinner sig mycket högt över jordytan, det
 vill säga utan nämnvärd påverkan från omgivningen är impedansen i mittpunkten
-73~\(\Omega\) på grundfrekvensen.
+\SI{73}{\ohm} på grundfrekvensen.
 I praktiken kan impedansen avvika mycket från detta värde.
 
 Antenn och matningskabel måste vara impedansanpassade till varandra
@@ -219,9 +206,9 @@ Se avsnitt \ref{transmissionsledningar} i detta kapitel.
 Med W3DZZ-antennen (se avsnitt \ref{W3DZZ}) löses hjälpligt anpassningsproblemet
 med mittmatade partier på 2:a harmoniska övertonen, det vill säga dubbla
 grundfrekvensen.
-På 80- och 40~m-banden är antennens matningsimpedans cirka 60~\(\Omega\) och på de
-högre banden cirka 100~\(\Omega\).
-En kompromiss är att mata denna antenn med en 75~\(\Omega\)-kabel för att inte
+På 80- och \SI{40}{\metre}-banden är antennens matningsimpedans cirka
+\SI{60}{\ohm} och på de högre banden cirka \SI{100}{\ohm}.
+En kompromiss är att mata denna antenn med en \SI{75}{\ohm}-kabel för att inte
 få alltför stor missanpassning på något band.
 
 \paragraph{Den omvikta dipolen (folded dipole):}
@@ -230,9 +217,9 @@ få alltför stor missanpassning på något band.
 \index{folded dipol}
 \index{antenn!folded dipol}
 
-Matningsimpedansen är cirka 240~\(\Omega\).
-En bandkabel med impedansen 300~\(\Omega\) kan användas alternativt en
-koaxialkabel med impedansen 50 eller 75~\(\Omega\) över en transformator med
+Matningsimpedansen är cirka \SI{240}{\ohm}.
+En bandkabel med impedansen \SI{300}{\ohm} kan användas alternativt en
+koaxialkabel med impedansen 50 eller \SI{75}{\ohm} över en transformator med
 impedansomsättningen 4:1.
 
 \paragraph{Jordplanantennen (GP-antennen):}
@@ -241,38 +228,37 @@ impedansomsättningen 4:1.
 \index{GP-antenn}
 \index{antenn!GP}
 
-Matningsimpedansen är 30--60~\(\Omega\).
+Matningsimpedansen är \SIrange{30}{60}{\ohm}.
 När jordplanets spröt inte riktas horisontellt, utan snett nedåt, erhålls en
-matningsimpedans av 50~\(\Omega\), vilket passar bra för en koaxialkabel med
-50~\(\Omega\) impedans.
+matningsimpedans av \SI{50}{\ohm}, vilket passar bra för en koaxialkabel med
+\SI{50}{\ohm} impedans.
 
 \paragraph{Yagi- och Quad-antenner:}
 \index{yagiantenn}
 \index{Yagi-Uda}
-\index{antenn!yagi}
+\index{antenn!yagi-}
 \index{antenn!Yagi-Uda}
 \index{quadantenn}
 \index{antenn!Quad}
 
-En anpassningsanordning för anslutning av 50~\(\Omega\) koaxialkabel ingår
+En anpassningsanordning för anslutning av \SI{50}{\ohm} koaxialkabel ingår
 oftast i fabriksgjorda riktantenner.
-En 50~\(\Omega\) koaxialkabel kan då anslutas direkt till antennens matningspunkt.
+En \SI{50}{\ohm} koaxialkabel kan då anslutas direkt till antennens
+matningspunkt.
 
 \subsubsection{Reaktansen i en icke-resonant antenn}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.3}\label{myHAREC.a.6.2.3}
-}
+\harec{a}{6.2.3}{6.2.3}
 \index{reaktans!antenn}
 \index{antenn!reaktans}
 
-Den elektriska svängningskretsen behandlas i avsnitt \ref{oscillatorer}.
-Där framställs svängningskretsens grundegenskaper resistans \(R\),
+Den elektriska resonanskretsen behandlas i avsnitt \ref{oscillatorer}.
+Där framställs resonanskretsens grundegenskaper resistans \(R\),
 induktans \(L\) och kapacitans \(C\) som koncentrerade till komponenter kallade
 resistor, induktor respektive kondensator.
 
 Även en enkel tråd har dessa egenskaper, men fördelade över hela tråden.
 Denna kan därför ses som ett stort antal komponenter, som tillsammans bildar en
-svängningskrets, vilken naturligtvis kan fungera som antenn.
+resonanskrets, vilken naturligtvis kan fungera som antenn.
 
 När antennen matas med växelström med samma frekvens som antennens
 resonansfrekvens, så svänger antennen med minsta impedansen.
@@ -287,13 +273,17 @@ specialfall.
 Om sändningsfrekvensen är en annan än antennens resonansfrekvens, så händer
 endera av följande:
 
-När antennströmmen har lägre frekvens än antennens resonansfrekvens, så blir
+\begin{description}
+\item[När antennströmmen har lägre frekvens] än antennens resonansfrekvens, så blir
 den resulterande reaktansen negativ (kapacitiv), det vill säga \(X_C\) är större
 än \(X_L\).
 
-När antennströmmen har högre frekvens än antennens resonansfrekvens,
+\item[När antennströmmen har högre frekvens] än antennens resonansfrekvens,
 så blir den resulterande reaktansen positiv (induktiv), det vill säga \(X_L\)
 är större än \(X_C\).
+\end{description}
+
+\smallfig{images/cropped_pdfs/bild_2_6-04.pdf}{Elektrisk förlängning och förkortning av antenner}{fig:bildII6-4}
 
 \subsection{Elektrisk ''förlängning'' och ''förkortning''}
 \label{elektrisk förlängning}
@@ -301,12 +291,6 @@ så blir den resulterande reaktansen positiv (induktiv), det vill säga \(X_L\)
 \index{antenn!elektrisk förlängning}
 \index{elektrisk förkortning}
 \index{antenn!elektrisk förkortning}
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-04.pdf}
-  \caption{Elektrisk förlängning och förkortning av antenner}
-  \label{fig:bildII6-4}
-\end{wrapfigure}
 
 Om sändarfrekvensen, avviker mycket från antennens resonansfrekvens,
 så kan reaktansen i antennen behöva elimineras eller åtminstone
@@ -326,9 +310,7 @@ Då kan en antennkopplare med nödvändiga reaktiva komponenter behövas.
 Se längre fram i kapitlet.
 
 \subsection{Anpassning till sändarens impedans}
-\textbf{
-HAREC a.\ref{HAREC.a.5.3.7}\label{myHAREC.a.5.3.7}
-}
+\harec{a}{5.3.7}{5.3.7}
 \index{avstämningsanordning}
 \index{match}
 \index{sändare!match}
@@ -337,6 +319,7 @@ HAREC a.\ref{HAREC.a.5.3.7}\label{myHAREC.a.5.3.7}
 \index{\(\pi \)-filter}
 \index{sändare!\(\pi \)-filter}
 \index{ståendevåg}
+\label{antenner_ståendevåg}
 
 Ett sändarslutsteg med elektronrör är vanligen utrustat med en
 \emph{avstämningsanordning} (eng. \emph{matching network} och \emph{match})
@@ -344,10 +327,11 @@ vid HF-utgången.
 Syftet är att kunna anpassa sändarens utgångsimpedans till impedansen i
 antennledningen.
 I moderna sändare består denna anordning mycket ofta av ett så kallat
-\(\pi \)-filter, vars utgångsimpedans kan variera mellan cirka 30--150~\(\Omega\).
+\(\pi \)-filter, vars utgångsimpedans kan variera mellan cirka
+\SIrange{30}{150}{\ohm}.
 
 Ett transistoriserat slutsteg är oftast utfört för en fast utgångsimpedans av
-50~\(\Omega\) och är alltså i behov av en avstämningsanordning, om inte
+\SI{50}{\ohm} och är alltså i behov av en avstämningsanordning, om inte
 antennsystemet inom vissa gränser håller samma impedans.
 Toleransgränsen för felanpassning brukar vara ett SVF av storleksordningen 2:1
 innan sändarens skyddskretsar automatiskt minskar uteffekten.
@@ -358,13 +342,9 @@ uppträder ingen stående våg på matarledningen och mesta möjliga effekt
 
 \subsection{Antennens strålningsdiagram}
 \index{strålningsdiagram}
-\index{antenn!strålningdiagram}
+\index{antenn!strålningsdiagram}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_6-05.pdf}
-  \caption{Vertikaldiagram för halvvågsantenn}
-  \label{fig:bildII6-5}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_6-05.pdf}{Vertikaldiagram för halvvågsantenn}{fig:bildII6-5}
 
 En antenns strålningsbild beskrivs bäst i tre dimensioner.
 Bild \ref{fig:bildII6-3} visar bland annat ett horisontaldiagram för en
@@ -385,13 +365,11 @@ När en horisontell antenn däremot placeras \(\lambda/4\), \(3\lambda/4\),
 \(5\lambda/4\) osv. över mark, är utstrålningen övervägande vertikal, vilket
 inte ska förväxlas med polarisationen, som i detta fall är horisontell.
 
-Samma diagram gäller både för en sändar- och mottagarantenn. styrkan
-på en utstrålad signal motsvaras av styrkan på mottagen signal.
+Samma diagram gäller både för en sändar- och mottagarantenn.
+Styrkan på en utstrålad signal motsvaras av styrkan på mottagen signal.
 
 \subsection{Antennvinst}
-\textbf{
-  HAREC a.\ref{HAREC.a.6.2.5}\label{myHAREC.a.6.2.5}
-}
+\harec{a}{6.2.5}{6.2.5}
 \index{antennvinst}
 \index{antenn!antennvinst}
 \index{antennförstärkning}
@@ -407,9 +385,10 @@ på en utstrålad signal motsvaras av styrkan på mottagen signal.
 \index{antenn!dBd dipol gain}
 \index{dipol gain (dBd)}
 \index{antenn!dipol gain (dBd)}
+\label{antenner_antennvins}
 
 Med \emph{antennvinst} eller \emph{antennförstärkning} \(G_{ant}\) (eng.
-\emph{antenna gain}) menas förhållandet mellan effekten \(P_t\) i
+\emph{antenna gain}) menas förhållandet mellan effekten \(P_f\) i
 huvudstrålningsriktningen (framriktningen för en antenn med osymmetriskt
 utstrålad effekt) och effekten från en definierad referensantenn.
 
@@ -417,64 +396,62 @@ Förmågan att ha högre antennförstärkning i en riktning i förhållande till
 riktningar kallas för direktivitet (eng. \emph{antenna directivity}).
 
 En referensantenn som tänks vara oändligt liten och som strålar med exakt
-samma effekt \(P_t\) i alla riktningar kallas \emph{isotropisk antenn}.
+samma effekt \(P_f\) i alla riktningar kallas \emph{isotropisk antenn}.
 En isotropisk antenn är emellertid endast teoretisk definierbar.
 
 Med effekten \(P_i\) från den isotropiska antennen som referens blir
 antennförstärkningen
-
-\[G = 10 \log\frac{P_t}{P_i} \quad \text{[dBi]}\]
-
+%%
+\[G = 10 \log\frac{P_f}{P_i} \quad \text{[dBi]}\]
+%%
 En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennförstärkningen
-
-\[G = 10 \log\frac{P_t}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
-
+%%
+\[G = 10 \log\frac{P_f}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
+%%
 Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
 
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-06.pdf}
-  \caption{Antennförstärkning dBd i effekt}
-  \label{fig:bildII6-6}
+\smallfig{images/cropped_pdfs/bild_2_6-06.pdf}{Antennförstärkning dBd i effekt}{fig:bildII6-6}
 
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-07.pdf}
-  \caption{Antennförstärkning dBd i spänning}
-  \label{fig:bildII6-7}
-\end{wrapfigure}
+\smallfig{images/cropped_pdfs/bild_2_6-07.pdf}{Antennförstärkning dBd i spänning}{fig:bildII6-7}
 
 Antennförstärkning kan också definieras som förhållandet mellan den elektriska
-fältstyrkan uf i huvudstrålningsriktningen och referensfältstyrkan (dipol).
-
+fältstyrkan \(U_f\) i huvudstrålningsriktningen och referensfältstyrkan (dipol).
 Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
-
-\[G = 20 \log\frac{U_t}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
-
+%%
+\[G = 20 \log\frac{U_f}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
+%%
 Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
 Se kapitel \ref{decibel} om decibelbegreppet.
 
-\textbf{Exempel på beräkning av antennförstärkning:}
-
+\vspace{1ex}
+\noindent\textbf{Exempel på beräkning av antennförstärkning:}
+%%
 \begin{align*}
-  U_f &= 40\text{ \(\mu V\)} \quad U_d = 20\text{ \(\mu V\)} \quad G =\ ? \\
+  U_f &= \SI{40}{\micro\volt} \quad U_d = \SI{20}{\micro\volt} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
-  &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]} \\
+  &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
+%%
+\SI{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka
+[\si{\volt\per\metre}], det vill säga 1~S-enhets ökning vid den mottagande
+stationen, liksom att \SI{6}{\decibel} antennförstärkning motsvarar en 4~dubblad
+sändareffekt [\si{\watt\per\square\metre}].
 
-6~dB antennförstärkning motsvarar en fördubblad fältstyrka [V/m], det vill säga
-1~S-enhets ökning vid den mottagande stationen, liksom att 6~dB
-antennförstärkning motsvarar en 4~dubblad sändareffekt \(\mathrm{[W/m^2]}\).
-
+\newpage
+\noindent
 Ungefärlig antennförstärkning för olika antenner med en isotrop antenn som
 referens:
-
+\vspace{1ex}
+\begin{center}
 \begin{tabular}{l|ll|ll}
   & \multicolumn{2}{l|}{\(\lambda/2\)-dipol} &
   \multicolumn{2}{l}{Isotrop} \\
   \hline
-  Isotrop antenn       & -2,1 & dBd & 0   & dBi \\
-  GP, \(\lambda/4\)    & -1,8 & dBd & 0,3 & dBi \\
+  Isotrop antenn       & \num{-2,1} & dBd & 0   & dBi \\
+  GP, \(\lambda/4\)    & \num{-1,8} & dBd & 0,3 & dBi \\
   Dipol, \(\lambda/2\) & 0    & dBd & 2,1 & dBi \\
   GP, \(5/8\lambda\)   & 1,2  & dBd & 3,3 & dBi \\
   & & & & \\
@@ -483,23 +460,24 @@ referens:
   2-elements quad       & 6   & dBd & 8    & dBi \\
   3-elements yagi       & 8   & dBd & 10,1 & dBi \\
 \end{tabular}
+\end{center}
 
+\vspace{1ex}
+\noindent
 Antenner har förluster, det gör att olika antenner kan ha olika
 effektivitet, därför finns måttet \emph{antenneffektivitet}
 (eng. \emph{antenna efficiency}) \(\eta\) som beror på relationen mellan
-utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\)
-
+utstrålningsresistansen \(R_R\) och förlustresistansen \(R_L\):
+%%
 \[\eta = \frac{R_R}{R_R+R_L}\]
-
+%%
 Antennens effektivitet, verkningsgrad, kan även beräknas med hjälp av antennens
 förlusteffekt och den tillförda effekten.
 Observera att verkningsgraden för en antenn alltid är mindre än 1 då det är lätt
 att förväxla de olika effekterna i beräkningen.
 
 \subsection{Effektivt utstrålad effekt}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.7}\label{myHAREC.a.6.2.7}
-}
+\harec{a}{6.2.7}{6.2.7}
 \index{effektivt utstrålad effekt (ERP)}
 \index{antenn!effektivt utstrålad effekt (ERP)}
 \index{Effective Radiated Power (ERP)}
@@ -530,57 +508,48 @@ På samma sätt som vid beräkningen av ERP ska förlusterna på vägen från s�
 till antennen räknas bort före beräkningen av EIRP.
 
 \subsection{Fram/backförhållande (antennvinst)}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.8}\label{myHAREC.a.6.2.8}
-}
+\harec{a}{6.2.8}{6.2.8}
 \index{fram/backförhållande}
 \index{antenn!fram/backförhållande}
 
 Med fram/backförhållande (F/B) för en riktantenn menas förhållandet mellan den
 utstrålade effekten i framriktningen \(P_f\) och effekten i backriktningen
 \(P_b\).
-
+%%
 \[ F/B = 10 \log\frac{P_f}{P_b} \quad \text{[dB]} \]
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-08.pdf}
-  \caption{F/B-förhållande i effekt}
-  \label{fig:bildII6-8}
-\end{wrapfigure}
+%%
+\smallfig{images/cropped_pdfs/bild_2_6-08.pdf}{F/B-förhållande i effekt}{fig:bildII6-8}
 
 Fram/backförhållandet kan också definieras som förhållandet mellan elektriska
 fältstyrkan \(U_f\) i framriktningen och referensfältstyrkan \(U_b\) i
 backriktningen
-
+%%
 \[ F/B = 20 \log\frac{U_f}{U_b} \quad \text{[dB]} \]
-
-\begin{wrapfigure}{R}{0.5\textwidth}
-  \includegraphics[width=0.5\textwidth]{images/cropped_pdfs/bild_2_6-09.pdf}
-  \caption{F/B-förhållande i spänning}
-  \label{fig:bildII6-9}
-\end{wrapfigure}
-
+%%
+\smallfig{images/cropped_pdfs/bild_2_6-09.pdf}{F/B-förhållande i spänning}{fig:bildII6-9}
+%%
 \textbf{Exempel 1:}
-
+%%
 \begin{align*}
-  U_f &= 40 \text{ \(\mu V\)} \quad U_b = 4\text{ \(\mu V\)} \quad F/B =\ ? \\
+  U_f &= \SI{40}{\micro\volt} \quad U_b = \SI{4}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{40}{4} \\
-  &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]} \\
+  &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]}
 \end{align*}
-
-\(F/B = 20\) dB betyder att fältstyrkan \(U_f\) i huvudriktningen är
+%%
+\(F/B = \SI{20}{\decibel}\) betyder att fältstyrkan \(U_f\) i huvudriktningen är
 10 gånger så hög som fältstyrkan i backriktningen \(U_b\).
 
-\textbf{Exempel 2:}
-
+\noindent\textbf{Exempel 2:}
+%%
 \begin{align*}
-  U_f &= 15 \text{ \(\mu V\)} \quad U_b = 15\text{ \(\mu V\)} \quad F/B =\ ? \\
+  U_f &= \SI{15}{\micro\volt} \quad U_b = \SI{15}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
-  &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]} \\
+  &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]}
 \end{align*}
-
-\(F/B = 0\) dB betyder att \(U_f = U_b\), det vill säga att fältstyrkorna i
-fram- och backriktning är lika stora, vilket inträffar för en dipol.
+%%
+\(F/B = \SI{0}{\decibel}\) betyder att \(U_f = U_b\), det vill säga att
+fältstyrkorna i fram- och backriktning är lika stora, vilket inträffar för en
+dipol.
 
 \subsection{Halvvärdesbredd}
 \index{halvvärdesbredd}
@@ -595,32 +564,25 @@ Fältstyrkan \(U_f\) förhåller sig på liknande sätt.
 Med effekthalvvärdesbredd menas den vinkel inom vilken nyttoeffekten
 är minst hälften så stor som i huvudriktningen.
 Bild \ref{fig:bildII6-10} visar halvvärdesbredder.
-
+%%
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
   \sqrt{\frac{1}{2}}U_f \\
-  ( \approx 0,7 U_f \text{ motsvarande 3 dB })
+  ( \approx 0,7 U_f \text{ motsvarande \SI{3}{\decibel}})
 \end{gather*}
-
+%%
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen
 (fältstyrkan) är minst hälften så stor som den största nyttospänningen \(U_f\).
-Spänningshalvvärdesbredden för en dipol är ungefär 90\degree.
+Spänningshalvvärdesbredden för en dipol är ungefär \ang{90}.
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_6-10.pdf}
-  \caption{Halvvärdesbredder}
-  \label{fig:bildII6-10}
-\end{figure}
+\mediumfig{images/cropped_pdfs/bild_2_6-10.pdf}{Halvvärdesbredder}{fig:bildII6-10}
 
 \subsection{Antennarea}
-\textbf{
-HAREC a.\ref{HAREC.a.6.2.6}\label{myHAREC.a.6.2.6}
-}
+\harec{a}{6.2.6}{6.2.6}
 
 \emph{Antennarea} (eng. \emph{capture area}) är den area som parabolantenner
 och horn har.
 Antenngainet (G) beror antennarean (\(A_{phy}\)), effektiviteten (\(e_a\)) och
-våglängden (\(\lambda\)) enligt
-
+våglängden (\(\lambda\)) enligt:
+%%
 \[ G = \frac{4\pi A_{phy}e_a}{\lambda^2} \]
-9

@@ -16,11 +16,7 @@ Det finns många blandarkopplingar varav de vanligaste beskrivs här.
 Enkla typer med vissa nackdelar ställs mot sådana som är mer
 komplicerade, men har fördelar.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-83.pdf}
-\caption{Principer för frekvensblandning}
-\label{fig:BildII3-83}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-83.pdf}{Principer för frekvensblandning}{fig:BildII3-83}
 
 Bild \ref{fig:BildII3-83} visar principerna för frekvensblandning.
 När en linjär förstärkare matas med två signaler så sammanlagras de.
@@ -33,21 +29,17 @@ förstärkarutgången, så kallade blandningsprodukter.
 
 Två av blandningsprodukterna är särskilt intressanta, det är summan och
 skillnaden av ingångssignalernas frekvenser.
-De oönskade, övriga blandningsprodukterna filtreras bort med en avstämd krets
+De oönskade övriga blandningsprodukterna filtreras bort med en avstämd krets
 eller ett bandpassfilter.
 
-\subsection{Entaktsblandaren}
-\index{entaktsblandaren}
-\index{blandare!entakts}
+\subsection{Obalanserad blandare}
+\index{obalanserad blandare}
+\index{blandare!obalanserad}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-84a.pdf}
-\caption{Entaktsblandaren}
-\label{fig:BildII3-84a}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-84a.pdf}{Obalanserad blandare}{fig:BildII3-84a}
 
-Bild \ref{fig:BildII3-84a} visar entaktsblandaren.
-Vi kan övertyga oss om, att de fyra blandningsprodukterna verkligen uppstår.
+Bild \ref{fig:BildII3-84a} visar en obalanserad blandare.
+Vi kan övertyga oss om att de fyra blandningsprodukterna verkligen uppstår.
 Först undersöker vi den enklaste blandaren, som är ett olinjärt element i form
 av en diod.
 
@@ -67,54 +59,46 @@ Resultatet kan studeras med ett oscilloskop.
 Liksom på bilden ser man då att kondensatorn laddas upp till den positiva
 halvvågens toppvärde och med gott närmevärde följer kurvformen på \(f_1\).
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-84b.pdf}
-\caption{Entaktsblandaren med resonator}
-\label{fig:BildII3-84b}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-84b.pdf}{Obalanserad blandare med resonator}{fig:BildII3-84b}
 
-Bild \ref{fig:BildII3-84b} visar entaktsblandaren med en resonator.
-En svängningskrets med lämplig bandbredd, och som är avstämd till
-resonans frekvensen \(f_2\), ansluts nu till blandarens gång.
+Bild \ref{fig:BildII3-84b} visar en obalanserad blandare med en resonator.
+En resonanskrets med lämplig bandbredd och som är avstämd till
+resonansfrekvensen \(f_2\) ansluts nu till blandarens utgång.
 En signal med frekvensen \(f_2\) kan då urskiljas och studeras i oscilloskopet.
-Svängningskretsen tillförs energi under de positiva halvvågorna.
-Energin i svängningskretsen kompletterar med den negativa halvvågen, varvid en
+Resonanskretsen tillförs energi under de positiva halvvågorna.
+Energin i resonanskretsen kompletterar med den negativa halvvågen, varvid en
 del av kretsens energi förbrukas.
 Därför har de positiva och negativa halvvågorna inte samma amplitud (toppvärde).
 
 Det syns i oscilloskopet hur amplituden ''svävar''.
 Av detta dras slutsatsen att signalen består av fler frekvenser än \(f_2\).
 Signalen är sammansatt av \(f_2, f_2+f_1\) och \(f_2-f_1\).
-Signalen \(f_1\) ligger utanför svängningskretsens selektiva område och är
+Signalen \(f_1\) ligger utanför resonanskretsens selektiva område och blir
 därför bortfiltrerad (undertryckt).
 Blandningsprodukterna \(f_2 + f_1\) och \(f_2 - f_1\) har båda en mindre
 amplitud än \(f_2\).
 
 Att det finns olika grundtoner och blandningsprodukter kan bevisas med en ännu
-smalare svängningskrets med variabel frekvensavstämning, se bildens nedre del.
-Vi har hittills utgått från entaktsblandaren.
-Mer utvecklade blandartyper, såsom mottaktblandaren och ringblandaren,
-producerar färre blandningsprodukter.
+smalare resonanskrets med variabel frekvensavstämning, se bildens nedre del.
+Vi har hittills utgått från en obalanserad blandare.
+Andra blandartyper som den balanserade blandaren och den dubbelbalanserade
+blandaren producerar färre blandningsprodukter.
 
-\subsubsection{Mottaktsblandaren}
-\index{mottaktsblandare}
-\index{blandare!mottakts}
+\subsubsection{Balanserad blandare}
+\index{balanserad blandare}
+\index{blandare!balanserad}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-85.pdf}
-\caption{Mottaktsblandaren}
-\label{fig:BildII3-85}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-85.pdf}{Balanserad blandare}{fig:BildII3-85}
 
-Bild \ref{fig:BildII3-85} visar mottaktsblandaren.
-Mottaktblandaren har två dioder, till skillnad mot entaktsblandarens enda diod.
-HF-transformatoremas ena lindning har mittuttag.
+Bild \ref{fig:BildII3-85} visar en balanserad blandare.
+Den balanserade blandaren har till skillnad från den obalanserade blandaren två
+dioder och HF-transformatorernas ena lindning har mittuttag.
 Ingången \(E_1\) ligger på den ena transformatorns primärlindning.
 Ingången \(E_2\) 1igger över de båda mittuttagen.
 Utgången ligger på den andra transformatorns sekundärlindning.
 
 Ingången \(E_1\) matas med en signal med en låg frekvens \(f\).
-Eftersom en av de båda dioderna alltid spärrar, så flyter det ingen ström.
+Eftersom en av de båda dioderna alltid spärrar, flyter ingen ström.
 De streckade pilarna visar endast i vilken riktning strömmen kunde flyta, om de
 spärrande dioderna vore öppna.
 Men så länge som ingen signal ligger på ingång \(E_2\), uppträder ingen
@@ -140,37 +124,36 @@ Då uppträder en signal på utgången.
 Efter blandaren följer ett filter som endast släpper igenom de önskade
 blandningsprodukterna \(F + f\) eller \(F - f\).
 
-\subsubsection{Ringblandaren}
+\subsubsection{Dubbelbalanserad blandare}
 \index{ringblandare}
+\index{dubbelbalanserad blandare}
 \index{blandare!ring}
+\index{blandare!dubbelbalanserad}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-86.pdf}
-\caption{Ringblandaren}
-\label{fig:BildII3-86}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-86.pdf}{Dubbelbalanserad blandare}{fig:BildII3-86}
 
-Bild \ref{fig:BildII3-86} visar ringblandaren.
+Bild \ref{fig:BildII3-86} visar en dubbelbalanserad blandare.
 
-Ringblandaren består av fyra dioder, som är riktade åt samma håll i en
-''diodring''.
-Ingången matas med en signal med en låg frekven \(f\).
-Till skillnad mot i mottaktsblandaren flyter en ström genom \(D_1\) och \(D_4\)
-respektive \(D_2\) och \(D_3\), men inte genom utgångstransformatorn.
+En dubbelbalanserad blandare (även kallad \emph{ringblandare}) består av fyra
+dioder, som är riktade åt samma håll i en ''diodring''.
+Ingången matas med en signal med en låg frekvens \(f\).
+Till skillnad mot i den balanserade blandaren flyter en ström genom dioderna
+\(D_1\) och \(D_4\) respektive \(D_2\) och \(D_3\), men inte genom
+utgångstransformatorn.
 Ingen signal finns på utgången så länge som signalen \(F\) saknas.
 
 Signalen på \(E_1\) avlägsnas och i stället matas ingången \(E_2\) med
 en hög frekvens \(F\).
-Till skillnad mot i mottaktsblandaren flyter en ström genom dioderna \(D_1\)
-och \(D_2\) respektive \(D_3\) och \(D_4\) och då upphäver magnetfälten i
-transformatorernas lindningshalvor varandra.
+Till skillnad mot i den balanserade blandaren flyter en ström genom dioderna
+\(D_1\) och \(D_2\) respektive \(D_3\) och \(D_4\).
+Magnetfälten i transformatorernas lindningshalvor upphäver då varandra.
 Ingen signal finns på utgången, så länge som signalen \(f\) saknas.
 
 När signaler läggs på båda ingångarna händer följande:
 
 De fyra dioderna kommer att öppna och stänga parvis.
-Som i mottaktblandaren överlagras strömmen från ingång \(E_1\) på den ström
-som dioderna öppnar för.
+Som i den balanserade blandaren överlagras strömmen från ingång \(E_1\) på den
+ström som dioderna öppnar för.
 
 Här utnyttjas båda halvperioderna av \(F\).
 Strömmarna i lindningshalvorna blir olika stora.
@@ -180,36 +163,29 @@ blandningsprodukterna.
 
 \subsection{Jämförelse av blandare}
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-87.pdf}
-\caption{Jämförelse mellan olika blandare}
-\label{fig:BildII3-87}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-87.pdf}{Jämförelse mellan olika blandare}{fig:BildII3-87}
 
 Bild \ref{fig:BildII3-87} visar de tre beskrivna grundkopplingarna och de
 jämförs med avseende på frekvensspektrum på utgången.
 
-Vid entaktsblandaren uppträder summafrekvensen \(f + F\) och
+För den obalanserade blandaren uppträder summafrekvensen \(F + f\) och
 skillnadsfrekvensen \(F - f\), vidare ingångsfrekvenserna \(f\) och \(F\),
-deras övertoner \(2f\), \(3f\), \(4f\) osv., \(2F\), \(3F\),
-\(4F\) osv., liksom deras blandningsprodukter \(F\pm 2f\), \(F\pm
-3f\) osv., \(2F \pm f\), \(2F \pm 2f\), \(2F \pm 3f\) osv.
+deras övertoner \(2f\), \(3f\), \(4f\), \ldots respektive  \(2F\), \(3F\),
+\(4F\), \ldots liksom deras blandningsprodukter \(F\pm 2f\), \(F\pm
+3f\), \ldots och \(2F \pm f\), \(2F \pm 2f\), \(2F \pm 3f\) och så vidare.
 
-Vid mottaktblandaren saknas frekvensen \(F\) och dess övertoner.
+För den balanserade blandaren saknas frekvensen \(F\) och dess övertoner.
 Vidare bortfaller de jämna övertonerna av frekvensen \(f\).
 
-Vid ringblandaren bortfaller ännu fler icke önskvärda signaler,
-nämligen ingångssignalerna \(f\) och \(F\) och alla deras övertoner.
+För den dubbelbalanserade blandaren bortfaller ännu fler icke önskvärda
+signaler, nämligen ingångssignalerna \(f\) och \(F\) och alla deras övertoner.
 Endast blandningsprodukter av udda övertoner uppträder.
 
-På bilden visas det fallet att frekvensen \(f\) är mycket låg och då
-ligger blandningsprodukterna mycket nära varandra i frekvens.
-
-Vid entaktsblandaren filtrerar svängningskretsen ut frekvenserna \(F +
-f\), \(F - f\), och \(F\).
-Vid mottakt- och ringblandaren saknas däremot frekvensen \(F\), den filtrerade
+För en obalanserad blandare filtrerar resonanskretsen ut frekvenserna
+\(F + f\), \(F - f\), och \(F\).
+De balanserade blandarna saknar däremot frekvensen \(F\), den filtrerade
 signalen innehåller endast blandningsprodukterna \(F + f\) och \(F - f\).
-Om dessa båda blandningsprodukter är väl åtskilda eller svängningskretsen har en
+Om dessa båda blandningsprodukter är väl åtskilda eller resonanskretsen har en
 bättre selektionsförmåga, då blir enbart summafrekvensen \(F + f\)
 eller skillnadsfrekvensen \(F - f\) framfiltrerad.
 
@@ -218,8 +194,9 @@ Sådana innehåller olinjära dioder (germanium- eller kiseldioder).
 Det finns även blandare med aktiva komponenter, det vill säga elektronrör eller
 transistorer (bipolära, FET, MOSFET), men det skulle leda för långt
 att gå in på alla olika lösningar.
-I kapitlen 4. Mottagare och 5. Sändare beskrivs hur frekvensblandning används
-för modulering och demodulering.
+Mer om hur frekvensblandning används för demodulering och modulering finns att
+läsa i kapitel \ref{mottagare} om mottagare och i kapitel \ref{sändare} om
+sändare. 
 
 \subsection{Icke önskade övertoner och blandningsprodukter}
 
@@ -232,23 +209,21 @@ Vissa av signalerna filtreras fram för att utgöra nyttosignaler.
 Andra signaler filtreras bort, så att till exempel utsändning inte sker på fel
 frekvenser.
 
-\begin{figure}
-\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_3-88.pdf}
-\caption{Frekvensspektrum från en Super-VFO}
-\label{fig:BildII3-88}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_3-88.pdf}{Frekvensspektrum från en super-VFO}{fig:BildII3-88}
 
-Bild \ref{fig:BildII3-88} visar ett frekvensspektrum från en Super-VFO.
-I ett tidigare avsnitt har vi beskrivit en så kallad super-VFO.
+Bild \ref{fig:BildII3-88} visar ett frekvensspektrum från en super-VFO, som vi 
+beskrivit i avsnitt \ref{superVFO}.
 Vi ska nu undersöka vilka blandningsprodukter som uppstår i en sådan.
-De två mest uppenbara frekvenserna är blandningsprodukterna (summan) i
-området 144--146~MHz och (skillnaden) i området 128--126~MHz.
+De två mest uppenbara frekvenserna är blandningsprodukterna (summan) i området
+\SIrange{144}{146}{\mega\hertz} och (skillnaden) i området
+\SIrange{128}{126}{\mega\hertz}.
 
-Ut från blandaren finner vi ingångsfrekvensen 136~MHz och dess
-övertoner 272~MHz, 408~MHz osv. såväl som VFO-signalen och dess
-övertoner.
-På bilden är VFO-frekvensen 8~MHz och dess övertoner inritade, det vill
-säga 16~MHz, 24~MHz, 32~MHz osv.
+Ut från blandaren finner vi ingångsfrekvensen \\ \SI{136}{\mega\hertz} och dess
+övertoner \SI{272}{\mega\hertz}, \SI{408}{\mega\hertz} och så vidare såväl som
+VFO-signalen och dess övertoner.
+På bilden är VFO-frekvensen \SI{8}{\mega\hertz} och dess övertoner inritade, det
+vill säga \SI{16}{\mega\hertz}, \SI{24}{\mega\hertz}, \SI{32}{\mega\hertz} och
+så vidare.
 
 Tyvärr bildar också de båda ingångssignalernas övertoner
 blandningsprodukter vilket bilden visar.
@@ -267,10 +242,8 @@ på följande sätt:
   &18 \cdot 8,0   &= 144 \text{MHz} \quad \text{till} \quad 18 \cdot 8,111 &= 146 \text{MHz} \\
 \end{align*}
 
-%%
-
-Eftersom det här handlar om 15:e -- 18:e övertonerna, så blir
-amplituderna så små, att vi kan bortse från dem.
+Eftersom det här handlar om 15:e -- 18:e övertonerna, blir amplituderna så små 
+att vi kan bortse från dem.
 
 Det är viktigt med goda filter i signalbehandlande funktionssteg.
 En god regel är att på ett tidigt stadium filtrera bort oönskade

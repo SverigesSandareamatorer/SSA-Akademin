@@ -1,16 +1,13 @@
+\newpage
 \section{Elektromagnetiska vågor}
 
-\begin{marginfigure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-10.pdf}
-  \caption{Vågor längs en linje}
-  \label{fig:BildII1-10}
-\end{marginfigure}
+\smallfig{images/cropped_pdfs/bild_2_1-10.pdf}{Vågor längs en linje}{fig:BildII1-10}
 
-\marginnote{HAREC a.\ref{HAREC.a.1.5}\label{myHAREC.a.1.5}}
+\harec{a}{1.5}{1.5}
 \index{elektromagnetiska fält}
 
 \subsection{Vågutbredning}
-\marginnote{HAREC a.\ref{HAREC.a.1.5.1}\label{myHAREC.a.1.5.1}}
+\harec{a}{1.5.1}{1.5.1}
 \index{vågutbredning}
 
 En tillståndsändring i ett medium innebär att energi tillförs eller tas bort.
@@ -28,14 +25,11 @@ Sådana uppstår av svängningar i elektriska och magnetiska fält.
 För att förklara pendling och utbredning används här modeller.
 
 \subsection{Utbredningsmodeller}
+\label{utbredningsmodeller}
 
 \subsubsection{Vågutbredning längs en linje}
 
-\begin{marginfigure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-11.pdf}
-  \caption{Vågutbredning på en yta}
-  \label{fig:BildII1-11}
-\end{marginfigure}
+\smallfig{images/cropped_pdfs/bild_2_1-11.pdf}{Vågutbredning på en yta}{fig:BildII1-11}
 
 Bild \ref{fig:BildII1-10} visar vågor längs en linje.
 När änden av en tråd sätts i pendling med en frekvens \(f\), så kommer till
@@ -58,44 +52,34 @@ långt från energikällan, kallas för vågfront.
 
 Sambandet mellan utbredningshastighet \(v\), våglängd \(\lambda\) och frekvens
 \(f\) är:
+%%
 \[
-	v = \lambda \cdot f \qquad 
-	v \ \unit{[m/s]} \qquad 
-	\lambda \ \unit{[m]} \qquad 
-	f \ \unit{[Hz=1/s]}
+\begin{array}{llll}
+v = \lambda \cdot f & v \ \text{[m/s]} & \lambda \ \text{[m]} & f \ \text{[Hz]}
+\end{array}
 \]
+%%
+Exempel: När våglängden \(\lambda = 2\ \text{[m]}\) och antalet svängningar per sekund
+\(f = 10\ \text{[Hz]}\), så breder vågen ut sig med hastigheten \(v = 20\ \text{[m/s]}\).
 
-Exempel: När våglängden \(\lambda = \SI{2}{m}\) och antalet svängningar per sekund
-\(f = \SI{10}{Hz}\), så breder vågen ut sig med hastigheten \(v = 20\ \unit{m/s}\).
-
+\smallfig{images/cropped_pdfs/bild_2_1-12.pdf}{Vågutbredning i rummet}{fig:BildII1-12}
 
 \subsubsection{Vågutbredning i rummet}
 
-\begin{marginfigure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-12.pdf}
-  \caption{Vågutbredning i rummet}
-  \label{fig:BildII1-12}
-\end{marginfigure}
-
-Ljud är energi i form av tryckvågor i luften. När en mekanisk kropp
-sätts i svängning (stämgaffel, dricksglas etc), överförs svängningarna
-till den omgivande luftmassan som börjar att svänga med. I luftmassan
-bildas det omväxlande över- och undertryckszoner, som breder ut sig åt
-alla håll.
-De mekaniska svängningarna i ljudkällan omvandlas alltså till
-tryckvågor.
+Bild \ref{fig:BildII1-12} visar vågutbredning i rummet.
 
 Bild \ref{fig:BildII1-12} visar vågutbredning i rummet.
 
 Det mänskliga örat uppfattar tryckvågor inom frekvensområdet ca
-15--18\,000\,Hz som ljud.
+\SIrange{15}{18000}{\hertz} som ljud.
 Dessa vågor kallas ljudvågor.
-Utbredningshastigheten för ljudvågor är v = ca 340\,m/s vid 15\degree
-C och normalt lufttryck.
+Utbredningshastigheten för ljudvågor är \(v = \text{ca } 340\ \text{m/s}\) vid
+\SI{15}{\degreeCelsius} och normalt lufttryck.
 
 \subsection{Elektromagnetiska fält}
-\marginnote{HAREC a.\ref{HAREC.a.1.5.2}\label{myHAREC.a.1.5.2}}
+\harec{a}{1.5.2}{1.5.2}
 \index{elektromagnetiska fält}
+\label{elektromagnetiska_fält}
 
 Tabell \ref{tab:elektromagnetiskt_spektrum} visar elektromagnetiskt
 spektrum. I detta avsnitt görs i huvudsak endast jämförelse mellan
@@ -127,8 +111,8 @@ användning, vilket framgår av bilden.
 \begin{center}
 \begin{tabular}{|rl|rl|l|}
 \hline
-\multicolumn{2}{|c|}{\multirow{2}{*}{Frekvens}} & \multicolumn{2}{|c|}{\multirow{2}{*}{Våglängd}} & \multicolumn{1}{|c|}{Egenskaper/} \\
- & & & & \multicolumn{1}{|c|}{användning} \\ \hline
+\multicolumn{2}{|c|}{\multirow{2}{*}{Frekvens}} & \multicolumn{2}{c|}{\multirow{2}{*}{Våglängd}} & \multicolumn{1}{c|}{Egenskaper/} \\
+ & & & & \multicolumn{1}{c|}{användning} \\ \hline
 300 & Hz  & 100 & mil & \\
   1 & kHz & 300 & km & ULF \\ \cline{5-5}
   3 & kHz & 100 & km & \\
@@ -148,12 +132,12 @@ användning, vilket framgår av bilden.
  30 & GHz &  10 & mm & \\
 100 & GHz &   3 & mm & EHF\\ \cline{5-5}
 300 & GHz &   1 & mm & \\\
-  1 & THz & 300 & \(\mu\)m & Infrarött \\
-  3 & THz & 100 & \(\mu\)m & ljus \\
- 10 & THz &  30 & \(\mu\)m & (värme- \\
- 30 & THz &  10 & \(\mu\)m & strålning) \\
-100 & THz &   3 & \(\mu\)m & \\ \cline{5-5}
-300 & THz &   1 & \(\mu\)m & Synligt ljus \\ \cline{5-5}
+  1 & THz & 300 & \si{\um} & Infrarött \\
+  3 & THz & 100 & \si{\um} & ljus \\
+ 10 & THz &  30 & \si{\um} & (värme- \\
+ 30 & THz &  10 & \si{\um} & strålning) \\
+100 & THz &   3 & \si{\um} & \\ \cline{5-5}
+300 & THz &   1 & \si{\um} & Synligt ljus \\ \cline{5-5}
   1 & PHz & 300 & nm & \\
   3 & PHz & 100 & nm & Ultraviolett \\
  10 & PHz &  30 & nm & ljus \\ \cline{5-5}
@@ -182,24 +166,23 @@ användning, vilket framgår av bilden.
 Ögat uppfattar elektromagnetisk strålning bara inom ett visst frekvensområde
 som ljus.
 Ljusets utbredningshastighet beror av vilket material, som det passerar igenom.
+I vakuum är hastigheten störst, \(c = 299\, 792\, 458\ \text{[m/s]}\)
+(= ca \(3 \cdot 10^8\ \text{[m/s]}\)) \cite{SIbrochure8}.
 
-I vakuum är hastigheten störst, c = \SI{299792458}{m/s}
-(= ca \SI{3d8}{m/s}) eller 300 tusen kilometer per sekund\cite{SIbrochure8}.
-
-I tätare ämnen är hastigheten lägre, till exempel i glas ca \SI{200000000}{m/s}.
-Det för människan synliga ljuset har våglängder mellan \SI{7,7d-7}{m}
-och \SI{3,9d-7}{m}, motsvarande 7,7 till 3,9 tiotusendels mm.
+I tätare ämnen är hastigheten lägre, till exempel i glas ca
+\SI{200000000}{\metre\per\second}.
+Det för människan synliga ljuset har våglängder mellan \(7,7 \cdot 10^{-7}\)
+och \(3,9 \cdot 10^{-7}\ \text{[m]}\), motsvarande 7,7 till 3,9 tiotusendels mm.
 
 Sambandet mellan ljusets utbredningshastighet \(c\) i vakuum, frekvensen \(f\)
 och våglängden \(\lambda\) är
-
+%%
 \[
-c = \lambda \cdot f 
+\begin{array}{llll}
+c = \lambda \cdot f & c \ \text{[m/s]} & \lambda \ \text{[m]} & f \ \text{[Hz]}
+\end{array}
 \]
-
-Där $c$ är ljusets hastighet i m/s, $\lambda$ är våglängden i meter
-och $f$ är frekvensen i Hz.
-
+%%
 \subsubsection{Radiovågor}
 \index{radiovågor}
 
@@ -208,12 +191,13 @@ frekvensområde än det för ljus.
 Men utbredningshastigheten för radiovågor genom olika material följer ändå
 samma lagar som de för till exempel ljusets utbredning.
 
-Radiovågor anses omfatta ett frekvensområde från ca 10~kHz
-(\(\lambda = \SI{30}{km}\)) till \SI{300}{GHz} (\(\lambda = \SI{1}{mm}\)).
+Radiovågor anses omfatta ett frekvensområde från ca \SI{10}{\kilo\hertz}
+(\(\lambda = 30\ \text{[km]}\)) till \SI{300}{\giga\hertz} (\(\lambda = 1\ \text{[mm]}\)).
 
-Rundradio tilldelas frekvenser i intervallet \SI{100}{kHz} till \SI{1000}{MHz}.
-Amatörradio tilldelas ett antal frekvensområden i intervallet \SI{134}{kHz} till
-\SI{250}{GHz}. Vanligast är dock från \SI{1,8}{MHz} till \SI{438}{MHz}.
+Rundradio tilldelas frekvenser i intervallet \SI{100}{\kilo\hertz} till
+\SI{1000}{\mega\hertz}.
+Amatörradio tilldelas ett antal frekvensområden i intervallet
+\SI{136}{\kilo\hertz} till \SI{250}{\giga\hertz}.
 
 Att märka är att elektromagnetiska fält, som sagts ovan, förekommer så långt
 ner i frekvens som ett fåtal kHz.
@@ -229,15 +213,11 @@ Dessutom kan man finna motsvarigheten till sådana egenskaper såsom interferens
 och överlagring även i andra vågtyper, till exempel i ljud.
 
 \subsection{Vågpolarisation}
-\marginnote{HAREC a.\ref{HAREC.a.1.5.3}\label{myHAREC.a.1.5.3}}
+\harec{a}{1.5.3}{1.5.3}
 \label{vågpolarisation}
 \index{vågpolarisation}
 
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-14.pdf}
-  \caption{Polarisation av elektromagnetiska vågor}
-  \label{fig:BildII1-14}
-\end{figure}
+\largefig{images/cropped_pdfs/bild_2_1-14.pdf}{Polarisation av elektromagnetiska vågor}{fig:BildII1-14}
 
 Bild \ref{fig:BildII1-14} visar polarisation av elektromagnetiska vågor.
 
@@ -277,7 +257,7 @@ som filtret.
 
 När det polariserade ljuset därefter sänds mot ett efterföljande filter,
 passerar ljuset genom filtret endast när det har samma polarisering som ljuset.
-När de båda filtren är vridna 90\degree~i förhållande till varandra, passerar
+När de båda filtren är vridna \ang{90} i förhållande till varandra, passerar
 inget ljus alls.
 
 \subsubsection{Radiovågor}
@@ -291,13 +271,13 @@ polarisation.
 Överföringsförlusterna blir lägst mellan antenner med samma polarisation.
 
 I det högre frekvensområdet för radio (VHF, UHF, SHF) är polariseringsvridning
-under överföringen mindre vanlig.
+under överföringen min\-d\-re vanlig.
 Genom att utforma antennerna med horisontell, vertikal eller cirkulär (höger-
 alternativt vänstervriden) polarisation fås överföringsegenskaper för olika
 syften.
 
 Cirkulärt polariserade antenner ger lägst överföringsförluster när
-polariseringsriktningen är lika i sändar- och mottagarantennen.
+polariseringsriktningen är lika i sän\-d\-ar- och mottagarantennen.
 
 I det lägre frekvensområdet för radio (HF och lägre) utnyttjas oftast
 rymdvågsutbredning.
@@ -306,12 +286,6 @@ polariseringsvridningar som inte kan förutses.
 Då är det en fördel att kunna växla mellan antenner med olika polarisation.
 
 \subsection{Våginterferens}
-
-\begin{figure}
-  \includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_1-15.pdf}
-  \caption{Våginterferens}
-  \label{fig:BildII1-15}
-\end{figure}
 
 Bild \ref{fig:BildII1-15} visar våginterferens.
 När vågor från olika energikällor blandas med varandra (överlagras), kommer
@@ -331,3 +305,5 @@ därmed varierande tonstyrka.
 
 Detta fenomen utnyttjas bland annat i antenner för riktad sändning respektive
 mottagning av radiovågor.
+
+\mediumfig{images/cropped_pdfs/bild_2_1-15.pdf}{Våginterferens}{fig:BildII1-15}

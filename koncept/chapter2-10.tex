@@ -1,18 +1,10 @@
 \section{Värmeutveckling}
-
-\marginnote{
-HAREC a.\ref{HAREC.a.2.7}\label{myHAREC.a.2.7}
-}
-
+\harec{a}{2.7}{2.7}
 \index{värmeutveckling}
 \index{heat dissipation}
 
 \subsection{Värmeledning}
-
-\marginnote{
-HAREC a.\ref{HAREC.a.2.7.1}\label{myHAREC.a.2.7.1}
-}
-
+\harec{a}{2.7.1}{2.7.1}
 \index{värmeledning}
 \index{heat transfer}
 \index{termisk resistans}
@@ -35,18 +27,16 @@ och anges i enheten kelvin per watt.
 Temperaturen \(T_k\) för en komponent beror på medeleffekten \(P\) som den
 producerar i värme, den termiska resistansen samt den \emph{omgivande temperaturen}
 (eng. \emph{ambient temperature}) \(T_A\) enligt:
-
+%%
 \[T_k = T_A + R_\Theta \cdot P\]
-
+%%
 De termiska resistanserna för komponent, kylpasta, isolerskiva och kylfläns
 kan summeras precis som resistanser för vanliga motstånd och det
 sammanlagda värdet används sedan för att beräkna temperaturen på en
 komponent eller för att dimensionera en kylfläns.
 
 \subsection{Konvektion}
-\marginnote{
-HAREC a.\ref{HAREC.a.2.7.2}\label{myHAREC.a.2.7.2}
-}
+\harec{a}{2.7.2}{2.7.2}
 \index{konvektion}
 \index{kylfläns}
 \index{heatpipe}
@@ -92,9 +82,7 @@ transistor och kylfläns är ett annat exempel på hur dålig värmeledning skap
 problem med överhettning.
 
 \subsection{Värmealstring}
-\marginnote{
-HAREC a.\ref{HAREC.a.2.7.4}\label{myHAREC.a.2.7.4}
-}
+\harec{a}{2.7.4}{2.7.4}
 \index{värmealstring}
 
 \emph{Värmealstring} kan ske på fler ställen än i motstånd. Lite förenklat
@@ -143,30 +131,23 @@ kunna genomföra lödningen med god \emph{vätning} och därmed undvika att det
 bildas en kallödning.
 
 \subsection{Värme i transistor}
-\marginnote{
-HAREC a.\ref{HAREC.a.2.7.3}\label{myHAREC.a.2.7.3}
-}
+\harec{a}{2.7.3}{2.7.3}
 
-För att förstå värmealstring i en transistor så börjar vi med att tänka oss
-att vi har en transistor som matas med 12\,V matspänning. Vi genererar då en
-10\,Vpp (topp-topp-spänning) sinus in i en last med \SI{50}{\Omega}. Vad är effekt-
-förlusten i transistorn?
+För att förstå värmealstring i en transistor börjar vi med att tänka oss att vi
+har en transistor med \SI{12}{\volt} matningsspänning.
+Vi låter den generera en sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
+Vad är effektförlusten i transistorn?
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=.85\textwidth]{images/power1.png}
-\caption{Utspänning $V_{ut}$, Transistor-spänning $V_t$, Transistor-ström $I_t$ och transistor-effekt $P_t$ varierar med vinkel sinus-signalen för resistiv last.}
-\label{fig:power1}
-\end{center}
-\end{figure}
+\smallfig[0.5]{images/power1.pdf}{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
 
-I bild \ref{fig:power1} ser vi utsignalen \(V_ut\) som en sinus med
-amplituden 5\,V, dvs \SI{10}{Vpp}. Eftersom transistor har en vilo-spänning på
-6\,V för att få marginal mot 0\,V och +12\,V, så kommer spänningen variera
-mellan 1\,V och 11\,V och det ser man i \(V_t\) kurvan. Utgångslastens resistor
-lastar med en ström \(I_t\) som är proportionerlig mot spänningen \(V_{ut}\) på
-utgången.
-
-Effekten för transistorn \(P_t\) är sedan absolutfunktionen för strömmen gånger
-spänningen, dvs. Joules lag. Den observante ser att effekten är signifikant
-högre för andra halvan av kurvan, då man har både hög spänning och hög ström.
+I bild \ref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med
+amplituden \(10\ V_{pp}\).
+Transistorn har en vilospänning på \SI{6}{\volt} för att få marginal mot
+\SI{0}{\volt} och \SI{+12}{\volt}. Spänningen \(U_t\) varierar
+mellan \SI{1}{\volt} och \SI{11}{\volt}. I utgångslastens resistor alstras en ström \(I_t\) som är proportionerlig mot spänningen
+\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är absolutvärdet av strömmen gånger spänningen enligt Joules lag. 
+%%
+\[P_t = \lvert U_t \cdot I_t \rvert\]
+%%
+Den observante ser att effekten är signifikant högre för andra halvan av kurvan, då man har både
+hög spänning och hög ström.

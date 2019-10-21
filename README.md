@@ -1,19 +1,14 @@
 ![SSA-Akademin](ssa-akademin.png)
 
--   [LADDA NER OCH BYGG PROJEKTET](#ladda-ner-och-bygg-projektet)
--   [BIDRA TILL PROJEKTET](#bidra-till-projektet)
--   [OM SSA AKADEMIN](#om-ssa-akademin)
--   [KONTAKT](#kontakt)
+[![Byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/) [![Download-knapp](https://img.shields.io/badge/download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
 
-[![byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/)
-
-**KonCEPT för Radioamatörcertifikat** är en bok
-ursprungligen skriven av Lennart Wiberg och utgiven av 
-[Sveriges Sändareamatörer](http://ssa.se) (SSA) i syfte att utbilda nya
-radioamatörer. Den första upplagan är skriven 1997 och behöver
-därför en uppdatering och tryckas i en ny upplaga. Detta projekt,
-SSA Akademin, är bland annat till för digitalisering och uppdatering
-av KonCEPT som kommer att leda till den andra upplagan av boken.
+**KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
+Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
+syfte att utbilda nya radioamatörer.
+Den första upplagan är skriven 1997 och behöver därför en uppdatering och
+tryckas i en ny upplaga.
+Detta projekt, SSA Akademin, är bland annat till för digitalisering och
+uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 
 > :warning: **Observera:** Boken och materialet som finns att läsa här
 är ett arbetsmaterial och ska inte användas som en färdig produkt
@@ -55,13 +50,8 @@ PDF
 ---
 
 **Hämta det senaste bygget:**
-**[koncept.pdf](http://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
-([arkiv](http://akademin.ssa.se/files/koncept-pdf/))
-
-Notera att fokus för stunden ligger på innehåll och inte layout, så alla
-layoutfrågor får vänta tills dess att en preliminär layout har gjorts.
-Det finns dock gott om innehåll att granska och komma med förbättringsförslag
-på.
+**[koncept.pdf](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
+([arkiv](https://akademin.ssa.se/files/koncept-pdf/))
 
 
 BIDRA TILL PROJEKTET
@@ -70,11 +60,11 @@ BIDRA TILL PROJEKTET
 Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
-**Q: Jag kan koda och vill bidra; vad gör jag?**  
-A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ 
+**Q: Jag kan koda och vill bidra; vad gör jag?**
+A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
 instruktionerna.
 
-**Q: Jag vet inte hur man redigerar kod**  
+**Q: Jag vet inte hur man redigerar kod!**
 A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
 förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
@@ -91,7 +81,7 @@ för SSA Akademin. Vi undersöker hur och på vilka sätt utbildningen
 under SSA kan moderniseras. Med modernisering syftas här utnyttjandet av
 både digital teknik och dess möjligheter samt metoder som tidigare ej
 använts inom SSA. Vi tar fram konkreta förslag på hur moderniseringen
-ska gå till väga och genom för dem.
+ska gå till väga och genomför dem.
 
 Vårt mål är att
 

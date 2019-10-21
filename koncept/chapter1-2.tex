@@ -1,8 +1,8 @@
 \section{Elektriska kraftkällor}
-\marginnote{HAREC a.\ref{HAREC.a.1.2}\label{myHAREC.a.1.2}}
+\harec{a}{1.2}{1.2}
 
-\subsection{Elektromotorisk kraft --- EMK}
-\marginnote{HAREC a.\ref{HAREC.a.1.2.1}\label{myHAREC.a.1.2.1}}
+\subsection{Elektromotorisk kraft -- EMK}
+\harec{a}{1.2.1}{1.2.1}
 \index{elektromotorisk kraft (EMK)}
 \index{EMK}
 \index{volt (V)}
@@ -32,32 +32,40 @@ I och med att kretsen är öppen flyter det heller ingen ström genom den och d�
 är detta ett specialfall.
 
 \subsection{Inre resistans}
+\label{inre_resistans}
+\index{resistans!inre}
 
 I likhet med att komponenterna i en strömkrets har en viss resistans, har också
 en strömkälla en inre resistans.
 Den inre resistansen i en strömkälla ingår i kretsens totala resistans.
 
 \subsection{Kortslutningsström}
+
 \marginnote{\textbf{OBSERVERA:} Farliga strömmar kan uppstå om man kortsluter
   batterier eller andra spänningskällor. De kan till exempel snabbt värma upp
   smycken av metall liksom klockarmband, halskedjor och liknande. Tag av sådant
   innan du laborerar med spänningskällor eller arbetar med större batterier.}
+
+\index{kortslutningsström}
+\index{kortslutning}
+\label{kortslutningsström}
 
 Om man på kortaste väg förbinder strömkällans anslutningspoler blir kretsen
 totala resistans lika med källans inre resistans. Den kortslutningsström som då
 uppstår begränsas enbart av strömkällans polspänning och inre resistans.
 
 Eftersom den inre resistansen oftast är mycket liten blir kortslutningsströmmen
-motsvarande mycket hög.
+motsvarande mycket hög. \textbf{OBSERVERA:} den mycket höga strömmen
+vid kortsluting av potenta batterier kan bli farlig, kortslut aldrig
+ett batteri med flit. Ge akt på metallföremål nära bilbatterier och liknande.
 
-\subsection{Serie- och parallellkopplade kraftkällor}
-\marginnote{HAREC a.\ref{HAREC.a.1.2.2}\label{myHAREC.a.1.2.2}}
-\marginnote{\textbf{OBSERVERA:} Koppla inte nätanslutna spänningskällor,
-  nätaggregat, varken i parallell- eller seriekoppling utan att verifiera att de
-  är gjorda för och tål dett. Olyckliga fel kan annars uppstå som ger
-  strömrusning eller de går sönder.}
+\subsection{Serie- och paralellkopplade kraftkällor}
+\harec{a}{1.2.2}{1.2.2}
+\index{kraftkällor}
+\label{kraftkällor_serie_paralell}
 
 \subsubsection{Seriekopplade kraftkällor}
+\index{kraftkällor!seriekopplade}
 
 För att uppnå en högre total spänning (EMK) kan flera kraftkällor
 (delspänningar) kopplas i en slinga efter varandra. Detta kallas seriekoppling.
@@ -66,6 +74,7 @@ inbördes polariteter. Den totala spänningen över kopplingen är summan av de
 ingående delspänningarna, med hänsyn taget till deras polariteter.
 
 \subsubsection{Parallellkopplade kraftkällor}
+\index{kraftkällor!parallellkopplade}
 
 För att erhålla högre ström, kan flera svagare kraftkällor parallellkopplas. Vid
 parallellkoppling erhålls däremot inte högre spänning.
@@ -75,3 +84,14 @@ annars uppstår strömrusning!
 
 För minsta utjämningsström mellan parallellkopplade kraftkällor bör även deras
 polspänning och inre resistans vara så lika som möjligt.
+
+\begin{center}
+\begin{minipage}{0.19\columnwidth}
+\Huge{\fontencoding{U}\fontfamily{futs}\selectfont\char 66\relax}
+\end{minipage}
+\begin{minipage}{0.7\columnwidth}
+Parallellkoppling av kraftkällor är ofta direkt o\-läm\-p\-li\-gt eftersom det
+i praktiken är svårt att få en balans, varvid enbart den ena källan levererar.
+Det finns kraftaggregat utformade för att parallellkopplas.
+\end{minipage}
+\end{center}

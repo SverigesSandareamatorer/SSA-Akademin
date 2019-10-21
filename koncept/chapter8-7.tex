@@ -9,7 +9,8 @@ ger en uppfattning om hur stark signal man får, men även förstå de olika
 bidragen av brus som sätter det effektiva brusgolvet.
 
 \subsection{Brus}
-\textbf{HAREC a.\ref{HAREC.a.7.17}\label{myHAREC.a.7.17}, a.\ref{HAREC.a.7.18}\label{myHAREC.a.7.18}}
+\harec{a}{7.17}{7.17}
+\harec{a}{7.18}{7.18}
 \index{brus}
 \index{atmosfäriskt brus}
 \index{brus!atmosfäriskt}
@@ -36,7 +37,7 @@ Vintergatan, så det är riktningskänsligt.
 Termiskt brus är mottagarens interna brus, se \ref{termisktbrus}.
 
 \subsection{Länkbudget}
-\textbf{HAREC a.\ref{HAREC.a.7.20}\label{myHAREC.a.7.20}}
+\harec{a}{7.20}{7.20}
 \index{länkbudget}
 
 För att kunna estimera den upplevda signalkvaliteten så gör man en så kallad
@@ -49,7 +50,7 @@ En väl utförd länkbudget kan därför skapa god förståelse för länkens br
 så att förbättringar kan göras.
 
 \subsubsection{Dominant bruskälla}
-\textbf{HAREC a.\ref{HAREC.a.7.20.1}\label{myHAREC.a.7.20.1}}
+\harec{a}{7.20.1}{7.20.1}
 \index{bandbrus}
 \index{band noise}
 \index{brus!band}
@@ -71,7 +72,7 @@ den dominerande bruskällan, medan för högre band så kommer det interna
 bruset att dominera, och dämpningar i kablar bli allt mer märkbart.
 
 \subsubsection{Signal-brus-förhållande}
-\textbf{HAREC a.\ref{HAREC.a.7.1.2}\label{myHAREC.a.7.1.2}}
+\harec{a}{7.1.2}{7.1.2}
 \index{signal-brus-förhållande}
 \index{brus!signal-brus-förhållande}
 \index{S/N}
@@ -82,13 +83,14 @@ signalens brusmängd en viktig sådan relation och därför så använder man
 begreppet \emph{signal-brus-förhållande} (eng.
 \emph{signal to noise ratio (S/N)}).
 
-Signal-brus förhållandet uttrycks oftast i dB och kan enkelt räknas fram som
-skillnaden i nivå på signal och på brus, det vill säga signal minus brus,
-räknat i dB.
-Med en signalnivå på 45~dB och brusnivå på 22~dB har man således +23~dB S/N.
+Signal-brus förhållandet uttrycks oftast i \si{\decibel} och kan enkelt räknas
+fram som skillnaden i nivå på signal och på brus, det vill säga signal minus
+brus, räknat i \si{\decibel}.
+Med en signalnivå på \SI{45}{\decibel} och brusnivå på \SI{22}{\decibel} har man
+således \SI{+23}{\decibel} S/N.
 
 \subsubsection{Minimal signal-brus-förhållande}
-\textbf{HAREC a.\ref{HAREC.a.7.20.2}\label{myHAREC.a.7.20.2}}
+\harec{a}{7.20.2}{7.20.2}
 
 Det är också till stor hjälp att fort etablera det \emph{minimala
 signal-brus-förhållandet} (eng. \emph{minimum signal to noise ratio})
@@ -100,7 +102,7 @@ Har man för lågt signal-brus-förhållande mot minimum, så behöver man öka
 förstärkningen eller oftast minska förlusterna i länkbudgeten.
 
 \subsubsection{Minimal mottagen signalstyrka}
-\textbf{HAREC a.\ref{HAREC.a.7.20.3}\label{myHAREC.a.7.20.3}}
+\harec{a}{7.20.3}{7.20.3}
 
 Om den dominanta störkällan är det interna bruset och man har för lågt
 signal-brus-förhållande, måste signalstyrkan in till mottagaren ökas
@@ -110,12 +112,13 @@ Detta ger nivån för \emph{minimalt mottagen signalstyrka} (eng.
 \emph{minimum receiver signal power}) som mottagaren kräver.
 
 \subsubsection{Signaldämpning}
-\textbf{HAREC a.\ref{HAREC.a.7.1.1}\label{myHAREC.a.7.1.1}}
+\harec{a}{7.1.1}{7.1.1}
 
 Så väl kablar, filter, kopplingar och vågutbredning innebär
 \emph{signaldämpning}.
 Det innebär att man tappar energi i förhållande till den tillförda energin.
-Förhållandet mellan uttagen och inmatad energi uttrycks oftast i form av dB.
+Förhållandet mellan uttagen och inmatad energi uttrycks oftast i form av
+\si{\decibel}.
 Man ska vara noga att notera dämpningen är oftast relaterad till frekvensen,
 så den ska uppskattas eller mätas för den frekvens som avses.
 
@@ -139,41 +142,51 @@ mottagaren.
 \emph{Brusfaktor} (eng. \emph{noise factor (NF)}) ger förhållandet mellan en
 förstärkares egenbrus i förhållande till det termiska bruset för ett motstånd
 på dess ingång.
-Brusfaktor redovisas oftast i dB, som varande dB över brusgolvet.
+Brusfaktor redovisas oftast i \si{\decibel}, som varande dB över brusgolvet.
 
 En förstärkares egenbrus kommer givetvis att förstärkas, och därför kommer
-bruset på utgången vara brusfaktorn plus förstärkningen, räknat i dB.
-Exempelvis kommer en förstärkare med 4,5~dB i brusfaktor och 20~dB förstärkning
-ha brus på 24,5~dB över brusgolvet.
-En efterföljande förstärkare med 10~dB brusfaktor kommer inte signifikant
-bidra med brus, eftersom föregående steg har 14,5~dB högre brus än egenbruset.
+bruset på utgången vara brusfaktorn plus förstärkningen, räknat i \si{\decibel}.
+Exempelvis kommer en förstärkare med \SI{4,5}{\decibel} i brusfaktor och
+\SI{20}{\decibel} förstärkning ha brus på \SI{24,5}{\decibel} över brusgolvet.
+En efterföljande förstärkare med \SI{10}{\decibel} brusfaktor kommer inte
+signifikant bidra med brus, eftersom föregående steg har \SI{14,5}{\decibel}
+högre brus än egenbruset.
 För detta fall är den första förstärkaren dominant.
 
 Eftersom kabeldämpning kan vara signifikant, så kommer signalen dämpas genom
 kabeln.
-Givet att vi har 15~dB dämpning i kabeln, en signal 40~dB över brusgolvet och
-en 20~dB förstärkare med brusfaktor 4,5~dB, var ska vi sätta förstärkaren?
+Givet att vi har \SI{15}{\decibel} dämpning i kabeln, en signal
+\SI{40}{\decibel} över brusgolvet och en \SI{20}{\decibel} förstärkare med
+brusfaktor \SI{4,5}{\decibel}, var ska vi sätta förstärkaren?
 
 Om förstärkaren sitter efter kabeln så kommer signalen att dämpas först i
-kabeln, bruset kommer att läggas på och sedan kommer det att förstärkas 20~dB.
-Det ger 40~dB minus 15~dB plus 20~dB för signalen, det vill säga 45~dB.
-För bruset får vi 4,5~dB plus 20~dB det vill säga 24,5~dB.
-För detta fallet får vi ett signal-brus-förhållande på 45~dB minus 24,5~dB,
-det vill säga 20,5~dB, givet att det är det interna bruset som är dominerande.
+kabeln, bruset kommer att läggas på och sedan kommer det att förstärkas
+\SI{20}{\decibel}.
+Det ger \SI{40}{\decibel} minus \SI{15}{\decibel} plus \SI{20}{\decibel} för
+signalen, det vill säga \SI{45}{\decibel}.
+För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} det vill säga
+\SI{24,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
+\SI{24,5}{\decibel}, det vill säga \SI{20,5}{\decibel}, givet att det är det
+interna bruset som är dominerande.
 
 Om förstärkaren sitter före kabeln så kommer signalen först förstärkas och
 sedan dämpas i kabeln.
-Det ger 40~dB plus 20~dB minus 15~dB för signalen, det vill säga 45~dB.
-För bruset får vi 4,5~dB plus 20~dB minus 15~dB det vill säga 9,5~dB.
-För detta fallet får vi ett signal-brus-förhållande på 45~dB minus 9,5~dB,
-det vill säga 35,5~dB, givet att det är det interna bruset som är dominerande.
+Det ger \SI{40}{\decibel} plus \SI{20}{\decibel} minus \SI{15}{\decibel} för
+signalen, det vill säga \SI{45}{\decibel}.
+För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} minus
+\SI{15}{\decibel} det vill säga \SI{9,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
+\SI{9,5}{\decibel}, det vill säga \SI{35,5}{\decibel}, givet att det är det
+interna bruset som är dominerande.
 
 Med detta exempel ser vi hur en länkbudget hjälper oss att få
-signal-brus-förhållandet att gå från 20,5~dB till 35,5~dB enbart genom att
-ändra placeringen av förstärkaren i systemet.
+signal-brus-förhållandet att gå från \SI{20,5}{\decibel} till
+\SI{35,5}{\decibel} enbart genom att ändra placeringen av förstärkaren i
+systemet.
 
 \subsubsection{Vägförlust}
-\textbf{HAREC a.\ref{HAREC.a.7.20.4}\label{myHAREC.a.7.20.4}}
+\harec{a}{7.20.4}{7.20.4}
 \index{vägförlust}
 \index{path loss}
 \index{fresnelzon}
@@ -183,14 +196,14 @@ Den dämpning som signalen har i fri-rymds förlust, på grund av dess avtagande
 fältstyrka kallas även för \emph{vägförlust} (eng. \emph{path loss}).
 Fri-rymds förlusten beror förenklat på frekvens och avstånd, en enkel model
 \cite[\S 19.1.2]{ARRLHDB2015}:
-
-\(L_{fs} = 32.45 + 20\log d + 20\log f\)
-
-där \(d\) är avståndet i km och \(f\) är frekvensen i MHz och det ger
-\(L_{fs}\) är vägförlusten i dB.
-Fri-rymds förlusten avtar med kvadraten på avståndet, det vill säga 6~dB på
-dubblat avstånd och det är i allmänhet den dominerande effekten när man lämnat
-antennens närfält.
+%%
+\[L_{fs} = 32.45 + 20\log d + 20\log f\]
+%%
+där \(d\) är avståndet i \si{\kilo\metre} och \(f\) är frekvensen i
+\si{\mega\hertz} och det ger \(L_{fs}\) är vägförlusten i \si{\decibel}.
+Fri-rymds förlusten avtar med kvadraten på avståndet, det vill säga
+\SI{6}{\decibel} på dubblat avstånd och det är i allmänhet den dominerande
+effekten när man lämnat antennens närfält.
 
 Ytterligare förluster kan förekomma på grund av vegetation, delvis täckt
 \emph{Fresnelzon}, studsar mot jonosfär med mera.
@@ -201,7 +214,7 @@ således så om den regionen är påverkad av hinder så kommer signalen dämpas
 märkbart.
 
 \subsubsection{Antennförstärkning och kabelförluster}
-\textbf{HAREC a.\ref{HAREC.a.7.20.5}\label{myHAREC.a.7.20.5}}
+\harec{a}{7.20.5}{7.20.5}
 \index{antennvinst}
 \index{antenn!vinst}
 \index{antennförstärkning}
@@ -227,9 +240,8 @@ vilken frekvens man använder.
 Som regel har högre frekvenser högre dämpning.
 Både storleken på kabeln och val av dielektrium påverkar förlusten i kabeln.
 
-
 \subsubsection{Minsta sända signalstyrkan}
-\textbf{HAREC a.\ref{HAREC.a.7.20.6}\label{myHAREC.a.7.20.6}}
+\harec{a}{7.20.6}{7.20.6}
 
 En sändare har en varierande uteffekt, och eftersom man försöker åstadkomma en
 uppskattning på sämsta signal-brus-förhållandet så är det inte maxeffekten

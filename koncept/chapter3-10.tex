@@ -1,5 +1,5 @@
 \section{Digital signalbehandling}
-\textbf{HAREC a.\ref{HAREC.a.3.8}\label{myHAREC.a.3.8}}
+\harec{a}{3.8}{3.8}
 \index{digital signalbehandling}
 \index{digital signal processing (DSP)}
 
@@ -16,7 +16,7 @@ Dock är begreppet vidare än så, och vilken annan form av digital processing �
 också en digital signalprocessing.
 
 \subsection{Digitala filter}
-\textbf{HAREC a.\ref{HAREC.a.3.8.1}\label{myHAREC.a.3.8.1}}
+\harec{a}{3.8.1}{3.8.1}
 \label{digitala filter}
 \index{digitala filter}
 \index{filter!digitala}
@@ -53,7 +53,7 @@ summerade svaret återmatas till ingången och adderas där innan
 fördröjningskedjan.
 Detta kallas för Infinite Impulse Response (IIR) filter, för att det i likhet
 med FIR-filter har en impulsrespons, men eftersom den återmatar så kan denna
-rent teoretiskt pågå i all oändligthet, det vill säga engelskans infinite.
+rent teoretiskt pågå i all oändlighet, det vill säga engelskans infinite.
 I praktiken designas filter så att de inte pågår i evinnerlig tid utan, så att
 säga ringer ut.
 Själva arkitekturen är dock väldigt lämplig att använda för många ändamål.
@@ -64,7 +64,7 @@ filtret är, samt av koefficienterna som ger responsen hos filtret.
 Design av filterkoefficienter skiljer markant för IIR och FIR, och det finns
 både enkla och avancerade verktyg för det.
 
-Ett specialfall på FIR filter är när koefficienterna är speglade runt mitten.
+Ett specialfall på FIR-filter är när koefficienterna är speglade runt mitten.
 Då kan man matematiskt visa att de har egenskapen av linjär fas (eng. linear
 phase filter), och de har enbart påverkan på amplituden.
 En fördel med sådana filter, som är fas-linjära, är att olika frekvensers
@@ -72,8 +72,8 @@ signal upplever samma grupp-fördröjning och därmed inte förskjuts i förhål
 till varandra.
 Detta brukar bland annat öka taltydligheten.
 
-\subsection{Fouriertransform -- FFT}
-\textbf{HAREC a.\ref{HAREC.a.3.8.2}\label{myHAREC.a.3.8.2}}
+\subsection{Fouriertransform (FFT)}
+\harec{a}{3.8.2}{3.8.2}
 \index{Fouriertransform}
 \index{Fourier!DFT}
 \index{Fourier!FFT}
@@ -97,14 +97,14 @@ För att reducera beräkningsmängden kan man givetvis beräkna DFT bara för et
 fåtal frekvenser, men när det inte är applicerbart behöver man agera lite
 smartare.
 Så som DFT är formulerat, så ger matematiken flera genvägar, som gör att man
-på flera olika sätt kan slå samman beräkningarna och göra del-beräkningar som
+på flera olika sätt kan slå samman beräkningarna och göra delberäkningar som
 kan användas av flera andra steg, och på så sätt minska beräkningsbördan.
 Detta kan sedan göras hierarkiskt, så att en rekursiv form kan göras.
 Det finns flera metoder att göra detta på, men de sammanfattas med som en snabb
 DFT, det vill säga \emph{Fast Fourier Transform (FFT)}, som även den är diskret.
 En nackdel med FFT är man ofta hamnar på jämna tvåpotenser i antalet sampel,
 till exempel 512, 1024, 2048, 4096 sampel och frekvenser.
-Man har därmed offrat lite av DFTns generalitet.
+Man har därmed offrat lite av DFT:ns generalitet.
 
 Det finns mer avancerade formuleringar av FFT som utnyttjar ett eller annat
 trick för att jämna ut till fler storlekar, genom att inte bara göra
@@ -120,8 +120,8 @@ lägga flera av dessa efter varandra kan man få de nu mer allt vanligare
 spektrumhistogrammen även kända som vattenfallsplottar då de påminner om ett
 vattenfall med sina vertikala streck.
 
-\subsection{Direct Digital Synthesis -- DDS}
-\textbf{HAREC a.\ref{HAREC.a.3.8.3}\label{myHAREC.a.3.8.3}}
+\subsection{Direct Digital Synthesis (DDS)}
+\harec{a}{3.8.3}{3.8.3}
 \index{Direct Digital Synthesis (DDS)}
 \index{DDS}
 \index{fasackumulator}
@@ -145,7 +145,7 @@ Frekvensen styrs helt enkelt med ett värde som anger hur mycket fasen ska
 Frekvensen blir därför helt linjär, så när som på steg-upplösningen, och kan
 varieras fort och fritt.
 Upplösningen avgörs därför av hur många bitar bred som hela ackumulatorn har.
-Högsta frekvensen blir \emph{Nykvist-frekvensen}, det vill säga halva
+Högsta frekvensen blir \emph{Nyquistfrekvensen}, det vill säga halva
 samplingsfrekvensen och lägsta blir den som minst signifikanta biten ger.
 
 Den utgående fasen ur själva fasackumulatorn vågformas sedan om till sinus,

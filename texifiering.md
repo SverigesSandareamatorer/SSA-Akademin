@@ -1,18 +1,18 @@
-# Texifiering av OCR:ad text
+# Typsättning av OCR:ad text
 
 Det är en hel del jobb för att konvertera den OCR:ade texten från Koncept till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
 
-1.  OCRningen feltolkar flera tecken, så den har tolkat I ("Ivar") som l ("Ludvig"), 
-    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv. 
-    Därför behöver man hela tiden vara uppmärksam. I ("Ivar") har även blivit 
-    1 ("ett") på en del ställen där siffror förekommer. Många av de grekiska tecknen 
+1.  OCRningen feltolkar flera tecken, så den har tolkat I (”Ivar”) som l (”Ludvig”),
+    vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv.
+    Därför behöver man hela tiden vara uppmärksam. I (”Ivar”) har även blivit
+    1 (”ett”) på en del ställen där siffror förekommer. Många av de grekiska tecknen
     blir fel, så man får kontrollera med orginalet och justera.
 
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
     fel ordning. Man får vara uppmärksam på det och flytta runt text.
 
-3.  Sid-numrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
+3.  Sidnumrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
     Vi låter det ligga kvar tills vi verkligen processar den delen av texten,
     eftersom det blir lättare att matcha mot orignalet. Sen tar vi bara
     bort det.
@@ -33,9 +33,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Denna regel handlar om att förändringar och uppdateringar i meningar skall
     ge rimligt läsbara diffar.
 
-6.  För att förenkla markerar vi ~~`\part{}` och~~ `\chapter{}` så att det går
-    att hitta delarna.
-    Numer är \part{} borttaget då det ej fyller sitt syfte längre i nya utgåvan.
+6.  För att förenkla markerar vi kapitlen med `\chapter{}`.
 
 7.  När man processar en text så använder man `\section{}` för 1.1 nivån,
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
@@ -61,28 +59,33 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \end{quote}
     ```
 
-10. Alla formler latexas och kvarvarande "line-noise" tas bort.
+10. Alla formler typsätts och kvarvarande ”line-noise” tas bort.
 
-11. Formler med enhetsangivelser och liknande referenser i text skall också
-    latexas till formler. T.ex. `\(1\ joule\ [J]\)`. Notera hur mellanslagen är
-    slashade för att det skall se bra ut i slutresultatet. Ha alltid mellanslag
-    mellan värde och dess prefix och enhet.
+11. Formler med enhetsangivelser och liknande referenser i text ska också
+    typsättas till formler med hjälp av siunitx. T.ex. `\SI{1}{\joule}`.
 
-    Kommentar: I matematiska formler där enheter ingår bör man
-    omgärda enheter och storheter med `\mathrm{}` då det är bara
-    variabler som skall sättas kursivt egentligen. Om man vill undvika
-    radbrytning mellan mätetal och enhet kan man använda sig av
-    tecknet `~` (tilde) i löpande text, exempelvis *"...dipolantennen har
-    2,15~dB mer förstärkning än en tänkt isotrop antenn som strålar
-    lika i alla riktningar..."*. Slutligen
+    Tal som är längre eller har högre precision än "vardagliga tal" skall
+    typsättas med \num{250000} som exempel. Dessa kommer då typsättas korrekt
+    så att de får rätt avstånd och separation.
 
-12. Tabeller latexas givetvis.
+<<<<<<< Updated upstream
+    Enheter typsätts t.ex. med \si{kg.m/s^2} för att få kilogrammeter per sekund-
+    kvadrat. För en komplett lista av enheter som siunitx förstår, se paketets
+    dokumentation.
+
+    Kommentar: I matematiska formler där enheter ingår skall man
+    omgärda enheter och storheter med '\mathrm{}' då det är bara
+    variabler som ska sättas kursivt.
+
+=======
+>>>>>>> Stashed changes
+12. Tabeller typsätts givetvis.
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
-    eller efter det refererande stycket) kan man köra longtable
-    på. Slå upp det på webben eller i hundboken. Longtable kan
-    sidbrytas snyggt.
+    eller efter det refererande stycket) kan man köra xtabular
+    på. Slå upp det på webben eller i hundboken. Xtabular kan
+    sidbrytas snyggt, även i 2-kolumner.
 
 13. Avsnitt markeras med vilken eller vilka HAREC krav som de uppfyller.
     `\textbf{HAREC a.\ref{HAREC.a.1.1.1}\label{myHAREC.a.1.1.1}}`
@@ -112,9 +115,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \label{fig:BildII1-15}
     \end{center}
     \end{figure}
-    
+
     Bild \ref{fig:BildII1-15}
-    
+
     \begin{figure*}[h]
     \begin{center}
     \includegraphics[width=14cm]{images/bild_2_1-15}
@@ -122,10 +125,10 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \label{fig:BildII1-15}
     \end{center}
     \end{figure*}
-    
+
     Bild \ref{fig:BildII1-15}
     ```
-    
+
 17. Kommentarer vi har som del av den editoriella bearbetningen lägger vi
     synligt i texten med följande format:
 
@@ -135,30 +138,27 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
     Alla TODOs skall åtgärdas innan release.
 
-    En sammanställning av alla TODOs görs med make TODOs som producerar filen 
-    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall 
+    En sammanställning av alla TODOs görs med make TODOs som producerar filen
+    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall
     åtgärdas innan release.
 
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
     att läsa.
 
-19. Lägg in \, som tusentalsavskiljare/
+19. Tusentalsavskiljare läggs in med `\num{}` t.ex. `\num{9000000}`.
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
     De skall i möjligaste mån integreras med själva texten. På samma sätt skall
     även tabeller refereras från texten.
-    "I bild 3.16 illustreras..."
-    "... illustreras av bild 3.17"
+    ”I bild 3.16 illustreras...”
+    ”... illustreras av bild 3.17”
 
 21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
-    utan läggas in som \(\mu\) i löpande text och \mu (notera mellanslag efter
+    utan läggas in som `\(\mu\)` i löpande text och \mu (notera mellanslag efter
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
 
-22. Tecknet för grader ° skall kodas som `\degree`.
-    Skall det vara mellanslag efter, så behövs ofta ett hårt mellanslag med `~`
-    för annars kommer mellanslaget kernas bort.
-    För grader celsius behövs ett mellanslag innan C, dvs. `\degree C`.
+22. Grader kodas med `\ang{}` t.ex. `\ang{90}`.
 
 23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
@@ -173,15 +173,21 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
     Symboler läggs i gruppen symboler, anger symbolen först och sedan de
     representerar, men indexeras givetvis separat också:
+    ```latex
     \index{kapacitans}
     \index{symbol!C kapacitans}
+    ```
 
     Enheter indexeras givetvis med sin förkortning inom parantes både separat
     och i gruppen enheter:
+    ```latex
     \index{farad (F)}
     \index{enheter!farad (F)}
-    
-    Enheter skrivs ut med liten begynnelsebokstav. Skriv "hertz" och "volt" i stället för "Hertz" och "Volt".
+    ```
+
+    Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
+    stället för ”Hertz” och ”Volt” om man inte refererar till namnen på de personer
+    som gett namn till enheterna.
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
@@ -213,9 +219,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
 27. Konstanter skall anges med full definition och approximativt värde.
-    Övrig användning kan gott använda approximation av adekvat precission.
+    Övrig användning kan gott använda approximation av adekvat precision.
     T.ex. där ljusets hastighet används skall den i SI-systemet angivna
-    definitionen användas, men även approximationen av 3*10^8.
+    definitionen användas, men även approximationen av 3*10^8, 300 000 km/s.
 
 28. Förkortningar skall anges som brukligt inom parantes efter sin uttydelse
     där de definieras, vilket i möjligaste mån är första gången de används,
@@ -231,14 +237,15 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 29. Tankstreck, kodas med `--`, skall användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i sin helhet,
-    utom i parenteser och tabeller.
+30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
+    sin helhet, utom i parenteser och tabeller.
 
-31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med siffror.
+31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
+    siffror.
 
-32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
+32. Indentering föreskrivt som två mellanslag (mjuk tab).
 
-33. Undvik sammansättningar med bindestreck, skriv hellre ihop. 
-    Skriv "satellitmottagare" i stället för "satellit-mottagare". 
-    Bindestreck ska dock användas i sammansättningar med förkortningar;
-    skriv "FM-detektor" istället för "FM detektor".
+33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
+    "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
+    användas i sammansättningar med förkortningar; skriv "FM-detektor" istället
+    för "FM detektor".

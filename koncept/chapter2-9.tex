@@ -36,18 +36,17 @@ Metoden, som kallas planarteknik, medger att många komponenter kan få plats p�
 samma platta.
 
 Den snabba utvecklingen av produktionsmetoder för integrerade kretsar gör
-alltmer avancerade system möjliga och dessutom på allt mindre utrymme. Med
-avseende på integrationsgrad används följande begrepp:
+alltmer avancerade system möjliga och dessutom på allt mindre utrymme.
+Med avseende på integrationsgrad används följande begrepp.
 
-\begin{table}[h]
-	\centering
-\begin{tabular}{rl}
-	 SSI & Small Scale Integration innebär något \num{10}-tal halvledare på samma chip.  \\
-	 MSI & Medium Scale Integration innebär något \num{100}-tal halvledare på ett chip.  \\
-	 LSI & Large Scale integration innebär något \num{10000}-tal halvledare på ett chip. \\
-	VLSI & Very Large Scale Integration innebär \num{100000} eller fler halvledare.
+\begin{center}
+\begin{tabular}{lp{6cm}}
+SSI & Small Scale Integration innebär något 10-tal halvledare på samma chip. \\
+MSI & Medium Scale Integration innebär något 100-tal halvledare på ett chip. \\
+LSI & Large Scale integration innebär något 10000-tal halvledare på ett chip. \\
+VLSI & Very Large Scale Integration innebär 100000 eller fler halvledare. \\
 \end{tabular}
-\end{table}
+\end{center}
 
 \subsection{Olika slags integrerade kretsar}
 
@@ -126,11 +125,10 @@ För djupare studium hänvisas till andra läromedel samt till
 leverantörskataloger.
 
 \section{Operationsförstärkare}
-\marginnote{
-HAREC a.\ref{HAREC.a.2.8.3}\label{myHAREC.a.2.8.3}
-}
+\harec{a}{2.8.3}{2.8.3}
 \index{operationsförstärkare}
 \index{op-amp}
+\label{op-amp}
 
 \emph{Operationsförstärkare} (eng. \emph{operational amplifier}), ofta kallad
 för \emph{op-amp} är en integrerad kretstyp som har hög förstärkning.
@@ -198,11 +196,25 @@ En enkel variant av buffertförstärkaren fås när man kopplar in en
 spänningsdelare mellan utgången och den negativa ingången, så som illustreras i
 bild \ref{fig:BildII2-46}.
 
-\begin{marginfigure}
-	\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-46.pdf}
-	\caption{Icke-inverterande förstärkare}
-	\label{fig:BildII2-46}
-\end{marginfigure}
+\smalltikz{
+ \begin{circuitikz}
+   \draw
+   % op-amp
+   (0, 0) node[op amp,yscale=-1] (opamp) {}
+   
+   % Input through R1 to op-amp -
+   (opamp.+) to (-2, 0.5) to[short,o-] (-2, 0.5)
+   
+   % Feedback resistor and output
+   (opamp.-) to[short,-] ++(0,-1) coordinate (leftC)
+   to[R=$R_2$] (leftC -| opamp.out)
+   to[short,-*] (opamp.out) to [short,-o] (1.5,0)
+
+   % Opamp - ground reference
+   (opamp.-) -- (-1.192,-1.5) to [R,l=$R_1$] (-1.192,-3) to (-1.192,-3) node[ground]{}
+   ;
+ \end{circuitikz}
+}{Icke inverterande förstärkare}{fig:BildII2-46}
 
 Om förhållandet i spänningsdelaren är 1:10 kommer spänningen på den negativa
 ingången att vara en tiondel av spänningen på utgången.
@@ -212,10 +224,9 @@ ingången.
 Genom att variera förhållandet i spänningsdelaren kan man kontrollera
 förstärkningen hos kretsen.
 Förstärkningen blir:
-\[G = 1+ \frac{R_2}{R_1}\]
-
-\marginnote{En inverternade förstärkare lämnar utgången i motfas till ingången. När ingången ökar så minskar utgången och vice versa. En icke-inverterande förstärkare blir en förstärkare där utgången följer ingången (om än förstärkt) och när ingången ökar så ökar även utgången och tvärt om.}
-
+%%
+\[G = 1+ \dfrac{R_2}{R_1}\]
+%%
 Genom att koppla en kondensator parallellt över återkopplingsmotståndet
 (\(R_2\) i bild \ref{fig:BildII2-46}) kan man skapa en bandbreddsbegränsning
 för förstärkaren.
@@ -234,16 +245,33 @@ frekvenser.
 
 Kopplingen i bild \ref{fig:BildII2-47} ger en negativ förstärkning.
 
-\begin{marginfigure}
-	\includegraphics[width=\textwidth]{images/cropped_pdfs/bild_2_2-47.pdf}
-	\caption{Inverterande förstärkare}
-	\label{fig:BildII2-47}
-\end{marginfigure}
+\smalltikz{
+  \begin{circuitikz}
+    \draw
+    % op-amp
+    (0, 0) node[op amp] (opamp) {}
+    
+    % Input through R1 to op-amp -
+    (opamp.-) to[R,l_=$R_1$] (-3, 0.5) to[short,o-] (-3, 0.5)
+    
+    % Feedback resistor and output
+    (opamp.-) to[short,*-] ++(0,1) coordinate (leftC)
+    to[R=$R_2$] (leftC -| opamp.out)
+    to[short,-*] (opamp.out) to [short,-o] (1.5,0)
 
-Nu kommer op-ampen att balansera den negativa ingången så att den är på samma
-potential som jord, detta kallas för \emph{virtuell jord}.
-Strömmen kommer gå från ingången till utgången, men ingången kommer se lasten
-av ingångsmotståndet \(R_1\) och utgången kommer mata \(R_2\) mot jord.
-Förstärkningen kommer vara negativ och proportionell mot motståndens inbördes
-relation, dvs.:
-\[G = -\frac{R_2}{R_1}\]
+    % Opamp + ground reference
+    (opamp.+) -- (-1.2,-0.5) to (-1.2,-1.0) node[ground]{}
+    ;
+  \end{circuitikz}
+}{Inverterande förstärkare}{fig:BildII2-47}
+
+Operationsförstärkaren kommer att balansera den negativa ingången så att den
+är på samma potential som jord.
+Detta kallas för \emph{virtuell jord}.
+Strömmen kommer att gå från ingången till utgången, men ingången kommer se
+lasten från ingångsmotståndet \(R_1\) och utgången kommer att mata \(R_2\) mot
+jord.
+Förstärkningen kommer att vara negativ och proportionell mot kvoten mellan
+motståndsvärdena:
+%%
+\[G = -\dfrac{R_2}{R_1}\]
