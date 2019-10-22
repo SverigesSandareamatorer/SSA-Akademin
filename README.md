@@ -33,7 +33,7 @@ koncept  .2.0.0  -RC.1  +b12345 .8c04343 .pdf
           │ │ │    │ └ Version av pre relase
           │ │ │    └ Pre release
           │ │ └ Ej tryckt uppdatering
-          │ └ Tryckning
+          │ └ Tryckning (med 1:a tryckning = 0)
           └ Upplaga
  -->
 

@@ -1,4 +1,4 @@
-# Texifiering av OCR:ad text
+# Typsättning av OCR:ad text
 
 Det är en hel del jobb för att konvertera den OCR:ade texten från KonCEPT till
 någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler.
@@ -12,7 +12,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
     fel ordning. Man får vara uppmärksam på det och flytta runt text.
 
-3.  Sid-numrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
+3.  Sidnumrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
     Vi låter det ligga kvar tills vi verkligen processar den delen av texten,
     eftersom det blir lättare att matcha mot orignalet. Sen tar vi bara
     bort det.
@@ -59,12 +59,20 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \end{quote}
     ```
 
-10. Alla formler latexas och kvarvarande ”line-noise” tas bort.
+10. Alla formler typsätts och kvarvarande ”line-noise” tas bort.
 
-11. Formler med enhetsangivelser och liknande referenser i text ska latexas med
-    hjälp av siunitx. T.ex. `\SI{15}{\joule}`.
+11. Formler med enhetsangivelser och liknande referenser i text ska också
+    typsättas till formler med hjälp av siunitx. T.ex. `\SI{1}{\joule}`.
 
-12. Tabeller latexas givetvis.
+    Tal som är längre eller har högre precision än "vardagliga tal" skall
+    typsättas med \num{250000} som exempel. Dessa kommer då typsättas korrekt
+    så att de får rätt avstånd och separation.
+
+    Enheter typsätts t.ex. med \si{kg.m/s^2} för att få kilogrammeter per sekund-
+    kvadrat. För en komplett lista av enheter som siunitx förstår, se paketets
+    dokumentation.
+
+12. Tabeller typsätts givetvis.
 
     Kommentar: Tabeller som riskerar att sidbrytas men som man
     inte vill göra en float av (för det blir meckigt om de hamnar före
@@ -171,7 +179,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     ```
 
     Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
-    stället för ”~~Hertz~~” och ”~~Volt~~”.
+    stället för ”Hertz” och ”Volt” om man inte refererar till namnen på de personer
+    som gett namn till enheterna.
 
 24. Referenser mellan olika delar görs genom att sätta en label och sedan
     referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
@@ -205,9 +214,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
 27. Konstanter skall anges med full definition och approximativt värde.
-    Övrig användning kan gott använda approximation av adekvat precission.
+    Övrig användning kan gott använda approximation av adekvat precision.
     T.ex. där ljusets hastighet används skall den i SI-systemet angivna
-    definitionen användas, men även approximationen av 3*10^8.
+    definitionen användas, men även approximationen av 3*10^8, 300 000 km/s.
 
 28. Förkortningar skall anges som brukligt inom parantes efter sin uttydelse
     där de definieras, vilket i möjligaste mån är första gången de används,
@@ -229,7 +238,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
     siffror.
 
-32. LaTeX skrivs med två mellanslag som tab (mjuk tab).
+32. Indentering föreskrivt som två mellanslag (mjuk tab).
 
 33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
     "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
