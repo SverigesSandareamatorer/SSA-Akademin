@@ -357,7 +357,52 @@ eventuellt kan grundas på höljets utseende och dimensioner.
 Resistorer tillverkas vanligen med standardiserade värden från en talserie.
 
 \subsection{Märkning av resistorer}
+\index{färgmärkning}
+\index{färgmärkning!resistor}
+\index{färgmärkning!kapacitans}
+\label{färgmärkning}
 
 Resistorer märks med hjälp av siffror och bokstäver eller med en färgkod så att
 resistorns huvuddata kan avläsas. Ofta finns märkningen förklarad i 
 komponentleverantörernas kataloger.
+
+\subsubsection{Färgmärkning av resistorer}
+
+Ett vanligt sätt att märka resistorer är genom att ha färger på ringar
+runt kroppen. Detta var vanligare på den tiden man hade hålmonterade
+resistorer och i dag med ytmonterade brukar man i stället använda
+siffror tryckta på motståndskroppen.
+
+Färgkoden är dock bra att känna till för att kunna identifiera resistorer
+och ibland även andra komponenter.
+
+Färgkoden består av tre olika scheman, de kan finnas 4, 5 eller 6 band
+runt komponenten. första banden ger värdet hos komponenten och det två sista
+banden har särskild betydelse, det näst sista är en multiplikator och det
+sista bandet är toleransen. Ofta är det sista bandet också tryckt med en 
+viss distans från de andra banden.
+
+Om färgkoden har n stycken band kan man beskriva den med tabellen nedan.
+
+\begin{table}[H]
+\begin{tabular}{lrrr}
+	\textbf{Färg}    & \textbf{Sifferkod} &     \textbf{Multiplikator} &     \textbf{Tolerans} \\ \hline \hline
+	Svart   &         0 &    $10^0$ &              \\ \hline
+	Brun    &         1 &    $10^1$ &    $\pm 1\%$ \\ \hline
+	Röd     &         2 &    $10^2$ &    $\pm 2\%$ \\ \hline
+	Orange  &         3 &    $10^3$ &              \\ \hline
+	Gul     &         4 &    $10^4$ &              \\ \hline
+	Grön    &         5 &    $10^5$ &  $\pm 0,5\%$ \\ \hline
+	Blå     &         6 &    $10^6$ & $\pm 0,25\%$ \\ \hline
+	Violett &         7 &    $10^7$ &  $\pm 0,1\%$ \\ \hline
+	Grå     &         8 &    $10^8$ & $\pm 0,05\%$ \\ \hline
+	Vit     &         9 &    $10^9$ &              \\ \hline
+	Guld    &           & $10^{-1}$ &    $\pm 5\%$ \\ \hline
+	Silver  &           & $10^{-2}$ &   $\pm 10\%$ \\ \hline
+	Saknas  &           &           &   $\pm 20\%$ \\ \hline
+\end{tabular}
+\end{table}
+
+Exempel: Gul, violett, orange, silver. Första är siffran 4, nästa är siffran 7 och den tredje orange är multiplikatorn $10^3$. Resultatet blir då 47 kOhm. Till sist har vi toleransen som är silver och innebär $\pm 10\%$.
+
+
