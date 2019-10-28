@@ -67,6 +67,7 @@ som jordens magnetfält.
 
 \subsection{Magnetiska fält omkring strömbanor}
 \harec{a}{1.4.1}{1.4.1}
+\label{magfält_ström}
 
 Bild \ref{fig:BildII1-8} visar magnetiska fält omkring strömledare.
 Omkring varje ledare, som det flyter en elektrisk ström igenom, alstras det ett
@@ -155,22 +156,29 @@ Med en svag ström / låg spänning genom spolen i manöverkretsen kan man med
 reläets arbetskontakt styra starkare ström / högre spänning i huvudkretsen.
 
 \subsection{Magnetisk fältstyrka}
+\label{magnetisk_fältstyrka}
 \index{magnetisk fältstyrka}
 \index{symbol!\(H\) magnetisk fältstyrka}
 
-Som magnetisk fältstyrka förstår man flödet per meter fältlinje, det vill säga
+Som magnetisk fältstyrka förstår man flödet per meter fältlinje, det vill säga:
 
 \begin{equation*}
   H = \frac{\Theta}{l} = \frac{I \cdot N}{l} \\
 \end{equation*}
 %
-\begin{align*}
-  H =& \frac{\Theta}{l} = \frac{I \cdot N}{l} \\
-  H\ &\text{[A/m]} \\
-  I\ &\text{[A]} \\
-  N\ &\text{[varvtal]} \\
-  l\ &\text{[fältlinjelängd]}
-\end{align*}
+\begin{equation*}
+  H = \frac{\Theta}{l} = \frac{I \cdot N}{l} \\
+\end{equation*}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{rl}
+	$H$ & [A/m]\\
+	$I$ & [A]\\
+	$N$ & varvtal\\
+	$l$ & fältlinjelängd\\
+\end{tabular}
+\end{table}
 
 \emph{Magnetisk fältstyrka uttrycks således som ampere per meter flödesväg.}
 
@@ -201,6 +209,9 @@ Permeabilitetstalet kan då skrivas
 %%
 \[B = \mu_0 \cdot \mu_r \cdot H\]
 %%
+
+\newpage %layout 
+
 \subsection{Magnetiskt flöde}
 \index{magnetiskt flöde}
 \index{symbol!\(\Phi\) magnetiskt flöde}

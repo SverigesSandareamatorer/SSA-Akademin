@@ -24,6 +24,7 @@ Den signal som informationen överförts till kallas \emph{modulerad signal},
 \emph{bärvåg} eller \emph{huvudbärvåg}.
 
 \subsection{Modulationssystem}
+\label{modulationssystem}
 
 Den största gruppen av modulationssystem är definierad med avseende på hur
 huvudbärvågen är modulerad.
@@ -33,6 +34,7 @@ Därutöver finns system för pulsmodulation.
 
 \subsection{Sändningsslag}
 \index{sändningsslag}
+\label{sändningsslag}
 
 Sätten att modulera kallas \emph{sändningsslag}.
 Gemensamt för sändningsslagen är att en givare -- det kan vara en mikrofon, en
@@ -53,6 +55,7 @@ Det innebär att bärvågen måste moduleras av en underbärvåg och att denna
 motsvarar lufttrycksvariationerna i ljudet.
 
 \subsection{Kännetecken för modulerade signaler}
+\label{kännetecken_modulerade_signaler}
 \harec{a}{1.8.5}{1.8.5a}
 \index{amplitudmodulation}
 \index{frekvensmodulation}
@@ -70,7 +73,7 @@ varje tidpunkt motsvarar den modulerande signalens variation.
 Vid \emph{frekvensmodulation} påverkas huvudbärvågens frekvens, så att den i
 varje tidpunkt motsvarar den modulerande signalens variation.
 
-Vid \emph{fasmodulation}, som är besläktad med fre\-kvens\-mod\-ul\-ati\-on, påverkas i
+Vid \emph{fasmodulation}, som är besläktad med frekvensmodulation, påverkas i
 stället för frekvensen huvudbärvågens fasläge i förhållande till en
 referenssignal, så att fasläget i varje tidpunkt motsvarar den modulerande
 signalens variation.
@@ -80,7 +83,7 @@ vinkelmodulation, eftersom fasvinkeln mellan bärvågens spänning och ström
 varierar i båda fallen.
 
 Vid \emph{pulsmodulation} används pulståg (korta upprepade bärvågspaket), till exempel
-pulsamplitud-, puls\-läng\-ds-, pulsläges- och pulskodmodulation.
+pulsamplitud-, pulslängds-, pulsläges- och pulskodmodulation.
 Pulskodmodulation används till exempel vid samtidig överföring av flera telesamtal på
 samma linje, bärvåg etc.
 
@@ -88,6 +91,7 @@ samma linje, bärvåg etc.
 \harec{a}{1.8.5}{1.8.5b}
 \index{bandbredd}
 \index{frekvenseffektivitet}
+\label{bandbredd_modulation}
 
 Varje radiosändning tar upp plats omkring den nominella bärvågsfrekvensen --
 tillsammans \emph{bandbredden}.
@@ -103,6 +107,7 @@ onödigt frekvensutrymme.
 
 \subsection{Beskrivningskod för sändningsslagen}
 \index{sändningsslag}
+\label{modulation_beskrivningskod}
 
 Vid 1979 års radioförvaltningskonferens (WARC 79) i Geneve reviderades det
 internationella radioreglementet (RR), som i huvudsak trädde i kraft 1982.
@@ -199,6 +204,7 @@ En svag ton har liten amplitud och en stark ton har stor amplitud.
 \index{amplitudmodulation}
 \index{A3E}
 \index{AM|see {amplitudmodulation}}
+\label{modulation_am}
 
 \mediumfig{images/cropped_pdfs/bild_2_1-24.pdf}{Sidband vid A3E-modulation}{fig:BildII1-24}
 
@@ -288,6 +294,7 @@ alstras interferenstoner i mottagarna.
 \harec{a}{1.8.7a}{1.8.7a}
 \index{A1A}
 \index{CW}
+\label{modulation_cw}
 
 \largefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
 
@@ -321,7 +328,7 @@ vilket bestämmer övertonshalten i bärvågen.
 Vid så kallad mjuk nyckling kan den 9:e övertonen antas vara den högsta som
 uppfattas av en motstation.
 Med en nycklingsfrekvens av \SI{5}{\hertz} blir bandbredden inte större än
-\(2 \cdot 10 \cdot 5 = 100\ Hz\).
+\(2 \cdot 10 \cdot 5 = \SI{100}{\hertz}\).
 
 En hård (kantig) och snabb teckengivning ökar bandbredden och kan resultera i
 att så kallade nycklingsknäppar kan uppfattas långt vid sidan om
@@ -342,6 +349,7 @@ Mycket liten bandbredd, extremt gott utnyttjande av sändareffekten, stor
 \index{Single Side Band (SSB)}
 \index{J3E}
 \index{SSB}
+\label{modulation_ssb}
 
 \subsubsection{Princip}
 
@@ -425,6 +433,7 @@ inte är inställd på exakt rätt frekvens.
 \subsection{Vinkelmodulation}
 \harec{a}{1.8.3a}{1.8.3a}
 \index{vinkelmodulation}
+\label{modulation_vinkel}
 
 Termen vinkelmodulation är samlingsnamnet för frekvensmodulation (FM) och
 fasmodulation (PM).
@@ -449,6 +458,7 @@ Det innebär att främst högre frekvensband kommer i fråga.
 \harec{a}{1.8.6d}{1.8.6d}
 \index{frekvensmodulation}
 \index{FM|see {frekvensmodulation}}
+\label{modulation_fm}
 
 \mediumfig[0.8]{images/cropped_pdfs/bild_2_1-30.pdf}{Frekvensmodulation}{fig:BildII1-30}
 
@@ -650,6 +660,8 @@ Med konstant amplitud på insignalen till modulatorn är vid PM
 modulationsindex konstant oavsett modulerande frekvens, medan vid FM
 modulationsindex varierar med den modulerande frekvensen.
 
+\newpage %layout
+
 \subsection{Frekvens- och fasmodulation jämförs}
 
 \begin{itemize}
@@ -742,6 +754,7 @@ Annan pulsmodulation har följande symboler
 \subsection{Digital modulation}
 \harec{a}{1.8.8}{1.8.8}
 \index{digital modulation}
+\label{modulation_digital}
 
 Utöver de klassiska analoga modulationsmetoderna finns ett antal digitala
 modulationsformer.
@@ -809,7 +822,6 @@ För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
 som \emph{Costas loop}, eftersom en normal PLL-loop inte klarar av
 teckenändringarna på signalen.
 
-\newpage
 \subsubsection{Fyrnivå fasskiftmodulation -- 4-PSK}
 \harec{a}{1.8.8c}{1.8.8c}
 \index{4-PSK}
@@ -962,6 +974,8 @@ verkliga överföringskapaciteten för nyttotrafik är något lägre på grund a
 olika former av packningsformat och protokollbehov, så kallad \emph{overhead}.
 Man ska därför vara noga med att skilja dessa åt.
 
+\newpage % layout
+
 \subsubsection{Symboltakt -- Baud rate}
 \harec{a}{1.8.9b}{1.8.9b}
 \index{symbol}
@@ -1095,6 +1109,7 @@ egenskaper, men det kan uppnås i kabel och fiber.
 \index{bitfelsdetektion}
 \index{paritet}
 \index{CRC}
+\label{bitfel_detektion}
 
 Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
 än vad den råa kanalen medger är det lämpligt att identifiera när det har
@@ -1157,6 +1172,8 @@ Liknande används i Bluetooth där meddelandet sänds tre gånger, varvid man ka
 göra majoritetsröstning.
 
 Andra system för FEC är Hamming-koder, paritets-paket och Reed-Solomon (RS).
+
+\newpage % layout
 
 \subsection{Digitala sändningsslag}
 
@@ -1237,6 +1254,7 @@ variera med avseende på svart-vitt eller färg.
 \index{APRS}
 \index{AX.25}
 \index{TNC}
+\label{modulation_aprs}
 
 \emph{Automatic Packet Reporting System (APRS)} är en teknik för att
 huvudsakligen över VHF och UHF förmedla GPS-position, väderdata, enkla
@@ -1249,6 +1267,7 @@ radio.
 
 \subsubsection{PSK31}
 \index{PSK31}
+\label{modulation_psk31}
 
 \paragraph{Historia}
 

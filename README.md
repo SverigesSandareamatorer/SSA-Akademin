@@ -25,20 +25,14 @@ Eftersom nytt material läggs till och fel rättas allt eftersom används en
 versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
 på hur det kan se ut och en förklaring till vad allt betyder.
 
-<!--
-koncept  .2.0.0  -RC.1  +b12345 .8c04343 .pdf
-          │ │ │    │ │     │        │
-          │ │ │    │ │     │        └ Git hash
-          │ │ │    │ │     └ Byggnummer
-          │ │ │    │ └ Version av pre relase
-          │ │ │    └ Pre release
+<pre>
+koncept  .2.0.0  +b12345 .8c04343 .pdf
+          │ │ │      │       └ Git hash
+          │ │ │      └ Byggnummer
           │ │ └ Ej tryckt uppdatering
-          │ └ Tryckning
+          │ └ Tryckning (med 1:a tryckning = 0)
           └ Upplaga
- -->
-
- ![versionsnumrering](versionsnummer.png)
-
+</pre>
 
 Bygg projektet
 --------------
