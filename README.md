@@ -65,6 +65,19 @@ en *issue* med en beskrivning av fel och om möjligt en föreslagen
 förändring. Annars kan du använda dig av kontaktinformationen nedan
 och skicka ett mejl till oss så hjälper vi dig att komma igång.
 
+
+INSTRUKTIONER FÖR PROJEKTET
+===========================
+
+Merge
+-----
+För att göra merge följer man instruktionerna i  [`MERGE.md`](MERGE.md).
+
+Release
+-------
+För att göra release följer man instruktionerna i [`RELEASE.md`](RELEASE.md).
+
+
 OM SSA AKADEMIN
 ===============
 
