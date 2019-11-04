@@ -47,7 +47,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \emph{strömtransformator} (eng. \emph{current transformer})
 
 9.  Viss text förekommer i kursiv stil och inskjuten, t.ex. för att ge viktiga
-    samband, de läggs inom `\begin{quote}\emph{ och }\end{quote}`. Ibland
+    samband, de läggs inom `\begin{quote}\emph{` och `}\end{quote}`. Ibland
     behöver radmatning ske och då får man göra separata `\emph{}` som i det här
     exemplet:
 
@@ -64,11 +64,11 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 11. Formler med enhetsangivelser och liknande referenser i text ska också
     typsättas till formler med hjälp av siunitx. T.ex. `\SI{1}{\joule}`.
 
-    Tal som är längre eller har högre precision än "vardagliga tal" skall
-    typsättas med \num{250000} som exempel. Dessa kommer då typsättas korrekt
+    Tal som är längre eller har högre precision än ”vardagliga tal” ska
+    typsättas med `\num{250000}` som exempel. Dessa kommer då typsättas korrekt
     så att de får rätt avstånd och separation.
 
-    Enheter typsätts t.ex. med \si{kg.m/s^2} för att få kilogrammeter per sekund-
+    Enheter typsätts t.ex. med `\si{kg.m/s^2}` för att få kilogrammeter per sekund-
     kvadrat. För en komplett lista av enheter som siunitx förstår, se paketets
     dokumentation.
 
@@ -201,13 +201,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
     läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
-    hela dokumentet:
-
-    `\cite{ITU-RR}`
-
+    hela dokumentet: `\cite{ITU-RR}`.
     För att referera till ett visst kapitel anger man det inom hakparanteser:
-
-    `\cite[1.56]{ITU-RR}`
+    `\cite[1.56]{ITU-RR}`.
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
@@ -215,8 +211,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 27. Konstanter skall anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precision.
-    T.ex. där ljusets hastighet används skall den i SI-systemet angivna
-    definitionen användas, men även approximationen av 3*10^8, 300 000 km/s.
+    T.ex. där ljusets hastighet används ska den i SI-systemet angivna
+    definitionen användas, men även approximationen av 3&sdot;10<sup>8</sup>,
+    300&nbsp;000&nbsp;km/s.
 
 28. Förkortningar skall anges som brukligt inom parantes efter sin uttydelse
     där de definieras, vilket i möjligaste mån är första gången de används,
@@ -241,6 +238,6 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 32. Indentering föreskrivt som två mellanslag (mjuk tab).
 
 33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
-    "satellitmottagare" i stället för "satellit-mottagare". Bindestreck ska dock
-    användas i sammansättningar med förkortningar; skriv "FM-detektor" istället
-    för "FM detektor".
+    ”satellitmottagare” i stället för ”satellit-mottagare”. Bindestreck ska dock
+    användas i sammansättningar med förkortningar; skriv ”FM-detektor” istället
+    för ”FM detektor”.
