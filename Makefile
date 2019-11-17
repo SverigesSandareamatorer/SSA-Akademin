@@ -15,8 +15,6 @@ help:
 
 all:	koncept.pdf
 #all:	matterep.pdf
-#all:	koncept-larobok.pdf
-#all:	koncept-refbok.pdf
 all:	koncept-tryck.pdf
 
 .PHONY:	*.pdf
@@ -132,16 +130,6 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex
 	xelatex handouts/matterep.tex
-
-koncept-larobok.pdf: koncept.bbl koncept-larobok.tex $(KONCEPT_FILES)
-	-xelatex koncept-larobok.tex
-	-xelatex koncept-larobok.tex
-	xelatex koncept-larobok.tex
-
-koncept-refbok.pdf: koncept.bbl koncept-refbok.tex $(KONCEPT_FILES)
-	-xelatex koncept-refbok.tex
-	-xelatex koncept-refbok.tex
-	xelatex koncept-refbok.tex
 
 koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCEPT_FILES)
 	pdflatex koncept-tryck.tex
