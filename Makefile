@@ -139,11 +139,6 @@ koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCE
 #	-xelatex koncept-tryck.tex
 #	xelatex koncept-tryck.tex
 
-koncept-online.pdf: koncept.bbl koncept-online.tex $(KONCEPT_FILES)
-	-xelatex koncept-online.tex
-	-xelatex koncept-online.tex
-	xelatex koncept-online.tex
-
 emf-handout.idx:
 	xelatex handouts/emf-handout.tex
 
