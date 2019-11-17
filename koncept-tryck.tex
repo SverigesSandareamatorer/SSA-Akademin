@@ -11,9 +11,28 @@
 \usepackage[swedish]{babel}
 % \usepackage{paralist}
 
-\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[
+  activate={true,nocompatibility},
+  final,
+  tracking=true,
+  kerning=true,
+  spacing=true,
+  factor=1000,
+  stretch=40,
+  shrink=20,
+  babel=true
+]{microtype}
 
-\usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[
+  a4paper,
+  twoside,
+  twocolumn,
+  inner=2.2cm,
+  outer=1.9cm,
+  columnsep=0.9cm,
+  top=2cm,
+  bottom=2cm
+]{geometry}
 
 \usepackage{dblfloatfix}
 \usepackage{float}
@@ -72,7 +91,7 @@
 }
 
 \newcommand{\multifig}[4][0.4]{
-  \begin{figure}[h]
+  \begin{figure}[ht]
     \centering
     \foreach \i in {#2} {
       \includegraphics[width=#1\textwidth]{\i}
@@ -158,7 +177,7 @@
 }
 
 \newcommand{\smalltikz}[3]{
-  \begin{figure}[h]
+  \begin{figure}[ht]
     \begin{center}
       #1
       \caption{#2}

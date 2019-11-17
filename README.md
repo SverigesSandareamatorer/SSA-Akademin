@@ -25,20 +25,14 @@ Eftersom nytt material läggs till och fel rättas allt eftersom används en
 versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
 på hur det kan se ut och en förklaring till vad allt betyder.
 
-<!--
-koncept  .2.0.0  -RC.1  +b12345 .8c04343 .pdf
-          │ │ │    │ │     │        │
-          │ │ │    │ │     │        └ Git hash
-          │ │ │    │ │     └ Byggnummer
-          │ │ │    │ └ Version av pre relase
-          │ │ │    └ Pre release
+<pre>
+koncept  .2.0.0  +b12345 .8c04343 .pdf
+          │ │ │      │       └ Git hash
+          │ │ │      └ Byggnummer
           │ │ └ Ej tryckt uppdatering
-          │ └ Tryckning
+          │ └ Tryckning (med 1:a tryckning = 0)
           └ Upplaga
- -->
-
- ![versionsnumrering](versionsnummer.png)
-
+</pre>
 
 Bygg projektet
 --------------
@@ -70,6 +64,19 @@ förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
 förändring. Annars kan du använda dig av kontaktinformationen nedan
 och skicka ett mejl till oss så hjälper vi dig att komma igång.
+
+
+INSTRUKTIONER FÖR PROJEKTET
+===========================
+
+Merge
+-----
+För att göra merge följer man instruktionerna i  [`MERGE.md`](MERGE.md).
+
+Release
+-------
+För att göra release följer man instruktionerna i [`RELEASE.md`](RELEASE.md).
+
 
 OM SSA AKADEMIN
 ===============

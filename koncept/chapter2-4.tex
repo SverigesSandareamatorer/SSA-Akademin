@@ -44,7 +44,7 @@ magnetiska flödesvägen ökas med hjälp av en järnkärna.
         ;
       \end{circuitikz}
       \\
-      \begin{tabular}{ll}
+      \begin{tabular}{rl}
         1, 2 & Allmänna symboler \\
         3 & Transformator med kärna
       \end{tabular}
@@ -53,6 +53,8 @@ magnetiska flödesvägen ökas med hjälp av en järnkärna.
 %%Bild \ref{fig:BildII2-5} illustrerar flera vanligt förekommande schemasymboler
 %%för transformatorer med två lindningar.
 
+
+\newpage % layout
 \subsection{Utföranden}
 \index{spänningstransformator}
 \index{transformator!spännings-}
@@ -84,9 +86,11 @@ lindningsvarvtal n & primärt \(n_1\) sekundärt \(n_2\)
 \end{tabular}
 \end{center}
 
-varvtalsomsättning = \(\dfrac{n_1}{n_2}\) eller \(\dfrac{n_2}{n_1}\)
-
-impedansomsättning = \(\dfrac{Z_1}{Z_2}\) eller \(\dfrac{Z_2}{Z_1}\)
+\begin{tabular}{rcl}
+varvtalsomsättning &=& \(\dfrac{n_1}{n_2}\) eller \(\dfrac{n_2}{n_1}\) \\
+&&\\
+impedansomsättning &=& \(\dfrac{Z_1}{Z_2}\) eller \(\dfrac{Z_2}{Z_1}\) \\
+\end{tabular}
 
 \subsection{Den ideala (förlustfria) transformatorn}
 \harec{a}{2.4.1}{2.4.2.1}
@@ -96,6 +100,7 @@ impedansomsättning = \(\dfrac{Z_1}{Z_2}\) eller \(\dfrac{Z_2}{Z_1}\)
 \index{transformator!varvtalsomsättning}
 \index{impedansomsättning}
 \index{transformator!impedansomsättning}
+\label{ideal_transformator}
 
 \mediumfig{images/cropped_pdfs/bild_2_2-06.pdf}{Obelastad transformator}{fig:BildII2-6}
 
@@ -235,6 +240,7 @@ får inte överstiga \SI{50}{\volt}.
 \index{transformator!impedansomsättning}
 \index{impedanstransformator}
 \index{transformator!impedans-}
+
 
 Transformatorn kan även användas för anpassning av impedanser.
 Impedansen Z i en lindning är proportionell mot kvadraten av dess
