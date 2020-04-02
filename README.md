@@ -54,12 +54,12 @@ BIDRA TILL PROJEKTET
 Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
-**Q: Jag kan koda och vill bidra; vad gör jag?**
-A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
+**Fråga: Jag kan koda och vill bidra; vad gör jag?**<br>
+Svar: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
 instruktionerna.
 
-**Q: Jag vet inte hur man redigerar kod!**
-A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
+**Fråga: Jag vet inte hur man redigerar kod?!**<br>
+Svar: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
 förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
 förändring. Annars kan du använda dig av kontaktinformationen nedan
