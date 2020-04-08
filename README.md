@@ -25,12 +25,12 @@ versionsnumrering som ger värdefull information åt läsaren. Här är ett exem
 på hur det kan se ut och en förklaring till vad allt betyder.
 
 <pre>
-koncept  .2.0.0  +b12345 .8c04343 .pdf
-          │ │ │      │       └ Git hash
-          │ │ │      └ Byggnummer
-          │ │ └ Ej tryckt uppdatering
-          │ └ Tryckning (med 1:a tryckning = 0)
-          └ Upplaga
+koncept.2.0.0+b12345.8c04343.pdf
+        │ │ │    │      └ Git commit hash
+        │ │ │    └ Byggnummer
+        │ │ └ Ej tryckt uppdatering
+        │ └ Tryckning (med 1:a tryckning = 0)
+        └ Upplaga
 </pre>
 
 Bygg projektet
