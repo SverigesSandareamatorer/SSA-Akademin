@@ -5,8 +5,8 @@
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
 syfte att utbilda nya radioamatörer.
-Den första upplagan är skriven 1997 och behöver
-därför en uppdatering och tryckas i en ny upplaga.
+Den första upplagan är skriven 1997 och behöver därför en uppdatering och
+tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 
