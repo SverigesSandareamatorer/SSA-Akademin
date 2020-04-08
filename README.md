@@ -10,9 +10,9 @@ tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 
-> :warning: **Observera:** Boken och materialet som finns att läsa här
-är ett arbetsmaterial och ska inte användas som en färdig produkt
-utan endast som ett underlag för arbetet med den.
+| :warning: **Observera** |
+|:---------------------------|
+| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett arbetsunderlag för arbetet med den. |
 
 LADDA NER OCH BYGG PROJEKTET
 ============================

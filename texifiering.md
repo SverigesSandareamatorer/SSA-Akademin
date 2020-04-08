@@ -125,7 +125,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 17. Kommentarer vi har som del av den editoriella bearbetningen lägger vi
     synligt i texten med följande format:
 
-    	\hilight{TODO: Här ser det lite fel ut.}
+    ```latex
+    \hilight{TODO: Här ser det lite fel ut.}
+    ```
 
     Det är behändigt att kunna söka på TODO:, och `\hilight{}` ger en gul
     markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
@@ -159,10 +161,8 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     `\index{strömtransformator}`
 
     För vissa begrepp är det nyttigt att samla gemensamma grupper, det
-    gör man genom att ange
-    `\index{transformator!ström-}`
-    där transformator är gruppens namn, och efter utropstecknet kommer det
-    som skall stå i gruppen.
+    gör man genom att ange `\index{transformator!ström-}` där transformator är
+    gruppens namn, och efter utropstecknet kommer det som ska stå i gruppen.
 
     Symboler läggs i gruppen symboler, anger symbolen först och sedan de
     representerar, men indexeras givetvis separat också:
