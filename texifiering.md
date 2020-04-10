@@ -7,9 +7,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     vilket man ser framförallt i inledning av mening. m kan tolkas som rn osv.
     Därför behöver man hela tiden vara uppmärksam. I (”Ivar”) har även blivit
     1 (”ett”) på en del ställen där siffror förekommer. Många av de grekiska tecknen
-    blir fel, så man får kontrollera med orginalet och justera.
+    blir fel, så man får kontrollera med originalet och justera.
 
-2.  Eftersom orginalet är i två kolumner missar OCRen ibland och text hamnar i
+2.  Eftersom originalet är i två kolumner missar OCR:en ibland och text hamnar i
     fel ordning. Man får vara uppmärksam på det och flytta runt text.
 
 3.  Sidnumrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
