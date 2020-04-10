@@ -43,8 +43,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     `\emph{}`.
     Nyckelbegrepp skall i förekommande fall även skrivas i sin engelska form,
     för att underlätta sökning på nätet och läsande av engelsk litteratur.
-    Exempel:
-    \emph{strömtransformator} (eng. \emph{current transformer})
+    Exempel: `\emph{strömtransformator} (eng. \emph{current transformer})`
 
 9.  Viss text förekommer i kursiv stil och inskjuten, t.ex. för att ge viktiga
     samband, de läggs inom `\begin{quote}\emph{` och `}\end{quote}`. Ibland
