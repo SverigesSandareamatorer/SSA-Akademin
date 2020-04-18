@@ -42,8 +42,9 @@ För att kunna hämta hem, arbeta med och köra projektet behöver du
 använda dig av versionshanteringssystemet Git och verktyget Make.
 
 **Linux/Debian**
-
-    sudo apt-get install git make
+```sh
+sudo apt-get install git make
+```
 
 GIT
 ---
@@ -55,9 +56,10 @@ verktyg och möjligheten att utveckla kollaborativt.
 Navigera till den mapp du vill ladda ner SSA-Akademin repot i. De som
 kör Git med grafiskt användargränssnitt (GUI) kan välja Clone och
 sedan URL:en i argumentet nedan. För de som kör med kommandotolken:
-
-    git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
-    cd SSA-Akademin/
+```sh
+git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
+cd SSA-Akademin/
+```
 
 MAKE
 ----
@@ -68,8 +70,9 @@ fallet, till bl.a. PDF:er. Det gör att användaren av Make inte behöver
 veta *hur* genereringen går till utan bara vilket kommando som ska
 köras. Make används genom att köra kommandot `make` följt av ett
 mål. Till exempel:
-
-    make <mål>
+```sh
+make <mål>
+```
 
 Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
 kallas för beroenden. Dessa beroenden måste installeras innan Make
@@ -108,10 +111,11 @@ generera PDF-filer av vår kod behövs TeX och vissa extra komponenter
 installeras.
 
 **Linux/Debian**
-
-    sudo apt-get update;
-    sudo apt-get install texlive texlive-lang-european \
-        texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
+```sh
+sudo apt-get update;
+sudo apt-get install texlive texlive-lang-european \
+    texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
+```
 
 ### LATEXML
 
@@ -125,29 +129,33 @@ ner och beroenden måste hämtas.
 
 **Linux/Debian**
 Hämta LaTeXML:
-
-    git clone https://github.com/brucemiller/LaTeXML.git
-    cd LaTeXML/
+```sh
+git clone https://github.com/brucemiller/LaTeXML.git
+cd LaTeXML/
+```
 
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
-
-    sudo apt-get install \
-      libarchive-zip-perl libfile-which-perl libimage-size-perl  \
-      libio-string-perl libjson-xs-perl libtext-unidecode-perl \
-      libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
-      libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
-      texlive-latex-base imagemagick libimage-magick-perl perl
+```sh
+sudo apt-get install \
+  libarchive-zip-perl libfile-which-perl libimage-size-perl  \
+  libio-string-perl libjson-xs-perl libtext-unidecode-perl \
+  libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
+  libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
+  texlive-latex-base imagemagick libimage-magick-perl perl
+```
 
 Följ sedan
 [bygginstruktioerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)
 och kör följande:
-
-    perl Makefile.PL
-    make
-    make test
+```sh
+perl Makefile.PL
+make
+make test
+```
 
 [Installera LaTeXML](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px3)
-(detta måste göras med *sudo*):
-
-    sudo make install
+(detta måste göras med `sudo`):
+```sh
+sudo make install
+```
