@@ -36,7 +36,7 @@ git-meddelande.
 
 ## Tagga i git
 
-Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i git.
+Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i Git.
 
 ## Bygg tryck-original
 
