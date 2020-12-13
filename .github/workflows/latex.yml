@@ -11,6 +11,6 @@ jobs:
       - name: Check out
         uses: actions/checkout@v2
       - name: Install
-        run: apt-get install texlive texlive-xetex texmf-dist-fontsextra texmf-dist-latexextra texmf-dist-pictures texmf-dist-science
+        run: sudo apt-get install texlive texlive-xetex texmf-dist-fontsextra texmf-dist-latexextra texmf-dist-pictures texmf-dist-science
       - name: Build
         run: make koncept.pdf
