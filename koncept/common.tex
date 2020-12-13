@@ -105,7 +105,7 @@
 % Prepare for version handling
 \usepackage{xstring}
 \usepackage{catchfile}
-\CatchFileDef{\HEAD}{.git/refs/heads/master}{}
+\CatchFileDef{\HEAD}{}{}
 \newcommand{\gitrevision}{%
   \StrLeft{\HEAD}{7}%
 }
