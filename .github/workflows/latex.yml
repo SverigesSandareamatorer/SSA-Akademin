@@ -1,0 +1,14 @@
+name: Build LaTeX
+
+on: push
+
+jobs:
+  build-pdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+      - name: Build
+        run: make
