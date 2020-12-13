@@ -4,23 +4,25 @@ on: push
 
 jobs:
   build-pdf:
-    name: Build PDF
+    name: 'Build PDF'
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        variant: [koncept.pdf, koncept-tryck.pdf, koncept.webb]
     steps:
-      - name: Check out
+      - name: 'Check out'
         uses: actions/checkout@v2
       - name: Cache
         uses: actions/cache@v2
         with:
           path: |
-            *.aux
-            *.idx
+            **/*.aux
+            **/*.idx
           key: ${{ runner.os }}-koncept
       - name: Install
         run: sudo apt-get install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: Build
-        run: make koncept.pdf
+        run: make ${{ matrix.variant }}
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
         with:
