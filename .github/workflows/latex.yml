@@ -11,6 +11,6 @@ jobs:
       - name: Check out
         uses: actions/checkout@v2
       - name: Install
-        run: sudo apt-get install texlive texlive-xetex language-pack-sv
+        run: sudo apt-get install texlive texlive-xetex texlive-lang-european language-pack-sv
       - name: Build
         run: make koncept.pdf
