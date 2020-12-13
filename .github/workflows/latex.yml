@@ -4,11 +4,11 @@ on: push
 
 jobs:
   build-pdf:
-    name: 'Build PDF'
+    name: 'Build book'
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        variant: [koncept.pdf, koncept-tryck.pdf, koncept.webb]
+        variant: [koncept.pdf, koncept-tryck.pdf]
     steps:
       - name: 'Check out'
         uses: actions/checkout@v2
