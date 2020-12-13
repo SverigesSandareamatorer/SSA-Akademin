@@ -1,9 +1,8 @@
-name: Build LaTeX
-
-on: push
+name: Build KonCEPT
 
 jobs:
   build-pdf:
+    on: push
     name: 'Build book'
     runs-on: ubuntu-latest
     strategy:
@@ -29,3 +28,11 @@ jobs:
           name: koncept-pdf
           path: koncept.pdf
           retention-days: 5
+
+  publish-pdf:
+    on:
+      push:
+        tags:
+          - 'v*'
+    name: 'Publish book'
+    runs-on: ubuntu-latest
