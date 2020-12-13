@@ -10,6 +10,13 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v2
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            *.aux
+            *.idx
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - name: Install
         run: sudo apt-get install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: Build
