@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
-          path: *.pdf
+          path: '*.pdf'
           retention-days: 14
       - name: Create Release
         id: create_release
