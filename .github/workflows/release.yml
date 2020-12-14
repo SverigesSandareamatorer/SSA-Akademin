@@ -22,7 +22,7 @@ jobs:
           path: |
             **/*.aux
             **/*.idx
-          key: ${{ runner.os }}-koncept
+          key: ${{ runner.os }}-${{ matrix.variant }}
       - name: Install
         run: sudo apt-get install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: Build
@@ -31,8 +31,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
-          path: koncept.pdf
-          retention-days: 5
+          path: *.pdf
+          retention-days: 14
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
