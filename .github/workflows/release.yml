@@ -1,0 +1,49 @@
+name: Release build KonCEPT
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-pdf:
+    on: push
+    name: 'Build book'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        variant: [koncept.pdf, koncept-tryck.pdf]
+    steps:
+      - name: 'Check out'
+        uses: actions/checkout@v2
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/*.aux
+            **/*.idx
+          key: ${{ runner.os }}-koncept
+      - name: Install
+        run: sudo apt-get install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
+      - name: Build
+        run: make ${{ matrix.variant }}
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: koncept-pdf
+          path: koncept.pdf
+          retention-days: 5
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: false
+          prerelease: false
