@@ -20,7 +20,7 @@ jobs:
             **/*.idx
           key: ${{ runner.os }}-${{ matrix.variant }}
       - name: Install
-        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv pandoc
+        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: Build
         run: make ${{ matrix.variant }}
       - name: 'Upload Artifact'
