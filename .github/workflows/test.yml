@@ -27,5 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
-          path: '*.pdf'
+          path: |
+            '*.pdf'
+            '*.epub'
           retention-days: 14
