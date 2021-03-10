@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        variant: [koncept.pdf, koncept-tryck.pdf]
+        variant: [koncept.pdf, koncept-tryck.pdf, koncept.epub]
     steps:
       - name: 'Check out'
         uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
             **/*.idx
           key: ${{ runner.os }}-${{ matrix.variant }}
       - name: Install
-        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
+        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv pandoc
       - name: Build
         run: make ${{ matrix.variant }}
       - name: 'Upload Artifact'

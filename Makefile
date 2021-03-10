@@ -139,6 +139,8 @@ koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCE
 #	-xelatex koncept-tryck.tex
 #	xelatex koncept-tryck.tex
 
+koncept.epub: pandoc koncept.tex -o koncept.epub
+
 emf-handout.idx:
 	xelatex handouts/emf-handout.tex
 
