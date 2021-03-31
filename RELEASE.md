@@ -18,15 +18,15 @@ för versionsnumret.
 
 ## Uppdatering av tryckort-sidan
 
-Uppdatera `koncept/tryckort.tex` att beskriva `Andra upplagan, fjärde tryckningen`.
+Uppdatera [`koncept/tryckort.tex`](koncept/tryckort.tex) att beskriva `Andra upplagan, fjärde tryckningen`.
 
 ## Uppdatering av version
 
-Uppdatera `VERSION.txt` till att innehålla den numeriska versionen, t.ex. `2.3.0`.
+Uppdatera [`VERSION.txt`](VERSION.txt) till att innehålla den numeriska versionen, t.ex. `2.3.0`.
 
 ## Uppdatering av CHANGELOG
 
-Uppdatera CHANGELOG.md till att innehålla alla större förändringar sedan förra
+Uppdatera [`CHANGELOG.md`](CHANGELOG.md) till att innehålla alla större förändringar sedan förra
 tryckningen.
 
 ## Gör git commit av förändringarna
@@ -36,7 +36,7 @@ git-meddelande.
 
 ## Tagga i git
 
-Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i git.
+Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i Git.
 
 ## Bygg tryck-original
 

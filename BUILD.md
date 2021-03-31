@@ -112,7 +112,7 @@ installeras.
 
 **Linux/Debian**
 ```sh
-sudo apt-get update;
+sudo apt-get update
 sudo apt-get install texlive texlive-lang-european \
     texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
 ```
@@ -146,7 +146,7 @@ sudo apt-get install \
 ```
 
 Följ sedan
-[bygginstruktioerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)
+[bygginstruktionerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)
 och kör följande:
 ```sh
 perl Makefile.PL
