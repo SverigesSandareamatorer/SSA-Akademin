@@ -1,5 +1,5 @@
 
-1. Placering av figurer ocg tabeller.
+1. Placering av figurer och tabeller.
    Man ska kunna se de relevanta figurerna på samma sida eller i alla fall uppslaget.
    
 2. Avstaving.
@@ -11,7 +11,7 @@
 5. Vad är anledningen till alla de tomma cellerna i
 prefixomvandlingen? Behävs verkligen denna tabell?
 
-6. \noindent efter alla Harec i början av stycken.
+6. \noindent efter alla Harec i början av stycken.  Skapa ett harec macro.
 
 7. Ska formler ha punkt efter sig? Ska de vara med i texten?
 
@@ -24,7 +24,7 @@ sak.
 
 11. Ibland har exempel egen section (chapter 11), ibland inte?  Vad är bäst?
 
-12. Tanketreck, komma, eller partentes för kommentarer?
+12. Tankestreck, komma, eller partentes för kommentarer?
 
 13. Utropstecken och stycket därvid.
 
@@ -37,3 +37,25 @@ Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
 16. Tabell 13.5.  Sorterad på?
 
 17. Att skriva loggbok. Varför subsection?
+
+18. Behöver vi sidor som listar tabeller of figurer?
+
+19. Gör litteratur listen mer lättillgänglig med beskrivingar av vad
+man kan få ut av varje bok, och kanskee någon form av vägledning till
+ordningen.
+
+20. Utöka exemplen i greksiska
+alphabetet. https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
+I alla fall: Gamma reflection koefficient, Pi product, ...
+
+21. Vet inte vad som ska gäras med Appendix Måtteheter...
+    Metallers resistivitet är inte måttenhet.
+
+
+
+
+
+
+Innehåll
+
+Antenn stycket behöver mer.
