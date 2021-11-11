@@ -1,7 +1,8 @@
-
 \chapter{CEPT HAREC krav}
 \label{CEPT HAREC}
 
+%% k7per
+\noindent
 Den här upplagan av KonCEPT är baserad på CEPT T/R 61-02 Harmonised Amateur
 Radio Examination Certificate (HAREC) Edition 4 June 2016 \cite{TR6102}.
 För att underlätta att se att alla HAREC-kraven finns täckta var har denna
@@ -83,6 +84,9 @@ uppfyllda.}
 \renewcommand{\p@enumiv}{\theenumi.\theenumii.\theenumiii.}
 \makeatother
 
+%% k7per, allow ragged right in all these references.
+\begin{flushleft}
+  
 \begin{enumerate}
 \item Electrical, electro-magnetic and radio theory
 \begin{enumerate}
@@ -369,8 +373,10 @@ uppfyllda.}
 \item Frequency characteristic;  (\ref{myHAREC.a.3.2.3})\label{HAREC.a.3.2.3}
 \item Resonance frequency \(\left[f=\frac{1}{2\pi\sqrt{LC}}\right]\);
   (\ref{myHAREC.a.3.2.4}, \ref{myHAREC.a.3.2.4b})\label{HAREC.a.3.2.4}
-\item Quality factor of a tuned circuit \\
-  \(\left[Q=\dfrac{2\pi f \cdot L}{R_S};\\
+\item Quality factor of a tuned circuit
+%% \\
+  \(\left[Q=\dfrac{2\pi f \cdot L}{R_S};
+%% \\
     Q=\dfrac{R_P}{2\pi f \cdot L}; Q=\dfrac{f_{res}}{B}\right]\);
   (\ref{myHAREC.a.3.2.5})\label{HAREC.a.3.2.5}
 \item Bandwidth; (\ref{myHAREC.a.3.2.6})\label{HAREC.a.3.2.6}
@@ -976,3 +982,7 @@ uppfyllda.}
 \end{enumerate}
 \end{enumerate}
 \end{enumerate}
+
+%% k7per
+\end{flushleft}
+

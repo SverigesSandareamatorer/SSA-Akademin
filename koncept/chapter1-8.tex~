@@ -541,8 +541,7 @@ ett frekvensspektrum som på överst i bilden.
 
 \largefig{images/cropped_pdfs/bild_2_1-31.pdf}{Sidbandsspektrum vid FM-modulering med 1 sinuston}{fig:BildII1-31}
 
-%% k7per: Find a solution for words that already have a hyphen. quote-dash?
-Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-moduler\-ing med 1
+Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-modulering med 1
 sinuston.
 Vid vinkelmodulation uppstår talrika sidofrekvenser, som beror av den
 modulerande frekvensen \(f_{LF}\).

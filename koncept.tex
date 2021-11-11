@@ -22,8 +22,11 @@
 ]{microtype}
 
 \usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
+%% k7per
+\usepackage{stfloats}
+% \usepackage{blindtext, subfig}
 
-\usepackage{dblfloatfix}
+% \usepackage{dblfloatfix}
 \usepackage{float}
 \usepackage{placeins}
 \usepackage{array}
@@ -58,6 +61,16 @@
 \setcounter{secnumdepth}{3}
 
 % Figure macros
+\newcommand{\bottomwidefigure}[4][0.4]{
+  \begin{figure*}[b]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure*}
+}
+
 \newcommand{\smallfig}[4][0.4]{
   \begin{figure}[th]
     \centering
@@ -212,6 +225,9 @@
 
 \usepackage{textbook}
 
+%% k7per: förbättringar till avstavningsregler.  Lägg till här, inte i den löpande texten.
+\hyphenation{amatör-radio-sändaren MAY-DAY mo-du-ler-ing för-utom elektronrörs-epoken frekvens-karaktäristiken radio-vågor}
+
 % Prepare for index
 \usepackage{makeidx}
 \makeindex
@@ -262,9 +278,12 @@
 \listoffigures
 \listoftables
 
+%% k7per: Allowing references to be ragged.  May need URL hyphen package also.
 \onecolumn
+\begin{flushleft}
 \bibliography{koncept.bib}
 \bibliographystyle{plain}
+\end{flushleft}
 
 %%\backmatter
 
