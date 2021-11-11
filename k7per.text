@@ -51,11 +51,23 @@ I alla fall: Gamma reflection koefficient, Pi product, ...
 21. Vet inte vad som ska gäras med Appendix Måtteheter...
     Metallers resistivitet är inte måttenhet.
 
+22. Bryt långa ekvationer.  Kapitel 11 tex.
 
+23. Kom fram till ett sätt att lägga till enheter när beräkningar görs
+i formler, ska vi använda []?
 
+24. Ta bort alla formuleringar med och/eller.  Skapar avstavningsproblem.
 
 
 
 Innehåll
 
-Antenn stycket behöver mer.
+- Antenn stycket behöver mer.
+
+Presentation
+
+- Tabeller in the riggt place.
+
+Layout/LaTeX
+
+- 
