@@ -1,17 +1,21 @@
+Stoplar till discussion.
 
 1. Placering av figurer och tabeller.
-   Man ska kunna se de relevanta figurerna på samma sida eller i alla fall uppslaget.
+   mål: Man ska kunna se de relevanta figurerna på samma sida eller i alla fall uppslaget.
    
-2. Avstaving.
+2. Avstaving.  Jag har lagt till en hel del regler, men är inte klar än.
 
-3. Figurernas texter ska vara självbärande.
+3. Figurernas texter ska vara självbärande. Eller i alla fall förklara
+vad man ser som inte nämns i huvuidtexten.
 
 4. Aligna nummer i tabeller.  Ta bort enheter.
 
 5. Vad är anledningen till alla de tomma cellerna i
 prefixomvandlingen? Behävs verkligen denna tabell?
 
-6. \noindent efter alla Harec i början av stycken.  Skapa ett harec macro.
+6. \noindent efter alla Harec i början av stycken.  Skapa ett bättre harec
+macro. Harec-texterna med a/b etc i slutet överlappar om inte på ny
+rad...  Harec ute till höger?
 
 7. Ska formler ha punkt efter sig? Ska de vara med i texten?
 
@@ -32,7 +36,7 @@ sak.
 exempel på hur man uttalar saker, tex SM0XYZ/6/M??? Sigurd Martin
 Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
 
-15. Lägg till / och M (mobil) i tabell 13.1.
+15. Lägg till / och M (mobil) i tabell 13.1?
 
 16. Tabell 13.5.  Sorterad på?
 
@@ -40,12 +44,11 @@ Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
 
 18. Behöver vi sidor som listar tabeller of figurer?
 
-19. Gör litteratur listen mer lättillgänglig med beskrivingar av vad
+19. Gör litteraturlistan mer lättillgänglig med beskrivingar av vad
 man kan få ut av varje bok, och kanskee någon form av vägledning till
 ordningen.
 
-20. Utöka exemplen i greksiska
-alphabetet. https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
+20. Utöka exemplen i grekiska alphabetet. https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
 I alla fall: Gamma reflection koefficient, Pi product, ...
 
 21. Vet inte vad som ska gäras med Appendix Måtteheter...
@@ -58,6 +61,27 @@ i formler, ska vi använda []?
 
 24. Ta bort alla formuleringar med och/eller.  Skapar avstavningsproblem.
 
+25. Align hjow units are presented in math formulas.  I think it is
+good to have them, but now there is a mix of greek, written out as
+words, etc.
+
+26. Ordet "komposant"?
+
+27: Hur ska vi göra med itemized lists, ska de kunna läsas ut some en
+mening med komman och punkt på slutet?
+
+28. ERP/EIRP is written ERP/EIRP and erp/eirp...  Define one set of
+macros?
+
+29. Using \paragraph in the beginning of a sentence looks strange
+since it inserts an extra long space... See beginning of chapter 11.
+
+30: Repeaters. Beskriv hur man räknar ut frekvens.  I tabellerns, var
+mer klar över vad repeatern gör.  Fattas 6 och 10+banden i tabellen?
+
+31. Why koncept-tryck.tex?
+
+
 
 
 Innehåll
@@ -67,6 +91,9 @@ Innehåll
 Presentation
 
 - Tabeller in the riggt place.
+
+- Figure texts that are self sufficient.  At least explain the content
+  of the figure/table.  Balance between the main text and the caption.
 
 Layout/LaTeX
 
