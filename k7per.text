@@ -7,80 +7,108 @@ Stoplar till discussion.
 
 3. Figurernas texter ska vara självbärande. Eller i alla fall förklara
 vad man ser som inte nämns i huvuidtexten.
+Per provar att updatera ett par bildtexter.
 
 4. Aligna nummer i tabeller.  Ta bort enheter.
+OK. Se Tabell D.1 som exempel.
 
 5. Vad är anledningen till alla de tomma cellerna i
 prefixomvandlingen? Behävs verkligen denna tabell?
+De tomma cellerna är för att fylla i, som ett arbetsfält.
 
 6. \noindent efter alla Harec i början av stycken.  Skapa ett bättre harec
 macro. Harec-texterna med a/b etc i slutet överlappar om inte på ny
 rad...  Harec ute till höger?
+Per: Skapa ett macro.
 
 7. Ska formler ha punkt efter sig? Ska de vara med i texten?
+Arbeta igenom konsekvent.
 
 8. Ta bort alla newpage...
 
 9. Reflexion?  Stavning?
+Per: Gör det till ett macro.  Jag tycker reflektion låter bättre, men reflexion verkar vara det mer korrekta svenska ordet nu.
 
 10. Använd sans serif för bildtexter istället.  Sparar emph för en
 sak.
+Prova.
 
 11. Ibland har exempel egen section (chapter 11), ibland inte?  Vad är bäst?
+Per: Skapa macro.
 
 12. Tankestreck, komma, eller partentes för kommentarer?
+Komma
 
 13. Utropstecken och stycket därvid.
+Macro, skapa enhetlighet.
 
 14. Om vi riktar oss till nya amatörsändare så ´vore det bra med mer
 exempel på hur man uttalar saker, tex SM0XYZ/6/M??? Sigurd Martin
 Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
+Per: Skriv inb exempel, review.
 
 15. Lägg till / och M (mobil) i tabell 13.1?
 
 16. Tabell 13.5.  Sorterad på?
+Kanske sorterad på  distans från Sverige?
+Per: Sortera om.  Gör bold de som är kanske mer viktiga? Nära.
 
 17. Att skriva loggbok. Varför subsection?
+Ta bort. Men små stycken kommer upp i innehållsförteckningen.
 
 18. Behöver vi sidor som listar tabeller of figurer?
+Ta bort.
 
 19. Gör litteraturlistan mer lättillgänglig med beskrivingar av vad
 man kan få ut av varje bok, och kanskee någon form av vägledning till
 ordningen.
+Mål för framtiden, behöver uppdateras.
 
 20. Utöka exemplen i grekiska alphabetet. https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
 I alla fall: Gamma reflection koefficient, Pi product, ...
+Uppdatera.
 
 21. Vet inte vad som ska gäras med Appendix Måtteheter...
     Metallers resistivitet är inte måttenhet.
+Uppdatera.  Flytta metallerna.
 
 22. Bryt långa ekvationer.  Kapitel 11 tex.
+Jobba igenom.
 
 23. Kom fram till ett sätt att lägga till enheter när beräkningar görs
 i formler, ska vi använda []?
+Jobba igenom med SI-enheterna.
 
 24. Ta bort alla formuleringar med och/eller.  Skapar avstavningsproblem.
+Jobba igenom.
 
-25. Align hjow units are presented in math formulas.  I think it is
+25. Align how units are presented in math formulas.  I think it is
 good to have them, but now there is a mix of greek, written out as
 words, etc.
+Se 23 ovan.
 
 26. Ordet "komposant"?
+Det är korrekt.  Man lär sig någt varje dag.
 
 27: Hur ska vi göra med itemized lists, ska de kunna läsas ut some en
 mening med komman och punkt på slutet?
+Jobba igenom.
 
 28. ERP/EIRP is written ERP/EIRP and erp/eirp...  Define one set of
 macros?
+Skriv som ERP och EIRP.
++++Risk att det ser annorlunda ut än undantagstexten???
 
 29. Using \paragraph in the beginning of a sentence looks strange
 since it inserts an extra long space... See beginning of chapter 11.
+Jobba igenom.
 
 30: Repeaters. Beskriv hur man räknar ut frekvens.  I tabellerns, var
 mer klar över vad repeatern gör.  Fattas 6 och 10+banden i tabellen?
+Lägg till matten och lite förklarande text.
 
 31. Why koncept-tryck.tex?
-
+Kanske för ML-web.  Låt det vara för tillfället.
 
 
 
