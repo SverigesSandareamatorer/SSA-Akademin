@@ -32,6 +32,7 @@ Per: Gör det till ett macro.  Jag tycker reflektion låter bättre, men reflexi
 10. Använd sans serif för bildtexter istället.  Sparar emph för en
 sak.
 Prova.
+KLART.
 
 11. Ibland har exempel egen section (chapter 11), ibland inte?  Vad är bäst?
 Per: Skapa macro.
@@ -110,7 +111,7 @@ Lägg till matten och lite förklarande text.
 31. Why koncept-tryck.tex?
 Kanske för ML-web.  Låt det vara för tillfället.
 
-
+32. Move index till det ställe där informationen äör, inte vid titeln, det kan komma en sidbrytning emellan.
 
 Innehåll
 
