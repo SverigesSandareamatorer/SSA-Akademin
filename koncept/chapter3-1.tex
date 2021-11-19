@@ -368,7 +368,8 @@ Laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
 
 Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
 %
-\[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+% \[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+\[u_c = U_{\it max} \cdot ( 1 - e^{-t/\tau} )\]
 %
 \begin{tabular}{lp{0.35\textwidth}}
   \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
@@ -392,9 +393,10 @@ Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
 
 Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
 
-\[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+% \[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = I_{\it max} \cdot e^{-t/\tau}\]
 
-\begin{tabular}{lp{0.4\textwidth}}
+\begin{tabular}{lp{0.35\textwidth}}
   \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
   \(I_{\it max}\) & begynnelseströmmen \\
 \end{tabular}
@@ -412,12 +414,13 @@ Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor 
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
-\[u_c = U_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+% \[u_c = U_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[u_c = U_{\it max} \cdot e^{-t/\tau}\]
 
 Strömmen från kondensatorn minskar exponentiellt under urladdningen.
 Strömriktningen är motsatt den vid uppladdningen.
 
-\[i_c = - I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = - I_{\it max} \cdot e^{-t/\tau}\]
 
 Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{\it max}\)
 respektive \(U_{\it max}\) återstår.
@@ -453,7 +456,7 @@ Spänningen över induktorn minskar från \(U_{\it max}\) till 0.
 
 Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\).
 %
-\[i_L = I_{\it max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
+\[i_L = I_{\it max} \cdot (1-e^{-t/\tau} )\]
 %
 \begin{tabular}{lp{0.35\textwidth}}
   \(i_L\) &  strömmen efter en given inkopplingstid \\
@@ -486,7 +489,7 @@ En resistor är inkopplad över induktorn.
 Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
 Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt.
 
-\[i_L = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_L = I_{\it max} \cdot e^{-t/\tau}\]
 
 \begin{tabular}{lp{0.4\textwidth}}
   \(i_L\) & strömmen genom ind. efter en given \\

@@ -1,7 +1,11 @@
 Stoplar till discussion.
 
 1. Placering av figurer och tabeller.
+   Vissa figurer är definierade mellan section och texten, vilket
+   leder till layout problem. Fixa detta sist när man vert var bilder
+   ska sitta.
    mål: Man ska kunna se de relevanta figurerna på samma sida eller i alla fall uppslaget.
+   Help: colorbox for debugging figure/table placemen. \usepackage{xcolor}.  Can I do this without changeing all the \ref??? Sigh.
    
 2. Avstaving.  Jag har lagt till en hel del regler, men är inte klar än.
 
@@ -19,15 +23,21 @@ De tomma cellerna är för att fylla i, som ett arbetsfält.
 6. \noindent efter alla Harec i början av stycken.  Skapa ett bättre harec
 macro. Harec-texterna med a/b etc i slutet överlappar om inte på ny
 rad...  Harec ute till höger?
-Per: Skapa ett macro.
+Status: Har skapat ett macro.  Kapitel 1 är konverterat.
 
 7. Ska formler ha punkt efter sig? Ska de vara med i texten?
 Arbeta igenom konsekvent.
+Status: Not started.
 
-8. Ta bort alla newpage...
+8. Ta bort alla newpage... Använd antingen markörer för att hjälpa
+latex (\pagebreak[n]) eller i absolut sista hand clearpage.  Gör detta
+sist.
+Status: WIP.
 
 9. Reflexion?  Stavning?
-Per: Gör det till ett macro.  Jag tycker reflektion låter bättre, men reflexion verkar vara det mer korrekta svenska ordet nu.
+Per: Gör det till ett macro.  Jag tycker reflektion låter bättre, men
+reflexion verkar vara det mer korrekta svenska ordet nu.
+Status: Not started.
 
 10. Använd sans serif för bildtexter istället.  Sparar emph för en
 sak.
@@ -42,11 +52,12 @@ Komma
 
 13. Utropstecken och stycket därvid.
 Macro, skapa enhetlighet.
+Status: Not started.
 
 14. Om vi riktar oss till nya amatörsändare så ´vore det bra med mer
 exempel på hur man uttalar saker, tex SM0XYZ/6/M??? Sigurd Martin
 Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
-Per: Skriv inb exempel, review.
+Per: Skriv inb exempel, review. Not started.
 
 15. Lägg till / och M (mobil) i tabell 13.1?
 
@@ -59,6 +70,7 @@ Ta bort. Men små stycken kommer upp i innehållsförteckningen.
 
 18. Behöver vi sidor som listar tabeller of figurer?
 Ta bort.
+KLART.
 
 19. Gör litteraturlistan mer lättillgänglig med beskrivingar av vad
 man kan få ut av varje bok, och kanskee någon form av vägledning till
@@ -79,17 +91,15 @@ Jobba igenom.
 23. Kom fram till ett sätt att lägga till enheter när beräkningar görs
 i formler, ska vi använda []?
 Jobba igenom med SI-enheterna.
+Status: Jag experimenterar med att matte macro som sätter detta
+korrekt, inte nöjd med resultat än...
 
 24. Ta bort alla formuleringar med och/eller.  Skapar avstavningsproblem.
 Jobba igenom.
-
-25. Align how units are presented in math formulas.  I think it is
-good to have them, but now there is a mix of greek, written out as
-words, etc.
-Se 23 ovan.
+Status: Inte startat.
 
 26. Ordet "komposant"?
-Det är korrekt.  Man lär sig någt varje dag.
+Det är korrekt.  Man lär sig något varje dag.
 
 27: Hur ska vi göra med itemized lists, ska de kunna läsas ut some en
 mening med komman och punkt på slutet?
@@ -113,17 +123,22 @@ Kanske för ML-web.  Låt det vara för tillfället.
 
 32. Move index till det ställe där informationen äör, inte vid titeln, det kan komma en sidbrytning emellan.
 
-Innehåll
+33. 4.3.2. Why are the equations numbered all of a sudden?
+KLART: Changed to eqnarray*, since none of the formulas were
+referenced as far as I could see.
 
-- Antenn stycket behöver mer.
+34. 3.1.9.2
+FIXAT: Tog bort dfrac från några formler och fixade bredden på tabeller.
 
-Presentation
+35. 2.7.7 kOmega instead of kohm?
+FIXAT, men beh;ver göras konsekvent med SI enheter.
 
-- Tabeller in the riggt place.
+36 Bild 7.6/7/7.  Varf;r refereras dessa bilder fr[n formlerna?
+FIXAT, tog bort texten i formlerna.
 
-- Figure texts that are self sufficient.  At least explain the content
-  of the figure/table.  Balance between the main text and the caption.
+37. ERP, EIRP, PEP
 
-Layout/LaTeX
+38. prefix, tabell 13.3.  At least radiation uses higher values...
 
-- 
+39. xtabular
+
