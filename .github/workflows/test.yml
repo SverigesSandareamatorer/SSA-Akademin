@@ -12,13 +12,6 @@ jobs:
     steps:
       - name: 'Check out'
         uses: actions/checkout@v2
-      - name: Cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            **/*.aux
-            **/*.idx
-          key: ${{ runner.os }}-${{ matrix.variant }}
       - name: Install
         run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: Build
@@ -30,4 +23,4 @@ jobs:
           path: |
             '*.pdf'
             '*.epub'
-          retention-days: 14
+          retention-days: 31
