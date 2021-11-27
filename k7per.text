@@ -35,13 +35,12 @@ sist.
 Status: WIP.
 
 9. Reflexion?  Stavning?
-Per: Gör det till ett macro.  Jag tycker reflektion låter bättre, men
-reflexion verkar vara det mer korrekta svenska ordet nu.
-Status: Not started.
+Per: Jag kollade igenom texten igen och det finns många liknande ord som ser
+konstiga ut om vi stavar med x, så jag skrev nu om det med kt.
+Status: KLART (om ni accepterar kt)
 
 10. Använd sans serif för bildtexter istället.  Sparar emph för en
 sak.
-Prova.
 KLART.
 
 11. Ibland har exempel egen section (chapter 11), ibland inte?  Vad är bäst?
@@ -57,9 +56,11 @@ Status: Not started.
 14. Om vi riktar oss till nya amatörsändare så ´vore det bra med mer
 exempel på hur man uttalar saker, tex SM0XYZ/6/M??? Sigurd Martin
 Nolla Xerxes Yngve Zäta Streck Sexa Streck Mobil???
-Per: Skriv inb exempel, review. Not started.
+Per: Skriv inb exempel, review.
+Exampel KLART.
 
 15. Lägg till / och M (mobil) i tabell 13.1?
+Nej. Tror inte det efter lite eftertanke.
 
 16. Tabell 13.5.  Sorterad på?
 Kanske sorterad på  distans från Sverige?
