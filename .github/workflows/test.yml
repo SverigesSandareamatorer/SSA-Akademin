@@ -9,12 +9,13 @@ jobs:
     strategy:
       matrix:
         variant: [koncept.pdf, koncept-tryck.pdf, koncept.epub]
+      fail-fast: false
     steps:
-      - name: 'Check out'
+      - name: 'Checka ut'
         uses: actions/checkout@v2
-      - name: Install
+      - name: Installera
         run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
-      - name: Build
+      - name: Bygg
         run: make ${{ matrix.variant }}
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
