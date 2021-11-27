@@ -65,6 +65,7 @@ Nej. Tror inte det efter lite eftertanke.
 16. Tabell 13.5.  Sorterad på?
 Kanske sorterad på  distans från Sverige?
 Per: Sortera om.  Gör bold de som är kanske mer viktiga? Nära.
+KLART
 
 17. Att skriva loggbok. Varför subsection?
 Ta bort. Men små stycken kommer upp i innehållsförteckningen.
@@ -84,7 +85,7 @@ Uppdatera.
 
 21. Vet inte vad som ska gäras med Appendix Måtteheter...
     Metallers resistivitet är inte måttenhet.
-Uppdatera.  Flytta metallerna.
+Uppdatera.  Flytta metallerna. Flyttat till kapitel 1 om ledningsförfmåga.
 
 22. Bryt långa ekvationer.  Kapitel 11 tex.
 Jobba igenom.
@@ -101,6 +102,7 @@ Status: Inte startat.
 
 26. Ordet "komposant"?
 Det är korrekt.  Man lär sig något varje dag.
+KLART.
 
 27: Hur ska vi göra med itemized lists, ska de kunna läsas ut some en
 mening med komman och punkt på slutet?
@@ -110,6 +112,7 @@ Jobba igenom.
 macros?
 Skriv som ERP och EIRP.
 +++Risk att det ser annorlunda ut än undantagstexten???
+KLART som macro, kolla om ni ser några prioblem med nuvarande.
 
 29. Using \paragraph in the beginning of a sentence looks strange
 since it inserts an extra long space... See beginning of chapter 11.
@@ -134,7 +137,7 @@ FIXAT: Tog bort dfrac från några formler och fixade bredden på tabeller.
 35. 2.7.7 kOmega instead of kohm?
 FIXAT, men beh;ver göras konsekvent med SI enheter.
 
-36 Bild 7.6/7/7.  Varf;r refereras dessa bilder fr[n formlerna?
+36 Bild 7.6/7/7.  Varför refereras dessa bilder från formlerna?
 FIXAT, tog bort texten i formlerna.
 
 37. ERP, EIRP, PEP
