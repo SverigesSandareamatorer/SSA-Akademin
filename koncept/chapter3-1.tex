@@ -360,21 +360,18 @@ och kopplas till spänningen \(U\).
 
 % PHU: Bilden förvirrar. U i kretsschemat är samma som U_max i diagrammet.
 
-Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\).
-
-Laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
-
-Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
+Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\) samtidigt
+som laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.  Spänningen
+över kondensatorn ökar exponentiellt under uppladdningen
 %
 % \[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
 \[u_c = U_{\it max} \cdot ( 1 - e^{-t/\tau} )\]
 %
-\begin{tabular}{lp{0.35\textwidth}}
-  \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
-  \(U_{\it max}\) & slutspänningen efter minst \(t = 5\tau\) \\
-  \(t\)       & inkopplingstiden \\
-  \(e\)       & 2,718 (e = basen för den naturliga logaritmen) \\
-\end{tabular}
+%\begin{tabular}{lp{0.35\textwidth}}
+där \(u_c\) är spänningen över kondensatorn efter en given inkopplingstid, \(U_{\it max}\)
+är slutspänningen efter minst \(t = 5\tau\), \(t\) är inkopplingstiden, och \(e\) är basen
+för den naturliga logaritmem.
+%\end{tabular}
 
 I förloppet ingår storleken av resistans och kapacitans enligt följande samband,
 som kallas tidskonstant:
@@ -389,20 +386,19 @@ Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
 kondensatorn ökat från noll till 63~\% av maxvärdet.
 Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
 
-Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
+Strömmen från kondensatorn minskar exponentiellt under uppladdningen
 
 % \[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
 \[i_c = I_{\it max} \cdot e^{-t/\tau}\]
 
-\begin{tabular}{lp{0.35\textwidth}}
-  \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
-  \(I_{\it max}\) & begynnelseströmmen \\
-\end{tabular}
+där
+% \begin{tabular}{lp{0.35\textwidth}}
+\(i_c\) är strömmen från kondensatorn efter en given inkopplingstid och 
+\(I_{\it max}\) är begynnelseströmmen.
+% \end{tabular}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
-kondensatorn minskat till 37~\% av maxvärdet.
-
-Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
+kondensatorn minskat till 37~\% av maxvärdet.  Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
 
 \subsubsection{Urladdning}
 
@@ -421,9 +417,7 @@ Strömriktningen är motsatt den vid uppladdningen.
 \[i_c = - I_{\it max} \cdot e^{-t/\tau}\]
 
 Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{\it max}\)
-respektive \(U_{\it max}\) återstår.
-
-Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
+respektive \(U_{\it max}\) återstår. Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 \(I_{\it max}\) respektive \(U_{\it max}\) återstår.
 
 Exempel på beräkning av tidskonstanten:
@@ -452,16 +446,17 @@ Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
 Spänningen över induktorn minskar från \(U_{\it max}\) till 0.
 
-Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\).
+Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\)
 %
 \[i_L = I_{\it max} \cdot (1-e^{-t/\tau} )\]
 %
-\begin{tabular}{lp{0.35\textwidth}}
-  \(i_L\) &  strömmen efter en given inkopplingstid \\
-  \(I_{\it max}\) & slutströmmen efter minst \(t = 5\tau\) \\
-  \(t\) & inkopplingstiden \\
-  \(e\) & 2,718 (e = basen för den naturliga logaritmen) \\
-\end{tabular}
+där
+%\begin{tabular}{lp{0.35\textwidth}}
+\(i_L\) är strömmen efter en given inkopplingstid, 
+\(I_{\it max}\) är slutströmmen efter minst \(t = 5\tau\),
+\(t\) är inkopplingstiden, och
+\(e\) är basen för den naturliga logaritmen).
+% \end{tabular}
 
 I förloppet ingår storleken av resistans och induktans enligt följande samband,
 som kallas tidskonstant
@@ -485,17 +480,17 @@ minskat till 37~\% av maxvärdet.
 Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
 Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt.
+Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt
 
 \[i_L = I_{\it max} \cdot e^{-t/\tau}\]
-
-\begin{tabular}{lp{0.4\textwidth}}
-  \(i_L\) & strömmen genom ind. efter en given \\
-          &ur\-kop\-p\-li\-ngs\-tid \\
-  \(I_{\it max}\) & strömmen i urkopplingsögonblicket \\
-  \(e\) & 2,718 \\
-  \(t\) & tiden efter urkopplingsögonblicket \\
-\end{tabular}
+\noindent där
+%\begin{tabular}{lp{0.42\textwidth}}
+%  \raggedright
+  \(i_L\) är strömmen genom induktorn efter en given ur\-kop\-p\-li\-ngs\-tid, 
+  \(I_{\it max}\) är strömmen i urkopplingsögonblicket,
+  \(e\) är basen för den naturliga logarithmen, och\
+  \(t\) är tiden efter urkopplingsögonblicket.
+% \end{tabular}
 
 \vspace*{1ex}
 
