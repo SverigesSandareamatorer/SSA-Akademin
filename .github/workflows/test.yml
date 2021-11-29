@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        variant: [koncept.pdf, koncept-tryck.pdf, koncept.epub]
+        variant: [koncept.pdf, koncept.epub]
       fail-fast: false
     steps:
       - name: 'Checka ut'
@@ -22,6 +22,6 @@ jobs:
         with:
           name: koncept-pdf
           path: |
-            '**/*.pdf'
-            '**/*.epub'
+            **/*.pdf
+            *.epub
           retention-days: 31
