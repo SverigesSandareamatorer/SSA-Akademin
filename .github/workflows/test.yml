@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        variant: [koncept.pdf, koncept.epub]
+        variant: [koncept.pdf]
       fail-fast: false
     steps:
       - name: 'Checka ut'
@@ -17,11 +17,9 @@ jobs:
         run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
-      - name: 'Upload Artifact'
+      - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
-          path: |
-            **/*.pdf
-            *.epub
+          path: koncept.pdf
           retention-days: 31
