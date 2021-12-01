@@ -462,9 +462,14 @@ Avståndet från antennen till beräkningspunkten är \SI{15}{\metre}.
 \[k_{mod} = modulationsfaktor\]
 \[k_{if} = intermittensfaktor\]
 \[G = 31 \quad k = 0,56 \quad d = 15\]
-\[E = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
-= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
-= \SI{34,02}{\volt\per\metre}\]
+% \[E = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
+% = \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
+% = \SI{34,02}{\volt\per\metre}\]
+\begin{align*}
+  E &= \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d} =\\
+&= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
+= \SI{34,02}{\volt\per\metre}
+\end{align*}
 
 Då referensvärdet på denna frekvens är \SI{28}{\volt\per\metre}, överskrider
 amatörradiosändningen referensvärdet på detta avstånd.
@@ -485,9 +490,14 @@ Referensvärdet för \SI{144}{\mega\hertz} är \SI{28}{\volt\per\metre}.
 \[k_{mod} = \textit{modulationsfaktor}\]
 \[k_{if} = \textit{intermittensfaktor}\]
 \[G = 31 \quad k = 0,56 \quad E = 28\]
-\[d = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
-= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
-= \SI{18,22}{\metre}\]
+%% \[d = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
+%% = \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
+%% = \SI{18,22}{\metre}\]
+\begin{align*}
+  d &= \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d} =\\
+&= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
+  = \SI{18,22}{\metre}
+  \end{align*}
 
 För att följa de allmänna råden bör allmänheten inte kunna vistas i huvudloben
 framför antennen på ett avstånd mindre än \SI{19}{\metre} då sändning utförs
