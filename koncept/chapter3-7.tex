@@ -184,9 +184,9 @@ stor kapacitans.
 Med en kapacitansdiod i resonanskretsen i stället för en mekaniskt
 variabel kondensator, behövs ytterligare två komponenter.
 Drosseln \(D_r\) hindrar högfrekvenssignalen att överlagras på styrkretsens
-likspänning, vilket annars skulle skulle försämra resonanskretsens godhetstal 
+likspänning, vilket annars skulle skulle försämra resonanskretsens godhetstal
 (förlorad HF-energi innebär dämpning).
-Omvänt hindrar kondensatorn \(C\) att dioden och spärrspänningen kortsluts 
+Omvänt hindrar kondensatorn \(C\) att dioden och spärrspänningen kortsluts
 genom induktorn.
 Oscillatorfrekvensen ställs in med den variabla likspänningen \(U\).
 Av en VFO har det blivit en VCO.
@@ -208,9 +208,9 @@ En sådan reglerkrets består av digitala komponenter.
 Bild \ref{fig:BildII3-80b} illustrerar en oscillator med PLL-styrning.
 Fasjämföraren levererar en cykliskt justerad styrspänning till
 kapacitansdioden i VCO.
-Eftersom denna spänning ändras språngvis, avrundas förloppet så att 
+Eftersom denna spänning ändras språngvis, avrundas förloppet så att
 frekvensändringarna blir mjuka.
-Avrundningen sker med ett RC-filter där kondensatorn antar ett medelvärde av 
+Avrundningen sker med ett RC-filter där kondensatorn antar ett medelvärde av
 den pulserande utgångsspänningen från jämföraren.
 Om VCO-frekvensen är för låg, levererar jämföraren en positiv spänning.
 Styrspänningen på kapacitansdioden stiger då med en hastighet som bestäms av
@@ -221,7 +221,7 @@ spärrskiktet blir tjockare och frekvensen på VCO stiger.
 
 När signalen från VCO åter är lik referenssignalen från XO, till
 fasläge och frekvens, ökar utgångsresistansen i fasjämföraren.
-Lågpassfiltrets kondensator behåller då sin laddning och styrspänningen till 
+Lågpassfiltrets kondensator behåller då sin laddning och styrspänningen till
 VCO ändras inte.
 Skulle frekvensen på VCO vara för hög, blir jämförarens utgång lågohmig och
 filtrets kondensator urladdas med den hastighet som bestäms av tidskonstanten.
@@ -274,9 +274,9 @@ programmerbar frekvensdelare.
 \mediumtopfig{images/cropped_pdfs/bild_2_3-82.pdf}{PLL med frekvensdelare}{fig:BildII3-82}
 
 Bild \ref{fig:BildII3-82} visar en PLL med frekvensdelare.
-Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen 
+Med PLL blir frekvensen på utsignalen från en VCO låst till referensfrekvensen
 från en XO.
-I princip fås en VCO med samma frekvensstabilitet som en XO, men som också är 
+I princip fås en VCO med samma frekvensstabilitet som en XO, men som också är
 lika svår att ändra frekvensen på.
 Med en frekvensdelare i fasregleringsslingan (PLL) kan emellertid utfrekvensen
 ändras, medan XO fortfarande avger samma referensfrekvens.
@@ -290,7 +290,7 @@ Genom att välja delningstal i PLL kan arbetsfrekvensen i VCO ställas
 in stegvis, där varje steg är så stort som en referensfrekvens.
 Signalfrekvensen från VCO delas med det valda delningstalet och resultatet
 jämförs med referensfrekvensen från XO.
-Varje avvikelse referensfrekvensen kommer att medföra justering av 
+Varje avvikelse referensfrekvensen kommer att medföra justering av
 VCO-frekvensen.
 
 Om man till exempel vill täcka 2-metersbandet i steg om \SI{25}{\kilo\hertz},
@@ -336,7 +336,7 @@ Trots det är långtidsstabiliteten god i en VCO, när den ingår i en PLL,
 eftersom frekvensen hålls ständigt efterjusterad.
 PLL kan däremot inte åstadkomma en lika bra korttidsstabilitet.
 Ett fasjämförelseförlopp omfattar ju redan tiden för en period av
-referensfrekvensen, och det kommer att förflyta en multipel av denna kortaste 
+referensfrekvensen, och det kommer att förflyta en multipel av denna kortaste
 tid innan styrspänningen kan återställa VCO-frekvensen igen.
 Detta beror på att kondensatorn i regleringsslingans lågpassfilter först måste
 laddas upp under ett antal perioder innan reglering sker.
@@ -364,7 +364,7 @@ Skakningar från underlaget till exempel vid mobilt bruk, vibrationer från en
 transformatorkärna etc. kan försämra oscillatorns frekvensstabilitet.
 
 Frekvensbestämmande komponenter såsom fasta och variabla kondensatorer, spolar
-och liknande ska vara stabilt monterade, trimkärnorna i spolarna fixerade och 
+och liknande ska vara stabilt monterade, trimkärnorna i spolarna fixerade och
 så vidare.
 
 Förbindningarna får inte tillåtas att böja sig eller vibrera.
@@ -386,7 +386,7 @@ att resonanskretsarna blir alltför belastade och deras godhetstal för lågt.
 
 \subsubsection{Avskärmande kapslingar}
 
-Resonanskretsar ska skärmas från yttre kapacitanstillskott, till exempel från 
+Resonanskretsar ska skärmas från yttre kapacitanstillskott, till exempel från
 användarens hand.
 Det görs med skiljeväggar och komponentkapslingar av metall.
 Skärmningarna förhindrar också oönskad koppling mellan oscillatorn och
