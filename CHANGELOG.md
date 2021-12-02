@@ -4,6 +4,7 @@ Alla anmärkningsvärda ändringar till projektet dokumenteras här.
 Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
 
 ## [Unreleased]
+- Solfläckscykel 25 är den nuvarande
 
 ## [2.4.0] - 2021-03-31
 - Liten uppdatering med läsanvisningar för teknikdelen
