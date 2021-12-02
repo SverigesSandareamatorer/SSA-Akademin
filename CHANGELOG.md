@@ -4,6 +4,8 @@ Alla anmärkningsvärda ändringar till projektet dokumenteras här.
 Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
 
 ## [Unreleased]
+
+## [2.4.0] - 2021-03-31
 - Liten uppdatering med läsanvisningar för teknikdelen
 - Liten uppdatering med läsanvisningar för reglementesdelen
 - Tillagt ett litet nytt appendix med bandplaner

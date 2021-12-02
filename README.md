@@ -10,13 +10,12 @@ tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 
-> :warning: **Observera:** Boken och materialet som finns att läsa här
-är ett arbetsmaterial och ska inte användas som en färdig produkt
-utan endast som ett underlag för arbetet med den.
+| :warning: **Observera** |
+|:---------------------------|
+| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett arbetsunderlag för arbetet med den. |
 
 LADDA NER OCH BYGG PROJEKTET
 ============================
-
 
 Version
 -------
@@ -26,12 +25,12 @@ versionsnumrering som ger värdefull information åt läsaren. Här är ett exem
 på hur det kan se ut och en förklaring till vad allt betyder.
 
 <pre>
-koncept  .2.0.0  +b12345 .8c04343 .pdf
-          │ │ │      │       └ Git hash
-          │ │ │      └ Byggnummer
-          │ │ └ Ej tryckt uppdatering
-          │ └ Tryckning (med 1:a tryckning = 0)
-          └ Upplaga
+koncept.2.0.0+b12345.8c04343.pdf
+        │ │ │    │      └ Git commit hash
+        │ │ │    └ Byggnummer
+        │ │ └ Ej tryckt uppdatering
+        │ └ Tryckning (med 1:a tryckning = 0)
+        └ Upplaga
 </pre>
 
 Bygg projektet
@@ -54,12 +53,12 @@ BIDRA TILL PROJEKTET
 Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
-**Q: Jag kan koda och vill bidra; vad gör jag?**
-A: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
+**Fråga: Jag kan koda och vill bidra; vad gör jag?**<br>
+Svar: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
 instruktionerna.
 
-**Q: Jag vet inte hur man redigerar kod!**
-A: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
+**Fråga: Jag vet inte hur man redigerar kod?!**<br>
+Svar: Det finns flera sätt att hjälpa till. Du kan läsa boken och ge
 förslag på förbättringar och om du vet hur man gör så kan du lämna
 en *issue* med en beskrivning av fel och om möjligt en föreslagen
 förändring. Annars kan du använda dig av kontaktinformationen nedan
@@ -71,7 +70,7 @@ INSTRUKTIONER FÖR PROJEKTET
 
 Merge
 -----
-För att göra merge följer man instruktionerna i  [`MERGE.md`](MERGE.md).
+För att göra merge följer man instruktionerna i [`MERGE.md`](MERGE.md).
 
 Release
 -------
@@ -91,8 +90,7 @@ använts inom SSA. Vi tar fram konkreta förslag på hur moderniseringen
 ska gå till väga och genomför dem.
 
 Vårt mål är att
-
--   fler ska vilja ta utbildningen för att bli radioamatör
+-   fler ska vilja genomgå utbildningen för att bli radioamatör
 -   de som examineras ska göra bättre ifrån sig på provet
 -   de som deltar i utbildningen ska känna att det är en bra utbildning.
 
