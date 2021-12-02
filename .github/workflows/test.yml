@@ -14,12 +14,14 @@ jobs:
       - name: 'Checka ut'
         uses: actions/checkout@v2
       - name: 'Installera'
-        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv
+        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv latexml
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
-          name: koncept-pdf
-          path: koncept.pdf
+          name: koncept-${{ github.sha }}
+          path: |
+              koncept.pdf
+              web/*
           retention-days: 31
