@@ -13,6 +13,7 @@
 \include{koncept/common}
 \usepackage[swedish]{babel}
 % \usepackage{paralist}
+\usepackage{balance}
 
 \usepackage[
   activate={true,nocompatibility},
@@ -89,7 +90,7 @@
 \setcounter{secnumdepth}{3}
 
 % Figure macros
-\newcommand{\bottomwidefigure}[4][0.4]{
+\newcommand{\bottomwidefigure}[4][0.6]{
   \begin{figure*}[b]
     \centering
     \includegraphics[width=#1\textwidth]{#2}
@@ -164,7 +165,66 @@
   \end{figure*}
 }
 
+\newcommand{\mediumbotfig}[4][0.7]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+\newcommand{\mediumminusbotfig}[4][0.6]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
 \newcommand{\mediumtopfig}[4][0.7]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumminustopfig}[4][0.6]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumplustopfig}[4][0.8]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumplusbotfig}[4][0.8]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\medfig}[4]{
   \begin{figure*}[t]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}

@@ -611,14 +611,15 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 %% k7per: Use S to align numbers for easier reading?
 \begin{table*}[ht]
 \begin{center}
-\begin{tabular}{ll|l|l|l|l|l|l|l|l|}
+  %\begin{tabular}{ll|S|S[table-format=-1.3]|S[table-format=-1.3|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|}
+  \begin{tabular}{ll|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|l|}
 \cline{3-9}
 &\multicolumn{1}{l}{}  & \multicolumn{7}{|c|}{Modulationsindex} \\ \cline{3-9}
-&\multicolumn{1}{l|}{}  &   1   &   2   &    3   &    4   &    5   &    6   &    7   \\ \hline
+&\multicolumn{1}{l|}{}  &  \multicolumn{1}{c|}{1}   &   \multicolumn{1}{c|}{2}   &    \multicolumn{1}{c|}{3}   &    \multicolumn{1}{c|}{4}   &    \multicolumn{1}{c|}{5}   &    \multicolumn{1}{c|}{6}   &    \multicolumn{1}{c|}{7}   \\ \hline
 \multicolumn{1}{|c|}{\multirow{11}{*}{\rotatebox[origin=c]{90}{Relativ amplitud på}}}&\(A_0\) & 0,765 & 0,224 & \num{-0,260} & \num{-0,397} & \num{-0,178} &  0,151 &  0,300 \\
-\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & \num{-0,066} & \num{-0,328} & \num{-0,277} & \num{-0,005} \\
-\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & \num{-0,243} & \num{-0,301} \\
-\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & \num{-0,168} \\
+\multicolumn{1}{|c|}{}&\(A_1\) & 0,440 & 0,577 &  0,334 & \num{-0,066} & \num{-0,328} & \num{-0,277} & -0,005 \\
+\multicolumn{1}{|c|}{}&\(A_2\) & 0,115 & 0,353 &  0,486 &  0,364 &  0,047 & \num{-0,243} & -0,301 \\
+\multicolumn{1}{|c|}{}&\(A_3\) & 0,020 & 0,129 &  0,309 &  0,430 &  0,365 &  0,115 & -0,168 \\
 \multicolumn{1}{|c|}{}&\(A_4\) &       & 0,034 &  0,132 &  0,281 &  0,391 &  0,358 &  0,158 \\
 \multicolumn{1}{|c|}{}&\(A_5\) &       & 0,016 &  0,043 &  0,132 &  0,261 &  0,362 &  0,348 \\
 \multicolumn{1}{|c|}{}&\(A_6\) & \multicolumn{2}{c|}{} &  0,011 &  0,049 &  0,131 &  0,246 &  0,339 \\
@@ -629,8 +630,8 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \end{tabular}
 \end{center}
 \caption{Relativa amplituden på bärvåg $A_0$ och sidofrekvenser $A_1$--$A_{10}$ vid
-modulationsindex 1--7 (Vid omodulerad bärvåg är modulationsindex 0. Då är
-bärvågens relativa amplitud 1,0)}
+modulationsindex 1--7. (Vid omodulerad bärvåg är modulationsindex 0. Då är
+bärvågens relativa amplitud 1,0.)}
 \end{table*}
 
 
@@ -711,7 +712,6 @@ Före WARC~79 var symbolen för all pulssändning P.
 Därefter används P endast för omodulerade pulståg.
 Annan pulsmodulation har följande symboler
 
-% k7per: Make this a table?
 \begin{description}
 \item[K] -- puls-/amplitudmodulation (PAM)
 \item[L] -- pulsviddmodulation (PWM)
@@ -735,11 +735,13 @@ Annan pulsmodulation har följande symboler
     sidofrekvensernas avstånd från bärvågen &
     LF-signalens högsta frekvens & 
     övermodulering och för stor bandbredd \\
+\hline
   J3E (SSB) & 
     amplituden på utsänt sidband & 
     sidofrekvensernas avstånd från bärvågen  & 
     skillnaden mellan LF-signalens högsta och lägsta frekvens & 
     för stor bandbredd, överstyrning av förstärkarsteg \\
+\hline
   F3E (FM) &
     deviationen & 
     hastigheten på bärvågens frekvensändring &
@@ -751,7 +753,6 @@ Annan pulsmodulation har följande symboler
 \caption{Jämförelse mellan några vanliga sändningsslag inom amatörradio}
 \end{table*}
 
-% k7per
 % \newpage % layout
 
 \subsection{Digital modulation}
@@ -849,7 +850,7 @@ komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och förskjuten 90 grader \
 De fyra faslägena kan nu enkelt förklaras som amplituder i de olika faslägena
 som anges av tabell \ref{tab:4-PSK}.
 
-\begin{table}[ht]
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{|r|r|r|r|}
 \hline
