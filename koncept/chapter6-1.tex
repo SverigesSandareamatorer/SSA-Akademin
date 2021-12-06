@@ -27,6 +27,8 @@ frekvensmultiplicerande sändare etc.
 
 \smallfig{images/cropped_pdfs/bild_2_5-01.pdf}{Enstegs sändare}{fig:bildII5-1}
 
+\mediumbotfig{images/cropped_pdfs/bild_2_5-02.pdf}{Flerstegs rak sändare}{fig:bildII5-2}
+
 \subsection{Rak sändare}
 \harecsection{\harec{a}{5.1.1b}{5.1.1b}, \harec{a}{5.2.1}{5.2.1}, \harec{a}{5.3.3}{5.3.3}}
 \index{rak sändare}
@@ -41,8 +43,6 @@ Om en antenn kopplas till oscillatorn så blir den en enkel enstegs sändare.
 I flerstegs raka sändare följs oscillatorn av ytterligare funktioner på samma
 frekvens som oscillatorn.
 Buffertsteg, drivsteg och slutsteg kan vara sådana funktioner.
-
-\mediumfig{images/cropped_pdfs/bild_2_5-02.pdf}{Flerstegs rak sändare}{fig:bildII5-2}
 
 Bild \ref{fig:bildII5-2} visar en rak sändare, som består av oscillator +
 buffertsteg 1 + buffertsteg 2 + drivsteg + effektförstärkare.
@@ -80,7 +80,8 @@ I olinjära kretsar alstras övertoner, som ofta utnyttjas i detta syfte.
 Endast när kravet på frekvensstabilitet är lågt används den frekvens,
 som VFO eller CO arbetar på, även för nyttosignalen.
 
-\mediumfig{images/cropped_pdfs/bild_2_5-03.pdf}{FM-sändare med frekvensmultiplicering}{fig:bildII5-3}
+\mediumplustopfig{images/cropped_pdfs/bild_2_5-03.pdf}{FM-sändare med frekvensmultiplicering}{fig:bildII5-3}
+\mediumtopfig{images/cropped_pdfs/bild_2_5-04.pdf}{2-bands CW-sändare med frekvensblandning}{fig:bildII5-4}
 
 Oscillatorn svänger här på en låg frekvens, som multipliceras i
 olinjära förstärkarsteg till en hög sändningsfrekvens.
@@ -122,6 +123,8 @@ amplituden i det fallet inte är informationsbärande.
 filter på utgången, det så kallade \emph{utgångsfiltret}
 (eng. \emph{output filter}).
 
+
+\newpage
 \subsection{Sändare med frekvensblandning -- superheterodynsändare}
 \harecsection{\harec{a}{5.1.1a}{5.1.1a}}
 \label{sändare_frekvensblandning}
@@ -129,8 +132,6 @@ filter på utgången, det så kallade \emph{utgångsfiltret}
 \subsubsection{Telegrafisändare (CW) för kortvåg}
 \index{CW}
 \index{sändare!CW}
-
-\mediumfig{images/cropped_pdfs/bild_2_5-04.pdf}{2-bands CW-sändare med frekvensblandning}{fig:bildII5-4}
 
 En VFO är mest stabil på låga frekvenser medan en CO har god
 stabilitet även på högre frekvenser.
@@ -152,8 +153,8 @@ frekvensområden.
 \index{SSB}
 \index{sändare!SSB}
 
-%% k7per: Fix the figure to have the correct sign for the second row.
-\mediumfig{images/cropped_pdfs/bild_2_5-05.pdf}{2-bands SSB-sändare med frekvensblandning}{fig:bildII5-5}
+\mediumplustopfig{images/cropped_pdfs/bild_2_5-05.pdf}{2-bands SSB-sändare med frekvensblandning}{fig:bildII5-5}
+\mediumplustopfig{images/cropped_pdfs/bild_2_5-06.pdf}{Flerbands SSB-sändare med frekvensblandning}{fig:bildII5-6}
 
 Bild \ref{fig:bildII5-5} visar en SSB-sändare för två kortvågsband och
 bygger på sändaren i bild \ref{fig:bildII5-4}.
@@ -180,7 +181,6 @@ Den stora skillnaden är att signalfrekvensen kan flyttas till flera olika band
 med hjälp av ännu en frekvensblandning.
 Därför används fler valbara bandpassfilter.
 
-\mediumfig{images/cropped_pdfs/bild_2_5-06.pdf}{Flerbands SSB-sändare med frekvensblandning}{fig:bildII5-6}
 
 I en SSB-signal ligger all information i amplituden, till skillnad
 från en FM-signal där all information ligger i frekvensen.
@@ -209,7 +209,7 @@ En närmare beskrivning av PLL-styrning av dessa två sändarkoncept följer hä
 \subsubsection{PLL-styrd FM-sändare för 144--146~MHz}
 \harecsection{\harec{a}{5.2.3}{5.2.3}}
 
-\mediumfig{images/cropped_pdfs/bild_2_5-07.pdf}{PLL-styrd FM-sändare för FM}{fig:bildII5-7}
+\mediumplustopfig{images/cropped_pdfs/bild_2_5-07.pdf}{PLL-styrd FM-sändare för FM}{fig:bildII5-7}
 
 Bild \ref{fig:bildII5-7} visar en PLL-styrd rak sändare med en
 VCO (spänningsstyrd oscillator) och ett PA (effektförstärkare).
@@ -267,7 +267,7 @@ logikkretsar i kombination med en knappsats och så vida\-re.
 
 \subsubsection{PLL-styrd sändare för kortvåg}
 
-\mediumfig{images/cropped_pdfs/bild_2_5-08.pdf}{PLL-styrd SSB-sändare för kortvåg.}{fig:bildII5-8}
+\mediumfig[0.9]{images/cropped_pdfs/bild_2_5-08.pdf}{PLL-styrd SSB-sändare för kortvåg.}{fig:bildII5-8}
 
 Bild \ref{fig:bildII5-8} visar ett avancerat koncept för en kortvågssändare.
 SSB-signalen alstras på frekvensen \SI{9}{\mega\hertz} och blandas med
@@ -363,7 +363,6 @@ kristalloscillator -- OCXO.
 Det kan även förekomma att man kan låsa på en extern referensfrekvens,
 ofta \SI{10}{\mega\hertz}.
 
-%% k7per: Remove hard layout.
 %% \newpage % layout
 \subsection{RF-bandbredd}
 \harecsection{\harec{a}{5.4.2}{5.4.2}}
@@ -386,6 +385,7 @@ och innan frekvens-skiftningen upp till rätt frekvens.
 Detta kräver dock att efterföljande steg är linjära nog att inte skapa oönskade
 sidband i så kallat splatter eller tar upp spegelfrekvenser.
 
+\newpage
 \subsection{Sidband}
 \harecsection{\harec{a}{5.4.3}{5.4.3}}
 \index{sidband}
