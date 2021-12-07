@@ -1,3 +1,13 @@
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+[Dd]esktop.ini
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -14,10 +24,6 @@
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -179,9 +185,13 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
+
+###################################
+
 # Finished output
-koncept-larobok.pdf
-koncept-refbok.pdf
 koncept.pdf
 matterep.pdf
-koncept-tryck.pdf
+kursplan.pdf
+
+# Temp
+SHA.txt
