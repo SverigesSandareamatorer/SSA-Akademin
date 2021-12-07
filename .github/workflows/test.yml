@@ -20,6 +20,10 @@ jobs:
           texlive-fonts-recommended
           texlive-fonts-extra
           language-pack-sv
+      - name: 'Spara hash'
+        run: |
+          ls -al
+          ${{ github.sha }} > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Ladda upp artefakt'
