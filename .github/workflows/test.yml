@@ -16,9 +16,8 @@ jobs:
       - name: 'Spara hash'
         run: |
           echo ${{ github.sha }} > SHA.txt
-          cd .git
-          ls -al
-          more HEAD
+          echo "-2-"
+          echo /usr/bin/git log -1 --format='%H'
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
       - name: 'Ladda upp artefakt'
