@@ -20,15 +20,15 @@ jobs:
           texlive-fonts-recommended
           texlive-fonts-extra
           language-pack-sv
-      - name: 'Spara hash'
-        run: echo ${{ github.sha }} > SHA.txt
+      - name: 'Kopiera hash'
+        run: echo ${{ github.sha }} | cut -c1-8 > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Byt namn'
-        run: mv koncept.pdf koncept-${{ github.sha }}.pdf
+        run: mv koncept.pdf koncept.$(VERSION.txt)+b${{ github.run_id }}.${{ github.sha }}.pdf
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
-          name: koncept-${{ github.sha }}
+          name: koncept-pdf
           path: koncept*.pdf
           retention-days: 31
