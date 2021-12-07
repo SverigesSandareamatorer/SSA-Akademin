@@ -132,6 +132,8 @@ Här följer avkortade koder enligt WARC~79 för några av de sändningsslag som
 amatörer använder mest, samt för jämförelse även de benämningar som fortfarande
 används jämsides (se vidare i bilaga \ref{sändslag}).
 
+\mediumfig[0.67]{images/cropped_pdfs/bild_2_1-23.pdf}{Modulerande signaler}{fig:BildII1-23}
+
 \begin{description}
 \item[NON] Bärvåg utan modulerande signal. Ingen information.
 
@@ -171,8 +173,6 @@ Till exempel är en nycklad ton, som går till sändaren genom mikrofoningången
 dess analoga basband medan nycklingspulserna till tongeneratorn är dess
 digitala basband.
 
-\largefig{images/cropped_pdfs/bild_2_1-23.pdf}{Modulerande signaler}{fig:BildII1-23}
-
 Bild \ref{fig:BildII1-23} illustrerar modulerade signaler.
 Ett vanligt sätt att överföra information över radio är med telefoni, det vill
 säga tal.
@@ -184,6 +184,8 @@ i talet.
 Mikrofonen tar upp de lufttrycksvariationer som uppstår när man talar och
 omvandlar dem till elektriska svängningar.
 Svängningarna varierar mellan positiva och negativa spänningsvärden.
+
+\bigskip
 
 \textbf{Försök}
 
@@ -217,7 +219,6 @@ amplitudmodulation med
 \item ett frekvensspektrum.
 \end{enumerate}
 
-\newpage
 \noindent\textbf{Försök}
 %
 Modulera en A3E-sändare med en \SI{3}{\kilo\hertz}-signal.
@@ -226,7 +227,7 @@ och påvisa bärvågen och de båda sidbanden.
 
 \subsubsection{A3E-modulation med en ton}
 
-\largefig{images/cropped_pdfs/bild_2_1-25.pdf}{A3E-modulation med toner med olika styrka och frekvens}{fig:BildII1-25}
+\mediumfig{images/cropped_pdfs/bild_2_1-25.pdf}{A3E-modulation med toner med olika styrka och frekvens}{fig:BildII1-25}
 
 Bild \ref{fig:BildII1-25} visar A3E-modulation med toner av olika styrka och
 frekvens.
@@ -280,6 +281,8 @@ sker.
 En A3E-sändare är enkel jämfört med en J3E-sändare, vilken har en mer
 komplicerad signalbehandling.
 
+\pagefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
+
 \subsubsection{Nackdelar med A3E-modulation}
 
 Eftersom samma information finns i båda sidbanden och ingen finns i bärvågen,
@@ -289,13 +292,14 @@ I talpauser sänds endast bärvågseffekten och till ingen nytta.
 Då en annan, alltför närliggande sändares bärvåg blandas med den egna,
 alstras interferenstoner i mottagarna.
 
+\mediumplustopfig{images/cropped_pdfs/bild_2_1-27.pdf}{Sidband vid DSB}{fig:BildII1-27}
+
 \subsection{Sändningsslaget A1A (CW)}
 \harecsection{\harec{a}{1.8.1}{1.8.1}, \harec{a}{1.8.6a}{1.8.6a}, \harec{a}{1.8.7a}{1.8.7a}}
 \index{A1A}
 \index{CW}
 \label{modulation_cw}
 
-\largefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
 
 Bild \ref{fig:BildII1-26} visar amplitudmodulation med morsetecken.
 Man kan överföra meddelanden med morsetelegrafi på olika sätt.
@@ -358,8 +362,6 @@ sätt.
 Numera är den så kallade filtermetoden i särklass vanligast och den enda som
 behandlas här.
 
-\mediumfig{images/cropped_pdfs/bild_2_1-27.pdf}{Sidband vid DSB}{fig:BildII1-27}
-
 Bild \ref{fig:BildII1-27} illustrerar sidband vid DSB-modulation.
 Med filtermetoden blandas HF- och LF-signalerna i en speciell blandare.
 Där undertrycks båda dessa signaler medan blandningsprodukterna med deras summa-
@@ -372,9 +374,12 @@ av ett bandpassfilter med bandbredd och frekvensläge för avsett sidband.
 
 Den signal som sänds ut innehåller därför endast ett sidband (Single Side Band).
 
+\newpage
+% \tallfig[0.45]{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
+\mediumtopfig{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
+
 \paragraph{Exempel}
 
-\tallfig[0.45]{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
 
 Bild \ref{fig:BildII1-28} illustrerar sidbandsval vid SSB-modulering.
 Ett SSB-filter har ett passband av \SIrange{9000,3}{9003}{\kilo\hertz}.
@@ -394,7 +399,8 @@ filtrets passband.
 Det övre sidbandet \SIrange{9003,3}{9006,0}{\kilo\hertz} faller nu utanför
 passbandet och blir undertryckt.
 
-\largefig{images/cropped_pdfs/bild_2_1-29.pdf}{Sidbandslägen vid SSB}{fig:BildII1-29}
+%% k7per: Make this bigger.
+\mediumtopfig{images/cropped_pdfs/bild_2_1-29.pdf}{Sidbandslägen vid SSB}{fig:BildII1-29}
 
 Bild \ref{fig:BildII1-29} illustrerar sidbandslägen vid SSB.
 LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
@@ -450,6 +456,7 @@ För att effektivt utnyttja fördelarna med vinkelmodulation, antingen det är
 frekvens eller fasmodulation, behövs tillräckligt frekvensutrymme.
 Det innebär att främst högre frekvensband kommer i fråga.
 
+\newpage
 \subsection{Frekvensmodulation (FM)}
 \harecsection{\harec{a}{1.8.3b}{1.8.3b}, \harec{a}{1.8.6d}{1.8.6d}}
 \index{frekvensmodulation}
@@ -500,6 +507,8 @@ större bandbredd än en AM-signal.
 Vid vinkelmodulation beror antalet sidband på sambandet mellan den modulerande
 frekvensen, frekvensdeviationen och modulationsindex.
 
+\mediumtopfig{images/cropped_pdfs/bild_2_1-31.pdf}{Sidbandsspektrum vid FM-modulering med 1 sinuston}{fig:BildII1-31}
+
 \subsubsection{Bandbredden vid vinkelmodulation}
 
 Bild \ref{fig:BildII1-30} (nederst) visar bandbredd på vinkelmodulation.
@@ -533,8 +542,6 @@ ett frekvensspektrum som på överst i bilden.
 \index{frekvensdeviation}
 \index{modulationsindex}
 \index{symbol!\(m\) modulationsindex}
-
-\largefig{images/cropped_pdfs/bild_2_1-31.pdf}{Sidbandsspektrum vid FM-modulering med 1 sinuston}{fig:BildII1-31}
 
 %% k7per: Find a solution for words that already have a hyphen. quote-dash?
 Bild \ref{fig:BildII1-31} visar sidbandsspektrum vid FM-moduler\-ing med 1
@@ -585,7 +592,7 @@ Där är \(\Delta f_{max} = \SI{75}{\kilo\hertz}\) och \(f_{LFmax} =
 \SI{15}{\kilo\hertz}\), därmed är \(m = \frac{75}{15} = 5\) och \(b = 2 \cdot
 (75 + 15) = \SI{180}{\kilo\hertz}\).
 
-Som framgår av tabellen på nästa uppslag varierar bärvågens liksom
+Som framgår av tabell~\ref{tab:ampmod} varierar bärvågens liksom
 sidofrekvensernas inbördes amplitud med modulationsindex.
 Detta ska jämföras med AM där bärvågens amplitud är konstant och endast
 sidbandens amplitud varierar.
@@ -609,7 +616,6 @@ En relativt stor bandbredd behövs för överföring av ett basband med stort
 frekvensomfång.
 Sändaren måste avge full effekt, även när modulation inte sker.
 
-%% k7per: Use S to align numbers for easier reading?
 \begin{table*}[ht]
 \begin{center}
   %\begin{tabular}{ll|S|S[table-format=-1.3]|S[table-format=-1.3|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|S[table-format=-1.3]|}
@@ -633,6 +639,7 @@ Sändaren måste avge full effekt, även när modulation inte sker.
 \caption{Relativa amplituden på bärvåg $A_0$ och sidofrekvenser $A_1$--$A_{10}$ vid
 modulationsindex 1--7. (Vid omodulerad bärvåg är modulationsindex 0. Då är
 bärvågens relativa amplitud 1,0.)}
+\label{tab:ampmod}
 \end{table*}
 
 

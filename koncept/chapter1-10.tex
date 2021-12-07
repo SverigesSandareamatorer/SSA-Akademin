@@ -1,4 +1,5 @@
 %% k7per: This is actually 1.13 now...
+\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC, DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
 \section{Digital signalbehandling (DSP)}
 \label{DSP}
 \index{digital signalbehandling}
@@ -71,8 +72,6 @@ Bild \ref{fig:BildII1-37} illustrerar hur en analog signal samplas och
 kvantiseras i en ADC, för att behandlas i en DSP, för att därefter konverteras
 till analog signal med DAC och filtreras.
 
-\mediumfig[0.9]{images/cropped_pdfs/bild_2_1-37.pdf}{Sampling med ADC, DSP och DAC för att återvinna analog signal}{fig:BildII1-37}
-
 Medan sampling är den process som ger oss \emph{tidsdiskreta} värden istället
 för tidskontinuerliga värden så är värdena fortfarande inte representerade som
 tal, det vill säga värdesdiskreta istället för värdeskontinuerliga.
@@ -115,6 +114,18 @@ av samplingstakten \(f_S\), för perioden för sekvensen blir \(T = 2T_S\) och
 därmed
 %% k7per:
 \[f=\frac{1}{T}=\frac{1}{2T_S}=\frac{f_S}{2}\].
+
+%% k7per: This figure is still not in a good spot.
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-38.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
+\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
+\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med \SI{40}{kS/s} samplingstakt}
+\label{fig:BildII1-38}
+\end{center}
+\end{figure*}
 
 \subsection{Faltning}
 \harecsection{\harec{a}{1.10.3}{1.10.3}}
@@ -169,16 +180,6 @@ Denna vikning vänder sedan igen när frekvensen blir den hos
 samplingsfrekvensen, och spektrumet upprepar sig.
 Detta fenomen uppstår alltid när man går mellan kontinuerlig och diskret tid.
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-38.pdf}
-\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
-\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
-\includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
-\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med \SI{40}{kS/s} samplingstakt}
-\label{fig:BildII1-38}
-\end{center}
-\end{figure*}
 
 Bild \ref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
 \SI{3,6}{\kilo\hertz}, \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz}, samplas
@@ -230,8 +231,6 @@ Ofta kombinerar man därför med en separat mixer för att flytta bandet på ett
 behändigt sätt, men det förekommer också att man väljer samplingstakten för att
 inte vika bandet.
 
-% k7per
-% \newpage % layout
 
 \subsection{ADC/DAC}
 \harecsection{\harec{a}{1.10.5}{1.10.5}}
