@@ -1,0 +1,30 @@
+name: Testbygg KonCEPT
+
+on: push
+
+jobs:
+  bygg-pdf:
+    name: 'Bygg bok'
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+    steps:
+      - name: 'Checka ut'
+        uses: actions/checkout@v2
+      - name: 'Installera'
+        run: >-
+          sudo apt-get -q install
+          texlive
+          texlive-lang-european
+          texlive-science
+          texlive-fonts-recommended
+          texlive-fonts-extra
+          language-pack-sv
+      - name: 'Bygg'
+        run: make koncept.pdf
+      - name: 'Ladda upp artefakt'
+        uses: actions/upload-artifact@v2
+        with:
+          name: koncept-${{ github.sha }}
+          path: koncept.pdf
+          retention-days: 31
