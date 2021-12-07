@@ -17,7 +17,7 @@ jobs:
         run: |
           echo ${{ github.sha }} > SHA.txt
           echo "-2-"
-          echo /usr/bin/git log -1 --format='%H'
+          /usr/bin/git log -1 --format='%H'
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
       - name: 'Ladda upp artefakt'
