@@ -40,4 +40,4 @@ Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akad
 
 ## Preliminär verion
 
-Uppdatera [`VERSION.txt`](VERSION.txt) till den gissade nästa versionen med tillägget -alpha, t.ex. `2.4.0-alpha`.
+Uppdatera [`VERSION.txt`](VERSION.txt) till det gissade nästa versionsnumret med tillägget -alpha, t.ex. `2.4.0-alpha`.

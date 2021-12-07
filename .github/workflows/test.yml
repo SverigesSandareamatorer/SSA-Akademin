@@ -23,7 +23,7 @@ jobs:
       - name: 'Spara hash'
         run: |
           ls -al
-          ${{ github.sha }} > SHA.txt
+          echo ${{ github.sha }} > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Ladda upp artefakt'
