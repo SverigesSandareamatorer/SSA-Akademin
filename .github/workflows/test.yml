@@ -18,7 +18,7 @@ jobs:
           echo ${{ github.sha }} > SHA.txt
           cd .git
           ls -al
-          cd refs
+          cd HEAD
           ls -al
           cd heads
           ls -al
