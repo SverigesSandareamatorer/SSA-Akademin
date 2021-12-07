@@ -20,7 +20,7 @@ jobs:
           ls -al
           cd refs
           ls -al
-          cd head
+          cd heads
           ls -al
           echo master
       - name: 'Bygg'
