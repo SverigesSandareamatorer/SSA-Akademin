@@ -13,8 +13,11 @@ jobs:
     steps:
       - name: 'Checka ut'
         uses: actions/checkout@v2
-      - name: 'Installera'
-        run: sudo apt-get -q install texlive texlive-xetex texlive-lang-european texlive-science texlive-fonts-recommended texlive-fonts-extra language-pack-sv latexml
+      - name: 'Spara hash'
+        run: |
+          echo ${{ github.sha }} > SHA.txt
+          cd .git
+          ls -al
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
       - name: 'Ladda upp artefakt'
