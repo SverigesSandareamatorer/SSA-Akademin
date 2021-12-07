@@ -21,11 +21,11 @@ jobs:
           texlive-fonts-extra
           language-pack-sv
       - name: 'Kopiera hash'
-        run: echo ${{ github.sha }} | cut -c1-8 > SHA.txt
+        run: echo ${{ github.sha }} | cut -c1-7 > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Byt namn'
-        run: mv koncept.pdf koncept.$(VERSION.txt)+b${{ github.run_id }}.${{ github.sha }}.pdf
+        run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
