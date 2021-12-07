@@ -21,14 +21,14 @@ jobs:
           texlive-fonts-extra
           language-pack-sv
       - name: 'Spara hash'
-        run: |
-          ls -al
-          echo ${{ github.sha }} > SHA.txt
+        run: echo ${{ github.sha }} > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
+      - name: 'Byt namn'
+        run: mv koncept.pdf koncept-${{ github.sha }}.pdf
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
           name: koncept-${{ github.sha }}
-          path: koncept.pdf
+          path: koncept*.pdf
           retention-days: 31
