@@ -1,7 +1,7 @@
 # Release
 
-Release-anteckningar för **KonCEPT för Radioamatörcertifikat**. För att göra
-release och tryck-original av KonCEPT skall följande steg göras:
+Release-anteckningar för **KonCEPT för Radioamatörcertifikat**.
+För att göra release och tryck-original av KonCEPT ska följande steg göras:
 
 ## Beslut om release
 
@@ -18,7 +18,7 @@ för versionsnumret.
 
 ## Uppdatering av tryckort-sidan
 
-Uppdatera [`koncept/tryckort.tex`](koncept/tryckort.tex) att beskriva `Andra upplagan, fjärde tryckningen`.
+Uppdatera [`koncept/tryckort.tex`](koncept/tryckort.tex) att beskriva t.ex. `Andra upplagan, fjärde tryckningen`.
 
 ## Uppdatering av version
 
@@ -38,6 +38,6 @@ git-meddelande.
 
 Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i Git.
 
-## Bygg tryck-original
+## Preliminär verion
 
-Bygg tryck-original med `make koncept-tryck.pdf` och skicka till HQ för tryckning.
+Uppdatera [`VERSION.txt`](VERSION.txt) till den gissade nästa versionen med tillägget -alpha, t.ex. `2.4.0-alpha`.
