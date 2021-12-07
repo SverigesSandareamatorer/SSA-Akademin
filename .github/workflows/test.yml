@@ -18,6 +18,11 @@ jobs:
           echo ${{ github.sha }} > SHA.txt
           cd .git
           ls -al
+          cd refs
+          ls -al
+          cd head
+          ls -al
+          echo master
       - name: 'Bygg'
         run: make ${{ matrix.variant }}
       - name: 'Ladda upp artefakt'
