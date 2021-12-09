@@ -1,14 +1,14 @@
-\newpage % layout
+% \newpage % layout
 \section{Värmeutveckling}
 
-\harec{a}{2.7}{2.7}
+\harecsection{\harec{a}{2.7}{2.7}}
 
 \index{värmeutveckling}
 \index{heat dissipation}
 
 \subsection{Värmeledning}
 
-\harec{a}{2.7.1}{2.7.1}
+\harecsection{\harec{a}{2.7.1}{2.7.1}}
 
 \index{värmeledning}
 \index{heat transfer}
@@ -41,7 +41,7 @@ sammanlagda värdet används sedan för att beräkna temperaturen på en
 komponent eller för att dimensionera en kylfläns.
 
 \subsection{Konvektion}
-\harec{a}{2.7.2}{2.7.2}
+\harecsection{\harec{a}{2.7.2}{2.7.2}}
 \index{konvektion}
 \index{kylfläns}
 \index{heatpipe}
@@ -81,7 +81,7 @@ transistor och kylfläns är ett annat exempel på hur dålig värmeledning skap
 problem med överhettning.
 
 \subsection{Värmealstring}
-\harec{a}{2.7.4}{2.7.4}
+\harecsection{\harec{a}{2.7.4}{2.7.4}}
 \index{värmealstring}
 
 \emph{Värmealstring} kan ske på fler ställen än i motstånd. Lite förenklat
@@ -117,16 +117,17 @@ omgivningen att minska och det krävs inte lika stor effekt för att få
 upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
 \emph{vätning} och därmed undvika att det bildas en kallödning.
 
-\newpage % layout
+% \newpage % layout
 \subsection{Värme i transistor}
-\harec{a}{2.7.3}{2.7.3}
+\harecsection{\harec{a}{2.7.3}{2.7.3}}
 
 För att förstå värmealstring i en transistor börjar vi med att tänka oss att vi
 har en transistor med \SI{12}{\volt} matningsspänning.
 Vi låter den generera en sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
 Vad är effektförlusten i transistorn?
 
-\smallfig[1]{images/power1.pdf}{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
+%% k7per
+\mediumtopfig{images/power1.pdf}{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
 
 I bild \ref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med
 amplituden \(10\ V_{pp}\).

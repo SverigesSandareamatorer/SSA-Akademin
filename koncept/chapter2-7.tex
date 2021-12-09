@@ -10,7 +10,7 @@ vanligen av glas eller ett keramiskt material.
 \smallfig{images/cropped_pdfs/bild_2_2-24.pdf}{Schemasymboler för dioder}{fig:BildII2-24}
 
 \subsection{Vakuumdioden (tvåelektrodröret)}
-\harec{a}{2.8.1}{2.8.1}
+\harecsection{\harec{a}{2.8.1}{2.8.1}}
 \label{vakuumdioden}
 \index{vakuumdioden}
 \index{elektronrör!diod}
@@ -48,10 +48,8 @@ En anodström börjar att flyta.
 
 \subsubsection{\(I_a/U_a\)-karaktäristikan för en vakuumdiod}
 
-\pagefig[0.5]{images/cropped_pdfs/bild_2_2-26.pdf}{Diodens karaktäristik}{fig:BildII2-26}
-\pagefig[0.5]{images/cropped_pdfs/bild_2_2-27.pdf}{Halvvågslikriktning}{fig:BildII2-27}
-\pagefig[0.5]{images/cropped_pdfs/bild_2_2-28.pdf}{Helvågslikriktning}{fig:BildII2-28}
 
+\smallfig{images/cropped_pdfs/bild_2_2-26a.pdf}{Diodens karaktäristik}{fig:BildII2-26}
 Bild \ref{fig:BildII2-26} illustrerar vakuumdiodens karaktäristik.
 När anoden ges positiv potential (anodspänning) flyter en elektronström från
 katod till anod (anodström).
@@ -73,7 +71,9 @@ ingen anodström.
 Vakuumdioden kan därför användas för likriktning av växelströmmar.
 Den har en likriktande funktion.
 
+\newpage
 \subsubsection{Halvvågslikriktning}
+\mediumfig{images/cropped_pdfs/bild_2_2-27.pdf}{Halvvågslikriktning}{fig:BildII2-27}
 
 Bild \ref{fig:BildII2-27} illustrerar halvvågslikriktning.
 När anoden ges en omväxlande positiv och negativ potential, en växelspänning,
@@ -81,16 +81,17 @@ flyter anodström under varje positiv halvperiod av växelspänningen.
 En likströmspuls uppstår under varannan halvperiod.
 
 \subsubsection{Helvågslikriktning}
+\mediumfig{images/cropped_pdfs/bild_2_2-28.pdf}{Helvågslikriktning}{fig:BildII2-28}
 
 Bild \ref{fig:BildII2-28} illustrerar helvågslikriktning.
 Med ett el\-ek\-tron\-rör med dubbla anoder och en transformator med mittuttag på
 sekundärlindningen, kan växelspänningens båda halvperioder utnyttjas, så att
 anodström flyter i samma riktning under alla halvperioder.
 
-\pagefig[0.45]{images/cropped_pdfs/bild_2_2-29.pdf}{Likriktande funktion}{fig:BildII2-29}
-\pagefig[0.4]{images/cropped_pdfs/bild_2_2-30.pdf}{Symboler för triod och pentod}{fig:BildII2-30}
-\pagefig[0.6]{images/cropped_pdfs/bild_2_2-31.pdf}{Elektronstömmen i en triod}{fig:BildII2-31}
-\pagefig{images/cropped_pdfs/bild_2_2-32.pdf}{Karaktäristika för elektronrör}{fig:BildII2-32}
+\smallfig{images/cropped_pdfs/bild_2_2-29.pdf}{Likriktande funktion}{fig:BildII2-29}
+\mediumtopfig{images/cropped_pdfs/bild_2_2-32.pdf}{Karaktäristika för elektronrör}{fig:BildII2-32}
+\mediumtopfig{images/cropped_pdfs/bild_2_2-31.pdf}{Elektronstömmen i en triod}{fig:BildII2-31}
+\smallfig{images/cropped_pdfs/bild_2_2-30.pdf}{Symboler för triod och pentod}{fig:BildII2-30}
 
 Bild \ref{fig:BildII2-29} illustrerar hur växelspännng via två
 två halvvågslikriktningar formar en helvågslikriktning.
@@ -100,7 +101,8 @@ två halvvågslikriktningar formar en helvågslikriktning.
 \index{trioden}
 \index{elektronrör!triod}
 
-Bild \ref{fig:BildII2-30} illustrerar symboler för triod och pentod.
+Bild \ref{fig:BildII2-30} illustrerar symboler för triod och pentod. Bild \ref{fig:BildII2-32}
+visar deras karaktäristik. 
 
 Trioden innehåller de tre elektroder anod (a), styrgaller (\(g_1\)) och katod
 (k) samt en glödtråd (f = filament).
@@ -186,13 +188,41 @@ Bild \ref{fig:BildII2-33} visar brantheten.
 Om man vid konstant anodspänning ändrar gallerförspänningen med värdet
 \(\Delta U_{g1}\), ändrar sig anodströmmen med värdet \(\Delta I_a\).
 %%
-\[\text{Branthet}\quad S = \dfrac{\Delta I_a}{\Delta U_{g1}} \qquad S\ [mA/V]; \Delta I_a\ [mA]; U_{g1}\ [V]\]
+%%\[\text{Branthet}\quad S = \dfrac{\Delta I_a}{\Delta U_{g1}} \qquad S\ [mA/V]; \Delta I_a\ [mA]; U_{g1}\ [V]\]
+%% k7per Prototypical solutions for unit explanations.
+\noindent%
+\begin{tabularx}{\linewidth}{@{} *1{>{\hsize=.7\linewidth}X} X@{}}
+\begin{align*}
+\text{Branthet}\quad S = \dfrac{\Delta I_a}{\Delta U_{g1}} 
+\end{align*}
+&
+\begin{equation*}
+\begin{aligned}
+S\ [mA/V]\\
+\Delta I_a\ [mA]\\
+U_{g1}\ [V]
+\end{aligned}
+\end{equation*}
+\end{tabularx}
 %%
 Bild \ref{fig:BildII2-34} visar den inre resistansen.
 Om man vid konstant gallerförspänning ändrar anodspänningen med
 \(\Delta U_a\), ändras anodströmmen med värdet \(\Delta I_a\).
 %%
-\[\text{Inre resistans}\ R_i = \dfrac{\Delta U_a}{\Delta I_a}\qquad R_i\ [k \omega]; \Delta U_a\ [V]; \Delta I_a\ [mA]\]
+%\[\text{Inre resistans}\ R_i = \dfrac{\Delta U_a}{\Delta I_a}\qquad R_i\ [k \ohm]; \Delta U_a\ [V]; \Delta I_a\ [mA]\]
+%% k7per Prototypical solutions for unit explanations.
+\noindent%
+\begin{tabularx}{\linewidth}{@{} *1{>{\hsize=.7\linewidth}X} X@{}}
+\begin{align*}
+\text{Inre resistans}\ R_i = \dfrac{\Delta U_a}{\Delta I_a}
+\end{align*}
+&
+\begin{equation*}
+\begin{aligned}
+R_i\ [k \ohm]\\ \Delta U_a\ [V]\\ \Delta I_a\ [mA]
+\end{aligned}
+\end{equation*}
+\end{tabularx}
 %%
 \mediumfig{images/cropped_pdfs/bild_2_2-34.pdf}{Inre resistans}{fig:BildII2-34}
 

@@ -1,9 +1,9 @@
 \section{Egenskaper i mottagare}
-\harec{a}{4.4}{4.4}
+\harecsection{\harec{a}{4.4}{4.4}}
 \index{mottagare!egenskaper}
 
 \subsection{Närliggande kanaler}
-\harec{a}{4.4.1}{4.4.1}
+\harecsection{\harec{a}{4.4.1}{4.4.1}}
 
 Närliggande kanaler kan skapa störningar när de läcker in.
 Därför gäller det att mottagaren kan undertrycka dem, även när de är starkare
@@ -15,9 +15,9 @@ undertrycka allt för närgående kanaler.
 filtrera med branta flanker och god undertryckningsförmåga.
 Detta är en del av många att ha goda så kallade stor-signal-egenskaper.
 
-\newpage % layout
+% \newpage % layout
 \subsection{Selektivitet}
-\harec{a}{4.4.2}{4.4.2}
+\harecsection{\harec{a}{4.4.2}{4.4.2}}
 \index{selektivitet}
 \index{mottagare!selektivitet}
 \index{förselektering}
@@ -39,7 +39,7 @@ för att utskilja den önskade signalen efter blandningsförloppen.
 \end{itemize}
 
 \subsection{Frekvensstabilitet}
-\harec{a}{4.4.4}{4.4.4}
+\harecsection{\harec{a}{4.4.4}{4.4.4}}
 \index{frekvensstabilitet}
 \index{temperaturkompenserad}
 \index{TCXO}
@@ -64,15 +64,16 @@ För att få bäst nytta så genereras alla \emph{lokaloscillatorfrekvenser} lå
 till samma kristalloscillator, något som med modern PLL och DDS teknik blivit
 inte bara möjligt utan både kompakt, billigt och med hög prestanda.
 
-\pagefig[0.9]{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
-\pagefig[0.9]{images/cropped_pdfs/bild_2_4-23.pdf}{Enkelsuper med låg MF och med förselektion}{fig:bildII4-23}
-\pagefig[0.5]{images/cropped_pdfs/bild_2_4-24.pdf}{Enkelsuper med hög MF och med förselektion}{fig:bildII4-24}
-\pagefig{images/cropped_pdfs/bild_2_4-25.pdf}{Samtidig för- och närselektion i superheterodynmottagare}{fig:bildII4-25}
-\pagefig{images/cropped_pdfs/bild_2_4-26.pdf}{MF-bandbredd vid AM (A3E)}{fig:bildII4-26}
-\pagefig{images/cropped_pdfs/bild_2_4-27.pdf}{MF-Bandbredd och passbandtuning vid SSB (J3E)}{fig:bildII4-27}
+%\pagefig[0.9]{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
+%\pagefig[0.9]{images/cropped_pdfs/bild_2_4-23.pdf}{Enkelsuper med låg MF och med förselektion}{fig:bildII4-23}
+%\pagefig[0.5]{images/cropped_pdfs/bild_2_4-24.pdf}{Enkelsuper med hög MF och med förselektion}{fig:bildII4-24}
+%\pagefig{images/cropped_pdfs/bild_2_4-25.pdf}{Samtidig för- och närselektion i superheterodynmottagare}{fig:bildII4-25}
+%\pagefig{images/cropped_pdfs/bild_2_4-26.pdf}{MF-bandbredd vid AM (A3E)}{fig:bildII4-26}
+%\pagefig{images/cropped_pdfs/bild_2_4-27.pdf}{MF-Bandbredd och passbandtuning vid SSB (J3E)}{fig:bildII4-27}
 
+\newpage
 \subsection{Spegelfrekvensproblemet vid mottagning}
-\harec{a}{4.4.5}{4.4.5}
+\harecsection{\harec{a}{4.4.5}{4.4.5}}
 \index{spegelfrekvenser}
 \index{mottagare!spegelfrekvenser}
 \index{närselektion}
@@ -81,7 +82,7 @@ inte bara möjligt utan både kompakt, billigt och med hög prestanda.
 \index{mottagare!förselektion}
 \label{spegelfrekvens_mottagare}
 
-%\mediumfig{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
+\mediumplustopfig{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
 
 \textbf{Exempel:}
 I bild \ref{fig:bildII4-22} ska en sändning på \SI{3600}{\kilo\hertz} ska tas
@@ -92,7 +93,7 @@ Denna egenskap kallas för \emph{närselektion}.
 
 Men tyvärr kan en sändning på så avlägsen frekvens som \SI{4510}{\kilo\hertz}
 ändå störa mottagningen, den goda närselektionen till trots.
-Avståndet mellan \SI{4510}{\kilo\hertz} och vår mottagningsfrekvens
+Avståndet från \SI{4510}{\kilo\hertz} till vår mottagningsfrekvens
 \SI{3600}{\kilo\hertz} är \SI{910}{\kilo\hertz}.
 Frekvensen \SI{4510}{\kilo\hertz} och VFO-signalen bildar också en
 blandningsprodukt, som har frekvensen \SI{455}{\kilo\hertz}.
@@ -103,13 +104,14 @@ Avståndet mellan spegelfrekvens och mottagningsfrekvens är dubbla värdet av
 mellanfrekvensen -- i detta exempel \(2 \cdot \SI{455}{\kilo\hertz} =
 \SI{910}{\kilo\hertz}\).
 
-\newpage % layout
+%% k7per
+% \newpage % layout
 Signaler på mottagningsfrekvensen och spegelfrekvensen alstrar båda
 blandningsprodukter med VFO-frekvensen, som har mellanfrekvensens värde.
 Mellanfrekvensfiltret kan därför inte undertrycka en främmande signal på
 spegelfrekvensen.
 
-%\mediumfig{images/cropped_pdfs/bild_2_4-23.pdf}{Enkelsuper med låg MF och med förselektion}{fig:bildII4-23}
+\mediumplustopfig{images/cropped_pdfs/bild_2_4-23.pdf}{Enkelsuper med låg MF och med förselektion}{fig:bildII4-23}
 
 Däremot kan en mottagaringång med \emph{förselektering} (eng.
 \emph{preselection}) undertrycka den.
@@ -120,7 +122,7 @@ frekvensskillnaden.
 En förselektion har alltså tillförts som komplement till den närselektion som
 erhålls med mellanfrekvensfiltret.
 
-%\smallfig{images/cropped_pdfs/bild_2_4-24.pdf}{Enkelsuper med hög MF och med förselektion}{fig:bildII4-24}
+\mediumminustopfig{images/cropped_pdfs/bild_2_4-24.pdf}{Enkelsuper med hög MF och med förselektion}{fig:bildII4-24}
 
 Ju längre ifrån varandra nyttofrekvens och spegelfrekvens ligger, desto bättre
 är förselektionen.
@@ -145,6 +147,7 @@ Med samma Q-värde blir bandbredden \SI{1000}{\kilo\hertz} vid frekvensen
 \SI{30}{\mega\hertz}, vilket innebär att förkretsen inte längre kan dämpa så
 närliggande spegelfrekvenser på ett effektivt sätt.
 
+\newpage
 I mottagare för högre frekvenser används därför högre mellanfrekvens
 för att öka avståndet till spegelfrekvensen, som illustreras i bild
 \ref{fig:bildII4-24}.
@@ -156,7 +159,7 @@ Vid en mottagningsfrekvens av \SI{30}{\mega\hertz} och en mellanfrekvens av
 Detta möjliggör förselektionsfilter med tillräcklig dämpning av
 spegelfrekvensen.
 
-%\mediumfig{images/cropped_pdfs/bild_2_4-25.pdf}{Samtidig för- och närselektion i superheterodynmottagare}{fig:bildII4-25}
+\mediumminustopfig{images/cropped_pdfs/bild_2_4-25.pdf}{Samtidig för- och närselektion i superheterodynmottagare}{fig:bildII4-25}
 
 Bilden \ref{fig:bildII4-25} visar hur när- och förselektion kompletterar
 varandra i ett frekvensspektrum.
@@ -165,6 +168,7 @@ de frekvenser där signalamplituden dämpats till 70~\% av toppvärdet.
 I exemplet här ovan har antagits att förkretsen för kortvågsmottagning har
 samma Q-värde som förkretsen för mellanvågsmottagning.
 
+\newpage
 Vid högre frekvenser, i VHF- och UHF-området, kan inte önskat Q-värde
 erhållas i sådana kretsar som används i KV-området och lägre.
 Andra lösningar blir då nödvändiga, till exempel kavitetsfilter och helixfilter.
@@ -176,7 +180,7 @@ Andra lösningar blir då nödvändiga, till exempel kavitetsfilter och helixfil
 \index{MF-bandbredd}
 \index{mottagare!MF-bandbredd}
 
-%\mediumfig{images/cropped_pdfs/bild_2_4-26.pdf}{MF-bandbredd vid AM (A3E)}{fig:bildII4-26}
+\mediumfig{images/cropped_pdfs/bild_2_4-26.pdf}{MF-bandbredd vid AM (A3E)}{fig:bildII4-26}
 
 Bild \ref{fig:bildII4-26} visar en amplitudmodulerad signals frekvensspektrum
 består av bärvågen och två sidfrekvenser -- eller sidband om sidfrekvenserna
@@ -209,7 +213,7 @@ mindre störd mottagning.
 \index{MF-skift}
 \index{passband-tuning}
 
-%\mediumfig{images/cropped_pdfs/bild_2_4-27.pdf}{MF-Bandbredd och passbandtuning vid SSB (J3E)}{fig:bildII4-27}
+\mediumfig{images/cropped_pdfs/bild_2_4-27.pdf}{MF-Bandbredd och passbandtuning vid SSB (J3E)}{fig:bildII4-27}
 
 Mellanfrekvensfiltret för SSB-mottagning ska endast släppa igenom
 ett av de två sidbanden, så som illustreras i bild \ref{fig:bildII4-27},
@@ -242,7 +246,7 @@ När närliggande sändare stör mottagningen ges följande möjligheter:
   I alla händelser blir basen eller diskanten på nyttosignalen avskuren,
   beroende på var denna ligger i frekvens.
 
-\newpage % layout
+% \newpage % layout
 \item \emph{Passband-tuning.}
   Om det finns störande sändare både över och under i frekvens, går det inte
   att skära bort störningarna med ett enkelt MF-skift, eftersom antingen den
@@ -317,6 +321,7 @@ Smalare filter går däremot inte så bra.
 \index{bandbredd}
 \label{bandbredd_fm}
 
+%% k7per: modulerande LF-moduleringsfrekvensen -> LF-moduleringsfrekvensen
 En FM-sändare med frekvensdeviationen \(\Delta f_{max}\) och högsta
 modulerande LF-moduleringsfrekvensen \(f_{LF_{max}}\) har bandbredden
 %%
@@ -344,7 +349,7 @@ Det blir allt vanligare med \SI{12,5}{\kilo\hertz} kanalavstånd även för
 repeatrar, varför det är viktigt att alla sändare är rätt inställda.
 
 \subsection{Signalkänslighet och brus}
-\harec{a}{4.4.3}{4.4.3}
+\harecsection{\harec{a}{4.4.3}{4.4.3}}
 \index{signalkänslighet}
 \index{mottagare!signalkänslighet}
 \index{brus}
@@ -426,8 +431,7 @@ av den modulerande signalen.
 \]
 
 \subsection{Intermodulation, korsmodulation}
-\harec{a}{4.4.6}{4.4.6}
-\harec{a}{4.4.7}{4.4.7}
+\harecsection{\harec{a}{4.4.6}{4.4.6}, \harec{a}{4.4.7}{4.4.7}}
 \label{intermodulation}
 \index{intermodulation}
 \index{korsmodulation}
@@ -438,8 +442,9 @@ Utöver att en bra modern mottagare bör ha tillräcklig frekvensstabilitet,
 känslighet och selektivitet bör den även ha goda så kallade
 \emph{storsignalegenskaper}.
 
+%% k7per???
 Med storsignalegenskaper menar man hur bra en relativt svag nyttosignal på
-mottagaringången motstår påverkan av starka frekvens nära signaler med hög
+mottagaringången motstår påverkan av starka, frekvensnära signaler med hög
 fältstyrka.
 Störningar av detta slag uppstår genom icke linjära förlopp i komponenter i
 mottagarens ingångssteg, varvid mottagna signaler med stor amplitud blir
@@ -455,7 +460,7 @@ signal kan detekteras varvid känsligheten sjunker och till slut kommer den
 tänkta signalen vara helt undertryckt, så kallad \emph{blocking}.
 
 \subsubsection{Korsmodulation}
-\harec{a}{4.4.8}{4.4.8}
+\harecsection{\harec{a}{4.4.8}{4.4.8}}
 \index{korsmodulation}
 \index{mottagare!korsmodulation}
 
@@ -473,7 +478,8 @@ När nyttosignalen försvinner så försvinner även korsmodulationen.
 För dåligt fasbrus hos mottagaren kan vara en orsak till att starka
 grannkanaler mixas in och detekteras.
 
-\newpage % layout
+%% k7per
+%% \newpage % layout
 \subsection{Intermodulation}
 \index{intermodulation}
 \index{mottagare!intermodulation}

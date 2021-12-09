@@ -11,7 +11,7 @@ Radiovågorna kallas även elektromagnetiska fält (EMF)
 Runt alla antenner som sänder ut radiovågor bildas elektromagnetiska fält av den
 energi som skickas in i antennerna från radiosändaren.
 
-\paragraph{Radiovågorna från en amatörradiostation,} de elektro\-magnetiska fälten, klassas
+\textbf{Radiovågorna från en amatörradiostation,} de elektro\-magnetiska fälten, klassas
 som \emph{icke-joniserande strålning} och är som sådan strålning inte
 tillräckligt energirik för att orsaka annat än uppvärmning av kroppens vävnad.
 
@@ -21,7 +21,7 @@ under de värden där kroppstemperaturen skulle öka.
 
 \index{icke-joniserande strålning}
 \index{strålning!icke-joniserande}
-\paragraph{Icke-joniserande strålning,} som optisk strålning (infraröd strålning,
+\textbf{Icke-joniserande strålning,} som optisk strålning (infraröd strålning,
 synligt~ljus och ultraviolett~strålning) och elektromagnetiska fält (radiovågor
 och mikro\-vågor) är normalt inte lika energirik som joniserande strålning.
 När elektromagnetisk strålning absorberas i biologisk vävnad eller material är
@@ -30,7 +30,7 @@ materialet.
 
 \index{joniserande strålning}
 \index{strålning!joniserande}
-\paragraph{Joniserande strålning,} partikelstrålning eller elektromagnetisk strålning, som
+\textbf{Joniserande strålning,} partikelstrålning eller elektromagnetisk strålning, som
 har tillräcklig energi för att rycka loss elektroner från de atomer som den
 träffar och förvandla dem till positivt laddade joner, jonisering.
 Exempel på joniserande strålning är röntgenstrålning och strålning från
@@ -94,7 +94,7 @@ men det viktiga att förstå är att det finns en gräns mellan vad man
 kallar fjärrfältet, längre bort från antennen och närfältet nära antennen.
 
 \index{fjärrfält}
-I fjärrfältet kan man på grund av växelverkan mellan det elektriska- och det
+I fjärrfältet kan man tack vare växelverkan mellan det elektriska- och det
 magnetiska fältet mäta vilket som helst av dem.
 I och med att det elektromagnetiska fältet sprider ut sig över en större yta så
 avtar styrkan i fältet med avståndet från antennen.
@@ -105,7 +105,7 @@ effekten i en riktning, det elektromagnetiska fältet avtar på samma sätt.
 
 \index{närfält}
 I närfältet behöver man på grund av fältens komplicerade inbördes förhållande
-mäta både det elektriska- och det magnetiska fältet för att få en uppfattning
+mäta både det elektriska och det magnetiska fältet för att få en uppfattning
 om storleken på det radiofrekventa fältet.
 I antennens närhet varierar nivåerna på de olika fälten kraftigt och på vissa
 punkter kan höga fältstyrkenivåer mätas upp.
@@ -164,6 +164,8 @@ Referensvärdena ska säkerställa att de grundläggande begränsningarna inte
 	dessa allmänna råd de grundläggande begränsningarna.
 \end{quote}
 
+\newpage
+
 I EU-direktivet 1999/519/EG \cite{1999/519/EG} skrivs att i sådana fall skall det
 göras en bedömning huruvida exponeringsnivån ligger under den grundläggande
 begränsningen.
@@ -220,20 +222,22 @@ I frekvensområdet 10 till \SI{110}{\mega\hertz} finns även en begränsning til
 \SI{45}{\milli\ampere} för inducerad ström i varje extremitet i syfte att
 begränsa det lokala SAR-värdet.
 
-\mediumfig[0.9]{images/emfbild-000}{Referensvärden för begränsning av elektriska fält (100~kHz--10~GHz)}{fig:emf1}
+\newpage
+\mediumfig[0.87]{images/emfbild-000}{Referensvärden för begränsning av elektriska fält (100~kHz--10~GHz)}{fig:emf1}
+\mediumfig[0.87]{images/emfbild-001}{Referensvärden för begränsning av magnetiska fält (100~kHz--10~GHz)}{fig:emf2}
 
 Bild \ref{fig:emf1} illustrerar referensvärden för begränsning av elektriska
 fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
 och fältstyrkenivå angivna, till exempel \SI{10,15}{\mega\hertz} har en högsta
 tillåtna elektriskt fältstyrka på \SI{28}{\volt\per\metre}.
 
-\mediumfig[0.9]{images/emfbild-001}{Referensvärden för begränsning av magnetiska fält (100~kHz--10~GHz)}{fig:emf2}
-
+\newpage
 Bild \ref{fig:emf2} illustrerar referensvärden för begränsning av magnetiska
 fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
 och fältstyrkenivå angivna, till exempel \SI{10,15}{\mega\hertz} har en högsta
 tillåtna magnetisk fältstyrka på \SI{73}{\milli\ampere\per\metre}.
 
+\clearpage
 \section{Utvärdering av EMF}
 \index{EMF!utvärdering}
 
@@ -394,7 +398,8 @@ platser allmänheten riskerar att exponeras för elektromagnetiska fält.
 \\[1ex] % layout
 \noindent\textbf{d = Distansen från antennen till platsen där fältstyrkan ska bestämmas}
 
-\newpage % layout
+%% k7per
+%% \newpage % layout
 \subsection{Beräkning}
 \index{EMF!beräkning}
 
@@ -405,12 +410,15 @@ elektriska eller det magnetiska fältet.
 Av denna anledning beskrivs här enbart beräkning av det elektriska fältets del av
 det elektromagnetiska fältet.
 Ett vedertaget avstånd från antennen där fjärrfältsberäkningar kan genomföras
-är \(d=\dfrac{\lambda}{6}\).
+är
+%% \(d=\dfrac{\lambda}{6}\).
+\(d=\lambda / 6\).
 
 Följande formler gäller enbart för beräkning av korrekt fältstyrka i
 fjärrfältet men kan för enklare antenner användas för att uppskatta den
 fältstyrka som uppträder i närfältet.
 
+%% k7per: Where is this table referenced?
 \begin{table*}[ht]
   \begin{center}
     \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
@@ -458,9 +466,14 @@ Avståndet från antennen till beräkningspunkten är \SI{15}{\metre}.
 \[k_{mod} = modulationsfaktor\]
 \[k_{if} = intermittensfaktor\]
 \[G = 31 \quad k = 0,56 \quad d = 15\]
-\[E = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
-= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
-= \SI{34,02}{\volt\per\metre}\]
+% \[E = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
+% = \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
+% = \SI{34,02}{\volt\per\metre}\]
+\begin{align*}
+  E &= \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d} =\\
+&= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{15}
+= \SI{34,02}{\volt\per\metre}
+\end{align*}
 
 Då referensvärdet på denna frekvens är \SI{28}{\volt\per\metre}, överskrider
 amatörradiosändningen referensvärdet på detta avstånd.
@@ -481,9 +494,14 @@ Referensvärdet för \SI{144}{\mega\hertz} är \SI{28}{\volt\per\metre}.
 \[k_{mod} = \textit{modulationsfaktor}\]
 \[k_{if} = \textit{intermittensfaktor}\]
 \[G = 31 \quad k = 0,56 \quad E = 28\]
-\[d = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
-= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
-= \SI{18,22}{\metre}\]
+%% \[d = \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d}
+%% = \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
+%% = \SI{18,22}{\metre}\]
+\begin{align*}
+  d &= \dfrac{\sqrt{30 \cdot P \cdot G \cdot k}}{d} =\\
+&= \dfrac{\sqrt{30 \cdot 500 \cdot 31 \cdot 0,56}}{28}
+  = \SI{18,22}{\metre}
+  \end{align*}
 
 För att följa de allmänna råden bör allmänheten inte kunna vistas i huvudloben
 framför antennen på ett avstånd mindre än \SI{19}{\metre} då sändning utförs
@@ -597,7 +615,7 @@ Detta är viktigt eftersom man bör spara sina resultat och då ha möjlighet at
 göra om sin utvärdering när man har förändrat något eller några av de värden
 som skulle kunna påverka resultatet.
 
-\newpage % layout
+% \newpage % layout
 \subsection{Praktisk hantering}
 Vid all användning av amatörradioutrustning måste man göra en bedömning
 av vilka fältstyrkor man genererar och vilka som kan bli exponerade.
@@ -626,7 +644,7 @@ rekommenderas för att hålla nivåerna på exponering så låga som möjligt:
   etc.) vilket också gör antennplaceringen mycket olämplig.
 
 \item Antenner ovanför huskroppar bör endast användas med låg effekt.
-  Tråd-antenner för lägre frekvenser rakt ovanför bostadshus kommer att
+  Trådantenner för lägre frekvenser rakt ovanför bostadshus kommer att
   vara nära människor i byggnaden.
 
 \item Om man har behov av att använda hög effekt så måste man också se
@@ -639,7 +657,8 @@ rekommenderas för att hålla nivåerna på exponering så låga som möjligt:
   Det är oftast mycket dyrare och mer komplicerat att öka uteffekten för att nå
   samma resultat.
 
-\newpage % layout
+%%k7per
+%% \newpage % layout
 \item Osymmetriska antenner kan ge mantelströmmar i matningsledningen.
   Det innebär att en HF-ström flyter från antennen tillbaka på matarledningen
   och kan ge höga fältstyrkor längs hela kabellängden.

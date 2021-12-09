@@ -1,6 +1,7 @@
 \chapter{Rapportkoder}
 \label{Rapportkoder}
 
+\noindent
 Det finns olika sätt och system att rapportera hur en radiostation hörs.
 
 \section{Amatörradiotrafik}
@@ -8,16 +9,11 @@ Det finns olika sätt och system att rapportera hur en radiostation hörs.
 I amatörradiotrafik används RST-koden vid rapportering av
 telegrafisignaler och RS-koden för telefonisignaler.
 Namnet kommer av begynnelsebokstäverna i de engelska orden
-
-\begin{description}
-  \item[Readability] (läsbarhet),
-  \item[Signal strenght] (signalstyrka),
-  \item[Tone] (ton).
-\end{description}
+\textbf{Readability} (läsbarhet), \textbf{Signal strength} (signalstyrka), och \textbf{Tone} (ton).
 
 \subsection{R-skala (läsbarhet)}
 
-\begin{tabular}{p{0.02\textwidth}p{0.98\textwidth}}
+\begin{tabular}{p{0.02\textwidth}l}
 1 & Oläsbar \\
 2 & Knappt läsbar, enstaka ord tydbara \\
 3 & Läsbar med stor svårighet \\
@@ -27,7 +23,7 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 
 \subsection{S-skala (signalstyrka)}
 
-\begin{tabular}{p{0.02\textwidth}p{0.98\textwidth}}
+\begin{tabular}{p{0.02\textwidth}l}
 1 & Signalerna knappt uppfattbara \\
 2 & Mycket svaga signaler \\
 3 & Svaga signaler \\
@@ -41,7 +37,8 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 
 \subsection{T-skala (ton)}
 
-\begin{tabular}{p{0.02\textwidth}p{0.9\columnwidth}}
+%% k7per: Calculate the width from the column correctly.
+\begin{tabular}{p{0.02\textwidth}p{0.42\textwidth}}
 1 & Mycket rå växelströmston, ostabil och omusikalisk \\
 2 & Mycket rå växelströmston, stabil men musikalisk \\
 3 & Rå växelströmston, ostabil och omusikalisk \\
@@ -52,10 +49,15 @@ Namnet kommer av begynnelsebokstäverna i de engelska orden
 8 & Nästan ren likströmston, med spår av brum eller ojämnheter \\
 9 & Absolut ren likströmston, stabil \\
 \end{tabular}
-%%
-Dessutom kan följande tillägg till T-skalan förekomma:
-%%
-\begin{tabular}{p{0.02\textwidth}p{0.9\columnwidth}}
+
+%% k7per
+\smallskip
+\noindent Dessutom kan följande tillägg till T-skalan förekomma:
+
+%% k7per
+\smallskip
+
+\noindent\begin{tabular}{p{0.02\textwidth}p{0.42\textwidth}}
   X & Absolut ren likströmston, mycket stabil, kristallklar, mjuka tecken utan
       knäppar \\
 C & Absolut ren, men ostabil likströmston vid nycklingen \\
@@ -141,6 +143,7 @@ Numera används enbart SINPO-koden.
 
 Namnet på koden kommer av begynnelsebokstäverna i orden
 
+%% k7per: Why style=nextline, hard to read I think.
 \begin{description}[style=nextline]
 \item[Signal strength]
   (signalstyrka),

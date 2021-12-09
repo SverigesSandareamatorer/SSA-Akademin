@@ -1,9 +1,11 @@
 \chapter{Ellära}
 \label{ellära}
 
+\nobalance
+
 \section{Elektriska grundbegrepp}
 
-\harec{a}{1.1}{1.1}
+\harecsection{\harec{a}{1.1}{1.1}}
 
 Elektrisk laddning, spänning och ström hänger samman med hur materian är
 uppbyggd.
@@ -107,6 +109,7 @@ mellan dem och deras omgivning.
 Krafterna kallas för elektriska fält och är det som gör att elektriskt laddade
 kroppar kan komma i rörelse.
 
+
 Ett exempel får man varje gång man kammar sig med en kam av isolerande material.
 Då kommer håret att dras mot kammen därför att håret och kammen har
 fått olika slags elektriska laddningar.
@@ -115,7 +118,7 @@ varandra -- håret ''reser sig''.
 \emph{Lika laddningar stöter bort varandra -- olika laddningar drar varandra till sig.}
 
 \subsection{Konduktivitet -- ledare, halvledare och isolator}
-\harec{a}{1.1.1}{1.1.1}
+\harecsection{\harec{a}{1.1.1}{1.1.1}}
 \index{konduktivitet}
 \label{konduktivitet}
 
@@ -143,7 +146,32 @@ Koppar-, silver- och guldatomerna har en enda valenselektron och därmed mycket
 god ledningsförmåga.
 Järn, zink och magnesium har två valenselektroner och därmed något sämre
 ledningsförmåga.
+Tabell \ref{table:metaller} ger exempel på metallernas resistivitet.
 Ännu sämre ledare är de så kallade halvledarna med 3 till 5 valenselektroner.
+
+\begin{table}
+  \begin{center}
+\begin{tabular}{l|l}
+  Ämne & Resistivitet vid \SI{20}{\degreeCelsius} \\
+   & \([\si{\ohm} \cdot mm^2 / m]\) \\
+  \hline
+  Aluminium   & 0,028 \\
+  Bly         & 0,22  \\
+  Guld        & 0,024 \\
+  Järn        & 0,105 \\
+  Koppar      & 0,018 \\
+  Kvicksilver & 0,958 \\
+  Nickel      & 0,078 \\
+  Platina     & 0,108 \\
+  Silver      & 0,016 \\
+  Tenn        & 0,115 \\
+  Volfram     & 0,056 \\
+  Zink        & 0,058 \\
+\end{tabular}
+\end{center}
+  \caption{Metallernas resistivitet}
+          \label{table:metaller}
+\end{table}
 
 \subsubsection{Isolatorer}
 \index{isolator}
@@ -225,14 +253,19 @@ Materialet är då P-ledande.
 
 \subsection{Elektrisk spänning -- enheten volt}
 \label{spänning}
-\harec{a}{1.1.2}{1.1.2b}
-\harec{a}{1.1.3}{1.1.3b}
+\harecsection{\harec{a}{1.1.2}{1.1.2b}, \harec{a}{1.1.3}{1.1.3b}}
 \index{elektrisk spänning}
 \index{spänning}
 \index{volt (V)}
 \index{enheter!volt (V)}
 \index{symbol!\(U\) spänning}
 \index{symbol!\(V\) spänning}
+\index{Likspänning}
+\index{Växelspänning}
+\index{AC alternating current}
+\index{AC}
+\index{DC direct current}
+\index{DC}
 
 \mediumfig{images/cropped_pdfs/bild_2_1-02.pdf}{Tankeförsök med kulor i ett rör}{fig:BildII1-2}
 
@@ -253,11 +286,11 @@ Olika stora elektriska laddningar vid polerna innebär att de sinsemellan har
 olika potential.
 Potentialskillnaden kallas spänning.
 
-Likspänning innebär ett överskott av elektroner och alltid vid samma
-anslutningspol.
+Likspänning DC (eng. \emph{Direct Current}) innebär ett överskott av elektroner
+och alltid vid samma anslutningspol.
 
-Växelspänning innebär ett överskott av elektroner, omväxlande vid den ena
-anslutningspolen och den andra.
+Växelspänning AC (eng. \emph{Alternating Current}) innebär ett överskott av
+elektroner, omväxlande vid den ena anslutningspolen och den andra.
 
 Måttenheten för spänning är \(\mathrm{volt\ [V]}\).
 I formler betecknas spänning med
@@ -276,6 +309,12 @@ effektutvecklingen \(1\ \mathrm{watt\ [W]}\).
 \subsection{Symboler}
 \label{spänning.symboler}
 
+% \frdjp
+
+När man ritar scheman för elektriska kretsar används symboler.
+Symbolen i bild \ref{fig:bildII2-batteri} visar ett elektriskt batteri med en
+enda cell.
+
 \smalltikz{
   \begin{circuitikz}
     \draw
@@ -284,11 +323,6 @@ effektutvecklingen \(1\ \mathrm{watt\ [W]}\).
   \end{circuitikz}
 }{Schemasymbol för batteri}{fig:bildII2-batteri}
 
-\frdjp
-
-När man ritar scheman för elektriska kretsar används symboler.
-Symbolen i bild \ref{fig:bildII2-batteri} visar ett elektriskt batteri med en
-enda cell.
 
 Förtydligande kommentarer och skrivtecknen invid symbolen förekommer.
 Ofta refererar dessa till en komponentlista.
@@ -296,8 +330,7 @@ Se även kapitel \ref{komponenter}.
 
 \subsection{Elektrisk ström -- Enheten ampere}
 \label{elektrisk_ström}
-\harec{a}{1.1.2}{1.1.2a}
-\harec{a}{1.1.3}{1.1.3a}
+\harecsection{\harec{a}{1.1.2}{1.1.2a}, \harec{a}{1.1.3}{1.1.3a}}
 \index{elektrisk ström}
 \index{ström}
 \index{ampere (A)}
@@ -366,8 +399,7 @@ Växelström kan variera enligt något visst förlopp, till exempel sinusvåg,
 fyrkantsvåg, och växlar ständigt riktning.
 
 \subsection{Resistans -- Enheten ohm}
-\harec{a}{1.1.2}{1.1.2c}
-\harec{a}{1.1.3}{1.1.3c}
+\harecsection{\harec{a}{1.1.2}{1.1.2c}, \harec{a}{1.1.3}{1.1.3c}}
 \index{resistans}
 \index{ohm (\(\Omega\))}
 \index{enheter!ohm (\(\Omega\))}
@@ -391,7 +423,7 @@ Resistansen i en resistor är \(1\ [\Omega]\), när en spänning av \(1\ \mathrm
 driver en ström av \(1\ \mathrm{[A]}\) genom den resistorn.
 
 \subsection{Ohms lag}
-\harec{a}{1.1.4}{1.1.4}
+\harecsection{\harec{a}{1.1.4}{1.1.4}}
 \index{Ohms lag}
 \index{resistor!Ohms lag}
 \label{ohms_lag}
@@ -410,7 +442,7 @@ proportionell mot den pålagda spänningen \(U\).
 \]
 %%
 \subsection{Kirchhoffs lagar}
-\harec{a}{1.1.5}{1.1.5}
+\harecsection{\harec{a}{1.1.5}{1.1.5}}
 \index{Kirchhoffs lagar}
 \index{Kirchhoffs strömlag}
 \index{Kirchhoffs spänningslag}
@@ -428,8 +460,7 @@ Uttryckt på ett annat sätt är algebraiska summan av spänningarna i en
 strömkrets lika med noll.
 
 \subsection{Elektrisk effekt -- enheten watt}
-\harec{a}{1.1.6}{1.1.6}
-\harec{a}{1.1.7}{1.1.7}
+\harecsection{\harec{a}{1.1.6}{1.1.6}, \harec{a}{1.1.7}{1.1.7}}
 \index{elektrisk effekt}
 \index{effekt}
 \index{voltampere (VA)}
@@ -512,21 +543,22 @@ Arbetet \(W\ \mathrm{[J]}\) är mer ju längre tid \(t\ [s]\) en viss effekt
 \[W = t \cdot P \ \ \ \mathrm{[J] = [sW]}\]
 
 \subsection{Joules lag}
-\harec{a}{1.1.8}{1.1.8}
+\harecsection{\harec{a}{1.1.8}{1.1.8}}
 \index{Joules lag}
 \label{joules_lag}
 
-\(\textit{Arbete} = \textit{Effekt} \cdot \textit{tid}\qquad \mathrm{[W]} = \mathrm{[P]} \cdot \mathrm{[s]}\)
 
 Eftersom effekten uttrycks som \(P = U \cdot I\) kan det elektriska arbetet
 uttryckas som \(W = U \cdot I \cdot t\), vilket också är Joules lag.
+
+\[\textit{Arbete} = \textit{Effekt} \cdot \textit{tid}\qquad \mathrm{[W]} = \mathrm{[P]} \cdot \mathrm{[s]}\]
 
 Om grundenheterna för volt \(\mathrm{[U]}\), ampere \(\mathrm{[I]}\) och
 sekund \(\mathrm{[s]}\) sätts in i formeln fås en måttenhet, uttryckt som
 voltamperesekunder \(\mathrm{[VAs]}\) eller wattsekunder \(\mathrm{[Ws]}\)
 eller joule\ \(\mathrm{[J]}\).
 
-Måttenheten för elektriskt arbete är 1~joule per sekund, som vanligen
+Måttenheten för elektriskt arbete är 1~joule, som vanligen
 kallas \(1\,\mathrm{wattsekund}\ 1\,\mathrm{[Ws]}\).
 Vid sidan av grundenheten används multipler av denna.
 
@@ -539,6 +571,8 @@ Vid sidan av grundenheten används multipler av denna.
    1 kilowattimme   & = $1\ \text{kWh}$ & = $1000\ \text{Wh}$ & = $3,6\cdot 10^6\ \text{Ws}$
 \end{tabular}
 \end{center}
+
+\pagebreak[3]
 
 \subsection{Formelsnurran}
 \index{formelsnurran}
@@ -570,7 +604,7 @@ Om \(U = \SI{230}{\volt}\) och \(I = \SI{2}{\ampere}\), så blir
 \[P = U \cdot I = 230 \cdot 2 = \SI{460}{\watt}\]
 %%
 \subsection{Amperetimmar (Ah) och batterikapacitet}
-\harec{a}{1.1.9}{1.1.9}
+\harecsection{\harec{a}{1.1.9}{1.1.9}}
 \index{amperetimmar (Ah)}
 \index{batterikapacitet}
 \index{batteri}
@@ -591,6 +625,7 @@ Det finns celler som kan laddas upp och laddas ur upprepade gånger.
 Sådana celler kallas vanligtvis ackumulator, sekundärbatteri eller
 sekundärcell.
 
+\newpage
 Det finns också sådana celler som endast kan användas en gång och som normalt
 inte kan laddas upp igen.
 Sådana celler kallas vanligtvis primärcell eller primärbatteri.

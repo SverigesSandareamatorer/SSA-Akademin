@@ -1,6 +1,6 @@
 \chapter[Isolation och jord]{Isolation och jordning}
 
-Isolation och jordning är samlingsbegrepp för ett antal viktiga koncept för
+\noindent Isolation och jordning är samlingsbegrepp för ett antal viktiga koncept för
 att reducera störningar, som även berör EMC och elsäkerhet.
 Detta är viktiga koncept både när man bygger en installation och när man
 designar utrustning.
@@ -173,7 +173,7 @@ isolation mellan de olika jordströmmarna och hur nollpotentialen upplevs.
 
 Om vi istället ansluter våra tre laster med individuella ledare till jord
 kommer de olika strömmarna inte att samverka, detta är en parallellkoppling
-av jord \cite[kap 3]{ott1988}.
+av jord \cite[kap 3]{ott1988}, se bild \ref{fig:kap4-2}.
 Vi har därmed åstadkommit en isolation mellan strömmarna med avseende på
 jordanslutningen.
 
@@ -194,7 +194,7 @@ jordanslutningen.
     \end{circuitikz}
 }{Parallellkopplat jordsystem}{fig:kap4-2}
 
-\noindent
+% \noindent
 Dock kommer varje strömkälla uppleva en förskjutning i spänningen av
 sin jord som beror på dess egen ström och impedansen den har till jord.
 För att minska denna effekt kan en minskad strömförbrukning användas
@@ -224,7 +224,7 @@ Samma teknik används ofta för själva kraftdistributionen av samma skäl.
 \index{jordbrum}
 \index{jord!brum}
 
-I ett system där man har gjort parallella jordar i matningen,
+I ett system där man har gjort parallella jordar i matningen, bild \ref{fig:kap4-3}, 
 vill man nu koppla samman två apparater för att överföra en signal.
 En första naiv lösning är ju att helt enkelt bara dra en tråd \(Z_{signal}\)
 från den ena apparaten över till den andra.
@@ -249,7 +249,7 @@ Eftersom de har jordanslutning så har de ju en gemensam jordreferens.
     \end{circuitikz}
 }{Sammankopplat system}{fig:kap4-3}
 
-\noindent
+% \noindent
 Problemet är att när strömmen \(I_1\) till den första apparaten går igenom
 anslutningsimpedansen \(Z_1\) till jord så ger det en spänning
 \(U_1 = Z_1 I_1\) på den jordanslutningen.
@@ -706,12 +706,12 @@ gemensam och differentiell ström.
 Vi kan därför återanvända formlerna och bara byta ut V mot I genomgående och
 får då:
 %%
-\begin{eqnarray}
+\begin{eqnarray*}
 I_+ = & I_g + I_d\\
 I_- = & I_g - I_d\\
 I_g = & \dfrac{I_+ + I_-}{2}\\
 I_d = & \dfrac{I_+ - I_-}{2}
-\end{eqnarray}
+\end{eqnarray*}
 %%
 Om vi återgår till transformatorexemplet så kommer det vara den differentiella
 strömmen på primärlindningen som ger upphov till magnetfältet i transformatorn
@@ -770,21 +770,21 @@ de individuella spänningarna och strömmarna till \emph{gemensam överföring}
 förstå och avhjälpa problem och uppnå isolation.
 För spänning har vi ekvationerna
 %%
-\begin{eqnarray}
+\begin{eqnarray*}
 V_+ = & V_{CM} + V_{DM}\\
 V_- = & V_{CM} - V_{DM}\\
 V_{CM} = & \dfrac{V_+ + V_-}{2}\\
 V_{DM} = & \dfrac{V_+ - V_-}{2}
-\end{eqnarray}
+\end{eqnarray*}
 %%
 För ström har vi ekvationerna
 %%
-\begin{eqnarray}
+\begin{eqnarray*}
 I_+ = & I_{CM} + I_{DM}\\
 I_- = & I_{CM} - I_{DM}\\
 I_{CM} = & \dfrac{I_+ + I_-}{2}\\
 I_{DM} = & \dfrac{I_+ - I_-}{2}
-\end{eqnarray}
+\end{eqnarray*}
 
 \subsection{Gemensam och differentiell impedans}
 
@@ -796,10 +796,10 @@ differentiella spänningen och differentiella strömmen.
 Den gemensamma impedansen är på samma sätt förhållandet mellan gemensam
 spänning och gemensam ström
 %%
-\begin{eqnarray}
+\begin{eqnarray*}
 Z_{DM} = & \dfrac{U_{DM}}{I_{DM}}\\
 Z_{CM} = & \dfrac{U_{CM}}{I_{CM}}
-\end{eqnarray}
+\end{eqnarray*}
 %%
 Egentligen är det inte så konstigt, om man har en koaxialkabel i ett 50~ohm
 system så har sändare och mottagare idealt 50~ohm som differentiell impedans.
@@ -872,7 +872,7 @@ man behöver lära sig att förstå och hantera.
 
 Obalans kan även förekomma i antennsystem, där en obalanserad antenn omvandlar
 den utsända signalen, som är differentiell, till att delvis bli gemensam.
-Detta gör att som reflex från den obalanserade antennen går en ström i
+Detta gör att via reflektion från den obalanserade antennen går en ström i
 matningsledningen som gör att den strålar.
 
 Detta har traditionellt uttryckts som att strömmen vänder och går på utsidan av
@@ -908,8 +908,8 @@ Eftersom ingen balun är perfekt designad så kommer den i sig själv ha en
 obalans, varvid den ändå kommer ge viss gemensam ström.
 För högre effekter kan därför en separat spärr komma att behövas.
 
-\newpage % layout
-Utöver balun finns även unun (unbalanced-unbalanced) som gör
+% \newpage % layout
+Utöver balun finns även unun (unbalan\-ced-un\-balan\-ced) som gör
 impedanskonvertering enbart.
 
 Även om man har en bra balun riskerar man att få mantelströmmar, ty antennen

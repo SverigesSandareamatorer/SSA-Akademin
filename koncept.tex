@@ -2,12 +2,18 @@
 \documentclass[10pt,openright]{report}
 \usepackage[utf8]{inputenc}
 
+\usepackage{tabularx}
+
+%% k7per: Uncomment this line if you want a black box at each overfull hbox
+% \overfullrule=10pt
+
 \synctex=1
 \usepackage{xtab}
 
 \include{koncept/common}
 \usepackage[swedish]{babel}
 % \usepackage{paralist}
+\usepackage{balance}
 
 \usepackage[
   activate={true,nocompatibility},
@@ -22,8 +28,34 @@
 ]{microtype}
 
 \usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
+%% k7per
+\usepackage{stfloats}
+% \usepackage{blindtext, subfig}
 
-\usepackage{dblfloatfix}
+\newcommand{\erp}{ERP}
+\newcommand{\eirp}{EIRP}
+\newcommand{\pep}{PEP}
+\newcommand{\signal}[1]{\texttt{#1}}
+
+%% k7per: The harecsection macro is used to enclose a list of harec commands, it also takes care of making
+%% sure the paragraph afterwards in no indenented, making sections with harec tags look the sme as sections
+%% without.
+\makeatletter
+\def\harecsection#1{\begingroup\raggedleft\scriptsize HAREC #1\par\endgroup\@afterindentfalse\@afterheading}
+\makeatother
+% \def\harec#1#2#3{\textbf{#1.\ref{HAREC.#1.#2}}\label{myHAREC.#1.#3}}
+\def\harec#1#2#3{{\scriptsize#1.#2\label{myHAREC.#1.#3}}}
+
+\makeatletter
+\providecommand\add@text{}
+\newcommand\tagaddtext[1]{%
+  \gdef\add@text{#1\gdef\add@text{}}}% 
+\renewcommand\tagform@[1]{%
+  \maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}%
+}
+\makeatother
+
+% \usepackage{dblfloatfix}
 \usepackage{float}
 \usepackage{placeins}
 \usepackage{array}
@@ -58,8 +90,18 @@
 \setcounter{secnumdepth}{3}
 
 % Figure macros
+\newcommand{\bottomwidefigure}[4][0.6]{
+  \begin{figure*}[b]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure*}
+}
+
 \newcommand{\smallfig}[4][0.4]{
-  \begin{figure}[th]
+  \begin{figure}[t]
     \centering
     \includegraphics[width=#1\textwidth]{#2}
     \caption{#3}
@@ -123,7 +165,66 @@
   \end{figure*}
 }
 
+\newcommand{\mediumbotfig}[4][0.7]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+\newcommand{\mediumminusbotfig}[4][0.6]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
 \newcommand{\mediumtopfig}[4][0.7]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumminustopfig}[4][0.6]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumplustopfig}[4][0.8]{
+  \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumplusbotfig}[4][0.8]{
+  \begin{figure*}[b]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\medfig}[4]{
   \begin{figure*}[t]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
@@ -166,7 +267,7 @@
 }
 
 \newcommand{\smalltikz}[3]{
-  \begin{figure}[ht]
+  \begin{figure}[t]
     \begin{center}
       #1
       \caption{#2}
@@ -180,7 +281,7 @@
 \def\textoverline#1{\savebox\TBox{#1}%
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
 
-\usepackage[textfont=it,labelfont=bf,margin=10pt]{caption}
+\usepackage[textfont=sf,labelfont={bf, sf},margin=10pt]{caption}
 
 \usepackage{threeparttable}
 \usepackage[symbol]{footmisc}
@@ -210,7 +311,13 @@
 %\bfseries \abstractname \end{center}}%
 %     {\vfill\null}
 
-\usepackage{textbook}
+% \usepackage{textbook}
+
+%% k7per: förbättringar till avstavningsregler.  Lägg till här, inte i den löpande texten.
+%% Enda undantaget skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
+\hyphenation{amatör-radio-sändaren MAY-DAY mo-du-ler-ing för-utom elektronrörs-epoken frekvens-karaktäristiken radio-vågor materie-formerna tantal-elek-tro-lyt-kondensatorer halv-led-ar-ele-ment serie-kretsen driv-effekten frekvens-ändring impedans-anpassade ko-ax-ial-kab-el-arrangemang våg-av-böj-ning re-so-nans-krets an-tenn-sys-tem sys-tem-jord extra-isolerad amatör-ra-dio-signaler puls-kod-mo-du-la-tion mat-nings-im-pe-den-sen mat-nings-im-pe-dan-sen skarv-sladdar antenn-ens efter-som el-ek-tro-mag-net-isk amatörradio-sänd-ar-en}
+
+\setcounter{tocdepth}{1}
 
 % Prepare for index
 \usepackage{makeidx}
@@ -259,12 +366,16 @@
 
 \input{koncept/koncept-core}
 
-\listoffigures
-\listoftables
+%% k7per, why?
+% \listoffigures
+% \listoftables
 
+%% k7per: Allowing references to be ragged.  May need URL hyphen package also.
 \onecolumn
+\begin{flushleft}
 \bibliography{koncept.bib}
 \bibliographystyle{plain}
+\end{flushleft}
 
 %%\backmatter
 

@@ -1,6 +1,7 @@
 \chapter{Omräkning mellan dB och kvoten av tal}
 \label{decibel_2}
 
+\noindent
 Benämningen Bel kommer från namnet på amerikanen Alexander Graham
 Bell, som år 1876 uppfann den första praktiskt användbara telefonen
 efter idéer från tysken Philipp Reiß.
@@ -73,13 +74,13 @@ står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} är 0\,dB(m) v
 Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
 0\,dB(m) är
 %%
-\[U = \sqrt{P\cdot R} = 1\cdot 10^{-3} \cdot 50 \approx \SI{0.224}{\volt}\]
+\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \SI{0.224}{\volt}\]
 %%
 Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0\,dB(m)
 är
 %%
 \[
-I = \sqrt{P}{R} = \sqrt{1\cdot 10^{-3}}{50} = \SI{0.0045}{\ampere} = \SI{4.5}{\milli\ampere}
+I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} = \SI{0.0045}{\ampere} = \SI{4.5}{\milli\ampere}
 \]
 %%
 Strömmen \SI{4,5}{\milli\ampere} genom belastningen \SI{50}{\ohm} motsvarar
@@ -116,13 +117,13 @@ Spänning:
 \section{Sambandet mellan spänning över 50 ohm och dB(m)}
 
 \begin{center}
-\begin{tabular}{l|lp{1cm}l|l}
-  dB(m) & V & & dB(m) & V \\
+\begin{tabular}{S[table-format=-3]|lp{1cm}S[table-format=-2]|l}
+  \multicolumn{1}{c|}{dB(m)} & V & &  \multicolumn{1}{c|}{dB(m)} & V \\
   \cline{1-2} \cline{4-5}
-  \num{-40} & 0,00224 & & & \\
-  \num{-30} & 0,00707 & & & \\
-  \num{-20} & 0,0224  & & & \\
-  \num{-10} & 0,0707  & & & \\
+  -40 & 0,00224 & & & \\
+  -30 & 0,00707 & & & \\
+  -20 & 0,0224  & & & \\
+  -10 & 0,0707  & & & \\
   0   & 0,224   & & & \\
   1   & 0,251   & & 11 & 0,793 \\
   2   & 0,282   & & 12 & 0,890 \\

@@ -1,14 +1,13 @@
 \chapter{Mätteknik}
 
-\emph{I forskning, utveckling och produktion är mätning en hörnpelare
+\noindent\emph{I forskning, utveckling och produktion är mätning en hörnpelare
   i verksamheten. Även inom mättekniken sker en snabb utveckling och
   digitaltekniken kommer alltmer till användning, men grunderna för
   mätning är desamma. I detta kapitel behandlas de viktigaste
   mättekniska begreppen som radioamatörer kan behöva känna till.}
 
 \section{Att mäta}
-\harec{a}{8.1}{8.1}
-\harec{a}{8.1.1.1}{8.1.1.1}
+\harecsection{\harec{a}{8.1}{8.1}, \harec{a}{8.1.1.1}{8.1.1.1}}
 
 \subsection{Mäta likspänning}
 \index{inre resistans}
@@ -16,7 +15,7 @@
 
 Vid spänningsmätning bestämmer man potentialskillnaden -- spänningen --
 mellan två punkter.
-Om det finns en spänning, så flyter en motsvarande (mät)ström genom
+Om det finns en spänning, så flyter motsvarande (mät)ström genom
 instrumentet som presenterar mätströmmen som en spänning.
 
 Mätströmmen påverkar emellertid spänningsfördelningen i kretsen och då
@@ -49,12 +48,12 @@ Ett exempel på detta finns i bild \ref{fig:BildII3-01}.
 
 När förkopplingsresistor används måste mätvärdet räknas om med en
 skalfaktor eller en skala med motsvarande gradering användas.
-En voltmeter med valbar förkopplingsresistor kan därför har flera skalor.
+En voltmeter med valbar förkopplingsresistor kan därför ha flera skalor.
 I digitala voltmetrar anpassas ''skalan'' oftast automatiskt.
 
 \newpage % layout
 \subsubsection{Inre resistansens inverkan}
-\harec{a}{8.1.2.3}{8.1.2.3}
+\harecsection{\harec{a}{8.1.2.3}{8.1.2.3}}
 \index{inre resistans}
 
 Vid mätning av spänning kommer den inre resistansen hos voltmetern att lasta
@@ -145,7 +144,7 @@ men för HF även instrument med termokors, vilka bygger på
 termogalvanisk spänning mellan metaller.
 
 \subsubsection{Frekvensens inverkan}
-\harec{a}{8.1.2.1}{8.1.2.1}
+\harecsection{\harec{a}{8.1.2.1}{8.1.2.1}}
 
 Frekvensen på den mätta signalen inverkar mer eller mindre på mätresultatet.
 Till en del beror det på den instrumenttyp, som används.
@@ -154,7 +153,7 @@ instrumentet fortfarande är rimligt rättvisande.
 Detta kallas instrumentets bandbredd, vilken bör vara dokumenterad.
 
 \subsubsection{Vågformens inverkan}
-\harec{a}{8.1.2.2}{8.1.2.2}
+\harecsection{\harec{a}{8.1.2.2}{8.1.2.2}}
 
 Även formen på den signal som mäts inverkar på mätresultatet och det
 är viktigt att veta för vilken vågform som instrumentet presenterar mätvärdet.
@@ -164,7 +163,7 @@ Det innebär att fel värde presenteras om vågformen är en annan än den
 förutsatta.
 
 \subsection{Mäta resistans}
-\harec{a}{8.1.3}{8.1.3}
+\harecsection{\harec{a}{8.1.3}{8.1.3}}
 
 Mätning av resistans är enklast att göra på en fristående komponent,
 medan man vid mätning på en resistor i en strömkrets också måste ta
@@ -189,7 +188,7 @@ medan spänningsförlusten för strömledarna därmed kan elimineras.
 Denna mätmetod är relevant framförallt för lågohmiga motstånd.
 
 \subsection{Mäta effekt}
-\harec{a}{8.1.4}{8.1.4}
+\harecsection{\harec{a}{8.1.4}{8.1.4}}
 \label{mätaeffekt}
 \index{PEP}
 \index{Peak Envelope Power (PEP)}
@@ -209,7 +208,7 @@ Vid sinusformad växelström och resistiva belastningar
 \begin{array}{ll}
 \text{effektivvärde} \quad P & = \dfrac{U^2}{R} \\
 &\\
-\text{toppvärde}     \quad P_{PEP} & = \dfrac{U_{max}^2}{R}
+\text{toppvärde}     \quad P_{PEP} & = \dfrac{U_{max}^2}{2R}
 \end{array}
 \]
 %%
@@ -220,9 +219,9 @@ R = resistansen
 
 En sändares effekt kan mätas på olika sätt.
 Den metod att mäta \emph{uteffekt} som är relevanta för radioamatören är
-toppvärdeskännande sådana för mätning av p.e.p.
-I föreskrifterna används sändareffekten p.e.p. som uteffekt.
-Därvid måste även p.e.p. avses, fastän det inte uttryckligen uttalas.
+toppvärdeskännande sådana för mätning av \pep.
+I föreskrifterna används sändareffekten \pep som uteffekt.
+Därvid måste även \pep avses, fastän det inte uttryckligen uttalas.
 
 Observera, att radioamatören måste beakta EMC-lagen.
 Se vidare kapitel \ref{EMC-lagen}.
@@ -278,7 +277,7 @@ Denna metod är dock inte så vanlig.
 
 \newpage %layout
 \subsection{Direktvisande effektmetrar}
-\harec{a}{8.2.1.2}{8.2.1.2}
+\harecsection{\harec{a}{8.2.1.2}{8.2.1.2}}
 
 Många föredrar direktvisande effektmätare.
 En HF-voltmeter kan givetvis graderas för att visa effekt i stället för
@@ -292,7 +291,7 @@ De effektmetrar som förekommer i SVF-instrument är egentligen voltmetrar,
 men med skalan graderad i effekt.
 
 \subsection{Mäta ståendevågförhållande (SVF)}
-\harec{a}{8.1.5}{8.1.5}
+\harecsection{\harec{a}{8.1.5}{8.1.5}}
 \label{mäta_ståendevåg}
 
 
@@ -317,12 +316,12 @@ SVF-värdet kan då bestämmas på något av följande sätt:
 \end{itemize}
 
 \subsection{Studera vågformen}
-\harec{a}{8.1.6}{8.1.6}
+\harecsection{\harec{a}{8.1.6}{8.1.6}}
 
 Vågformen för snabba växelströmsförlopp studeras bäst med oscilloskop.
 
 \subsection{Mäta frekvens}
-\harec{a}{8.1.7}{8.1.7}
+\harecsection{\harec{a}{8.1.7}{8.1.7}}
 
 Frekvensmätning gör man bäst med en så kallad frekvensräknare, som är ett
 digitalt instrument.
@@ -333,7 +332,7 @@ svag elektrisk eller magnetisk koppling.
 
 \newpage %layout
 \subsection{Mäta resonansfrekvens}
-\harec{a}{8.1.8}{8.1.8}
+\harecsection{\harec{a}{8.1.8}{8.1.8}}
 
 Mäta resonansfrekvensen för en passiv resonanskrets gör man klassiskt
 med en så kallad dip-meter.
