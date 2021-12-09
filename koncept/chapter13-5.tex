@@ -44,8 +44,7 @@ radio, landmobila stationer, stationer i fartyg, i sjöräddningsfarkoster,
 i flygplan, amatörradiostationer och så vidare.
 
 \subsection{Identifiering av amatörradiostationer}
-\harec{b}{5.1}{5.1}
-\harec{b}{5.3}{5.3}
+\harecsection{\harec{b}{5.1}{5.1}, \harec{b}{5.3}{5.3}}
 
 En radiostation ska identifieras med den anropssignal, som tilldelats av det
 egna landets teleadministration (myndighet).
@@ -66,7 +65,7 @@ av B, F, G, I, K, M, N, R eller W.
 \end{itemize}
 
 Sverige är tilldelat prefix i serierna SA--SM, 7S och 8S
-\cite[Appendix 42]{ITU-RR}.
+\cite[Appendix 42]{ITU-RR}, se tabell~\ref{tab:seprefix}.
 
 Prefixet följs av en siffra och ett suffix. Suffixet består av minst ett och
 högst fyra tecken, där det sista tecknet inte får vara en siffra.
@@ -110,11 +109,14 @@ Signalserien SA är tilldelad av SSA från 2004.
 nyare SM- och SA-signaler har treställiga suffix.
 
 Utöver grundsignalen finns även extra anropssignaler tilldelade i de övriga tillgängliga serierna.
-\paragraph{Exempel:} SM0XXX är en radioamatör som fått sin tilldelning av PTS.
-\paragraph{Exempel:} SA0XXX är en radioamatör som fått sin tilldelning av SSA.
-\paragraph{Exempel:} SK2XX är en amatörklubb.
-\paragraph{Exempel:} SM7X är en radioamatör med kort anropssignal.
-\vspace{1ex}
+\paragraph{Exempel:} \signal{SM0XXX} är en radioamatör som fått sin tilldelning av PTS.
+\paragraph{Exempel:} \signal{SA0XXX} är en radioamatör som fått sin tilldelning av SSA.
+\paragraph{Exempel:} \signal{SK2XX} är en amatörklubb.
+\paragraph{Exempel:} \signal{SM7X} är en radioamatör med kort anropssignal.
+
+%% \vspace{1ex}
+\medskip
+
 Sverige är indelat i amatörradiodistrikt med följande numrering och
 utsträckning:
 
@@ -134,12 +136,14 @@ utsträckning:
 
 Distriktssiffran i anropssignalen bestäms av det län som hemadressen är belägen inom.
 Vid sändning utanför hemadressen bör det framgå av tillägg till anropssignalen.
-\paragraph{Exempel:} SA0XXX är en radioamatör hemmahörande i Stockholms län.
+\paragraph{Exempel:} \signal{SA0XXX} är en radioamatör hemmahörande i Stockholms län.
 
-\paragraph{Exempel:} SM7YYY är en radioamatör hemmahörande i Jönköpings län.
+\paragraph{Exempel:} \signal{SM7YYY} är en radioamatör hemmahörande i Jönköpings län.
 
-\paragraph{Exempel:} SK7AX är en amatörklubb hemmahörande i Jönköping län.
-\vspace{1ex}
+\paragraph{Exempel:} \signal{SK7AX} är en amatörklubb hemmahörande i Jönköping län.
+%% \vspace{1ex}
+\medskip
+
 I Post- och telestyrelsens föreskrifter sägs dock inte vilken distriktssiffra
 som ska användas, när sändning sker från annan plats än hemortsadressen.
 
@@ -152,22 +156,22 @@ Med stöd av praxis rekommenderar dock SSA att följande regler tillämpas:
 
 \item Vid trafik från annan tillfällig plats bör anropssignalen
   åtföljas av snedstreck och siffran för det distrikt varifrån
-  sändningen görs.
-  \textbf{Exempel:} SM0XYZ/0, SM0XYZ/6 etc.
+  sändningen görs. Till exempel \signal{SM0XYZ} i distrikt 6 blir \signal{SM0XYZ/6}
+  vilket låter som ``S M nolla X Y Z streck sexa.''
 
 \item Vid trafik från mobil station bör den ordinarie anropssignalen
-  även åtföljas av /M.
-  \textbf{Exempel:} SM0XYZ/6/M.
+  även åtföljas av \signal{/M}. Till exempel \signal{SM0XYZ} mobil i distrikt 6 blir \signal{SM0XYZ/6/M} vilket låter som ``S M nolla X Y Z streck sexa mobil.''
 
 \item Vid trafik från mobil station inom hemorten kan dock den extra
-  distriktssiffran utelämnas.
-  \textbf{Exempel:} SM0XYZ/M.
+  distriktssiffran utelämnas.  Till exempel \signal{SM9XYZ} mobil hemma vid blir \signal{SM0XYZ/M} vilket låter som ``S M nolla X Y Z mobil.''
 
+%% k7per???   
 \item Vid trafik från sjöfarkost bör den ordinarie anropssignalen
- åtföjas av /MM.
+  åtföjas av \signal{/MM} vilket låter som ``maritime mobil.''
 
+%% k7per???   
 \item Vid trafik från luftfarkost bör den ordinarie anropssignalen
-  åtföljas av /AM.
+  åtföljas av \signal{/AM} vilket låter som ``aeromobil.''
 
 \item Vid trafik från svensk farkost på internationellt territorium
  kan distriktssiffran 8 användas.
@@ -177,11 +181,11 @@ Med stöd av praxis rekommenderar dock SSA att följande regler tillämpas:
   Vid osäkerhet -- vänd dig till SSA!
 
 \item Utländsk radioamatör på besök i Sverige ska använda sin
-  anropssignal från det egna landet, föregånget av SM/. \textbf{Exempel:} SM/LA9XX \cite{TR6101}.
+  anropssignal från det egna landet, föregånget av \signal{SM/}. Till exempel \signal{SM/LA9XX} vilket låter som ``S M streck L A nia X X'' \cite{TR6101}.
 \end{itemize}
 
 \subsection{Nationella prefix}
-\harec{b}{5.4}{5.4}
+\harecsection{\harec{b}{5.4}{5.4}}
 
 Tabell \ref{tab:landsprefix} visar några viktiga nationella prefix att kunna.
 
@@ -191,48 +195,48 @@ Tabell \ref{tab:landsprefix} visar några viktiga nationella prefix att kunna.
       \begin{tabular}{ll}
         \emph{Prefix} & \emph{Land} \\
         \hline
-        LA            & Norge       \\
-        OZ            & Danmark     \\
+        DL            & Tyskland    \\
+        EA            & Spanien        \\
+        EA8           & Kanarieöarna   \\
         ES            & Estland     \\
+        F             & Frankrike   \\
+        G             & Storbritannien \\
         HB            & Schweiz     \\
-        OK            & Tjeckien    \\
-        S5            & Slovenien   \\
-        UA            & Ryssland    \\
-        ZS            & Sydafrika   \\
-        K             & USA         \\
-        PY            & Brasilien   \\
+        HS            & Thailand    \\
+        I             & Italien     \\
+        JA            & Japan          \\
       \end{tabular}
     \end{minipage}
     \begin{minipage}{.3\linewidth}
       \begin{tabular}{ll}
         \emph{Prefix} & \emph{Land} \\
         \hline
+        K             & USA         \\
+        LA            & Norge       \\
+        LU            & Argentina      \\
+        LY            & Litauen        \\
         OH            & Finland     \\
-        DL            & Tyskland    \\
-        F             & Frankrike   \\
-        I             & Italien     \\
+        OH0           & Åland          \\
+        OK            & Tjeckien    \\
         ON            & Belgien     \\
+        OZ            & Danmark     \\
+        PA            & Holland        \\
+      \end{tabular}
+    \end{minipage}
+    \begin{minipage}{.3\linewidth}
+      \begin{tabular}{ll}
+        \emph{Prefix} & \emph{Land} \\
+        \hline
+        PY            & Brasilien   \\
+        S5            & Slovenien   \\
         SP            & Polen       \\
-        YL            & Lettland    \\
-        HS            & Thailand    \\
+        SV            & Grekland       \\
+        UA            & Ryssland    \\
         VE            & Kanada      \\
         VK            & Australien  \\
-      \end{tabular}
-    \end{minipage}
-    \begin{minipage}{.3\linewidth}
-      \begin{tabular}{ll}
-        \emph{Prefix} & \emph{Land} \\
-        \hline
-        OH0           & Åland          \\
-        EA            & Spanien        \\
-        G             & Storbritannien \\
-        LY            & Litauen        \\
-        PA            & Holland        \\
-        SV            & Grekland       \\
-        EA8           & Kanarieöarna   \\
-        JA            & Japan          \\
-        LU            & Argentina      \\
+        YL            & Lettland    \\
         ZL            & Nya Zeeland    \\
+        ZS            & Sydafrika   \\
       \end{tabular}
     \end{minipage}
     \caption{Landsprefix}
@@ -241,8 +245,7 @@ Tabell \ref{tab:landsprefix} visar några viktiga nationella prefix att kunna.
 \end{table*}
 
 \section{Användning av anropssignal}
-\harec{b}{5.2}{5.2}
-\harec{b}{7.2.2}{7.2.2}
+\harecsection{\harec{b}{5.2}{5.2}, \harec{b}{7.2.2}{7.2.2}}
 
 Både motstationens och den egna anropssignalen ska användas i början
 och slutet av varje sändning.
@@ -253,7 +256,7 @@ anges vid varje sändning.
 Se vidare i PTS föreskrifter.
 
 \section{Exempel på kontakt}
-\harec{b}{7.2.1}{7.2.1}
+\harecsection{\harec{b}{7.2.1}{7.2.1}}
 
 Det finns många sätt att genomföra en radiokontakt, men det finns några
 grundregler för hur man uppträder och utväxlar samtal.
@@ -343,7 +346,7 @@ Möjligheten att använda second operator ska användas med klokhet, och kan rä
 använd skapa en god förståelse för hobbyn och utgöra en morot för att få både
 ungdomar och vuxna intresserade av amatörradio.
 
-\newpage % layout
+% \newpage % layout
 \subsection{CQ DX och split}
 \label{cq dx och split}
 \index{CQ DX}
@@ -431,7 +434,7 @@ dem en extra förtur innan de helt tappar chansen.
 
 \begin{itemize}
 \item Jag ska lyssna, och lyssna, och sedan lyssna lite till.
-\item Jag ska ropa endast om jag kan läsa DX-stationen ordentligt.
+\item Jag ska ropa endast om jag kan läsa DX-sta\-tion\-en ordentligt.
 \item Jag ska icke lita på cluster-information, utan vara helt klar över DX-stationens anropssignal innan jag ropar.
 \item Jag ska icke störa DX-stationen, eller någon som anropar denne, och jag ska aldrig stämma av på DX:ets egen frekvens, eller i det segment där denne lyssnar.
 \item Jag ska vänta tills DX:et avslutat föregående kontakt innan jag ropar själv.
@@ -450,7 +453,7 @@ Försök inte agera polis och rätta andra stationer som du anser bryter mot reg
 
 \section{Innehåll i förbindelse}
 \label{innehåll i förbindelse}
-\harec{b}{7.2.3}{7.2.3}
+\harecsection{\harec{b}{7.2.3}{7.2.3}}
 
 Tidigare har det i Sverige varit reglerat vad innehållet får vara i
 förbindelser, eller snarare vad de inte får innehålla.
@@ -502,7 +505,7 @@ i realtid är tillåtet.
 	obehörigen får föra vidare eller utnyttja det han fått del av eller tillgång
 	till.}
 
-\newpage % layout
+%% \newpage % layout
 Detta kan vara aktuellt då någon som tillhandahåller en elektronisk
 kommunikationstjänst från punkt A till punkt B får tillgång till innehållet i
 ett elektroniskt meddelande när det har lämnat punkt A och innan det når fram
@@ -553,7 +556,7 @@ medföra begränsningar i de rättigheter vi har enligt PTSFS 2020:5.
 
 \newpage % layout
 \section[Hederskod]{Radioamatörens hederskod}
-\harec{b}{7.1.1}{7.1.1}
+\harecsection{\harec{b}{7.1.1}{7.1.1}}
 \index{Radioamatörens hederskod}
 
 Radioamatören är
@@ -614,7 +617,7 @@ Radioamatören är
 \emph{-- anpassad från den ursprungliga Amateur's Code, skriven av Paul M. Segal, W9EEA, 1928.}
 
 \section[Ordningsregler]{Radioamatörens ordnings\-regler}
-\harec{b}{7.1.2}{7.1.2}
+\harecsection{\harec{b}{7.1.2}{7.1.2}}
 
 \subsection{Grundläggande principer}
 \textbf{Grundläggande principer} som ska styra vårt \textbf{uppträdande} på

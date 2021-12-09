@@ -1,16 +1,15 @@
+\newpage
 \section{Icke sinusformade signaler}
-\harec{a}{1.7}{1.7}
+\harecsection{\harec{a}{1.7}{1.7}}
 
 \subsection{Grundton, övertoner och kant\-vågor}
-\harec{a}{1.7.2}{1.7.2}
-\harec{a}{1.7.3}{1.7.3}
-\harec{a}{1.7.4b}{1.7.4b}
+\harecsection{\harec{a}{1.7.2}{1.7.2}, \harec{a}{1.7.3}{1.7.3}, \harec{a}{1.7.4b}{1.7.4b}}
 \index{grundton}
 \index{överton}
 \index{kantvåg}
 \label{övertoner}
 
-%\mediumfig[0.6]{images/cropped_pdfs/bild_2_1-18.pdf}{Ren sinusvåg och övertonshaltig våg}{fig:BildII1-18}
+% \mediumfig[0.7]{images/cropped_pdfs/bild_2_1-18.pdf}{Ren sinusvåg och övertonshaltig våg}{fig:BildII1-18}
 
 Bild \ref{fig:BildII1-18} visar en ren sinusvåg och övertonshaltig våg.
 Ett sinusformat förlopp med en enda frekvens -- en enda ton -- sägs vara
@@ -25,7 +24,8 @@ Om signalen ligger inom det hörbara området, kan man märka hur den ändrar
 karaktär beroende på övertonshalten.
 Man kan säga att övertonerna modulerar grundtonen.
 
-%\mediumfig[0.6]{images/cropped_pdfs/bild_2_1-19.pdf}{Uppdelning av en signal i grundton och övertoner}{fig:BildII1-19}
+\pagefig[0.6]{images/cropped_pdfs/bild_2_1-19.pdf}{Uppdelning av en signal i grundton och övertoner}{fig:BildII1-19}
+\pagefig[0.6]{images/cropped_pdfs/bild_2_1-20.pdf}{Uppdelning av en fyrkantsvåg i grundton och övertoner}{fig:BildII1-20}
 
 Bild \ref{fig:BildII1-19} visar uppdelning av en signal i grundton och
 övertoner.
@@ -36,8 +36,7 @@ Den totala amplituden blir emellertid inte summan av 1, 0,7 och 0,2~volt
 eftersom de olika delspänningarnas toppvärden inte uppträder samtidigt.
 I stället måste delspänningarna adderas vid varje tidpunkt för sig.
 
-\pagefig{images/cropped_pdfs/bild_2_1-20.pdf}{Uppdelning av en fyrkantsvåg i grundton och övertoner}{fig:BildII1-20}
-\pagefig{images/cropped_pdfs/bild_2_1-21.pdf}{Överlagrade spänningar}{fig:BildII1-21}
+\mediumfig{images/cropped_pdfs/bild_2_1-21.pdf}{Överlagrade spänningar}{fig:BildII1-21}
 
 Bild \ref{fig:BildII1-20} visar uppdelning av en fyrkantsvåg i grundton och
 övertoner.
@@ -92,7 +91,7 @@ fyrkantsvågens flanker, desto rundare blir hörnen på vågen och desto vågiga
 blir kurvans topp.
 
 \subsection{Överlagrade spänningar (likspänningskomposant)}
-\harec{a}{1.7.4a}{1.7.4a}
+\harecsection{\harec{a}{1.7.4a}{1.7.4a}}
 
 Bild \ref{fig:BildII1-21} visar överlagrade spänningar.
 I signalkretsar förekommer det mycket ofta, att växelspänning överlagras på
@@ -113,8 +112,7 @@ Kvar blir LF-signalen, men överlagrad på en likspänning.
 Likspänningen stoppas och kvar blir slutligen LF-signalen som förstärks.
 
 \subsection{Brus}
-\harec{a}{1.7.5}{1.7.5}
-\harec{a}{7.19}{7.19}
+\harecsection{\harec{a}{1.7.5}{1.7.5}, \harec{a}{7.19}{7.19}}
 \label{termisktbrus}
 
 \subsubsection{Termiskt brus}
@@ -133,8 +131,10 @@ Detta spektra begränsas dock av bandbredden.
 
 \smallfig{images/cropped_pdfs/bild_2_1-36.pdf}{En resistor kan ses ha brusekvivalenter som spänning eller ström}{fig:BildII1-36}
 
+%% k7per: Add more description of what the figure is describing?  What should you be looking for?
 \smallfig{images/cropped_pdfs/bild_2_1-34.pdf}{Brus innebär en ostabilitet över tid}{fig:BildII1-34}
 
+%% k7per: Add more description of what the figure is describing?  What should you be looking for?
 \smallfig{images/cropped_pdfs/bild_2_1-35.pdf}{Brus innehåller alla frekvenser, vitt brus har samma amplitud}{fig:BildII1-35}
 
 \index{vitt brus}
@@ -167,7 +167,7 @@ Varje motstånd med den absoluta temperaturen T kan modelleras som att ha en
 ekvivalent spänning \(e_n\) och ström \(i_n\) för resistansen \(R\),
 så som illustreras i bild \ref{fig:BildII1-36} är
 %%
-\[e_n = \sqrt{4kTBR}\qquad i_n = \sqrt{\dfrac{4kTB}{R}}\]
+\[e_n = \sqrt{4kTBR}\quad\text{och}\quad i_n = \sqrt{\dfrac{4kTB}{R}}.\]
 %%
 \subsubsection{Brusbandbredd}
 \index{brus!brusbandbredd}

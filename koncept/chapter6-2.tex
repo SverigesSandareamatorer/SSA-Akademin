@@ -1,3 +1,4 @@
+\newpage
 \smallfig{images/cropped_pdfs/bild_2_5-09.pdf}{Separat sändare och mottagare}{fig:bildII5-9}
 
 \smallfig{images/cropped_pdfs/bild_2_5-10.pdf}{Transceiver med samma VFO}{fig:bildII5-10}
@@ -179,8 +180,8 @@ VCO ligga \SI{10,7}{\mega\hertz} högre eller lägre vid mottagning än vid
 sändning.
 Vid sändning däremot, är VCO-frekvensen densamma som sändningsfrekvensen.
 
-Den programmerbara frekvensdelaren i PLL-kretsen arbetar därför med
-olika delningstal vid sändning respektive mottagning.
+Den programmerbara frekvensdelaren i PLL-kret\-sen arbetar därför med
+olika delningstal vid sändning respektive mottagning, se tabell~\ref{tab:delningstal}.
 Inställningen av divisorn kan ske med kanalomkopplare, tumhjulssats,
 knappsats eller ''VFO-ratt'' + digitalräknare och så vidare.
 PLL-styrningen ger dessutom möjligheter, till exempel att ordna en automatisk
@@ -203,11 +204,14 @@ avsökning över ett önskat frekvensområde -- så kallad scanning.
     145,025 & 5801 & 145,625 & 156,325 & 6253 \\
   \end{tabular}
 \end{center}
+\caption{Exmpel på användning av olika delningstal vid simplex- och repeaterkanaler.}
+\label{tab:delningstal}
 \end{table}
 
 VCO-frekvensen är lika vid sändning och mottagning medan delningstalet
 bestämmer arbetsfrekvensen.
 
+\newpage
 \subsection{Kortvågstransceiver för SSB och CW}
 \index{SSB}
 \index{transceiver!SSB}
@@ -217,7 +221,9 @@ bestämmer arbetsfrekvensen.
 \index{Voice Operated Xmitter (VOX)}
 \index{VOX}
 
-Vi har redan beskrivit en KV-sändare och KV-mottagare för SSB.
+\mediumfig{images/cropped_pdfs/bild_2_5-14.pdf}{SSB-transceiver för kortvåg}{fig:bildII5-14}
+
+Vi har redan beskrivit en KV-sändare och KV-mot\-tag\-are för SSB.
 I det koncept på en kortvågstransceiver, som visas här i
 bild \ref{fig:bildII5-14}, ingår en super-VFO i signalberedningen.
 VFO-signalen (\SIrange{5}{5,5}{\mega\hertz}) blandas med signalen från en
@@ -225,7 +231,7 @@ kristallstyrd CO, vars frekvens är valbar med en bandomkopplare.
 Samtidigt kopplas ett bandpassfilter in efter blandaren i super-VFO,
 som svarar till det aktuella frekvensbandet.
 
-För till exempel \SI{21}{\mega\hertz}-bandet är VFO-filtrets passband
+Till exempel i \SI{21}{\mega\hertz}-bandet är VFO-filtrets passband
 \SIrange{12}{12,5}{\mega\hertz}.
 När en VFO-signal \SIrange{12}{12,5}{\mega\hertz} blandas med en
 \SI{9}{\mega\hertz} SSB modulerad signal erhålls en frekvens i området
@@ -259,9 +265,9 @@ Utan denna frekvensändring skulle endast bärvågsbruset höras.
 Även en RIT och en \emph{talstyrd sändning} (eng.
 \emph{Voice Operated Xmitter (VOX)}) är inritade.
 
-\largefig{images/cropped_pdfs/bild_2_5-14.pdf}{SSB-transceiver för kortvåg}{fig:bildII5-14}
 
-\mediumfig{images/cropped_pdfs/bild_2_5-15.pdf}{PLL-styrd SSB-transceiver för kortvåg}{fig:bildII5-15}
+\newpage
+\mediumplustopfig{images/cropped_pdfs/bild_2_5-15.pdf}{PLL-styrd SSB-transceiver för kortvåg}{fig:bildII5-15}
 
 \subsection{PLL-styrd kortvågstransceiver}
 \index{PLL}
@@ -313,7 +319,7 @@ Men det är inte alls nödvändigt att använda det senaste och mest
 avancerade inom apparattekniken för att utöva amatörradio.
 Det går mycket bra att börja med enkla medel och med liten ekonomisk insats.
 
-\newpage % layout 
+% \newpage % layout 
 Det finns ett stort utbud av begagnade apparater som i olika avseenden
 är konkurrenskraftiga med senare konstruktioner.
 Det ligger i amatörradions traditioner att ta tillvara tillgänglig

@@ -1,6 +1,6 @@
 \newpage % layout
 \section{Induktorn}
-\harec{a}{2.3}{2.3}
+\harecsection{\harec{a}{2.3}{2.3}}
 \index{induktor}
 
 \subsection{Allmänt}
@@ -13,7 +13,7 @@ magnetfältet i form av lagrad magnetisk energi.
 
 
 \subsection{Självinduktion -- induktans}
-\harec{a}{2.3.1}{2.3.1}
+\harecsection{\harec{a}{2.3.1}{2.3.1}}
 \index{induktans}
 \index{självinduktion}
 \index{elektromotorisk kraft (EMK)}
@@ -23,7 +23,8 @@ magnetfältet i form av lagrad magnetisk energi.
 Magnetfältets förmåga att alstra en motverkande EMK kallas
 \emph{självinduktion} (eng. \emph{self inductance}) eller
 \emph{induktans} (eng. \emph{inductance}).
-Ordet induktans kommer från latinets inducere, som betyder införa.
+%% k7per: Macro for latin?
+Ordet induktans kommer från latinets \emph{inducere}, som betyder införa.
 
 När en ledare som ingår i en sluten krets rör sig i ett magnetfält, kommer
 en ström att flyta genom ledaren på grund av den EMK (spänning) som alstras.
@@ -48,10 +49,11 @@ en strömkrets.
 
 \subsection{Försök med induktion}
 
-\largefig{images/cropped_pdfs/bild_2_2-03.pdf}{Försök med induktion}{fig:BildII2-3}
+\mediumfig{images/cropped_pdfs/bild_2_2-03a.pdf}{Försök 1 med induktion}{fig:BildII2-3a}
+%\mediumfig{images/cropped_pdfs/bild_2_2-03.pdf}{Försök med induktion}{fig:BildII2-3}
 
 \paragraph{Försök 1:}
-Överst i bild \ref{fig:BildII2-3} är ett känsligt vridspoleinstrument kopplat
+I bild \ref{fig:BildII2-3a} är ett känsligt vridspoleinstrument kopplat
 till en induktor.
 Instrumentet bör ha noll på skalans mitt, så att strömriktningen syns.
 En permanentmagnet används för att visa att självinduktion uppstår när
@@ -64,8 +66,9 @@ respektive dras ut ur induktorn -- det uppstår en växelström.
 En växelspänning uppstår över induktorn även när den ingår i en strömkrets som
 sluts och bryts -- alltså utan en magnet som rör sig.
 
+\smallfig{images/cropped_pdfs/bild_2_2-03b.pdf}{Försök 2 med induktion}{fig:BildII2-3b}
 \paragraph{Försök 2:}
-I mitten i bild \ref{fig:BildII2-3} har permanentmagneten bytts mot ännu en
+I bild \ref{fig:BildII2-3b} har permanentmagneten bytts mot ännu en
 induktor.
 Utöver den första induktorn, som vi nu kallar sekundärlindning, kallar vi den
 nya induktorn för primärlindning.
@@ -82,8 +85,9 @@ sluts och motsatt riktning när den bryts -- en växelspänning alstras.
 När sekundärlindningen ingår i en sluten krets uppstår en växelström genom
 sekundärlindningen.
 
+\smallfig{images/cropped_pdfs/bild_2_2-03c.pdf}{Försök 3 med induktion}{fig:BildII2-3c}
 \paragraph{Försök 3:}
-Nederst i bild \ref{fig:BildII2-3} ställer vi oss frågan vad som händer när
+I bild \ref{fig:BildII2-3c} ställer vi oss frågan vad som händer när
 primärlindningen i försök 2 ansluts till en växelspänning, till exempel
 med nätfrekvensen \SI{50}{\hertz}.
 Använd för säkerhets skull en skyddstransformator mellan nätet och lindningen!
@@ -101,10 +105,10 @@ Bild \ref{fig:BildII2-4} visar schemasymboler för ett antal vanliga induktorer.
 Utöver dessa finns elektromagneter, drosslar, induktorer för resonanskretsar,
 ramantenner och så vidare.
 
-\newpage % layout
+% \newpage % layout
 
 \subsection{Enheten henry (H)}
-\harec{a}{2.3.2}{2.3.2}
+\harecsection{\harec{a}{2.3.2}{2.3.2}}
 \index{henry (H)}
 \index{enheter!henry (H)}
 \index{symbol!\(L\) induktans}
@@ -133,7 +137,7 @@ För elektroniktillämpningar används därför ett mer hanterligt format.
 \end{center}
 
 \subsection{Hur induktansen påverkas}
-\harec{a}{2.3.3}{2.3.3}
+\harecsection{\harec{a}{2.3.3}{2.3.3}}
 \index{permeabilitet}
 \index{relativa permeabiliteten}
 \index{symbol!\(\mu_0\) permeabilitetskonstanten}
@@ -161,7 +165,7 @@ Permeabiliteten för vakuum är definierad som
 \[\mu_0 = 4\pi 10^{-7} \approx 1,256637 \cdot 10^{-6}\]
 
 \subsection{Induktiv reaktans}
-\harec{a}{2.3.4}{2.3.4}
+\harecsection{\harec{a}{2.3.4}{2.3.4}}
 \index{induktiv reaktans}
 \index{reaktans!induktiv}
 \index{symbol!\(X_L\) induktiv reaktans}
@@ -209,7 +213,7 @@ Sambandet är:
 \[X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = \SI{31400}{\ohm}\]
 
 \subsection{Fasförskjutning mellan spänning och ström i en induktor}
-\harec{a}{2.3.5}{2.3.5}
+\harecsection{\harec{a}{2.3.5}{2.3.5}}
 \index{induktor!fasförskjutning}
 
 Med fasförskjutning menas den tidsmässiga förskjutningen mellan ström- och
@@ -223,7 +227,7 @@ I praktiken är dock förskjutningen något mindre än \ang{90} på grund av
 resistansen i induktorn.
 
 \subsection{Q-faktor -- godhetstal}
-\harec{a}{2.3.6}{2.3.6}
+\harecsection{\harec{a}{2.3.6}{2.3.6}}
 \index{Q-faktor!induktor}
 
 \emph{Q-faktorn} kan avse två olika saker, som inte ska förväxlas.

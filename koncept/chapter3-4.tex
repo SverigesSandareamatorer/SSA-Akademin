@@ -1,5 +1,5 @@
 \section{Förstärkare}
-\harec{a}{3.4}{3.4}
+\harecsection{\harec{a}{3.4}{3.4}}
 \index{förstärkare}
 \index{amplifier}
 \index{blandning}
@@ -26,9 +26,7 @@ Det finns därför skäl att här behandla såväl elektronrör som transistorer
 
 \subsection{Huvudegenskaper hos förstärkare}
 \subsubsection{LF- och HF-förstärkare}
-\harec{a}{3.4.1}{3.4.1}
-\harec{a}{3.4.2}{3.4.2}
-\harec{a}{3.4.3}{3.4.3}
+\harecsection{\harec{a}{3.4.1}{3.4.1}, \harec{a}{3.4.2}{3.4.2}, \harec{a}{3.4.3}{3.4.3}}
 
 \mediumfig{images/cropped_pdfs/bild_2_3-41.pdf}{Principen för förstärkare med elektronrör respektive transistor}{fig:BildII3-41}
 
@@ -70,6 +68,7 @@ Frekvensgången anger hur förstärkningen varierar för olika frekvenser inom f
 \index{förstärkare!bandbredd}
 \index{bandwidth|see {bandbredd}}
 
+%% k7per: definiera fulla data.
 Det frekvensområde där förstärkaren arbetar med fulla data kallas
 \emph{bandbredd} (eng. \emph{bandwidth}).
 Bandgränserna uttrycks som en nedre och övre gränsfrekvens, där signalnivån
@@ -87,10 +86,7 @@ Det finns så kallade bredbandiga förstärkare för ett stort frekvensområde, 
 även avstämda förstärkare för smala frekvensband.
 
 \subsection{Grundkopplingar för förstärkarsteg}
-\harec{a}{2.6.4.1}{2.6.4.1}
-\harec{a}{2.6.4.2}{2.6.4.2}
-\harec{a}{2.6.4.3}{2.6.4.3}
-\harec{a}{2.6.4.4}{2.6.4.4}
+\harecsection{\harec{a}{2.6.4.1}{2.6.4.1}, \harec{a}{2.6.4.2}{2.6.4.2}, \harec{a}{2.6.4.3}{2.6.4.3}, \harec{a}{2.6.4.4}{2.6.4.4}}
 \label{förstärkare_grundkoppling}
 
 \largefig{images/cropped_pdfs/bild_2_3-42.pdf}{Grundkopplingar för elektronrör och NPN-transistor}{fig:BildII3-42}
@@ -128,18 +124,19 @@ gränsfrekvens och goda isolation mellan in- och utgång.
 
 \index{kollektorkoppling}
 \index{förstärkare!kollektorkoppling}
-\emph{Kollektorkoppling} används när hög ingångsimpe\-da\-ns och
+\emph{Kollektorkoppling} används när hög ingångsimpe\-da\-ns och låg
 utgångsimpedans önskas.
 Denna koppling har emellertid ingen spänningsförstärkning, men kan användas för
 impedansomvandling.
 
+%% k7per: Kollektorkoppling, utresistansen borde vara 50ohm, inte 50kohm.
 \begin{table*}[!ht]
   \begin{center}
     \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
     \begin{tabular}{p{0.15\textwidth}|p{0.22\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}}
       \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
       \(Z_{in}\) & medel \quad 1 k\(\Omega\) & liten \quad 50 \(\Omega\) & stor \quad 100 k\(\Omega\) \\
-      \(Z_{ut}\) & medel \quad 10 k\(\Omega\) & stor \quad 100 k\(\Omega\) & liten \quad 50 k\(\Omega\) \\
+      \(Z_{ut}\) & medel \quad 10 k\(\Omega\) & stor \quad 100 k\(\Omega\) & liten \quad 50 \(\Omega\) \\
       Förstärkning & & & \\
       \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
       \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
@@ -169,7 +166,7 @@ en avkopplad resistor mellan emittern och minuspolen samt en resistiv
 spänningsdelare mellan plus- och minuspolen.
 
 \subsection{Klass A-, B- och C-förstärkare}
-\harec{a}{3.4.4}{3.4.4}
+\harecsection{\harec{a}{3.4.4}{3.4.4}}
 
 \subsubsection{Arbetspunkt}
 \index{arbetspunkt}
@@ -203,7 +200,7 @@ Bild \ref{fig:BildII3-44} illustrerar klass A, vilket är ett arbetssätt i linj
 LF- och HF-förstärkarsteg, till exempel i mottagare samt AM- och SSB-modulerade
 sändare.
 Vilovärdet på strömmen i huvudkretsen, den så kallade arbetspunkten, placeras i
-mitten på den rakaste delen av styrkaraktäristikan (\(I=0,5\cdot I_{max}\)).
+mitten på den rakaste delen av styrkaraktäristiken (\(I=0,5\cdot I_{max}\)).
 Därmed fås låg distorsion.
 Verkningsgraden är upp till 50~\%.
 
@@ -333,9 +330,9 @@ Alla frekvenser i signalen multipliceras på detta sätt.
 Amplitudmodulerad telefoni kan därför inte överföras genom en
 frekvensmultipliceringskedja utan att talet förvrängs.
 
-\newpage % layout
+% \newpage % layout
 \subsection{Sändarslutsteg}
-\harec{a}{2.8.2}{2.8.2}
+\harecsection{\harec{a}{2.8.2}{2.8.2}}
 \index{slutsteg}
 \index{förstärkare!slutsteg}
 
@@ -363,7 +360,7 @@ För linjär återgivning krävs drift i klass A eller möjligen klass AB.
 \index{slutsteg!mottaktskopplat}
 \index{push-pull amplifier}
 
-\smallfig[0.5]{images/cropped_pdfs/bild_2_3-49.pdf}{Mottaktskopplat slutsteg med transistorer}{fig:BildII3-49}
+\smallfig[0.45]{images/cropped_pdfs/bild_2_3-49.pdf}{Mottaktskopplat slutsteg med transistorer}{fig:BildII3-49}
 
 Bild \ref{fig:BildII3-49} visar ett \emph{mottaktkopplat} (eng.
 \emph{push-pull amplifier}) förstärkarsteg i klass B, vilket har god verkningsgrad
@@ -475,7 +472,7 @@ På grund av behovet av flera olika spänningar är även strömförsörjningen 
 ett slutsteg med elektronrör mer komplicerad och omfångsrik.
 
 \subsection{Toppvärdeseffekt PEP}
-\harec{a}{1.9.6}{1.9.6}
+\harecsection{\harec{a}{1.9.6}{1.9.6}}
 \index{toppvärdeseffekt}
 \index{effekt!toppvärdes}
 \index{PEP}
@@ -539,7 +536,7 @@ P_{PEP} = \dfrac{\hat{u}_{t-t}^2}{8R}
 \]
 
 \subsection{Linjäritetskontroll vid SSB}
-\harec{b}{7.2.4}{7.2.4}
+\harecsection{\harec{b}{7.2.4}{7.2.4}}
 \index{SSB!linjäritetskontroll}
 
 \largefig{images/cropped_pdfs/bild_2_3-53.pdf}{Linjäritetskontroll vid SSB}{fig:BildII3-53}
@@ -553,7 +550,7 @@ Slutsteget bör först belastas med konstlast upp till max tillåten effekt.
 Resultatet jämförs därefter med antennen som last.
 
 \subsubsection{Linjäritetens betydelse i förstärkare}
-\harec{a}{3.4.5}{3.4.5}
+\harecsection{\harec{a}{3.4.5}{3.4.5}}
 \index{förstärkning!linjäritet}
 
 \mediumfig[0.8]{images/cropped_pdfs/bild_2_3-54.pdf}{Linjäritetens betydelse}{fig:BildII3-54}
@@ -585,7 +582,7 @@ Dessa är
 \item grundfrekvenserna och deras harmoniska övertoner, som alla ner
   till 1:a harmoniska dämpas kraftigt av efterföljande HF-krets
 
-\item alla summa-och skillnadsfrekvenser av de förstnämnda frekvenserna.
+\item alla summa- och skillnadsfrekvenser av de förstnämnda frekvenserna.
 \end{itemize}
 
 I området för nyttofrekvenserna kallas dessa produkter för

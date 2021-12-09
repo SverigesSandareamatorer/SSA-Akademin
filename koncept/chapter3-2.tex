@@ -1,6 +1,5 @@
 \section{Filter}
-\harec{a}{3.2}{3.2}
-\harec{a}{3.2.9}{3.2.9}
+\harecsection{\harec{a}{3.2}{3.2}, \harec{a}{3.2.9}{3.2.9}}
 \index{filter}
 \index{filter!frekvensfilter}
 \index{frekvensgång}
@@ -31,14 +30,13 @@ Här presenteras för enkelhets skull passiva filter.
 Man skiljer även mellan analoga filter och digitala filter. Vi beskriver här först några olika typer av klassiska analoga filter.
 
 \subsection{Högpassfilter (HP)}
-\harec{a}{3.2.8b}{3.2.8b}
-\harec{a}{3.2.9}{3.2.9a}
+\harecsection{\harec{a}{3.2.8b}{3.2.8b}, \harec{a}{3.2.9}{3.2.9a}}
 \index{högpassfilter}
 \index{filter!högpass (HP)}
 \index{highpass filter}
 \index{HP}
 
-\largefig{images/cropped_pdfs/bild_2_3-22.pdf}{Högpassfilter}{fig:BildII3-22}
+\mediumtopfig{images/cropped_pdfs/bild_2_3-22.pdf}{Högpassfilter}{fig:BildII3-22}
 
 
 Ett \emph{högpassfilter} (eng. \emph{highpass filter (HP)}, bild \ref{fig:BildII3-22}) släpper igenom
@@ -88,16 +86,16 @@ resistansen \(R\).
   \]
 \end{enumerate}
 
+\newpage
 \subsection{Lågpassfilter (LP)}
-\harec{a}{3.2.8a}{3.2.8a}
-\harec{a}{3.2.9}{3.2.9b}
+\harecsection{\harec{a}{3.2.8a}{3.2.8a}, \harec{a}{3.2.9}{3.2.9b}}
 \index{lågpassfilter}
 \index{filter!lågpass (LP)}
 \index{lowpass filter}
 \index{LP|see {lågpassfilter}}
 \label{lågpassfilter}
 
-\largefig{images/cropped_pdfs/bild_2_3-23.pdf}{Lågpassfilter}{fig:BildII3-23}
+\mediumtopfig{images/cropped_pdfs/bild_2_3-23.pdf}{Lågpassfilter}{fig:BildII3-23}
 
 Om induktor och kondensator respektive resistor och kondensator i ett
 högpassfilter byter plats, som i bild \ref{fig:BildII3-23}, så får man i
@@ -136,15 +134,13 @@ högpassfilter, således
 \end{gather*}
 
 \subsection{Bandpassfilter (BP)}
-\harec{a}{3.2.7}{3.2.7}
-\harec{a}{3.2.8c}{3.2.8c}
-\harec{a}{3.2.9}{3.2.9c}
+\harecsection{\harec{a}{3.2.7}{3.2.7}, \harec{a}{3.2.8c}{3.2.8c}, \harec{a}{3.2.9}{3.2.9c}}
 \index{bandpassfilter}
 \index{filter!bandpass (BP)}
 \index{bandpass filter}
 \index{BP}
 
-\largefig{images/cropped_pdfs/bild_2_3-24.pdf}{Bandpassfilter}{fig:BildII3-24}
+\mediumtopfig{images/cropped_pdfs/bild_2_3-24.pdf}{Bandpassfilter}{fig:BildII3-24}
 
 Ett \emph{bandpassfilter} (eng. \emph{bandpass filter}) släpper igenom signaler
 bara inom ett visst frekvensområde medan signaler utanför detta frekvensområde dämpas.
@@ -165,7 +161,7 @@ Fast koppling -- stor bandbredd.
 \smallfig[0.5]{images/cropped_pdfs/bild_2_3-25.pdf}{Passfilter}{fig:BildII3-25}
 
 \subsection{Passfilter}
-\harec{a}{3.2.9}{3.2.9d}
+\harecsection{\harec{a}{3.2.9}{3.2.9d}}
 \index{passfilter}
 \index{filter!bandpass (BP)}
 \index{pass filter|see {passfilter}}
@@ -179,8 +175,7 @@ frekvenser inom filtrets passband att passera.
 \smallfig[0.5]{images/cropped_pdfs/bild_2_3-26.pdf}{Bandspärrfilter}{fig:BildII3-26}
 
 \subsection{Bandspärrfilter}
-\harec{a}{3.2.8d}{3.2.8d}
-\harec{a}{3.2.9}{3.2.9e}
+\harecsection{\harec{a}{3.2.8d}{3.2.8d}, \harec{a}{3.2.9}{3.2.9e}}
 \index{bandspärrfilter}
 \index{filter!bandspärr (BR)}
 \index{band reject filter (BR)}
@@ -216,7 +211,7 @@ signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 
 \subsection{Kvartskristall}
 
-\harec{a}{3.2.11}{3.2.11}
+\harecsection{\harec{a}{3.2.11}{3.2.11}}
 \index{kvartskristall}
 \index{quartz crystal}
 \index{crystal}
@@ -285,7 +280,8 @@ mellanfrekvensfilter i högvärdiga radioutrustningar, men har numera till stor
 del ersatts av bandfilter med kvartskristaller där arbetsområdet kan ligga
 avsevärt högre i frekvens.
 
-\newpage % layout
+% k7per
+% \newpage % layout
 \subsection{Kavitetsfilter}
 \index{kavitetsfilter}
 \index{cavity filter}
@@ -304,7 +300,8 @@ Ledarens längd tillsammans med kavitetens insida bildar induktorn.
 Mellan ledaren och kavitetens insida råder en kapacitans, som kan
 kompletteras/justeras med en extra kondensator.
 
-\newpage % layout
+%% k7per: Remove explicit formatting.
+%% \newpage % layout
 
 Inkommande och utgående signaler ansluts till filtrets mittledare över
 induktionsslingor, kondensatorer eller direkt galvaniskt.
@@ -325,7 +322,7 @@ Detta sker dock på bekostnad av Q-värdet.
 Flera kavitetsfilter kan kopplas ihop för att bilda till exempel bandfilter eller spärrfilter.
 
 \subsection{Pi-filter}
-\harec{a}{3.2.10a}{3.2.10a}
+\harecsection{\harec{a}{3.2.10a}{3.2.10a}}
 \index{Pi-filter}
 \index{filter!Pi-filter}
 
@@ -341,9 +338,10 @@ induktanser och kapacitanser.
 Ett Pi-format nät kan sägas bestå av två L-formade nät ställda mot varandra, där
 den seriella delen är gemensam (på bilden en induktor).
 
-\newpage % layout
+%% k7per
+% \newpage % layout
 \subsection{T-filter}
-\harec{a}{3.2.10b}{3.2.10b}
+\harecsection{\harec{a}{3.2.10b}{3.2.10b}}
 \index{T-filter}
 \index{filter!T-filter}
 
@@ -366,7 +364,7 @@ Ett Pi- eller T-filter kan fungera som
 \end{itemize}
 
 \subsection{Icke-ideala komponenter}
-\harec{a}{3.2.12}{3.2.12}
+\harecsection{\harec{a}{3.2.12}{3.2.12}}
 
 I verkligheten är alla analoga komponenter även behäftade med oönskade egenskaper,
 även kallade parasitiska egenskaper.
@@ -388,7 +386,7 @@ förlusterna i spole och kondensator ger en förlust i kretsen och begränsar hu
 När en resonator belastas ökar förlusten ytterligare och därmed sjunker Q-värdet.
 
 \subsection{Digitala filter}
-\harec{a}{3.2.13}{3.2.13}
+\harecsection{\harec{a}{3.2.13}{3.2.13}}
 \index{digitala filter}
 
 Utvecklingen går mot att allt mer signalbehandling sker digitalt. 

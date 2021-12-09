@@ -1,11 +1,13 @@
+\mediumtopfig{images/nomogram_db_effekt.png}{Nomogram för omvandling mellan effekt och decibel}{ellära-nomogram-db-effekt}
+
 \section{Effekt och energi}
-\harec{a}{1.9}{1.9}
+\harecsection{\harec{a}{1.9}{1.9}}
 \label{effect och energi}
 \index{effekt}
 \index{energi}
 
 \subsection{Effekt i en sinusformad signal}
-\harec{a}{1.9.1}{1.9.1}
+\harecsection{\harec{a}{1.9.1}{1.9.1}}
 
 För beräkning av effekten av en sinusformad signal använder man effektivvärdet
 av spänning och ström.
@@ -18,7 +20,7 @@ av spänning och ström.
 
 
 \subsection{Effektändring uttryckt i dB}
-\harec{a}{1.9.2}{1.9.2}
+\harecsection{\harec{a}{1.9.2}{1.9.2}}
 \label{decibel}
 \index{dB}
 \index{dB!effekt}
@@ -51,9 +53,9 @@ större effekt än den själv styrs med.
 Vad som förorsakar effektförändringarna går vi inte in på i detta sammanhang,
 utan byggdelarna betraktas som ''svarta lådor'' med anslutningsklämmor.
 
-En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol''.
+En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol'', se bild~\ref{fig:BildII1-32}.
 
-\mediumfig[0.4]{images/cropped_pdfs/bild_2_1-32.pdf}{Effektförhållande}{fig:BildII1-32}
+\smallfig[0.4]{images/cropped_pdfs/bild_2_1-32.pdf}{Effektförhållande}{fig:BildII1-32}
 
 Antag att den inmatade effekten P är \SI{1}{\watt}.
 Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna
@@ -92,7 +94,6 @@ Med hjälp av nomogrammet i bild \ref{ellära-nomogram-db-effekt} kan en
 \emph{effektändring}, uttryckt som kvot (effekterna dividerade med varandra),
 omvandlas till decibel och omvänt.
 
-\mediumfig{images/nomogram_db_effekt.png}{Nomogram för omvandling mellan effekt och decibel}{ellära-nomogram-db-effekt}
 
 Följande avrundade värden kan utläsas:
 
@@ -125,30 +126,31 @@ Kvot av & Analys             & Skriv            & dB \\
 \index{ström!dB}
 \index{dB!ström}
 
+%% k7per: These paragraphs are hard to use, convert the math to real formulas?
 Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i
 \si{\decibel}, men annorlunda än mellan effekter.
 En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
 jämförelse.
 
-Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\))
+Enligt Joules lag är \(P = I^2 \cdot R\) (\(P = U \cdot I\)), således
 
-således \(\dfrac{P_\text{hög}}{P_\text{l{\aa}g}} = \dfrac{I_\text{hög}^2 \cdot R}{I_\text{l{\aa}g}^2 \cdot R}\)
+\[\dfrac{P_\text{hög}}{P_\text{l{\aa}g}} = \dfrac{I_\text{hög}^2 \cdot R}{I_\text{l{\aa}g}^2 \cdot R}\].
 
 R kan avkortas \emph{om in- och utgångsimpedanserna (resistanserna) är lika}.
 
 En jämförelse uttryckt i dB kan endast göras under samma förutsättningar;
-här att impedanserna (resistanserna) är lika,
+här att impedanserna (resistanserna) är lika, således
 
-således \(\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
+\[\dfrac{P_\text{hög}}{P_\text{låg}} = \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\].
 
 Effektförhållandet eller kvadratvärdet på strömförhållandet kan uttryckas
 logaritmiskt i B eller dB
 
-\(a[dB] = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\)
+\[a[dB] = 10\log \dfrac{I_\text{hög}^2}{I_\text{låg}^2}\]
 
 Eftersom \(\log x^2 = 2 \cdot \log x\), fås slutligen
 
-\(a[dB] = 20\log \dfrac{I_\text{hög}}{I_\text{låg}}\).
+\[a[dB] = 20\log \dfrac{I_\text{hög}}{I_\text{låg}}\].
 
 \subsection{Spänningsändring uttryckt i dB}
 \index{spänning!dB}
@@ -207,6 +209,7 @@ enligt följande tabell.
 
 \section{dB med miniräknare}
 
+%% k7per: Hard to read, turn into math...
 När beräkningen av förstärkning eller dämpning uttryckt i \si{\decibel} görs med
 miniräknare låter man räknaren sköta hela beräkningen.
 
@@ -283,8 +286,8 @@ Spänning
 \section[Sambandet spänning och dBm]{Sambandet mellan spänning\newline och dBm}
 
 \begin{center}
-\begin{tabular}{l|lp{1cm}l|l}
-	dBm & V & & dBm & V \\
+\begin{tabular}{S[table-format=-2]|lp{1cm}S[table-format=2]|l}
+	\multicolumn{1}{c|}{dBm} & V & & \multicolumn{1}{c|}{dBm} & V \\
 	\cline{1-2} \cline{4-5}
 	\num{-40} & 0,00224 & & & \\
 	\num{-30} & 0,00707 & & & \\
@@ -313,7 +316,7 @@ Referenseffekten är då \SI{1}{\watt}, dvs. 0\,dB(W).
 Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
 \subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
-\harec{a}{1.9.3}{1.9.3}
+\harecsection{\harec{a}{1.9.3}{1.9.3}}
 
 Ett räkneexempel på effektändringar:
 Fråga:
@@ -336,7 +339,7 @@ kabeln dämpar \(1/1,25 = 0,8\) gånger. Antennen matas då med
 \end{enumerate}
 
 \subsection{Impedansanpassning}
-\harec{a}{1.9.4}{1.9.4}
+\harecsection{\harec{a}{1.9.4}{1.9.4}}
 \index{impedansanpassning}
 \index{impedans!anpassning}
 
@@ -404,7 +407,7 @@ I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker 
 \(R_i = R_a\)}.
 
 \subsection{Förhållandet mellan in- och uteffekt uttryckt som procent verkningsgrad}
-\harec{a}{1.9.5}{1.9.5}
+\harecsection{\harec{a}{1.9.5}{1.9.5}}
 \index{verkningsgrad}
 \label{verkningsgrad}
 

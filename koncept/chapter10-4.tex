@@ -3,13 +3,16 @@
 \label{avstörning}
 \index{avstörning}
 
+\mediumfig[0.5]{images/cropped_pdfs/bild_2_9-01.pdf}{Nätfilter}{fig:bildII9-1}
+\mediumbotfig{images/cropped_pdfs/bild_2_9-02.pdf}{Lågpassfilter för sändare}{fig:bildII9-2}
+
 \subsection{Allmänt}
 För att prova ut ett filter, som bäst löser ett visst radiostörningsproblem,
 kan man behöva tillgång till ett filtersortiment.
 Som exempel nämns bland annat filter i SSA:s avstörningslådor.
 
 \subsection{Nätfilter}
-\harec{a}{9.3.1.1}{9.3.1.1}
+\harecsection{\harec{a}{9.3.1.1}{9.3.1.1}}
 \index{nätfilter}
 \index{avstörning!nätfilter}
 
@@ -25,7 +28,7 @@ för och bör anslutas så nära apparaten som möjligt.
 Om filtret inte kan placeras där, kan det vara nödvändigt att även skärma
 nätledningen mellan filtret och apparaten och jorda skärmen.
 
-\mediumfig[0.5]{images/cropped_pdfs/bild_2_9-01.pdf}{Nätfilter}{fig:bildII9-1}
+% \mediumfig[0.5]{images/cropped_pdfs/bild_2_9-01.pdf}{Nätfilter}{fig:bildII9-1}
 
 Om ledningen förses med till exempel en serieinduktans -- en drossel -- så dämpas
 HF-signalerna.
@@ -39,13 +42,13 @@ Dessa transienter kan leda till felfunktioner i anslutna apparater.
 För att förebygga sådana fel kan man koppla in ett överspänningsfilter, som kan
 vara separat eller sammanbyggt med nätfiltret.
 
-\newpage % layout
+%% \newpage % layout
 \subsection{Lågpassfilter}
 \label{Lågpassfilter}
 \index{lågpassfilter}
 \index{avstörning!lågpassfilter}
 
-\mediumfig{images/cropped_pdfs/bild_2_9-02.pdf}{Lågpassfilter för sändare}{fig:bildII9-2}
+% \mediumbotfig{images/cropped_pdfs/bild_2_9-02.pdf}{Lågpassfilter för sändare}{fig:bildII9-2}
 
 Lågpassfilter släpper igenom signaler med frekvenser under filtrets
 gränsfrekvens.
@@ -75,6 +78,9 @@ antennledningen.
 Med denna gränsfrekvens dämpas övertoner från sändare så att risken för
 TV-störningar minskar.
 
+\mediumfig{images/cropped_pdfs/bild_2_9-03.pdf}{Högpassfilter för VHF/UHF-mottagare}{fig:bildII9-3}
+
+\newpage
 \subsection{Högpassfilter}
 \label{Högpassfilter}
 \index{högpassfilter}
@@ -83,8 +89,6 @@ TV-störningar minskar.
 
 Högpassfilter släpper igenom signaler med frekvenser över filtrets
 gränsfrekvens.
-
-\mediumfig{images/cropped_pdfs/bild_2_9-03.pdf}{Högpassfilter för VHF/UHF-mottagare}{fig:bildII9-3}
 
 Bild \ref{fig:bildII9-3} visar principen för högpassfiltret HP~40-S med
 gränsfrekvensen \SI{47}{\mega\hertz}, att kopplas in mellan antennledningen och
@@ -100,6 +104,10 @@ kanalförstärkare.
 Koaxialkablar med täta skärmar och rätt monterade anslutningskontakter är också
 viktigt för en lyckad avstörning.
 
+\clearpage
+\mediumplustopfig{images/cropped_pdfs/bild_2_9-04.pdf}{Ingångsimpedansen i resonanskretsar}{fig:bildII9-4}
+\mediumplustopfig{images/cropped_pdfs/bild_2_9-05.pdf}{Spärrfilter för mottagare}{fig:bildII9-5}
+
 \subsection{Spärrfilter och sugkretsar}
 \label{spärrfilter}
 \index{spärrfilter}
@@ -110,11 +118,7 @@ viktigt för en lyckad avstörning.
 \index{stub}
 \index{avstörning!stub}
 
-\mediumfig{images/cropped_pdfs/bild_2_9-04.pdf}{Ingångsimpedansen i resonanskretsar}{fig:bildII9-4}
-
-\mediumfig{images/cropped_pdfs/bild_2_9-05.pdf}{Spärrfilter för mottagare}{fig:bildII9-5}
-
-\mediumfig{images/cropped_pdfs/bild_2_9-06.pdf}{Sugkretsar för mottagare}{fig:bildII9-6}
+\mediumplustopfig{images/cropped_pdfs/bild_2_9-06.pdf}{Sugkretsar för mottagare}{fig:bildII9-6}
 
 Om en störande signal råkar finnas inom passbandet för mottagaren kan
 man undertrycka -- ''spärra'' -- den signalen med ett spärr- eller sugfilter.
@@ -126,7 +130,8 @@ Kretsen består av en induktans och en kapacitans.
 
 Om man använder en stub som resonanskrets -- till exempel en koaxialkabel -- så
 ska den ha längden \(\lambda/4\) och vara ''kortsluten'' eller ha
-längden \(\lambda/2\) och vara ''öppen''.
+längden \(\lambda/2\) och vara ''öppen''.  Bild~\ref{fig:bildII9-4} visar exempel
+på hur ingångsimpedansen kan användas.
 
 Man kan även kortsluta -- ''suga bort'' den störande signalen med en
 serieresonanskrets parallellt över mottagaringången (Bild \ref{fig:bildII9-6}).
@@ -159,7 +164,7 @@ igenom 0--350 och \SIrange{470}{870}{\mega\hertz}.
 \index{Common Mode (CM)}
 \index{common mode current}
 
-\smallfig[.25]{images/cropped_pdfs/bild_2_9-07.pdf}{Nät- och skärmströmfilter}{fig:bildII9-7}
+\smallfig[.35]{images/cropped_pdfs/bild_2_9-07.pdf}{Nät- och skärmströmfilter}{fig:bildII9-7}
 
 Bild \ref{fig:bildII9-7} visar nät- och skärmströmfilter.
 Det är vanligt att \emph{gemensam strömöverföring} (eng.
@@ -174,6 +179,7 @@ I enkla fall kan gemensam ström stoppas med att linda upp kabeln några varv p�
 ferritstavar eller genom en stor ferritring som på bilden.
 En nätkabel, så kallad sladdställ, får inte kapas och skarvas.
 
+\newpage
 \subsection{Phono-ingångsfilter (TBA~302)}
 \index{avstörning!phonofilter}
 
@@ -186,6 +192,7 @@ Störande påverkan från radiosändningar kan uppstå om anslutningsledningarna
 till phono-ingången i LF-förstärkare är dåligt skärmade och avkopplade.
 Sådana störningar kan avhjälpas med ett filter.
 
+\newpage
 \subsection{Högtalarledningsfilter (EM 502-B)}
 \index{avstörning!högtalarledning}
 
@@ -197,11 +204,12 @@ Dessa drosslar bör vara skärmade så att de inte verkar som antenner istället
 I enklare fall kan det räcka med att byta till skärmade högtalarkablar
 eller att linda upp en sträcka av ledningarna på en ferritkärna.
 
+\newpage
 \subsection{Avkoppling av HF-signaler}
-\harec{a}{9.3.1.2}{9.3.1.2}
+\harecsection{\harec{a}{9.3.1.2}{9.3.1.2}}
 \index{avstörning!avkoppling}
 
-\smallfig{images/cropped_pdfs/bild_2_9-10b.pdf}{HF-avkopplad bas på tre sätt}{fig:bildII9-10b}
+\mediumminustopfig{images/cropped_pdfs/bild_2_9-10b.pdf}{HF-avkopplad bas på tre sätt}{fig:bildII9-10b}
 
 \smallfig[.2]{images/cropped_pdfs/bild_2_9-10a.pdf}{HF-avkopplat styrgaller}{fig:bildII9-10a}
 
@@ -219,7 +227,7 @@ LF-ingångsstegen, liksom med ytterligare avstörningsfilter inne i förstärkar
 Sådana åtgärder innebär emellertid att konstruktionsändringar har gjorts.
 Apparatens elsäkerhetsmärkningar är då ogiltiga.
 
-Bild \ref{fig:bildII9-10a} och \ref{fig:bildII9-10b} visar några sätt att
+Bild \ref{fig:bildII9-10b} och \ref{fig:bildII9-10a} visar några sätt att
 avkoppla en oönskad signal från styrgallret i ett elektronrör respektive från
 basen i en transistor.
 
@@ -249,11 +257,12 @@ insvängningsförloppet bromsas med en drossel i serie med nycklingskontakten oc
 dels ursvängningsförloppet med en seriekrets av en resistor och en kondensator,
 kopplade parallellt över nycklingskontakten.
 
-\mediumfig[.4]{images/cropped_pdfs/bild_2_9-12.pdf}{Nycklingsfilter}{fig:bildII9-12}
+\smallfig{images/cropped_pdfs/bild_2_9-12.pdf}{Nycklingsfilter}{fig:bildII9-12}
 
-\newpage % layout
+%% k7per
+%% \newpage % layout
 \subsection{Förbättrad skärmning}
-\harec{a}{9.3.1.3}{9.3.1.3}
+\harecsection{\harec{a}{9.3.1.3}{9.3.1.3}}
 \index{avstörning!skärmning}
 
 HF-energi kan i olyckliga fall även stråla ut genom sändarens hölje

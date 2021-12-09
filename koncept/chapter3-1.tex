@@ -3,9 +3,7 @@
 \section[Serie och parallellt]{Komponenter i serie och parallellt}
 
 \subsection{Seriekopplade resistorer}
-\harec{a}{3.1.1a}{3.1.1a}
-\harec{a}{3.1.2}{3.1.2a}
-\harec{a}{3.1.3}{3.1.3a}
+\harecsection{\harec{a}{3.1.1a}{3.1.1a}, \harec{a}{3.1.2}{3.1.2a}, \harec{a}{3.1.3}{3.1.3a}}
 \index{resistor!seriekopplade}
 \index{seriekoppling!resistorer}
 \label{seriekopplade_resistorer}
@@ -34,7 +32,7 @@ resistanser. För två resistorer gäller
 
 
 \subsection{Parallellkopplade resistorer}
-\harec{a}{3.1.1b}{3.1.1b}
+\harecsection{\harec{a}{3.1.1b}{3.1.1b}}
 \index{resistor!parallellkopplade}
 \index{parallellkoppling!resistorer}
 \label{parallellkopplade_resistorer}
@@ -46,8 +44,8 @@ Den totala resistansen av parallellkopplade resistorer är lägre än den lägst
 enstaka resistansen.
 
 \[
-\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_1} +
-\frac{1}{R_2} + \frac{1}{R_3} + \cdots \frac{1}{R_n}
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} +
+\frac{1}{R_3} + \frac{1}{R_4} + \cdots \frac{1}{R_n}
 \]
 
 För två parallellkopplade resistorer gäller
@@ -119,9 +117,7 @@ på den inre resistansen i voltmetern.
 
 \smallfig{images/cropped_pdfs/bild_2_3-04.pdf}{Wheatstones brygga}{fig:BildII3-04}
 
-Bild \ref{fig:BildII3-04}
-
-En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga},
+En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga}, se bild \ref{fig:BildII3-04},
 som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
@@ -150,7 +146,7 @@ Spänningsdelning kan även utföras med kondensatorer och induktorer förutsatt
 det är fråga om en växelströmskrets.
 
 \subsection{Parallellkopplade kondensatorer}
-\harec{a}{3.1.1f}{3.1.1f}
+\harecsection{\harec{a}{3.1.1f}{3.1.1f}}
 \index{kondensator!parallellkopplade}
 \index{parallellkoppling!kondensatorer}
 \label{parallellkopplade kondensatorer}
@@ -187,7 +183,7 @@ enskilda kapacitanserna.
 \end{minipage}
 
 \subsection{Seriekopplade kondensatorer}
-\harec{a}{3.1.1e}{3.1.1e}
+\harecsection{\harec{a}{3.1.1e}{3.1.1e}}
 \index{kondensator!seriekopplade}
 \index{seriekoppling!kondensatorer}
 \label{seriekopplade_kondensatorer}
@@ -216,10 +212,10 @@ För två kondensatorer gäller:
   \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
-      C &= \frac{C_1 \cdot C_2}{C_1 + C_2} \\[1ex]
-      &= \frac{5 \cdot 10}{5 + 10}\ \mu F \\[1ex]
-      &= 3\frac{1}{3}\ \mu F \\[1ex]
-      &\approx \SI{3,33}{\micro\farad}
+      C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
+      = \frac{5 \cdot 10}{5 + 10}
+      = 3\frac{1}{3}\
+      \approx \SI{3,33}{\micro\farad}
     \end{align*}
 \end{enumerate}
 
@@ -230,7 +226,7 @@ Induktansvärdet för galvaniskt sammankopplade induktorer kan i princip
 beräknas på samma sätt som för motsvarande sammankoppling av resistorer.
 
 \subsubsection{Galvaniskt seriekopplade induktorer}
-\harec{a}{3.1.1c}{3.1.1c}
+\harecsection{\harec{a}{3.1.1c}{3.1.1c}}
 \index{induktor!seriekopplade}
 \index{seriekoppling!induktorer}
 
@@ -245,14 +241,12 @@ gäller:
 \begin{enumerate}
 \item \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
 \begin{align*}
-  L &= L_1 + L_2 \\[1ex]
-  & = 20 + 50 \\[1ex]
-  &= \SI{70}{\milli\henry}
+  L = L_1 + L_2 = 20 + 50 = \SI{70}{\milli\henry}
 \end{align*}
 \end{enumerate}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
-\harec{a}{3.1.1d}{3.1.1d}
+\harecsection{\harec{a}{3.1.1d}{3.1.1d}}
 \index{induktor!parallellkopplade}
 \index{parallellkoppling!induktorer}
 
@@ -276,9 +270,9 @@ För två induktorer gäller:
 
 \[L_1 = \SI{50}{\milli\henry} \quad L_2 = \SI{60}{\milli\henry} \quad L =\ ?\]
 \[
-  L = \frac{L_1 \cdot L_2}{L_1 + L_2} \\
-  = \frac{50 \cdot 60}{50 + 60}\ \si{\milli\henry} \\
-  = \frac{3000}{110}\ \si{\milli\henry} \\
+  L = \frac{L_1 \cdot L_2}{L_1 + L_2}
+  = \frac{50 \cdot 60}{50 + 60}
+  = \frac{3000}{110}
   \approx \SI{27}{\milli\henry}
 \]
 
@@ -364,20 +358,18 @@ och kopplas till spänningen \(U\).
 
 % PHU: Bilden förvirrar. U i kretsschemat är samma som U_max i diagrammet.
 
-Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\).
-
-Laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
-
-Spänningen över kondensatorn ökar exponentiellt under uppladdningen.
+Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\) samtidigt
+som laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
+Spänningen över kondensatorn ökar exponentiellt under uppladdningen
 %
-\[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+% \[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
+\[u_c = U_{\it max} \cdot ( 1 - e^{-t/\tau} )\]
 %
-\begin{tabular}{lp{0.35\textwidth}}
-  \(u_c\)     & spänningen över kondensatorn efter en given inkopplingstid \\
-  \(U_{\it max}\) & slutspänningen efter minst \(t = 5\tau\) \\
-  \(t\)       & inkopplingstiden \\
-  \(e\)       & 2,718 (e = basen för den naturliga logaritmen) \\
-\end{tabular}
+%\begin{tabular}{lp{0.35\textwidth}}
+där \(u_c\) är spänningen över kondensatorn efter en given inkopplingstid, \(U_{\it max}\)
+är slutspänningen efter minst \(t = 5\tau\), \(t\) är inkopplingstiden, och \(e\) är basen
+för den naturliga logaritmem.
+%\end{tabular}
 
 I förloppet ingår storleken av resistans och kapacitans enligt följande samband,
 som kallas tidskonstant:
@@ -392,19 +384,19 @@ Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
 kondensatorn ökat från noll till 63~\% av maxvärdet.
 Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
 
-Strömmen från kondensatorn minskar exponentiellt under uppladdningen.
+Strömmen från kondensatorn minskar exponentiellt under uppladdningen
 
-\[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+% \[i_c = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = I_{\it max} \cdot e^{-t/\tau}\]
 
-\begin{tabular}{lp{0.4\textwidth}}
-  \(i_c\) & strömmen från kondensatorn efter en given inkopplingstid \\
-  \(I_{\it max}\) & begynnelseströmmen \\
-\end{tabular}
+där
+% \begin{tabular}{lp{0.35\textwidth}}
+\(i_c\) är strömmen från kondensatorn efter en given inkopplingstid och 
+\(I_{\it max}\) är begynnelseströmmen.
+% \end{tabular}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
-kondensatorn minskat till 37~\% av maxvärdet.
-
-Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
+kondensatorn minskat till 37~\% av maxvärdet.  Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
 
 \subsubsection{Urladdning}
 
@@ -414,17 +406,16 @@ Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor 
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
-\[u_c = U_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+% \[u_c = U_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[u_c = U_{\it max} \cdot e^{-t/\tau}\]
 
 Strömmen från kondensatorn minskar exponentiellt under urladdningen.
 Strömriktningen är motsatt den vid uppladdningen.
 
-\[i_c = - I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
+\[i_c = - I_{\it max} \cdot e^{-t/\tau}\]
 
 Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av \(I_{\it max}\)
-respektive \(U_{\it max}\) återstår.
-
-Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
+respektive \(U_{\it max}\) återstår. Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
 \(I_{\it max}\) respektive \(U_{\it max}\) återstår.
 
 Exempel på beräkning av tidskonstanten:
@@ -453,16 +444,17 @@ Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
 Spänningen över induktorn minskar från \(U_{\it max}\) till 0.
 
-Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\).
+Strömmen genom induktorn ökar efter inkopplingen exponentiellt från 0 till \(I_{\it max}\)
 %
-\[i_L = I_{\it max} \cdot (1-e^{-\dfrac{t}{\tau}} )\]
+\[i_L = I_{\it max} \cdot (1-e^{-t/\tau} )\]
 %
-\begin{tabular}{lp{0.35\textwidth}}
-  \(i_L\) &  strömmen efter en given inkopplingstid \\
-  \(I_{\it max}\) & slutströmmen efter minst \(t = 5\tau\) \\
-  \(t\) & inkopplingstiden \\
-  \(e\) & 2,718 (e = basen för den naturliga logaritmen) \\
-\end{tabular}
+där
+%\begin{tabular}{lp{0.35\textwidth}}
+\(i_L\) är strömmen efter en given inkopplingstid, 
+\(I_{\it max}\) är slutströmmen efter minst \(t = 5\tau\),
+\(t\) är inkopplingstiden, och
+\(e\) är basen för den naturliga logaritmen).
+% \end{tabular}
 
 I förloppet ingår storleken av resistans och induktans enligt följande samband,
 som kallas tidskonstant
@@ -486,17 +478,17 @@ minskat till 37~\% av maxvärdet.
 Spänningskällan kopplas bort från samma induktor som ovan.
 En resistor är inkopplad över induktorn.
 Energin i induktorn avleds genom resistorn som en ström med motsatt riktning än vid inkopplingen.
-Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt.
+Strömmen är vid urkopplingstillfället \(I_{\it max} = i_L\) och minskar därefter exponentiellt
 
-\[i_L = I_{\it max} \cdot e^{-\dfrac{t}{\tau}}\]
-
-\begin{tabular}{lp{0.4\textwidth}}
-  \(i_L\) & strömmen genom ind. efter en given \\
-          &ur\-kop\-p\-li\-ngs\-tid \\
-  \(I_{\it max}\) & strömmen i urkopplingsögonblicket \\
-  \(e\) & 2,718 \\
-  \(t\) & tiden efter urkopplingsögonblicket \\
-\end{tabular}
+\[i_L = I_{\it max} \cdot e^{-t/\tau}\]
+\noindent där
+%\begin{tabular}{lp{0.42\textwidth}}
+%  \raggedright
+  \(i_L\) är strömmen genom induktorn efter en given ur\-kop\-p\-li\-ngs\-tid, 
+  \(I_{\it max}\) är strömmen i urkopplingsögonblicket,
+  \(e\) är basen för den naturliga logarithmen, och\
+  \(t\) är tiden efter urkopplingsögonblicket.
+% \end{tabular}
 
 \vspace*{1ex}
 
@@ -527,9 +519,7 @@ att en kondensator i serie med en resistor kopplas över kontaktstället.
 Kondensatorn fångar upp en del av energin i induktorn och resistorn minskar hastighetsändringen.
 
 \subsection{Växelströmskretsar}
-\harec{a}{3.1.1}{3.1.1h}
-\harec{a}{3.1.2}{3.1.2b}
-\harec{a}{3.1.3}{3.1.3b}
+\harecsection{\harec{a}{3.1.1}{3.1.1h}, \harec{a}{3.1.2}{3.1.2b}, \harec{a}{3.1.3}{3.1.3b}}
 
 \subsubsection{Komponentegenskaper vid växelström}
 
@@ -640,8 +630,7 @@ Som framgår av bilden blir variationerna i tiden de omvända med kondensator
 jämfört med induktor.
 
 \subsection{Impedans}
-\harec{a}{3.1.3}{3.1.3c}
-\harec{a}{3.2.2}{3.2.2}
+\harecsection{\harec{a}{3.1.3}{3.1.3c}, \harec{a}{3.2.2}{3.2.2}}
 \index{impedans}
 \index{resistans}
 \index{reaktans}
@@ -754,7 +743,7 @@ I en seriekrets är den resulterande reaktansen negativ (kapacitiv) om \(X_C\) �
 större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 \subsection{Ohms lag vid växelström}
-\harec{a}{1.1.4}{1.1.4b}
+\harecsection{\harec{a}{1.1.4}{1.1.4b}}
 \label{ohms_lag_växelström}
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
@@ -781,8 +770,7 @@ Av vad som framgått tidigare i detta avsnitt kan även slutsatsen dras att:
 \]
 %
 \subsection{Parallellkopplade LC-kretsar}
-\harec{a}{3.1.3}{3.1.3d}
-\harec{a}{3.2.1}{3.2.1}
+\harecsection{\harec{a}{3.1.3}{3.1.3d}, \harec{a}{3.2.1}{3.2.1}}
 
 \index{LC-krets}
 \index{parallellkopplad LC-krets}
@@ -901,14 +889,14 @@ ritas rakt uppåt.
 \end{description}
 
 \subsection{Thomsons formel}
-\harec{a}{3.2.4}{3.2.4}
+\harecsection{\harec{a}{3.2.4}{3.2.4}}
 \index{Thomsons formel}
 \index{svängningskrets}
 \index{resonanskrets}
 \index{oscillator}
 \index{oscillator!Thomsons formel}
 
-\tallfig{images/cropped_pdfs/bild_2_3-17.pdf}{Svängningskrets}{fig:BildII3-17}
+\smallfig{images/cropped_pdfs/bild_2_3-17.pdf}{Svängningskrets}{fig:BildII3-17}
 
 Bild \ref{fig:BildII3-17} visar en svängningskrets som består av en
 kondensator och en induktor med förskjutbar järnkärna.
@@ -924,7 +912,7 @@ Tre fall undersöks:
 \item \(X_L < X_C\) LA1 och LA3 lyser upp, en kraftig ström flyter genom
   induktorn,
 \item \(X_L= X_C\) LA2 och LA3 lyser upp, LA1 lyser inte, en kraftig ström
-  flyter i kretsen men inte i tilledningarna
+  flyter i kretsen men inte i tilledningarna.
 
 \end{enumerate}
 
@@ -961,10 +949,7 @@ Formeln gäller både för parallell- och seriekretsar.
 \end{align*}
 
 \subsection{Impedansen i en resonant krets}
-\harec{a}{3.2.1}{3.2.1b}
-\harec{a}{3.2.2}{3.2.2b}
-\harec{a}{3.2.3}{3.2.3}
-\harec{a}{3.2.4}{3.2.4b}
+\harecsection{\harec{a}{3.2.1}{3.2.1b}, \harec{a}{3.2.2}{3.2.2b}, \harec{a}{3.2.3}{3.2.3}, \harec{a}{3.2.4}{3.2.4b}}
 \label{impedans_resonant_krets}
 
 \index{resonans!impedans}
@@ -1023,7 +1008,8 @@ Med ovanstående kretsdata blir Z = \SI{100}{\kilo\ohm}.
 Därav framgår, att impedansen i parallellkretsen är en funktion av det så
 kallade L/C-förhållandet samt av kretsens resistiva förluster.
 
-\newpage % layout
+%% k7per: need to make layout guides soft, otherwise any change ahead wrecks havoc.
+%% \newpage % layout
 
 \subsubsection{Resonansfallet i en seriekrets}
 \label{serieresonans}
@@ -1061,7 +1047,7 @@ Av strömmen bildas reaktiva spänningar, det vill säga \(\SI{0,5}{\milli\amper
 kapacitans (som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
-\harec{a}{3.2.5}{3.2.5}
+\harecsection{\harec{a}{3.2.5}{3.2.5}}
 \label{Q-faktor}
 \index{Q-faktor}
 \index{symbol!Q qualityfactor}
@@ -1103,7 +1089,7 @@ större kretsförlusterna.
 \smallfig{images/cropped_pdfs/bild_2_3-21.pdf}{Bandbredd i parallellkrets}{fig:BildII3-21}
 
 \subsection{Bandbredd}
-\harec{a}{3.2.6}{3.2.6}
+\harecsection{\harec{a}{3.2.6}{3.2.6}}
 \index{bandbredd}
 
 Bild \ref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har

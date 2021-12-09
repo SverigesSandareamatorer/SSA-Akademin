@@ -125,8 +125,9 @@ l_m = \frac{\lambda}{2} \cdot 0,98 = \frac{42.86}{2}\cdot 0,98 = 21
 \quad \text{[m]}
 \]
 
+\newpage
 \subsection{Ström och spänning i en halvvågs\-antenn}
-\harec{a}{6.2.1}{6.2.1}
+\harecsection{\harec{a}{6.2.1}{6.2.1}}
 \index{halvvågsantenn}
 \index{antenn!halvvågs}
 \index{antenn!ström och spänning}
@@ -163,7 +164,7 @@ påmatade frekvensen.
 Samtidigt blir strålningen alltmer till riktad längs med antennen.
 
 \subsection{Impedansen i antennens matningspunkt}
-\harec{a}{6.2.2}{6.2.2}
+\harecsection{\harec{a}{6.2.2}{6.2.2}}
 \index{impedans!antenn}
 \index{antenn!impedans}
 \index{halvvågsantenn}
@@ -190,7 +191,7 @@ vill säga utan nämnvärd påverkan från omgivningen är impedansen i mittpunk
 I praktiken kan impedansen avvika mycket från detta värde.
 
 Antenn och matningskabel måste vara impedansanpassade till varandra
-för att det inte ska uppstå vågreflexion i anslutningen.
+för att det inte ska uppstå vågreflektion i anslutningen.
 
 Märk, att halvvågsantennen är i resonans inte bara på grundtonen utan även på
 övertoner.
@@ -247,7 +248,7 @@ En \SI{50}{\ohm} koaxialkabel kan då anslutas direkt till antennens
 matningspunkt.
 
 \subsubsection{Reaktansen i en icke-resonant antenn}
-\harec{a}{6.2.3}{6.2.3}
+\harecsection{\harec{a}{6.2.3}{6.2.3}}
 \index{reaktans!antenn}
 \index{antenn!reaktans}
 
@@ -310,7 +311,7 @@ Då kan en antennkopplare med nödvändiga reaktiva komponenter behövas.
 Se längre fram i kapitlet.
 
 \subsection{Anpassning till sändarens impedans}
-\harec{a}{5.3.7}{5.3.7}
+\harecsection{\harec{a}{5.3.7}{5.3.7}}
 \index{avstämningsanordning}
 \index{match}
 \index{sändare!match}
@@ -357,7 +358,7 @@ dess elektriska höjd över mark och omgivningens elektriska egenskaper.
 För att överbrygga stora avstånd, måste antennen ha en flack utstrålning
 relativt markplanet.
 
-En horisontelit upphängd antenn med en längd av \(\lambda/2\) har övervägande
+En horisontellt upphängd antenn med en längd av \(\lambda/2\) har övervägande
 flack utstrålning när den placeras på en höjd av \(\lambda/2\), \(\lambda\),
 \(3\lambda/2\), \(2\lambda\), osv. över mark.
 
@@ -369,7 +370,7 @@ Samma diagram gäller både för en sändar- och mottagarantenn.
 Styrkan på en utstrålad signal motsvaras av styrkan på mottagen signal.
 
 \subsection{Antennvinst}
-\harec{a}{6.2.5}{6.2.5}
+\harecsection{\harec{a}{6.2.5}{6.2.5}}
 \index{antennvinst}
 \index{antenn!antennvinst}
 \index{antennförstärkning}
@@ -408,9 +409,11 @@ En i praktiken definierbar referens är halvvågsdipolen, vars
 huvudstrålning är vinkelrätt ut från dipolen och runt omkring den.
 Referenseffekten är då \(P_d\) och antennförstärkningen
 %%
-\[G = 10 \log\frac{P_f}{P_d} \quad \text{[dBd] Bild \ref{fig:bildII6-6}}\]
+%% k7per: Varför Bild här? Tog bort den...
+\[G = 10 \log\frac{P_f}{P_d} \quad \text{[dBd]}\] %% Bild \ref{fig:bildII6-6}}
 %%
-Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt.
+Bild \ref{fig:bildII6-6} visar antennförstärkningen med dBd i effekt och
+bild~\ref{fig:bildII6-7} dBd i spänning.
 
 \smallfig{images/cropped_pdfs/bild_2_6-06.pdf}{Antennförstärkning dBd i effekt}{fig:bildII6-6}
 
@@ -420,7 +423,8 @@ Antennförstärkning kan också definieras som förhållandet mellan den elektri
 fältstyrkan \(U_f\) i huvudstrålningsriktningen och referensfältstyrkan (dipol).
 Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
 %%
-\[G = 20 \log\frac{U_f}{U_d} \quad \text{[dBd] Bild \ref{fig:bildII6-7}}\]
+%% k7per: Varför Bild här? Tog bort den.
+\[G = 20 \log\frac{U_f}{U_d} \quad \text{[dBd]}\] %% Bild \ref{fig:bildII6-7}}\]
 %%
 Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
@@ -476,7 +480,7 @@ Observera att verkningsgraden för en antenn alltid är mindre än 1 då det är
 att förväxla de olika effekterna i beräkningen.
 
 \subsection{Effektivt utstrålad effekt}
-\harec{a}{6.2.7}{6.2.7}
+\harecsection{\harec{a}{6.2.7}{6.2.7}}
 \index{effektivt utstrålad effekt (ERP)}
 \index{antenn!effektivt utstrålad effekt (ERP)}
 \index{Effective Radiated Power (ERP)}
@@ -507,7 +511,7 @@ På samma sätt som vid beräkningen av ERP ska förlusterna på vägen från s�
 till antennen räknas bort före beräkningen av EIRP.
 
 \subsection{Fram/backförhållande (antennvinst)}
-\harec{a}{6.2.8}{6.2.8}
+\harecsection{\harec{a}{6.2.8}{6.2.8}}
 \index{fram/backförhållande}
 \index{antenn!fram/backförhållande}
 
@@ -527,7 +531,9 @@ backriktningen
 %%
 \smallfig{images/cropped_pdfs/bild_2_6-09.pdf}{F/B-förhållande i spänning}{fig:bildII6-9}
 %%
-\newpage % layout
+
+%% k7per
+%% \newpage % layout
 \textbf{Exempel 1:}
 %%
 \begin{align*}
@@ -551,6 +557,7 @@ backriktningen
 fältstyrkorna i fram- och backriktning är lika stora, vilket inträffar för en
 dipol.
 
+\newpage
 \subsection{Halvvärdesbredd}
 \index{halvvärdesbredd}
 \index{antenn!halvvärdesbredd}
@@ -578,7 +585,7 @@ Spänningshalvvärdesbredden för en dipol är ungefär \ang{90}.
 \mediumfig{images/cropped_pdfs/bild_2_6-10.pdf}{Halvvärdesbredder}{fig:bildII6-10}
 
 \subsection{Antennarea}
-\harec{a}{6.2.6}{6.2.6}
+\harecsection{\harec{a}{6.2.6}{6.2.6}}
 
 \emph{Antennarea} (eng. \emph{capture area}) är den area som parabolantenner
 och horn har.

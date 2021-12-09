@@ -78,7 +78,7 @@ I det följande visas hur dessa krav kan uppfyllas.
 Som matarledning upp till mikrovågsområdet är koaxialkabeln vanligast.
 
 \subsection{Koaxialkabel}
-\harec{a}{6.3.2}{6.3.2}
+\harecsection{\harec{a}{6.3.2}{6.3.2}}
 \index{koaxialkabel}
 \index{transmissionsledning!koaxial}
 
@@ -102,7 +102,7 @@ koaxialkabeln de osymmetriska ledningarna.
 Vanliga karaktäristiska impedanser för koaxialkabel är 50 och \SI{75}{\ohm}.
 
 \subsection{Bandkabel}
-\harec{a}{6.3.1}{6.3.1}
+\harecsection{\harec{a}{6.3.1}{6.3.1}}
 \index{bandkabel}
 \index{transmissionsledning!bandkabel}
 
@@ -118,7 +118,7 @@ Den kommer att likna en stege det ursprungliga utförandet på en matarledning.
 Vanliga karaktäristiska impedanser för bandkabel är 300 och \SI{450}{\ohm}.
 
 \subsection{Vågledare}
-\harec{a}{6.3.3}{6.3.3}
+\harecsection{\harec{a}{6.3.3}{6.3.3}}
 \index{vågledare}
 \index{transmissionsledning!vågledare}
 
@@ -128,7 +128,7 @@ I en vågledare matas energin fram enbart som speciella elektriska och
 magnetiska fält (TEM) i mönster som kallas moder.
 
 \subsection{Hastighetsfaktor}
-\harec{a}{6.3.5}{6.3.5}
+\harecsection{\harec{a}{6.3.5}{6.3.5}}
 \index{transmissionsledning!hastighetsfaktor}
 
 Vid bestämning av den mekaniska längden på en matarledning måste hänsyn tas
@@ -147,13 +147,14 @@ Hastighetsfaktorn \(v\) (velocity factor) blir då
 v = \frac{1}{\sqrt{\varepsilon}} = \frac{1}{\sqrt{2.25}} = \frac{1}{1,5} = 0,666
 \]
 %%
-1~meter av en sådan koaxialkabel är \(1/0,666 = 1,333\) meter för en HF-signal.
+1~meter av en sådan koaxialkabel är \(1/0,666 = 1,5\) meter för en HF-signal.
 Även bandkablar har naturligtvis en hastighetsfaktor, vanligen 0,7--0,85.
 
-\newpage %layout
+%% k7per
+%% \newpage %layout
 
 \subsection{Karaktäristisk impedans Z i led\-ningar}
-\harec{a}{6.3.4}{6.3.4}
+\harecsection{\harec{a}{6.3.4}{6.3.4}}
 \index{transmissionsledning!impedans}
 
 Antag att en HF-sändare har kopplats till en oändligt lång ledning.
@@ -209,6 +210,8 @@ Z = & \frac{138}{\sqrt{\varepsilon_r}}\cdot\log\frac{D}{d} \quad [\Omega] \\
 Data, impedansdiagram och formler för beräkning av transmissionsledningar
 finns bland annat i antennhandböcker.
 
+\mediumbotfig{images/cropped_pdfs/bild_2_6-26.pdf}{Stående våg på ledning}{fig:bildII6-26}
+
 \subsection{Stående vågor}
 \index{stående~våg}
 \index{transmissionsledning!stående~våg}
@@ -243,17 +246,15 @@ Stående vågor uppträder inte bara i antennkablar utan även i fasta material
 (trådar o.d.), i luft (ljud), i ljus (t.ex. laser), i elektromagnetiska fält
 och så vidare.
 
-\mediumfig{images/cropped_pdfs/bild_2_6-26.pdf}{Stående våg på ledning}{fig:bildII6-26}
-
 Bild \ref{fig:bildII6-26} visar stående våg på ledning.
 Spänningen utmed kabeln varierar regelbundet mellan
 %%
 \[U_{max} = U_f + U_b \quad \text{och} \quad U_{min} = U_f - U_b\]
 
-\newpage % layout
+%% \newpage % layout
 
 \subsection{Ståendevågförhållande (SVF)}
-\harec{a}{6.3.6}{6.3.6}
+\harecsection{\harec{a}{6.3.6}{6.3.6}}
 \index{SVF}
 \index{transmissionsledning!SVF}
 
@@ -278,7 +279,7 @@ matarledningen (\(Z\)) och i antennens matningspunkt (\(Z_a\)).
 %%
 Ståendevågmätning beskrivs i avsnitt \ref{mäta_ståendevåg}.
 
-\largefig{images/cropped_pdfs/bild_2_6-27.pdf}{SVF-problemet förenklad bild}{fig:bildII6-27}
+\mediumfig{images/cropped_pdfs/bild_2_6-27.pdf}{SVF-problemet förenklad bild}{fig:bildII6-27}
 
 Bild \ref{fig:bildII6-27} visar en förenklad bild av SVF-problemet och vad en
 SVF-meter visar beroende på var den kopplas in i kedjan sändare -- ledning --
@@ -291,8 +292,9 @@ antennavstämningsenhet och så vidare.
 Bäst är att göra sådana impedansanpassningar i alla led, att antennkopplaren
 blir onödig.
 
+\clearpage
 \subsection{Effektförluster}
-\harec{a}{6.3.7}{6.3.7}
+\harecsection{\harec{a}{6.3.7}{6.3.7}}
 \index{transmissionsledning!effektförlust}
 
 I varje matarledning uppstår förluster, dels av resistansen i ledarna
@@ -334,7 +336,7 @@ I tabell \ref{Kabeldämpning} visas kabeldämpningen, effektförlusten, i dB per
 \end{table*}
 
 \subsection{Baluner -- Balansering -- Transformering}
-\harec{a}{6.3.8}{6.3.8}
+\harecsection{\harec{a}{6.3.8}{6.3.8}}
 
 \subsubsection{Balansering}
 \index{balun}
@@ -426,14 +428,15 @@ I samtliga fall uppstår HF-mässigt en strömbalanserande effekt mellan
 dipolhalvorna.
 
 Dessutom hindras även antennströmmar från att komma ner på utsidan av
-matningskabelns skärm
+matningskabelns skärm.
 
 \multifig{images/cropped_pdfs/bild_2_6-30_1.pdf,images/cropped_pdfs/bild_2_6-30_2.pdf,images/cropped_pdfs/bild_2_6-30_3.pdf}{Koaxialledare som balun}{fig:bildII6-30}
 
 \mediumfig{images/cropped_pdfs/bild_2_6-31.pdf}{Sätt att ansluta en matningsledning}{fig:bildII6-31}
 
+\newpage
 \subsection{Sätt att ansluta en matningsledning}
-\harec{a}{6.3.9}{6.3.9}
+\harecsection{\harec{a}{6.3.9}{6.3.9}}
 \index{antenn!anpassning}
 
 Bild \ref{fig:bildII6-31} visar flera sätt att ansluta en matningsledning.
@@ -509,7 +512,7 @@ strömindikator.
 \subsubsection{Öppen transmissionsledning}
 \index{transmissionsledning!öppen}
 
-\largefig{images/cropped_pdfs/bild_2_6-33.pdf}{Förlopp i öppen $\lambda/4$ transmissionsledning}{fig:bildII6-33}
+\mediumminustopfig{images/cropped_pdfs/bild_2_6-33.pdf}{Förlopp i öppen $\lambda/4$ transmissionsledning}{fig:bildII6-33}
 
 Bild \ref{fig:bildII6-33} visar Förlopp i öppen $\lambda/4$
 transmissionsledning.
@@ -542,7 +545,7 @@ mellan ledarna och inte utanför ledarparet.
 \subsubsection{Kortsluten transmissionsledning}
 \index{transmissionsledning!kortsluten}
 
-\largefig{images/cropped_pdfs/bild_2_6-34.pdf}{Förlopp i kortsluten $\lambda/4$ transmissionsledning}{fig:bildII6-34}
+\mediumminustopfig{images/cropped_pdfs/bild_2_6-34.pdf}{Förlopp i kortsluten $\lambda/4$ transmissionsledning}{fig:bildII6-34}
 
 På bild \ref{fig:bildII6-34} visas såväl ström- och spänningsförhållandena som
 fältlinjeförloppen på en avstämd, kortsluten transmissionsledning med
@@ -551,7 +554,7 @@ För bilden har valts \(n = 6\).
 
 \subsection{$\lambda/4$-ledning som resonanskrets}
 
-\largefig{images/cropped_pdfs/bild_2_6-35.pdf}{$\lambda/4$ transmissionsledning som resonanskrets}{fig:bildII6-35}
+\mediumfig{images/cropped_pdfs/bild_2_6-35.pdf}{$\lambda/4$ transmissionsledning som resonanskrets}{fig:bildII6-35}
 
 Bild \ref{fig:bildII6-35} visar ström- och spänningsfördelningen för en öppen
 respektive en kortsluten transmissionsledning med längden \(l = \lambda/4\).
@@ -597,7 +600,7 @@ kort för att kunna avstämmas.
 Märk, att en antennkopplare mycket väl även kan utformas för
 koaxialkabelutgång.
 
-\tallfig[0.30]{images/cropped_pdfs/bild_2_6-36.pdf}{Antennkopplare}{fig:bildII6-36}
+\smallfig[0.30]{images/cropped_pdfs/bild_2_6-36.pdf}{Antennkopplare}{fig:bildII6-36}
 
 \subsection{För- och nackdelar med avstämd matarledning}
 

@@ -1,6 +1,33 @@
 \chapter{S-enheter och dB}
 \label{s-enhet}
 
+%% k7per: Make table double wide and float to bottom of page, dependengt on stfloats, using table*.
+%% TODO: Needs label.
+\begin{table*}[b]
+  \vspace{10ex}
+	\centering
+	\begin{tabular}{l|SSS|SSS}
+    S-Meter  & \multicolumn{3}{c|}{Under \SI{30}{\mega\hertz}} & \multicolumn{3}{c}{Över \SI{30}{\mega\hertz}} \\
+    värde    & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\si{\micro V} vid \SI{50}{\ohm})} & \multicolumn{1}{c|}{\si{dB\micro V}} & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\si{\micro V} vid \SI{50}{\ohm})} & \multicolumn{1}{c}{\si{dB\micro V}} \\
+    \hline
+    S9 +\SI{40}{\decibel} & -33  & 5000  & 74        & -53  & 500  & 54  \\
+    S9 +\SI{30}{\decibel} & -43  & 1600  & 64        & -63  & 160  & 44  \\
+    S9 +\SI{20}{\decibel} & -53  & 500   & 54        & -73  & 50   & 34  \\
+    S9 +\SI{10}{\decibel} & -63  & 160   & 44        & -83  & 16   & 24  \\
+    S9                    & -73  & 50    & 34        & -93  & 5    & 14  \\
+    S8                    & -79  & 25    & 28        & -99  & 2,5  & 8   \\
+    S7                    & -85  & 12,6  & 22        & -105 & 1,26 & 2  \\
+    S6                    & -91  & 6,3   & 16        & -111 & 0,63 & -4  \\
+    S5                    & -97  & 3,2   & 10        & -117 & 0,32 & -10 \\
+    S4                    & -103 & 1,6   & 4         & -123 & 0,16 & -16 \\
+    S3                    & -109 & 0,8   & -2        & -129 & 0,08 & -22 \\
+    S2                    & -115 & 0,4   & -8        & -135 & 0,04 & -28 \\
+    S1                    & -121 & 0,21  & -14       & -141 & 0,02 & -34 \\
+  \end{tabular}
+  \caption{Tabell över S-värden, spännigar och effekter}
+\end{table*}
+
+\noindent
 I kommunikationsradiomottagare brukar det nästan alltid finnas en anordning som
 mäter och visar styrkan av mottagna signaler.
 
@@ -27,32 +54,6 @@ Det är då frågan om mycket starka signaler.
 Följande tabell gäller för det ideala sambandet mellan S-enheter och
 signalstyrkor över två alternativa brusnivåer.
 
-\begin{table}[h!]
-  \vspace{10ex}
-	\centering
-	\begin{tabular}{l|lll|lll}
-    S-Meter  & \multicolumn{3}{c}{Under \SI{30}{\mega\hertz}} & \multicolumn{3}{c}{Över \SI{30}{\mega\hertz}} \\
-    värde    & dBm & (U vid \SI{50}{\ohm}) & \si{dB\micro V} & dBm & (U vid \SI{50}{\ohm}) & \si{dB\micro V} \\
-    \hline
-    S9 +\SI{40}{\decibel} & \num{-33}  & \SI{5,0}{\milli\volt}  & 74        & \num{-53}  & \SI{500}{\micro\volt}  & 54  \\
-    S9 +\SI{30}{\decibel} & \num{-43}  & \SI{1,6}{\milli\volt}  & 64        & \num{-63}  & \SI{160}{\micro\volt}  & 44  \\
-    S9 +\SI{20}{\decibel} & \num{-53}  & \SI{500}{\micro\volt}  & 54        & \num{-73}  & \SI{50}{\micro\volt}   & 34  \\
-    S9 +\SI{10}{\decibel} & \num{-63}  & \SI{160}{\micro\volt}  & 44        & \num{-83}  & \SI{16}{\micro\volt}   & 24  \\
-    S9                    & \num{-73}  & \SI{50}{\micro\volt}   & 34        & \num{-93}  & \SI{5}{\micro\volt}    & 14  \\
-    S8                    & \num{-79}  & \SI{25}{\micro\volt}   & 28        & \num{-99}  & \SI{2,5}{\micro\volt}  & 8   \\
-    S7                    & \num{-85}  & \SI{12,6}{\micro\volt} & 22        & \num{-105} & \SI{1,26}{\micro\volt} & +2  \\
-    S6                    & \num{-91}  & \SI{6,3}{\micro\volt}  & 16        & \num{-111} & \SI{0,63}{\micro\volt} & \num{-4}  \\
-    S5                    & \num{-97}  & \SI{3,2}{\micro\volt}  & 10        & \num{-117} & \SI{0,32}{\micro\volt} & \num{-10} \\
-    S4                    & \num{-103} & \SI{1,6}{\micro\volt}  & +4        & \num{-123} & \SI{0,16}{\micro\volt} & \num{-16} \\
-    S3                    & \num{-109} & \SI{0,8}{\micro\volt}  & \num{-2}  & \num{-129} & \SI{0,08}{\micro\volt} & \num{-22} \\
-    S2                    & \num{-115} & \SI{0,4}{\micro\volt}  & \num{-8}  & \num{-135} & \SI{0,04}{\micro\volt} & \num{-28} \\
-    S1                    & \num{-121} & \SI{0,21}{\micro\volt} & \num{-14} & \num{-141} & \SI{0,02}{\micro\volt} & \num{-34} \\
-  \end{tabular}
-  \caption{Tabell över S-värden, spännigar och effekter}
-\end{table}
-
-\newpage
-
 Signalstyrkan mäts vid mottagarens antenningång, varför skillnaden i
 signalstyrkan olika antenner och mottagningsriktningar samt dämpningen
 i antenn och nedledning kan behöva bedömas.
@@ -77,3 +78,16 @@ Vid konferensen 1981 i Brighton antogs förslaget som rekommendation.
 Mätningar ska i båda fallen göras med en kvasi-toppvärdesdetektor med en stigtid
 av \SI{10}{\milli\second} \(\pm\)\SI{0,2}{\milli\second} och en falltid av
 \SI{500}{\milli\second}.
+
+
+
+
+
+
+
+
+
+
+
+
+
