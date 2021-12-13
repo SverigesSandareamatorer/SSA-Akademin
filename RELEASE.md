@@ -38,6 +38,6 @@ git-meddelande.
 
 Versionen ska sedan [taggas](https://github.com/SverigesSandareamatorer/SSA-Akademin/tags) i Git.
 
-## Bygg tryck-original
+## Ändra versionsnumret
 
-Bygg tryck-original med `make koncept-tryck.pdf` och skicka till HQ för tryckning.
+Ändra [`VERSION.txt`](VERSION.txt) till att innehålla den gissade nästa versionen med tillägget "-pre", t.ex. `2.5.0-pre`.
