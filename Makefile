@@ -168,13 +168,6 @@ ac1.pdf: lectures/ac1.tex
 ac2.pdf: lectures/ac2.tex
 	xelatex lectures/ac2.tex
 
-# Web-generering
-koncept.xml:	koncept.tex $(KONCEPT_FILES)
-	latexml koncept.tex > koncept.xml
-koncept.webb:	koncept.xml
-	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
-
-
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
 # To build using Docker, run 'make docker-image' first which will take quite some time,
