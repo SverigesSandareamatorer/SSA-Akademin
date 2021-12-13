@@ -6,8 +6,6 @@ help:
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
-	@echo '   make koncep-tryck.pdf       bygger den riktiga versionen för tryck '
-	@echo '   make koncept.webb           bygg webbversionen av koncept          '
 	@echo '   make koncept.ind            bygg index till koncept                '
 	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
@@ -15,7 +13,6 @@ help:
 
 all:	koncept.pdf
 #all:	matterep.pdf
-all:	koncept-tryck.pdf
 
 .PHONY:	*.pdf
 
@@ -72,7 +69,7 @@ KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept/part3.tex \
-	koncept/preface.tex koncept.bib \
+	koncept.bib \
 	koncept/koncept-core.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
@@ -89,31 +86,16 @@ koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex koncept.tex
 #	- xelatex koncept.tex
 
-koncept-tryck.aux: koncept-tryck.tex $(KONCEPT_FILES)
-	- pdflatex koncept-tryck.tex
-#	- xelatex koncept.tex
-
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
-
-koncept-tryck.idx: koncept-tryck.tex koncept-tryck.aux $(KONCEPT_FILES)
-	- pdflatex koncept-tryck.tex
 
 koncept.bbl: koncept.aux koncept.bib
 	pdflatex koncept.tex
 	bibtex koncept.aux
 #	bibtex koncept.aux
 
-koncept-tryck.bbl: koncept-tryck.aux koncept.bib
-	pdflatex koncept-tryck.tex
-	bibtex koncept-tryck.aux
-#	bibtex koncept.aux
-
 koncept.ind: koncept.idx
 	makeindex koncept.idx
-
-koncept-tryck.ind: koncept-tryck.idx
-	makeindex koncept-tryck.idx
 
 koncept.log:
 koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
@@ -130,14 +112,6 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex
 	xelatex handouts/matterep.tex
-
-koncept-tryck.pdf: koncept-tryck.bbl koncept-tryck.ind koncept-tryck.tex $(KONCEPT_FILES)
-	pdflatex koncept-tryck.tex
-	pdflatex koncept-tryck.tex
-
-#	-xelatex koncept-tryck.tex
-#	-xelatex koncept-tryck.tex
-#	xelatex koncept-tryck.tex
 
 emf-handout.idx:
 	xelatex handouts/emf-handout.tex
@@ -193,13 +167,6 @@ ac1.pdf: lectures/ac1.tex
 
 ac2.pdf: lectures/ac2.tex
 	xelatex lectures/ac2.tex
-
-# Web-generering
-koncept.xml:	koncept.tex $(KONCEPT_FILES)
-	latexml koncept.tex > koncept.xml
-koncept.webb:	koncept.xml
-	latexmlpost --dest=web/koncept.html --split --splitat=section --navigationtoc=context --css=web/style.css koncept.xml
-
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
