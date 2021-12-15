@@ -5,6 +5,9 @@ Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning
 
 ## [Unreleased]
 
+### Borttaget
+- Appendix med litteraturförteckningen från första upplagan har raderats.
+
 ## [2.4.0] - 2021-03-31
 - Liten uppdatering med läsanvisningar för teknikdelen
 - Liten uppdatering med läsanvisningar för reglementesdelen
@@ -22,9 +25,9 @@ Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning
 - TOODs generering återställd.
 
 ## [2.2.0] - 2019-01-27
-- Justerat permabilitet
-- Justerat med avseende på nya PTS föreskrift	
-	
+- Justerat permeabilitet.
+- Justerat med avseende på nya PTS föreskrift.
+
 ## [2.1.0] - 2018-10-24
 
 ### Fixat
