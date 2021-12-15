@@ -1,7 +1,7 @@
 SSA-Akademin
 ============
 
-[![Byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/) [![Download-knapp](https://img.shields.io/badge/download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
+[![Bygg KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml) [![Download-knapp](https://img.shields.io/badge/Download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
 
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
@@ -15,11 +15,9 @@ uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 |:---------------------------|
 | Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett arbetsunderlag för arbetet med den. |
 
-LADDA NER OCH BYGG PROJEKTET
-============================
+# Ladda ner och bygg projektet
 
-Version
--------
+## Version
 
 Eftersom nytt material läggs till och fel rättas allt eftersom används en
 versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
@@ -34,22 +32,19 @@ koncept.2.0.0+b12345.8c04343.pdf
         └ Upplaga
 </pre>
 
-Bygg projektet
---------------
+## Bygg projektet
 
 Du kan ladda ner projektet och bygga den senaste versionen av PDF:en
 själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
 
-PDF
----
+## PDF
 
 **Hämta det senaste bygget:**
 **[koncept.pdf](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
 ([arkiv](https://akademin.ssa.se/files/koncept-pdf/))
 
 
-BIDRA TILL PROJEKTET
-====================
+# Bidra till projektet
 
 Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
@@ -66,20 +61,16 @@ förändring. Annars kan du använda dig av kontaktinformationen nedan
 och skicka ett mejl till oss så hjälper vi dig att komma igång.
 
 
-INSTRUKTIONER FÖR PROJEKTET
-===========================
+# Instruktioner för projektet
 
-Merge
------
+## Merge
 För att göra merge följer man instruktionerna i [`MERGE.md`](MERGE.md).
 
-Release
--------
+## Release
 För att göra release följer man instruktionerna i [`RELEASE.md`](RELEASE.md).
 
 
-OM SSA AKADEMIN
-===============
+# Om SSA-Akademin
 
 Arbetet med denna bok är en del i en större satsning på att
 uppdatera gammalt material, digitalisera material men också bredda
@@ -95,8 +86,7 @@ Vårt mål är att
 -   de som examineras ska göra bättre ifrån sig på provet
 -   de som deltar i utbildningen ska känna att det är en bra utbildning.
 
-KONTAKT
-=======
+# Kontakt
 
 -   [**Jonas "SM5PHU" Hultin**](mailto:sm5phu@gmail.com)
 -   [Magnus "SA0MAD" Danielsson](mailto:magnus@rubidium.se)
