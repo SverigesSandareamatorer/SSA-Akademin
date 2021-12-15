@@ -104,11 +104,6 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	makeindex koncept.idx
 	pdflatex koncept.tex
 
-#	-xelatex koncept.tex
-#	-xelatex koncept.tex
-#	makeindex koncept.idx
-#	xelatex koncept.tex
-
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex
 	xelatex handouts/matterep.tex
