@@ -1,4 +1,5 @@
-![SSA-Akademin](ssa-akademin.png)
+SSA-Akademin
+============
 
 [![Byggstatus](https://api.travis-ci.org/SverigesSandareamatorer/SSA-Akademin.svg?branch=master)](https://travis-ci.org/SverigesSandareamatorer/SSA-Akademin/) [![Download-knapp](https://img.shields.io/badge/download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
 

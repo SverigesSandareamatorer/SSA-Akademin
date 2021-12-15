@@ -1,5 +1,3 @@
-![KonCEPT för radioamatörcertifikat](koncept.png)
-
 INSTALLERA OCH BYGG
 ===================
 
