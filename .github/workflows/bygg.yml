@@ -1,10 +1,11 @@
 name: Bygg KonCEPT
 
 on:
-  push:
   pull_request:
     branches:
       - master
+	types:
+      - synchronize
 
 jobs:
   bygg-pdf:
