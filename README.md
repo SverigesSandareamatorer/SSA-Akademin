@@ -1,7 +1,7 @@
 SSA-Akademin
 ============
 
-[![Bygg KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml) [![Download-knapp](https://img.shields.io/badge/Download-koncept.pdf-blue)](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)
+[![Bygg KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml) [![Download-knapp](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
 
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
@@ -40,8 +40,7 @@ själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
 ## PDF
 
 **Hämta det senaste bygget:**
-**[koncept.pdf](https://akademin.ssa.se/files/koncept-pdf/koncept.pdf)**
-([arkiv](https://akademin.ssa.se/files/koncept-pdf/))
+**[Lista med byggen](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions?query=branch%3Amaster+)**
 
 
 # Bidra till projektet
