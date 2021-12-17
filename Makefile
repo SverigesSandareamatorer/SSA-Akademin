@@ -12,7 +12,11 @@ help:
 	@echo '   make help                   visa den här informationen             '
 
 all:	koncept.pdf
-#all:	matterep.pdf
+all:	matterep.pdf
+all:	emf-handout.pdf
+all:	prefix.pdf
+all:	ac1.pdf
+all:	ac2.pdf
 
 .PHONY:	*.pdf
 

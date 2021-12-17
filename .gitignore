@@ -180,10 +180,12 @@ TSWLatexianTemp*
 *~[0-9]*
 
 # Finished output
-koncept-larobok.pdf
-koncept-refbok.pdf
 koncept.pdf
 matterep.pdf
+emf-handout.pdf
+prefix.pdf
+ac1.pdf
+ac2.pdf
 
 # Temp
 SHA.txt
