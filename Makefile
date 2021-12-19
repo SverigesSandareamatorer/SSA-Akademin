@@ -65,7 +65,7 @@ KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
 	koncept/appendix-c.tex koncept/appendix-d.tex \
-	koncept/appendix-e.tex koncept/appendix-f.tex \
+	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
 	koncept/appendix-g.tex koncept/appendix-h.tex \
 	koncept/appendix-i.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-l.tex
