@@ -1,3 +1,15 @@
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+## MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -180,10 +192,13 @@ TSWLatexianTemp*
 *~[0-9]*
 
 # Finished output
-koncept-larobok.pdf
-koncept-refbok.pdf
 koncept.pdf
+koncept-tryck.pdf
 matterep.pdf
+emf-handout.pdf
+prefix.pdf
+ac1.pdf
+ac2.pdf
 
 # Temp
 SHA.txt

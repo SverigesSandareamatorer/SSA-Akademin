@@ -12,7 +12,11 @@ help:
 	@echo '   make help                   visa den här informationen             '
 
 all:	koncept.pdf
-#all:	matterep.pdf
+all:	matterep.pdf
+all:	emf-handout.pdf
+all:	prefix.pdf
+all:	ac1.pdf
+all:	ac2.pdf
 
 .PHONY:	*.pdf
 
@@ -59,11 +63,11 @@ KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
-KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-b.tex \
+KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
 	koncept/appendix-c.tex koncept/appendix-d.tex \
-	koncept/appendix-e.tex koncept/appendix-f.tex \
+	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
 	koncept/appendix-g.tex koncept/appendix-h.tex \
-	koncept/appendix-i.tex koncept/appendix-j.tex \
+	koncept/appendix-i.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-l.tex
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
@@ -103,11 +107,6 @@ koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 	makeindex koncept.idx
 	pdflatex koncept.tex
-
-#	-xelatex koncept.tex
-#	-xelatex koncept.tex
-#	makeindex koncept.idx
-#	xelatex koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex

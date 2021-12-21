@@ -105,13 +105,13 @@
 % Prepare for version handling
 \usepackage{xstring}
 \usepackage{catchfile}
-\CatchFileDef{\HEAD}{.git/refs/heads/master}{}
+\CatchFileDef{\HEAD}{SHA.txt}{}
 \newcommand{\gitrevision}{%
   \StrLeft{\HEAD}{7}%
 }
 \CatchFileDef{\VERSION}{VERSION.txt}{}
 \newcommand{\revision}{%
-  \VERSION \gitrevision%
+  \VERSION (\gitrevision)%
 }
 
 %% Frontpage background
@@ -148,19 +148,3 @@ keepaspectratio]{images/koncept-larobok-front.jpg}%
 %\includegraphics[width=\paperwidth,height=\paperheight]{images/koncept-back.pdf}%
 \vfill%
 }}}
-
-
-\hyphenation{
-  amatör-radio-certi-fikat
-  bär-vågs-am-pli-tud
-  fas-änd-ring-en
-  for-mel-snu-r-r-an
-  fre-kvens-mod-ul-ati-on
-  kvarts-kristaller
-  min-d-re
-  nät-an-slu-ten
-  o-läm-p-li-gt
-  puls-läng-ds
-  var-an-d-ra
-  vä-xel-st-rö-m-s-krets
-}

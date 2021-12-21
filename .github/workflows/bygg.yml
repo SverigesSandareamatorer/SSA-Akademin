@@ -1,6 +1,14 @@
 name: Bygg KonCEPT
 
-on: push
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+    types:
+      - synchronize
 
 jobs:
   bygg-pdf:
@@ -22,6 +30,8 @@ jobs:
         run: echo ${{ github.sha }} | cut -c1-7 > SHA.txt
       - name: 'Bygg'
         run: make koncept.pdf
+      - name: 'Beräkna checksumma'
+        run: sha256sum koncept.pdf
       - name: 'Byt namn'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
       - name: 'Ladda upp artefakt'
