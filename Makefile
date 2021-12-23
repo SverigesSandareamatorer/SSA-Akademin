@@ -63,7 +63,7 @@ KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
-KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
+KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik.tex \
 	koncept/appendix-decibel.tex koncept/appendix-d.tex \
 	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
 	koncept/appendix-g.tex koncept/appendix-frekvensplan.tex \
