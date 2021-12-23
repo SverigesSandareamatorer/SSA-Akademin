@@ -72,8 +72,7 @@ KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
-	koncept/matte.tex koncept/part3.tex \
-	koncept.bib \
+	koncept/matte.tex koncept.bib \
 	koncept/koncept-core.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
