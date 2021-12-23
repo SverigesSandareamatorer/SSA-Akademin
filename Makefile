@@ -67,7 +67,7 @@ KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
 	koncept/appendix-c.tex koncept/appendix-d.tex \
 	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
 	koncept/appendix-g.tex koncept/appendix-h.tex \
-	koncept/appendix-i.tex koncept/appendix-rapportkoder.tex \
+	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-kunskapskrav.tex
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
