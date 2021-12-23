@@ -65,8 +65,8 @@ KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik.tex \
 	koncept/appendix-decibel.tex koncept/appendix-s-enheter.tex \
-	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
-	koncept/appendix-g.tex koncept/appendix-frekvensplan.tex \
+	koncept/appendix-beskrivningskoder.tex koncept/appendix-iaru-bandplan.tex \
+	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-kunskapskrav.tex
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
