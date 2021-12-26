@@ -4,7 +4,9 @@ Alla anmärkningsvärda ändringar till projektet dokumenteras här.
 Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
 
 ## [Unreleased]
-- Solfläckscykel 25 är den nuvarande
+
+### Ändrat
+- Solfläckscykel 25 är den nuvarande.
 
 ### Borttaget
 - Appendix med litteraturförteckningen från första upplagan har raderats.
