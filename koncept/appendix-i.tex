@@ -7,9 +7,9 @@ Både terräng och teknik begränsar räckvidden.
 En repeater med högt belägen antenn ger ofta en bättre möjlighet till förbindelse.
 En sådan repeater kan i lyckliga fall inte bara möjliggöra förbindelser, men
 ibland också dubblera räckvidden i och med att varje station bara
-behöver nå fram till repeatern.  En praktisk sak att komma ihåg med
+behöver nå fram till repeatern, se bild \ref{fig:bildII7-12}.  En praktisk sak att komma ihåg med
 repeatrar, speciellt om du sänder med låg effekt är att du inte alltid
-når fram till repeatern, även om du kan ta emot den. 
+når fram till repeatern, även om du kan ta emot signaler från den. 
 
 En repeater sänder omeddelbart vad den mottager, så 
 eftersom sändaren och mottagaren arbetar samtidigt, måste
@@ -61,22 +61,31 @@ siffra.
 
 \bigskip
 
-\noindent Kanalnumret $n$ börjar med $0$, skrivs 00, på varje sådant band och ökar med ett (1) för varje
-kanal i bandet.
-På \SI{29,5}{\mega\hertz} används ensiffrig numrering, på 51 och
-\SI{145}{\mega\hertz} används tvåsiffrig och på
-\SI{430}{\mega\hertz} tresiffrig. \SI{1290}{\mega\hertz} använder en
-och två siffror.
-För repeaterkanaler sätts ett R före bandbokstaven.
+\noindent Notera att repeatershift kan vara positivt eller negativt,
+beroende på var du är i världen.  I vårt närområde är det negativt,
+men i till exempel Storbritannien så är det positivt på
+70-centimetersbandet.  Konsultera alltid den lokalabandplanen.
+
+Kanalnumret $n$ börjar med $0$, skrivs 00, på varje sådant band och
+ökar med ett (1) för varje kanal i bandet.    För repeaterkanaler sätts
+ett R före bandbokstaven.
+
 För att räkna fram repeaterns sändningsfrekvens tar man basfrekvensen
 $b$ bandet och lägger till kanalavståndet $k$ multiplicerat med
 kanalnumret $n$ (\(f = b+kn\)) och för att repeaterns mottagarfrekvens
 så lägger man till repeatershift $r$ (\(f = b+kn + r\)).
 Repeaterns sändningsfrekvens är din mottagarfrekvens i tabellerna nedan.
-% k7per: Det känns bakvänt att ha tabeller sett från användaren och
-% inte reopeatern.  Jag tror att PTS frågorna är ställda från
-% repeaterns frekvensanvändning.
-\newpage
+
+Till exampel, låt oss räkna fram frekvenserna för kanal 371 på
+70-centimetersbandet.  Då blir basfrekvensen $b = 430\cdot 10^6$,
+kanalnumret $n = 371$, kanalavståndet $k = 12,5\cdot 10^3$, och
+repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
+\si{\mega\hertz} och kanalavstånd samt repeatershift i
+\si{\kilo\hertz}.  Repeaterns sändningsfrekvens blir \(430\cdot 10^6 +
+12,5\cdot 10^3 \cdot 371 = 434,6375\cdot10^6 =
+\SI{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens blir
+\(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 + (-2000\cdot 10^3) =
+432,6375\cdot10^6 = \SI{432,6375}{\mega\hertz}\).
 
 \section{70-centimetersbandet}
 
@@ -93,16 +102,16 @@ Repeaterns sändningsfrekvens är din mottagarfrekvens i tabellerna nedan.
 	RU361 &       & 432,5125       & 434,5125 DV    \\
 	RU362 &       & 432,5250       & 434,5250 DV    \\
 	RU363 &       & 432,5375       & 434,5375 DV    \\
-	RU364 &       & 432,5500       & 464,5500 DV    \\
+	RU364 &       & 432,5500       & 434,5500 DV    \\
 	RU365 &       & 432,5625       & 434,5625 DV    \\
-	RU366 &       & 432,5750       & 464,5750 DV    \\
+	RU366 &       & 432,5750       & 434,5750 DV    \\
 	RU367 &       & 432,5875       & 434,5875 DV    \\
 	RU368 & RU0   & 432,6000       & 434,6000       \\
 	RU369 & RU0x  & 432,6125       & 434,6125       \\
 	RU370 & RU1   & 432,6250       & 434,6250       \\
-	RU371 & RU1x  & 432,6375       & 464,6375       \\
+	RU371 & RU1x  & 432,6375       & 434,6375       \\
 	RU372 & RU2   & 432,6500       & 434,6500       \\
-	RU373 & RU2x  & 432,6625       & 464,6625       \\
+	RU373 & RU2x  & 432,6625       & 434,6625       \\
 	RU374 & RU3   & 432,6750       & 434,6750       \\
 	RU375 & RU3x  & 432,6875       & 434,6875       \\
 	RU376 & RU4   & 432,7000       & 434,7000       \\
