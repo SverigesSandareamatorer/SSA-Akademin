@@ -63,17 +63,16 @@ KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
-KONCEPT_APDX_FILES = koncept/appendix-a.tex koncept/appendix-matematik.tex \
-	koncept/appendix-c.tex koncept/appendix-d.tex \
-	koncept/appendix-beskrivningskoder.tex koncept/appendix-f.tex \
-	koncept/appendix-g.tex koncept/appendix-h.tex \
-	koncept/appendix-i.tex koncept/appendix-rapportkoder.tex \
-	koncept/appendix-l.tex
+KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik.tex \
+	koncept/appendix-decibel.tex koncept/appendix-s-enheter.tex \
+	koncept/appendix-beskrivningskoder.tex koncept/appendix-iaru-bandplan.tex \
+	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
+	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
+	koncept/appendix-kunskapskrav.tex
 KONCEPT_OTHER_FILES = koncept/common.tex koncept/errata.tex \
 	koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
-	koncept/matte.tex koncept/part3.tex \
-	koncept.bib \
+	koncept/matte.tex koncept.bib \
 	koncept/koncept-core.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \

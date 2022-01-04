@@ -1,4 +1,4 @@
-INSTALLERA OCH BYGG
+Installera och bygg
 ===================
 
 Här förklaras vilka verktyg som behövs, hur man använder dom och
@@ -30,8 +30,7 @@ men paketnamnen bör heta likadant i andra distributioners pakethanterare.
     -   [TEX/LATEX](#texlatex)
     -   [LATEXML](#latexml)
 
-KOM IGÅNG
----------
+# Kom igång
 
 Börja med att följa instruktionerna nedan för att installera verktygen
 *Make* och *Git*.
@@ -44,8 +43,7 @@ använda dig av versionshanteringssystemet Git och verktyget Make.
 sudo apt-get install git make
 ```
 
-GIT
----
+# Git
 
 [Git](https://git-scm.com) är ett versionshanteringsverktyg som håller reda på
 historiken av kodutveckling. Den hjälper en kodare med arbetet genom smarta
@@ -59,8 +57,7 @@ git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
 cd SSA-Akademin/
 ```
 
-MAKE
-----
+# Make
 
 [Make](https://www.gnu.org/software/make/) är ett program som används
 för att förenkla källkodsfiler till körbara filer och i det här
@@ -97,7 +94,7 @@ har installerat beroendet som det behöver.
 INSTALLERA BEROENDEN
 --------------------
 
-### TEX/LATEX
+## Tex/LaTeX
 
 TeX är ett typsättningssystem där ett dokument, en bok eller en artikel
 kan beskrivas i ren text (filer med filändelsen `.tex`) för att sedan
@@ -112,7 +109,7 @@ sudo apt-get install texlive texlive-lang-european \
     texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
 ```
 
-### LATEXML
+### LaTeXML
 
 [LaTeXML](http://dlmf.nist.gov/LaTeXML/) är ett verktyg för att konvertera TeX-dokument till
 XML-filer. Den kan sedan konvertera dessa XML-filer till bland annat
