@@ -1,15 +1,22 @@
 \chapter[Svenska repeatrar]{Frekvenser för amatörradiorepeatrar}
 \label{svenska repeatrar}
 
-Vid direktförbindelser på höga frekvenser är räckvidden begränsad,
-särskilt vid låg effekt och små antenner.
-Med repeatrar med högt belägna antenner kan räckvidden förbättras,
-vilket underlättar kommunikation med rörliga (mobila) radiostationer.
-Eftersom sändaren och mottagaren i en repeater arbetar samtidigt, måste
+\noindent Vid direktförbindelser på höga frekvenser är räckvidden begränsad,
+särskilt för rörliga (mobila) stationer med låg effekt och små antenner.
+Både terräng och teknik begränsar räckvidden.
+En repeater med högt belägen antenn ger ofta en bättre möjlighet till förbindelse.
+En sådan repeater kan i lyckliga fall inte bara möjliggöra förbindelser, men
+ibland också dubblera räckvidden i och med att varje station bara
+behöver nå fram till repeatern, se bild \ref{fig:bildII7-12}.  En praktisk sak att komma ihåg med
+repeatrar, speciellt om du sänder med låg effekt är att du inte alltid
+når fram till repeatern, även om du kan ta emot signaler från den. 
+
+En repeater sänder omeddelbart vad den mottager, så 
+eftersom sändaren och mottagaren arbetar samtidigt, måste
 avståndet mellan deras arbetsfrekvenser vara så stort att det inte uppstår
 ömsesidiga störningar.
-Dessa arbetsfrekvenser kallas frekvenspar eller kanal och avståndet mellan dem
-kallas repeaterskift, vilket är enhetligt inom repeaterbandet.
+Dessa arbetsfrekvenser kallas \emph{frekvenspar} eller \emph{kanal} och avståndet mellan dem
+kallas \emph{repeaterskift}.
 
 Frekvensparet i en repeater måste arbeta med omvänt frekvensläge i förhållande
 till det i de stationer som den betjänar.
@@ -26,45 +33,85 @@ Frekvensplaner finns för repeatrar inom banden \SIrange{51}{52}{\mega\hertz}
 \SIrange{28000}{29700}{\kilo\hertz} (\SI{10}{\metre}).
 
 \section{Kanalnumreringsmetod}
+% Kan man lägga in några meningar om det gamla sättet att numrera kanaler?
 Vid införandet av \SI{12,5}{\kilo\hertz} kanalavstånd på 2~meter- och
-\SI{70}{\centi\metre}-banden infördes ett nytt system.
-Man börjar med en bokstav som talar om vilket band det är
-\begin{itemize}
-  \item F för \SI{51}{\mega\hertz}, kanalavstånd \SI{10}{\kilo\hertz}
-  \item V för \SI{145}{\mega\hertz}, kanalavstånd \SI{12,5}{\kilo\hertz}
-  \item U för \SI{430}{\mega\hertz}, kanalavstånd \SI{12,5}{\kilo\hertz}.
-\end{itemize}
-Kanalnumret börjar med 00 på varje sådant band och ökar med ett (1) för varje
-kanal i bandet.
-På 51 och \SI{145}{\mega\hertz} används tvåsiffrig numrering och på
-\SI{430}{\mega\hertz} tresiffrig.
-För repeaterkanaler sätts ett R före bandbokstaven.
+\SI{70}{\centi\metre}-banden infördes ett nytt numreringssystem.
+Man börjar med en bokstav som talar om vilket band det är och sen en
+siffra.
 
-\newpage
+\bigskip
+\noindent\begin{tabular}{l|S|S|S}
+  \hline
+  \multicolumn{1}{l|}{Kod} &
+  \multicolumn{1}{l|}{Basfrekvens} &
+  \multicolumn{1}{l|}{Kanalavstånd} &
+  \multicolumn{1}{l}{Repeatershift}\\
+  &
+  \multicolumn{1}{l|}{(\si{\mega\hertz})} &
+  \multicolumn{1}{l|}{(\si{\kilo\hertz})} &
+  \multicolumn{1}{l}{(\si{\kilo\hertz})}\\
+      \hline
+      H & 29,5 & 10 & -100\\
+      F & 51   & 10 & -600\\
+      V & 145  & 12,5 & -600\\
+      U & 430  & 12,5 & -2000\\
+        M & 1240 & 25 & -6000\\
+        \hline
+\end{tabular}
+
+\bigskip
+
+\noindent Notera att repeatershift kan vara positivt eller negativt,
+beroende på var du är i världen.  I vårt närområde är det negativt,
+men i till exempel Storbritannien så är det positivt på
+70-centimetersbandet.  Konsultera alltid lokala bandplaner.
+
+Kanalnumret $n$ börjar med $0$, skrivs 00, på varje sådant band och
+ökar med ett (1) för varje kanal i bandet.    För repeaterkanaler sätts
+ett R före bandbokstaven.
+
+För att räkna fram repeaterns sändningsfrekvens tar man basfrekvensen
+$b$ bandet och lägger till kanalavståndet $k$ multiplicerat med
+kanalnumret $n$ (\(f = b+kn\)) och för att repeaterns mottagarfrekvens
+så lägger man till repeatershift $r$ (\(f = b+kn + r\)).
+Repeaterns sändningsfrekvens är din mottagarfrekvens i tabellerna nedan.
+
+Till exampel, låt oss räkna fram frekvenserna för kanal 371 på
+70-centimetersbandet.  Då blir basfrekvensen $b = 430\cdot 10^6$,
+kanalnumret $n = 371$, kanalavståndet $k = 12,5\cdot 10^3$, och
+repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
+\si{\mega\hertz} och kanalavstånd samt repeatershift i
+\si{\kilo\hertz}.  Repeaterns sändningsfrekvens blir \(430\cdot 10^6 +
+12,5\cdot 10^3 \cdot 371 = 434,6375\cdot10^6 =
+\SI{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens blir
+\(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 + (-2000\cdot 10^3) =
+432,6375\cdot10^6 = \SI{432,6375}{\mega\hertz}\).
 
 \section{70-centimetersbandet}
-Repeaterskift \SI{2000}{\kilo\hertz}.
 
-RU$n$: $430 + 0,0125n$\SI{}{\mega\hertz}
+% Repeaterskift negativ \SI{2000}{\kilo\hertz}, med negativ
+% repeaterskift så subtraherar repeaterskift från repeaterns
+% sändningsfrekvens för att få dess mottagningsfrekvens.
+% RU$n$: $430 + 0,0125n$\,\SI{}{\mega\hertz}.
 
 \begin{tabular}{ r | c | l | l }
-	Kanal &       & Sändar-        & Mottagar-  \\
+	Kanal &       & Din sändar-        & Din mottagar-  \\
 	Ny    & fd    & frekvens       & frekvens \\
           &       & [\si{\mega\hertz}] & [\si{\mega\hertz}] \\
 	\hline
 	RU361 &       & 432,5125       & 434,5125 DV    \\
 	RU362 &       & 432,5250       & 434,5250 DV    \\
 	RU363 &       & 432,5375       & 434,5375 DV    \\
-	RU364 &       & 432,5500       & 464,5500 DV    \\
+	RU364 &       & 432,5500       & 434,5500 DV    \\
 	RU365 &       & 432,5625       & 434,5625 DV    \\
-	RU366 &       & 432,5750       & 464,5750 DV    \\
+	RU366 &       & 432,5750       & 434,5750 DV    \\
 	RU367 &       & 432,5875       & 434,5875 DV    \\
 	RU368 & RU0   & 432,6000       & 434,6000       \\
 	RU369 & RU0x  & 432,6125       & 434,6125       \\
 	RU370 & RU1   & 432,6250       & 434,6250       \\
-	RU371 & RU1x  & 432,6375       & 464,6375       \\
+	RU371 & RU1x  & 432,6375       & 434,6375       \\
 	RU372 & RU2   & 432,6500       & 434,6500       \\
-	RU373 & RU2x  & 432,6625       & 464,6625       \\
+	RU373 & RU2x  & 432,6625       & 434,6625       \\
 	RU374 & RU3   & 432,6750       & 434,6750       \\
 	RU375 & RU3x  & 432,6875       & 434,6875       \\
 	RU376 & RU4   & 432,7000       & 434,7000       \\
@@ -96,7 +143,10 @@ RU$n$: $430 + 0,0125n$\SI{}{\mega\hertz}
 \newpage
 
 \section{2-metersbandet}
-Repeaterskift \SI{600}{\kilo\hertz}.
+%% Repeaterskift negativ \SI{600}{\kilo\hertz}, med negativ repeaterskift
+%% så subtraherar repeaterskift från repeaterns sändningsfrekvens för att
+%% få dess mottagningsfrekvens.
+%% RV$n$: $145 + 0,0125n$\,\SI{}{\mega\hertz}.
 
 \begin{tabular}{ r | c | l | l }
 	Kanal & & Din sändar- & Din mottagar- \\
@@ -123,11 +173,11 @@ Repeaterskift \SI{600}{\kilo\hertz}.
 \end{tabular}
 
 \section{23-centimetersbandet}
-Repeaterskift \SI{6000}{\kilo\hertz}.
+%% Repeaterskift \SI{6000}{\kilo\hertz}.
 
 \begin{tabular}{ l | l | l }
 	Kanal & Din sändar- & Din mottagar- \\
-	& frekvens [MHz] & frekvens [MHz] \\
+	& frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
 	\hline
 	RM0 & 1291,000 & 1297,000 \\
 	RM1 & 1291,025 & 1297,025 \\
@@ -155,11 +205,19 @@ Repeaterskift \SI{6000}{\kilo\hertz}.
 
 \section[Speciella band]{Repeaterband med speciella egenskaper}
 \subsection{6-metersbandet}
-Repeaterskift \SI{600}{\kilo\hertz}.
+%% Repeaterskift \SI{600}{\kilo\hertz}.
+
+På grund av den relativt låga frekvensen uppnås ofta överräckvidder på grund av
+sporadisk vågutbredning via E-skiktet, se avsnitt \ref{e-skiktet}.
+Man kan då uppnå förbindelser utan hjälp av repeater.
+
+På \SI{51}{\mega\hertz} så anvånds endast udda kanalnummer.
+
+\bigskip
 
 \begin{tabular}{ l | l | l }
   Kanal & Din sändar- & Din mottagar- \\
-        & frekvens [MHz] & frekvens [MHz] \\
+        & frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
   \hline
   RF81 & 51,210 & 51,810 \\
   RF83 & 51,230 & 51,830 \\
@@ -173,18 +231,21 @@ Repeaterskift \SI{600}{\kilo\hertz}.
   RF99 & 51,390 & 52,990 \\
 \end{tabular}
 
-(dvs endast udda kanalnummer används).
 
-På grund av den relativt låga frekvensen uppnås ofta överräckvidder på grund av
-sporadisk vågutbredning via E-skiktet.
-Man kan då uppnå förbindelser utan hjälp av repeater.
 
 \subsection{10-metersbandet}
-Repeaterskift \SI{100}{\kilo\hertz}.
+%% Repeaterskift \SI{100}{\kilo\hertz}.
+
+På grund av den relativt låga frekvensen uppnås stora räckvidder genom
+jonosfärisk vågutbredning, särskilt under år med högt solfläckstal.
+Även sporadisk vågutbredning via E-skiktet förekommer, se avsnitt
+\ref{e-skiktet}. I båda fallen bör repeatertrafik undvikas.
+
+\bigskip
 
 \begin{tabular}{ l | l | l }
   Kanal & Din sändar- & Din mottagar- \\
-        & frekvens [kHz] & frekvens [kHz] \\
+        & frekvens [\si{\kilo\hertz}] & frekvens [\si{\kilo\hertz}] \\
   \hline
   RH1 & 29520 & 29620 \\
   RH2 & 29530 & 29630 \\
@@ -196,7 +257,4 @@ Repeaterskift \SI{100}{\kilo\hertz}.
   RH8 & 29590 & 29690 \\
 \end{tabular}
 
-På grund av den relativt låga frekvensen uppnås stora räckvidder genom
-jonosfärisk vågutbredning, särskilt under år med högt solfläckstal.
-Även sporadisk vågutbredning via E-skiktet förekommer.
-I båda fallen bör repeatertrafik undvikas.
+
