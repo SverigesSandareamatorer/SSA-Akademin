@@ -66,6 +66,11 @@
 {\end{pdfsidelinecomment}}
 \newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
+%% \newcommand\ssaref[1]{\ref{#1}}
+%% \newcommand\ssahref[2]{\href{#1}{#2}}
+\def\ssaref#1{\colorbox{Orange}{\ref{#1}}}
+\newcommand\ssahref[2]{\colorbox{Orange}{\href{#1}{#2}}}
+
 \clubpenalty=9990
 \widowpenalty=9999
 \brokenpenalty=4999
