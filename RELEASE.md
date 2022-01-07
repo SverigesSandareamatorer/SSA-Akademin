@@ -27,7 +27,7 @@ Uppdatera [`VERSION.txt`](VERSION.txt) till att innehålla den numeriska version
 Uppdatera [`CHANGELOG.md`](CHANGELOG.md) till att innehålla alla större förändringar sedan förra
 tryckningen.
 
-## Gör git commit av förändringarna
+## Gör commit av förändringarna
 
 Gör en `git commit` av alla förändringar med versionsnumret, dvs. `v2.3.0` som
 git-meddelande.

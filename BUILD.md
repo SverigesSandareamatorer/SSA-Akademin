@@ -40,7 +40,7 @@ använda dig av versionshanteringssystemet Git och verktyget Make.
 
 **Linux/Debian**
 ```sh
-sudo apt-get install git make
+$ sudo apt-get install git make
 ```
 
 # Git
@@ -53,8 +53,8 @@ Navigera till den mapp du vill ladda ner SSA-Akademin repot i. De som
 kör Git med grafiskt användargränssnitt (GUI) kan välja Clone och
 sedan URL:en i argumentet nedan. För de som kör med kommandotolken:
 ```sh
-git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
-cd SSA-Akademin/
+$ git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
+$ cd SSA-Akademin/
 ```
 
 # Make
@@ -66,7 +66,7 @@ veta *hur* genereringen går till utan bara vilket kommando som ska
 köras. Make används genom att köra kommandot `make` följt av ett
 mål. Till exempel:
 ```sh
-make <mål>
+$ make <mål>
 ```
 
 Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
@@ -74,7 +74,7 @@ kallas för beroenden. Dessa beroenden måste installeras innan Make
 ”mål:et” kan köras och instruktioner för vilka beroenden ett mål
 har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 
-### MAKE-MÅL OCH BYGGBEROENDEN
+### Make-mål och byggberoenden
 
 För att få en översikt över vilka mål som finns listas dom här i
 tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
@@ -91,8 +91,7 @@ har installerat beroendet som det behöver.
 |`docker-image`       |Bygg en Docker *image*             |Docker                |
 |`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
-INSTALLERA BEROENDEN
---------------------
+# Installera beroenden
 
 ## Tex/LaTeX
 
@@ -104,8 +103,8 @@ installeras.
 
 **Linux/Debian**
 ```sh
-sudo apt-get update
-sudo apt-get install texlive texlive-lang-european \
+$ sudo apt-get update
+$ sudo apt-get install texlive texlive-lang-european \
     texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
 ```
 
@@ -122,14 +121,14 @@ ner och beroenden måste hämtas.
 **Linux/Debian**
 Hämta LaTeXML:
 ```sh
-git clone https://github.com/brucemiller/LaTeXML.git
-cd LaTeXML/
+$ git clone https://github.com/brucemiller/LaTeXML.git
+$ cd LaTeXML/
 ```
 
 Installera [LaTeXML
 beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
 ```sh
-sudo apt-get install \
+$ sudo apt-get install \
   libarchive-zip-perl libfile-which-perl libimage-size-perl  \
   libio-string-perl libjson-xs-perl libtext-unidecode-perl \
   libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
@@ -141,13 +140,13 @@ Följ sedan
 [bygginstruktionerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)
 och kör följande:
 ```sh
-perl Makefile.PL
-make
-make test
+$ perl Makefile.PL
+$ make
+$ make test
 ```
 
 [Installera LaTeXML](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px3)
 (detta måste göras med `sudo`):
 ```sh
-sudo make install
+$ sudo make install
 ```
