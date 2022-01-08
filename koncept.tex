@@ -275,6 +275,19 @@
   \end{figure}
 }
 
+\newcommand{\mediumtikz}[3]{
+  \begin{figure*}[t]
+    \begin{center}
+      \resizebox{0.6\textwidth}{!}{%
+        #1
+        }%
+      \caption{#2}
+      \label{#3}
+    \end{center}
+    \vspace{-20pt}
+  \end{figure*}
+}
+
 \newsavebox\TBox
 \def\textoverline#1{\savebox\TBox{#1}%
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
