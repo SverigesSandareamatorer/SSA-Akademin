@@ -1,12 +1,21 @@
-# Changelog
-Alla anmärkningsvärda ändringar till projektet dokumenteras här.
+# Ändringslogg
 
-Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning].
+Alla nämnvärda ändringar i projektet dokumenteras här.
 
-## [Unreleased]
+Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
+
+## [Osläppt]
 
 ### Ändrat
-- Solfläckscykel 25 är den nuvarande.
+- Bilaga A Måttenheter har gjorts om.
+- Innehållsförteckningen har två istället för tre nivåer.
+- Förbättrad placering av ett stort antal figurer.
+- Boken byggs med GitHub Actions, istället för Travis CI.
+
+### Fixat
+- Ett stort antal skrivfel har rättats.
+- Texten återspeglar att solfläckscykel 25 är den nuvarande.
+- Rätt telefonnummer till SSA:s kansli.
 
 ### Borttaget
 - Appendix med litteraturförteckningen från första upplagan har raderats.
@@ -71,10 +80,14 @@ Det här projektet använder [Keep a Changelog] och följer [Semantic Versioning
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Unreleased]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.1.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...HEAD
+[2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
+[2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0
+[2.3.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.2.0...v2.3.0
+[2.2.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0-RC.1...v2.0.0
 [2.0.0-RC.1]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/8141940...v2.0.0-RC.1
 
-[Keep a Changelog]: http://keepachangelog.com/en/1.0.0/
-[Semantic Versioning]: http://semver.org/spec/v2.0.0.html
+[Håll en ändringslogg]: https://keepachangelog.com/sv/1.0.0/
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
