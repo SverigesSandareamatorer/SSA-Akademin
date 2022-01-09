@@ -22,7 +22,7 @@ Den kan också vara en transistor eller annan anordning.
 \subsection{Transistorn som strömställare}
 \label{transistor_strömställare}
 
-\mediumfig{images/cropped_pdfs/bild_2_2-35.pdf}{Transistorn som analog förstärkare respektive digital strömställare}{fig:BildII2-35}
+\mediumfigpad{images/cropped_pdfs/bild_2_2-35.pdf}{Transistorn som analog förstärkare respektive digital strömställare}{fig:BildII2-35}
 
 Bild \ssaref{fig:BildII2-35} visar två transistorkopplingar.
 Den till vänster är en analog förstärkare för växelspänning.
@@ -61,8 +61,6 @@ En ring vid utgången betyder att utspänningens nivå är motsatt
 inspänningens vilket illustreras i bild \ssaref{fig:BildII2-36}.
 Sambandet mellan in- och utnivåerna beskrivs med en \emph{sanningstabell}.
 
-\mediumminustopfig{images/cropped_pdfs/bild_2_2-37.pdf}{OCH-grind (AND-gate)}{fig:BildII2-37}
-\mediumminustopfig{images/cropped_pdfs/bild_2_2-38.pdf}{ELLER-grind (OR-gate)}{fig:BildII2-38}
 
 \subsection{Villkorskretsar -- s.k. grindar}
 
@@ -84,6 +82,10 @@ kontakt).
 Alternativt kan de vara normalt slutna och öppnar vid påverkan (brytande
 kontakt).
 I kretsscheman visas kontaktlägena vid systemet i vila.
+
+\newpage
+\mediumtopfig[0.65]{images/cropped_pdfs/bild_2_2-37.pdf}{OCH-grind (AND-gate)}{fig:BildII2-37}
+\mediumtopfig[0.65]{images/cropped_pdfs/bild_2_2-38.pdf}{ELLER-grind (OR-gate)}{fig:BildII2-38}
 
 Av bild  \ssaref{fig:BildII2-37} framgår att samma villkor kan skapas med slutande
 alternativt brytande kontakter.
@@ -109,16 +111,12 @@ När alla insignaler är 0 är utsignalen 0.
 \subsubsection{OCH INTE-grind eller NAND-gate}
 \index{NAND-gate}
 
-\mediumminustopfig{images/cropped_pdfs/bild_2_2-39.pdf}{OCH INTE-grind (NAND-gate)}{fig:BildII2-39}
-
 Sanningstabellen i bild \ssaref{fig:BildII2-39} säger att när ingen eller någon
 insignal är 1, men inte alla, så är utsignalen 1.
 När alla insignaler är 1 är utsignalen 0.
 
 \subsubsection{INTE ELLER-grind eller NOR-gate}
 \index{NOR-gate}
-
-\mediumminustopfig{images/cropped_pdfs/bild_2_2-40.pdf}{INTE ELLER-grind (NOR-gate)}{fig:BildII2-40}
 
 Sanningstabellen i bild \ssaref{fig:BildII2-40} säger att när någon eller alla
 insignaler är 1 är utsignalen 0.
@@ -130,20 +128,37 @@ En ingång kan behöva ha en inverterad funktion i förhållande till de övriga
 (\emph{low active}).
 Man kan då göra som i exemplet med en OCH-grind i bild \ssaref{fig:BildII2-41}.
 
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-41.pdf}{Inverterad ingång}{fig:BildII2-41}
+\mediumtopfig[0.66]{images/cropped_pdfs/bild_2_2-39.pdf}{OCH INTE-grind (NAND-gate)}{fig:BildII2-39}
+
+\mediumtopfig[0.66]{images/cropped_pdfs/bild_2_2-40.pdf}{INTE ELLER-grind (NOR-gate)}{fig:BildII2-40}
+
+\mediumherefig[0.65]{images/cropped_pdfs/bild_2_2-41sbs.pdf}{Inverterad ingång}{fig:BildII2-41}
+
+%% k7per: De följande två små styckena är delade i två för att få
+%% siddelninging and figurplacering OK, lägg inte ihop dem om du inte
+%% håller på att fixa layout.
+\newpage
+Möjligheten att ha en ingång inverterad gör det ibland svårt att läsa
+kretsscheman, för läslighet är det oftast bäst att ha med en explicit NOT-gate.
+
+\newpage
+Meningarna går naturligtvis isär om vad som är mest läsligt, så kolla
+noga vilka grindar som används i ett visst kretsschema.
+
+\newpage
+
+\smallfig[0.25]{images/cropped_pdfs/bild_2_2-42.pdf}{Exklusiv ELLER-grind (EXOR-gate)}{fig:BildII2-42}
+\smallfig[0.27]{images/cropped_pdfs/bild_2_2-43.pdf}{Exklusiv INTE ELLER-grind (EXNOR-gate)}{fig:BildII2-43}
+
 
 \subsubsection{Exklusiv ELLER-grind (XOR-gate)}
 \index{XOR-gate}
-
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-42.pdf}{Exklusiv ELLER-grind (EXOR-gate)}{fig:BildII2-42}
 
 Sanningstabellen i bild \ssaref{fig:BildII2-42} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 0.
 När någon insignal är 1, men inte alla, så är utsignalen 1.
 
 \subsubsection{Exklusiv INTE ELLER-grind (XNOR-gate)}
 \index{XNOR-gate}
-
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-43.pdf}{Exklusiv INTE ELLER-grind (EXNOR-gate)}{fig:BildII2-43}
 
 Sanningstabellen i bild \ssaref{fig:BildII2-43} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 1.
 När en insignal är 1, men inte alla, så är utsignalen 0.
@@ -153,6 +168,7 @@ När en insignal är 1, men inte alla, så är utsignalen 0.
 I stället för reläer eller diskreta halvledare i grindar använder man nu ytterst sällan något annat än integrerade digitala kretsar (se avsnitt \ssaref{integrerade kretsar}).
 
 \smalltikz{
+  \bigskip
   \begin{circuitikz}
     \draw (-2,1) to[short,-o] (1,1);
     \draw

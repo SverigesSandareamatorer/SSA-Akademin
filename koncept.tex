@@ -108,6 +108,28 @@
   \end{figure}
 }
 
+\newcommand{\smallbotfig}[4][0.4]{
+  \begin{figure}[t]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure}
+}
+
+\newcommand{\smallfigpad}[4][0.4]{
+  \begin{figure}[t]
+    \begin{center}
+    \bigskip
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+    \end{center}
+  \end{figure}
+}
+
 % Figure macros
 \newcommand{\smallpagefig}[4][0.4]{
   \begin{figure*}[p]
@@ -143,6 +165,16 @@
   \end{figure}
 }
 
+\newcommand{\talltopfig}[4][0.4]{
+  \begin{figure*}[t]
+    \centering
+    \includegraphics[width=#1\textwidth]{#2}
+    \caption{#3}
+    \label{#4}
+    \vspace{-10pt}
+  \end{figure*}
+}
+
 \newcommand{\tallfig}[4][0.4]{
   \begin{figure}
     \centering
@@ -156,6 +188,17 @@
 \newcommand{\mediumfig}[4][0.7]{
   \begin{figure*}[bt]
     \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumfigpad}[4][0.7]{
+  \begin{figure*}[bt]
+    \begin{center}
+      \bigskip
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
       \label{#4}
@@ -184,6 +227,16 @@
 
 \newcommand{\mediumtopfig}[4][0.7]{
   \begin{figure*}[t]
+    \begin{center}
+      \includegraphics[width=#1\textwidth]{#2}
+      \caption{#3}
+      \label{#4}
+    \end{center}
+  \end{figure*}
+}
+
+\newcommand{\mediumherefig}[4][0.7]{
+  \begin{figure*}[h!]
     \begin{center}
       \includegraphics[width=#1\textwidth]{#2}
       \caption{#3}
@@ -273,6 +326,16 @@
     \end{center}
     \vspace{-20pt}
   \end{figure}
+}
+\newcommand{\smalltikzfloat}[3]{
+  \begin{figure*}[t]
+    \begin{center}
+      #1
+      \caption{#2}
+      \label{#3}
+    \end{center}
+    \vspace{-20pt}
+  \end{figure*}
 }
 
 \newcommand{\mediumtikz}[3]{
