@@ -37,7 +37,7 @@ resistanser. För två resistorer gäller
 \index{parallellkoppling!resistorer}
 \label{parallellkopplade_resistorer}
 
-\smallfig{images/cropped_pdfs/bild_2_3-02.pdf}{Parallellkopplade resistorer}{fig:BildII3-02}
+\smallfigpad{images/cropped_pdfs/bild_2_3-02.pdf}{Parallellkopplade resistorer}{fig:BildII3-02}
 
 Bild \ssaref{fig:BildII3-02} visar parallellkopplade resistorer.
 Den totala resistansen av parallellkopplade resistorer är lägre än den lägsta
@@ -151,7 +151,7 @@ det är fråga om en växelströmskrets.
 \index{parallellkoppling!kondensatorer}
 \label{parallellkopplade kondensatorer}
 
-\smallfig{images/cropped_pdfs/bild_2_3-05.pdf}{Parallellkopplade kondensatorer}{fig:BildII3-05}
+\smallfig[0.3]{images/cropped_pdfs/bild_2_3-05.pdf}{Parallellkopplade kondensatorer}{fig:BildII3-05}
 
 Bild \ssaref{fig:BildII3-05} visar parallellkopplade kondensatorer.
 I stället för att använda en enda kondensator kan man parallellkoppla flera
@@ -164,7 +164,7 @@ enskilda kapacitanserna.
   C = C_1 + C_2 + C_3 + \cdots C_n
 \]
 %
-\begin{minipage}{\columnwidth}
+%\begin{minipage}{\columnwidth}
 \textbf{Räkneexempel:}
 \begin{enumerate}
 \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
@@ -180,7 +180,7 @@ enskilda kapacitanserna.
     &= \SI{1,005}{\nano\farad}
   \end{align*}
 \end{enumerate}
-\end{minipage}
+%\end{minipage}
 
 \subsection{Seriekopplade kondensatorer}
 \harecsection{\harec{a}{3.1.1e}{3.1.1e}}
@@ -208,8 +208,8 @@ För två kondensatorer gäller:
 %%
 \noindent
 \textbf{Räkneexempel:}
-\begin{enumerate}
-  \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
+
+ \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
       C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
@@ -217,7 +217,6 @@ För två kondensatorer gäller:
       = 3\frac{1}{3}\
       \approx \SI{3,33}{\micro\farad}
     \end{align*}
-\end{enumerate}
 
 \subsection{Galvaniskt kopplade induktorer}
 \label{galvaniskt_kopplade_induktorer}
@@ -236,14 +235,14 @@ gäller:
 %
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
 %
+\newpage
 \noindent
 \textbf{Räkneexempel:}
-\begin{enumerate}
-\item \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
+
+  \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
 \begin{align*}
   L = L_1 + L_2 = 20 + 50 = \SI{70}{\milli\henry}
 \end{align*}
-\end{enumerate}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
 \harecsection{\harec{a}{3.1.1d}{3.1.1d}}
@@ -281,7 +280,7 @@ För två induktorer gäller:
 \index{magnetisk koppling!induktorer}
 \index{ömsesidig induktans}
 
-\smallfig{images/cropped_pdfs/bild_2_3-07.pdf}{Magnetiskt kopplade induktorer}{fig:BildII3-07}
+\smallfig[0.35]{images/cropped_pdfs/bild_2_3-07.pdf}{Magnetiskt kopplade induktorer}{fig:BildII3-07}
 
 I praktiken anordnas ofta induktorer så, att deras respektive magnetfält kan
 återverka på varandra -- så kallad magnetisk koppling.
@@ -434,6 +433,7 @@ Exempel på beräkning av tidskonstanten:
   \end{align*}
 \end{enumerate}
 
+\newpage
 \subsection{In- och urkoppling av en induktor}
 
 \subsubsection{Inkoppling}
@@ -472,6 +472,7 @@ Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
 induktorn ökat från noll till 63~\% av \(I_{\it max}\) och spänningen över induktorn
 minskat till 37~\% av maxvärdet.
 
+\newpage
 \subsubsection{Urkoppling}
 \label{induktor_urkoppling}
 
@@ -533,7 +534,7 @@ För att förstå hur ''LC-kretsar'' fungerar beskrivs först hur de ingående
 komponenternas resistans, induktans och kapacitans förhåller sig till varandra,
 när de kombineras och kopplas till en växelströmkälla.
 
-\mediumfig{images/cropped_pdfs/bild_2_3-11.pdf}{Faslägen och effekter i L C-kretsar}{fig:BildII3-11}
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-11.pdf}{Faslägen och effekter i L C-kretsar}{fig:BildII3-11}
 
 Bild \ssaref{fig:BildII3-11} visar amplituden av spänning och ström vid ett
 sinusformat förlopp samt den effekt som då utvecklas.

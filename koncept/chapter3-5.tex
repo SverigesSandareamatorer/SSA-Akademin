@@ -4,7 +4,7 @@
 \index{detektor}
 \index{demodulator}
 
-\mediumbotfig{images/cropped_pdfs/bild_2_3-55.pdf}{Dioddetektorn}{fig:BildII3-55}
+% \mediumminusbotfig{images/cropped_pdfs/bild_2_3-55.pdf}{Dioddetektorn}{fig:BildII3-55}
 
 \subsection{Allmänt}
 \label{detektorer_allmänt}
@@ -53,22 +53,23 @@ Kondensatorn släpper bara igenom LF-signalen, som förstärks.
 
 Dioddetektorn följer amplituden och är ett exempel på en amplitudformsdetektor.
 
+\mediumminusbotfig{images/cropped_pdfs/bild_2_3-56.pdf}{Produktdetektor för AM (A3E) och CW (A1A)}{fig:BildII3-56}
+
 \subsubsection{Produktdetektorn SSB (J3E)}
 \harecsection{\harec{a}{3.5.3}{3.5.3}}
 \index{SSB!produktdetektor}
 \index{J3E!produktdetektor}
 \index{produktdetektor}
 
-\largefig{images/cropped_pdfs/bild_2_3-56.pdf}{Produktdetektor för AM (A3E) och CW (A1A)}{fig:BildII3-56}
 
 Det finns flera metoder att demodulera en SSB-signal, såsom fasningsmetoden,
 filtermetoden och den så kallade tredje metoden.
 Filtermetoden är numera den allra vanligaste och beskrivs här samt
 illustreras i bild \ssaref{fig:BildII3-56}.
-
+%
 En SSB-signal med undertryckt bärvåg består av endast ett sidband.
 Det andra sidbandet och bärvågen undertrycks i sändaren.
-
+%
 Vid demoduleringen av SSB-signalen alstras i mottagaren en signal som
 ersättning för den bärvåg som undertrycktes i sändaren.
 Det undertryckta andra sidbandet ersätts inte.
@@ -86,6 +87,9 @@ Ett lågpassfilter följer efter detektorn för att filtrera ut LF-signalerna.
 Numera består produktdetektorn vanligen av en ringblandare, som i ett omvänt
 förlopp även kan användas vid DSB-modulering i en sändare.
 Bilden visar demoduleringen av en SSB-signal som innehåller tre LF-toner.
+
+\mediumtopfig{images/cropped_pdfs/bild_2_3-57.pdf}{Amplitudbegränsning vid FM-mottagning}{fig:BildII3-57}
+\mediumbotfig[0.7]{images/cropped_pdfs/bild_2_3-58.pdf}{Ideal arbetslinje för diskriminator}{fig:BildII3-58}
 
 \subsubsection{CW-/SSB-detektorer CW (A1A)}
 \index{CW!detektor}
@@ -122,7 +126,6 @@ idealfrekvens för god läsbarhet av morsetecken.
 \index{AFC}
 \label{fm_detektor}
 
-\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-57.pdf}{Amplitudbegränsning vid FM-mottagning}{fig:BildII3-57}
 
 Vid vinkelmodulering överförs informationen enbart genom frekvens-
 eller fasvariationer i bärvågen.
@@ -133,7 +136,7 @@ diskriminatorn (se bild \ssaref{fig:BildII3-57}).
 Frekvensvariationerna i den FM-modulerade signalen omvandlas därefter av
 detektorn till LF-spän\-ning som motsvarar det utsända talet.
 
-\mediumfig{images/cropped_pdfs/bild_2_3-58.pdf}{Ideal arbetslinje för diskriminator}{fig:BildII3-58}
+% \mediumfig{images/cropped_pdfs/bild_2_3-58.pdf}{Ideal arbetslinje för diskriminator}{fig:BildII3-58}
 
 Demoduleringen ska ske med mottagaren inställd mitt på avsedd sändarfrekvens.
 Ett hjälpmedel för det är en indikator, som vid rätt inställning visar värdet
@@ -144,6 +147,7 @@ En sådan indikator fanns i tidiga FM-mottagare.
 Nu används i stället en \emph{Automatic Frequency Control (AFC)} som själv
 ställer in mottagaren om sändarfrekvensen är tillräckligt nära.
 
+\newpage
 \subsubsection{Slope-detektorn -- Diskriminatorn FM (F3E)}
 \index{slope-detektorn}
 \index{detektor!slope-detektorn}
@@ -206,7 +210,7 @@ LF-signalens amplitud blir då proportionell mot frekvensdeviationen.
 \index{FM!räknardiskriminator}
 \index{detektor!räknardiskriminator}
 
-\mediumfig{images/cropped_pdfs/bild_2_3-61.pdf}{Räknardiskriminatorn}{fig:BildII3-61}
+\mediumfig[0.75]{images/cropped_pdfs/bild_2_3-61.pdf}{Räknardiskriminatorn}{fig:BildII3-61}
 
 Bild \ssaref{fig:BildII3-61} visar räknardiskriminatorn.
 En monostabil vippa (eng. \emph{monoflop}) påverkas att slå över av fyrkantspulserna från de
@@ -234,7 +238,7 @@ Man kan säga att FM-signalen blivit omvandlad till en pulslängdmodulerad signa
 \index{FM!PLL-demodulator}
 \index{detektor!PLL-demodulator}
 
-\mediumfig{images/cropped_pdfs/bild_2_3-62.pdf}{PLL-demodulatorn}{fig:BildII3-62}
+\mediumfig[0.75]{images/cropped_pdfs/bild_2_3-62.pdf}{PLL-demodulatorn}{fig:BildII3-62}
 
 Bild \ssaref{fig:BildII3-62} visar PLL-demodulatorn.
 Den frekvensmodulerade MF-signalen och en VCO-signal matas in i en

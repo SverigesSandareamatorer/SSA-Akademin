@@ -86,7 +86,7 @@ resistansen \(R\).
   \]
 \end{enumerate}
 
-\newpage
+
 \subsection{Lågpassfilter (LP)}
 \harecsection{\harec{a}{3.2.8a}{3.2.8a}, \harec{a}{3.2.9}{3.2.9b}}
 \index{lågpassfilter}
@@ -158,7 +158,10 @@ Lös koppling liten bandbredd.
 Kritisk koppling -- större bandbredd.
 Fast koppling -- stor bandbredd.
 
-\smallfig[0.5]{images/cropped_pdfs/bild_2_3-25.pdf}{Passfilter}{fig:BildII3-25}
+\mediumtopfig[0.6]{images/cropped_pdfs/bild_2_3-25.pdf}{Passfilter}{fig:BildII3-25}
+\mediumtopfig{images/cropped_pdfs/bild_2_3-26.pdf}{Bandspärrfilter}{fig:BildII3-26}
+\mediumherefig{images/cropped_pdfs/bild_2_3-27.pdf}{Spärrfilter (2 sorter)}{fig:BildII3-27}
+\newpage
 
 \subsection{Passfilter}
 \harecsection{\harec{a}{3.2.9}{3.2.9d}}
@@ -172,7 +175,6 @@ en mycket låg impedans så som illustreras i bild \ssaref{fig:BildII3-25}.
 Passkretsen kopplas i serie med signalvägen och låter signaler med
 frekvenser inom filtrets passband att passera.
 
-\smallfig[0.5]{images/cropped_pdfs/bild_2_3-26.pdf}{Bandspärrfilter}{fig:BildII3-26}
 
 \subsection{Bandspärrfilter}
 \harecsection{\harec{a}{3.2.8d}{3.2.8d}, \harec{a}{3.2.9}{3.2.9e}}
@@ -186,6 +188,7 @@ i stället ett bandspärrfilter så som illustreras i bild \ssaref{fig:BildII3-2
 Ett sådant spärrar signaler inom ett visst frekvensområde, men släpper igenom
 signaler utom detta område.
 
+\newpage
 \subsection{Spärrfilter}
 \index{bandspärrfilter}
 \index{filter!bandspärr (BR)}
@@ -194,7 +197,6 @@ signaler utom detta område.
 \index{spärrkrets}
 \index{sugkrets}
 
-\mediumfig{images/cropped_pdfs/bild_2_3-27.pdf}{Spärrfilter (2 sorter)}{fig:BildII3-27}
 
 \subsubsection{Spärrkrets}
 Spärrkretsen stäms av till en viss frekvens och erbjuder där en mycket hög
@@ -208,6 +210,8 @@ impedans.
 Sugkretsen kopplas parallellt med signalvägen och kortsluter (suger bort) en
 signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 \ssaref{fig:BildII3-27}.
+
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-30.pdf}{Mekaniskt filter}{fig:BildII3-30}
 
 \subsection{Kvartskristall}
 
@@ -241,7 +245,7 @@ Många moderna kvartskristaller kan uppvisa olastat Q-värde på 100000.
 \index{ceramic resonators}
 \label{bandfilter_kristall}
 
-\smallfig{images/cropped_pdfs/bild_2_3-29.pdf}{Bandfilter med kvartskristaller}{fig:BildII3-29}
+\smallfigpad{images/cropped_pdfs/bild_2_3-29.pdf}{Bandfilter med kvartskristaller}{fig:BildII3-29}
 
 Bild \ssaref{fig:BildII3-29} visar hur kvartskristaller kan kombineras till
 filter, ofta refererade till som \emph{kristallfilter} (eng.
@@ -266,7 +270,7 @@ Bild \ssaref{fig:BildII3-30} illustrerar ett sådant arrangemang.
 Hela anordningen fungerar som en \emph{elektromekanisk resonator} (eng.
 \emph{mechanical resonator}), vars egenskaper liknar dem i en LC-krets.
 
-\mediumfig{images/cropped_pdfs/bild_2_3-30.pdf}{Mekaniskt filter}{fig:BildII3-30}
+% 
 
 Resonatorerna kan kombineras till filterkomplex med önskad bandbredd där
 resonatorerna är avstämda till var sin bestämd frekvens.
@@ -280,8 +284,7 @@ mellanfrekvensfilter i högvärdiga radioutrustningar, men har numera till stor
 del ersatts av bandfilter med kvartskristaller där arbetsområdet kan ligga
 avsevärt högre i frekvens.
 
-% k7per
-% \newpage % layout
+\newpage % layout
 \subsection{Kavitetsfilter}
 \index{kavitetsfilter}
 \index{cavity filter}
@@ -326,7 +329,7 @@ Flera kavitetsfilter kan kopplas ihop för att bilda till exempel bandfilter ell
 \index{Pi-filter}
 \index{filter!Pi-filter}
 
-\smallfig{images/cropped_pdfs/bild_2_3-32.pdf}{Pi-filter}{fig:BildII3-32}
+\smallfigpad[0.35]{images/cropped_pdfs/bild_2_3-32.pdf}{Pi-filter}{fig:BildII3-32}
 
 För att överföra HF-signaler med bästa verkningsgrad är det viktigt med god
 impedansanpassning mellan de olika kretsarna.
@@ -345,7 +348,8 @@ den seriella delen är gemensam (på bilden en induktor).
 \index{T-filter}
 \index{filter!T-filter}
 
-\smallfig{images/cropped_pdfs/bild_2_3-33.pdf}{T-filter}{fig:BildII3-33}
+\smallfig[0.35]{images/cropped_pdfs/bild_2_3-33.pdf}{T-filter (två varianter)}{fig:BildII3-33}
+\smallfigpad[0.3]{images/cropped_pdfs/bild_2_3-34.pdf}{Halvledardioder}{fig:BildII3-34}
 
 Ett nät kan också vara T-format, som bild \ssaref{fig:BildII3-33} visar, och bestå
 av induktanser och kapacitanser.
@@ -384,6 +388,8 @@ Förlusterna kommer att göra sig påminda när man bygger kretsar med dessa
 komponenter. Till exempel kommer en LC krets i praktiken alltid att vara en LCR-krets, där
 förlusterna i spole och kondensator ger en förlust i kretsen och begränsar hur högt Q-värde som kan uppnås.
 När en resonator belastas ökar förlusten ytterligare och därmed sjunker Q-värdet.
+
+% \mediumminusbotfig{images/cropped_pdfs/bild_2_3-35.pdf}{Halv- och helvågslikriktning}{fig:BildII3-35}
 
 \subsection{Digitala filter}
 \harecsection{\harec{a}{3.2.13}{3.2.13}}
