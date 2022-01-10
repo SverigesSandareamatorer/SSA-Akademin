@@ -1,11 +1,9 @@
 # Ändringslogg
-
 Alla nämnvärda ändringar i projektet dokumenteras här.
 
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
 ## [Osläppt]
-
 ### Ändrat
 - Bilaga A Måttenheter har gjorts om.
 - Innehållsförteckningen har två istället för tre nivåer.
@@ -21,6 +19,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Appendix med litteraturförteckningen från första upplagan har raderats.
 
 ## [2.4.0] - 2021-03-31
+### Ändrat
 - Liten uppdatering med läsanvisningar för teknikdelen
 - Liten uppdatering med läsanvisningar för reglementesdelen
 - Tillagt ett litet nytt appendix med bandplaner
@@ -28,49 +27,52 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Lite annan småfix
 
 ## [2.3.0] - 2019-10-06
-- Gått över till siunix
-- Anpassat länkar till HTTPS
+### Ändrat
+- Gått över till siunitx.
+- Anpassat länkar till HTTPS.
 - Referenser åtgärdade.
 - Index genereras.
 - Elsäkerhets-slides tillagda.
 - Uppdatering av bygg-miljön.
+
+### Fixat
 - TOODs generering återställd.
 
 ## [2.2.0] - 2019-01-27
+### Ändrat
 - Justerat permeabilitet.
 - Justerat med avseende på nya PTS föreskrift.
 
 ## [2.1.0] - 2018-10-24
-
 ### Fixat
 - Appendix med HAREC-referenserna hade försvunnit. Återställt.
 
-
 ## [2.0.0] - 2018-08-18
-
 ### Ändrat
 - Bytt felaktig användning av ordet ”decimal” till ”siffra”.
 - Förtydligar vad oktal och hexadecimal form är för något.
 - Ändrar till utskrivna siffor istället för siffror, i enlighet med texifiering.md #31
 - Extra radbrytning i enlighet med texifiering.md #5
 - Förtydligande av prefixs syfte.
-- Formel rättad i avsnittet ”Exempel med 2 obekanta” i kapitlet ”Matematik”.
 - Ändrar rubrik till ”Ekvation med en obekant” från ”Exempel med ..”
 - Ändrar 1/2 till en/två i rubrik i Bilaga B, matematik.
 - Ändrar förkortningen s.k. till så kallad(e) i Bilaga B, matematik.
-- Ändrat O till Q i rapportkoder för kommeriell sjö och luftradiotrafik.
 
+### Fixat
+- Formel rättad i avsnittet ”Exempel med 2 obekanta” i kapitlet ”Matematik”.
+- Ändrat O till Q i rapportkoder för kommersiell sjö- och luftradiotrafik.
 
 ## [2.0.0-RC.1] - 2017-09-10
-
 ### Tillagt
 - Första version 2.0.0-RC.1 och `git tag` v2.0.0-RC.1 satt.
 - [CEPT](https://cept.org) HAREC finns som detaljerat appendix med länkning till de textdelar som
   uppfyller dem.
 - Alla HAREC-krav har tillgodosets.
 - EMF-materialet inkluderat.
-- Elsäkerhetskapitlet uppdaterat.
 - _Isolation och jordning_ tillagd.
+
+### Ändrat
+- Elsäkerhetskapitlet uppdaterat.
 - Hela materialet är överfört till LaTeX och [GitHub](https://github.com).
 - Stort antal putsningar av text.
 - Anpassning till nu gällande certklasser och krav.
