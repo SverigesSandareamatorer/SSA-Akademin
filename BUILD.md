@@ -10,16 +10,13 @@ I det här dokumentet finns instruktioner om hur du kan hämta hem
 projektet och köra den på din egen dator. Den går igenom steg för
 steg och beskriver de verktyg som används för att köra koden.
 
-> :bulb: Kom ihåg att om du har
-problem kan du [skapa ett nytt ärende (new
-issue)](https://github.com/SverigesSandareamatorer/SSA-Akademin/issues)
-eller använda kontaktuppgifterna som finns i [README.md](README.md).
+| :bulb: **Tips** |
+|:----------------|
+| Kom ihåg att om du har problem kan du skapa ett nytt [ärende på GitHub](https://github.com/SverigesSandareamatorer/SSA-Akademin/issues) eller använda kontaktuppgifterna som finns i [README.md](README.md). |
 
-> :warning: Dessa instruktioner är inte fullständiga men kan
-ändå hjälpa fram för allt de som kör Linux eller UNIX-liknande
-operativsystem. Just nu är den här guiden mest inriktad på
-[Linux/Debian-derivat](https://www.debian.org/misc/children-distros)
-men paketnamnen bör heta likadant i andra distributioners pakethanterare.
+| :warning: **Observera** |
+|:------------------------|
+| Dessa instruktioner är inte fullständiga men kan ändå hjälpa fram för allt de som kör Linux eller UNIX-liknande operativsystem. Just nu är den här guiden mest inriktad på [Linux/Debian-derivat](https://www.debian.org/misc/children-distros) men paketnamnen bör heta likadant i andra distributioners pakethanterare. |
 
 
 -   [KOM IGÅNG](#kom-igÅng)
