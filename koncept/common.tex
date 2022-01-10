@@ -36,7 +36,7 @@
     output-decimal-marker = {,},
     output-product = \cdot,
     retain-explicit-plus = true,
-    input-product = {*},
+%    input-product = {*},
     product-units = single,
     per-mode = symbol,
     range-units = single,
@@ -44,6 +44,7 @@
     separate-uncertainty=true,
     multi-part-units=single
 }
+\DeclareSIUnit\noop{\relax}
 % % % % % % % % % % % 
 % Detta är nya environments för review. De bör vara relativt självförklarande hur de används.
 % I princip sätter man bara den del av texten som har en viss status mellan\begin{rev-granskat} och \end{rev-granskat} tex.
