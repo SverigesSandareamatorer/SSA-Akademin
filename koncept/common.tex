@@ -68,8 +68,8 @@
 
 %% \newcommand\ssaref[1]{\ref{#1}}
 %% \newcommand\ssahref[2]{\href{#1}{#2}}
-\def\ssaref#1{\colorbox{Orange}{\ref{#1}}}
-\newcommand\ssahref[2]{\colorbox{Orange}{\href{#1}{#2}}}
+\newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
+\newcommand\ssahref[2]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\href{#1}{#2}}}
 
 \clubpenalty=9990
 \widowpenalty=9999
