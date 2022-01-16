@@ -32,9 +32,20 @@ jobs:
         run: sha256sum koncept.pdf
       - name: 'Byt namn'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
+      - name: 'Skapa rapporter'
+        run: |
+          make images.unlinked
+          make TODOs
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
           path: koncept*.pdf
           retention-days: 31
+      - name: 'Ladda upp rapporter'
+        uses: actions/upload-artifact@v2
+        with:
+          name: rapporter
+          path: |
+            images.unlinked
+            TODOs
