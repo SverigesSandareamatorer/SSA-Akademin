@@ -202,7 +202,7 @@ ac2.pdf
 
 # Temp
 SHA.txt
-images.avail
-images.linked
-images.unlinked
+images_avail.txt
+images_linked.txt
+images_unlinked.txt
 TODOs
