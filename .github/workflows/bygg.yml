@@ -32,7 +32,7 @@ jobs:
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
       - name: 'Skapa rapporter'
         run: |
-          make images.unlinked
+          make images_unlinked
           make TODOs
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
@@ -45,5 +45,5 @@ jobs:
         with:
           name: rapporter
           path: |
-            images.unlinked
+            images_unlinked.txt
             TODOs
