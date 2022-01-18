@@ -1,7 +1,0 @@
-vo(x):= 5*sin(x*%pi/180);
-vt(x):=6-vo(x);
-it(x):=vo(x)/50;
-pt(x):=abs(vt(x)*it(x));
-expand((integrate(vt(x)*it(x),x,0,180)+integrate(-vt(x)*it(x),x,180,360))/360);
-plot2d([vo(x),vt(x),25*it(x),25*pt(x)/10],[x,0,360],[legend,"U_{ut}", "U_t", "I_t", "P_t"],[xlabel,"Vinkel (grader)"], [xtics,0,45,360],[ylabel,"Spänning/Ström/Effekt"], [grid2d],[y,-6,15], [pdf_file,"./power1.pdf"]);
-plot2d([vo(x),vt(x),25*it(x),25*pt(x)/10],[x,0,360],[legend,"U_{ut}", "U_t", "I_t", "P_t"],[xlabel,"Vinkel (grader)"], [xtics,0,45,360],[ylabel,"Spänning/Ström/Effekt"], [grid2d],[y,-6,15], [png_file,"./power1.png"]);
