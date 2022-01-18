@@ -1,3 +1,5 @@
+\mediumtopfig[0.5]{images/cropped_pdfs/bild_2_3-89.pdf}{A3E-modulator}{fig:BildII3-89}
+
 \section{Modulatorer}
 \index{modulatorer}
 
@@ -7,8 +9,8 @@
 När en signal (bärvåg) påverkas så att den överför informationen i
 en annan signal, sägs bärvågen bli modulerad.
 Detta förlopp kallas modulation.
-Vad som då händer behandlas främst i avsnitt \ref{modulation}, med
-tillämpningar i kapitel \ref{sändare} och delvis i kapitel \ref{mottagare}.
+Vad som då händer behandlas främst i avsnitt \ssaref{modulation}, med
+tillämpningar i kapitel \ssaref{sändare} och delvis i kapitel \ref{mottagare}.
 
 En anordning för modulation kallas för modulator.
 En modulator kan ingå som en funktion i sändare, mottagare med flera system.
@@ -39,14 +41,14 @@ En emitterkopplad transistorförstärkare kan moduleras på ett liknande sätt.
 I båda fallen moduleras förstärkarens arbetsspänning (anodspänning respektive 
 kollektorspänning) med den modulerande signalen.
 Det som då händer är att två signaler blandas på ett sätt som beskrivs i
-avsnitt \ref{modulation} med tillämpning på A3E.
+avsnitt \ssaref{modulation} med tillämpning på A3E.
 I vila är då bärvågsamplituden halva den möjliga inom arbetskurvans linjära del.
 Vid modulation kommer bärvågens amplitud att variera mellan noll
 och den möjliga amplituden.
 
-\smallfig{images/cropped_pdfs/bild_2_3-89.pdf}{A3E-modulator}{fig:BildII3-89}
+% \mediumtopfig[0.5]{images/cropped_pdfs/bild_2_3-89.pdf}{A3E-modulator}{fig:BildII3-89}
 
-Bild \ref{fig:BildII3-89} visar ett sändarslutsteg med en triod.
+Bild \ssaref{fig:BildII3-89} visar ett sändarslutsteg med en triod.
 I serie med tilledningen för anodspänningen finns sekundärlindningen av en
 modulationstransformator för LF-signalen.
 
@@ -72,13 +74,14 @@ Trots det lägre effektbehovet på grund av endast ett sidband och eventuellt
 reducerad bärvågsamplitud kan av dimensioneringsskäl ändå inte de flesta
 H3E-sändare avge sin fulla effekt kontinuerligt!
 
-Som redan sagts i avsnitt \ref{modulation}, är det onödigt sända ut två sidband,
+Som redan sagts i avsnitt \ssaref{modulation}, är det onödigt sända ut två sidband,
 eftersom båda innehåller samma information.
 Det räcker med ett sidband.
 Bärvågen innehåller inte någon information.
 Den kan därför undertryckas redan i sändaren för att ersättas i mottagaren.
 Därmed uppstår sändningsslaget J3E.
 
+\newpage
 \subsection{Sändningsslaget J3E (SSB)}
 \index{Single Side Band (SSB)}
 \index{SSB}
@@ -89,9 +92,9 @@ Det andra sidbandet och bärvågen undertrycks, vilket kan göras på flera sät
 Numera är den så kallade filtermetoden allra vanligast och den enda som
 behandlas här.
 
-\largefig{images/cropped_pdfs/bild_2_3-90.pdf}{Alstring av J3E (SSB)}{fig:BildII3-90}
+\mediumfig{images/cropped_pdfs/bild_2_3-90.pdf}{Alstring av J3E (SSB)}{fig:BildII3-90}
 
-Bild \ref{fig:BildII3-90} visar alstring av J3E (SSB).
+Bild \ssaref{fig:BildII3-90} visar alstring av J3E (SSB).
 \index{Upper Side Band (USB)}
 \index{USB}
 \index{Lower Side Band}
@@ -108,14 +111,14 @@ Band).
 Valet mellan USB och LSB kan göras på två sätt.
 Antingen genom att välja mellan ett separat passbandfilter för respektive
 sidband eller genom att använda ett enda filter och flytta HF-signalen från ena
-sidan till den andra av det filtret (se bild \ref{fig:BildII1-28} i
-avsnitt \ref{modulation}).
+sidan till den andra av det filtret (se bild \ssaref{fig:BildII1-28} i
+avsnitt \ssaref{modulation}).
 
 En J3E-modulator enligt filtermetoden består således av en balanserad blandare
-ofta en så kallad ringblandare (se bild \ref{fig:BildII3-87} i avsnitt
-\ref{blandare}) samt ett bandpassfilter.
+ofta en så kallad ringblandare (se bild \ssaref{fig:BildII3-87} i avsnitt
+\ssaref{blandare}) samt ett bandpassfilter.
 För att SSB-signalen ska få avsedd sändarfrekvens kan ytterligare
-frekvensblandning behövas (se kapitel \ref{sändare}).
+frekvensblandning behövas (se kapitel \ssaref{sändare}).
 
 \subsection{Vinkelmodulation}
 \index{vinkelmodulation}
@@ -139,11 +142,12 @@ Likspänningsnivåer kan således överföras eftersom en frekvensavvikelse
 Vid F3E påverkas resonansfrekvensen i den resonanskrets i oscillatorn som
 bestämmer dess arbetsfrekvens.
 Det görs enklast genom att tillföra en kondensator med variabelt
-kapacitansvärde, en kapacitansdiod (se avsnitt \ref{varicap}).
+kapacitansvärde, en kapacitansdiod (se avsnitt \ssaref{varicap}).
 
 \mediumfig[0.8]{images/cropped_pdfs/bild_2_3-91.pdf}{Alstring av F3E (FM)}{fig:BildII3-91}
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-92.pdf}{Alstring av G3E (PM)}{fig:BildII3-92}
 
-Bild \ref{fig:BildII3-91} visar en LC-resonanskrets där det ingår en
+Bild \ssaref{fig:BildII3-91} visar en LC-resonanskrets där det ingår en
 kapacitansdiod som styrs av en likspänning med en överlagrad modulerande LF-signal.
 En likspänning tjänar som en ställbar förspänning till kapacitansdioden.
 På så sätt kan man påverka arbetsfrekvensen.
@@ -177,11 +181,11 @@ När kretsen bringas ur resonans genom modulation -- samtidigt som kretsen
 påtrycks oscillatorsignalen -- uppstår i kretsen omväxlande en induktiv och
 kapacitiv reaktans -- detta inom tiden för varje halv period.
 Reaktansen skapar därvid den fasförskjutning som innebär fasmodulation.
-Se även avsnitt \ref{parallellresonans} och \ref{serieresonans}, bilderna
-\ref{fig:BildII3-18} och \ref{fig:BildII3-19}
+Se även avsnitt \ssaref{parallellresonans} och \ref{serieresonans}, bilderna
+\ssaref{fig:BildII3-18} och \ref{fig:BildII3-19}
 
-\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-92.pdf}{Alstring av G3E (PM)}{fig:BildII3-92}
+% \mediumfig[0.8]{images/cropped_pdfs/bild_2_3-92.pdf}{Alstring av G3E (PM)}{fig:BildII3-92}
 
-Bild \ref{fig:BildII3-92} visar alstring av G3E (PM).
+Bild \ssaref{fig:BildII3-92} visar alstring av G3E (PM).
 Liksom vid frekvensmodulation kan till exempel en kapacitansdiod användas för att
 med en modulerande signal påverka resonansfrekvensen i en krets.

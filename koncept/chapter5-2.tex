@@ -7,10 +7,10 @@
 \index{kristalldetektor}
 \index{mottagare!kristall}
 
-\mediumbotfig{images/cropped_pdfs/bild_2_4-01.pdf}{Detektormottagare}{fig:bildII4-1}
+\mediumplusbotfig{images/cropped_pdfs/bild_2_4-01.pdf}{Detektormottagare}{fig:bildII4-1}
 
 Detektormottagaren består av ett mycket litet antal komponenter.
-Princip och arbetssätt framgår av bild \ref{fig:bildII4-1}.
+Princip och arbetssätt framgår av bild \ssaref{fig:bildII4-1}.
 Samma princip används även i mer komplicerade mottagare, mätinstrument etc.
 Antennkretsen består av antenn, jordtag och däremellan en induktor
 (kopplingsspole), som överför energin från antennen till en resonanskrets.
@@ -25,7 +25,7 @@ Dioden klipper bort antingen de positiva eller negativa halvvågorna i den
 mottagna signalen, beroende på hur dioden är vänd, polariserad.
 Kondensatorn, som är kopplad parallellt över hörtelefonen, glättar de
 högfrekventa spänningstopparna till ett amplitudmedelvärde (jämför med
-entaktsblandare i Kapitel \ref{detektorer}).
+entaktsblandare i Kapitel \ssaref{detektorer}).
 Detta spänningsvärde varierar på ett sätt, som motsvarar den modulerande
 spänning i sändaren som kommer av tal, musik etc.
 Vi har nu demodulerat bärvågen, återställt LF-signalen och kan höra den i
@@ -34,10 +34,10 @@ mottagaren.
 Signalspänningen över resonanskretsen är störst när dess
 resonansfrekvens och antennströmmens frekvens är lika.
 
-\newpage
-\smallfig{images/cropped_pdfs/bild_2_4-02.pdf}{Selektion i detektormottagare}{fig:bildII4-2}
+% \newpage
+\mediumfig[0.45]{images/cropped_pdfs/bild_2_4-02.pdf}{Selektion i detektormottagare}{fig:bildII4-2}
 
-Överst i bild \ref{fig:bildII4-2} ser man att mottagaren är inställd på
+Överst i bild \ssaref{fig:bildII4-2} ser man att mottagaren är inställd på
 samma frekvens som sändare 2.
 Även sändare 3 hörs eftersom bandbredden i resonanskretsen är stor.
 Nederst i bilden är resonanskretsen inställd på sändare 3, men man hör
@@ -45,16 +45,16 @@ också sändare 2 och 4.
 
 Bandbredden i resonanskretsen blir mindre ju mindre den belastas,
 det vill säga dämpas.
-I bild \ref{fig:bildII4-1} består belastningen av antennen (via
+I bild \ssaref{fig:bildII4-1} består belastningen av antennen (via
 kopplingsspolen), hörtelefonen och avkopplingskondensatorn (via dioden).
 
 Mindre belastning kan åstadkommas på två sätt; dels med ''lösare''
 koppling mellan antennkrets och resonanskrets och dels med bättre
 impedansanpassning mellan resonanskrets och diod. Båda sätten
-tillämpas i bild \ref{fig:bildII4-3}. Hur selektionen då förbättras visas i
-bild \ref{fig:bildII4-4}, vilket ska jämföras med bild \ref{fig:bildII4-2}.
+tillämpas i bild \ssaref{fig:bildII4-3}. Hur selektionen då förbättras visas i
+bild \ssaref{fig:bildII4-4}, vilket ska jämföras med bild \ref{fig:bildII4-2}.
 
-\mediumplusbotfig{images/cropped_pdfs/bild_2_4-03.pdf}{Detektormottagare med LF-förstärkare}{fig:bildII4-3}
+\mediumplusbotfig[0.77]{images/cropped_pdfs/bild_2_4-03.pdf}{Detektormottagare med LF-förstärkare}{fig:bildII4-3}
 
 \mediumplustopfig{images/cropped_pdfs/bild_2_4-05.pdf}{Förbättrade HF-egenskaper i detektormottagare}{fig:bildII4-5}
 
@@ -66,7 +66,7 @@ För ändamålet används en LF-förstärkare, som drivs av en annan energikäll
 till exempel ett batteri.
 LF-förstärkaren kan även minska belastningen på resonanskretsen.
 
-I bild \ref{fig:bildII4-3} har ett LF-lågpassfilter satts in efter
+I bild \ssaref{fig:bildII4-3} har ett LF-lågpassfilter satts in efter
 HF-avkopplingskondensatorn.
 Det dämpar LF-signaler med högre frekvens än vad som behövs för god mottagning.
 
@@ -75,7 +75,7 @@ Det dämpar LF-signaler med högre frekvens än vad som behövs för god mottagn
 
 Ett sätt att minska bandbredden i en detektormottagare är att koppla
 flera resonanskretsar med samma frekvens efter varandra, så som illustreras
-i bild \ref{fig:bildII4-5}.
+i bild \ssaref{fig:bildII4-5}.
 Den större dämpningen av fler kretsar kan kompenseras med en HF-förstärkare.
 
 Sådana mottagare används för speciella ändamål, till exempel för övervakning
@@ -83,11 +83,11 @@ av en enda frekvens.
 I sådana fall är resonanskretsarna fast avstämda.
 Kanske utnyttjas till och med en kvartskristall som filter för den speciella
 frekvensen.
-Se bild \ref{fig:bildII4-6} om hög selektion.
+Se bild \ssaref{fig:bildII4-6} om hög selektion.
 
 \smallfig{images/cropped_pdfs/bild_2_4-04.pdf}{Förbättrad selektion}{fig:bildII4-4}
 
-\smallfig{images/cropped_pdfs/bild_2_4-06.pdf}{Hög HF-selektion}{fig:bildII4-6}
+\smallfigpad{images/cropped_pdfs/bild_2_4-06.pdf}{Hög HF-selektion}{fig:bildII4-6}
 
 \newpage
 
@@ -104,7 +104,7 @@ endast bärvåg.
 En omodulerad bärvåg alstrar nämligen endast en likström i en
 detektormottagare.
 Vid nyckling hörs då endast knäppningar i hörtelefonen vid början och
-slutet av teckendelarna, så som illustreras i bild \ref{fig:bildII4-7}.
+slutet av teckendelarna, så som illustreras i bild \ssaref{fig:bildII4-7}.
 
 Detektormottagaren fungerar inte heller vid J3E, det vill säga SSB och övriga
 sändningsslag med undertryckt bärvåg.
@@ -115,7 +115,8 @@ I båda ovannämnda fall kan talet återställas med tillsats av en bärvåg.
 Slutligen kan sändningsslag som innebär frekvens- och fasmodulering i
 princip inte demoduleras med detektormottagare.
 
-\mediumplustopfig{images/cropped_pdfs/bild_2_4-08.pdf}{Mottagare med direkt frekvensblandning}{fig:bildII4-8}
+\newpage
+\mediumtopfig{images/cropped_pdfs/bild_2_4-08.pdf}{Mottagare med direkt frekvensblandning}{fig:bildII4-8}
 
 \subsection{Mottagare med direkt frekvensblandning}
 \harecsection{\harec{a}{4.2.2}{4.2.2}, \harec{a}{4.3.2}{4.3.2}, \harec{a}{4.3.3}{4.3.3}, \harec{a}{4.3.6}{4.3.6}, \harec{a}{4.3.7}{4.3.7}}
@@ -137,7 +138,7 @@ Därav namnet \emph{Beat Frequency Oscillator (BFO)}.
 Förfarandet har givit mottagartypen sitt namn -- direktblandad mottagare.
 
 Ett sätt att komplettera den raka mottagaren med BFO framgår av bild
-\ref{fig:bildII4-8}.
+\ssaref{fig:bildII4-8}.
 När BFO kopplas till och ställs in på en frekvens tillräckligt
 nära mottagningsfrekvensen så uppstår en hörbar ton.
 
@@ -147,9 +148,9 @@ Dessa båda signaler blandas i dioden och skillnadsfrekvensen är den hörbara
 tonen.
 Övriga blandningsprodukter dämpas av ett lågpassfilter.
 
-\mediumplustopfig{images/cropped_pdfs/bild_2_4-09.pdf}{Demodulering i mottagare med direkt frekvensomvandling -- CW-signaler}{fig:bildII4-9}
+\mediumtopfig{images/cropped_pdfs/bild_2_4-09.pdf}{Demodulering i mottagare med direkt frekvensomvandling -- CW-signaler}{fig:bildII4-9}
 
-\mediumplustopfig{images/cropped_pdfs/bild_2_4-10.pdf}{Demodulering i mottagare med direkt frekvensomvandling -- SSB-signaler}{fig:bildII4-10}
+\mediumherefig{images/cropped_pdfs/bild_2_4-10.pdf}{Demodulering i mottagare med direkt frekvensomvandling -- SSB-signaler}{fig:bildII4-10}
 
 \newpage
 \subsubsection{Mottagning av telegrafi (CW)}
@@ -158,7 +159,7 @@ tonen.
 \index{telegrafi}
 \index{mottagare!CW}
 
-Bild \ref{fig:bildII4-9} illustrerar blandning av CW-signal och BFO-signal
+Bild \ssaref{fig:bildII4-9} illustrerar blandning av CW-signal och BFO-signal
 för ett antal fall.
 
 Då BFO (VFO) är inställd på frekvensen \(f_2\) = \SI{1831}{\kilo\hertz} och den
@@ -198,7 +199,7 @@ de mottagna modulationsprodukterna.
 Vid blandningen uppstår blandningsprodukter som består dels av LF, dels av
 andra högre frekvenser som dämpas i ett lågpassfilter.
 
-Bild \ref{fig:bildII4-10} illustrerar en undertryckt bärvåg på
+Bild \ssaref{fig:bildII4-10} illustrerar en undertryckt bärvåg på
 \SI{1835}{\kilo\hertz} och dess lägre sidband LSB som sträcker sig från
 \SI{1832}{\kilo\hertz} till \SI{1834,7}{\kilo\hertz}.
 Det demodulerade sidbandet sträcker sig från \SI{300}{\hertz} till
@@ -216,6 +217,7 @@ frekvenserna av utfrekvenserna 1834,7; 1834 och \SI{1832}{\kilo\hertz}.
 VFO ersätter SSB-sändarens bärvåg och ska ha samma frekvens --
 \SI{1835}{\kilo\hertz} -- för att kunna återge 300, 1000 och \SI{3000}{\hertz}.
 
+\newpage
 \subsection{Selektionen i direktblandade mottagare}
 \index{selektion}
 \index{mottagare!selektion}
@@ -255,7 +257,7 @@ Från blandarutgången kommer då en ton med frekvensen \SI{800}{\hertz}.
 Men sändaren är inte ensam på bandet.
 Kommer till exempel SSB-sändaren på 1835, som moduleras med 300, 1000 och
 \SI{3000}{\hertz}, att störa mottagningen?
-Se bild \ref{fig:bildII4-11}.
+Se bild \ssaref{fig:bildII4-11}.
 
 Förkretsen i mottagaren är så bred att denna sändning passerar.
 SSB-sändarens signalfrekvenser i det utsända sidbandet är 1834,7; 1834,0 och
@@ -269,6 +271,7 @@ För att förbättra CW-mottagningen, så kan lågpassfiltret bytas ut mot ett
 bandpassfilter, som endast släpper igenom ett smalt frekvensområde omkring
 mittfrekvensen \SI{800}{\hertz}.
 
+\mediumbotfig{images/cropped_pdfs/bild_2_4-12.pdf}{Passbandbredd och spegelfrekvenser i direktblandade mottagare}{fig:bildII4-12}
 \subsection{Passband och spegelfrekvenser i direktblandare}
 \index{passband}
 \index{spegelfrekvenser}
@@ -285,7 +288,7 @@ Men vilka frekvenser kan tas emot genom ett lågpassfilter,
 \textbf{Experiment:}
 Ändra frekvensen på en CW-sändare långsamt från 1820 till
 \SI{1840}{\kilo\hertz}.
-Se bild \ref{fig:bildII4-12}
+Se bild \ssaref{fig:bildII4-12}
 
 Sändarfrekvensen \SI{1820}{\kilo\hertz} hörs knappast eftersom
 blandningsprodukten har frekvensen \SI{9,2}{\kilo\hertz} och den dämpas kraftigt
@@ -307,7 +310,7 @@ sändningsfrekvens mellan 1826,2 och \SI{1832,2}{\kilo\hertz}, varvid
 blandningsprodukten har frekvenser från \SI{3000}{\hertz}, ner genom noll och
 upp till \SI{3000}{\hertz} igen.
 
-\mediumfig{images/cropped_pdfs/bild_2_4-12.pdf}{Passbandbredd och spegelfrekvenser i direktblandade mottagare}{fig:bildII4-12}
+% \mediumfig{images/cropped_pdfs/bild_2_4-12.pdf}{Passbandbredd och spegelfrekvenser i direktblandade mottagare}{fig:bildII4-12}
 
 Vår mottagare har bandbredden \SI{6}{\kilo\hertz}.
 Varje annan sändare inom denna \emph{passbandbredd} kommer att höras eller --

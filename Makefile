@@ -141,14 +141,14 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	wc -l TODOs
 
 # Länkade bilder
-images.linked: koncept.tex $(KONCEPT_FILES)
-	grep images *.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images.linked
+images_linked: koncept.tex $(KONCEPT_FILES)
+	grep images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
-images.avail:
-	ls images/*.pdf | sed -e s/\.pdf// | sort -u > images.avail
+images_avail:
+	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_avail.txt
 
-images.unlinked: images.avail images.linked
-	diff images.avail images.linked | grep \< | sed -e s/\<\ // > images.unlinked
+images_unlinked: images_avail images_linked
+	diff images_avail.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 # Genererade bilder
 images/power1.pdf: images/power1.mac

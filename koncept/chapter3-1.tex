@@ -10,7 +10,7 @@
 
 \smallfig{images/cropped_pdfs/bild_2_3-01.pdf}{Seriekopplade resistorer}{fig:BildII3-01}
 
-Bild \ref{fig:BildII3-01} visar seriekopplade resistorer.
+Bild \ssaref{fig:BildII3-01} visar seriekopplade resistorer.
 Den totala resistansen av seriekopplade resistorer är summan av resistanserna.
 
 \[R = R_1 + R_2 + R_3 \cdots \]
@@ -37,9 +37,9 @@ resistanser. För två resistorer gäller
 \index{parallellkoppling!resistorer}
 \label{parallellkopplade_resistorer}
 
-\smallfig{images/cropped_pdfs/bild_2_3-02.pdf}{Parallellkopplade resistorer}{fig:BildII3-02}
+\smallfigpad{images/cropped_pdfs/bild_2_3-02.pdf}{Parallellkopplade resistorer}{fig:BildII3-02}
 
-Bild \ref{fig:BildII3-02} visar parallellkopplade resistorer.
+Bild \ssaref{fig:BildII3-02} visar parallellkopplade resistorer.
 Den totala resistansen av parallellkopplade resistorer är lägre än den lägsta
 enstaka resistansen.
 
@@ -77,7 +77,7 @@ För två resistorer gäller
 \smallfig{images/cropped_pdfs/bild_2_3-03.pdf}{Resistiv spänningsdelare}{fig:BildII3-03}
 
 Spänningsdelare förekommer i flera former.
-Bild \ref{fig:BildII3-03} visar en spänningsdelare med resistorer där
+Bild \ssaref{fig:BildII3-03} visar en spänningsdelare med resistorer där
 spänningen \(U\) delas upp i spänningen \(U_1\) över resistorn \(R_1\)
 respektive \(U_2\) över \(R_2\).
 
@@ -117,7 +117,7 @@ på den inre resistansen i voltmetern.
 
 \smallfig{images/cropped_pdfs/bild_2_3-04.pdf}{Wheatstones brygga}{fig:BildII3-04}
 
-En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga}, se bild \ref{fig:BildII3-04},
+En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga}, se bild \ssaref{fig:BildII3-04},
 som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
@@ -151,9 +151,9 @@ det är fråga om en växelströmskrets.
 \index{parallellkoppling!kondensatorer}
 \label{parallellkopplade kondensatorer}
 
-\smallfig{images/cropped_pdfs/bild_2_3-05.pdf}{Parallellkopplade kondensatorer}{fig:BildII3-05}
+\smallfig[0.3]{images/cropped_pdfs/bild_2_3-05.pdf}{Parallellkopplade kondensatorer}{fig:BildII3-05}
 
-Bild \ref{fig:BildII3-05} visar parallellkopplade kondensatorer.
+Bild \ssaref{fig:BildII3-05} visar parallellkopplade kondensatorer.
 I stället för att använda en enda kondensator kan man parallellkoppla flera
 kondensatorer för att uppnå önskad total kapacitans.
 
@@ -164,7 +164,7 @@ enskilda kapacitanserna.
   C = C_1 + C_2 + C_3 + \cdots C_n
 \]
 %
-\begin{minipage}{\columnwidth}
+%\begin{minipage}{\columnwidth}
 \textbf{Räkneexempel:}
 \begin{enumerate}
 \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
@@ -180,7 +180,7 @@ enskilda kapacitanserna.
     &= \SI{1,005}{\nano\farad}
   \end{align*}
 \end{enumerate}
-\end{minipage}
+%\end{minipage}
 
 \subsection{Seriekopplade kondensatorer}
 \harecsection{\harec{a}{3.1.1e}{3.1.1e}}
@@ -190,7 +190,7 @@ enskilda kapacitanserna.
 
 \smallfig[0.3]{images/cropped_pdfs/bild_2_3-06.pdf}{Seriekopplade kondensatorer}{fig:BildII3-06}
 
-Bild \ref{fig:BildII3-06} visar seriekopplade kondensatorer.
+Bild \ssaref{fig:BildII3-06} visar seriekopplade kondensatorer.
 Den totala kapacitansen för seriekopplade kondensatorer är lägre än kapacitansen
 för kondensatorn med det minsta värdet.
 %
@@ -208,8 +208,8 @@ För två kondensatorer gäller:
 %%
 \noindent
 \textbf{Räkneexempel:}
-\begin{enumerate}
-  \item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
+
+ \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
       C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
@@ -217,7 +217,6 @@ För två kondensatorer gäller:
       = 3\frac{1}{3}\
       \approx \SI{3,33}{\micro\farad}
     \end{align*}
-\end{enumerate}
 
 \subsection{Galvaniskt kopplade induktorer}
 \label{galvaniskt_kopplade_induktorer}
@@ -236,14 +235,14 @@ gäller:
 %
 \[L = L_1 + L_2 + L_3 + \cdots L_n\]
 %
+\newpage
 \noindent
 \textbf{Räkneexempel:}
-\begin{enumerate}
-\item \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
+
+  \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
 \begin{align*}
   L = L_1 + L_2 = 20 + 50 = \SI{70}{\milli\henry}
 \end{align*}
-\end{enumerate}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
 \harecsection{\harec{a}{3.1.1d}{3.1.1d}}
@@ -281,7 +280,7 @@ För två induktorer gäller:
 \index{magnetisk koppling!induktorer}
 \index{ömsesidig induktans}
 
-\smallfig{images/cropped_pdfs/bild_2_3-07.pdf}{Magnetiskt kopplade induktorer}{fig:BildII3-07}
+\smallfig[0.35]{images/cropped_pdfs/bild_2_3-07.pdf}{Magnetiskt kopplade induktorer}{fig:BildII3-07}
 
 I praktiken anordnas ofta induktorer så, att deras respektive magnetfält kan
 återverka på varandra -- så kallad magnetisk koppling.
@@ -295,7 +294,7 @@ Beräkningen av värdet på \(M\) är emellertid relativt komplicerad och behand
 ej här.
 I stället görs en förenklad framställning.
 
-Bild \ref{fig:BildII3-07} visar seriekopplade induktorer, vars magnetfält
+Bild \ssaref{fig:BildII3-07} visar seriekopplade induktorer, vars magnetfält
 kopplar till varandra på olika sätt.
 ''Pricken'' vid änden av induktorerna på bilden markerar magnetfältens inbördes polarisering.
 
@@ -352,7 +351,7 @@ Motverkande parallella induktorer
 
 \tallfig{images/cropped_pdfs/bild_2_3-08.pdf}{Uppladdning av en kondensator}{fig:BildII3-08}
 
-Bild \ref{fig:BildII3-08} visar uppladdning av en kondensator.
+Bild \ssaref{fig:BildII3-08} visar uppladdning av en kondensator.
 En kondensator \(C\) seriekopplas med en resistans \(R\)
 och kopplas till spänningen \(U\).
 
@@ -402,7 +401,7 @@ kondensatorn minskat till 37~\% av maxvärdet.  Efter tiden \(t = 5\tau\) åters
 
 \tallfig{images/cropped_pdfs/bild_2_3-09.pdf}{Urladdning av en kondensator}{fig:BildII3-09}
 
-Bild \ref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor \(R_2\).
+Bild \ssaref{fig:BildII3-09} visar hur en kondensator C urladdas genom en resistor \(R_2\).
 
 Spänningen över kondensatorn minskar exponentiellt under urladdningen.
 
@@ -434,13 +433,14 @@ Exempel på beräkning av tidskonstanten:
   \end{align*}
 \end{enumerate}
 
+\newpage
 \subsection{In- och urkoppling av en induktor}
 
 \subsubsection{Inkoppling}
 
 \tallfig{images/cropped_pdfs/bild_2_3-10.pdf}{Inkoppling av en induktor}{fig:BildII3-10}
 
-Bild \ref{fig:BildII3-10} visar inkopplingen av en induktor.
+Bild \ssaref{fig:BildII3-10} visar inkopplingen av en induktor.
 En induktor L i serie med en resistans R kopplas in över en likspänning U.
 Spänningen över induktorn minskar från \(U_{\it max}\) till 0.
 
@@ -472,6 +472,7 @@ Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
 induktorn ökat från noll till 63~\% av \(I_{\it max}\) och spänningen över induktorn
 minskat till 37~\% av maxvärdet.
 
+\newpage
 \subsubsection{Urkoppling}
 \label{induktor_urkoppling}
 
@@ -533,9 +534,9 @@ För att förstå hur ''LC-kretsar'' fungerar beskrivs först hur de ingående
 komponenternas resistans, induktans och kapacitans förhåller sig till varandra,
 när de kombineras och kopplas till en växelströmkälla.
 
-\mediumfig{images/cropped_pdfs/bild_2_3-11.pdf}{Faslägen och effekter i L C-kretsar}{fig:BildII3-11}
+\mediumfig[0.8]{images/cropped_pdfs/bild_2_3-11.pdf}{Faslägen och effekter i L C-kretsar}{fig:BildII3-11}
 
-Bild \ref{fig:BildII3-11} visar amplituden av spänning och ström vid ett
+Bild \ssaref{fig:BildII3-11} visar amplituden av spänning och ström vid ett
 sinusformat förlopp samt den effekt som då utvecklas.
 Tidsaxeln är graderad 0--360\degree~per period.
 
@@ -660,7 +661,7 @@ Om ingen reaktans finns, är impedansen lika med resistansen.
 
 \smallfig{images/cropped_pdfs/bild_2_3-12.pdf}{Seriekrets av L+C+R}{fig:BildII3-12}
 
-Bild \ref{fig:BildII3-12} visar en induktor, en kondensator och en resistor
+Bild \ssaref{fig:BildII3-12} visar en induktor, en kondensator och en resistor
 som är kopplade i serie.
 När man vill beräkna den resulterande impedansen i kretsen
 (''totala växelströmsmotståndet''), måste man ta hänsyn till att komponenternas
@@ -674,7 +675,7 @@ Detta kan göras grafiskt eller beräknas.
 
 \mediumfig{images/cropped_pdfs/bild_2_3-13.pdf}{Spänningar i seriekrets L+C+R}{fig:BildII3-13}
 
-I bild \ref{fig:BildII3-13} tänker vi oss att vektorerna i systemet vrider sig moturs med vinkelhastigheten
+I bild \ssaref{fig:BildII3-13} tänker vi oss att vektorerna i systemet vrider sig moturs med vinkelhastigheten
 \(\omega = 2\pi f\) där \(f\) är frekvensen.
 Eftersom vektorerna har samma frekvens, så är vektorernas lägen inbördes samma.
 Ögonblicksvärdet av respektive vektorer följer en sinuskurva.
@@ -689,8 +690,8 @@ Man säger att de är i motfas.
 
 \mediumfig{images/cropped_pdfs/bild_2_3-14.pdf}{Impedansen och fasvinkeln i seriekrets L+C+R}{fig:BildII3-14}
 
-I bild \ref{fig:BildII3-14} visas vektorerna för komponenterna i bild
-\ref{fig:BildII3-12} samt hur man grafiskt bestämmer impedansen för dessa
+I bild \ssaref{fig:BildII3-14} visas vektorerna för komponenterna i bild
+\ssaref{fig:BildII3-12} samt hur man grafiskt bestämmer impedansen för dessa
 vektorer.
 Vidare får man fasvinkeln mellan impedansens och resistansens vektor, varav den
 senare är den så kallade riktfasen för hela seriekretsen.
@@ -778,7 +779,7 @@ Av vad som framgått tidigare i detta avsnitt kan även slutsatsen dras att:
 
 \smallfig{images/cropped_pdfs/bild_2_3-15.pdf}{Parallellkopplad LC-krets}{fig:BildII3-15}
 
-En parallellkopplad LC-krets är i bild \ref{fig:BildII3-15} ansluten till
+En parallellkopplad LC-krets är i bild \ssaref{fig:BildII3-15} ansluten till
 växelspänningen \(U\) från en signalgenerator med inställbar frekvens \(f\).
 Två fall studeras.
 
@@ -791,7 +792,7 @@ Signalgeneratorns frekvens \(f\) ställs lika med LC-kretsens resonansfrekvens
 Då visar kretsen hög impedans \(Z\) mot generatorn.
 En stark ström cirkulerar i LC-kretsen, men endast en svag ström flyter i
 ledningen mellan generator och krets.
-Jämför med modellförsöket på bild \ref{fig:BildII3-17}.
+Jämför med modellförsöket på bild \ssaref{fig:BildII3-17}.
 
 \item[Fall 2:] \(f > f_{\it res}\) eller \(f < f_{\it res}\)
 
@@ -853,7 +854,7 @@ mindre än \(X_C\).
 
 \smallfig[0.5]{images/cropped_pdfs/bild_2_3-16.pdf}{Seriekopplad LC-krets}{fig:BildII3-16}
 
-En seriekopplad LC-krets i bild \ref{fig:BildII3-16} ansluts till
+En seriekopplad LC-krets i bild \ssaref{fig:BildII3-16} ansluts till
 växelspänningen \(U\) från en signalgenerator med inställbar frekvens \(f\).
 Två fall studeras.
 
@@ -898,7 +899,7 @@ ritas rakt uppåt.
 
 \smallfig{images/cropped_pdfs/bild_2_3-17.pdf}{Svängningskrets}{fig:BildII3-17}
 
-Bild \ref{fig:BildII3-17} visar en svängningskrets som består av en
+Bild \ssaref{fig:BildII3-17} visar en svängningskrets som består av en
 kondensator och en induktor med förskjutbar järnkärna.
 En ändring av kärnans tvärsnitt ändrar den magnetiska ledningsförmågan och
 därmed induktansen varför även reaktansen \(X_L\) ändras.
@@ -986,7 +987,7 @@ uppstår.
 Inne i en parallellkrets i resonans cirkulerar alltså en stark ström,
 som endast begränsas av kretsens resistans.
 
-Bild \ref{fig:BildII3-18} visar en parallellkrets där induktorn har resistansen
+Bild \ssaref{fig:BildII3-18} visar en parallellkrets där induktorn har resistansen
 \(r_L\) och kondensatorn antas vara förlustfri.
 Vidare förutsätts att kretsen är i resonans.
 
@@ -1018,7 +1019,7 @@ kallade L/C-förhållandet samt av kretsens resistiva förluster.
 
 \tallfig{images/cropped_pdfs/bild_2_3-19.pdf}{Resonansfallet i seriekrets}{fig:BildII3-19}
 
-Bild \ref{fig:BildII3-19} visar en seriekrets är i resonans, så är
+Bild \ssaref{fig:BildII3-19} visar en seriekrets är i resonans, så är
 
 \begin{align*}
 & X_C = X_L \quad & \text{dvs.} \quad \frac{1}{\omega C} = \omega L\\
@@ -1054,7 +1055,7 @@ kapacitans (som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
 
 \smallfig{images/cropped_pdfs/bild_2_3-20.pdf}{Q-värden i parallellkrets}{fig:BildII3-20}
 
-Bild \ref{fig:BildII3-20} illustrerar Q-värden för parallellkrets.
+Bild \ssaref{fig:BildII3-20} illustrerar Q-värden för parallellkrets.
 Godhetstalet Q (=Quality Factor) kan ses som den förmåga en resonanskrets har
 att lagra energi, det vill säga förhållandet mellan den lagrade energin och
 energiförlusten i kretsen.
@@ -1092,7 +1093,7 @@ större kretsförlusterna.
 \harecsection{\harec{a}{3.2.6}{3.2.6}}
 \index{bandbredd}
 
-Bild \ref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har
+Bild \ssaref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen har
 vid olika frekvenser.
 Impedansens högsta värde är vid frekvensen \(f_{\it res}\) och avtar vid frekvenser
 som är högre eller lägre.

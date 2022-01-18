@@ -16,14 +16,12 @@ jobs:
       - name: 'Checka ut'
         uses: actions/checkout@v2
       - name: 'Installera'
-        run: >-
-          sudo apt-get -q install
-          texlive
-          texlive-lang-european
-          texlive-science
-          texlive-fonts-recommended
-          texlive-fonts-extra
-          language-pack-sv
+        run: |
+          sudo apt-get update
+          sudo apt-get -q install texlive \
+            texlive-lang-european texlive-science \
+            texlive-fonts-recommended texlive-fonts-extra \
+            language-pack-sv
       - name: 'Kopiera hash'
         run: echo ${{ github.sha }} | cut -c1-7 > SHA.txt
       - name: 'Bygg'
@@ -32,9 +30,20 @@ jobs:
         run: sha256sum koncept.pdf
       - name: 'Byt namn'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
+      - name: 'Skapa rapporter'
+        run: |
+          make images_unlinked
+          make TODOs
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v2
         with:
           name: koncept-pdf
           path: koncept*.pdf
           retention-days: 31
+      - name: 'Ladda upp rapporter'
+        uses: actions/upload-artifact@v2
+        with:
+          name: rapporter
+          path: |
+            images_unlinked.txt
+            TODOs
