@@ -226,13 +226,13 @@ begränsa det lokala SAR-värdet.
 \mediumfig[0.87]{images/emfbild-000}{Referensvärden för begränsning av elektriska fält (100~kHz--10~GHz)}{fig:emf1}
 \mediumfig[0.87]{images/emfbild-001}{Referensvärden för begränsning av magnetiska fält (100~kHz--10~GHz)}{fig:emf2}
 
-Bild \ref{fig:emf1} illustrerar referensvärden för begränsning av elektriska
+Bild \ssaref{fig:emf1} illustrerar referensvärden för begränsning av elektriska
 fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
 och fältstyrkenivå angivna, till exempel \SI{10,15}{\mega\hertz} har en högsta
 tillåtna elektriskt fältstyrka på \SI{28}{\volt\per\metre}.
 
 \newpage
-Bild \ref{fig:emf2} illustrerar referensvärden för begränsning av magnetiska
+Bild \ssaref{fig:emf2} illustrerar referensvärden för begränsning av magnetiska
 fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
 och fältstyrkenivå angivna, till exempel \SI{10,15}{\mega\hertz} har en högsta
 tillåtna magnetisk fältstyrka på \SI{73}{\milli\ampere\per\metre}.
@@ -266,7 +266,7 @@ Detta medför att en vanlig dipolantenn som används som referens för 0\,dBd ha
 en förstärkning på 2,15\,dBi jämfört med en isotrop antenn.
 
 Alla värden på antennförstärkning uttryckt i dBd ska därför ökas med 2,15 för
-att kunna användas i tabell \ref{tab:forst} som visar förhållandet mellan
+att kunna användas i tabell \ssaref{tab:forst} som visar förhållandet mellan
 förstärkning i \si{\decibel} och linjära faktorer.
 
 \begin{table*}[ht]
@@ -302,7 +302,7 @@ Beroende på trafiksätt så blir medeleffekten olika.
 Används FM så medför det modulationssättet att man använder max uteffekt
 kontinuerligt jämfört med SSB där medeleffekten beror på hur man talar.
 
-Nedanstående tabell är de faktorer som enligt OET bulletin 65 supplement b,
+Tabell~\ssaref{tab:modfakt} ger de faktorer som enligt OET bulletin 65 supplement b,
 \cite{OETbul65b} används i USA för att räkna ut medeleffekten på grund
 av modulationsfaktorn.
 
@@ -331,6 +331,7 @@ Vid vanlig amatörradioanvändning sänder man inte kontinuerligt då växling
 mellan sändning och lyssning sker regelbundet.
 Sänder man och tar emot lika mycket under en sexminutersperiod så blir faktorn
 0,5 men om man lyssnar mycket mer och sänder sällan blir faktorn mindre.
+Se tabell~\ssaref{tab:intfakt} för fler exempel.
 
 \begin{table}[H]
   \begin{center}
@@ -369,7 +370,7 @@ Annars överskattas den genererade fältstyrkan.
 
 Även här måste linjära faktorer användas.
 Förlusterna i en kabel har negativa värden uttryckt i \si{\decibel} vilket
-medför att faktorerna i tabell \ref{tab:feedannut} blir mindre än ett.
+medför att faktorerna i tabell \ssaref{tab:feedannut} blir mindre än ett.
 
 \begin{table*}[ht]
   \begin{center}
@@ -405,14 +406,14 @@ platser allmänheten riskerar att exponeras för elektromagnetiska fält.
 
 Beräkning av det elektromagnetiska fältet kan med enkelhet bara
 genomföras i fjärrfältet från en antenn.
-I fjärrfältet vet vi sedan tidigare att man antigen kan utvärdera det
+I fjärrfältet vet vi sedan tidigare att man antingen kan utvärdera det
 elektriska eller det magnetiska fältet.
 Av denna anledning beskrivs här enbart beräkning av det elektriska fältets del av
 det elektromagnetiska fältet.
 Ett vedertaget avstånd från antennen där fjärrfältsberäkningar kan genomföras
 är
 %% \(d=\dfrac{\lambda}{6}\).
-\(d=\lambda / 6\).
+\(d=\lambda / 6\). Se bild~\ssaref{tab:fjfltgr}.
 
 Följande formler gäller enbart för beräkning av korrekt fältstyrka i
 fjärrfältet men kan för enklare antenner användas för att uppskatta den

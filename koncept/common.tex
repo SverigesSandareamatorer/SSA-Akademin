@@ -66,6 +66,11 @@
 {\end{pdfsidelinecomment}}
 \newenvironment{rev-releasat}{\begin{pdfsidelinecomment}[color=blue,linewidth=3px,caption=inline]{Klart}}{\end{pdfsidelinecomment}}
 
+%% k7per: Swap these two definitions if you want a small Orange blob
+%% behind the ref locations for ease of layout work.
+\newcommand\ssaref[1]{\ref{#1}}
+%% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
+
 \clubpenalty=9990
 \widowpenalty=9999
 \brokenpenalty=4999

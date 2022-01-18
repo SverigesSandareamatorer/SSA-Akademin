@@ -117,7 +117,7 @@ Den enklaste uppkopplingen av jordförbindelse är att seriekoppla jorden
 Detta förekommer till exempel i en serie av eluttag matade från samma säkring
 eller flera eluttag i en skarvdosa.
 
-I bild \ref{fig:kap4-1} att vi har tre strömförbrukare som var och en
+I bild \ssaref{fig:kap4-1} att vi har tre strömförbrukare som var och en
 bidrar med en ström \(I_1\), \(I_2\) och \(I_3\), och att dessa är
 seriekopplade till en jordanslutning.
 Från jordanslutningen till strömbidraget \(I_1\) har vi impedansen \(Z_1\),
@@ -173,7 +173,7 @@ isolation mellan de olika jordströmmarna och hur nollpotentialen upplevs.
 
 Om vi istället ansluter våra tre laster med individuella ledare till jord
 kommer de olika strömmarna inte att samverka, detta är en parallellkoppling
-av jord \cite[kap 3]{ott1988}, se bild \ref{fig:kap4-2}.
+av jord \cite[kap 3]{ott1988}, se bild \ssaref{fig:kap4-2}.
 Vi har därmed åstadkommit en isolation mellan strömmarna med avseende på
 jordanslutningen.
 
@@ -224,7 +224,7 @@ Samma teknik används ofta för själva kraftdistributionen av samma skäl.
 \index{jordbrum}
 \index{jord!brum}
 
-I ett system där man har gjort parallella jordar i matningen, bild \ref{fig:kap4-3}, 
+I ett system där man har gjort parallella jordar i matningen, bild \ssaref{fig:kap4-3}, 
 vill man nu koppla samman två apparater för att överföra en signal.
 En första naiv lösning är ju att helt enkelt bara dra en tråd \(Z_{signal}\)
 från den ena apparaten över till den andra.
@@ -336,7 +336,7 @@ Genom att helt enkelt hålla signaljorden \emph{flytande} (eng.
 \emph{floating}), det vill säga utan någon galvanisk koppling till skyddsjord,
 så kan man istället koppla samman signaljord på två apparater med separata
 ledare \(Z_{GND}\).
-I bild \ref{fig:kap4-4} är isolationen hos mottagande apparat representerad
+I bild \ssaref{fig:kap4-4} är isolationen hos mottagande apparat representerad
 av \(Z_{iso2}\) där spänningen \(U_5\) representerar spänningen mellan primär
 och sekundärsida.
 På liknande sätt kan isolationen på den sändande apparatens sida moduleras som
@@ -441,6 +441,7 @@ I detta system kommer varje extra kabel att koppla samman jordarna hårdare,
 eftersom man parallellkopplar många impedanser.
 Denna strategi väljs ofta i telekommunikationssystem.
 
+%% k7per: Varifrån ska denna figur refereras?
 \smalltikz{
   \begin{circuitikz}[american voltages]
     % Ground reference
@@ -471,7 +472,7 @@ Det är dock sällan som ett magnetfält är så starkt att det inducerar flera
 ampere av vanlig \SI{50}{\hertz} ström.
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
-\ref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
+\ssaref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
 mellan jordpunkterna så kommer vi ha den även här, men nu ansluter vi ju en
 ledning \(Z_{GND}\) mellan dessa punkter, och då kommer det gå en ström som
 försöker utjämna potentialen mellan de bägge jordanslutningarna, som då kommer
@@ -571,7 +572,7 @@ Utöver dessa har man oftast en \emph{spänningsreferens} som ofta betäcknas so
 \emph{jord} (eng. \emph{ground (GND)}) eller \emph{nolla} (eng.
 \emph{neutral}).
 
-I bild \ref{fig:kap4-6} visas hur ut-spänningen \(U_{ut}\) är dubblerad och
+I bild \ssaref{fig:kap4-6} visas hur ut-spänningen \(U_{ut}\) är dubblerad och
 matar på var sin sida om jordpotentialen som  \(I_{1}\) och \(Z_{1}\) ger.
 De bägge utspänningarna är kopplade över var sin ledare \(Z_{singal+}\) och
 \(Z_{singal-}\) för att över var sin \(Z_{load}/2\) resultera i \(U_{in+}\)
@@ -648,7 +649,7 @@ alltså betrakta dem på detta alternativa och oberoende (ortogonala) sättet.
   \label{fig:kap4-7}
 \end{figure}
 
-I bild \ref{fig:kap4-7} har man den gemensamma spänningskällan \(U_g\), som
+I bild \ssaref{fig:kap4-7} har man den gemensamma spänningskällan \(U_g\), som
 från ersatt de förskjutna jordpunkterna i tidigare exempel.
 Den differentiella spänningen \(U_d\), det vill säga den drivande spänningen
 mellan \(V_{ut+}\) och  \(V_{ut-}\) är fördelad på två spänningskällor som
@@ -762,7 +763,7 @@ störningen.
 \index{DM}
 
 Efter att ha studerat gemensam och differentiell spänning (kapitel
-\ref{comdiffv}) och gemensam och differentiell ström (kapitel \ref{comdiffi})
+\ssaref{comdiffv}) och gemensam och differentiell ström (kapitel \ref{comdiffi})
 kan vi sammanfattningsvis konstatera att den grundläggande metoden att omvandla
 de individuella spänningarna och strömmarna till \emph{gemensam överföring}
 (eng. \emph{Common Mode (CM)}) och \emph{differentiell överföring}
