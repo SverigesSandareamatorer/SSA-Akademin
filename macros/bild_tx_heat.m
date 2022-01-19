@@ -14,9 +14,9 @@ pt = ut .* it;
 
 plot(v, ut, "-k;$U_{ce}$;", v, pt, ".k;$P_t$;");
 
-
-xlabel("Angle (degrees)");
-ylabel ("Voltage (V) and Power (W)");
+axis([0 360 0 12]);
+xlabel("Vinkel (grader)");
+ylabel("Spänning (V) och Effekt (W)");
 
 file_path = fileparts(mfilename('fullpath'))
 
