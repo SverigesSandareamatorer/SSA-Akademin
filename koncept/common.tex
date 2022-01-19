@@ -111,11 +111,13 @@
 \usepackage{xstring}
 \usepackage{catchfile}
 \CatchFileDef{\HEAD}{SHA.tmp}{}
+\CatchFileDef{\BRANCH}{branch.tmp}{}
 \newcommand{\gitrevision}{%
   \StrLeft{\HEAD}{7}%
 }
 \CatchFileDef{\VERSION}{VERSION.txt}{}
 \newcommand{\revision}{%
+  \VERSION (\branch \gitrevision)%
 }
 
 %% Frontpage background
