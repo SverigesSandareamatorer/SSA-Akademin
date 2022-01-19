@@ -29,8 +29,7 @@ KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
-	koncept/chapter2-9.tex koncept/chapter2-10.tex \
-	macros/bild_tx_heat.eps
+	koncept/chapter2-9.tex koncept/chapter2-10.tex
 
 KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
