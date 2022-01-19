@@ -24,8 +24,8 @@ jobs:
             language-pack-sv
       - name: 'Kopiera info om repository'
         run: |
-          echo ${{ env.GITHUB_SHA }} | cut -c1-7 > SHA.tmp
-          echo ${{ env.GITHUB_REF_NAME }} > branch.tmp
+          echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
+          echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Beräkna checksumma'
