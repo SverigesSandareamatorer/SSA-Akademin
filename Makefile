@@ -85,6 +85,8 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
+REPO_FILES = SHA.tmp branch.tmp
+
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex koncept.tex
 #	- xelatex koncept.tex
@@ -100,8 +102,14 @@ koncept.bbl: koncept.aux koncept.bib
 koncept.ind: koncept.idx
 	makeindex koncept.idx
 
+branch.tmp:
+	touch branch.tmp
+
+SHA.tmp:
+	touch SHA.tmp
+
 koncept.log:
-koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
+koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(REPO_FILES) $(KONCEPT_FILES)
 	pdflatex koncept.tex
 	pdflatex koncept.tex
 	makeindex koncept.idx

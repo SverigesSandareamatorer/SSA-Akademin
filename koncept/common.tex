@@ -110,13 +110,12 @@
 % Prepare for version handling
 \usepackage{xstring}
 \usepackage{catchfile}
-\CatchFileDef{\HEAD}{SHA.txt}{}
+\CatchFileDef{\HEAD}{SHA.tmp}{}
 \newcommand{\gitrevision}{%
   \StrLeft{\HEAD}{7}%
 }
 \CatchFileDef{\VERSION}{VERSION.txt}{}
 \newcommand{\revision}{%
-  \VERSION (\gitrevision)%
 }
 
 %% Frontpage background
