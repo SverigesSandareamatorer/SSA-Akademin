@@ -18,15 +18,6 @@ steg och beskriver de verktyg som används för att köra koden.
 |:------------------------|
 | Dessa instruktioner är inte fullständiga men kan ändå hjälpa fram för allt de som kör Linux eller UNIX-liknande operativsystem. Just nu är den här guiden mest inriktad på [Linux/Debian-derivat](https://www.debian.org/misc/children-distros) men paketnamnen bör heta likadant i andra distributioners pakethanterare. |
 
-
--   [KOM IGÅNG](#kom-igÅng)
--   [GIT](#git)
--   [MAKE](#make)
-    -   [MAKE-MÅL OCH BYGGBEROENDEN](#make-mÅl-och-byggberoenden)
--   [INSTALLERA BEROENDEN](#installera-beroenden)
-    -   [TEX/LATEX](#texlatex)
-    -   [LATEXML](#latexml)
-
 # Kom igång
 
 Börja med att följa instruktionerna nedan för att installera verktygen
@@ -63,7 +54,7 @@ veta *hur* genereringen går till utan bara vilket kommando som ska
 köras. Make används genom att köra kommandot `make` följt av ett
 mål. Till exempel:
 ```sh
-$ make <mål>
+$ make koncept.pdf
 ```
 
 Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
@@ -71,7 +62,7 @@ kallas för beroenden. Dessa beroenden måste installeras innan Make
 ”mål:et” kan köras och instruktioner för vilka beroenden ett mål
 har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 
-### Make-mål och byggberoenden
+## Make-mål och byggberoenden
 
 För att få en översikt över vilka mål som finns listas dom här i
 tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
@@ -103,47 +94,4 @@ installeras.
 $ sudo apt-get update
 $ sudo apt-get install texlive texlive-lang-european \
     texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
-```
-
-### LaTeXML
-
-[LaTeXML](http://dlmf.nist.gov/LaTeXML/) är ett verktyg för att konvertera TeX-dokument till
-XML-filer. Den kan sedan konvertera dessa XML-filer till bland annat
-HTML. Verktyget är bra till att skapa en version av ett skrivet dokument
-som är läsbart på webben.
-
-För att få den senaste versionen av LaTeXML måste projektet laddas
-ner och beroenden måste hämtas.
-
-**Linux/Debian**
-Hämta LaTeXML:
-```sh
-$ git clone https://github.com/brucemiller/LaTeXML.git
-$ cd LaTeXML/
-```
-
-Installera [LaTeXML
-beroenden](http://dlmf.nist.gov/LaTeXML/get.html#SS2.SSS0.Px2):
-```sh
-$ sudo apt-get install \
-  libarchive-zip-perl libfile-which-perl libimage-size-perl  \
-  libio-string-perl libjson-xs-perl libtext-unidecode-perl \
-  libparse-recdescent-perl liburi-perl libuuid-tiny-perl libwww-perl \
-  libxml2 libxml-libxml-perl libxslt1.1 libxml-libxslt-perl \
-  texlive-latex-base imagemagick libimage-magick-perl perl
-```
-
-Följ sedan
-[bygginstruktionerna](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px2)
-och kör följande:
-```sh
-$ perl Makefile.PL
-$ make
-$ make test
-```
-
-[Installera LaTeXML](http://dlmf.nist.gov/LaTeXML/get.html#SS6.SSS0.Px3)
-(detta måste göras med `sudo`):
-```sh
-$ sudo make install
 ```
