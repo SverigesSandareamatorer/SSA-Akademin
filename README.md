@@ -94,4 +94,3 @@ Vårt mål är att
 -   [Lorentz "SM7NTJ" Björklund](mailto:lorentz@bet.se)
 -   [Täpp-Anders "SM5UEI" Sikvall](mailto:anders@sikvall.se)
 -   [Per "SA0PHH" Hammarlund](mailto:gladbjorn@gmail.com)
--   
