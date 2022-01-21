@@ -154,11 +154,6 @@ images_unlinked: images_avail images_linked
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
 
-# Kursplan
-kursplan.pdf: lectures/kursplan.tex
-	-xelatex lectures/kursplan.tex
-	xelatex lectures/kursplan.tex
-
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
 	xelatex lectures/ac1.tex
