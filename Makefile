@@ -146,7 +146,7 @@ images_linked: koncept.tex $(KONCEPT_FILES)
 images_available:
 	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_available.txt
 
-images_unlinked: images_avail images_linked
+images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 # Genererade bilder
