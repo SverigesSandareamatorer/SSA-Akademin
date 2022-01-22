@@ -4,6 +4,9 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
 ## [Osläppt]
+### Tillagt
+ - Ny beskrivning av glimmer.
+
 ### Ändrat
 - Bilaga A Måttenheter har gjorts om.
 - Innehållsförteckningen har två istället för tre nivåer.
