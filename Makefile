@@ -138,34 +138,28 @@ iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
 koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
 
-# TODOs
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
-	rm -f TODOs
-	- grep -n TODO *.tex koncept/*.tex > TODOs
-	- grep HAREC koncept.log >> TODOs
-	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs
-	- grep Missing koncept.log >> TODOs
-	- grep LaTeX koncept.log | grep Warning >> TODOs
-	wc -l TODOs
+	rm -f TODOs.txt
+	- grep -n TODO *.tex koncept/*.tex > TODOs.txt
+	- grep HAREC koncept.log >> TODOs.txt
+	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs.txt
+	- grep Missing koncept.log >> TODOs.txt
+	- grep LaTeX koncept.log | grep Warning >> TODOs.txt
+	wc -l TODOs.txt
 
 # Länkade bilder
 images_linked: koncept.tex $(KONCEPT_FILES)
 	grep images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
-images_avail:
-	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_avail.txt
+images_available:
+	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_available.txt
 
-images_unlinked: images_avail images_linked
-	diff images_avail.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
+images_unlinked: images_available images_linked
+	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 # Genererade bilder
 images/power1.pdf: images/power1.mac
 	maxima -b images/power1.mac
-
-# Kursplan
-kursplan.pdf: lectures/kursplan.tex
-	-xelatex lectures/kursplan.tex
-	xelatex lectures/kursplan.tex
 
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex
@@ -186,4 +180,4 @@ docker-build:
 
 clean: SHELL=/bin/bash -O extglob -c
 clean:
-	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin|versionsnummer).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs *.xml
+	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin|versionsnummer).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs.txt *.xml

@@ -1,8 +1,6 @@
 ## Windows
 Thumbs.db
 Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
 [Dd]esktop.ini
 
 ## MacOS
@@ -191,6 +189,7 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
+
 # Finished output
 koncept.pdf
 koncept-tryck.pdf
@@ -201,7 +200,8 @@ ac1.pdf
 ac2.pdf
 
 # Temp
-images_avail.txt
+SHA.txt
+images_available.txt
 images_linked.txt
 images_unlinked.txt
-TODOs
+TODOs.txt
