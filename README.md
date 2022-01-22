@@ -90,6 +90,7 @@ Vårt mål är att
 
 -   [**Jonas "SM5PHU" Hultin**](mailto:sm5phu@gmail.com)
 -   [Magnus "SA0MAD" Danielsson](mailto:magnus@rubidium.se)
--   [Hans "SM0UTY" Insulander](mailto:hans.insulander@codium.se)
--   [Petter "SA2PKA" Karkea](mailto:petter@karkea.se)
--   [Peter "SA2BLV" Lundberg](mailto:pette.lundberg@gmail.com)
+-   [Philip "SA1EPH" Eriksson](mailto:ego@philiperiksson.se)
+-   [Lorentz "SM7NTJ" Björklund](mailto:lorentz@bet.se)
+-   [Täpp-Anders "SM5UEI" Sikvall](mailto:anders@sikvall.se)
+-   [Per "SA0PHH" Hammarlund](mailto:gladbjorn@gmail.com)
