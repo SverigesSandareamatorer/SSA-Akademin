@@ -22,16 +22,19 @@ jobs:
             texlive-lang-european texlive-science \
             texlive-fonts-recommended texlive-fonts-extra \
             language-pack-sv
-      - name: 'Kopiera hash'
-        run: echo ${{ github.sha }} | cut -c1-7 > SHA.txt
+      - name: 'Kopiera info om repository'
+        run: |
+          echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
+          echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg'
         run: make koncept.pdf
       - name: 'Beräkna checksumma'
         run: sha256sum koncept.pdf
       - name: 'Byt namn'
-        run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.txt).pdf
+        run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Skapa rapporter'
         run: |
+          make images_linked
           make images_unlinked
           make TODOs
       - name: 'Ladda upp artefakt'
@@ -45,5 +48,6 @@ jobs:
         with:
           name: rapporter
           path: |
+            images_linked.txt
             images_unlinked.txt
-            TODOs
+            TODOs.txt

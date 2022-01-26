@@ -1,4 +1,4 @@
-SSA-Akademin
+SSA Akademin
 ============
 
 [![Bygg KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml) [![Download-knapp](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
@@ -6,8 +6,8 @@ SSA-Akademin
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
 syfte att utbilda nya radioamatörer.
-Den första upplagan är skriven 1997 och behöver därför en uppdatering och
-tryckas i en ny upplaga.
+Den första upplagan är skriven 1997 och behövde en uppdatering och tryckas i en
+ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 Den tryckta boken kan [köpas från SSA:s HamShop](https://hamshop.ssa.se/index.php?route=product/product&path=87_88&product_id=72).
@@ -70,7 +70,7 @@ För att göra merge följer man instruktionerna i [`MERGE.md`](MERGE.md).
 För att göra release följer man instruktionerna i [`RELEASE.md`](RELEASE.md).
 
 
-# Om SSA-Akademin
+# Om SSA Akademin
 
 Arbetet med denna bok är en del i en större satsning på att
 uppdatera gammalt material, digitalisera material men också bredda
@@ -90,7 +90,7 @@ Vårt mål är att
 
 -   [**Jonas "SM5PHU" Hultin**](mailto:sm5phu@gmail.com)
 -   [Magnus "SA0MAD" Danielsson](mailto:magnus@rubidium.se)
--   [Philip "SA1EPH" Eriksson](mailto:ego@philiperiksson.se)
+-   [Philip "SA1EPH" Eriksson](mailto:philiperiksson@gmail.com)
 -   [Lorentz "SM7NTJ" Björklund](mailto:lorentz@bet.se)
 -   [Täpp-Anders "SM5UEI" Sikvall](mailto:anders@sikvall.se)
 -   [Per "SA0PHH" Hammarlund](mailto:gladbjorn@gmail.com)
