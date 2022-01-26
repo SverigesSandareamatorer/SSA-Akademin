@@ -29,8 +29,8 @@ KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
-	koncept/chapter2-9.tex koncept/chapter2-10.tex \
-	images/power1.pdf
+	koncept/chapter2-9.tex koncept/chapter2-10.tex
+
 KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
@@ -151,8 +151,8 @@ images_unlinked: images_avail images_linked
 	diff images_avail.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 # Genererade bilder
-images/power1.pdf: images/power1.mac
-	maxima -b images/power1.mac
+macros/bild_tx_heat.eps: macros/bild_tx_heat.m
+	octave macros/bild_tx_heat.m
 
 # Genererade presentationer
 ac1.pdf: lectures/ac1.tex

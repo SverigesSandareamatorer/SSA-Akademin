@@ -117,26 +117,31 @@ omgivningen att minska och det krävs inte lika stor effekt för att få
 upp lödpunkten i rätt temperatur för att kunna genomföra lödningen med god
 \emph{vätning} och därmed undvika att det bildas en kallödning.
 
-% \newpage % layout
 \subsection{Värme i transistor}
 \harecsection{\harec{a}{2.7.3}{2.7.3}}
 
-För att förstå värmealstring i en transistor börjar vi med att tänka oss att vi
-har en transistor med \SI{12}{\volt} matningsspänning.
-Vi låter den generera en sinussignal med topp-till-topp-värdet \(10\ V_{pp}\) in i en 50~ohms last.
-Vad är effektförlusten i transistorn?
+\mediumtopfig{macros/bild_tx_heat.pdf}{Värmealstring i en transistor. Transistorspänning $U_{ce}$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
 
-%% k7per
-\mediumtopfig{images/power1.pdf}{Utspänning $U_{ut}$, transistorspänning $U_t$, transistorström $I_t$ och transistoreffekt $P_t$ varierar med vinkeln hos sinussignalen för resistiv last.}{fig:power1}
+För att förstå värmealstring i en transistor börjar vi med att titta
+på effektförbrukningen, \(P_t\), i en NPN-transistor som kan beskrivas
+som
 
-I bild \ssaref{fig:power1} ser vi utsignalen \(U_{ut}\) som en sinussignal med
-amplituden \(10\ V_{pp}\).
-Transistorn har en vilospänning på \SI{6}{\volt} för att få marginal mot
-\SI{0}{\volt} och \SI{+12}{\volt}. Spänningen \(U_t\) varierar
-mellan \SI{1}{\volt} och \SI{11}{\volt}. I utgångslastens resistor alstras en ström \(I_t\) som är proportionerlig mot spänningen
-\(U_{ut}\) på utgången. Effekten för transistorn \(P_t\) är absolutvärdet av strömmen gånger spänningen enligt Joules lag. 
-%%
-\[P_t = \lvert U_t \cdot I_t \rvert\]
-%%
-Den observante ser att effekten är signifikant högre för andra halvan av kurvan, då man har både
-hög spänning och hög ström.
+\[P_t \approx U_{be}\cdot I_b + U_{ce}\cdot I_c,\]
+%
+där \(U_{be}\) är spänningen från bas till emittor, \(I_b\)
+strömmen genom bas,  \(U_{ce}\) spänningen från kollektor till
+emittor, och \(I_c\) strömmen genom kollektor.
+Oftast är strömmen genom basen försumbar.
+
+För att gå lite djupare tänker vi oss ett exempel med en transistor i
+enkel Klass A förstärkarkrets, se kapital~\ref{klassabc}.
+Transistorn har en \SI{12}{\volt} matningsspänning och har en
+vilospänning på \SI{6}{\volt} för att få marginal mot \SI{0}{\volt}
+och \SI{+12}{\volt}.
+Den genererar en sinussignal med topp-till-topp-värdet \(10\ V_{pp}\)
+in i en resistiv last.
+
+Spänningen kollektor till emittor, \(U_{ce}\), och strömmen, \(I_c\),
+är 180 grader ur fas så den resulterande effekten, \(P_t\), har sina
+maxvärden mellan spänningens max- och minvärden, se bild
+\ref{fig:power1}.
