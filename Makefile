@@ -109,7 +109,7 @@ SHA.tmp:
 	touch SHA.tmp
 
 koncept.log:
-koncept.pdf: koncept.aux koncept.bbl koncept.ind koncept.tex $(REPO_FILES) $(KONCEPT_FILES)
+koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
 	pdflatex koncept.tex
 	pdflatex koncept.tex
 	makeindex koncept.idx
