@@ -3,7 +3,7 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
-## [Osläppt]
+## [2.5.0] - 2022-01-27
 ### Tillagt
  - Ny beskrivning av glimmer.
 
@@ -15,6 +15,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ### Fixat
 - Ett stort antal skrivfel har rättats.
+- Figur 2.51 har gjorts svartvit.
 - Texten återspeglar att solfläckscykel 25 är den nuvarande.
 - Rätt telefonnummer till SSA:s kansli.
 
