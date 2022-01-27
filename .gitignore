@@ -200,7 +200,8 @@ ac1.pdf
 ac2.pdf
 
 # Temp
-SHA.txt
+SHA.tmp
+branch.tmp
 images_available.txt
 images_linked.txt
 images_unlinked.txt
