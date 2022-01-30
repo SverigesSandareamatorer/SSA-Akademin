@@ -71,7 +71,7 @@ KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik
 	koncept/appendix-kunskapskrav.tex
 KONCEPT_OTHER_FILES = koncept/common.tex \
 	koncept/foreword.tex koncept/introduction.tex \
-	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
+	koncept/framsida.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
 	koncept/koncept-core.tex \
 	koncept.tex
