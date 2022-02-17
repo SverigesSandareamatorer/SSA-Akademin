@@ -3,6 +3,8 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
+## [Osläppt]
+
 ## [2.5.0] - 2022-01-27
 ### Tillagt
  - Ny beskrivning av glimmer.
@@ -86,7 +88,8 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...HEAD
+[2.6.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.2.0...v2.3.0
