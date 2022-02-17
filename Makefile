@@ -69,11 +69,10 @@ KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik
 	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-kunskapskrav.tex
-KONCEPT_OTHER_FILES = koncept/common.tex \
-	koncept/foreword.tex koncept/introduction.tex \
+KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
-	koncept/koncept-core.tex \
+	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \

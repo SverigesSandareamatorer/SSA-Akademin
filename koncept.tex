@@ -1,21 +1,234 @@
-%\documentclass[a4paper,twoside,openright,10pt]{memoir}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  KonCEPT för amatörradiocertifikat
+% Föreningen Sveriges Sändareamatörer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% LaTeX-dokument behöver ha en klass. report är snarlik book.
 \documentclass[10pt,openright]{report}
+%
+% Sätt sidstorlek och marginaler.
+\usepackage[
+  a4paper,
+  twoside,
+  twocolumn,
+  inner=2.2cm,
+  outer=1.9cm,
+  columnsep=0.9cm,
+  top=2cm,
+  bottom=2cm
+]{geometry}
+%
+% Kunna generera bl.a. svenska tecken.
+\usepackage[T1]{fontenc}
+%
+% Tillåt bl.a. svenska tecken (UTF-8) i källkoden.
 \usepackage[utf8]{inputenc}
-
+%
+% Svenska: format, avstavning m.m.
+\usepackage[swedish]{babel}
+\extraswedish
+%
+% Paketet definierar en miljö tabularx, en förlängning av tabulär som har en
+% extra kolumnbeteckning, X, som skapar en styckeliknande kolumn vars bredd
+% automatiskt expanderar så att den deklarerade bredden av miljön fylls.
 \usepackage{tabularx}
-
+%
 %% k7per: Uncomment this line if you want a black box at
 %% each overfull hbox, comment for product.
 %% \overfullrule=10pt
-
+%
+% Generera synkning av förhandsvisning av PDF med källkoden.
 \synctex=1
+%
+% (Beskrivning saknas.)
 \usepackage{xtab}
+%
+% Ett intelligent kommatecken, som ger rätt avstånd i decimaltal såväl som i
+% matematiska uttryck. Till skillnad från andra kända lösningar, är detta paket
+% inte beroende av kodningen av CM-mattesnitten, och det fungerar med decimaltal
+% av godtycklig längd.
+\usepackage{icomma}
+%
+% Latin Modern-familjen av teckensnitt består av 72 textteckensnitt och 20
+% matematiska teckensnitt, och är baserad på Computer Modern-typsnitt som
+% släppts till allmän egendom av AMS. Typsnittsuppsättningen lm innehåller många
+% extra tecken, främst accentuerade, men inte enbart.
+\usepackage{lmodern}
+%
+% (Beskrivning saknas.)
+\usepackage[numbered]{bookmark}
+%
+% (Beskrivning saknas.)
+\addto\captionsswedish{\renewcommand{\figurename}{Bild}}
+%
+% (Beskrivning saknas.)
+\usepackage{amsmath}
+%\usepackage{wrapfig}
+%
+% (Beskrivning saknas.)
+\usepackage{framed}
+%
+% (Beskrivning saknas.)
+\usepackage[fulladjust]{marginnote}
+%
+% (Beskrivning saknas.)
+\usepackage{color}
+%
+% (Beskrivning saknas.)
+\usepackage{amssymb}
+%
+% (Beskrivning saknas.)
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+%
+% (Beskrivning saknas.)
+\usepackage[toctitles,raggedright]{titlesec}
+%
+% (Beskrivning saknas.)
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={KonCEPT för amatörradiocertifikat},
+    pdfauthor={Föreningen Sveriges Sändareamatörer},
+    pdfkeywords={Sveriges Sändareamatörer, SSA, amatörradio},
+    pdflang={sv},
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%
+% För symbolen \boxbox (dubbelisolering), kräver paketet texlive-math-extra
+\usepackage{stmaryrd}
+%
+% Tillhandahåller generiska kommandon \degree, \celsius, \perthousand, \micro
+% och \ohm som fungerar både i text- och matematikläge.
+\usepackage{gensymb}
+%
+% Paket för att typsätta SI-enheter och värden.
+\usepackage{siunitx}
+\sisetup{
+    output-decimal-marker = {,},
+    output-product = \cdot,
+    retain-explicit-plus = true,
+%    input-product = {*},
+    product-units = single,
+    per-mode = symbol,
+    range-units = single,
+    range-phrase = {--},
+    separate-uncertainty=true,
+    multi-part-units=single
+}
+%
+% (Beskrivning saknas.)
+\DeclareSIUnit\noop{\relax}
+%
+%% k7per: Swap these two definitions if you want a small Orange blob
+%% behind the ref locations for ease of layout work.
+\newcommand\ssaref[1]{\ref{#1}}
+%% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
+%
+% (Beskrivning saknas.)
+\clubpenalty=9990
+\widowpenalty=9999
+\brokenpenalty=4999
+%
+% En uppsättning makron för naturlig typsättning av elektriska och elektroniska
+% nätverk. Används till kretsdiagramen i kapitel x.
+\usepackage[
+  european,
+  cuteinductors,
+  smartlabels
+]{circuitikz}
+%
+% (Beskrivning saknas.)
+\usepackage[framemethod=TikZ]{mdframed}
+%
+% (Beskrivning saknas.)
+\mdfdefinestyle{FactBox}{
+    linecolor=blue,
+    outerlinewidth=2pt,
+    roundcorner=20pt,
+    innertopmargin=\baselineskip,
+    innerbottommargin=\baselineskip,
+    innerrightmargin=20pt,
+    innerleftmargin=20pt,
+    backgroundcolor=gray!50!white}
+\newcommand{\infobox}[1]{
+\begin{figure}%[r][0.5\textwidth]
+  \begin{mdframed}[style=FactBox]
+#1
+  \end{mdframed}
+\end{figure}
+}
+%
+% (Beskrivning saknas.)
+\usepackage{multirow}
+\usepackage{xtab}
+%
+% Detta paket ger användarkontroll över layouten för de tre grundläggande
+% listmiljöerna: enumerate, itemize and description.
+\usepackage{enumitem}
+%
+% (Beskrivning saknas.)
+\usepackage{graphicx}
+%
+\raggedbottom
+%
+% Läs in information från versionshanteringen så att den finns tillgänglig
+% för sidan med tryckinformation.
+\usepackage{xstring}
+\usepackage{catchfile}
+\CatchFileDef{\HEAD}{SHA.tmp}{}
+\CatchFileDef{\branch}{branch.tmp}{}
+\newcommand{\gitrevision}{%
+  \StrLeft{\HEAD}{7}%
+}
+\CatchFileDef{\VERSION}{VERSION.txt}{}
+\newcommand{\revision}{%
+  \VERSION (\branch \gitrevision)%
+}
+%
+% Bakgrundsbild till framsidan.
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{images/koncept-front.jpg}%
+\vfill
+}}}
 
-\include{koncept/common}
-\usepackage[swedish]{babel}
+
+\newcommand\Backgroundtwo{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{images/koncept-larobok-front.jpg}%
+\vfill
+}}}
+%
+%
+%
+\newcommand\BackgroundPicLast{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\centering%
+\vfill%
+%\includegraphics[width=6cm]{images/isbn_9789186368234}%
+%\includegraphics[width=\paperwidth,height=\paperheight]{images/koncept-back.pdf}%
+\vfill%
+}}}
+%
 % \usepackage{paralist}
+%
+% Gör så att båda kolumnerna på sista sidan i ett kapitel är lika höga.
 \usepackage{balance}
-
+%
+% Paketet gör små förändringar i teckenjusteringen så raderna passar bättre.
 \usepackage[
   activate={true,nocompatibility},
   final,
@@ -25,17 +238,19 @@
   shrink=20,
   babel=true
 ]{microtype}
-
-\usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
-%% k7per
+%
+% (Beskrivning saknas.)
 \usepackage{stfloats}
 % \usepackage{blindtext, subfig}
-
+%
+% (Beskrivning saknas.)
 \newcommand{\erp}{ERP}
 \newcommand{\eirp}{EIRP}
 \newcommand{\pep}{PEP}
+%
+% (Beskrivning saknas.)
 \newcommand{\signal}[1]{\texttt{#1}}
-
+%
 %% k7per: The harecsection macro is used to enclose a list of harec commands, it also takes care of making
 %% sure the paragraph afterwards in no indenented, making sections with harec tags look the sme as sections
 %% without.
@@ -59,7 +274,9 @@
 \usepackage{placeins}
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-
+%
+% Paketet ger omfattande möjligheter, både för att konstruera sidhuvuden och
+% sidfötter, och för att kontrollera deras användning.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{}
@@ -68,8 +285,8 @@
 \cfoot{}
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
-
-%% This fixes page numbering on chapter head pages
+%
+% This fixes page numbering on chapter head pages
 \fancypagestyle{plain}{
   \fancyhf{}
   \fancyfoot[LE,RO]{\thepage}
@@ -351,43 +568,30 @@
     \vspace{-20pt}
   \end{figure*}
 }
-
+%
+% (Beskrivning saknas.)
 \newsavebox\TBox
 \def\textoverline#1{\savebox\TBox{#1}%
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
-
+%
+% (Beskrivning saknas.)
 \usepackage[textfont=sf,labelfont={bf, sf},margin=10pt]{caption}
-
+%
+% (Beskrivning saknas.)
 \usepackage{threeparttable}
+%
+% (Beskrivning saknas.)
 \usepackage[symbol]{footmisc}
+%
+% (Beskrivning saknas.)
 \usepackage{morse}
+%
+% (Beskrivning saknas.)
 \usepackage{scalerel}
-
-%\def\frdjp{\textbf{FÖRDJUPNING}}
-\def\frdjp{}
-  
-% \makechapterstyle{ssa}{%
-%   \chapterstyle{default}
-%   \chapterstyle{article}%
-%   %\renewcommand*{\thechapter}{\Roman{chapter}}
-%   \renewcommand*{\printchapternum}{% center number/title
-%     \centering\chapnumfont \textsc\thechapter\space\space}%
-%   \renewcommand*{\printchapternonum}{\centering}
-%   %\renewcommand*{\clearforchapter}{}% no new page
-%   \aliaspagestyle{chapter}{headings}}% no special pagestyle
-
 %% \semiisopage[12]
-
-% Prepare for abstract
-%\pagestyle{plain}
-%\newenvironment{abstract}%
-%{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
-%{\cleardoublepage\null \vfill\begin{center}%
-%\bfseries \abstractname \end{center}}%
-%     {\vfill\null}
-
-%% k7per: förbättringar till avstavningsregler.  Lägg till här, inte i den löpande texten.
-%% Enda undantaget skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
+%
+% Avstavningsregler -- lägg till här, inte i den löpande texten. Enda undantaget
+% skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
 \hyphenation{
   amatör-ra-dio-signaler
   amatör-radio-certi-fikat
@@ -429,67 +633,71 @@
   våg-av-böj-ning
   vä-xel-st-rö-m-s-krets
 }
-
+%
+% Begränsa antalet nivåer i innehållsförteckningen.
 \setcounter{tocdepth}{1}
+%
+% (Beskrivning saknas.)
 \usepackage{tocloft}
+%
+% (Beskrivning saknas.)
 \setlength\cftsecnumwidth{3em}
-
-% Prepare for index
+%
+% (Beskrivning saknas.)
 \usepackage{makeidx}
 \makeindex
-
-\usepackage[black,sfdefault]{sourcesanspro}
-
+%
+% Teckensnittet är en Sans-Serif-utveckling med öppen källkod från Adobe.
+% Paketet tillhandahåller typsnitt (i både Adobe Type 1- och OpenType-format)
+% och makron som stödjer deras användning.
+\usepackage[black,default]{sourcesanspro}
+%
+% Här slutar inställningarna.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Här börjar innehållet.
 \begin{document}
-
-%% \chapterstyle{ssa}
-
-% Frontpage
+%
+% Infoga framsidan och tryckortssidan.
 \include{koncept/frontpage}
-
-% Colophone
-
-%% Tryckortssidan
 \include{koncept/tryckort}
+%
+% (Beskrivning saknas.)
 \pagenumbering{gobble}
-
-% \lfoot[\revision]{}
-% \rfoot[]{\revision}
-
+%
+% (Beskrivning saknas.)
 \cleardoublepage
-%\pagestyle{fancy}
-
-%\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
-%\author{Lennart Wiberg}
-%\maketitle
-
+%
+% Infoga innehållsförteckningen.
 \tableofcontents
-
-% \setlength{\parindent}{0pt}
-% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
- 
-%%\mainmatter
-
+%
+% Infoga försättsblad, förord och introduktion.
 \include{koncept/preface}
 \include{koncept/foreword}
 \include{koncept/introduction}
-
+%
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{5}
-
-\input{koncept/koncept-core}
-
+%
+% Infoga alla kapitel och appendix.
+\input{koncept/inkludera-kapitel}
+\input{koncept/inkludera-appendix}
+%
 \cleardoublepage
+%
+% Infoga sakregistret.
 \printindex
-
+%
 \newcommand*\cleartoleftpage{%
   \clearpage
   \ifodd\value{page}\hbox{}\newpage\fi
 }
-
+%
 \cleartoleftpage
-
+%
+% Infoga baksidan.
 \input{koncept/backpage}
-
+%
+% Här tar boken slut.
 \end{document}
