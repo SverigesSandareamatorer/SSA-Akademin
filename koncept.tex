@@ -104,16 +104,16 @@
 % Paket för att typsätta SI-enheter och värden.
 \usepackage{siunitx}
 \sisetup{
-    output-decimal-marker = {,},
-    output-product = \cdot,
-    retain-explicit-plus = true,
-%    input-product = {*},
-    product-units = single,
-    per-mode = symbol,
-    range-units = single,
-    range-phrase = {--},
-    separate-uncertainty=true,
-    multi-part-units=single
+	output-decimal-marker = {,},
+	output-product = \cdot,
+	retain-explicit-plus = true,
+	% input-product = {*},
+	product-units = single,
+	per-mode = symbol,
+	range-units = single,
+	range-phrase = {--},
+	separate-uncertainty=true,
+	multi-part-units=single
 }
 
 % (Beskrivning saknas.)
@@ -181,11 +181,11 @@
 \CatchFileDef{\HEAD}{SHA.tmp}{}
 \CatchFileDef{\branch}{branch.tmp}{}
 \newcommand{\gitrevision}{
-    \StrLeft{\HEAD}{7}
+	\StrLeft{\HEAD}{7}
 }
 \CatchFileDef{\VERSION}{VERSION.txt}{}
 \newcommand{\revision}{
-    \VERSION (\branch \gitrevision)
+	\VERSION (\branch \gitrevision)
 }
 
 % \usepackage{paralist}
@@ -660,6 +660,7 @@
 %
 % Infoga alla kapitel och appendix.
 \input{koncept/inkludera-kapitel}
+\appendix
 \input{koncept/inkludera-appendix}
 %
 \cleardoublepage
