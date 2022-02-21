@@ -8,14 +8,14 @@
 
 % Sätt sidstorlek och marginaler.
 \usepackage[
-    a4paper,
-    twoside,
-    twocolumn,
-    inner=2.2cm,
-    outer=1.9cm,
-    columnsep=0.9cm,
-    top=2cm,
-    bottom=2cm
+	a4paper,
+	twoside,
+	twocolumn,
+	inner=2.2cm,
+	outer=1.9cm,
+	columnsep=0.9cm,
+	top=2cm,
+	bottom=2cm
 ]{geometry}
 
 % Kunna generera bl.a. svenska tecken.
@@ -83,15 +83,15 @@
 % Aktivera möjligheten att länka i PDF:en.
 \usepackage{hyperref}
 \hypersetup{
-    pdftitle={KonCEPT för amatörradiocertifikat},
-    pdfauthor={Föreningen Sveriges Sändareamatörer},
-    pdfkeywords={Sveriges Sändareamatörer, SSA, amatörradio},
-    pdflang={sv},
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
+	pdftitle={KonCEPT för amatörradiocertifikat},
+	pdfauthor={Föreningen Sveriges Sändareamatörer},
+	pdfkeywords={Sveriges Sändareamatörer, SSA, amatörradio},
+	pdflang={sv},
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
 }
 
 % För symbolen \boxbox (dubbelisolering), kräver paketet texlive-math-extra
@@ -132,9 +132,9 @@
 % En uppsättning makron för naturlig typsättning av elektriska och elektroniska
 % nätverk. Används till kretsdiagram.
 \usepackage[
-    european,
-    cuteinductors,
-    smartlabels
+	european,
+	cuteinductors,
+	smartlabels
 ]{circuitikz}
 
 % (Beskrivning saknas.)
@@ -142,14 +142,14 @@
 
 % (Beskrivning saknas.)
 \mdfdefinestyle{FactBox}{
-    linecolor=blue,
-    outerlinewidth=2pt,
-    roundcorner=20pt,
-    innertopmargin=\baselineskip,
-    innerbottommargin=\baselineskip,
-    innerrightmargin=20pt,
-    innerleftmargin=20pt,
-    backgroundcolor=gray!50!white}
+	linecolor=blue,
+	outerlinewidth=2pt,
+	roundcorner=20pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=20pt,
+	innerleftmargin=20pt,
+	backgroundcolor=gray!50!white}
 \newcommand{\infobox}[1]{
 \begin{figure}%[r][0.5\textwidth]
   \begin{mdframed}[style=FactBox]
@@ -181,11 +181,11 @@
 \CatchFileDef{\HEAD}{SHA.tmp}{}
 \CatchFileDef{\branch}{branch.tmp}{}
 \newcommand{\gitrevision}{
-  \StrLeft{\HEAD}{7}
+    \StrLeft{\HEAD}{7}
 }
 \CatchFileDef{\VERSION}{VERSION.txt}{}
 \newcommand{\revision}{
-  \VERSION (\branch \gitrevision)
+    \VERSION (\branch \gitrevision)
 }
 
 % \usepackage{paralist}
@@ -195,13 +195,13 @@
 
 % Paketet gör små förändringar i teckenjusteringen så raderna passar bättre.
 \usepackage[
-    activate={true,nocompatibility},
-    final,
-    tracking=true,
-    factor=1000,
-    stretch=40,
-    shrink=20,
-    babel=true
+	activate={true,nocompatibility},
+	final,
+	tracking=true,
+	factor=1000,
+	stretch=40,
+	shrink=20,
+	babel=true
 ]{microtype}
 
 % (Beskrivning saknas.)
@@ -251,11 +251,12 @@
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-% This fixes page numbering on chapter head pages
+% This fixes page numbering on chapter head pages.
 \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyfoot[LE,RO]{\thepage}
-  \renewcommand{\headrulewidth}{0pt}}
+	\fancyhf{}
+	\fancyfoot[LE,RO]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+}
 
 \renewcommand{\bfdefault}{b}
 \SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
@@ -272,13 +273,13 @@
 
 % Figure macros
 \newcommand{\bottomwidefigure}[4][0.6]{
-  \begin{figure*}[b]
-    \centering
-    \includegraphics[width=#1\textwidth]{#2}
-    \caption{#3}
-    \label{#4}
-    \vspace{-10pt}
-  \end{figure*}
+    \begin{figure*}[b]
+        \centering
+        \includegraphics[width=#1\textwidth]{#2}
+        \caption{#3}
+        \label{#4}
+        \vspace{-10pt}
+    \end{figure*}
 }
 
 \newcommand{\smallfig}[4][0.4]{
@@ -536,7 +537,7 @@
 
 % (Beskrivning saknas.)
 \newsavebox\TBox
-\def\textoverline#1{\savebox\TBox{#1}%
+\def\textoverline#1{\savebox\TBox{#1}
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
 
 % (Beskrivning saknas.)
@@ -567,45 +568,45 @@
 % Avstavningsregler -- lägg till här, inte i den löpande texten. Enda undantaget
 % skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
 \hyphenation{
-    amatör-ra-dio-signaler
-    amatör-radio-certi-fikat
-    amatör-radio-sänd-ar-en
-    an-tenn-sys-tem
-    antenn-ens
-    bär-vågs-am-pli-tud
-    efter-som
-    el-ek-tro-mag-net-isk
-    elektronrörs-epoken
-    extra-isolerad
-    fas-änd-ring-en
-    for-mel-snu-r-r-an
-    fre-kvens-mod-ul-ati-on
-    frekvens-karaktäristiken
-    frekvens-ändring
-    för-utom
-    halv-led-ar-ele-ment
-    impedans-anpassade
-    ko-ax-ial-kab-el-arrangemang
-    kvarts-kristaller
-    mat-nings-im-pe-den-sen
-    materie-formerna
-    mat-nings-im-pe-dan-sen
-    MAY-DAY
-    min-d-re
-    mo-du-ler-ing
-    nät-an-slu-ten
-    o-läm-p-li-gt
-    puls-kod-mo-du-la-tion
-    puls-läng-ds
-    radio-vågor
-    re-so-nans-krets
-    serie-kretsen
-    skarv-sladdar
-    sys-tem-jord
-    tantal-elek-tro-lyt-kondensatorer
-    var-an-d-ra
-    våg-av-böj-ning
-    vä-xel-st-rö-m-s-krets
+	amatör-ra-dio-signaler
+	amatör-radio-certi-fikat
+	amatör-radio-sänd-ar-en
+	an-tenn-sys-tem
+	antenn-ens
+	bär-vågs-am-pli-tud
+	efter-som
+	el-ek-tro-mag-net-isk
+	elektronrörs-epoken
+	extra-isolerad
+	fas-änd-ring-en
+	for-mel-snu-r-r-an
+	fre-kvens-mod-ul-ati-on
+	frekvens-karaktäristiken
+	frekvens-ändring
+	för-utom
+	halv-led-ar-ele-ment
+	impedans-anpassade
+	ko-ax-ial-kab-el-arrangemang
+	kvarts-kristaller
+	mat-nings-im-pe-den-sen
+	materie-formerna
+	mat-nings-im-pe-dan-sen
+	MAY-DAY
+	min-d-re
+	mo-du-ler-ing
+	nät-an-slu-ten
+	o-läm-p-li-gt
+	puls-kod-mo-du-la-tion
+	puls-läng-ds
+	radio-vågor
+	re-so-nans-krets
+	serie-kretsen
+	skarv-sladdar
+	sys-tem-jord
+	tantal-elek-tro-lyt-kondensatorer
+	var-an-d-ra
+	våg-av-böj-ning
+	vä-xel-st-rö-m-s-krets
 }
 
 % Begränsa antalet nivåer i innehållsförteckningen.
@@ -666,9 +667,9 @@
 % Infoga sakregistret.
 \printindex
 %
-\newcommand*\cleartoleftpage{%
-  \clearpage
-  \ifodd\value{page}\hbox{}\newpage\fi
+\newcommand*\cleartoleftpage{
+	\clearpage
+	\ifodd\value{page}\hbox{}\newpage\fi
 }
 %
 \cleartoleftpage
