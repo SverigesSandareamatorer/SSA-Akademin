@@ -55,7 +55,7 @@
 % extra tecken, främst accentuerade, men inte enbart.
 \usepackage{lmodern}
 
-% (Beskrivning saknas.)
+% En ny bokmärkesorganisation (kontur) för hyperref.
 \usepackage[numbered]{bookmark}
 
 % (Beskrivning saknas.)
@@ -94,7 +94,7 @@
 	urlcolor=black
 }
 
-% För symbolen \boxbox (dubbelisolering), kräver paketet texlive-math-extra
+% För symbolen \boxbox (dubbelisolering), kräver paketet texlive-math-extra.
 \usepackage{stmaryrd}
 
 % Tillhandahåller generiska kommandon \degree, \celsius, \perthousand, \micro
@@ -158,7 +158,7 @@
 \end{figure}
 }
 
-% (Beskrivning saknas.)
+% Skapa tabellceller som spänner över flera rader.
 \usepackage{multirow}
 
 % Dela tabeller över flera sidor.
@@ -168,7 +168,10 @@
 % listmiljöerna: enumerate, itemize and description.
 \usepackage{enumitem}
 
-% (Beskrivning saknas.)
+% Paketet bygger på paketet graphics och tillhandahåller ett
+% nyckel-värde-gränssnitt för valfria argument till kommandot \includegraphics.
+% Detta gränssnitt ger faciliteter som går långt utöver vad paketet graphics
+% erbjuder på egen hand.
 \usepackage{graphicx}
 
 % (Beskrivning saknas.)
@@ -204,9 +207,8 @@
 	babel=true
 ]{microtype}
 
-% (Beskrivning saknas.)
+% Kommandon för att styra presentationen av floats.
 \usepackage{stfloats}
-% \usepackage{blindtext, subfig}
 
 % (Beskrivning saknas.)
 \newcommand{\erp}{ERP}
@@ -216,9 +218,9 @@
 % (Beskrivning saknas.)
 \newcommand{\signal}[1]{\texttt{#1}}
 
-%% k7per: The harecsection macro is used to enclose a list of harec commands, it also takes care of making
-%% sure the paragraph afterwards in no indenented, making sections with harec tags look the sme as sections
-%% without.
+% k7per: The harecsection macro is used to enclose a list of harec commands, it
+% also takes care of making sure the paragraph afterwards in no indenented,
+% making sections with harec tags look the sme as sections without.
 \makeatletter
 \def\harecsection#1{\begingroup\raggedleft\scriptsize HAREC #1\par\endgroup\@afterindentfalse\@afterheading}
 \makeatother
@@ -234,10 +236,16 @@
 }
 \makeatother
 
-% \usepackage{dblfloatfix}
+% (Beskrivning saknas.)
 \usepackage{float}
+
+% (Beskrivning saknas.)
 \usepackage{placeins}
+
+% (Beskrivning saknas.)
 \usepackage{array}
+
+% (Beskrivning saknas.)
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 % Paketet ger omfattande möjligheter, både för att konstruera sidhuvuden och
@@ -266,9 +274,7 @@
 %%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\fcolorbox{black}{black}{\color{white}\,\thechapter\,}~~}{0pt}{\Huge\bfseries}
 
-%%\headheight = 12.6pt
-
-%% \setsecnumdepth{subsection}
+% (Beskrivning saknas.)
 \setcounter{secnumdepth}{3}
 
 % Figure macros
