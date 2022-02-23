@@ -22,6 +22,10 @@ jobs:
             texlive-lang-european texlive-science \
             texlive-fonts-recommended texlive-fonts-extra \
             language-pack-sv
+	  - name: 'Sätt systemspråk till svenska'
+        run: |
+          sudo locale-gen sv_SE.UTF-8
+          sudo localectl set-locale LANG="sv_SE.UTF-8"
       - name: 'Kopiera info om repository'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
