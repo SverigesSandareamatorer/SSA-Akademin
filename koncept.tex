@@ -191,9 +191,8 @@
 	\VERSION (\branch \gitrevision)
 }
 
-% \usepackage{paralist}
-
 % Gör så att båda kolumnerna på sista sidan i ett kapitel är lika höga.
+% Aktiveras med \balance i första kolumnen på sista sidan.
 \usepackage{balance}
 
 % Paketet gör små förändringar i teckenjusteringen så raderna passar bättre.
@@ -239,7 +238,9 @@
 % (Beskrivning saknas.)
 \usepackage{float}
 
-% (Beskrivning saknas.)
+% Defines a \FloatBarrier command, beyond which floats may not pass; useful, for
+% example, to ensure all floats for a section appear before the next \section
+% command.
 \usepackage{placeins}
 
 % (Beskrivning saknas.)
