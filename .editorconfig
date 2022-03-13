@@ -1,12 +1,13 @@
 # Kodstil för KonCEPT
 
 root = true
+
+[*]
 charset = utf-8
 insert_final_newline = true
 
 [*.tex]
 indent_style = tab
-indent_size = 4
 
 [*.{css,yml}]
 indent_style = space
