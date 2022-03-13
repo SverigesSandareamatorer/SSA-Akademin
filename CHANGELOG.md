@@ -79,7 +79,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ### Ändrat
 - Elsäkerhetskapitlet uppdaterat.
-- Hela materialet är överfört till LaTeX och [GitHub](https://github.com).
+- Hela materialet är överfört till LaTeX och [GitHub](https://github.com/SverigesSandareamatorer/SSA-Akademin).
 - Stort antal putsningar av text.
 - Anpassning till nu gällande certklasser och krav.
 - Anpassning till nu gällande lag och [PTS](https://www.pts.se) undantagsföreskrift.
