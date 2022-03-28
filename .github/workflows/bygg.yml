@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: 'Checka ut'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 'Installera'
         run: |
           sudo apt-get update
@@ -48,7 +48,7 @@ jobs:
           path: koncept*.pdf
           retention-days: 31
       - name: 'Ladda upp rapporter'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: rapporter
           path: |
