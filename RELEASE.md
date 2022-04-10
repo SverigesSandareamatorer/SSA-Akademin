@@ -19,7 +19,7 @@ Uppdatera [`koncept/tryckort.tex`](koncept/tryckort.tex) att beskriva t.ex. ”A
 Uppdatera [`VERSION.txt`](VERSION.txt) till att innehålla den numeriska versionen, t.ex. ”2.3.0”.
 
 ## Uppdatering av CHANGELOG
-Lägg till viktiga förändringar sedan förra tryckningen i [`CHANGELOG.md`](CHANGELOG.md).
+Lägg till viktiga förändringar sedan förra tryckningen i [CHANGELOG.md](CHANGELOG.md).
 
 ## Gör commit av förändringarna
 Gör en `git commit` av alla förändringar med versionsnumret, dvs. t.ex. ”v2.3.0” som
