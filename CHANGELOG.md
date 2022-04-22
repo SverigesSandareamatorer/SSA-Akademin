@@ -5,7 +5,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ## [Osläppt]
 
-## [2.5.0] - 2022-01-27
+## [2.5.0] – <time>2022-01-27</time>
 ### Tillagt
  - Ny beskrivning av glimmer.
 
@@ -24,7 +24,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Borttaget
 - Appendix med litteraturförteckningen från första upplagan har raderats.
 
-## [2.4.0] - 2021-03-31
+## [2.4.0] – <time>2021-03-31</time>
 ### Ändrat
 - Liten uppdatering med läsanvisningar för teknikdelen
 - Liten uppdatering med läsanvisningar för reglementesdelen
@@ -32,7 +32,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Städat upp HAREC-referenser som var lite yviga i kapitel 13 (28 stycken på rad)
 - Lite annan småfix
 
-## [2.3.0] - 2019-10-06
+## [2.3.0] – <time>2019-10-06</time>
 ### Ändrat
 - Gått över till siunitx.
 - Anpassat länkar till HTTPS.
@@ -44,16 +44,16 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Fixat
 - TOODs generering återställd.
 
-## [2.2.0] - 2019-01-27
+## [2.2.0] – <time>2019-01-27</time>
 ### Ändrat
 - Justerat permeabilitet.
 - Justerat med avseende på nya PTS föreskrift.
 
-## [2.1.0] - 2018-10-24
+## [2.1.0] – <time>2018-10-24</time>
 ### Fixat
 - Appendix med HAREC-referenserna hade försvunnit. Återställt.
 
-## [2.0.0] - 2018-08-18
+## [2.0.0] – <time>2018-08-18</time>
 ### Ändrat
 - Bytt felaktig användning av ordet ”decimal” till ”siffra”.
 - Förtydligar vad oktal och hexadecimal form är för något.
@@ -68,7 +68,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Formel rättad i avsnittet ”Exempel med 2 obekanta” i kapitlet ”Matematik”.
 - Ändrat O till Q i rapportkoder för kommersiell sjö- och luftradiotrafik.
 
-## [2.0.0-RC.1] - 2017-09-10
+## [2.0.0-RC.1] – <time>2017-09-10</time>
 ### Tillagt
 - Första version 2.0.0-RC.1 och `git tag` v2.0.0-RC.1 satt.
 - [CEPT](https://cept.org) HAREC finns som detaljerat appendix med länkning till de textdelar som
