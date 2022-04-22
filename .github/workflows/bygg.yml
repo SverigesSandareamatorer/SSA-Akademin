@@ -42,7 +42,7 @@ jobs:
           make images_unlinked
           make TODOs
       - name: 'Ladda upp artefakt'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: koncept-pdf
           path: koncept*.pdf
