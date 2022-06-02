@@ -27,9 +27,11 @@ För att kunna hämta hem, arbeta med och köra projektet behöver du
 använda dig av versionshanteringssystemet Git och verktyget Make.
 
 **Linux/Debian**
-```sh
-$ sudo apt-get install git make
-```
+<pre>
+<samp>
+$ <kbd>sudo apt-get install git make</kbd>
+</samp>
+</pre>
 
 # Git
 
@@ -40,10 +42,12 @@ verktyg och möjligheten att utveckla kollaborativt.
 Navigera till den mapp du vill ladda ner SSA-Akademin repot i. De som
 kör Git med grafiskt användargränssnitt (GUI) kan välja Clone och
 sedan URL:en i argumentet nedan. För de som kör med kommandotolken:
-```sh
-$ git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git
-$ cd SSA-Akademin/
-```
+<pre>
+<samp>
+$ <kbd>git clone https://github.com/SverigesSandareamatorer/SSA-Akademin.git</kbd>
+$ <kbd>cd SSA-Akademin/</kbd>
+</samp>
+</pre>
 
 # Make
 
@@ -53,9 +57,11 @@ fallet, till bl.a. PDF:er. Det gör att användaren av Make inte behöver
 veta *hur* genereringen går till utan bara vilket kommando som ska
 köras. Make används genom att köra kommandot `make` följt av ett
 mål. Till exempel:
-```sh
-$ make koncept.pdf
-```
+<pre>
+<samp>
+$ <kbd>make koncept.pdf</kbd>
+</samp>
+</pre>
 
 Dessa Make ”mål” kräver vissa verktyg för att kunna köras och dessa
 kallas för beroenden. Dessa beroenden måste installeras innan Make
@@ -90,8 +96,10 @@ generera PDF-filer av vår kod behövs TeX och vissa extra komponenter
 installeras.
 
 **Linux/Debian**
-```sh
-$ sudo apt-get update
-$ sudo apt-get install texlive texlive-lang-european \
-    texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex
-```
+<pre>
+<samp>
+$ <kbd>sudo apt-get update</kbd>
+$ <kbd>sudo apt-get install texlive texlive-lang-european \
+    texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex</kbd>
+</samp>
+</pre>

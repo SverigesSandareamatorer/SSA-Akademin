@@ -19,8 +19,8 @@ Krav
 För att texten ska bli enhetlig i hela boken ska en del regler följas. Se till 
 gå igenom dessa så att din Pull Request uppfyller alla krav.
 
-1. Gå igenom [`texifiering.md`](../texifiering.md) och se till att din text 
+1. Gå igenom [texifiering.md](../texifiering.md) och se till att din text 
    uppfyller alla krav.
-2. Kör igenom `make all` och se till att den bygger utan kritiska fel (`error`)
+2. Kör igenom <kbd>make all</kbd> och se till att den bygger utan kritiska fel (`error`)
 3. Se till att skriva en kort sammanfattning av din förändring i 
-   [`CHANGELOG.md`](../CHANGELOG.md) i din Pull Request.
+   [CHANGELOG.md](../CHANGELOG.md) i din Pull Request.
