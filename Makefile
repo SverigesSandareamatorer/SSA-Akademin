@@ -109,10 +109,10 @@ SHA.tmp:
 
 koncept.log:
 koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	pdflatex koncept.tex -interaction=batchmode
-	pdflatex koncept.tex -interaction=batchmode
+	pdflatex -interaction=batchmode koncept.tex
+	pdflatex -interaction=batchmode koncept.tex
 	makeindex koncept.idx
-	pdflatex koncept.tex -interaction=nonstopmode
+	pdflatex -interaction=nonstopmode koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex
