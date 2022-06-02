@@ -87,14 +87,14 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 REPO_FILES = SHA.tmp branch.tmp
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	- pdflatex koncept.tex
+	- pdflatex -interaction=nonstopmode koncept.tex
 #	- xelatex koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
-	pdflatex koncept.tex
+	pdflatex -interaction=nonstopmode koncept.tex
 	bibtex koncept.aux
 #	bibtex koncept.aux
 

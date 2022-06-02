@@ -18,7 +18,7 @@ jobs:
       - name: 'Installera'
         run: |
           sudo apt-get -q update
-          sudo apt-get -q install texlive \
+          sudo apt-get -q -y install texlive \
             texlive-lang-european texlive-science \
             texlive-fonts-recommended texlive-fonts-extra \
             language-pack-sv
