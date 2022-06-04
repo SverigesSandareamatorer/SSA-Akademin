@@ -88,7 +88,6 @@ REPO_FILES = SHA.tmp branch.tmp
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
 	- pdflatex -interaction=nonstopmode koncept.tex
-#	- xelatex koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
@@ -96,7 +95,6 @@ koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 koncept.bbl: koncept.aux koncept.bib
 	pdflatex -interaction=nonstopmode koncept.tex
 	bibtex koncept.aux
-#	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx
