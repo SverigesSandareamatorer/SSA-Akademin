@@ -4,6 +4,8 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
 ## [Osläppt]
+### Fixat
+- En felkodad länk har rättats.
 
 ## [2.5.0] – 2022-01-27
 ### Tillagt
