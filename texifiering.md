@@ -154,7 +154,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 22. Grader kodas med `\ang{}` t.ex. `\ang{90}`.
 
-23. Nyckelbegrepp skall indexeras dels där de introduceras och definieras,
+23. Nyckelbegrepp ska indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
     förstå dem och dess användning. En enkel användning är
     `\index{strömtransformator}`
@@ -221,12 +221,12 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     de har en naturlig kontext att definieras i, för de fallen skall förkortning
     användas och definitionen där det är ett bra kontext.
 
-    Tankstreck mellan förkortning och uttydning skall INTE användas.
+    Tankstreck mellan förkortning och uttydning ska INTE användas.
 
     Exempel:
     Vector Network Analyzer (VNA)
 
-29. Tankstreck, kodas med `--`, skall användas sparsamt.
+29. Tankstreck, kodas med `--`, ska användas sparsamt.
 
 30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
     sin helhet, utom i parenteser och tabeller.
@@ -234,7 +234,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
     siffror.
 
-32. Indentering föreskrivt som två mellanslag (mjuk tab).
+32. Indentering föreskrivt med hård tabb.
 
 33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
     ”satellitmottagare” i stället för ”satellit-mottagare”. Bindestreck ska dock
