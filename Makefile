@@ -69,11 +69,10 @@ KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik
 	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
 	koncept/appendix-kunskapskrav.tex
-KONCEPT_OTHER_FILES = koncept/common.tex \
-	koncept/foreword.tex koncept/introduction.tex \
+KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
-	koncept/koncept-core.tex \
+	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \
@@ -88,16 +87,14 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 REPO_FILES = SHA.tmp branch.tmp
 
 koncept.aux: koncept.tex $(KONCEPT_FILES)
-	- pdflatex koncept.tex
-#	- xelatex koncept.tex
+	- pdflatex -interaction=nonstopmode koncept.tex
 
 koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
 	- xelatex koncept.tex
 
 koncept.bbl: koncept.aux koncept.bib
-	pdflatex koncept.tex
+	pdflatex -interaction=nonstopmode koncept.tex
 	bibtex koncept.aux
-#	bibtex koncept.aux
 
 koncept.ind: koncept.idx
 	makeindex koncept.idx
@@ -110,10 +107,10 @@ SHA.tmp:
 
 koncept.log:
 koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	pdflatex koncept.tex
-	pdflatex koncept.tex
+	pdflatex -interaction=batchmode koncept.tex
+	pdflatex -interaction=batchmode koncept.tex
 	makeindex koncept.idx
-	pdflatex koncept.tex
+	pdflatex -interaction=nonstopmode koncept.tex
 
 matterep.pdf: koncept/matte.tex handouts/matterep.tex
 	-xelatex handouts/matterep.tex

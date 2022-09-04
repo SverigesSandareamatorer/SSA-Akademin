@@ -11,17 +11,21 @@ on:
 jobs:
   bygg-pdf:
     name: 'Bygg bok'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: 'Installera'
         run: |
-          sudo apt-get update
-          sudo apt-get -q install texlive \
+          sudo apt-get -q update
+          sudo apt-get -q -y install texlive \
             texlive-lang-european texlive-science \
             texlive-fonts-recommended texlive-fonts-extra \
             language-pack-sv
+      - name: 'Sätt systemspråk till svenska'
+        run: |
+          sudo locale-gen sv_SE.UTF-8
+          sudo localectl set-locale LANG="sv_SE.UTF-8"
       - name: 'Kopiera info om repository'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
@@ -38,13 +42,13 @@ jobs:
           make images_unlinked
           make TODOs
       - name: 'Ladda upp artefakt'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: koncept-pdf
           path: koncept*.pdf
           retention-days: 31
       - name: 'Ladda upp rapporter'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: rapporter
           path: |

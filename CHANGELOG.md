@@ -3,7 +3,11 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
-## [2.5.0] - 2022-01-27
+## [Osläppt]
+### Fixat
+- En felkodad länk har rättats.
+
+## [2.5.0] – 2022-01-27
 ### Tillagt
  - Ny beskrivning av glimmer.
 
@@ -22,7 +26,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Borttaget
 - Appendix med litteraturförteckningen från första upplagan har raderats.
 
-## [2.4.0] - 2021-03-31
+## [2.4.0] – 2021-03-31
 ### Ändrat
 - Liten uppdatering med läsanvisningar för teknikdelen
 - Liten uppdatering med läsanvisningar för reglementesdelen
@@ -30,7 +34,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Städat upp HAREC-referenser som var lite yviga i kapitel 13 (28 stycken på rad)
 - Lite annan småfix
 
-## [2.3.0] - 2019-10-06
+## [2.3.0] – 2019-10-06
 ### Ändrat
 - Gått över till siunitx.
 - Anpassat länkar till HTTPS.
@@ -42,16 +46,16 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Fixat
 - TOODs generering återställd.
 
-## [2.2.0] - 2019-01-27
+## [2.2.0] – 2019-01-27
 ### Ändrat
 - Justerat permeabilitet.
 - Justerat med avseende på nya PTS föreskrift.
 
-## [2.1.0] - 2018-10-24
+## [2.1.0] – 2018-10-24
 ### Fixat
 - Appendix med HAREC-referenserna hade försvunnit. Återställt.
 
-## [2.0.0] - 2018-08-18
+## [2.0.0] – 2018-08-18
 ### Ändrat
 - Bytt felaktig användning av ordet ”decimal” till ”siffra”.
 - Förtydligar vad oktal och hexadecimal form är för något.
@@ -66,10 +70,10 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - Formel rättad i avsnittet ”Exempel med 2 obekanta” i kapitlet ”Matematik”.
 - Ändrat O till Q i rapportkoder för kommersiell sjö- och luftradiotrafik.
 
-## [2.0.0-RC.1] - 2017-09-10
+## [2.0.0-RC.1] – 2017-09-10
 ### Tillagt
 - Första version 2.0.0-RC.1 och `git tag` v2.0.0-RC.1 satt.
-- [CEPT](https://cept.org) HAREC finns som detaljerat appendix med länkning till de textdelar som
+- CEPT HAREC finns som detaljerat appendix med länkning till de textdelar som
   uppfyller dem.
 - Alla HAREC-krav har tillgodosets.
 - EMF-materialet inkluderat.
@@ -77,16 +81,17 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ### Ändrat
 - Elsäkerhetskapitlet uppdaterat.
-- Hela materialet är överfört till LaTeX och [GitHub](https://github.com).
+- Hela materialet är överfört till LaTeX och [GitHub](https://github.com/SverigesSandareamatorer/SSA-Akademin).
 - Stort antal putsningar av text.
 - Anpassning till nu gällande certklasser och krav.
-- Anpassning till nu gällande lag och [PTS](https://www.pts.se) undantagsföreskrift.
-- Anpassning till nu gällande [ITU](https://www.itu.int) Radioreglemente.
+- Anpassning till nu gällande lag och PTS undantagsföreskrift.
+- Anpassning till nu gällande ITU Radioreglemente.
 
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...HEAD
+[2.6.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.2.0...v2.3.0

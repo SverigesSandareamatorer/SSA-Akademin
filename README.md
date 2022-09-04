@@ -1,7 +1,8 @@
 SSA Akademin
 ============
 
-[![Bygg KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml) [![Download-knapp](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
+[![Status för bygget av KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml)
+[![Senaste releaseversionen](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
 
 **KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
 Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
@@ -36,7 +37,7 @@ koncept.2.0.0+b12345.8c04343.pdf
 ## Bygg projektet
 
 Du kan ladda ner projektet och bygga den senaste versionen av PDF:en
-själv. Instruktioner finns i filen [`BUILD.md`](BUILD.md).
+själv. Instruktioner finns i filen [BUILD.md](BUILD.md).
 
 ## PDF
 
@@ -50,7 +51,7 @@ Det finns många olika sätt att bidra till projektet även fast man
 inte vet hur man använder *[Git](https://www.git-scm.com)* eller skriver *LaTeX*.
 
 **Fråga: Jag kan koda och vill bidra; vad gör jag?**<br>
-Svar: Läs igenom [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) och följ
+Svar: Läs igenom [CONTRIBUTING.md](.github/CONTRIBUTING.md) och följ
 instruktionerna.
 
 **Fråga: Jag vet inte hur man redigerar kod?!**<br>
@@ -64,10 +65,14 @@ och skicka ett mejl till oss så hjälper vi dig att komma igång.
 # Instruktioner för projektet
 
 ## Merge
-För att göra merge följer man instruktionerna i [`MERGE.md`](MERGE.md).
+Alla förändringar ska ske genom pull-requests som mergas.
+
+Checklistan för en pull-request är till för att inga väsentligheter missas.
+Grunden är att när alla saker är avcheckade på listan ska pull-requesten
+kunna genomföras.
 
 ## Release
-För att göra release följer man instruktionerna i [`RELEASE.md`](RELEASE.md).
+För att göra release följer man instruktionerna i [RELEASE.md](RELEASE.md).
 
 
 # Om SSA Akademin

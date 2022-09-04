@@ -1,44 +1,225 @@
-%\documentclass[a4paper,twoside,openright,10pt]{memoir}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  KonCEPT för amatörradiocertifikat
+% Föreningen Sveriges Sändareamatörer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% LaTeX-dokument behöver ha en klass. report är snarlik book.
 \documentclass[10pt,openright]{report}
+
+% Sätt sidstorlek och marginaler.
+\usepackage[
+	a4paper,
+	twoside,
+	twocolumn,
+	inner=2.2cm,
+	outer=1.9cm,
+	columnsep=0.9cm,
+	top=2cm,
+	bottom=2cm
+]{geometry}
+
+% Kunna generera bl.a. svenska tecken.
+\usepackage[T1]{fontenc}
+
+% Tillåt bl.a. svenska tecken (UTF-8) i källkoden.
 \usepackage[utf8]{inputenc}
 
+% Svenska: format, avstavning m.m.
+\usepackage[swedish]{babel}
+\extrasswedish
+
+% Paketet definierar en miljö tabularx, en förlängning av tabulär som har en
+% extra kolumnbeteckning, X, som skapar en styckeliknande kolumn vars bredd
+% automatiskt expanderar så att den deklarerade bredden av miljön fylls.
 \usepackage{tabularx}
 
 %% k7per: Uncomment this line if you want a black box at
 %% each overfull hbox, comment for product.
 %% \overfullrule=10pt
 
+% Generera synkning av förhandsvisning av PDF med källkoden.
 \synctex=1
+
+% (Beskrivning saknas.)
 \usepackage{xtab}
 
-\include{koncept/common}
-\usepackage[swedish]{babel}
-% \usepackage{paralist}
+% Ett intelligent kommatecken, som ger rätt avstånd i decimaltal såväl som i
+% matematiska uttryck. Till skillnad från andra kända lösningar, är detta paket
+% inte beroende av kodningen av CM-mattesnitten, och det fungerar med decimaltal
+% av godtycklig längd.
+\usepackage{icomma}
+
+% Latin Modern-familjen av teckensnitt består av 72 textteckensnitt och 20
+% matematiska teckensnitt, och är baserad på Computer Modern-typsnitt som
+% släppts till allmän egendom av AMS. Typsnittsuppsättningen lm innehåller många
+% extra tecken, främst accentuerade, men inte enbart.
+\usepackage{lmodern}
+
+% En ny bokmärkesorganisation (kontur) för hyperref.
+\usepackage[numbered]{bookmark}
+
+% (Beskrivning saknas.)
+\addto\captionsswedish{\renewcommand{\figurename}{Bild}}
+
+% För avancerad typsättning av matematiska uttryck.
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% (Beskrivning saknas.)
+\usepackage{framed}
+
+% (Beskrivning saknas.)
+\usepackage[fulladjust]{marginnote}
+
+% (Beskrivning saknas.)
+\usepackage{color}
+
+% (Beskrivning saknas.)
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+
+% (Beskrivning saknas.)
+\usepackage[toctitles,raggedright]{titlesec}
+
+% Aktivera möjligheten att länka i PDF:en.
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={KonCEPT för amatörradiocertifikat},
+	pdfauthor={Föreningen Sveriges Sändareamatörer},
+	pdfkeywords={Sveriges Sändareamatörer, SSA, amatörradio},
+	pdflang={sv},
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+% För symbolen \boxbox (dubbelisolering), kräver paketet texlive-math-extra.
+\usepackage{stmaryrd}
+
+% Tillhandahåller generiska kommandon \degree, \celsius, \perthousand, \micro
+% och \ohm som fungerar både i text- och matematikläge.
+\usepackage{gensymb}
+
+% Paket för att typsätta SI-enheter och värden.
+\usepackage{siunitx}
+\sisetup{
+	output-decimal-marker = {,},
+	output-product = \cdot,
+	retain-explicit-plus = true,
+	% input-product = {*},
+	product-units = single,
+	per-mode = symbol,
+	range-units = single,
+	range-phrase = {--},
+	separate-uncertainty=true,
+	multi-part-units=single
+}
+
+% (Beskrivning saknas.)
+\DeclareSIUnit\noop{\relax}
+
+%% k7per: Swap these two definitions if you want a small Orange blob
+%% behind the ref locations for ease of layout work.
+\newcommand\ssaref[1]{\ref{#1}}
+%% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
+
+% (Beskrivning saknas.)
+\clubpenalty=9990
+\widowpenalty=9999
+\brokenpenalty=4999
+
+% En uppsättning makron för naturlig typsättning av elektriska och elektroniska
+% nätverk. Används till kretsdiagram.
+\usepackage[
+	european,
+	cuteinductors,
+	smartlabels
+]{circuitikz}
+
+% (Beskrivning saknas.)
+\usepackage[framemethod=TikZ]{mdframed}
+
+% (Beskrivning saknas.)
+\mdfdefinestyle{FactBox}{
+	linecolor=blue,
+	outerlinewidth=2pt,
+	roundcorner=20pt,
+	innertopmargin=\baselineskip,
+	innerbottommargin=\baselineskip,
+	innerrightmargin=20pt,
+	innerleftmargin=20pt,
+	backgroundcolor=gray!50!white}
+\newcommand{\infobox}[1]{
+\begin{figure}%[r][0.5\textwidth]
+  \begin{mdframed}[style=FactBox]
+#1
+  \end{mdframed}
+\end{figure}
+}
+
+% Skapa tabellceller som spänner över flera rader.
+\usepackage{multirow}
+
+% Dela tabeller över flera sidor.
+\usepackage{xtab}
+
+% Detta paket ger användarkontroll över layouten för de tre grundläggande
+% listmiljöerna: enumerate, itemize and description.
+\usepackage{enumitem}
+
+% Paketet bygger på paketet graphics och tillhandahåller ett
+% nyckel-värde-gränssnitt för valfria argument till kommandot \includegraphics.
+% Detta gränssnitt ger faciliteter som går långt utöver vad paketet graphics
+% erbjuder på egen hand.
+\usepackage{graphicx}
+
+% (Beskrivning saknas.)
+\raggedbottom
+
+% Läs in information från versionshanteringen så att den finns tillgänglig
+% för sidan med tryckinformation.
+\usepackage{xstring}
+\usepackage{catchfile}
+\CatchFileDef{\HEAD}{SHA.tmp}{}
+\CatchFileDef{\branch}{branch.tmp}{}
+\newcommand{\gitrevision}{
+	\StrLeft{\HEAD}{7}
+}
+\CatchFileDef{\VERSION}{VERSION.txt}{}
+\newcommand{\revision}{
+	\VERSION (\branch \gitrevision)
+}
+
+% Gör så att båda kolumnerna på sista sidan i ett kapitel är lika höga.
+% Aktiveras med \balance i första kolumnen på sista sidan.
 \usepackage{balance}
 
+% Paketet gör små förändringar i teckenjusteringen så raderna passar bättre.
 \usepackage[
-  activate={true,nocompatibility},
-  final,
-  tracking=true,
-  factor=1000,
-  stretch=40,
-  shrink=20,
-  babel=true
+	activate={true,nocompatibility},
+	final,
+	tracking=true,
+	factor=1000,
+	stretch=40,
+	shrink=20,
+	babel=true
 ]{microtype}
 
-\usepackage[a4paper,twoside,twocolumn,inner=2.2cm,outer=1.9cm,columnsep=0.9cm,top=2cm,bottom=2cm]{geometry}
-%% k7per
+% Kommandon för att styra presentationen av floats.
 \usepackage{stfloats}
-% \usepackage{blindtext, subfig}
 
+% (Beskrivning saknas.)
 \newcommand{\erp}{ERP}
 \newcommand{\eirp}{EIRP}
 \newcommand{\pep}{PEP}
+
+% (Beskrivning saknas.)
 \newcommand{\signal}[1]{\texttt{#1}}
 
-%% k7per: The harecsection macro is used to enclose a list of harec commands, it also takes care of making
-%% sure the paragraph afterwards in no indenented, making sections with harec tags look the sme as sections
-%% without.
+% k7per: The harecsection macro is used to enclose a list of harec commands, it
+% also takes care of making sure the paragraph afterwards in no indenented,
+% making sections with harec tags look the sme as sections without.
 \makeatletter
 \def\harecsection#1{\begingroup\raggedleft\scriptsize HAREC #1\par\endgroup\@afterindentfalse\@afterheading}
 \makeatother
@@ -47,19 +228,31 @@
 
 \makeatletter
 \providecommand\add@text{}
-\newcommand\tagaddtext[1]{%
-  \gdef\add@text{#1\gdef\add@text{}}}% 
-\renewcommand\tagform@[1]{%
-  \maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}%
+\newcommand\tagaddtext[1]{
+  \gdef\add@text{#1\gdef\add@text{}}}
+\renewcommand\tagform@[1]{
+  \maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}
 }
 \makeatother
 
-% \usepackage{dblfloatfix}
+% Förbättrat gränssnitt för flytande objekt.
 \usepackage{float}
+
+% Defines a \FloatBarrier command, beyond which floats may not pass; useful, for
+% example, to ensure all floats for a section appear before the next \section
+% command.
 \usepackage{placeins}
+
+% An extended implementation of the array and tabular environments which extends
+% the options for column formats, and provides "programmable" format
+% specifications.
 \usepackage{array}
+
+% (Beskrivning saknas.)
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
+% Paketet ger omfattande möjligheter, både för att konstruera sidhuvuden och
+% sidfötter, och för att kontrollera deras användning.
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{}
@@ -69,11 +262,12 @@
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-%% This fixes page numbering on chapter head pages
+% This fixes page numbering on chapter head pages.
 \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyfoot[LE,RO]{\thepage}
-  \renewcommand{\headrulewidth}{0pt}}
+	\fancyhf{}
+	\fancyfoot[LE,RO]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+}
 
 \renewcommand{\bfdefault}{b}
 \SetMathAlphabet{\mathbf}{normal}{OT1}{cmr}{b}{n}
@@ -83,20 +277,18 @@
 %%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\fcolorbox{black}{black}{\color{white}\,\thechapter\,}~~}{0pt}{\Huge\bfseries}
 
-%%\headheight = 12.6pt
-
-%% \setsecnumdepth{subsection}
+% (Beskrivning saknas.)
 \setcounter{secnumdepth}{3}
 
 % Figure macros
 \newcommand{\bottomwidefigure}[4][0.6]{
-  \begin{figure*}[b]
-    \centering
-    \includegraphics[width=#1\textwidth]{#2}
-    \caption{#3}
-    \label{#4}
-    \vspace{-10pt}
-  \end{figure*}
+    \begin{figure*}[b]
+        \centering
+        \includegraphics[width=#1\textwidth]{#2}
+        \caption{#3}
+        \label{#4}
+        \vspace{-10pt}
+    \end{figure*}
 }
 
 \newcommand{\smallfig}[4][0.4]{
@@ -352,144 +544,149 @@
   \end{figure*}
 }
 
+% (Beskrivning saknas.)
 \newsavebox\TBox
-\def\textoverline#1{\savebox\TBox{#1}%
+\def\textoverline#1{\savebox\TBox{#1}
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
 
+% (Beskrivning saknas.)
 \usepackage[textfont=sf,labelfont={bf, sf},margin=10pt]{caption}
 
+% Tillhandahåller ett schema för tabeller som har en strukturerad
+% anteckningssektion, efter bildtexten. Detta schema ger ett svar på det gamla
+% problemet med att lägga in fotnoter i tabeller - genom att göra fotnoter helt
+% onödiga. Observera att en tredelad tabell inte är en flytande i sig själv; men
+% du kan placera den i en tabell eller en tabellmiljö, om det behövs.
 \usepackage{threeparttable}
+
+% (Beskrivning saknas.)
 \usepackage[symbol]{footmisc}
+
+% (Beskrivning saknas.)
 \usepackage{morse}
+
+% Paketet innehåller fyra kommandon för vertikal skalning och sträckning av
+% föremål. Dess primära funktion är förmågan att skala/sträcka och flytta ett
+% objekt för att anpassa sig till storleken på ett specificerat andra objekt.
+% Denna funktion kan vara användbar i både ekvationer och schematiska diagram.
+% Dessutom erbjuder skalnings- och sträckningskommandona begränsningar för
+% maximal bredd och/eller minsta bildförhållande, som ofta används för att
+% bevara läsbarheten eller för det allmänna utseendets skull.
 \usepackage{scalerel}
 
-%\def\frdjp{\textbf{FÖRDJUPNING}}
-\def\frdjp{}
-  
-% \makechapterstyle{ssa}{%
-%   \chapterstyle{default}
-%   \chapterstyle{article}%
-%   %\renewcommand*{\thechapter}{\Roman{chapter}}
-%   \renewcommand*{\printchapternum}{% center number/title
-%     \centering\chapnumfont \textsc\thechapter\space\space}%
-%   \renewcommand*{\printchapternonum}{\centering}
-%   %\renewcommand*{\clearforchapter}{}% no new page
-%   \aliaspagestyle{chapter}{headings}}% no special pagestyle
-
-%% \semiisopage[12]
-
-% Prepare for abstract
-%\pagestyle{plain}
-%\newenvironment{abstract}%
-%{\cleardoubblanklepage\null \vfill\begin{center}\bfseries Abstract \end{center}}%
-%{\cleardoublepage\null \vfill\begin{center}%
-%\bfseries \abstractname \end{center}}%
-%     {\vfill\null}
-
-%% k7per: förbättringar till avstavningsregler.  Lägg till här, inte i den löpande texten.
-%% Enda undantaget skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
+% Avstavningsregler -- lägg till här, inte i den löpande texten. Enda undantaget
+% skulle vara ord med streck i, till vi får en bra lösning på det, babel's "- kanske.
 \hyphenation{
-  amatör-ra-dio-signaler
-  amatör-radio-certi-fikat
-  amatör-radio-sänd-ar-en
-  an-tenn-sys-tem
-  antenn-ens
-  bär-vågs-am-pli-tud
-  efter-som
-  el-ek-tro-mag-net-isk
-  elektronrörs-epoken
-  extra-isolerad
-  fas-änd-ring-en
-  for-mel-snu-r-r-an
-  fre-kvens-mod-ul-ati-on
-  frekvens-karaktäristiken
-  frekvens-ändring
-  för-utom
-  halv-led-ar-ele-ment
-  impedans-anpassade
-  ko-ax-ial-kab-el-arrangemang
-  kvarts-kristaller
-  mat-nings-im-pe-den-sen
-  materie-formerna
-  mat-nings-im-pe-dan-sen
-  MAY-DAY
-  min-d-re
-  mo-du-ler-ing
-  nät-an-slu-ten
-  o-läm-p-li-gt
-  puls-kod-mo-du-la-tion
-  puls-läng-ds
-  radio-vågor
-  re-so-nans-krets
-  serie-kretsen
-  skarv-sladdar
-  sys-tem-jord
-  tantal-elek-tro-lyt-kondensatorer
-  var-an-d-ra
-  våg-av-böj-ning
-  vä-xel-st-rö-m-s-krets
+	amatör-ra-dio-signaler
+	amatör-radio-certi-fikat
+	amatör-radio-sänd-ar-en
+	an-tenn-sys-tem
+	antenn-ens
+	bär-vågs-am-pli-tud
+	efter-som
+	el-ek-tro-mag-net-isk
+	elektronrörs-epoken
+	extra-isolerad
+	fas-änd-ring-en
+	for-mel-snu-r-r-an
+	fre-kvens-mod-ul-ati-on
+	frekvens-karaktäristiken
+	frekvens-ändring
+	för-utom
+	halv-led-ar-ele-ment
+	impedans-anpassade
+	ko-ax-ial-kab-el-arrangemang
+	kvarts-kristaller
+	mat-nings-im-pe-den-sen
+	materie-formerna
+	mat-nings-im-pe-dan-sen
+	MAY-DAY
+	min-d-re
+	mo-du-ler-ing
+	nät-an-slu-ten
+	o-läm-p-li-gt
+	puls-kod-mo-du-la-tion
+	puls-läng-ds
+	radio-vågor
+	re-so-nans-krets
+	serie-kretsen
+	skarv-sladdar
+	sys-tem-jord
+	tantal-elek-tro-lyt-kondensatorer
+	var-an-d-ra
+	våg-av-böj-ning
+	vä-xel-st-rö-m-s-krets
 }
 
+% Begränsa antalet nivåer i innehållsförteckningen.
 \setcounter{tocdepth}{1}
+
+% Ger kontroll över typografin i innehållsförteckningen, figurlistan och
+% tabelllistan, och möjligheten att skapa en ny "lista över ...".
+% Innehållsförteckningen \parskip kan ändras.
 \usepackage{tocloft}
+
+% (Beskrivning saknas.)
 \setlength\cftsecnumwidth{3em}
 
-% Prepare for index
+% Standardpaket för att skapa index.
 \usepackage{makeidx}
 \makeindex
 
-\usepackage[black,sfdefault]{sourcesanspro}
+% Teckensnittet är en Sans-Serif-utveckling med öppen källkod från Adobe.
+% Paketet tillhandahåller typsnitt (i både Adobe Type 1- och OpenType-format)
+% och makron som stödjer deras användning.
+\usepackage[black]{sourcesanspro}
 
+% Här slutar inställningarna.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Här börjar innehållet.
 \begin{document}
-
-%% \chapterstyle{ssa}
-
-% Frontpage
+%
+% Infoga framsidan och tryckortssidan.
 \include{koncept/frontpage}
-
-% Colophone
-
-%% Tryckortssidan
 \include{koncept/tryckort}
+%
+% (Beskrivning saknas.)
 \pagenumbering{gobble}
-
-% \lfoot[\revision]{}
-% \rfoot[]{\revision}
-
+%
+% (Beskrivning saknas.)
 \cleardoublepage
-%\pagestyle{fancy}
-
-%\title{KONCEPT FÖR RADIOAMATÖRCERTIFIKAT}
-%\author{Lennart Wiberg}
-%\maketitle
-
+%
+% Infoga innehållsförteckningen.
 \tableofcontents
-
-% \setlength{\parindent}{0pt}
-% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
- 
-%%\mainmatter
-
+%
+% Infoga försättsblad, förord och introduktion.
 \include{koncept/preface}
 \include{koncept/foreword}
 \include{koncept/introduction}
-
+%
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{5}
-
-\input{koncept/koncept-core}
-
+%
+% Infoga alla kapitel.
+\input{koncept/inkludera-kapitel}
+% Här slutar numreringen av kapitel och börjar om med bokstäver för appendix.
+\appendix
+% Infoga alla appendix.
+\input{koncept/inkludera-appendix}
+%
 \cleardoublepage
+%
+% Infoga sakregistret.
 \printindex
-
-\newcommand*\cleartoleftpage{%
-  \clearpage
-  \ifodd\value{page}\hbox{}\newpage\fi
+%
+\newcommand*\cleartoleftpage{
+	\clearpage
+	\ifodd\value{page}\hbox{}\newpage\fi
 }
-
+%
 \cleartoleftpage
-
+%
+% Infoga baksidan.
 \input{koncept/backpage}
-
+%
+% Här tar boken slut.
 \end{document}
