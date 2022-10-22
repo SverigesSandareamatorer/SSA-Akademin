@@ -65,7 +65,7 @@ Denna benämner vi ofta med \(f_S\) och begreppet \emph{samplingsperiodtid}
 \(T_S=\frac{1}{f_S}\) används också.
 Samplingstakten är alltså den jämna takt varmed vi får värden.
 Ibland säger man lite slarvigt att samplingstakten är exempelvis
-\SI{1}{\mega\hertz}, men det mer korrekta är att den är 1~MS/s, det vill säga 1
+\qty{1}{\mega\hertz}, men det mer korrekta är att den är 1~MS/s, det vill säga 1
 miljon sampel per sekund.
 
 Bild \ssaref{fig:BildII1-37} illustrerar hur en analog signal samplas och
@@ -81,8 +81,8 @@ process som kallas för \emph{kvantisering} (eng. \emph{quantize}).
 Vid kvantisering har man ofta ett fixt avstånd mellan stegen på en
 trappstege av värden. Varje steg kallas ibland för kvantiseringssteg och
 storleken på varje kvantiseringssteg avgör därmed hur hög upplösning man får.
-Har man till exempel ett kvantiseringssteg på \SI{0,1}{\volt} så blir 0 till
-\SI{0,1}{\volt} tolkat som 0, \SIrange{0,1}{0,2}{\volt} blir tolkat som 1 och så
+Har man till exempel ett kvantiseringssteg på \qty{0,1}{\volt} så blir 0 till
+\qty{0,1}{\volt} tolkat som 0, \SIrange{0,1}{0,2}{\volt} blir tolkat som 1 och så
 vidare.
 Bild \ssaref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
@@ -122,7 +122,7 @@ därmed
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-39.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-40.pdf}
 \includegraphics[width=0.45\textwidth]{images/cropped_pdfs/bild_2_1-41.pdf}
-\caption{Sampling av DC; \SI{3,6}{\kilo\hertz}; \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz} med \SI{40}{kS/s} samplingstakt}
+\caption{Sampling av DC; \qty{3,6}{\kilo\hertz}; \qty{12,4}{\kilo\hertz} och \qty{38}{\kilo\hertz} med \qty{40}{kS/s} samplingstakt}
 \label{fig:BildII1-38}
 \end{center}
 \end{figure*}
@@ -182,22 +182,22 @@ Detta fenomen uppstår alltid när man går mellan kontinuerlig och diskret tid.
 
 
 Bild \ssaref{fig:BildII1-38} visar hur fyra olika signaler, DC, sinus med
-\SI{3,6}{\kilo\hertz}, \SI{12,4}{\kilo\hertz} och \SI{38}{\kilo\hertz}, samplas
+\qty{3,6}{\kilo\hertz}, \qty{12,4}{\kilo\hertz} och \qty{38}{\kilo\hertz}, samplas
 med samplingstakten 40\,kS/s.
 Fallet med DC är uppenbart enkelt, alla punkterna hamnar på samma spänning.
-Vid en lågfrekvent sinus, som fallet är med \SI{3,6}{\kilo\hertz} här, får man
+Vid en lågfrekvent sinus, som fallet är med \qty{3,6}{\kilo\hertz} här, får man
 punkter spridda över kurvan och de påminner om den ursprungliga sinusen, än mer
 om man knyter samman punkterna, vilket antivikningsfiltret i praktiken gör.
-En frekvens som är nära nyquistfrekvensen, såsom \SI{12,4}{\kilo\hertz} in i
-40\,kS/s och dess \SI{20}{\kilo\hertz} nyquistfrekvens, så är samplingspunkterna
+En frekvens som är nära nyquistfrekvensen, såsom \qty{12,4}{\kilo\hertz} in i
+40\,kS/s och dess \qty{20}{\kilo\hertz} nyquistfrekvens, så är samplingspunkterna
 nästa helt alternerande mellan högsta och lägsta läge.
 I detta fall är det svårt att se den bakomliggande sinussignalen för ett otränat
 öga, men den kan fortfarande rekonstrueras med ett antialiasingfiltret.
-Ett ännu svårare fall är \SI{38}{\kilo\hertz}, där punkterna visar en sinus med
-\SI{2}{\kilo\hertz}, då frekvensen vikt sig ned runt nyquistfrekvensen, och
-eftersom infrekvensen är \SI{18}{\kilo\hertz} över nyquistfrekvensen hamnar den
-därför \SI{18}{\kilo\hertz} under nyquistfrekvensen, det vill säga på
-\SI{2}{\kilo\hertz} i det här fallet.
+Ett ännu svårare fall är \qty{38}{\kilo\hertz}, där punkterna visar en sinus med
+\qty{2}{\kilo\hertz}, då frekvensen vikt sig ned runt nyquistfrekvensen, och
+eftersom infrekvensen är \qty{18}{\kilo\hertz} över nyquistfrekvensen hamnar den
+därför \qty{18}{\kilo\hertz} under nyquistfrekvensen, det vill säga på
+\qty{2}{\kilo\hertz} i det här fallet.
 Denna vikning är det man försöker undvika med antivikningsfiltret, eftersom
 toner kan vika sig ned och bli störningar.
 Denna vikning sker både vid själva samplingen och även omvänt när man lägger ut
@@ -249,4 +249,4 @@ har kraftigt reducerat kraven.
 ADC och DAC köper man idag som färdiga integrerade kretsar, inte sällan med
 flera kanaler och det finns även de som har bägge integrerade i samma krets.
 Utvecklingen har gjort att man idag kan köpa 24-bitars 48\,kS/s ADC och DAC med
-dynamiskt område bättre än \SI{100}{\decibel} för väldigt låg kostnad.
+dynamiskt område bättre än \qty{100}{\decibel} för väldigt låg kostnad.

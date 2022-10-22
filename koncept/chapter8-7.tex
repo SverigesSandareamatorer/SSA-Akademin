@@ -82,11 +82,11 @@ signalens brusmängd en viktig sådan relation och därför så använder man
 begreppet \emph{signal-brus-förhållande} (eng.
 \emph{signal to noise ratio (S/N)}).
 
-Signal-brus förhållandet uttrycks oftast i \si{\decibel} och kan enkelt räknas
+Signal-brus förhållandet uttrycks oftast i \unit{\decibel} och kan enkelt räknas
 fram som skillnaden i nivå på signal och på brus, det vill säga signal minus
-brus, räknat i \si{\decibel}.
-Med en signalnivå på \SI{45}{\decibel} och brusnivå på \SI{22}{\decibel} har man
-således \SI{+23}{\decibel} S/N.
+brus, räknat i \unit{\decibel}.
+Med en signalnivå på \qty{45}{\decibel} och brusnivå på \qty{22}{\decibel} har man
+således \qty{+23}{\decibel} S/N.
 
 \subsubsection{Minimal signal-brus-förhållande}
 \harecsection{\harec{a}{7.20.2}{7.20.2}}
@@ -119,7 +119,7 @@ Så väl kablar, filter, kopplingar och vågutbredning innebär
 \emph{signaldämpning}.
 Det innebär att man tappar energi i förhållande till den tillförda energin.
 Förhållandet mellan uttagen och inmatad energi uttrycks oftast i form av
-\si{\decibel}.
+\unit{\decibel}.
 Man ska vara noga att notera dämpningen är oftast relaterad till frekvensen,
 så den ska uppskattas eller mätas för den frekvens som avses.
 
@@ -143,47 +143,47 @@ mottagaren.
 \emph{Brusfaktor} (eng. \emph{noise factor (NF)}) ger förhållandet mellan en
 förstärkares egenbrus i förhållande till det termiska bruset för ett motstånd
 på dess ingång.
-Brusfaktor redovisas oftast i \si{\decibel}, som varande dB över brusgolvet.
+Brusfaktor redovisas oftast i \unit{\decibel}, som varande dB över brusgolvet.
 
 En förstärkares egenbrus kommer givetvis att förstärkas, och därför kommer
-bruset på utgången vara brusfaktorn plus förstärkningen, räknat i \si{\decibel}.
-Exempelvis kommer en förstärkare med \SI{4,5}{\decibel} i brusfaktor och
-\SI{20}{\decibel} förstärkning ha brus på \SI{24,5}{\decibel} över brusgolvet.
-En efterföljande förstärkare med \SI{10}{\decibel} brusfaktor kommer inte
-signifikant bidra med brus, eftersom föregående steg har \SI{14,5}{\decibel}
+bruset på utgången vara brusfaktorn plus förstärkningen, räknat i \unit{\decibel}.
+Exempelvis kommer en förstärkare med \qty{4,5}{\decibel} i brusfaktor och
+\qty{20}{\decibel} förstärkning ha brus på \qty{24,5}{\decibel} över brusgolvet.
+En efterföljande förstärkare med \qty{10}{\decibel} brusfaktor kommer inte
+signifikant bidra med brus, eftersom föregående steg har \qty{14,5}{\decibel}
 högre brus än egenbruset.
 För detta fall är den första förstärkaren dominant.
 
 Eftersom kabeldämpning kan vara signifikant, så kommer signalen dämpas genom
 kabeln.
-Givet att vi har \SI{15}{\decibel} dämpning i kabeln, en signal
-\SI{40}{\decibel} över brusgolvet och en \SI{20}{\decibel} förstärkare med
-brusfaktor \SI{4,5}{\decibel}, var ska vi sätta förstärkaren?
+Givet att vi har \qty{15}{\decibel} dämpning i kabeln, en signal
+\qty{40}{\decibel} över brusgolvet och en \qty{20}{\decibel} förstärkare med
+brusfaktor \qty{4,5}{\decibel}, var ska vi sätta förstärkaren?
 
 Om förstärkaren sitter efter kabeln så kommer signalen att dämpas först i
 kabeln, bruset kommer att läggas på och sedan kommer det att förstärkas
-\SI{20}{\decibel}.
-Det ger \SI{40}{\decibel} minus \SI{15}{\decibel} plus \SI{20}{\decibel} för
-signalen, det vill säga \SI{45}{\decibel}.
-För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} det vill säga
-\SI{24,5}{\decibel}.
-För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
-\SI{24,5}{\decibel}, det vill säga \SI{20,5}{\decibel}, givet att det är det
+\qty{20}{\decibel}.
+Det ger \qty{40}{\decibel} minus \qty{15}{\decibel} plus \qty{20}{\decibel} för
+signalen, det vill säga \qty{45}{\decibel}.
+För bruset får vi \qty{4,5}{\decibel} plus \qty{20}{\decibel} det vill säga
+\qty{24,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \qty{45}{\decibel} minus
+\qty{24,5}{\decibel}, det vill säga \qty{20,5}{\decibel}, givet att det är det
 interna bruset som är dominerande.
 
 Om förstärkaren sitter före kabeln så kommer signalen först förstärkas och
 sedan dämpas i kabeln.
-Det ger \SI{40}{\decibel} plus \SI{20}{\decibel} minus \SI{15}{\decibel} för
-signalen, det vill säga \SI{45}{\decibel}.
-För bruset får vi \SI{4,5}{\decibel} plus \SI{20}{\decibel} minus
-\SI{15}{\decibel} det vill säga \SI{9,5}{\decibel}.
-För detta fallet får vi ett signal-brus-förhållande på \SI{45}{\decibel} minus
-\SI{9,5}{\decibel}, det vill säga \SI{35,5}{\decibel}, givet att det är det
+Det ger \qty{40}{\decibel} plus \qty{20}{\decibel} minus \qty{15}{\decibel} för
+signalen, det vill säga \qty{45}{\decibel}.
+För bruset får vi \qty{4,5}{\decibel} plus \qty{20}{\decibel} minus
+\qty{15}{\decibel} det vill säga \qty{9,5}{\decibel}.
+För detta fallet får vi ett signal-brus-förhållande på \qty{45}{\decibel} minus
+\qty{9,5}{\decibel}, det vill säga \qty{35,5}{\decibel}, givet att det är det
 interna bruset som är dominerande.
 
 Med detta exempel ser vi hur en länkbudget hjälper oss att få
-signal-brus-förhållandet att gå från \SI{20,5}{\decibel} till
-\SI{35,5}{\decibel} enbart genom att ändra placeringen av förstärkaren i
+signal-brus-förhållandet att gå från \qty{20,5}{\decibel} till
+\qty{35,5}{\decibel} enbart genom att ändra placeringen av förstärkaren i
 systemet.
 
 \subsubsection{Vägförlust}
@@ -200,10 +200,10 @@ Fri-rymds förlusten beror förenklat på frekvens och avstånd, en enkel model
 %%
 \[L_{fs} = 32.45 + 20\log d + 20\log f\]
 %%
-där \(d\) är avståndet i \si{\kilo\metre} och \(f\) är frekvensen i
-\si{\mega\hertz} och det ger \(L_{fs}\) är vägförlusten i \si{\decibel}.
+där \(d\) är avståndet i \unit{\kilo\metre} och \(f\) är frekvensen i
+\unit{\mega\hertz} och det ger \(L_{fs}\) är vägförlusten i \unit{\decibel}.
 Fri-rymds förlusten avtar med kvadraten på avståndet, det vill säga
-\SI{6}{\decibel} på dubblat avstånd och det är i allmänhet den dominerande
+\qty{6}{\decibel} på dubblat avstånd och det är i allmänhet den dominerande
 effekten när man lämnat antennens närfält.
 
 Ytterligare förluster kan förekomma på grund av vegetation, delvis täckt

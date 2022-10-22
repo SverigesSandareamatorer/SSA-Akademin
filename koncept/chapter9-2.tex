@@ -78,8 +78,8 @@ lämpligt att belasta sändaren med dess nominella utgångsimpedans.
 För att då undvika att energi strålas ut bör en väl skärmad konstlast användas.
 
 I moderna amatörradiosändare med koaxialkabel utgång är utgångsimpedansen
-\SI{50}{\ohm}.
-Konstlasten ska då vara en \SI{50}{\ohm} resistor utan reaktiva egenskaper för
+\qty{50}{\ohm}.
+Konstlasten ska då vara en \qty{50}{\ohm} resistor utan reaktiva egenskaper för
 det intressanta frekvensområdet.
 Den kan bestå av en eller flera sammankopplade resistorer, ofta parallellt för
 att minska den induktiva komponenten.
@@ -122,12 +122,12 @@ Den är kristallstyrd och avger särskilt precisa och frekvensstabila signaler.
 
 Oscillatorsignalen förvrängs avsiktligt, så att det utöver grundfrekvensen även
 skapas harmoniska övertoner.
-En oscillator med till exempel grundfrekvensen \SI{25}{\kilo\hertz} avger på så
-sätt även frekvenserna \SI{50}{\kilo\hertz}, \SI{75}{\kilo\hertz},
-\SI{100}{\kilo\hertz}, \SI{125}{\kilo\hertz} och så vidare.
-Man får således en ''kalibreringsfrekvens'' för varje \SI{25}{\kilo\hertz}.
+En oscillator med till exempel grundfrekvensen \qty{25}{\kilo\hertz} avger på så
+sätt även frekvenserna \qty{50}{\kilo\hertz}, \qty{75}{\kilo\hertz},
+\qty{100}{\kilo\hertz}, \qty{125}{\kilo\hertz} och så vidare.
+Man får således en ''kalibreringsfrekvens'' för varje \qty{25}{\kilo\hertz}.
 
-Detta övertonsspektrum kan sträcka flera \SI{100}{\mega\hertz} upp.
+Detta övertonsspektrum kan sträcka flera \qty{100}{\mega\hertz} upp.
 Man ''nollsvävar'' apparat mot närmaste kalibreringsfrekvens och kan kalibrera
 till exempel VFO-skalan.
 
@@ -235,7 +235,7 @@ Gamla frekvensräknare hade en fix tid som den räknade över, och utan justerin
 av egentlig tid.
 Dessa har en enkel princip och tiden valdes ofta för att få en enkel skalfaktor
 mellan räknarens värde och frekvensen, genom att ha steg om
-\SI{100}{\milli\second}, \SI{1}{\second}, \SI{10}{\second} och så vidare.
+\qty{100}{\milli\second}, \qty{1}{\second}, \qty{10}{\second} och så vidare.
 Dessa räknare har dock problemet att för låga frekvenser så krävs lång
 observationstid för att försäkra sig om en tillräckligt bra numerisk precision.
 En variant av detta som framkom var den så kallade reciproka räknaren, som är
@@ -250,7 +250,7 @@ justera mätningen med ett bättre estimat på tiden det egentligen tog för de
 räknade eventen att hända.
 Med tidsupplösning på 1~ps-nivå kan därför 12~siffrors noggrannhet presenteras
 för en mätning över 1~sekund, medan för gamla frekvensräknare med sin
-\SI{10}{\mega\hertz} oscillator gav \SI{100}{\nano\second} upplösning och därmed
+\qty{10}{\mega\hertz} oscillator gav \qty{100}{\nano\second} upplösning och därmed
 enbart 7~siffrors noggrannhet för samma 1~sekund mätning.
 
 De moderna frekvensräknarna har nu mer även filter som sammanställer flera
@@ -263,7 +263,7 @@ filtrera bort mätbrus.
 Resultatet visas som siffror i ett fönster.
 Noggrannheten i den så kallade tidbasen erhålls med en kristallstyrd oscillator
 eller för dyrare instrument med en rubidiumnormal.
-Man kan ofta ansluta en extern frekvensnormal med frekvens på \SI{10}{\mega\hertz},
+Man kan ofta ansluta en extern frekvensnormal med frekvens på \qty{10}{\mega\hertz},
 vilket gör att man med moderna GPS-styrda oscillatorer kan få tillgång till
 SI-definitionen av hertz till en nu mer modest kostnad även i ett hobbylabb.
 
@@ -406,8 +406,8 @@ Ibland kan man anpassa antalet punkter för att få mätningen gå snabbare,
 mot att man får en lägre upplösning.
 
 Filtret sätter bandbredden på mätningen, och det kan gå i 1--3 steg, till
-exempel \SI{3}{\hertz}, \SI{10}{\hertz}, \SI{30}{\hertz}, osv. till
-\SI{3}{\mega\hertz}.
+exempel \qty{3}{\hertz}, \qty{10}{\hertz}, \qty{30}{\hertz}, osv. till
+\qty{3}{\mega\hertz}.
 För vissa specifika mätändamål, som till exempel för EMC mätningar, behöver man
 ha filter av rätt bandbredd och dessa är extra optioner.
 
@@ -473,7 +473,7 @@ sidband.
 Detektorn kan vara topp-detektor eller RMS detektor, det kan finnas flera.
 För specifika mätändamål som till exempel EMC mätningar behöver man specifik detektor.
 Det är viktigt att välja rätt detektor när signalen ska presenteras.
-Valet av detektor kan påverka den presenterade nivån med flera \si{\decibel}.
+Valet av detektor kan påverka den presenterade nivån med flera \unit{\decibel}.
 
 Det finns olika detektorer beroende på hur man vill ha signalen presenterad.
 Det finns toppvärdesindikerande (Auto-peak, max peak, min peak) detektorer som

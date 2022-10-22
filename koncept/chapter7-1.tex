@@ -84,10 +84,10 @@ utförande, påverkan från jordplan och omgivning med mera.
 Ett förhållande mellan längd och tjocklek av 10000 ger till exempel en cirka 2~\%
 mekaniskt kortare antenn.
 Förhållandet 30 ger en cirka 5~\% kortare antenn.
-Det första värdet kan passa för en \SI{2}{\milli\metre} tjock halvvågsantenn för
-\SI{7}{\mega\hertz}.
-Det andra värdet för en \SI{3,5}{\milli\metre} tjock halvvågsantenn för
-\SI{145}{\mega\hertz}.
+Det första värdet kan passa för en \qty{2}{\milli\metre} tjock halvvågsantenn för
+\qty{7}{\mega\hertz}.
+Det andra värdet för en \qty{3,5}{\milli\metre} tjock halvvågsantenn för
+\qty{145}{\mega\hertz}.
 Diagram för den så kallade förkortningsfaktorn finns i de flesta
 antennhandböcker.
 
@@ -105,7 +105,7 @@ c = \lambda \cdot f
 \quad c\ \text{[m/s]} \quad f\ \text{[Hz]} \quad \lambda \text{[m]}
 \]
 %%
-Elektriska våglängden för \SI{7}{\mega\hertz} är:
+Elektriska våglängden för \qty{7}{\mega\hertz} är:
 %%
 \[
 \lambda = \frac{c}{f} = \frac{300 \cdot 10^6}{7 \cdot 10^6} = 42,86
@@ -142,19 +142,19 @@ Bild \ssaref{fig:bildII6-1} visar att i vardera änden av antennen uppnår spän
 ett maximum (en strömbuk).
 Antennen strålar mest där strömbuken finns.
 
-Tag till exempel en \SI{40}{\metre} lång metalltråd som antenn.
-Frekvensen för grundresonansen är cirka \SI{3,5}{\mega\hertz}, men den är även i
-resonans på de harmoniska övertonerna (7, 14, 21, \SI{28}{\mega\hertz} osv.).
+Tag till exempel en \qty{40}{\metre} lång metalltråd som antenn.
+Frekvensen för grundresonansen är cirka \qty{3,5}{\mega\hertz}, men den är även i
+resonans på de harmoniska övertonerna (7, 14, 21, \qty{28}{\mega\hertz} osv.).
 
 Bild \ssaref{fig:bildII6-3} visar ström- och spänningsfördelningen på antennen vid
 de respektive övertonerna.
 
-För \SI{80}{\metre} (\SI{3,5}{\mega\hertz}) är matningspunkten ett i
+För \qty{80}{\metre} (\qty{3,5}{\mega\hertz}) är matningspunkten ett i
 spänningsminimum (en spänningsnod) och ett strömmaximum (en strömbuk).
 Strömmen är hög därför att matningspunkten har låg impedans.
 
-Samma antenn på \SI{40}{\metre}, \SI{20}{\metre}, \SI{15}{\metre},
-\SI{10}{\metre} (7, 14, 21, \SI{28}{\mega\hertz}) har ett spänningsmaximum
+Samma antenn på \qty{40}{\metre}, \qty{20}{\metre}, \qty{15}{\metre},
+\qty{10}{\metre} (7, 14, 21, \qty{28}{\mega\hertz}) har ett spänningsmaximum
 (spänningsbuk) och ett strömminimum (strömnod) i matningspunkten, som då har hög
 impedans.
 
@@ -187,7 +187,7 @@ strömmen är låg och spänningen är hög.
 
 När antennen, mätt i våglängder, befinner sig mycket högt över jordytan, det
 vill säga utan nämnvärd påverkan från omgivningen är impedansen i mittpunkten
-\SI{73}{\ohm} på grundfrekvensen.
+\qty{73}{\ohm} på grundfrekvensen.
 I praktiken kan impedansen avvika mycket från detta värde.
 
 Antenn och matningskabel måste vara impedansanpassade till varandra
@@ -207,9 +207,9 @@ Se avsnitt \ssaref{transmissionsledningar} i detta kapitel.
 Med W3DZZ-antennen (se avsnitt \ssaref{W3DZZ}) löses hjälpligt anpassningsproblemet
 med mittmatade partier på 2:a harmoniska övertonen, det vill säga dubbla
 grundfrekvensen.
-På 80- och \SI{40}{\metre}-banden är antennens matningsimpedans cirka
-\SI{60}{\ohm} och på de högre banden cirka \SI{100}{\ohm}.
-En kompromiss är att mata denna antenn med en \SI{75}{\ohm}-kabel för att inte
+På 80- och \qty{40}{\metre}-banden är antennens matningsimpedans cirka
+\qty{60}{\ohm} och på de högre banden cirka \qty{100}{\ohm}.
+En kompromiss är att mata denna antenn med en \qty{75}{\ohm}-kabel för att inte
 få alltför stor missanpassning på något band.
 
 \paragraph{Den omvikta dipolen (folded dipole):}
@@ -218,9 +218,9 @@ få alltför stor missanpassning på något band.
 \index{folded dipol}
 \index{antenn!folded dipol}
 
-Matningsimpedansen är cirka \SI{240}{\ohm}.
-En bandkabel med impedansen \SI{300}{\ohm} kan användas alternativt en
-koaxialkabel med impedansen 50 eller \SI{75}{\ohm} över en transformator med
+Matningsimpedansen är cirka \qty{240}{\ohm}.
+En bandkabel med impedansen \qty{300}{\ohm} kan användas alternativt en
+koaxialkabel med impedansen 50 eller \qty{75}{\ohm} över en transformator med
 impedansomsättningen 4:1.
 
 \paragraph{Jordplanantennen (GP-antennen):}
@@ -231,8 +231,8 @@ impedansomsättningen 4:1.
 
 Matningsimpedansen är \SIrange{30}{60}{\ohm}.
 När jordplanets spröt inte riktas horisontellt, utan snett nedåt, erhålls en
-matningsimpedans av \SI{50}{\ohm}, vilket passar bra för en koaxialkabel med
-\SI{50}{\ohm} impedans.
+matningsimpedans av \qty{50}{\ohm}, vilket passar bra för en koaxialkabel med
+\qty{50}{\ohm} impedans.
 
 \paragraph{Yagi- och Quad-antenner:}
 \index{yagiantenn}
@@ -242,9 +242,9 @@ matningsimpedans av \SI{50}{\ohm}, vilket passar bra för en koaxialkabel med
 \index{quadantenn}
 \index{antenn!Quad}
 
-En anpassningsanordning för anslutning av \SI{50}{\ohm} koaxialkabel ingår
+En anpassningsanordning för anslutning av \qty{50}{\ohm} koaxialkabel ingår
 oftast i fabriksgjorda riktantenner.
-En \SI{50}{\ohm} koaxialkabel kan då anslutas direkt till antennens
+En \qty{50}{\ohm} koaxialkabel kan då anslutas direkt till antennens
 matningspunkt.
 
 \subsubsection{Reaktansen i en icke-resonant antenn}
@@ -332,7 +332,7 @@ I moderna sändare består denna anordning mycket ofta av ett så kallat
 \SIrange{30}{150}{\ohm}.
 
 Ett transistoriserat slutsteg är oftast utfört för en fast utgångsimpedans av
-\SI{50}{\ohm} och är alltså i behov av en avstämningsanordning, om inte
+\qty{50}{\ohm} och är alltså i behov av en avstämningsanordning, om inte
 antennsystemet inom vissa gränser håller samma impedans.
 Toleransgränsen för felanpassning brukar vara ett SVF av storleksordningen 2:1
 innan sändarens skyddskretsar automatiskt minskar uteffekten.
@@ -434,15 +434,15 @@ Se kapitel \ssaref{decibel} om decibelbegreppet.
 \noindent\textbf{Exempel på beräkning av antennförstärkning:}
 %%
 \begin{align*}
-  U_f &= \SI{40}{\micro\volt} \quad U_d = \SI{20}{\micro\volt} \quad G =\ ? \\
+  U_f &= \qty{40}{\micro\volt} \quad U_d = \qty{20}{\micro\volt} \quad G =\ ? \\
   G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
 %%
-\SI{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka
-[\si{\volt\per\metre}], det vill säga 1~S-enhets ökning vid den mottagande
-stationen, liksom att \SI{6}{\decibel} antennförstärkning motsvarar en 4~dubblad
-sändareffekt [\si{\watt\per\square\metre}].
+\qty{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka
+[\unit{\volt\per\metre}], det vill säga 1~S-enhets ökning vid den mottagande
+stationen, liksom att \qty{6}{\decibel} antennförstärkning motsvarar en 4~dubblad
+sändareffekt [\unit{\watt\per\square\metre}].
 
 \noindent
 Ungefärlig antennförstärkning för olika antenner med en isotrop antenn som
@@ -537,23 +537,23 @@ backriktningen
 \textbf{Exempel 1:}
 %%
 \begin{align*}
-  U_f &= \SI{40}{\micro\volt} \quad U_b = \SI{4}{\micro\volt} \quad F/B =\ ? \\
+  U_f &= \qty{40}{\micro\volt} \quad U_b = \qty{4}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{40}{4} \\
   &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]}
 \end{align*}
 %%
-\(F/B = \SI{20}{\decibel}\) betyder att fältstyrkan \(U_f\) i huvudriktningen är
+\(F/B = \qty{20}{\decibel}\) betyder att fältstyrkan \(U_f\) i huvudriktningen är
 10 gånger så hög som fältstyrkan i backriktningen \(U_b\).
 
 \noindent\textbf{Exempel 2:}
 %%
 \begin{align*}
-  U_f &= \SI{15}{\micro\volt} \quad U_b = \SI{15}{\micro\volt} \quad F/B =\ ? \\
+  U_f &= \qty{15}{\micro\volt} \quad U_b = \qty{15}{\micro\volt} \quad F/B =\ ? \\
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]}
 \end{align*}
 %%
-\(F/B = \SI{0}{\decibel}\) betyder att \(U_f = U_b\), det vill säga att
+\(F/B = \qty{0}{\decibel}\) betyder att \(U_f = U_b\), det vill säga att
 fältstyrkorna i fram- och backriktning är lika stora, vilket inträffar för en
 dipol.
 
@@ -575,7 +575,7 @@ Bild \ssaref{fig:bildII6-10} visar halvvärdesbredder.
 \begin{gather*}
   \text{Observera, att } \frac{P_f}{2} \text{ motsvarar }
   \sqrt{\frac{1}{2}}U_f \\
-  ( \approx 0,7 U_f \text{ motsvarande \SI{3}{\decibel}})
+  ( \approx 0,7 U_f \text{ motsvarande \qty{3}{\decibel}})
 \end{gather*}
 %%
 Med spänningshalvvärdesbredd menas den vinkel inom vilken spänningen

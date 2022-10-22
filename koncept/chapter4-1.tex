@@ -30,8 +30,8 @@ Hur god isolationen är beror kraftigt på frekvensen, och de åtgärder man gö
 bör anpassas för hur god isolation man behöver eller vill ha för olika
 frekvenser.
 Man kan till exempel vilja ha god isolation vid sändar- och mottagarfrekvensen
-\SI{14}{\mega\hertz}, men vill inte ha galvanisk isolation för det gemensamma
-\SI{12}{\volt} kraftaggregatet.
+\qty{14}{\mega\hertz}, men vill inte ha galvanisk isolation för det gemensamma
+\qty{12}{\volt} kraftaggregatet.
 
 \section{Jordning}
 \index{jordning}
@@ -469,7 +469,7 @@ hantera vad man kallar för \emph{jordloop} (eng. \emph{ground loop}) eller äve
 Många gånger förklaras det som att man får en loop som agerar antenn för ett
 magnetfält.
 Det är dock sällan som ett magnetfält är så starkt att det inducerar flera
-ampere av vanlig \SI{50}{\hertz} ström.
+ampere av vanlig \qty{50}{\hertz} ström.
 
 Om vi går tillbaka till sammankoppling av apparater (kapitel
 \ssaref{sammankopplingavapparater}) där vi fick en skillnad av spänning \(U_{GND}\)
@@ -692,7 +692,7 @@ Eftersom nyttosignalen är differentiell kan man ibland medvetet använda den
 gemensamma spänningen för att överföra matningsspänning till till exempel en mikrofon.
 Denna form av matningsspänning kallas för \emph{fantommatning}
 (eng. \emph{phantom power}).
-En vanligt förekommande spänning är \SI{48}{\volt}, som då symboliseras med P48.
+En vanligt förekommande spänning är \qty{48}{\volt}, som då symboliseras med P48.
 Det förekommer även på modern Ethernet-utrustning och kallas då för
 \emph{Power over Ethernet (PoE)}.
 
@@ -833,7 +833,7 @@ kopplingen mellan jordarna, som oftast är ett mindre problem.
 Med dessa metoder fås bättre isolation än vad en oskärmad transformator kan
 erbjuda, på grund av just obalans.
 
-Den kapacitiva kopplingen har väldigt hög impedans vid \SI{50}{\hertz}, så man
+Den kapacitiva kopplingen har väldigt hög impedans vid \qty{50}{\hertz}, så man
 kan använda relativt höga motståndsvärden för att lasta ned den hårt.
 Fördelen är att man kan undvika direkt koppling, vilket kan skapa andra
 problem som när man vill ha relativ isolation galvaniskt.
@@ -854,10 +854,10 @@ efter det.
 Många gånger kan en kombination av åtgärder ge fullgott resultat utan att vara
 särdeles dyrt eller klumpigt, men det kräver eftertanke och helhetssyn.
 
-Ett enkelt fall i ljudsammanhang är \SI{50}{\hertz} \SI{230}{\volt} men man vill
-hålla störningen mindre än säg \SI{1}{\milli\volt}.
-Det kräver mer än \SI{106}{\decibel} isolation mellan \SI{230}{\volt}
-differentiellt på primärlindningen och \SI{1}{\milli\volt} gemensamt på
+Ett enkelt fall i ljudsammanhang är \qty{50}{\hertz} \qty{230}{\volt} men man vill
+hålla störningen mindre än säg \qty{1}{\milli\volt}.
+Det kräver mer än \qty{106}{\decibel} isolation mellan \qty{230}{\volt}
+differentiellt på primärlindningen och \qty{1}{\milli\volt} gemensamt på
 sekundärlindningen.
 Så god balans kan vara svår att finna i enskilda komponenter.
 Principen återkommer oavsett spänning och frekvens, det är en brist

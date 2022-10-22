@@ -99,7 +99,7 @@ Ytterledaren förhindrar dessutom HF-utstrålning och inkommande störningar.
 I motsats till den symmetriskt uppbyggda bandkabeln, tillhör
 koaxialkabeln de osymmetriska ledningarna.
 
-Vanliga karaktäristiska impedanser för koaxialkabel är 50 och \SI{75}{\ohm}.
+Vanliga karaktäristiska impedanser för koaxialkabel är 50 och \qty{75}{\ohm}.
 
 \subsection{Bandkabel}
 \harecsection{\harec{a}{6.3.1}{6.3.1}}
@@ -115,7 +115,7 @@ I ett kraftigare utförande övergår denna ledningstyp till att bestå av ett
 ledarpar med isolerade spridare på jämna avstånd.
 Den kommer att likna en stege det ursprungliga utförandet på en matarledning.
 
-Vanliga karaktäristiska impedanser för bandkabel är 300 och \SI{450}{\ohm}.
+Vanliga karaktäristiska impedanser för bandkabel är 300 och \qty{450}{\ohm}.
 
 \subsection{Vågledare}
 \harecsection{\harec{a}{6.3.3}{6.3.3}}
@@ -170,9 +170,9 @@ och dess induktivitet och kapacitet per längdenhet.
 
 \noindent\textbf{Exempel:}
 Vi undersöker elektriska karaktäristika i en kabel av typ RG-213/U.
-På en provbit med längden 1~meter mäter vi en kapacitans av \SI{97}{\pico\farad}
+På en provbit med längden 1~meter mäter vi en kapacitans av \qty{97}{\pico\farad}
 mellan inner och ytterledaren.
-När kabelns ena ände kortsluts mäter vi en induktans av \SI{262}{\nano\henry}.
+När kabelns ena ände kortsluts mäter vi en induktans av \qty{262}{\nano\henry}.
 
 Den uppmätta kapacitansen och induktansen bestämmer kabelns karaktäristiska
 impedans \(Z\), också kallat våg motstånd, som är oberoende av ledningens längd.
@@ -180,9 +180,9 @@ Med ovanstående uppmätta värden blir impedansen:
 %%
 \begin{align*}
   Z &= \sqrt{\frac{L}{C}} \quad L\text{ [H]} \quad C\text{ [F]} \quad
-  Z [\si{\ohm}] \\
+  Z [\unit{\ohm}] \\
   Z &= \sqrt{\frac{262000\cdot 10^{-12}}{97\cdot 10^{-12}}} =
-  \sqrt{\frac{262000}{97}} = \SI{52}{\ohm}
+  \sqrt{\frac{262000}{97}} = \qty{52}{\ohm}
 \end{align*}
 %%
 Den karaktäristiska impedansen för en matarledning, bestäms av ledningens
@@ -192,7 +192,7 @@ dimensioner och av isolationsmaterialets dielektricitetskonstant.
 För en bandkabel är:
 %%
 \begin{align*}
-Z = & \frac{276}{\sqrt{\varepsilon_r}}\cdot\log\frac{2a}{d} \quad \si{\ohm} \\
+Z = & \frac{276}{\sqrt{\varepsilon_r}}\cdot\log\frac{2a}{d} \quad \unit{\ohm} \\
 [&a = \text{centrumavståndet mellan ledarna i mm}] \\
 [&d = \text{ledardiametern i mm}] \\
 [&\varepsilon_r = \text{dielektricitetskonstanten, överslagsvärde 1,5}] \\
@@ -202,7 +202,7 @@ Z = & \frac{276}{\sqrt{\varepsilon_r}}\cdot\log\frac{2a}{d} \quad \si{\ohm} \\
 För en koaxialkabel är:
 %%
 \begin{align*}
-Z = & \frac{138}{\sqrt{\varepsilon_r}}\cdot\log\frac{D}{d} \quad \si{\ohm} \\
+Z = & \frac{138}{\sqrt{\varepsilon_r}}\cdot\log\frac{D}{d} \quad \unit{\ohm} \\
 [&D = \text{ytterledarens innerdiameter i mm}] \\
 [&d = \text{innerledarens ytterdiameter i mm}]
 \end{align*}
@@ -316,7 +316,7 @@ Förlusterna i en transmissionsledning stiger med ökad frekvens och anges av
 tillverkarna i datablad som dämpningen i dB per 100~m eller dB per 30~m ledning.
 
 I tabell \ssaref{Kabeldämpning} visas kabeldämpningen, effektförlusten, i dB per
-\SI{30}{\metre} för några vanliga typer av koaxialkablar.
+\qty{30}{\metre} för några vanliga typer av koaxialkablar.
 
 \begin{table*}[!ht]
   \begin{center}
@@ -445,7 +445,7 @@ Bild \ssaref{fig:bildII6-31} visar flera sätt att ansluta en matningsledning.
 \subsubsection{T-, delta- och gamma-anpassning}
 
 Funktion:
-En mittmatad halvvågsdipol har i fria rymden en impedans av cirka \SI{73}{\ohm}.
+En mittmatad halvvågsdipol har i fria rymden en impedans av cirka \qty{73}{\ohm}.
 
 Flyttas matningspunkten bort från mitten, åt det ena eller andra hållet, så är
 impedansen högre än i mitten.
@@ -477,8 +477,8 @@ impedans.
 
 Bild \ssaref{fig:bildII6-32} visar en $\lambda/2$-fasningsledning.
 
-Funktion: När till exempel en omvikt dipol med matningsimpedansen \SI{240}{\ohm}
-ska anslutas till en \SI{50}{\ohm}-kabel, behövs en impedanstransformering med
+Funktion: När till exempel en omvikt dipol med matningsimpedansen \qty{240}{\ohm}
+ska anslutas till en \qty{50}{\ohm}-kabel, behövs en impedanstransformering med
 förhållandet 4:1.
 En \(\lambda/2\) lång fasningsledning kan användas för detta ändamål.
 Fasningsledningen har dessutom en strömbalanserande verkan.
@@ -584,8 +584,8 @@ När ledningen är i resonans är spänningen hög över ingången, medan ström
 
 Bild \ssaref{fig:bildII6-36} visar en antennkopplare för bandkabel av olika
 längder.
-Storleken på kondensatorerna: \(C_1 = C_2 = \SI{500}{\pico\farad}, C_3 =
-\SI{300}{\pico\farad}\).
+Storleken på kondensatorerna: \(C_1 = C_2 = \qty{500}{\pico\farad}, C_3 =
+\qty{300}{\pico\farad}\).
 
 \subsubsection{Avstämning vid spänningskoppling}
 \index{antenn!avstämning}

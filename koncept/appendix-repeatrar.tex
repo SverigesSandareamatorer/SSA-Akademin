@@ -24,18 +24,18 @@ Kanalavståndet mellan repeatrarna i ett band är också enhetligt och sändning
 över repeatrarna måste naturligtvis ha mindre bandbredd än kanalavståndet.
 Inom IARU har man enats bland annat om frekvensparen för smalbandiga
 FM-repeatrar.
-Se IARU:s bandplaner för \SI{10}{\metre}-repeatrar i bilaga \ssaref{IARU bandplan}.
+Se IARU:s bandplaner för \qty{10}{\metre}-repeatrar i bilaga \ssaref{IARU bandplan}.
 För VHF-repeatrar finns bandplanen i bilaga \ssaref{Bandplan VHF och högre}.
 Frekvensplaner finns för repeatrar inom banden \SIrange{51}{52}{\mega\hertz}
-(\SI{6}{\metre}), \SIrange{145}{146}{\mega\hertz} (\SI{2}{\metre}),
-\SIrange{432}{438}{\mega\hertz} (\SI{70}{\centi\metre}),
-\SIrange{1240}{1300}{\mega\hertz} (\SI{10}{\centi\metre}) samt
-\SIrange{28000}{29700}{\kilo\hertz} (\SI{10}{\metre}).
+(\qty{6}{\metre}), \SIrange{145}{146}{\mega\hertz} (\qty{2}{\metre}),
+\SIrange{432}{438}{\mega\hertz} (\qty{70}{\centi\metre}),
+\SIrange{1240}{1300}{\mega\hertz} (\qty{10}{\centi\metre}) samt
+\SIrange{28000}{29700}{\kilo\hertz} (\qty{10}{\metre}).
 
 \section{Kanalnumreringsmetod}
 % Kan man lägga in några meningar om det gamla sättet att numrera kanaler?
-Vid införandet av \SI{12,5}{\kilo\hertz} kanalavstånd på 2~meter- och
-\SI{70}{\centi\metre}-banden infördes ett nytt numreringssystem.
+Vid införandet av \qty{12,5}{\kilo\hertz} kanalavstånd på 2~meter- och
+\qty{70}{\centi\metre}-banden infördes ett nytt numreringssystem.
 Man börjar med en bokstav som talar om vilket band det är och sen en
 siffra.
 
@@ -47,9 +47,9 @@ siffra.
   \multicolumn{1}{l|}{Kanalavstånd} &
   \multicolumn{1}{l}{Repeatershift}\\
   &
-  \multicolumn{1}{l|}{(\si{\mega\hertz})} &
-  \multicolumn{1}{l|}{(\si{\kilo\hertz})} &
-  \multicolumn{1}{l}{(\si{\kilo\hertz})}\\
+  \multicolumn{1}{l|}{(\unit{\mega\hertz})} &
+  \multicolumn{1}{l|}{(\unit{\kilo\hertz})} &
+  \multicolumn{1}{l}{(\unit{\kilo\hertz})}\\
       \hline
       H & 29,5 & 10 & -100\\
       F & 51   & 10 & -600\\
@@ -80,24 +80,24 @@ Till exampel, låt oss räkna fram frekvenserna för kanal 371 på
 70-centimetersbandet.  Då blir basfrekvensen $b = 430\cdot 10^6$,
 kanalnumret $n = 371$, kanalavståndet $k = 12,5\cdot 10^3$, och
 repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
-\si{\mega\hertz} och kanalavstånd samt repeatershift i
-\si{\kilo\hertz}.  Repeaterns sändningsfrekvens blir \(430\cdot 10^6 +
+\unit{\mega\hertz} och kanalavstånd samt repeatershift i
+\unit{\kilo\hertz}.  Repeaterns sändningsfrekvens blir \(430\cdot 10^6 +
 12,5\cdot 10^3 \cdot 371 = 434,6375\cdot10^6 =
-\SI{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens blir
+\qty{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens blir
 \(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 + (-2000\cdot 10^3) =
-432,6375\cdot10^6 = \SI{432,6375}{\mega\hertz}\).
+432,6375\cdot10^6 = \qty{432,6375}{\mega\hertz}\).
 
 \section{70-centimetersbandet}
 
-% Repeaterskift negativ \SI{2000}{\kilo\hertz}, med negativ
+% Repeaterskift negativ \qty{2000}{\kilo\hertz}, med negativ
 % repeaterskift så subtraherar repeaterskift från repeaterns
 % sändningsfrekvens för att få dess mottagningsfrekvens.
-% RU$n$: $430 + 0,0125n$\,\SI{}{\mega\hertz}.
+% RU$n$: $430 + 0,0125n$\,\qty{}{\mega\hertz}.
 
 \begin{tabular}{ r | c | l | l }
 	Kanal &       & Din sändar-        & Din mottagar-  \\
 	Ny    & fd    & frekvens       & frekvens \\
-          &       & [\si{\mega\hertz}] & [\si{\mega\hertz}] \\
+          &       & [\unit{\mega\hertz}] & [\unit{\mega\hertz}] \\
 	\hline
 	RU361 &       & 432,5125       & 434,5125 DV    \\
 	RU362 &       & 432,5250       & 434,5250 DV    \\
@@ -143,14 +143,14 @@ repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
 \newpage
 
 \section{2-metersbandet}
-%% Repeaterskift negativ \SI{600}{\kilo\hertz}, med negativ repeaterskift
+%% Repeaterskift negativ \qty{600}{\kilo\hertz}, med negativ repeaterskift
 %% så subtraherar repeaterskift från repeaterns sändningsfrekvens för att
 %% få dess mottagningsfrekvens.
-%% RV$n$: $145 + 0,0125n$\,\SI{}{\mega\hertz}.
+%% RV$n$: $145 + 0,0125n$\,\qty{}{\mega\hertz}.
 
 \begin{tabular}{ r | c | l | l }
 	Kanal & & Din sändar- & Din mottagar- \\
-	Ny    & fd & frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
+	Ny    & fd & frekvens [\unit{\mega\hertz}] & frekvens [\unit{\mega\hertz}] \\
 	\hline
 	RV46 & & 144,975 & 145,575\\
 	RV47 & & 144,9875 & 145,5875\\
@@ -173,11 +173,11 @@ repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
 \end{tabular}
 
 \section{23-centimetersbandet}
-%% Repeaterskift \SI{6000}{\kilo\hertz}.
+%% Repeaterskift \qty{6000}{\kilo\hertz}.
 
 \begin{tabular}{ l | l | l }
 	Kanal & Din sändar- & Din mottagar- \\
-	& frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
+	& frekvens [\unit{\mega\hertz}] & frekvens [\unit{\mega\hertz}] \\
 	\hline
 	RM0 & 1291,000 & 1297,000 \\
 	RM1 & 1291,025 & 1297,025 \\
@@ -205,19 +205,19 @@ repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
 
 \section[Speciella band]{Repeaterband med speciella egenskaper}
 \subsection{6-metersbandet}
-%% Repeaterskift \SI{600}{\kilo\hertz}.
+%% Repeaterskift \qty{600}{\kilo\hertz}.
 
 På grund av den relativt låga frekvensen uppnås ofta överräckvidder på grund av
 sporadisk vågutbredning via E-skiktet, se avsnitt \ssaref{e-skiktet}.
 Man kan då uppnå förbindelser utan hjälp av repeater.
 
-På \SI{51}{\mega\hertz} så anvånds endast udda kanalnummer.
+På \qty{51}{\mega\hertz} så anvånds endast udda kanalnummer.
 
 \bigskip
 
 \begin{tabular}{ l | l | l }
   Kanal & Din sändar- & Din mottagar- \\
-        & frekvens [\si{\mega\hertz}] & frekvens [\si{\mega\hertz}] \\
+        & frekvens [\unit{\mega\hertz}] & frekvens [\unit{\mega\hertz}] \\
   \hline
   RF81 & 51,210 & 51,810 \\
   RF83 & 51,230 & 51,830 \\
@@ -234,7 +234,7 @@ På \SI{51}{\mega\hertz} så anvånds endast udda kanalnummer.
 
 
 \subsection{10-metersbandet}
-%% Repeaterskift \SI{100}{\kilo\hertz}.
+%% Repeaterskift \qty{100}{\kilo\hertz}.
 
 På grund av den relativt låga frekvensen uppnås stora räckvidder genom
 jonosfärisk vågutbredning, särskilt under år med högt solfläckstal.
@@ -245,7 +245,7 @@ jonosfärisk vågutbredning, särskilt under år med högt solfläckstal.
 
 \begin{tabular}{ l | l | l }
   Kanal & Din sändar- & Din mottagar- \\
-        & frekvens [\si{\kilo\hertz}] & frekvens [\si{\kilo\hertz}] \\
+        & frekvens [\unit{\kilo\hertz}] & frekvens [\unit{\kilo\hertz}] \\
   \hline
   RH1 & 29520 & 29620 \\
   RH2 & 29530 & 29630 \\

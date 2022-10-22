@@ -78,7 +78,7 @@ Valenselektronerna är alltså inte bara av betydelse för materialets kemiska
 struktur utan också för dess elektriska egenskaper.
 
 Atomernas massa och volym är ytterst liten.
-Tag som exempel en kub av koppar med volymen \SI{1}{\cubic\centi\metre} och vikten
+Tag som exempel en kub av koppar med volymen \qty{1}{\cubic\centi\metre} och vikten
 \(8,9\ gram\).
 Den består av ca \(8,5 \cdot 10^{22}\) kopparatomer, dvs.
 \(85\, 000\, 000\, 000\, 000\, 000\, 000\, 000\) stycken.
@@ -149,8 +149,8 @@ Tabell \ssaref{table:metaller} ger exempel på metallernas resistivitet.
 \begin{table}
   \begin{center}
 \begin{tabular}{l|l}
-  Ämne & Resistivitet vid \SI{20}{\degreeCelsius} \\
-   & \([\si{\ohm} \cdot mm^2 / m]\) \\
+  Ämne & Resistivitet vid \qty{20}{\degreeCelsius} \\
+   & \([\unit{\ohm} \cdot mm^2 / m]\) \\
   \hline
   Aluminium   & 0,028 \\
   Bly         & 0,22  \\
@@ -357,7 +357,7 @@ I formler betecknas ström med:
 \item[\(\hat{i}\)] för toppvärdet (amplitud-)
 \end{description}
 
-Strömmen är \SI{1}{\ampere} när \(6,25 \cdot 10^{18}\) elektroner per sekund
+Strömmen är \qty{1}{\ampere} när \(6,25 \cdot 10^{18}\) elektroner per sekund
 flyter genom ett givet ledartvärsnitt, vilket motsvarar laddningen
 \(1\ \mathrm{coulomb}\).
 
@@ -394,8 +394,8 @@ fyrkantsvåg, och växlar ständigt riktning.
 \subsection{Resistans -- Enheten ohm}
 \harecsection{\harec{a}{1.1.2}{1.1.2c}, \harec{a}{1.1.3}{1.1.3c}}
 \index{resistans}
-\index{ohm (\si{\ohm})}
-\index{enheter!ohm (\si{\ohm})}
+\index{ohm (\unit{\ohm})}
+\index{enheter!ohm (\unit{\ohm})}
 \index{symbol!\(R\) resistans}
 \label{resistans}
 
@@ -407,13 +407,13 @@ Resistansen och därmed förlusterna i en strömkrets fördelas i
 förhållande till de ingående materialen och deras dimensionering.
 
 Resistans uttrycks i enheten \emph{ohm} \cite{SIbrochure8} och betecknas med
-den grekiska bokstaven omega (\si{\ohm}).
+den grekiska bokstaven omega (\unit{\ohm}).
 
 I formler betecknas resistansen i en elektrisk krets eller en del av den med
 \(R\).
 
-Resistansen i en resistor är \SI{1}{\ohm}, när en spänning av \SI{1}{\volt}
-driver en ström av \SI{1}{\ampere} genom den resistorn.
+Resistansen i en resistor är \qty{1}{\ohm}, när en spänning av \qty{1}{\volt}
+driver en ström av \qty{1}{\ampere} genom den resistorn.
 
 \subsection{Ohms lag}
 \harecsection{\harec{a}{1.1.4}{1.1.4}}
@@ -472,7 +472,7 @@ produkten av volt \(\mathrm{[V]}\) och ampere \(\mathrm{[A]}\).
 
 För effekt som alstras av likström används enheten \emph{watt} \(\mathrm{[W]}\)
 \cite{SIbrochure8} i stället för \emph{voltampere} \(\mathrm{[VA]}\).
-Vid sidan om grundenheten \SI{1}{\watt} används delar och multipler av denna.
+Vid sidan om grundenheten \qty{1}{\watt} används delar och multipler av denna.
 %%
 \[1\ \mathrm{volt\ [U]}\ \cdot\ 1\ \mathrm{ampere\ [I]}\ =\ 1\ \mathrm{watt\ [P]}\]
 %%
@@ -583,16 +583,16 @@ Välj det alternativ som innehåller två kända storheter.
 \subsubsection{Ohms lag}
 
 \(R\) söks, \(U\) och \(I\) är kända;
-Om \(U = \SI{230}{\volt}\) och \(I = \SI{2}{\ampere}\), så blir
+Om \(U = \qty{230}{\volt}\) och \(I = \qty{2}{\ampere}\), så blir
 %%
-\[R=\dfrac{U}{I}=\dfrac{230}{2}=\SI{115}{\ohm}\]
+\[R=\dfrac{U}{I}=\dfrac{230}{2}=\qty{115}{\ohm}\]
 %%
 \subsubsection{Joules lag}
 
 \(P\) söks, \(U\) och \(I\) är kända.
-Om \(U = \SI{230}{\volt}\) och \(I = \SI{2}{\ampere}\), så blir
+Om \(U = \qty{230}{\volt}\) och \(I = \qty{2}{\ampere}\), så blir
 %%
-\[P = U \cdot I = 230 \cdot 2 = \SI{460}{\watt}\]
+\[P = U \cdot I = 230 \cdot 2 = \qty{460}{\watt}\]
 %%
 \subsection{Amperetimmar (Ah) och batterikapacitet}
 \harecsection{\harec{a}{1.1.9}{1.1.9}}
@@ -624,9 +624,9 @@ Sådana celler kallas vanligtvis primärcell eller primärbatteri.
 Energi i form av en elektrisk laddning kan även lagras i en kondensator.
 Energin kan då lagras och tas ut utan omvandling.
 
-Kapaciteten i en elektrisk cell uttrycks som produkten av den ström \si{\ampere}
+Kapaciteten i en elektrisk cell uttrycks som produkten av den ström \unit{\ampere}
 som cellen avger och under den tid \(\mathrm{[s, h]}\) detta kan ske.
-Uttryckt med tidsenheten timmar blir då kapaciteten \si{Ah}.
+Uttryckt med tidsenheten timmar blir då kapaciteten \unit{Ah}.
 
 Den kapacitet som anges i en cells produktdata är den nominella.
 Denna kapacitet gäller endast under vissa normerade förhållanden såsom
@@ -646,12 +646,12 @@ Batteriets polspänning är då summan av cellernas pols\-pänningar.
 Hur stort arbete ett batteri avger, beror såväl på hela batteriets
 polspänning som på de enskilda cellernas kapacitet.
 Exempel:
-Ett batteri med polspänningen \SI{12}{\volt} och cellkapaciteten
-\SI{100}{Ah} kan nominellt avge
-\(P = U \cdot I = 12 \cdot 100 = \SI{1200}{VAh} = \SI{1,2}{kWh}\).
+Ett batteri med polspänningen \qty{12}{\volt} och cellkapaciteten
+\qty{100}{Ah} kan nominellt avge
+\(P = U \cdot I = 12 \cdot 100 = \qty{1200}{VAh} = \qty{1,2}{kWh}\).
 
 Hur länge batteriet ''räcker'' per laddning beror som sagt bland annat på
 vilken strömstyrka man tar ut.
-Tar man ut \SI{1}{\ampere} ur \SI{100}{Ah}-cellen här ovan, så blir
-urladdningstiden nominellt \(t = \SI{100}{Ah}/\SI{1}{\ampere} =
-\SI{100}{\hour}\).
+Tar man ut \qty{1}{\ampere} ur \qty{100}{Ah}-cellen här ovan, så blir
+urladdningstiden nominellt \(t = \qty{100}{Ah}/\qty{1}{\ampere} =
+\qty{100}{\hour}\).

@@ -38,7 +38,7 @@ och transistor.
 \index{LF-förstärkare}
 \index{förstärkare!LF}
 Med \emph{LF-förstärkare} menas förstärkare som arbetar med signaler i det lägre
-frekvensområdet, typiskt upp till cirka \SI{100}{\kilo\hertz}.
+frekvensområdet, typiskt upp till cirka \qty{100}{\kilo\hertz}.
 LF-förstärkare är mycket vanliga såväl i mottagare som sändare.
 Utöver de aktiva komponenterna (transistorer, elektronrör) är kondensatorer
 och resistorer de viktigaste passiva.
@@ -75,16 +75,16 @@ förstärkarens bandbredd.
 Det frekvensområde där förstärkaren arbetar med fulla data kallas
 \emph{bandbredd} (eng. \emph{bandwidth}).
 Bandgränserna uttrycks som en nedre och övre gränsfrekvens, där signalnivån
-avviker från ett givet värde, vanligen med högst \SI{3}{\decibel}.
+avviker från ett givet värde, vanligen med högst \qty{3}{\decibel}.
 
 För LF-förstärkare för amatörradiobruk är kravet på bandbredd litet; inom ett
-band av \SI{300}{\hertz} till \SI{3}{\kilo\hertz} uppnås godtagbar
+band av \qty{300}{\hertz} till \qty{3}{\kilo\hertz} uppnås godtagbar
 återgivningskvalitet för tal.
 Bandbredden bestäms främst av kondensatorer i kretsen avsedda för överföring
 och avkoppling.
 
 HF-förstärkare används för signaler med hög frekvens, typiskt
-\SI{100}{\kilo\hertz} och däröver.
+\qty{100}{\kilo\hertz} och däröver.
 Det finns så kallade bredbandiga förstärkare för ett stort frekvensområde, men
 även avstämda förstärkare för smala frekvensband.
 
@@ -138,8 +138,8 @@ impedansomvandling.
     \caption{Grundkopplingarnas typiska egenskaper vid NPN-transistor}
     \begin{tabular}{p{0.15\textwidth}|p{0.22\textwidth}|p{0.18\textwidth}|p{0.20\textwidth}}
       \bf Egenskap & \bf Emitterkoppling & \bf Baskoppling & \bf Kollektor\-koppling \\
-      \(Z_{in}\) & medel \quad \SI{1}{\kilo\ohm} & liten \quad \SI{50}{\ohm} & stor \quad \SI{100}{\kilo\ohm} \\
-      \(Z_{ut}\) & medel \quad \SI{10}{\kilo\ohm} & stor \quad \SI{100}{\kilo\ohm} & liten \quad \SI{50}{\ohm} \\
+      \(Z_{in}\) & medel \quad \qty{1}{\kilo\ohm} & liten \quad \qty{50}{\ohm} & stor \quad \qty{100}{\kilo\ohm} \\
+      \(Z_{ut}\) & medel \quad \qty{10}{\kilo\ohm} & stor \quad \qty{100}{\kilo\ohm} & liten \quad \qty{50}{\ohm} \\
       Förstärkning & & & \\
       \quad Ström- & stor \quad 100 ggr & <1 \quad 0,9 ggr & stor \quad 100 ggr \\
       \quad Spänning- & stor \quad 100 ggr & stor \quad 100 ggr & <1 \quad 0,99 ggr \\
@@ -285,7 +285,7 @@ Den totala multipliceringsfaktorn är faktorerna för vardera steget
 multiplicerat med varandra.
 
 Som exempel visar bilden blockschemat för en VHF-sändare med
-oscillatorkristaller i \SI{8}{\mega\hertz}-området.
+oscillatorkristaller i \qty{8}{\mega\hertz}-området.
 Som räkneövning kan andra kristallfrekvenser sättas in för beräkning av den
 slutliga sändningsfrekvensen.
 I frekvensmultiplicerande sändare kan även slutsteget arbeta i klass C, vilket
@@ -295,8 +295,8 @@ förstärkarkedjan förses slutstegets utgång med en resonanskrets som är
 avstämd till sändningsfrekvensen.
 Övertonsdämpningen kan förbättras ytterligare med ett efterföljande
 lågpassfilter.
-Övertoner för \SI{144}{\mega\hertz} är \SI{288}{\mega\hertz},
-\SI{432}{\mega\hertz} och så vidare.
+Övertoner för \qty{144}{\mega\hertz} är \qty{288}{\mega\hertz},
+\qty{432}{\mega\hertz} och så vidare.
 
 Frekvensmultiplicering behöver nödvändigtvis inte göras med ett förstärkarsteg
 i klass C.
@@ -306,7 +306,7 @@ En av dessa övertoner kan filtreras fram och förstärkas.
 Till exempel finns det frekvenstripplingssteg byggda kring en speciell typ av
 kapacitansdiod -- varaktordiod.
 Vanliga frekvensområden för så kallad varaktortripplare är
-144/\SI{432}{\mega\hertz} och 432/\SI{1296}{\mega\hertz}.
+144/\qty{432}{\mega\hertz} och 432/\qty{1296}{\mega\hertz}.
 
 Såväl signalen från en kristalloscillator som den från en VFO kan
 multipliceras till en högre frekvens.
@@ -319,17 +319,17 @@ De ursprungliga amatörradiobanden i KV-området ligger fortfarande harmoniskt
 relaterade av detta skäl. Således:
 %%
 \begin{align*}
-  3,5 \cdot 2 & = \SI{7}{\mega\hertz} \\
-  3,5 \cdot 2 \cdot 2 & = \SI{14}{\mega\hertz} \\
-  3,5 \cdot 2 \cdot 3 & = \SI{21}{\mega\hertz} \\
-  3,5 \cdot 2 \cdot 2 \cdot 2 & = \SI{28}{\mega\hertz}
+  3,5 \cdot 2 & = \qty{7}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 & = \qty{14}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 3 & = \qty{21}{\mega\hertz} \\
+  3,5 \cdot 2 \cdot 2 \cdot 2 & = \qty{28}{\mega\hertz}
 \end{align*}
 %%
 Vid frekvensmultiplicering flerfaldigas inte bara oscillatorfrekvensen utan
 även variationerna i den.
-Om till exempel VFO-frekvensen i området \SI{3,5}{\mega\hertz} ändras med
-\SI{50}{\hertz}, ändras utfrekvensen i området \SI{28}{\mega\hertz} med
-\(2 \cdot 2 \cdot 2 \cdot 50 = \SI{400}{\hertz}\).
+Om till exempel VFO-frekvensen i området \qty{3,5}{\mega\hertz} ändras med
+\qty{50}{\hertz}, ändras utfrekvensen i området \qty{28}{\mega\hertz} med
+\(2 \cdot 2 \cdot 2 \cdot 50 = \qty{400}{\hertz}\).
 Alla frekvenser i signalen multipliceras på detta sätt.
 Amplitudmodulerad telefoni kan därför inte överföras genom en
 frekvensmultipliceringskedja utan att talet förvrängs.
