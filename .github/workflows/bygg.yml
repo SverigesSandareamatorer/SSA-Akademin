@@ -41,6 +41,7 @@ jobs:
           make images_linked
           make images_unlinked
           make TODOs
+          make too_long_lines
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v3
         with:
@@ -55,3 +56,4 @@ jobs:
             images_linked.txt
             images_unlinked.txt
             TODOs.txt
+            too_long_lines.txt
