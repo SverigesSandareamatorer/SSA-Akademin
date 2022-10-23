@@ -1,7 +1,6 @@
 ## Windows
 Thumbs.db
 Thumbs.db:encryptable
-[Dd]esktop.ini
 
 ## MacOS
 .DS_Store
@@ -206,3 +205,4 @@ images_available.txt
 images_linked.txt
 images_unlinked.txt
 TODOs.txt
+too_long_lines.txt
