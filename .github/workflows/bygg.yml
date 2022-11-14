@@ -69,4 +69,5 @@ jobs:
       - name: Testa hyperlänkar
         uses: lycheeverse/lychee-action@v1.5.4
         with:
-          args: "--cache --max-cache-age 1d --max-concurrency 4 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
+          fail: true
+          args: "--cache --max-cache-age 1d --max-concurrency 4 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
