@@ -55,7 +55,7 @@ jobs:
             images_linked.txt
             images_unlinked.txt
             TODOs.txt
-  testa-hyperlänkar:
+  testa-hyperlankar:
     name: 'Testa hyperlänkar'
     runs-on: ubuntu-latest
     steps:
