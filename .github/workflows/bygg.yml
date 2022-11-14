@@ -69,4 +69,4 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.5.4
         with:
-          args: "--cache --max-cache-age 1d --verbose"
+          args: "--cache --max-cache-age 2d --verbose --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
