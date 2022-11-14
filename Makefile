@@ -156,7 +156,6 @@ images_unlinked: images_available images_linked
 
 long_lines:
 	grep '.\{80\}' **/*.tex > long_lines.txt
-	cat long_lines.txt | wc -l
 
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
