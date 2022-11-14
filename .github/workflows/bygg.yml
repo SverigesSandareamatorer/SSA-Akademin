@@ -70,4 +70,4 @@ jobs:
         uses: lycheeverse/lychee-action@v1.5.4
         with:
           fail: true
-          args: "--cache --max-cache-age 2d --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
+          args: "--cache --max-cache-age 1d --max-concurrency 4 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
