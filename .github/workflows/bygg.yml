@@ -41,6 +41,8 @@ jobs:
           make images_linked
           make images_unlinked
           make TODOs
+          make long_lines
+          echo "Antal kodrader längre än 80 tecken: $(cat long_lines.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
       - name: 'Ladda upp artefakt'
         uses: actions/upload-artifact@v3
         with:
@@ -55,3 +57,4 @@ jobs:
             images_linked.txt
             images_unlinked.txt
             TODOs.txt
+            long_lines.txt

@@ -154,6 +154,9 @@ images_available:
 images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
+long_lines:
+	grep '.\{80\}' **/*.tex > long_lines.txt
+
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
 	octave macros/bild_tx_heat.m
