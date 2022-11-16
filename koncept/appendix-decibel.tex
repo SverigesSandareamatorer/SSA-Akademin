@@ -41,14 +41,14 @@ I samtliga fall rör det sig om förhållandet mellan två storheter --
 
 Exempel: Ett drivsteg i en sändare drivs med 1~watt och avger 10~watt.
 Effektförhållandet är 10:1 och effektförstärkningen är 10 gånger eller
-\SI{10}{\decibel}.
+\qty{10}{\decibel}.
 Slutförstärkaren i samma sändare drivs med 10~watt från drivsteget och avger
 100~watt till antennen.
 Även i detta fall är effektförhållandet 10:1 och effektförstärkningen 10 gånger
-eller \SI{10}{\decibel}.
+eller \qty{10}{\decibel}.
 
 Slutförstärkaren hanterar en 10 gånger så hög effektnivå som drivsteget och ändå
-är förstärkningen \SI{10}{\decibel} i båda fallen.
+är förstärkningen \qty{10}{\decibel} i båda fallen.
 Decibel är m.a.o. dimensionslöst.
 
 Men om en av två jämförda effekterna alltid är densamma och väl
@@ -59,57 +59,57 @@ effektnivåerna, till exempel genom en sändare uttryckas i decibel. Detta
 tillgår på följande sätt.
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av \SI{50}{\ohm}.
+med en impedans av \qty{50}{\ohm}.
 För god anpassning väljs då koaxialkablarna mellan apparaterna med en
-karaktäristisk impedans av \SI{50}{\ohm}.
+karaktäristisk impedans av \qty{50}{\ohm}.
 
 \emph{Det har utbildats en praxis, att referensvärdet vid jämförelse
-  av signalnivåer i radiosystem ska vara en milliwatt (\SI{1}{\milli\watt})
-  utvecklad i en belastning med impedansen \SI{50}{\ohm}.}
+  av signalnivåer i radiosystem ska vara en milliwatt (\qty{1}{\milli\watt})
+  utvecklad i en belastning med impedansen \qty{50}{\ohm}.}
 
-Signalnivåer över belastningen \SI{50}{\ohm} kan uttryckas i dB(m), där (m)
-står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} är 0\,dB(m) vid
-\SI{50}{\ohm}.
+Signalnivåer över belastningen \qty{50}{\ohm} kan uttryckas i dB(m), där (m)
+står för milliwatt, varvid referenseffekten \qty{1}{\milli\watt} är 0\,dB(m) vid
+\qty{50}{\ohm}.
 
-Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
+Det spänningsfall som bildas över belastningen \qty{50}{\ohm} vid effektnivån
 0\,dB(m) är
 %%
-\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \SI{0.224}{\volt}\]
+\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \qty{0.224}{\volt}\]
 %%
-Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0\,dB(m)
+Den ström som flyter genom belastningen \qty{50}{\ohm} vid effektnivån 0\,dB(m)
 är
 %%
 \[
-I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} = \SI{0.0045}{\ampere} = \SI{4.5}{\milli\ampere}
+I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} = \qty{0.0045}{\ampere} = \qty{4.5}{\milli\ampere}
 \]
 %%
-Strömmen \SI{4,5}{\milli\ampere} genom belastningen \SI{50}{\ohm} motsvarar
+Strömmen \qty{4,5}{\milli\ampere} genom belastningen \qty{50}{\ohm} motsvarar
 således 0\,dB(m).
 
 Varje annan effekt, spänningsfall och ström som uppstår vid en belastning av
-\SI{50}{\ohm} kan jämföras med respektive referensvärden \SI{1}{\milli\watt},
-\SI{0,22}{\volt} och \SI{4,5}{\milli\ampere}.
+\qty{50}{\ohm} kan jämföras med respektive referensvärden \qty{1}{\milli\watt},
+\qty{0,22}{\volt} och \qty{4,5}{\milli\ampere}.
 \emph{dB(m) är ett absolut och logaritmiskt mått.}
 
 \noindent
 Effekt:
 %%
 \begin{gather*}
-  a [dB(m)] = 10 \log\frac{P_{[\SI{50}{\ohm}]}}{1[\si{\milli\watt}_{\SI{50}{\ohm}}]} \\
-  P_{50} = 1 [\si{\milli\watt}] \cdot 10^{\frac{a}{10}}
+  a [dB(m)] = 10 \log\frac{P_{[\qty{50}{\ohm}]}}{1[\unit{\milli\watt}_{\qty{50}{\ohm}}]} \\
+  P_{50} = 1 [\unit{\milli\watt}] \cdot 10^{\frac{a}{10}}
 \end{gather*}
 %%
 Ström:
 %%
 \begin{gather*}
-  0 dB(m) = 4.47 \si{\milli\ampere}_{50} \\
+  0 dB(m) = 4.47 \unit{\milli\ampere}_{50} \\
   a [dB(m)] = 20 \log\frac{I_{50}}{4.47}
 \end{gather*}
 %%
 Spänning:
 %%
 \begin{gather*}
-  0 dB(m) = 0.223 \si{\volt}_{50} \\
+  0 dB(m) = 0.223 \unit{\volt}_{50} \\
   a [dB(m)] = 20 \log\frac{U_{50}}{0.223} \\
   U_{50} = 0.223 \cdot 10^{\frac{a}{20}}
 \end{gather*}
@@ -141,8 +141,8 @@ Spänning:
 \emph{dB(W) är ett annat absolut mått.}
 Effektnivåer över en belastning kan också uttryckas i dB(W), där (W) står
 för watt.
-Referenseffekten är då \SI{1}{\watt}, det vill säga 0\,dB(W).
+Referenseffekten är då \qty{1}{\watt}, det vill säga 0\,dB(W).
 Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas
 över.
-Exempelvis motsvarar 26\,dB(W) \SI{398}{\watt} (se tabellen för sambandet mellan
-effektförhållande och \si{\decibel}).
+Exempelvis motsvarar 26\,dB(W) \qty{398}{\watt} (se tabellen för sambandet mellan
+effektförhållande och \unit{\decibel}).

@@ -121,7 +121,7 @@ En speciell tillämpning av spänningsdelare är en \emph{Wheatstones brygga}, s
 som används för att jämföra spänningar.
 
 Bryggan kan ses som två parallellkopplade spänningsdelare varav den ena är en
-potentiometer med en skala graderad till exempel i \si{\ohm}.
+potentiometer med en skala graderad till exempel i \unit{\ohm}.
 Den andra spänningsdelaren består av en resistor med känd resistans och en
 resistor med okänd resistans, det vill säga mätobjektet.
 
@@ -167,17 +167,17 @@ enskilda kapacitanserna.
 %\begin{minipage}{\columnwidth}
 \textbf{Räkneexempel:}
 \begin{enumerate}
-\item \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
+\item \(C_1 = \qty{5}{\micro\farad} \quad C_2 = \qty{10}{\micro\farad} \quad C =\ ?\)
   \begin{align*}
     C &= C_1 + C_2 \\[1ex]
     &= 5 + 10 \\[1ex]
-    &= \SI{15}{\micro\farad}
+    &= \qty{15}{\micro\farad}
   \end{align*}
-\item \(C_1 = \SI{1}{\nano\farad} \quad C_2 = \SI{5}{\pico\farad} \quad C =\ ?\)
+\item \(C_1 = \qty{1}{\nano\farad} \quad C_2 = \qty{5}{\pico\farad} \quad C =\ ?\)
   \begin{align*}
     C &= C_1 + C_2 \\[1ex]
     &= 1 + 0,005 \\[1ex]
-    &= \SI{1,005}{\nano\farad}
+    &= \qty{1,005}{\nano\farad}
   \end{align*}
 \end{enumerate}
 %\end{minipage}
@@ -209,13 +209,13 @@ För två kondensatorer gäller:
 \noindent
 \textbf{Räkneexempel:}
 
- \(C_1 = \SI{5}{\micro\farad} \quad C_2 = \SI{10}{\micro\farad} \quad C =\ ?\)
+ \(C_1 = \qty{5}{\micro\farad} \quad C_2 = \qty{10}{\micro\farad} \quad C =\ ?\)
     \begin{align*}
       \frac{1}{C} &= \frac{1}{C_1} + \frac{1}{C_2} \\[1ex]
       C &= \frac{C_1 \cdot C_2}{C_1 + C_2}
       = \frac{5 \cdot 10}{5 + 10}
       = 3\frac{1}{3}\
-      \approx \SI{3,33}{\micro\farad}
+      \approx \qty{3,33}{\micro\farad}
     \end{align*}
 
 \subsection{Galvaniskt kopplade induktorer}
@@ -239,9 +239,9 @@ gäller:
 \noindent
 \textbf{Räkneexempel:}
 
-  \(L_1 = \SI{20}{\milli\henry} \quad L_2 = \SI{50}{\milli\henry} \quad L =\ ?\)
+  \(L_1 = \qty{20}{\milli\henry} \quad L_2 = \qty{50}{\milli\henry} \quad L =\ ?\)
 \begin{align*}
-  L = L_1 + L_2 = 20 + 50 = \SI{70}{\milli\henry}
+  L = L_1 + L_2 = 20 + 50 = \qty{70}{\milli\henry}
 \end{align*}
 
 \subsubsection{Galvaniskt parallellkopplade induktorer}
@@ -267,12 +267,12 @@ För två induktorer gäller:
 
 \textbf{Räkneexempel:}
 
-\[L_1 = \SI{50}{\milli\henry} \quad L_2 = \SI{60}{\milli\henry} \quad L =\ ?\]
+\[L_1 = \qty{50}{\milli\henry} \quad L_2 = \qty{60}{\milli\henry} \quad L =\ ?\]
 \[
   L = \frac{L_1 \cdot L_2}{L_1 + L_2}
   = \frac{50 \cdot 60}{50 + 60}
   = \frac{3000}{110}
-  \approx \SI{27}{\milli\henry}
+  \approx \qty{27}{\milli\henry}
 \]
 
 \subsection{Magnetiskt kopplade induktorer}
@@ -305,28 +305,28 @@ kopplar till varandra på olika sätt.
 \[L = L_1 +L_2 \pm 2M\]
 %
 \textbf{Räkneexempel:}
-Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
-ömsesidig induktans av \SI{2}{\micro\henry}.
+Två induktorer har en induktans av 20 respektive \qty{10}{\micro\henry} och en
+ömsesidig induktans av \qty{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält samverkar.
 
-Vardera induktansen ökas därför med \(M = \SI{2}{\micro\henry}\).
+Vardera induktansen ökas därför med \(M = \qty{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 + M + L_2 + M \\
-    &=& 20 + 2 + 10 + \SI{2}{\micro\henry} \\
-    &=& \SI{34}{\micro\henry}
+    &=& 20 + 2 + 10 + \qty{2}{\micro\henry} \\
+    &=& \qty{34}{\micro\henry}
 \end{array}
 \]
 \textbf{Räkneexempel:}
-Två induktorer har en induktans av 20 respektive \SI{10}{\micro\henry} och en
-ömsesidig induktans av \SI{2}{\micro\henry}.
+Två induktorer har en induktans av 20 respektive \qty{10}{\micro\henry} och en
+ömsesidig induktans av \qty{2}{\micro\henry}.
 Induktorerna är kopplade och placerade så att deras magnetfält motverkar varandra.
-Vardera induktansen minskas därför med \(M = \SI{2}{\micro\henry}\).
+Vardera induktansen minskas därför med \(M = \qty{2}{\micro\henry}\).
 \[
 \begin{array}{rcl}
   L &=& L_1 - M + L_2 - M \\
-    &=& 20 - 2 + 10 - \SI{2}{\micro\henry} \\
-    &=& \SI{26}{\micro\henry}
+    &=& 20 - 2 + 10 - \qty{2}{\micro\henry} \\
+    &=& \qty{26}{\micro\henry}
 \end{array}
 \]
 \subsubsection{Magnetiskt kopplade induktorer i parallell}
@@ -376,7 +376,7 @@ som kallas tidskonstant:
 \begin{gather*}
   \tau = R \cdot C \\
   \tau\ [\text{tidskonstant i sek}] \\
-  C\ [\text{F}] \quad R\ [\si{\ohm}]
+  C\ [\text{F}] \quad R\ [\unit{\ohm}]
 \end{gather*}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
@@ -419,13 +419,13 @@ respektive \(U_{\it max}\) återstår. Efter tiden \(t = 5\tau\) är kondensator
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
-\item \(C = \SI{10}{\micro\farad} \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
+\item \(C = \qty{10}{\micro\farad} \quad R = \qty{1}{\kilo\ohm} \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10 \cdot 10^{-6} \\
     &= 10 \cdot 10^{-3} \quad \text{dvs var 1/100 sekund.}
   \end{align*}
-\item \(C = \SI{1000}{\micro\farad} \quad R = \SI{1}{\kilo\ohm} \quad \tau =\ ?\)
+\item \(C = \qty{1000}{\micro\farad} \quad R = \qty{1}{\kilo\ohm} \quad \tau =\ ?\)
   \begin{align*}
     \tau &= R \cdot C \\
     &= 1 \cdot 10^3 \cdot 10^3 \cdot 10^{-6} \\
@@ -463,7 +463,7 @@ som kallas tidskonstant
 %
 \[
 L\ [\text{H}] \quad
-R\ [\si{\ohm}] \quad
+R\ [\unit{\ohm}] \quad
 s\ [\text{sek}] \quad
 \tau\ [\text{tidskonstant}]
 \]
@@ -749,7 +749,7 @@ större än \(X_L\) och positiv (induktiv) om \(X_L\) är större än \(X_C\).
 
 I formler betecknas impedansen med bokstaven \(Z\) och reaktansen med bokstaven
 \(X\).
-I båda fallen är enheten ohm [\si{\ohm}].
+I båda fallen är enheten ohm [\unit{\ohm}].
 
 Vid beräkning av impedans är Ohms lag inte direkt tillämplig, eftersom
 reaktansen i en induktor eller kondensator uppträder annorlunda i tiden vid
@@ -941,12 +941,12 @@ Formeln gäller både för parallell- och seriekretsar.
 \noindent
 \textbf{Räkneexempel:}
 %
-\[L = \SI{100}{\nano\henry} \quad C = \SI{10}{\pico\farad} \quad f =\ ?\]
+\[L = \qty{100}{\nano\henry} \quad C = \qty{10}{\pico\farad} \quad f =\ ?\]
 \begin{align*}
   f &= \frac{1}{2\pi \sqrt{100 \cdot 10^{-9} \cdot 10 \cdot 10^{-12}}} \\
   &= \frac{1}{2\pi 10^{-9}} \\
   &= \frac{10^9}{2\pi } \\
-  &\approx \SI{159}{\mega\hertz}
+  &\approx \qty{159}{\mega\hertz}
 \end{align*}
 
 \subsection{Impedansen i en resonant krets}
@@ -958,8 +958,8 @@ Formeln gäller både för parallell- och seriekretsar.
 
 En enkel framställning görs av hur impedans, reaktans och resistans förhåller
 sig inbördes när en resonanskrets är i resonans.
-Som exempel används följande kretsdata: Induktans \SI{200}{\micro\henry},
-kapacitans \SI{200}{\pico\farad}, förlustresistans \SI{10}{\ohm}.
+Som exempel används följande kretsdata: Induktans \qty{200}{\micro\henry},
+kapacitans \qty{200}{\pico\farad}, förlustresistans \qty{10}{\ohm}.
 
 \subsubsection{Resonansfallet i en parallellkrets}
 \label{parallellresonans}
@@ -1004,7 +1004,7 @@ Parallellkretsens impedans vid resonans kan då skrivas
 Z = \frac{X_C \cdot X_L}{r_L} = \frac{L}{r_L \cdot C}
 \]
 
-Med ovanstående kretsdata blir Z = \SI{100}{\kilo\ohm}.
+Med ovanstående kretsdata blir Z = \qty{100}{\kilo\ohm}.
 
 Därav framgår, att impedansen i parallellkretsen är en funktion av det så
 kallade L/C-förhållandet samt av kretsens resistiva förluster.
@@ -1033,19 +1033,19 @@ Med ovanstående kretsdata blir resonansfrekvensen:
 f_0 = \frac{1}{2\pi \sqrt{LC}} \approx 796\ kHz
 \]
 %
-Vid resonansfrekvensen blir reaktansen \SI{1000}{\ohm} både för induktansen och
+Vid resonansfrekvensen blir reaktansen \qty{1000}{\ohm} både för induktansen och
 kapacitansen.
 Eftersom reaktansernas spänningsfall är motriktade tar de ut varandra.
 Kretsens impedans i resonans blir resistansen \(r_L\) och
 spänningsfallet över kretsen bestäms enbart av \(r_L\).
 
-Antag att det alstras en spänning av \SI{5}{\milli\volt} i antennkretsen.
+Antag att det alstras en spänning av \qty{5}{\milli\volt} i antennkretsen.
 Strömmen genom den vid resonans blir då
-\(\frac{\SI{5}{\milli\volt}}{\SI{10}{\ohm}} = \SI{0,5}{\milli\ampere}\).
+\(\frac{\qty{5}{\milli\volt}}{\qty{10}{\ohm}} = \qty{0,5}{\milli\ampere}\).
 
-Av strömmen bildas reaktiva spänningar, det vill säga \(\SI{0,5}{\milli\ampere}
-\cdot \SI{1000}{\ohm} = \SI{500}{\milli\volt}\) både över induktans och
-kapacitans (som tar ut varandra) och \SI{5}{\milli\volt} över resistansen.
+Av strömmen bildas reaktiva spänningar, det vill säga \(\qty{0,5}{\milli\ampere}
+\cdot \qty{1000}{\ohm} = \qty{500}{\milli\volt}\) både över induktans och
+kapacitans (som tar ut varandra) och \qty{5}{\milli\volt} över resistansen.
 
 \subsection{Q-faktorn i en parallellkrets}
 \harecsection{\harec{a}{3.2.5}{3.2.5}}

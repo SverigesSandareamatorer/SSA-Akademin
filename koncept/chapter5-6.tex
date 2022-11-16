@@ -21,39 +21,39 @@ som tas emot av konvertern och avsöks med mottagaren.
 I en KV-mottagare för området \SIrange{28}{30}{\mega\hertz} vill man även kunna
 lyssna i området \SIrange{432}{434}{\mega\hertz} (UHF).
 Den i konvertern mottagna UHF-signalen förstärks för att sedan blandas med
-\SI{404}{\mega\hertz}, en frekvens som multiplicerats upp från en
+\qty{404}{\mega\hertz}, en frekvens som multiplicerats upp från en
 kristalloscillator (CO) i konvertern.
 De blandningsprodukter som filtreras fram kommer att ligga inom området
 \SIrange{28}{30}{\mega\hertz} och kan alltså avlyssnas i KV-mottagaren.
 Övriga blandningsprodukter blir undertryckta i KV-mottagarens ingångskretsar.
-Blandningsfrekvensen \SI{404}{\mega\hertz} i konvertern är beräknad på följande
+Blandningsfrekvensen \qty{404}{\mega\hertz} i konvertern är beräknad på följande
 sätt:
 
 \noindent
 Mittfrekvensen i UHF-bandet är
 %%
-\[\frac{432+434}{2} = \SI{433}{\mega\hertz} = f_1\]
+\[\frac{432+434}{2} = \qty{433}{\mega\hertz} = f_1\]
 %%
 Mittfrekvensen i KV-mottagarens frekvensband är
 %%
-\[\frac{28 + 30}{2} = \SI{29}{\mega\hertz}\]
+\[\frac{28 + 30}{2} = \qty{29}{\mega\hertz}\]
 %%
-Med vilken frekvens \(f_2\) måste \SI{433}{\mega\hertz} blandas för att erhålla
-en blandningsprodukt av \SI{29}{\mega\hertz}?
-\SI{29}{\mega\hertz} är mindre än \(f_1\) , alltså kan endast
+Med vilken frekvens \(f_2\) måste \qty{433}{\mega\hertz} blandas för att erhålla
+en blandningsprodukt av \qty{29}{\mega\hertz}?
+\qty{29}{\mega\hertz} är mindre än \(f_1\) , alltså kan endast
 skillnadsfrekvensen komma i fråga (vid summafrekvens skulle blandningsfrekvensen
-bli högre än \SI{433}{\mega\hertz}).
+bli högre än \qty{433}{\mega\hertz}).
 Vid användning av skillnadsfrekvensen ges två möjligheter:
 %%
 \begin{gather*}
-  \text{för }f_2 - f_1 = f_2 - 433 = \SI{29}{\mega\hertz}\text{ är }f_2 = \SI{462}{\mega\hertz} \\
-  \text{för }f_1 - f_2 = 433 - f_2 = \SI{29}{\mega\hertz}\text{ är }f_2 = \SI{404}{\mega\hertz}
+  \text{för }f_2 - f_1 = f_2 - 433 = \qty{29}{\mega\hertz}\text{ är }f_2 = \qty{462}{\mega\hertz} \\
+  \text{för }f_1 - f_2 = 433 - f_2 = \qty{29}{\mega\hertz}\text{ är }f_2 = \qty{404}{\mega\hertz}
 \end{gather*}
 %%
-Vi bestämmer oss för alternativet \SI{404}{\mega\hertz} av ett speciellt skäl.
-Här motsvaras den högsta UHF-frekvensen \SI{434}{\mega\hertz} av \(434 - 404 =
-\SI{30}{\mega\hertz}\) och den lägsta UHF-frekvensen \SI{432}{\mega\hertz} av
-\(432 - 404 = \SI{28}{\mega\hertz}\).
+Vi bestämmer oss för alternativet \qty{404}{\mega\hertz} av ett speciellt skäl.
+Här motsvaras den högsta UHF-frekvensen \qty{434}{\mega\hertz} av \(434 - 404 =
+\qty{30}{\mega\hertz}\) och den lägsta UHF-frekvensen \qty{432}{\mega\hertz} av
+\(432 - 404 = \qty{28}{\mega\hertz}\).
 På så sätt kan kHz-graderingen på KV-mottagarens skala användas direkt utan
 omräkning.
 

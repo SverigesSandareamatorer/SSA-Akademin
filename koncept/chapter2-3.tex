@@ -90,7 +90,7 @@ sekundärlindningen.
 \paragraph{Försök 3:}
 I bild \ssaref{fig:BildII2-3c} ställer vi oss frågan vad som händer när
 primärlindningen i försök 2 ansluts till en växelspänning, till exempel
-med nätfrekvensen \SI{50}{\hertz}.
+med nätfrekvensen \qty{50}{\hertz}.
 Använd för säkerhets skull en skyddstransformator mellan nätet och lindningen!
 
 I sekundärlindningen uppstår då spänningsstötar vars polaritet i detta fall
@@ -120,25 +120,25 @@ kärna, med uppgift att begränsa strömmen i en ledare.
 \index{symbol!\(L\) induktans}
 \label{enheten_henry}
 
-Måttenheten för självinduktion är \emph{henry} (\si{\henry}).
-1~henry (\SI{1}{\henry}) är självinduktionen i en induktor som alstrar en
+Måttenheten för självinduktion är \emph{henry} (\unit{\henry}).
+1~henry (\qty{1}{\henry}) är självinduktionen i en induktor som alstrar en
 motspänning av 1~volt vid en strömändring av 1~ampere under 1~sekund.
 I formler betecknas induktans med symbolen L.
 Sambandet är:
 %%
 \[\textit{volt} = \textit{henry} \cdot \textit{ampere}/\textit{sekund}\]
 %%
-\SI{1}{\henry} är en stor måttenhet.
+\qty{1}{\henry} är en stor måttenhet.
 För elektroniktillämpningar används därför ett mer hanterligt format.
 
 \noindent\textbf{Exempel:}
 
 \begin{center}
 \begin{tabular}{ll}
-\SI{1}{\henry} & = \SI{1000}{\milli\henry} \\
-\SI{1}{\milli\henry} & = \(1 \cdot 10^{-3}\)\,H \\
-\SI{1}{\milli\henry} & = \SI{1000}{\micro\henry} \\
-\SI{1}{\micro\henry} & = \(1 \cdot 10^{-3}\)\,mH = \(1 \cdot 10^{-6}\)\,H
+\qty{1}{\henry} & = \qty{1000}{\milli\henry} \\
+\qty{1}{\milli\henry} & = \(1 \cdot 10^{-3}\)\,H \\
+\qty{1}{\milli\henry} & = \qty{1000}{\micro\henry} \\
+\qty{1}{\micro\henry} & = \(1 \cdot 10^{-3}\)\,mH = \(1 \cdot 10^{-6}\)\,H
 \end{tabular}
 \end{center}
 
@@ -194,7 +194,7 @@ En fullbordad pendling i en växelström kan ses som ett varv i en cirkel --
 En period motsvarar omkretsen i en cirkel med radien r, där omkretsen är
 \(2 \cdot \pi  \cdot r\). När strömmen växlar 1 gång per sekund har
 pendlingen en frekvens [f] av 1~hertz [Hz].
-Vid 50 växlingar per sekund har pendlingen en frekvens av \SI{50}{\hertz}.
+Vid 50 växlingar per sekund har pendlingen en frekvens av \qty{50}{\hertz}.
 
 Den \emph{Induktiva reaktansen \(X_L\)} -- växelströmsmotståndet i en induktor -- 
 är en funktion av strömmens så kallade vinkelhastighet \(\omega = 2 \cdot \pi  \cdot f\)
@@ -206,17 +206,17 @@ en induktor som teoretiskt saknar resistans.
 Sambandet är:
 %%
 \[X_L = 2\pi fL = \omega L\]
-\[X_L [\si{\ohm}] \quad f [\si{\hertz}] \quad L [\si{\henry}]\]
+\[X_L [\unit{\ohm}] \quad f [\unit{\hertz}] \quad L [\unit{\henry}]\]
 %%
 \textbf{Exempel:}
 %%
-\[L = \SI{1}{\henry} \quad f = \SI{50}{\hertz} \quad X_L = ?\]
-\[X_L = 2\pi fL = 2\pi \cdot 50 \cdot 1 = \SI{314}{\ohm}\]
+\[L = \qty{1}{\henry} \quad f = \qty{50}{\hertz} \quad X_L = ?\]
+\[X_L = 2\pi fL = 2\pi \cdot 50 \cdot 1 = \qty{314}{\ohm}\]
 %%
 \textbf{Exempel:}
 %%
-\[L = \SI{1}{\henry} \quad f = \SI{5}{\kilo\hertz} \quad X_L = ?\]
-\[X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = \SI{31400}{\ohm}\]
+\[L = \qty{1}{\henry} \quad f = \qty{5}{\kilo\hertz} \quad X_L = ?\]
+\[X_L = 2\pi fL = 2\pi  \cdot 5 \cdot 10^3 \cdot 1 = \qty{31400}{\ohm}\]
 
 \subsection{Fasförskjutning mellan spänning och ström i en induktor}
 \harecsection{\harec{a}{2.3.5}{2.3.5}}
@@ -262,11 +262,11 @@ Ju högre frekvensen är desto större är strömtätheten vid ytan.
 Fenomenet kallas \emph{yteffekt} (eng. \emph{skin effect}) och uppträder i alla
 ledare.
 
-Det djup i ledarmaterialet där laddningstätheten sjunkit till \SI{37}{\percent}
+Det djup i ledarmaterialet där laddningstätheten sjunkit till \qty{37}{\percent}
 av värdet vid ytan kallas \emph{skin depth}.
-För koppar är detta djup ca \SI{70}{\milli\metre} vid \SI{100}{\hertz}.
-Vid \SI{1}{\mega\hertz} har djupet minskat till \SI{0,07}{\milli\metre} och vid
-\SI{100}{\mega\hertz} till \SI{0,0067}{\milli\metre}.
+För koppar är detta djup ca \qty{70}{\milli\metre} vid \qty{100}{\hertz}.
+Vid \qty{1}{\mega\hertz} har djupet minskat till \qty{0,07}{\milli\metre} och vid
+\qty{100}{\mega\hertz} till \qty{0,0067}{\milli\metre}.
 På grund av yteffekten är alltså materialet i mitten av homogena
 ledare elektriskt mindre verksamt vid höga frekvenser. Resistansen för en viss ledare 
 blir alltså större för växelström än för likström.
@@ -291,11 +291,11 @@ temperaturändring.
 
 Induktansändringen blir då $\Delta L = \pm \alpha _L \cdot L_k \cdot \Delta\vartheta$
 där \(L_k\) är induktansvärdet vid den lägre temperaturen (oftast
-\SI{20}{\degreeCelsius}) och \(\Delta\vartheta\) är temperaturändringen i
+\qty{20}{\degreeCelsius}) och \(\Delta\vartheta\) är temperaturändringen i
 kelvin.
 
 Kelvin [K] är den normerade måttenheten för absolut temperatur.
-En ändring med \SI{1}{\kelvin} motsvarar en ändring med \SI{1}{\degreeCelsius}.
+En ändring med \qty{1}{\kelvin} motsvarar en ändring med \qty{1}{\degreeCelsius}.
 
 Induktorer kan innehålla kärnor av någon metallegering vars egenskaper också är
 temperaturberoende.

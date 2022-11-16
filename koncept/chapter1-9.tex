@@ -57,9 +57,9 @@ En byggdel med två ingångs- och två utgångsklämmor kallas för ''fyrpol'', 
 
 \smallfig[0.4]{images/cropped_pdfs/bild_2_1-32.pdf}{Effektförhållande}{fig:BildII1-32}
 
-Antag att den inmatade effekten P är \SI{1}{\watt}.
+Antag att den inmatade effekten P är \qty{1}{\watt}.
 Om effekten inte ändras vid passagen genom fyrpolen, så är även den uttagna
-effekten \SI{1}{\watt}.
+effekten \qty{1}{\watt}.
 
 \emph{Effektförhållandet} mellan in- och utgångarna är då:
 %%
@@ -68,12 +68,12 @@ effekten \SI{1}{\watt}.
 Oförändrad effekt varken dämpas eller förstärks, varför både dämpningen och
 förstärkningen har talvärdet 0.
 Enheten på talvärdet är Bel, dämpningen eller förstärkningen är således 0~Bel.
-En tiondel därav är 0~decibel (\SI{0}{\decibel}).
+En tiondel därav är 0~decibel (\qty{0}{\decibel}).
 
-Omräkning av kvoten av en effektändring till \si{\decibel} görs så, att
+Omräkning av kvoten av en effektändring till \unit{\decibel} görs så, att
 10-logaritmen för kvoten söks och resultatet blir effektändringen uttryckt i Bel
 (B).
-Om resultatet uttrycks i \si{\decibel}, ska Bel-värdet multipliceras med 10.
+Om resultatet uttrycks i \unit{\decibel}, ska Bel-värdet multipliceras med 10.
 
 Logaritmer förklaras i bilaga \ssaref{logaritmer}.
 
@@ -107,7 +107,7 @@ Följande avrundade värden kan utläsas:
 \end{center}
 
 Det vill säga vid ökning fördubblas effekten för var 3:e dB och vid minskning
-halveras effekten för var 3:e \si{\decibel}.
+halveras effekten för var 3:e \unit{\decibel}.
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
@@ -130,7 +130,7 @@ Kvot av & Analys             & Skriv            & dB \\
 
 %% k7per: These paragraphs are hard to use, convert the math to real formulas?
 Förhållandet mellan strömmar liksom mellan spänningar kan även uttryckas i
-\si{\decibel}, men annorlunda än mellan effekter.
+\unit{\decibel}, men annorlunda än mellan effekter.
 En fyrpol med inbördes lika ingångs- och utgångsimpedans är förutsättningen för
 jämförelse.
 
@@ -189,8 +189,8 @@ Följande avrundade värden kan utläsas:
 \end{center}
 
 Det vill säga vid ökning fördubblas strömmen resp. spänningen för var 6:e
-\si{\decibel} och att vid minskning halveras strömmen resp. spänningen för var
-6:e \si{\decibel}.
+\unit{\decibel} och att vid minskning halveras strömmen resp. spänningen för var
+6:e \unit{\decibel}.
 
 Om kvoten är en eller flera 10-potenser högre än 10, så kan nomogrammet utökas
 enligt följande tabell.
@@ -212,10 +212,10 @@ enligt följande tabell.
 \section{dB med miniräknare}
 
 %% k7per: Hard to read, turn into math...
-När beräkningen av förstärkning eller dämpning uttryckt i \si{\decibel} görs med
+När beräkningen av förstärkning eller dämpning uttryckt i \unit{\decibel} görs med
 miniräknare låter man räknaren sköta hela beräkningen.
 
-Med miniräknare skrivs uttrycken för \si{\decibel} så här:
+Med miniräknare skrivs uttrycken för \unit{\decibel} så här:
 
 För effekt \(a[dB] = 10\log \dfrac{P_{\text{ut}}}{P_{\text{in}}}\)
 
@@ -230,35 +230,35 @@ förstärkning och negativa svar för dämpning.
 \label{dBm}
 
 Det är mycket vanligt att in- och utgångarna i HF-utrustningar utförs
-med en impedans av \SI{50}{\ohm}.
+med en impedans av \qty{50}{\ohm}.
 För god anpassning väljs då koaxialkablarna mellan apparaterna med en
-karaktäristisk impedans av \SI{50}{\ohm}.
+karaktäristisk impedans av \qty{50}{\ohm}.
 
 Det har utvecklats en praxis, att referensvärdet vid jämförelse av signalnivåer
-i radiosystem ska vara en milliwatt (\SI{1}{\milli\watt}) utvecklad i en
-belastning med impedansen \SI{50}{\ohm}.
-Signalnivåer över belastningen \SI{50}{\ohm} kan uttryckas i dB(m) eller ofta
-dBm, där (m) står för milliwatt, varvid referenseffekten \SI{1}{\milli\watt} är
-0\,dB(m) vid \SI{50}{\ohm}.
+i radiosystem ska vara en milliwatt (\qty{1}{\milli\watt}) utvecklad i en
+belastning med impedansen \qty{50}{\ohm}.
+Signalnivåer över belastningen \qty{50}{\ohm} kan uttryckas i dB(m) eller ofta
+dBm, där (m) står för milliwatt, varvid referenseffekten \qty{1}{\milli\watt} är
+0\,dB(m) vid \qty{50}{\ohm}.
 
-Det spänningsfall som bildas över belastningen \SI{50}{\ohm} vid effektnivån
+Det spänningsfall som bildas över belastningen \qty{50}{\ohm} vid effektnivån
 0\,dB(m) är
 %%
-\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \SI{0,224}{\volt}\]
+\[U = \sqrt{P\cdot R} = \sqrt{1\cdot 10^{-3} \cdot 50} \approx \qty{0,224}{\volt}\]
 %%
-Den ström som flyter genom belastningen \SI{50}{\ohm} vid effektnivån 0\,dB(m)
+Den ström som flyter genom belastningen \qty{50}{\ohm} vid effektnivån 0\,dB(m)
 är
 %%
 \[
-I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx \SI{0,0045}{\ampere} = \SI{4,5}{\milli\ampere}
+I = \sqrt{\frac{P}{R}} = \sqrt{\frac{1\cdot 10^{-3}}{50}} \approx \qty{0,0045}{\ampere} = \qty{4,5}{\milli\ampere}
 \]
 %%
-Strömmen \SI{4,5}{\milli\ampere} genom belastningen \SI{50}{\ohm} motsvarar
+Strömmen \qty{4,5}{\milli\ampere} genom belastningen \qty{50}{\ohm} motsvarar
 således 0\,dB(m).
 
 Varje annan effekt, spänningsfall och ström som uppstår vid en belastning av
-\SI{50}{\ohm} kan jämföras med respektive referensvärden \SI{1}{\milli\watt},
-\SI{0,22}{\volt} och \SI{4,5}{\milli\ampere}.
+\qty{50}{\ohm} kan jämföras med respektive referensvärden \qty{1}{\milli\watt},
+\qty{0,22}{\volt} och \qty{4,5}{\milli\ampere}.
 \emph{dB(m) är ett absolut och logaritmiskt mått.}
 
 \vspace*{1ex}
@@ -266,7 +266,7 @@ Varje annan effekt, spänningsfall och ström som uppstår vid en belastning av
 Effekt
 %%
 \begin{gather*}
-	a [dB(m)] = 10 \log\frac{P_{[\SI{50}{\ohm}]}}{1[mW_{\SI{50}{\ohm}}]} \\
+	a [dB(m)] = 10 \log\frac{P_{[\qty{50}{\ohm}]}}{1[mW_{\qty{50}{\ohm}}]} \\
 	P_{50} = 1 [mW] \cdot 10^{\dfrac{a}{10}}
 \end{gather*}
 %%
@@ -314,7 +314,7 @@ Spänning
 \noindent
 Effektnivåer över en belastning kan också uttryckas i dB(W), där (W)
 står för watt.
-Referenseffekten är då \SI{1}{\watt}, dvs. 0\,dB(W).
+Referenseffekten är då \qty{1}{\watt}, dvs. 0\,dB(W).
 Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över.
 
 \subsection{Ändring uttryckt i dB vid förstärkande eller dämpande anordningar kopplade i serie}
@@ -322,11 +322,11 @@ Liksom med dB(m) anges impedansen i den belastning, som effekten utvecklas över
 
 Ett räkneexempel på effektändringar:
 Fråga:
-Vi har en enkel sändaranläggning med ett drivsteg som matas med \SI{10}{\watt}
+Vi har en enkel sändaranläggning med ett drivsteg som matas med \qty{10}{\watt}
 HF.
-Drivsteget förstärker med \SI{6}{\decibel}.
-Vidare har vi ett effektslutsteg som förstärker med \SI{10}{\decibel}.
-Antennkabeln dämpar med \SI{1}{\decibel}.
+Drivsteget förstärker med \qty{6}{\decibel}.
+Vidare har vi ett effektslutsteg som förstärker med \qty{10}{\decibel}.
+Antennkabeln dämpar med \qty{1}{\decibel}.
 
 Fråga: Med vilken effekt matas själva antennen?
 
@@ -334,10 +334,10 @@ Svar: (två sätt att lösa uppgiften)
 \begin{enumerate}
 \item Drivsteget förstärker fyra gånger, slutsteget förstärker tio gånger och
 kabeln dämpar \(1/1,25 = 0,8\) gånger. Antennen matas då med
-\(10 \cdot 4 \cdot 10 \cdot 0,8 = \SI{320}{\watt}\).
-\item Drivstegets \SI{6}{\decibel} plus slutstegets \SI{10}{\decibel} minus antennkabelns \SI{1}{\decibel} = \SI{15}{\decibel}.
-\SI{15}{\decibel} är \(10 + \SI{5}{\decibel}\) dvs. \(10 \cdot 3,2 = 32\ ggr\). Antennen matas med
-\(\SI{10}{\watt} \cdot 32 = \SI{320}{\watt}\).
+\(10 \cdot 4 \cdot 10 \cdot 0,8 = \qty{320}{\watt}\).
+\item Drivstegets \qty{6}{\decibel} plus slutstegets \qty{10}{\decibel} minus antennkabelns \qty{1}{\decibel} = \qty{15}{\decibel}.
+\qty{15}{\decibel} är \(10 + \qty{5}{\decibel}\) dvs. \(10 \cdot 3,2 = 32\ ggr\). Antennen matas med
+\(\qty{10}{\watt} \cdot 32 = \qty{320}{\watt}\).
 \end{enumerate}
 
 \subsection{Impedansanpassning}
@@ -413,9 +413,9 @@ I stället konstaterar vi helt enkelt att \emph{maximal effektöverföring sker 
 \index{verkningsgrad}
 \label{verkningsgrad}
 
-Antag att en antennkabel har en effektförlust av \SI{1}{\decibel}.
+Antag att en antennkabel har en effektförlust av \qty{1}{\decibel}.
 Det innebär en effektdämpning av 1,25 gånger, det vill säga 0,8.
-Nu matar vi in \SI{10}{\watt} i kabeln och får alltså ut \SI{8}{\watt}.
+Nu matar vi in \qty{10}{\watt} i kabeln och får alltså ut \qty{8}{\watt}.
 Hur stor verkningsgrad har kabeln uttryckt i procent?
 Lösning:
 %%

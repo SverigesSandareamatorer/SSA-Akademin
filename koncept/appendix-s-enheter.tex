@@ -7,13 +7,13 @@
   \vspace{10ex}
 	\centering
 	\begin{tabular}{l|SSS|SSS}
-    S-Meter  & \multicolumn{3}{c|}{Under \SI{30}{\mega\hertz}} & \multicolumn{3}{c}{Över \SI{30}{\mega\hertz}} \\
-    värde    & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\si{\micro V} vid \SI{50}{\ohm})} & \multicolumn{1}{c|}{\si{dB\micro V}} & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\si{\micro V} vid \SI{50}{\ohm})} & \multicolumn{1}{c}{\si{dB\micro V}} \\
+    S-Meter  & \multicolumn{3}{c|}{Under \qty{30}{\mega\hertz}} & \multicolumn{3}{c}{Över \qty{30}{\mega\hertz}} \\
+    värde    & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\unit{\micro V} vid \qty{50}{\ohm})} & \multicolumn{1}{c|}{\unit{dB\micro V}} & \multicolumn{1}{c}{dBm} & \multicolumn{1}{c}{(\unit{\micro V} vid \qty{50}{\ohm})} & \multicolumn{1}{c}{\unit{dB\micro V}} \\
     \hline
-    S9 +\SI{40}{\decibel} & -33  & 5000  & 74        & -53  & 500  & 54  \\
-    S9 +\SI{30}{\decibel} & -43  & 1600  & 64        & -63  & 160  & 44  \\
-    S9 +\SI{20}{\decibel} & -53  & 500   & 54        & -73  & 50   & 34  \\
-    S9 +\SI{10}{\decibel} & -63  & 160   & 44        & -83  & 16   & 24  \\
+    S9 +\qty{40}{\decibel} & -33  & 5000  & 74        & -53  & 500  & 54  \\
+    S9 +\qty{30}{\decibel} & -43  & 1600  & 64        & -63  & 160  & 44  \\
+    S9 +\qty{20}{\decibel} & -53  & 500   & 54        & -73  & 50   & 34  \\
+    S9 +\qty{10}{\decibel} & -63  & 160   & 44        & -83  & 16   & 24  \\
     S9                    & -73  & 50    & 34        & -93  & 5    & 14  \\
     S8                    & -79  & 25    & 28        & -99  & 2,5  & 8   \\
     S7                    & -85  & 12,6  & 22        & -105 & 1,26 & 2  \\
@@ -35,16 +35,16 @@ Eftersom spänningen från antennen in i mottagaren kan variera över ett stort
 område, är det praktiskt att uttrycka styrkevärdena med en logaritmisk
 måttenhet, så kallad S-enhet.
 
-Signalspänningen mäts över en impedans av \SI{50}{\ohm}.
+Signalspänningen mäts över en impedans av \qty{50}{\ohm}.
 
 Eftersom S-enheten är logaritmisk, så motsvarar till exempel signalstyrkan S8
-halva signalspänningen, det vill säga \SI{25}{\micro\volt} eller
-\SI{-6}{\decibel} jämfört med S9.
+halva signalspänningen, det vill säga \qty{25}{\micro\volt} eller
+\qty{-6}{\decibel} jämfört med S9.
 Om halveringen fortsätts, fås att S0 (noll) motsvarar en signalstyrka av
-\SI{0,1}{\micro\volt}.
+\qty{0,1}{\micro\volt}.
 
 I en kortvågsmottagare alstras det ett internt brus med en nivå av
-åtminstone \SI{0,1}{\micro\volt}.
+åtminstone \qty{0,1}{\micro\volt}.
 Detta brus blandas med den inkommande signalen.
 En insignal med en styrka under brusnivån (S0) kommer alltså inte att
 kunna höras.
@@ -58,23 +58,23 @@ Signalstyrkan mäts vid mottagarens antenningång, varför skillnaden i
 signalstyrkan olika antenner och mottagningsriktningar samt dämpningen
 i antenn och nedledning kan behöva bedömas.
 
-I kortvågsområdet (under \SI{30}{\mega\hertz}) uppträder ett atmosfäriskt
+I kortvågsområdet (under \qty{30}{\mega\hertz}) uppträder ett atmosfäriskt
 bredbandigt brus tillsammans med bruset från den stora mängden rundradio- m.fl.
 andra starka sändare.
 Detta brus är mer dominerande än mottagarens interna brus.
 I praktiken har de flesta KV-mottagare en högre brusnivå än
-\SI{0,1}{\micro\volt}.
+\qty{0,1}{\micro\volt}.
 
-Över \SI{30}{\mega\hertz} däremot, är det mest mottagarens interna brus som
+Över \qty{30}{\mega\hertz} däremot, är det mest mottagarens interna brus som
 sätter gränsen för hörbarheten av svaga signaler.
 Med samma S-skala som för kortvågsområdet, börjar man uppfatta signaler i
 bruset utan att S-metern ger utslag.
 
 Vid IARU Region~1-konferensen 1978 i Miskolcz föreslog de nationella
 föreningarna VERON (Nederländerna) och RSGB (Storbritannien) en annan
-S-skala över \SI{30}{\mega\hertz}.
+S-skala över \qty{30}{\mega\hertz}.
 Vid konferensen 1981 i Brighton antogs förslaget som rekommendation.
 
 Mätningar ska i båda fallen göras med en kvasi-toppvärdesdetektor med en stigtid
-av \SI{10}{\milli\second} \(\pm\)\SI{0,2}{\milli\second} och en falltid av
-\SI{500}{\milli\second}.
+av \qty{10}{\milli\second} \(\pm\)\qty{0,2}{\milli\second} och en falltid av
+\qty{500}{\milli\second}.

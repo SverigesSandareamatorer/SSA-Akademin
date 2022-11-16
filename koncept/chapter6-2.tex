@@ -65,7 +65,7 @@ och mottagare och antenn.
 Om gemensam antenn används, så kopplas dessa kavitetsfilter ihop till vad som
 kallas \emph{duplexfilter}.
 
-För en lyckad duplex-operation krävs i allmänhet mer än \SI{100}{\decibel}
+För en lyckad duplex-operation krävs i allmänhet mer än \qty{100}{\decibel}
 isolation mellan sändare och mottagare.
 Mottagarens kavitetsfilter trimmas så att det får en djup \emph{utsläckning}
 (eng. \emph{notch}) vid sändarens frekvens, men med så lite förlust som möjligt
@@ -91,7 +91,7 @@ Om motstationen svarar exakt på sändningsfrekvensen, vilken ju är
 VFO-frekvensen, så erhålls svävningsnoll i mottagaren.
 För att få hörbara morsetecken är mottagaren utrustad med
 \emph{Receiver Incremental Tuning (RIT)}, som ändrar VFO-frekvensen med
-cirka \SI{800}{\hertz} vid mottagning.
+cirka \qty{800}{\hertz} vid mottagning.
 
 I konstruktionen finns en anordning kallad \emph{Key Operated Xmitter (KOX)}.
 Denna kopplar om transceivern till sändning när telegrafnyckeln trycks ner och
@@ -110,13 +110,13 @@ mycket enkel.
 Bild \ssaref{fig:bildII5-12} visar en kristallstyrd FM-sändare med
 frekvensomkopplare för kanalval inom \SIrange{144}{146}{\mega\hertz}-bandet.
 
-En kristallfrekvens av cirka \SI{12}{\mega\hertz} multipliceras 12 gånger i en
+En kristallfrekvens av cirka \qty{12}{\mega\hertz} multipliceras 12 gånger i en
 kedja av förstärkarsteg för att ge sändningsfrekvensen.
 Bilden visar räkneexempel för två frekvenskanaler.
 Det frekvenssving i oscillatorn, som alstras av modulatorn,
 multipliceras också med 12.
-För ett sving av \SI{3}{\kilo\hertz} på bärvågen är svinget på oscillatorn bara
-\SI{250}{\hertz}.
+För ett sving av \qty{3}{\kilo\hertz} på bärvågen är svinget på oscillatorn bara
+\qty{250}{\hertz}.
 
 Efter mikrofonförstärkaren följer en amplitudbegränsare, som ska
 hålla deviationen inom ett givet maxvärde, oavsett signalstyrkan från
@@ -135,16 +135,16 @@ HF-förstärkare för att i 1:a blandaren blandas med en lokal signal.
 En kristallstyrd lokaloscillator med efterföljande
 frekvensmultipliceringssteg alstrar denna signal.
 
-Lokaloscillatorkedjans utfrekvens läggs \SI{10,7}{\mega\hertz} över eller under
+Lokaloscillatorkedjans utfrekvens läggs \qty{10,7}{\mega\hertz} över eller under
 mottagningsfrekvensen och mellanfrekvensen efter den 1:a blandningen blir då
-\SI{10,7}{\mega\hertz}.
+\qty{10,7}{\mega\hertz}.
 Skilda oscillatorer används vid sändning respektive mottagning varför
 styrkristallerna för sändning respektive mottagning på en given kanal får
 olika frekvens.
 Vid omkoppling till en annan kanal väljs ett annat kristallpar, vilket
 lämpligen sker med samma omkopplare.
 
-Den relativt höga 1:a mellanfrekvensen \SI{10,7}{\mega\hertz} ger ett så stort
+Den relativt höga 1:a mellanfrekvensen \qty{10,7}{\mega\hertz} ger ett så stort
 avstånd till spegelfrekvensen, att bandbredden i förselektionsfiltren
 är tillräckligt smal för att undertrycka spegelfrekvensen.
 Av samma skäl bör 1:a mellanfrekvensen i en UHF-mottagare väljas ytterligare
@@ -175,8 +175,8 @@ VCO används även som lokaloscillator i mottagaren.
 Eftersom sändaren och mottagaren ska användas på samma frekvens
 (simplextrafik), måste i detta koncept VCO-frekvensen vara olika vid
 sändning och mottagning.
-Eftersom mottagarens mellanfrekvens MF är \SI{10,7}{\mega\hertz} måste nämligen
-VCO ligga \SI{10,7}{\mega\hertz} högre eller lägre vid mottagning än vid
+Eftersom mottagarens mellanfrekvens MF är \qty{10,7}{\mega\hertz} måste nämligen
+VCO ligga \qty{10,7}{\mega\hertz} högre eller lägre vid mottagning än vid
 sändning.
 Vid sändning däremot, är VCO-frekvensen densamma som sändningsfrekvensen.
 
@@ -231,10 +231,10 @@ kristallstyrd CO, vars frekvens är valbar med en bandomkopplare.
 Samtidigt kopplas ett bandpassfilter in efter blandaren i super-VFO,
 som svarar till det aktuella frekvensbandet.
 
-Till exempel i \SI{21}{\mega\hertz}-bandet är VFO-filtrets passband
+Till exempel i \qty{21}{\mega\hertz}-bandet är VFO-filtrets passband
 \SIrange{12}{12,5}{\mega\hertz}.
 När en VFO-signal \SIrange{12}{12,5}{\mega\hertz} blandas med en
-\SI{9}{\mega\hertz} SSB modulerad signal erhålls en frekvens i området
+\qty{9}{\mega\hertz} SSB modulerad signal erhålls en frekvens i området
 \SIrange{3}{3,5}{\mega\hertz} och en frekvens i området
 \SIrange{21}{21,5}{\mega\hertz}.
 Den önskade av dessa frekvenser filtreras fram med omkopplingsbara
@@ -245,7 +245,7 @@ tillräckligt med en enda sats av omkopplingsbara bandpassfilter.
 Det större antalet filter i den här beskrivna utrustningen behövs för att
 även kunna använda super-VFO som en del i mottagaren, vilken arbetar
 som enkelsuper.
-Eftersom en MF på \SI{9}{\mega\hertz} används även i mottagaren kommer
+Eftersom en MF på \qty{9}{\mega\hertz} används även i mottagaren kommer
 mottagning och sändning att kunna ske på samma frekvens.
 
 Mottagaren beskrivs inte närmare.
@@ -257,7 +257,7 @@ Funktionsblocken visas inplacerade i sina alternativa
 funktioner, däremot inte omkopplingsanordningarna.
 
 Vid sändning och mottagning av CW förbikopplas den balanserade modulatorn och
-kristallfiltret i signalbehandlingskretsarna för \SI{9}{\mega\hertz}.
+kristallfiltret i signalbehandlingskretsarna för \qty{9}{\mega\hertz}.
 För mottagning av CW ändras BFO-frekvensen i mottagaren så att
 det hörs en svävningston när en bärvåg tas emot.
 Utan denna frekvensändring skulle endast bärvågsbruset höras.
@@ -279,9 +279,9 @@ Flera av dem kommer emellertid endast till användning i speciella situationer.
 Konceptet för en sådan transceiver beskrivs här i stort.
 Huvudprincipen för signalbehandlingen kan beskrivas som en PLL-styrd
 dubbelsuper.
-SSB-signalen bereds på \SI{9}{\mega\hertz}-nivån och flyttas därefter upp till
-\SI{70}{\mega\hertz}-nivån genom frekvensblandning och filtrering.
-De möjliga sändningsfrekvenserna mellan 0,5 och \SI{30}{\mega\hertz} skapas
+SSB-signalen bereds på \qty{9}{\mega\hertz}-nivån och flyttas därefter upp till
+\qty{70}{\mega\hertz}-nivån genom frekvensblandning och filtrering.
+De möjliga sändningsfrekvenserna mellan 0,5 och \qty{30}{\mega\hertz} skapas
 genom att blanda den fasta SSB-signalen med en variabel frekvens från VCO.
 Den steglösa frekvenstäckningen som innefattar mellanvågs- och kortvågsområdet
 är emellertid endast avsedd för mottagningsfunktionen i transceivern.
@@ -289,7 +289,7 @@ För sändningsfunktionen kan tillkomma blockeringskretsar, som förhindrar
 sändning utanför tillåtna frekvensband.
 
 Denna förenklade beskrivning omfattar inte kristalloscillatorerna för 9 och
-\SI{61}{\mega\hertz} i fasregleringskretsen och inte heller SSB-modulatorn,
+\qty{61}{\mega\hertz} i fasregleringskretsen och inte heller SSB-modulatorn,
 FM-modulatorn och anordningarna för CW-sändning.
 
 Mottagaren är en dubbelsuper med hög 1:a MF-frekvens.

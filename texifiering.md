@@ -61,13 +61,13 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 10. Alla formler typsätts och kvarvarande ”line-noise” tas bort.
 
 11. Formler med enhetsangivelser och liknande referenser i text ska också
-    typsättas till formler med hjälp av siunitx. T.ex. `\SI{1}{\joule}`.
+    typsättas till formler med hjälp av siunitx. T.ex. `\qty{1}{\joule}`.
 
     Tal som är längre eller har högre precision än ”vardagliga tal” ska
     typsättas med `\num{250000}` som exempel. Dessa kommer då typsättas korrekt
     så att de får rätt avstånd och separation.
 
-    Enheter typsätts t.ex. med `\si{kg.m/s^2}` för att få kilogrammeter per sekund-
+    Enheter typsätts t.ex. med `\unit{kg.m/s^2}` för att få kilogrammeter per sekund-
     kvadrat. För en komplett lista av enheter som siunitx förstår, se paketets
     dokumentation.
 

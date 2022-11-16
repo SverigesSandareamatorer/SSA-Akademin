@@ -70,7 +70,7 @@ Den minsta dämpningen av den återkopplade utgångssignalen fås när signalens
 frekvens är samma som kristallens resonanfrekvens.
 Kristallens reaktans är då som lägst.
 Så kallade övertonskristaller används för oscillatorfrekvenser över cirka
-\SI{20}{\mega\hertz}.
+\qty{20}{\mega\hertz}.
 
 Övertonskristallernas dimensioner är lika grundtonskristallernas, men
 snittas ut annorlunda och slipas för att svänga på önskad udda överton.
@@ -107,9 +107,9 @@ Ordet super kommer från superheterodyn = överlagring, blandning.
 En VFO arbetar stabilare på låg frekvens medan en XO fortfarande arbetar
 stabilt även på högre frekvenser, dock inte så högt som vi behöver här.
 I vårt exempel arbetar därför VFO i området \SIrange{8}{10}{\mega\hertz} och XO
-på \SI{17}{\mega\hertz}.
+på \qty{17}{\mega\hertz}.
 VFO-signalen blandas med en fast signalfrekvens, som är XO-signalen
-\SI{17}{\mega\hertz} multiplicerat med 8, det vill säga \SI{136}{\mega\hertz}.
+\qty{17}{\mega\hertz} multiplicerat med 8, det vill säga \qty{136}{\mega\hertz}.
 
 Ett bandpassfilter filtrerar fram den önskade blandningsprodukten, som
 ligger i frekvensområdet \SIrange{144}{146}{\mega\hertz}.
@@ -125,8 +125,8 @@ beskrivs här nedan.
 Vid frekvensblandning uppstår oönskade blandningsprodukter, vilka visserligen
 dämpas av bandpassfilter, men som det är omöjligt att undertryckta helt.
 Bland annat alstras en svag spegelfrekvens, som vandrar från 128 till
-\SI{126}{\mega\hertz}, samtidigt som den önskade blandningsprodukten vandrar
-från 144 till \SI{146}{\mega\hertz}.
+\qty{126}{\mega\hertz}, samtidigt som den önskade blandningsprodukten vandrar
+från 144 till \qty{146}{\mega\hertz}.
 Risken för att spegelfrekvensen förstärks och sänds ut måste elimineras, vilket
 kan göras med effektiva bandpassfilter.
 Se vidare i avsnitt \ssaref{blandare} om frekvensblandning.
@@ -178,7 +178,7 @@ Bild \ssaref{fig:BildII3-79} visar en kapacitansdiod.
 När en motriktad spänning läggs på dioden bildas ett spärrskikt i dioden,
 så att zonerna med fria laddningsbärare isoleras från varandra likt
 kondensatorplattor.
-Spärrskiktets tjocklek (ca $1/1000$~\si{\milli\metre}) beror av spänningen över
+Spärrskiktets tjocklek (ca $1/1000$~\unit{\milli\metre}) beror av spänningen över
 dioden.
 Vid hög spänning är spärrskiktet tjockt, vilket motsvarar
 ''stort plattavstånd'' och liten kapacitans.
@@ -242,7 +242,7 @@ Bild \ssaref{fig:BildII3-81} visar en PLL-oscillator kombinerad med
 frekvensblandning.
 Signalen \(f_1\) från en VCO alstrar en sändningsfrekvens i bandet
 \SIrange{144}{146}{\mega\hertz}.
-Denna blandas med signalen \(f_2\) (\SI{136}{\mega\hertz}), som är en
+Denna blandas med signalen \(f_2\) (\qty{136}{\mega\hertz}), som är en
 multiplicerad XO-frekvens.
 Blandningsprodukten \(f_1 - f_2\) är en signal i området
 \SIrange{8}{10}{\mega\hertz} som filtreras fram och påförs en fasjämförare.
@@ -298,16 +298,16 @@ jämförs med referensfrekvensen från XO.
 Varje avvikelse referensfrekvensen kommer att medföra justering av
 VCO-frekvensen.
 
-Om man till exempel vill täcka 2-metersbandet i steg om \SI{25}{\kilo\hertz},
-väljer man referensfrekvensen \SI{25}{\kilo\hertz}.
+Om man till exempel vill täcka 2-metersbandet i steg om \qty{25}{\kilo\hertz},
+väljer man referensfrekvensen \qty{25}{\kilo\hertz}.
 I delaren delas sändarens utfrekvens med ett tal 5760, 5761, 5762 och så vidare
 upp till 5840.
 Om till exempel delningstalet 5820 valts, så kommer jämförarens styrspänning att
-styra VCO-frekvensen till \SI{145500}{\kilo\hertz}.
-Delarens utfrekvens blir då \(145500/5820 = \SI{25}{\kilo\hertz}\), vilket
+styra VCO-frekvensen till \qty{145500}{\kilo\hertz}.
+Delarens utfrekvens blir då \(145500/5820 = \qty{25}{\kilo\hertz}\), vilket
 motsvarar referensfrekvensen.
 I detta exempel styrs alltså sändarens utfrekvens så att den alltid blir i steg
-om \SI{25}{\kilo\hertz}.
+om \qty{25}{\kilo\hertz}.
 
 \subsubsection{För- och nackdelar med PLL-oscillatorn}
 

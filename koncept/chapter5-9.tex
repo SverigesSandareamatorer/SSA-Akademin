@@ -85,24 +85,24 @@ inte bara möjligt utan både kompakt, billigt och med hög prestanda.
 \mediumplustopfig{images/cropped_pdfs/bild_2_4-22.pdf}{Enkelsuper med låg MF och ingen förselektion}{fig:bildII4-22}
 
 \textbf{Exempel:}
-I bild \ssaref{fig:bildII4-22} ska en sändning på \SI{3600}{\kilo\hertz} ska tas
-emot och VFO-frekvensen är \SI{4055}{\kilo\hertz}.
+I bild \ssaref{fig:bildII4-22} ska en sändning på \qty{3600}{\kilo\hertz} ska tas
+emot och VFO-frekvensen är \qty{4055}{\kilo\hertz}.
 Mellanfrekvensfiltret undertrycker sändningar på så närliggande frekvenser
-som till exempel 3603 och \SI{3597}{\kilo\hertz}.
+som till exempel 3603 och \qty{3597}{\kilo\hertz}.
 Denna egenskap kallas för \emph{närselektion}.
 
-Men tyvärr kan en sändning på så avlägsen frekvens som \SI{4510}{\kilo\hertz}
+Men tyvärr kan en sändning på så avlägsen frekvens som \qty{4510}{\kilo\hertz}
 ändå störa mottagningen, den goda närselektionen till trots.
-Avståndet från \SI{4510}{\kilo\hertz} till vår mottagningsfrekvens
-\SI{3600}{\kilo\hertz} är \SI{910}{\kilo\hertz}.
-Frekvensen \SI{4510}{\kilo\hertz} och VFO-signalen bildar också en
-blandningsprodukt, som har frekvensen \SI{455}{\kilo\hertz}.
-Vid en VFO-frekvens av \SI{4055}{\kilo\hertz} och en mottagningsfrekvens av
-\SI{3600}{\kilo\hertz} benämns \SI{4510}{\kilo\hertz} som
+Avståndet från \qty{4510}{\kilo\hertz} till vår mottagningsfrekvens
+\qty{3600}{\kilo\hertz} är \qty{910}{\kilo\hertz}.
+Frekvensen \qty{4510}{\kilo\hertz} och VFO-signalen bildar också en
+blandningsprodukt, som har frekvensen \qty{455}{\kilo\hertz}.
+Vid en VFO-frekvens av \qty{4055}{\kilo\hertz} och en mottagningsfrekvens av
+\qty{3600}{\kilo\hertz} benämns \qty{4510}{\kilo\hertz} som
 \emph{spegelfrekvensen}.
 Avståndet mellan spegelfrekvens och mottagningsfrekvens är dubbla värdet av
-mellanfrekvensen -- i detta exempel \(2 \cdot \SI{455}{\kilo\hertz} =
-\SI{910}{\kilo\hertz}\).
+mellanfrekvensen -- i detta exempel \(2 \cdot \qty{455}{\kilo\hertz} =
+\qty{910}{\kilo\hertz}\).
 
 %% k7per
 % \newpage % layout
@@ -116,8 +116,8 @@ spegelfrekvensen.
 Däremot kan en mottagaringång med \emph{förselektering} (eng.
 \emph{preselection}) undertrycka den.
 I bild \ssaref{fig:bildII4-23} finns en selektiv krets före blandaren släpper
-igenom ett smalt frekvensband med mittfrekvensen \SI{3600}{\kilo\hertz}, men
-dämpar till exempel frekvensen \SI{4510}{\kilo\hertz} på grund av den stora
+igenom ett smalt frekvensband med mittfrekvensen \qty{3600}{\kilo\hertz}, men
+dämpar till exempel frekvensen \qty{4510}{\kilo\hertz} på grund av den stora
 frekvensskillnaden.
 En förselektion har alltså tillförts som komplement till den närselektion som
 erhålls med mellanfrekvensfiltret.
@@ -126,25 +126,25 @@ erhålls med mellanfrekvensfiltret.
 
 Ju längre ifrån varandra nyttofrekvens och spegelfrekvens ligger, desto bättre
 är förselektionen.
-Med en mellanfrekvens av \SI{455}{\kilo\hertz} är alltså detta avstånd
-\SI{910}{\kilo\hertz}.
+Med en mellanfrekvens av \qty{455}{\kilo\hertz} är alltså detta avstånd
+\qty{910}{\kilo\hertz}.
 I långvågs- och mellanvågsområdet är det tillräckligt för att man med enkla
 medel ska kunna skapa tillräckligt selektiva filter.
 
 \textbf{Exempel:}
-Vid den högsta mottagningsfrekvensen på mellanvåg \SI{1605}{\kilo\hertz} är
-spegelfrekvensen \SI{2515}{\kilo\hertz}, som ligger 1,57 gånger högre i frekvens
-och med ett avstånd av \SI{910}{\kilo\hertz}.
+Vid den högsta mottagningsfrekvensen på mellanvåg \qty{1605}{\kilo\hertz} är
+spegelfrekvensen \qty{2515}{\kilo\hertz}, som ligger 1,57 gånger högre i frekvens
+och med ett avstånd av \qty{910}{\kilo\hertz}.
 I kortvågsområdet dämpas inte en spegelfrekvens på avståndet
-\SI{910}{\kilo\hertz} tillräckligt kraftigt.
-Vid den högsta mottagningsfrekvensen på kortvåg \SI{30}{\mega\hertz} ligger
-nämligen spegelfrekvensen \SI{30,910}{\mega\hertz} endast 1,03 gånger högre i
+\qty{910}{\kilo\hertz} tillräckligt kraftigt.
+Vid den högsta mottagningsfrekvensen på kortvåg \qty{30}{\mega\hertz} ligger
+nämligen spegelfrekvensen \qty{30,910}{\mega\hertz} endast 1,03 gånger högre i
 frekvens.
 Med antagandet, att förselektionskretsen har ett Q-värde av 30, blir
-bandbredden \SI{53,5}{\kilo\hertz} vid frekvensen \SI{1605}{\kilo\hertz}.
+bandbredden \qty{53,5}{\kilo\hertz} vid frekvensen \qty{1605}{\kilo\hertz}.
 
-Med samma Q-värde blir bandbredden \SI{1000}{\kilo\hertz} vid frekvensen
-\SI{30}{\mega\hertz}, vilket innebär att förkretsen inte längre kan dämpa så
+Med samma Q-värde blir bandbredden \qty{1000}{\kilo\hertz} vid frekvensen
+\qty{30}{\mega\hertz}, vilket innebär att förkretsen inte längre kan dämpa så
 närliggande spegelfrekvenser på ett effektivt sätt.
 
 \newpage
@@ -152,9 +152,9 @@ I mottagare för högre frekvenser används därför högre mellanfrekvens
 för att öka avståndet till spegelfrekvensen, som illustreras i bild
 \ssaref{fig:bildII4-24}.
 I moderna kortvågsmottagare är det vanligt med en mellanfrekvens av
-\SI{9}{\mega\hertz} eller högre.
-Vid en mottagningsfrekvens av \SI{30}{\mega\hertz} och en mellanfrekvens av
-\SI{9}{\mega\hertz} är spegelfrekvensen \SI{48}{\mega\hertz}, vilket är
+\qty{9}{\mega\hertz} eller högre.
+Vid en mottagningsfrekvens av \qty{30}{\mega\hertz} och en mellanfrekvens av
+\qty{9}{\mega\hertz} är spegelfrekvensen \qty{48}{\mega\hertz}, vilket är
 1,6~gånger mottagningsfrekvensen.
 Detta möjliggör förselektionsfilter med tillräcklig dämpning av
 spegelfrekvensen.
@@ -190,10 +190,10 @@ Bandbredden i MF-kretsarna måste vara minst så stor att sidofrekvenserna
 längst bort från bärvågen kan passera.
 Dessa frekvenser motsvarar de högsta modulerande tonerna.
 Vid rundradiosändningar på mellanvåg utsänds alla frekvenser upp till
-\SI{4,5}{\kilo\hertz}.
-Detta motsvarar en bandbredd av \SI{9}{\kilo\hertz}.
-För enbart talöverföring är en bandbredd av \SI{6}{\kilo\hertz} tillräcklig,
-vilket motsvarar en LF-gränsfrekvens av \SI{3}{\kilo\hertz}.
+\qty{4,5}{\kilo\hertz}.
+Detta motsvarar en bandbredd av \qty{9}{\kilo\hertz}.
+För enbart talöverföring är en bandbredd av \qty{6}{\kilo\hertz} tillräcklig,
+vilket motsvarar en LF-gränsfrekvens av \qty{3}{\kilo\hertz}.
 
 Ett för smalt MF-filter skär bort de yttre delarna av sidbanden.
 LF-signalerna kommer då att förlora de höga tonerna (diskanten).
@@ -218,8 +218,8 @@ mindre störd mottagning.
 Mellanfrekvensfiltret för SSB-mottagning ska endast släppa igenom
 ett av de två sidbanden, så som illustreras i bild \ssaref{fig:bildII4-27},
 vars bredd är skillnaden mellan högsta och lägsta överförda LF-frekvens.
-Inom amatörradio är detta \(\SI{3}{\kilo\hertz} - \SI{0,3}{\kilo\hertz} =
-\SI{2,7}{\kilo\hertz}\), alltså något mindre än hälften av bandbredden vid AM.
+Inom amatörradio är detta \(\qty{3}{\kilo\hertz} - \qty{0,3}{\kilo\hertz} =
+\qty{2,7}{\kilo\hertz}\), alltså något mindre än hälften av bandbredden vid AM.
 
 Ett alltför brett MF-filter skulle också släppa igenom oönskade
 signaler från angränsande frekvenser.
@@ -275,11 +275,11 @@ När närliggande sändare stör mottagningen ges följande möjligheter:
 En CW-signal har som bekant inte bandbredden noll hertz, utan det handlar i
 grunden om en amplitudmodulerad signal.
 Vid en nycklingshastighet av 60 tecken per minut är bandbredden cirka
-\SI{100}{\hertz} och vid i 120 tecken per minut den dubbla, cirka
-\SI{200}{\hertz}.
+\qty{100}{\hertz} och vid i 120 tecken per minut den dubbla, cirka
+\qty{200}{\hertz}.
 
 I vissa mottagare används ett SSB-filter även för mottagning av CW.
-En vanlig bandbredd på ett SSB-filter är \SI{2,7}{\kilo\hertz} och då kommer
+En vanlig bandbredd på ett SSB-filter är \qty{2,7}{\kilo\hertz} och då kommer
 även stationer på närliggande frekvenser att höras, detta illustreras i bild
 \ssaref{fig:bildII4-28}.
 Låt vara att de flesta av dessa stationer hörs med olika frekvens.
@@ -308,8 +308,8 @@ Välutrustade mottagare har passband-tuning även för CW, steglös
 bandbreddsreglering eller stegvis valbara filterbandbredder.
 Då kan mottagaren ställas in på den önskade signalen med en stor bandbredd
 som därefter minskas.
-För mottagning av RTTY (radiofjärrskrift) med \SI{170}{\hertz} skift mellan de
-två frekvenserna, kan ett \SI{500}{\hertz}-filter användas.
+För mottagning av RTTY (radiofjärrskrift) med \qty{170}{\hertz} skift mellan de
+två frekvenserna, kan ett \qty{500}{\hertz}-filter användas.
 Smalare filter går däremot inte så bra.
 
 \subsubsection{Bandbredd vid FM (F3E)}
@@ -327,16 +327,16 @@ modulerande LF-moduleringsfrekvensen \(f_{LF_{max}}\) har bandbredden
 %%
 \[ b = 2 \cdot (\Delta f_{max} + f_{LF_{max}}) \]
 %%
-Inom amatörradio är det brukligt med en maximal deviation av \SI{3}{\kilo\hertz}
-och en övre gränsfrekvens av \SI{3}{\kilo\hertz}, vilket motsvarar en bandbredd
-av \SI{12}{\kilo\hertz}.
+Inom amatörradio är det brukligt med en maximal deviation av \qty{3}{\kilo\hertz}
+och en övre gränsfrekvens av \qty{3}{\kilo\hertz}, vilket motsvarar en bandbredd
+av \qty{12}{\kilo\hertz}.
 
 Fullgod mottagning är möjlig endast om MF-filtren i mottagaren har
 minst den bandbredd, som sändaren har.
 Men vid för stor mottagarbandbredd kan även stationer på närliggande frekvenser
 uppfattas.
 Sedan 1996 är det av IARU Region~1 rekommenderade kanalavståndet
-\SI{12,5}{\kilo\hertz} vid FM-trafik på VHF- och UHF-amatörradiobanden.
+\qty{12,5}{\kilo\hertz} vid FM-trafik på VHF- och UHF-amatörradiobanden.
 
 Det är vanligare med för stor deviation på FM-sändaren än att
 mottagaren är alltför smal.
@@ -345,7 +345,7 @@ LF-gränsfrekvens medför en onödigt stor bandbredd på sändaren.
 Motstationen får då mottagningssvårigheter och stationer på angränsande
 kanaler blir också störda.
 
-Det blir allt vanligare med \SI{12,5}{\kilo\hertz} kanalavstånd även för
+Det blir allt vanligare med \qty{12,5}{\kilo\hertz} kanalavstånd även för
 repeatrar, varför det är viktigt att alla sändare är rätt inställda.
 
 \subsection{Signalkänslighet och brus}
@@ -394,7 +394,7 @@ S/N (signal to noise ratio).
 För att uppfatta den information som kommer ur en mottagares LF-utgång måste
 nyttosignalen vara ett antal gånger starkare än bruset.
 Den lägre gränsen för att uppfatta tal i kortvågsmottagare är ett brusavstånd
-i storleksordningen \SI{10}{\decibel}.
+i storleksordningen \qty{10}{\decibel}.
 
 %% k7per: Where should these be referenced?
 \smallfig{images/cropped_pdfs/bild_2_4-29.pdf}{S/N-värde}{fig:bildII4-29}
@@ -405,9 +405,9 @@ I en broschyr på en kortvågsmottagare kan man till exempel läsa
 ''Sensitivity SSB, CW: less than 0,25~\(\mu V\) for 10~dB S/N''
 
 Termen S/N betyder Signal/Noise, det vill säga styrkeförhållandet signal/brus
-uttryckt i \si{\decibel}.
-Det innebär att en signal kan läsas vid \SI{25}{\micro\volt} signalnivå och ett
-S/N av mindre än \SI{10}{\decibel}.
+uttryckt i \unit{\decibel}.
+Det innebär att en signal kan läsas vid \qty{25}{\micro\volt} signalnivå och ett
+S/N av mindre än \qty{10}{\decibel}.
 Utöver brusnivån i mottagaren spelar också distorsionen en roll.
 %%
 \begin{align*}

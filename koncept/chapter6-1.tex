@@ -89,16 +89,16 @@ Oftast multipliceras frekvensen två eller tre gånger i vart och ett av
 förstärkarstegen.
 
 Bild \ssaref{fig:bildII5-3} visar ett blockschema för en FM sändare för
-\SI{435}{\mega\hertz} (\SI{70}{\centi\metre}-bandet).
-Oscillatorfrekvensen är \SI{8,056}{\mega\hertz}.
+\qty{435}{\mega\hertz} (\qty{70}{\centi\metre}-bandet).
+Oscillatorfrekvensen är \qty{8,056}{\mega\hertz}.
 I fyra av de efterföljande förstärkarna multipliceras frekvensen 2, 3, 3
 respektive 3~gånger, alltså totalt 54~gånger.
-Sändningsfrekvensen blir då \(8,056 \cdot 54 = \SI{435}{\mega\hertz}\).
+Sändningsfrekvensen blir då \(8,056 \cdot 54 = \qty{435}{\mega\hertz}\).
 
 Variationer i oscillatorfrekvensen blir också multiplicerade.
 I detta exempel blir sändningsfrekvensens deviation 54~gånger större än
 oscillatorfrekvensens deviation.
-En deviation av max \SI{3000}{\hertz} från den nominella sändningsfrekvensen
+En deviation av max \qty{3000}{\hertz} från den nominella sändningsfrekvensen
 motsvaras av följande deviation från oscillatorfrekvensen,
 %%
 \[\Delta f = \frac{3000}{54} = 55,6\text{ [Hz]}\]
@@ -166,7 +166,7 @@ ett kristallfilter för att få god undertryckning av oönskat sidband.
 Denna SSB-signal flyttas till avsett frekvensband
 genom ännu en frekvensblandning och ytterligare filtrering.
 
-I exemplet är CO-frekvensen \SI{9}{\mega\hertz}.
+I exemplet är CO-frekvensen \qty{9}{\mega\hertz}.
 VFO har frekvensområdet \SIrange{5,0}{5,5}{\mega\hertz}.
 Vid blandningen fås blandningsprodukter inom frekvensområdena
 \SIrange{14,0}{14,5}{\mega\hertz} och \SIrange{4,0}{3,5}{\mega\hertz}.
@@ -226,22 +226,22 @@ talen 5760 och 5840.
 Med den första delarens divisor 10 och den andra delarens divisor
 inställd till exempel på 5760, så avges ur delarkedjan en puls varje gång som
 VCO har genomfört 57600 svängningar.
-Vid en VCO-frekvens av \SI{144}{\mega\hertz} (\SI{144000}{\kilo\hertz}) motsvaras
-divisorn 57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av \SI{2,5}{\kilo\hertz}
+Vid en VCO-frekvens av \qty{144}{\mega\hertz} (\qty{144000}{\kilo\hertz}) motsvaras
+divisorn 57600 (= \(10 \cdot 5760\)) av en pulsfrekvens av \qty{2,5}{\kilo\hertz}
 ut från räknarkedjan.
-På samma sätt kommer en VCO-frekvens av \SI{144025}{\kilo\hertz} och divisorn
+På samma sätt kommer en VCO-frekvens av \qty{144025}{\kilo\hertz} och divisorn
 57610 (= \(10 \cdot 5761\)) också att ge en pulsfrekvens av
-\SI{2,5}{\kilo\hertz}, likaså \SI{146}{\mega\hertz} och divisorn 58400 och så
+\qty{2,5}{\kilo\hertz}, likaså \qty{146}{\mega\hertz} och divisorn 58400 och så
 vidare.
 
-VCO-frekvensen låses alltså i intervall om \SI{25}{\kilo\hertz} till närmaste
-delningstal, för att uppnå en pulsfrekvens av \SI{2,5}{\kilo\hertz}.
+VCO-frekvensen låses alltså i intervall om \qty{25}{\kilo\hertz} till närmaste
+delningstal, för att uppnå en pulsfrekvens av \qty{2,5}{\kilo\hertz}.
 Om VCO-frekvensen (är-värdet) avviker från det inställda delningstalet
 (bör-värdet), så kommer pulsfrekvensen att bli högre eller lägre än
-\SI{2,5}{\kilo\hertz}.
+\qty{2,5}{\kilo\hertz}.
 
 Pulsfrekvensen jämförs i en så kallad fasjämförare med en kristallstyrd
-referensfrekvens som efter en delning med 10 också är \SI{2,5}{\kilo\hertz}.
+referensfrekvens som efter en delning med 10 också är \qty{2,5}{\kilo\hertz}.
 Utspänningen från jämföraren är en likspänning, som intar ett
 medelvärde då infrekvenserna är lika, men ett högre eller lägre värde
 när de skiljer.
@@ -270,11 +270,11 @@ logikkretsar i kombination med en knappsats och så vida\-re.
 \mediumfig[0.9]{images/cropped_pdfs/bild_2_5-08.pdf}{PLL-styrd SSB-sändare för kortvåg.}{fig:bildII5-8}
 
 Bild \ssaref{fig:bildII5-8} visar ett avancerat koncept för en kortvågssändare.
-SSB-signalen alstras på frekvensen \SI{9}{\mega\hertz} och blandas med
-\SI{61}{\mega\hertz} i 1:a blandaren.
+SSB-signalen alstras på frekvensen \qty{9}{\mega\hertz} och blandas med
+\qty{61}{\mega\hertz} i 1:a blandaren.
 
-Summafrekvensen \SI{70}{\mega\hertz} filtreras fram som mellanfrekvens.
-Den önskade sändningsfrekvensen fås genom att blanda \SI{70}{\mega\hertz} MF med
+Summafrekvensen \qty{70}{\mega\hertz} filtreras fram som mellanfrekvens.
+Den önskade sändningsfrekvensen fås genom att blanda \qty{70}{\mega\hertz} MF med
 frekvensen från VCO och därefter filtrera fram skillnadsfrekvensen.
 
 VCO i detta exempel täcker frekvensområdet \SIrange{40}{69,5}{\mega\hertz}.
@@ -284,14 +284,14 @@ valbara filtersektioner, till exempel ett per amatörband.
 Valet kan ske automatiskt och styrt av frekvensläget på VCO.
 
 Den absoluta ändringen mellan de två extrema sändningsfrekvenserna är
-så stor som \SI{28,5}{\mega\hertz} eller 1:20.
-Frekvensändringen i VCO är \SI{29,5}{\mega\hertz}, men där är
+så stor som \qty{28,5}{\mega\hertz} eller 1:20.
+Frekvensändringen i VCO är \qty{29,5}{\mega\hertz}, men där är
 ändringsförhållandet mellan de extrema frekvenserna endast 1:1,74, vilket kan
 täckas av en enda VCO.
 Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
 VCO för att täcka hela frekvensområdet
 
-\textbf{Exempel:} Vid en MF på \SI{9}{\mega\hertz} behöver VCO-funktionen täcka
+\textbf{Exempel:} Vid en MF på \qty{9}{\mega\hertz} behöver VCO-funktionen täcka
 \SIrange{9,5}{39}{\mega\hertz}, det vill säga 1:4,11, vilket är för mycket för
 en VCO.
 
@@ -302,8 +302,8 @@ HF-frekvenserna i det resterande sidbandet varierar i takt med de
 modulerande LF-frekvenserna.
 
 I konceptet på bilden rekonstrueras bärvågen i en 1:a kontrollblandare,
-genom blandning av de två CO-frekvenserna 9 och \SI{61}{\mega\hertz}.
-Den framfiltrerade bärvågen med frekvensen \SI{70}{\mega\hertz} blandas med
+genom blandning av de två CO-frekvenserna 9 och \qty{61}{\mega\hertz}.
+Den framfiltrerade bärvågen med frekvensen \qty{70}{\mega\hertz} blandas med
 VCO-frekvensen i 2:a kontrollblandare och ur denna signal
 framfiltreras den rekonstruerade bärvågen.
 Denna stämmer perfekt med den undertryckta bärvågens frekvens och
@@ -321,9 +321,9 @@ Frekvensen i alla oscillatorer styrs av samma referensoscillator.
 Frekvensstabiliteten beror alltså enbart på referensoscillatorns stabilitet.
 
 Omkopplingen mellan LSB och USB kan göras antingen genom att behålla SSB-filtret
-och ändra frekvensen \SI{9}{\mega\hertz} med ett värde så att filtret blir
+och ändra frekvensen \qty{9}{\mega\hertz} med ett värde så att filtret blir
 verksamt i det motsatta sidbandet eller genom att behålla frekvensen
-\SI{9}{\mega\hertz} och byta till ett SSB-filter som är verksamt i det motsatta
+\qty{9}{\mega\hertz} och byta till ett SSB-filter som är verksamt i det motsatta
 sidbandet.
 
 En PLL-styrd sändare har både kristalloscillatorns stabilitet och variabel
@@ -361,7 +361,7 @@ Denna är typiskt en okompenserad kristall, med man brukar kunna välja en
 temperatur-kompenserad kristalloscillator -- TCXO eller en ugnskompenserad
 kristalloscillator -- OCXO.
 Det kan även förekomma att man kan låsa på en extern referensfrekvens,
-ofta \SI{10}{\mega\hertz}.
+ofta \qty{10}{\mega\hertz}.
 
 %% \newpage % layout
 \subsection{RF-bandbredd}
@@ -374,8 +374,8 @@ ofta \SI{10}{\mega\hertz}.
 modulerade signalen har när den kommer ut ur sändaren.
 Det är viktigt att den är begränsad så att den håller sig inom de gränser
 som finns för signaltypen, så att sändaren inte stör grann-kanalerna.
-Till exempel kan en sändare anpassad för FM \SI{25}{\kilo\hertz} kanaldelning
-modulera för starkt för NFM \SI{12,5}{\kilo\hertz} kanaldelning och helt enkelt
+Till exempel kan en sändare anpassad för FM \qty{25}{\kilo\hertz} kanaldelning
+modulera för starkt för NFM \qty{12,5}{\kilo\hertz} kanaldelning och helt enkelt
 störa grann-kanalerna.
 
 Det är ofta svårt att begränsa RF-bandbredden direkt på utgången av sändaren,
@@ -413,8 +413,8 @@ Bandbredden på ljudsignalen, den så kallade \emph{ljudbandbredden} (eng.
 \emph{audio bandwidth}) in kan vara väldigt stor, och det är därför viktigt
 att sändaren begränsar den bandbredden så att sändaren inte råkar modulera
 utanför sin kanal, något som främst påverkar bandbredds begränsning uppåt,
-oftast \SI{3}{\kilo\hertz} för amatörradio.
-Bandbredden kan också behöva begränsas nedåt vid \SI{300}{\hertz} för att inte
+oftast \qty{3}{\kilo\hertz} för amatörradio.
+Bandbredden kan också behöva begränsas nedåt vid \qty{300}{\hertz} för att inte
 råka störa till exempel signalering med subtoner.
 Denna nedre begränsning kan dock ibland behöva sättas ur spel för att
 kunna skicka ut subtonssignaler, men även för andra former av signaler.
