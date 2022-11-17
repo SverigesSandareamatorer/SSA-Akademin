@@ -55,19 +55,4 @@ jobs:
             images_linked.txt
             images_unlinked.txt
             TODOs.txt
-  testa-hyperlankar:
-    name: 'Testa hyperlänkar'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: lychee cache
-        uses: actions/cache@v3
-        with:
-          path: .lycheecache
-          key: cache-lychee-${{ github.sha }}
-          restore-keys: cache-lychee-
-      - name: Testa hyperlänkar
-        uses: lycheeverse/lychee-action@v1.5.4
-        with:
-          fail: true
-          args: "--cache --max-cache-age 1d --max-concurrency 4 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
+            long_lines.txt
