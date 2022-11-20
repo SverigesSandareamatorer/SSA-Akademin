@@ -44,7 +44,7 @@ jobs:
           make images_unlinked
           echo "Antal bilder utan referenser: $(cat images_unlinked.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
           make TODOs
-          echo "Antal TODO-kommentarer: $(cat todos.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "Antal TODO-kommentarer:&emsp;$(cat TODOs.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
           make long_lines
           echo "Antal kodrader längre än 80 tecken: $(cat long_lines.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara PDF-artefakt'

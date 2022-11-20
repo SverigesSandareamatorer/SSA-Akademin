@@ -142,7 +142,6 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs.txt
 	- grep Missing koncept.log >> TODOs.txt
 	- grep LaTeX koncept.log | grep Warning >> TODOs.txt
-	wc -l TODOs.txt
 
 # Länkade bilder
 images_linked: koncept.tex $(KONCEPT_FILES)
