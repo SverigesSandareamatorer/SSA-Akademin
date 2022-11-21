@@ -34,19 +34,21 @@ jobs:
         run: make koncept.pdf
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
-      - name: 'Beräkna checksumma'
+      - name: 'Visa checksumma'
         run: sha256sum koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf >> $GITHUB_STEP_SUMMARY
       - name: 'Skapa rapporter'
         run: |
-          sed -n '1p' koncept.log >> $GITHUB_STEP_SUMMARY
+          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked
-          echo "Antal bilder med referenser: $(cat images_linked.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make images_unlinked
-          echo "Antal bilder utan referenser: $(cat images_unlinked.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make TODOs
-          echo "Antal TODO-kommentarer:&emsp;$(cat TODOs.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "| TODO-kommentarer | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make long_lines
-          echo "Antal kodrader längre än 80 tecken: $(cat long_lines.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara PDF-artefakt'
         uses: actions/upload-artifact@v3
         with:
