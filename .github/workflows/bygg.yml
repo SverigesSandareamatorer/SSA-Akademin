@@ -26,7 +26,7 @@ jobs:
         run: |
           sudo locale-gen sv_SE.UTF-8
           sudo localectl set-locale LANG="sv_SE.UTF-8"
-      - name: 'Kopiera info om repository'
+      - name: 'Kopiera info om repository till filer'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
           echo $GITHUB_REF_NAME > branch.tmp
@@ -35,7 +35,7 @@ jobs:
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
-        run: sha256sum koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf >> $GITHUB_STEP_SUMMARY
+        run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Skapa rapporter'
         run: |
           echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
