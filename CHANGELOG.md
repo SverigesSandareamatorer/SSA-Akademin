@@ -8,6 +8,9 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
 
+### Borttaget
+- Fyra filer med ofärdiga lösblad borttagna.
+
 ## [2.5.0] – 2022-01-27
 ### Tillagt
  - Ny beskrivning av glimmer.

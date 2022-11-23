@@ -15,8 +15,6 @@ all:	koncept.pdf
 all:	matterep.pdf
 all:	emf-handout.pdf
 all:	prefix.pdf
-all:	ac1.pdf
-all:	ac2.pdf
 
 .PHONY:	*.pdf
 
@@ -160,13 +158,6 @@ long_lines:
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
 	octave macros/bild_tx_heat.m
-
-# Genererade presentationer
-ac1.pdf: lectures/ac1.tex
-	xelatex lectures/ac1.tex
-
-ac2.pdf: lectures/ac2.tex
-	xelatex lectures/ac2.tex
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.
