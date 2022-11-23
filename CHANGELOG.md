@@ -8,6 +8,9 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
 
+### Ändrat
+- Makron ändrade till de för siunitx 3.x
+
 ### Borttaget
 - Fyra filer med ofärdiga lösblad borttagna.
 
