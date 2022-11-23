@@ -6,7 +6,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ## [Osläppt]
 ### Fixat
 - En felkodad länk har rättats.
-- En siffra som saknades i bilagan med bandplaner har lagts till.
+- Rättat skrivfel i bilaga med bandplaner.
 
 ## [2.5.0] – 2022-01-27
 ### Tillagt
