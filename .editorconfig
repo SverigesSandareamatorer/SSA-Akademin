@@ -9,6 +9,9 @@ insert_final_newline = true
 [*.tex]
 indent_style = tab
 
+[{*.tex,!appendix}]
+max_line_length = 80
+
 [*.{css,yml}]
 indent_style = space
 indent_size = 2
