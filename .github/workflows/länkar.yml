@@ -7,13 +7,13 @@ on:
     - cron: "30 03 20 * *"
 
 jobs:
-  testa-hyperlankar:
-    name: 'Testa hyperlänkar'
+  testa-lankar:
+    if: github.repository == 'SverigesSandareamatorer/SSA-Akademin'
+    name: 'Testa länkar'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Testa hyperlänkar
-        uses: lycheeverse/lychee-action@v1.5.4
+      - uses: lycheeverse/lychee-action@v1.5.4
         with:
           fail: true
           args: "--max-concurrency 3 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
