@@ -30,7 +30,6 @@ KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
-
 KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
@@ -63,12 +62,14 @@ KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
-KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik.tex \
-	koncept/appendix-decibel.tex koncept/appendix-s-enheter.tex \
-	koncept/appendix-beskrivningskoder.tex koncept/appendix-iaru-bandplan.tex \
-	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
-	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
-	koncept/appendix-kunskapskrav.tex
+KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
+	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
+	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
+	koncept/appendix-iaru-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
+	koncept/appendix-litteratur.tex koncept/appendix-matematik.tex \
+	koncept/appendix-mattenheter.tex koncept/appendix-prefixomvandling.tex \
+	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
+	koncept/appendix-s-enheter.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
@@ -125,7 +126,7 @@ emf-handout.ind: emf-handout.idx
 emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
 	xelatex handouts/emf-handout.tex
 
-prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
+prefix.pdf: handouts/prefix.tex koncept/appendix-prefixomvandling.tex
 	xelatex handouts/prefix.tex
 
 iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
