@@ -72,8 +72,6 @@ har installerat beroendet som det behöver.
 |`all`                |alla mål                           |alla beroenden nedan  |
 |`clean`              |Tar bort alla genererade filer     |-                     |
 |`koncept.pdf`        |PDF av KonCEPT (digitaliserad)     |[TeX/LaTeX](#texlatex)|
-|`matterep.pdf`       |PDF av Matterepetitionsboken       |[TeX/LaTeX](#texlatex)|
-|`emf-handout.pdf`    |PDF av Utbildningsmaterial EMF     |[TeX/LaTeX](#texlatex)|
 |`docker-image`       |Bygg en Docker *image*             |Docker                |
 |`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 

@@ -7,14 +7,10 @@ help:
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
 	@echo '   make koncept.ind            bygg index till koncept                '
-	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
 all:	koncept.pdf
-all:	matterep.pdf
-all:	emf-handout.pdf
-all:	prefix.pdf
 
 .PHONY:	*.pdf
 
@@ -111,28 +107,8 @@ koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KON
 	makeindex koncept.idx
 	pdflatex -interaction=nonstopmode koncept.tex
 
-matterep.pdf: koncept/matte.tex handouts/matterep.tex
-	-xelatex handouts/matterep.tex
-	xelatex handouts/matterep.tex
-
-emf-handout.idx:
-	xelatex handouts/emf-handout.tex
-
-emf-handout.ind: emf-handout.idx
-	makeindex emf-handout
-
-emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
-	xelatex handouts/emf-handout.tex
-
-prefix.pdf: handouts/prefix.tex koncept/appendix-prefixomvandling.tex
-	xelatex handouts/prefix.tex
-
-iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
-	-xelatex handouts/iso-jordning.tex
-	xelatex handouts/iso-jordning.tex
-
-koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
-	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
+koncept.tar.gz: Makefile $(KONCEPT_FILES)
+	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
 
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	rm -f TODOs.txt

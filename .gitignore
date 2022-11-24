@@ -190,16 +190,10 @@ TSWLatexianTemp*
 *~[0-9]*
 
 
-# Finished output
+# KonCEPT Finished output
 koncept.pdf
-koncept-tryck.pdf
-matterep.pdf
-emf-handout.pdf
-prefix.pdf
-ac1.pdf
-ac2.pdf
 
-# Temp
+# KonCEPT Temp
 SHA.tmp
 branch.tmp
 images_available.txt
