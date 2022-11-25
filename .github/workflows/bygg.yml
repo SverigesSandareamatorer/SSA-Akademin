@@ -13,12 +13,12 @@ jobs:
     name: 'Bygg bok'
     runs-on: ubuntu-22.04
     steps:
-      - name: 'Checka ut'
+      - name: 'Checka ut koden'
         uses: actions/checkout@v3
-      - name: 'Installera'
+      - name: 'Installera Ubuntu-paket'
         run: |
-          sudo apt-get -q update
-          sudo apt-get -q -y install texlive \
+          sudo apt-get --quiet update
+          sudo apt-get --quiet --assume-yes --verbose-versions install texlive \
             texlive-lang-european texlive-science \
             texlive-fonts-recommended texlive-fonts-extra \
             language-pack-sv
@@ -26,30 +26,35 @@ jobs:
         run: |
           sudo locale-gen sv_SE.UTF-8
           sudo localectl set-locale LANG="sv_SE.UTF-8"
-      - name: 'Kopiera info om repository'
+      - name: 'Kopiera info om repository till filer'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
           echo $GITHUB_REF_NAME > branch.tmp
-      - name: 'Bygg'
+      - name: 'Bygg koncept.pdf'
         run: make koncept.pdf
-      - name: 'Beräkna checksumma'
-        run: sha256sum koncept.pdf
-      - name: 'Byt namn'
+      - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
+      - name: 'Visa checksumma'
+        run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Skapa rapporter'
         run: |
+          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked
+          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make images_unlinked
+          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make TODOs
+          echo "| TODO-kommentarer | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make long_lines
-          echo "Antal kodrader längre än 80 tecken: $(cat long_lines.txt | wc -l)" >> $GITHUB_STEP_SUMMARY
-      - name: 'Ladda upp artefakt'
+          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara PDF-artefakt'
         uses: actions/upload-artifact@v3
         with:
           name: koncept-pdf
           path: koncept*.pdf
-          retention-days: 31
-      - name: 'Ladda upp rapporter'
+      - name: 'Spara rapporter'
         uses: actions/upload-artifact@v3
         with:
           name: rapporter

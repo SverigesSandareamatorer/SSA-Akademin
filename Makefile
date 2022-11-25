@@ -7,16 +7,10 @@ help:
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
 	@echo '   make koncept.ind            bygg index till koncept                '
-	@echo '   make prefix.pdf             bygg prefix.pdf                        '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
 all:	koncept.pdf
-all:	matterep.pdf
-all:	emf-handout.pdf
-all:	prefix.pdf
-all:	ac1.pdf
-all:	ac2.pdf
 
 .PHONY:	*.pdf
 
@@ -30,7 +24,6 @@ KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
-
 KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
@@ -63,12 +56,14 @@ KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_CH16_FILES = koncept/chapter16-1.tex
-KONCEPT_APDX_FILES = koncept/appendix-mattenheter.tex koncept/appendix-matematik.tex \
-	koncept/appendix-decibel.tex koncept/appendix-s-enheter.tex \
-	koncept/appendix-beskrivningskoder.tex koncept/appendix-iaru-bandplan.tex \
-	koncept/appendix-iaru-bandplan2.tex koncept/appendix-frekvensplan.tex \
-	koncept/appendix-repeatrar.tex koncept/appendix-rapportkoder.tex \
-	koncept/appendix-kunskapskrav.tex
+KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
+	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
+	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
+	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
+	koncept/appendix-litteratur.tex koncept/appendix-matematik.tex \
+	koncept/appendix-mattenheter.tex koncept/appendix-prefixomvandling.tex \
+	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
+	koncept/appendix-s-enheter.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
@@ -112,28 +107,8 @@ koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KON
 	makeindex koncept.idx
 	pdflatex -interaction=nonstopmode koncept.tex
 
-matterep.pdf: koncept/matte.tex handouts/matterep.tex
-	-xelatex handouts/matterep.tex
-	xelatex handouts/matterep.tex
-
-emf-handout.idx:
-	xelatex handouts/emf-handout.tex
-
-emf-handout.ind: emf-handout.idx
-	makeindex emf-handout
-
-emf-handout.pdf: emf-handout.ind handouts/emf-handout.tex koncept/chapter11-1.tex koncept/common.tex
-	xelatex handouts/emf-handout.tex
-
-prefix.pdf: handouts/prefix.tex koncept/appendix-n.tex
-	xelatex handouts/prefix.tex
-
-iso-jordning.pdf: koncept.bbl handouts/iso-jordning.tex $(KONCEPT_FILES)
-	-xelatex handouts/iso-jordning.tex
-	xelatex handouts/iso-jordning.tex
-
-koncept.tar.gz: Makefile $(KONCEPT_FILES) matterep.tex
-	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) matterep.tex images/*
+koncept.tar.gz: Makefile $(KONCEPT_FILES)
+	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
 
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	rm -f TODOs.txt
@@ -142,7 +117,6 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs.txt
 	- grep Missing koncept.log >> TODOs.txt
 	- grep LaTeX koncept.log | grep Warning >> TODOs.txt
-	wc -l TODOs.txt
 
 # Länkade bilder
 images_linked: koncept.tex $(KONCEPT_FILES)
@@ -160,13 +134,6 @@ long_lines:
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
 	octave macros/bild_tx_heat.m
-
-# Genererade presentationer
-ac1.pdf: lectures/ac1.tex
-	xelatex lectures/ac1.tex
-
-ac2.pdf: lectures/ac2.tex
-	xelatex lectures/ac2.tex
 
 # Optionally build using docker, currently only tested with MacOS and Docker 1.12.3, but
 # should work anywhere you can run Docker.

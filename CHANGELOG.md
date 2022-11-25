@@ -6,6 +6,14 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ## [Osläppt]
 ### Fixat
 - En felkodad länk har rättats.
+- Rättat skrivfel i bilaga med bandplaner.
+
+### Ändrat
+- Makron ändrade till de för siunitx 3.x
+
+### Borttaget
+- Filer med ofärdiga lektioner borttagna.
+- Filer med ofärdiga lösblad borttagna.
 
 ## [2.5.0] – 2022-01-27
 ### Tillagt
