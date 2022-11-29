@@ -1,8 +1,8 @@
 name: Bygg ebok
 
 on:
-  schedule:
-    - cron: "30 03 04 * *"
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
    name: 'Bygg ebok'
@@ -13,7 +13,7 @@ jobs:
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get --quiet update
-          sudo apt-get --quiet --assume-yes install \
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
             texlive \
             texlive-extra-utils \
             texlive-lang-european \
