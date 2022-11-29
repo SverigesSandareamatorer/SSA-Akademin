@@ -6,11 +6,12 @@ help:
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg koncept.pdf                       '
+	@echo '   make koncept.epub           bygg EPUB3 av KonCEPT                  '
 	@echo '   make koncept.ind            bygg index till koncept                '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf
+all:	koncept.pdf koncept.epub
 
 .PHONY:	*.pdf
 
@@ -106,6 +107,9 @@ koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KON
 	pdflatex -interaction=batchmode koncept.tex
 	makeindex koncept.idx
 	pdflatex -interaction=nonstopmode koncept.tex
+
+koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
+	tex4ebook --format epub3 --config epub-konf koncept.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
