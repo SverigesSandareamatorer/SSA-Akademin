@@ -4,13 +4,15 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - '**.md'
   pull_request:
     branches:
       - master
 
 jobs:
   bygg-pdf:
-    name: 'Bygg bok'
+    name: 'Bygg PDF'
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
@@ -18,9 +20,13 @@ jobs:
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get --quiet update
-          sudo apt-get --quiet --assume-yes --verbose-versions install texlive \
-            texlive-lang-european texlive-science \
-            texlive-fonts-recommended texlive-fonts-extra \
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            texlive \
+            texlive-lang-european \
+            texlive-science \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            latexmk \
             language-pack-sv
       - name: 'Sätt systemspråk till svenska'
         run: |
@@ -36,9 +42,14 @@ jobs:
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara PDF-artefakt'
+        uses: actions/upload-artifact@v3
+        with:
+          name: koncept-pdf
+          path: koncept*.pdf
       - name: 'Skapa rapporter'
         run: |
-          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
           echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked
@@ -49,11 +60,6 @@ jobs:
           echo "| TODO-kommentarer | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make long_lines
           echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-      - name: 'Spara PDF-artefakt'
-        uses: actions/upload-artifact@v3
-        with:
-          name: koncept-pdf
-          path: koncept*.pdf
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v3
         with:

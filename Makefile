@@ -5,7 +5,7 @@ help:
 	@echo '                                                                      '
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
-	@echo '   make koncept.pdf            bygg koncept.pdf                       '
+	@echo '   make koncept.pdf            bygg PDF av KonCEPT                    '
 	@echo '   make koncept.epub           bygg EPUB3 av KonCEPT                  '
 	@echo '   make koncept.ind            bygg index till koncept                '
 	@echo '   make clean                  rensa alla byggfiler                   '
@@ -82,19 +82,6 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 
 REPO_FILES = SHA.tmp branch.tmp
 
-koncept.aux: koncept.tex $(KONCEPT_FILES)
-	- pdflatex -interaction=nonstopmode koncept.tex
-
-koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
-	- xelatex koncept.tex
-
-koncept.bbl: koncept.aux koncept.bib
-	pdflatex -interaction=nonstopmode koncept.tex
-	bibtex koncept.aux
-
-koncept.ind: koncept.idx
-	makeindex koncept.idx
-
 branch.tmp:
 	touch branch.tmp
 
@@ -102,11 +89,8 @@ SHA.tmp:
 	touch SHA.tmp
 
 koncept.log:
-koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	pdflatex -interaction=batchmode koncept.tex
-	pdflatex -interaction=batchmode koncept.tex
-	makeindex koncept.idx
-	pdflatex -interaction=nonstopmode koncept.tex
+koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
+	latexmk -pdf koncept.tex
 
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	tex4ebook --format epub3 --tidy koncept.tex "mathml"
