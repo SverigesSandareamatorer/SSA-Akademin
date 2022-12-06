@@ -117,14 +117,14 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES)
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	rm -f TODOs.txt
 	- grep -n TODO *.tex koncept/*.tex > TODOs.txt
-	- grep HAREC koncept.log >> TODOs.txt
-	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs.txt
-	- grep Missing koncept.log >> TODOs.txt
-	- grep LaTeX koncept.log | grep Warning >> TODOs.txt
+	- grep -F HAREC koncept.log >> TODOs.txt
+	- grep {rev koncept/*.tex >> TODOs.txt
+	- grep -F Missing koncept.log >> TODOs.txt
+	- grep -F LaTeX koncept.log | grep Warning >> TODOs.txt
 
 # Länkade bilder
 images_linked: koncept.tex $(KONCEPT_FILES)
-	grep images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
+	grep -F images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
 images_available:
 	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_available.txt
