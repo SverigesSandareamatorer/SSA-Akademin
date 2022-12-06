@@ -1,11 +1,12 @@
 name: Bygg ebok
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
+  schedule:
+    - cron: "33 03 05 * *"
 
 jobs:
-   name: 'Bygg ebok'
+  bygg-epub:
+    name: 'Bygg EPUB'
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
@@ -34,10 +35,12 @@ jobs:
         run: make koncept.epub
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
+      - name: 'Visa programversion'
+        run: |
+          echo "<pre>&dollar; <kbd>tex4ebook --version</kbd><br>$(tex4ebook --version)<br>" >> $GITHUB_STEP_SUMMARY
+          echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
-      - name: 'Visa programversion'
-        run: echo "<pre>$(tex4ebook --version)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara EPUB-artefakt'
         uses: actions/upload-artifact@v3
         with:
