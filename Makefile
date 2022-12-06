@@ -109,7 +109,7 @@ koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KON
 	pdflatex -interaction=nonstopmode koncept.tex
 
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
-	tex4ebook --format epub3 --config epub-konf koncept.tex
+	tex4ebook --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
