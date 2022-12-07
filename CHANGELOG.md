@@ -4,6 +4,9 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
 
 ## [Osläppt]
+### Tillagt
+ - Byggmål för ebok i EPUB-format.
+
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
