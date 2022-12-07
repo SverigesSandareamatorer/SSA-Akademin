@@ -157,7 +157,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 23. Nyckelbegrepp ska indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
     förstå dem och dess användning. En enkel användning är
-    `\index{strömtransformator}`
+    `\index{strömtransformator}`
 
     För vissa begrepp är det nyttigt att samla gemensamma grupper, det
     gör man genom att ange `\index{transformator!ström-}` där transformator är
@@ -199,10 +199,10 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
-    läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
+    läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
     hela dokumentet: `\cite{ITU-RR}`.
     För att referera till ett visst kapitel anger man det inom hakparanteser:
-    `\cite[1.56]{ITU-RR}`.
+    `\cite[1.56]{ITU-RR}`.
 
 26. I förekommande fall skall SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
