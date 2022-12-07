@@ -90,4 +90,4 @@ installeras.
 <kbd>sudo apt-get update</kbd>
 
 <kbd>sudo apt-get install texlive texlive-lang-european
-    texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex</kbd>
+    texlive-latex-extra texlive-pictures texlive-math-extra</kbd>
