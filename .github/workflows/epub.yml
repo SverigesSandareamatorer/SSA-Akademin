@@ -33,12 +33,12 @@ jobs:
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg koncept.epub'
         run: make koncept.epub
-      - name: 'Lägg till versionsinformation i filnamnet'
-        run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
       - name: 'Visa programversion'
         run: |
           echo "<pre>&dollar; <kbd>tex4ebook --version</kbd><br>$(tex4ebook --version)<br>" >> $GITHUB_STEP_SUMMARY
           echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Lägg till versionsinformation i filnamnet'
+        run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara EPUB-artefakt'

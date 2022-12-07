@@ -38,6 +38,10 @@ jobs:
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg koncept.pdf'
         run: make koncept.pdf
+      - name: 'Visa programversion'
+        run: |
+          echo "<pre>&dollar; <kbd>latexmk -v</kbd><br>$(latexmk -v)<br>" >> $GITHUB_STEP_SUMMARY
+          echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
@@ -49,7 +53,6 @@ jobs:
           path: koncept*.pdf
       - name: 'Skapa rapporter'
         run: |
-          echo "<pre>&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
           echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked
