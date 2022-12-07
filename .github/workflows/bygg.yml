@@ -53,14 +53,14 @@ jobs:
           path: koncept*.pdf
       - name: 'Skapa rapporter'
         run: |
-          echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
+          echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked
           echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make images_unlinked
           echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make TODOs
-          echo "| TODO-kommentarer | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| TODO-kommentarer m.m. | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make long_lines
           echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
