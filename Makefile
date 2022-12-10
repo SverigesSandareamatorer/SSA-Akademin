@@ -116,10 +116,10 @@ images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 long_lines: $(KONCEPT_FILES)
-	grep '.\{80\}' koncept/**/*.tex > long_lines.txt
+	grep '.\{80\}' koncept/*.tex > long_lines.txt
 
 comment_lines: $(KONCEPT_FILES)
-	grep '^ *%' koncept/**/*.tex > comment_lines.txt
+	grep '^ *%' koncept/*.tex > comment_lines.txt
 
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
