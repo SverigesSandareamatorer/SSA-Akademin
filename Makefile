@@ -118,6 +118,9 @@ images_unlinked: images_available images_linked
 long_lines:
 	grep '.\{80\}' **/*.tex > long_lines.txt
 
+comment_lines: $(KONCEPT_FILES)
+	grep '^ *%' koncept/**/*.tex > comment_lines.txt
+
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m
 	octave macros/bild_tx_heat.m

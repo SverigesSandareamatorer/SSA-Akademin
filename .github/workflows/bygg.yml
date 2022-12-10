@@ -63,6 +63,8 @@ jobs:
           echo "| TODO-kommentarer m.m. | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make long_lines
           echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make comment_lines
+          echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v3
         with:
