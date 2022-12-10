@@ -99,11 +99,11 @@ koncept.tar.gz: Makefile $(KONCEPT_FILES)
 
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	rm -f TODOs.txt
-	- grep -n TODO *.tex koncept/*.tex > TODOs.txt
+	- grep -Fn TODO *.tex koncept/*.tex > TODOs.txt
 	- grep -F HAREC koncept.log >> TODOs.txt
-	- grep {rev koncept/*.tex >> TODOs.txt
+	- grep -F {rev koncept/*.tex >> TODOs.txt
 	- grep -F Missing koncept.log >> TODOs.txt
-	- grep -F LaTeX koncept.log | grep Warning >> TODOs.txt
+	- grep -F LaTeX koncept.log | grep -F Warning >> TODOs.txt
 
 # Länkade bilder
 images_linked: koncept.tex $(KONCEPT_FILES)
