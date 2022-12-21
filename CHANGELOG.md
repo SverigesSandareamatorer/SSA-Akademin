@@ -5,14 +5,14 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ## [Osläppt]
 ### Tillagt
- - Byggmål för ebok i EPUB-format.
+- Nytt byggmål för ebok i EPUB-format.
 
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
 
 ### Ändrat
-- Makron ändrade till de för siunitx 3.x
+- Makron ändrade till de för siunitx 3.0.
 
 ### Borttaget
 - Filer med ofärdiga lektioner borttagna.
