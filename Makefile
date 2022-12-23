@@ -115,8 +115,9 @@ images_available:
 images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
+# Skapar en rapport med kodrader längre än 80 tecken.
 long_lines: $(KONCEPT_FILES)
-	grep '.\{80\}' koncept/*.tex > long_lines.txt
+	grep '.\{81\}' koncept/*.tex > long_lines.txt
 
 comment_lines: $(KONCEPT_FILES)
 	grep '^ *%' koncept/*.tex > comment_lines.txt
