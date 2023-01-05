@@ -1,4 +1,4 @@
-# Den här filen innehåller vilka som automatiskt ska få en begära om granskning av Pull Request.
+# Den här filen innehåller vilka som ska få en automatiskt begäran om granskning av Pull Request.
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 /LICENSE.txt    @sm5phu

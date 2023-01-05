@@ -119,6 +119,7 @@ images_unlinked: images_available images_linked
 long_lines: $(KONCEPT_FILES)
 	grep '.\{81\}' koncept/*.tex > long_lines.txt
 
+# Skapar en rapport med rader som bara är kommentar.
 comment_lines: $(KONCEPT_FILES)
 	grep '^ *%' koncept/*.tex > comment_lines.txt
 
