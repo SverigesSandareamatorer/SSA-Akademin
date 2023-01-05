@@ -11,12 +11,18 @@ on:
       - master
 
 jobs:
-  skapa-rapporter:
-    name: 'Skapa rapporter'
+  analysera-koden:
+    name: 'Analysera koden'
+    continue-on-error: true
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v3
+      - name: 'Installera Ubuntu-paket'
+        run: |
+          sudo apt-get --quiet update
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            chktex
       - name: 'Skapa rapporter'
         run: |
           echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
@@ -38,6 +44,13 @@ jobs:
             images_unlinked.txt
             long_lines.txt
             comment_lines.txt
+      - name: 'Kör LaTeX-kontroll'
+        run: chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex
+        # n8  eftersom det är fel tankstreckslängd för svenska.
+        # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
+        # n32 eftersom det är fel citationstecken för svenska.
+      - name: 'Skriv ut fel'
+        run: grep -F 'Error' chktex.log >> $GITHUB_STEP_SUMMARY
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-22.04
