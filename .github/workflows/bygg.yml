@@ -74,3 +74,46 @@ jobs:
             images_unlinked.txt
             TODOs.txt
             long_lines.txt
+            comment_lines.txt
+  bygg-epub:
+    name: 'Bygg EPUB'
+    continue-on-failure: true
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 'Checka ut koden'
+        uses: actions/checkout@v3
+      - name: 'Installera Ubuntu-paket'
+        run: |
+          sudo apt-get --quiet update
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            texlive \
+            texlive-extra-utils \
+            texlive-lang-european \
+            texlive-science \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            tidy \
+            language-pack-sv
+      - name: 'Sätt systemspråk till svenska'
+        run: |
+          sudo locale-gen sv_SE.UTF-8
+          sudo localectl set-locale LANG="sv_SE.UTF-8"
+      - name: 'Kopiera info om repository till filer'
+        run: |
+          echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
+          echo $GITHUB_REF_NAME > branch.tmp
+      - name: 'Bygg koncept.epub'
+        run: make koncept.epub
+      - name: 'Visa programversion'
+        run: |
+          echo "<pre>&dollar; <kbd>tex4ebook --version</kbd><br>$(tex4ebook --version)<br>" >> $GITHUB_STEP_SUMMARY
+          echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Lägg till versionsinformation i filnamnet'
+        run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
+      - name: 'Visa checksumma'
+        run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara EPUB-artefakt'
+        uses: actions/upload-artifact@v3
+        with:
+          name: koncept-epub
+          path: koncept*.epub
