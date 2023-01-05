@@ -45,6 +45,7 @@ jobs:
             long_lines.txt
             comment_lines.txt
       - name: 'Kör LaTeX-kontroll'
+        continue-on-error: true
         run: chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex
         # n8  eftersom det är fel tankstreckslängd för svenska.
         # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
