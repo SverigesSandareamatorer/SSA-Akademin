@@ -11,6 +11,33 @@ on:
       - master
 
 jobs:
+  skapa-rapporter:
+    name: 'Skapa rapporter'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 'Checka ut koden'
+        uses: actions/checkout@v3
+      - name: 'Skapa rapporter'
+        run: |
+          echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
+          make images_linked
+          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make images_unlinked
+          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make long_lines
+          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make comment_lines
+          echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara rapporter'
+        uses: actions/upload-artifact@v3
+        with:
+          name: rapporter
+          path: |
+            images_linked.txt
+            images_unlinked.txt
+            long_lines.txt
+            comment_lines.txt
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-22.04
@@ -40,44 +67,22 @@ jobs:
         run: make koncept.pdf
       - name: 'Visa programversion'
         run: |
-          echo "<pre>&dollar; <kbd>latexmk -v</kbd><br>$(latexmk -v)<br>" >> $GITHUB_STEP_SUMMARY
-          echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>$(latexmk -v)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
-      - name: 'Spara PDF-artefakt'
+      - name: 'Spara artefakt'
         uses: actions/upload-artifact@v3
         with:
           name: koncept-pdf
-          path: koncept*.pdf
-      - name: 'Skapa rapporter'
-        run: |
-          echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
-          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
-          make images_linked
-          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make images_unlinked
-          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make TODOs
-          echo "| TODO-kommentarer m.m. | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make long_lines
-          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make comment_lines
-          echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-      - name: 'Spara rapporter'
-        uses: actions/upload-artifact@v3
-        with:
-          name: rapporter
           path: |
-            images_linked.txt
-            images_unlinked.txt
-            TODOs.txt
-            long_lines.txt
-            comment_lines.txt
+            koncept*.pdf
+            koncept.log
   bygg-epub:
     name: 'Bygg EPUB'
-    continue-on-failure: true
+    continue-on-error: true
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
@@ -106,14 +111,16 @@ jobs:
         run: make koncept.epub
       - name: 'Visa programversion'
         run: |
-          echo "<pre>&dollar; <kbd>tex4ebook --version</kbd><br>$(tex4ebook --version)<br>" >> $GITHUB_STEP_SUMMARY
-          echo "&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>$(tex4ebook --version)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
-      - name: 'Spara EPUB-artefakt'
+      - name: 'Spara artefakt'
         uses: actions/upload-artifact@v3
         with:
           name: koncept-epub
-          path: koncept*.epub
+          path: |
+            koncept*.epub
+            koncept.log
