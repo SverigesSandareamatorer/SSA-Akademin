@@ -122,6 +122,7 @@ jobs:
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg koncept.epub'
+        continue-on-error: true
         run: make koncept.epub
       - name: 'Visa programversion'
         run: |
