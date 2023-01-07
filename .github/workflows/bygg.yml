@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v3
       - name: 'Installera Ubuntu-paket'
         run: |
-          sudo apt-get --quiet update
+          sudo apt-get -qq update
           sudo apt-get --quiet --assume-yes --verbose-versions install \
             chktex
       - name: 'Skapa rapporter'
@@ -35,6 +35,14 @@ jobs:
           echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           make comment_lines
           echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+      - name: 'Kör LaTeX-kontroll'
+        continue-on-error: true
+        run: chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex
+        # n8  eftersom det är fel tankstreckslängd för svenska.
+        # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
+        # n32 eftersom det är fel citationstecken för svenska.
+      - name: 'Skriv ut fel'
+        run: grep -F 'Error' chktex.log >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v3
         with:
@@ -44,14 +52,7 @@ jobs:
             images_unlinked.txt
             long_lines.txt
             comment_lines.txt
-      - name: 'Kör LaTeX-kontroll'
-        continue-on-error: true
-        run: chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex
-        # n8  eftersom det är fel tankstreckslängd för svenska.
-        # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
-        # n32 eftersom det är fel citationstecken för svenska.
-      - name: 'Skriv ut fel'
-        run: grep -F 'Error' chktex.log >> $GITHUB_STEP_SUMMARY
+            chktex.log
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-22.04
@@ -129,6 +130,7 @@ jobs:
           echo "<pre>$(tex4ebook --version)</pre>" >> $GITHUB_STEP_SUMMARY
           echo "<pre>&dollar; <kbd>sed -n '1p' koncept.log</kbd><br>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Lägg till versionsinformation i filnamnet'
+        continue-on-error: true
         run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
