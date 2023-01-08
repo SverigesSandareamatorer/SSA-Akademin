@@ -195,6 +195,7 @@ koncept.pdf
 koncept.epub
 
 # KonCEPT Temp
+*.xbb
 SHA.tmp
 branch.tmp
 images_available.txt

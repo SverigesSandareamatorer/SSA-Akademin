@@ -92,6 +92,7 @@ koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	latexmk -pdf koncept.tex
 
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
+	ebb -x images/cropped_pdfs/*.pdf
 	tex4ebook --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
