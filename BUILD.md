@@ -67,12 +67,12 @@ tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
 beroende utav. För att köra ett Make mål, se till att du
 har installerat beroendet som det behöver.
 
-| Mål                 | Bygger/Genererar                  | Beroende             |
-|---------------------|-----------------------------------|----------------------|
+| Mål | Bygger/Genererar | Beroende |
+| --- | --- | --- |
 |`all`                |alla mål                           |alla beroenden nedan  |
 |`clean`              |Tar bort alla genererade filer     |-                     |
-|`koncept.pdf`        |PDF av KonCEPT                     |[TeX/LaTeX](#texlatex)|
-|`koncept.epub`       |EPUB av KonCEPT                    |[TeX/LaTeX](#texlatex)|
+| `koncept.pdf` | PDF av KonCEPT | [TeX/LaTeX](#texlatex) |
+| `koncept.epub` | EPUB av KonCEPT | [TeX/LaTeX](#texlatex) |
 |`docker-image`       |Bygg en Docker *image*             |Docker                |
 |`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
