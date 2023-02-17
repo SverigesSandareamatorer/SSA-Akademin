@@ -106,7 +106,7 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	- grep -F Missing koncept.log >> TODOs.txt
 	- grep -F LaTeX koncept.log | grep -F Warning >> TODOs.txt
 
-# Länkade bilder
+# Skapar en rapport med länkade bilder.
 images_linked: koncept.tex $(KONCEPT_FILES)
 	grep -F images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
@@ -116,11 +116,11 @@ images_available:
 images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
-# Skapar en rapport med kodrader längre än 80 tecken.
+# Skapar en rapport med kodrader som är längre än 80 tecken.
 long_lines: $(KONCEPT_FILES)
 	grep '.\{81\}' koncept/*.tex > long_lines.txt
 
-# Skapar en rapport med rader som bara är kommentar.
+# Skapar en rapport med kodrader som bara är kommentar.
 comment_lines: $(KONCEPT_FILES)
 	grep '^ *%' koncept/*.tex > comment_lines.txt
 
