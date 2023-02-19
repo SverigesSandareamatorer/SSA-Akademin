@@ -72,7 +72,7 @@ Grunden är att när alla saker är avcheckade på listan ska pull-requesten
 kunna genomföras.
 
 ## Release
-För att göra release följer man instruktionerna i [RELEASE.md](RELEASE.md).
+För att göra release följer man instruktionerna i [wikin](https://github.com/SverigesSandareamatorer/SSA-Akademin/wiki/Releaseinstruktion).
 
 
 # Om SSA Akademin
