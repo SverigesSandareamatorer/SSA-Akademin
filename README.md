@@ -15,7 +15,7 @@ Den tryckta boken kan [köpas från SSA:s HamShop](https://hamshop.ssa.se/index.
 
 | :warning: **Observera** |
 |:---------------------------|
-| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett arbetsunderlag för arbetet med den. |
+| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett underlag för arbetet med den. |
 
 # Ladda ner och bygg projektet
 
