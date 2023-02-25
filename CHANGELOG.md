@@ -1,7 +1,8 @@
 # Ändringslogg
 Alla nämnvärda ändringar i projektet dokumenteras här.
 
-Det här projektet använder [Håll en ändringslogg] och följer [Semantic Versioning].
+Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
+och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
 ## [Osläppt]
 ### Fixat
@@ -10,6 +11,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 
 ### Ändrat
 - Makron ändrade till de för siunitx 3.x
+- Releaseinstruktionen flyttad till wikin på GitHub.
 
 ### Borttaget
 - Filer med ofärdiga lektioner borttagna.
@@ -107,6 +109,3 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 [2.1.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.0.0-RC.1...v2.0.0
 [2.0.0-RC.1]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/8141940...v2.0.0-RC.1
-
-[Håll en ändringslogg]: https://keepachangelog.com/sv/1.0.0/
-[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
