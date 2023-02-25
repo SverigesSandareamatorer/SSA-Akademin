@@ -44,8 +44,7 @@ jobs:
         # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
         # n32 eftersom det är fel citationstecken för svenska.
       - name: 'Skriv ut fel'
-        continue-on-error: true
-        run: grep -F 'Error' chktex.log >> $GITHUB_STEP_SUMMARY
+        run: grep -F 'Error' chktex.log || echo 'chktex hittade inga fel.' >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v3
         with:
