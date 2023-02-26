@@ -15,7 +15,6 @@ on:
 jobs:
   analysera-koden:
     name: 'Analysera koden'
-    continue-on-error: true
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
@@ -39,7 +38,7 @@ jobs:
           echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Kör LaTeX-kontroll'
         continue-on-error: true
-        run: chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex
+        run: (chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex); if [ $? -lt 3 ]; then (exit 0); else (exit 3); fi
         # n8  eftersom det är fel tankstreckslängd för svenska.
         # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
         # n32 eftersom det är fel citationstecken för svenska.
