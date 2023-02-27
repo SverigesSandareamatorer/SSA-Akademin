@@ -1,4 +1,4 @@
-📘 KonCEPT för Amatörradiocertifikat
+📘 KonCEPT för Amatör&shy;radio&shy;certifikat
 ============
 
 [![Status för bygget av KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml)
