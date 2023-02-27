@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: lycheeverse/lychee-action@v1.5.4
+      - uses: lycheeverse/lychee-action@v1.6.1
         with:
           fail: true
           args: "--max-concurrency 3 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
