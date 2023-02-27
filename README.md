@@ -1,29 +1,32 @@
-SSA Akademin
+📘 KonCEPT för Amatörradiocertifikat
 ============
 
 [![Status för bygget av KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml)
 [![Senaste releaseversionen](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
 
-**KonCEPT för Radioamatörcertifikat** är en bok ursprungligen skriven av Lennart
-Wiberg och utgiven av [Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i
-syfte att utbilda nya radioamatörer.
-Den första upplagan är skriven 1997 och behövde en uppdatering och tryckas i en
-ny upplaga.
+Boken **KonCEPT för Amatörradiocertifikat** ges ut av
+[Föreningen Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i syfte att
+utbilda nya radioamatörer.
+Den första upplagan publicerades år 1997 (med titeln KonCEPT för
+Radioamatörcertifikat) och var huvudsakligen skriven av Lennart Wiberg.
+Efter 20&nbsp;år behövdes en uppdatering och att tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
-Den tryckta boken kan [köpas från SSA:s HamShop](https://hamshop.ssa.se/index.php?route=product/product&path=87_88&product_id=72).
+Den tryckta boken kan köpas
+[från SSA:s HamShop](https://hamshop.ssa.se/index.php?route=product/product&path=87_88&product_id=72).
 
 | :warning: **Observera** |
 |:---------------------------|
-| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett arbetsunderlag för arbetet med den. |
+| Boken och materialet som finns att läsa här är ett arbetsmaterial och ska inte användas som en färdig produkt utan endast som ett underlag för arbetet med den. |
 
 # Ladda ner och bygg projektet
 
 ## Version
 
 Eftersom nytt material läggs till och fel rättas allt eftersom används en
-versionsnumrering som ger värdefull information åt läsaren. Här är ett exempel
-på hur det kan se ut och en förklaring till vad allt betyder.
+versionsnumrering som ger värdefull information åt läsaren.
+Här är ett exempel på hur det kan se ut och en förklaring till vad delarna
+betyder.
 
 <pre>
 koncept.2.0.0+b12345.8c04343.pdf
@@ -72,7 +75,7 @@ Grunden är att när alla saker är avcheckade på listan ska pull-requesten
 kunna genomföras.
 
 ## Release
-För att göra release följer man instruktionerna i [RELEASE.md](RELEASE.md).
+För att göra release följer man instruktionerna i [wikin](https://github.com/SverigesSandareamatorer/SSA-Akademin/wiki/Releaseinstruktion).
 
 
 # Om SSA Akademin
