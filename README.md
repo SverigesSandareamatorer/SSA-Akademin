@@ -1,10 +1,10 @@
-📘 KonCEPT för Amatör&shy;radio&shy;certifikat
+📘 KonCEPT för amatör&shy;radio&shy;certifikat
 ============
 
 [![Status för bygget av KonCEPT](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml/badge.svg)](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions/workflows/bygg.yml)
 [![Senaste releaseversionen](https://img.shields.io/github/v/release/SverigesSandareamatorer/SSA-Akademin?display_name=tag&sort=semver)](https://github.com/SverigesSandareamatorer/SSA-Akademin/releases)
 
-Boken **KonCEPT för Amatörradiocertifikat** ges ut av
+Boken _KonCEPT för amatörradiocertifikat_ ges ut av
 [Föreningen Sveriges Sändareamatörer](https://www.ssa.se) (SSA) i syfte att
 utbilda nya radioamatörer.
 Den första upplagan publicerades år 1997 (med titeln KonCEPT för
