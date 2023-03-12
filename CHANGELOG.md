@@ -7,6 +7,7 @@ Det här projektet använder [Håll en ändringslogg] och följer [Semantic Vers
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
+- Lagt till saknad bandplan för 60-metersbandet i appendix.
 
 ### Ändrat
 - Makron ändrade till de för siunitx 3.x
