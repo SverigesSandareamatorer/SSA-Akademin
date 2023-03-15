@@ -27,8 +27,8 @@ Den kan också vara en transistor eller annan anordning.
 Bild \ssaref{fig:BildII2-35} visar två transistorkopplingar.
 Den till vänster är en analog förstärkare för växelspänning.
 Om det på grund av en viss basspänning flyter en kollektorström av
-\qty{1}{\milli\ampere} och kollektorresistorn har värdet \qty{5}{\kilo\ohm}, blir
-spänningsfallet över denna resistor \qty{5}{\volt}.
+\qty{1}{\milli\ampere} och kollektorresistorn har värdet \qty{5}{\kilo\ohm},
+blir spänningsfallet över denna resistor \qty{5}{\volt}.
 Eftersom matningsspänningen är \qty{12}{\volt}, blir spänningen \qty{7}{\volt}
 mellan kollektorn och minuspolen.
 
@@ -46,7 +46,8 @@ Om däremot inspänningen är \qty{0}{\volt}, spärras kollektorströmmen och
 utspänningen blir nära \qty{5}{\volt}.
 Man säger då att utgången är hög (H) eller 1.
 
-För NPN-transistorn i bilden gäller att hög inspänning ger låg utspänning och vice versa.
+För NPN-transistorn i bilden gäller att hög inspänning ger låg utspänning och
+vice versa.
 
 Denna logiska funktion kallas inverterande.
 
@@ -87,7 +88,7 @@ I kretsscheman visas kontaktlägena vid systemet i vila.
 \mediumtopfig[0.65]{images/cropped_pdfs/bild_2_2-37.pdf}{OCH-grind (AND-gate)}{fig:BildII2-37}
 \mediumtopfig[0.65]{images/cropped_pdfs/bild_2_2-38.pdf}{ELLER-grind (OR-gate)}{fig:BildII2-38}
 
-Av bild  \ssaref{fig:BildII2-37} framgår att samma villkor kan skapas med slutande
+Av bild \ssaref{fig:BildII2-37} framgår att samma villkor kan skapas med slutande
 alternativt brytande kontakter.
 Observera placeringen av resistorn på kretsens utgångssida i respektive fall.
 När resistorn ligger närmast pluspolen kallas den pull-up.
@@ -154,18 +155,22 @@ noga vilka grindar som används i ett visst kretsschema.
 \subsubsection{Exklusiv ELLER-grind (XOR-gate)}
 \index{XOR-gate}
 
-Sanningstabellen i bild \ssaref{fig:BildII2-42} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 0.
+Sanningstabellen i bild \ssaref{fig:BildII2-42} säger att när alla insignaler
+antingen är 1 eller 0, så är utsignalen 0.
 När någon insignal är 1, men inte alla, så är utsignalen 1.
 
 \subsubsection{Exklusiv INTE ELLER-grind (XNOR-gate)}
 \index{XNOR-gate}
 
-Sanningstabellen i bild \ssaref{fig:BildII2-43} säger att när alla insignaler antingen är 1 eller 0, så är utsignalen 1.
+Sanningstabellen i bild \ssaref{fig:BildII2-43} säger att när alla insignaler
+antingen är 1 eller 0, så är utsignalen 1.
 När en insignal är 1, men inte alla, så är utsignalen 0.
 
 \subsection{Grindar med dioder och transistorer}
 
-I stället för reläer eller diskreta halvledare i grindar använder man nu ytterst sällan något annat än integrerade digitala kretsar (se avsnitt \ssaref{integrerade kretsar}).
+I stället för reläer eller diskreta halvledare i grindar använder man nu ytterst
+sällan något annat än integrerade digitala kretsar (se avsnitt
+\ssaref{integrerade kretsar}).
 
 \smalltikz{
   \bigskip
@@ -201,6 +206,7 @@ Här består den egentliga grinden av en ingångstransistor med två emittrar,
 vilka motsvarar dioderna vid A och B i föregående bild.
 Kollektorn i denna transistor motsvarar ingångsdioden till transistorn i bild
 \ssaref{fig:BildII2-44}.
-De övriga tre transistorerna i bild \ssaref{fig:BildII2-45} bildar en switch (digital strömställare, jämför bild \ref{fig:BildII2-35}),
-som ger snabb övergång mellan väl definierade logiska nivåer.
+De övriga tre transistorerna i bild \ssaref{fig:BildII2-45} bildar en switch
+(digital strömställare, jämför bild \ref{fig:BildII2-35}), som ger snabb
+övergång mellan väl definierade logiska nivåer.
 Resultatet är en så kallad TTL-logik (eng. \emph{Transistor-Transistor Logic}).

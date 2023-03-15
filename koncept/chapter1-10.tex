@@ -59,8 +59,8 @@ Där vill vi dels ha värden i digital form, så vi behöver omvandla våra
 spänningar och strömmar till tal, och dels behöver vi göra det i en jämn takt.
 
 \emph{Sampling} är ett engelskt ord som betyder att ta strickprov eller att göra ett urval.
-Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en jämn takt,
-\emph{samplingstakten} (eng. \emph{sample rate}).
+Vi tar ett stickprov (sampel) då och då, och i detta sammanhang gör vi det i en
+jämn takt, \emph{samplingstakten} (eng. \emph{sample rate}).
 Denna benämner vi ofta med \(f_S\) och begreppet \emph{samplingsperiodtid}
 \(T_S=\frac{1}{f_S}\) används också.
 Samplingstakten är alltså den jämna takt varmed vi får värden.
@@ -79,11 +79,12 @@ För att åstadkomma detta behöver man omvandla värdena till fasta nivåer, en
 process som kallas för \emph{kvantisering} (eng. \emph{quantize}).
 
 Vid kvantisering har man ofta ett fixt avstånd mellan stegen på en
-trappstege av värden. Varje steg kallas ibland för kvantiseringssteg och
-storleken på varje kvantiseringssteg avgör därmed hur hög upplösning man får.
+trappstege av värden.
+Varje steg kallas ibland för kvantiseringssteg och storleken på varje
+kvantiseringssteg avgör därmed hur hög upplösning man får.
 Har man till exempel ett kvantiseringssteg på \qty{0,1}{\volt} så blir 0 till
-\qty{0,1}{\volt} tolkat som 0, \SIrange{0,1}{0,2}{\volt} blir tolkat som 1 och så
-vidare.
+\qty{0,1}{\volt} tolkat som 0, \SIrange{0,1}{0,2}{\volt} blir tolkat som 1 och
+så vidare.
 Bild \ssaref{fig:BildII1-37} visar hur kvantiseringen sker i ADC-steget.
 
 Denna sista del i att omvandla de kvantiserade talen till värden kallas
