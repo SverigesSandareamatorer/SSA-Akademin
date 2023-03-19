@@ -13,6 +13,11 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Ändrat
 - Makron ändrade till de för siunitx 3.x
 - Releaseinstruktionen flyttad till wikin på GitHub.
+- Fört in ändringar p.g.a nya lagar och föreskrifter:
+  - Lag (2022:482) om elektronisk kommunikation
+  - Förordning (2022:511) om elektronisk kommunikation
+  - PTSFS 2022:19 föreskrifter om undantag från tillståndsplikt för användning av vissa radiosändare
+  - PTSFS 2019:1 Post- och telestyrelsens allmänna råd om den svenska frekvensplanen
 
 ### Borttaget
 - Filer med ofärdiga lektioner borttagna.
