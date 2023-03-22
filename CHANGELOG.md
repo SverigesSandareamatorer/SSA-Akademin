@@ -8,13 +8,20 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Tillagt
 - Nytt byggmål för ebok i EPUB-format.
 
+## [2.6.0] – 2023-03-22
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
+- Lagt till saknad bandplan för 60-metersbandet i appendix.
 
 ### Ändrat
 - Makron ändrade till de för siunitx 3.0.
 - Releaseinstruktionen flyttad till wikin på GitHub.
+- Fört in ändringar p.g.a nya lagar och föreskrifter:
+  - Lag (2022:482) om elektronisk kommunikation
+  - Förordning (2022:511) om elektronisk kommunikation
+  - PTSFS 2022:19 föreskrifter om undantag från tillståndsplikt för användning av vissa radiosändare
+  - PTSFS 2019:1 Post- och telestyrelsens allmänna råd om den svenska frekvensplanen
 
 ### Borttaget
 - Filer med ofärdiga lektioner borttagna.
@@ -103,7 +110,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.6.0...HEAD
 [2.6.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0

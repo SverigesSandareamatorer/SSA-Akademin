@@ -5,8 +5,9 @@
 \index{bandplan}
 
 \noindent Dessa bandplaner presenteras efter svenska förhållanden så långt de
-är kända vid tillfället. Kontrollera alltid de senaste bandplanerna på SSA för
-att säkerställa du använder de korrekta.
+är kända vid tillfället.
+Kontrollera alltid de senaste bandplanerna på SSA för att säkerställa du
+använder de korrekta.
 
 Effektbegränsningen är generellt på alla amatörband i Sverige \qty{200}{\watt}
 PEP tillfört antennen om inte annat anges.
@@ -36,7 +37,7 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
 \multicolumn{2}{c}{\textbf{Frekvens}} & \textbf{BW} & extbf{Trafik} & \textbf{Noteringar} \\ \hline
 
 1810 & 1838 & 200  & CW         & Exklusivt för CW. Interkontinental trafik har prio. \\ \hline
-1838 & 1840 & 500  & Smalband   & Ej packet på \qty{160}{\meter}, PSK \num{1838,15}         \\ \hline
+1838 & 1840 & 500  & Smalband   & Ej packet på \qty{160}{\metre}, PSK \num{1838,15}         \\ \hline
 1840 & 1850 & 2700 & Alla moder & Även digimode. SSB QRP \num{1843}                  \\ \hline
 1850 & 1900 & 2700 & Alla moder & OBS! Max \qty{10}{\watt} till ant.                       \\ \hline
 1900 & 1950 & 2700 & Alla moder & OBS! Max \qty{100}{\watt} till ant.                      \\ \hline
@@ -64,12 +65,21 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
 3775 & 3800 & 2700 & Alla moder     & Interkontinental DX-trafik prioritet            \\ \hline
 \end{tabular}
 
+\subsubsection{Bandplan \qty{60}{\metre}, \SIrange{5351,5}{5366,5}{\kilo\hertz}}
+\begin{tabular}{rrrll}
+    \multicolumn{2}{c}{\textbf{Frekvens}} & \textbf{BW} & \textbf{Trafik} & \textbf{Noteringar} \\ \hline
+
+    5351,5 & 5354,0 & 200 & CW, Digimoder & \\ \hline
+    5354,0 & 5366,0 & 2700 & Alla moder & USB rekommenderas för SSB  \\ \hline
+    5366,0 & 5366,5 & 20 & Extremt smalband & Max \qty{20}{\hertz} bandbredd i segmentet \\ \hline
+\end{tabular}
+
 \subsubsection{Bandplan \qty{40}{\metre}, \SIrange{7000}{7200}{\kilo\hertz}}
 \begin{tabular}{rrrll}
 \multicolumn{2}{c}{\textbf{Frekvens}} & \textbf{BW} & \textbf{Trafik} & \textbf{Noteringar} \\ \hline
 
 7000 & 7040 & 200  & CW         & Exklusivt CW.                                        \\
-     &      &      &            & QRP aktivitetscentrum \qty{7030}{}                    \\ \hline
+     &      &      &            & QRP aktivitetscentrum \num{7030}                    \\ \hline
 7040 & 7050 & 500  & Smalband   & Digimoder Automatiska inom \SIrange{7047}{7050}{\kilo\hertz} \\ \hline
 7050 & 7060 & 2700 & Alla moder & Digimoder Automatiska inom \SIrange{7050}{7053}{\kilo\hertz} \\ \hline
 7060 & 7100 & 2700 & Alla moder & SSB contest i segmentet                              \\
@@ -113,8 +123,8 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
 \multicolumn{2}{c}{\textbf{Frekvens}} & \textbf{BW} & \textbf{Trafik}
         & \textbf{Noteringar} \\ \hline
 
- 18\,068 & 18\,095 & 200  & CW         & CW exklusivt. QRP \num{18086}                             \\ \hline
-18\,095  & 18\,109 & 500  & Smalband   & Digimoder PSK \qty{18100,15}{}                             \\
+18\,068  & 18\,095 & 200  & CW         & CW exklusivt. QRP \num{18086}                             \\ \hline
+18\,095  & 18\,109 & 500  & Smalband   & Digimoder PSK \num{18100,15}                             \\
          &         &      &            & Automatiska Digimoder \SIrange{18105}{18109}{\kilo\hertz} \\ \hline
 18\,109  & 18\,111 & 200  & Fyrar      & Exklusivt fyrar, IBP fyrnät                               \\ \hline
 18\,111  & 18\,168 & 2700 & Alla moder & Digi \SIrange{18111}{18120}{\kilo\hertz}                  \\
@@ -146,7 +156,7 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
                                         Digimoder \SIrange{24925}{24929}{\kilo\hertz}      \\ \hline
 24\,929 & 24\,931 & 200  & Fyrar      & Fyrar, IBP fyrnät                                  \\ \hline
 24\,931 & 24\,990 & 2700 & Alla moder & Auto Digimoder \SIrange{24931}{24940}{\kilo\hertz} \\
-        &         &      &            & SSB QRP \num{24950}, DV \num{24960}{}              \\ \hline
+        &         &      &            & SSB QRP \num{24950}, DV \num{24960}                \\ \hline
 \end{tabular}
 
 \subsubsection{Bandplan \qty{10}{\metre}, \SIrange{28000}{29700}{\kilo\hertz}}
@@ -160,8 +170,8 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
 28\,201 & 28\,225 & 200  & Fyrar IBP  & kontinuerligt sändande fyrar                                       \\ \hline
 28\,225 & 28\,300 & 2700 & Alla moder & Övriga fyrar                                                       \\ \hline
 28\,300 & 28\,320 & 2700 & Alla moder & Digimoder och Automatiska Digimoder                                \\ \hline
-28\,320 & 29\,100 & 2700 & Alla moder & DV \num{28330}, SSB QRP \num{28360}, Image \num{28680}{}           \\
-29\,100 & 29\,200 & 6000 & Alla moder & FM simplex, \qty{10}{\kilo\hertz} kanaler                                   \\
+28\,320 & 29\,100 & 2700 & Alla moder & DV \num{28330}, SSB QRP \num{28360}, Image \num{28680}             \\
+29\,100 & 29\,200 & 6000 & Alla moder & FM simplex, \qty{10}{\kilo\hertz} kanaler                          \\
         &         &      &            & Maximalt $\pm$2,5\,kHz dev., max 2,5\,kHz mod.frek.                \\ \hline
 29\,200 & 29\,300 & 6000 & Alla moder & Digimoder och Automatiska Digimoder                                \\ \hline
 29\,300 & 29\,510 & 6000 & Satellit   & Nerlänk fr. satellit. EJ SÄNDNING I SEGMENTET                      \\ \hline
@@ -182,18 +192,18 @@ Alla frekvenser i \unit{\kilo\hertz}, bandbredder i \unit{\hertz}.
 & \textbf{Noteringar} \\ \hline
 
 50.000 & 50.100 & 500 Hz  & CW          & \textbf{CW anrp. 50.050 och 50.090 (interkont.)}                                    \\ \hline
-50.100 & 50.130 & 2.7 kHz & CW, SSB     & Interkontinental DX-trafik. Ej QSO inom Europa                                      \\ \hline
-50.100 & 50.200 & 2.7 kHz & CW, SSB      &
+50.100 & 50.130 & 2,7 kHz & CW, SSB     & Interkontinental DX-trafik. Ej QSO inom Europa                                      \\ \hline
+50.100 & 50.200 & 2,7 kHz & CW, SSB      &
 DX \SIrange{50,110}{50,130}{\mega\hertz}, \textbf{\num{50,150}} anrop (interkont.)  \\ \hline
-50.200 & 50.300 & 2.7 kHz & CW, SSB      & Generell användning. \num{50,285} för crossband                                     \\ \hline
-50.300 & 50.400 & 2.7 kHz & CW, MGM     & PSK \num{50,305}, EME \SIrange{50,310}{50,320}{\mega\hertz}                         \\
+50.200 & 50.300 & 2,7 kHz & CW, SSB      & Generell användning. \num{50,285} för crossband                                     \\ \hline
+50.300 & 50.400 & 2,7 kHz & CW, MGM     & PSK \num{50,305}, EME \SIrange{50,310}{50,320}{\mega\hertz}                         \\
        &        &         &             & MS \SIrange{50,350}{50,380}{\mega\hertz}                                            \\ \hline
 50.400 & 50.500 & 1 kHz   & CW, MGM     & Endast fyrar, \qty{50401(500)}{\hertz} WSPR-fyrar                                        \\ \hline
 51.210 & 51.390 & 12 kHz  & FM          & Repeater in, 20/10 kHz kanalavstånd                                                 \\
-       &        &         &             & RF81 – RF99                                                                         \\ \hline
+       &        &         &             & RF81 -- RF99                                                                         \\ \hline
 50.500 & 52.000 & 12 kHz  & Alla moder  & SSTV \num{50,510}, RTTY \num{50,600}, FM \num{51,510}                               \\ \hline
 51.810 & 51.990 & 12 kHz  & FM Repeater & Repeater ut, 20/10 kHz kanalavstånd                                                 \\
-       &        &         &             & RF81 – RF99                                                                         \\ \hline
+       &        &         &             & RF81 -- RF99                                                                         \\ \hline
 \end{tabular}
 
 \subsubsection{Bandplan \qty{2}{\metre}, \SIrange{144}{146}{\mega\hertz}}
@@ -205,24 +215,24 @@ DX \SIrange{50,110}{50,130}{\mega\hertz}, \textbf{\num{50,150}} anrop (interkont
          &           &         &              & MS random \num{144,100}                                         \\ \hline
 144.1100 & 144.1500  & 500 Hz  & CW, MGM      & EME MGM \numrange{144,120}{144,160}                             \\
          &           &         &              & PSK31 cent. \num{144,138}                                       \\ \hline
-144.1500 & 144.1800  & 2.7 kHz & CW, SSB, MGM & EME \numrange{144,150}{144,160}                                 \\
+144.1500 & 144.1800  & 2,7 kHz & CW, SSB, MGM & EME \numrange{144,150}{144,160}                                 \\
          &           &         &              & MGM \numrange{144,160}{144,180} anrop \num{144,170}             \\ \hline
-144.1800 & 144.3600  & 2.7 kHz & CW, SSB, MGM & MS SSB random \numrange{144,195}{144,205}                       \\
+144.1800 & 144.3600  & 2,7 kHz & CW, SSB, MGM & MS SSB random \numrange{144,195}{144,205}                       \\
          &           &         &              & \textbf{SSB anrop \num{144,300}}                                \\ \hline
-144.3600 & 144.3990  & 2.7 kHz & CW, SSB, MGM & MS MGM random anrop \num{144,370}                               \\ \hline
+144.3600 & 144.3990  & 2,7 kHz & CW, SSB, MGM & MS MGM random anrop \num{144,370}                               \\ \hline
 144.4000 & 144.4900  & 500 Hz  & Fyr          & Exklusivt segment fyrar, ej QSO                                 \\ \hline
 144.5000 & 144.7940  & 20 kHz  & All mode     & SSTV, RTTY, FAX, ATV                                            \\
          &           &         &              & Linjära transpondrar                                            \\ \hline
 144.7940 & 144.9625  & 12 kHz  & MGM          & APRS \num{144,800}                                              \\ \hline
 144.9750 & 145.19350 & 12 kHz  & FM, DV       & Rpt in \numrange{144,9750}{145,1935}                            \\
-         &           &         &              & RV46–-RV63, \qty{12,5}{\kilo\hertz}, \qty{600}{\kilo\hertz} skift \\ \hline
+         &           &         &              & RV46--RV63, \qty{12,5}{\kilo\hertz}, \qty{600}{\kilo\hertz} skift \\ \hline
 145.1940 & 145.2060  & 12 kHz  & FM rymd      & \num{145,200} för kom. m. bem. rymdfark.                        \\ \hline
-145.2060 & 145.5625  & 12 kHz  & FM, DV       & FM \numrange{145,2125}{145,5875}  V17–V47                       \\
+145.2060 & 145.5625  & 12 kHz  & FM, DV       & FM \numrange{145,2125}{145,5875}  V17--V47                       \\
          &           &         &              & \textbf{FM anrop 145,500}, RTTY 145.300                         \\
          &           &         &              & FM Inet-GW \num{145,2375}, \num{145,2875}, \num{145,3375}       \\
          &           &         &              & DV anrop \num{145,375}                                          \\ \hline
 145.5750 & 145.7935  & 12 kHz  & FM, DV       & Rpt ut \numrange{145,575}{145,7875}                             \\
-         &           &         &              & RV46–RV63, \qty{12,5}{\kilo\hertz} kanalavstånd                  \\ \hline
+         &           &         &              & RV46--RV63, \qty{12,5}{\kilo\hertz} kanalavstånd                  \\ \hline
 145.794  & 145.806   & 12 kHz  & FM Rymd      & \num{145,800}, \num{145,200} dplx m. bem. rymdfark.              \\ \hline
 145.806  & 146.000   & 12 kHz  & All mode     & Exklusivt satellit                                              \\ \hline
 \end{tabular}
@@ -234,7 +244,7 @@ DX \SIrange{50,110}{50,130}{\mega\hertz}, \textbf{\num{50,150}} anrop (interkont
 432.0000 & 432.0250 & 500 Hz  & CW           & EME exklusivt.                                               \\ \hline
 432.0250 & 432.1000 & 500 Hz  & CW, PSK31    & CW mellan \num{432,000}{432,085}, \textbf{CW anrop 432,050}  \\
          &          &         &              & PSK31 \num{432,088}                                          \\ \hline
-432.1000 & 432.3990 & 2.7 kHz & CW, SSB, MGM & \textbf{SSB anrop \num{432,200}}                             \\
+432.1000 & 432.3990 & 2,7 kHz & CW, SSB, MGM & \textbf{SSB anrop \num{432,200}}                             \\
          &          &         &              & Mikrovåg talkback \num{432,350}, FSK441 \num{432,370}        \\ \hline
 432.4000 & 432.4900 & 500 Hz  & Fyr          & Exklusivt segment för fyrar                                  \\ \hline
 432.5000 & 432.5940 & 12 kHz  & All mode     & Linjära transpondrar IN \numrange{432,500}{432,600}          \\ \hline
@@ -264,15 +274,15 @@ DX \SIrange{50,110}{50,130}{\mega\hertz}, \textbf{\num{50,150}} anrop (interkont
 	 &          &         &              & Packet RS29--RS50                                             \\ \hline
 1272.000 & 1290.994 & 20 kHz  & ATV och Data & Amatörtelevision ATV                                          \\ \hline
 1290.994 & 1291.481 & 20 kHz  & FM och DV    & Repeater in Repeat. in \numrange{1291,000}{1291,475}          \\
-	 &          &         &              & RM0 – RM19, \qty{25}{\kilo\hertz} \qty{6}{\mega\hertz} skift    \\ \hline
+	 &          &         &              & RM0--RM19, \qty{25}{\kilo\hertz} \qty{6}{\mega\hertz} skift    \\ \hline
 1291.494 & 1296.000 & 12 kHz  & Alla moder   &                                                               \\ \hline
 1296.000 & 1296.150 & 500 Hz  & CW,  MGM     & EME \numrange{1296,000}{1296,025} \textbf{CW anrop 1296.050}  \\
 	 &          &         &              & PSK31 \qty{1296,138}{\mega\hertz}                              \\ \hline
-1296.150 & 1296.400 & 2.7 kHz & CW, SSB, MGM & \textbf{SSB anrop \num{1296,200}}                             \\
+1296.150 & 1296.400 & 2,7 kHz & CW, SSB, MGM & \textbf{SSB anrop \num{1296,200}}                             \\
 	 &          &         &              & \textbf{FSK441 MS anrop \num{1296,370}}                       \\ \hline
-1296.400 & 1296.600 & 2.7 kHz & CW, SSB, MGM & Linjära transpondrar infrekvens                               \\ \hline
-1296.600 & 1296.800 & 2.7 kHz & CW, SSB, MGM & SSTV/FAX \num{1296,500} MGM/RTTY \num{1296,600}               \\ \hline
-1296.600 & 1296.800 & 2.7 kHz & CW, SSB, MGM & Linjära transpondrar utfrekvens                               \\
+1296.400 & 1296.600 & 2,7 kHz & CW, SSB, MGM & Linjära transpondrar infrekvens                               \\ \hline
+1296.600 & 1296.800 & 2,7 kHz & CW, SSB, MGM & SSTV/FAX \num{1296,500} MGM/RTTY \num{1296,600}               \\ \hline
+1296.600 & 1296.800 & 2,7 kHz & CW, SSB, MGM & Linjära transpondrar utfrekvens                               \\
 	 &          &         &              & \numrange{1296,750}{1296,800} lokala fyrar max \qty{10}{\watt} \\ \hline
 1296.800 & 1296.994 & 500 Hz  & Fyrar        & Exklusivt segment för fyrar                                   \\ \hline
 1296.994 & 1297.481 & 20 kHz  & FM           & Repeater ut Repeater ut \numrange{1297,000}{1297,475}         \\

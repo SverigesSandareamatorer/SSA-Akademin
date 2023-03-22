@@ -82,10 +82,10 @@ Frekvens- och fasmodulation liknar varandra och kan sammanfattas som
 vinkelmodulation, eftersom fasvinkeln mellan bärvågens spänning och ström
 varierar i båda fallen.
 
-Vid \emph{pulsmodulation} används pulståg (korta upprepade bärvågspaket), till exempel
-pulsamplitud-, pulslängds-, pulsläges- och pulskodmodulation.
-Pulskodmodulation används till exempel vid samtidig överföring av flera telesamtal på
-samma linje, bärvåg etc.
+Vid \emph{pulsmodulation} används pulståg (korta upprepade bärvågspaket), till
+exempel pulsamplitud-, pulslängds-, pulsläges- och pulskodmodulation.
+Pulskodmodulation används till exempel vid samtidig överföring av flera
+telesamtal på samma linje, bärvåg etc.
 
 % \newpage % layout
 
@@ -319,8 +319,8 @@ Antag att sändaren nycklas med en serie korta morsetecken.
 Vid telegraferingshastigheten 60~tecken/minut alstrar bärvågspulserna en kantvåg
 med frekvensen \qty{5}{\hertz}.
 Som tidigare beskrivits, består en sådan kantvåg av summan av sinussignaler med
-frekvenserna \qty{5}{\hertz}, \qty{15}{\hertz}, \qty{25}{\hertz}, \qty{35}{\hertz}
-och så vidare.
+frekvenserna \qty{5}{\hertz}, \qty{15}{\hertz}, \qty{25}{\hertz},
+\qty{35}{\hertz} och så vidare.
 
 Det innebär att det uppstår sidofrekvenser över och under bärvågens frekvens och
 med ett avstånd till bärvågen av \qty{5}{\hertz}, \qty{15}{\hertz},
@@ -354,8 +354,8 @@ Mycket liten bandbredd, extremt gott utnyttjande av sändareffekten, stor
 
 \subsubsection{Princip}
 
-Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller samma
-information.
+Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller
+samma information.
 
 Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
 sätt.
@@ -515,8 +515,8 @@ Bild \ssaref{fig:BildII1-30} (nederst) visar bandbredd på vinkelmodulation.
 Vi gör tankeexperimentet att en FM-sändare moduleras med en fyrkantsvåg.
 Frekvensen kommer då att hoppa växelvis mellan frekvenserna \(f\) och
 \(f + \Delta f\).
-Sättet kallas FSK (frekvensskiftnyckling) och används till exempel vid sändning av
-radiofjärrskrift (RTTY, AMTOR, Paketradio etc.).
+Sättet kallas FSK (frekvensskiftnyckling) och används till exempel vid sändning
+av radiofjärrskrift (RTTY, AMTOR, Paketradio etc.).
 
 Vi föreställer oss två sändare, som sänder varannan gång, varav den ena sänder
 frekvensen \(f\) och den andra sänder \(f + \Delta f\).
@@ -712,8 +712,8 @@ Pulsmodulation används mest i mikrovågsområdet.
 Pulsmodulerade signaler sänds vanligen som en serie korta pulser åtskilda av
 relativt långa pauser utan modulering.
 
-En typisk sändning kan bestå av pulser med en längd av \qty{1}{\micro\second} och
-en frekvens av \qty{1000}{\hertz}.
+En typisk sändning kan bestå av pulser med en längd av \qty{1}{\micro\second}
+och en frekvens av \qty{1000}{\hertz}.
 Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt
 
 Före WARC~79 var symbolen för all pulssändning P.
@@ -796,13 +796,13 @@ mellan två frekvenser, där en frekvens får representera 0 och den andra får
 representera 1. Denna metod har används för modem på telefonförbindelser,
 såsom Bell 103.
 
-Eftersom varje växling mellan frekvenser ger avbrott i bägge signalerna,
-likt nycklingen i CW, så kommer de att skapa sidband. Av det skälet filtrerar man
+Eftersom varje växling mellan frekvenser ger avbrott i bägge signalerna, likt
+nycklingen i CW, så kommer de att skapa sidband. Av det skälet filtrerar man
 gärna signalen, och använder man ett Gaussiskt filter får man
 \emph{Gaussian Frequency Shift Keying (GFSK)} som används av till exempel GSM-telefoni.
 
-Man kan använda fler än två frekvenser, till exempel används fyra frekvenser i Continuous
-4 level FM (C4FM), i Phase 1 radios, i Project 25 samt Fusion.
+Man kan använda fler än två frekvenser, till exempel används fyra frekvenser i
+Continuous 4 level FM (C4FM), i Phase 1 radios, i Project 25 samt Fusion.
 
 Frekvensskift används även för att sända långsamma meddelanden där JT65
 använder 65 frekvenser som den skiftar mellan, medan JT9 använder 9~frekvenser.
@@ -825,9 +825,9 @@ Förenklat kan man säga att bärvågen moduleras med \num{+1} eller \num{-1}, o
 med \num{+1} representerande \num{0} och \num{-1} representerande \num{1}.
 
 En nackdel med BPSK är att om polariteten blir förväxlad kommer meddelandet
-att bli inverterat, dvs. 0 blir 1 och 1 blir 0. BPSK behöver därför också
-kompletteras med annan digital modulation för att hantera polariteten, något
-som i allmänhet kan åstadkommas enkelt.
+att bli inverterat, dvs. 0 blir 1 och 1 blir 0.
+BPSK behöver därför också kompletteras med annan digital modulation för att
+hantera polariteten, något som i allmänhet kan åstadkommas enkelt.
 
 BPSK används av satellitnavigationssystem som GPS, GLONASS och Galileo.
 För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
@@ -890,8 +890,9 @@ kan informationen avkodas korrekt.
 \index{Wi-Fi}
 
 Medan fasskiftning kan göras för fler fassteg har man funnit att det inte
-är lika enkelt för högre upplösningar. Redan vid åtta steg behöver man ha
-I- och Q-värden som är \(\sqrt{1/2}\), vilket i och för sig går att approximera.
+är lika enkelt för högre upplösningar.
+Redan vid åtta steg behöver man ha I- och Q-värden som är \(\sqrt{1/2}\), vilket
+i och för sig går att approximera.
 En smidigare modulationsform är istället att låta även amplituden variera,
 och genom att låta några bitar modulera I och några bitar modulera Q kan
 man enkelt få ett symbolmönster som är effektivt att implementera.
@@ -941,23 +942,25 @@ symboler men i stället väldigt många parallellt fördelat över ett
 större frekvensband.
 I mobiltelefonisystem använder man bland annat 64QAM och 256QAM.
 
-Mikrovågslänkar använder upp till 2048QAM. En fördel med
-QAM-moduleringen är att det är enkelt att få samma avstånd mellan de
-olika symbolpositionerna, och därmed kan också modulationen anpassas
-till störningen. Detta nyttjas av många moderna modulationssystem så
-att QAM-modulationen anpassas utifrån mottagarens rapportering om
-störning.  Denna dynamiska anpassning gör att kommunikationen kan
-upprätthållas även om kapaciteten tillåts variera.
+Mikrovågslänkar använder upp till 2048QAM.
+En fördel med QAM-moduleringen är att det är enkelt att få samma avstånd mellan
+de olika symbolpositionerna, och därmed kan också modulationen anpassas
+till störningen.
+Detta nyttjas av många moderna modulationssystem så att QAM-modulationen
+anpassas utifrån mottagarens rapportering om störning.
+Denna dynamiska anpassning gör att kommunikationen kan upprätthållas även om
+kapaciteten tillåts variera.
 
 \subsection{Begrepp vid digital modulation}
 \harecsection{\harec{a}{1.8.9}{1.8.9}}
 \index{digital modulation}
 
 Digital modulation innebär också att signalerna som sänds har lite
-andra egenskaper än de analoga. Istället för varierande
-spänningsnivåer som för till exempel tal skickar vi diskreta fixa
-nivåer, ofta i form av bitar. Det är därför lämpligt att diskutera
-några grundläggande begrepp kring digital modulation.
+andra egenskaper än de analoga.
+Istället för varierande spänningsnivåer som för till exempel tal skickar vi
+diskreta fixa nivåer, ofta i form av bitar.
+Det är därför lämpligt att diskutera några grundläggande begrepp kring digital
+modulation.
 
 % k7per
 % \newpage % layout
@@ -1002,21 +1005,22 @@ Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
 ihopklumpade. Varje sådan ihopklumpning kallas \emph{symbol}, och en symbol
 kan bära en eller flera bitar, ibland inte ens ett jämnt antal.
 
-Om man kan artikulera något i två olika \emph{nivåer} (av amplitud, fas, frekvens
-eller kombination), så kan man representera en bit. Om man kan artikulera något
-i fyra olika nivåer, kan man representera två bitar. På samma sätt ger åtta nivåer
-support för tre bitar. Varje representation kallar man en symbol och varje
-symbol bär alltså en, två eller tre bitar information. Strikt räknat
-är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av antalet nivåer som
-anger antalet bitar som en symbol kan bära.
+Om man kan artikulera något i två olika \emph{nivåer} (av amplitud, fas,
+frekvens eller kombination), så kan man representera en bit.
+Om man kan artikulera något i fyra olika nivåer, kan man representera två bitar.
+På samma sätt ger åtta nivåer support för tre bitar.
+Varje representation kallar man en symbol och varje symbol bär alltså en, två
+eller tre bitar information.
+Strikt räknat är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av
+antalet nivåer som anger antalet bitar som en symbol kan bära.
 Tre nivåer brukar sägas kunna bära 1,5~bitar, vilket är en slarvig approximation
 men visar principen.
 
 Den takt varmed symboler överförs \emph{symboltakten} (eng. \emph{symbol rate}),
 benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{baud (Bd)}.
-Enheten baud (förkortat Bd) anger antalet symboler per sekund. Genom att
-multiplicera antalet symboler per sekund med antalet bitar per symbol fås
-överföringskapaciteten bitar per sekund.
+Enheten baud (förkortat Bd) anger antalet symboler per sekund.
+Genom att multiplicera antalet symboler per sekund med antalet bitar per symbol
+fås överföringskapaciteten bitar per sekund.
 
 \subsubsection{Bandbredd}
 \harecsection{\harec{a}{1.8.9c}{1.8.9c}}
@@ -1059,12 +1063,13 @@ Vi kallar varje sådant fel för att \emph{bitfel} (eng. \emph{bit error}).
 Störningar kan göra att vi tolkar en symbol fel, vilket kan resultera i en eller
 flera felaktiga bitar.
 
-Om vi i till exempel 16QAM-koden i kapitel \ssaref{QAM} får in +0.2 i I och +1.1 i Q,
-ser vi i tabell \ssaref{tab:16QAM} att närmaste symbolen är symbol 5 med +1 i I
-och +1 i Q. Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt
-Q är större än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och
-det är precis den tolkning vi i allmänhet gör, för det är den symbolen vars
-avstånd är lägst och därmed rimligast.
+Om vi i till exempel 16QAM-koden i kapitel \ssaref{QAM} får in +0.2 i I och +1.1
+i Q, ser vi i tabell \ssaref{tab:16QAM} att närmaste symbolen är symbol 5 med +1
+i I och +1 i Q.
+Vi skulle kunna anta att om I är större än 0 och mindre än 2, samt Q är större
+än 0 och mindre än 2 så är symbol 5 den enda vettiga symbolen, och det är precis
+den tolkning vi i allmänhet gör, för det är den symbolen vars avstånd är lägst
+och därmed rimligast.
 Det kan dock vara så att man egentligen sände symbol 9 med \num{-1} i I och +1 i
 Q, och därmed fick för stor störning på I för att man ska tolka det som rätt
 symbol.
@@ -1073,10 +1078,10 @@ Vi kommer då lägga ut 9 istället för 5, vilket innebär att två bitar har
 
 Genom att granska tabell \ssaref{tab:16QAM} vidare ser man att värdena för
 I och Q för de olika symbolerna är gjorda så att minsta avstånd är 2 mellan
-alla närliggande symboler, i respektive I- och Q-riktning. Det förenklar
-tolkning av symbolerna. Är dock störningen större än 1 i någon riktning
-kommer man tolka den symbolen fel, och det kan då leda till 1 eller fler
-bitfel.
+alla närliggande symboler, i respektive I- och Q-riktning.
+Det förenklar tolkning av symbolerna.
+Är dock störningen större än 1 i någon riktning kommer man tolka den symbolen
+fel, och det kan då leda till 1 eller fler bitfel.
 
 \subsubsection{Bitfelssannolikhet}
 \index{bitfelssannolikhet}
@@ -1114,8 +1119,9 @@ bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
 ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
 För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs
 det 14~sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
-kvantiseringsgränsen. Den råa radiokanalen uppvisar dock sällan så bra
-egenskaper, men det kan uppnås i kabel och fiber.
+kvantiseringsgränsen.
+Den råa radiokanalen uppvisar dock sällan så bra egenskaper, men det kan uppnås
+i kabel och fiber.
 
 \subsubsection{Detektion}
 \harecsection{\harec{a}{1.8.10a}{1.8.10a}}
@@ -1154,13 +1160,13 @@ starkare kod den vägen. CRC används till exempel i Ethernet.
 \index{TCP}
 
 En enkel åtgärd att vidta när man konstaterat att ett block data man
-tagit emot har fel, är att begära omsändning. Genom att sändaren håller en
-buffert med meddelanden som den skickat, och mottagaren meddelar sändare om
-den mottagit meddelandet eller behöver ha det omskickat, så kan omsändning
-realiseras. Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest
-(ARQ)}) är en typ av protokoll som gör automatisk omsändningsbegäran om ett
-enskilt datablock, även kallat paket, inte kommit fram rätt eller helt
-försvunnit.
+tagit emot har fel, är att begära omsändning.
+Genom att sändaren håller en buffert med meddelanden som den skickat, och
+mottagaren meddelar sändare om den mottagit meddelandet eller behöver ha det
+omskickat, så kan omsändning realiseras.
+Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest (ARQ)}) är en
+typ av protokoll som gör automatisk omsändningsbegäran om ett enskilt datablock,
+även kallat paket, inte kommit fram rätt eller helt försvunnit.
 Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
 
 \subsubsection{Korrigeringskod -- FEC}
@@ -1175,9 +1181,10 @@ Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet
 
 En annan form av korrigering är att helt enkelt skicka för mycket data redan
 från början, som mottagaren kan använda för att korrigera meddelandet utan att
-skicka någon begäran till sändaren. Detta är praktiskt antingen om det skulle
-ta för mycket tid eller om det helt enkelt inte finns någon kommunikation från
-mottagaren till sändaren, till exempel för satellitmottagare.
+skicka någon begäran till sändaren.
+Detta är praktiskt antingen om det skulle ta för mycket tid eller om det helt
+enkelt inte finns någon kommunikation från mottagaren till sändaren, till
+exempel för satellitmottagare.
 
 En enkel form av felrättande kod används i AMTOR FEC, där man helt enkelt
 sänder samma tecken två gånger.
@@ -1322,9 +1329,10 @@ Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområd
 
 WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''.
 WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en
-så kallad beacon. Sändning och mottagning sker i tvåminuterspass och efter varje
-sändningspass rapporterar de stationer som mottagit signalen in sitt resultat till en
-databas över internet.
+så kallad beacon.
+Sändning och mottagning sker i tvåminuterspass och efter varje sändningspass
+rapporterar de stationer som mottagit signalen in sitt resultat till en databas
+över internet.
 Den sändande stationen kan därefter studera resultatet.
 WSPR använder låga effekter, det går att nå europeiska stationer med effekter
 under \qty{100}{\milli\watt}, och andra kontinenter med effekter under några
@@ -1348,8 +1356,8 @@ watt, även med modesta antenner.
 WSJT är liksom WSPR ett program som används inom amatörradiohobbyn för så
 kommunikation med svaga signaler.
 Även detta program är utvecklat av Joe Taylor, K1JT.
-De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte upptar
-större bandbredd än några hertz.
+De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte
+upptar större bandbredd än några hertz.
 
 \paragraph{Historia}
 
@@ -1379,8 +1387,8 @@ JT9 använder sig av mindre än \qty{16}{\hertz} bandbredd.
 
 FT8 utvecklades och släpptes år 2017 och använder sig av en 8FSK-signal.
 
-FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts för
-fädning och där öppningarna mot andra stationer är korta så att man behöver
+FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts
+för fädning och där öppningarna mot andra stationer är korta så att man behöver
 slutföra kommunikationen inom en kort tid.
 
 \subsubsection{FreeDV}
