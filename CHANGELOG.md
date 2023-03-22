@@ -4,7 +4,7 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
-## [2.6.0] – 2022-03-22
+## [2.6.0] – 2023-03-22
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
