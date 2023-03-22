@@ -4,7 +4,7 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
-## [Osläppt]
+## [2.6.0] – 2023-03-22
 ### Fixat
 - En felkodad länk har rättats.
 - Rättat skrivfel i bilaga med bandplaner.
@@ -106,7 +106,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.6.0...HEAD
 [2.6.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0
