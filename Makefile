@@ -5,14 +5,14 @@ help:
 	@echo '                                                                      '
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
-	@echo '   make koncept.pdf            bygg koncept.pdf                       '
-	@echo '   make koncept.ind            bygg index till koncept                '
+	@echo '   make koncept.pdf            bygg PDF av KonCEPT                    '
+	@echo '   make koncept.epub           bygg EPUB av KonCEPT                   '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 
-all:	koncept.pdf
+all:	koncept.pdf koncept.epub
 
-.PHONY:	*.pdf
+.PHONY: all koncept.pdf koncept.epub clean help
 
 KONCEPT_CH01_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
@@ -81,19 +81,6 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 
 REPO_FILES = SHA.tmp branch.tmp
 
-koncept.aux: koncept.tex $(KONCEPT_FILES)
-	- pdflatex -interaction=nonstopmode koncept.tex
-
-koncept.idx: koncept.tex koncept.aux $(KONCEPT_FILES)
-	- xelatex koncept.tex
-
-koncept.bbl: koncept.aux koncept.bib
-	pdflatex -interaction=nonstopmode koncept.tex
-	bibtex koncept.aux
-
-koncept.ind: koncept.idx
-	makeindex koncept.idx
-
 branch.tmp:
 	touch branch.tmp
 
@@ -101,26 +88,27 @@ SHA.tmp:
 	touch SHA.tmp
 
 koncept.log:
-koncept.pdf: $(REPO_FILES) koncept.aux koncept.bbl koncept.ind koncept.tex $(KONCEPT_FILES)
-	pdflatex -interaction=batchmode koncept.tex
-	pdflatex -interaction=batchmode koncept.tex
-	makeindex koncept.idx
-	pdflatex -interaction=nonstopmode koncept.tex
+koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
+	latexmk -pdf koncept.tex
+
+koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
+	ebb -x images/**/*
+	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
 
 TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	rm -f TODOs.txt
-	- grep -n TODO *.tex koncept/*.tex > TODOs.txt
-	- grep HAREC koncept.log >> TODOs.txt
-	- grep --exclude=koncept/common.tex {rev koncept/*.tex >> TODOs.txt
-	- grep Missing koncept.log >> TODOs.txt
-	- grep LaTeX koncept.log | grep Warning >> TODOs.txt
+	- grep -Fn TODO *.tex koncept/*.tex > TODOs.txt
+	- grep -F HAREC koncept.log >> TODOs.txt
+	- grep -F {rev koncept/*.tex >> TODOs.txt
+	- grep -F Missing koncept.log >> TODOs.txt
+	- grep -F LaTeX koncept.log | grep -F Warning >> TODOs.txt
 
-# Länkade bilder
+# Skapar en rapport med länkade bilder.
 images_linked: koncept.tex $(KONCEPT_FILES)
-	grep images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
+	grep -F images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
 images_available:
 	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_available.txt
@@ -128,8 +116,13 @@ images_available:
 images_unlinked: images_available images_linked
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
-long_lines:
-	grep '.\{80\}' **/*.tex > long_lines.txt
+# Skapar en rapport med kodrader som är längre än 80 tecken.
+long_lines: $(KONCEPT_FILES)
+	grep '.\{81\}' koncept/*.tex > long_lines.txt
+
+# Skapar en rapport med kodrader som bara är kommentar.
+comment_lines: $(KONCEPT_FILES)
+	grep '^ *%' koncept/*.tex > comment_lines.txt
 
 # Genererade bilder
 macros/bild_tx_heat.eps: macros/bild_tx_heat.m

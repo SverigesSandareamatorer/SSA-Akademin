@@ -67,11 +67,12 @@ tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
 beroende utav. För att köra ett Make mål, se till att du
 har installerat beroendet som det behöver.
 
-| Mål                 | Bygger/Genererar...               | Beroende...          |
-|---------------------|-----------------------------------|----------------------|
+| Mål | Bygger/Genererar | Beroende |
+| --- | --- | --- |
 |`all`                |alla mål                           |alla beroenden nedan  |
 |`clean`              |Tar bort alla genererade filer     |-                     |
-|`koncept.pdf`        |PDF av KonCEPT (digitaliserad)     |[TeX/LaTeX](#texlatex)|
+| `koncept.pdf` | PDF av KonCEPT | [TeX/LaTeX](#texlatex) |
+| `koncept.epub` | EPUB av KonCEPT | [TeX/LaTeX](#texlatex) |
 |`docker-image`       |Bygg en Docker *image*             |Docker                |
 |`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
@@ -89,5 +90,5 @@ installeras.
 
 <kbd>sudo apt-get update</kbd>
 
-<kbd>sudo apt-get install texlive texlive-lang-european
-    texlive-latex-extra texlive-pictures texlive-math-extra texlive-xetex</kbd>
+<kbd>sudo apt-get install texlive texlive-lang-european texlive-science
+            texlive-fonts-recommended texlive-fonts-extra latexmk</kbd>

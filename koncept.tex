@@ -37,7 +37,8 @@
 %% each overfull hbox, comment for product.
 %% \overfullrule=10pt
 
-% Generera synkning av förhandsvisning av PDF med källkoden.
+% Gör så att position i PDF-fönster synkas med rad i källkoden i vissa
+% LaTeX-editorer.
 \synctex=1
 
 % (Beskrivning saknas.)
@@ -55,7 +56,7 @@
 % extra tecken, främst accentuerade, men inte enbart.
 \usepackage{lmodern}
 
-% En ny bokmärkesorganisation (kontur) för hyperref.
+% (Beskrivning saknas.)
 \usepackage[numbered]{bookmark}
 
 % (Beskrivning saknas.)
@@ -101,13 +102,13 @@
 % och \ohm som fungerar både i text- och matematikläge.
 \usepackage{gensymb}
 
-% Paket för att typsätta SI-enheter och värden.
+% Paket för att typsätta SI-enheter och värden. Används oftast med makron \qty
+% samt \unit.
 \usepackage{siunitx}
 \sisetup{
 	output-decimal-marker = {,},
 	output-product = \cdot,
 	retain-explicit-plus = true,
-	% input-product = {*},
 	product-units = single,
 	per-mode = symbol,
 	range-units = single,
@@ -207,10 +208,11 @@
 	babel=true
 ]{microtype}
 
-% Kommandon för att styra presentationen av floats.
+% (Beskrivning saknas.)
 \usepackage{stfloats}
 
-% (Beskrivning saknas.)
+% Hjälpmakron för att dessa förkortningar/uttryck ska skrivas konsekvent genom
+% hela boken.
 \newcommand{\erp}{ERP}
 \newcommand{\eirp}{EIRP}
 \newcommand{\pep}{PEP}
@@ -236,7 +238,7 @@
 }
 \makeatother
 
-% Förbättrat gränssnitt för flytande objekt.
+% (Beskrivning saknas.)
 \usepackage{float}
 
 % Defines a \FloatBarrier command, beyond which floats may not pass; useful, for
@@ -631,7 +633,7 @@
 % (Beskrivning saknas.)
 \setlength\cftsecnumwidth{3em}
 
-% Standardpaket för att skapa index.
+% Standardpaket för att skapa index. Används till sakregistret.
 \usepackage{makeidx}
 \makeindex
 
@@ -659,8 +661,7 @@
 % Infoga innehållsförteckningen.
 \tableofcontents
 %
-% Infoga försättsblad, förord och introduktion.
-\include{koncept/preface}
+% Infoga förord och introduktion.
 \include{koncept/foreword}
 \include{koncept/introduction}
 %

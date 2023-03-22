@@ -37,12 +37,12 @@ koncept.2.0.0+b12345.8c04343.pdf
         └ Upplaga
 </pre>
 
-## Bygg projektet
+## Bygg lokalt
 
 Du kan ladda ner projektet och bygga den senaste versionen av PDF:en
 själv. Instruktioner finns i filen [BUILD.md](BUILD.md).
 
-## PDF
+## Serverbyggd PDF
 
 **Hämta det senaste bygget:**
 **[Lista med byggen](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions?query=branch%3Amaster+)**

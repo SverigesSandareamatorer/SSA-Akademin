@@ -4,23 +4,72 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - '**.md'
   pull_request:
     branches:
       - master
+    paths-ignore:
+      - '**.md'
 
 jobs:
-  bygg-pdf:
-    name: 'Bygg bok'
+  analysera-koden:
+    name: 'Analysera koden'
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v3
       - name: 'Installera Ubuntu-paket'
         run: |
-          sudo apt-get --quiet update
-          sudo apt-get --quiet --assume-yes --verbose-versions install texlive \
-            texlive-lang-european texlive-science \
-            texlive-fonts-recommended texlive-fonts-extra \
+          sudo apt-get -qq update
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            chktex
+      - name: 'Skapa rapporter'
+        run: |
+          echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
+          make images_linked
+          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make images_unlinked
+          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make long_lines
+          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          make comment_lines
+          echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+      - name: 'Kör LaTeX-kontroll'
+        continue-on-error: true
+        run: (chktex -v1 -n8 -n24 -n32 --output chktex.log koncept.tex); if [ $? -lt 3 ]; then (exit 0); else (exit 3); fi
+        # n8  eftersom det är fel tankstreckslängd för svenska.
+        # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
+        # n32 eftersom det är fel citationstecken för svenska.
+      - name: 'Skriv ut fel'
+        run: grep -F 'Error' chktex.log || echo 'chktex hittade inga fel.' >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara rapporter'
+        uses: actions/upload-artifact@v3
+        with:
+          name: rapporter
+          path: |
+            images_linked.txt
+            images_unlinked.txt
+            long_lines.txt
+            comment_lines.txt
+            chktex.log
+  bygg-pdf:
+    name: 'Bygg PDF'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 'Checka ut koden'
+        uses: actions/checkout@v3
+      - name: 'Installera Ubuntu-paket'
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            texlive \
+            texlive-lang-european \
+            texlive-science \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            latexmk \
             language-pack-sv
       - name: 'Sätt systemspråk till svenska'
         run: |
@@ -32,34 +81,64 @@ jobs:
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Bygg koncept.pdf'
         run: make koncept.pdf
+      - name: 'Visa programversion'
+        run: |
+          echo "<pre>$(latexmk -v)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
-      - name: 'Skapa rapporter'
-        run: |
-          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
-          echo "| Statistik om koden | Antal |" >> $GITHUB_STEP_SUMMARY
-          echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
-          make images_linked
-          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make images_unlinked
-          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make TODOs
-          echo "| TODO-kommentarer | $(cat TODOs.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make long_lines
-          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-      - name: 'Spara PDF-artefakt'
+      - name: 'Spara artefakt'
         uses: actions/upload-artifact@v3
         with:
           name: koncept-pdf
-          path: koncept*.pdf
-      - name: 'Spara rapporter'
+          path: |
+            koncept*.pdf
+            koncept.log
+  bygg-epub:
+    name: 'Bygg EPUB'
+    continue-on-error: true
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 'Checka ut koden'
+        uses: actions/checkout@v3
+      - name: 'Installera Ubuntu-paket'
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get --quiet --assume-yes --verbose-versions install \
+            texlive \
+            texlive-extra-utils \
+            texlive-lang-european \
+            texlive-science \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            tidy \
+            language-pack-sv
+      - name: 'Sätt systemspråk till svenska'
+        run: |
+          sudo locale-gen sv_SE.UTF-8
+          sudo localectl set-locale LANG="sv_SE.UTF-8"
+      - name: 'Kopiera info om repository till filer'
+        run: |
+          echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
+          echo $GITHUB_REF_NAME > branch.tmp
+      - name: 'Bygg koncept.epub'
+        continue-on-error: true
+        run: make koncept.epub
+      - name: 'Visa programversion'
+        run: |
+          echo "<pre>$(tex4ebook --version)</pre>" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Lägg till versionsinformation i filnamnet'
+        continue-on-error: true
+        run: mv koncept.epub koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).epub
+      - name: 'Visa checksumma'
+        run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Spara artefakt'
         uses: actions/upload-artifact@v3
         with:
-          name: rapporter
+          name: koncept-epub
           path: |
-            images_linked.txt
-            images_unlinked.txt
-            TODOs.txt
-            long_lines.txt
+            koncept*.epub
+            koncept.log

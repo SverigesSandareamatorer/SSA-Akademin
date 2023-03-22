@@ -192,8 +192,10 @@ TSWLatexianTemp*
 
 # KonCEPT Finished output
 koncept.pdf
+koncept.epub
 
 # KonCEPT Temp
+*.xbb
 SHA.tmp
 branch.tmp
 images_available.txt
@@ -201,3 +203,4 @@ images_linked.txt
 images_unlinked.txt
 TODOs.txt
 long_lines.txt
+comment_lines.txt

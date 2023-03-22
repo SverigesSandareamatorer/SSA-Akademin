@@ -4,6 +4,10 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
+## [Osläppt]
+### Tillagt
+- Nytt byggmål för ebok i EPUB-format.
+
 ## [2.6.0] – 2023-03-22
 ### Fixat
 - En felkodad länk har rättats.
@@ -11,7 +15,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Lagt till saknad bandplan för 60-metersbandet i appendix.
 
 ### Ändrat
-- Makron ändrade till de för siunitx 3.x
+- Makron ändrade till de för siunitx 3.0.
 - Releaseinstruktionen flyttad till wikin på GitHub.
 - Fört in ändringar p.g.a nya lagar och föreskrifter:
   - Lag (2022:482) om elektronisk kommunikation
