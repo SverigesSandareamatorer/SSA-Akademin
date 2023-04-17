@@ -6,7 +6,7 @@ help:
 	@echo 'Användning:                                                           '
 	@echo '   make all                    kör alla make mål                      '
 	@echo '   make koncept.pdf            bygg PDF av KonCEPT                    '
-	@echo '   make koncept.epub           bygg EPUB av KonCEPT                   '
+	@echo '   make koncept.epub           bygg EPUB av KonCEPT (experimentell)   '
 	@echo '   make clean                  rensa alla byggfiler                   '
 	@echo '   make help                   visa den här informationen             '
 

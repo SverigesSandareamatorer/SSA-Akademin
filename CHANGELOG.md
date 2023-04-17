@@ -6,7 +6,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 
 ## [Osläppt]
 ### Tillagt
-- Nytt byggmål för ebok i EPUB-format.
+- Nytt experimentellt byggmål för ebok i EPUB-format.
 
 ## [2.6.0] – 2023-03-22
 ### Fixat

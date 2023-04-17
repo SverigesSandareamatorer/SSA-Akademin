@@ -97,7 +97,7 @@ jobs:
             koncept*.pdf
             koncept.log
   bygg-epub:
-    name: 'Bygg EPUB'
+    name: 'Bygg EPUB (experimentell)'
     continue-on-error: true
     runs-on: ubuntu-22.04
     steps:
