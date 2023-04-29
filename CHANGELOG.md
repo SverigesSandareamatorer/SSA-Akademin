@@ -8,6 +8,10 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Tillagt
 - Nytt byggmål för ebok i EPUB-format.
 
+### Fixat
+- Rättat enstaka tecken på många ställen i boken.
+- Ändrat en död länk till IARU R1 bandplaner i referenslistan.
+
 ## [2.6.0] – 2023-03-22
 ### Fixat
 - En felkodad länk har rättats.
