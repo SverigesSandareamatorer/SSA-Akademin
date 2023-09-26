@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -102,7 +102,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
