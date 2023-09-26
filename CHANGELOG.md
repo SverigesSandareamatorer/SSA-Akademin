@@ -8,12 +8,21 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Tillagt
 - Nytt experimentellt byggmål för ebok i EPUB-format.
 
-## [2.6.0] – 2023-03-22
-### Fixat
-- En felkodad länk har rättats.
-- Rättat skrivfel i bilaga med bandplaner.
-- Lagt till saknad bandplan för 60-metersbandet i appendix.
+### Ändrat
+-
 
+### Fixat
+- Rättat enstaka tecken på många ställen i boken.
+- Ändrat en död länk till IARU R1 bandplaner i referenslistan.
+- ISBN-numret på tryckortssidan var fel.
+
+### Borttaget
+-
+
+### Ändrat
+- Förbättrade texter om simplex och halvduplex.
+
+## [2.6.0] – 2023-03-22
 ### Ändrat
 - Makron ändrade till de för siunitx 3.0.
 - Releaseinstruktionen flyttad till wikin på GitHub.
@@ -22,6 +31,11 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
   - Förordning (2022:511) om elektronisk kommunikation
   - PTSFS 2022:19 föreskrifter om undantag från tillståndsplikt för användning av vissa radiosändare
   - PTSFS 2019:1 Post- och telestyrelsens allmänna råd om den svenska frekvensplanen
+
+### Fixat
+- En felkodad länk har rättats.
+- Rättat skrivfel i bilaga med bandplaner.
+- Lagt till saknad bandplan för 60-metersbandet i appendix.
 
 ### Borttaget
 - Filer med ofärdiga lektioner borttagna.

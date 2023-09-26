@@ -72,7 +72,7 @@ har installerat beroendet som det behöver.
 |`all`                |alla mål                           |alla beroenden nedan  |
 |`clean`              |Tar bort alla genererade filer     |-                     |
 | `koncept.pdf` | PDF av KonCEPT | [TeX/LaTeX](#texlatex) |
-| `koncept.epub` | EPUB av KonCEPT | [TeX/LaTeX](#texlatex) |
+| `koncept.epub` | EPUB av KonCEPT (experimentell) | [TeX/LaTeX](#texlatex) |
 |`docker-image`       |Bygg en Docker *image*             |Docker                |
 |`docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
