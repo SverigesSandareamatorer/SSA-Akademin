@@ -19,6 +19,9 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Borttaget
 -
 
+### Ändrat
+- Förbättrade texter om simplex och halvduplex.
+
 ## [2.6.0] – 2023-03-22
 ### Ändrat
 - Makron ändrade till de för siunitx 3.0.
