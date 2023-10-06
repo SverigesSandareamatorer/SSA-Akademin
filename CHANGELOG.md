@@ -17,7 +17,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - ISBN-numret på tryckortssidan var fel.
 
 ### Borttaget
--
+- Flera oanvända bildfiler raderade.
 
 ## [2.6.0] – 2023-03-22
 ### Ändrat
