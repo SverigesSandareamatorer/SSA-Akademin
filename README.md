@@ -13,7 +13,7 @@ Efter 20&nbsp;år behövdes en uppdatering och att tryckas i en ny upplaga.
 Detta projekt, SSA Akademin, är bland annat till för digitalisering och
 uppdatering av KonCEPT som lett fram till en andra upplaga av boken.
 Den tryckta boken kan köpas
-[från SSA:s HamShop](https://hamshop.ssa.se/index.php?route=product/product&path=87_88&product_id=72).
+[från SSA:s Hamshop](https://hamshop.ssa.se/?s=KonCEPT&post_type=product).
 
 | :warning: **Observera** |
 |:---------------------------|
