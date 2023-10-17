@@ -1,4 +1,4 @@
-name: Testa länkar
+name: Testa webbadresser
 
 on:
   repository_dispatch:
@@ -7,9 +7,9 @@ on:
     - cron: "30 03 20 * *"
 
 jobs:
-  testa-lankar:
+  testa-webbadresser:
     if: github.repository == 'SverigesSandareamatorer/SSA-Akademin'
-    name: 'Testa länkar'
+    name: 'Testa webbadresser'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
