@@ -1,4 +1,4 @@
-name: Testa länkar
+name: Testa webbadresser
 
 on:
   repository_dispatch:
@@ -7,13 +7,13 @@ on:
     - cron: "30 03 20 * *"
 
 jobs:
-  testa-lankar:
+  testa-webbadresser:
     if: github.repository == 'SverigesSandareamatorer/SSA-Akademin'
-    name: 'Testa länkar'
+    name: 'Testa webbadresser'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: lycheeverse/lychee-action@v1.8.0
         with:
           fail: true
-          args: "--max-concurrency 3 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
+          args: "--max-concurrency 3 --retry-wait-time 35 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
