@@ -4,7 +4,7 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
-## [Osläppt]
+## [2.6.1] – 2023-11-14
 ### Tillagt
 - Nytt experimentellt byggmål för ebok i EPUB-format.
 
@@ -121,7 +121,8 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Borttaget
 - Bilagan med uträkning av dB borttagen.
 
-[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.6.0...HEAD
+[Osläppt]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.6.1...HEAD
+[2.6.1]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.6.0...v2.6.1
 [2.6.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/SverigesSandareamatorer/SSA-Akademin/compare/v2.3.0...v2.4.0
