@@ -4,6 +4,19 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
+## [Osläppt] – 2024
+### Tillagt
+-
+
+### Ändrat
+-
+
+### Fixat
+-
+
+### Borttaget
+-
+
 ## [2.6.1] – 2023-11-14
 ### Tillagt
 - Nytt experimentellt byggmål för ebok i EPUB-format.
