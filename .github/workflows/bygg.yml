@@ -46,7 +46,7 @@ jobs:
       - name: 'Skriv ut fel'
         run: "grep -F 'Error' chktex.log || echo ':white_check_mark: chktex hittade inga fel.' >> $GITHUB_STEP_SUMMARY"
       - name: 'Spara rapporter'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rapporter
           path: |
@@ -91,7 +91,7 @@ jobs:
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara artefakt'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: koncept-pdf
           path: |
@@ -137,7 +137,7 @@ jobs:
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara artefakt'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: koncept-epub
           path: |
