@@ -1,10 +1,21 @@
-FROM alpine:3.19
+FROM ubuntu:22.04
 
-RUN apk add --no-cache \
-        make \
-        texlive \
-        texlive-xetex \
-        texmf-dist-fontsextra \
-        texmf-dist-latexextra \
-        texmf-dist-pictures \
-        texmf-dist-science
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN sudo apt-get --quiet update && \
+    sudo apt-get --quiet --assume-yes install \
+	texlive \
+	texlive-extra-utils \
+	texlive-lang-european \
+	texlive-science \
+	texlive-fonts-recommended \
+	texlive-fonts-extra \
+	latexmk \
+	tidy \
+	chktex \
+	octave \
+	gnuplot \
+	build-essentials \
+	language-pack-sv
+
+RUN localectl set-locale LANG="sv_SE.UTF-8"
