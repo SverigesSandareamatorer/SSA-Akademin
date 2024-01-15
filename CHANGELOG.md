@@ -12,6 +12,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nya avsnittsnivåer i kapitel 1 Ellära.
 - Nya delavsnittsnivåer i 1.9 Effekt och energi.
 - Nya delavsnittsnivåer i 13.4 Internationell nödtrafik.
+- Ett räkneexempel om frekvens i 1.6 gjort tydligare.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
