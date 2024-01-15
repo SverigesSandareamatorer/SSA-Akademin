@@ -14,7 +14,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nya delavsnittsnivåer i 13.4 Internationell nödtrafik.
 
 ### Fixat
--
+- Ordet _mod_ har lagts till i sakregistret.
 
 ### Borttaget
 -
