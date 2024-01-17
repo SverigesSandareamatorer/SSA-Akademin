@@ -60,7 +60,7 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
 	koncept/appendix-litteratur.tex koncept/appendix-matematik.tex \
-	koncept/appendix-mattenheter.tex koncept/appendix-prefixomvandling.tex \
+	koncept/appendix-mattenheter.tex \
 	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
 	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
