@@ -21,6 +21,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
+- Avsnittssammanfattning om PLL-styrd kortvågstransceiver borttagen.
 
 ## [2.6.1] – 2023-11-14
 ### Tillagt
