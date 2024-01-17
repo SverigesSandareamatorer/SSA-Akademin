@@ -55,7 +55,6 @@ KONCEPT_CH13_FILES = koncept/chapter13-1.tex koncept/chapter13-2.tex \
 KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
-KONCEPT_CH16_FILES = koncept/chapter16-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
@@ -63,7 +62,7 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-litteratur.tex koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex koncept/appendix-prefixomvandling.tex \
 	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
-	koncept/appendix-s-enheter.tex
+	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/matte.tex koncept.bib \
@@ -76,7 +75,7 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \
 	$(KONCEPT_CH11_FILES) $(KONCEPT_CH12_FILES) \
 	$(KONCEPT_CH13_FILES) $(KONCEPT_CH14_FILES) \
-	$(KONCEPT_CH15_FILES) $(KONCEPT_CH16_FILES) \
+	$(KONCEPT_CH15_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 REPO_FILES = SHA.tmp branch.tmp
