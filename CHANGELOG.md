@@ -20,7 +20,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Ordet _mod_ har lagts till i sakregistret.
 
 ### Borttaget
--
+- Text om integrationsgrad borttagen.
 
 ## [2.6.1] – 2023-11-14
 ### Tillagt
