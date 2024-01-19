@@ -790,7 +790,7 @@ QAM vilka presenteras i följande delavsnitt.
 \index{JT65}
 \index{JT9}
 
-\emph{Frekvensskiftsmodulation} (eng. \emph{Frequency Shift Keying (FSK)})
+\emph{Frekvensskiftsmodulation} (eng. \emph{Frequency Shift Keying, FSK})
 skiljer sig från CW-modulationen genom att den ändrar frekvensen, dvs. är en
 variant av frekvensmodulation. I den enklaste formen, binär FSK växlar man
 mellan två frekvenser, där en frekvens får representera 0 och den andra får
@@ -848,14 +848,14 @@ teckenändringarna på signalen.
 
 Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
 används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
-\emph{4-state Phase Shift Keying (4-PSK)}).
+\emph{4-state Phase Shift Keying, 4-PSK}).
 
 Istället för 180~graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
 så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
 Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering}
 (eng. \emph{quadrature modulation}) där man modulerar en signal till två
-komponenter, i \emph{fas} (eng. \emph{In Phase (I)}) och förskjuten 90 grader \emph{kvadratur} (eng.
-\emph{Quadrature (Q)}), ofta kallat I/Q modulering.
+komponenter, i \emph{fas} (eng. \emph{In Phase, I}) och förskjuten 90 grader \emph{kvadratur} (eng.
+\emph{Quadrature, Q}), ofta kallat I/Q modulering.
 
 De fyra faslägena kan nu enkelt förklaras som amplituder i de olika faslägena
 som anges av tabell~\ssaref{tab:4-PSK}.
@@ -899,7 +899,7 @@ En smidigare modulationsform är istället att låta även amplituden variera,
 och genom att låta några bitar modulera I och några bitar modulera Q kan
 man enkelt få ett symbolmönster som är effektivt att implementera.
 Denna modulationsform kallar man \emph{kvadratur-amplitudmodulation}
-(eng. \emph{Quadrature Amplitude Modulation (QAM)}).
+(eng. \emph{Quadrature Amplitude Modulation, QAM}).
 
 Ofta benämner man olika varianter med antalet olika positioner, så att 16QAM
 har 16 olika lägen i fas och amplitud tillsammans.
@@ -975,7 +975,7 @@ modulation.
 \index{informationsöverföringskapacitet}
 \index{bit rate}
 
-Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit (b)}),
+Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit, b}),
 \emph{informationsmängden} vi har är därför ett visst antal bitar och takten på
 denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
 (eng. \emph{bit rate}) i bitar per sekund.
@@ -1101,17 +1101,19 @@ fel, och det kan då leda till 1 eller fler bitfel.
 
 Om vi antar att vi inte har störning från några andra signaler, utan enbart har
 brus som störning, så kan vi estimera \emph{bitfelssannolikheten} (eng.
-\emph{bit error rate (BER)}) ur hur starkt bruset är i förhållande till vårt
-steg. Eftersom bruset antas vara vitt brus, så har det egenskaperna av
-\emph{Gaussiskt brus} (eng. \emph{Gaussian noise}).
+\emph{bit error rate, BER}) ur hur starkt bruset är i förhållande till vårt
+steg.
+Eftersom bruset antas vara vitt brus, så har det egenskaperna av \emph{Gaussiskt
+brus} (eng. \emph{Gaussian noise}).
 
 Gaussiskt brus har en statistisk fördelning med hög sannolikhet nära
-medelvärdet och avtar sedan med avståndet. Sannolikheten att man tolkar en
-signal som vara på ena eller andra sidan av en gräns beror på hur långt bort
-från medelvärdet den gränsen, ofta benämnd kvantiseringsgränsen, är i
-förhållande till den effektiva värdet (eng. \emph{Root Mean Square (RMS)}) i
-amplitud hos bruset. Detta kan uttryckas i form av den matematiska funktionen
-\emph{error function (erf)}.
+medelvärdet och avtar sedan med avståndet.
+Sannolikheten att man tolkar en signal som vara på ena eller andra sidan av en
+gräns beror på hur långt bort från medelvärdet den gränsen, ofta benämnd
+kvantiseringsgränsen, är i förhållande till den effektiva värdet (eng.
+\emph{Root Mean Square, RMS}) i amplitud hos bruset.
+Detta kan uttryckas i form av den matematiska funktionen \emph{error function
+(erf)}.
 
 När gränsen är 1~sigma, det vill säga 1 gånger RMS-värdet för brusamplituden,
 från medelvärdet så är det 67~\% sannolikhet att värdet ligger inom
@@ -1167,7 +1169,7 @@ tagit emot har fel, är att begära omsändning.
 Genom att sändaren håller en buffert med meddelanden som den skickat, och
 mottagaren meddelar sändare om den mottagit meddelandet eller behöver ha det
 omskickat, så kan omsändning realiseras.
-Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest (ARQ)}) är en
+Automatisk omsändningsbegäran (eng. \emph{Automatic Repeat reQuest, ARQ}) är en
 typ av protokoll som gör automatisk omsändningsbegäran om ett enskilt datablock,
 även kallat paket, inte kommit fram rätt eller helt försvunnit.
 Ett sådant protokoll är TCP, som ingår i internetsviten av TCP/IP-protokollet.
