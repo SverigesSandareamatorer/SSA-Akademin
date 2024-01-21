@@ -99,16 +99,31 @@ Produkten av spänningsfallet över dioden och strömmen genom den kallas
 förlusteffekt. Denna värmer upp dioden. Vid för hög temperatur förstörs
 kristallstrukturen.
 En kiselkristall kan klara upp till \qty{200}{\degreeCelsius} medan en
-germaniumkristall bara klarar \qty{75}{\degreeCelsius}.
+germaniumkristall bara klarar \qty{75}{\degreeCelsius}.\\
 
-\smallfig[0.25]{images/cropped_pdfs/bild_2_2-14.pdf}{Schemasymboler för dioder}{fig:BildII2-14}
+\smalltikz{
+		\begin{circuitikz}[american voltages]
+	% diodetyper bild 2.16
+	% diod
+	\draw (0,0) to [D-, a_=$1$, l2^=K and A] (0,1);
+	% zenerdiod
+	\draw (1.5,0) to [zD-, l_=$2$] (1.5,1);
+	% kapacitansdiod
+	\draw (3,0) to [VC-, l_=$3$] (3,1);
+	% lysdiod
+	\draw (4.7,0) to [leD-, l_=$4$] (4.7,1);
+\end{circuitikz}
+}{Schemasymboler för dioder}{fig:BildII2-14}
 
 \newpage
 \subsection{Diodtillämpningar}
 \harecsection{\harec{a}{2.5.1.1}{2.5.1.1}}
 
-Bild~\ssaref{fig:BildII2-14} illustrerar flera olika schemasymboler för dioder.
-
+Bild~\ssaref{fig:BildII2-14} illustrerar flera olika schemasymboler för dioder.\\
+1 Diod allmän symbol med Katod och Anod\\
+2 Zenerdiod\\
+3 Kapacitansdiod\\
+4 Lysdiod (LED)\\
 
 % \noindent
 Likriktning är den vanligaste tillämpningen för dioder (se
@@ -175,7 +190,42 @@ Dessa har blivit tillgängliga till lågt pris och populära för experiment.
 \subsection{Vakuumdioden i jämförelse med halvledardioden}
 
 % \smallfig[0.45]{images/cropped_pdfs/bild_2_2-15.pdf}{Dioders polarisering i kretsen}{fig:BildII2-15}
-\mediumfig{images/cropped_pdfs/bild_2_2-15.pdf}{Dioders polarisering i kretsen}{fig:BildII2-15}
+%\mediumfig{images/cropped_pdfs/bild_2_2-15.pdf}{Dioders polarisering i kretsen}{fig:BildII2-15}
+
+\smalltikz{
+\begin{circuitikz}[american voltages]
+	% dioder polarisering bild 2.17
+	% passriktning
+	%vakuumdiode
+	\draw (0,0) node[diodetube]{};
+	\draw (0,1) to (2,1);
+	\draw (2,1) to [R, a^=$R$] (2,-1);
+	\draw (2,-1) to [american voltage source] (-0.3,-1);
+	%diod
+	\draw (6,1) to [D-] (4,1);
+	\draw (4,1) to (4,-1);
+	\draw (6,1) to [R, a^=$R$] (6,-1);
+	\draw (6,-1) to [american voltage source] (4,-1);
+\end{circuitikz}\\
+Passriktning\\
+
+\begin{circuitikz}[american voltages]
+	% dioder polarisering bild 2.17
+	% Spärriktning
+	%vakuumdiod
+	\draw (0,0) node[diodetube]{};
+	\draw (0,1) to (2,1);
+	\draw (2,1) to [R, a^=$R$] (2,-1);
+	\draw (-0.3,-1) to [american voltage source] (2,-1);
+	%diod
+	\draw (6,1) to [D-] (4,1);
+	\draw (4,1) to (4,-1);
+	\draw (6,1) to [R, a^=$R$] (6,-1);
+	\draw (4,-1) to [american voltage source] (6,-1);
+\end{circuitikz}\\
+Spärriktning\\
+
+}{Dioders polarisering i kretsen}{fig:BildII2-15}
 
 Bild~\ssaref{fig:BildII2-15} visar principen för hur de båda diodtyperna ingår i
 en strömkrets.
