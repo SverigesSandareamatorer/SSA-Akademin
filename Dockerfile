@@ -2,8 +2,8 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN sudo apt-get --quiet update && \
-    sudo apt-get --quiet --assume-yes install \
+RUN apt-get --quiet update && \
+    apt-get --quiet --assume-yes install \
 	texlive \
 	texlive-extra-utils \
 	texlive-lang-european \
@@ -15,7 +15,7 @@ RUN sudo apt-get --quiet update && \
 	chktex \
 	octave \
 	gnuplot \
-	build-essentials \
+	build-essential \
 	language-pack-sv
 
 RUN localectl set-locale LANG="sv_SE.UTF-8"
