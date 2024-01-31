@@ -4,7 +4,26 @@
 \label{transistorn}
 \index{transistor}
 
-\smallfig{images/cropped_pdfs/bild_2_2-16.pdf}{Schemasymboler}{fig:BildII2-16}
+\smalltikz{
+	\begin{circuitikz}[]
+	% transistortyper bild 2.18
+	% npn transistor med markerade anslutningar
+	\draw (0,0) node[npn, tr circle=true](npn){NPN};
+	\draw (npn.E) node[below]{E};
+	\draw (npn.C) node[above]{C};
+	\draw (npn.B) node[left]{B};
+	%pnp transistor med markerade anslutningar
+	\draw (3,0) node[pnp, tr circle=true](pnp){PNP};
+	\draw (pnp.C) node[below]{C};
+	\draw (pnp.E) node[above]{E};
+	\draw (pnp.B) node[left]{B};
+	%jfet transistor med markerade anslutningar
+	\draw (6,0) node[njfet, tr circle=true](njfet){FET};
+	\draw (njfet.E) node[below]{S};
+	\draw (njfet.C) node[above]{D};
+	\draw (njfet.G) node[left]{G};
+\end{circuitikz}
+}{Schemasymboler}{fig:BildII2-16}
 
 \subsection{Allmänt}
 \label{transistor_allmänt}
@@ -12,13 +31,13 @@
 En transistor består av skikt av dopade halvledarelement som sammanfogats.
 Vanligt är två N-skikt och ett mellanliggande P-skikt (NPN-transistor) eller två
 P-skikt och ett mellanliggande N-skikt (PNP-transistor).
-Skikten är försedda med anslutningar.
+Skikten är försedda med anslutningar.\\
 
 Bild~\ssaref{fig:BildII2-16} visar schemasymboler för de vanliga tran\-sistor\-typerna 
 NPN-transistorer (bipolära), PNP-\-tran\-sistorer (bipolära) och
 FET-transistorer (fälteffekt-).
 
-\newpage
+%\newpage
 \subsection{NPN-transistorer}
 \harecsection{\harec{a}{2.6.1b}{2.6.1b}}
 \index{NPN-transistor}
@@ -149,7 +168,17 @@ Man säger därför att en FET är spänningsstyrd.
 men dessa typer har en relativt låg ingångsimpedans och därför högre styrström.
 Man säger därför att de är strömstyrda.
 
-\smallfig[0.15]{images/cropped_pdfs/bild_2_2-20.pdf}{Schemasymbol för en FET}{fig:BildII2-20}
+
+\smalltikz{
+	\begin{circuitikz}[]
+	% transistortyper bild 2.23
+	%jfet transistor med markerade anslutningar
+	\draw (6,0) node[njfet, tr circle=true](njfet){};
+	\draw (njfet.E) node[below]{S};
+	\draw (njfet.C) node[above]{D};
+	\draw (njfet.G) node[left]{G};
+\end{circuitikz}\\
+}{Schemasymbol för en FET}{fig:BildII2-20}
 
 Bild~\ssaref{fig:BildII2-20} anger en schemasymbol för en FET.
 
