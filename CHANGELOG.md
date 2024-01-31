@@ -16,12 +16,15 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flyttat Morsesignalering till en bilaga.
 - Flytta in bilaga Prefixomvandlingstabell i bilaga Måttenheter.
 - Nytt format för engelska förkortningar så dubbelparentes och kursiverade parenteser undviks.
+- Ersatt Ursigram med Vågutbredningsprognoser.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
+- Litteraturlistan följer praxis bättre vad gäller format.
 
 ### Borttaget
--
+- Text om integrationsgrad borttagen.
+- Avsnittssammanfattning om PLL-styrd kortvågstransceiver borttagen.
 
 ## [2.6.1] – 2023-11-14
 ### Tillagt

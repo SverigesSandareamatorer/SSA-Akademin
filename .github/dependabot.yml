@@ -8,3 +8,11 @@ updates:
       github-actions:
         patterns:
           - '*'
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      devcontainers:
+        patterns:
+          - '*'
