@@ -44,7 +44,8 @@ KONCEPT_CH08_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
 KONCEPT_CH09_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex
-KONCEPT_CH10_FILES = koncept/chapter10-1.tex koncept/chapter10-2.tex \
+KONCEPT_CH10_FILES = koncept/emc.tex \
+	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
 KONCEPT_CH11_FILES = koncept/chapter11-1.tex
 KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
