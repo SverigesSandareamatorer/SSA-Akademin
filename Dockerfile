@@ -17,5 +17,3 @@ RUN apt-get --quiet update && \
 	gnuplot \
 	build-essential \
 	language-pack-sv
-
-RUN localectl set-locale LANG="sv_SE.UTF-8"
