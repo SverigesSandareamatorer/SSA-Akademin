@@ -53,7 +53,8 @@ KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
 KONCEPT_CH13_FILES = koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
 	koncept/chapter13-5.tex koncept/chapter13-6.tex
-KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
+KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
+	koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
 KONCEPT_CH15_FILES = koncept/chapter15-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
