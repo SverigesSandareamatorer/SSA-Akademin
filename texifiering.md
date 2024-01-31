@@ -19,18 +19,18 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 4.  För bilder har OCRen försökt tolka bilderna. När vi processar texten tar
     vi bort det line-noise det innebär och behåller bara bildreferensen och
-    texten. I själva texten finns även en referens till vilken bild som skall
-    vara där, den behåller vi också tills vidare, sen skall den döljas.
+    texten. I själva texten finns även en referens till vilken bild som ska
+    vara där, den behåller vi också tills vidare, sen ska den döljas.
 
 5.  Själva texten bryter vi om så den blir läsbar. Vi håller oss inom
     80-tecken per rad.
 
-    Text skall övervägande brytas så att nya meningar bryts om så de börjar
-    på ny rad, detta skall ses som ett obligatorium för ny text.
+    Text ska övervägande brytas så att nya meningar bryts om så de börjar
+    på ny rad, detta ska ses som ett obligatorium för ny text.
     Ett undantag från denna huvudregel är när två korta meningar får plats på
     samma rad.
 
-    Denna regel handlar om att förändringar och uppdateringar i meningar skall
+    Denna regel handlar om att förändringar och uppdateringar i meningar ska
     ge rimligt läsbara diffar.
 
 6.  För att förenkla markerar vi kapitlen med `\chapter{}`.
@@ -41,7 +41,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
     `\emph{}`.
-    Nyckelbegrepp skall i förekommande fall även skrivas i sin engelska form,
+    Nyckelbegrepp ska i förekommande fall även skrivas i sin engelska form,
     för att underlätta sökning på nätet och läsande av engelsk litteratur.
     Exempel: `\emph{strömtransformator} (eng. \emph{current transformer})`
 
@@ -87,7 +87,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     `\label{myHAREC.a.1.1.1}` gör att HAREC-sammanställningen kan visa var HAREC
     krav a.1.1.1 uppfylls.
 
-14. Tabeller och bilder skall ha `\caption{}` och skall ha `\label{}` samt
+14. Tabeller och bilder ska ha `\caption{}` och ska ha `\label{}` samt
     refereras från texten. Det gör att automatisk sammanställning av
     bilder och tabeller kan ske, samt förstås gör det enkelt för alla läsare
     att se vilken bild/tabell som hör till texten.
@@ -129,11 +129,11 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     ```
 
     Det är behändigt att kunna söka på TODO:, och `\hilight{}` ger en gul
-    markör i texten så vi vet när vi läser att här är något vi skall åtgärda.
-    Alla TODOs skall åtgärdas innan release.
+    markör i texten så vi vet när vi läser att här är något vi ska åtgärda.
+    Alla TODOs ska åtgärdas innan release.
 
     En sammanställning av alla TODOs görs med make TODOs som producerar filen
-    TODOs, listar antalet. Den inkluderar flera andra källor av saker som skall
+    TODOs, listar antalet. Den inkluderar flera andra källor av saker som ska
     åtgärdas innan release.
 
 18. Lägg in `\dfrac` på formler med nedsänkta tecken då det blir tydligare
@@ -142,12 +142,12 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 19. Tusentalsavskiljare läggs in med `\num{}` t.ex. `\num{9000000}`.
 
 20. Bildreferenserna har i ursprungliga Koncept gjorts som en separat rad.
-    De skall i möjligaste mån integreras med själva texten. På samma sätt skall
+    De ska i möjligaste mån integreras med själva texten. På samma sätt ska
     även tabeller refereras från texten.
     ”I bild 3.16 illustreras...”
     ”... illustreras av bild 3.17”
 
-21. Grekiska bokstäver som mu, Omega mm. skall INTE läggas in som Unicode-tecken
+21. Grekiska bokstäver som mu, Omega mm. ska INTE läggas in som Unicode-tecken
     utan läggas in som `\(\mu\)` i löpande text och \mu (notera mellanslag efter
     u) i Math-environment. Det visar sig att Unicode inte rendrerar rätt för
     alla dessa.
@@ -181,44 +181,45 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     stället för ”Hertz” och ”Volt” om man inte refererar till namnen på de personer
     som gett namn till enheterna.
 
-24. Referenser mellan olika delar görs genom att sätta en label och sedan
-    referera till den. Det uppmuntras att skapa sådana länkar så man fort kan
-    hitta relevant kompelterande material direkt istället för att behöva söka
-    via index. I PDF:en ger det klickbara länkar.
+24. Referenser mellan olika delar görs genom att sätta en `\label{}` och sedan
+    referera till den. Använd de vedertagna prefixen! Det uppmuntras att skapa
+	sådana länkar så man fort kan hitta relevant kompelterande material direkt
+	istället för att behöva söka via index. I PDF:en ger det klickbara länkar.
 
     ```latex
-    \label{kapacitans}
+	\section{Kapacitans}
+    \label{sec:kapacitans}
     Förmågan att lagra elektrisk energi (elektrisk laddning) kallas
     \emph{kapacitans} (eng. \emph{capacitance}).
 
     ...
 
-    Reaktansen beror på kapacitans, se kapitel \ref{kapacitans}
+    Reaktansen beror på kapacitans, se kapitel~\ref{sec:kapacitans}
     ```
 
-25. Referens till externa dokument, böcker m.m. skall göras och det uppmuntras.
+25. Referens till externa dokument, böcker m.m. ska göras och det uppmuntras.
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
-    används, t.ex. ITU-RR. I förekommande fall skall länk till dokumentet
+    används, t.ex. ITU-RR. I förekommande fall ska länk till dokumentet
     läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
     hela dokumentet: `\cite{ITU-RR}`.
     För att referera till ett visst kapitel anger man det inom hakparanteser:
     `\cite[1.56]{ITU-RR}`.
 
-26. I förekommande fall skall SI-enheter och definitioner användas och
+26. I förekommande fall ska SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
     på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
-27. Konstanter skall anges med full definition och approximativt värde.
+27. Konstanter ska anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precision.
     T.ex. där ljusets hastighet används ska den i SI-systemet angivna
     definitionen användas, men även approximationen av 3&sdot;10<sup>8</sup>,
     300&nbsp;000&nbsp;km/s.
 
-28. Förkortningar skall anges som brukligt inom parantes efter sin uttydelse
+28. Förkortningar ska anges som brukligt inom parantes efter sin uttydelse
     där de definieras, vilket i möjligaste mån är första gången de används,
     och framgent kan förkortningen användas.
     I möjligaste mån är att ibland används förkortningar i förbigående innan
-    de har en naturlig kontext att definieras i, för de fallen skall förkortning
+    de har en naturlig kontext att definieras i, för de fallen ska förkortning
     användas och definitionen där det är ett bra kontext.
 
     Tankstreck mellan förkortning och uttydning ska INTE användas.
