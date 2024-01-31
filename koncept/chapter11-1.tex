@@ -451,17 +451,15 @@ för att bedöma höjd på eller säkerhetsavstånd till antenntorn.
 Använd dataprogram för att få bra bedömning på hur en antenn beter sig,
 särskilt med avseende på antenner med riktverkan.
 
-\subsubsection{Exempel 1:}
-
-Vilken medelfältstyrka genererar man på ett visst avstånd från antennen?
-
+\begin{tcolorbox}[title=Exempel 1]
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
 30 sekunders intervaller.
 Den valda matarledningen har en dämpning på \qty{2,5}{\decibel} (0,56~gånger).
 Avståndet från antennen till beräkningspunkten är \qty{15}{\metre}.
-
+Vilken medelfältstyrka genererar man på ett visst avstånd från antennen?
+\tcblower
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = \qty{500}{\watt}\]
 \[k_{mod} = modulationsfaktor\]
@@ -478,18 +476,17 @@ Avståndet från antennen till beräkningspunkten är \qty{15}{\metre}.
 
 Då referensvärdet på denna frekvens är \qty{28}{\volt\per\metre}, överskrider
 amatörradiosändningen referensvärdet på detta avstånd.
+\end{tcolorbox}
 
-\subsubsection{Exempel 2:}
-
-På vilket avstånd från antennen når man referensvärdet?
-
+\begin{tcolorbox}[title=Exempel 2]
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
 30~sekunders intervaller.
 Den valda matarledningen har en dämpning på \qty{2,5}{\decibel} (0,56~gånger).
 Referensvärdet för \qty{144}{\mega\hertz} är \qty{28}{\volt\per\metre}.
-
+På vilket avstånd från antennen når man referensvärdet?
+\tcblower
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 1000 \cdot 1 \cdot 0,5 = \qty{500}{\watt}\]
 \[k_{mod} = \textit{modulationsfaktor}\]
@@ -507,18 +504,17 @@ Referensvärdet för \qty{144}{\mega\hertz} är \qty{28}{\volt\per\metre}.
 För att följa de allmänna råden bör allmänheten inte kunna vistas i huvudloben
 framför antennen på ett avstånd mindre än \qty{19}{\metre} då sändning utförs
 enligt exemplet.
+\end{tcolorbox}
 
-\subsubsection{Exempel 3:}
-
-På vilket avstånd från antennen når man referensvärdet?
-
+\begin{tcolorbox}[title=Exempel 3]
 En dipolantenn för \qty{3,75}{\mega\hertz} har jämfört med en isotrop antenn
 förstärkningen 2,15\,dBi (cirka 1,6 gånger).
 Max uteffekt är \qty{100}{\watt} och trafiksättet är SSB med normala TX/RX
 intervaller.
 Den valda matarledningen har en dämpning på \qty{0,5}{\decibel} (0,89 gånger).
 Referensvärdet för \qty{3,75}{\mega\hertz} är \qty{45}{\volt\per\metre}.
-
+På vilket avstånd från antennen når man referensvärdet?
+\tcblower
 \[P_{medel} = P_{pep} \cdot k_{mod} \cdot k_{if}
 = 100 \cdot 0,5 \cdot 0,5 = \qty{25}{\watt}\]
 \[k_{mod} = modulationsfaktor\]
@@ -534,6 +530,7 @@ kunna utvärdera exponeringen.
 
 För att följa de allmänna råden bör människor inte ha tillträde till nån del av
 antennen närmare än \qty{0,74}{\metre} då sändning utförs.
+\end{tcolorbox}
 
 \section{Egenkontroll}
 \index{EMF!egenkontroll}
