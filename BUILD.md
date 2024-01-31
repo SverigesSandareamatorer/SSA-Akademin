@@ -88,7 +88,7 @@ installeras.
 
 **Linux/Debian**
 
-<kbd>sudo apt-get update</kbd>
+<kbd>sudo apt update</kbd>
 
-<kbd>sudo apt-get install texlive texlive-lang-european texlive-science
-            texlive-fonts-recommended texlive-fonts-extra latexmk</kbd>
+<kbd>sudo apt install texlive texlive-extra-utils texlive-lang-european
+	texlive-science texlive-fonts-recommended texlive-fonts-extra latexmk</kbd>
