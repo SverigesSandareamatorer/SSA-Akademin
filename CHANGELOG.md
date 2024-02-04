@@ -17,6 +17,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flytta in bilaga Prefixomvandlingstabell i bilaga Måttenheter.
 - Nytt format för engelska förkortningar så dubbelparentes och kursiverade parenteser undviks.
 - Ersatt Ursigram med Vågutbredningsprognoser.
+- Flyttat litteraturförteckningen till mellan kapitel och bilagor.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
