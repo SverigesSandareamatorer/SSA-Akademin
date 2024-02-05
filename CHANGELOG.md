@@ -6,7 +6,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 
 ## [Osläppt] – 2024
 ### Tillagt
--
+- Ny figur för schemasymbolen lysdiod.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel 1 Ellära.
@@ -17,6 +17,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flytta in bilaga Prefixomvandlingstabell i bilaga Måttenheter.
 - Nytt format för engelska förkortningar så dubbelparentes och kursiverade parenteser undviks.
 - Ersatt Ursigram med Vågutbredningsprognoser.
+- Flyttat skrivningen om hembyggd radiosändare till avsnittet om EMC.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
