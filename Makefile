@@ -59,13 +59,13 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
-	koncept/appendix-litteratur.tex koncept/appendix-matematik.tex \
+	koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex \
 	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
 	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
-	koncept/matte.tex koncept.bib \
+	koncept/matte.tex koncept/litteratur.tex koncept.bib \
 	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \

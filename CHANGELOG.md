@@ -17,11 +17,13 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flytta in bilaga Prefixomvandlingstabell i bilaga Måttenheter.
 - Nytt format för engelska förkortningar så dubbelparentes och kursiverade parenteser undviks.
 - Ersatt Ursigram med Vågutbredningsprognoser.
+- Flyttat litteraturförteckningen till mellan kapitel och bilagor.
 - Flyttat skrivningen om hembyggd radiosändare till avsnittet om EMC.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
 - Litteraturlistan följer praxis bättre vad gäller format.
+- Två utspridda delar om DSP sammanslagna.
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
