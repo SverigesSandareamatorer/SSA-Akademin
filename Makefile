@@ -64,7 +64,7 @@ KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
 	koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
-KONCEPT_CH15_FILES = koncept/chapter15-1.tex
+KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/chapter15-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
