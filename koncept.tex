@@ -227,9 +227,11 @@
 % specifications.
 \usepackage{array}
 
-% Används till ramen runt räkneexempel.
+% Används till ramen runt räkneexempel och historiebeskrivningar.
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
+\newtcolorbox{exempelbox}{title=Exempel}
+\newtcolorbox{historiabox}{title=Historia}
 
 % (Beskrivning saknas.)
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
