@@ -14,7 +14,8 @@ all:	koncept.pdf koncept.epub
 
 .PHONY: all koncept.pdf koncept.epub clean help
 
-KONCEPT_CH01_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
+KONCEPT_CH01_FILES = koncept/ellaera.tex \
+	koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-8.tex \
