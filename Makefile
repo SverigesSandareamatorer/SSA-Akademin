@@ -14,47 +14,59 @@ all:	koncept.pdf koncept.epub
 
 .PHONY: all koncept.pdf koncept.epub clean help
 
-KONCEPT_CH01_FILES = koncept/chapter1-1.tex koncept/chapter1-2.tex \
+KONCEPT_CH01_FILES = koncept/ellaera.tex \
+	koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-8.tex \
 	koncept/chapter1-9.tex
-KONCEPT_CH02_FILES = koncept/chapter2-1.tex koncept/chapter2-2.tex \
+KONCEPT_CH02_FILES = koncept/komponenter.tex \
+	koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
-KONCEPT_CH03_FILES = koncept/chapter3-1.tex koncept/chapter3-2.tex \
+KONCEPT_CH03_FILES = koncept/kretsar.tex \
+	koncept/chapter3-1.tex koncept/chapter3-2.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
-KONCEPT_CH04_FILES = koncept/chapter4-1.tex
-KONCEPT_CH05_FILES = koncept/chapter5-1.tex koncept/chapter5-2.tex \
+KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
+KONCEPT_CH05_FILES = koncept/mottagare.tex \
+	koncept/chapter5-2.tex \
 	koncept/chapter5-3.tex koncept/chapter5-4.tex \
 	koncept/chapter5-5.tex koncept/chapter5-6.tex \
 	koncept/chapter5-7.tex koncept/chapter5-8.tex \
 	koncept/chapter5-9.tex
-KONCEPT_CH06_FILES = koncept/chapter6-1.tex koncept/chapter6-2.tex
-KONCEPT_CH07_FILES = koncept/chapter7-1.tex koncept/chapter7-2.tex \
+KONCEPT_CH06_FILES = koncept/saendare.tex \
+	koncept/chapter6-1.tex koncept/chapter6-2.tex
+KONCEPT_CH07_FILES = koncept/antennsystem.tex \
+	koncept/chapter7-1.tex koncept/chapter7-2.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
 	koncept/chapter7-5.tex koncept/chapter7-6.tex
-KONCEPT_CH08_FILES = koncept/chapter8-1.tex koncept/chapter8-2.tex \
+KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
+	koncept/chapter8-1.tex koncept/chapter8-2.tex \
 	koncept/chapter8-3.tex koncept/chapter8-4.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
-KONCEPT_CH09_FILES = koncept/chapter9-1.tex koncept/chapter9-2.tex
-KONCEPT_CH10_FILES = koncept/chapter10-1.tex koncept/chapter10-2.tex \
+KONCEPT_CH09_FILES = koncept/maetteknik.tex \
+	koncept/chapter9-1.tex koncept/chapter9-2.tex
+KONCEPT_CH10_FILES = koncept/emc.tex \
+	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
-KONCEPT_CH11_FILES = koncept/chapter11-1.tex
-KONCEPT_CH12_FILES = koncept/chapter12-1.tex koncept/chapter12-2.tex \
+KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex
+KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
+	koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/chapter12-3.tex koncept/chapter12-4.tex
-KONCEPT_CH13_FILES = koncept/chapter13-1.tex koncept/chapter13-2.tex \
+KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
+	koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
 	koncept/chapter13-5.tex koncept/chapter13-6.tex
-KONCEPT_CH14_FILES = koncept/chapter14-1.tex koncept/chapter14-2.tex \
+KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
+	koncept/chapter14-1.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
-KONCEPT_CH15_FILES = koncept/chapter15-1.tex
+KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/chapter15-1.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
