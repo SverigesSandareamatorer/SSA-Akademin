@@ -318,6 +318,17 @@
   \end{figure}
 }
 
+% test om det går att få en figur längst ner i spalt
+\newcommand{\smallbotfigtwo}[4][0.4]{
+	\begin{figure}[bht]
+		\centering
+		\includegraphics[width=#1\textwidth]{#2}
+		\caption{#3}
+		\label{#4}
+		\vspace{-10pt}
+	\end{figure}
+}
+
 \newcommand{\smallfigpad}[4][0.4]{
   \begin{figure}[t]
     \begin{center}
