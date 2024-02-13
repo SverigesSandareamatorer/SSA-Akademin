@@ -70,9 +70,6 @@
 \usepackage{framed}
 
 % (Beskrivning saknas.)
-\usepackage[fulladjust]{marginnote}
-
-% (Beskrivning saknas.)
 \usepackage{color}
 
 % (Beskrivning saknas.)
@@ -107,7 +104,7 @@
 \usepackage{siunitx}
 \sisetup{
 	output-decimal-marker = {,},
-	output-product = \cdot,
+	product-symbol = \cdot,
 	retain-explicit-plus = true,
 	product-units = single,
 	per-mode = symbol,
@@ -138,27 +135,6 @@
 	cuteinductors,
 	smartlabels
 ]{circuitikz}
-
-% (Beskrivning saknas.)
-\usepackage[framemethod=TikZ]{mdframed}
-
-% (Beskrivning saknas.)
-\mdfdefinestyle{FactBox}{
-	linecolor=blue,
-	outerlinewidth=2pt,
-	roundcorner=20pt,
-	innertopmargin=\baselineskip,
-	innerbottommargin=\baselineskip,
-	innerrightmargin=20pt,
-	innerleftmargin=20pt,
-	backgroundcolor=gray!50!white}
-\newcommand{\infobox}[1]{
-\begin{figure}%[r][0.5\textwidth]
-  \begin{mdframed}[style=FactBox]
-#1
-  \end{mdframed}
-\end{figure}
-}
 
 % Skapa tabellceller som spänner över flera rader.
 \usepackage{multirow}

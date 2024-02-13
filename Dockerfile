@@ -10,10 +10,10 @@ RUN apt-get --quiet update && \
 	texlive-science \
 	texlive-fonts-recommended \
 	texlive-fonts-extra \
-	latexmk \
-	tidy \
-	chktex \
-	octave \
-	gnuplot \
 	build-essential \
+	chktex \
+	gnuplot \
 	language-pack-sv
+	latexmk \
+	octave \
+	tidy \

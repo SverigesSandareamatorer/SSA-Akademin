@@ -65,7 +65,7 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
 KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
-	koncept/matte.tex koncept/litteratur.tex koncept.bib \
+	koncept/litteratur.tex koncept.bib \
 	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
