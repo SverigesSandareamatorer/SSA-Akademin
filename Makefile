@@ -32,7 +32,7 @@ KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
-KONCEPT_CH04_FILES = koncept/chapter4-1.tex
+KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/chapter5-2.tex \
 	koncept/chapter5-3.tex koncept/chapter5-4.tex \
