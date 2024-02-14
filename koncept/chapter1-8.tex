@@ -1137,26 +1137,29 @@ i kabel och fiber.
 
 Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
 än vad den råa kanalen medger är det lämpligt att identifiera när det har
-blivit bitfel. Detta kan utföras på många sätt, men ett sätt är att räkna fram
-checksummor som skickas med datat. Det kräver visserligen en del av
-informationsöverföringskapaciteten, men tjänsten det medger är att försäkra sig
-om att informationen är rimligt korrekt.
+blivit bitfel.
+Detta kan utföras på många sätt, men ett sätt är att räkna fram checksummor som
+skickas med datat.
+Det kräver visserligen en del av informationsöverföringskapaciteten, men
+tjänsten det medger är att försäkra sig om att informationen är rimligt korrekt.
 
 En enkel form av checksumma är paritet, där bitarna i ett ord har summerats ihop
-binärt (med XOR) för att bilda en checksumma. I mottagaränden görs samma
-kombination och sedan jämförs det med paritetsbiten, och om de överensstämmer så
-har inget bitfel upptäckts. Denna enkla metod har en svaghet i att ett jämnt
-antal bitfel kommer att kompensera varandra, varvid det döljer bitfel från
-upptäckt.
+binärt (med XOR) för att bilda en checksumma.
+I mottagaränden görs samma kombination och sedan jämförs det med paritetsbiten,
+och om de överensstämmer så har inget bitfel upptäckts.
+Denna enkla metod har en svaghet i att ett jämnt antal bitfel kommer att
+kompensera varandra, varvid det döljer bitfel från upptäckt.
 Det är med andra ord inte en särdeles stark checksumma.
 Paritet används till exempel i seriekommunikation så som RS-232.
 
 Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
-typer av fel. För lite större meddelanden är det vanligt att summera bytes
-till en checksumma antingen additivt eller med XOR. För större meddelanden
-används en lite mer intrikat metod som heter Cyclic Redundancy Check (CRC)
-där man återmatar överskjutande del på checksumman till sig själv och får en
-starkare kod den vägen. CRC används till exempel i Ethernet.
+typer av fel.
+För lite större meddelanden är det vanligt att summera bytes till en checksumma
+antingen additivt eller med XOR.
+För större meddelanden används en lite mer intrikat metod som heter Cyclic
+Redundancy Check (CRC) där man återmatar överskjutande del på checksumman till
+sig själv och får en starkare kod den vägen.
+CRC används till exempel i Ethernet.
 
 \subsubsection{Omsändning}
 \harecsection{\harec{a}{1.8.10b}{1.8.10b}}
@@ -1223,9 +1226,9 @@ lämplig serieport, till exempel via dess USB-anslutning.
 
 \paragraph{Historia}
 
-Ett av de första digitala trafiksätten som användes av radioamatörer var \emph{RTTY},
-uttytt ''RadioTeleTYpe'', där man använde sig av så kallade teleprintrar,
-automatiska skrivmaskiner som skrev ut text.
+Ett av de första digitala trafiksätten som användes av radioamatörer var
+\emph{RTTY}, uttytt ''RadioTeleTYpe'', där man använde sig av så kallade
+teleprintrar, automatiska skrivmaskiner som skrev ut text.
 
 Emile Baudot konstruerade år 1874 ett system baserat på fem bitar,
 som fortfarande används idag.
