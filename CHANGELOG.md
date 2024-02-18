@@ -7,6 +7,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ## [Osläppt] – 2024
 ### Tillagt
 - Ny figur för schemasymbolen lysdiod.
+- Ny introduktion till kapitlet Ellära.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel 1 Ellära.
