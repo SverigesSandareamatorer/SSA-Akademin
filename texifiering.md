@@ -17,21 +17,20 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     eftersom det blir lättare att matcha mot orignalet. Sen tar vi bara
     bort det.
 
-4.  För bilder har OCRen försökt tolka bilderna. När vi processar texten tar
+4.  För bilder har OCR:en försökt tolka bilderna. När vi processar texten tar
     vi bort det line-noise det innebär och behåller bara bildreferensen och
     texten. I själva texten finns även en referens till vilken bild som ska
     vara där, den behåller vi också tills vidare, sen ska den döljas.
 
 5.  Själva texten bryter vi om så den blir läsbar. Vi håller oss inom
-    80-tecken per rad.
+    80&nbsp;tecken per rad.
 
     Text ska övervägande brytas så att nya meningar bryts om så de börjar
-    på ny rad, detta ska ses som ett obligatorium för ny text.
-    Ett undantag från denna huvudregel är när två korta meningar får plats på
-    samma rad.
-
+    på ny rad.
     Denna regel handlar om att förändringar och uppdateringar i meningar ska
     ge rimligt läsbara diffar.
+    Ett undantag från denna huvudregel är när två korta meningar får plats på
+    samma rad.
 
 6.  För att förenkla markerar vi kapitlen med `\chapter{}`.
 
@@ -182,9 +181,11 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     som gett namn till enheterna.
 
 24. Referenser mellan olika delar görs genom att sätta en `\label{}` och sedan
-    referera till den. Använd de vedertagna prefixen! Det uppmuntras att skapa
-	sådana länkar så man fort kan hitta relevant kompelterande material direkt
-	istället för att behöva söka via index. I PDF:en ger det klickbara länkar.
+    referera till den.
+    Använd inte bokstäverna ÅÄÖ i label-namnet! Använd de vedertagna prefixen!
+    Det uppmuntras att skapa sådana länkar så man fort kan hitta relevant
+    kompletterande material direkt istället för att behöva söka via sakregistret.
+    I PDF:en ger det klickbara länkar.
 
     ```latex
 	\section{Kapacitans}

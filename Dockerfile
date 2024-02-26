@@ -13,7 +13,7 @@ RUN apt-get --quiet update && \
 	build-essential \
 	chktex \
 	gnuplot \
-	language-pack-sv
+	language-pack-sv \
 	latexmk \
 	octave \
-	tidy \
+	tidy
