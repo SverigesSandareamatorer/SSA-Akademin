@@ -76,7 +76,7 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-mattenheter.tex \
 	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
 	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
-KONCEPT_OTHER_FILES = koncept/foreword.tex koncept/introduction.tex \
+KONCEPT_OTHER_FILES = koncept/foerord.tex koncept/inledning.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/litteratur.tex koncept.bib \
 	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
