@@ -44,8 +44,8 @@ själv. Instruktioner finns i filen [BUILD.md](BUILD.md).
 
 ## Serverbyggd PDF
 
-**Hämta det senaste bygget:**
-**[Lista med byggen](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions?query=branch%3Amaster+)**
+Lista med de senaste byggena finns i
+[GitHub Actions](https://github.com/SverigesSandareamatorer/SSA-Akademin/actions?query=branch%3Amaster+).
 
 
 # Bidra till projektet
