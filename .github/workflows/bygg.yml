@@ -124,6 +124,8 @@ jobs:
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
           echo $GITHUB_REF_NAME > branch.tmp
+      - name: 'Lägg på patchar för EPUB'
+        run: git apply epub-fixar.patch
       - name: 'Bygg koncept.epub'
         continue-on-error: true
         run: make koncept.epub
