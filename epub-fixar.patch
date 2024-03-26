@@ -1,0 +1,26 @@
+diff --git a/koncept/appendix-rapportkoder.tex b/koncept/appendix-rapportkoder.tex
+index 943ad8b..bee0430 100644
+--- a/koncept/appendix-rapportkoder.tex
++++ b/koncept/appendix-rapportkoder.tex
+@@ -144,7 +144,7 @@ Numera används enbart SINPO-koden.
+ Namnet på koden kommer av begynnelsebokstäverna i orden
+ 
+ %% k7per: Why style=nextline, hard to read I think.
+-\begin{description}[style=nextline]
++\begin{description}
+ \item[Signal strength]
+   (signalstyrka),
+ \item[Interference]
+diff --git a/koncept/chapter12-2.tex b/koncept/chapter12-2.tex
+index 58bd2ea..51087f1 100644
+--- a/koncept/chapter12-2.tex
++++ b/koncept/chapter12-2.tex
+@@ -159,7 +159,7 @@ i fasta installationer.}
+ %%  anlitas vid ingrepp i fasta elinstallationer.}
+ 
+ \subsection{Liten terminologi vid elinstallationer}
+-\begin{description}[style=nextline]
++\begin{description}
+ \item[Gruppcentral] Den säkringscentral som följer efter elmätaren,
+   till exempel i villor och lägenheter.
+ 
