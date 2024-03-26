@@ -250,17 +250,18 @@ lågpassfilter, det så kallade loop-filtret.
 Sändningsfrekvensen regleras alltså med styrspänningen.
 Med samma spänning går det också att frekvensmodulera oscillatorn.
 Det görs så, att LF-signalen från modulatorn överlagras på styrspänningen genom
-additiv blandning (se kapitel~\ssaref{blandare}) via en kondensator.
+additiv blandning (se avsnitt~\ssaref{blandare}) via en kondensator.
 De variationer i reglerspänningen som kommer av talet är snabbare än
 loopfiltrets tidskonstant.
 Variationerna av talet hinner därför inte uppfattas som frekvensavvikelser och
 blir därför inte utreglerade.
-Drosseln efter loop-filtret förhindrar att moduleringssignalen
-kortsluts av filtrets kondensator.
+Drosseln efter loop-filtret förhindrar att moduleringssignalen kortsluts av
+filtrets kondensator.
 
-Frekvensinställningen, det vill säga programmeringen av delaren, kan utföras
-på flera sätt. Exempel är tumhjuls-omkopplare,
-logikkretsar i kombination med en knappsats och så vida\-re.
+Frekvensinställningen, det vill säga programmeringen av delaren, kan utföras på
+flera sätt.
+Exempel är tumhjuls-omkopplare, logikkretsar i kombination med en knappsats och
+så vidare.
 
 \subsubsection{PLL-styrd sändare för kortvåg}
 
@@ -288,11 +289,11 @@ täckas av en enda VCO.
 Vid en lägre 2:a MF-frekvens skulle det behövas flera omkopplingsbara
 VCO för att täcka hela frekvensområdet
 
-\begin{tcolorbox}[title=Exempel]
+\begin{exempelbox}
 Vid en MF på \qty{9}{\mega\hertz} behöver VCO-funktionen täcka
 \SIrange{9,5}{39}{\mega\hertz}, det vill säga 1:4,11, vilket är för mycket för
 en VCO.
-\end{tcolorbox}
+\end{exempelbox}
 
 SSB-signalen efter 2:a blandaren är inte lämplig att använda i
 regleringsslingan i PLL.
@@ -331,7 +332,7 @@ En sådan sändare kan relativt enkelt styras digitalt.
 
 En principiell nackdel med alla sändare med PLL-oscillator är fasbruset.
 En annan nackdel är den stora komponentmängden
-(se kapitel~\ssaref{superheterojämförelse}).
+(se avsnitt~\ssaref{superheterojämförelse}).
 
 \section{Egenskaper i sändare}
 \harecsection{\harec{a}{5.4}{5.4}}
@@ -348,8 +349,8 @@ för att inte störa grannkanaler eller på andra band.
 grundläggande egenskap, eftersom en sändare som inte är frekvensstabil nog
 kommer bli svår för en mottagare att följa och uppfatta.
 Dessutom riskerar man att störa grannkanaler.
-Mindre avdrift i frekvens kan tolereras, men helst ska den uppfattas som
-helt stabil.
+Mindre avdrift i frekvens kan tolereras, men helst ska den uppfattas som helt
+stabil.
 
 I gamla tider så var resonatorerna LC-kretsar, och både mekanik och elektronik
 kunde driva betänkligt.

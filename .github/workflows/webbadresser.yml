@@ -16,4 +16,4 @@ jobs:
       - uses: lycheeverse/lychee-action@v1.9.3
         with:
           fail: true
-          args: "--max-concurrency 3 --retry-wait-time 35 --no-progress --exclude-mail './**/*.md' './**/*.tex' './**/*.bib'"
+          args: "--max-concurrency 3 --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
