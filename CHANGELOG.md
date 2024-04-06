@@ -27,6 +27,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Litteraturlistan följer praxis bättre vad gäller format.
 - Två utspridda delar om DSP sammanslagna.
 - Delar av inledningen utflyttade från förordet.
+- Bytt ut "vetenskaplig notation" till "grundpotensform".
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
