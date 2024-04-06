@@ -8,6 +8,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 ### Tillagt
 - Ny figur för schemasymbolen lysdiod.
 - Ny introduktion till kapitlet Ellära.
+- Nya QR-koder för att lämna återkoppling på boken.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel 1 Ellära.
