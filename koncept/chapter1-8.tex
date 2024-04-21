@@ -109,7 +109,7 @@ onödigt frekvensutrymme.
 \index{sändningsslag}
 \label{modulation_beskrivningskod}
 
-Vid 1979 års radioförvaltningskonferens (WARC 79) i Geneve reviderades det
+Vid 1979~års radioförvaltningskonferens (WARC~79) i Geneve reviderades det
 internationella radioreglementet (RR), som i huvudsak trädde i kraft 1982.
 Däri ingår bland annat ett nytt system för klassindelning och beteckning av
 sätten att utsända information över radio med mera.
@@ -299,7 +299,6 @@ alstras interferenstoner i mottagarna.
 \index{CW}
 \label{modulation_cw}
 
-
 Bild~\ssaref{fig:BildII1-26} visar amplitudmodulation med morsetecken.
 Man kan överföra meddelanden med morsetelegrafi på olika sätt.
 Det enklaste sättet är att koppla in och ur sändarens bärvåg i takt med
@@ -377,7 +376,6 @@ Den signal som sänds ut innehåller därför endast ett sidband (Single Side Ba
 \mediumtopfig{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
 
 \paragraph{Exempel}
-
 
 Bild~\ssaref{fig:BildII1-28} illustrerar sidbandsval vid SSB-modulering.
 Ett SSB-filter har ett passband av \SIrange{9000,3}{9003}{\kilo\hertz}.
@@ -840,9 +838,9 @@ teckenändringarna på signalen.
 \index{Quadrature (Q)}
 \index{I/Q modulation}
 
-Fasskiftmodulation kan även göras med flera nivåer. När fyra olika faslägen
-används kallas det för \emph{fyrnivå fasskiftmodulation} (eng.
-\emph{4-state Phase Shift Keying, 4-PSK}).
+Fasskiftmodulation kan även göras med flera nivåer.
+När fyra olika faslägen används kallas det för \emph{fyrnivå fasskiftmodulation}
+(eng. \emph{4-state Phase Shift Keying, 4-PSK}).
 
 Istället för 180~graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
 så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
@@ -871,7 +869,7 @@ Symbol & Vinkel & I & Q \\ \hline
 
 Amplituden är densamma för alla fyra symbolerna, men med olika vinkel.
 I likhet med 2-PSK/BPSK behöver man återvinna fasen och sedan kunna avgöra
-vad som är 0 grader, men givet att det görs i den övriga modulationen så
+vad som är 0~grader, men givet att det görs i den övriga modulationen så
 kan informationen avkodas korrekt.
 
 \subsubsection{Kvadratur-amplitudmodulation -- QAM}
@@ -1112,7 +1110,8 @@ gränsvärdet, det vill säga en bitfelssannolikhet på 33~\%.
 Ligger det inom 2 sigma har sannolikheten ökat till 97~\%, en
 bitfelssannolikhet på 3~\%, och vid 3 sigma är den 99,7~\% med en
 bitfelssannolikhet på ringa 0,3~\%, vilket ofta används för många
-ingenjörsapplikationer. Dock, för överföring av information har vi högre krav.
+ingenjörsapplikationer.
+Dock, för överföring av information har vi högre krav.
 För en bitfelssannolikhet på \(10^{-12}\), ofta benämnt BER på 1E-12, behövs
 det 14~sigma bort till gränsen, dvs. brusmängden får max vara 1/14 av
 kvantiseringsgränsen.
@@ -1212,8 +1211,7 @@ lämplig serieport, till exempel via dess USB-anslutning.
 \index{Audio Frequency Shift Keying (AFSK)}
 \index{AFSK}
 
-\paragraph{Historia}
-
+\begin{historiabox}
 Ett av de första digitala trafiksätten som användes av radioamatörer var
 \emph{RTTY}, uttytt ''RadioTeleTYpe'', där man använde sig av så kallade
 teleprintrar, automatiska skrivmaskiner som skrev ut text.
@@ -1232,8 +1230,7 @@ Amatörerna i USA körde med 45,45~baud, vilket motsvarar 300 tecken per minut.
 De europeiska utrustningarna, bland annat framtagna av Siemens, arbetade med
 50~baud men gick att justera ner till 45,45~baud.
 45~baud är idag den vedertagna standarden över världen.
-
-\paragraph{Teknik}
+\end{historiabox}
 
 RTTY använder FSK-modulering.
 För att åstadkomma detta behöver man styra frekvensen så att den hoppar mellan
@@ -1278,7 +1275,7 @@ huvudsakligen över VHF och UHF förmedla GPS-position, väderdata, enkla
 meddelanden och annat.
 Den bygger på en teknik som heter \emph{AX.25}, som är en amatörradiospecifik
 version av telekomstandarden X.25.
-AX.25 moduleras över 1200 baud Bell 202 AFSK teknik på vanlig talkanal.
+AX.25 moduleras över 1200~baud Bell~202 AFSK teknik på vanlig talkanal.
 Ofta används en Terminal Node Controller (TNC) som gränssnitt mellan dator och
 radio.
 
@@ -1286,14 +1283,12 @@ radio.
 \index{PSK31}
 \label{modulation_psk31}
 
-\paragraph{Historia}
-
+\begin{historiabox}
 Namnet beskriver modulationstypen och överföringshastigheten i baud.
 Det första programmet utvecklades specifikt för windowsbaserade datorer med
 ljudkort av den engelska radioamatören Peter Martinez, G3PLX, och
 introducerades i amatörradiovärlden 1998.
-
-\paragraph{Teknik}
+\end{historiabox}
 
 Modulationen som används i PSK31 utvecklades från en idé av den polske
 radioamatören Pawel Jalocha, SP9VRC, som hade tagit fram en mjukvara
@@ -1309,8 +1304,7 @@ skrivhastighet hos den gemene amatören.
 \subsubsection{WSPR}
 \index{WSPR}
 
-\paragraph{Historia}
-
+\begin{historiabox}
 WSPR släpptes i sin första version 2008.
 Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett öppen
 källkodsprogram och utvecklas av ett litet team.
@@ -1318,11 +1312,9 @@ Joe Taylor fick sin utbildning i astronomi vid Harvard University.
 Han var sedan verksam inom området astrofysik vid Princeton University,
 varifrån han pensionerades 2006.
 Joe Taylor tilldelades Nobelpriset i fysik år~1993.
+\end{historiabox}
 
 Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
-
-\paragraph{Teknik}
-
 WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''.
 WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en
 så kallad beacon.
@@ -1355,14 +1347,12 @@ kommunikation med svaga signaler.
 De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte
 upptar större bandbredd än några hertz.
 
-\paragraph{Historia}
-
+\begin{historiabox}
 WSJT presenterades för amatörradiovärlden år~2001 och har undergått ett flertal
 revisioner.
 Olika sändningsslag har under åren lagts till och tagits bort.
 Sedan 2005 har programmet öppen källkod och utvecklas av ett litet team.
-
-\paragraph{Teknik}
+\end{historiabox}
 
 WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
 varianter av i huvudsak FSK-modulering används.
@@ -1382,7 +1372,6 @@ FSK-signal med nio toner.
 JT9 använder sig av mindre än \qty{16}{\hertz} bandbredd.
 
 FT8 utvecklades och släpptes år~2017 och använder sig av en 8FSK-signal.
-
 FT8 är att föredra vid så kallat multi-hop via E-skikt, där signalerna utsätts
 för fädning och där öppningarna mot andra stationer är korta så att man behöver
 slutföra kommunikationen inom en kort tid.
@@ -1393,13 +1382,11 @@ slutföra kommunikationen inom en kort tid.
 FreeDV skiljer sig mot de sändningsslag som nämnts ovan genom att detta är tänkt
 för digitalt tal på kortvåg.
 
-\paragraph{Historia}
-
+\begin{historiabox}
 FreeDV skapades av en grupp radioamatörer från olika länder som arbetade
 med kodning, utformning, användargränssnitt och testning.
 FreeDV släpptes år~2015.
-
-\paragraph{Teknik}
+\end{historiabox}
 
 FreeDV är tänkt att användas på kortvåg med SSB-modulerade radiostationer,
 men kan också användas med AM- eller FM-modulering.
