@@ -1,0 +1,188 @@
+\section{Digital modulation}
+\harecsection{\harec{a}{1.8.8}{1.8.8}}
+\index{digital modulation}
+\label{modulation_digital}
+
+Utöver de klassiska analoga modulationsmetoderna finns ett antal digitala
+modulationsformer.
+De är anpassade för transmission av binära data.
+I viss mån kan CW ses som digital modulation där 0 moduleras utan bärvåg och 1
+moduleras med bärvåg.
+Det finns dock flera andra modulationsmetoder som FSK, 2-PSK/BPSK, 4-PSK och
+QAM vilka presenteras i följande delavsnitt.
+
+\subsection{Frekvensskiftsmodulation -- FSK}
+\harecsection{\harec{a}{1.8.8a}{1.8.8a}}
+\index{frekvensskiftsmodulation}
+\index{Frequency Shift Keying (FSK)}
+\index{FSK}
+\index{frekvensmodulation}
+\index{GFSK}
+\index{Gaussian Frequency Shift Keying (GFSK)}
+\index{Gaussiskt filter}
+\index{C4FM}
+\index{JT65}
+\index{JT9}
+
+\emph{Frekvensskiftsmodulation} (eng. \emph{Frequency Shift Keying, FSK})
+skiljer sig från CW-modulationen genom att den ändrar frekvensen, dvs. är en
+variant av frekvensmodulation.
+I den enklaste formen, binär FSK växlar man mellan två frekvenser, där en
+frekvens får representera 0 och den andra får representera 1.
+Denna metod har används för modem på telefonförbindelser, såsom Bell 103.
+
+Eftersom varje växling mellan frekvenser ger avbrott i bägge signalerna, likt
+nycklingen i CW, så kommer de att skapa sidband.
+Av det skälet filtrerar man gärna signalen, och använder man ett Gaussiskt
+filter får man \emph{Gaussian Frequency Shift Keying (GFSK)} som används av till
+exempel GSM-telefoni.
+
+Man kan använda fler än två frekvenser, till exempel används fyra frekvenser i
+Continuous 4 level FM (C4FM), i Phase 1 radios, i Project 25 samt Fusion.
+
+Frekvensskift används även för att sända långsamma meddelanden där JT65
+använder 65 frekvenser som den skiftar mellan, medan JT9 använder 9~frekvenser.
+
+\subsection{Binär fasskiftsmodulation -- 2-PSK \& BPSK}
+\harecsection{\harec{a}{1.8.8b}{1.8.8b}}
+\index{binär fasskift modulation}
+\index{fasskift modulation!binär}
+\index{2-PSK}
+\index{fasskift modulation!2-PSK}
+\index{BPSK}
+\index{fasskift modulation!BPSK}
+\index{Costas loop}
+
+Istället för att modulera frekvensen kan man modulera polariteten eller fasen.
+En sådan modulationsform är \emph{binär fasskift modulation} (eng.
+\emph{Binary Phase Shift Keying (BPSK)} eller \emph{2-state Phase Shift Keying
+(2-PSK)}.
+Förenklat kan man säga att bärvågen moduleras med \num{+1} eller \num{-1}, ofta
+med \num{+1} representerande \num{0} och \num{-1} representerande \num{1}.
+
+En nackdel med BPSK är att om polariteten blir förväxlad kommer meddelandet att
+bli inverterat, dvs. 0 blir 1 och 1 blir 0.
+BPSK behöver därför också kompletteras med annan digital modulation för att
+hantera polariteten, något som i allmänhet kan åstadkommas enkelt.
+
+BPSK används av satellitnavigationssystem som GPS, GLONASS och Galileo.
+För att återvinna BPSK behöver man ofta en speciell variant av PLL-loop känd
+som \emph{Costas loop}, eftersom en normal PLL-loop inte klarar av
+teckenändringarna på signalen.
+
+\subsection{Fyrnivå fasskiftmodulation -- 4-PSK}
+\harecsection{\harec{a}{1.8.8c}{1.8.8c}}
+\index{4-PSK}
+\index{fasskift modulation!4-PSK}
+\index{kvadratur-modulering}
+\index{quadrature modulation}
+\index{In phase (I)}
+\index{Quadrature (Q)}
+\index{I/Q modulation}
+
+Fasskiftmodulation kan även göras med flera nivåer.
+När fyra olika faslägen används kallas det för \emph{fyrnivå fasskiftmodulation}
+(eng. \emph{4-state Phase Shift Keying, 4-PSK}).
+
+Istället för 180~graders fasskift (0 och 180 grader) som används vid 2-PSK/BPSK
+så använder man 360/4 det vill säga 90 graders fasskift mellan symbolerna.
+Ett effektivt sätt att avkoda det är att göra \emph{kvadraturmodulering} (eng.
+\emph{quadrature modulation}) där man modulerar en signal till två komponenter,
+i \emph{fas} (eng. \emph{In Phase, I}) och förskjuten 90 grader \emph{kvadratur}
+(eng. \emph{Quadrature, Q}), ofta kallat I/Q modulering.
+
+De fyra faslägena kan nu enkelt förklaras som amplituder i de olika faslägena
+som anges av tabell~\ssaref{tab:4-PSK}.
+
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{|r|r|r|r|}
+\hline
+Symbol & Vinkel & I & Q \\ \hline
+0 &   0 & +1       &  0 \\
+1 &  90 &  0       & +1 \\
+2 & 180 & \num{-1} &  0 \\
+3 & 270 &  0       & \num{-1} \\ \hline
+\end{tabular}
+\end{center}
+\caption{4-PSK i kvadratur-modulering}
+\label{tab:4-PSK}
+\end{table}
+
+Amplituden är densamma för alla fyra symbolerna, men med olika vinkel.
+I likhet med 2-PSK/BPSK behöver man återvinna fasen och sedan kunna avgöra
+vad som är 0~grader, men givet att det görs i den övriga modulationen så
+kan informationen avkodas korrekt.
+
+\subsection{Kvadratur-amplitudmodulation -- QAM}
+\harecsection{\harec{a}{1.8.8d}{1.8.8d}}
+\label{QAM}
+\index{kvadratur-amplitudmodulation}
+\index{QAM}
+\index{16QAM}
+\index{DAB}
+\index{DVB-T}
+\index{DVB-T2}
+\index{Wi-Fi}
+
+Medan fasskiftning kan göras för fler fassteg har man funnit att det inte är
+lika enkelt för högre upplösningar.
+Redan vid åtta steg behöver man ha I- och Q-värden som är \(\sqrt{1/2}\), vilket
+i och för sig går att approximera.
+En smidigare modulationsform är istället att låta även amplituden variera, och
+genom att låta några bitar modulera I och några bitar modulera Q kan man enkelt
+få ett symbolmönster som är effektivt att implementera.
+Denna modulationsform kallar man \emph{kvadratur-amplitudmodulation}
+(eng. \emph{Quadrature Amplitude Modulation, QAM}).
+
+Ofta benämner man olika varianter med antalet olika positioner, så att 16QAM
+har 16 olika lägen i fas och amplitud tillsammans.
+Ett exempel på hur 16QAM kan moduleras finns i tabell~\ssaref{tab:16QAM}.
+
+\begin{table*}[ht]
+\begin{center}
+\begin{tabular}{|r|r|r|r|r|r|r|}
+\hline
+Symbol & Isym & Qsym & Amplitud      & Vinkel &  I &   Q \\ \hline
+     0 &    0 &    0 & \(3\sqrt{2}\) &    +45 & +3 &  +3 \\
+     1 &    0 &    1 & \(\sqrt{10}\) &    +72 & +3 &  +1 \\
+     2 &    0 &    2 & \(\sqrt{10}\) &   +108 & +3 &  \num{-1} \\
+     3 &    0 &    3 & \(3\sqrt{2}\) &   +135 & +3 &  \num{-3} \\
+     4 &    1 &    0 & \(\sqrt{10}\) &    +18 & +1 &  +3 \\
+     5 &    1 &    1 &  \(\sqrt{2}\) &    +45 & +1 &  +1 \\
+     6 &    1 &    2 &  \(\sqrt{2}\) &   +135 & +1 &  \num{-1} \\
+     7 &    1 &    3 & \(\sqrt{10}\) &   +162 & +1 &  \num{-3} \\
+     8 &    2 &    0 & \(\sqrt{10}\) &   +342 & \num{-1} &  +3 \\
+     9 &    2 &    1 &  \(\sqrt{2}\) &   +315 & \num{-1} &  +1 \\
+    10 &    2 &    2 &  \(\sqrt{2}\) &   +225 & \num{-1} &  \num{-1} \\
+    11 &    2 &    3 & \(\sqrt{10}\) &   +198 & \num{-1} &  \num{-3} \\
+    12 &    3 &    0 & \(3\sqrt{2}\) &   +225 & \num{-3} &  +3 \\
+    13 &    3 &    1 & \(\sqrt{10}\) &   +252 & \num{-3} &  +1 \\
+    14 &    3 &    2 & \(\sqrt{10}\) &   +288 & \num{-3} &  \num{-1} \\
+    15 &    3 &    3 & \(3\sqrt{2}\) &   +315 & \num{-3} &  \num{-3} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Exempel på 16QAM i kvadraturmodulering}
+\label{tab:16QAM}
+\end{table*}
+
+Medan både amplituder och vinklar kan kännas udda, så är det enkelt att mappa
+bitarna över till I- och Q-amplituder och faslägen via Isym- och Qsym-delarna av
+symboler.
+
+QAM-modulering används av DAB, DVB-T, DVB-T2, IEEE~802.11 (Wi-Fi),
+mikrovågslänkar och många andra moderna system såsom EDGE
+(efterföljaren till GSM med högre datatakt), UMTS när man kör
+höghastighet (HSPA) liksom i LTE där man kör relativt långsamma
+symboler men i stället väldigt många parallellt fördelat över ett
+större frekvensband.
+I mobiltelefonisystem använder man bland annat 64QAM och 256QAM.
+
+Mikrovågslänkar använder upp till 2048QAM.
+En fördel med QAM-moduleringen är att det är enkelt att få samma avstånd mellan
+de olika symbolpositionerna, och därmed kan också modulationen anpassas till
+störningen.
+Detta nyttjas av många moderna modulationssystem så att QAM-modulationen
+anpassas utifrån mottagarens rapportering om störning.
+Denna dynamiska anpassning gör att kommunikationen kan upprätthållas även om
+kapaciteten tillåts variera.
