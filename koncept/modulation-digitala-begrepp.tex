@@ -1,0 +1,90 @@
+\section{Begrepp vid digital modulation}
+\harecsection{\harec{a}{1.8.9}{1.8.9}}
+\index{digital modulation}
+
+Digital modulation innebär också att signalerna som sänds har lite andra
+egenskaper än de analoga.
+Istället för varierande spänningsnivåer som för till exempel tal skickar vi
+diskreta fixa nivåer, ofta i form av bitar.
+Det är därför lämpligt att diskutera några grundläggande begrepp kring digital
+modulation.
+
+\subsection{Bit rate}
+\harecsection{\harec{a}{1.8.9a}{1.8.9a}}
+\index{bit}
+\index{byte}
+\index{informationsmängd}
+\index{informationsöverföringskapacitet}
+\index{bit rate}
+
+Informationen som vi skickar har vi kodat i bitar (eng. \emph{bit, b}),
+\emph{informationsmängden} vi har är därför ett visst antal bitar och takten på
+denna informationsmängd blir därmed \emph{informationsöverföringskapaciteten}
+(eng. \emph{bit rate}) i bitar per sekund.
+
+Ofta brukar vi referera till informationsmängden som mängden \emph{byte (B)}
+som till exempel att en fil är 2\,kB eller en bild är 1,25\,MB.
+Då en byte innehåller åtta bitar motsvarar det 16\,kb respektive 10\,Mb.
+I dagligt tal talar vi då om storleken på en fil.
+
+Överföringskapaciteten, eller i dagligt tal hastigheten, brukar vi ofta prata
+om i termer av \emph{bit rate} som 10\,Mb/s (ofta skrivet \emph{bps -- bits per
+second}), dvs. man klarar av att överföra upp till 10 miljoner bitar per sekund.
+
+Det är ofta som man talar om den råa överföringskapaciteten, medan den
+verkliga överföringskapaciteten för nyttotrafik är något lägre på grund av
+olika former av packningsformat och protokollbehov, så kallad \emph{overhead}.
+Man ska därför vara noga med att skilja dessa åt.
+
+\subsection{Symboltakt -- Baud rate}
+\harecsection{\harec{a}{1.8.9b}{1.8.9b}}
+\index{symbol}
+\index{symboltakt}
+\index{symbol rate}
+\index{Baud rate}
+\index{Baudot, Emile}
+\index{enheter!baud (Bd)}
+
+Som vi redan sett exempel på kan ibland bitar skickas en och en, eller
+ihopklumpade.
+Varje sådan ihopklumpning kallas \emph{symbol}, och en symbol kan bära en eller
+flera bitar, ibland inte ens ett jämnt antal.
+
+Om man kan artikulera något i två olika \emph{nivåer} (av amplitud, fas,
+frekvens eller kombination), så kan man representera en bit.
+Om man kan artikulera något i fyra olika nivåer, kan man representera två bitar.
+På samma sätt ger åtta nivåer support för tre bitar.
+Varje representation kallar man en symbol och varje symbol bär alltså en, två
+eller tre bitar information.
+Strikt räknat är det logaritmen med bas två (2-logaritm eller $\log_{2}$) av
+antalet nivåer som anger antalet bitar som en symbol kan bära.
+Tre nivåer brukar sägas kunna bära 1,5~bitar, vilket är en slarvig approximation
+men visar principen.
+
+Den takt varmed symboler överförs \emph{symboltakten} (eng. \emph{symbol rate}),
+benämns även \emph{Baud rate}, efter Emile Baudot, med enheten \emph{baud (Bd)}.
+Enheten baud (förkortat Bd) anger antalet symboler per sekund.
+Genom att multiplicera antalet symboler per sekund med antalet bitar per symbol
+fås överföringskapaciteten bitar per sekund.
+
+\subsection{Bandbredd}
+\harecsection{\harec{a}{1.8.9c}{1.8.9c}}
+\index{bandbredd}
+\index{Nyquist-Shannons samplingsteorem}
+
+Genom att justera antalet bitar per symbol kan man ändra antalet symboler
+per sekund utan att ändra överföringskapaciteten. En anledning till att man
+vill göra det är att bandbredden som används av en överföring är ungefär
+proportionerlig mot symboltakten, det vill säga hur många baud man överför.
+Detta påverkar hur stor del av radiospektrat man upptar, och därmed också hur
+nära en annan signal man kan ligga i spektrat utan att störa varandra, dvs.
+det påverkar frekvensplaneringen av bandet ifråga.
+
+Ofta används begreppet bandbredd synonymt med överföringskapaciteten, eftersom
+det finns en proportionell relation dem emellan, men bandbredden är inte den
+enda parametern som krävs, så i mer strikta sammanhang ska dessa begrepp
+hanteras som separata för att undvika missförstånd.
+
+Bandbredden för en digital ström är relaterad till nyquistteoremet, som säger
+att samplingstakten måste vara minst dubbelt så hög som den högsta frekvens
+som överförs.

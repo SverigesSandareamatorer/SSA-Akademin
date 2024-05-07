@@ -1,0 +1,58 @@
+\section{Pulsmodulation}
+\index{pulsmodulation}
+\index{PWM}
+\index{PAM}
+\index{PPM}
+
+Pulsmodulation används mest i mikrovågsområdet.
+Pulsmodulerade signaler sänds vanligen som en serie korta pulser åtskilda av
+relativt långa pauser utan modulering.
+
+En typisk sändning kan bestå av pulser med en längd av \qty{1}{\micro\second}
+och en frekvens av \qty{1000}{\hertz}.
+Toppeffekten på en pulssändning är därför mycket högre än dess medeleffekt.
+
+Före WARC~79 var symbolen för all pulssändning P.
+Därefter används P endast för omodulerade pulståg.
+Annan pulsmodulation har följande symboler
+
+\begin{description}
+\item[K] -- puls-/amplitudmodulation (PAM)
+\item[L] -- pulsviddmodulation (PWM)
+\item[M] -- pulsposition/fasmodulation (PPM)
+\item[Q] -- vinkelmodulation under pulsen
+\item[V] -- kombination av dessa eller annat sätt.
+\end{description}
+
+\begin{table*}[ht]
+\begin{center}
+\begin{tabular}{|L{.12\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.18\textwidth}|L{.19\textwidth}|}
+\hline
+  Sändningsslag &
+    Amplituden på LF-signalen &
+    Tonhöjden på LF- signalen påverkar & 
+    Bandbredden b förhåller sig till &
+    För stor amplitud på LF-signalen medför \\
+  \hline % =======================================================
+  A3E (AM) & 
+    amplituden i båda sidbanden &
+    sidofrekvensernas avstånd från bärvågen &
+    LF-signalens högsta frekvens & 
+    övermodulering och för stor bandbredd \\
+\hline
+  J3E (SSB) & 
+    amplituden på utsänt sidband & 
+    sidofrekvensernas avstånd från bärvågen  & 
+    skillnaden mellan LF-signalens högsta och lägsta frekvens & 
+    för stor bandbredd, överstyrning av förstärkarsteg \\
+\hline
+  F3E (FM) &
+    deviationen & 
+    hastigheten på bärvågens frekvensändring &
+    dubbla summan av största deviation och högsta LF-frekvens & 
+    för stor deviation, för stor bandbredd \\
+  \hline % =======================================================
+\end{tabular}
+\end{center}
+\caption{Jämförelse mellan några vanliga sändningsslag inom amatörradio}
+\end{table*}

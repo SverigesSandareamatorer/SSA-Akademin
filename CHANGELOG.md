@@ -21,6 +21,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flyttat litteraturförteckningen till mellan kapitel och bilagor.
 - Flyttat skrivningen om hembyggd radiosändare till avsnittet om EMC.
 - Exempel och historiska tillbakablickar markeras tydligare med textrutor.
+- Modulation är ett eget kapitel istället för ett avsnitt i Ellära.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.

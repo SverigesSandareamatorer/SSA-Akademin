@@ -1,0 +1,90 @@
+\section{Sändningsslaget A3E (AM)}
+\harecsection{\harec{a}{1.8.2}{1.8.2}, \harec{a}{1.8.6b}{1.8.6b}, \harec{a}{1.8.7b}{1.8.7b}}
+\index{amplitudmodulation}
+\index{A3E}
+\index{AM|see {amplitudmodulation}}
+\label{modulation_am}
+
+\mediumfig{images/cropped_pdfs/bild_2_1-24.pdf}{Sidband vid A3E-modulation}{fig:BildII1-24}
+
+Bild~\ssaref{fig:BildII1-24} visar frekvensspektrum av en signal vid
+amplitudmodulation med
+
+\begin{enumerate}[label=\alph*.,noitemsep]
+\item en sinuston,
+\item en blandning av tre sinustoner,
+\item ett frekvensspektrum.
+\end{enumerate}
+
+\noindent\textbf{Försök}
+%
+Modulera en A3E-sändare med en \qty{3}{\kilo\hertz}-signal.
+Med en mottagare utrustad med ett smalt filter för telegrafi, kan man urskilja
+och påvisa bärvågen och de båda sidbanden.
+
+\subsection{A3E-modulation med en ton}
+
+\mediumfig{images/cropped_pdfs/bild_2_1-25.pdf}{A3E-modulation med toner med olika styrka och frekvens}{fig:BildII1-25}
+
+Bild~\ssaref{fig:BildII1-25} visar A3E-modulation med toner av olika styrka och
+frekvens.
+En omodulerad bärvåg har konstant amplitud.
+En amplitudmodulerad signal är i grunden resultatet av svävning mellan
+frekvenser eller av icke linjär blandning av frekvenser.
+När bärvåg och basband blandas är särskilt tre blandningsprodukter av intresse.
+Dessa är
+\begin{itemize}
+\item bärvågen
+\item det lägre sidbandet (förkortat LSB)
+\item det övre sidbandet (förkortat USB).
+\end{itemize}
+
+AM-signalen består således inte bara av bärvågsfrekvensen \(f_{HF}\) utan även
+av övre och nedre sidofrekvenser, vilka är summan och skillnaden av
+bärvågsfrekvensen \(f_{HF}\) och den modulerande frekvensen \(f_{LF}\).
+Alltså \(f_{HF} + f_{LF}\) (övre sidofrekvens) och skillnadsfrekvensen
+\(f_{HF} - f_{LF}\) (undre sidofrekvens).
+
+Eftersom tal inte bara omfattar en enda frekvens utan ett helt frekvensspektrum
+(ca \SIrange{0,3}{3}{\kilo\hertz}) uppstår inte bara två sidofrekvenser utan två
+sidband, det lägre sidbandet (LSB, Lower Side Band) och det övre (USB, Upper
+Side Band).
+
+LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågen.
+Bandbredden på en amplitudmodulerad signal med full bärvåg och två sidband är
+dubbelt så stor som den högsta modulerande LF-frekvensen:
+\(b= 2 \cdot f_{LFmax}\)
+
+Om de modulerande LF-frekvenserna är mellan 0,3 och \qty{3}{\kilo\hertz} blir
+sändningens totala bandbredd \qty{6}{\kilo\hertz}.
+
+LF-signalernas amplitud påverkar sidbandens och sidofrekvensernas amplitud.
+Vid maximal modulation (100~\% modulationsgrad) varierar signalamplituden mellan
+noll och dubbla värdet av det för en omodulerad bärvåg.
+
+Som mest kan vardera sidbandet överföra en fjärdedel så mycket effekt som
+bärvågen, dvs. en sjättedel av den totalt utsända effekten.
+Då avger sändaren dubbelt så stor medeleffekt som utan modulation.
+Toppeffekten (PEP, Peak Envelope Power) är till och med fyra gånger så stor.
+
+Slutförstärkaren och kraftförsörjningen måste dimensioneras för toppeffekten vid
+full modulation eller att modulationsgraden anpassas så att överbelastning inte
+sker.
+
+\subsection{Fördelar med A3E-modulation}
+
+En A3E-sändare är enkel jämfört med en J3E-sändare, vilken har en mer
+komplicerad signalbehandling.
+
+\pagefig{images/cropped_pdfs/bild_2_1-26.pdf}{Amplitudmodulation med morsetecken}{fig:BildII1-26}
+
+\subsection{Nackdelar med A3E-modulation}
+
+Eftersom samma information finns i båda sidbanden och ingen finns i bärvågen,
+så sänds effekten i bärvågen och ett av sidbanden ut till ingen nytta.
+I talpauser sänds endast bärvågseffekten och till ingen nytta.
+Även frekvensutrymme slösas bort.
+Då en annan, alltför närliggande sändares bärvåg blandas med den egna,
+alstras interferenstoner i mottagarna.
+
+\mediumplustopfig{images/cropped_pdfs/bild_2_1-27.pdf}{Sidband vid DSB}{fig:BildII1-27}

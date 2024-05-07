@@ -18,8 +18,7 @@ KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/chapter1-1.tex koncept/chapter1-2.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
-	koncept/chapter1-7.tex koncept/chapter1-8.tex \
-	koncept/chapter1-9.tex
+	koncept/chapter1-7.tex koncept/chapter1-9.tex
 KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/chapter2-1.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
@@ -33,6 +32,7 @@ KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
 	koncept/chapter3-9.tex
 KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
+KONCEPT_MODULATION_FILES = koncept/modulation.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/chapter5-2.tex \
 	koncept/chapter5-3.tex koncept/chapter5-4.tex \
@@ -83,6 +83,7 @@ KONCEPT_OTHER_FILES = koncept/foerord.tex koncept/inledning.tex \
 	koncept.tex
 KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \
+	$(KONCEPT_MODULATION_FILES) \
 	$(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
 	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) \
 	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \

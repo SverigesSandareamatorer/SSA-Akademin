@@ -1,0 +1,85 @@
+\section{Sändningsslaget J3E (SSB)}
+\harecsection{\harec{a}{1.8.3c}{1.8.3c}, \harec{a}{1.8.6c}{1.8.6c}, \harec{a}{1.8.7c}{1.8.7c}}
+\index{Single Side Band (SSB)}
+\index{J3E}
+\index{SSB}
+\label{modulation_ssb}
+
+\subsection{Princip}
+
+Som sagts är det onödigt att sända ut två sidband, eftersom båda innehåller
+samma information.
+
+Signaler med endast ett sidband och undertryckt bärvåg kan alstras på flera
+sätt.
+Numera är den så kallade filtermetoden i särklass vanligast och den enda som
+behandlas här.
+
+Bild~\ssaref{fig:BildII1-27} illustrerar sidband vid DSB-modulation.
+Med filtermetoden blandas HF- och LF-signalerna i en speciell blandare.
+Där undertrycks båda dessa signaler medan blandningsprodukterna med deras summa-
+och skillnadsfrekvenser blir kvar, dvs. det övre och nedre sidbandet.
+
+Utsignalen från blandaren benämns DSB-signal (Double Side Band).
+Till skillnad från i A3E-signalen saknas dock bärvågen i DSB-signalen.
+För att även undertrycka det ena sidbandet före sändningen följs blandaren
+av ett bandpassfilter med bandbredd och frekvensläge för avsett sidband.
+
+Den signal som sänds ut innehåller därför endast ett sidband (Single Side Band).
+
+% \tallfig[0.45]{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
+\mediumtopfig{images/cropped_pdfs/bild_2_1-28.pdf}{Sidbandsval vid SSB}{fig:BildII1-28}
+
+\paragraph{Exempel}
+
+Bild~\ssaref{fig:BildII1-28} illustrerar sidbandsval vid SSB-modulering.
+Ett SSB-filter har ett passband av \SIrange{9000,3}{9003}{\kilo\hertz}.
+Vid bärvågsfrekvensen \qty{9000}{\kilo\hertz} sträcker sig det övre sidbandet
+från \SIrange{9000,3}{9003}{\kilo\hertz} och släpps igenom.
+Däremot blir bärvågsfrekvensen undertryckt.
+
+Det undre sidbandet \SIrange{8997}{8999,7}{\kilo\hertz} faller utanför filtrets
+passband och blir också undertryckt.
+
+Ska däremot det undre sidbandet kunna passera igenom samma filter, så måste
+bärvågsfrekvensen höjas med \qty{3}{\kilo\hertz}, alltså till
+\qty{9003}{\kilo\hertz}.
+Då faller det undre sidbandet, \SIrange{9002,7}{9000,0}{\kilo\hertz} inom
+filtrets passband.
+
+Det övre sidbandet \SIrange{9003,3}{9006,0}{\kilo\hertz} faller nu utanför
+passbandet och blir undertryckt.
+
+%% k7per: Make this bigger.
+\mediumtopfig{images/cropped_pdfs/bild_2_1-29.pdf}{Sidbandslägen vid SSB}{fig:BildII1-29}
+
+Bild~\ssaref{fig:BildII1-29} illustrerar sidbandslägen vid SSB.
+LF-signalens amplitud bestämmer amplituden på sidofrekvensen.
+
+LF-signalens frekvens bestämmer sidofrekvensens avstånd från bärvågsfrekvensen
+(bärvågen undertryckt).
+
+Bandbredden på den utsända signalen är skillnaden mellan högsta och lägsta
+modulerande frekvens i signalen:
+
+till exempel \(b = \qty{3}{\kilo\hertz} - \qty{0,3}{\kilo\hertz} =
+\qty{2,7}{\kilo\hertz}\)
+
+\subsection{Fördelar med J3E-modulation}
+Bra verkningsgrad vid J3E-modulation jämfört med vid A3E-modulation
+(traditionell AM).
+Effekten i det utsända sidbandet motsvarar den i ett av sidbanden vid A3E.
+Hela den utsända effekten finns alltså i ett enda sidband,
+som överför hela informationen.
+
+I sändningspauserna sänds ingen effekt ut.
+Bandbredden är mindre än hälften av den vid A3E.
+Vid mottagning av en J3E-sändning (SSB) är det mindre besvär med
+interferenstoner från J3E-sändningar på närliggande frekvenser, eftersom ingen
+bärvåg och endast ett sidband sänds ut.
+
+\subsection{Nackdelar med J3E-modulation}
+J3E-modulation medför mera komplicerade apparater, både för mottagning och
+sändning.
+En J3E-signal blir förvrängd och hörs i fel tonläge om mottagaren inte är
+inställd på exakt rätt frekvens.
