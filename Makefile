@@ -26,7 +26,7 @@ KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
-	koncept/chapter3-1.tex koncept/chapter3-2.tex \
+	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
