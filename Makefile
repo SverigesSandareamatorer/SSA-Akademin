@@ -20,7 +20,7 @@ KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-9.tex
 KONCEPT_CH02_FILES = koncept/komponenter.tex \
-	koncept/chapter2-1.tex koncept/chapter2-2.tex \
+	koncept/komponenter-resistorn.tex koncept/chapter2-2.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
