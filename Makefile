@@ -42,7 +42,7 @@ KONCEPT_CH05_FILES = koncept/mottagare.tex \
 KONCEPT_CH06_FILES = koncept/saendare.tex \
 	koncept/chapter6-1.tex koncept/chapter6-2.tex
 KONCEPT_CH07_FILES = koncept/antennsystem.tex \
-	koncept/chapter7-1.tex koncept/chapter7-2.tex \
+	koncept/chapter7-1.tex koncept/antennsystem-polarisation.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
 	koncept/chapter7-5.tex koncept/chapter7-6.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
