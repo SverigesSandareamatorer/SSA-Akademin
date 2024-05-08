@@ -230,8 +230,8 @@
 % Används till ramen runt räkneexempel och historiebeskrivningar.
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
-\newtcolorbox{exempelbox}{title=Exempel}
-\newtcolorbox{historiabox}{title=Historia}
+\newtcolorbox{exempelbox}{enhanced,breakable,leftrule=2mm}
+\newtcolorbox{historiabox}{enhanced,breakable,oversize,title=Historia,halign title=center}
 
 % (Beskrivning saknas.)
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
