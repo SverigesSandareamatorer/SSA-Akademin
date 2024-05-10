@@ -55,7 +55,8 @@ KONCEPT_CH09_FILES = koncept/maetteknik.tex \
 KONCEPT_CH10_FILES = koncept/emc.tex \
 	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
-KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex
+KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
+	koncept/emf-sammanfattning.tex
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/chapter12-3.tex koncept/chapter12-4.tex
