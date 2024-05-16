@@ -9,9 +9,9 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"editorconfig.editorconfig",
-				"james-yu.latex-workshop"
+				"editorconfig.editorconfig"
 			]
 		}
-	}
+	},
+	"postAttachCommand": "make help"
 }
