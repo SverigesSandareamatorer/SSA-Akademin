@@ -20,13 +20,13 @@ KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-9.tex
 KONCEPT_CH02_FILES = koncept/komponenter.tex \
-	koncept/chapter2-1.tex koncept/chapter2-2.tex \
+	koncept/komponenter-resistorn.tex koncept/komponenter-kondensatorn.tex \
 	koncept/chapter2-3.tex koncept/chapter2-4.tex \
 	koncept/chapter2-5.tex koncept/chapter2-6.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
-	koncept/chapter3-1.tex koncept/chapter3-2.tex \
+	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/chapter3-5.tex koncept/chapter3-6.tex \
 	koncept/chapter3-7.tex koncept/chapter3-8.tex \
@@ -36,13 +36,13 @@ KONCEPT_MODULATION_FILES = koncept/modulation.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/chapter5-2.tex \
 	koncept/chapter5-3.tex koncept/chapter5-4.tex \
-	koncept/chapter5-5.tex koncept/chapter5-6.tex \
-	koncept/chapter5-7.tex koncept/chapter5-8.tex \
+	koncept/mottagare-panoramamottagare.tex koncept/chapter5-6.tex \
+	koncept/chapter5-7.tex koncept/mottagare-agc.tex \
 	koncept/chapter5-9.tex
 KONCEPT_CH06_FILES = koncept/saendare.tex \
 	koncept/chapter6-1.tex koncept/chapter6-2.tex
 KONCEPT_CH07_FILES = koncept/antennsystem.tex \
-	koncept/chapter7-1.tex koncept/chapter7-2.tex \
+	koncept/chapter7-1.tex koncept/antennsystem-polarisation.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
 	koncept/chapter7-5.tex koncept/chapter7-6.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
@@ -55,7 +55,8 @@ KONCEPT_CH09_FILES = koncept/maetteknik.tex \
 KONCEPT_CH10_FILES = koncept/emc.tex \
 	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
-KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex
+KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
+	koncept/emf-egenkontroll.tex koncept/emf-sammanfattning.tex
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/chapter12-3.tex koncept/chapter12-4.tex
@@ -105,7 +106,8 @@ koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	latexmk -pdf koncept.tex
 
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
-	ebb -x images/**/*
+	ebb -x images/**.png
+	ebb -x images/**.pdf
 	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)

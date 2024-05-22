@@ -369,14 +369,14 @@ ut på vilket avstånd man genererar en viss fältstyrka.
 Denna beräkning är enbart relevant för huvudloben.
 Fältet under antennen beräknas inte, och därför kan resultatet inte användas
 för att bedöma höjd på eller säkerhetsavstånd till antenntorn.
-Använd dataprogram för att få bra bedömning på hur en antenn beter sig,
+Använd datorprogram för att få bra bedömning på hur en antenn beter sig,
 särskilt med avseende på antenner med riktverkan.
 
-\begin{tcolorbox}[title=Exempel 1]
+\begin{exempelbox}
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
-30 sekunders intervaller.
+30~sekunders intervaller.
 Den valda matarledningen har en dämpning på \qty{2,5}{\decibel} (0,56~gånger).
 Avståndet från antennen till beräkningspunkten är \qty{15}{\metre}.
 Vilken medelfältstyrka genererar man på ett visst avstånd från antennen?
@@ -397,9 +397,9 @@ Vilken medelfältstyrka genererar man på ett visst avstånd från antennen?
 
 Då referensvärdet på denna frekvens är \qty{28}{\volt\per\metre}, överskrider
 amatörradiosändningen referensvärdet på detta avstånd.
-\end{tcolorbox}
+\end{exempelbox}
 
-\begin{tcolorbox}[title=Exempel 2]
+\begin{exempelbox}
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
@@ -425,9 +425,9 @@ På vilket avstånd från antennen når man referensvärdet?
 För att följa de allmänna råden bör allmänheten inte kunna vistas i huvudloben
 framför antennen på ett avstånd mindre än \qty{19}{\metre} då sändning utförs
 enligt exemplet.
-\end{tcolorbox}
+\end{exempelbox}
 
-\begin{tcolorbox}[title=Exempel 3]
+\begin{exempelbox}
 En dipolantenn för \qty{3,75}{\mega\hertz} har jämfört med en isotrop antenn
 förstärkningen 2,15\,dBi (cirka 1,6 gånger).
 Max uteffekt är \qty{100}{\watt} och trafiksättet är SSB med normala TX/RX
@@ -451,174 +451,4 @@ kunna utvärdera exponeringen.
 
 För att följa de allmänna råden bör människor inte ha tillträde till nån del av
 antennen närmare än \qty{0,74}{\metre} då sändning utförs.
-\end{tcolorbox}
-
-\section{Egenkontroll}
-\index{EMF!egenkontroll}
-\index{EMF!utvärdering}
-
-För att utvärdera sin egen station så finns det några olika vägar att gå:
-
-\begin{itemize}
-\item Räkna ut fältstyrkan eller säkerhetsavståndet med sina egna
-  parametrar enligt exemplen ovan.
-\item Jämföra med andras utvärderingar.
-\item Använda programvara som är speciellt gjort för att räkna ut på
-  vilket avstånd referensvärdet nås under givna förutsättningar enligt
-  exempel 2 ovan.
-\item Använda värden från tabeller där olika typiska antenner är beskrivna.
-\item Använda antennsimuleringsprogram som har möjlighet att även
-  beräkna fältstyrka.
-\item Mäta fältstyrkan (speciellt då man utvärderar i närfältet från
-  antennen).
-\end{itemize}
-
-Man bör då tänka på vilket avstånd man har till platser där allmänheten har
-tillträde, sin effektanvändning, vilka antenntyper och vilka trafiksätt man
-använder.
-
-\subsection{Räkna manuellt}
-
-Enligt exemplen ovan är det ganska enkelt att göra en uppskattning av
-de fältstyrkor som genereras av sin egen amatörradioanvändning.
-
-\subsection{Räkna med specialprogram}
-
-Istället för att själv använda miniräknaren kan man använda program
-som är speciellt framtagna för detta ändamål.
-
-Ett exempel på ett sådant program är ICNIRPcalc som är framtaget av en
-representant från den tyska amatörradioföreningen (DARC).
-I programmet finns redan olika antenntyper och det finns även möjlighet att
-lägga in egna antenner för att göra korrekta beräkningar.
-Detta program finns att ladda ner från SSA:s webbplats för EMC/EMF-frågor.
-
-\subsection{Tabellvärden}
-Utifrån den typ av antenn man själv använder kan man jämföra med
-typiska värden från andras beräkningar och göra en hyfsad uppskattning
-av sig egen situation.
-
-\subsection{Antennsimulering}
-Vissa program för antennsimulering har även funktioner för att beräkna
-fältstyrkenivåer runt antennen och kan i vissa fall beräkna fältstyrkan
-även i närfältet.
-
-\subsection{Mäta fältstyrka}
-Att mäta fältstyrka kräver tillgång till kalibrerad mätutrustning som
-ger mätvärden som är tillförlitliga nog för att med säkerhet kunna användas
-vid utvärdering av fältstyrkenivån.
-
-\section{Sammanfattning}
-Strålsäkerhetsmyndigheten (SSM) har i sina allmänna råd angett referensvärden
-som ska begränsa allmänhetens exponering för elektromagnetiska fält (EMF).
-
-Dessa begränsningar och sändaramatörens möjligheter att generera kraftiga
-elektromagnetiska fält innebär att vi som sändaramatörer måste förstå
-och kunna hantera området elektromagnetiska fält (EMF).
-
-Alla sändande antenner kommer att ha ett elektromagnetiskt fält (EMF)
-runt sig.
-Detta elektromagnetiska fält (EMF) är beroende på vilken typ av antenn som
-används och den signal som skickas in i antennen.
-Hur man bedömer storleken på dessa fält är avgörande för att kunna
-begränsa exponeringen av EMF från en amatörradiostation.
-
-En egenkontroll bör genomföras för att kunna bedöma den fältbild som
-amatörradioutövandet orsakar runt sin station.
-Eftersom amatörradio är en experimentell verksamhet så måste alla förstå hur
-olika förändringar i sin installation och användning påverkar denna fältbild.
-
-Vilken metod man än väljer för sin egenkontroll är det lämpligt att
-göra den tydligt och lättförståelig.
-Detta är viktigt eftersom man bör spara sina resultat och då ha möjlighet att
-göra om sin utvärdering när man har förändrat något eller några av de värden
-som skulle kunna påverka resultatet.
-
-\subsection{Praktisk hantering}
-Vid all användning av amatörradioutrustning måste man göra en bedömning
-av vilka fältstyrkor man genererar och vilka som kan bli exponerade.
-Det kan vara frågan om människor i omedelbar närhet eller människor på
-längre avstånd.
-I alla fall bör man fundera på om man valt rätt sätt att generera den
-elektromagnetiska fältstyrka som man behöver, eller om det finns ett bättre
-och effektivare sätt som möjliggör att man når motstationen utan att onödigtvis
-exponera någon annan för elektromagnetiska fält.
-
-Det finns vissa installationer som man bör undvika och andra som kan
-rekommenderas för att hålla nivåerna på exponering så låga som möjligt:
-
-\begin{itemize}
-\item Antenner som sitter nära människor, exempelvis balkongantenner, kan ge
-  mycket högre exponering än antenner som sitter högt monterade i en mast.
-
-\item Riktantenner för höga frekvenser har ofta hög förstärkning, och
-  kan ge höga fältstyrkor i huvudriktningen.
-  Då måste man se till att det inte är möjligt att rikta denna typ av antenn
-  mot platser där människor kan exponeras.
-
-\item Inomhusantenner hamnar alltid nära människor och bör enbart användas med
-  låg effekt då de kan ge mycket hög exponering.
-  De kommer också ta emot störningar från hemelektronik (nätadaptrar, datorer
-  etc.) vilket också gör antennplaceringen mycket olämplig.
-
-\item Antenner ovanför huskroppar bör endast användas med låg effekt.
-  Trådantenner för lägre frekvenser rakt ovanför bostadshus kommer att
-  vara nära människor i byggnaden.
-
-\item Om man har behov av att använda hög effekt så måste man också se
-  till att effekten används så bra som möjligt.
-  Det är direkt olämpligt att kompensera en dålig antenn med högre effekt då
-  det oftast resulterar i höga fältstyrkor på fel ställe.
-
-\item Högre fältstyrka kan för det mesta enklast åstadkommas med en
-  antenn som riktar signalen i den riktning man vill kommunicera.
-  Det är oftast mycket dyrare och mer komplicerat att öka uteffekten för att nå
-  samma resultat.
-
-\item Osymmetriska antenner kan ge mantelströmmar i matningsledningen.
-  Det innebär att en HF-ström flyter från antennen tillbaka på matarledningen
-  och kan ge höga fältstyrkor längs hela kabellängden.
-  Bättre är det då att använda symmetriska antenner, exempelvis en mittmatad
-  halvvågsdipol.
-  En strömbalun (även common mode choke, RF-choke) där antennen ansluts till
-  matarledningen undertrycker denna HF-ström och därmed kommer
-  matningsledningen sluta att agera radierande element, varvid fältstyrkorna
-  längs matningsledningen sjunker.
-
-\item Vissa antenner, så som T-antenn, använder dock obalansen då
-  matningsledningen agerar radierande element.
-  I dessa fall ska den delen av matningsledningen som agerar radierande element
-  betraktas som sådant även i EMF-sammanhang och säkerhetsavstånd ska iakttas.
-  Det är rekommenderat att använda en strömbalun för att isolera antennen från
-  radiostationen med avseende på mantelburen HF-ström.
-
-\item Även symmetriska antenner kan ha strömmar på utsidan av matarledningen.
-  Dra därför matarledningen så långt bort från människor som möjligt.
-
-\item Använd inte effektförstärkare eller antennavstämningsenhet utan
-  hölje då fältstyrkorna runt utrustningen kan nå höga nivåer.
-
-\item Vid antennplaceringar nära människor så kan det bli omöjligt att
-  använda hög effekt.
-\end{itemize}
-
-Det finns som synes många sätt att göra rätt men också många sätt att göra fel
-när det gäller att hantera den fältstyrka vi vill generera för att upprätthålla
-radiokommunikation.
-Innan man börjar sin amatörradiosändning är det viktigt att ha förståelse för
-de fält som genereras och att kunna begränsa dem där så behövs.
-Det går att finna mer information om elektromagnetiska fält på:
-
-\begin{itemize}
-\item Strålskyddsmyndighetens webbplats där återfinns även SSMFS~2008:18~\cite{SSMFS2008:18}.
-
-\item Arbetsmiljöverkets webbplats där finns även AFS 2016:3 Arbetsmiljöverkets
-föreskrifter om elektromagnetiska fält och allmänna råd om tillämpningen av
-föreskrifterna.
-
-\item Folkhälsomyndighetens webbplats.
-
-\item Federal Communications Commission (FCC) OET bulletin 65 supplement B \cite{OETbul65b}.
-
-\item EU-direktiv 1999/519/EG~\cite{1999/519/EG}
-\end{itemize}
+\end{exempelbox}
