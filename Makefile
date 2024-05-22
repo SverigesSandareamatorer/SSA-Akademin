@@ -44,7 +44,7 @@ KONCEPT_CH06_FILES = koncept/saendare.tex \
 KONCEPT_CH07_FILES = koncept/antennsystem.tex \
 	koncept/chapter7-1.tex koncept/antennsystem-polarisation.tex \
 	koncept/chapter7-3.tex koncept/chapter7-4.tex \
-	koncept/chapter7-5.tex koncept/chapter7-6.tex
+	koncept/chapter7-5.tex koncept/antennsystem-transmissionsledningar.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/chapter8-1.tex koncept/chapter8-2.tex \
 	koncept/chapter8-3.tex koncept/chapter8-4.tex \
