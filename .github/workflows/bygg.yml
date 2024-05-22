@@ -124,6 +124,10 @@ jobs:
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
           echo $GITHUB_REF_NAME > branch.tmp
+      - name: 'Lägg in hotfix för EPUB på Ubuntu 24.04'
+        run: |
+          mv .github/rungs.txt /usr/local/bin/rungs
+          chmod 755 /usr/local/bin/rungs
       - name: 'Bygg koncept.epub'
         continue-on-error: true
         run: make koncept.epub
