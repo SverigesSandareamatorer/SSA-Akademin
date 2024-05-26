@@ -126,6 +126,7 @@ jobs:
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Lägg in hotfix för EPUB på Ubuntu 24.04'
         run: |
+          mv .github/tex4ebook-tidyconf.conf ./tidyconf.conf
           mv .github/rungs.txt /usr/local/bin/rungs
           chmod 755 /usr/local/bin/rungs
       - name: 'Bygg koncept.epub'
