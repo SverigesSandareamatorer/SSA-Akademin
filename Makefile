@@ -59,7 +59,7 @@ KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
 	koncept/emf-egenkontroll.tex koncept/emf-sammanfattning.tex
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/chapter12-1.tex koncept/chapter12-2.tex \
-	koncept/chapter12-3.tex koncept/chapter12-4.tex
+	koncept/chapter12-3.tex koncept/elsaekerhet-aaska.tex
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
