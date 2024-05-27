@@ -55,6 +55,7 @@ jobs:
             long_lines.txt
             comment_lines.txt
             chktex.log
+          compression-level: 9
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-22.04
@@ -148,3 +149,4 @@ jobs:
           path: |
             koncept*.epub
             koncept.log
+          retention-days: 3
