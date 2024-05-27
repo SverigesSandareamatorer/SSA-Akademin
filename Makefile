@@ -36,7 +36,7 @@ KONCEPT_MODULATION_FILES = koncept/modulation.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/chapter5-2.tex \
 	koncept/mottagare-superheterodynmottagare.tex koncept/chapter5-4.tex \
-	koncept/mottagare-panoramamottagare.tex koncept/chapter5-6.tex \
+	koncept/mottagare-panoramamottagare.tex koncept/mottagare-mottagningskonvertern.tex \
 	koncept/mottagare-transvertern.tex koncept/mottagare-agc.tex \
 	koncept/chapter5-9.tex
 KONCEPT_CH06_FILES = koncept/saendare.tex \
