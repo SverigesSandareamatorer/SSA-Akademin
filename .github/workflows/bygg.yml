@@ -55,6 +55,7 @@ jobs:
             long_lines.txt
             comment_lines.txt
             chktex.log
+          compression-level: 9
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-22.04
@@ -126,6 +127,7 @@ jobs:
           echo $GITHUB_REF_NAME > branch.tmp
       - name: 'Lägg in hotfix för EPUB på Ubuntu 24.04'
         run: |
+          mv .github/tex4ebook-tidyconf.conf ./tidyconf.conf
           mv .github/rungs.txt /usr/local/bin/rungs
           chmod 755 /usr/local/bin/rungs
       - name: 'Bygg koncept.epub'
@@ -147,3 +149,4 @@ jobs:
           path: |
             koncept*.epub
             koncept.log
+          retention-days: 3

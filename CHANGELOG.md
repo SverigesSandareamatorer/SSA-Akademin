@@ -30,6 +30,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Två utspridda delar om DSP sammanslagna.
 - Delar av inledningen utflyttade från förordet.
 - Bytt ut "vetenskaplig notation" till "grundpotensform".
+- Några bråktal i appendix Matematik får plats utan att påverka radhöjden.
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
