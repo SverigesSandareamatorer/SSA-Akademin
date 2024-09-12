@@ -9,6 +9,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Ny figur för schemasymbolen lysdiod.
 - Nya introduktioner till kapitlen Ellära, Komponenter, Kretsar, Sändare och Trafikreglemente.
 - Ny figur för ICNIRPcalc.
+- Nya QR-koder för att lämna återkoppling på boken.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel Ellära.
