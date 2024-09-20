@@ -15,7 +15,7 @@ on:
 jobs:
   analysera-koden:
     name: 'Analysera koden'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v4
@@ -57,7 +57,7 @@ jobs:
             chktex.log
   bygg-pdf:
     name: 'Bygg PDF'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v4
