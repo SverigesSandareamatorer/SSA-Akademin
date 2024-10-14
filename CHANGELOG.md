@@ -33,6 +33,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Bytt ut "vetenskaplig notation" till "grundpotensform".
 - Några bråktal i appendix Matematik får plats utan att påverka radhöjden.
 - Rätt namn på broschyr om elolyckor i litteraturlistan.
+- Primär och sekundär status borttaget från bilaga svensk frekvensplan.
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
