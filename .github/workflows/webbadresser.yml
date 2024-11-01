@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v1.10.0
+      - uses: lycheeverse/lychee-action@v2.0.2
         with:
           fail: true
           args: "--max-concurrency 3 --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
