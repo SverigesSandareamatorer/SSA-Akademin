@@ -32,6 +32,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Delar av inledningen utflyttade från förordet.
 - Bytt ut "vetenskaplig notation" till "grundpotensform".
 - Några bråktal i appendix Matematik får plats utan att påverka radhöjden.
+- Rätt namn på broschyr om elolyckor i litteraturlistan.
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
