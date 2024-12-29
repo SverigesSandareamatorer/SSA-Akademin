@@ -1,7 +1,7 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  KonCEPT för amatörradiocertifikat
-% Föreningen Sveriges Sändareamatörer
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  KonCEPT för amatörradiocertifikat  %
+% Föreningen Sveriges Sändareamatörer %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % LaTeX-dokument behöver ha en klass. report är snarlik book.
 \documentclass[10pt,openright]{report}
@@ -41,7 +41,7 @@
 % LaTeX-editorer.
 \synctex=1
 
-% (Beskrivning saknas.)
+% Paket för att dela tabeller över flera sidor.
 \usepackage{xtab}
 
 % Ett intelligent kommatecken, som ger rätt avstånd i decimaltal såväl som i
@@ -56,26 +56,26 @@
 % extra tecken, främst accentuerade, men inte enbart.
 \usepackage{lmodern}
 
-% (Beskrivning saknas.)
+% Paket för att skapa bokmärken i PDF med numrering.
 \usepackage[numbered]{bookmark}
 
-% (Beskrivning saknas.)
+% Ändra bildtexten till "Bild" på svenska.
 \addto\captionsswedish{\renewcommand{\figurename}{Bild}}
 
 % För avancerad typsättning av matematiska uttryck.
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
-% (Beskrivning saknas.)
+% Paket för att skapa ramar runt text.
 \usepackage{framed}
 
-% (Beskrivning saknas.)
+% Paket för att hantera färger.
 \usepackage{color}
 
-% (Beskrivning saknas.)
+% Markera text med gul bakgrund.
 \newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
 
-% (Beskrivning saknas.)
+% Paket för att hantera avsnittsrubriker.
 \usepackage[toctitles,raggedright]{titlesec}
 
 % Aktivera möjligheten att länka i PDF:en.
@@ -214,7 +214,7 @@
 }
 \makeatother
 
-% (Beskrivning saknas.)
+% Paket för att placera figurer och tabeller.
 \usepackage{float}
 
 % Defines a \FloatBarrier command, beyond which floats may not pass; useful, for
@@ -558,10 +558,10 @@
 % du kan placera den i en tabell eller en tabellmiljö, om det behövs.
 \usepackage{threeparttable}
 
-% (Beskrivning saknas.)
+% Paket för att hantera fotnoter.
 \usepackage[symbol]{footmisc}
 
-% (Beskrivning saknas.)
+% Paket för att hantera Morse-kod.
 \usepackage{morse}
 
 % Paketet innehåller fyra kommandon för vertikal skalning och sträckning av
@@ -628,16 +628,14 @@
 % Innehållsförteckningen \parskip kan ändras.
 \usepackage{tocloft}
 
-% (Beskrivning saknas.)
+% Ställer in bredden på numreringsfältet för sektioner i innehållsförteckningen till 3 em.
 \setlength\cftsecnumwidth{3em}
 
 % Standardpaket för att skapa index. Används till sakregistret.
 \usepackage{makeidx}
 \makeindex
 
-% Teckensnittet är en Sans-Serif-utveckling med öppen källkod från Adobe.
-% Paketet tillhandahåller typsnitt (i både Adobe Type 1- och OpenType-format)
-% och makron som stödjer deras användning.
+% Paket för att använda teckensnittet Source Sans Pro.
 \usepackage[black]{sourcesanspro}
 
 % Här slutar inställningarna.
