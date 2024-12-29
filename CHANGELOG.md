@@ -4,7 +4,7 @@ Alla nämnvärda ändringar i projektet dokumenteras här.
 Det här projektet [för en ändringslogg](https://keepachangelog.com/sv/1.0.0/)
 och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0.html).
 
-## [Osläppt] – 2024
+## [Osläppt] – 2025
 ### Tillagt
 - Ny figur för schemasymbolen lysdiod.
 - Nya introduktioner till kapitlen Ellära, Komponenter, Kretsar, Sändare och Trafikreglemente.
@@ -24,6 +24,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Flyttat skrivningen om hembyggd radiosändare till avsnittet om EMC.
 - Exempel och historiska tillbakablickar markeras tydligare med textrutor.
 - Modulation är ett eget kapitel istället för ett avsnitt i Ellära.
+- Slagit ihop de två appendixen med bandplaner till en.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
