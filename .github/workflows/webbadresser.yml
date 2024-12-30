@@ -11,9 +11,10 @@ jobs:
     if: github.repository == 'SverigesSandareamatorer/SSA-Akademin'
     name: 'Testa webbadresser'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v2.2.0
+      - uses: lycheeverse/lychee-action@v2.3.0
         with:
           fail: true
-          args: "--max-concurrency 3 --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
+          args: "--max-concurrency 3 --accept 200,429 --mode plain --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
