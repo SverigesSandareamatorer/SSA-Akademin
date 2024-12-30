@@ -71,7 +71,6 @@ KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/loggbok-exempel.tex \
 	koncept/loggbok-data.tex koncept/loggbok-rapportkoder.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
-	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
 	koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex \
