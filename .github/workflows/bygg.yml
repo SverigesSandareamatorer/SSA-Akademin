@@ -22,7 +22,7 @@ jobs:
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
-          sudo apt-get --quiet --assume-yes --verbose-versions install \
+          sudo apt-get --quiet --assume-yes install \
             chktex
       - name: 'Skapa rapporter'
         run: |
@@ -64,7 +64,7 @@ jobs:
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
-          sudo apt-get --quiet --assume-yes --verbose-versions install \
+          sudo apt-get --quiet --assume-yes install \
             texlive \
             texlive-lang-european \
             texlive-science \
@@ -107,7 +107,7 @@ jobs:
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
-          sudo apt-get --quiet --assume-yes --verbose-versions install \
+          sudo apt-get --quiet --assume-yes install \
             texlive \
             texlive-extra-utils \
             texlive-lang-european \

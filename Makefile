@@ -107,7 +107,7 @@ koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	ebb -x images/**.png
 	ebb -x images/**.pdf
-	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex
+	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
