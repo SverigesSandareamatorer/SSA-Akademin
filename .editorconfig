@@ -16,3 +16,6 @@ indent_size = 2
 
 [*.md]
 trim_trailing_whitespace = false
+
+[VERSION.txt]
+insert_final_newline = false

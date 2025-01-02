@@ -69,12 +69,12 @@ har installerat beroendet som det behöver.
 
 | Mål | Bygger/Genererar | Beroende |
 | --- | --- | --- |
-|`all`                |alla mål                           |alla beroenden nedan  |
-|`clean`              |Tar bort alla genererade filer     |-                     |
+| `all`                |alla mål                           |alla beroenden nedan  |
+| `clean`              |Tar bort alla genererade filer     |-                     |
 | `koncept.pdf` | PDF av KonCEPT | [TeX/LaTeX](#texlatex) |
 | `koncept.epub` | EPUB av KonCEPT (experimentell) | [TeX/LaTeX](#texlatex) |
-|`docker-image`       |Bygg en Docker *image*             |Docker                |
-|`docker-build`       |Kör Docker *image* i en *container*|Docker                |
+| `docker-image`       |Bygg en Docker *image*             |Docker                |
+| `docker-build`       |Kör Docker *image* i en *container*|Docker                |
 
 # Installera beroenden
 
@@ -92,3 +92,29 @@ installeras.
 
 <kbd>sudo apt install texlive texlive-extra-utils texlive-lang-european
 	texlive-science texlive-fonts-recommended texlive-fonts-extra latexmk</kbd>
+
+# Använda GitHub Codespaces
+
+För att komma igång med utveckling med hjälp av GitHub Codespaces, följ dessa steg:
+
+1. **Öppna projektet i GitHub**:
+   Gå till projektets GitHub-sida: [SSA-Akademin](https://github.com/SverigesSandareamatorer/SSA-Akademin).
+
+2. **Starta en Codespace**:
+   Klicka på den gröna knappen `Code` och välj `Open with Codespaces`. Om du inte ser alternativet, se till att du har tillgång till GitHub Codespaces.
+
+3. **Skapa en ny Codespace**:
+   Klicka på `New codespace` för att skapa en ny utvecklingsmiljö. Detta kan ta några minuter första gången.
+
+4. **Använda Codespace**:
+   När Codespace är startad, kommer den att använda konfigurationen från `.devcontainer/devcontainer.json` för att ställa in utvecklingsmiljön. Detta inkluderar att installera nödvändiga verktyg och tillägg.
+
+5. **Kör postAttachCommand**:
+   Efter att Codespace har startat, kommer kommandot `make help` att köras automatiskt, vilket visar tillgängliga make-kommandon.
+
+6. **Börja utveckla**:
+   Du kan nu börja utveckla direkt i din webbläsare eller i Visual Studio Code om du föredrar det. Alla ändringar du gör kommer att synkroniseras med ditt GitHub-repo.
+
+För mer information om hur du använder GitHub Codespaces, besök [GitHub Codespaces documentation](https://docs.github.com/en/codespaces).
+
+Lycka till med din utveckling!

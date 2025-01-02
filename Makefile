@@ -71,7 +71,6 @@ KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/loggbok-exempel.tex \
 	koncept/loggbok-data.tex koncept/loggbok-rapportkoder.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
-	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
 	koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex \
@@ -108,7 +107,7 @@ koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	ebb -x images/**.png
 	ebb -x images/**.pdf
-	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex
+	tex4ebook --loglevel debug --format epub3 --tidy koncept.tex "mathml"
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
 	tar cvzf koncept.tar.gz Makefile $(KONCEPT_FILES) images/*
