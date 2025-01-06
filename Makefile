@@ -63,7 +63,7 @@ KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
-	koncept/chapter13-5.tex koncept/chapter13-6.tex
+	koncept/trafikreglemente-anropssignaler.tex koncept/chapter13-6.tex
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
 	koncept/bestaemmelser-itu-rr.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
