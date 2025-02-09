@@ -21,8 +21,8 @@ KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/chapter1-7.tex koncept/chapter1-9.tex
 KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/komponenter-resistorn.tex koncept/komponenter-kondensatorn.tex \
-	koncept/komponenter-induktorn.tex koncept/chapter2-4.tex \
-	koncept/chapter2-5.tex koncept/chapter2-6.tex \
+	koncept/komponenter-induktorn.tex koncept/komponenter-transformatorn.tex \
+	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
@@ -63,7 +63,7 @@ KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
-	koncept/chapter13-5.tex koncept/chapter13-6.tex
+	koncept/trafikreglemente-anropssignaler.tex koncept/chapter13-6.tex
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
 	koncept/bestaemmelser-itu-rr.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
@@ -71,7 +71,6 @@ KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/loggbok-exempel.tex \
 	koncept/loggbok-data.tex koncept/loggbok-rapportkoder.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
-	koncept/appendix-iaru-bandplan.tex koncept/appendix-iaru-bandplan2.tex  \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
 	koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex \

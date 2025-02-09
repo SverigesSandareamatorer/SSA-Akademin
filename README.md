@@ -98,6 +98,6 @@ Vårt mål är att
 
 -   [**Jonas "SM5PHU" Hultin**](mailto:sm5phu@gmail.com)
 -   [Magnus "SA0MAD" Danielsson](mailto:magnus@rubidium.se)
--   [Philip "SA1EPH" Eriksson](mailto:philiperiksson@gmail.com)
+-   [Philip "SA6EPH" Eriksson](mailto:philiperiksson@gmail.com)
 -   [Täpp-Anders "SM5UEI" Sikvall](mailto:anders@sikvall.se)
 -   [Per "SA0PHH" Hammarlund](mailto:gladbjorn@gmail.com)

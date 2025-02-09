@@ -24,8 +24,6 @@ Kanalavståndet mellan repeatrarna i ett band är också enhetligt och sändning
 över repeatrarna måste naturligtvis ha mindre bandbredd än kanalavståndet.
 Inom IARU har man enats bland annat om frekvensparen för smalbandiga
 FM-repeatrar.
-Se IARU:s bandplaner för \qty{10}{\metre}-repeatrar i bilaga~\ssaref{IARU bandplan}.
-För VHF-repeatrar finns bandplanen i bilaga~\ssaref{Bandplan VHF och högre}.
 Frekvensplaner finns för repeatrar inom banden \SIrange{51}{52}{\mega\hertz}
 (\qty{6}{\metre}), \SIrange{145}{146}{\mega\hertz} (\qty{2}{\metre}),
 \SIrange{432}{438}{\mega\hertz} (\qty{70}{\centi\metre}),
@@ -74,16 +72,18 @@ kanalnumret $n$ (\(f = b+kn\)) och för att repeaterns mottagarfrekvens
 så lägger man till repeatershift $r$ (\(f = b+kn + r\)).
 Repeaterns sändningsfrekvens är din mottagarfrekvens i tabellerna nedan.
 
-Till exampel, låt oss räkna fram frekvenserna för kanal 371 på
-70-centimetersbandet.  Då blir basfrekvensen $b = 430\cdot 10^6$,
-kanalnumret $n = 371$, kanalavståndet $k = 12,5\cdot 10^3$, och
-repeatershift $r = -2000\cdot10^3$.  Notera att basfrekvensen är i
-\unit{\mega\hertz} och kanalavstånd samt repeatershift i
-\unit{\kilo\hertz}.  Repeaterns sändningsfrekvens blir \(430\cdot 10^6 +
-12,5\cdot 10^3 \cdot 371 = 434,6375\cdot10^6 =
-\qty{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens blir
-\(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 + (-2000\cdot 10^3) =
+\begin{exempelbox}
+Låt oss räkna fram frekvenserna för kanal 371 på 70-centimetersbandet.
+\tcblower
+Då blir basfrekvensen $b = 430\cdot 10^6$, kanalnumret $n = 371$, kanalavståndet
+$k = 12,5\cdot 10^3$, och repeatershift $r = -2000\cdot10^3$.
+Notera att basfrekvensen är i \unit{\mega\hertz} och kanalavstånd samt
+repeatershift i \unit{\kilo\hertz}.
+Repeaterns sändningsfrekvens blir \(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 =
+434,6375\cdot10^6 = \qty{434,6375}{\mega\hertz}\) och dess mottagningsfrekvens
+blir \(430\cdot 10^6 + 12,5\cdot 10^3 \cdot 371 + (-2000\cdot 10^3) =
 432,6375\cdot10^6 = \qty{432,6375}{\mega\hertz}\).
+\end{exempelbox}
 
 \section{70-centimetersbandet}
 
