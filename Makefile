@@ -63,13 +63,13 @@ KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/chapter13-2.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
-	koncept/trafikreglemente-anropssignaler.tex koncept/trafikreglemente-hederskod.tex \
+	koncept/trafikreglemente-anropssignaler.tex \
+	koncept/trafikreglemente-loggbok.tex \
+	koncept/trafikreglemente-hederskod.tex \
 	koncept/trafikreglemente-ordningsregler.tex koncept/trafikreglemente-bandplaner.tex
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
 	koncept/bestaemmelser-itu-rr.tex koncept/chapter14-2.tex \
 	koncept/chapter14-3.tex
-KONCEPT_CH15_FILES = koncept/loggbok.tex koncept/loggbok-exempel.tex \
-	koncept/loggbok-data.tex koncept/loggbok-rapportkoder.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
@@ -90,7 +90,6 @@ KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
 	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \
 	$(KONCEPT_CH11_FILES) $(KONCEPT_CH12_FILES) \
 	$(KONCEPT_CH13_FILES) $(KONCEPT_CH14_FILES) \
-	$(KONCEPT_CH15_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 REPO_FILES = SHA.tmp branch.tmp
