@@ -45,9 +45,7 @@
 \usepackage{xtab}
 
 % Ett intelligent kommatecken, som ger rätt avstånd i decimaltal såväl som i
-% matematiska uttryck. Till skillnad från andra kända lösningar, är detta paket
-% inte beroende av kodningen av CM-mattesnitten, och det fungerar med decimaltal
-% av godtycklig längd.
+% matematiska uttryck.
 \usepackage{icomma}
 
 % Latin Modern-familjen av teckensnitt består av 72 textteckensnitt och 20
@@ -545,14 +543,11 @@
 \def\textoverline#1{\savebox\TBox{#1}
   \makebox[0pt][l]{#1}\rule[1.1\ht\TBox]{\wd\TBox}{0.4pt}}
 
-% (Beskrivning saknas.)
+% Paket för att hantera bildtexter.
 \usepackage[textfont=sf,labelfont={bf, sf},margin=10pt]{caption}
 
 % Tillhandahåller ett schema för tabeller som har en strukturerad
-% anteckningssektion, efter bildtexten. Detta schema ger ett svar på det gamla
-% problemet med att lägga in fotnoter i tabeller - genom att göra fotnoter helt
-% onödiga. Observera att en tredelad tabell inte är en flytande i sig själv; men
-% du kan placera den i en tabell eller en tabellmiljö, om det behövs.
+% anteckningssektion, efter bildtexten.
 \usepackage{threeparttable}
 
 % Paket för att hantera fotnoter.
