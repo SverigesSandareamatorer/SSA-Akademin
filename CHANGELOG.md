@@ -28,6 +28,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Slagit ihop de två appendixen med bandplaner till en.
 - Nya avsnittsnivåer i kapitel Trafikreglemente.
 - Loggbok flyttat in i Trafikreglemente.
+- Modernisering av radioamatörens hederskod.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
