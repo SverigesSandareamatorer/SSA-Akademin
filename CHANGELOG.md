@@ -26,6 +26,9 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Modulation är ett eget kapitel istället för ett avsnitt i Ellära.
 - Tydligare tabell om högeffekttillstånd.
 - Slagit ihop de två appendixen med bandplaner till en.
+- Nya avsnittsnivåer i kapitel Trafikreglemente.
+- Loggbok flyttat in i Trafikreglemente.
+- Modernisering av radioamatörens hederskod.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
