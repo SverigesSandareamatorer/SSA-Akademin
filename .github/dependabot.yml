@@ -12,7 +12,3 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    groups:
-      devcontainers:
-        patterns:
-          - '*'
