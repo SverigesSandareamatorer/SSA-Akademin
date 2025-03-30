@@ -196,11 +196,11 @@ På 80- och \qty{40}{\metre}-banden är antennens matningsimpedans cirka
 En kompromiss är att mata denna antenn med en \qty{75}{\ohm}-kabel för att inte
 få alltför stor missanpassning på något band.
 
-\paragraph{Den omvikta dipolen (folded dipole):}
+\paragraph{Den omvikta dipolen (eng. folded dipole):}
 \index{omvikt dipol}
 \index{antenn!omvikt dipol}
-\index{folded dipol}
-\index{antenn!folded dipol}
+\index{folded dipole}
+\index{antenn!folded dipole}
 
 Matningsimpedansen är cirka \qty{240}{\ohm}.
 En bandkabel med impedansen \qty{300}{\ohm} kan användas alternativt en
@@ -412,17 +412,19 @@ Jämfört med \(\lambda/2\)-dipol är antennförstärkningen
 %%
 Man använder uttrycket dBi när antennförstärkningen anges i förhållande till
 en isotrop antenn och dBd i förhållande till en halvvågsantenn.
-Se kapitel~\ssaref{decibel} om decibelbegreppet.
+Se avsnitt~\ssaref{decibel} om decibelbegreppet.
 
-\vspace{1ex}
-\noindent\textbf{Exempel på beräkning av antennförstärkning:}
-%%
+\begin{exempelbox}
+\noindent
+\[U_f = \qty{40}{\micro\volt} \quad U_d = \qty{20}{\micro\volt} \quad G =\ ?\]
+\tcblower
+\noindent
 \begin{align*}
-  U_f &= \qty{40}{\micro\volt} \quad U_d = \qty{20}{\micro\volt} \quad G =\ ? \\
-  G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
+G &= 20 \log\frac{U_f}{U_d} = 20 \log\frac{40}{20} \\
   &= 20 \log 2 = 20\cdot 0.3 = 6 \quad \text{[dBd]}
 \end{align*}
-%%
+\end{exempelbox}
+
 \qty{6}{\decibel} antennförstärkning motsvarar en fördubblad fältstyrka
 [\unit{\volt\per\metre}], det vill säga 1~S-enhets ökning vid den mottagande
 stationen, liksom att \qty{6}{\decibel} antennförstärkning motsvarar en 4~dubblad
@@ -517,8 +519,10 @@ backriktningen
 %%
 
 \begin{exempelbox}
-\( U_f = \qty{40}{\micro\volt} \quad U_b = \qty{4}{\micro\volt} \quad F/B =\ ? \)
+\noindent
+\[ U_f = \qty{40}{\micro\volt} \quad U_b = \qty{4}{\micro\volt} \quad F/B =\ ? \]
 \tcblower
+\noindent
 \begin{align*}
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{40}{4} \\
   &= 20 \log 10 = 20 \cdot 1 = 20 \quad \text{[dB]}
@@ -529,8 +533,10 @@ backriktningen
 \end{exempelbox}
 
 \begin{exempelbox}
-\( U_f = \qty{15}{\micro\volt} \quad U_b = \qty{15}{\micro\volt} \quad F/B =\ ? \)
+\noindent
+\[ U_f = \qty{15}{\micro\volt} \quad U_b = \qty{15}{\micro\volt} \quad F/B =\ ? \]
 \tcblower
+\noindent
 \begin{align*}
   F/B &= 20 \log\frac{U_f}{U_b} = 20 \log\frac{15}{15} \\
   &= 20 \log 1 = 20 \cdot 0 = 0 \quad \text{[dB]}
@@ -541,7 +547,6 @@ fältstyrkorna i fram- och backriktning är lika stora, vilket inträffar för e
 dipol.
 \end{exempelbox}
 
-\newpage
 \subsection{Halvvärdesbredd}
 \index{halvvärdesbredd}
 \index{antenn!halvvärdesbredd}
