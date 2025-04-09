@@ -63,6 +63,7 @@ jobs:
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v4
+      - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -107,6 +108,7 @@ jobs:
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v4
+      - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
