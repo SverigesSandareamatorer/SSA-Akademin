@@ -95,7 +95,8 @@ KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivnin
 	koncept/appendix-matematik.tex \
 	koncept/appendix-mattenheter.tex \
 	koncept/appendix-rapportkoder.tex koncept/appendix-repeatrar.tex \
-	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex
+	koncept/appendix-s-enheter.tex koncept/appendix-morsesignalering.tex \
+	koncept/appendix-aaskskydd.tex
 KONCEPT_OTHER_FILES = koncept/foerord.tex koncept/inledning.tex \
 	koncept/frontpage.tex koncept/tryckort.tex koncept/backpage.tex \
 	koncept/litteratur.tex koncept.bib \
