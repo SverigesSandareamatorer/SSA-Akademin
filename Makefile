@@ -51,7 +51,7 @@ KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \
-	koncept/chapter9-1.tex koncept/chapter9-2.tex
+	koncept/chapter9-1.tex koncept/maetteknik-maetinstrument.tex
 KONCEPT_CH10_FILES = koncept/emc.tex \
 	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
