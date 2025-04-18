@@ -17,4 +17,5 @@ jobs:
       - uses: lycheeverse/lychee-action@v2.4.0
         with:
           fail: true
+          checkbox: false
           args: "--max-concurrency 3 --accept 200,429 --mode plain --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"

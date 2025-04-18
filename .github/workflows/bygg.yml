@@ -29,13 +29,13 @@ jobs:
         run: |
           echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
-          make images_linked
+          make images_linked.txt
           echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make images_unlinked
+          make images_unlinked.txt
           echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make long_lines
+          make long_lines.txt
           echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
-          make comment_lines
+          make comment_lines.txt
           echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Kör LaTeX-kontroll'
         continue-on-error: true
