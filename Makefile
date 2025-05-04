@@ -23,6 +23,7 @@ KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/komponenter-resistorn.tex koncept/komponenter-kondensatorn.tex \
 	koncept/komponenter-induktorn.tex koncept/komponenter-transformatorn.tex \
 	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
+	koncept/komponenter-ic.tex \
 	koncept/chapter2-7.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
@@ -32,7 +33,25 @@ KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/kretsar-kristalloscillatorer.tex koncept/kretsar-frekvensblandare.tex \
 	koncept/kretsar-modulatorer.tex
 KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
-KONCEPT_MODULATION_FILES = koncept/modulation.tex
+KONCEPT_MODULATION_FILES = koncept/modulation.tex \
+	koncept/modulation-modulationssystem.tex \
+	koncept/modulation-saendningsslag.tex \
+	koncept/modulation-kaennetecken.tex \
+	koncept/modulation-bandbredd.tex \
+	koncept/modulation-beskrivningskod.tex \
+	koncept/modulation-modulerande.tex \
+	koncept/modulation-amplitudmodulation.tex \
+	koncept/modulation-cw.tex \
+	koncept/modulation-ssb.tex \
+	koncept/modulation-vinkelmodulation.tex \
+	koncept/modulation-frekvensmodulation.tex \
+	koncept/modulation-fasmodulation.tex \
+	koncept/modulation-fm-pm-jmf.tex \
+	koncept/modulation-pulsmodulation.tex \
+	koncept/modulation-digital-modulation.tex \
+	koncept/modulation-digitala-begrepp.tex \
+	koncept/modulation-bitfel.tex \
+	koncept/modulation-digitala-saendningsslag.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/chapter5-2.tex \
 	koncept/mottagare-superheterodynmottagare.tex koncept/chapter5-4.tex \
@@ -51,7 +70,7 @@ KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \
-	koncept/chapter9-1.tex koncept/chapter9-2.tex
+	koncept/chapter9-1.tex koncept/maetteknik-maetinstrument.tex
 KONCEPT_CH10_FILES = koncept/emc.tex \
 	koncept/chapter10-1.tex koncept/chapter10-2.tex \
 	koncept/chapter10-3.tex koncept/chapter10-4.tex
@@ -61,14 +80,14 @@ KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/elsaekerhet-faror.tex koncept/elsaekerhet-aaska.tex
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
-	koncept/chapter13-1.tex koncept/chapter13-2.tex \
+	koncept/chapter13-1.tex koncept/trafikreglemente-q-koden.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
 	koncept/trafikreglemente-anropssignaler.tex \
 	koncept/trafikreglemente-loggbok.tex \
 	koncept/trafikreglemente-hederskod.tex \
 	koncept/trafikreglemente-ordningsregler.tex koncept/trafikreglemente-bandplaner.tex
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
-	koncept/bestaemmelser-itu-rr.tex koncept/chapter14-2.tex \
+	koncept/bestaemmelser-itu-rr.tex koncept/bestaemmelser-cept.tex \
 	koncept/chapter14-3.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
@@ -121,21 +140,24 @@ TODOs:  koncept.tex $(KONCEPT_FILES) koncept.log
 	- grep -F LaTeX koncept.log | grep -F Warning >> TODOs.txt
 
 # Skapar en rapport med länkade bilder.
-images_linked: koncept.tex $(KONCEPT_FILES)
+images_linked.txt: koncept.tex $(KONCEPT_FILES)
 	grep -F images ./**/*.tex | sed -e s/.*images/images/ | sed -e s/\}// | sort -u > images_linked.txt
 
-images_available:
+# Skapar filen images_available.txt som innehåller en sorterad lista över alla
+# PDF-filer i katalogen images och dess undermappar. Använder wildcard för att
+# hitta PDF-filer och sort -u för att ta bort eventuella dubbletter.
+images_available.txt: $(wildcard images/**/*.pdf)
 	ls images/**/*.pdf | sed -e s/\.pdf// | sort -u > images_available.txt
 
-images_unlinked: images_available images_linked
+images_unlinked.txt: images_available.txt images_linked.txt
 	diff images_available.txt images_linked.txt | grep \< | sed -e s/\<\ // > images_unlinked.txt
 
 # Skapar en rapport med kodrader som är längre än 80 tecken.
-long_lines: $(KONCEPT_FILES)
+long_lines.txt: $(KONCEPT_FILES)
 	grep '.\{81\}' koncept/*.tex > long_lines.txt
 
 # Skapar en rapport med kodrader som bara är kommentar.
-comment_lines: $(KONCEPT_FILES)
+comment_lines.txt: $(KONCEPT_FILES)
 	grep '^ *%' koncept/*.tex > comment_lines.txt
 
 # Genererade bilder
