@@ -78,7 +78,8 @@ jobs:
       - name: 'Sätt systemspråk till svenska'
         run: |
           sudo locale-gen sv_SE.UTF-8
-          sudo localectl set-locale LANG="sv_SE.UTF-8"
+          export LANG=sv_SE.UTF-8
+          export LC_ALL=sv_SE.UTF-8
       - name: 'Kopiera info om repository till filer'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
@@ -124,7 +125,8 @@ jobs:
       - name: 'Sätt systemspråk till svenska'
         run: |
           sudo locale-gen sv_SE.UTF-8
-          sudo localectl set-locale LANG="sv_SE.UTF-8"
+          export LANG=sv_SE.UTF-8
+          export LC_ALL=sv_SE.UTF-8
       - name: 'Kopiera info om repository till filer'
         run: |
           echo $GITHUB_SHA | cut -c1-7 > SHA.tmp
@@ -153,4 +155,3 @@ jobs:
           path: |
             koncept*.epub
             koncept.log
-          compression-level: 0
