@@ -82,6 +82,8 @@ KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/trafikreglemente-q-koden.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
+	koncept/trafikreglemente-exempel-kontakt.tex \
+	koncept/chapter13-5.tex \
 	koncept/trafikreglemente-anropssignaler.tex \
 	koncept/trafikreglemente-loggbok.tex \
 	koncept/trafikreglemente-hederskod.tex \
