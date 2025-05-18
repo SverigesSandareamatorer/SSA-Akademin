@@ -1,0 +1,267 @@
+\chapter{Att skydda sin amatörradiostation mot blixten}
+\label{app:aaskskydd}
+
+Ursprungliga författare: Rolf och Bengt Högberg.
+Ursprungligen publicerad i tidningen QTC~1992:4.
+Uppdaterad för KonCEPT år~2025.
+
+\section{Inledning}
+De radioutrustningar som användes av sändaramatörer på 1960-talet och tidigare
+var ofta hembyggda och rörbestyckade.
+Komponenterna som användes var tåliga mot överspänningar och gick de sönder, var
+det i regel inga stora kostnader för att få tag på nya komponenter.
+Reparationerna kunde oftast göras av sändaramatören själv.
+Å andra sidan kom ofta elmatning och tele in via luftledningar (landsbygden),
+vilket kunde hjälpa till att leda in åsköverspänningar till husen och därmed
+till radiostationerna.
+
+De utrustningar som används av sändaramatörerna i dag är synnerligen
+sofistikerade, ofta mikroprocessorbaserade, och med en komponenttäthet som många
+amatörer knappt vågar titta på, än mindre stoppa in lödkolven i.
+Även om mycket har gjorts av tillverkarna vad gäller skydd mot atmosfäriska
+överspänningar blir reparationskostnaderna, vid t.ex. ett slutstegshaveri,
+synnerligen kostbara och relativt få amatörer har kunskap eller utrustning för
+att göra jobbet själva.
+Det finns alltså goda skäl för att försöka skydda sin utrustning (och kanske
+även livhanken) mot blixten.
+
+\mediumfigpad{images/aaskskydd-1.png}{Skydd av station och antenn.}{fig:aaska-skydd-antenn}
+
+\section{Bakgrund}
+Om vi med direktträff av blixten menar att blixtkanalen ska direkt träffa din
+antenn eller byggnaden där din utrustning finns så är sannolikheten för detta
+liten.
+Man brukar räkna med att statistiskt sett så sker ett direktnedslag ca 0,2--0,3
+gånger per \unit{\kilo\metre\squared} och år vilket för ''medelradioamatören''
+innebär ett direkt blixtnedslag mindre än en gång vart hundrade år.
+Betydligt mera sannolikt är att blixtens verkningar når din anläggning via de
+ledningar som försörjer ditt hus med el eller tele endera genom att dessa
+ledningar fungerar som antenner och plockar upp en kraftig störimpuls genom
+induktion eller genom att ledningarna själva träffas av blixten.
+Även i dina antenner kan givetvis kraftiga störningar induceras.
+De är ju avsedda att plocka upp radiosignaler och blixtens frekvensspektrum
+sträcker sig från \unit{\kilo\hertz} upp till över \qty{10}{\giga\hertz} med ett
+maximum vid ca \qty{10}{\kilo\hertz}.
+Faktum är att den radiosignal som sänds ut när blixten går från moln till mark
+används för att pejla blixtens nedslagspunkt med hjälp av minst två mätstationer
+och att signalen från en kraftig blixturladdning kan vara så kraftig att
+samtliga pejlstationer i Sverige registrerar mätbara signaler från en och samma
+blixt.
+Dessa blixtpejlar använder sig i första hand av frekvensområdet upp till ca
+\qty{0,5}{\mega\hertz}.
+De strömmar som kan förekomma varierar från ca \qty{1}{\kilo\ampere} till flera
+hundra \unit{\kilo\ampere}.
+Med ca \qty{100}{\mega\volt} spänning i molnet och något hundratal
+\unit{\kilo\ampere} ström i blixtkanalen kan man förstå att den
+''sändareffekten'' räcker för att nå rätt långt.
+
+\section{Grundregler för åskskydd}
+\subsection{Placering av antenner}
+Placera om möjligt antennerna i en fristående mast.
+Detta förenklar skyddet av ditt hus som i annat fall måste skyddas av en
+byggnadsåskledare, utförd t.ex. enligt den svenska åskskyddsstandarden
+SS-EN~62305-1.
+Båda dessa standarder kan beställas från SIS i Stockholm, https://www.sis.se.
+Om man nöjer sig med att skydda mot inducerade effekter (ej direktinslag) kan
+ett enklare skydd anordnas, se nedan.
+Observera att skyddsåtgärderna enligt dessa standarder syftar till att förhindra
+personskada och brand men inte garanterar att utrustningen överlever ett
+blixtnedslag.
+
+\mediumfigpad{images/aaskskydd-2.png}{Jordning av antenn och station.}{fig:aaska-jordning}
+
+\subsection{Placering av din station}
+Din station kan lättast skyddas mot blixtens verkningar om den ligger lågt i
+byggnaden och därigenom ligger nära jordtaget.
+Källaren eller bottenvåningen nära inkommande el är alltså bäst.
+Det blir något svårare att skydda stationen effektivt ju högre upp i byggnaden
+(och därigenom längre från huvudelcentralen) stationen är installerad.
+I princip beror detta på att man vill göra spänningsutjämning mot inkommande
+nolla i huvudelcentralen.
+Sitter antennen mastmonterad på taket fordras dessutom alltid normalt
+byggnadsåskskydd enligt ovanstående normer om man vill skydda byggnaden vid
+direkta blixtnedslag.
+
+\subsection{Avled blixtströmmen till jord nära det träffade objektet}
+För att minska skadorna vid blixtnedslag i en antenn oavsett om den sitter
+monterad i separat mast eller på en byggnad så gäller samma grundregel: Avled så
+stor del av blixtströmmen som möjligt nära inslagspunkten!
+Sitter antennen monterad på en fristående metallmast kan en stor del av strömmen
+avledas genom att ansluta jordlinor, \qty{25}{\milli\metre\squared} 7-trådiga
+glödgade kopparlinor, till masten ungefär i marknivå.
+Linorna dras ut från masten i olika riktningar och avslutas med vertikala
+jordspett till 2--4~meter djup eller helst mera.
+Om antennen sitter monterad direkt på en villa eller ett hyreshus bör byggnaden
+förses med normalt åskskydd enligt tidigare nämnda standarder vilket innebär att
+jordningen normalt utgörs av en lina ca 0,5~meter ner i marken runt byggnaden,
+en s.k. ringlina, någon meter ut från husgrunden.
+Antennen ansluts till denna ringlina via de normala nedledare som
+åskskyddsanläggningen har.
+Principen är även här att sprida strömmen i olika riktningar, vilket minskar
+induktansen.
+Skulle marken vara dåligt elektriskt ledande kan det löna sig att till ringlinan
+ansluta s.k. utlöpare, en eller flera \qty{25}{\milli\metre\squared}
+åskskyddslinor i radiella riktningar ut från ringlinan.
+Det lönar sig inte att ha alltför långa jordlinor eftersom
+avledningseffektiviteten avtar med längden på linan.
+Som tumregel kan man säga att längre jordlina än som motsvarar ca kvadratroten
+ur markresistiviteten i meter räknat inte är verksamt.
+För berg där resistiviteten är ca \qty{10000}{\watt\metre} innebär detta att det
+kan högst kan vara lönsamt att gå upp till ca \qty{100}{\metre} från
+anläggningen med en eller flera utlöpare för att hitta gynnsammare
+jordningsförhållanden.
+Av praktiska skäl och av kostnadsskäl får man i regel nöja sig med mindre vilket
+innebär att övriga strömvägar (framför allt till elnätet) kommer att avleda en
+något större andel av blixtströmmen än vad annars skulle varit fallet.
+För pinnmo respektive lera är motsvarande längder \qtyrange{10}{30}{\metre}
+respektive \qtyrange{5}{15}{\metre}.
+Användning av vertikala jordningar, s.k. jordspett är ofta effektivare än
+horisontella jordlinor.
+
+När blixten träffar och strömpulsen stiger från noll upp mot sitt maximivärde
+kommer strömmen att fördela sig ungefär lika på de vägar som finns tillgängliga.
+Strömmen i masten, i varje jordtagsledare, i varje antennkabel, i
+telefonledningen, i matningsledningen till din antennrotor och i inkommande
+elledning kommer alltså under någon eller några mikrosekunder att fördela sig
+relativt jämnt, nästan oberoende av ledningarnas area.
+Strömdelningen styrs här av induktansen i de olika ledningarna.
+Under denna tid när blixtströmmen växer till sitt maximivärde uppstår också de
+största inducerade spänningarna.
+När strömpulsen passerat sitt maximivärde kommer däremot resistanserna att styra
+avledningen.
+En låg total avledningsresistans till marken kan därför leda bort den stora
+delen av den blixtström och den energi som matas in och minska strömmarna i
+övriga kablar vilket i sin tur minskar risken för att utrustningen skadas.
+Antennkabeln bör dras nedgrävd i marken från masten in till stationsplatsen.
+Tätt intill koaxialkabel och ev. styrkabel (gärna hoptejpad med dessa) bör en
+oisolerad \qty{25}{\milli\metre\squared} jordlina dras samma väg.
+Detta minskar den s.k. kopplingsimpedansen, åtminstone för lägre frekvenser,
+vilket t.ex. minskar störspänningen mellan innerledare och skärm och minskar
+strömbelastningen på övriga kablar.
+
+Kom också ihåg att se till att avledningsresistansen går att mäta, vilket endast
+är möjligt om den del man vill mäta på kan kopplas loss från övriga delar så att
+den är isolerad från övriga jordtag.
+Detta innebär också att närliggande jordlinor i mark bör isoleras t.ex. med
+polyetenrör så att inte överledning i mark stör mätningen.
+Denna isolation görs på så lång sträcka att sträckan mellan oisolerade ledare i
+mark blir \qty{1}{\metre} eller mera.
+Mätning kan ske med en s.k. jordresistansmätbrygga.
+Det är i princip önskvärt att få ett så lågt värde på avledningsresistansen som
+möjligt.
+Genom att marken joniseras runt jordtagen, speciellt för blixtar med stora
+strömmar, kommer emellertid avledningsresistansen att minska till värden
+betydligt lägre än den uppmätta avledningsresistansen.
+För riktigt stora blixtströmmar kan avledningsresistansen minska ända till ca en
+tiondel av det med jordresistansbrygga uppmätta värdet.
+Där så är möjligt bör eventuell armerad betong i byggnaden utnyttjas för att
+ytterligare förbättra stationens jordning.
+Är husets bottensula av platsgjuten armerad betong väljer man en lämplig plats
+nära radioutrustningen, borrar in till armeringen och ansluter minst tre
+armeringsjärn till det övriga jordsystemet med hjälp av svetsning eller
+klämkopplingar.
+Hålet gjuts sedan igen.
+Linan som anslutits till armeringen kan sedan dras närmaste lämpliga väg till
+radioutrustningen.
+
+Avledningsresistansen till jord för armerad betong kan approximativt beräknas
+enligt följande:
+
+\begin{exempelbox}
+Om volymen av den betong under marknivå som är aktiv för att avleda
+blixtströmmen är
+
+V~[\unit{\cubic\metre}]
+
+(endast betong i kontakt med marken räknas och alltså inte betong i
+mellanväggar) är avledningsresistansen
+
+\(R = r/D\)
+
+där \(D = 1,57 (V)^{0,333}\) och r är markresistiviteten i \unit{\ohm\metre}.
+
+för \qty{8}{\cubic\metre} betong är \(D = 1,57 \cdot 2 = 3,14\).
+För r = \qty{200}{\ohm\metre} (torr åkermark) erhålls R = \qty{20}{\ohm}
+\end{exempelbox}
+
+\subsection{Skydda din stationsplats}
+Installationen vid din radioutrustning bör vara sådan att blixtströmmen inte
+passerar utrustningen utan ''shuntas'' förbi utrustningen.
+Detta innebär att alla kablar inklusive åskskyddsjordar samt el- och andra
+ledningar om möjligt bör föras in i byggnaden på ett gemensamt ställe och där
+anslutas till en gemensam referenspunkt direkt eller via överspänningsskydd om
+det finns signaler eller t.ex. nätspänning på någon ledare.
+Helst bör denna gemensamma referenspunkt väljas mycket nära huvudelcentralen.
+Att praktiskt genomföra detta för olika typer av installationer i villa,
+lägenhet, höghus, i båt etc. har alla sina speciella svårigheter och
+kompromisser är nästan alltid nödvändiga.
+Principerna för skydd är dock relativt allmängiltiga varför du säkert själv kan
+fundera vidare och hitta en lösning för just din station.
+Kom emellertid ihåg att varje avsteg från ''bästa installation'' innebär att
+skyddet försämras.
+Några praktiska erfarenheter kan kanske vara på sin plats:
+
+Om det nu inte går att anordna kablaget enligt konstens alla regler och
+kompromisser alltså måste göras har det visat sig fungera bra att göra en
+gemensam referenspunkt direkt vid din station.
+En \qty{1}{\milli\metre} kopparplåt kan t.ex. placeras något under stationen och
+så att den skjuter ut över bordskanten.
+Alla inkommande kablar ansluts till plåten endera direkt eller via
+överspänningsskydd.
+Skärmen på koaxialkablarna ansluts till plåten via chassikontakter.
+Mittledaren ansluts via gasurladdningsrör till plåten.
+Hållare för skydd av andra än koaxialkablar tillverkar du lätt själv.
+Gasurladdningsrörens statiska tändspänning (den spänning som ofta står tryckt på
+rören) väljs så att rören ej tänder för den spänning som under normal drift kan
+förekomma.
+T.ex. om uteffekten på din sändare är \qty{1}{\kilo\watt} (\qty{50}{\ohm}
+impedans) så är \(1000 = U^{2}/50\) vilket ger U = strax under \qty{320}{\volt}.
+Eftersom gasurladdningsrör har en tolerans på \qty{+-20}{\percent} vilket ger
+\(U_{tänd} \approx \qty{380}{\volt}\) väljs närmaste högre standardvärde
+\qty{470}{\volt}.
+Den statiska tändspänningen för gasurladdningsröret mellan mittledare och skärm
+monterat i sändaränden bör alltså vara \qty{470}{\volt} vilket inte bör ge
+obefogad tändning vid sändning.
+Även utan skydd (bara skärmen jordad) så kommer kabelkontakterna att begränsa
+överspänningarna till någonstans mellan ca \qtyrange{3}{8}{\kilo\volt} (beroende
+på vilken kontakttyp som används).
+Bäst är emellertid om skydd används vilken ger lägre påkänningar på din utrustning.
+
+Kraftmatningen till sändaren skyddas förslagsvis med ventilavledare, helst i
+huvudcentalen om den finns nära.
+Finns huvudelcentralen mer än ca \qty{10}{\metre} bort från stationen kan
+avledarna placeras i en undercentral.
+
+\mediumfigpad{images/aaskskydd-3.png}{Principskiss för skydd av stationsplatsen.}{fig:aaska-skydd-station}
+
+Observera att montering av ventilavledare ska utföras av behörig elektriker.
+
+\section{Sammanfattande praktiska råd}
+
+Sändaramatörer i villa eller sommarstugor med yagi-/quad- och trådantenner:
+\begin{itemize}
+    \item Skaffa bra jordtag anslutet till din antennmast och station!
+    \item Använd om möjligt byggnadens armering som kan ge en effektiv minskning av anläggningens avledningsresistans! Även denna bör anslutas till stationens ''referens''.
+    \item Använd en \qty{25}{\milli\metre\squared} jordledare in till ''referensen'' vid din station, gärna ''hopbuntad'' med antennkablarna som går in till huset (fristående mast)!
+    \item Dra antennledningar från antenner på taket på husets utsida, och ej via ventilationkanaler eller dylikt (brandrisk)! Normalt byggnadsåskskydd erfordras om skydd ska anordnas för direkta blixtsträffar.
+    \item Dra om möjligt in kablaget så att det passerar nära huvudelcentralen.
+    \item Anslut ventilavledare till inkommande nolla i huvudelcentralen (elbehörighet erfordras)! Ventilavledare bör dessutom finnas i närmaste elcentral och vara anslutna mellan faser och skyddsjord om inte huvudcentralen är närmast.
+    \item Använd överspänningsskydd på inkommande antennledningar!
+    \item Bygg upp jordsystem och övrigt kablage stjärnformat med en gemensam lokal referenspunkt till vilken överspänningsskydden ansluts!
+\end{itemize}
+
+Sändaramatörer i lägenhetshus med trådantenn och ev. vertikal antenn (GP) på taket:
+\begin{itemize}
+    \item Använd så bra jord som går att åstadkomma och anslut din station. Eget ''riktigt jordtag'', armering, vattenledning, fjärrvärmeledningar, värmeledningssystem! Att åstadkomma ett tillfredsställande jordning i ett hyreshus är ofta det svåraste problemet att lösa.
+    \item Dra antennledningar från antenner på taket på husets utsida, och ej via ventilationkanaler eller dylikt, se ovan!
+    \item Installera ventilavledare vid elcentralen och gasurladdningsrör som skydd mot överspänningar från antenner och telenät, se ovan!
+    \item Anordna en gemensam referens vid din station!
+    \item Bygg upp jordsystem och övrigt kablage stjärnformat med en gemensam lokal referenspunkt till vilken överspänningsskydden ansluts!
+    \item Sätt överspänningsskydd på inkommande antennledningar!
+\end{itemize}
+
+För i stort sett alla system oavsett om de är monterade på en villa eller
+lägenhetshus eller om antennen har fristående mast eller är monterad på taket på
+en byggnad gäller att för att vara mycket säker att blixten inte skadar din
+station så bör du: helst dra ur alla kablar till radiostationen och jorda
+antennledningarna när du är bortrest eller när åskan närmar sig.

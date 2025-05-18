@@ -10,6 +10,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nya introduktioner till kapitlen Ellära, Komponenter, Kretsar, Sändare och Trafikreglemente.
 - Ny figur för ICNIRPcalc.
 - Nya QR-koder för att lämna återkoppling på boken.
+- Nytt appendix om åskskydd.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel Ellära.
