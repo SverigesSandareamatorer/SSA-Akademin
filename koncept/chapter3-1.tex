@@ -366,7 +366,6 @@ Spänningen över kondensatorn stiger från 0~volt till \(U_{\it max}\) samtidig
 som laddningsströmmen sjunker från \(I_{\it max}\) till 0~ampere.
 Spänningen över kondensatorn ökar exponentiellt under uppladdningen
 %
-% \[u_c = U_{\it max} \cdot ( 1 - e^{-\dfrac{t}{\tau}} )\]
 \[u_c = U_{\it max} \cdot ( 1 - e^{-t/\tau} )\]
 %
 %\begin{tabular}{lp{0.35\textwidth}}
@@ -385,8 +384,8 @@ som kallas tidskonstant:
 \end{gather*}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har spänningen över
-kondensatorn ökat från noll till 63~\% av maxvärdet.
-Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till 99~\%.
+kondensatorn ökat från noll till \qty{63}{\percent} av maxvärdet.
+Efter tiden \(t = 5\tau\) är kondensatorn uppladdad till \qty{99}{\percent}.
 
 Strömmen från kondensatorn minskar exponentiellt under uppladdningen
 
@@ -400,8 +399,8 @@ där
 % \end{tabular}
 
 Efter tiden \(t = 1\tau\) från inkopplingsögonblicket har strömmen till
-kondensatorn minskat till 37~\% av maxvärdet.
-Efter tiden \(t = 5\tau\) återstår 1~\% av strömmens maxvärde.
+kondensatorn minskat till \qty{37}{\percent} av maxvärdet.
+Efter tiden \(t = 5\tau\) återstår \qty{1}{\percent} av strömmens maxvärde.
 
 \subsubsection{Urladdning}
 
@@ -420,10 +419,10 @@ Strömriktningen är motsatt den vid uppladdningen.
 
 \[i_c = - I_{\it max} \cdot e^{-t/\tau}\]
 
-Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att 37~\% av
+Efter tiden \(t = 1\tau\) är kondensatorn urladdad så, att \qty{37}{\percent} av
 \(I_{\it max}\) respektive \(U_{\it max}\) återstår.
-Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än 1~\% av
-\(I_{\it max}\) respektive \(U_{\it max}\) återstår.
+Efter tiden \(t = 5\tau\) är kondensatorn urladdad så, att mindre än
+\qty{1}{\percent} av \(I_{\it max}\) respektive \(U_{\it max}\) återstår.
 
 Exempel på beräkning av tidskonstanten:
 \begin{enumerate}
@@ -477,8 +476,8 @@ s\ [\text{sek}] \quad
 \]
 
 Efter en tid av \(t = 1\tau\) från inkopplingsögonblicket har strömmen genom
-induktorn ökat från noll till 63~\% av \(I_{\it max}\) och spänningen över
-induktorn minskat till 37~\% av maxvärdet.
+induktorn ökat från noll till \qty{63}{\percent} av \(I_{\it max}\) och
+spänningen över induktorn minskat till \qty{37}{\percent} av maxvärdet.
 
 \newpage
 \subsubsection{Urkoppling}
@@ -505,7 +504,7 @@ exponentiellt
 
 \noindent
 Efter en tid av \(t = 1\tau\) från urkopplingsögonblicket har strömmen genom
-induktorn minskat till 37~\% av maxvärdet.
+induktorn minskat till \qty{37}{\percent} av maxvärdet.
 
 Teoretiskt kan spänningarna och strömmarna aldrig nå ett noll- eller maxvärde,
 men för praktiskt bruk anses detta inträffa efter en tid av minst \(5\tau\).
@@ -519,7 +518,7 @@ Under den tid som magnetfältet i en induktor avvecklas eller byggs upp, så
 induceras en motspänning i den.
 Denna spänning är högre än den som finns över induktorn innan strömmen bryts
 eller ändras och är proportionell mot den hastighet som ändringen har.
-När en en strömkrets med induktor bryts är det vanligt att det i brytögonblicket
+När en strömkrets med induktor bryts är det vanligt att det i brytögonblicket
 bildas en gnista eller ljusbåge över brytarens kontakter.
 
 Om induktansen är stor och kretsströmmen hög ska en stor mängd energi frigöras
@@ -1109,7 +1108,7 @@ Bild~\ssaref{fig:BildII3-21} visar med en kurva vilket impedansvärde kretsen ha
 vid olika frekvenser.
 Impedansens högsta värde är vid frekvensen \(f_{\it res}\) och avtar vid
 frekvenser som är högre eller lägre.
-Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel 70~\% av
-maximalvärdet.
+Vid frekvenserna \(f_1\) och \(f_2\) är impedansvärdet till exempel
+\qty{70}{\percent} av maximalvärdet.
 Med bandbredden \(b\) förstås skillnaden mellan impedansvärdena i ett sådant
 frekvenspar, det vill säga \(b = f_2 - f_1\).
