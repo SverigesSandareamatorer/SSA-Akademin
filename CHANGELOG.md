@@ -30,6 +30,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nya avsnittsnivåer i kapitel Trafikreglemente.
 - Loggbok flyttat in i Trafikreglemente.
 - Modernisering av radioamatörens hederskod.
+- Många illustrationer har omarbetats till vektorformat.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
