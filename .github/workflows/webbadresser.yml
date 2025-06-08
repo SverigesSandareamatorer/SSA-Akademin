@@ -14,8 +14,8 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v2.4.0
+      - uses: lycheeverse/lychee-action@v2.4.1
         with:
           fail: true
           checkbox: false
-          args: "--max-concurrency 3 --accept 200,429 --mode plain --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"
+          args: "--max-concurrency 3 --accept 200,429 --retry-wait-time 35 --no-progress './**/*.md' './**/*.tex' './**/*.bib'"

@@ -74,6 +74,7 @@ jobs:
             texlive-fonts-recommended \
             texlive-fonts-extra \
             latexmk \
+            qpdf \
             language-pack-sv
       - name: 'Sätt systemspråk till svenska'
         run: |
@@ -90,6 +91,8 @@ jobs:
         run: |
           echo "<pre>$(latexmk -v)</pre>" >> $GITHUB_STEP_SUMMARY
           echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
+      - name: 'Optimera PDF-filen'
+        run: qpdf koncept.pdf --replace-input --compress-streams=y --decode-level=generalized --recompress-flate --object-streams=generate --compression-level=9
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
