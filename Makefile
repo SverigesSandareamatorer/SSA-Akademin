@@ -29,7 +29,7 @@ KONCEPT_CH02_FILES = koncept/komponenter.tex \
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
-	koncept/chapter3-5.tex koncept/kretsar-oscillatorer.tex \
+	koncept/kretsar-detektorer-demodulatorer.tex koncept/kretsar-oscillatorer.tex \
 	koncept/kretsar-kristalloscillatorer.tex koncept/kretsar-frekvensblandare.tex \
 	koncept/kretsar-modulatorer.tex
 KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
