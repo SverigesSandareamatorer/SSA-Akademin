@@ -66,7 +66,7 @@ KONCEPT_CH07_FILES = koncept/antennsystem.tex \
 	koncept/chapter7-5.tex koncept/antennsystem-transmissionsledningar.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/chapter8-1.tex koncept/chapter8-2.tex \
-	koncept/chapter8-3.tex koncept/vaagutbredning-solens-inverkan.tex \
+	koncept/vaagutbredning-jonosfaerskikten.tex koncept/vaagutbredning-solens-inverkan.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \
