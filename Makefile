@@ -24,7 +24,7 @@ KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/komponenter-induktorn.tex koncept/komponenter-transformatorn.tex \
 	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
 	koncept/komponenter-ic.tex \
-	koncept/chapter2-7.tex koncept/chapter2-8.tex \
+	koncept/komponenter-elektronroer.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
