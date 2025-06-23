@@ -84,8 +84,89 @@ I frekvensområdet 10 till \qty{110}{\mega\hertz} finns även en begränsning ti
 \qty{45}{\milli\ampere} för inducerad ström i varje extremitet i syfte att
 begränsa det lokala SAR-värdet.
 
-\mediumfig[0.87]{images/emfbild-000}{Referensvärden för begränsning av elektriska fält (100~kHz--10~GHz)}{fig:emf1}
-\mediumfig[0.87]{images/emfbild-001}{Referensvärden för begränsning av magnetiska fält (100~kHz--10~GHz)}{fig:emf2}
+\largetikz{
+	\begin{tikzpicture}
+	\begin{loglogaxis}[
+		xlabel={Frekvens [MHz]},
+		ylabel={Elektrisk fältstyrka (E) [\unit{V/m}]},
+		xmin=0.1, xmax=10000,
+		ymin=10, ymax=100,
+		legend pos=south west,
+		grid=major, grid style=dashed,
+	]
+
+	\addplot [forget plot, domain=0.003:1, samples=10, color=black,
+	]{87};
+
+	\addplot [forget plot, domain=1:10, samples=100, color=black,
+	]{8.7*10^4/(x*10^6)^(1/2)};
+
+	\addplot [forget plot, domain=10:399.9, samples=10, color=black,
+	]{28};
+
+	\addplot [forget plot, domain=400:1999.9, samples=100, color=black,
+	]{1.375*(x*10^6)^(1/2)/1000};
+
+	\addplot [forget plot, domain=2000:10000, samples=10, color=black,
+	]{61};
+
+	% Definiera punktlista som frekvens/värde-par (slash-separerade) och återanvänd
+	\def\emfEpoints{0.1378/87,0.479/87,1.85/64,3.8/45,7.2/32,10.15/28,14.175/28,21.225/28,28.85/28,50/28,145/28,435/29,1296/50,2450/61,5750/61}
+
+	% Rita markörer genom att bygga (x,y)-par från listan
+	\addplot[only marks, color=gray, mark=*, nodes near coords, point meta=explicit symbolic]
+		coordinates {\foreach \x/\y in \emfEpoints { (\x,\y) } };
+
+	% Lägg till etiketter för varje punkt från samma lista: "<frekvens> MHz, <värde> V/m"
+	\foreach \x/\y in \emfEpoints {
+		\node[anchor=south west, font=\scriptsize, fill=white, inner sep=1pt] at (axis cs:\x,\y) {\x~MHz,~\y~V/m};
+	}
+		\legend{Amatörradioband}
+	\end{loglogaxis}
+	\end{tikzpicture}
+}{Referensvärden för begränsning av elektriska fält på platser där allmänheten kan vistas. Amatörradioband och fältstyrkenivå angivna.}{fig:emf1}
+
+\largetikz{
+	\begin{tikzpicture}
+	\begin{loglogaxis}[
+		xlabel={Frekvens [MHz]},
+		ylabel={Magnetisk fältstyrka (H) [\unit{A/m}]},
+		xmin=0.1, xmax=10000,
+		ymin=0.01, ymax=10,
+		legend pos=north east,
+		grid=major, grid style=dashed,
+	]
+
+	\addplot [forget plot, domain=0.1:0.15, samples=10, color=black,
+	]{5};
+
+	\addplot [forget plot, domain=0.15:10, samples=100, color=black,
+	]{(7.3*10^5)/(x*10^6)};
+
+	\addplot [forget plot, domain=10:399.9, samples=10, color=black,
+	]{0.073};
+
+	\addplot [forget plot, domain=400.0:1999.9, samples=100, color=black,
+	]{0.0037*(x*10^6)^(1/2)/1000};
+
+	\addplot [forget plot, domain=2000.0:10000, samples=10, color=black,
+	]{0.16};
+
+	% Definiera punktlista som frekvens/värde-par (slash-separerade) och återanvänd
+	\def\emfHpoints{0.1378/5.0,0.479/1.524,1.85/0.395,3.8/0.192,7.2/0.101,10.15/0.073,14.175/0.073,21.225/0.073,28.85/0.073,50/0.073,145/0.073,435/0.077,1296/0.1332,2450/0.16,5750/0.16}
+
+	% Rita markörer genom att bygga (x,y)-par från listan
+	\addplot[only marks, color=gray, mark=*, nodes near coords, point meta=explicit symbolic]
+		coordinates {\foreach \x/\y in \emfHpoints { (\x,\y) } };
+
+	% Lägg till etiketter för varje punkt från samma lista: "<frekvens> MHz, <värde> A/m"
+	\foreach \x/\y in \emfHpoints {
+		\node[anchor=south west, font=\scriptsize, fill=white, inner sep=1pt] at (axis cs:\x,\y) {\x~MHz,~\y~A/m};
+	}
+		\legend{Amatörradioband}
+	\end{loglogaxis}
+	\end{tikzpicture}
+}{Referensvärden för begränsning av magnetiska fält på platser där allmänheten kan vistas. Amatörradioband och fältstyrkenivå angivna.}{fig:emf2}
 
 Bild~\ssaref{fig:emf1} illustrerar referensvärden för begränsning av elektriska
 fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband

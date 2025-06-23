@@ -241,8 +241,15 @@
 % Gör QR-koder.
 \usepackage{qrcode}
 
-% Definierar en ny kolumntyp 'L' för tabellmiljöer, som skapar en styckekolumn med angiven bredd (#1),
-% vänsterjusterar innehållet (ragged right), tillåter radbrytning med '\\', och säkerställer korrekt avstånd i slutet av kolumnen.
+% Paketet ger stöd för att skapa grafer och diagram i LaTeX-dokument.
+\usepackage{pgfplots}
+\pgfplotsset{every axis/.append style={
+    /pgf/number format/.cd,
+    use comma,
+    1000 sep={\,},
+}}
+
+% (Beskrivning saknas.)
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 % Paketet ger omfattande möjligheter, både för att konstruera sidhuvuden och
@@ -375,6 +382,19 @@
 		\end{center}
 		\vspace{-20pt}
 	\end{figure*}
+}
+
+\newcommand{\largetikz}[3]{
+  \begin{figure*}[t]
+    \begin{center}
+      \resizebox{0.9\textwidth}{!}{%
+        #1
+        }%
+      \caption{#2}
+      \label{#3}
+    \end{center}
+    \vspace{-20pt}
+  \end{figure*}
 }
 
 % (Beskrivning saknas.)

@@ -58,7 +58,6 @@ jobs:
   bygg-pdf:
     name: 'Bygg PDF'
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v5
