@@ -24,12 +24,12 @@ KONCEPT_CH02_FILES = koncept/komponenter.tex \
 	koncept/komponenter-induktorn.tex koncept/komponenter-transformatorn.tex \
 	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
 	koncept/komponenter-ic.tex \
-	koncept/chapter2-7.tex koncept/chapter2-8.tex \
+	koncept/komponenter-elektronroer.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
 KONCEPT_CH03_FILES = koncept/kretsar.tex \
 	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
-	koncept/chapter3-5.tex koncept/kretsar-oscillatorer.tex \
+	koncept/kretsar-detektorer-demodulatorer.tex koncept/kretsar-oscillatorer.tex \
 	koncept/kretsar-kristalloscillatorer.tex koncept/kretsar-frekvensblandare.tex \
 	koncept/kretsar-modulatorer.tex
 KONCEPT_CH04_FILES = koncept/ioj.tex koncept/chapter4-1.tex
@@ -66,7 +66,7 @@ KONCEPT_CH07_FILES = koncept/antennsystem.tex \
 	koncept/chapter7-5.tex koncept/antennsystem-transmissionsledningar.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/chapter8-1.tex koncept/chapter8-2.tex \
-	koncept/chapter8-3.tex koncept/vaagutbredning-solens-inverkan.tex \
+	koncept/vaagutbredning-jonosfaerskikten.tex koncept/vaagutbredning-solens-inverkan.tex \
 	koncept/chapter8-5.tex koncept/chapter8-6.tex \
 	koncept/chapter8-7.tex
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \

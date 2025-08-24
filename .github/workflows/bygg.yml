@@ -106,6 +106,7 @@ jobs:
             koncept.log
   bygg-epub:
     name: 'Bygg EPUB (experimentell)'
+    if: github.repository != 'SverigesSandareamatorer/SSA-Akademin'
     continue-on-error: true
     runs-on: ubuntu-24.04
     timeout-minutes: 60
