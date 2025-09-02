@@ -42,6 +42,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Rätt namn på broschyr om elolyckor i litteraturlistan.
 - Primär och sekundär status borttaget från bilaga svensk frekvensplan.
 - Rättat enstaka tecken på flera ställen.
+- Moderniserat texten om WSJT(-X).
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
