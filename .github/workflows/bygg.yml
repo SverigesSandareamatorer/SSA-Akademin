@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -62,7 +62,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
@@ -111,7 +111,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
