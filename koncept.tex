@@ -120,6 +120,9 @@
 \newcommand\ssaref[1]{\ref{#1}}
 %% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
 
+% Command for warning symbol - replaces problematic futs font symbol
+\newcommand\warningsymbol{\ding{43}}
+
 % (Beskrivning saknas.)
 \clubpenalty=9990
 \widowpenalty=9999
@@ -136,6 +139,9 @@
 
 % Skapa tabellceller som spänner över flera rader.
 \usepackage{multirow}
+
+% Paket för symboler, inklusive varningssymboler.
+\usepackage{pifont}
 
 % Detta paket ger användarkontroll över layouten för de tre grundläggande
 % listmiljöerna: enumerate, itemize and description.
