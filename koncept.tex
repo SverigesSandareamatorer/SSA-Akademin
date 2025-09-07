@@ -120,11 +120,11 @@
 \newcommand\ssaref[1]{\ref{#1}}
 %% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
 
-% Command for warning symbol - creates triangle with centered exclamation mark
+% Command for warning symbol - creates triangle with centered exclamation mark using TikZ
 \newcommand\warningsymbol{%
-  \ooalign{%
-    $\triangle$\cr
-    \hidewidth\raisebox{-0.1ex}{\scriptsize\textbf{!}}\hidewidth\cr
+  \tikz[baseline=-0.1ex]{
+    \draw[thick] (0,0) -- (0.4,0.7) -- (0.8,0) -- cycle;
+    \node at (0.4,0.35) {\footnotesize\textbf{!}};
   }%
 }
 
