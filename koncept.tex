@@ -121,7 +121,7 @@
 %% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
 
 % Command for warning symbol - replaces problematic futs font symbol  
-\newcommand\warningsymbol{\Caution}
+\newcommand\warningsymbol{\raisebox{-0.3ex}{\Large$\triangle$}\hspace{-1em}\raisebox{0.1ex}{\textbf{!}}}
 
 % (Beskrivning saknas.)
 \clubpenalty=9990
@@ -139,9 +139,6 @@
 
 % Skapa tabellceller som spänner över flera rader.
 \usepackage{multirow}
-
-% Paket för symboler, inklusive varningssymboler.
-\usepackage{marvosym}
 
 % Detta paket ger användarkontroll över layouten för de tre grundläggande
 % listmiljöerna: enumerate, itemize and description.
