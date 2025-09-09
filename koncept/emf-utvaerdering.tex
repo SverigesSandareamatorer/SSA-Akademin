@@ -1,162 +1,3 @@
-\section{Fält}
-\index{elektriskt fält (E)}
-\index{magnetiskt fält (H)}
-För att ange nivån på det elektriska fältet (E) används enheten
-''volt per meter'' (V/m).
-Det magnetiska fältet (H) nivå anges i enheten ''ampere per meter'' (A/m).
-
-Antennens uppgift är att så effektivt som möjligt omvandla den högfrekventa
-strömmen i matarkabeln till en elektromagnetisk våg som utbreder sig i luften.
-
-Den sammansatta elektromagnetiska vågen uppträder inte direkt vid antennen utan
-uppstår i det som man kallar fjärrfältet.
-Detta sker genom växelverkan mellan de elektriska och magnetiska fält som
-utgår från antennen.
-Teorierna som beskriver hur denna växelverkan fungerar är komplicerade
-men det viktiga att förstå är att det finns en gräns mellan vad man
-kallar fjärrfältet, längre bort från antennen och närfältet nära antennen.
-
-\index{fjärrfält}
-I fjärrfältet kan man tack vare växelverkan mellan det elektriska- och det
-magnetiska fältet mäta vilket som helst av dem.
-I och med att det elektromagnetiska fältet sprider ut sig över en större yta så
-avtar styrkan i fältet med avståndet från antennen.
-Det sammansatta elektromagnetiska fältet som passerat gränsen till fjärrfältet
-avtar linjärt med avståndet, dubbleras avståndet halveras fältstyrkan.
-Det spelar ingen roll om antennen är helt rundstrålande eller koncentrerar
-effekten i en riktning, det elektromagnetiska fältet avtar på samma sätt.
-
-\index{närfält}
-I närfältet behöver man på grund av fältens komplicerade inbördes förhållande
-mäta både det elektriska och det magnetiska fältet för att få en uppfattning
-om storleken på det radiofrekventa fältet.
-I antennens närhet varierar nivåerna på de olika fälten kraftigt och på vissa
-punkter kan höga fältstyrkenivåer mätas upp.
-
-Om antennen har stor utsträckning i förhållande till använd våglängd kan ibland
-fjärrfältsformler användas för att överslagsmässigt beräkna fältstyrkenivå i
-antennens närfält.
-För kompakta antenner (t.ex. små loopar) krävs komplicerade beräkningar
-med hjälp av antennsimuleringsprogram.
-
-Beroende på den antenntyp som genererar fältet är det antingen ett elektriskt
-eller magnetiskt fält som dominerar i närfältet.
-Elektrisk fältdominans genereras av antenntyper som bygger på
-spänningsskillnader (t.ex. dipol) och magnetisk fältdominans av antenner
-med strömflöde (t.ex. små loopar).
-
-Eftersom alla elektriska ledare kan betraktas som antenner kommer dessa att
-kunna generera fält, oavsett om det är tänkt att det ska vara en antenn eller
-inte.
-Man bör ha detta i åtanke vid installation av matarledning till antennen för
-att undvika att högfrekvent ström flyter tillbaka till stationen på utsidan av
-ledningen.
-Även de apparater man använder för att generera radiosignaler kan ha dålig
-skärmning och därigenom leds högfrekvent ström till apparaternas utsida.
-
-Det finns alltså en risk att fältstyrkorna kan vara betydande i närheten av
-sändare och framför allt vid slutsteg med tillhörande kablage.
-
-\section{Allmänna råd}
-\index{EMF!allmänna~råd}
-
-SSM har gett ut allmänna råd för begränsning av allmänhetens exponering
-för elektromagnetiska fält SSMFS~2008:18~\cite{SSMFS2008:18}.
-Syftet med råden är att skydda allmänheten från akuta
-skadliga biologiska effekter vid exponering för elektromagnetiska fält.
-I råden anges grundläggande begränsningar och härledda referensvärden.
-
-\begin{quote}
-	De grundläggande begränsningarna säkerställer att elektriska eller
-	magnetiska fenomen som kan uppträda i kroppen inte stör funktioner i
-	nervsystemet eller ger upphov till skadlig värmeutveckling.
-\end{quote}
-
-De grundläggande begränsningarna är, enligt internationella rekommendationer,
-satta vid ungefär två procent av de nivåer vid vilka akuta biologiska effekter
-är vetenskapligt säkerställda.
-
-Från de grundläggande begränsningarna har härletts referensvärden som utgörs
-av storheter som är mätbara utanför människokroppen.
-Referensvärdena ska säkerställa att de grundläggande begränsningarna inte
-överskrids.
-
-\begin{quote}
-	Om uppmätta värden överstiger referensvärdena, innebär detta inte nödvändigtvis
-	att de grundläggande begränsningarna överskrids. I sådana fall gäller enligt
-	dessa allmänna råd de grundläggande begränsningarna.
-\end{quote}
-
-I EU-direktivet 1999/519/EG~\cite{1999/519/EG} skrivs att i sådana fall skall det
-göras en bedömning huruvida exponeringsnivån ligger under den grundläggande
-begränsningen.
-
-Referensvärdena i de allmänna råden bör inte överskridas i något område där
-allmänheten kan vistas under sådana tider att begränsningarna är av betydelse.
-
-\index{EMF!akuta biologiska effekter}
-Det finns två huvudsakliga akuta biologiska effekter som kan förekomma vid
-kraftig exponering för elektromagnetiska fält.
-Fält med frekvens upp till cirka \qty{10}{\mega\hertz} kan om strömtätheten blir
-hög i kroppen påverka det centrala nervsystemet.
-Fält med frekvenser från \qty{100}{\kilo\hertz} till \qty{10}{\giga\hertz} kan
-vid höga nivåer leda till en uppvärmning av kroppen.
-
-\index{Specific Absorption Rate (SAR)}
-\index{SAR}
-När elektromagnetisk strålning absorberas i biologisk vävnad kan vävnaden värmas
-upp.
-Detta benämns ''Specific Absorption Rate'' (SAR) som mäts i enheten watt per
-kilogram (\unit{\watt\per\kilo\gram}) eller milliwatt per gram
-(\unit{\milli\watt\per\gram}).
-SAR definieras som den energi, medelvärdesbildad över hela kroppen eller delar
-av kroppen som absorberas per tidsenhet och per massenhet biologisk vävnad.
-
-Då uppvärmningen av kroppsvävnad inte går snabbt räknar man med den medeleffekt
-som under en viss tid orsakar uppvärmning.
-För frekvenser mellan \qty{100}{\kilo\hertz} och \qty{10}{\giga\hertz} beräknas
-SAR-värdet som medelvärdet under en sexminutersperiod.
-För beräkning av SAR-värde på frekvenser överstigande \qty{10}{\giga\hertz}
-hänvisas till formler för beräkning enligt SSMFS 2008:18.
-
-Beroende på kroppens storlek i förhållande till det elektromagnetiska fältets
-riktning och våglängd skapas resonansfenomen på grund av att kroppen fungerar
-som en antenn.
-Detta påverkar uppvärmningen på så sätt att vid frekvenser som är nära kroppens
-eller kroppsdelens elektriska resonansfrekvens absorberas effekten lättare och
-maximal uppvärmning uppstår.
-Hos vuxna ligger denna resonansfrekvens mellan 70 och \qty{90}{\mega\hertz} om
-personen står upp är och isolerad från något som kan jämföras med ett jordplan.
-Även de olika kroppsdelarna kan vara resonanta.
-En vuxen persons huvud är till exempel resonant vid cirka \qty{400}{\mega\hertz}.
-
-Kroppens storlek avgör alltså vid vilken frekvens den absorberar mest effekt och
-vid frekvenser över och under resonansfrekvensen så minskar uppvärmningen
-orsakad av det elektromagnetiska fältet.
-
-\index{EMF!referensvärden}
-Referensvärdena tar hänsyn till detta faktum och det mest restriktiva
-frekvensområdet ligger inom området 10 till \qty{400}{\mega\hertz} där effekt
-lättast absorberas av kroppen.
-
-I frekvensområdet 10 till \qty{110}{\mega\hertz} finns även en begränsning till
-\qty{45}{\milli\ampere} för inducerad ström i varje extremitet i syfte att
-begränsa det lokala SAR-värdet.
-
-\mediumfig[0.87]{images/emfbild-000}{Referensvärden för begränsning av elektriska fält (100~kHz--10~GHz)}{fig:emf1}
-\mediumfig[0.87]{images/emfbild-001}{Referensvärden för begränsning av magnetiska fält (100~kHz--10~GHz)}{fig:emf2}
-
-Bild~\ssaref{fig:emf1} illustrerar referensvärden för begränsning av elektriska
-fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
-och fältstyrkenivå angivna, till exempel \qty{10,15}{\mega\hertz} har en högsta
-tillåtna elektriskt fältstyrka på \qty{28}{\volt\per\metre}.
-
-Bild~\ssaref{fig:emf2} illustrerar referensvärden för begränsning av magnetiska
-fält på platser där allmänheten kan vistas (100~kHz--10~GHz), med amatörband
-och fältstyrkenivå angivna, till exempel \qty{10,15}{\mega\hertz} har en högsta
-tillåtna magnetisk fältstyrka på \qty{73}{\milli\ampere\per\metre}.
-
-\clearpage
 \section{Utvärdering av EMF}
 \index{EMF!utvärdering}
 
@@ -172,8 +13,8 @@ de parametrar som är avgörande för styrkan på det elektromagnetiska fältet:
 \end{itemize}
 
 \subsection{Antennen}
-Antennen tar emot signalen från sändaren via en matningskabel och
-omvandlar denna signal till en elektromagnetisk våg.
+Antennen tar emot signalen från sändaren via en matningskabel och omvandlar
+denna signal till ett elektromagnetiskt fält.
 Hur effektivt antennen omvandlar signalen från sändaren kan enklast förklaras
 med begreppen förstärkning eller antennvinst.
 
@@ -228,12 +69,12 @@ av modulationsfaktorn.
     \begin{tabular}{lc}
 	\textbf{Trafiksätt} & \textbf{Modulationsfaktor} \\ 
 	\hline
-	\emph{SSB} & 0,2 \\ 
-	\emph{CW} & 0,4 \\ 
-	\emph{SSB med processing} & 0,5 \\ 
-	\emph{FM} & 1,0 \\ 
-	\emph{MGM (t.ex. RTTY,PSK)} & 1,0 \\ 
-	\emph{Bärvåg} & 1,0 \\ 
+	SSB & 0,2 \\
+	CW & 0,4 \\
+	SSB med processing & 0,5 \\
+	FM & 1,0 \\
+	MGM (t.ex. RTTY, PSK) & 1,0 \\
+	Bärvåg & 1,0 \\
     \end{tabular}
     \caption{Modulationsfaktor per trafiksätt}
     \label{tab:modfakt}
@@ -325,10 +166,9 @@ I fjärrfältet vet vi sedan tidigare att man antingen kan utvärdera det
 elektriska eller det magnetiska fältet.
 Av denna anledning beskrivs här enbart beräkning av det elektriska fältets del av
 det elektromagnetiska fältet.
-Ett vedertaget avstånd från antennen där fjärrfältsberäkningar kan genomföras
-är
-%% \(d=\dfrac{\lambda}{6}\).
-\(d=\lambda / 6\). Se tabell~\ssaref{tab:fjfltgr}.
+Ett vedertaget avstånd från antennen där fjärrfältsberäkningar kan genomföras är
+\(d=\lambda / 6\).
+Se tabell~\ssaref{tab:fjfltgr}.
 
 Följande formler gäller enbart för beräkning av korrekt fältstyrka i
 fjärrfältet men kan för enklare antenner användas för att uppskatta den
@@ -367,6 +207,7 @@ Använd datorprogram för att få bra bedömning på hur en antenn beter sig,
 särskilt med avseende på antenner med riktverkan.
 
 \begin{exempelbox}
+\textbf{Exempel 1} \\
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
@@ -395,6 +236,7 @@ amatörradiosändningen referensvärdet på detta avstånd.
 \end{exempelbox}
 
 \begin{exempelbox}
+\textbf{Exempel 2} \\
 En riktantenn för \qty{144}{\mega\hertz} med förstärkning enligt databladet på
 14,92\,dBi (31 gånger).
 Max uteffekt är \qty{1000}{\watt} och trafiksättet är MGM (t.ex. RTTY, PSK) med
@@ -424,6 +266,7 @@ enligt exemplet.
 \end{exempelbox}
 
 \begin{exempelbox}
+\textbf{Exempel 3} \\
 En dipolantenn för \qty{3,75}{\mega\hertz} har jämfört med en isotrop antenn
 förstärkningen 2,15\,dBi (cirka 1,6 gånger).
 Max uteffekt är \qty{100}{\watt} och trafiksättet är SSB med normala TX/RX
@@ -448,4 +291,7 @@ kunna utvärdera exponeringen.
 
 För att följa de allmänna råden bör människor inte ha tillträde till nån del av
 antennen närmare än \qty{0,74}{\metre} då sändning utförs.
+
+Om man i exemplet höjer uteffekten till \qty{1000}{\watt} blir avståndet 2,3
+meter.
 \end{exempelbox}
