@@ -22,11 +22,10 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     texten. I själva texten finns även en referens till vilken bild som ska
     vara där, den behåller vi också tills vidare, sen ska den döljas.
 
-5.  Själva texten bryter vi om så den blir läsbar. Vi håller oss inom
-    80&nbsp;tecken per rad.
+5.  Själva innehållstexten bryter vi om så den blir läsbar. Vi håller oss till
+    maximalt 80&nbsp;tecken per kodrad.
 
-    Text ska övervägande brytas så att nya meningar bryts om så de börjar
-    på ny rad.
+    Text ska brytas så att nya meningar bryts om så de börjar på ny rad.
     Denna regel handlar om att förändringar och uppdateringar i meningar ska
     ge rimligt läsbara diffar.
     Ett undantag från denna huvudregel är när två korta meningar får plats på

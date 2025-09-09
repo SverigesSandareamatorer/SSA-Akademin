@@ -39,13 +39,13 @@ jobs:
           echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Kör LaTeX-kontroll'
         continue-on-error: true
-        run: (chktex -v1 -n8 -n13 -n24 -n32 --output chktex.log koncept.tex); if [ $? -lt 3 ]; then (exit 0); else (exit 3); fi
         # n8  eftersom det är fel tankstreckslängd för svenska.
         # n13 eftersom det inte används långa blanksteg i svenska.
         # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
         # n32 eftersom det är fel citationstecken för svenska.
-      - name: 'Skriv ut fel'
-        run: "grep -F 'Error' chktex.log || echo ':white_check_mark: chktex hittade inga fel.' >> $GITHUB_STEP_SUMMARY"
+        run: |
+          (chktex -v1 -n8 -n13 -n24 -n32 --output chktex.log koncept.tex); if [ $? -lt 3 ]; then (exit 0); else (exit 3); fi
+          echo "| chktex-varningar | $(cat chktex.log | grep -F 'Warning' | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v4
         with:
@@ -106,6 +106,7 @@ jobs:
             koncept.log
   bygg-epub:
     name: 'Bygg EPUB (experimentell)'
+    if: github.repository != 'SverigesSandareamatorer/SSA-Akademin'
     continue-on-error: true
     runs-on: ubuntu-24.04
     timeout-minutes: 60
