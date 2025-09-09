@@ -108,33 +108,8 @@ arbeta med smalare bandbredd än FSK.
 Överföringshastigheten 31~baud valdes för att passa en genomsnittlig
 skrivhastighet hos den gemene amatören.
 
-\subsection{WSPR}
-\index{WSPR}
-
-\begin{historiabox}
-WSPR släpptes i sin första version 2008.
-Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett öppen
-källkodsprogram och utvecklas av ett litet team.
-Joe Taylor fick sin utbildning i astronomi vid Harvard University.
-Han var sedan verksam inom området astrofysik vid Princeton University,
-varifrån han pensionerades 2006.
-Joe Taylor tilldelades Nobelpriset i fysik år~1993.
-\end{historiabox}
-
-Programmet är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
-WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''.
-WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en
-så kallad beacon.
-Sändning och mottagning sker i tvåminuterspass och efter varje sändningspass
-rapporterar de stationer som mottagit signalen in sitt resultat till en databas
-över internet.
-Den sändande stationen kan därefter studera resultatet.
-WSPR använder låga effekter, det går att nå europeiska stationer med effekter
-under \qty{100}{\milli\watt}, och andra kontinenter med effekter under några
-watt, även med modesta antenner.
-
-\subsection{WSJT}
-\index{WSJT}
+\subsection{WSJT-X}
+\index{WSJT-X}
 \index{FSK441}
 \index{JT6M}
 \index{JT65}
@@ -146,23 +121,25 @@ watt, även med modesta antenner.
 \index{troposcatter}
 \index{EME}
 \index{månstuds}
+\index{WSPR}
 \index{8FSK}
 
-WSJT är liksom WSPR ett program som används inom amatörradiohobbyn för
-kommunikation med svaga signaler.
-Även detta program är utvecklat av Joe Taylor, K1JT.
+WSJT-X är ett program som används inom amatörradiohobbyn för kommunikation med
+svaga signaler.
 De flesta av dessa sändningsslag (se nedan) är så smalbandiga, att de inte
 upptar större bandbredd än några hertz.
 
-\begin{historiabox}
-WSJT presenterades för amatörradiovärlden år~2001 och har undergått ett flertal
-revisioner.
-Olika sändningsslag har under åren lagts till och tagits bort.
-Sedan 2005 har programmet öppen källkod och utvecklas av ett litet team.
-\end{historiabox}
-
-WSJT erbjuder en plattform för ett flertal olika tillämpningar där olika
+WSJT-X utgör en plattform för ett flertal olika tillämpningar där olika
 varianter av i huvudsak FSK-modulering används.
+
+\begin{historiabox}
+Programmet skrevs initialt av Joe Taylor, K1JT, men är nu ett
+öppen-källkodsprogram och utvecklas av ett litet team.
+Joe Taylor fick sin utbildning i astronomi vid Harvard University.
+Han var sedan verksam inom området astrofysik vid Princeton University,
+varifrån han pensionerades 2006.
+Joe Taylor tilldelades Nobelpriset i fysik år~1993.
+\end{historiabox}
 
 FSK441 används för att utvärdera överföringar via radiovågsreflekterande skikt
 av laddade joner, som uppkommer från de spår som meteorer lämnar efter sig.
@@ -173,6 +150,18 @@ meteorreflektioner på \qty{6}{\metre}-bandet.
 JT65, utvecklat och släppt år~2003, används för kommunikation via troposfären,
 så kallat troposcatter, men också för kommunikation via reflektion mot månen
 så kallad EME-trafik.
+
+WSPR är i huvudsak tänkt för vågutbredningstester inom kortvågsområdet.
+WSPR står för Weak Signaling Propagation Reporter och uttalas ''Whisper''.
+WSPR är ett sändningsslag som använder amatörradiostationen som en radiofyr, en
+så kallad beacon.
+Sändning och mottagning sker i tvåminuterspass och efter varje sändningspass
+rapporterar de stationer som mottagit signalen in sitt resultat till en öppen
+databas över internet.
+WSPR använder låga effekter, det går att nå europeiska stationer med under
+\qty{100}{\milli\watt}, och andra kontinenter med effekter under några watt,
+även med modesta antenner.
+WSPR släpptes i sin första version 2008.
 
 JT9 används för kortvågstrafik och är snarlikt JT65, men använder sig av en
 FSK-signal med nio toner.
