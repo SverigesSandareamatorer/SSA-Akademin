@@ -120,7 +120,7 @@
 \newcommand\ssaref[1]{\ref{#1}}
 %% \newcommand\ssaref[1]{\setlength{\fboxsep}{0pt}\colorbox{Orange}{\ref{#1}}}
 
-% Command for warning symbol - creates triangle with centered exclamation mark using TikZ
+% Makro för varningssymbol - skapar en triangel med centrerat utropstecken med TikZ
 \newcommand\warningsymbol{%
   \tikz[baseline=-0.1ex]{
     \draw[thick] (0,0) -- (0.4,0.7) -- (0.8,0) -- cycle;
@@ -128,7 +128,9 @@
   }%
 }
 
-% (Beskrivning saknas.)
+% \clubpenalty: Förhindrar att en ensam rad hamnar längst ned på en sida.
+% \widowpenalty: Förhindrar att en ensam rad hamnar överst på en sida.
+% \brokenpenalty: Minskar sannolikheten för sidbrytning efter avstavade rader.
 \clubpenalty=9990
 \widowpenalty=9999
 \brokenpenalty=4999
@@ -242,7 +244,8 @@
 % Gör QR-koder.
 \usepackage{qrcode}
 
-% (Beskrivning saknas.)
+% Definierar en ny kolumntyp 'L' för tabellmiljöer, som skapar en styckekolumn med angiven bredd (#1),
+% vänsterjusterar innehållet (ragged right), tillåter radbrytning med '\\', och säkerställer korrekt avstånd i slutet av kolumnen.
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 % Paketet ger omfattande möjligheter, både för att konstruera sidhuvuden och
