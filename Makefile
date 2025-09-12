@@ -19,14 +19,14 @@ KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/chapter1-3.tex koncept/chapter1-4.tex \
 	koncept/chapter1-5.tex koncept/chapter1-6.tex \
 	koncept/chapter1-7.tex koncept/chapter1-9.tex
-KONCEPT_CH02_FILES = koncept/komponenter.tex \
+KONCEPT_KOMPONENTER_FILES = koncept/komponenter.tex \
 	koncept/komponenter-resistorn.tex koncept/komponenter-kondensatorn.tex \
 	koncept/komponenter-induktorn.tex koncept/komponenter-transformatorn.tex \
 	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
 	koncept/komponenter-ic.tex \
 	koncept/komponenter-elektronroer.tex koncept/chapter2-8.tex \
 	koncept/chapter2-9.tex koncept/chapter2-10.tex
-KONCEPT_CH03_FILES = koncept/kretsar.tex \
+KONCEPT_KRETSAR_FILES = koncept/kretsar.tex \
 	koncept/chapter3-1.tex koncept/kretsar-filter.tex \
 	koncept/chapter3-3.tex koncept/chapter3-4.tex \
 	koncept/kretsar-detektorer-demodulatorer.tex koncept/kretsar-oscillatorer.tex \
@@ -79,7 +79,7 @@ KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/chapter12-1.tex koncept/chapter12-2.tex \
 	koncept/elsaekerhet-faror.tex koncept/elsaekerhet-aaska.tex
-KONCEPT_CH13_FILES = koncept/trafikreglemente.tex \
+KONCEPT_TRAFIKREGLEMENTE_FILES = koncept/trafikreglemente.tex \
 	koncept/chapter13-1.tex koncept/trafikreglemente-q-koden.tex \
 	koncept/chapter13-3.tex koncept/chapter13-4.tex \
 	koncept/trafikreglemente-exempel-kontakt.tex \
@@ -104,14 +104,14 @@ KONCEPT_OTHER_FILES = koncept/foerord.tex koncept/inledning.tex \
 	koncept/litteratur.tex koncept.bib \
 	koncept/inkludera-kapitel.tex koncept/inkludera-appendix.tex \
 	koncept.tex
-KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_CH02_FILES) \
-	$(KONCEPT_CH03_FILES) $(KONCEPT_CH04_FILES) \
+KONCEPT_FILES = $(KONCEPT_CH01_FILES) $(KONCEPT_KOMPONENTER_FILES) \
+	$(KONCEPT_KRETSAR_FILES) $(KONCEPT_CH04_FILES) \
 	$(KONCEPT_MODULATION_FILES) \
 	$(KONCEPT_CH05_FILES) $(KONCEPT_CH06_FILES) \
 	$(KONCEPT_CH07_FILES) $(KONCEPT_CH08_FILES) \
 	$(KONCEPT_CH09_FILES) $(KONCEPT_CH10_FILES) \
 	$(KONCEPT_CH11_FILES) $(KONCEPT_CH12_FILES) \
-	$(KONCEPT_CH13_FILES) $(KONCEPT_CH14_FILES) \
+	$(KONCEPT_TRAFIKREGLEMENTE_FILES) $(KONCEPT_CH14_FILES) \
 	$(KONCEPT_APDX_FILES) $(KONCEPT_OTHER_FILES)
 
 REPO_FILES = SHA.tmp branch.tmp
