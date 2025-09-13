@@ -200,3 +200,16 @@ images_unlinked.txt
 TODOs.txt
 long_lines.txt
 comment_lines.txt
+
+# KonCEPT Build artifacts
+koncept*.svg
+koncept-epub3/
+content.opf
+koncept*.xhtml
+*.ncx
+*.4ct
+*.4tc
+*.css
+*.idv
+*.lg
+*.xref
