@@ -1,0 +1,1096 @@
+<!DOCTYPE html> 
+<html lang='sv' xmlns:epub='http://www.idpf.org/2007/ops' xmlns='http://www.w3.org/1999/xhtml'> 
+<head><title>11 Elektromagnetisk kompatibilitet</title> 
+<meta charset='UTF-8' /> 
+<meta content='TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)' name='generator' /> 
+<link href='koncept.css' rel='stylesheet' type='text/css' /> 
+</head><body>
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'></p></div>
+   <h2 class='chapterHead'><span class='titlemark'>Kapitel 11</span><br /><a id='x15-75500011'></a>Elektromagnetisk kompatibilitet</h2>
+<p><a id='dx15-755001'></a>
+</p><p class='noindent'>Det moderna samhället blir alltmer tekniskt avancerat
+och antalet elektroniska apparater i hemmen och på
+arbetsplatserna ökar kraftigt. Den ökande mängden och
+komplexiteten hos apparaterna kräver därför regler, som
+styr både utförande och användning med rimligt
+bibehållen säkerhet och funktion. Internationella
+och nationella väl preciserade regler för radio och
+teleteknisk samexistens är numera helt nödvändiga.
+   </p> 
+
+   <h3 class='sectionHead'><span class='titlemark'>11.1   </span> <a id='x15-75600011.1'></a>Störningar och störkänslighet</h3>
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.1.1   </span> <a id='x15-75700011.1.1'></a>Om EMC-lagen</h4>
+<p><a id='dx15-757001'></a>
+<a id='dx15-757002'></a>
+<a id='dx15-757003'></a>
+<a id='dx15-757004'></a>
+</p><p class='noindent'>Samlingsbegreppet är <span class='ec-lmri-10'>Electromagnetic Compatibility</span>
+(EMC), det vill säga en apparats förmåga att fungera
+tillfredsställande i sin elektromagnetiska omgivning så
+att den:
+   </p> 
+
+     <ul class='itemize1'>
+     <li class='itemize'>inte   alstrar   en   elektromagnetisk   störning
+     som  överskrider  en  nivå  som  tillåter  radio-
+     eller teleutrustning eller annan utrustning att
+     fungera som avsett
+     </li>
+     <li class='itemize'>har                       en                       sådan
+     tålighet  att  den  elektromagnetiska  störning
+     som kan förväntas vid avsedd användning inte
+     medför att utrustningens funktion försämras i
+     en oacceptabel utsträckning.</li></ul>
+<p class='indent'>   Lagen om elektromagnetisk kompatibilitet, <span class='ec-lmri-10'>SFS
+1992:1512</span> <span class='cite'>[<a href='konceptli4.xhtml#XSFS1992:1512'>4</a>]</span> ger regeringen eller den myndighet
+regeringen bestämmer rätt att i fråga om kommunikationer
+eller näringsverksamhet eller skydd för liv, personlig
+säkerhet eller hälsa meddela föreskrifter om EMC.
+Förordning om elektromagnetisk kompatibilitet <span class='ec-lmri-10'>SFS
+2016:363 </span><span class='cite'>[<a href='konceptli4.xhtml#XSFS2016:363'>5</a>]</span> definierar nyckelbegreppen; apparater,
+EMC, elektromagnetisk störning och tålighet.
+</p> 
+<p class='indent'>   Lagen och förordningen tillsammans med
+Elsäkerhetsverkets föreskrifter <span class='ec-lmri-10'>ELSÄK-FS </span>samt direktivet
+om elektromagnetisk kompatibilitet implementerar
+EU-direktiv 2014/30/EU i Sverige. Elsäkerhetsverket är
+ansvarig myndighet, med rätt att utfärda föreskrifter
+om bland annat skyddskraven, kontroll och märkning
+samt om vissa undantag.                             </p> 
+<p class='indent'>     Ovanstående handlar om störningar orsakade av
+    apparater eller störningar på apparaters funktion.
+    Sådana störningar kan anmälas till Elsäkerhetsverket.
+    Störningar orsakade av radiosändare eller radiomottagare
+    behandlas i avsnitt <a href='#x15-75800011.1.2'>11.1.2<!-- tex4ht:ref: LEK  --></a>.
+    </p> 
+<p class='indent'>
+                                                                                            
+                                                                                            
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.1.2   </span> <a id='x15-75800011.1.2'></a>Utdrag ur LEK</h4>
+<p><a id='dx15-758001'></a>
+<a id='dx15-758002'></a>
+<a id='dx15-758003'></a>
+<a id='dx15-758004'></a>
+</p><p class='noindent'>Post- och telestyrelsens föreskrifter om undantag från
+tillståndsplikt för användning av vissa radiosändare
+<span class='ec-lmri-10'>PTSFS 2022:19</span> <span class='cite'>[<a href='konceptli4.xhtml#XPTSFS2022:19'>2</a>]</span> hänvisar till lag om elektronisk
+kommunikation <span class='ec-lmri-10'>LEK SFS 2022:482 </span><span class='cite'>[<a href='konceptli4.xhtml#XSFS2022:482'>7</a>]</span>. Där kan
+följande läsas om åtgärder vid störningar:
+     </p> 
+<blockquote class='quote'>
+     <p class='indent'>3 kap.   23 §   Om   det   till   följd   av
+     tillståndshavarens   användning   av   en
+     radiosändare  uppkommer  en  otillåten
+     skadlig  störning,  ska  tillståndshavaren
+     omedelbart se till att störningen upphör
+     eller i möjligaste mån minskar. Den som
+     använder  en  radiomottagare  som  stör
+     användningen               av               en
+     annan radiomottagare har motsvarande
+     skyldighet.</p> 
+</blockquote>
+<p class='noindent'>Skadlig störning definieras i 1 kap. 7 § som:
+     </p> 
+<blockquote class='quote'>
+     <p class='indent'>en  störning  som  äventyrar  funktionen
+     hos en radionavigationstjänst eller någon
+     annan   säkerhetstjänst,   eller   som   på
+     annat sätt allvarligt försämrar, hindrar
+     eller                                    upprepat
+     avbryter  en  radiokommunikationstjänst
+     som  fungerar  i  enlighet  med  gällande
+     bestämmelser,   inbegripet   störning   av
+     befintliga  eller  planerade  tjänster  på
+     nationellt tilldelade frekvenser</p> 
+</blockquote>
+<p class='noindent'>Tillåten störning definieras i förarbetena till <span class='ec-lmri-10'>LEK </span>som en
+störning orsakad av användares delning av frekvens och
+anses då vara tillåten. Observera dock att användare
+med sekundär status inte får störa användare
+med primär status vid delning av frekvens eller
+frekvensband. I <span class='ec-lmri-10'>LEK </span>definieras även radioanläggning:
+<a id='dx15-758005'></a>
+     </p> 
+<blockquote class='quote'>
+     <p class='indent'>anordning
+     som möjliggör radiokommunikation eller
+     bestämning  av  position,  hastighet  eller
+     andra kännetecken hos ett föremål genom
+     sändning  av  radiovågor  (radiosändare)
+     eller     mottagning     av     radiovågor
+     (radiomottagare)</p> 
+</blockquote>
+<p class='indent'>
+                                                      </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='48' src='images/cropped_pdfs/CE-mark-.png' width='48' /> <a id='x15-758006r1'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.1: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>CE-märke</span>                           </span></figcaption><!-- tex4ht:label?: x15-758006r1  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>11.1.3   </span> <a id='x15-75900011.1.3'></a>Hembyggd radiosändare</h4>
+<p><a id='dx15-759001'></a>
+<a id='dx15-759002'></a>
+<a id='dx15-759003'></a>
+</p><p class='noindent'>Enligt <span class='ec-lmri-10'>radioutrustningslagen </span>SFS 2016:392 <span class='cite'>[<a href='konceptli4.xhtml#XSFS2016:392'>6</a>]</span> ska
+radioutrustning som släpps ut eller tillhandahålls på
+marknaden inom EU vara konstruerad och tillverkad så
+att den uppfyller föreskrivna krav, ha en EU-försäkran
+om överensstämmelse och vara CE-märkt.
+</p> 
+<p class='indent'>   När CE-märket bild <a href='#x15-758006r1'>11.1<!-- tex4ht:ref: fig:CE-mark  --></a> sätts på en produkt eller
+en radioutrustning så innebär det att tillverkaren
+eller importören intygar att alla föreskrivna krav är
+uppfyllda.
+</p> 
+<p class='indent'>   I många fall har det dock vid kontroll av
+CE-märkt utrustning funnits brister i elsäkerhet och
+elektromagnetisk kompatibilitet (EMC) villkoren för
+CE-märkning har inte varit uppfyllda. Läs mer om
+EMC i avsnitt <a href='#x15-75700011.1.1'>11.1.1<!-- tex4ht:ref: EMC-lagen  --></a>.
+</p> 
+<p class='indent'>   Som <span class='ec-lmri-10'>radioutrustning </span>räknas en elektrisk eller
+elektronisk produkt som avsiktligt avger eller tar emot
+radiovågor för radiokommunikation eller radiobestämning,
+eller en elektrisk eller elektronisk produkt som måste
+kompletteras med ett tillbehör, såsom en antenn,
+för att avsiktligt avge eller ta emot radiovågor för
+radiokommunikation eller radiobestämning.
+</p> 
+<p class='indent'>   Lagens tillämpningsområde och definitioner anger
+att lagen inte omfattar radioutrustning som används av
+radioamatörer för amatörradiotrafik, under förutsättning
+att utrustningen inte tillhandahålls på marknaden.
+Radioutrustning som används av radioamatörer för
+amatörradiotrafik ska inte anses tillhandahållen om det
+är:
+   </p> 
+
+     <ul class='itemize1'>
+     <li class='itemize'>radiobyggsatser  som  är  avsedda  att  byggas
+     samman och användas av radioamatörer
+     </li>
+     <li class='itemize'>radioutrustning               som               har
+     modifierats av radioamatörer för att användas
+     av radioamatörer
+     </li>
+     <li class='itemize'>utrustning  som  har  konstruerats  av  enskilda
+     radioamatörer
+     för experimentella och vetenskapliga ändamål
+     i samband med amatörradio.</li></ul>
+<p class='indent'>   Detta innebär att du som radioamatör, utöver vanlig
+elektronik, får bygga och använda en radioutrustning.
+Du är då ansvarig för att den utrustning du byggt är
+säker att använda och inte orsakar störningar. Detta
+innebär dock inte att du får göra följande:
+   </p> 
+                                                      <ul class='itemize1'>
+           <li class='itemize'>Bygga  en  sändare  för  användning  utanför
+           amatörradiobanden.
+           </li>
+           <li class='itemize'>Modifiera     en     amatörradiosändare     för
+           användning utanför amatörradiobanden
+           </li>
+           <li class='itemize'>Modifiera     en     CE-märkt     sändare     för
+           användning utanför amatörradiobanden.
+           </li>
+           <li class='itemize'>Återställa en CE-märkt sändare till ursprunget
+           efter  modifiering  till  amatörradiosändare  på
+           amatörradiobanden.</li></ul>
+    <p class='indent'>     Radioutrustningen får vara avsedd att anslutas
+    till en starkströmsanläggning om utrustningen vid
+    användning inte orsakar någon typ av skada på person,
+    egendom eller husdjur. Kom även ihåg att <span class='rm-lmr-10'>12 V </span>från ett
+    bilbatteri räknas som en starkströmsanläggning.<br class='newline' />
+    </p> 
+<p class='indent'>     Läs mer om elsäkerhet för hembyggd elektronik i
+    avsnitt <a href='konceptch13.xhtml#x17-81600013.2.1'>13.2.1<!-- tex4ht:ref: hembyggd elektronik  --></a>.
+    </p> 
+<p class='noindent'>
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>11.1.4   </span> <a id='x15-76000011.1.4'></a>Utstrålning från amatörradiosändare</h4>
+    <p><a id='dx15-760001'></a>
+    </p><p class='noindent'>Vad som sägs i 3 kap. 4 § Lag om elektronisk
+    kommunikation och skrivningen i Post- och telestyrelsens
+    föreskrifter om undantag från tillståndsplikt för
+    användning av vissa radiosändare 3 kap. 14 § <span class='ec-lmri-10'>De
+    tekniska egenskaperna hos amatörradiosändaren ska
+    anpassas så att de inte stör användningen av andra
+    radioanläggningar</span>. Tillsammans med skrivningarna i
+    Strålsäkerhetsmyndighetens <span class='ec-lmri-10'>SSMFS 2008:18 </span>och
+    Förordning om elektromagnetisk kompatibilitet <span class='ec-lmri-10'>SFS
+    2016:363</span>. Medför detta att sändareffekten alltid ska
+    anpassas så att styrkan av utstrålade fält inte förorsakar
+    störningar eller för höga nivåer av elektromagnetiska
+    fält.
+    </p> 
+<p class='indent'>     Den enligt undantagsföreskrifterna högsta tillåtna
+    uteffekten kan alltså inte användas hinderslöst.
+    </p> 
+<p class='indent'>     Om störningarna inte kan avhjälpas kan PTS
+    komma att anvisa om restriktioner (begränsningar i
+    sändningstillståndet), det kan vara sändningsförbud under
+    vissa tider, på vissa frekvenser, över viss sändareffekt
+    etc.
+    </p> 
+<p class='noindent'>
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>11.1.5   </span> <a id='x15-76100011.1.5'></a>PM vid störningsproblem</h4>
+                                                                                            
+                                                                                            
+<p><a id='dx15-761001'></a>
+     </p><ul class='itemize1'>
+     <li class='itemize'>Störningar är alltid förenade med obehag och
+     ställer  grannsämjan  på  prov.  Håll  dig  väl
+     med dem som bor i omgivningen! Observera
+     även att gällande EMC har myndigheter inte
+     rättighet att få tillträde till bostäder.
+     </li>
+     <li class='itemize'>Om det väcks klagomål på dig om störningar,
+     ska du först kontrollera din egen sändare och
+     antennanläggning.
+     </li>
+     <li class='itemize'>Be därefter att få undersöka antennanläggning
+     och   apparater   hos   den   som   besväras   av
+     störningar.
+     </li>
+     <li class='itemize'>Om  du  ser  en  lösning,  berätta  om  vad  som
+     kan göras. Kom överens om vad som får göras.
+     Ändra  då  inte  något  inne  i  apparater,  men
+     prova gärna ut yttre, kompletterande filter etc.
+     </li>
+     <li class='itemize'>Om   det   inte   går   att   komma   till   rätta
+     med  störningarna  bör  de  som  levererat  och
+     installerat anläggningen anlitas.
+     </li>
+     <li class='itemize'>Störningsanmälan
+     gällande  radiokommunikation  kan  göras  på
+     PTS webbplats.
+     </li>
+     <li class='itemize'>Störningsanmälan   gällande   produkter   kan
+     göras till Elsäkerhetsverket.</li></ul>
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.1.6   </span> <a id='x15-76200011.1.6'></a>Arbeta aktivt med avstörning</h4>
+<p><a id='dx15-762001'></a>
+     </p><ul class='itemize1'>
+     <li class='itemize'>Låna  hem  en  av  SSA:s  avstörningslådor  och
+     försök att finna en lösning. I lådan finns ett
+     sortiment av frekvensfilter för avstörning.
+                                                         </li>
+           <li class='itemize'>Undvik att störa i onödan. Sänk sändareffekten
+           och      begränsa      sändningstiden      under
+           utprovningen av en lösning.</li></ul>
+<p class='noindent'>Lyckas du inte själv med att störa av: </p> 
+
+           <ul class='itemize1'>
+           <li class='itemize'>Ta   gärna   hjälp   av   en   radioamatör   med
+           erfarenhet av avstörning.
+           </li>
+           <li class='itemize'>Anlita annan sakkunnig hjälp.</li></ul>
+    <p class='noindent'>
+        </p> 
+
+        <h3 class='sectionHead'><span class='titlemark'>11.2   </span> <a id='x15-76300011.2'></a>Störningar i elektronik</h3>
+    <p><a id='dx15-763001'></a>
+    <a id='dx15-763002'></a>
+    <a id='dx15-763003'></a>
+    <a id='dx15-763004'></a>
+    </p><p class='noindent'>Liksom att radiomottagning kan ”störas” av sändningar
+    som inte är av intresse, så kan störningar i form av
+    radiovågor från olika slags elektrisk utrustning försvåra
+    mottagning eller andra funktioner.
+    </p> 
+<p class='indent'>     Utstrålning från till exempel datorer, kabel-TV,
+    hushållsmaskiner, tändgnistor från oljebrännare, bilar
+    och mopeder etc. är radiovågor. Elektriska apparater
+    kan alltså både störa och störas genom radiovågor, även
+    om de inte är definierade som <span class='ec-lmri-10'>radioanläggning</span>, det vill
+    säga radiosändare och/eller radiomottagare.
+    </p> 
+<p class='indent'>     Störningar som uppstår av elektromagnetiska fält
+    kallas <span class='ec-lmri-10'>Electromagnetic Interference (EMI)</span>. Känsligheten
+    för sådana störningar kallas för <span class='ec-lmri-10'>Electromagnetic
+    Susceptibility (EMS)</span>.
+    </p> 
+<p class='noindent'>
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>11.2.1   </span> <a id='x15-76400011.2.1'></a>Blockering</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.9.1.1</span>
+     <a id='dx15-764001'></a>
+     <a id='dx15-764002'></a>
+     </p> 
+<p class='indent'>      I de flesta mottagare finns en automatisk
+    förstärkningsreglering. Om insignalerna blir för
+    starka, så räcker regleringen inte till. Då överstyrs
+    förstärkarstegen så att de arbetar olinjärt. Detta kallas
+    blockering och kan medföra att mottagaren tystnar eller
+    en TV-bild försvinner.
+    </p> 
+<p class='indent'>     Ett sätt att undvika blockering är att koppla en
+    <span class='ec-lmri-10'>dämpsats </span>(eng. <span class='ec-lmri-10'>attenuator</span>) till mottagaringången.
+    En sådan sänker dock signalstyrkan över hela
+    frekvensområdet, inte bara för en viss signalfrekvens.
+                                                                                            
+                                                                                            
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.2.2   </span> <a id='x15-76500011.2.2'></a>Interferens</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.9.1.2</span>
+<a id='dx15-765001'></a>
+<a id='dx15-765002'></a>
+</p> 
+<p class='indent'>   När den önskade signalen störs av en annan
+signal nära i frekvens, kallas det <span class='ec-lmri-10'>interferens </span>(eng.
+<span class='ec-lmri-10'>interference</span>). I mottagaringången finns frekvensfilter,
+som undertrycker ej önskade signaler, om de inte
+ligger alltför nära. Om ingången inte är tillräckligt
+selektiv, kan det behövas en tillsats som förbättrar
+selektiviteten.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.2.3   </span> <a id='x15-76600011.2.3'></a>Intermodulation</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.9.1.3</span>
+<a id='dx15-766001'></a>
+<a id='dx15-766002'></a>
+</p> 
+<p class='indent'>   Blandningsprodukter av signaler i en mottagare
+eller sändare kallas för <span class='ec-lmri-10'>intermodulation </span>och kan
+höras som falska signaler i en mottagare. (se även
+avsnitt <a href='konceptch6.xhtml#x10-5320006.8.6'>6.8.6<!-- tex4ht:ref: intermodulation  --></a>)
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.2.4   </span> <a id='x15-76700011.2.4'></a>LF-detektering</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.9.1.4</span>
+<a id='dx15-767001'></a>
+<a id='dx15-767002'></a>
+</p> 
+<p class='indent'>   HF-signaler kan komma in genom in- och utgångarna
+för LF samt genom nätkabeln. Dessutom förekommer
+direktinstrålning av radiovågor genom apparathöljet,
+om detta inte har tillräckligt avskärmande verkan.
+<span class='ec-lmri-10'>LF-detektering </span>uppstår när HF-signaler demoduleras i
+diodsträckor i den störda apparatens komponenter.
+Detta sker oavsett vilken frekvens som sändaren eller
+mottagaren är inställd på. Den uppstår särskilt vid AM-
+eller SSB-modulerade sändningar samt av transienter
+vid bärvågsnyckling av sändare.
+</p> 
+<p class='indent'>   Problem med LF-detektering kan minskas genom att
+minska uteffekten från sändaren eller genom att flytta
+antennen så att fältstyrkan minskar. Ofta är det inte
+möjligt att förhindra LF-detektering utan ingrepp i den
+störda apparaten. Sådana ingrepp bör endast utföras av
+fackman.
+   </p> 
+
+   <h3 class='sectionHead'><span class='titlemark'>11.3   </span> <a id='x15-76800011.3'></a>Störningsorsaker</h3>
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.3.1   </span> <a id='x15-76900011.3.1'></a>Störningar från sändare</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.9.2.1,
+                                       a.9.2.2</span>
+                                                   <a id='dx15-769001'></a>
+     </p> 
+<p class='indent'>      HF-förstärkare, till exempel i sändarslutsteg, kan
+    komma i oönskad självsvängning, vilket kan uppstå av
+    flera orsaker; det kan vara bristande avkoppling av
+    matningsspänningar, induktiv och/eller kapacitiv
+    återkoppling etc.
+    </p> 
+<p class='indent'>     Effektförstärkare kan även överstyras. Då uppstår
+    intermodulation och övertoner som strålas ut på
+    oönskade frekvenser. I många fall kan störningar
+    undvikas med en eller flera av följande åtgärder:
+        </p> 
+
+           <ul class='itemize1'>
+           <li class='itemize'>Använd inte mer effekt än vad som behövs.
+           </li>
+           <li class='itemize'>Undvik     att     överstyra     sändarslutsteget
+           (kontrolleras t.ex. med ALC-mätaren).
+           </li>
+           <li class='itemize'>Förse sändarutgången med lågpassfilter. På så
+           sätt undertrycks övertoner.
+           </li>
+           <li class='itemize'>Anpassa  sändarens  och  antennanläggningens
+           impedanser till varandra. Stäm av sändarens
+           <img alt='π  ' class='math' src='koncept1321x.svg' />-filter                                     och/eller
+           en  separat  antennanpassningsenhet  rätt.  En
+           felinställd  sändare  kan  medföra  oavsiktligt
+           utstrålning.
+           </li>
+           <li class='itemize'>Koppla   in   balanseringsnät   (balun)   mellan
+           osymmetriska antennledningar (koaxialkablar)
+           och symmetriska antenner.
+           </li>
+           <li class='itemize'>Placera antennen högt och fritt och så långt
+           från personer och störningskänslig utrustning
+           som  möjligt.  Fältstyrkan  är  nämligen  högst
+           närmast antennen. Se kapitel <a href='konceptch12.xhtml#x16-78600012'>12<!-- tex4ht:ref: EMF  --></a> om elektriska
+           fält.
+           </li>
+           <li class='itemize'>Undvik direkt HF-instrålning på elnätet genom
+           att använda nätfilter.
+           </li>
+           <li class='itemize'>Använd    ”mjuk”    nyckling    av    bärvågen
+           (avrundade telegrafitecken). Vid hård nyckling
+           alstras övertoner i form av knäppar som hörs
+           långt  vid  sidan  av  sändningsfrekvensen.  Se
+           även avsnitt <a href='#x15-78400011.4.11'>11.4.11<!-- tex4ht:ref: Nycklingsfilter  --></a>.</li></ul>
+                                                                                            
+                                                                                            
+   <h4 class='subsectionHead'><span class='titlemark'>11.3.2   </span> <a id='x15-77000011.3.2'></a>Störningar på radiomottagning</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                     a.9.2.3.1,
+                                     a.9.2.3.2,
+                                      a.9.2.3.3</span>
+<a id='dx15-770001'></a>
+</p> 
+<p class='indent'>   I regel uppstår störningar på radiomottagning först
+när instrålade signaler uppnått en viss styrka –
+immunitetsnivån för HF. Man kan tala om tre slags
+HF-immunitet hos mottagare:
+   </p> 
+
+     <ul class='itemize1'>
+     <li class='itemize'>mot signaler genom antenningången
+     </li>
+     <li class='itemize'>mot signaler genom övriga anslutna ledningar,
+     till exempel högtalar- och nätledningar
+     </li>
+     <li class='itemize'>mot elektriska och/eller magnetiska fält som
+     strålar direkt in i apparaten.</li></ul>
+<p class='indent'>   I de båda första fallen kan det hjälpa med
+komplettering med hög- och/eller lågpassfilter och
+skärmströmsfilter.
+</p> 
+<p class='indent'>   Störningar orsakade av instrålning är svårast att
+avhjälpa och fordrar ingrepp i mottagaren, vilket bör
+överlåtas till en fackman med tillgång till tillverkarens
+serviceinstruktioner.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.3.3   </span> <a id='x15-77100011.3.3'></a>Störningar på TV-mottagning</h4>
+<p><a id='dx15-771001'></a>
+<a id='dx15-771002'></a>
+</p><p class='noindent'>Störningar från radiosändare kan yttra sig till exempel
+på följande sätt för digital TV:
+</p> 
+<p class='indent'>   Sändningar, främst på 2-meter men även på
+70-cm, kan orsaka blockering och bildstörningar vid
+mottagning av digital-TV. TV-bilden tappar då
+information, det blir pixlingar (fyrkantiga rutor), grönt
+brus eller hela bilden fryses eller försvinner kortvarigt.
+För analog TV i till exempel kabel-TV-nät kan
+störningarna yttra sig på följande sätt:
+   </p> 
+
+     <ul class='itemize1'>
+     <li class='itemize'>Vid sändning av amplitudmodulerade signaler,
+     till            exempel            AM            och
+     SSB,  uppstår  ljudförvrängning  i  ljudkanalen
+     samt ränder med mera i bilden.
+     </li>
+     <li class='itemize'>Vid   sändning   av   FM   och   CW   uppstår
+           ljudstörningar     samt     kontrastvariationer,
+           interferensmönster (moire-effekter) med mera i
+           bilden.</li></ul>
+    <p class='indent'>     Problem med störningar av den här typen har
+    minskat betydligt sedan digital-TV infördes och de
+    flesta TV-sändningar numera sker på VHF- och
+    UHF-banden.
+    </p> 
+<p class='indent'>     Störningar i TV som orsakas av sändare på lägre
+    frekvenser kan i många fall avhjälpas med frekvensfilter.
+    Ett lågpassfilter efter en kortvågsändare kan till
+    exempel dimensioneras att endast släppa igenom
+    signaler under cirka <span class='rm-lmr-10'>35 MHz</span>. Läs mer om lågpassfilter i
+    avsnitt <a href='#x15-77600011.4.3'>11.4.3<!-- tex4ht:ref: subsec:laagpassfilter  --></a>.
+    </p> 
+<p class='indent'>     Ett högpassfilter före en TV-mottagare kan till
+    exempel dimensioneras att endast släppa igenom
+    signaler med frekvenser över cirka <span class='rm-lmr-10'>35 MHz</span>. Läs mer om
+    högpassfilter i avsnitt <a href='#x15-77700011.4.4'>11.4.4<!-- tex4ht:ref: subsec:hoegpassfilter  --></a>.
+    </p> 
+<p class='indent'>     Om inte mottagning i TV-band I och II är av
+    intresse, så kan ett högpassfilter med en gränsfrekvens
+    av cirka <span class='rm-lmr-10'>160 MHz</span> sättas in. Det dämpar den oönskade
+    utstrålning från sändare i HF- och lägre VHF-området,
+    det vill säga upp till och med <span class='rm-lmr-10'>144</span>–<span class='rm-lmr-10'>146 MHz</span> amatörband.
+    Däremot släpps TV-band III (<span class='rm-lmr-10'>174</span>–<span class='rm-lmr-10'>230 MHz</span>) och
+    TV-banden IV och V igenom (<span class='rm-lmr-10'>470</span>–<span class='rm-lmr-10'>890 MHz</span>).
+    </p> 
+<p class='indent'>     Ytterligare avstörningsmedel kan sättas in om det
+    uppstår störningar av amatörradiosändningar. Det kan
+    vara skärmströmsfilter på antennkablar, bandspärrar
+    samt sug- och spärrkretsar avstämda till störfrekvensen,
+    bandpassfilter avstämt till nyttofrekvensen. Läs mer om
+    filter i avsnitt <a href='#x15-77800011.4.5'>11.4.5<!-- tex4ht:ref: subsec:spaerrfilter  --></a>.
+    </p> 
+<p class='indent'>     Ett vanligt störningsfall är att en bredbandig
+    antennförstärkare blir överstyrd eller blockerad av en
+    sändare. Se även kapitel <a href='#x15-76400011.2.1'>11.2.1<!-- tex4ht:ref: blockering  --></a>.
+        </p> 
+
+           <ul class='itemize1'>
+           <li class='itemize'>Försök att undvika antennförstärkare.
+           </li>
+           <li class='itemize'>Försök  att  undvika  dåligt  skärmade  skarvar
+           och antennkontakter.
+           </li>
+           <li class='itemize'>Skaffa en bättre TV-antenn som även kan ta
+           emot TV-sändningar på VHF. Många hushåll
+           har  idag  endast  en  UHF-antenn  och  har
+           därför dålig antennsignal på VHF-bandet där
+           sändningar för HD-TV sker i många områden.</li></ul>
+    <p class='noindent'>
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>11.3.4   </span> <a id='x15-77200011.3.4'></a>Störningar på LF-apparater</h4>
+    <p><a id='dx15-772001'></a>
+    </p><p class='noindent'>Störningar av HF-instrålning i ljudbandspelare,
+                                                                                            
+                                                                                            
+LF-förstärkare, telefonapparater etc. kan ofta stoppas
+med avkopplingskondensatorer och HF-drosslar.
+Moderna avstörningsdrosslar innehåller oftast något
+ferritmaterial i form av rör, stavar eller ringar.
+   </p> 
+
+   <h3 class='sectionHead'><span class='titlemark'>11.4   </span> <a id='x15-77300011.4'></a>Avstörningsmetoder</h3>
+<p><a id='dx15-773001'></a>
+<a id='dx15-773002'></a>
+   </p><figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='240' src='images/cropped_pdfs/bild_2_9-01-.png' width='240' /> <a id='x15-773003r2'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.2: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Nätfilter</span>                                                                            </span></figcaption><!-- tex4ht:label?: x15-773003r2  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_9-02-.png' width='336' /> <a id='x15-773004r3'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.3: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Lågpassfilter för sändare</span>                                                                </span></figcaption><!-- tex4ht:label?: x15-773004r3  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.1   </span> <a id='x15-77400011.4.1'></a>Allmänt</h4>
+<p class='noindent'>För att prova ut ett filter, som bäst löser ett visst
+radiostörningsproblem, kan man behöva tillgång till ett
+filtersortiment. Som exempel nämns bland annat filter i
+SSA:s avstörningslådor.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.2   </span> <a id='x15-77500011.4.2'></a>Nätfilter</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                      a.9.3.1.1</span>
+<a id='dx15-775001'></a>
+<a id='dx15-775002'></a>
+</p> 
+<p class='indent'>   Nätledningar kan fungera som antenn. I sändarfallet
+kan HF-signaler komma ut i elnätet genom nätledningen
+och störa andra apparater både genom direktanslutning
+och genom strålning. I mottagarfallet kan HF-signaler
+uppfångas av nätledningen, ledas in i apparaterna och
+LF-detekteras där. För att förhindra sådana störningar
+behövs ett nätfilter.
+</p> 
+<p class='indent'>   Nätfiltret ska vara dimensionerat för den nätström,
+som apparaten är avsäkrad för och bör anslutas så
+nära apparaten som möjligt. Om filtret inte kan
+placeras där, kan det vara nödvändigt att även skärma
+nätledningen mellan filtret och apparaten och jorda
+skärmen.
+</p> 
+<p class='indent'>   Om ledningen förses med till exempel en serieinduktans
+– en drossel – så dämpas HF-signalerna. En drossel kan
+man göra till exempel genom att linda upp några varv
+av nätsladden närmast apparaten på toroider eller en
+eller flera sammanlagda ferritstavar. I svåra fall kan det
+behövas ett bredbandigt nätfilter, liknande det på
+bild <a href='#x15-773003r2'>11.2<!-- tex4ht:ref: fig:bildII9-1  --></a>.
+</p> 
+<p class='indent'>   Det kan förekomma kraftiga spänningstransienter
+(spänningsstötar) på elnätet. Dessa transienter kan leda
+till felfunktioner i anslutna apparater. För att förebygga
+sådana fel kan man koppla in ett överspänningsfilter,
+som kan vara separat eller sammanbyggt med nätfiltret.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.3   </span> <a id='x15-77600011.4.3'></a>Lågpassfilter</h4>
+<p><a id='dx15-776001'></a>
+<a id='dx15-776002'></a>
+</p><p class='noindent'>Lågpassfilter släpper igenom signaler med frekvenser
+under filtrets gränsfrekvens.
+</p> 
+<p class='indent'>   Ett lågpassfilter med lämpligt vald gränsfrekvens
+dämpar till exempel övertonsutstrålningen från en
+sändare, vars sändarfrekvens ligger under filtrets
+gränsfrekvens medan övertonerna ligger över dess
+gränsfrekvens.
+</p> 
+<p class='indent'>   Övertoner kan dämpas med lågpassfilter. En överton är
+i detta sammanhang en multipel av sändningsfrekvensen
+(grundtonen) exempelvis för <span class='rm-lmr-10'>3</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span> grundtonen = (1:a
+harmoniska) <span class='rm-lmr-10'>3</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>, 1:a överton = (2:a harmoniska)
+<span class='rm-lmr-10'>7</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0 MHz</span>, 2:a överton = (3:e harmoniska) <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>
+                                                  osv.
+    </p> 
+<p class='indent'>     Viktigt för avsedd filterverkan är, att filtret
+    ansluts med korrekt impedansanpassning och med
+    kortast möjliga ledningar. Detta gäller för övrigt alla
+    filter.
+    </p> 
+<p class='indent'>     Utstrålning utanför sändningsslagets tillåtna
+    bandbredd anses som ”icke önskad utstrålning”. Vidare
+    gäller att sådan utstrålning från amatörradiosändare
+    ska hållas så låg som dagens amatörradioteknik medger.
+    Bild <a href='#x15-773004r3'>11.3<!-- tex4ht:ref: fig:bildII9-2  --></a> visar principen för lågpassfiltret TP 30 för
+    kortvåg, med gränsfrekvensen <span class='rm-lmr-10'>36 MHz</span>, att kopplas
+    mellan sändaren och antennledningen. Med denna
+    gränsfrekvens dämpas övertoner från sändare så att
+    risken för TV-störningar minskar.
+        </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_9-03-.png' width='336' /> <a id='x15-776003r4'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.4: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Högpassfilter för VHF/UHF-mottagare</span>                                                      </span></figcaption><!-- tex4ht:label?: x15-776003r4  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.4   </span> <a id='x15-77700011.4.4'></a>Högpassfilter</h4>
+<p><a id='dx15-777001'></a>
+<a id='dx15-777002'></a>
+<a id='dx15-777003'></a>
+</p><p class='noindent'>Högpassfilter släpper igenom signaler med frekvenser
+över filtrets gränsfrekvens.
+</p> 
+<p class='indent'>   Bild <a href='#x15-776003r4'>11.4<!-- tex4ht:ref: fig:bildII9-3  --></a> visar principen för högpassfiltret HP 40-S
+med gränsfrekvensen <span class='rm-lmr-10'>47 MHz</span>, att kopplas in mellan
+antennledningen och en mottagare för VHF eller högre
+frekvenser.
+</p> 
+<p class='indent'>   Störningar kommer inte alltid ”utifrån”. De kan till
+exempel alstras i bredbandiga antennförstärkare, vilka
+lätt överstyrs av alla slags signaler från ett stort
+frekvensområde. Man kan då koppla in ett högpassfilter
+före bredbandsförstärkaren, men en bättre lösning är
+att byta till en väl skärmad passbands- eller ännu hellre
+kanalförstärkare.
+</p> 
+<p class='indent'>   Koaxialkablar med täta skärmar och rätt monterade
+anslutningskontakter är också viktigt för en lyckad
+avstörning.
+   </p> 
+<figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_9-05-.png' width='384' /> <a id='x15-777004r5'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.5: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Spärrfilter för mottagare</span>                                                                </span></figcaption><!-- tex4ht:label?: x15-777004r5  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_9-04-.png' width='384' /> <a id='x15-777005r6'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.6: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Ingångsimpedansen i resonanskretsar</span>                                                     </span></figcaption><!-- tex4ht:label?: x15-777005r6  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.5   </span> <a id='x15-77800011.4.5'></a>Spärrfilter och sugkretsar</h4>
+<p><a id='dx15-778001'></a>
+<a id='dx15-778002'></a>
+<a id='dx15-778003'></a>
+<a id='dx15-778004'></a>
+<a id='dx15-778005'></a>
+<a id='dx15-778006'></a>
+   </p><figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_9-06-.png' width='384' /> <a id='x15-778007r7'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.7: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Sugkretsar för mottagare</span>                                                               </span></figcaption><!-- tex4ht:label?: x15-778007r7  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Om en störande signal råkar finnas inom passbandet
+för mottagaren kan man undertrycka – ”spärra” – den
+signalen med ett spärr- eller sugfilter. Vilket man väljer
+är inte kritiskt.
+</p> 
+<p class='indent'>   Den störande signalen kan ”spärras” med en
+parallellresonanskrets i serie med mottagaringången, se
+bild <a href='#x15-777004r5'>11.5<!-- tex4ht:ref: fig:bildII9-5  --></a>. Kretsen består av en induktans och en
+kapacitans.
+</p> 
+<p class='indent'>   Om man använder en stub som resonanskrets – till
+exempel en koaxialkabel – så ska den ha längden
+<img alt='λ∕4  ' class='math' src='koncept1322x.svg' /> och vara ”kortsluten” eller ha längden <img alt='λ∕2  ' class='math' src='koncept1323x.svg' />
+och vara ”öppen”. Bild <a href='#x15-777005r6'>11.6<!-- tex4ht:ref: fig:bildII9-4  --></a> visar exempel på hur
+ingångsimpedansen kan användas.
+</p> 
+<p class='indent'>   Man kan även kortsluta – ”suga bort” den störande
+signalen med en serieresonanskrets parallellt över
+mottagaringången, se bild <a href='#x15-778007r7'>11.7<!-- tex4ht:ref: fig:bildII9-6  --></a>. Om man då använder
+en stub, så ska den ha längden <img alt='λ ∕4  ' class='math' src='koncept1324x.svg' /> och vara ”öppen”
+eller ha längden <img alt='λ∕2  ' class='math' src='koncept1325x.svg' /> och vara ”kortsluten”.
+</p> 
+<p class='indent'>   Den störande signalen kan undertryckas ytterligare
+med fler stubar, som ordnas som i bild <a href='#x15-778007r7'>11.7<!-- tex4ht:ref: fig:bildII9-6  --></a>. Filtret består
+då av öppna <img alt='λ∕4  ' class='math' src='koncept1326x.svg' />-stubar, som utgör avgreningar från
+antennkabeln med ett avstånd av <img alt='λ∕4  ' class='math' src='koncept1327x.svg' />.
+</p> 
+<p class='indent'>   (Om stubarna i detta filter kortsluts, så bildas ett
+bandpassfilter i stället).
+</p> 
+<p class='indent'>   Exempel på kommersiella spärrfilter är SF 145-S för
+<span class='rm-lmr-10'>144 MHz</span> och SF 435-S, för <span class='rm-lmr-10'>435 MHz</span> amatörband. De är
+avsedda att kopplas in före mottagare som störs av
+amatörradiosändningar.
+     </p> 
+<dl class='description'><dt class='description'>
+<span class='ec-lmb-10'>SF 145-S</span> </dt><dd class='description'>
+     <p class='indent'>spärrar                                 amatörbandet
+     <span class='rm-lmr-10'>144</span>–<span class='rm-lmr-10'>148 MHz</span>   och   släpper   igenom   banden
+     0–120 och <span class='rm-lmr-10'>174</span>–<span class='rm-lmr-10'>870 MHz</span>.
+     </p> 
+</dd><dt class='description'>
+<span class='ec-lmb-10'>SF 435-S</span> </dt><dd class='description'>
+     <p class='indent'>spärrar    amatörbandet    <span class='rm-lmr-10'>430</span>–<span class='rm-lmr-10'>440 MHz</span>    och
+     släpper igenom 0–350 och <span class='rm-lmr-10'>470</span>–<span class='rm-lmr-10'>870 MHz</span>.</p> 
+</dd></dl>
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.6   </span> <a id='x15-77900011.4.6'></a>Nät- och skärmströmfilter för mottagning</h4>
+<p><a id='dx15-779001'></a>
+<a id='dx15-779002'></a>
+<a id='dx15-779003'></a>
+<a id='dx15-779004'></a>
+<a id='dx15-779005'></a>
+   </p><figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='168' src='images/cropped_pdfs/bild_2_9-07-.png' width='168' /> <a id='x15-779006r8'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.8: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Nät- och skärmströmfilter</span>               </span></figcaption><!-- tex4ht:label?: x15-779006r8  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Bild <a href='#x15-779006r8'>11.8<!-- tex4ht:ref: fig:bildII9-7  --></a> visar nät- och skärmströmfilter. Det är
+vanligt att <span class='ec-lmri-10'>gemensam strömöverföring </span>(eng. <span class='ec-lmri-10'>common
+mode current</span>) uppstår som läckage från utrustning och
+antenn. Detta kallas ofta ledningsbunden störning. Det
+gör att att antennkabeln kan också fungera som
+antenn. Särskilt i skärmskarvar kan HF-strömmar
+läcka ut och in. De kan då passera förbi eventuella
+antennförstärkare, filter etc. och orsaka störningar.
+</p> 
+<p class='indent'>   I enkla fall kan gemensam ström stoppas med att
+linda upp kabeln några varv på ferritstavar eller genom
+en stor ferritring som på bilden. En nätkabel, så kallad
+sladdställ, får inte kapas och skarvas.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.7   </span> <a id='x15-78000011.4.7'></a>Phono-ingångsfilter (TBA 302)</h4>
+<p><a id='dx15-780001'></a>
+   </p><figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_9-08-.png' width='192' /> <a id='x15-780002r9'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.9: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Phonoingångsfilter</span>                   </span></figcaption><!-- tex4ht:label?: x15-780002r9  --></div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_9-09-.png' width='192' /> <a id='x15-780003r10'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.10: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Högtalarledningsfilter</span>                </span></figcaption><!-- tex4ht:label?: x15-780003r10  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Bild <a href='#x15-780002r9'>11.9<!-- tex4ht:ref: fig:bildII9-8  --></a> visar phonoingångsfilter. Störande
+påverkan från radiosändningar kan uppstå om
+anslutningsledningarna till phono-ingången i LF-förstärkare
+är dåligt skärmade och avkopplade. Sådana störningar
+kan avhjälpas med ett filter.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.8   </span> <a id='x15-78100011.4.8'></a>Högtalarledningsfilter (EM 502-B)</h4>
+<p><a id='dx15-781001'></a>
+</p><p class='noindent'>Bild <a href='#x15-780003r10'>11.10<!-- tex4ht:ref: fig:bildII9-9  --></a> visar högtalarledningsfilter. HF-instrålning
+på högtalarledningar kan ha en störande påverkan.
+Detta kan undvikas genom koppla in HF-drosslar i
+ledningarna. Dessa drosslar bör vara skärmade så att de
+inte verkar som antenner istället.
+</p> 
+<p class='indent'>   I enklare fall kan det räcka med att byta till
+skärmade högtalarkablar eller att linda upp en sträcka
+av ledningarna på en ferritkärna.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.9   </span> <a id='x15-78200011.4.9'></a>Avkoppling av HF-signaler</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                      a.9.3.1.2</span>
+<a id='dx15-782001'></a>
+   </p> 
+<figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_9-10b-.png' width='192' /> <a id='x15-782002r11'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.11: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>HF-avkopplad bas på tre sätt</span>           </span></figcaption><!-- tex4ht:label?: x15-782002r11  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='96' src='images/cropped_pdfs/bild_2_9-10a-.png' width='96' /> <a id='x15-782003r12'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.12: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>HF-avkopplat styrgaller</span>               </span></figcaption><!-- tex4ht:label?: x15-782003r12  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='144' src='images/cropped_pdfs/bild_2_9-11-.png' width='144' /> <a id='x15-782004r13'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.13: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Parasitfilter i HF-förstärkare</span>            </span></figcaption><!-- tex4ht:label?: x15-782004r13  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Med avkoppling av en signal menas att den avleds från
+en signalväg till en annan. Vid avstörning avkopplas
+vanligen den störande signalen till systemjord.
+</p> 
+<p class='indent'>   Störimmuniteten i mottagare kan alltså förbättras
+genom att LF-ingångarna HF-avkopplas med kondensatorer
+och/eller HF-spärras med drosslar.
+</p> 
+<p class='indent'>   I svåra störningsfall kan det också bli nödvändigt
+med HF-avskärmning av LF-ingångsstegen, liksom med
+ytterligare avstörningsfilter inne i förstärkaren. Sådana
+åtgärder innebär emellertid att konstruktionsändringar
+har gjorts. Apparatens elsäkerhetsmärkningar är då
+ogiltiga.
+</p> 
+<p class='indent'>   Bild <a href='#x15-782002r11'>11.11<!-- tex4ht:ref: fig:bildII9-10b  --></a> och <a href='#x15-782003r12'>11.12<!-- tex4ht:ref: fig:bildII9-10a  --></a> visar några sätt att avkoppla
+en oönskad signal från styrgallret i ett elektronrör
+respektive från basen i en transistor.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.10   </span> <a id='x15-78300011.4.10'></a>Parasitfilter</h4>
+<p><a id='dx15-783001'></a>
+</p><p class='noindent'>Bild <a href='#x15-782004r13'>11.13<!-- tex4ht:ref: fig:bildII9-11  --></a> visar parasitfilter i HF-förstärkare.
+Förstärkarsteg kan råka i självsvängning, ofta på
+frekvenser i VHF/UHF-området. Ett sätt att stoppa det
+är med så kallat parasitfilter.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.11   </span> <a id='x15-78400011.4.11'></a>Nycklingsfilter</h4>
+<p><a id='dx15-784001'></a>
+<a id='dx15-784002'></a>
+</p><p class='noindent'>Bild <a href='#x15-785002r14'>11.14<!-- tex4ht:ref: fig:bildII9-12  --></a> visar nycklingsfilter. När en bärvåg
+nycklas, så bildas övertoner. Blandningsprodukter av
+övertonerna och bärvågen hörs som knäppar på
+omkringliggande frekvenser. Märk att övertoner
+uppstår vid all bärvågsnyckling – inte bara vid
+morsetelegrafering!
+</p> 
+<p class='indent'>   När övergångstiden är kort (hård nyckling), så
+bildas fler övertoner än när den är längre (mjuk
+nyckling). Knäpparna kan till en del dämpas med ett
+nycklingsfilter där dels insvängningsförloppet bromsas
+med en drossel i serie med nycklingskontakten och
+dels ursvängningsförloppet med en seriekrets av en
+resistor och en kondensator, kopplade parallellt över
+nycklingskontakten.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>11.4.12   </span> <a id='x15-78500011.4.12'></a>Förbättrad skärmning</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                      a.9.3.1.3</span>
+<a id='dx15-785001'></a>
+</p> 
+<p class='indent'>   HF-energi kan i olyckliga fall även stråla ut genom
+sändarens hölje och in genom andra apparaters hölje.
+Det medför att apparaternas skärmningar och jordning
+måste förbättras. Följ då elsäkerhetsbestämmelserna! Se
+även avsnitt <a href='konceptch1.xhtml#x5-490001.3'>1.3<!-- tex4ht:ref: sec:elektriska-faelt  --></a>, <a href='konceptch1.xhtml#x5-550001.4'>1.4<!-- tex4ht:ref: elektromagnetiskafält  --></a> samt <a href='konceptch13.xhtml#x17-81500013.2'>13.2<!-- tex4ht:ref: jordning  --></a>.
+   </p> 
+<figure class='figure'> 
+                                           
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_9-12-.png' width='192' /> <a id='x15-785002r14'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 11.14: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Nycklingsfilter</span>                      </span></figcaption><!-- tex4ht:label?: x15-785002r14  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+                                              
+                                                                                            
+                                                                                            
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'></p></div>
+    
+</body> 
+</html>

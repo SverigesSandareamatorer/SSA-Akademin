@@ -1,0 +1,1317 @@
+<!DOCTYPE html> 
+<html lang='sv' xmlns:epub='http://www.idpf.org/2007/ops' xmlns='http://www.w3.org/1999/xhtml'> 
+<head><title>7 Sandare och transceivers</title> 
+<meta charset='UTF-8' /> 
+<meta content='TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)' name='generator' /> 
+<link href='koncept.css' rel='stylesheet' type='text/css' /> 
+</head><body>
+   <!-- l. 1 --><div class='crosslinks'><p class='noindent'></p></div>
+   <h2 class='chapterHead'><span class='titlemark'>Kapitel 7</span><br /><a id='x11-5360007'></a>Sändare och transceivers</h2>
+<p><a id='dx11-536001'></a>
+<a id='dx11-536002'></a>
+</p><p class='noindent'>Sändaren har till uppgift att skapa en högfrekvent
+elektrisk energi som sedan skickas till antennen via
+transmissionsledningen. När energin från sändaren når
+antennen omvandlas den till ett elektromagnetiskt
+fält. Hur fältet sprider sig från antennen beskrivs i
+kapitel <a href='konceptch9.xhtml#x13-6430009'>9<!-- tex4ht:ref: ch:vaagutbredning  --></a>.
+   </p> 
+
+   <h3 class='sectionHead'><span class='titlemark'>7.1   </span> <a id='x11-5370007.1'></a>Sändare</h3>
+<p><a id='dx11-537001'></a>
+</p><p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.1.1   </span> <a id='x11-5380007.1.1'></a>Blockschema</h4>
+<p><a id='dx11-538001'></a>
+</p><p class='noindent'><span class='ec-lmri-10'>Blockschema </span>är sätt att göra en översiktlig principskiss
+över en apparats design, där de övergripande principerna
+för funktionen är illustrerade i en förenklad form där
+varje block representerar en grundläggande funktion.
+Denna förenkling gör att man kan snabb få en översikt
+utan att fastna i konstruktionsdetaljerna av enstaka
+block.
+</p> 
+<p class='indent'>   Hela apparaten kan ses som ett antal funktionsblock.
+Hur de samverkar framgår i stort av blockschemat. Där
+återfinns oscillatorer, blandare, förstärkare etc. I
+schemat kan även finnas uppgifter om frekvenser och
+spänningar med mera.
+</p> 
+<p class='indent'>   Det finns olika slags funktionsblock – kretsar.
+Kombinationen av block ger apparater med olika
+egenskaper. Exempel är så kallade raka sändare med samma
+frekvens genom hela sändaren, superheterodynsändare
+där frekvensblandning används, frekvensmultiplicerande
+sändare etc.
+   </p> 
+<figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_5-01-.png' width='192' /> <a id='x11-538002r1'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.1: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Enstegs sändare</span>                       </span></figcaption><!-- tex4ht:label?: x11-538002r1  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-02-.png' width='336' /> <a id='x11-538003r2'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.2: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Flerstegs rak sändare</span>                                                                   </span></figcaption><!-- tex4ht:label?: x11-538003r2  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>7.1.2   </span> <a id='x11-5390007.1.2'></a>Rak sändare</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                      a.5.1.1b,
+                                       a.5.2.1,
+                                       a.5.3.3</span>
+<a id='dx11-539001'></a>
+<a id='dx11-539002'></a>
+</p> 
+<p class='indent'>   En <span class='ec-lmri-10'>rak sändare</span>, som illustreras i bild <a href='#x11-538002r1'>7.1<!-- tex4ht:ref: fig:bildII5-1  --></a>, är
+det enklaste sändarkonceptet. Då är oscillatorns
+frekvens samma som sändningsfrekvensen och ingen
+frekvensomvandling sker i signalvägen. Om en antenn
+kopplas till oscillatorn så blir den en enkel enstegs
+sändare.
+</p> 
+<p class='indent'>   I flerstegs raka sändare följs oscillatorn av ytterligare
+funktioner på samma frekvens som oscillatorn.
+Buffertsteg, drivsteg och slutsteg kan vara sådana
+funktioner.
+</p> 
+<p class='indent'>   Bild <a href='#x11-538003r2'>7.2<!-- tex4ht:ref: fig:bildII5-2  --></a> visar en rak sändare, som består av
+oscillator + buffertsteg 1 + buffertsteg 2 + drivsteg +
+effektförstärkare.
+</p> 
+<p class='indent'>   Oscillatorn följs av ett avlastande buffertsteg 1. På
+så sätt blir oscillatorns frekvensstabilitet bättre.
+Buffertsteg 2 avlastar ytterligare och matar dessutom ett
+effekthöjande drivsteg, som ger driveffekt till slutsteget,
+samt slutsteget där den slutliga effekthöjningen
+sker.
+</p> 
+<p class='indent'>   Raka sändare kan användas för CW, FM, PM och
+AM, men inte DSB och SSB. Fördelen med raka
+sändare är enkelheten. Nackdelen är att alla steg
+arbetar på samma frekvens, varvid risken för återverkan
+på ett föregående funktionssteg är större. Oönskad
+återkoppling kan då bli följden, som kan ge ostabila
+egenskaper hos sändaren. Genom att i första hand
+bygga in VFO och buffertstegen i metallkapslingar, så
+kallade skärmar, så minskas denna risk då högre
+isolation åstadkoms.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.1.3   </span> <a id='x11-5400007.1.3'></a>Sändare med frekvensmultiplicering</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.3.2,
+                                       a.5.3.5,
+                                       a.5.3.6,
+                                       a.5.3.8,
+                                       a.5.3.9,
+                                      a.5.3.11</span>
+<a id='dx11-540001'></a>
+<a id='dx11-540002'></a>
+<a id='dx11-540003'></a>
+<a id='dx11-540004'></a>
+</p> 
+<p class='indent'>   Helst väljer man en arbetsfrekvens för oscillatorn
+där den är mest frekvensstabil.
+</p> 
+<p class='indent'>   Om högre frekvens önskas på nyttosignalen, så kan
+man till exempel multiplicera oscillatorfrekvensen, detta
+kallas för <span class='ec-lmri-10'>frekvensmultiplicering </span>(eng. <span class='ec-lmri-10'>frequency
+multiplication</span>). I olinjära kretsar alstras övertoner, som
+ofta utnyttjas i detta syfte.
+</p> 
+<p class='indent'>   Endast när kravet på frekvensstabilitet är lågt
+                                                  används den frekvens, som VFO eller CO arbetar på,
+    även för nyttosignalen.
+        </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_5-03-.png' width='384' /> <a id='x11-540005r3'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.3: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>FM-sändare med frekvensmultiplicering</span>                                                    </span></figcaption><!-- tex4ht:label?: x11-540005r3  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-04-.png' width='336' /> <a id='x11-540006r4'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.4: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>2-bands CW-sändare med frekvensblandning</span>                                                </span></figcaption><!-- tex4ht:label?: x11-540006r4  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Oscillatorn svänger här på en låg frekvens, som
+multipliceras i olinjära förstärkarsteg till en hög
+sändningsfrekvens. Oftast multipliceras frekvensen två
+eller tre gånger i vart och ett av förstärkarstegen.
+</p> 
+<p class='indent'>   Bild <a href='#x11-540005r3'>7.3<!-- tex4ht:ref: fig:bildII5-3  --></a> visar ett blockschema för en FM sändare
+för <span class='rm-lmr-10'>435 MHz</span> (<span class='rm-lmr-10'>70 cm</span>-bandet). Oscillatorfrekvensen är
+<span class='rm-lmr-10'>8</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>056 MHz</span>. I fyra av de efterföljande förstärkarna
+multipliceras frekvensen 2, 3, 3 respektive 3 gånger,
+alltså totalt 54 gånger. Sändningsfrekvensen blir då
+<img alt='8,056⋅54 = 435 MHz  ' class='math' src='koncept1083x.svg' />.
+</p> 
+<p class='indent'>   Variationer i oscillatorfrekvensen blir också
+multiplicerade. I detta exempel blir sändningsfrekvensens
+deviation 54 gånger större än oscillatorfrekvensens
+deviation. En deviation av max <span class='rm-lmr-10'>3000 Hz</span> från den
+nominella sändningsfrekvensen motsvaras av följande
+deviation från oscillatorfrekvensen,
+</p> 
+
+   <div class='math-display'>
+<img alt='     3000
+Δf =  54  = 55,6 [Hz ]
+' class='math-display' src='koncept1084x.svg' /></div>
+<p class='indent'>   FM-sändare för VHF, UHF och SHF utförs ofta med
+frekvensmultiplikation. Jämfört med en rak sändare är
+komponentbehovet större, men i stället ger den låga
+oscillatorfrekvensen god frekvensstabilitet, vilket är en
+fördel. Risken för oönskade självsvängningar är mindre i
+en frekvensmultiplicerande än i en rak sändare,
+eftersom in och utgångsfrekvenserna i flera av stegen är
+olika.
+</p> 
+<p class='indent'>   Genom att ersätta frekvensmodulatorn med en
+fasmodulator så kan samma sändare även användas för
+fasmodulerad signal.
+</p> 
+<p class='indent'>   De frekvensmultiplicerande stegen i bild <a href='#x11-540005r3'>7.3<!-- tex4ht:ref: fig:bildII5-3  --></a>
+arbetar i klass C, det vill säga olinjärt, vilket medför
+amplituddistorsion. Vid frekvens- och fasmodulering
+saknar emellertid detta betydelse, eftersom amplituden i
+det fallet inte är informationsbärande.
+</p> 
+<p class='indent'>   Övertoner i nyttosignalen bör dock filtreras bort,
+något som sker med ett filter på utgången, det så
+kallade <span class='ec-lmri-10'>utgångsfiltret </span>(eng. <span class='ec-lmri-10'>output filter</span>).
+</p> 
+<p class='indent'>
+                                                      </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.1.4   </span> <a id='x11-5410007.1.4'></a>Sändare med frekvensblandning –
+    superheterodynsändare</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                               a.5.1.1a</span>
+          </p> 
+
+          <h5 class='subsubsectionHead'><span class='titlemark'>7.1.4.1   </span> <a id='x11-5420007.1.4.1'></a>Telegrafisändare (CW) för kortvåg</h5>
+    <p><a id='dx11-542001'></a>
+    <a id='dx11-542002'></a>
+    </p><p class='noindent'>En VFO är mest stabil på låga frekvenser medan en CO
+    har god stabilitet även på högre frekvenser. När
+    signalerna från dessa blandas, bildas blandningsprodukter
+    som är skillnaden och summan av signalernas frekvenser.
+    Bild <a href='#x11-540006r4'>7.4<!-- tex4ht:ref: fig:bildII5-4  --></a> visar en telegrafisändare där detta fenomen
+    används för sändning inom området <span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0</span>–<span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span> eller
+    <span class='rm-lmr-10'>3</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5</span>–<span class='rm-lmr-10'>4</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0 MHz</span> beroende på passbandet i filtret efter
+    blandaren.
+    </p> 
+<p class='indent'>     Resultatet är en superheterodyn-VFO med både
+    variabel och stabil signal. På bilden har valts ett filter
+    med passband för det övre av dessa frekvensområden.
+    </p> 
+<p class='noindent'>
+        </p> 
+
+        <h5 class='subsubsectionHead'><span class='titlemark'>7.1.4.2   </span> <a id='x11-5430007.1.4.2'></a>Telefonisändare (SSB) för kortvåg</h5>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                a.5.2.2,
+                                                                                a.5.3.1,
+                                                                                a.5.3.4,
+                                                                              a.5.3.10,
+                                                                               a.5.3.12</span>
+     <a id='dx11-543001'></a>
+     <a id='dx11-543002'></a>
+     <a id='dx11-543003'></a>
+          </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_5-05-.png' width='384' /> <a id='x11-543004r5'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.5: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>2-bands SSB-sändare med frekvensblandning</span>                                                </span></figcaption><!-- tex4ht:label?: x11-543004r5  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_5-06-.png' width='384' /> <a id='x11-543005r6'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.6: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Flerbands SSB-sändare med frekvensblandning</span>                                              </span></figcaption><!-- tex4ht:label?: x11-543005r6  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Bild <a href='#x11-543004r5'>7.5<!-- tex4ht:ref: fig:bildII5-5  --></a> visar en SSB-sändare för två kortvågsband
+och bygger på sändaren i bild <a href='#x11-540006r4'>7.4<!-- tex4ht:ref: fig:bildII5-4  --></a>. Filtermetoden är
+den mest använda för att bereda en SSB-signal.
+Oscillatorsignalen amplitudmoduleras i en balanserad
+blandare. I en sådan undertrycks bärvågen medan de
+båda sidbanden släpps fram. Det ena sidbandet
+undertrycks med ett bandpassfilter, ofta implementerat
+med ett kristallfilter för att få god undertryckning av
+oönskat sidband. Denna SSB-signal flyttas till avsett
+frekvensband genom ännu en frekvensblandning och
+ytterligare filtrering.
+</p> 
+<p class='indent'>   I exemplet är CO-frekvensen <span class='rm-lmr-10'>9 MHz</span>. VFO har
+frekvensområdet <span class='rm-lmr-10'>5</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0</span>–<span class='rm-lmr-10'>5</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>. Vid blandningen
+fås blandningsprodukter inom frekvensområdena
+<span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0</span>–<span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span> och <span class='rm-lmr-10'>4</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>0</span>–<span class='rm-lmr-10'>3</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>. Genom att välja
+bandpassfilter kan man sända i ett av dessa
+frekvensområden. Efterföljande driv- och slutsteg utförs
+för att arbeta i detta frekvensband, antingen utan
+särskild avstämning – så kallad bredbandigt utförande –
+eller genom avstämning på en viss frekvens, vilket ger
+renaste signalen.
+</p> 
+<p class='indent'>   Bild <a href='#x11-543005r6'>7.6<!-- tex4ht:ref: fig:bildII5-6  --></a> visar en SSB-sändare som liknar den i
+bild <a href='#x11-543004r5'>7.5<!-- tex4ht:ref: fig:bildII5-5  --></a>. Den stora skillnaden är att signalfrekvensen
+kan flyttas till flera olika band med hjälp av ännu
+en frekvensblandning. Därför används fler valbara
+bandpassfilter.
+</p> 
+<p class='indent'>   I en SSB-signal ligger all information i amplituden,
+till skillnad från en FM-signal där all information ligger
+i frekvensen. En SSB-signal får alltså inte förvrängas.
+Det innebär att förstärkarstegen i SSB-sändare måste
+arbeta linjärt, det vill säga en utsignal ska vara
+proportionell mot insignalen i varje moment.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.1.5   </span> <a id='x11-5440007.1.5'></a>PLL-styrda sändare</h4>
+<p><a id='dx11-544001'></a>
+<a id='dx11-544002'></a>
+<a id='dx11-544003'></a>
+<a id='dx11-544004'></a>
+</p><p class='noindent'>PLL-styrning är inte ett sändarkoncept. Det är ett sätt
+att styra frekvensen i en oscillator och hålla den stabil
+med hjälp av en likspänning från en <span class='ec-lmri-10'>faslåst loop </span>(eng.
+<span class='ec-lmri-10'>Phase Locked Loop, PLL</span>) vilket är en digitalt styrd
+krets.
+</p> 
+<p class='indent'>   En PLL kan användas till exempel i raka sändare
+och heterodynsändare. I det första fallet (bild <a href='#x11-538003r2'>7.2<!-- tex4ht:ref: fig:bildII5-2  --></a>) kan
+frekvensen i den enda oscillatorn styras av en PLL. I det
+andra fallet (bild <a href='#x11-543005r6'>7.6<!-- tex4ht:ref: fig:bildII5-6  --></a>) kan frekvensen i någon av
+oscillatorerna styras av en PLL. En närmare beskrivning
+av PLL-styrning av dessa två sändarkoncept följer
+här.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h5 class='subsubsectionHead'><span class='titlemark'>7.1.5.1   </span> <a id='x11-5450007.1.5.1'></a>PLL-styrd FM-sändare för 144–146 MHz</h5>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.2.3</span>
+                                                        </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_5-07-.png' width='384' /> <a id='x11-545001r7'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.7: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>PLL-styrd FM-sändare för FM</span>                                                              </span></figcaption><!-- tex4ht:label?: x11-545001r7  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Bild <a href='#x11-545001r7'>7.7<!-- tex4ht:ref: fig:bildII5-7  --></a> visar en PLL-styrd rak sändare med
+en VCO (spänningsstyrd oscillator) och ett PA
+(effektförstärkare).
+</p> 
+<p class='indent'>   VCO ingår som det frekvensstyrda elementet i en
+PLL. Utfrekvensen från VCO (är-värdet) avläses och
+delas periodiskt med talet 10 och matas in i en
+programmerbar frekvensdelare. Eftersom frekvensområdet
+för VCO är <span class='rm-lmr-10'>144</span>–<span class='rm-lmr-10'>146 MHz</span>, kommer infrekvensen till
+den programmerbara delaren att ligga i området
+<span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>4</span>–<span class='rm-lmr-10'>14</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>6 MHz</span>. Delningstalet i denna delare kan
+programmeras in i steg om 1 mellan talen 5760 och
+5840.
+</p> 
+<p class='indent'>   Med den första delarens divisor 10 och den andra
+delarens divisor inställd till exempel på 5760, så avges
+ur delarkedjan en puls varje gång som VCO har
+genomfört 57600 svängningar. Vid en VCO-frekvens av
+<span class='rm-lmr-10'>144 MHz</span> (<span class='rm-lmr-10'>144000 kHz</span>) motsvaras divisorn 57600 (=
+<img alt='10 ⋅5760  ' class='math' src='koncept1085x.svg' />) av en pulsfrekvens av <span class='rm-lmr-10'>2</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span> ut från
+räknarkedjan. På samma sätt kommer en VCO-frekvens
+av <span class='rm-lmr-10'>144025 kHz</span> och divisorn 57610 (= <img alt='10⋅5761  ' class='math' src='koncept1086x.svg' />) också
+att ge en pulsfrekvens av <span class='rm-lmr-10'>2</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span>, likaså <span class='rm-lmr-10'>146 MHz</span> och
+divisorn 58400 och så vidare.
+</p> 
+<p class='indent'>   VCO-frekvensen låses alltså i intervall om <span class='rm-lmr-10'>25 kHz</span> till
+närmaste delningstal, för att uppnå en pulsfrekvens av
+<span class='rm-lmr-10'>2</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span>. Om VCO-frekvensen (är-värdet) avviker
+från det inställda delningstalet (bör-värdet), så
+kommer pulsfrekvensen att bli högre eller lägre än
+<span class='rm-lmr-10'>2</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span>.
+</p> 
+<p class='indent'>   Pulsfrekvensen jämförs i en så kallad fasjämförare
+med en kristallstyrd referensfrekvens som efter en
+delning med 10 också är <span class='rm-lmr-10'>2</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span>. Utspänningen från
+jämföraren är en likspänning, som intar ett medelvärde
+då infrekvenserna är lika, men ett högre eller lägre
+värde när de skiljer. Denna likspänning används för att
+kontinuerlig styra VCO-frekvensen till likhet med
+börvärdet. Regleringsförloppets hastighet bestäms av
+tidskonstanten i ett lågpassfilter, det så kallade
+loop-filtret.
+</p> 
+<p class='indent'>   Sändningsfrekvensen regleras alltså med
+styrspänningen. Med samma spänning går det
+också att frekvensmodulera oscillatorn. Det görs
+så, att LF-signalen från modulatorn överlagras
+på styrspänningen genom additiv blandning (se
+avsnitt <a href='konceptch3.xhtml#x7-4040003.8'>3.8<!-- tex4ht:ref: blandare  --></a>) via en kondensator. De variationer i
+reglerspänningen som kommer av talet är snabbare än
+loopfiltrets tidskonstant. Variationerna av talet hinner
+därför inte uppfattas som frekvensavvikelser och blir
+därför inte utreglerade. Drosseln efter loop-filtret
+förhindrar att moduleringssignalen kortsluts av filtrets
+kondensator.
+</p> 
+<p class='indent'>   Frekvensinställningen, det vill säga programmeringen
+av delaren, kan utföras på flera sätt. Exempel är
+tumhjuls-omkopplare, logikkretsar i kombination med
+en knappsats och så vidare.
+   </p> 
+
+   <h5 class='subsubsectionHead'><span class='titlemark'>7.1.5.2   </span> <a id='x11-5460007.1.5.2'></a>PLL-styrd sändare för kortvåg</h5>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='432' src='images/cropped_pdfs/bild_2_5-08-.png' width='432' /> <a id='x11-546001r8'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.8: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>PLL-styrd SSB-sändare för kortvåg.</span>                                                         </span></figcaption><!-- tex4ht:label?: x11-546001r8  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Bild <a href='#x11-546001r8'>7.8<!-- tex4ht:ref: fig:bildII5-8  --></a> visar ett avancerat koncept för en
+kortvågssändare. SSB-signalen alstras på frekvensen
+<span class='rm-lmr-10'>9 MHz</span> och blandas med <span class='rm-lmr-10'>61 MHz</span> i 1:a blandaren.
+</p> 
+<p class='indent'>   Summafrekvensen <span class='rm-lmr-10'>70 MHz</span> filtreras fram som
+mellanfrekvens. Den önskade sändningsfrekvensen fås
+genom att blanda <span class='rm-lmr-10'>70 MHz</span> MF med frekvensen från
+VCO och därefter filtrera fram skillnadsfrekvensen.
+</p> 
+<p class='indent'>   VCO i detta exempel täcker frekvensområdet
+<span class='rm-lmr-10'>40</span>–<span class='rm-lmr-10'>69</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>. Således blir sändarens täckningsområde
+<span class='rm-lmr-10'>1</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5</span>–<span class='rm-lmr-10'>30 MHz</span>. För att filterfunktionen ska bli optimal,
+kan den delas upp på flera valbara filtersektioner, till
+exempel ett per amatörband. Valet kan ske automatiskt
+och styrt av frekvensläget på VCO.
+</p> 
+<p class='indent'>   Den absoluta ändringen mellan de två extrema
+sändningsfrekvenserna är så stor som <span class='rm-lmr-10'>28</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>
+eller 1:20. Frekvensändringen i VCO är <span class='rm-lmr-10'>29</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>,
+men där är ändringsförhållandet mellan de extrema
+frekvenserna endast 1:1,74, vilket kan täckas av en
+enda VCO. Vid en lägre 2:a MF-frekvens skulle det
+behövas flera omkopplingsbara VCO för att täcka hela
+frekvensområdet
+</p> 
+<p class='indent'>   </p> 
+ <div class='tcolorbox exempelbox' id='tcolobox-32'>     
+<div class='tcolorbox-title'>
+   </div> 
+<div class='tcolorbox-content'><p class='indent'>Vid        en        MF        på        <span class='rm-lmr-10'>9 MHz</span>
+behöver VCO-funktionen täcka <span class='rm-lmr-10'>9</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5</span>–<span class='rm-lmr-10'>39 MHz</span>,
+det vill säga 1:4,11, vilket är för mycket för
+en VCO. </p> 
+ 
+</div> 
+</div>
+<p class='indent'>   SSB-signalen efter 2:a blandaren är inte lämplig att
+använda i regleringsslingan i PLL. Anledningen är att
+bärvågen är undertryckt i denna signal och att därför
+HF-frekvenserna i det resterande sidbandet varierar i
+takt med de modulerande LF-frekvenserna.
+</p> 
+<p class='indent'>   I konceptet på bilden rekonstrueras bärvågen i en
+1:a kontrollblandare, genom blandning av de två
+CO-frekvenserna 9 och <span class='rm-lmr-10'>61 MHz</span>. Den framfiltrerade
+bärvågen med frekvensen <span class='rm-lmr-10'>70 MHz</span> blandas med
+VCO-frekvensen i 2:a kontrollblandare och ur denna
+signal framfiltreras den rekonstruerade bärvågen. Denna
+stämmer perfekt med den undertryckta bärvågens frekvens
+och innehåller inga LF-signaler. Bärvågsfrekvensen delas
+i en programmerbar frekvensdelare och jämförs med
+frekvensen från en kristallstyrd referensoscillator CO. Ur
+fasjämföraren erhålls en likspänning som styr VCO
+via ett loop-filter. Frekvensen ställs in genom att
+programmera delaren i PLL.
+</p> 
+<p class='indent'>   I moderna sändare finns även mikroprocessorer, som
+erbjuder frekvensinställning, minnen och avsökning av
+frekvenser, m.m.
+</p> 
+<p class='indent'>   Det beskrivna konceptet är avancerat. Frekvensen i
+alla oscillatorer styrs av samma referensoscillator.
+Frekvensstabiliteten beror alltså enbart på
+referensoscillatorns stabilitet.
+</p> 
+<p class='indent'>   Omkopplingen mellan LSB och USB kan göras
+antingen genom att behålla SSB-filtret och ändra
+frekvensen <span class='rm-lmr-10'>9 MHz</span> med ett värde så att filtret blir
+verksamt i det motsatta sidbandet eller genom att
+behålla frekvensen <span class='rm-lmr-10'>9 MHz</span> och byta till ett SSB-filter
+som är verksamt i det motsatta sidbandet.
+</p> 
+<p class='indent'>   En PLL-styrd sändare har både kristalloscillatorns
+stabilitet och variabel frekvens över ett stort
+frekvensområde trots ett litet antal styrkristaller. En
+                                                  sådan sändare kan relativt enkelt styras digitalt.
+    </p> 
+<p class='indent'>     En principiell nackdel med alla sändare med
+    PLL-oscillator är fasbruset. En annan nackdel är den
+    stora komponentmängden (se avsnitt <a href='konceptch6.xhtml#x10-5080006.3'>6.3<!-- tex4ht:ref: superheterojämförelse  --></a>).
+        </p> 
+
+        <h3 class='sectionHead'><span class='titlemark'>7.2   </span> <a id='x11-5470007.2'></a>Egenskaper i sändare</h3>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                   a.5.4</span>
+     </p> 
+<p class='indent'>      Sändare har många olika egenskaper som man ska
+    vara uppmärksam på, dels för att ha en effektiv
+    sändare, dels för att få bra kvalitet på sändning och
+    dels för att inte störa grannkanaler eller på andra
+    band.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.1   </span> <a id='x11-5480007.2.1'></a>Frekvensstabilitet</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.5.4.1</span>
+     <a id='dx11-548001'></a>
+     </p> 
+<p class='indent'>      <span class='ec-lmri-10'>Frekvensstabiliteten </span>(eng. <span class='ec-lmri-10'>frequency stability</span>) är en
+    grundläggande egenskap, eftersom en sändare som inte
+    är frekvensstabil nog kommer bli svår för en mottagare
+    att följa och uppfatta. Dessutom riskerar man att
+    störa grannkanaler. Mindre avdrift i frekvens kan
+    tolereras, men helst ska den uppfattas som helt
+    stabil.
+    </p> 
+<p class='indent'>     I gamla tider så var resonatorerna LC-kretsar, och
+    både mekanik och elektronik kunde driva betänkligt. Med
+    modernare kristallstyrda sändare, där man använder PLL
+    eller DDS synteser så kan frekvensstabiliteten härledas
+    till en enskild kristalloscillator. Denna är typiskt en
+    okompenserad kristall, med man brukar kunna välja en
+    temperatur-kompenserad kristalloscillator – TCXO eller
+    en ugnskompenserad kristalloscillator – OCXO. Det kan
+    även förekomma att man kan låsa på en extern
+    referensfrekvens, ofta <span class='rm-lmr-10'>10 MHz</span>.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.2   </span> <a id='x11-5490007.2.2'></a>RF-bandbredd</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.5.4.2</span>
+     <a id='dx11-549001'></a>
+     <a id='dx11-549002'></a>
+     <a id='dx11-549003'></a>
+     </p> 
+<p class='indent'>      <span class='ec-lmri-10'>RF bandbredden </span>(eng. <span class='ec-lmri-10'>RF bandwidth</span>) är den
+    bandbredd som den modulerade signalen har när den
+    kommer ut ur sändaren. Det är viktigt att den är
+    begränsad så att den håller sig inom de gränser
+    som finns för signaltypen, så att sändaren inte stör
+    grann-kanalerna. Till exempel kan en sändare anpassad
+    för FM <span class='rm-lmr-10'>25 kHz</span> kanaldelning modulera för starkt för
+    NFM <span class='rm-lmr-10'>12</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 kHz</span> kanaldelning och helt enkelt störa
+    grann-kanalerna.
+    </p> 
+<p class='indent'>     Det är ofta svårt att begränsa RF-bandbredden direkt
+    på utgången av sändaren, eftersom den förväntas kunna
+    byta kanal. Istället så begränsar man bandbredden på
+                                                                                            
+                                                                                            
+mellanfrekvens direkt vid modulatorn, och innan
+frekvens-skiftningen upp till rätt frekvens. Detta kräver
+dock att efterföljande steg är linjära nog att inte skapa
+oönskade sidband i så kallat splatter eller tar upp
+spegelfrekvenser.
+</p> 
+<p class='indent'>
+                                                      </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.3   </span> <a id='x11-5500007.2.3'></a>Sidband</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.5.4.3</span>
+     <a id='dx11-550001'></a>
+     <a id='dx11-550002'></a>
+     <a id='dx11-550003'></a>
+     <a id='dx11-550004'></a>
+     <a id='dx11-550005'></a>
+     <a id='dx11-550006'></a>
+     <a id='dx11-550007'></a>
+     <a id='dx11-550008'></a>
+     </p> 
+<p class='indent'>      När man sänder skapas <span class='ec-lmri-10'>sidband </span>(eng. <span class='ec-lmri-10'>side band</span>).
+    För AM och SSB så skapas bägge, <span class='ec-lmri-10'>övre sidbandet </span>(eng.
+    <span class='ec-lmri-10'>Upper Side Band, USB</span>) eller <span class='ec-lmri-10'>undre sidbandet </span>(eng.
+    <span class='ec-lmri-10'>Lower Side Band, LSB</span>) av den modulerade signalen.
+    För SSB undertrycks även bärvågen. För FM skapas
+    bredare sidband som behöver filtreras.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.4   </span> <a id='x11-5510007.2.4'></a>Ljudbandbredd</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.5.4.4</span>
+     <a id='dx11-551001'></a>
+     <a id='dx11-551002'></a>
+     </p> 
+<p class='indent'>      Bandbredden på ljudsignalen, den så kallade
+    <span class='ec-lmri-10'>ljudbandbredden </span>(eng. <span class='ec-lmri-10'>audio bandwidth</span>) in kan vara
+    väldigt stor, och det är därför viktigt att sändaren
+    begränsar den bandbredden så att sändaren inte råkar
+    modulera utanför sin kanal, något som främst påverkar
+    bandbredds begränsning uppåt, oftast <span class='rm-lmr-10'>3 kHz</span> för
+    amatörradio. Bandbredden kan också behöva begränsas
+    nedåt vid <span class='rm-lmr-10'>300 Hz</span> för att inte råka störa till exempel
+    signalering med subtoner. Denna nedre begränsning kan
+    dock ibland behöva sättas ur spel för att kunna skicka
+    ut subtonssignaler, men även för andra former av
+    signaler.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.5   </span> <a id='x11-5520007.2.5'></a>Olinjaritet</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                                 a.5.4.5</span>
+     <a id='dx11-552001'></a>
+     <a id='dx11-552002'></a>
+     <a id='dx11-552003'></a>
+     </p> 
+<p class='indent'>      <span class='ec-lmri-10'>Olinjaritet </span>(eng. <span class='ec-lmri-10'>nonlinearity</span>) i ett sändarsteg ger
+    dels övertoner som behöver begränsas, ofta genom ett
+    filter på utgången, men man försöker även begränsa hur
+    olinjärt steget tillåts bli. För tal kommer olinjäritet
+    även att påverka intermodulationen mellan flera
+    olika frekvenser i tal, vilket dels skapar störningar
+    inom bandet men även utanför och därmed breddar
+    det. Detta kallas för splatter och är en oönskad
+    egenskap. God linjäritet även vid höga effekter är
+    därför eftersträvansvärt. Ibland kan man ha så
+    mycket olinjäritet att taltydligheten blir låg, det
+    kan därför vara lämpligt att dra ned något på
+                                                                                            
+                                                                                            
+effekten så taltydligheten går upp, vilket då ger
+bättre signalrapport än när intermodulationen är för
+hög.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.2.6   </span> <a id='x11-5530007.2.6'></a>Utgångsimpedans</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.4.6</span>
+<a id='dx11-553001'></a>
+</p> 
+<p class='indent'>   <span class='ec-lmri-10'>Utgångsimpedansen </span>(eng. <span class='ec-lmri-10'>output impedance</span>) är
+förstärkarens drivegenskaper och de ska oftast vara
+anpassade till kabel. Oftast är det 50 ohm, men för
+förstärkare som har inbyggd matchbox, automatisk eller
+ej, så kan förstärkarens utimpedans anpassas för att
+kunna driva en antennsystem med större avvikelser i
+impedans. En god matchning i impedans krävs för att
+få en bra energiöverföring av den tillförda energin utan
+att för mycket studsar tillbaka. Många sändare har
+skyddskretsar som drar ned uteffekten vid för stor
+reflekterad energi, för att skydda slutsteget, och det gör
+att ett impedansmatchfel ger ännu större reduktion i
+utsänd effekt än vad själva impedansfelet i sig skulle
+motivera.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.2.7   </span> <a id='x11-5540007.2.7'></a>Uteffekt</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.4.7</span>
+<a id='dx11-554001'></a>
+</p> 
+<p class='indent'>   <span class='ec-lmri-10'>Uteffekten </span>(eng. <span class='ec-lmri-10'>output power</span>) är den effekt som
+sändaren är kapabel att sända, på ett visst band, vid
+god utgångsmatchning. Ofta är den mätt i PEPför att
+matcha kraven från övervakande myndigheter. Det kan
+gå att få högre faktisk effekt ur en sändare, men då
+kommer den vara så pass olinjär att den inte förväntas
+klara krav på splatter.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.2.8   </span> <a id='x11-5550007.2.8'></a>Effektivitet</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.4.8</span>
+<a id='dx11-555001'></a>
+</p> 
+<p class='indent'>   <span class='ec-lmri-10'>Effektiviteten </span>(eng. <span class='ec-lmri-10'>efficiency</span>) på en sändare eller
+slutsteg är den utsända effekten i förhållande till den
+tillförda effekten. Effektiviteten varierar med uteffekt
+och frekvens.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.2.9   </span> <a id='x11-5560007.2.9'></a>Frekvensdeviation</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                       a.5.4.9</span>
+<a id='dx11-556001'></a>
+</p> 
+<p class='indent'>   <span class='ec-lmri-10'>Frekvensdeviationen </span>är den maximala avvikelsen
+från bärvågen som tillåts vid frekvensmodulation.
+                                                      </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.10   </span> <a id='x11-5570007.2.10'></a>Modulationsindex</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                               a.5.4.10</span>
+     <a id='dx11-557001'></a>
+     <a id='dx11-557002'></a>
+     </p> 
+<p class='indent'>      <span class='ec-lmri-10'>Modulationsindex </span>(eng. <span class='ec-lmri-10'>modulation index</span>), eller även
+    <span class='ec-lmri-10'>modulationsdjupet</span>, anger hur djup modulation av
+    bärvågen är. För hög modulations undertrycker
+    bärvågen och kan göra det svårt för mottagaren att
+    detektera. För låg modulation ger svaga sidband att
+    förmedla tal, och för mycket av energin går till att
+    sända enbart bärvåg.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.11   </span> <a id='x11-5580007.2.11'></a>CW-klickar</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                               a.5.4.11</span>
+     </p> 
+<p class='indent'>      Vid CW kan för snabb stig och falltid på bärvågen
+    ge onödig bandbredd och uppfattas som klickar eller
+    chirpar. Då detta är störande ska bandbredden
+    begränsas genom att filtrera bärvågens till- och
+    frånslag.
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.2.12   </span> <a id='x11-5590007.2.12'></a>SSB övermodulation och splatter</h4>
+                                                                <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                               a.5.4.12</span>
+     <a id='dx11-559001'></a>
+     <a id='dx11-559002'></a>
+     <a id='dx11-559003'></a>
+</p> 
+<p class='indent'>      Övermodulation vid SSB ger intermodulation och
+splatter, vilket ger dels en signal om är svår att läsa och
+dels en för bred signal.
+     </p> 
+
+     <h4 class='subsectionHead'><span class='titlemark'>7.2.13   </span> <a id='x11-5600007.2.13'></a>RF-spurioser</h4>
+                                                            <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                           a.5.4.13</span>
+<a id='dx11-560001'></a>
+</p> 
+<p class='indent'>      Utöver den förväntade bärvågen kan en sändare
+skicka ut frekvenser som vare sig tillhör bärvåg och dess
+sidband. Harmoniska undertoner samt helt andra
+orelaterade frekvenser ska vara undertryckta. Detta
+regleras i EMC standarden för radioutrustning, i det
+här fallet för amatörradio.
+     </p> 
+
+     <h4 class='subsectionHead'><span class='titlemark'>7.2.14   </span> <a id='x11-5610007.2.14'></a>Chassistrålning</h4>
+                                                            <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                                                           a.5.4.14</span>
+</p> 
+<p class='indent'>      En sändare förväntas kunna leverera en stor effekt
+ut på antennutgången, men från själva inneslutningen,
+chassit, och övriga anslutningar ska sändaren inte sända
+bärvåg, sidband eller några andra signaler.
+                                                                                            
+                                                                                            
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.2.15   </span> <a id='x11-5620007.2.15'></a>Fasbrus</h4>
+                                      <p class='noindent'><span class='ec-lmr-7'>HAREC
+                                      a.5.4.15</span>
+<a id='dx11-562001'></a>
+</p> 
+<p class='indent'>   <span class='ec-lmri-10'>Fasbrus </span>(eng. <span class='ec-lmri-10'>phase noise</span>) är en egenskap hos alla
+oscillatorer, som ger en fasmodulation av bärvågen. Alla
+steg i en sändare bidrar med brus och ger sammanlagt
+det totala fasbruset. En sändares fasbrus kan sträcka sig
+långt utanför den normala modulerade bandbredden,
+och speciellt för repeatrar så kan sändarens fasbrus höja
+brusgolvet för mottagaren om inte korrekt trimmade
+duplexfilter används för att undertrycka sändarens
+fasbrus på mottagarens ingångsfrekvens.
+                                                      </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_5-09-.png' width='192' /> <a id='x11-562002r9'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.9: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Separat sändare och mottagare</span>           </span></figcaption><!-- tex4ht:label?: x11-562002r9  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'> <img alt='PIC' height='192' src='images/cropped_pdfs/bild_2_5-10-.png' width='192' /> <a id='x11-562003r10'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.10: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Transceiver med samma VFO</span>            </span></figcaption><!-- tex4ht:label?: x11-562003r10  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h3 class='sectionHead'><span class='titlemark'>7.3   </span> <a id='x11-5630007.3'></a>Transceiver</h3>
+<p><a id='dx11-563001'></a>
+<a id='dx11-563002'></a>
+</p><p class='noindent'>En <span class='ec-lmri-10'>transceiver </span>– transmitter receiver – är både en
+sändare och mottagare med delvis gemensamma
+funktioner. Dessa kan till exempel vara oscillatorer,
+signalbehandlingskretsar, filter, strömförsörjning och så
+vidare, vilket innebär besparing av ingående komponenter,
+men också vissa funktionella begränsningar.
+</p> 
+<p class='indent'>   Transceiverkoncept är numera vad som används
+allra mest av radioamatörer. Eftersom man på olika vis
+önskar sig så många sändar- och mottagarfunktioner
+som möjligt inom samma skal, så kan det vara svårt
+att undvika kompromisser. Så kan till exempel en
+specialiserad, separat mottagare ha bättre eller fler
+egenskaper än i en transceiver.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.1   </span> <a id='x11-5640007.3.1'></a>Jämförelse mellan stationskoncept</h4>
+<p class='noindent'>Bild <a href='#x11-562002r9'>7.9<!-- tex4ht:ref: fig:bildII5-9  --></a> visar i stort en station med skilda sändar- och
+mottagarfunktioner, men att antennen är gemensam.
+Bild <a href='#x11-562003r10'>7.10<!-- tex4ht:ref: fig:bildII5-10  --></a> visar i stort en transceiver där VFO och
+antenn är gemensamma, men i övrigt med skilda
+funktioner. Bild <a href='#x11-564001r11'>7.11<!-- tex4ht:ref: fig:bildII5-11  --></a> visar samma transceiver, men med
+ett mer detaljerat blockschema.
+   </p> 
+<figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-11-.png' width='336' /> <a id='x11-564001r11'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.11: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Direktblandad transceiver med gemensam VFO</span>                                              </span></figcaption><!-- tex4ht:label?: x11-564001r11  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.2   </span> <a id='x11-5650007.3.2'></a>Simplex</h4>
+<p><a id='dx11-565001'></a>
+</p><p class='noindent'>En station som växelvis sänder och tar emot på en
+frekvens använder trafikmetoden <span class='ec-lmri-10'>simplex</span>. Detta är den
+vanligaste trafikmetoden på kortvåg.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.3   </span> <a id='x11-5660007.3.3'></a>Halvduplex</h4>
+<p><a id='dx11-566001'></a>
+<a id='dx11-566002'></a>
+</p><p class='noindent'>En station som växelvis sänder och tar emot på två
+skilda frekvenser använder trafikmetoden <span class='ec-lmri-10'>halvduplex</span>.
+Trafikmetoden används oftast vid trafik via repeater
+men även vid <span class='ec-lmri-10'>pile up </span>på kortvåg, metoden kallas då
+<span class='ec-lmri-10'>split</span>. Se vidare avsnitt <a href='konceptch14.xhtml#x18-86200014.6.4'>14.6.4<!-- tex4ht:ref: cq dx och split  --></a>.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.4   </span> <a id='x11-5670007.3.4'></a>Duplex</h4>
+<p><a id='dx11-567001'></a>
+<a id='dx11-567002'></a>
+<a id='dx11-567003'></a>
+<a id='dx11-567004'></a>
+<a id='dx11-567005'></a>
+</p><p class='noindent'>En stations sägs sända <span class='ec-lmri-10'>duplex </span>eller <span class='ec-lmri-10'>full duplex </span>när
+den kan samtidigt sända och ta emot på två olika
+frekvenser.
+</p> 
+<p class='indent'>   Duplex-operation kräver i allmänhet stor isolation
+mellan sändare och mottagare, något som ofta åstadkoms
+med kavitetsfilter kopplade mellan sändare och antenn
+och mottagare och antenn. Om gemensam antenn
+används, så kopplas dessa kavitetsfilter ihop till vad som
+kallas <span class='ec-lmri-10'>duplexfilter</span>.
+</p> 
+<p class='indent'>   För en lyckad duplex-operation krävs i allmänhet
+mer än <span class='rm-lmr-10'>100 dB</span> isolation mellan sändare och mottagare.
+Mottagarens kavitetsfilter trimmas så att det får en
+djup <span class='ec-lmri-10'>utsläckning </span>(eng. <span class='ec-lmri-10'>notch</span>) vid sändarens frekvens,
+men med så lite förlust som möjligt på mottagarens
+frekvens. Sändarens kavitetsfilter trimmas så att det får
+en djup utsläckning/notch vid mottagarens frekvens, för
+att på så sätt minimera att sändarens fasbrus höjer
+brusgolvet för mottagaren, men med så liten förlust som
+möjligt på sändarens frekvens.
+</p> 
+<p class='noindent'>
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.5   </span> <a id='x11-5680007.3.5'></a>CW-transceiver med direktblandare</h4>
+                                                  <p><a id='dx11-568001'></a>
+    <a id='dx11-568002'></a>
+    <a id='dx11-568003'></a>
+    <a id='dx11-568004'></a>
+    <a id='dx11-568005'></a>
+    <a id='dx11-568006'></a>
+    <a id='dx11-568007'></a>
+    </p><p class='noindent'>Bild <a href='#x11-564001r11'>7.11<!-- tex4ht:ref: fig:bildII5-11  --></a> visar en enkel transceiver för telegrafi.
+    Sändaren är en rak sändare och mottagaren arbetar
+    med direktblandning. För 1-kanaltrafik räcker det med
+    en gemensam VFO för sändning och mottagning. Om
+    motstationen svarar exakt på sändningsfrekvensen,
+    vilken ju är VFO-frekvensen, så erhålls svävningsnoll
+    i mottagaren. För att få hörbara morsetecken är
+    mottagaren utrustad med <span class='ec-lmri-10'>Receiver Incremental Tuning
+    (RIT)</span>, som ändrar VFO-frekvensen med cirka <span class='rm-lmr-10'>800 Hz</span>
+    vid mottagning.
+    </p> 
+<p class='indent'>     I konstruktionen finns en anordning kallad <span class='ec-lmri-10'>Key
+    Operated Xmitter (KOX)</span>. Denna kopplar om transceivern
+    till sändning när telegrafnyckeln trycks ner och till
+    mottagning igen efter en viss tid sedan nyckeln har
+    släppts upp. Telegrafnyckeln styr också en tongenerator
+    som ljuder i takt med de sända morsetecknen, så kallad
+    medhörning.
+    </p> 
+<p class='indent'>     Denna transceiver är utförd för endast ett
+    frekvensband och i övrigt mycket enkel.
+    </p> 
+<p class='noindent'>
+        </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.3.6   </span> <a id='x11-5690007.3.6'></a>Kristallstyrd FM-transceiver för VHF</h4>
+    <p><a id='dx11-569001'></a>
+    <a id='dx11-569002'></a>
+    <a id='dx11-569003'></a>
+    </p><p class='noindent'>Bild <a href='#x11-569004r12'>7.12<!-- tex4ht:ref: fig:bildII5-12  --></a> visar en kristallstyrd FM-sändare med
+    frekvensomkopplare för kanalval inom <span class='rm-lmr-10'>144</span>–<span class='rm-lmr-10'>146 MHz</span>-bandet.
+    </p> 
+<p class='indent'>     En kristallfrekvens av cirka <span class='rm-lmr-10'>12 MHz</span> multipliceras
+    12 gånger i en kedja av förstärkarsteg för att ge
+    sändningsfrekvensen. Bilden visar räkneexempel för två
+    frekvenskanaler. Det frekvenssving i oscillatorn, som
+    alstras av modulatorn, multipliceras också med 12. För
+    ett sving av <span class='rm-lmr-10'>3 kHz</span> på bärvågen är svinget på oscillatorn
+    bara <span class='rm-lmr-10'>250 Hz</span>.
+    </p> 
+<p class='indent'>     Efter mikrofonförstärkaren följer en amplitudbegränsare,
+    som ska hålla deviationen inom ett givet maxvärde,
+    oavsett signalstyrkan från mikrofonen. Därefter följer
+    ett lågpassfilter, som dels dämpar de övertoner som
+    uppstår vid amplitudbegränsningen och dels begränsar
+    de höga frekvenserna i den modulerade signalen. Båda
+    åtgärderna begränsar bandbredden.
+    </p> 
+<p class='indent'>     Mottagaren är en <span class='ec-lmri-10'>dubbelsuperheterodyn</span>, ofta kallad
+    för dubbelsuper. Den mottagna signalen passerar genom
+    ett förselektionsfilter och en HF-förstärkare för att i 1:a
+    blandaren blandas med en lokal signal.
+        </p> 
+<figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-12-.png' width='336' /> <a id='x11-569004r12'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.12: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Kristallstyrd 6-kanals FM-transceiver för VHF</span>                                                </span></figcaption><!-- tex4ht:label?: x11-569004r12  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   En kristallstyrd lokaloscillator med efterföljande
+frekvensmultipliceringssteg alstrar denna signal.
+</p> 
+<p class='indent'>   Lokaloscillatorkedjans utfrekvens läggs <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>7 MHz</span> över
+eller under mottagningsfrekvensen och mellanfrekvensen
+efter den 1:a blandningen blir då <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>7 MHz</span>. Skilda
+oscillatorer används vid sändning respektive mottagning
+varför styrkristallerna för sändning respektive mottagning
+på en given kanal får olika frekvens. Vid omkoppling till
+en annan kanal väljs ett annat kristallpar, vilket
+lämpligen sker med samma omkopplare.
+</p> 
+<p class='indent'>   Den relativt höga 1:a mellanfrekvensen <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>7 MHz</span>
+ger ett så stort avstånd till spegelfrekvensen, att
+bandbredden i förselektionsfiltren är tillräckligt smal för
+att undertrycka spegelfrekvensen. Av samma skäl bör
+1:a mellanfrekvensen i en UHF-mottagare väljas
+ytterligare tre gånger högre. Den relativt låga 2:a
+mellanfrekvensen medger en god närselektering redan
+med enkla bandfilter. En eventuell MF-förstärkare ger
+tillräcklig signalstyrka till FM-demodulatorn.
+</p> 
+<p class='indent'>   För denna lösning behövs det två styrkristaller för
+varje frekvenskanal, vilket av kostnadsskäl kan vara en
+nackdel.
+   </p> 
+
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.7   </span> <a id='x11-5700007.3.7'></a>PLL-styrd FM-transceiver för VHF</h4>
+<p><a id='dx11-570001'></a>
+<a id='dx11-570002'></a>
+<a id='dx11-570003'></a>
+<a id='dx11-570004'></a>
+<a id='dx11-570005'></a>
+<a id='dx11-570006'></a>
+   </p><figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-13-.png' width='336' /> <a id='x11-570007r13'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.13: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>PLL-styrd FM-transceiver för VHF</span>                                                         </span></figcaption><!-- tex4ht:label?: x11-570007r13  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Den PLL-styrda sändare som redan beskrivits i
+bild <a href='#x11-545001r7'>7.7<!-- tex4ht:ref: fig:bildII5-7  --></a> har här kompletterats med en svingbegränsare
+och ett lågpassfilter i modulatorn. Liksom i den station
+med kanalkristaller, som beskrivits i bild <a href='#x11-570007r13'>7.13<!-- tex4ht:ref: fig:bildII5-13  --></a>, är
+mottagaren även i detta fall en dubbelsuper.
+</p> 
+<p class='indent'>   VCO används även som lokaloscillator i mottagaren.
+Eftersom sändaren och mottagaren ska användas
+på samma frekvens (simplextrafik), måste i detta
+koncept VCO-frekvensen vara olika vid sändning och
+mottagning. Eftersom mottagarens mellanfrekvens MF
+är <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>7 MHz</span> måste nämligen VCO ligga <span class='rm-lmr-10'>10</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>7 MHz</span> högre
+eller lägre vid mottagning än vid sändning. Vid
+sändning däremot, är VCO-frekvensen densamma som
+sändningsfrekvensen.
+</p> 
+<p class='indent'>   Den programmerbara frekvensdelaren i PLL-kretsen
+arbetar därför med olika delningstal vid sändning
+respektive mottagning, se tabell <a href='#x11-570008r1'>7.1<!-- tex4ht:ref: tab:delningstal  --></a>. Inställningen av
+divisorn kan ske med kanalomkopplare, tumhjulssats,
+knappsats eller ”VFO-ratt” + digitalräknare och så
+vidare. PLL-styrningen ger dessutom möjligheter, till
+exempel att ordna en automatisk avsökning över ett
+önskat frekvensområde – så kallad scanning.
+   </p> 
+<div class='table'>
+                                              
+                                                                                            
+                                                                                            
+<p class='indent'>   </p> 
+<figure class='float'>
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<div class='tabular'> <table class='tabular' id='TBL-36'><colgroup id='TBL-36-1g'><col id='TBL-36-1' /><col id='TBL-36-2' /></colgroup><colgroup id='TBL-36-3g'><col id='TBL-36-3' /><col id='TBL-36-4' /><col id='TBL-36-5' /></colgroup><tr id='TBL-36-1-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-36-1-1' style='white-space:nowrap; text-align:left;'> <div class='multicolumn' style='white-space:nowrap; text-align:left;'>Sändning</div>             </td><td class='td11' colspan='3' id='TBL-36-1-3' style='white-space:nowrap; text-align:left;'> <div class='multicolumn' style='white-space:nowrap; text-align:left;'>Mottagning</div>
+</td></tr><tr id='TBL-36-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-2-1' style='white-space:nowrap; text-align:left;'> QRG     </td><td class='td11' id='TBL-36-2-2' style='white-space:nowrap; text-align:left;'> Deln.-  </td><td class='td11' id='TBL-36-2-3' style='white-space:nowrap; text-align:left;'> QRG     </td><td class='td11' id='TBL-36-2-4' style='white-space:nowrap; text-align:left;'> VCO     </td><td class='td11' id='TBL-36-2-5' style='white-space:nowrap; text-align:left;'> Deln.-  </td>
+</tr><tr id='TBL-36-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-3-1' style='white-space:nowrap; text-align:left;'> MHZ     </td><td class='td11' id='TBL-36-3-2' style='white-space:nowrap; text-align:left;'> tal      </td><td class='td11' id='TBL-36-3-3' style='white-space:nowrap; text-align:left;'> MHz     </td><td class='td11' id='TBL-36-3-4' style='white-space:nowrap; text-align:left;'> MHz     </td><td class='td11' id='TBL-36-3-5' style='white-space:nowrap; text-align:left;'> tal      </td></tr><tr class='hline'><td></td><td></td><td></td><td></td><td></td></tr><tr id='TBL-36-4-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-36-4-1' style='white-space:normal; text-align:left;'> <div class='multicolumn' style='white-space:normal; text-align:left;'>Simplexkanaler,
+  exempel</div>                </td><td class='td11' id='TBL-36-4-3' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-4-4' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-4-5' style='white-space:nowrap; text-align:left;'>       </td>
+</tr><tr id='TBL-36-5-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-5-1' style='white-space:nowrap; text-align:left;'> 144,000  </td><td class='td11' id='TBL-36-5-2' style='white-space:nowrap; text-align:left;'> 5760    </td><td class='td11' id='TBL-36-5-3' style='white-space:nowrap; text-align:left;'> 144,000  </td><td class='td11' id='TBL-36-5-4' style='white-space:nowrap; text-align:left;'> 154,700  </td><td class='td11' id='TBL-36-5-5' style='white-space:nowrap; text-align:left;'> 6188    </td>
+</tr><tr id='TBL-36-6-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-6-1' style='white-space:nowrap; text-align:left;'> 144,025  </td><td class='td11' id='TBL-36-6-2' style='white-space:nowrap; text-align:left;'> 5761    </td><td class='td11' id='TBL-36-6-3' style='white-space:nowrap; text-align:left;'> 144,025  </td><td class='td11' id='TBL-36-6-4' style='white-space:nowrap; text-align:left;'> 154,725  </td><td class='td11' id='TBL-36-6-5' style='white-space:nowrap; text-align:left;'> 6189    </td>
+</tr><tr id='TBL-36-7-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-7-1' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-7-2' style='white-space:nowrap; text-align:left;'>       </td><td class='td11' id='TBL-36-7-3' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-7-4' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-7-5' style='white-space:nowrap; text-align:left;'>       </td>
+</tr><tr id='TBL-36-8-' style='vertical-align:baseline;'><td class='td11' colspan='2' id='TBL-36-8-1' style='white-space:normal; text-align:left;'> <div class='multicolumn' style='white-space:normal; text-align:left;'>Repeaterkanaler,
+  exempel</div>                </td><td class='td11' id='TBL-36-8-3' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-8-4' style='white-space:nowrap; text-align:left;'>         </td><td class='td11' id='TBL-36-8-5' style='white-space:nowrap; text-align:left;'>       </td>
+</tr><tr id='TBL-36-9-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-9-1' style='white-space:nowrap; text-align:left;'> 145,000  </td><td class='td11' id='TBL-36-9-2' style='white-space:nowrap; text-align:left;'> 5800    </td><td class='td11' id='TBL-36-9-3' style='white-space:nowrap; text-align:left;'> 145,600  </td><td class='td11' id='TBL-36-9-4' style='white-space:nowrap; text-align:left;'> 156,300  </td><td class='td11' id='TBL-36-9-5' style='white-space:nowrap; text-align:left;'> 6252    </td>
+</tr><tr id='TBL-36-10-' style='vertical-align:baseline;'><td class='td11' id='TBL-36-10-1' style='white-space:nowrap; text-align:left;'> 145,025  </td><td class='td11' id='TBL-36-10-2' style='white-space:nowrap; text-align:left;'> 5801    </td><td class='td11' id='TBL-36-10-3' style='white-space:nowrap; text-align:left;'> 145,625  </td><td class='td11' id='TBL-36-10-4' style='white-space:nowrap; text-align:left;'> 156,325  </td><td class='td11' id='TBL-36-10-5' style='white-space:nowrap; text-align:left;'> 6253    </td>
+</tr></table>                                        </div></div>
+<a id='x11-570008r1'></a>
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Tabell 7.1:    </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>Exmpel    på    användning    av    olika
+delningstal vid simplex- och repeaterkanaler.</span>        </span></figcaption><!-- tex4ht:label?: x11-570008r1  -->
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   </div>
+<p class='indent'>   VCO-frekvensen är lika vid sändning och mottagning
+medan delningstalet bestämmer arbetsfrekvensen.
+</p> 
+<p class='indent'>
+                                                      </p> 
+
+        <h4 class='subsectionHead'><span class='titlemark'>7.3.8   </span> <a id='x11-5710007.3.8'></a>Kortvågstransceiver för SSB och CW</h4>
+    <p><a id='dx11-571001'></a>
+    <a id='dx11-571002'></a>
+    <a id='dx11-571003'></a>
+    <a id='dx11-571004'></a>
+    <a id='dx11-571005'></a>
+    <a id='dx11-571006'></a>
+    <a id='dx11-571007'></a>
+        </p><figure class='figure'> 
+
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='336' src='images/cropped_pdfs/bild_2_5-14-.png' width='336' /> <a id='x11-571008r14'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.14: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>SSB-transceiver för kortvåg</span>                                                             </span></figcaption><!-- tex4ht:label?: x11-571008r14  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+<p class='indent'>   Vi har redan beskrivit en KV-sändare och
+KV-mottagare för SSB. I det koncept på en
+kortvågstransceiver, som visas här i bild <a href='#x11-571008r14'>7.14<!-- tex4ht:ref: fig:bildII5-14  --></a>, ingår
+en super-VFO i signalberedningen. VFO-signalen
+(<span class='rm-lmr-10'>5</span>–<span class='rm-lmr-10'>5</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>) blandas med signalen från en kristallstyrd
+CO, vars frekvens är valbar med en bandomkopplare.
+Samtidigt kopplas ett bandpassfilter in efter blandaren i
+super-VFO, som svarar till det aktuella frekvensbandet.
+</p> 
+<p class='indent'>   Till exempel i <span class='rm-lmr-10'>21 MHz</span>-bandet är VFO-filtrets
+passband <span class='rm-lmr-10'>12</span>–<span class='rm-lmr-10'>12</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>. När en VFO-signal <span class='rm-lmr-10'>12</span>–<span class='rm-lmr-10'>12</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>
+blandas med en <span class='rm-lmr-10'>9 MHz</span> SSB modulerad signal erhålls en
+frekvens i området <span class='rm-lmr-10'>3</span>–<span class='rm-lmr-10'>3</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span> och en frekvens i området
+<span class='rm-lmr-10'>21</span>–<span class='rm-lmr-10'>21</span><span class='lmmi-10'>,</span><span class='rm-lmr-10'>5 MHz</span>. Den önskade av dessa frekvenser filtreras
+fram med omkopplingsbara bandpassfilter, vilket sker
+med den bandkopplare som nämnts tidigare.
+</p> 
+<p class='indent'>   I den enkla kortvågssändare som beskrivits tidigare
+är det tillräckligt med en enda sats av omkopplingsbara
+bandpassfilter. Det större antalet filter i den här
+beskrivna utrustningen behövs för att även kunna
+använda super-VFO som en del i mottagaren, vilken
+arbetar som enkelsuper. Eftersom en MF på <span class='rm-lmr-10'>9 MHz</span>
+används även i mottagaren kommer mottagning och
+sändning att kunna ske på samma frekvens.
+</p> 
+<p class='indent'>   Mottagaren beskrivs inte närmare. Med lämpliga
+omkopplingsanordningar kan vissa funktionsblock i
+transceivern användas både vid mottagning och
+sändning. Bild <a href='#x11-571008r14'>7.14<!-- tex4ht:ref: fig:bildII5-14  --></a> visar en SSB-transceiver där
+passbandfilter i förkretsar, MF-filter och kristalloscillatorer
+har dubbel användning. Funktionsblocken visas
+inplacerade i sina alternativa funktioner, däremot inte
+omkopplingsanordningarna.
+</p> 
+<p class='indent'>   Vid sändning och mottagning av CW förbikopplas
+den balanserade modulatorn och kristallfiltret i
+signalbehandlingskretsarna för <span class='rm-lmr-10'>9 MHz</span>. För mottagning
+av CW ändras BFO-frekvensen i mottagaren så att det
+hörs en svävningston när en bärvåg tas emot. Utan
+denna frekvensändring skulle endast bärvågsbruset
+höras.
+</p> 
+<p class='indent'>   Även en RIT och en <span class='ec-lmri-10'>talstyrd sändning </span>(eng. <span class='ec-lmri-10'>Voice
+Operated Xmitter, VOX</span>) är inritade.
+   </p> 
+<figure class='figure'> 
+
+                                              
+                                                                                            
+                                                                                            
+                                              
+                                                                                            
+                                                                                            
+<div class='center'>
+<p class='indent'>
+</p> 
+<p class='indent'> <img alt='PIC' height='384' src='images/cropped_pdfs/bild_2_5-15-.png' width='384' /> <a id='x11-571009r15'></a>
+</p> 
+<figcaption class='caption'><span class='id'> 
+<span class='SourceSansPro-Bold-tlf-t1-'>Bild 7.15: </span></span><span class='content'><span class='SourceSansPro-Regular-tlf-t1-'>PLL-styrd SSB-transceiver för kortvåg</span>                                                      </span></figcaption><!-- tex4ht:label?: x11-571009r15  -->
+</div>
+                                              
+                                                                                            
+                                                                                            
+   </figure>
+   <h4 class='subsectionHead'><span class='titlemark'>7.3.9   </span> <a id='x11-5720007.3.9'></a>PLL-styrd kortvågstransceiver</h4>
+<p><a id='dx11-572001'></a>
+<a id='dx11-572002'></a>
+</p><p class='noindent'>En modern transceiver i den högre prisklassen finns i
+bild <a href='#x11-571009r15'>7.15<!-- tex4ht:ref: fig:bildII5-15  --></a>, i så kallad ”all-mode”-utförande, erbjuder
+många funktionella möjligheter. Flera av dem kommer
+emellertid endast till användning i speciella situationer.
+Konceptet för en sådan transceiver beskrivs här i
+stort. Huvudprincipen för signalbehandlingen kan
+beskrivas som en PLL-styrd dubbelsuper. SSB-signalen
+bereds på <span class='rm-lmr-10'>9 MHz</span>-nivån och flyttas därefter upp
+till <span class='rm-lmr-10'>70 MHz</span>-nivån genom frekvensblandning och
+filtrering. De möjliga sändningsfrekvenserna mellan 0,5
+och <span class='rm-lmr-10'>30 MHz</span> skapas genom att blanda den fasta
+SSB-signalen med en variabel frekvens från VCO.
+Den steglösa frekvenstäckningen som innefattar
+mellanvågs- och kortvågsområdet är emellertid endast
+avsedd för mottagningsfunktionen i transceivern. För
+sändningsfunktionen kan tillkomma blockeringskretsar,
+som förhindrar sändning utanför tillåtna frekvensband.
+</p> 
+<p class='indent'>   Denna förenklade beskrivning omfattar inte
+kristalloscillatorerna för 9 och <span class='rm-lmr-10'>61 MHz</span> i fasregleringskretsen
+och inte heller SSB-modulatorn, FM-modulatorn och
+anordningarna för CW-sändning.
+</p> 
+<p class='indent'>   Mottagaren är en dubbelsuper med hög 1:a
+MF-frekvens. Mottagare för höga frekvenser kan till och
+med utföras som en trippelsuper. Samma bandpassfilter,
+blandare och kristallfilter används både vid sändning
+och mottagning.
+</p> 
+<p class='indent'>   Genom lämplig programmering av frekvensdelaren
+kan sändning och mottagning ske på samma frekvens
+eller på skilda frekvenser (split-trafik).
+</p> 
+<p class='indent'>   En extra VFO-funktion kan åstadkommas genom
+att frekvensdelaren programmeras med delningstal
+som hämtas från ett digitalt minne. Den extra
+VFO-funktionen kan sedan efterjusteras genom att
+ändra delningstalet med frekvensratten. Minnet blir
+ännu mer användbart, om det förutom frekvenser också
+kan lagra uppgifter till exempel om sändningsslag och
+andra inställningar.
+</p> 
+<p class='indent'>   Till skillnad från den raka sändaren är den här
+beskrivna PLL-styrda transceivern mycket komplicerad.
+Nya, bättre och mer invecklade apparater har fortsatts
+att utvecklas.
+</p> 
+<p class='indent'>   Men det är inte alls nödvändigt att använda det
+senaste och mest avancerade inom apparattekniken för
+att utöva amatörradio. Det går mycket bra att börja
+med enkla medel och med liten ekonomisk insats. Det
+finns ett stort utbud av begagnade apparater som i
+olika avseenden är konkurrenskraftiga med senare
+konstruktioner.
+                                              
+                                                                                            
+                                                                                            
+   </p> 
+<!-- l. 1 --><div class='crosslinks'><p class='noindent'></p></div>
+    
+</body> 
+</html>
