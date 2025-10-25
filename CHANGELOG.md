@@ -32,6 +32,8 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Modernisering av radioamatörens hederskod.
 - Många illustrationer har omarbetats till vektorformat.
 - Moderniserat text om QAM.
+- Konsekvent användning av SVF istället för SWR i svenskspråkig text.
+- Ersatt "SVF-meter" med "SVF-mätare" genomgående.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
