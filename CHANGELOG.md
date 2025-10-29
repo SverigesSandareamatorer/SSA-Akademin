@@ -46,6 +46,8 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Primär och sekundär status borttaget från bilaga svensk frekvensplan.
 - Rättat enstaka tecken på flera ställen.
 - Moderniserat texten om WSJT(-X).
+- Kapiteltitel för Sändare ändrad till "Sändare och transceivrar" både i innehållsförteckningen och på kapitelsidan.
+- Avsnittsrubrik ändrad från "Transceiver" till "Transceivrar".
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
