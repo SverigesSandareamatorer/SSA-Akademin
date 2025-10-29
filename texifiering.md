@@ -14,7 +14,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 3.  Sidnumrering, sidmatning och toppen av sidan ligger kvar, ofta inkomplett.
     Vi låter det ligga kvar tills vi verkligen processar den delen av texten,
-    eftersom det blir lättare att matcha mot orignalet. Sen tar vi bara
+    eftersom det blir lättare att matcha mot originalet. Sen tar vi bara
     bort det.
 
 4.  För bilder har OCR:en försökt tolka bilderna. När vi processar texten tar
@@ -37,7 +37,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     `\subsection{}` för 1.1.1 nivån och `\subsubsection{}` för 1.1.1.1 nivån.
     En del onumrerade avsnitt finns och `\paragraph{}` är lämpligt.
 
-8.  Text i kursiv still används för att indikera nyckelbegrepp och då används
+8.  Text i kursiv stil används för att indikera nyckelbegrepp och då används
     `\emph{}`.
     Nyckelbegrepp ska i förekommande fall även skrivas i sin engelska form,
     för att underlätta sökning på nätet och läsande av engelsk litteratur.
