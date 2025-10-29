@@ -1,7 +1,7 @@
 Installera och bygg
 ===================
 
-Här förklaras vilka verktyg som behövs, hur man använder dom och
+Här förklaras vilka verktyg som behövs, hur man använder dem och
 vilka filer som kan byggas. Det här repot innehåller mestadels
 *TeX*-relaterade filer som kan användas för att bygga/generera
 PDF-filer.
@@ -16,7 +16,7 @@ steg och beskriver de verktyg som används för att köra koden.
 
 | :warning: **Observera** |
 |:------------------------|
-| Dessa instruktioner är inte fullständiga men kan ändå hjälpa fram för allt de som kör Linux eller UNIX-liknande operativsystem. Just nu är den här guiden mest inriktad på [Linux/Debian-derivat](https://www.debian.org/misc/children-distros) men paketnamnen bör heta likadant i andra distributioners pakethanterare. |
+| Dessa instruktioner är inte fullständiga men kan ändå hjälpa framför allt de som kör Linux eller UNIX-liknande operativsystem. Just nu är den här guiden mest inriktad på [Linux/Debian-derivat](https://www.debian.org/misc/children-distros) men paketnamnen bör heta likadant i andra distributioners pakethanterare. |
 
 # Kom igång
 
@@ -62,9 +62,9 @@ har hittar du under [Make mål och Byggberoenden](#make-mÅl-och-byggberoenden).
 
 ## Make-mål och byggberoenden
 
-För att få en översikt över vilka mål som finns listas dom här i
-tabellen med en beskrivning om vad dom gör och vilka verktyg som de är
-beroende utav. För att köra ett Make mål, se till att du
+För att få en översikt över vilka mål som finns listas de här i
+tabellen med en beskrivning om vad de gör och vilka verktyg som de är
+beroende av. För att köra ett Make-mål, se till att du
 har installerat beroendet som det behöver.
 
 | Mål | Bygger/Genererar | Beroende |

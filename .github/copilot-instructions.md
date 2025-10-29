@@ -28,7 +28,7 @@ SSA-Akademin/
 ├── Makefile                # Build system
 ├── CHANGELOG.md            # Manual change log
 ├── BUILD.md                # Build instructions
-├── CONTRIBUTING.md         # Contribution guidelines
+├── .github/CONTRIBUTING.md # Contribution guidelines
 ├── texifiering.md          # LaTeX formatting rules
 └── VERSION.txt             # Current version (3.0.0-pre)
 ```

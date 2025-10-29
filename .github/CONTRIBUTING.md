@@ -2,7 +2,7 @@ Bidra till projektet
 ====================
 Projektgruppen arbetar kollaborativt och välkomnar bidrag.
 I det här dokumentet specificerar vi hur du gör för att lämna ett bidrag som har
-större sannoliket att dras in i stammen.
+större sannolikhet att dras in i stammen.
 
 Om du har en lösning på ett problem eller vill bidra med något nytt så kan du
 starta ett [ärende](https://github.com/SverigesSandareamatorer/SSA-Akademin/issues)
@@ -19,7 +19,7 @@ skrivas om så att vi kan använda den.
 Krav
 ----
 
-För att texten ska bli enhetlig i hela boken ska en del regler följas. Se till
+För att texten ska bli enhetlig i hela boken ska en del regler följas. Se till att
 gå igenom dessa så att din Pull Request uppfyller alla krav:
 1. Gå igenom [texifiering.md](../texifiering.md) och se till att din text
    uppfyller alla krav.
