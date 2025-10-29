@@ -126,9 +126,17 @@ koncept.log:
 koncept.pdf: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
 	latexmk -pdf koncept.tex
 
-koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES)
-	ebb -x images/**.png
-	ebb -x images/**.pdf
+%.xbb: %.png
+	ebb -x $<
+
+%.xbb: %.pdf
+	ebb -x $<
+
+IMAGE_PNGS := $(shell find images -name "*.png")
+IMAGE_PDFS := $(shell find images -name "*.pdf")
+IMAGE_XBBS := $(IMAGE_PNGS:.png=.xbb) $(IMAGE_PDFS:.pdf=.xbb)
+
+koncept.epub: $(REPO_FILES) koncept.tex $(KONCEPT_FILES) $(IMAGE_XBBS)
 	tex4ebook --format epub3 --tidy koncept.tex
 
 koncept.tar.gz: Makefile $(KONCEPT_FILES)
@@ -180,3 +188,4 @@ docker-build:
 clean: SHELL=/bin/bash -O extglob -c
 clean:
 	-rm -f *.aux *.bbl *.idx *.ind *.lof *.log *.lot *.pdf *.toc *~ *.out !(koncept|ssa-akademin|versionsnummer).png *.ilg *.upa koncept/*.aux koncept/*~ TODOs.txt *.xml
+	-find images -name "*.xbb" -delete
