@@ -10,7 +10,7 @@ Published by Föreningen Sveriges Sändareamatörer (SSA), this is the official 
 - **Type**: LaTeX book project
 - **Size**: ~64MB repository, ~27,000 lines of LaTeX code
 - **Output**: ~354-page PDF (~10MB), experimental EPUB
-- **Images**: 617 PDF files, 300 PNG files in images/ directory
+- **Images**: ~900 image files (primarily PDF and PNG formats) in images/ directory
 - **Language**: Swedish (primary text and comments)
 - **Version**: 3.0.0-pre (pre-release)
 
@@ -220,9 +220,9 @@ make docker-build  # Run build in container
 
 ## Quick Reference
 - **Main doc**: koncept.tex
-- **Chapters**: koncept/*.tex (170+ files)
-- **Images**: images/ (617 PDFs, 300 PNGs)
+- **Chapters**: koncept/*.tex (130+ LaTeX files with all chapters and appendices)
+- **Images**: images/ (~600 PDFs, ~300 PNGs)
 - **Build**: `make clean && make koncept.pdf`
-- **Format rules**: texifiering.md (33 rules)
+- **Format rules**: texifiering.md (extensive LaTeX and Swedish formatting standards)
 - **Version**: VERSION.txt (3.0.0-pre)
 - **Changes**: CHANGELOG.md (semantic versioning)
