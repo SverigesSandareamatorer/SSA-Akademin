@@ -221,7 +221,7 @@ make docker-build  # Run build in container
 ## Quick Reference
 - **Main doc**: koncept.tex
 - **Chapters**: koncept/*.tex (130+ LaTeX files with all chapters and appendices)
-- **Images**: images/ (~600 PDFs, ~300 PNGs)
+- **Images**: images/ (~900 image files, primarily PDF and PNG formats)
 - **Build**: `make clean && make koncept.pdf`
 - **Format rules**: texifiering.md (extensive LaTeX and Swedish formatting standards)
 - **Version**: VERSION.txt (3.0.0-pre)
