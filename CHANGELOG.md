@@ -13,6 +13,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nytt appendix om åskskydd.
 
 ### Ändrat
+- Filnamn för alla avsnitt ändrade från `chapter[X]-[Y].tex` till beskrivande namn som `avsnitt-[beskrivande-namn].tex` för att underlätta navigering i källkoden.
 - Nya avsnittsnivåer i kapitel Ellära.
 - Nya delavsnittsnivåer i _Effekt och energi_.
 - Nya delavsnittsnivåer i _Internationell nödtrafik_.
