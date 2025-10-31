@@ -16,8 +16,8 @@ all:	koncept.pdf koncept.epub
 
 KONCEPT_CH01_FILES = koncept/ellaera.tex \
 	koncept/ellaera-elektriska-grundbegrepp.tex koncept/ellaera-elektriska-kraftkallor.tex \
-	koncept/ellaera-elektriskt-falt.tex koncept/ellaera-magnetiskt-falt.tex \
-	koncept/ellaera-elektromagnetiska-vagor.tex koncept/ellaera-sinusformade-signaler.tex \
+	koncept/ellaera-elektriskt-faelt.tex koncept/ellaera-magnetiskt-faelt.tex \
+	koncept/ellaera-elektromagnetiska-vaagor.tex koncept/ellaera-sinusformade-signaler.tex \
 	koncept/ellaera-icke-sinusformade-signaler.tex koncept/ellaera-effekt-och-energi.tex
 KONCEPT_KOMPONENTER_FILES = koncept/komponenter.tex \
 	koncept/komponenter-resistorn.tex koncept/komponenter-kondensatorn.tex \
@@ -25,10 +25,10 @@ KONCEPT_KOMPONENTER_FILES = koncept/komponenter.tex \
 	koncept/komponenter-halvledardioden.tex koncept/komponenter-transistorn.tex \
 	koncept/komponenter-ic.tex \
 	koncept/komponenter-elektronroer.tex koncept/komponenter-digitala-kretsar.tex \
-	koncept/komponenter-operationsforstarkare.tex koncept/komponenter-varmeutveckling.tex
+	koncept/komponenter-operationsfoerstarkare.tex koncept/komponenter-vaermeutveckling.tex
 KONCEPT_KRETSAR_FILES = koncept/kretsar.tex \
 	koncept/kretsar-serie-och-parallellt.tex koncept/kretsar-filter.tex \
-	koncept/kretsar-kraftforsorjning.tex koncept/kretsar-forstarkare.tex \
+	koncept/kretsar-kraftfoersorjning.tex koncept/kretsar-foerstarkare.tex \
 	koncept/kretsar-detektorer-demodulatorer.tex koncept/kretsar-oscillatorer.tex \
 	koncept/kretsar-kristalloscillatorer.tex koncept/kretsar-frekvensblandare.tex \
 	koncept/kretsar-modulatorer.tex koncept/kretsar-digital-signalbehandling.tex
@@ -54,43 +54,43 @@ KONCEPT_MODULATION_FILES = koncept/modulation.tex \
 	koncept/modulation-digitala-saendningsslag.tex
 KONCEPT_CH05_FILES = koncept/mottagare.tex \
 	koncept/mottagare-raka-mottagare.tex \
-	koncept/mottagare-superheterodynmottagare.tex koncept/mottagare-jamforelse-superheterodyn.tex \
+	koncept/mottagare-superheterodynmottagare.tex koncept/mottagare-jaemfoerrelse-superheterodyn.tex \
 	koncept/mottagare-panoramamottagare.tex koncept/mottagare-mottagningskonvertern.tex \
 	koncept/mottagare-transvertern.tex koncept/mottagare-agc.tex \
 	koncept/mottagare-egenskaper-i-mottagare.tex
 KONCEPT_CH06_FILES = koncept/saendare.tex \
-	koncept/saendare-egenskaper-i-sandare.tex koncept/saendare-transceiver.tex
+	koncept/saendare-egenskaper-i-saendare.tex koncept/saendare-transceiver.tex
 KONCEPT_CH07_FILES = koncept/antennsystem.tex \
 	koncept/antennsystem-allmant.tex koncept/antennsystem-polarisation.tex \
-	koncept/antennsystem-antenner-for-kortvag.tex koncept/antennsystem-riktantenner-for-kortvag.tex \
-	koncept/antennsystem-antenner-for-vhf-uhf-shf.tex koncept/antennsystem-transmissionsledningar.tex
+	koncept/antennsystem-antenner-foer-kortvag.tex koncept/antennsystem-riktantenner-foer-kortvag.tex \
+	koncept/antennsystem-antenner-foer-vhf-uhf-shf.tex koncept/antennsystem-transmissionsledningar.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
-	koncept/vaagutbredning-kraftfalt-antenner.tex koncept/vaagutbredning-radiovagornas-egenskaper.tex \
+	koncept/vaagutbredning-kraftfaelt-antenner.tex koncept/vaagutbredning-radiovaagornas-egenskaper.tex \
 	koncept/vaagutbredning-jonosfaerskikten.tex koncept/vaagutbredning-solens-inverkan.tex \
-	koncept/vaagutbredning-vagutbredning-pa-kortvag.tex koncept/vaagutbredning-vagutbredning-pa-vhf-ehf.tex \
-	koncept/vaagutbredning-brus-och-lankbudget.tex
+	koncept/vaagutbredning-vaagutbredning-paa-kortvag.tex koncept/vaagutbredning-vaagutbredning-paa-vhf-ehf.tex \
+	koncept/vaagutbredning-brus-och-laenkbudget.tex
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \
-	koncept/maetteknik-att-mata.tex koncept/maetteknik-maetinstrument.tex
+	koncept/maetteknik-att-maeta.tex koncept/maetteknik-maetinstrument.tex
 KONCEPT_CH10_FILES = koncept/emc.tex \
-	koncept/emc-storningar-och-storkanslihet.tex koncept/emc-storningar-i-elektronik.tex \
-	koncept/emc-storningsorsaker.tex koncept/emc-avstorningsmetoder.tex
-KONCEPT_CH11_FILES = koncept/emf.tex koncept/emf-falt.tex \
+	koncept/emc-stoerningar-och-stoerkanslihet.tex koncept/emc-stoerningar-i-elektronik.tex \
+	koncept/emc-stoerningsorsaker.tex koncept/emc-avstoerningsmetoder.tex
+KONCEPT_CH11_FILES = koncept/emf.tex koncept/emf-faelt.tex \
 	koncept/emf-egenkontroll.tex koncept/emf-sammanfattning.tex
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
-	koncept/elsaekerhet-manniskokroppen.tex koncept/elsaekerhet-allmanna-elnatet.tex \
+	koncept/elsaekerhet-maenniskokroppen.tex koncept/elsaekerhet-allmaenna-elnaetet.tex \
 	koncept/elsaekerhet-faror.tex koncept/elsaekerhet-aaska.tex
 KONCEPT_TRAFIKREGLEMENTE_FILES = koncept/trafikreglemente.tex \
 	koncept/trafikreglemente-fonetiska-alfabet.tex koncept/trafikreglemente-q-koden.tex \
-	koncept/trafikreglemente-trafikforkortningar.tex koncept/trafikreglemente-internationell-nodtrafik.tex \
+	koncept/trafikreglemente-trafikfoerkortningar.tex koncept/trafikreglemente-internationell-noedtrafik.tex \
 	koncept/trafikreglemente-exempel-kontakt.tex \
-	koncept/trafikreglemente-innehall-i-forbindelse.tex \
+	koncept/trafikreglemente-innehaall-i-foerbindelse.tex \
 	koncept/trafikreglemente-anropssignaler.tex \
 	koncept/trafikreglemente-loggbok.tex \
 	koncept/trafikreglemente-hederskod.tex \
 	koncept/trafikreglemente-ordningsregler.tex koncept/trafikreglemente-bandplaner.tex
 KONCEPT_CH14_FILES = koncept/bestaemmelser.tex \
 	koncept/bestaemmelser-itu-rr.tex koncept/bestaemmelser-cept.tex \
-	koncept/bestaemmelser-svensk-lag-och-foreskrift.tex
+	koncept/bestaemmelser-svensk-lag-och-foereskrift.tex
 KONCEPT_APDX_FILES = koncept/appendix-bandplaner.tex koncept/appendix-beskrivningskoder.tex \
 	koncept/appendix-decibel.tex koncept/appendix-frekvensplan.tex \
 	koncept/appendix-kunskapskrav.tex koncept/appendix-lashanvisningar.tex \
