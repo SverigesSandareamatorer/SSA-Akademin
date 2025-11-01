@@ -61,9 +61,9 @@ KONCEPT_CH05_FILES = koncept/mottagare.tex \
 KONCEPT_CH06_FILES = koncept/saendare.tex \
 	koncept/saendare--egenskaper-i-saendare.tex koncept/saendare--transceiver.tex
 KONCEPT_CH07_FILES = koncept/antennsystem.tex \
-	koncept/antennsystem--allmant.tex koncept/antennsystem-polarisation.tex \
+	koncept/antennsystem--allmant.tex koncept/antennsystem--polarisation.tex \
 	koncept/antennsystem--antenner-foer-kortvag.tex koncept/antennsystem--riktantenner-foer-kortvag.tex \
-	koncept/antennsystem--antenner-foer-vhf-uhf-shf.tex koncept/antennsystem-transmissionsledningar.tex
+	koncept/antennsystem--antenner-foer-vhf-uhf-shf.tex koncept/antennsystem--transmissionsledningar.tex
 KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 	koncept/vaagutbredning--kraftfaelt-antenner.tex koncept/vaagutbredning--radiovaagornas-egenskaper.tex \
 	koncept/vaagutbredning-jonosfaerskikten.tex koncept/vaagutbredning-solens-inverkan.tex \
@@ -72,7 +72,7 @@ KONCEPT_CH08_FILES = koncept/vaagutbredning.tex \
 KONCEPT_CH09_FILES = koncept/maetteknik.tex \
 	koncept/maetteknik--att-maeta.tex koncept/maetteknik-maetinstrument.tex
 KONCEPT_CH10_FILES = koncept/emc.tex \
-	koncept/emc--stoerningar-och-stoerkanslihet.tex koncept/emc--stoerningar-i-elektronik.tex \
+	koncept/emc--stoerningar-och-stoerkanslighet.tex koncept/emc--stoerningar-i-elektronik.tex \
 	koncept/emc--stoerningsorsaker.tex koncept/emc--avstoerningsmetoder.tex
 KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
 	koncept/emf-egenkontroll.tex koncept/emf-sammanfattning.tex
