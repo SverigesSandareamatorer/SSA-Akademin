@@ -46,7 +46,7 @@ jobs:
           echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
           echo "| chktex-varningar | $(cat chktex.log | grep -F 'Warning' | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: rapporter
           path: |
@@ -97,7 +97,7 @@ jobs:
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.pdf)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara artefakt'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: koncept-pdf
           path: |
@@ -152,7 +152,7 @@ jobs:
       - name: 'Visa checksumma'
         run: echo "<pre>$(sha256sum *.epub)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara artefakt'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: koncept-epub
           path: |
