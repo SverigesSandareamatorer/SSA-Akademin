@@ -74,7 +74,9 @@ KONCEPT_CH09_FILES = koncept/maetteknik.tex \
 KONCEPT_CH10_FILES = koncept/emc.tex \
 	koncept/emc--stoerningar-och-stoerkanslighet.tex koncept/emc--stoerningar-i-elektronik.tex \
 	koncept/emc--stoerningsorsaker.tex koncept/emc--avstoerningsmetoder.tex
-KONCEPT_CH11_FILES = koncept/emf.tex koncept/chapter11-1.tex \
+KONCEPT_CH11_FILES = koncept/emf.tex \
+	koncept/emf--faelt.tex koncept/emf--allmaenna-raad.tex \
+	koncept/emf--utvaerdering-av-emf.tex \
 	koncept/emf--egenkontroll.tex koncept/emf--sammanfattning.tex
 KONCEPT_CH12_FILES = koncept/elsaekerhet.tex \
 	koncept/elsaekerhet--maenniskokroppen.tex koncept/elsaekerhet--allmaenna-elnaetet.tex \
