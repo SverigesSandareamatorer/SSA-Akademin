@@ -48,7 +48,6 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Moderniserat texten om WSJT(-X).
 - Kapiteltitel för Sändare ändrad till "Sändare och transceivrar" både i innehållsförteckningen och på kapitelsidan.
 - Avsnittsrubrik ändrad från "Transceiver" till "Transceivrar".
-- Stavningsfel: ändrat "skall" till "ska" för konsekvent modern stavning (13 förekomster).
 - Stavningsfel: ändrat "nån" till "någon" för korrekt stavning (1 förekomst).
 - Grammatikfel: tagit bort dubblering av ord "att att", "till till", "kan kan", "ett ett" och "olika olika" (7 förekomster).
 
