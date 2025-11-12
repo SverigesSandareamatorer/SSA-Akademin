@@ -1,58 +1,58 @@
 \section{Fält}
 \index{elektriskt fält (E)}
 \index{magnetiskt fält (H)}
-För att ange nivån på det elektriska fältet (E) används enheten
-''volt per meter'' (V/m).
-Det magnetiska fältet (H) nivå anges i enheten ''ampere per meter'' (A/m).
-
-Antennens uppgift är att så effektivt som möjligt omvandla den högfrekventa
-strömmen i matarkabeln till en elektromagnetisk våg som utbreder sig i luften.
-
-Den sammansatta elektromagnetiska vågen uppträder inte direkt vid antennen utan
-uppstår i det som man kallar fjärrfältet.
-Detta sker genom växelverkan mellan de elektriska och magnetiska fält som
-utgår från antennen.
-Teorierna som beskriver hur denna växelverkan fungerar är komplicerade
-men det viktiga att förstå är att det finns en gräns mellan vad man
-kallar fjärrfältet, längre bort från antennen och närfältet nära antennen.
-
 \index{fjärrfält}
-I fjärrfältet kan man tack vare växelverkan mellan det elektriska- och det
-magnetiska fältet mäta vilket som helst av dem.
-I och med att det elektromagnetiska fältet sprider ut sig över en större yta så
-avtar styrkan i fältet med avståndet från antennen.
-Det sammansatta elektromagnetiska fältet som passerat gränsen till fjärrfältet
-avtar linjärt med avståndet, dubbleras avståndet halveras fältstyrkan.
-Det spelar ingen roll om antennen är helt rundstrålande eller koncentrerar
-effekten i en riktning, det elektromagnetiska fältet avtar på samma sätt.
-
 \index{närfält}
-I närfältet behöver man på grund av fältens komplicerade inbördes förhållande
-mäta både det elektriska och det magnetiska fältet för att få en uppfattning
-om storleken på det radiofrekventa fältet.
-I antennens närhet varierar nivåerna på de olika fälten kraftigt och på vissa
-punkter kan höga fältstyrkenivåer mätas upp.
 
-Om antennen har stor utsträckning i förhållande till använd våglängd kan ibland
-fjärrfältsformler användas för att överslagsmässigt beräkna fältstyrkenivå i
-antennens närfält.
-För kompakta antenner (t.ex. små loopar) krävs komplicerade beräkningar
-med hjälp av antennsimuleringsprogram.
+Antennens uppgift är att omvandla den ledningsbundna signalen i matarkabel på
+ett så effektivt sätt som möjligt till en elektromagnetisk våg som utbreder sig
+i luften.
+
+Den elektromagnetiska vågen uppträder inte direkt vid antennen utan uppstår
+efter ett visst avstånd från antennen som man kallar fjärrfältet.
+Detta sker genom växelverkan mellan det elektriska och magnetiska fältet som
+antennen genererar.
+
+Teorierna som beskriver hur denna växelverkar fungerar är komplicerade men det
+viktiga att förstå är att det finns en gräns mellan vad man kallar fjärrfältet
+längre bort från antennen och närfältet nära antennen.
+Av denna anledning måste man nära antenner mäta både det elektriska och
+magnetiska fältet för att utvärdera maximal fältstyrka.
+I fjärrfältet kan man på grund av växelverkan mellan dem mäta antingen det ena
+eller det andra.
 
 Beroende på den antenntyp som genererar fältet är det antingen ett elektriskt
-eller magnetiskt fält som dominerar i närfältet.
+eller magnetiskt fält som dominerar närfältet.
 Elektrisk fältdominans genereras av antenntyper som bygger på
-spänningsskillnader (t.ex. dipol) och magnetisk fältdominans av antenner
-med strömflöde (t.ex. små loopar).
+spänningsskillnader (t.ex. dipol) och magnetisk fältdominans av antenner med
+strömflöde (t.ex. små loopar).
+
+Det elektriska fältet (E) anges i ''Volt per meter'' (\unit{\volt\per\metre})
+och det magnetiska fältet (H) i ''Ampere per meter'' (\unit{\ampere\per\metre}).
+
+I och med att fältet utbreder sig i luften åt alla håll samtidigt så avtar
+styrkan i fältet.
+Detta beror på att effekten som genererar fältyrkan täcker ett större och större
+tänkt klot runt antennen ju längre bort man kommer.
+Effekten per ytenhet blir då mindre ju längre från antennen man kommer.
+
+Fältet avtar alltså i styrka på samma sätt som att jämföra ytan på två klot med
+olika radier.
+Genom matematisk analys av dessa klots ytor med olika radier kommer man fram
+till att om avståndet dubbleras halveras fältstyrkan.
+
+Det spelar ingen roll om antennen är helt rundstålande eller koncentrerar
+effekten i en riktning så avtar fältet på samma sätt i alla fall.
 
 Eftersom alla elektriska ledare kan betraktas som antenner kommer dessa att
 kunna generera fält, oavsett om det är tänkt att det ska vara en antenn eller
 inte.
-Man bör ha detta i åtanke vid installation av matarledning till antennen för
-att undvika att högfrekvent ström flyter tillbaka till stationen på utsidan av
-ledningen.
-Även de apparater man använder för att generera radiosignaler kan ha dålig
-skärmning och därigenom leds högfrekvent ström till apparaternas utsida.
+Detta är tydligt då både apparater och ledningar kan leda högfrekvent ström och
+genom detta generera fält.
+Man bör ha detta i åtanke vid installation av matarledning till antennen för att
+undvika att ström flyter tillbaka till stationen på utsidan av ledningen.
+Även de apparater man använder för att generera de signaler man vill skicka ut
+kan ha dålig skärmning och leda högfrekvent ström på utsidan.
 
-Det finns alltså en risk att fältstyrkorna kan vara betydande i närheten av
-sändare och framför allt vid slutsteg med tillhörande kablage.
+Det finns alltså en risk att fältstyrkorna i närheten av sändare, och framför
+allt slutsteg med tillhörande kablage, kan vara betydande.
