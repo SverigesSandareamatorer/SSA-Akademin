@@ -34,6 +34,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Moderniserat text om QAM.
 - Konsekvent användning av SVF istället för SWR i svenskspråkig text.
 - Ersatt "SVF-meter" med "SVF-mätare" genomgående.
+- Kapitlet om elektromagnetiska fält har omarbetats.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
