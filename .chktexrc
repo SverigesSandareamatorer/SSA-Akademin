@@ -1,0 +1,88 @@
+##
+## ChkTeX konfiguration för KonCEPT
+##
+## Denna fil konfigurerar chktex för att ignorera varningar som är falska
+## positiva, pedantisk typografi eller stilpreferenser olämpliga för svenska
+## tekniska dokument.
+##
+## Se /etc/chktexrc för fullständig dokumentation om filformatet.
+##
+
+## Kommandoradsalternativ
+##
+## Alternativ som skulle ges på kommandoraden kan specificeras här istället.
+## Detta gör konfigurationen mer läsbar och lättare att underhålla.
+##
+CmdLine
+{
+    -v1
+    # Warning 1: Command terminated with space
+    # Eftersom kommandon med efterföljande mellanslag är vanligt och acceptabelt i LaTeX.
+    # LaTeX hanterar efterföljande mellanslag efter kommandon automatiskt.
+    -n1
+
+    # Warning 3: You should enclose the previous parenthesis with `{}'
+    # Eftersom parenteser i matematiska uttryck ofta ger falska positiva.
+    # ChkTeX har svårt att avgöra när extra gruppering verkligen behövs.
+    -n3
+
+    # Warning 6: No italic correction (`\/') found
+    # Eftersom kursivkorrektion är en mycket pedantisk typografisk detalj.
+    # Moderna LaTeX-motorer hanterar ofta italic correction automatiskt.
+    -n6
+
+    # Warning 8: Wrong length of dash
+    # Eftersom det är fel tankstreckslängd för svenska.
+    # Svenska använder andra regler än engelska för tankstreck.
+    -n8
+
+    # Warning 12: Interword spacing (`\ ') should perhaps be used
+    # Eftersom "t.ex." är korrekt svensk förkortning med punkter.
+    # Det svenska typografiska mönstret kräver inte explicit interword spacing.
+    -n12
+
+    # Warning 13: Intersentence spacing (`\@') should perhaps be used
+    # Eftersom det inte används långa blanksteg i svenska.
+    # Svensk typografi använder enhetligt ordmellanrum.
+    -n13
+
+    # Warning 24: You might wish to put this between a pair of `{}'
+    # Eftersom KonCEPT använder index vid styckets början, inte vid tecken.
+    # Indexkommandon placeras konsekvent i början av paragrafer.
+    -n24
+
+    # Warning 26: You ought to remove spaces in front of punctuation
+    # Eftersom TikZ och circuitikz har olika syntaxregler för ritkommandon.
+    # Indragning och mellanslag före semikolon är accepterat i TikZ-kod.
+    -n26
+
+    # Warning 32: You should use `` to begin quotation
+    # Eftersom det är fel citationstecken för svenska.
+    # Svenska använder andra citationstecken än engelska.
+    -n32
+
+    # Warning 35: You should use `\max' instead
+    # Eftersom varningar om \max ofta är falska positiva för variabler som u_max.
+    # ChkTeX detekterar "max" i variabelnamn och tror det är max-operatorn.
+    -n35
+
+    # Warning 36: You should put a space in front of parenthesis
+    # Eftersom mellanslag före parenteser i makrodefinitioner ofta är avsiktliga.
+    # ChkTeX kan inte avgöra när avstånd är kontrollerat i makrokod.
+    -n36
+
+    # Warning 37: You should avoid spaces in front of/after parenthesis
+    # Eftersom mellanslag runt parenteser är stilistiska preferenser.
+    # I vissa sammanhang (enhetsdefinitioner, makrokod) är mellanslag avsiktliga.
+    -n37
+
+    # Warning 38: You should not use punctuation in front of quotes
+    # Eftersom skiljetecken före citattecken är stilistiska preferenser.
+    # Svensk typografi har andra regler än amerikansk engelska.
+    -n38
+
+    # Warning 44: User Regex
+    # Eftersom User Regex varningar om tabellstil är preferenser, inte fel.
+    # Inkluderar varningar om booktabs och vertikala linjer i tabeller.
+    -n44
+}
