@@ -35,6 +35,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Konsekvent användning av SVF istället för SWR i svenskspråkig text.
 - Ersatt "SVF-meter" med "SVF-mätare" genomgående.
 - Kapitlet om elektromagnetiska fält har omarbetats.
+- Index-poster flyttade till före figurer och subsektioner där detta påverkar sidnumreringen.
 
 ### Fixat
 - Ordet _mod_ har lagts till i sakregistret.
