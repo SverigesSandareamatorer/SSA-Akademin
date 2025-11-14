@@ -84,7 +84,6 @@ i kabel och fiber.
 \harecsection{\harec{a}{1.8.10a}{1.8.10a}}
 \index{bitfelsdetektion}
 \index{paritet}
-\index{CRC}
 \label{bitfel_detektion}
 
 Eftersom störningar förekommer och man har behov av lägre bitfelssannolikhet
@@ -108,6 +107,7 @@ Ett flertal checksummor finns, för olika ändamål, olika mängd fel och olika
 typer av fel.
 För lite större meddelanden är det vanligt att summera bytes till en checksumma
 antingen additivt eller med XOR.
+\index{CRC}
 För större meddelanden används en lite mer intrikat metod som heter Cyclic
 Redundancy Check (CRC) där man återmatar överskjutande del på checksumman till
 sig själv och får en starkare kod den vägen.
