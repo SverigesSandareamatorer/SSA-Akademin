@@ -37,6 +37,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Kapitlet om elektromagnetiska fält har omarbetats.
 
 ### Fixat
+- Flyttat \index{} poster från direkt efter \section{} till där innehållet faktiskt behandlas för att förhindra felaktiga sidnummerhanvisningar i sakregistret vid sidbrytningar.
 - Ordet _mod_ har lagts till i sakregistret.
 - Litteraturlistan följer praxis bättre vad gäller format.
 - Två utspridda delar om DSP sammanslagna.
