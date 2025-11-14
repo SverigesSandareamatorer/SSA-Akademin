@@ -1,12 +1,12 @@
 \section{Filter}
 \harecsection{\harec{a}{3.2}{3.2}, \harec{a}{3.2.9}{3.2.9}}
-\label{filter}
-
 \index{filter}
 \index{filter!frekvensfilter}
 \index{frekvensgång}
 \index{filter!frekvensgång}
 \index{frequency response}
+\label{filter}
+
 Frekvensfilter, eller mer allmänt \emph{filter}, används inom radiotekniken för
 många olika ändamål, till exempel för att
 \begin{itemize}
@@ -33,11 +33,6 @@ Vi beskriver här först några olika typer av klassiska analoga filter.
 
 \subsection{Högpassfilter (HP)}
 \harecsection{\harec{a}{3.2.8b}{3.2.8b}, \harec{a}{3.2.9}{3.2.9a}}
-\index{högpassfilter}
-\index{filter!högpass (HP)}
-\index{high-pass filter}
-\index{HP}
-
 \index{högpassfilter}
 \index{filter!högpass (HP)}
 \index{high-pass filter}
@@ -100,11 +95,6 @@ resistansen \(R\).
 \index{filter!lågpass (LP)}
 \index{low-pass filter}
 \index{LP|see {lågpassfilter}}
-
-\index{lågpassfilter}
-\index{filter!lågpass (LP)}
-\index{low-pass filter}
-\index{LP|see {lågpassfilter}}
 \label{lågpassfilter}
 
 \mediumtopfig{images/cropped_pdfs/bild_2_3-23.pdf}{Lågpassfilter}{fig:BildII3-23}
@@ -152,11 +142,6 @@ högpassfilter, således
 \index{band-pass filter}
 \index{BP}
 
-\index{bandpassfilter}
-\index{filter!bandpass (BP)}
-\index{band-pass filter}
-\index{BP}
-
 \mediumtopfig{images/cropped_pdfs/bild_2_3-24.pdf}{Bandpassfilter}{fig:BildII3-24}
 
 Ett \emph{bandpassfilter} (eng. \emph{band-pass filter}) släpper igenom signaler
@@ -190,11 +175,6 @@ Fast koppling -- stor bandbredd.
 \index{pass filter|see {passfilter}}
 \index{BP}
 
-\index{passfilter}
-\index{filter!bandpass (BP)}
-\index{pass filter|see {passfilter}}
-\index{BP}
-
 Passkretsen eller passfilter stäms av till en viss frekvens och erbjuder där
 en mycket låg impedans så som illustreras i bild~\ssaref{fig:BildII3-25}.
 Passkretsen kopplas i serie med signalvägen och låter signaler med
@@ -208,11 +188,6 @@ frekvenser inom filtrets passband att passera.
 \index{band reject filter (BR)}
 \index{BR}
 
-\index{bandspärrfilter}
-\index{filter!bandspärr (BR)}
-\index{band reject filter (BR)}
-\index{BR}
-
 Om serie- och parallellkretsarna i ett bandpassfilter byter plats får man
 i stället ett bandspärrfilter så som illustreras i bild~\ssaref{fig:BildII3-26}.
 Ett sådant spärrar signaler inom ett visst frekvensområde, men släpper igenom
@@ -220,7 +195,6 @@ signaler utom detta område.
 
 
 \subsection{Spärrfilter}
-
 \index{bandspärrfilter}
 \index{filter!bandspärr (BR)}
 \index{band reject filter (BR)}
@@ -252,12 +226,6 @@ signal med samma frekvens som resonansfrekvensen, så som illustreras i bild
 \index{Q-värde}
 \index{resonator}
 
-\index{kvartskristall}
-\index{quartz crystal}
-\index{crystal}
-\index{Q-värde}
-\index{resonator}
-
 \smallfig{images/cropped_pdfs/bild_2_3-28.pdf}{Kvartskristall}{fig:BildII3-28}
 
 En \emph{kvartskristall} (eng. \emph{quartz crystal} eller \emph{crystal}),
@@ -275,12 +243,11 @@ Många moderna kvartskristaller kan uppvisa olastat Q-värde på \num{100000}.
 \vspace{12pt} % Undgår brytning av nästa titelrad
 
 \subsection{Bandfilter med kvartskristaller}
-\label{bandfilter_kristall}
-
 \index{kristallfilter}
 \index{crystal filter}
 \index{keramiska resonatorer}
 \index{ceramic resonators}
+\label{bandfilter_kristall}
 
 \smallfigpad{images/cropped_pdfs/bild_2_3-29.pdf}{Bandfilter med kvartskristaller}{fig:BildII3-29}
 
@@ -294,7 +261,6 @@ bidrar på så sätt till att bilda passband eller andra egenskaper på samma s�
 som med sammankopplade LC-kretsar.
 
 \subsection{Mekaniska filter}
-
 \index{mekaniskt filter}
 \index{mechanical filter}
 \index{mekanisk resonator}
@@ -322,7 +288,6 @@ avsevärt högre i frekvens.
 
 
 \subsection{Kavitetsfilter}
-
 \index{kavitetsfilter}
 \index{cavity filter}
 \index{filter!kavitet}
@@ -351,7 +316,6 @@ Dessa egenskaper gör dem oerhört lämpliga som duplexfilter till repeatrar.
 
 
 \subsection{Helixfilter}
-
 \index{helixfilter}
 \index{filter!helix}
 
@@ -363,9 +327,6 @@ eller spärrfilter.
 
 \subsection{Pi-filter}
 \harecsection{\harec{a}{3.2.10a}{3.2.10a}}
-\index{Pi-filter}
-\index{filter!Pi-filter}
-
 \index{Pi-filter}
 \index{filter!Pi-filter}
 
@@ -383,9 +344,6 @@ den seriella delen är gemensam (på bilden en induktor).
 
 \subsection{T-filter}
 \harecsection{\harec{a}{3.2.10b}{3.2.10b}}
-\index{T-filter}
-\index{filter!T-filter}
-
 \index{T-filter}
 \index{filter!T-filter}
 
@@ -437,8 +395,6 @@ När en resonator belastas ökar förlusten ytterligare och därmed sjunker Q-v�
 
 \subsection{Digitala filter}
 \harecsection{\harec{a}{3.2.13}{3.2.13}}
-\index{digitala filter}
-
 \index{digitala filter}
 
 Utvecklingen går mot att allt mer signalbehandling sker digitalt. 
