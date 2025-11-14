@@ -2,6 +2,13 @@
 \section{Digital signalbehandling}
 \label{sec:DSP}
 \harecsection{\harec{a}{3.8}{3.8}}
+
+\index{digital signalbehandling}
+\index{digital signal processing (DSP)}
+\index{DSP|see {digital signalbehandling}}
+\index{Software Defined Radio}
+\index{SDR|see {Software Defined Radio}}
+\index{FPGA}
 \index{digital signalbehandling}
 \index{digital signal processing (DSP)}
 \index{DSP|see {digital signalbehandling}}
@@ -49,6 +56,18 @@ signalerna från analogt till digitalt och tillbaka från digitalt till analogt.
 
 \subsection{Sampling och kvantisering}
 \harecsection{\harec{a}{1.10.1}{1.10.1}}
+\index{sampling}
+\index{samplingstakt}
+\index{sample rate}
+\index{samplingsperiod}
+\index{sample (S)}
+\index{enheter!sample (S)}
+\index{tidsdiskret}
+\index{kvantisering}
+\index{quantize}
+\index{Pulse Code Modulation (PCM)}
+\index{PCM}
+
 \index{sampling}
 \index{samplingstakt}
 \index{sample rate}
@@ -108,6 +127,9 @@ kvantiseringstrappan, vilket nyttjats för datakompression i telefonisystem.
 \harecsection{\harec{a}{1.10.2}{1.10.2}}
 \index{nyquistfrekvens}
 \index{Nyquist-Shannons samplingsteorem}
+
+\index{nyquistfrekvens}
+\index{Nyquist-Shannons samplingsteorem}
 \label{nyquist}
 
 \begin{historiabox}
@@ -142,6 +164,13 @@ därmed
 \subsection{Digitala filter}
 \harecsection{\harec{a}{3.8.1}{3.8.1}}
 \label{digitala filter}
+\index{digitala filter}
+\index{filter!digitala}
+\index{FIR}
+\index{filter!FIR}
+\index{IIR}
+\index{filter!IIR}
+
 \index{digitala filter}
 \index{filter!digitala}
 \index{FIR}
@@ -205,6 +234,13 @@ Detta brukar bland annat öka taltydligheten.
 \index{linear time-invariant filter}
 \index{LTI}
 
+\index{faltning}
+\index{convolution}
+\index{konvolution}
+\index{linjärt tidsinvariant filter}
+\index{linear time-invariant filter}
+\index{LTI}
+
 Filtrering i den digitala domänen, eller egentligen den tidsdiskreta domänen,
 kan beskrivas som att filtrets impulsrespons appliceras på signalen. Denna
 process kallas för \emph{faltning} (ty. \emph{faltung} ''vikning'') eller ibland
@@ -235,6 +271,11 @@ som är det vi i allmänhet fokuserar på.
 
 \subsection{Antivikningsfilter}
 \harecsection{\harec{a}{1.10.4}{1.10.4}}
+\index{vikning}
+\index{aliasing}
+\index{antivikningsfilter}
+\index{anti-aliasing filter}
+
 \index{vikning}
 \index{aliasing}
 \index{antivikningsfilter}
@@ -310,6 +351,15 @@ inte vika bandet.
 \index{FFT}
 \index{Fast Fourier Transform (FFT)}
 
+\index{Fouriertransform (FT)}
+\index{Fourier!DFT}
+\index{Fourier!FFT}
+\index{diskret fouriertransform}
+\index{Discrete Fourier Transform (DFT)}
+\index{DFT}
+\index{FFT}
+\index{Fast Fourier Transform (FFT)}
+
 En specifik form av processing som blivit tillgänglig är fouriertransform,
 det vill säga förmågan att omvandla från signalstyrka över tid till
 signalstyrka över frekvens.
@@ -351,6 +401,9 @@ vattenfall med sina vertikala streck.
 \harecsection{\harec{a}{1.10.5}{1.10.5}}
 \index{ADC}
 \index{DAC}
+
+\index{ADC}
+\index{DAC}
 \label{ADC-DAC}
 
 För att hantera dessa delar använder man analog-till-digital-omvandlare
@@ -369,6 +422,13 @@ dynamiskt område bättre än \qty{100}{\decibel} för väldigt låg kostnad.
 
 \subsection{Direct Digital Synthesis (DDS)}
 \harecsection{\harec{a}{3.8.3}{3.8.3}}
+\index{Direct Digital Synthesis (DDS)}
+\index{DDS}
+\index{fasackumulator}
+\index{phase accumulator (PA)}
+\index{PA}
+\index{nyquistfrekvens}
+
 \index{Direct Digital Synthesis (DDS)}
 \index{DDS}
 \index{fasackumulator}
