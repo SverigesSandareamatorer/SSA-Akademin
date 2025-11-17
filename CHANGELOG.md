@@ -13,6 +13,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Nytt appendix om åskskydd.
 
 ### Ändrat
+- Ny framsida för tredje upplagan med "Tredje upplagan" i nedre högra hörnet.
 - Nya avsnittsnivåer i kapitel Ellära.
 - Nya delavsnittsnivåer i _Effekt och energi_.
 - Nya delavsnittsnivåer i _Internationell nödtrafik_.
