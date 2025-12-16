@@ -27,23 +27,19 @@ jobs:
             chktex
       - name: 'Kör LaTeX-kontroll'
         continue-on-error: true
-        # n8  eftersom det är fel tankstreckslängd för svenska.
-        # n13 eftersom det inte används långa blanksteg i svenska.
-        # n24 eftersom KonCEPT har använder index vid styckets början, inte vid tecken.
-        # n32 eftersom det är fel citationstecken för svenska.
-        run: chktex -v1 -n8 -n13 -n24 -n32 --output chktex.log koncept.tex
+        run: chktex --output chktex.log koncept.tex
       - name: 'Skapa rapporter'
         run: |
           echo "| Statistik | Antal |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |" >> $GITHUB_STEP_SUMMARY
           make images_linked.txt
-          echo "| Bildfiler med referenser | $(cat images_linked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Bildfiler med referenser | $(wc -l < images_linked.txt) |" >> $GITHUB_STEP_SUMMARY
           make images_unlinked.txt
-          echo "| Bildfiler utan referenser | $(cat images_unlinked.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Bildfiler utan referenser | $(wc -l < images_unlinked.txt) |" >> $GITHUB_STEP_SUMMARY
           make long_lines.txt
-          echo "| Kodrader längre än 80 tecken | $(cat long_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Kodrader längre än 80 tecken | $(wc -l < long_lines.txt) |" >> $GITHUB_STEP_SUMMARY
           make comment_lines.txt
-          echo "| Kommentarrader | $(cat comment_lines.txt | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Kommentarrader | $(wc -l < comment_lines.txt) |" >> $GITHUB_STEP_SUMMARY
           echo "| chktex-varningar | $(cat chktex.log | grep -F 'Warning' | wc -l) |" >> $GITHUB_STEP_SUMMARY
       - name: 'Spara rapporter'
         uses: actions/upload-artifact@v5
@@ -62,7 +58,6 @@ jobs:
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v6
-      - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -112,7 +107,6 @@ jobs:
     steps:
       - name: 'Checka ut koden'
         uses: actions/checkout@v6
-      - uses: firebuild/apt-eatmydata-action@1ffc51fd041ed87dcc2ef405913baec405763640
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update

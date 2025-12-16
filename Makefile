@@ -1,4 +1,4 @@
-DOCKER_IMAGE_NAME=	ssa-koncept
+DOCKER_IMAGE_NAME=ssa-koncept
 
 help:
 	@echo 'Makefile för SSA-Akademin                                             '
