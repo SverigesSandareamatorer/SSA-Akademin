@@ -7,8 +7,11 @@ charset = utf-8
 indent_style = tab
 insert_final_newline = true
 
-[{*.tex,!appendix}]
+[*.tex]
 max_line_length = 80
+
+[appendix*.tex]
+max_line_length = off
 
 [*.{css,yml}]
 indent_style = space
