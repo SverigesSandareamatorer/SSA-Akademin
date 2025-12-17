@@ -185,6 +185,21 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
+# Editors, IDEs and miscellaneous
+# IDE settings
+.vscode/
+.idea/
+
+# Editor swap/backup files
+*~
+.#*
+*.swp
+*.swo
+#*#
+
+# Environment files (prevent accidental secrets)
+*.env
+.env.*
 
 # KonCEPT Finished output
 koncept.pdf

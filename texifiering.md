@@ -154,8 +154,9 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
 
 23. Nyckelbegrepp ska indexeras dels där de introduceras och definieras,
     men även på de ställen där de används och det kan vara läsvärt för att
-    förstå dem och dess användning. En enkel användning är
-    `\index{strömtransformator}`
+    förstå dem och dess användning.
+    Undvik att indexera samma term mer än 4&nbsp;gånger.
+    En enkel användning är t.ex.: `\index{strömtransformator}`.
 
     För vissa begrepp är det nyttigt att samla gemensamma grupper, det
     gör man genom att ange `\index{transformator!ström-}` där transformator är
@@ -175,11 +176,17 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     \index{enheter!farad (F)}
     ```
 
-    Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
+    Lägg till korshänvisningar för förkortningar:
+    `\index{AGC|see{automatisk förstärkningsreglering}}`.
+
+    Använd svenska termer som huvudposter. Engelska termer kan indexeras med
+    korshänvisning till den svenska termen.
+
+24. Enheter skrivs ut med liten begynnelsebokstav. Skriv ”hertz” och ”volt” i
     stället för ”Hertz” och ”Volt” om man inte refererar till namnen på de personer
     som gett namn till enheterna.
 
-24. Referenser mellan olika delar görs genom att sätta en `\label{}` och sedan
+25. Referenser mellan olika delar görs genom att sätta en `\label{}` och sedan
     referera till den.
     Använd inte bokstäverna ÅÄÖ i label-namnet! Använd de vedertagna prefixen!
     Det uppmuntras att skapa sådana länkar så man fort kan hitta relevant
@@ -197,7 +204,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Reaktansen beror på kapacitans, se kapitel~\ref{sec:kapacitans}
     ```
 
-25. Referens till externa dokument, böcker m.m. ska göras och det uppmuntras.
+26. Referens till externa dokument, böcker m.m. ska göras och det uppmuntras.
     De läggs till i filen koncept.bib i BiBTeX-format, och en nyckeln-fras
     används, t.ex. ITU-RR. I förekommande fall ska länk till dokumentet
     läggas med i referensen. Man refererar sedan med `\cite{}` för att peka på
@@ -205,17 +212,17 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     För att referera till ett visst kapitel anger man det inom hakparanteser:
     `\cite[1.56]{ITU-RR}`.
 
-26. I förekommande fall ska SI-enheter och definitioner användas och
+27. I förekommande fall ska SI-enheter och definitioner användas och
     refereras. SI-enheter refereras till med små bokstäver även om de bygger
     på personnamn, t.ex. ohm. Följ SI-brochyrens stil.
 
-27. Konstanter ska anges med full definition och approximativt värde.
+28. Konstanter ska anges med full definition och approximativt värde.
     Övrig användning kan gott använda approximation av adekvat precision.
     T.ex. där ljusets hastighet används ska den i SI-systemet angivna
     definitionen användas, men även approximationen av 3&sdot;10<sup>8</sup>,
     300&nbsp;000&nbsp;km/s.
 
-28. Förkortningar ska anges som brukligt inom parantes efter sin uttydelse
+29. Förkortningar ska anges som brukligt inom parantes efter sin uttydelse
     där de definieras, vilket i möjligaste mån är första gången de används,
     och framgent kan förkortningen användas.
     I möjligaste mån är att ibland används förkortningar i förbigående innan
@@ -227,17 +234,17 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     Exempel:
     Vector Network Analyzer (VNA)
 
-29. Tankstreck, kodas med `--`, ska användas sparsamt.
+30. Tankstreck, kodas med `--`, ska användas sparsamt.
 
-30. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
+31. Förkortningar så som osv, etc, t.ex. bl.a. öht. ska skrivas ut i
     sin helhet, utom i parenteser och tabeller.
 
-31. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
+32. Tal upp till tolv skrivs med bokstäver. Tal från 13 och uppåt skrivs med
     siffror.
 
-32. Indentering föreskrivt med hård tabb.
+33. Indentering föreskrivt med hård tabb.
 
-33. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
+34. Undvik sammansättningar med bindestreck, skriv hellre ihop. Skriv
     ”satellitmottagare” i stället för ”satellit-mottagare”. Bindestreck ska dock
     användas i sammansättningar med förkortningar; skriv ”FM-detektor” istället
     för ”FM detektor”.
