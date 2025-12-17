@@ -177,7 +177,7 @@ någorlunda vettig LaTeX. Med tiden har detta utvecklats även till formatregler
     ```
 
     Lägg till korshänvisningar för förkortningar:
-    `\index{AGC|see{automatisk förstärkningsreglering}}`.
+    `\index{AGC|see {automatisk förstärkningsreglering}}`.
 
     Använd svenska termer som huvudposter. Engelska termer kan indexeras med
     korshänvisning till den svenska termen.
