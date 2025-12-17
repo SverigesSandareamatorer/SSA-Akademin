@@ -51,6 +51,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Avsnittsrubrik ändrad från "Transceiver" till "Transceivrar".
 - Stavningsfel: ändrat "nån" till "någon" för korrekt stavning (1 förekomst).
 - Grammatikfel: tagit bort dubblering av ord "att att", "till till", "kan kan", "ett ett" och "olika olika" (7 förekomster).
+- ISBN-nummer uppdaterat till 978-91-86368-32-6 för tredje upplagan.
 
 ### Borttaget
 - Text om integrationsgrad borttagen.
