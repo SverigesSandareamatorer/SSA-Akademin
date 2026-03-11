@@ -6,14 +6,16 @@ root = true
 charset = utf-8
 indent_style = tab
 insert_final_newline = true
+end_of_line = lf
 
 [*.tex]
 max_line_length = 80
+trim_trailing_whitespace = true
 
-[appendix*.tex]
+[koncept/appendix*.tex]
 max_line_length = off
 
-[*.{css,yml}]
+[*.yml]
 indent_style = space
 indent_size = 2
 
