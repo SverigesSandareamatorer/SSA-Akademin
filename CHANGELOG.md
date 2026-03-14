@@ -11,6 +11,7 @@ och följer [semantisk versionshantering](https://semver.org/lang/sv/spec/v2.0.0
 - Ny figur för ICNIRPcalc.
 - Nya QR-koder för att lämna återkoppling på boken.
 - Nytt appendix om åskskydd.
+- Hänvisningar till andra kapitel i varje kapitelinledning.
 
 ### Ändrat
 - Nya avsnittsnivåer i kapitel Ellära.

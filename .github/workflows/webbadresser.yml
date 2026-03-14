@@ -18,4 +18,4 @@ jobs:
         with:
           fail: true
           checkbox: false
-          args: "--method head --max-concurrency 2 --accept 200,429 --no-progress './**/*.md' './**/*.tex' './koncept.bib'"
+          args: "--method head --host-concurrency 2 --accept 200,429 --no-progress './**/*.md' './**/*.tex' './koncept.bib'"

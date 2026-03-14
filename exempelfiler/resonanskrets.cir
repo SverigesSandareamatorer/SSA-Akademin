@@ -1,0 +1,24 @@
+.title KonCEPT LC-resonanskrets
+
+* Detta är en parallell LC-resonanskrets som kan användas
+* för att demonstrera resonans vid en specifik frekvens.
+
+* Spänningskälla: 1 V
+Vin input 0 AC 1
+
+* Induktor: 100 uH
+L1 input 0 100u
+
+* Kondensator: 100 pF
+C1 input 0 100p
+
+* Resistor för förluster: 1 kOhm
+R1 input 0 1k
+
+* AC-analys från 100 kHz till 10 MHz
+.ac dec 1000 100k 10meg
+
+.save V(input)
+.plot ac V(input)
+.hardcopy
+.end
