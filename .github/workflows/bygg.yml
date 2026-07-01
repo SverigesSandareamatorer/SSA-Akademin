@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -57,7 +57,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
@@ -107,7 +107,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: 'Checka ut koden'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: 'Installera Ubuntu-paket'
         run: |
           sudo apt-get -qq update
