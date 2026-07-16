@@ -15,7 +15,7 @@ on:
 jobs:
   analysera-koden:
     name: 'Analysera koden'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 20
     steps:
       - name: 'Checka ut koden'
@@ -53,7 +53,7 @@ jobs:
             chktex.log
   bygg-pdf:
     name: 'Bygg PDF'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 30
     steps:
       - name: 'Checka ut koden'
@@ -87,7 +87,7 @@ jobs:
           echo "<pre>$(latexmk -v)</pre>" >> $GITHUB_STEP_SUMMARY
           echo "<pre>$(sed -n '1p' koncept.log)</pre>" >> $GITHUB_STEP_SUMMARY
       - name: 'Optimera PDF-filen'
-        run: qpdf koncept.pdf --replace-input --compress-streams=y --decode-level=generalized --recompress-flate --object-streams=generate --compression-level=9
+        run: qpdf koncept.pdf --replace-input --warning-exit-0 --linearize --compress-streams=y --decode-level=generalized --recompress-flate --object-streams=generate --compression-level=9
       - name: 'Lägg till versionsinformation i filnamnet'
         run: mv koncept.pdf koncept.$(cat VERSION.txt)+b${{ github.run_id }}.$(cat SHA.tmp).pdf
       - name: 'Visa checksumma'
@@ -103,7 +103,7 @@ jobs:
     name: 'Bygg EPUB (experimentell)'
     if: github.repository != 'SverigesSandareamatorer/SSA-Akademin'
     continue-on-error: true
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     timeout-minutes: 60
     steps:
       - name: 'Checka ut koden'
